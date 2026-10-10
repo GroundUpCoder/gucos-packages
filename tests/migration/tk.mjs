@@ -22,6 +22,8 @@ try{
  const closureBytes=await readFile(resolve(run,'tk-closure.json'));
  const closure=JSON.parse(closureBytes),checksums=await readFile(resolve(run,'tk-closure.sha256'));
  assert.equal(closure.root,'tk');assert.equal(closure.inputCommit,config.inputCommit);
+ assert.deepEqual(closure.manifests['tk'],manifests['tk'],'Root closure must match tested candidate');
+ for(const [name,candidate] of Object.entries(manifests))if(Object.hasOwn(closure.manifests,name))assert.deepEqual(closure.manifests[name],candidate,'Closure candidate: '+name);
  assert.equal(sha(checksums),closure.checksumsSha256);
  const input=manifests.tk.files.find(f=>f.path==='source.tar');
  const source=await readFile(resolve(config.inputDist||config.dist,'migration/tk/source.tar'));

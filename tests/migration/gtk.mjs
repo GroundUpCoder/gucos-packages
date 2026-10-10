@@ -26,6 +26,8 @@ try {
  const checksums=await readFile(resolve(run,'gtk-closure.sha256'));
  assert.equal(createHash('sha256').update(checksums).digest('hex'),closure.checksumsSha256);
  assert.equal(closure.root,'gtk3-x11');assert.equal(closure.inputCommit,config.inputCommit);
+ assert.deepEqual(closure.manifests['gtk3-x11'],manifests['gtk3-x11'],'Root closure must match tested candidate');
+ for(const [name,candidate] of Object.entries(manifests))if(Object.hasOwn(closure.manifests,name))assert.deepEqual(closure.manifests[name],candidate,'Closure candidate: '+name);
  Object.assign(report,{inputCommit:config.inputCommit,source:input,closureSha256:createHash('sha256').update(closureBytes).digest('hex'),fileCount:closure.fileCount,harnessSha256:createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex')});
  s=await session();report.runtime=s.runtime;
  await s.command('true');
