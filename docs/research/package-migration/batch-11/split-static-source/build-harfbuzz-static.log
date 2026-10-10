@@ -1,0 +1,222 @@
+gucman: unknown source
+
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: 'ed\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: 'ed\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: 'ed\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: 'ed\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: 'ng checksums: harfbuzz-static\n' +
+    'gucman: Checksummed harfbuzz-static: 4/4 files\n' +
+    'gucman: Saving transaction: harfbuzz-static\n' +
+    'gucman: Verifying staged files: harfbuzz-static\n' +
+    'gucman: Activating: harfbuzz-static\n' +
+    'Installed migration:harfbuzz-static 14.5.0-1\n'
+}
+gucman: build migration:harfbuzz-static: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 15992 bytes; transfer finished
+gucman: Resolving: migration:harfbuzz-static
+gucman: Downloading manifest for migration:harfbuzz-static (2108 bytes)
+  Connecting; waiting for response…
+  Downloaded 2108 / 2108 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:harfbuzz-static
+gucman: Checking cached object: manifest for migration:harfbuzz-static
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Plan: 7 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 7 packages
+gucman: Package 1/7: libiconv (6 remaining after this)
+Already installed: libiconv
+gucman: Package 2/7: libintl (5 remaining after this)
+Already installed: libintl
+gucman: Package 3/7: pcre2 (4 remaining after this)
+Already installed: pcre2
+gucman: Package 4/7: glib (3 remaining after this)
+Already installed: glib
+gucman: Package 5/7: zlib (2 remaining after this)
+Already installed: zlib
+gucman: Package 6/7: freetype (1 remaining after this)
+Already installed: freetype
+gucman: Package 7/7: harfbuzz-static (0 remaining after this)
+gucman: Downloading harfbuzz-static source: source.tar (8048640 bytes)
+  Connecting; waiting for response…
+  Downloaded 7.68 / 7.68 MiB (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: source.tar
+gucman: Checking cached object: harfbuzz-static source: source.tar
+gucman: Downloading harfbuzz-static source: prepared.tar.gz (18677179 bytes)
+  Connecting; waiting for response…
+  Downloaded 17.81 / 17.81 MiB (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: prepared.tar.gz
+gucman: Checking cached object: harfbuzz-static source: prepared.tar.gz
+gucman: Downloading harfbuzz-static source: build.sh (543 bytes)
+  Connecting; waiting for response…
+  Downloaded 543 / 543 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: build.sh
+gucman: Checking cached object: harfbuzz-static source: build.sh
+gucman: Downloading harfbuzz-static source: test.sh (450 bytes)
+  Connecting; waiting for response…
+  Downloaded 450 / 450 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: test.sh
+gucman: Checking cached object: harfbuzz-static source: test.sh
+Building migration:harfbuzz-static; running trusted recipe with access to your guest files
+37719 functions, 57081099 bytes
+33005 functions, 49103476 bytes
+HARFBUZZ-CONSUMER-PASS
+gucman: Installing harfbuzz-static: 0/4 files
+gucman: Installing harfbuzz-static: 4/4 files
+gucman: Preparing checksums: harfbuzz-static
+gucman: Checksummed harfbuzz-static: 4/4 files
+gucman: Saving transaction: harfbuzz-static
+gucman: Verifying staged files: harfbuzz-static
+gucman: Activating: harfbuzz-static
+Installed migration:harfbuzz-static 14.5.0-1
+
+4c61baf13f213f7aa7eeace60e6d6c9612bfd7e8420146e41eacca3ca8b183b5  /home/user/migration-export.tar
+92932096
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
