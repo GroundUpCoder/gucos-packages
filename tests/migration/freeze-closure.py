@@ -1,11 +1,16 @@
 """Freeze installed closure expectations from pinned manifests and accepted exports.
-Usage: python3 tests/migration/freeze-closure.py RUN_DIRECTORY ROOT_PACKAGE
+Usage: python3 tests/migration/freeze-closure.py RUN_DIRECTORY ROOT_PACKAGE [OUTPUT_STEM] [--no-graphics-providers]
 Read-only inputs; writes two new expectation files inside the run directory.
 """
 import hashlib,io,json,re,subprocess,sys,tarfile
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
 run=Path(sys.argv[1]).resolve();root=sys.argv[2]
+stem=sys.argv[3] if len(sys.argv)>3 else 'gtk-closure'
+assert re.fullmatch('[a-z0-9-]+',root) and re.fullmatch('[a-z0-9-]+',stem)
+assert len(sys.argv)<=5
+no_providers=len(sys.argv)==5
+if no_providers:assert sys.argv[4]=='--no-graphics-providers' and root!='gtk3-x11'
 config=json.loads((run/'config.json').read_text())
 candidates=json.loads((run/'candidate-manifests.json').read_text())
 repo=Path(__file__).resolve().parents[2]
@@ -43,9 +48,9 @@ def visit(name):
    files[path]=digest(archive.extractfile(f).read())
  assert seen==set(expected);archives[name]={'sha256':digest(b),'size':len(b)}
 visit(root)
-for basename in ['libcairo.so','libXau.so','libxcb.so','libX11.so','libXext.so','libXrender.so','libXfixes.so','libXi.so','libXtst.so']:
+for basename in ([] if no_providers else ['libcairo.so','libXau.so','libxcb.so','libX11.so','libXext.so','libXrender.so','libXfixes.so','libXi.so','libXtst.so']):
  assert [p for p in files if p.rsplit('/',1)[-1]==basename]==['/usr/local/lib/'+basename]
 sums=''.join(h+'  '+p+'\n' for p,h in sorted(files.items()))
-with (run/'gtk-closure.sha256').open('x') as f:f.write(sums)
-with (run/'gtk-closure.json').open('x') as f:json.dump(dict(root=root,inputCommit=config['inputCommit'],manifests=manifests,archives=archives,checksumsSha256=digest(sums.encode()),fileCount=len(files)),f,indent=2);f.write('\n')
+with (run/(stem+'.sha256')).open('x') as f:f.write(sums)
+with (run/(stem+'.json')).open('x') as f:json.dump(dict(root=root,inputCommit=config['inputCommit'],manifests=manifests,archives=archives,checksumsSha256=digest(sums.encode()),fileCount=len(files)),f,indent=2);f.write('\n')
 print(len(manifests),'manifests;',len(files),'payload hashes frozen')
