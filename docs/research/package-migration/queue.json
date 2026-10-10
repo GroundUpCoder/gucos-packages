@@ -4643,11 +4643,14 @@
     {
       "id": "sqlite-series",
       "kind": "additional-workload",
-      "state": "queued",
+      "state": "source-prepared-review-pending",
       "scope": "SQLite generate_series loadable extension",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and fresh guest/binary/public acceptance pending."
+      ],
+      "candidate": "apps/sqlite-series"
     },
     {
       "id": "pcg32",

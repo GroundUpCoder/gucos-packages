@@ -1,0 +1,10 @@
+[
+  {
+    "path": "lib/sqlite3/series.so",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/sqlite-series/series.c",
+    "mode": 420
+  }
+]
