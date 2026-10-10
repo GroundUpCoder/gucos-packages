@@ -12,17 +12,32 @@ const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'';
 assert(!attempt||/^[a-zA-Z0-9_-]+$/.test(attempt));
 const label='gtk-functional'+(attempt?'-'+attempt:'');
 await assert.rejects(access(resolve(run,label+'.json')),{code:'ENOENT'});
-const config=JSON.parse(await readFile(resolve(run,'config.json')));
-const manifests=JSON.parse(await readFile(resolve(run,'candidate-manifests.json')));
-const input=manifests['gtk3-x11'].files.find(f=>f.path==='source.tar');
-const archive=await readFile(resolve(config.inputDist||config.dist,'migration/gtk3-x11/source.tar'));
-assert.equal(archive.length,input.size);
-assert.equal(createHash('sha256').update(archive).digest('hex'),input.sha256);
-const report={status:'running',inputCommit:config.inputCommit,source:input,harnessSha256:createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex'),startedAt:new Date().toISOString()};
-const s=await session();let pending;
+const report={status:'running',startedAt:new Date().toISOString()};
+let s,pending;
 try {
- report.runtime=s.runtime;
+ const config=JSON.parse(await readFile(resolve(run,'config.json')));
+ const manifests=JSON.parse(await readFile(resolve(run,'candidate-manifests.json')));
+ const input=manifests['gtk3-x11'].files.find(f=>f.path==='source.tar');
+ const archive=await readFile(resolve(config.inputDist||config.dist,'migration/gtk3-x11/source.tar'));
+ assert.equal(archive.length,input.size);
+ assert.equal(createHash('sha256').update(archive).digest('hex'),input.sha256);
+ const closureBytes=await readFile(resolve(run,'gtk-closure.json'));
+ const closure=JSON.parse(closureBytes);
+ const checksums=await readFile(resolve(run,'gtk-closure.sha256'));
+ assert.equal(createHash('sha256').update(checksums).digest('hex'),closure.checksumsSha256);
+ assert.equal(closure.root,'gtk3-x11');assert.equal(closure.inputCommit,config.inputCommit);
+ Object.assign(report,{inputCommit:config.inputCommit,source:input,closureSha256:createHash('sha256').update(closureBytes).digest('hex'),fileCount:closure.fileCount,harnessSha256:createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex')});
+ s=await session();report.runtime=s.runtime;
  await s.command('true');
+ for(const [name,expected] of Object.entries(closure.manifests)){
+  const installed=await s.page.evaluate(async name=>JSON.parse(new TextDecoder().decode(await shell.busybox.read('/usr/local/lib/gucman/packages/'+name+'/current/manifest.json'))),name);
+  assert.deepEqual(installed,expected,'Installed closure manifest: '+name);
+ }
+ await s.page.evaluate(async text=>shell.busybox.write('/tmp/gtk-closure.sha256',new TextEncoder().encode(text)),checksums.toString());
+ await s.command(`set -eu
+sha256sum -c /tmp/gtk-closure.sha256
+test "$(find /usr/local -name libcairo.so)" = /usr/local/lib/libcairo.so
+test "$(find /usr/local -name libX11.so)" = /usr/local/lib/libX11.so`);
  await s.page.evaluate(async encoded=>shell.busybox.write('/tmp/migration-gtk.tar',Uint8Array.from(atob(encoded),c=>c.charCodeAt(0))),archive.toString('base64'));
  pending=s.command(`set -eu
 mkdir -p /tmp/migration-gtk
@@ -35,16 +50,25 @@ cc -I/usr/local/include source/test/x11-shared.c -L/usr/local/lib -lXtst -lXi -l
 export DISPLAY=:1
 Xvfb :1 -screen 0 800x600x24 -fp built-ins -ac -noreset &
 server=$!
-trap 'kill "$server" 2>/dev/null; wait "$server" 2>/dev/null' EXIT
+echo "$server" > /tmp/migration-gtk-server.pid
+demo=
+cleanup() {
+ if [ -n "$demo" ]; then kill "$demo" 2>/dev/null || true; wait "$demo" 2>/dev/null || true; fi
+ kill "$server" 2>/dev/null || true
+ wait "$server" 2>/dev/null || true
+ rm -f /tmp/migration-gtk-server.pid /tmp/migration-gtk-demo.pid
+}
+trap cleanup EXIT
 sleep 2
 gtk3-x11-run /tmp/x11-shared-consumer
 gtk3-x11-demo --test &
 demo=$!
+echo "$demo" > /tmp/migration-gtk-demo.pid
 sleep 3
 gtk3-x11-run /tmp/gtk-x11-consumer
 wait "$demo"
-kill "$server"
-wait "$server"
+demo=
+cleanup
 trap - EXIT
 test ! -e /tmp/.X1-lock
 echo GTK-X11-PACKAGE-PASS`);
@@ -73,9 +97,26 @@ echo GTK-X11-PACKAGE-PASS`);
  await s.page.keyboard.press('Escape');const log=await pending;
  for(const token of ['X11-SHARED-SDK-PASS','GTK-X11-BLANK-CURSOR-PASS','GTK-X11-CLOSED','GTK-X11-PACKAGE-PASS'])assert.ok(log.includes(token),token);
  assert.doesNotMatch(log,/CRITICAL/);report.status='passed';
-}catch(error){report.status='failed';report.error=String(error.stack||error);throw error;}
-finally{
+}catch(error){
+ report.status='failed';report.error=String(error.stack||error);
+ if(s&&pending){
+  let timeout;
+  try{
+   await Promise.race([(async()=>{
+    await s.command(`for f in /tmp/migration-gtk-demo.pid /tmp/migration-gtk-server.pid; do
+if [ -f "$f" ]; then kill "$(cat "$f")" 2>/dev/null || true; fi
+done`);
+    await pending.catch(()=>{});
+   })(),new Promise((_,reject)=>{timeout=setTimeout(()=>reject(Error('GTK cleanup exceeded 15 seconds')),15000);})]);
+   report.failureCleanup='guest children stopped and parent command settled';
+  }catch(cleanupError){report.failureCleanup=String(cleanupError);}
+  finally{clearTimeout(timeout);}
+ }
+ throw error;
+}finally{
  report.finishedAt=new Date().toISOString();
- try{await writeFile(resolve(run,label+'.log'),await s.page.evaluate(()=>shell.busybox?.log||''),{flag:'wx'});}
- finally{await writeFile(resolve(run,label+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});await s.close();}
+ try{
+  if(s)try{await writeFile(resolve(run,label+'.log'),await s.page.evaluate(()=>shell.busybox?.log||''),{flag:'wx'});}catch(logError){report.logError=String(logError);}
+  await writeFile(resolve(run,label+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});
+ }finally{if(s)await s.close();}
 }
