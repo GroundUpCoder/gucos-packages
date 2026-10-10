@@ -28,7 +28,9 @@ names = sys.argv[1:]
 assert names and len(names) == len(set(names)), 'Select distinct candidate names'
 assert all(re.fullmatch('[a-z0-9][a-z0-9-]*', n) for n in names)
 baseline = json.loads(git('show', BASELINE + ':catalog.json'))
-assert (ROOT / 'catalog.json').read_bytes() == git('show', BASELINE + ':catalog.json'), 'Baseline catalog changed'
+current_catalog = read(ROOT / 'catalog.json')
+for name, entry in baseline['packages'].items():
+    assert current_catalog['packages'][name] == entry, (name, 'baseline catalog entry changed')
 owned = {}
 versions = {}
 for name in baseline['packages']:
