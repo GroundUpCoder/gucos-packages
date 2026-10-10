@@ -102,6 +102,29 @@ for name in names:
         data = (directory / overlay['file']).read_bytes()
         assert data == git('show', revision + ':' + overlay['historicalPath'], cwd=OLD)
         assert hashlib.sha256(data).hexdigest() == overlay['sha256']
+    for extra in provenance.get('additionalArchives', []):
+        assert extra['file'] in recipe['inputs']
+        extra_path = directory / extra['file']
+        assert hashlib.sha256(extra_path.read_bytes()).hexdigest() == extra['archiveSha256']
+        entries = git('ls-tree', '-r', revision, '--', extra['historicalPath'], cwd=OLD).decode().splitlines()
+        expected_extra = {}
+        for entry in entries:
+            meta, path = entry.split('\t')
+            mode, kind, blob = meta.split()
+            assert kind == 'blob'
+            expected_extra[path] = (mode, blob)
+        seen_extra = set()
+        with tarfile.open(extra_path) as archive:
+            for member in archive:
+                assert member.name.startswith('source/') and '..' not in Path(member.name).parts
+                path = extra['historicalPath'] + '/' + member.name.removeprefix('source/')
+                assert path not in seen_extra
+                seen_extra.add(path)
+                mode, blob = expected_extra[path]
+                assert member.issym() == (mode == '120000')
+                data = member.linkname.encode() if member.issym() else archive.extractfile(member).read()
+                assert hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest() == blob
+        assert seen_extra and seen_extra == set(expected_extra)
     if 'preparedArchive' in provenance:
         prepared = provenance['preparedArchive']
         archive_path = directory / prepared['file']

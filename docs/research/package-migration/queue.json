@@ -1532,7 +1532,7 @@
     {
       "id": "gtk3-schemas",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/gtk3-schemas/wasm-package.json",
       "historicalManifestSha256": "f36749b0911a3cfe23ec839d1dc2598085778d90d7256e8f4b640026ca57a2e3",
       "historicalEvidence": [
@@ -1560,7 +1560,11 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and real guest schema compilation/lookup acceptance pending."
+      ],
+      "candidate": "apps/gtk3-schemas",
+      "role": "schema/data package; not separately compiled application"
     },
     {
       "id": "gtk3-x11",
