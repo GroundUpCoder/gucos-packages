@@ -270,6 +270,16 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/3aa9f3491c61a34b93be4b385b99a5297dbe0eb4/apps/gtk3-schemas/package.json",
       "sha256": "32242372841130c5d4aaa34c372374930f9acd33077de5d67d001c2f77cae923",
       "size": 3857
+    },
+    "libevent": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/714f2f904f834f3ea4c17f2ab07582c7f6b122a8/apps/libevent/package.json",
+      "sha256": "26255eb219bc11c97d01a81c56052a1bdf630327538436ec37e2ab1f5a863b7c",
+      "size": 4045
+    },
+    "libuv": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/714f2f904f834f3ea4c17f2ab07582c7f6b122a8/apps/libuv/package.json",
+      "sha256": "36612156742698212034c9c96ecb00a7f539a1599fe0596e430af8272d6380e1",
+      "size": 3333
     }
   }
 }
