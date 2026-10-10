@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "name": "xclipboard",
+  "version": "1.1.6-1",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "dependencyRequirements": {
+    "x11-widgets": {
+      "version": "1.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xclipboard/source.tar",
+      "sha256": "aeb29738b88e55c9ac9fc36de118431b80699b255b6aead8192af24f78755c94",
+      "size": 839680
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xclipboard/build.sh",
+      "sha256": "362fb8986d5088f1a4256b8ad607555bb85b5b403fedd6e2ee65334c0dcf1499",
+      "size": 514
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xclipboard/test.sh",
+      "sha256": "aee88705fe9ccc30aaa934d9afee41412c945f747d8689323967121b26f1c60b",
+      "size": 53
+    },
+    {
+      "path": "config.h",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xclipboard/config.h",
+      "sha256": "9513a7223139bf22ebe4f15872dce4db5e6896f2722f834f3976b46361bab909",
+      "size": 297
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/xclipboard",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/xclipboard/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/X11/app-defaults/XClipboard",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/xclipboard/COPYING"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xclipboard/binaries/e4d0c4277b92b18731390974d71e9babb4d862dcd65ea48641e986f76f20dbb9.tar",
+    "sha256": "e4d0c4277b92b18731390974d71e9babb4d862dcd65ea48641e986f76f20dbb9",
+    "size": 4319232
+  }
+}
