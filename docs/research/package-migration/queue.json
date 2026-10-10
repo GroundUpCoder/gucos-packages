@@ -565,9 +565,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent provider/header design review and new guest acceptance pending."
+        "Fresh guest acceptance and independent artifact/publication review pending."
       ],
-      "candidate": "apps/cairo-gobject"
+      "candidate": "apps/cairo-gobject",
+      "sourceReview": {
+        "commit": "19502f9b3d4ea45bb041b1c5c0566fc2e231a692",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No source/test blocker; new guest acceptance pending."
+      }
     },
     {
       "id": "cc",
@@ -1264,7 +1269,7 @@
     {
       "id": "glib",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/glib/wasm-package.json",
       "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
       "historicalEvidence": [
@@ -1298,17 +1303,21 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
           "evidence": "batch-03"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public immutable install, installed static/shared consumer relinks and exact195-file combined inventory/parsed-manifest integrity after reload",
+          "evidence": "batch-03/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/glib"
+      "blockers": [],
+      "candidate": "apps/glib",
+      "publicationCommit": "87ffa4f30fcfc93d862730cc95ab86e81a3118b4"
     },
     {
       "id": "gobject",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/glib/wasm-package.json",
       "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
       "historicalEvidence": [
@@ -1340,12 +1349,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
           "evidence": "batch-03"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public immutable install, installed static/shared consumer relinks and exact195-file combined inventory/parsed-manifest integrity after reload",
+          "evidence": "batch-03/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/gobject"
+      "blockers": [],
+      "candidate": "apps/gobject",
+      "publicationCommit": "87ffa4f30fcfc93d862730cc95ab86e81a3118b4"
     },
     {
       "id": "gtk-desk",
@@ -1908,7 +1921,7 @@
     {
       "id": "libffi",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/libffi/wasm-package.json",
       "historicalManifestSha256": "ba6535b10bd26cacea9f7aff0cbad135873a70504f89354268d33b0ff4d5fb90",
       "historicalEvidence": [
@@ -1937,12 +1950,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
           "evidence": "batch-03"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public immutable install, installed static/shared consumer relinks and exact195-file combined inventory/parsed-manifest integrity after reload",
+          "evidence": "batch-03/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/libffi"
+      "blockers": [],
+      "candidate": "apps/libffi",
+      "publicationCommit": "87ffa4f30fcfc93d862730cc95ab86e81a3118b4"
     },
     {
       "id": "libfm",
@@ -2014,7 +2031,7 @@
     {
       "id": "libiconv",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/libiconv/wasm-package.json",
       "historicalManifestSha256": "382b952fdbadffeb59827c8e103f06f68df12c74668590697a24cb18e3c44df7",
       "historicalEvidence": [
@@ -2044,17 +2061,21 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
           "evidence": "batch-03"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public immutable install, installed static/shared consumer relinks and exact195-file combined inventory/parsed-manifest integrity after reload",
+          "evidence": "batch-03/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/libiconv"
+      "blockers": [],
+      "candidate": "apps/libiconv",
+      "publicationCommit": "87ffa4f30fcfc93d862730cc95ab86e81a3118b4"
     },
     {
       "id": "libintl",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/gettext/wasm-package.json",
       "historicalManifestSha256": "148457a5d63806b8e3c9baa921d5f7609ddef8e51783a3e975ce5f96c4ffadc9",
       "historicalEvidence": [
@@ -2086,12 +2107,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
           "evidence": "batch-03"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public immutable install, installed static/shared consumer relinks and exact195-file combined inventory/parsed-manifest integrity after reload",
+          "evidence": "batch-03/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/libintl"
+      "blockers": [],
+      "candidate": "apps/libintl",
+      "publicationCommit": "87ffa4f30fcfc93d862730cc95ab86e81a3118b4"
     },
     {
       "id": "libjpeg",
@@ -2507,9 +2532,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent source review and actual guest acceptance pending."
+        "Fresh guest acceptance and independent artifact/publication review pending."
       ],
-      "candidate": "apps/minihb"
+      "candidate": "apps/minihb",
+      "sourceReview": {
+        "commit": "19502f9b3d4ea45bb041b1c5c0566fc2e231a692",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No source/test blocker; new guest acceptance pending."
+      }
     },
     {
       "id": "ncurses",
@@ -2627,9 +2657,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent source review and actual guest acceptance pending."
+        "Fresh guest acceptance and independent artifact/publication review pending."
       ],
-      "candidate": "apps/pango"
+      "candidate": "apps/pango",
+      "sourceReview": {
+        "commit": "19502f9b3d4ea45bb041b1c5c0566fc2e231a692",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No source/test blocker; new guest acceptance pending."
+      }
     },
     {
       "id": "pcmanfm",
@@ -2670,7 +2705,7 @@
     {
       "id": "pcre2",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/pcre2/wasm-package.json",
       "historicalManifestSha256": "c36ec960359841727c0241aa8eca62c1cfc52e2fb8190f62bd5f1f993eba47ae",
       "historicalEvidence": [
@@ -2700,12 +2735,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
           "evidence": "batch-03"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public immutable install, installed static/shared consumer relinks and exact195-file combined inventory/parsed-manifest integrity after reload",
+          "evidence": "batch-03/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/pcre2"
+      "blockers": [],
+      "candidate": "apps/pcre2",
+      "publicationCommit": "87ffa4f30fcfc93d862730cc95ab86e81a3118b4"
     },
     {
       "id": "pcre2grep",

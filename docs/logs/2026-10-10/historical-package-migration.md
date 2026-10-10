@@ -247,3 +247,16 @@ Pixman/libpng/FreeType but did not export them. The resumed corrected profile
 subsequently exported those same-input installed builds. Source logs and failures
 are retained under batch-04. Graphics fresh binary installation has now passed;
 installed consumers, functional rendering and reload remain pending.
+
+## Six GLib foundation packages publicly accepted
+
+Reviewer approved87ffa4f publication after checking all195 declared outputs and
+immutable source/artifact references; pushed exact approved catalog commit. Fresh
+public browser profile installed six immutable binaries, ran retained installed
+static/shared consumers (including wide GObject marshalling), and preserved all
+195 payload checksums plus parsed manifest contents after reload. Evidence under
+batch-03/public-live. PCRE2 scope is8-bit; libffi scalar continuation ABI only;
+libintl does not imply gettext CLI migration. Remaining canonical queue stays open.
+
+Independent source review approved19502f9 Pango fixture fix and optional Cairo
+GObject header/provider design. Actual execution and GTK full closure pending.

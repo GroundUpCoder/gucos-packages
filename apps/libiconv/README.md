@@ -1,6 +1,11 @@
 # libiconv
 
-Unpublished 1.18-1 candidate. Historical configured library profile; static and shared consumers prepared.
+1.18-1 library profile. Historical configured library profile; static and shared consumers prepared.
 Pinned historical `vendor/libiconv` bytes and licenses are preserved in source.tar;
 build.sh adapts installation and test.sh adapts the retained port consumers.
-No new guest build, binary installation or reload acceptance has run.
+
+
+Published after independent approval of87ffa4f. Fresh public immutable installation,
+static/shared retained consumers and reload output/parsed-manifest integrity passed
+on runtime61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0.
+Evidence: docs/research/package-migration/batch-03 at repository root.
