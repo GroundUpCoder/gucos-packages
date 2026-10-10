@@ -1,0 +1,44 @@
+"""Freeze a private migration run from committed candidates and read-only core dist.
+Usage: python3 tests/migration/prepare.py RUN_NAME INPUT_COMMIT NAME [NAME ...]
+This only prepares files; browser execution requires a separate machine-job.
+"""
+import hashlib,json,re,shutil,socket,subprocess,sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2]
+name,revision,*names=sys.argv[1:]
+assert re.fullmatch('[a-zA-Z0-9_-]+',name) and re.fullmatch('[a-f0-9]{40}',revision)
+assert names and len(names)==len(set(names))
+assert all(re.fullmatch('[a-z0-9][a-z0-9-]*',n) for n in names)
+run=ROOT/'test-results/migration'/name
+run.mkdir(parents=True,exist_ok=False)
+def blob(path):return subprocess.check_output(['git','show',revision+':'+path],cwd=ROOT)
+def sha(b):return hashlib.sha256(b).hexdigest()
+def write(path,x):path.write_text(json.dumps(x,indent=2)+'\n')
+site=run/'site';shutil.copytree('/Users/jku/git/wasm-posix/dist',site)
+core=json.loads((site/'build.json').read_text())
+assert core['runtime']=='61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0'
+with socket.socket() as sock:
+ sock.bind(('127.0.0.1',0));port=sock.getsockname()[1]
+(run/'port').write_text(str(port));origin='http://127.0.0.1:'+str(port)
+catalog=json.loads(blob('catalog.json'));baseline=dict(catalog['packages']);manifests={}
+def entry(path,b):return dict(url=origin+'/'+path,sha256=sha(b),size=len(b))
+for n in names:
+ recipe=json.loads(blob('apps/'+n+'/recipe.json'));assert recipe['name']==n
+ assert n not in baseline, 'baseline candidate replacement prohibited'
+ inputs=recipe.pop('inputs');d=site/'migration'/n;d.mkdir(parents=True)
+ files=[]
+ for file in inputs:
+  assert not Path(file).is_absolute() and '..' not in Path(file).parts
+  b=blob('apps/'+n+'/'+file);target=d/file;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(b)
+  files.append(dict(path=file,**entry('migration/'+n+'/'+file,b)))
+ outputs=json.loads(blob('apps/'+n+'/outputs.json'))
+ manifest=dict(format=1,**recipe,files=files,build='build.sh',test='test.sh',outputs=outputs,licenses=[o['path'] for o in outputs if o['path'].startswith('share/licenses/')])
+ write(d/'package.json',manifest);catalog['packages'][n]=entry('migration/'+n+'/package.json',(d/'package.json').read_bytes());manifests[n]=manifest
+for n,m in manifests.items():
+ for dep in m['dependencies']:assert dep in catalog['packages'],(n,dep,'missing dependency')
+write(site/'migration/catalog.json',catalog)
+snapshot={p.relative_to(site).as_posix():dict(sha256=sha(p.read_bytes()),size=p.stat().st_size) for p in site.rglob('*') if p.is_file()}
+write(run/'dist-files.json',snapshot)
+write(run/'config.json',dict(expectedRuntime=core['runtime'],dist=str(site.resolve()),inputCommit=revision,candidates=names,catalogUrl=origin+'/migration/catalog.json',baselinePackages=baseline,distributionSnapshotSha256=sha((run/'dist-files.json').read_bytes())))
+write(run/'candidate-manifests.json',manifests)
+print(run)

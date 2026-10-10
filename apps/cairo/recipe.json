@@ -32,7 +32,8 @@
     "objectAbi": 3,
     "features": [
       "posix-core",
-      "unix-stream"
+      "unix-stream",
+      "pthreads"
     ]
   },
   "inputs": [

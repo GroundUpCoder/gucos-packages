@@ -67,3 +67,28 @@ GTK closure. x11-shared prepares eight new DSOs from accepted static archives
 without altering the baseline package. Fontconfig retains its two historical
 font inputs and their licenses. All are unbuilt and unaccepted. The provider
 design explicitly keeps the old GTK blocker open until complete closure tests.
+
+## Browser hold released; first real source acceptance
+
+Core owner explicitly lifted the hold in cc-meta response to operation
+01a1250a-0f24-7937-a981-8b242f04d5bd: recording/deployment/live tests complete.
+Platform 1.0.1 retains ABI 5/3. This author copied the read-only local distribution
+into a packages-local private run, froze every served file hash, and observed
+runtime 61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+inside the browser. This establishes the private candidate identity, not by itself
+live deployment identity; the reviewer corrected an imprecise coordination message
+that called local build.json a live identity verification.
+
+Bounded 600-second machine-job browser reservation actually built and tested
+zlib, cJSON, pkgconf, bzip2, bzip2recover and Expat, then installed and exported
+each with guest gucman pack. All passed on the frozen 1.0.1 candidate. Source
+inputs came from reviewed commit 7da0b4a. Evidence currently under
+`test-results/migration/first-61a87f88/`; durable evidence and artifact review
+will follow binary installation/reload checks. This is new package acceptance,
+not repetition of the completed baseline19 compatibility run. No binary/catalog
+publication yet. X dependencies install is a separate bounded reservation.
+
+Reviewer found Cairo/Fontconfig pthread feature omissions and unsupported Cairo
+GObject feature advertisement at 5c8da3c. Corrected requirements and transformed
+the effective Cairo feature header in build.sh while retaining exact overlay
+input bytes. Re-review of frozen correction remains pending.

@@ -2,7 +2,8 @@
 set -eu
 tar -xf source.tar
 cp config.h source/config.h
-cp cairo-features.h source/src/cairo-features.h
+# Preserve historical overlay bytes; disable the unprovided GObject profile.
+sed '/^#define CAIRO_HAS_GOBJECT_FUNCTIONS /d' cairo-features.h > source/src/cairo-features.h
 cp cairo-xlib-surface.c source/src/cairo-xlib-surface.c
 mkdir -p objects "$DESTDIR/lib/pkgconfig" "$DESTDIR/include/cairo" "$DESTDIR/share/licenses/cairo"
 objects=
