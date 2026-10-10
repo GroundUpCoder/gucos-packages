@@ -44,6 +44,6 @@ for name,version,deps,licenses,outputs in specs:
   script+='cp "'+p+'" "$DESTDIR/'+out+'"\n'
  (d/'build.sh').write_text(script)
  save(d/'outputs.json',[dict(path=p,mode=420) for p in outputs])
- save(d/'recipe.json',dict(name=name,version=version,dependencies=deps,dependencyRequirements={dep:dict(version=versions[dep]) for dep in deps},platform=dict(target='wasm32-wasm-posix',minVersion='1.0.0',runtimeAbi=5,objectAbi=3,features=['posix-core','pthreads'] if name=='fontconfig' else ['posix-core']),inputs=inputs))
+ save(d/'recipe.json',dict(name=name,version=version,dependencies=deps,dependencyRequirements={dep:dict(version=versions[dep]) for dep in deps},platform=dict(target='wasm32-wasm-posix',minVersion='1.0.0',runtimeAbi=5,objectAbi=3,features=['posix-core','pthreads'] if name in ('fontconfig','pixman') else ['posix-core']),inputs=inputs))
  save(d/'provenance.json',dict(repository='wasm-posix-old (preserved local historical repository)',commit=REV,path=source,archiveSha256=hashlib.sha256((d/'source.tar').read_bytes()).hexdigest(),overlays=overlays,status='source migration candidate; no new guest execution'))
  (d/'README.md').write_text(f'# {name}\n\nUnpublished {version} candidate from `{source}` at `{REV}`.\nHistorical source/configuration is preserved; build.sh adapts the original install\nrecipe to the current prefix/output contract. Static and shared library outputs\nrequire separate guest relink and execution acceptance. No new guest tests ran.\n')

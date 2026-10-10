@@ -6,6 +6,7 @@ import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 assert(process.env.MACHINE_JOB_ID,'machine-job browser reservation required');
 const run=process.env.COMPAT_RUN_DIR,config=JSON.parse(await readFile(resolve(run,'config.json')));
+const candidates=JSON.parse(await readFile(resolve(run,'candidate-manifests.json')));
 const action=process.argv[2],names=process.argv.slice(3);
 assert(['build','install','reload','dependencies','consumers'].includes(action));
 assert(names.length && names.every(n=>(action==='dependencies'?Object.hasOwn(config.baselinePackages,n):config.candidates.includes(n))));
@@ -23,12 +24,19 @@ try{
   // Re-run the committed consumer scripts against installed headers and libraries.
   for(const name of names){
    const manifest=JSON.parse(await readFile(resolve(config.inputDist||config.dist,'migration',name,'package.json')));
+   const tuples=files=>files.map(({path,sha256,size})=>({path,sha256,size}));
+   assert.deepEqual(tuples(manifest.files),tuples(candidates[name].files),'Consumer inputs differ from frozen candidate: '+name);
+   const verified=[];
    const directory='/tmp/migration-consumers/'+name;
    await s.command('mkdir -p '+directory);
    for(const file of manifest.files){
     const bytes=await readFile(resolve(config.inputDist||config.dist,'migration',name,file.path));
+    assert.equal(bytes.length,file.size,'Consumer input size: '+name+'/'+file.path);
+    assert.equal(createHash('sha256').update(bytes).digest('hex'),file.sha256,'Consumer input hash: '+name+'/'+file.path);
+    verified.push({path:file.path,sha256:file.sha256,size:file.size});
     await s.page.evaluate(async ({path,encoded})=>shell.busybox.write(path,Uint8Array.from(atob(encoded),c=>c.charCodeAt(0))),{path:directory+'/'+file.path,encoded:bytes.toString('base64')});
    }
+   (report.consumerInputs??=[]).push({name,verified});
    await s.command('set -eu\ncd '+directory+'\ntar -xf source.tar\nDESTDIR=/usr/local sh test.sh');
   }
  }else if(action==='dependencies'){
@@ -52,7 +60,7 @@ try{
    for(let i=0;i<bytes.length;i+=16383)encoded+=btoa(String.fromCharCode(...bytes.subarray(i,i+16383)));
    return {manifest,encoded};
   },name);
-  const expected=JSON.parse(await readFile(resolve(run,'candidate-manifests.json')))[name];
+  const expected=candidates[name];
   assert.deepEqual(result.manifest,expected,'Installed manifest differs from frozen candidate: '+name);
   const bytes=Buffer.from(result.encoded,'base64'),hash=createHash('sha256').update(bytes).digest('hex');
   const dir=resolve(run,'exports',name);await mkdir(dir,{recursive:true});
