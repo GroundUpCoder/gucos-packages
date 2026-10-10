@@ -3568,33 +3568,65 @@
       ],
       "mapping": "Seven clients published separately; missing xedit, xfontsel, xclipboard, oclock, xcutsel.",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Independent artifact/publication review and public installation pending for five additional clients."
+      ],
       "remainingScope": "Missing xedit, xfontsel, xclipboard, oclock, xcutsel",
       "components": {
         "xedit": {
-          "state": "source-prepared",
+          "state": "candidate-accepted-awaiting-review",
           "candidate": "apps/xedit",
-          "acceptance": []
+          "acceptance": [
+            {
+              "evidence": "batch-02",
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            }
+          ]
         },
         "xfontsel": {
-          "state": "source-prepared",
+          "state": "candidate-accepted-awaiting-review",
           "candidate": "apps/xfontsel",
-          "acceptance": []
+          "acceptance": [
+            {
+              "evidence": "batch-02",
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            }
+          ]
         },
         "xclipboard": {
-          "state": "source-prepared",
+          "state": "candidate-accepted-awaiting-review",
           "candidate": "apps/xclipboard",
-          "acceptance": []
+          "acceptance": [
+            {
+              "evidence": "batch-02",
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            }
+          ]
         },
         "oclock": {
-          "state": "source-prepared",
+          "state": "candidate-accepted-awaiting-review",
           "candidate": "apps/oclock",
-          "acceptance": []
+          "acceptance": [
+            {
+              "evidence": "batch-02",
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            }
+          ]
         },
         "xcutsel": {
-          "state": "source-prepared",
+          "state": "candidate-accepted-awaiting-review",
           "candidate": "apps/xcutsel",
-          "acceptance": []
+          "acceptance": [
+            {
+              "evidence": "batch-02",
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            }
+          ]
         }
       }
     },

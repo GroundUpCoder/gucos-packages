@@ -39,5 +39,5 @@ for pid in "$p1" "$p2" "$p3" "$p4" "$p5"; do
 done
 sync
 echo MIGRATION-GUI-PASS`);
- await writeFile(resolve(run,'xclients-functional.log'),log,{flag:'wx'});
+ await writeFile(resolve(run,'xclients-functional'+(process.env.MIGRATION_ATTEMPT?'-'+process.env.MIGRATION_ATTEMPT:'')+'.log'),log,{flag:'wx'});
 }finally{await s.close();}

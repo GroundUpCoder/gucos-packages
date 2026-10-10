@@ -159,3 +159,23 @@ Also found pixman-config.h enables HAVE_PTHREADS and added its feature declarati
 before any graphics build. These source additions await independent review.
 Xedit corrected source build passed; all five X client artifacts exported. Fresh
 binary installation is now running before functional X acceptance.
+
+## Five missing X clients: private binary/function/reload acceptance
+
+Corrected source stage passed for all five: four previously built same-input
+clients retained; xedit freshly rebuilt with the omitted historical finite macro.
+Fresh profile installed the exact exported binaries and unchanged public X11
+bootstrap dependencies. Functional guest XTest controller mapped/rendered all
+five, saved xedit text, ran Lisp and regex checks, retrieved/load-tested the font
+selector's chosen pattern, transferred xcutsel selections in both directions,
+retained clipboard text through xclipboard, and observed oclock drawing update.
+First GUI attempt failed because the controller assumed child enumeration order
+matched visual button order. Position-sorted clicking passed; both logs retained.
+
+Core-font software-X11 profile only. Missing charset/fontset and menu12/xlogo11
+optional pixmap warnings were observed; do not claim full international font or
+icon coverage. No physical browser keyboard or OS clipboard integration test.
+Separate reload checked all declared package output hashes and parsed manifest
+contents. Exact source/binary/GUI/reload evidence and failures are retained under
+batch-02. Exported artifacts are package-local pending independent review and
+publication; no claim of live/public acceptance yet.
