@@ -482,3 +482,13 @@ original LUA_USE_DLOPEN) in separate lua55 paths. Baseline Lua is untouched.
 Ncurses fba7362 review cleared2928 outputs after removing historical generated
 NOTICE; actual upstream COPYING remains. SDL source/harness reviews and2048
 logic source are recorded in queue. All new execution claims remain pending.
+
+## Four CLI public-live acceptance and GTK correction
+
+Reservationa0025e84 passed public immutable install, retained consumers and reload
+for pigz/nyancat/SQLite/QuickJS on61a; batch09/10 public-live contains all12 output
+hashes and parsed manifests. Live additions advance37 to41 split package entries.
+GTK reservation02288ba7 compiled586 units and linked both libraries, then failed
+the version consumer because its include order selected minimal GIO headers.
+Failure retained in batch12; f1e6286 fixes public pkgconfig GIO-first resolution
+and tests that include order explicitly. It is not GTK acceptance.
