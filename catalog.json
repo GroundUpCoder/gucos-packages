@@ -210,6 +210,26 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/7310bdc04f7ba94a3fc1aa211b481bfae95f5f3c/apps/cairo/package.json",
       "sha256": "d1c30a4dd7b07af3606c7bd06b1abb8cb43b9e309ec1593b30e8003db4031501",
       "size": 4586
+    },
+    "gio-listmodel": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/049d94dfc255dd3f67d9cb5e38b4b3d379ad9ead/apps/gio-listmodel/package.json",
+      "sha256": "135b7ac7325be8023f2835b45b3c3d71ff6806f455d889fc925df738d19aabcb",
+      "size": 2836
+    },
+    "atk": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/049d94dfc255dd3f67d9cb5e38b4b3d379ad9ead/apps/atk/package.json",
+      "sha256": "47daf57a7909ee9afbcbbc57f2a6b696e9a957fbd7770993c5b4c13c2a8beadc",
+      "size": 5001
+    },
+    "fribidi": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/049d94dfc255dd3f67d9cb5e38b4b3d379ad9ead/apps/fribidi/package.json",
+      "sha256": "db129edb77175fa327f4a20e3b554a07c617b906bd903656cfb7d74ab4690e4a",
+      "size": 4755
+    },
+    "gio-core": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/049d94dfc255dd3f67d9cb5e38b4b3d379ad9ead/apps/gio-core/package.json",
+      "sha256": "b33bea10dca6196b5a6e58ec77dd3ebab5a40304f7e21c2367f61fc144c9f9f8",
+      "size": 16540
     }
   }
 }
