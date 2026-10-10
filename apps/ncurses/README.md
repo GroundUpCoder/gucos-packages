@@ -2,9 +2,9 @@
 
 Retains historical6.5 narrow/wide static SDK, tools and complete terminfo data.
 Both original configure flag sets remain; make runs serially. Build tools come
-from core. The original artifact hash verifies and supplies the 2928-path
+from core. The original artifact hash verifies and supplies the 2927-path
 payload inventory only, with five symlink aliases represented as regular files.
-Historical packaging metadata is excluded; upstream license is additionally
+Historical packaging metadata and generated NOTICE are excluded; upstream license is additionally
 installed under share/licenses. No historical artifact is republished.
 
 Retained tests exercise tic/infocmp roundtrip, tput256 colors, narrow windows,
