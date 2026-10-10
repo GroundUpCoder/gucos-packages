@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "name": "libiconv",
+  "version": "1.18-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/libiconv/source.tar",
+      "sha256": "9c8a4cf7d1a7a54ad5bc8f5bab72937126e3f6248af0baff44cf546d6692b6c2",
+      "size": 17141760
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/libiconv/build.sh",
+      "sha256": "943fb08b57cbcf315d26c50d66eaff8322cb5a4161162332c809ba40086bc983",
+      "size": 1309
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/libiconv/test.sh",
+      "sha256": "5995017fcbe36f8d8585774a0d3959c7aac4db0a205b91b5d53c05afc7d632b3",
+      "size": 269
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libiconv.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libiconv.so",
+      "mode": 420
+    },
+    {
+      "path": "include/iconv.h",
+      "mode": 420
+    },
+    {
+      "path": "include/localcharset.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/libiconv.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/libiconv/COPYING.LIB",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/libiconv/COPYING.LIB"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/libiconv/binaries/73f99fa5b48b3b50ca079a5f9cecfd00cc472b10843c565313babd9f20f3af8b.tar",
+    "sha256": "73f99fa5b48b3b50ca079a5f9cecfd00cc472b10843c565313babd9f20f3af8b",
+    "size": 2840064
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "name": "libffi",
+  "version": "3.4.8-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/libffi/source.tar",
+      "sha256": "b2c730b04e3a9016532c35a75e22799f0429082b6b57179db47d41daced17453",
+      "size": 61440
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/libffi/build.sh",
+      "sha256": "3a028d98d89c8fff752b8fe903efd01419f69a68615fd5fae2dec74162ca9082",
+      "size": 766
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/libffi/test.sh",
+      "sha256": "5dfedc65340fba0c9bf7474046ca0e6f72e4306729bd599dd70d7a5713e4626a",
+      "size": 266
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libffi.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libffi.so",
+      "mode": 420
+    },
+    {
+      "path": "include/ffi.h",
+      "mode": 420
+    },
+    {
+      "path": "include/ffitarget.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/libffi.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/libffi/LICENSE",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/libffi/LICENSE"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/libffi/binaries/236bf9695d01ae6c2d69b23f3b71089578f3d8e26fdacffadfab3218e54028a2.tar",
+    "sha256": "236bf9695d01ae6c2d69b23f3b71089578f3d8e26fdacffadfab3218e54028a2",
+    "size": 44032
+  }
+}
