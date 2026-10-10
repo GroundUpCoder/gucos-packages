@@ -2910,7 +2910,7 @@
     {
       "id": "pcre2grep",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/pcre2-cli/wasm-package.json",
       "historicalManifestSha256": "2509fd3657d9c78276adc8edddbfd5e72643c042375978c1b769430652624877",
       "historicalEvidence": [
@@ -2942,12 +2942,13 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/pcre2grep"
     },
     {
       "id": "pcre2test",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/pcre2-cli/wasm-package.json",
       "historicalManifestSha256": "2509fd3657d9c78276adc8edddbfd5e72643c042375978c1b769430652624877",
       "historicalEvidence": [
@@ -2979,7 +2980,8 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/pcre2test"
     },
     {
       "id": "perl",
