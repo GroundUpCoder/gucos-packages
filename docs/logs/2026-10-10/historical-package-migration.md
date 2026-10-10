@@ -457,3 +457,11 @@ from29 to37; they are split package entries, not canonical historical row counts
 Full GTK GUI remains open. Baseline19 artifacts and references remain unchanged.
 SDL text sourcee6df784 and xmore harnessfdcc11c passed independent gpt review;
 their execution gates remain pending.
+
+## Four CLI binary acceptances
+
+Reservation89da365e passed fresh binary installation, retained installed consumers
+and reload integrity for pigz, nyancat, SQLite and QuickJS on61a. Batch-09 and
+batch-10/binary-install retain exact reports, inputs and hashes. No public-live
+claim yet. Pango then GTK source builds now run in the existing clean private
+profile with accepted full HarfBuzz, bounded and serial.

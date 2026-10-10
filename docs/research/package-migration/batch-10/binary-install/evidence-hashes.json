@@ -1,0 +1,13 @@
+{
+  "candidate-manifests.json": "6ee0f8dc202412e1eb54a604843f59e686e640a69f8b67c814837a1ab620c849",
+  "config.json": "38512ea765f2a815f8d981441bb9abafa389c14a571fa716535ab7c2f2792787",
+  "consumers-sqlite3-qjs.json": "e5e01ab1a338d26f69196db6604389c448e55b82656e7a2dbd3d80289b10e266",
+  "consumers.log": "49b4260175a08889de25e82cb0a4bed8e1ea6fcddb1a463ebb1f88046ce246fc",
+  "install-sqlite3-qjs.json": "99b431404e0f54114f9b021d548cdbcb31a55d9353790b42b9fc4f8e8095f4ff",
+  "install.log": "17439efdf8a4c06425a2da7281f62154546eddfe6829bf9ea4831d617f72d150",
+  "observed-runtime.json": "fa7adf7b322e57fa8f0d8e0d3cd6d6c963dce6332e9bc9799ca85785ace57c99",
+  "qjs.sha256": "b4fe626a1bd42c0b418ea92bcd6bec513d753af39d123953b94f64eccfde5373",
+  "reload-sqlite3-qjs.json": "0a82fdccab0a34ec81e13764789ecee11a7dc2c1164acf8f6743e3c54032bc86",
+  "reload.log": "73b836f63442f1e3be6e89efca62450ca8c17a1324c4d3ca6a5786be575b331c",
+  "sqlite3.sha256": "1d19fb7d874e6caed57d1d30d63f792f129ebf31c4a309bb0431fa9195115f5a"
+}

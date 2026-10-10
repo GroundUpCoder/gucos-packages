@@ -1,0 +1,32 @@
+gucman: unknown source
+
+
+Error in 2nd command line argument: UNIQUE constraint failed: item.id
+SQLITE3-ACCEPTANCE-PASS
+
+
+QJS-CLOSURE-42
+QJS-UPSTREAM: test_closure
+QJS-UPSTREAM: test_language
+QJS-UPSTREAM: test_builtin
+QJS-UPSTREAM: test_loop
+QJS-UPSTREAM: test_bigint
+QJS-UPSTREAM: test_std
+QJS-UPSTREAM: test_worker
+Error: intentional rejection
+QJS-ACCEPTANCE-PASS
+
+/usr/local/bin/sqlite3: OK
+/usr/local/share/licenses/sqlite3/PUBLIC-DOMAIN: OK
+
+32ee8dbffd360584b00a9bb5e547b4edb2114c28a5aa18bd7a24ca76138cebe2  /home/user/migration-export.tar
+2200064
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/qjs: OK
+/usr/local/share/licenses/qjs/LICENSE: OK
+
+8c464ba1fcd5440557ad536905e6c941a21ad0e938c26bc6e183fb44e7fa0b08  /home/user/migration-export.tar
+6267904
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

@@ -1,0 +1,21 @@
+gucman: unknown source
+
+
+/usr/local/bin/pigz: OK
+/usr/local/bin/unpigz: OK
+/usr/local/share/licenses/pigz/README: OK
+
+612abb829e27e1a499ae952ff3298b6e7289a95a5bc0b49bdcaa03f1d6c869d0  /home/user/migration-export.tar
+169472
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/nyancat: OK
+/usr/local/share/doc/nyancat/README.md: OK
+/usr/local/share/doc/nyancat/UPSTREAM.json: OK
+/usr/local/share/man/man1/nyancat.1: OK
+/usr/local/share/licenses/nyancat/nyancat.c: OK
+
+0d11568cc8f8eb5b1c8ccad65cba1d29cb530dc5fc9b8ea6520e192748840792  /home/user/migration-export.tar
+164352
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
