@@ -117,7 +117,7 @@
     {
       "id": "atk",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/atk/wasm-package.json",
       "historicalManifestSha256": "1b87120bcd575d00ef4a81849898ea840a2eb679f2fd154dbdb76db7a1dae842",
       "historicalEvidence": [
@@ -148,17 +148,21 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source build/static+shared tests; fresh binary install, installed relinks, GIO file/watch/module/Unix-stream/local D-Bus/GApplication/session consumers; reload output+parsed-manifest integrity",
           "evidence": "batch-05"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed consumers, local-session operations and all244 combined output hashes/parsed manifests after reload",
+          "evidence": "batch-05/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and fresh public-live acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/atk",
       "sourceReview": {
         "commit": "010e993281e0f53b6934145d8dd675853ab5267a",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; guest acceptance and publication pending"
-      }
+      },
+      "publicationCommit": "528ceb04c4c318ef6ddd3c3e1df728f4d9647391"
     },
     {
       "id": "autoconf",
@@ -1013,7 +1017,7 @@
     {
       "id": "fribidi",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/fribidi/wasm-package.json",
       "historicalManifestSha256": "685f27a68f2db97fdce2300abd3d85e14a79e305886dba1ed70d9b255b0fc89e",
       "historicalEvidence": [
@@ -1042,17 +1046,21 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source build/static+shared tests; fresh binary install, installed relinks, GIO file/watch/module/Unix-stream/local D-Bus/GApplication/session consumers; reload output+parsed-manifest integrity",
           "evidence": "batch-05"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed consumers, local-session operations and all244 combined output hashes/parsed manifests after reload",
+          "evidence": "batch-05/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and fresh public-live acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/fribidi",
       "sourceReview": {
         "commit": "010e993281e0f53b6934145d8dd675853ab5267a",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; guest acceptance and publication pending"
-      }
+      },
+      "publicationCommit": "528ceb04c4c318ef6ddd3c3e1df728f4d9647391"
     },
     {
       "id": "galculator",
@@ -1155,9 +1163,20 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent source review and guest acceptance pending."
+        "Fresh current-catalog profile retry pending after retained private-to-public dependency metadata rejection; no validation bypass or core defect claim."
       ],
-      "candidate": "apps/gdk-pixbuf"
+      "candidate": "apps/gdk-pixbuf",
+      "sourceReview": {
+        "commit": "499ee09d8aa6e66662c7ec9cb177c3e814e4924b",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "Approved source/test preparation; fresh full guest acceptance remains required."
+      },
+      "attempts": [
+        {
+          "evidence": "batch-06/resumed-profile-rejected",
+          "result": "IJG JPEG and Turbo built/tested/installed; group export never ran after GdkPixbuf dependency validation rejected stale private Cairo profile metadata."
+        }
+      ]
     },
     {
       "id": "gdk3",
@@ -1236,7 +1255,7 @@
     {
       "id": "gio-core",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/gio-core/wasm-package.json",
       "historicalManifestSha256": "8d2e9ac1a5bd6841a80511e075f1737ceceb2df91ff34477097bcd9c91f71a1a",
       "historicalEvidence": [
@@ -1268,22 +1287,26 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source build/static+shared tests; fresh binary install, installed relinks, GIO file/watch/module/Unix-stream/local D-Bus/GApplication/session consumers; reload output+parsed-manifest integrity",
           "evidence": "batch-05"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed consumers, local-session operations and all244 combined output hashes/parsed manifests after reload",
+          "evidence": "batch-05/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and fresh public-live acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/gio-core",
       "sourceReview": {
         "commit": "010e993281e0f53b6934145d8dd675853ab5267a",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; guest acceptance and publication pending"
-      }
+      },
+      "publicationCommit": "528ceb04c4c318ef6ddd3c3e1df728f4d9647391"
     },
     {
       "id": "gio-listmodel",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/gio-listmodel/wasm-package.json",
       "historicalManifestSha256": "04331709f700f5b8e275494bb9067a1368812225fbf066c77f74993bac810067",
       "historicalEvidence": [
@@ -1314,17 +1337,21 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source build/static+shared tests; fresh binary install, installed relinks, GIO file/watch/module/Unix-stream/local D-Bus/GApplication/session consumers; reload output+parsed-manifest integrity",
           "evidence": "batch-05"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed consumers, local-session operations and all244 combined output hashes/parsed manifests after reload",
+          "evidence": "batch-05/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and fresh public-live acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/gio-listmodel",
       "sourceReview": {
         "commit": "010e993281e0f53b6934145d8dd675853ab5267a",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; guest acceptance and publication pending"
-      }
+      },
+      "publicationCommit": "528ceb04c4c318ef6ddd3c3e1df728f4d9647391"
     },
     {
       "id": "glib",
@@ -1614,7 +1641,12 @@
         "Independent source review and real guest schema compilation/lookup acceptance pending."
       ],
       "candidate": "apps/gtk3-schemas",
-      "role": "schema/data package; not separately compiled application"
+      "role": "schema/data package; not separately compiled application",
+      "sourceReview": {
+        "commit": "716362af2378d5b50772bbe0ff20ec5a89255cc6",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "Approved source/test preparation; fresh full guest acceptance remains required."
+      }
     },
     {
       "id": "gtk3-x11",
@@ -1660,7 +1692,12 @@
         "Co-installation with the later SDL GTK profile remains unverified."
       ],
       "design": "gtk-provider-design.md",
-      "candidate": "apps/gtk3-x11"
+      "candidate": "apps/gtk3-x11",
+      "sourceReview": {
+        "commit": "267a6ff10ef3c60107fe0b0dd44c212847732956",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "Approved source/test preparation; fresh full guest acceptance remains required."
+      }
     },
     {
       "id": "harfbuzz",
@@ -2234,9 +2271,20 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent source review and guest acceptance pending."
+        "Fresh current-catalog profile retry pending after retained private-to-public dependency metadata rejection; no validation bypass or core defect claim."
       ],
-      "candidate": "apps/libjpeg"
+      "candidate": "apps/libjpeg",
+      "sourceReview": {
+        "commit": "73aa5a98f0ffecdc643aa299427b516348efd1eb",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "Approved source/test preparation; fresh full guest acceptance remains required."
+      },
+      "attempts": [
+        {
+          "evidence": "batch-06/resumed-profile-rejected",
+          "result": "IJG JPEG and Turbo built/tested/installed; group export never ran after GdkPixbuf dependency validation rejected stale private Cairo profile metadata."
+        }
+      ]
     },
     {
       "id": "libjpeg-turbo",
@@ -2267,9 +2315,20 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent source review and guest acceptance pending."
+        "Fresh current-catalog profile retry pending after retained private-to-public dependency metadata rejection; no validation bypass or core defect claim."
       ],
-      "candidate": "apps/libjpeg-turbo"
+      "candidate": "apps/libjpeg-turbo",
+      "sourceReview": {
+        "commit": "73aa5a98f0ffecdc643aa299427b516348efd1eb",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "Approved source/test preparation; fresh full guest acceptance remains required."
+      },
+      "attempts": [
+        {
+          "evidence": "batch-06/resumed-profile-rejected",
+          "result": "IJG JPEG and Turbo built/tested/installed; group export never ran after GdkPixbuf dependency validation rejected stale private Cairo profile metadata."
+        }
+      ]
     },
     {
       "id": "libpng",

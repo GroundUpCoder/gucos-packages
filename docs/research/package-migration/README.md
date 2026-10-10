@@ -16,10 +16,12 @@ requires immutable inputs, dependency/provider closure, independent review and
 real guest source/build/install/run/relink/reload acceptance as applicable.
 Baseline19 catalog/artifact bytes and their original provenance are preserved.
 
-Six foundations are live-accepted: zlib, cJSON, pkgconf, bzip2, bzip2recover and
-Expat. Five missing X clients have independently reviewed publication and passed
-separate public-live installation, functional checks and reload verification. The queue records exact
-per-package acceptance and remaining blockers. Source-prepared graphics and GTK
-prerequisites are not accepted merely because their recipes exist. Continue the
-dependency graph toward GTK, Python, games and host-prepared C++ closures. Never
-substitute guest C compilation for historical host C++ preparation.
+Live-accepted publications now include six initial foundations, five missing
+X clients, six GLib foundations, six graphics foundations and four GIO/ATK/FriBidi
+packages. These27 package entries are not27 canonical historical names: the X
+clients complete components of a historical bundle and cJSON is an additional
+noncatalog workload. Per-item state and scope live in queue.json and batch evidence.
+
+The remaining queue is open. GTK, Python, games and host-prepared C++ closures
+still require real acceptance. Never substitute guest C compilation for
+historical host C++ preparation or treat source review as runtime acceptance.

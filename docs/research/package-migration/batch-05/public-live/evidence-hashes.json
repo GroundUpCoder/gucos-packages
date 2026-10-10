@@ -1,0 +1,20 @@
+{
+  "acceptance-job.log": "56ef17012115917b44545458b7f082ca268e5e12d0798cc66171874f97006464",
+  "atk.sha256": "61150c68b7c2ecc5d195c8dc7a78c34d9df40286b5491636513a6c9a6ecb2a31",
+  "candidate-manifests.json": "5555a72dae5be5f1904d7d8604a67005a86fc127815cac2afc6a9e5ae246e860",
+  "config.json": "457d59efcfedbe399af6608fe6b5d52914a848879f407a7012885ad433666efb",
+  "consumers-gio-listmodel-atk-fribidi-gio-core.json": "f963b291283b52e4f6bf5d04570c45e0b477aa085897a7545f2292adb304a0e7",
+  "consumers.log": "0f88b4a2ac3840c01bc5efd43f7fbe8c7ac1c78738828994028b44a44748bce4",
+  "dependencies-pkgconf.json": "4ec64a3a7ef6fee9ba95465b7d020a5fd601045b04d43db3056d35a091b3bebf",
+  "dependencies.log": "63a4cc03a8913f0151062183bf058782c56ab17c772c6066d9cd4f680b437cbb",
+  "fribidi.sha256": "2e23869e16116d8bdfc05399f636b1cf7cc138a8b7d49e3a056663c2d854ca5c",
+  "gio-console.log": "7bf61ce27a62a57cc56c0739899df215b83e5e658ae2a5f44f8a39e9c09b8192",
+  "gio-core.sha256": "debf4fcafcc3dc8803d73529468b4beb114a1cd4bfe7b7b5f6bc23a9c4b2e961",
+  "gio-functional.log": "f82ccc0c3bc10d6594480395f293bbb8773f0d625da160741f30d14d539f5bf6",
+  "gio-listmodel.sha256": "12bf63062f064339d68d410f9edff3322b69bf630821ddf349a926c5d5c6333b",
+  "install-gio-listmodel-atk-fribidi-gio-core.json": "1593e12b25a738f67389076f7b8629a21a9e8bd9fd2a7ea46a173ceca53e848a",
+  "install.log": "7bc2dd66d3ab4be55f8e91ce6c2155ffe5ddf5896f4f2564e84b404ff8ed8fdc",
+  "observed-runtime.json": "87c8bf902b247a380e61c6337c538c6428620e79d6533803cdbc6aeea2a0fa81",
+  "reload-gio-listmodel-atk-fribidi-gio-core.json": "41fc930ba1af45aa61d052a23ffc6d21cf732208dccdbd9f3e95b5439868fd10",
+  "reload.log": "bae829b206ec5fa1638e4388718e61e27dcc894edabdc1f6786cd6b10b231288"
+}

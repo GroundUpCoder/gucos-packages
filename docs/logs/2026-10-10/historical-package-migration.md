@@ -312,3 +312,12 @@ Ed suite/edit/red wrapper checks and jq JSON query plus named-capture regex.
 Fresh private binary install, installed consumers and reload exact payload/parsed
 manifest integrity passed. Evidence under batch-07 and exports under apps.
 Source415b7ca independently reviewed; artifacts/publication/public-live pending.
+
+## GIO/ATK/FriBidi publicly accepted
+
+Pushed approved528ceb04 after reviewer separately cleared the intervening Ed/jq
+source commit415b7ca. Fresh public profile installed all four immutable binaries,
+passed installed static/shared and extended local-session consumers, then verified
+all244 combined outputs/parsed manifests after reload on61a. Exact public evidence
+under batch-05/public-live. This brings live-accepted additions to27 package
+entries, not27 canonical historical names. Remaining queue is not complete.
