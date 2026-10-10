@@ -1,0 +1,106 @@
+{
+  "action": "consumers",
+  "names": [
+    "gio-listmodel",
+    "atk",
+    "fribidi",
+    "gio-core"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "1107356e2cdfbd9f897e75147479cd6d6ae01009",
+  "startedAt": "2026-10-10T10:11:36.145Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "gio-listmodel",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "8a987e492c811c0c5dab036b282871846f598b7fd889c0663e321a339aa1031f",
+          "size": 348160
+        },
+        {
+          "path": "build.sh",
+          "sha256": "9149f1f6cd65b0aacde23a43cf476cdf1dced7fdec3eda9c1d29a6e0a36d35a8",
+          "size": 983
+        },
+        {
+          "path": "test.sh",
+          "sha256": "974504df9821b0cb5ac2d2291f285766c0b92e61cae5d4854772448ffb43d14c",
+          "size": 470
+        },
+        {
+          "path": "COPYING",
+          "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb",
+          "size": 25967
+        }
+      ]
+    },
+    {
+      "name": "atk",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "dca637f6f7394d36b3277a0e8b98ca8aed138e776de8c1765bcfbb6d66218020",
+          "size": 819200
+        },
+        {
+          "path": "build.sh",
+          "sha256": "6e82bf0bc39013aabf548b8d60ea87d338e54975a8ef4a54bc744c3178727813",
+          "size": 2104
+        },
+        {
+          "path": "test.sh",
+          "sha256": "04a20a432c7671f6d407ba50e9971311dbc3f90e043661919a91659d52c3d7f8",
+          "size": 450
+        }
+      ]
+    },
+    {
+      "name": "fribidi",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "1dd848555676077e499f1419cbc68f39f683d3a6f8f1746a4646dce7af6fde03",
+          "size": 15953920
+        },
+        {
+          "path": "build.sh",
+          "sha256": "52d7550e284e41ab31ab6dc6ee3c04b765161acc9788f3e11946f0d1f7ccdd8a",
+          "size": 1238
+        },
+        {
+          "path": "test.sh",
+          "sha256": "273f0ca2af041424cdd2222786501ff8f88968ae8d8a172d6432a6de58aeac53",
+          "size": 396
+        }
+      ]
+    },
+    {
+      "name": "gio-core",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "ff22279230a393630f5ff6171457addeb017e7af53a08644ed7f7a64536eb4b3",
+          "size": 15308800
+        },
+        {
+          "path": "build.sh",
+          "sha256": "fb1a6f9844235e6c4d0d392b94cf2de97ae46944f87dcbce56777412fbb9bbd9",
+          "size": 10078
+        },
+        {
+          "path": "test.sh",
+          "sha256": "6b8b1e4355ee457899feae2851287ac786f1803eb45aa7ff118382750dc66346",
+          "size": 558
+        },
+        {
+          "path": "COPYING",
+          "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb",
+          "size": 25967
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-10T10:11:45.370Z"
+}

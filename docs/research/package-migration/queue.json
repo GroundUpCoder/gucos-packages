@@ -117,7 +117,7 @@
     {
       "id": "atk",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/atk/wasm-package.json",
       "historicalManifestSha256": "1b87120bcd575d00ef4a81849898ea840a2eb679f2fd154dbdb76db7a1dae842",
       "historicalEvidence": [
@@ -146,12 +146,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build/static+shared retained consumers/install/export; GIO extended files, Unix streams, file watch, module load, local D-Bus and remote activation passed",
-          "evidence": "test-results/migration/gtk-foundations-v4-61a87f88"
+          "scope": "source build/static+shared tests; fresh binary install, installed relinks, GIO file/watch/module/Unix-stream/local D-Bus/GApplication/session consumers; reload output+parsed-manifest integrity",
+          "evidence": "batch-05"
         }
       ],
       "blockers": [
-        "Fresh binary acceptance, independent publication review and public-live acceptance pending."
+        "Independent artifact/publication review and fresh public-live acceptance pending."
       ],
       "candidate": "apps/atk",
       "sourceReview": {
@@ -999,7 +999,7 @@
     {
       "id": "fribidi",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/fribidi/wasm-package.json",
       "historicalManifestSha256": "685f27a68f2db97fdce2300abd3d85e14a79e305886dba1ed70d9b255b0fc89e",
       "historicalEvidence": [
@@ -1026,12 +1026,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build/static+shared retained consumers/install/export; GIO extended files, Unix streams, file watch, module load, local D-Bus and remote activation passed",
-          "evidence": "test-results/migration/gtk-foundations-v4-61a87f88"
+          "scope": "source build/static+shared tests; fresh binary install, installed relinks, GIO file/watch/module/Unix-stream/local D-Bus/GApplication/session consumers; reload output+parsed-manifest integrity",
+          "evidence": "batch-05"
         }
       ],
       "blockers": [
-        "Fresh binary acceptance, independent publication review and public-live acceptance pending."
+        "Independent artifact/publication review and fresh public-live acceptance pending."
       ],
       "candidate": "apps/fribidi",
       "sourceReview": {
@@ -1222,7 +1222,7 @@
     {
       "id": "gio-core",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/gio-core/wasm-package.json",
       "historicalManifestSha256": "8d2e9ac1a5bd6841a80511e075f1737ceceb2df91ff34477097bcd9c91f71a1a",
       "historicalEvidence": [
@@ -1252,12 +1252,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build/static+shared retained consumers/install/export; GIO extended files, Unix streams, file watch, module load, local D-Bus and remote activation passed",
-          "evidence": "test-results/migration/gtk-foundations-v4-61a87f88"
+          "scope": "source build/static+shared tests; fresh binary install, installed relinks, GIO file/watch/module/Unix-stream/local D-Bus/GApplication/session consumers; reload output+parsed-manifest integrity",
+          "evidence": "batch-05"
         }
       ],
       "blockers": [
-        "Fresh binary acceptance, independent publication review and public-live acceptance pending."
+        "Independent artifact/publication review and fresh public-live acceptance pending."
       ],
       "candidate": "apps/gio-core",
       "sourceReview": {
@@ -1269,7 +1269,7 @@
     {
       "id": "gio-listmodel",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/gio-listmodel/wasm-package.json",
       "historicalManifestSha256": "04331709f700f5b8e275494bb9067a1368812225fbf066c77f74993bac810067",
       "historicalEvidence": [
@@ -1298,12 +1298,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build/static+shared retained consumers/install/export; GIO extended files, Unix streams, file watch, module load, local D-Bus and remote activation passed",
-          "evidence": "test-results/migration/gtk-foundations-v4-61a87f88"
+          "scope": "source build/static+shared tests; fresh binary install, installed relinks, GIO file/watch/module/Unix-stream/local D-Bus/GApplication/session consumers; reload output+parsed-manifest integrity",
+          "evidence": "batch-05"
         }
       ],
       "blockers": [
-        "Fresh binary acceptance, independent publication review and public-live acceptance pending."
+        "Independent artifact/publication review and fresh public-live acceptance pending."
       ],
       "candidate": "apps/gio-listmodel",
       "sourceReview": {

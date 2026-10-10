@@ -283,3 +283,13 @@ Extended installed GIO checks also passed files/cancellation, Unix streams,
 file-watch delivery, GModule load, local D-Bus naming, remote GApplication
 activation and guc-session. Fresh binary acceptance underway; no general
 networking/TLS or Unix-FD-passing claim.
+
+## GIO/ATK/FriBidi candidate acceptance
+
+Four exported guest binaries installed in a fresh private profile with published
+GLib dependencies. Installed static/shared port consumers, GIO socket/file-watch/
+module/retained file/local D-Bus/remote activation/session tests passed. Reload
+checked all244 combined outputs and parsed manifests. Exact source and binary
+evidence retained under batch-05, exported archives under apps. Independent
+publication review and public-live acceptance pending. General network/TLS and
+Unix-FD passing are not claimed.

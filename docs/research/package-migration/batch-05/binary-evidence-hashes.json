@@ -1,0 +1,21 @@
+{
+  "binary-install/acceptance-job.log": "e146c3e7cfef52eb1625cfb49a2cc724fbae2ad9df06933577cc803d836dd4d6",
+  "binary-install/atk.sha256": "61150c68b7c2ecc5d195c8dc7a78c34d9df40286b5491636513a6c9a6ecb2a31",
+  "binary-install/candidate-manifests.json": "ba6a880e6682982761fdcb621b3dd660a3ee458b8193f8b60e4f60b3ea1e0fc4",
+  "binary-install/config.json": "17199761e2ede301132f6650f88815990fcdc7d1da94ae5e8176940a60b68b40",
+  "binary-install/consumers-gio-listmodel-atk-fribidi-gio-core.json": "c6865107b7a03b8b2396ccb283bdabe409a953d5c5a3f6f2518c892b64fb4828",
+  "binary-install/consumers.log": "0c29f98b878a057a4624c28d92ba967530af97fae9731a399601fa1d042a9425",
+  "binary-install/dependencies-pkgconf.json": "3b0969e88aecb70fd786a13d832ac8fff6e3c44ae149f5131ecc7ae6ffb423d1",
+  "binary-install/dependencies.log": "01fea7d4b79c30d316d820d025b9cdfedcba8daa9b58ba0d9c048be6ff79b88c",
+  "binary-install/dist-files.json": "2a8d902ea377d6a60a4459fee27cc9e23327f0464ff21dd6a0e38f3f5e7ca8f1",
+  "binary-install/fribidi.sha256": "2e23869e16116d8bdfc05399f636b1cf7cc138a8b7d49e3a056663c2d854ca5c",
+  "binary-install/gio-console.log": "eaca732c2b074ecc6cb0ffde65cc5fc92d8006ebff06f2b0bd8644a6e950aa97",
+  "binary-install/gio-core.sha256": "debf4fcafcc3dc8803d73529468b4beb114a1cd4bfe7b7b5f6bc23a9c4b2e961",
+  "binary-install/gio-functional.log": "ee2f0dc0c6862575de052fc3a0111439522d13500db21493f4f9eb6b7c0e49a3",
+  "binary-install/gio-listmodel.sha256": "12bf63062f064339d68d410f9edff3322b69bf630821ddf349a926c5d5c6333b",
+  "binary-install/install-gio-listmodel-atk-fribidi-gio-core.json": "1f248405ecd0c94698f3fd67bd5138019d95333bfdf5a284c2de2aa8948a9bd4",
+  "binary-install/install.log": "e802bf9171348f2f3b64c026d27652088e7eadb72b332fe556d2e728da18dbef",
+  "binary-install/observed-runtime.json": "67acea2e3ae218cd82e74108b64cd9d06bd37cadb53f63966f22794958cc7beb",
+  "binary-install/reload-gio-listmodel-atk-fribidi-gio-core.json": "f3b9da10b1aa44eefc7cfa245dcdbdc0bd7ac4fd554e7e048399ccb47667a9f5",
+  "binary-install/reload.log": "16b7d5d6d7ae7b64d5ff5c19b2e7bfe7abed3cb99e95dc715b67884b9c2134e3"
+}

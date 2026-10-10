@@ -1,0 +1,384 @@
+gucman: unknown source
+
+{
+  tail: ' 5/5 files\n' +
+    'gucman: Saving transaction: pcre2\n' +
+    'gucman: Verifying staged files: pcre2\n' +
+    'gucman: Activating: pcre2\n' +
+    'Installed migration:pcre2 10.46-1\n' +
+    'gucman: Package 4/7: glib (3 remaining after this)\n' +
+    'gucman: Checking cached object: glib source: source.tar\n'
+}
+{
+  tail: ' 1680238 bytes\n' +
+    'GLIB-PASS\n' +
+    '4 functions, 17842 bytes\n' +
+    'GLIB-PASS\n' +
+    'gucman: Installing glib: 0/140 files\n' +
+    'gucman: Installing glib: 25/140 files\n' +
+    'gucman: Installing glib: 50/140 files\n' +
+    'gucman: Installing glib: 75/140 files\n' +
+    'gucman: Installing glib: 100/140 files\n'
+}
+gucman: build migration:gio-listmodel: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 12782 bytes; transfer finished
+gucman: Resolving: migration:gio-listmodel
+gucman: Downloading manifest for migration:gio-listmodel (2091 bytes)
+  Connecting; waiting for response…
+  Downloaded 2091 / 2091 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Downloading manifest for migration:gobject (4578 bytes)
+  Connecting; waiting for response…
+  Downloaded 4578 / 4578 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Downloading manifest for migration:glib (13487 bytes)
+  Connecting; waiting for response…
+  Downloaded 13487 / 13487 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Downloading manifest for migration:libiconv (2139 bytes)
+  Connecting; waiting for response…
+  Downloaded 2139 / 2139 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Downloading manifest for migration:libintl (2266 bytes)
+  Connecting; waiting for response…
+  Downloaded 2266 / 2266 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Downloading manifest for migration:pcre2 (2051 bytes)
+  Connecting; waiting for response…
+  Downloaded 2051 / 2051 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libffi
+gucman: Downloading manifest for migration:libffi (2101 bytes)
+  Connecting; waiting for response…
+  Downloaded 2101 / 2101 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Plan: 7 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 7 packages
+gucman: Package 1/7: libiconv (6 remaining after this)
+gucman: Checking cached object: libiconv source: source.tar
+gucman: Checking cached object: libiconv source: build.sh
+gucman: Checking cached object: libiconv source: test.sh
+Building migration:libiconv; running trusted recipe with access to your guest files
+491 functions, 1358297 bytes
+492 functions, 1360868 bytes
+ICONV-PASS
+2 functions, 10515 bytes
+ICONV-PASS
+gucman: Installing libiconv: 0/6 files
+gucman: Installing libiconv: 6/6 files
+gucman: Preparing checksums: libiconv
+gucman: Checksummed libiconv: 6/6 files
+gucman: Saving transaction: libiconv
+gucman: Verifying staged files: libiconv
+gucman: Activating: libiconv
+Installed migration:libiconv 1.18-1
+gucman: Package 2/7: libintl (5 remaining after this)
+gucman: Checking cached object: libintl source: source.tar
+gucman: Checking cached object: libintl source: build.sh
+gucman: Checking cached object: libintl source: test.sh
+Building migration:libintl; running trusted recipe with access to your guest files
+70 functions, 84897 bytes
+58 functions, 79287 bytes
+GETTEXT-PASS
+2 functions, 10903 bytes
+GETTEXT-PASS
+gucman: Installing libintl: 0/6 files
+gucman: Installing libintl: 6/6 files
+gucman: Preparing checksums: libintl
+gucman: Checksummed libintl: 6/6 files
+gucman: Saving transaction: libintl
+gucman: Verifying staged files: libintl
+gucman: Activating: libintl
+Installed migration:libintl 0.23.1-1
+gucman: Package 3/7: pcre2 (4 remaining after this)
+gucman: Checking cached object: pcre2 source: source.tar
+gucman: Checking cached object: pcre2 source: build.sh
+gucman: Checking cached object: pcre2 source: test.sh
+Building migration:pcre2; running trusted recipe with access to your guest files
+181 functions, 737864 bytes
+142 functions, 630878 bytes
+2 functions, 8088 bytes
+gucman: Installing pcre2: 0/5 files
+gucman: Installing pcre2: 5/5 files
+gucman: Preparing checksums: pcre2
+gucman: Checksummed pcre2: 5/5 files
+gucman: Saving transaction: pcre2
+gucman: Verifying staged files: pcre2
+gucman: Activating: pcre2
+Installed migration:pcre2 10.46-1
+gucman: Package 4/7: glib (3 remaining after this)
+gucman: Checking cached object: glib source: source.tar
+gucman: Checking cached object: glib source: build.sh
+gucman: Checking cached object: glib source: test.sh
+Building migration:glib; running trusted recipe with access to your guest files
+2963 functions, 2625246 bytes
+1923 functions, 1680238 bytes
+GLIB-PASS
+4 functions, 17842 bytes
+GLIB-PASS
+gucman: Installing glib: 0/140 files
+gucman: Installing glib: 25/140 files
+gucman: Installing glib: 50/140 files
+gucman: Installing glib: 75/140 files
+gucman: Installing glib: 100/140 files
+gucman: Installing glib: 125/140 files
+gucman: Installing glib: 140/140 files
+gucman: Preparing checksums: glib
+gucman: Checksummed glib: 25/140 files
+gucman: Checksummed glib: 50/140 files
+gucman: Checksummed glib: 75/140 files
+gucman: Checksummed glib: 100/140 files
+gucman: Checksummed glib: 125/140 files
+gucman: Checksummed glib: 140/140 files
+gucman: Saving transaction: glib
+gucman: Verifying staged files: glib
+gucman: Activating: glib
+Installed migration:glib 2.84.4-1
+gucman: Package 5/7: libffi (2 remaining after this)
+gucman: Checking cached object: libffi source: source.tar
+gucman: Checking cached object: libffi source: build.sh
+gucman: Checking cached object: libffi source: test.sh
+Building migration:libffi; running trusted recipe with access to your guest files
+10 functions, 11562 bytes
+21 functions, 29097 bytes
+FFI-PASS
+11 functions, 23060 bytes
+FFI-PASS
+gucman: Installing libffi: 0/6 files
+gucman: Installing libffi: 6/6 files
+gucman: Preparing checksums: libffi
+gucman: Checksummed libffi: 6/6 files
+gucman: Saving transaction: libffi
+gucman: Verifying staged files: libffi
+gucman: Activating: libffi
+Installed migration:libffi 3.4.8-1
+gucman: Package 6/7: gobject (1 remaining after this)
+gucman: Checking cached object: gobject source: source.tar
+gucman: Checking cached object: gobject source: build.sh
+gucman: Checking cached object: gobject source: test.sh
+Building migration:gobject; running trusted recipe with access to your guest files
+1106 functions, 970435 bytes
+981 functions, 791781 bytes
+3 functions, 10124 bytes
+983 functions, 794723 bytes
+GOBJECT-WIDE-PASS
+5 functions, 15024 bytes
+GOBJECT-WIDE-PASS
+gucman: Installing gobject: 0/32 files
+gucman: Installing gobject: 25/32 files
+gucman: Installing gobject: 32/32 files
+gucman: Preparing checksums: gobject
+gucman: Checksummed gobject: 25/32 files
+gucman: Checksummed gobject: 32/32 files
+gucman: Saving transaction: gobject
+gucman: Verifying staged files: gobject
+gucman: Activating: gobject
+Installed migration:gobject 2.84.4-1
+gucman: Package 7/7: gio-listmodel (0 remaining after this)
+gucman: Downloading gio-listmodel source: source.tar (348160 bytes)
+  Connecting; waiting for response…
+  Downloaded 348160 / 348160 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: source.tar
+gucman: Checking cached object: gio-listmodel source: source.tar
+gucman: Downloading gio-listmodel source: build.sh (983 bytes)
+  Connecting; waiting for response…
+  Downloaded 983 / 983 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: build.sh
+gucman: Checking cached object: gio-listmodel source: build.sh
+gucman: Downloading gio-listmodel source: test.sh (470 bytes)
+  Connecting; waiting for response…
+  Downloaded 470 / 470 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: test.sh
+gucman: Checking cached object: gio-listmodel source: test.sh
+gucman: Downloading gio-listmodel source: COPYING (25967 bytes)
+  Connecting; waiting for response…
+  Downloaded 25967 / 25967 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: COPYING
+gucman: Checking cached object: gio-listmodel source: COPYING
+Building migration:gio-listmodel; running trusted recipe with access to your guest files
+65 functions, 75703 bytes
+79 functions, 83161 bytes
+14 functions, 18208 bytes
+gucman: Installing gio-listmodel: 0/9 files
+gucman: Installing gio-listmodel: 9/9 files
+gucman: Preparing checksums: gio-listmodel
+gucman: Checksummed gio-listmodel: 9/9 files
+gucman: Saving transaction: gio-listmodel
+gucman: Verifying staged files: gio-listmodel
+gucman: Activating: gio-listmodel
+Installed migration:gio-listmodel 2.84.4-1
+
+{
+  tail: '346 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for migration:atk\n' +
+    'gucman: Checking cached object: manifest for migration:atk\n' +
+    'gucman: Resolving: migration:gobject\n' +
+    'gucman: Checking cached object: manifest for migration:gobject\n'
+}
+gucman: build migration:atk: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 12782 bytes; transfer finished
+gucman: Resolving: migration:atk
+gucman: Downloading manifest for migration:atk (4346 bytes)
+  Connecting; waiting for response…
+  Downloaded 4346 / 4346 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:atk
+gucman: Checking cached object: manifest for migration:atk
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Plan: 7 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 7 packages
+gucman: Package 1/7: libiconv (6 remaining after this)
+Already installed: libiconv
+gucman: Package 2/7: libintl (5 remaining after this)
+Already installed: libintl
+gucman: Package 3/7: pcre2 (4 remaining after this)
+Already installed: pcre2
+gucman: Package 4/7: glib (3 remaining after this)
+Already installed: glib
+gucman: Package 5/7: libffi (2 remaining after this)
+Already installed: libffi
+gucman: Package 6/7: gobject (1 remaining after this)
+Already installed: gobject
+gucman: Package 7/7: atk (0 remaining after this)
+gucman: Downloading atk source: source.tar (819200 bytes)
+  Connecting; waiting for response…
+  Downloaded 819200 / 819200 bytes (100%); transfer finished
+gucman: Verifying download: atk source: source.tar
+gucman: Checking cached object: atk source: source.tar
+gucman: Downloading atk source: build.sh (2104 bytes)
+  Connecting; waiting for response…
+  Downloaded 2104 / 2104 bytes (100%); transfer finished
+gucman: Verifying download: atk source: build.sh
+gucman: Checking cached object: atk source: build.sh
+gucman: Downloading atk source: test.sh (450 bytes)
+  Connecting; waiting for response…
+  Downloaded 450 / 450 bytes (100%); transfer finished
+gucman: Verifying download: atk source: test.sh
+gucman: Checking cached object: atk source: test.sh
+Building migration:atk; running trusted recipe with access to your guest files
+393 functions, 380558 bytes
+212 functions, 232354 bytes
+2 functions, 8819 bytes
+gucman: Installing atk: 0/39 files
+gucman: Installing atk: 25/39 files
+gucman: Installing atk: 39/39 files
+gucman: Preparing checksums: atk
+gucman: Checksummed atk: 25/39 files
+gucman: Checksummed atk: 39/39 files
+gucman: Saving transaction: atk
+gucman: Verifying staged files: atk
+gucman: Activating: atk
+Installed migration:atk 2.38.0-1
+
+{
+  tail: 'ribidi source: source.tar (15953920 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 15.21 / 15.21 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: fribidi source: source.tar\n' +
+    'gucman: Checking cached object: fribidi source: source.tar\n'
+}
+gucman: build migration:fribidi: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 12782 bytes; transfer finished
+gucman: Resolving: migration:fribidi
+gucman: Downloading manifest for migration:fribidi (4097 bytes)
+  Connecting; waiting for response…
+  Downloaded 4097 / 4097 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: fribidi (0 remaining after this)
+gucman: Downloading fribidi source: source.tar (15953920 bytes)
+  Connecting; waiting for response…
+  Downloaded 15.21 / 15.21 MiB (100%); transfer finished
+gucman: Verifying download: fribidi source: source.tar
+gucman: Checking cached object: fribidi source: source.tar
+gucman: Downloading fribidi source: build.sh (1238 bytes)
+  Connecting; waiting for response…
+  Downloaded 1238 / 1238 bytes (100%); transfer finished
+gucman: Verifying download: fribidi source: build.sh
+gucman: Checking cached object: fribidi source: build.sh
+gucman: Downloading fribidi source: test.sh (396 bytes)
+  Connecting; waiting for response…
+  Downloaded 396 / 396 bytes (100%); transfer finished
+gucman: Verifying download: fribidi source: test.sh
+gucman: Checking cached object: fribidi source: test.sh
+Building migration:fribidi; running trusted recipe with access to your guest files
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+72 functions, 124691 bytes
+43 functions, 98289 bytes
+2 functions, 5643 bytes
+gucman: Installing fribidi: 0/37 files
+gucman: Installing fribidi: 25/37 files
+gucman: Installing fribidi: 37/37 files
+gucman: Preparing checksums: fribidi
+gucman: Checksummed fribidi: 25/37 files
+gucman: Checksummed fribidi: 37/37 files
+gucman: Saving transaction: fribidi
+gucman: Verifying staged files: fribidi
+gucman: Activating: fribidi
+Installed migration:fribidi 1.0.16-1
+
+c1eb029e65a4e762eef43628876f4380162951645e09a8e5e9a1fde4eb1ec426  /home/user/migration-export.tar
+333312
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+ae54c1fa65c5a1ae43fc3ed4979752108790edcb5590cc32f404751dbeb76b86  /home/user/migration-export.tar
+1038848
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+cb182d8de0b75351337f38711d93b2593da0ad46a787dca43458339fb81faaf2  /home/user/migration-export.tar
+420352
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
