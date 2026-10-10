@@ -639,6 +639,9 @@ cc -I"$stage/work/gtk3" -I"$stage/work/gtk3/gtk" -I"$stage/work/gtk3/gdk" -I/usr
 cp $PWD/source/gtk3-x11-run $PWD/source/gtk3-x11-demo "$stage/bin/"
 chmod 755 "$stage/bin/gtk3-x11-run" "$stage/bin/gtk3-x11-demo"
 rm -rf "$stage/objects" "$stage/work"
+# Resolve full public GIO headers before minimal GLib/GIO-listmodel headers.
+sed 's/^Requires: gdk-3.0 atk$/Requires: gio-core gdk-3.0 atk/' source/pkgconfig/gtk+-3.0.pc > "$stage/lib/gtk3-x11/pkgconfig/gtk+-3.0.pc"
+sed 's/^Requires: pangocairo gdk-pixbuf-2.0 cairo-gobject gio-core /Requires: gio-core pangocairo gdk-pixbuf-2.0 cairo-gobject /' source/pkgconfig/gdk-3.0.pc > "$stage/lib/gtk3-x11/pkgconfig/gdk-3.0.pc"
 mkdir -p "$DESTDIR"
 cp -R "$stage/." "$DESTDIR/"
 mkdir -p "$DESTDIR/share/licenses/gtk3-x11"

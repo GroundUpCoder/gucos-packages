@@ -41,6 +41,9 @@ mkdir -p "$stage/work" "$stage/objects" "$stage/lib/gtk3-x11/pkgconfig" "$stage/
 mv gtk-source/source "$stage/work/gtk3"
 cp -R source/overlays/gtk3/. "$stage/work/gtk3/"
 '''+ '\n'.join(adapted)+'''
+# Resolve full public GIO headers before minimal GLib/GIO-listmodel headers.
+sed 's/^Requires: gdk-3.0 atk$/Requires: gio-core gdk-3.0 atk/' source/pkgconfig/gtk+-3.0.pc > "$stage/lib/gtk3-x11/pkgconfig/gtk+-3.0.pc"
+sed 's/^Requires: pangocairo gdk-pixbuf-2.0 cairo-gobject gio-core /Requires: gio-core pangocairo gdk-pixbuf-2.0 cairo-gobject /' source/pkgconfig/gdk-3.0.pc > "$stage/lib/gtk3-x11/pkgconfig/gdk-3.0.pc"
 mkdir -p "$DESTDIR"
 cp -R "$stage/." "$DESTDIR/"
 mkdir -p "$DESTDIR/share/licenses/gtk3-x11"
@@ -57,7 +60,10 @@ cat > consumer.c <<'C'
 #include <stdio.h>
 int main(void) { if(gtk_get_major_version()!=3 || gtk_get_minor_version()!=24 || gtk_get_micro_version()!=43) return 1; puts("GTK-X11-LINK-VERSION-PASS"); return 0; }
 C
-cc consumer.c -I"$DESTDIR/include/gtk3-x11" -I/usr/local/include/glib-2.0 -I/usr/local/include/gio-core-2.0 -I/usr/local/include/pango-1.0 -I/usr/local/include/harfbuzz -I/usr/local/include/cairo -I/usr/local/include/gdk-pixbuf-2.0 -I/usr/local/include/atk-1.0 -I/usr/local/include/freetype2 -I/usr/local/include -L"$DESTDIR/lib/gtk3-x11" -lgtk-3 -lgdk-3 -o consumer
+export PKG_CONFIG_PATH="$DESTDIR/lib/gtk3-x11/pkgconfig:/usr/local/lib/pkgconfig"
+cflags=$(pkg-config --cflags gtk+-3.0)
+case "$cflags" in *-I/usr/local/include/gio-core-2.0*-I/usr/local/include/glib-2.0*) ;; *) echo "Full GIO must precede GLib headers: $cflags" >&2; exit 1;; esac
+cc consumer.c -I"$DESTDIR/include/gtk3-x11" $cflags -L"$DESTDIR/lib/gtk3-x11" $(pkg-config --libs gtk+-3.0) -o consumer
 LD_LIBRARY_PATH="$DESTDIR/lib/gtk3-x11:/usr/local/lib" ./consumer
 ''')
 # Original header copies cover these exact directories after GTK overlays.
@@ -73,7 +79,7 @@ header_dirs={'gdk','gdk/deprecated','gdk/x11','gtk','gtk/deprecated','gtk/a11y'}
 outputs=['include/gtk3-x11/'+n for n in headers if n.endswith('.h') and str(Path(n).parent) in header_dirs]
 outputs+=['lib/gtk3-x11/libgtk-3.so','lib/gtk3-x11/libgdk-3.so','lib/gtk-3-x11/gtk.gresource','lib/gtk3-x11/pkgconfig/gtk+-3.0.pc','lib/gtk3-x11/pkgconfig/gdk-3.0.pc','bin/gtk3-x11-demo','bin/gtk3-x11-run','libexec/gtk3-x11-demo']+['share/licenses/gtk3-x11/'+n for n in licenses]
 write('outputs.json',[dict(path=n,mode=493 if n.startswith(('bin/','libexec/')) else 420) for n in sorted(outputs)])
-deps=['x11-shared','cairo','pango','gdk-pixbuf','cairo-gobject','atk','gtk3-schemas','harfbuzz','gio-core','gio-listmodel','gobject','glib','fribidi','fontconfig','libintl']
+deps=['pkgconf','x11-shared','cairo','pango','gdk-pixbuf','cairo-gobject','atk','gtk3-schemas','harfbuzz','gio-core','gio-listmodel','gobject','glib','fribidi','fontconfig','libintl']
 versions={n:json.loads((ROOT/'apps'/n/'recipe.json').read_text())['version'] for n in deps}
 write('recipe.json',dict(name='gtk3-x11',version='3.24.43-1',dependencies=deps,dependencyRequirements={n:{'version':versions[n]} for n in deps},platform=dict(target='wasm32-wasm-posix',minVersion='1.0.0',runtimeAbi=5,features=['posix-core','pthreads','unix-stream']),inputs=['source.tar','gtk-source.tar','gio-source.tar',*licenses,'build.sh','test.sh']))
 write('provenance.json',dict(repository='wasm-posix-old (preserved local historical repository)',commit=REV,path='apps/gtk3-x11/source',archiveSha256=sha(out/'source.tar'),additionalArchives=[dict(file=f,historicalPath=p,archiveSha256=sha(out/f)) for f,p in [('gtk-source.tar','vendor/gtk3'),('gio-source.tar','vendor/gio-core')]],overlays=[dict(file=n,historicalPath=p,sha256=sha(out/n)) for n,p in licenses.items()],status='adapted source candidate; no new GTK guest acceptance'))

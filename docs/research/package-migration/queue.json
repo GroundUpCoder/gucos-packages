@@ -1736,7 +1736,7 @@
     {
       "id": "gtk3-x11",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-corrected-review-pending",
       "historicalManifest": "apps/gtk3-x11/wasm-package.json",
       "historicalManifestSha256": "b5b5bafc14610799eee068316ef0e66a0ce3f8ccf914baaf0aab6816cdd68953",
       "historicalEvidence": [
@@ -1773,8 +1773,7 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Provider cleanup implemented in source only; independent review, real guest full closure and GUI acceptance pending.",
-        "Co-installation with the later SDL GTK profile remains unverified."
+        "Corrected GIO-first pkgconfig/consumer and explicit pkgconf dependency require review and fresh source/binary/GUI/public gates."
       ],
       "design": "gtk-provider-design.md",
       "candidate": "apps/gtk3-x11",
@@ -1782,7 +1781,13 @@
         "commit": "267a6ff10ef3c60107fe0b0dd44c212847732956",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "Approved source/test preparation; fresh full guest acceptance remains required."
-      }
+      },
+      "attempts": [
+        {
+          "evidence": "docs/research/package-migration/batch-12/gtk-header-failure",
+          "result": "All586 units compiled and GTK/GDK linked; consumer failed because minimal GIO header preceded full GIO. No install/export acceptance."
+        }
+      ]
     },
     {
       "id": "harfbuzz",
