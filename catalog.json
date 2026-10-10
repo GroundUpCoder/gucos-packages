@@ -1,0 +1,10 @@
+{
+  "format": 1,
+  "packages": {
+    "jsmn": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/f7152b86954d5b570c6eb2264d108cdb22bf1550/apps/jsmn/package.json",
+      "sha256": "d271d245bfa6697ffcee9a11b97d255f23a5098c13c7352f5e48fb44ac078782",
+      "size": 1945
+    }
+  }
+}
