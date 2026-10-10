@@ -1,0 +1,168 @@
+{
+  "action": "consumers",
+  "names": [
+    "pixman",
+    "libpng",
+    "freetype",
+    "fontconfig",
+    "x11-shared",
+    "cairo"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "d85ee1daa4dc100669fcfe4a6b4d11a1ef1181c0",
+  "startedAt": "2026-10-10T09:58:37.863Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "pixman",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "fc4d0d549ced883de6c725fa84ef0b8abb02b1e2c5f8bd9083c7b6c804c3edcf",
+          "size": 3307520
+        },
+        {
+          "path": "build.sh",
+          "sha256": "ae103bdd7fe27382ef2f688d3e0e0200230e83795d0df963dfe0e9c002c31348",
+          "size": 1376
+        },
+        {
+          "path": "test.sh",
+          "sha256": "b519bae7e2ce606e868b3dcaefa9725debf83e505da727d33de043d7eebb611a",
+          "size": 322
+        }
+      ]
+    },
+    {
+      "name": "libpng",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "2354367acf7e20c345392d63af66ad7331cb6907fbac7907d784133a57fbbf1b",
+          "size": 1495040
+        },
+        {
+          "path": "build.sh",
+          "sha256": "45602ea0ce7b40c3c7aead5b6ea46aa12ad6824e6bac8a4422206137f6e166f6",
+          "size": 3086
+        },
+        {
+          "path": "test.sh",
+          "sha256": "051aa11608689f6a8e7d20432f1ef7e6ae22165188e0d499078840c6a98c4a94",
+          "size": 968
+        }
+      ]
+    },
+    {
+      "name": "freetype",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "dbdbe87ddc4aad1410835da39bc30424180a623cdc67c35b2c8dace706d5bc83",
+          "size": 10762240
+        },
+        {
+          "path": "build.sh",
+          "sha256": "e6ca72bcb027d734a9f78c7292dc2e5a39b6727503966c3b39bfb3be38b70afa",
+          "size": 5864
+        },
+        {
+          "path": "test.sh",
+          "sha256": "32d0779658600f6ecb80b917e82db20bcd304ae1c2d3a3c786e02ec7f5758602",
+          "size": 747
+        }
+      ]
+    },
+    {
+      "name": "fontconfig",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "f283165452eb04bb9a1b0ac132f1ac2e0a59071a52c2bc505363d44c23d78421",
+          "size": 1648640
+        },
+        {
+          "path": "build.sh",
+          "sha256": "283b200b841630eb45fe2066c7d3ccf869a2081f2394f188e187d59de517232c",
+          "size": 2103
+        },
+        {
+          "path": "test.sh",
+          "sha256": "e77dbc1b04c256b38d688c138807d3a125c5717034d13c2d73ce9d7d53f0e221",
+          "size": 428
+        },
+        {
+          "path": "ABeeZee-Regular.ttf",
+          "sha256": "2901c8df256648cc2bb2e3afb381cb8d28e65ed3dbe11de20695ae4d5ffdeda9",
+          "size": 46016
+        },
+        {
+          "path": "SourceCodePro-Regular.otf",
+          "sha256": "9f9664e2edf6f045c11e774f9bd0be6993971f2544a39061a5ce478b96b051f8",
+          "size": 131128
+        }
+      ]
+    },
+    {
+      "name": "x11-shared",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "5dc38c7398292384ba48a5284f93f666e93e95ac2c0a9c2ff422dbf8372d53ec",
+          "size": 81920
+        },
+        {
+          "path": "build.sh",
+          "sha256": "040ab078d5822232c53ebf97a99c83f2c0ba09458ffb584bffbb89901b7cfc28",
+          "size": 721
+        },
+        {
+          "path": "test.sh",
+          "sha256": "f1da8167624aaaf6988b265de3453ae7df29c470e263b72ef225f49e028a34c8",
+          "size": 438
+        }
+      ]
+    },
+    {
+      "name": "cairo",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "3346111f8ea7f997a9cce59fc0b16b208836993b698b902235c4711b62fd7d8b",
+          "size": 6932480
+        },
+        {
+          "path": "build.sh",
+          "sha256": "7eff1897cf293b590cd00e524d4300c3fce36105a6bf3932ab0359ca568addbe",
+          "size": 1550
+        },
+        {
+          "path": "test.sh",
+          "sha256": "3a695751e5f8baacbdcff6e4929ed8084ebcde4c5592c07c40906f826a802524",
+          "size": 921
+        },
+        {
+          "path": "sources.txt",
+          "sha256": "6c2fbcd79ed04a2437a7ba975383c1f604d3e907146ae5707d69152bc71573b7",
+          "size": 3237
+        },
+        {
+          "path": "config.h",
+          "sha256": "032204bec31897352af4960d8132257dab89b9daa6dac4214cff8500c44379df",
+          "size": 870
+        },
+        {
+          "path": "cairo-features.h",
+          "sha256": "8f9a318e59fa6be3f5c9b9b77adbf4da6fedd3aedce9032097a9de0a9b83d8ee",
+          "size": 432
+        },
+        {
+          "path": "cairo-xlib-surface.c",
+          "sha256": "ef6e83c82efe06c1b171d034a0b969135afd61986c5cafe37695ec719cdfaddf",
+          "size": 67046
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-10T09:58:47.676Z"
+}

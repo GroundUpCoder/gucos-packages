@@ -13,4 +13,7 @@ for those skipped predecessors in the corrected run.
 
 Installed functional checks found both packaged fonts and rendered FreeType text
 through Cairo Xlib, verifying767 changed glyph pixels and X extension negotiation.
-Fresh binary acceptance and publication review remain separate pending steps.
+Fresh binary installation, installed static/shared consumer relinks, installed
+font/X-extension/Cairo rendering checks and reload integrity passed in a new
+private profile. Independent artifact/publication review and public-live
+acceptance remain pending.

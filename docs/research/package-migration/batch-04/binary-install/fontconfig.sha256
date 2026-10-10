@@ -1,0 +1,11 @@
+994827c774bf4461f561434c2492ff220a8d3e0863199d63e61ecb8baae9cc24  /usr/local/lib/libfontconfig.a
+6b6223cf32a3f83ce4519c19d056fb510806a79edd03b57ad68ba5675804a3b4  /usr/local/lib/libfontconfig.so
+bfcaee5dd9ca67161f7cd02ba99cafd8ccd103e74674ac00ef7c3fb2b964228f  /usr/local/include/fontconfig/fontconfig.h
+c69d08b5e9720e15291ca30fcb706cdc58515dbf21a6cfd4818bbd142976d697  /usr/local/include/fontconfig/fcfreetype.h
+66f66bd4ea5dd27fd24afe3b94577cd2cf877db90e3bc8fff7bfc31f1728ac4d  /usr/local/lib/pkgconfig/fontconfig.pc
+5035f13f74037e04d27fcc2306c5bdd0401322b393cc4b48e168b60eff96555e  /usr/local/share/fontconfig/fonts.conf
+2901c8df256648cc2bb2e3afb381cb8d28e65ed3dbe11de20695ae4d5ffdeda9  /usr/local/share/fonts/wasm-posix/ABeeZee-Regular.ttf
+9f9664e2edf6f045c11e774f9bd0be6993971f2544a39061a5ce478b96b051f8  /usr/local/share/fonts/wasm-posix/SourceCodePro-Regular.otf
+51a51aa9823704fd90bccc616cdd17ebabb5b2b3e9cbde886ca02c7002288067  /usr/local/share/licenses/fontconfig/COPYING
+f0376d04eb58fb19e9f1690a99a1eb37380ad0246f7d503f2abd8e8a74ed12be  /usr/local/share/licenses/fontconfig/ABeeZee-OFL.txt
+7c940e28a5388e9bba866cf0e408edda45fe0899ba98665b8f6ab31dc5e4b8ff  /usr/local/share/licenses/fontconfig/SourceCodePro-LICENSE.md

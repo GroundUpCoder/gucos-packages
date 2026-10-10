@@ -260,3 +260,12 @@ libintl does not imply gettext CLI migration. Remaining canonical queue stays op
 
 Independent source review approved19502f9 Pango fixture fix and optional Cairo
 GObject header/provider design. Actual execution and GTK full closure pending.
+
+## Graphics foundation binary acceptance
+
+Six exact guest-exported graphics archives installed in a fresh private profile.
+Static/shared consumers, font discovery, X extension negotiation and Cairo Xlib
+FreeType glyph rendering passed; reload verified all117 output files and
+parsed manifests. Evidence/artifacts retained for independent publication review.
+Single public Cairo provider is accepted within this foundation closure only;
+full GTK/Scintilla composition and runtime acceptance remain pending.

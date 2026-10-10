@@ -1,0 +1,131 @@
+{
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "sha256": "819c9d89c9042504ada022966227c4f014dbdca6b31cce72753ac8ae2ad5ae05",
+  "size": 3554304,
+  "guestManifest": {
+    "format": 1,
+    "name": "x11-shared",
+    "version": "0.1.0-1",
+    "dependencies": [
+      "x11-server"
+    ],
+    "dependencyRequirements": {
+      "x11-server": {
+        "version": "21.1.24-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:64027/migration/x11-shared/source.tar",
+        "sha256": "5dc38c7398292384ba48a5284f93f666e93e95ac2c0a9c2ff422dbf8372d53ec",
+        "size": 81920
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:64027/migration/x11-shared/build.sh",
+        "sha256": "040ab078d5822232c53ebf97a99c83f2c0ba09458ffb584bffbb89901b7cfc28",
+        "size": 721
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:64027/migration/x11-shared/test.sh",
+        "sha256": "f1da8167624aaaf6988b265de3453ae7df29c470e263b72ef225f49e028a34c8",
+        "size": 438
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libXau.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libxcb.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libX11.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libXext.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libXrender.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libXfixes.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libXi.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libXtst.so",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/x11-shared/libXau-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/x11-shared/libxcb-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/x11-shared/libX11-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/x11-shared/libXext-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/x11-shared/libXrender-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/x11-shared/libXfixes-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/x11-shared/libXi-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/x11-shared/libXtst-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/x11-shared/libX11-lcUniConv-COPYRIGHT",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/x11-shared/libXau-COPYING",
+      "share/licenses/x11-shared/libxcb-COPYING",
+      "share/licenses/x11-shared/libX11-COPYING",
+      "share/licenses/x11-shared/libXext-COPYING",
+      "share/licenses/x11-shared/libXrender-COPYING",
+      "share/licenses/x11-shared/libXfixes-COPYING",
+      "share/licenses/x11-shared/libXi-COPYING",
+      "share/licenses/x11-shared/libXtst-COPYING",
+      "share/licenses/x11-shared/libX11-lcUniConv-COPYRIGHT"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

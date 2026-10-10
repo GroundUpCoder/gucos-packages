@@ -497,7 +497,7 @@
     {
       "id": "cairo",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/cairo/wasm-package.json",
       "historicalManifestSha256": "d66343c7f96900624bea953916f04bad2eb3ac299fc9757617f3d672e00a0d07",
       "historicalEvidence": [
@@ -526,10 +526,15 @@
         "pixman"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
+          "evidence": "batch-04"
+        }
+      ],
       "blockers": [
-        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
-        "Independent source/design review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/cairo"
     },
@@ -898,7 +903,7 @@
     {
       "id": "fontconfig",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/fontconfig/wasm-package.json",
       "historicalManifestSha256": "2b6f3edc0c047715be796e4ca8af7b444f070293650ab372958a6cd97d6938d8",
       "historicalEvidence": [
@@ -921,16 +926,22 @@
         "freetype"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
+          "evidence": "batch-04"
+        }
+      ],
       "blockers": [
-        "Historical etc/fonts output rejected by package prefix policy. Adapter now uses share/fontconfig; fresh execution pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/fontconfig"
     },
     {
       "id": "freetype",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/freetype/wasm-package.json",
       "historicalManifestSha256": "9344ff6a38266c013c78cdef9af26b50e0e4ba5ace04040bd8361ec415670f39",
       "historicalEvidence": [
@@ -958,13 +969,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build and static/shared port consumers/install before Fontconfig manifest rejection",
-          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-graphics.log"
+          "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
+          "evidence": "batch-04"
         }
       ],
       "blockers": [
-        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
-        "Independent source/design review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/freetype"
     },
@@ -2194,7 +2204,7 @@
     {
       "id": "libpng",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/libpng/wasm-package.json",
       "historicalManifestSha256": "498dc8727eb13b2b3f48c387f61127db4c1e4e07e131f39b37319e554bfa8e09",
       "historicalEvidence": [
@@ -2223,13 +2233,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build and static/shared port consumers/install before Fontconfig manifest rejection",
-          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-graphics.log"
+          "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
+          "evidence": "batch-04"
         }
       ],
       "blockers": [
-        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
-        "Independent source/design review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/libpng"
     },
@@ -2900,7 +2909,7 @@
     {
       "id": "pixman",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/pixman/wasm-package.json",
       "historicalManifestSha256": "8e717772298e82645f91a8a5178b054dadd95c50197b967071df8c56b55b2ace",
       "historicalEvidence": [
@@ -2927,13 +2936,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build and static/shared port consumers/install before Fontconfig manifest rejection",
-          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-graphics.log"
+          "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
+          "evidence": "batch-04"
         }
       ],
       "blockers": [
-        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
-        "Independent source/design review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/pixman"
     },
@@ -3838,7 +3846,7 @@
     {
       "id": "x11-shared",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "apps/x11-shared/wasm-package.json",
       "historicalManifestSha256": "39a8f16c9c4b8e4bbbcaa481890fad2c8f73462dad49ce4bc5dba83c60c414ee",
       "historicalEvidence": [
@@ -3853,10 +3861,15 @@
         "x11-server"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
+          "evidence": "batch-04"
+        }
+      ],
       "blockers": [
-        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
-        "Independent source/design review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/x11-shared"
     },

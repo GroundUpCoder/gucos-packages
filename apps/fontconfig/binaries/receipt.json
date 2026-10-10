@@ -1,0 +1,118 @@
+{
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "sha256": "8d9021358b714d913a7836e85c36006fc4cb437b4e5c85786ab257ac7155908d",
+  "size": 1678848,
+  "guestManifest": {
+    "format": 1,
+    "name": "fontconfig",
+    "version": "2.15.0-1",
+    "dependencies": [
+      "freetype",
+      "expat"
+    ],
+    "dependencyRequirements": {
+      "freetype": {
+        "version": "2.14.1-1"
+      },
+      "expat": {
+        "version": "2.7.1-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:64027/migration/fontconfig/source.tar",
+        "sha256": "f283165452eb04bb9a1b0ac132f1ac2e0a59071a52c2bc505363d44c23d78421",
+        "size": 1648640
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:64027/migration/fontconfig/build.sh",
+        "sha256": "283b200b841630eb45fe2066c7d3ccf869a2081f2394f188e187d59de517232c",
+        "size": 2103
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:64027/migration/fontconfig/test.sh",
+        "sha256": "e77dbc1b04c256b38d688c138807d3a125c5717034d13c2d73ce9d7d53f0e221",
+        "size": 428
+      },
+      {
+        "path": "ABeeZee-Regular.ttf",
+        "url": "http://127.0.0.1:64027/migration/fontconfig/ABeeZee-Regular.ttf",
+        "sha256": "2901c8df256648cc2bb2e3afb381cb8d28e65ed3dbe11de20695ae4d5ffdeda9",
+        "size": 46016
+      },
+      {
+        "path": "SourceCodePro-Regular.otf",
+        "url": "http://127.0.0.1:64027/migration/fontconfig/SourceCodePro-Regular.otf",
+        "sha256": "9f9664e2edf6f045c11e774f9bd0be6993971f2544a39061a5ce478b96b051f8",
+        "size": 131128
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libfontconfig.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libfontconfig.so",
+        "mode": 420
+      },
+      {
+        "path": "include/fontconfig/fontconfig.h",
+        "mode": 420
+      },
+      {
+        "path": "include/fontconfig/fcfreetype.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/fontconfig.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/fontconfig/fonts.conf",
+        "mode": 420
+      },
+      {
+        "path": "share/fonts/wasm-posix/ABeeZee-Regular.ttf",
+        "mode": 420
+      },
+      {
+        "path": "share/fonts/wasm-posix/SourceCodePro-Regular.otf",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/fontconfig/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/fontconfig/ABeeZee-OFL.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/fontconfig/SourceCodePro-LICENSE.md",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/fontconfig/COPYING",
+      "share/licenses/fontconfig/ABeeZee-OFL.txt",
+      "share/licenses/fontconfig/SourceCodePro-LICENSE.md"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}
