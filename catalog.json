@@ -240,6 +240,36 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/d8990ecb390fdf0e730cba770f0b6b1d352e456b/apps/jq/package.json",
       "sha256": "984011ee71379f868abdd954b54150164653e5a2f90067800725c2961bebe236",
       "size": 1933
+    },
+    "libjpeg": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/3aa9f3491c61a34b93be4b385b99a5297dbe0eb4/apps/libjpeg/package.json",
+      "sha256": "5573c45df6fe1a6e5518b04e7dcf5a955ad359c79328753ac5174cc2634e0a5f",
+      "size": 2248
+    },
+    "libjpeg-turbo": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/3aa9f3491c61a34b93be4b385b99a5297dbe0eb4/apps/libjpeg-turbo/package.json",
+      "sha256": "88409eeba2ec09417e8d43266fbc452c62ad5bfc41e31633202eabf08c7e2ae0",
+      "size": 2497
+    },
+    "gdk-pixbuf": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/3aa9f3491c61a34b93be4b385b99a5297dbe0eb4/apps/gdk-pixbuf/package.json",
+      "sha256": "602791be10d0d8b8adb2d42eca3d2e08b513c9e0c41fb1224b3dba410794490c",
+      "size": 4159
+    },
+    "minihb": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/3aa9f3491c61a34b93be4b385b99a5297dbe0eb4/apps/minihb/package.json",
+      "sha256": "a9aae4a1fd1dacddd96b81fd35e98f4e5ee407f94bc438aa6995b52d9cc18423",
+      "size": 5545
+    },
+    "cairo-gobject": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/3aa9f3491c61a34b93be4b385b99a5297dbe0eb4/apps/cairo-gobject/package.json",
+      "sha256": "5ea56f85751cdcb4ba4bdf903d88dd53485adbbae847f525fedc3d91d42027b0",
+      "size": 2507
+    },
+    "gtk3-schemas": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/3aa9f3491c61a34b93be4b385b99a5297dbe0eb4/apps/gtk3-schemas/package.json",
+      "sha256": "32242372841130c5d4aaa34c372374930f9acd33077de5d67d001c2f77cae923",
+      "size": 3857
     }
   }
 }
