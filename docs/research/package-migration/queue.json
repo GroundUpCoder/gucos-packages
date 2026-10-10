@@ -2481,7 +2481,7 @@
     {
       "id": "minihb",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/minihb/wasm-package.json",
       "historicalManifestSha256": "aa1634b986ab7dd18fe700c0c27b0cc1e7534fd6a7915fd93013f661a6f9b838",
       "historicalEvidence": [
@@ -2497,7 +2497,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and actual guest acceptance pending."
+      ],
+      "candidate": "apps/minihb"
     },
     {
       "id": "ncurses",
@@ -2580,7 +2583,7 @@
     {
       "id": "pango",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/pango/wasm-package.json",
       "historicalManifestSha256": "4dfa2617abb5073dbeabda42ffe18eabb8a29a0cbe92b018947a6895eef04713",
       "historicalEvidence": [
@@ -2614,7 +2617,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and actual guest acceptance pending."
+      ],
+      "candidate": "apps/pango"
     },
     {
       "id": "pcmanfm",
