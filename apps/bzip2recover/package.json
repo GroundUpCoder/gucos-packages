@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "name": "bzip2recover",
+  "version": "1.0.8-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2recover/source.tar",
+      "sha256": "783b32d10919fa193ea3e392f7a7999fa8295a70ba0dc9cf13355794977e88be",
+      "size": 839680
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2recover/build.sh",
+      "sha256": "77231ac7cbd2db0a80cac77047cdbd0bf4894073f3ba8324bcdcf612417e12bf",
+      "size": 225
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2recover/test.sh",
+      "sha256": "66a24ea4a821881e2772dd29618d1f3b08ddc61088db8f4ea0bc42720cfd8c91",
+      "size": 288
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/bzip2recover",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/bzip2recover/LICENSE",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/bzip2recover/LICENSE"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2recover/binaries/1f34ec68a0cec6014ba3b03fb3bb77cd424ee776bbbe1fc1a33d02440b72c63c.tar",
+    "sha256": "1f34ec68a0cec6014ba3b03fb3bb77cd424ee776bbbe1fc1a33d02440b72c63c",
+    "size": 22528
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "name": "zlib",
+  "version": "1.3.2-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/zlib/source.tar",
+      "sha256": "2b9ad1bee3da8914d9b045fd73d8a0df01ca2dec0b6c2f04c5f2c30e570ded71",
+      "size": 1269760
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/zlib/build.sh",
+      "sha256": "aa5c4a00ee1b926ebfe5cb76e1909d352b9281b9e734f1efb55454dc41003bf9",
+      "size": 785
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/zlib/test.sh",
+      "sha256": "0e57a22d7479739ceaaa1e9e796d944f99e9edda911a8dbb9a264a7c2a7e4e06",
+      "size": 344
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libz.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libz.so",
+      "mode": 420
+    },
+    {
+      "path": "include/zlib.h",
+      "mode": 420
+    },
+    {
+      "path": "include/zconf.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/zlib.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/zlib/LICENSE",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/zlib/LICENSE"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/zlib/binaries/48479d0b8836cd6bc54e4d5c11c18779bd737bde55300d8e3bb9e4e48a4918ba.tar",
+    "sha256": "48479d0b8836cd6bc54e4d5c11c18779bd737bde55300d8e3bb9e4e48a4918ba",
+    "size": 513024
+  }
+}
