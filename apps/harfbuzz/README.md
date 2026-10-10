@@ -11,3 +11,9 @@ The retained consumer checks golden shaping, subset creation and FreeType-backed
 shaping with static/shared links. This is not a rerun of the full historical
 upstream/translator suite. Fresh guest build/acceptance remains pending.
 Original compiler/LLVM configuration and limitations remain in translation.json.
+
+Provenance limitation: the recorded runtimeAdapterSha256 differs from the
+pinned historical tools/cpp-translator/runtime_abi.py bytes. Retained generated
+outputs verify against their original inventory, but translation reproducibility
+from that pinned translator is not established. See the repository audit at
+docs/research/package-migration/harfbuzz-provenance-audit.json.
