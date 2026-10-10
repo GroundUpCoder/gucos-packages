@@ -104,13 +104,19 @@ echo GTK-X11-PACKAGE-PASS`);
   let timeout;
   try{
    await Promise.race([(async()=>{
-    await s.page.evaluate(async()=>{
+    report.termination=await s.page.evaluate(async()=>{
+     const results=[];
      // Same out-of-band kill channel used by the runtime VT close button.
      for(const path of ['/tmp/migration-gtk-demo.pid','/tmp/migration-gtk-server.pid']){
-      const bytes=await shell.busybox.read(path);
-      const pid=Number(new TextDecoder().decode(bytes));
-      if(Number.isInteger(pid)&&pid>0)shell.busybox.worker.postMessage({type:'kill',pid});
+      try{
+       const bytes=await shell.busybox.read(path);
+       if(!bytes){results.push({path,missing:true});continue;}
+       const pid=Number(new TextDecoder().decode(bytes));
+       if(Number.isInteger(pid)&&pid>0){shell.busybox.worker.postMessage({type:'kill',pid});results.push({path,pid});}
+       else results.push({path,error:'Invalid PID'});
+      }catch(error){results.push({path,error:String(error)});}
      }
+     return results;
     });
     await pending.catch(()=>{});
    })(),new Promise((_,reject)=>{timeout=setTimeout(()=>reject(Error('GTK cleanup exceeded 15 seconds')),15000);})]);

@@ -18,7 +18,16 @@ make -j1
 # ash reports the deliberately SIGKILLed child. Keep strict output checking,
 # with this one documented platform-specific stderr expectation.
 printf 'dnl @error{}Killed\n' >> checks/198.sysval
-make -C checks check
+make -C checks check > ../m4-upstream.log 2>&1 || { cat ../m4-upstream.log; exit 1; }
+cat ../m4-upstream.log
+grep -F 'All checks successful' ../m4-upstream.log
+if grep -F 'syscmd does not have unix semantics' ../m4-upstream.log; then exit 1; fi
+for check in $(sed -n '/Skipped checks were:/{n;p;}' ../m4-upstream.log); do
+ case "$check" in
+  ./125.changeword|./126.changeword|./127.changeword|./128.changeword|./129.changeword|./130.changeword|./stackovf.test) ;;
+  *) echo "Unexpected upstream skip: $check" >&2; exit 1 ;;
+ esac
+done
 mkdir -p "$DESTDIR/bin" "$DESTDIR/share/info" "$DESTDIR/share/man/man1" "$DESTDIR/share/licenses/m4"
 cp src/m4 "$DESTDIR/bin/m4"
 cp doc/m4.info doc/m4.info-1 doc/m4.info-2 "$DESTDIR/share/info/"
