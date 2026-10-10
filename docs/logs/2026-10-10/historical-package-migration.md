@@ -414,3 +414,21 @@ units (163 Tcl/LibTomMath/Unix plus11 embedded zlib), not163 total; reviewer
 verified844 outputs and static embed test. Tcl and m4 guest execution pending.
 HarfBuzz retained generated-C source compilation now runs serially in bounded
 reservation44a1daff; translation reproducibility limitation remains unchanged.
+
+## Reviewed publications and remaining live gates
+
+Independent reviewer approved six GTK-foundation artifactsfb93177 (97 outputs)
+and final catalog7803895 (prior48 entries unchanged); exact commit was pushed.
+Libevent/libuv artifacts46134c9 (54 outputs:31+23) and catalog0c83242 (prior54
+entries unchanged) also passed independent review and were pushed. Public catalog
+now has56 entries, but these8 additions are not yet public-live accepted.
+Fresh public profiles and exact input checks are prepared; the serial HarfBuzz
+source reservation precedes those browser runs. Recorded live additions remain29.
+
+Added reviewed source candidates libxfce4util8e6a7a9 and xmag/bitmapb37e3d9.
+The latter await GUI magnification/invert/save/keyboard checks. Added SDL3_gfx,
+SDL3_image and SDL3_mixer candidates against core-owned SDL platform features;
+source/media-harness review is pending. No republished core SDL shim or X/GPU
+broker. The preparation helper4a4253c passed review and checks private/public
+input identity; GTK closure freezer was exercised locally on Cairo GObject's
+16-manifest/857-payload dependency closure, not as a new browser acceptance.
