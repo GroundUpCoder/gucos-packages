@@ -4128,7 +4128,7 @@
     {
       "id": "tk",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-review-pending",
       "historicalManifest": "apps/tk/wasm-package.json",
       "historicalManifestSha256": "1f2c8cefc32d80b50de4e19ab3810625f23406cf25288114f8e715116038b3cb",
       "historicalEvidence": [
@@ -4145,7 +4145,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Tcl fresh execution prerequisite, independent source review, guest binary/public and retained GUI/upstream pack/grid gates pending."
+      ],
+      "candidate": "apps/tk"
     },
     {
       "id": "twm",

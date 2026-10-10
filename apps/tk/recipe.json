@@ -1,0 +1,34 @@
+{
+  "name": "tk",
+  "version": "8.6.16-1",
+  "dependencies": [
+    "tcl",
+    "x11-server"
+  ],
+  "dependencyRequirements": {
+    "tcl": {
+      "version": "8.6.16-2"
+    },
+    "x11-server": {
+      "version": "21.1.24-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "pthreads",
+      "unix-stream"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "license.terms",
+    "tcl-license.terms"
+  ]
+}
