@@ -180,6 +180,36 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/f364900791af6cc2f2f56671d04a54923b20514e/apps/gobject/package.json",
       "sha256": "979c8637cea023781bfe569ac596367ff6b790ddcd586fc40967d9a268b2b57c",
       "size": 4578
+    },
+    "pixman": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/7310bdc04f7ba94a3fc1aa211b481bfae95f5f3c/apps/pixman/package.json",
+      "sha256": "023a74fd8e7c101cb53767ec71acffb636471df991986433195512013e500faf",
+      "size": 2163
+    },
+    "libpng": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/7310bdc04f7ba94a3fc1aa211b481bfae95f5f3c/apps/libpng/package.json",
+      "sha256": "e1dc677afa5413d0e1b9762d998a09918b8e4b84f62c93379ffb44010c8df5de",
+      "size": 2242
+    },
+    "freetype": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/7310bdc04f7ba94a3fc1aa211b481bfae95f5f3c/apps/freetype/package.json",
+      "sha256": "84e2256ed03006f167de57cb9c0987e2a6b35844becd0102fab90e3a1de21123",
+      "size": 6882
+    },
+    "fontconfig": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/7310bdc04f7ba94a3fc1aa211b481bfae95f5f3c/apps/fontconfig/package.json",
+      "sha256": "7110a0e9f6c4b8a461dc5da8af3af31ab92caaafc9713f2d4fc0558bd0aa64ec",
+      "size": 3539
+    },
+    "x11-shared": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/7310bdc04f7ba94a3fc1aa211b481bfae95f5f3c/apps/x11-shared/package.json",
+      "sha256": "f198d4871d7ee21d27b74d759027fe55d4d5c1b224b137b625f5737811418731",
+      "size": 3539
+    },
+    "cairo": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/7310bdc04f7ba94a3fc1aa211b481bfae95f5f3c/apps/cairo/package.json",
+      "sha256": "d1c30a4dd7b07af3606c7bd06b1abb8cb43b9e309ec1593b30e8003db4031501",
+      "size": 4586
     }
   }
 }
