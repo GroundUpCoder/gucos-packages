@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "name": "xcalc",
+  "version": "1.1.3-1",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/source.tar",
+      "sha256": "23668deaf491ccf708739769673b9fa6508be7de38c62f2e89edc40af101850f",
+      "size": 911360
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/build.sh",
+      "sha256": "c2a58a43cb7aebbb677a6d5145b24a9c2ee7cf8f8c1d02b74ec1300fb2b53cfc",
+      "size": 569
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/test.sh",
+      "sha256": "8d1e80db152c2560a0fc785c97f5ed450396532ad5948656c8076567608cfe60",
+      "size": 47
+    },
+    {
+      "path": "config.h",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/config.h",
+      "sha256": "ef6a54aa0320ac1808e06b3efb7cad696692bf4d6225b2f465d9314550a58ad6",
+      "size": 292
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/xcalc",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/xcalc/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/X11/app-defaults/XCalc",
+      "mode": 420
+    },
+    {
+      "path": "share/X11/app-defaults/XCalc-color",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/xcalc/COPYING"
+  ],
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/binaries/da91414af51d290ec2ff8f3ba453340ea59badc56acb29b57d6304fb568ec191.tar",
+    "sha256": "da91414af51d290ec2ff8f3ba453340ea59badc56acb29b57d6304fb568ec191",
+    "size": 4465664
+  }
+}

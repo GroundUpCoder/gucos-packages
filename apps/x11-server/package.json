@@ -2193,5 +2193,11 @@
     "share/licenses/x11-server/xorgproto-COPYING-xwaylandproto",
     "share/licenses/x11-server/xtrans-COPYING",
     "share/licenses/x11-server/zlib-LICENSE"
-  ]
+  ],
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-server/binaries/9cc9c7c53dd4996540f3871b561716a268289ed6ff8eca7611d10aa456b58558.tar",
+    "sha256": "9cc9c7c53dd4996540f3871b561716a268289ed6ff8eca7611d10aa456b58558",
+    "size": 25956864
+  }
 }

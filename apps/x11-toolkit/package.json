@@ -671,5 +671,11 @@
     "share/licenses/x11-toolkit/xmessage-COPYING",
     "share/licenses/x11-toolkit/xprop-COPYING",
     "share/licenses/x11-toolkit/xterm-COPYING"
-  ]
+  ],
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-toolkit/binaries/cfac272185f414f98c47f9a4874e7b11d369bf32b57b8cfddf7f835ccab182f1.tar",
+    "sha256": "cfac272185f414f98c47f9a4874e7b11d369bf32b57b8cfddf7f835ccab182f1",
+    "size": 2518016
+  }
 }
