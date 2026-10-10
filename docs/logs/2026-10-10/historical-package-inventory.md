@@ -25,3 +25,11 @@ Existing user/core-author candidate/live acceptance remains authoritative:
 14 stages/803 hashes, six stages/722 hashes; unchanged artifacts. Core live runtime
 c4411d720bede49ead5c1de69bfe7b1247656a146b72d991d209883606e300fb.
 No browser tests were duplicated and no new live install was attempted.
+
+Independent reviewer found two documentation defects at27c87ca: JWM and desktop
+HEAD versions came from stale coverage rows, and collector working-tree reads
+could misattribute future reruns. Corrected to actual pinned manifest versions
+2.4.6-5 and0.1.0-3 and immutable Git blob/tree reads for both repositories.
+Regeneration changes only those two version fields; disposition counts and
+evidence remain unchanged. All156 selected historical evidence/manifest hashes
+were verified against pinned Git blobs; current catalog validation passed.

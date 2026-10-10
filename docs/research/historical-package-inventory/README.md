@@ -44,7 +44,9 @@ success record. [Machine-readable inventory](inventory.json) includes record
 selectors, file hashes, recorded artifact hashes where available, historical
 dependency lists and all current output paths. Historical manifest versions
 are HEAD versions; individual success evidence may concern an earlier version.
-`collect.py` regenerates the local comparison without browsers or builds.
+`collect.py` reads only Git blobs and tree listings at the two pinned commits
+to regenerate the comparison without browsers or builds. Mutable checkout
+contents and later commits are not collection inputs.
 It covers tracked HEAD manifests and the named additional experiments below,
 not every upstream source nested inside vendored trees, deleted branch or
 unrecorded experiment. Archive payloads were not rehashed in this audit.

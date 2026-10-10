@@ -2587,7 +2587,7 @@
       "name": "jwm",
       "historicalManifest": "apps/jwm/wasm-package.json",
       "historicalManifestSha256": "f24804d7d07c250950ca24358668a5bf11a6359ec61dad25543a22a9b77e8a99",
-      "historicalVersionAtHead": "2.4.6-4",
+      "historicalVersionAtHead": "2.4.6-5",
       "buildDependencies": [
         "x11-apps"
       ],
@@ -2618,7 +2618,7 @@
       "name": "jwm-desktop",
       "historicalManifest": "apps/jwm-desktop/wasm-package.json",
       "historicalManifestSha256": "23607bd557d22834969c20aec37d2e56e8038cb77300b1fd057f186ff6868c05",
-      "historicalVersionAtHead": "0.1.0-1",
+      "historicalVersionAtHead": "0.1.0-3",
       "buildDependencies": [],
       "runtimeDependencies": [
         "jwm",

@@ -2,13 +2,23 @@
 Run from packages root: python3 docs/research/historical-package-inventory/collect.py
 No build, browser, installation or artifact publication. Network receipts are separate.
 """
-import collections, hashlib, json, pathlib, re, subprocess
+import collections, fnmatch, functools, hashlib, json, pathlib, re, subprocess
 OUT = pathlib.Path(__file__).resolve().parent
 OLD = pathlib.Path('/Users/jku/git/wasm-posix-old')
 PKG = OUT.parents[2]
-def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
-def read(path): return json.loads((OLD/path).read_text())
+OLD_REV = '0b9b3245fe11a3bc677d81113cba90cd0ae80446'
+PKG_REV = 'f256627a317a97c9950ac058b70ae5cda70b541e'
 def git(root,*args): return subprocess.check_output(['git','-C',str(root),*args],text=True).strip()
+@functools.lru_cache(maxsize=None)
+def blob(root,rev,path):
+    return subprocess.check_output(['git','-C',str(root),'show',rev+':'+path])
+def content(p):
+    root,rev = (OLD,OLD_REV) if p.is_relative_to(OLD) else (PKG,PKG_REV)
+    return blob(root,rev,str(p.relative_to(root)))
+def digest(p): return hashlib.sha256(content(p)).hexdigest()
+def read(path): return json.loads(content(OLD/path))
+old_files = git(OLD,'ls-tree','-r','--name-only',OLD_REV).splitlines()
+pkg_files = git(PKG,'ls-tree','-r','--name-only',PKG_REV).splitlines()
 evidence = collections.defaultdict(list)
 def add(name,path,kind,selector,record=None):
     e={'path':path,'sha256':digest(OLD/path),'kind':kind,'selector':selector}
@@ -19,7 +29,7 @@ def add(name,path,kind,selector,record=None):
         if isinstance(a,dict):e['artifact']={k:a[k] for k in ('sha256','size','compatibilityKey') if k in a}
     evidence[name].append(e)
 # Actual phase results, not manifest status strings.
-for f in sorted((OLD/'docs/research').glob('package-publication*/release-set.json')):
+for f in [OLD/p for p in old_files if fnmatch.fnmatch(p,'docs/research/package-publication*/release-set.json')]:
     path=str(f.relative_to(OLD));d=read(path)
     for i,r in enumerate(d.get('reports',[])):
         if r.get('sourcePassed') is True and r.get('binaryPassed') is True:
@@ -27,7 +37,7 @@ for f in sorted((OLD/'docs/research').glob('package-publication*/release-set.jso
     for i,r in enumerate(d.get('separateAcceptance',[])):
         if r.get('exactBinaryPassed') or (r.get('freshCanonicalBootBuildByteEqual') and r.get('passed') and r.get('binaryExit')==0):
             add(r['name'],path,'separate source and exact binary proofs',f'separateAcceptance[{i}]',r)
-for f in sorted((OLD/'docs/research/harfbuzz-gucman-integration/candidates').glob('*.json')):
+for f in [OLD/p for p in old_files if fnmatch.fnmatch(p,'docs/research/harfbuzz-gucman-integration/candidates/*.json')]:
     path=str(f.relative_to(OLD));r=read(path)
     if r.get('sourcePassed') is True and r.get('binaryPassed') is True:
         add(r['name'],path,'recorded source and binary acceptance (historical mixed baseline)','root',r)
@@ -40,7 +50,7 @@ path='docs/research/platform-os2-transition-20261005/format1-inventory-v2.json'
 for i,r in enumerate(read(path)['candidates']):
     if r['state']=='approved-promoted':add(r['name'],path,'retained approved artifact and result/lock hashes',f'candidates[{i}]',r)
 path='docs/logs/2026-10-03/libc-07305461-sweep.md'
-for line in (OLD/path).read_text().splitlines():
+for line in content(OLD/path).decode().splitlines():
     m=re.match(r'- `([^`]+)`: promoted\. Source and binary passed\.',line)
     if m:add(m[1],path,'journal records source and binary pass',line)
 manual={
@@ -56,11 +66,15 @@ for n,(p,s) in manual.items():add(n,'docs/logs/'+p,'explicit historical executio
 coverage=read('docs/research/m4-release-20261010/coverage/coverage.json')['rows']
 # Enumerate actual tracked manifests independently of the historical coverage list.
 manifest_names={}
-for path in git(OLD,'ls-files','*wasm-package.json').splitlines():
-    for r in read(path).get('packages',[]):manifest_names[r['name']]=path
+manifest_records={}
+for path in old_files:
+    if not path.endswith('/wasm-package.json'):continue
+    for r in read(path).get('packages',[]):
+        manifest_names[r['name']]=path
+        manifest_records[r['name']]=r
 assert set(manifest_names)=={r['name'] for r in coverage}
 assert all(r['name'] in evidence for r in coverage), [r['name'] for r in coverage if r['name'] not in evidence]
-current={p.parent.name:json.loads(p.read_text()) for p in (PKG/'apps').glob('*/package.json')}
+current={path.split('/')[1]:json.loads(content(PKG/path)) for path in pkg_files if re.fullmatch(r'apps/[^/]+/package.json',path)}
 core={'ar','ash','busybox','cc','libc','make'}
 same={'jwm','lua','twm','x11-server','zstd'}
 partial={
@@ -81,10 +95,8 @@ for r in sorted(coverage,key=lambda r:r['name']):
     ev=sorted(ev,key=lambda e:('journal' in e['kind'], 'retained' in e['kind'],e['path']))
     selected=[ev[0]]
     if ev[-1]['path']!=ev[0]['path']:selected.append(ev[-1])
-    rows.append({'name':n,'historicalManifest':manifest_names[n],'historicalManifestSha256':digest(OLD/manifest_names[n]),'historicalVersionAtHead':r['version'],'buildDependencies':r['buildDependencies'],'runtimeDependencies':r['runtimeDependencies'],'historicalEvidence':selected,'currentStatus':status,'currentMapping':partial.get(n,n if n in same else ('fixed core bootstrap' if n in core else None)),'scope':'Historical success at recorded version/baseline, not proof for every version or current platform.'})
-result={'format':1,'oldCommit':git(OLD,'rev-parse','HEAD'),'packagesBaseline':git(PKG,'rev-parse','HEAD'),'catalogSha256':digest(PKG/'catalog.json'),'counts':dict(collections.Counter(r['currentStatus'] for r in rows)),'currentPackages':[{'name':n,'version':r['version'],'binary':bool(r.get('binary')),'outputs':[o['path'] for o in r['outputs']]} for n,r in sorted(current.items())],'rows':rows}
-# Pin package baseline, so later documentation commits do not change provenance.
-result['packagesBaseline']='f256627a317a97c9950ac058b70ae5cda70b541e'
+    rows.append({'name':n,'historicalManifest':manifest_names[n],'historicalManifestSha256':digest(OLD/manifest_names[n]),'historicalVersionAtHead':manifest_records[n]['version'],'buildDependencies':manifest_records[n].get('buildDependencies',[]),'runtimeDependencies':manifest_records[n].get('runtimeDependencies',[]),'historicalEvidence':selected,'currentStatus':status,'currentMapping':partial.get(n,n if n in same else ('fixed core bootstrap' if n in core else None)),'scope':'Historical success at recorded version/baseline, not proof for every version or current platform.'})
+result={'format':1,'oldCommit':OLD_REV,'packagesBaseline':PKG_REV,'catalogSha256':digest(PKG/'catalog.json'),'counts':dict(collections.Counter(r['currentStatus'] for r in rows)),'currentPackages':[{'name':n,'version':r['version'],'binary':bool(r.get('binary')),'outputs':[o['path'] for o in r['outputs']]} for n,r in sorted(current.items())],'rows':rows}
 (OUT/'inventory.json').write_text(json.dumps(result,indent=2)+'\n')
 lines=['# Historical catalog rows','', 'All historical paths below are relative to `wasm-posix-old` at `'+result['oldCommit']+'`.','Evidence means inspected historical execution records, not a rerun or present-day compatibility approval.','Versions are manifest versions at that commit; acceptance records can concern earlier versions.','Bundles/data packages are included; 110 rows do not mean 110 separately compiled programs.','', '| Historical name | Current disposition | Manifest | Historical success evidence |','| --- | --- | --- | --- |']
 for r in rows:
