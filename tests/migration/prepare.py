@@ -9,6 +9,12 @@ name,revision,*names=sys.argv[1:]
 assert re.fullmatch('[a-zA-Z0-9_-]+',name) and re.fullmatch('[a-f0-9]{40}',revision)
 assert names and len(names)==len(set(names))
 assert all(re.fullmatch('[a-z0-9][a-z0-9-]*',n) for n in names)
+# Per-candidate frozen exports allow source recipes to consume exact accepted
+# dependency binaries without rebuilding that dependency graph on each retry.
+binary_runs=json.loads(os.environ.get('MIGRATION_BINARY_RUNS','{}'))
+assert isinstance(binary_runs,dict) and set(binary_runs)<=set(names)
+assert all(isinstance(v,str) and v for v in binary_runs.values())
+assert not (binary_runs and os.environ.get('MIGRATION_BINARY_RUN')), 'Choose global or per-candidate binary inputs'
 run=ROOT/'test-results/migration'/name
 run.mkdir(parents=True,exist_ok=False)
 def blob(path):return subprocess.check_output(['git','show',revision+':'+path],cwd=ROOT)
@@ -39,7 +45,7 @@ for n in names:
   files.append(dict(path=file,**entry('migration/'+n+'/'+file,b)))
  outputs=json.loads(blob('apps/'+n+'/outputs.json'))
  manifest=dict(format=1,**recipe,files=files,build='build.sh',test='test.sh',outputs=outputs,licenses=[o['path'] for o in outputs if o['path'].startswith('share/licenses/')])
- binary_run=os.environ.get('MIGRATION_BINARY_RUN')
+ binary_run=binary_runs.get(n) or os.environ.get('MIGRATION_BINARY_RUN')
  if binary_run:
   receipt=json.loads((Path(binary_run)/'exports'/n/'build-receipt.json').read_text())
   guest=receipt['guestManifest']
