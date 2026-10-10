@@ -1,0 +1,74 @@
+gucman: unknown source
+
+gucman: install migration:ed: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 12039 bytes; transfer finished
+gucman: Resolving: migration:ed
+gucman: Downloading manifest for migration:ed (1451 bytes)
+  Connecting; waiting for response…
+  Downloaded 1451 / 1451 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:ed
+gucman: Checking cached object: manifest for migration:ed
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: ed (0 remaining after this)
+gucman: Downloading ed archive (140800 bytes)
+  Connecting; waiting for response…
+  Downloaded 140800 / 140800 bytes (100%); transfer finished
+gucman: Verifying download: ed archive
+gucman: Checking cached object: ed archive
+gucman: Unpacking: ed
+gucman: Installing ed: 0/3 files
+gucman: Installing ed: 3/3 files
+gucman: Preparing checksums: ed
+gucman: Checksummed ed: 3/3 files
+gucman: Saving transaction: ed
+gucman: Verifying staged files: ed
+gucman: Activating: ed
+Installed migration:ed 1.22.2-1
+
+gucman: install migration:jq: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 12039 bytes; transfer finished
+gucman: Resolving: migration:jq
+gucman: Downloading manifest for migration:jq (1542 bytes)
+  Connecting; waiting for response…
+  Downloaded 1542 / 1542 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:jq
+gucman: Checking cached object: manifest for migration:jq
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: jq (0 remaining after this)
+gucman: Downloading jq archive (1562112 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.49 / 1.49 MiB (100%); transfer finished
+gucman: Verifying download: jq archive
+gucman: Checking cached object: jq archive
+gucman: Unpacking: jq
+gucman: Installing jq: 0/3 files
+gucman: Installing jq: 3/3 files
+gucman: Preparing checksums: jq
+gucman: Checksummed jq: 3/3 files
+gucman: Saving transaction: jq
+gucman: Verifying staged files: jq
+gucman: Activating: jq
+Installed migration:jq 1.7.1-1
+
+/usr/local/bin/ed: OK
+/usr/local/share/licenses/ed/COPYING: OK
+/usr/local/bin/red: OK
+
+7cc1d7f56a0660c4999438bf0f1bd0f12f77881a5f5bcde8c1457c969d6379b2  /home/user/migration-export.tar
+140800
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/jq: OK
+/usr/local/share/licenses/jq/COPYING: OK
+/usr/local/share/licenses/jq/ONIGURUMA-COPYING: OK
+
+72095dc0411e933e8e6a4b4566d2342f1fdf4e25246970d73e04053474658f67  /home/user/migration-export.tar
+1562112
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

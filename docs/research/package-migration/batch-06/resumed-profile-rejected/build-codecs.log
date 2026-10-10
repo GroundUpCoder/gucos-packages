@@ -1,0 +1,227 @@
+gucman: unknown source
+
+gucman: build migration:libjpeg: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 14272 bytes; transfer finished
+gucman: Resolving: migration:libjpeg
+gucman: Downloading manifest for migration:libjpeg (1589 bytes)
+  Connecting; waiting for response…
+  Downloaded 1589 / 1589 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libjpeg
+gucman: Checking cached object: manifest for migration:libjpeg
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: libjpeg (0 remaining after this)
+gucman: Downloading libjpeg source: source.tar (1423360 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.36 / 1.36 MiB (100%); transfer finished
+gucman: Verifying download: libjpeg source: source.tar
+gucman: Checking cached object: libjpeg source: source.tar
+gucman: Downloading libjpeg source: build.sh (1324 bytes)
+  Connecting; waiting for response…
+  Downloaded 1324 / 1324 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg source: build.sh
+gucman: Checking cached object: libjpeg source: build.sh
+gucman: Downloading libjpeg source: test.sh (1449 bytes)
+  Connecting; waiting for response…
+  Downloaded 1449 / 1449 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg source: test.sh
+gucman: Checking cached object: libjpeg source: test.sh
+Building migration:libjpeg; running trusted recipe with access to your guest files
+433 functions, 442445 bytes
+425 functions, 428038 bytes
+2 functions, 11777 bytes
+gucman: Installing libjpeg: 0/8 files
+gucman: Installing libjpeg: 8/8 files
+gucman: Preparing checksums: libjpeg
+gucman: Checksummed libjpeg: 8/8 files
+gucman: Saving transaction: libjpeg
+gucman: Verifying staged files: libjpeg
+gucman: Activating: libjpeg
+Installed migration:libjpeg 9f-1
+
+gucman: build migration:libjpeg-turbo: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 14272 bytes; transfer finished
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Downloading manifest for migration:libjpeg-turbo (1832 bytes)
+  Connecting; waiting for response…
+  Downloaded 1832 / 1832 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: libjpeg-turbo (0 remaining after this)
+gucman: Downloading libjpeg-turbo source: source.tar (3983360 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.80 / 3.80 MiB (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: source.tar
+gucman: Checking cached object: libjpeg-turbo source: source.tar
+gucman: Downloading libjpeg-turbo source: build.sh (3114 bytes)
+  Connecting; waiting for response…
+  Downloaded 3114 / 3114 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: build.sh
+gucman: Checking cached object: libjpeg-turbo source: build.sh
+gucman: Downloading libjpeg-turbo source: test.sh (308 bytes)
+  Connecting; waiting for response…
+  Downloaded 308 / 308 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: test.sh
+gucman: Checking cached object: libjpeg-turbo source: test.sh
+Building migration:libjpeg-turbo; running trusted recipe with access to your guest files
+1007 functions, 937091 bytes
+982 functions, 898151 bytes
+2 functions, 10950 bytes
+gucman: Installing libjpeg-turbo: 0/9 files
+gucman: Installing libjpeg-turbo: 9/9 files
+gucman: Preparing checksums: libjpeg-turbo
+gucman: Checksummed libjpeg-turbo: 9/9 files
+gucman: Saving transaction: libjpeg-turbo
+gucman: Verifying staged files: libjpeg-turbo
+gucman: Activating: libjpeg-turbo
+Installed migration:libjpeg-turbo 3.1.4.1-1
+
+{
+  tail: 'ject: manifest for migration:gio-core\n' +
+    'gucman: Resolving: migration:gio-listmodel\n' +
+    'gucman: Checking cached object: manifest for migration:gio-listmodel\n' +
+    'gucman: Resolving: migration:gobject\n' +
+    'gucman: Checking cached object: manifest for migration:gobject\n'
+}
+gucman: build migration:gdk-pixbuf: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 14272 bytes; transfer finished
+gucman: Resolving: migration:gdk-pixbuf
+gucman: Downloading manifest for migration:gdk-pixbuf (3416 bytes)
+  Connecting; waiting for response…
+  Downloaded 3416 / 3416 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gdk-pixbuf
+gucman: Checking cached object: manifest for migration:gdk-pixbuf
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libpng
+gucman: Downloading manifest for migration:libpng (2242 bytes)
+  Connecting; waiting for response…
+  Downloaded 2242 / 2242 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Plan: 12 packages (including dependencies); checking compatibility
+gucman: reinstall dependent with dependency update: cairo
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: build migration:gdk-pixbuf: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 14272 bytes; transfer finished
+gucman: Resolving: migration:gdk-pixbuf
+gucman: Downloading manifest for migration:gdk-pixbuf (3416 bytes)
+  Connecting; waiting for response…
+  Downloaded 3416 / 3416 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gdk-pixbuf
+gucman: Checking cached object: manifest for migration:gdk-pixbuf
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libpng
+gucman: Downloading manifest for migration:libpng (2242 bytes)
+  Connecting; waiting for response…
+  Downloaded 2242 / 2242 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Plan: 12 packages (including dependencies); checking compatibility
+gucman: reinstall dependent with dependency update: cairo
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:48:96)
+    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:49:27 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

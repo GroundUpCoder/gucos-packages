@@ -293,3 +293,22 @@ checked all244 combined outputs and parsed manifests. Exact source and binary
 evidence retained under batch-05, exported archives under apps. Independent
 publication review and public-live acceptance pending. General network/TLS and
 Unix-FD passing are not claimed.
+
+## Resumed-profile dependency metadata rejection
+
+Source run gtk-foundations-v5 built/tested/installed IJG JPEG and Turbo, then
+GdkPixbuf dependency resolution rejected with `reinstall dependent with dependency
+update: cairo`. The copied profile retained private source Cairo/dependency
+metadata while its new catalog referenced published manifests. This is a test
+profile transition requiring a consistent dependency graph, not evidence of a
+core runtime defect. No validation is bypassed; retry will use a fresh profile
+and current published closure. First stage aborted before exporting its successful
+predecessors. Exact failure/config retained under batch-06.
+
+## Ed and jq candidate acceptance
+
+Both guest source builds and retained consumers passed, including the upstream
+Ed suite/edit/red wrapper checks and jq JSON query plus named-capture regex.
+Fresh private binary install, installed consumers and reload exact payload/parsed
+manifest integrity passed. Evidence under batch-07 and exports under apps.
+Source415b7ca independently reviewed; artifacts/publication/public-live pending.
