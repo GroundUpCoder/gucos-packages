@@ -17,8 +17,14 @@ def write(path,x):path.write_text(json.dumps(x,indent=2)+'\n')
 site=run/'site';shutil.copytree('/Users/jku/git/wasm-posix/dist',site)
 core=json.loads((site/'build.json').read_text())
 assert core['runtime']=='61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0'
-with socket.socket() as sock:
- sock.bind(('127.0.0.1',0));port=sock.getsockname()[1]
+resume=os.environ.get('MIGRATION_PROFILE_FROM')
+if resume:
+ previous=Path(resume).resolve();assert previous.parent==(ROOT/'test-results/migration').resolve()
+ prior=json.loads((previous/'config.json').read_text());assert prior['expectedRuntime']==core['runtime']
+ port=int((previous/'port').read_text());shutil.copytree(previous/'profile',run/'profile')
+else:
+ with socket.socket() as sock:
+  sock.bind(('127.0.0.1',0));port=sock.getsockname()[1]
 (run/'port').write_text(str(port));origin='http://127.0.0.1:'+str(port)
 catalog=json.loads(blob('catalog.json'));baseline=dict(catalog['packages']);manifests={}
 def entry(path,b):return dict(url=origin+'/'+path,sha256=sha(b),size=len(b))
@@ -54,6 +60,6 @@ for n,m in manifests.items():
 write(site/'migration/catalog.json',catalog)
 snapshot={p.relative_to(site).as_posix():dict(sha256=sha(p.read_bytes()),size=p.stat().st_size) for p in site.rglob('*') if p.is_file()}
 write(run/'dist-files.json',snapshot)
-write(run/'config.json',dict(expectedRuntime=core['runtime'],dist=str(site.resolve()),inputCommit=revision,candidates=names,catalogUrl=origin+'/migration/catalog.json',baselinePackages=baseline,distributionSnapshotSha256=sha((run/'dist-files.json').read_bytes())))
+write(run/'config.json',dict(expectedRuntime=core['runtime'],dist=str(site.resolve()),inputCommit=revision,resumedPrivateProfile=resume,candidates=names,catalogUrl=origin+'/migration/catalog.json',baselinePackages=baseline,distributionSnapshotSha256=sha((run/'dist-files.json').read_bytes())))
 write(run/'candidate-manifests.json',manifests)
 print(run)

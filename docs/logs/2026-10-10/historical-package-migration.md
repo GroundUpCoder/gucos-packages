@@ -109,3 +109,20 @@ they are not yet publicly pushed or in the catalog. The publisher tool pins only
 explicit new names and refuses baseline19 mutations. Final independent review
 must precede supported publication. X client source acceptance now runs in a
 separate 600-second browser reservation after releasing the foundation slot.
+
+## First reviewed publication and X source correction
+
+Independent reviewer approved exact ebb4a05d834eb6c7fe4bfe7f3ecb6ffe32d745fd
+for the six foundations, checking all 25 payload files, immutable manifests,
+receipts, evidence hashes and baseline19 preservation. Pushed that exact commit;
+public catalog is now 25 entries. Public live verification is a distinct ongoing
+run; publication approval does not imply it passed.
+
+Four X candidates built and installed, but the grouped source stage failed on
+xedit math.c: missing `finite` declarations. The old recipe supplied
+-Dfinite=isfinite globally; the new adapter accidentally omitted it. Corrected
+that recipe flag. This is a migration omission, not a demonstrated core defect.
+Failed group log is retained. The retry uses a copy of this task's private test
+profile at the same local origin, with a separately frozen new candidate site;
+no user/historical browser profile is read or changed. Completed dependencies
+and existing output metadata remain available without rebuilding baseline19.

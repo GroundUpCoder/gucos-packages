@@ -8,7 +8,7 @@ cp lisp-io.c source/lisp/io.c
 cp lisp-lisp.c source/lisp/lisp.c
 mkdir -p "$DESTDIR/bin" "$DESTDIR/libexec/xedit" "$DESTDIR/share/xedit/tests" "$DESTDIR/share/licenses/xedit" "$DESTDIR/share/X11/app-defaults" "$DESTDIR/share/xedit/lisp/progmodes"
 cd source
-flags='-O2 --enable-fork -DHAVE_CONFIG_H -D_BSD_SOURCE -I. -Ilisp/re -Ilisp/mp -I/usr/local/include'
+flags='-O2 --enable-fork -DHAVE_CONFIG_H -Dfinite=isfinite -D_BSD_SOURCE -I. -Ilisp/re -Ilisp/mp -I/usr/local/include'
 objects=
 for file in bytecode core debugger format hash helper io lisp math package pathname read regex require stream string struct time write xedit; do
  cc $flags -DLISP '-DLISPDIR="/usr/local/share/xedit/lisp"' -c "lisp/$file.c" -o "lisp/$file.o"

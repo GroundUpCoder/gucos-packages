@@ -22,11 +22,11 @@ try{
  if(action==='consumers'){
   // Re-run the committed consumer scripts against installed headers and libraries.
   for(const name of names){
-   const manifest=JSON.parse(await readFile(resolve(config.dist,'migration',name,'package.json')));
+   const manifest=JSON.parse(await readFile(resolve(config.inputDist||config.dist,'migration',name,'package.json')));
    const directory='/tmp/migration-consumers/'+name;
    await s.command('mkdir -p '+directory);
    for(const file of manifest.files){
-    const bytes=await readFile(resolve(config.dist,'migration',name,file.path));
+    const bytes=await readFile(resolve(config.inputDist||config.dist,'migration',name,file.path));
     await s.page.evaluate(async ({path,encoded})=>shell.busybox.write(path,Uint8Array.from(atob(encoded),c=>c.charCodeAt(0))),{path:directory+'/'+file.path,encoded:bytes.toString('base64')});
    }
    await s.command('set -eu\ncd '+directory+'\ntar -xf source.tar\nDESTDIR=/usr/local sh test.sh');
