@@ -536,7 +536,7 @@
     {
       "id": "cairo-gobject",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/cairo-gobject/wasm-package.json",
       "historicalManifestSha256": "e73d039108ec402b10c4c525b7733ba22d1ec7693796563566b561e2d4da0657",
       "historicalEvidence": [
@@ -564,7 +564,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent provider/header design review and new guest acceptance pending."
+      ],
+      "candidate": "apps/cairo-gobject"
     },
     {
       "id": "cc",
