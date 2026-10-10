@@ -555,7 +555,7 @@
     {
       "id": "cairo-gobject",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/cairo-gobject/wasm-package.json",
       "historicalManifestSha256": "e73d039108ec402b10c4c525b7733ba22d1ec7693796563566b561e2d4da0657",
       "historicalEvidence": [
@@ -582,9 +582,15 @@
         "gobject"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest source build, retained recipe tests, install and export in clean profile; fresh binary/public gates pending",
+          "evidence": "batch-06/source-clean-gpt"
+        }
+      ],
       "blockers": [
-        "Fresh guest acceptance and independent artifact/publication review pending."
+        "Fresh binary installed-consumer/reload acceptance and independent artifact/publication review pending."
       ],
       "candidate": "apps/cairo-gobject",
       "sourceReview": {
@@ -1141,7 +1147,7 @@
     {
       "id": "gdk-pixbuf",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/gdk-pixbuf/wasm-package.json",
       "historicalManifestSha256": "cfd61a2a5bf1807781eb0967ae8331c4b02385b507c4e6988c65d8cb53317d21",
       "historicalEvidence": [
@@ -1169,9 +1175,15 @@
         "libpng"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest source build, retained recipe tests, install and export in clean profile; fresh binary/public gates pending",
+          "evidence": "batch-06/source-clean-gpt"
+        }
+      ],
       "blockers": [
-        "Fresh current-catalog profile retry pending after retained private-to-public dependency metadata rejection; no validation bypass or core defect claim."
+        "Fresh binary installed-consumer/reload acceptance and independent artifact/publication review pending."
       ],
       "candidate": "apps/gdk-pixbuf",
       "sourceReview": {
@@ -1617,7 +1629,7 @@
     {
       "id": "gtk3-schemas",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/gtk3-schemas/wasm-package.json",
       "historicalManifestSha256": "f36749b0911a3cfe23ec839d1dc2598085778d90d7256e8f4b640026ca57a2e3",
       "historicalEvidence": [
@@ -1644,9 +1656,15 @@
         "pkgconf"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest source build, retained recipe tests, install and export in clean profile; fresh binary/public gates pending",
+          "evidence": "batch-06/source-clean-gpt"
+        }
+      ],
       "blockers": [
-        "Independent source review and real guest schema compilation/lookup acceptance pending."
+        "Fresh binary installed-consumer/reload acceptance and independent artifact/publication review pending."
       ],
       "candidate": "apps/gtk3-schemas",
       "role": "schema/data package; not separately compiled application",
@@ -2260,7 +2278,7 @@
     {
       "id": "libjpeg",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/libjpeg/wasm-package.json",
       "historicalManifestSha256": "76ce5527ccf8331a2e40c189424efdf0f23b3d14e779b42cde0ed091c286db8b",
       "historicalEvidence": [
@@ -2291,9 +2309,15 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest source build, retained recipe tests, install and export in clean profile; fresh binary/public gates pending",
+          "evidence": "batch-06/source-clean-gpt"
+        }
+      ],
       "blockers": [
-        "Fresh current-catalog profile retry pending after retained private-to-public dependency metadata rejection; no validation bypass or core defect claim."
+        "Fresh binary installed-consumer/reload acceptance and independent artifact/publication review pending."
       ],
       "candidate": "apps/libjpeg",
       "sourceReview": {
@@ -2311,7 +2335,7 @@
     {
       "id": "libjpeg-turbo",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/libjpeg-turbo/wasm-package.json",
       "historicalManifestSha256": "eef351330736fdf02ba3b58131dc0b942147654645c260859da6330b5c7b746b",
       "historicalEvidence": [
@@ -2335,9 +2359,15 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest source build, retained recipe tests, install and export in clean profile; fresh binary/public gates pending",
+          "evidence": "batch-06/source-clean-gpt"
+        }
+      ],
       "blockers": [
-        "Fresh current-catalog profile retry pending after retained private-to-public dependency metadata rejection; no validation bypass or core defect claim."
+        "Fresh binary installed-consumer/reload acceptance and independent artifact/publication review pending."
       ],
       "candidate": "apps/libjpeg-turbo",
       "sourceReview": {
@@ -2685,7 +2715,7 @@
     {
       "id": "minihb",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/minihb/wasm-package.json",
       "historicalManifestSha256": "aa1634b986ab7dd18fe700c0c27b0cc1e7534fd6a7915fd93013f661a6f9b838",
       "historicalEvidence": [
@@ -2700,9 +2730,15 @@
         "freetype"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest source build, retained recipe tests, install and export in clean profile; fresh binary/public gates pending",
+          "evidence": "batch-06/source-clean-gpt"
+        }
+      ],
       "blockers": [
-        "Fresh guest acceptance and independent artifact/publication review pending."
+        "Fresh binary installed-consumer/reload acceptance and independent artifact/publication review pending."
       ],
       "candidate": "apps/minihb",
       "sourceReview": {

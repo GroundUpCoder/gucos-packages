@@ -1,0 +1,13 @@
+{
+  "action": "build",
+  "names": [
+    "minihb",
+    "cairo-gobject",
+    "gtk3-schemas"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "528ceb04c4c318ef6ddd3c3e1df728f4d9647391",
+  "startedAt": "2026-10-10T10:33:06.827Z",
+  "status": "passed",
+  "finishedAt": "2026-10-10T10:34:23.236Z"
+}

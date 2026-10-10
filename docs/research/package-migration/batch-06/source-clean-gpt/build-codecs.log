@@ -1,0 +1,226 @@
+gucman: unknown source
+
+gucman: build migration:libjpeg: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 14596 bytes; transfer finished
+gucman: Resolving: migration:libjpeg
+gucman: Downloading manifest for migration:libjpeg (1589 bytes)
+  Connecting; waiting for response…
+  Downloaded 1589 / 1589 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libjpeg
+gucman: Checking cached object: manifest for migration:libjpeg
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: libjpeg (0 remaining after this)
+gucman: Downloading libjpeg source: source.tar (1423360 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.36 / 1.36 MiB (100%); transfer finished
+gucman: Verifying download: libjpeg source: source.tar
+gucman: Checking cached object: libjpeg source: source.tar
+gucman: Downloading libjpeg source: build.sh (1324 bytes)
+  Connecting; waiting for response…
+  Downloaded 1324 / 1324 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg source: build.sh
+gucman: Checking cached object: libjpeg source: build.sh
+gucman: Downloading libjpeg source: test.sh (1449 bytes)
+  Connecting; waiting for response…
+  Downloaded 1449 / 1449 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg source: test.sh
+gucman: Checking cached object: libjpeg source: test.sh
+Building migration:libjpeg; running trusted recipe with access to your guest files
+433 functions, 442445 bytes
+425 functions, 428038 bytes
+2 functions, 11777 bytes
+gucman: Installing libjpeg: 0/8 files
+gucman: Installing libjpeg: 8/8 files
+gucman: Preparing checksums: libjpeg
+gucman: Checksummed libjpeg: 8/8 files
+gucman: Saving transaction: libjpeg
+gucman: Verifying staged files: libjpeg
+gucman: Activating: libjpeg
+Installed migration:libjpeg 9f-1
+
+gucman: build migration:libjpeg-turbo: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 14596 bytes; transfer finished
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Downloading manifest for migration:libjpeg-turbo (1832 bytes)
+  Connecting; waiting for response…
+  Downloaded 1832 / 1832 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: libjpeg-turbo (0 remaining after this)
+gucman: Downloading libjpeg-turbo source: source.tar (3983360 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.80 / 3.80 MiB (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: source.tar
+gucman: Checking cached object: libjpeg-turbo source: source.tar
+gucman: Downloading libjpeg-turbo source: build.sh (3114 bytes)
+  Connecting; waiting for response…
+  Downloaded 3114 / 3114 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: build.sh
+gucman: Checking cached object: libjpeg-turbo source: build.sh
+gucman: Downloading libjpeg-turbo source: test.sh (308 bytes)
+  Connecting; waiting for response…
+  Downloaded 308 / 308 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: test.sh
+gucman: Checking cached object: libjpeg-turbo source: test.sh
+Building migration:libjpeg-turbo; running trusted recipe with access to your guest files
+1007 functions, 937091 bytes
+982 functions, 898151 bytes
+2 functions, 10950 bytes
+gucman: Installing libjpeg-turbo: 0/9 files
+gucman: Installing libjpeg-turbo: 9/9 files
+gucman: Preparing checksums: libjpeg-turbo
+gucman: Checksummed libjpeg-turbo: 9/9 files
+gucman: Saving transaction: libjpeg-turbo
+gucman: Verifying staged files: libjpeg-turbo
+gucman: Activating: libjpeg-turbo
+Installed migration:libjpeg-turbo 3.1.4.1-1
+
+{
+  tail: 'ore\n' +
+    'gucman: Resolving: migration:gio-listmodel\n' +
+    'gucman: Checking cached object: manifest for migration:gio-listmodel\n' +
+    'gucman: Resolving: migration:gobject\n' +
+    'gucman: Checking cached object: manifest for migration:gobject\n' +
+    'gucman: Resolving: migration:glib\n'
+}
+{
+  tail: 'download: gdk-pixbuf source: jpeg-decode.c\n' +
+    'gucman: Checking cached object: gdk-pixbuf source: jpeg-decode.c\n' +
+    'Building migration:gdk-pixbuf; running trusted recipe with access to your guest files\n' +
+    '369 functions, 447247 bytes\n' +
+    '343 functions, 421989 bytes\n'
+}
+gucman: build migration:gdk-pixbuf: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 14596 bytes; transfer finished
+gucman: Resolving: migration:gdk-pixbuf
+gucman: Downloading manifest for migration:gdk-pixbuf (3416 bytes)
+  Connecting; waiting for response…
+  Downloaded 3416 / 3416 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gdk-pixbuf
+gucman: Checking cached object: manifest for migration:gdk-pixbuf
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Plan: 12 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 12 packages
+gucman: Package 1/12: libiconv (11 remaining after this)
+Already installed: libiconv
+gucman: Package 2/12: libintl (10 remaining after this)
+Already installed: libintl
+gucman: Package 3/12: pcre2 (9 remaining after this)
+Already installed: pcre2
+gucman: Package 4/12: glib (8 remaining after this)
+Already installed: glib
+gucman: Package 5/12: libffi (7 remaining after this)
+Already installed: libffi
+gucman: Package 6/12: gobject (6 remaining after this)
+Already installed: gobject
+gucman: Package 7/12: gio-listmodel (5 remaining after this)
+Already installed: gio-listmodel
+gucman: Package 8/12: zlib (4 remaining after this)
+Already installed: zlib
+gucman: Package 9/12: gio-core (3 remaining after this)
+Already installed: gio-core
+gucman: Package 10/12: libpng (2 remaining after this)
+Already installed: libpng
+gucman: Package 11/12: libjpeg-turbo (1 remaining after this)
+Already installed: libjpeg-turbo
+gucman: Package 12/12: gdk-pixbuf (0 remaining after this)
+gucman: Downloading gdk-pixbuf source: source.tar (21432320 bytes)
+  Connecting; waiting for response…
+  Downloaded 16.48 / 20.44 MiB (80%)
+  Downloaded 20.44 / 20.44 MiB (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: source.tar
+gucman: Checking cached object: gdk-pixbuf source: source.tar
+gucman: Downloading gdk-pixbuf source: build.sh (1913 bytes)
+  Connecting; waiting for response…
+  Downloaded 1913 / 1913 bytes (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: build.sh
+gucman: Checking cached object: gdk-pixbuf source: build.sh
+gucman: Downloading gdk-pixbuf source: test.sh (1339 bytes)
+  Connecting; waiting for response…
+  Downloaded 1339 / 1339 bytes (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: test.sh
+gucman: Checking cached object: gdk-pixbuf source: test.sh
+gucman: Downloading gdk-pixbuf source: jpeg-decode.c (1419 bytes)
+  Connecting; waiting for response…
+  Downloaded 1419 / 1419 bytes (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: jpeg-decode.c
+gucman: Checking cached object: gdk-pixbuf source: jpeg-decode.c
+Building migration:gdk-pixbuf; running trusted recipe with access to your guest files
+369 functions, 447247 bytes
+343 functions, 421989 bytes
+2 functions, 8961 bytes
+343 functions, 423501 bytes
+GDK-PIXBUF-JPEG-DECODE-PASS
+2 functions, 13646 bytes
+GDK-PIXBUF-JPEG-DECODE-PASS
+gucman: Installing gdk-pixbuf: 0/16 files
+gucman: Installing gdk-pixbuf: 16/16 files
+gucman: Preparing checksums: gdk-pixbuf
+gucman: Checksummed gdk-pixbuf: 16/16 files
+gucman: Saving transaction: gdk-pixbuf
+gucman: Verifying staged files: gdk-pixbuf
+gucman: Activating: gdk-pixbuf
+Installed migration:gdk-pixbuf 2.42.12-1
+
+5be6894fd26f52b3493f633a0986a077a7f452738ff0a27900072665cbce0430  /home/user/migration-export.tar
+1138176
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+b2f8b15bbfb871fb246d293aebe1f91eca3947f0a5762d0c0ea40f0dae86bd5f  /home/user/migration-export.tar
+2382336
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+5ee3bf0f55fc2388ee00f7e830a65aed0a1fa06338516e5a0ff70969796d20b9  /home/user/migration-export.tar
+1006592
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
