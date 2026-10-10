@@ -1,0 +1,94 @@
+[
+  {
+    "path": "bin/bitmap",
+    "mode": 493
+  },
+  {
+    "path": "share/doc/bitmap/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/bitmap/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "bin/bmtoa",
+    "mode": 493
+  },
+  {
+    "path": "bin/atobm",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/bitmap/XBITMAPS-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/menu12",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/Bitmap",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/Bitmap-color",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/Bitmap-nocase",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/Dashes",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/Down",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/Excl",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/FlipHoriz",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/FlipVert",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/Fold",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/Left",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/Right",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/RotateLeft",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/RotateRight",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/Stipple",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/Term",
+    "mode": 420
+  },
+  {
+    "path": "share/bitmap/bitmaps/Up",
+    "mode": 420
+  }
+]

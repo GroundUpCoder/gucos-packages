@@ -1,0 +1,33 @@
+{
+  "name": "bitmap",
+  "version": "1.1.1-1",
+  "dependencies": [
+    "x11-server",
+    "x11-toolkit",
+    "x11-widgets"
+  ],
+  "dependencyRequirements": {
+    "x11-server": {
+      "version": "21.1.24-1"
+    },
+    "x11-toolkit": {
+      "version": "1.0-1"
+    },
+    "x11-widgets": {
+      "version": "1.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh"
+  ]
+}

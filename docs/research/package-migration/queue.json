@@ -328,7 +328,7 @@
     {
       "id": "bitmap",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/bitmap/wasm-package.json",
       "historicalManifestSha256": "c97ecd69d22fd856c88ab26906dd033a0c680b2ea1d8690c61cd12a79dabee79",
       "historicalEvidence": [
@@ -353,7 +353,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Functional GUI, fresh binary/consumer/reload and independent publication acceptance pending."
+      ],
+      "candidate": "apps/bitmap"
     },
     {
       "id": "busybox",
@@ -4239,7 +4242,7 @@
     {
       "id": "xmag",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/xmag/wasm-package.json",
       "historicalManifestSha256": "5680332fc9c480b73b677c4badbf8ca31841dea61cbe7c909806d515bc435a7a",
       "historicalEvidence": [
@@ -4264,7 +4267,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Functional GUI, fresh binary/consumer/reload and independent publication acceptance pending."
+      ],
+      "candidate": "apps/xmag"
     },
     {
       "id": "xmahjongg",
