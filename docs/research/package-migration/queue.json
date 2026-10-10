@@ -3797,7 +3797,7 @@
     {
       "id": "tcl",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/tcl/wasm-package.json",
       "historicalManifestSha256": "34d36da7822b6e7542aa93dff47e7234bda4559a5dc0168194acd61d14bb6338",
       "historicalEvidence": [
@@ -3811,7 +3811,8 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/tcl"
     },
     {
       "id": "tinyxml2",

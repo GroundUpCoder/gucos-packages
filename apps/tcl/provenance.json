@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/tcl",
+  "archiveSha256": "b4595d8c8be1ccdb999a5ef48b766887968c8405de3c2676ad7eb54bd9603772",
+  "status": "source migration candidate; no new guest execution"
+}
