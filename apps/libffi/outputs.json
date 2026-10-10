@@ -1,0 +1,26 @@
+[
+  {
+    "path": "lib/libffi.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libffi.so",
+    "mode": 420
+  },
+  {
+    "path": "include/ffi.h",
+    "mode": 420
+  },
+  {
+    "path": "include/ffitarget.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/libffi.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libffi/LICENSE",
+    "mode": 420
+  }
+]

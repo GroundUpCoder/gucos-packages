@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/gettext",
+  "archiveSha256": "24cd15227d19375a79f6a065e47da50a9422e3e1af72231a0321ed610a31708e",
+  "status": "source migration candidate; no new guest execution"
+}

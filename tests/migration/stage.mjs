@@ -27,7 +27,7 @@ try{
    const tuples=files=>files.map(({path,sha256,size})=>({path,sha256,size}));
    assert.deepEqual(tuples(manifest.files),tuples(candidates[name].files),'Consumer inputs differ from frozen candidate: '+name);
    const verified=[];
-   const directory='/tmp/migration-consumers/'+name;
+   const directory='/tmp/migration-consumers/'+receiptLabel+'/'+name;
    await s.command('mkdir -p '+directory);
    for(const file of manifest.files){
     const bytes=await readFile(resolve(config.inputDist||config.dist,'migration',name,file.path));

@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/libiconv",
+  "archiveSha256": "9c8a4cf7d1a7a54ad5bc8f5bab72937126e3f6248af0baff44cf546d6692b6c2",
+  "status": "source migration candidate; no new guest execution"
+}

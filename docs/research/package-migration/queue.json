@@ -1838,7 +1838,7 @@
     {
       "id": "libffi",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/libffi/wasm-package.json",
       "historicalManifestSha256": "ba6535b10bd26cacea9f7aff0cbad135873a70504f89354268d33b0ff4d5fb90",
       "historicalEvidence": [
@@ -1863,7 +1863,10 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/libffi"
     },
     {
       "id": "libfm",
@@ -1935,7 +1938,7 @@
     {
       "id": "libiconv",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/libiconv/wasm-package.json",
       "historicalManifestSha256": "382b952fdbadffeb59827c8e103f06f68df12c74668590697a24cb18e3c44df7",
       "historicalEvidence": [
@@ -1961,12 +1964,15 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/libiconv"
     },
     {
       "id": "libintl",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/gettext/wasm-package.json",
       "historicalManifestSha256": "148457a5d63806b8e3c9baa921d5f7609ddef8e51783a3e975ce5f96c4ffadc9",
       "historicalEvidence": [
@@ -1994,7 +2000,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/libintl"
     },
     {
       "id": "libjpeg",
@@ -2555,7 +2564,7 @@
     {
       "id": "pcre2",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/pcre2/wasm-package.json",
       "historicalManifestSha256": "c36ec960359841727c0241aa8eca62c1cfc52e2fb8190f62bd5f1f993eba47ae",
       "historicalEvidence": [
@@ -2581,7 +2590,10 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/pcre2"
     },
     {
       "id": "pcre2grep",

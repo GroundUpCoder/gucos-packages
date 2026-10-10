@@ -131,9 +131,31 @@ and existing output metadata remain available without rebuilding baseline19.
 
 Fresh actual https://os.groundupcoder.net browser boot observed runtime61a87f88;
 installed all six from immutable public ebb4a05 catalog and unmodified final
-public manifests. All25 payload SHA256s and installed manifest bytes passed.
+public manifests. All25 payload SHA256s and installed manifest contents matched.
 Reopened browser ran committed consumers against installed files, including
 static/shared library relinking and bzip2 fixtures. Separate reload stage
 rechecked all25 payloads and exact manifests. All three stages passed; durable
 evidence under batch-01/public-live. Remote main was verified at approved ebb4a05.
 No baseline binary was rebuilt or retagged. This completes only these six items.
+
+## Consumer provenance strengthening and additional foundations
+
+Reviewer approved public-live documentation at24a0a72 with a wording correction:
+parsed manifest contents matched; byte-for-byte JSON serialization was not checked.
+Reviewer independently matched retained consumer inputs to public hashes, but
+requested runtime input verification for subsequent URL-session consumer runs.
+Added frozen path/hash/size tuple equality and individual input byte/hash checks.
+The first verification retry found a harness working-directory collision in the
+bzip2recover fixture (`recovery` already existed); no package bytes changed.
+Kept that failure and made consumer work directories attempt-specific. The
+separate verified-fresh six-package consumer retry passed, recording every input
+hash in its report. Prior reviewed evidence hash map is preserved; retry map is
+separate. This closes the consumer runtime-verification gap.
+
+Prepared libiconv1.18, PCRE2-8 10.46, libffi3.4.8 scalar continuation-ABI profile
+and libintl0.23.1 candidates with preserved historical source/port consumers.
+They are not yet built or accepted. Explicit libintl pthread requirement retained.
+Also found pixman-config.h enables HAVE_PTHREADS and added its feature declaration
+before any graphics build. These source additions await independent review.
+Xedit corrected source build passed; all five X client artifacts exported. Fresh
+binary installation is now running before functional X acceptance.

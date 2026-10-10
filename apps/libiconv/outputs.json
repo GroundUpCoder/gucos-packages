@@ -1,0 +1,26 @@
+[
+  {
+    "path": "lib/libiconv.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libiconv.so",
+    "mode": 420
+  },
+  {
+    "path": "include/iconv.h",
+    "mode": 420
+  },
+  {
+    "path": "include/localcharset.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/libiconv.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libiconv/COPYING.LIB",
+    "mode": 420
+  }
+]
