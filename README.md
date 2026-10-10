@@ -40,8 +40,11 @@ or dynamic module loading. Zstandard includes the CLI and static development
 library, with assembly and legacy-format support disabled.
 
 The expansion supplies guest-built binaries for those 15 packages plus the X11
-server and toolkit. Binaries require the exact recorded core runtime identity;
-source builds use `gucman build groundupcoder:NAME`. Existing jsmn has a binary;
+server and toolkit. The original binaries retain their 2a9cca build provenance and are accepted by
+platform 1.0 through its verified legacy mapping; source builds use
+`gucman build groundupcoder:NAME`. Existing jsmn has a binary;
 twm remains source-only. Package READMEs document each supported profile.
 Acceptance, immutable publication and independent review are recorded in
 [the expansion journal](docs/logs/2026-10-10/package-expansion.md).
+
+Future builds and publications follow the [platform package contract](docs/package-publication.md). Existing catalog and binary metadata remain unchanged.
