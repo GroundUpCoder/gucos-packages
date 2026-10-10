@@ -3699,7 +3699,7 @@
     {
       "id": "sdl3-image",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/sdl3-image/wasm-package.json",
       "historicalManifestSha256": "e03879333f1c0ffea29a0cfe573f194d8398f6cc72d2208b842ade6d654fba61",
       "historicalEvidence": [
@@ -3722,12 +3722,15 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Fresh guest/binary/reload and browser-specific image/audio acceptance pending."
+      ],
+      "candidate": "apps/sdl3-image"
     },
     {
       "id": "sdl3-mixer",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/sdl3-mixer/wasm-package.json",
       "historicalManifestSha256": "0ade0656d5d74f9b53cb34e8467dfe514cb0c5a2cfcf8316babbb0e188c9255c",
       "historicalEvidence": [
@@ -3750,7 +3753,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Fresh guest/binary/reload and browser-specific image/audio acceptance pending."
+      ],
+      "candidate": "apps/sdl3-mixer"
     },
     {
       "id": "sdl3-ttf",
