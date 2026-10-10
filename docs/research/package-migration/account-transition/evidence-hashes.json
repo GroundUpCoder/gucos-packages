@@ -1,0 +1,30 @@
+{
+  "dependencies.log": {
+    "sha256": "9df2c5547d90f832e62d48b98291bb90bee8083f994d787f7db485c377c516ce",
+    "size": 972
+  },
+  "dist-files.json": {
+    "sha256": "2ca8fb2b3bbc277aadb1720515ce0c9e8fff9f26e907a2ad480e5800e7df51ba",
+    "size": 43848
+  },
+  "observed-runtime.json": {
+    "sha256": "d7cd3ad1f448bcb7036f816e699c66a771c1b7314f8e0e07f7214b0d463d10cd",
+    "size": 123
+  },
+  "config.json": {
+    "sha256": "4c7fadb8f9ae1bbf59fdaf1ee0035ef618b945f3de208a2f75d9f158a8b8e894",
+    "size": 13408
+  },
+  "build-job.log": {
+    "sha256": "c10b7889f89c70522cfeb03145fadc6730c9f809aa335ae3a2776c9fb5e0744b",
+    "size": 446
+  },
+  "dependencies-cairo-gio-core-atk-fribidi-pkgconf.json": {
+    "sha256": "c3a1bafd7039b21777d65f0a7188f3c4302687f4604beb2a82f2511f51f9f4b4",
+    "size": 632
+  },
+  "candidate-manifests.json": {
+    "sha256": "6f7198724bf2ec61956a39c1110412646926eaebf1d8f0aa3d2bf90a4a764427",
+    "size": 104991
+  }
+}

@@ -321,3 +321,27 @@ passed installed static/shared and extended local-session consumers, then verifi
 all244 combined outputs/parsed manifests after reload on61a. Exact public evidence
 under batch-05/public-live. This brings live-accepted additions to27 package
 entries, not27 canonical historical names. Remaining queue is not complete.
+
+## Funding-account transition and interrupted reservation
+
+User authorized replacement of both coordinator01a12401-30cf-7004-a932-af576a939e08
+and implementation owner01a12509-9373-77dd-b1be-e5935164809b. Sole successor
+owner is01a12557-7667-7b91-b77f-df9b68cb3658; independent reviewer is
+01a12556-d14c-71d3-b0d9-aa86966abbf7. Both use Codex/gpt-6-astra, funding gpt.
+Successor verified cc-meta thread model/executor and actual PID95937 command
+`codex exec ... -m gpt-6-astra`; lsof showed active databases and native session
+01a12557-7f34-7ba3-acb9-ef15021add80 under /Users/jku/.codex-gpt.
+Project settings report authIdentityCodex=gpt. cc-meta running-project list
+contained only this successor; machine-job reported jobs:[]. No old threads
+were messaged or awakened. Reviewer independently reported the same runtime
+account home in its kickoff. This records account selection, not a billing invoice.
+
+Interrupted reservation becd5dcc-15fa-4a5e-803f-6f875df1167f (wrapper PID95197)
+is NOT acceptance. Its dependency stage failed when its browser closed at
+2026-10-10T10:23:02.257Z; log ends during x11-server installation. No codec or
+later GTK foundation build report/export exists from this reservation. Original
+profile/logs remain intact; exact configuration, failed report and logs are copied
+with hashes under docs/research/package-migration/account-transition.
+A new serial reservation is completing the already-published Ed/jq public gates.
+Recovered HEAD360e444 records27 live-accepted additions (split package entries,
+not canonical rows); Ed/jq public acceptance and GTK closure remain pending.

@@ -1,0 +1,5 @@
+[machine-job] queued: sh -c set -e
+node tests/migration/stage.mjs dependencies cairo gio-core atk fribidi pkgconf > "$COMPAT_RUN_DIR/dependencies.log" 2>&1
+node tests/migration/stage.mjs build libjpeg libjpeg-turbo gdk-pixbuf > "$COMPAT_RUN_DIR/build-codecs.log" 2>&1
+node tests/migration/stage.mjs build minihb cairo-gobject gtk3-schemas > "$COMPAT_RUN_DIR/build-gtk-support.log" 2>&1
+[machine-job] running: becd5dcc-15fa-4a5e-803f-6f875df1167f

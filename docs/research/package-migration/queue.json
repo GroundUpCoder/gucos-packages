@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "ownerThread": "01a12509-9373-77dd-b1be-e5935164809b",
+  "ownerThread": "01a12557-7667-7b91-b77f-df9b68cb3658",
   "baselineCommit": "716bfe27a56357513abfc7213d542bda63129cd1",
   "baselineCatalogSha256": "8d7c4cbf0b2110f66aadabf766f0aad93563d090adb46861d31b3869bbba25fd",
   "historicalCommit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
@@ -4256,5 +4256,8 @@
     "confirmation": "Core recording, deployment and live tests complete; hold explicitly lifted.",
     "platform": "1.0.1",
     "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0"
-  }
+  },
+  "previousOwnerThread": "01a12509-9373-77dd-b1be-e5935164809b",
+  "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+  "fundingAccount": "gpt"
 }
