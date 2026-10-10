@@ -372,3 +372,20 @@ Prepared libevent2.1.12 and libuv1.51.0 adapters at ec043c5. All507 archived blo
 match pinned historical Git; static/shared timer/buffer and pipe/poll consumers
 are prepared. No networking or full upstream-suite claim. Independent source
 review and actual guest execution are pending.
+
+## Reviewed successor candidates
+
+Independent gpt reviewer cleared libevent source ec043c5 and libuv68d6ec8 after
+removing obsolete extracted ptsname stub and adding both libc/libuv header orders.
+It verified Ed/jq public evidence6d9e9d4 and approved stale-queue correction68d6ec8.
+Reviewed/pushed chain preserves baseline19 and all existing catalog references.
+Reviewer also cleared pigz/nyancat723edcc, SQLite/QuickJS1ab42b9 and PCRE2 CLIs
+0153944 for source preparation. Each remains unpublished without guest acceptance.
+Exact archives, recipe flags and scoped tests are in apps; queue retains per-item
+review IDs. No original compatibility gates were repeated. No default threads
+were awakened. GTK GUI harnessbbfe249 is prepared and pending source review/run.
+
+The fresh GTK source stage has passed JPEG, Turbo and GdkPixbuf build/test/install
+and export; MiniHB build/test/install also passed, its grouped export still pending.
+These observations are not binary-install or public acceptance. The browser run
+remains serial and bounded by the scheduler.

@@ -2050,7 +2050,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [],
-      "candidate": "apps/libevent"
+      "candidate": "apps/libevent",
+      "sourceReview": {
+        "commit": "ec043c5",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved source preparation only; guest/artifact/publication gates pending."
+      }
     },
     {
       "id": "libffi",
@@ -2468,7 +2473,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [],
-      "candidate": "apps/libuv"
+      "candidate": "apps/libuv",
+      "sourceReview": {
+        "commit": "68d6ec8",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved source preparation only; guest/artifact/publication gates pending."
+      }
     },
     {
       "id": "libxfce4util",
@@ -2778,7 +2788,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [],
-      "candidate": "apps/nyancat"
+      "candidate": "apps/nyancat",
+      "sourceReview": {
+        "commit": "723edcc",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved source preparation only; guest/artifact/publication gates pending."
+      }
     },
     {
       "id": "pango",
@@ -2943,7 +2958,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [],
-      "candidate": "apps/pcre2grep"
+      "candidate": "apps/pcre2grep",
+      "sourceReview": {
+        "commit": "0153944",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved source preparation only; guest/artifact/publication gates pending."
+      }
     },
     {
       "id": "pcre2test",
@@ -2981,7 +3001,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [],
-      "candidate": "apps/pcre2test"
+      "candidate": "apps/pcre2test",
+      "sourceReview": {
+        "commit": "0153944",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved source preparation only; guest/artifact/publication gates pending."
+      }
     },
     {
       "id": "perl",
@@ -3059,7 +3084,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [],
-      "candidate": "apps/pigz"
+      "candidate": "apps/pigz",
+      "sourceReview": {
+        "commit": "723edcc",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved source preparation only; guest/artifact/publication gates pending."
+      }
     },
     {
       "id": "pixman",
@@ -3380,7 +3410,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [],
-      "candidate": "apps/qjs"
+      "candidate": "apps/qjs",
+      "sourceReview": {
+        "commit": "1ab42b9",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved source preparation only; guest/artifact/publication gates pending."
+      }
     },
     {
       "id": "quake",
@@ -3703,7 +3738,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [],
-      "candidate": "apps/sqlite3"
+      "candidate": "apps/sqlite3",
+      "sourceReview": {
+        "commit": "1ab42b9",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved source preparation only; guest/artifact/publication gates pending."
+      }
     },
     {
       "id": "tcl",
