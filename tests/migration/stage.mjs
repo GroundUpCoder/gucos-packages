@@ -1,6 +1,6 @@
 // Run only inside a machine-job browser reservation. One sequential browser.
 import {session} from '../compatibility/session.mjs';
-import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,access} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
@@ -9,9 +9,12 @@ const run=process.env.COMPAT_RUN_DIR,config=JSON.parse(await readFile(resolve(ru
 const action=process.argv[2],names=process.argv.slice(3);
 assert(['build','install','reload','dependencies','consumers'].includes(action));
 assert(names.length && names.every(n=>(action==='dependencies'?Object.hasOwn(config.baselinePackages,n):config.candidates.includes(n))));
+const label=action+'-'+names.join('-'),reportPath=resolve(run,label+'.json');
+async function absent(path){try{await access(path);}catch(error){if(error.code==='ENOENT')return;throw error;}throw Error('Refusing repeated stage output: '+path);}
+await absent(reportPath);
+for(const name of names)await absent(resolve(run,'exports',name,action+'-receipt.json'));
 const s=await session();
 const report={action,names,runtime:s.runtime,inputCommit:config.inputCommit,startedAt:new Date().toISOString(),status:'running'};
-const label=action+'-'+names.join('-'),reportPath=resolve(run,label+'.json');
 try{
  await s.command('set -eu\ngucman repo remove groundupcoder || true\ngucman repo remove migration || true\ngucman repo add migration '+config.catalogUrl);
  if(action==='consumers'){
@@ -55,4 +58,7 @@ try{
  }
  report.status='passed';
 }catch(error){report.status='failed';report.error=String(error.stack||error);throw error;}
-finally{report.finishedAt=new Date().toISOString();await writeFile(reportPath,JSON.stringify(report,null,2)+'\n',{flag:'wx'});await s.close();}
+finally{
+ report.finishedAt=new Date().toISOString();
+ try{await writeFile(reportPath,JSON.stringify(report,null,2)+'\n',{flag:'wx'});}finally{await s.close();}
+}
