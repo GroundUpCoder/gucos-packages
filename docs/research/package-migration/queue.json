@@ -4655,11 +4655,14 @@
     {
       "id": "pcg32",
       "kind": "additional-workload",
-      "state": "queued",
+      "state": "source-preparation-needed",
       "scope": "Host C++ preparation, whole/object/archive differential execution",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Retained project manifest exists but all17 generated definition files are absent. Recreate host preparation under packages ownership, then fresh guest acceptance; do not rerun old core compatibility gates."
+      ],
+      "preparationAudit": "docs/research/package-migration/pcg32-retained-output-audit.json"
     },
     {
       "id": "libcxx-support",

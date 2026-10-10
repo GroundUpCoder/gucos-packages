@@ -1,0 +1,26 @@
+{
+  "historicalCommit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "manifestPath": "/Users/jku/git/wasm-posix-old/test-results/cpp-translator/pcg32-generated-project/manifest.json",
+  "manifestSha256": "f2a80b013c6eb6b48d951b7e90bcc196d31d91fa477e0ca3373c8cd177993198",
+  "expectedDefinitionCount": 17,
+  "missingDefinitions": [
+    "definitions/91ba9121865cc84ce45fb45dcf70d2c1eb28135cdc95ef3dad88d2bf7fe75c04.c",
+    "definitions/cee3b0a3bf8a019da2ed3ab097bd9504618a178328e47375f044fc7839734565.c",
+    "definitions/e0c2888e823dc373b37d6465125a18892955c3b779d1f51cad749fc3686a5b34.c",
+    "definitions/62ba04edea3f5df4feb61688ede96d1bdb4c3e3a115a4932b37b53762f288ceb.c",
+    "definitions/3438c246cd51e8ddf3c0450c55b721854d301b9adea3ffeec919cefac57bc7a2.c",
+    "definitions/2ba8244feda782d840451419a3ae58e9f59b686697ddf941c8e376261e51fe56.c",
+    "definitions/af5d578beaa1d6c7c7f9bbde1b129f979fe5d6781cee83c6a681ab379a2f252a.c",
+    "definitions/a9e958f195982449e37bd379d1e47713f346faaf27703b716152cd00bcab4ada.c",
+    "definitions/da02bc4982fcd2c3d6f544d4932f1b494afa1b7aaae615de6ea341deacfc3f8f.c",
+    "definitions/2a0d6a2c47924e0e72007ae7a4459e7d02c7153677fef8bafb17058fda4e0581.c",
+    "definitions/407596791ae3b7da30af52841a98d11c38465e5fd0e7ef7def4062ee9154fea8.c",
+    "definitions/56ea2bf10cd62f9af8d7c3bbde12a27044f82bbb6951316a0f8bebb8f3a572a3.c",
+    "definitions/37f780055aa2cc2ce79ef69b5c1ae120ef15835802ca9f2bdf3402dbcf89d2b3.c",
+    "definitions/1c941ac168db802967eb043d8f154a0089381061604eb430775554ee765792dc.c",
+    "definitions/7c01f02cc76650f22c3f725cec3bbeccb86b29372ef3bbf1833cca0b3f8f0a5b.c",
+    "definitions/21fa214cfb81e4c0f09273e2e255693c12c8e8b6556e9815bf7f9cba48102362.c",
+    "definitions/0930619c1dedc50c17c73f1a0e1a112aa565520955932ac9063dae628ba2bab0.c"
+  ],
+  "scope": "Read-only retained-output audit. Historical successful script deletes its temporary generated project. New package-local host preparation and guest acceptance needed; no historical result reused as current acceptance."
+}
