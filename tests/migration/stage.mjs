@@ -9,10 +9,12 @@ const run=process.env.COMPAT_RUN_DIR,config=JSON.parse(await readFile(resolve(ru
 const action=process.argv[2],names=process.argv.slice(3);
 assert(['build','install','reload','dependencies','consumers'].includes(action));
 assert(names.length && names.every(n=>(action==='dependencies'?Object.hasOwn(config.baselinePackages,n):config.candidates.includes(n))));
-const label=action+'-'+names.join('-'),reportPath=resolve(run,label+'.json');
+const attempt=process.env.MIGRATION_ATTEMPT||'';assert(!attempt||/^[a-zA-Z0-9_-]+$/.test(attempt));
+const receiptLabel=action+(attempt?'-'+attempt:'');
+const label=receiptLabel+'-'+names.join('-'),reportPath=resolve(run,label+'.json');
 async function absent(path){try{await access(path);}catch(error){if(error.code==='ENOENT')return;throw error;}throw Error('Refusing repeated stage output: '+path);}
 await absent(reportPath);
-for(const name of names)await absent(resolve(run,'exports',name,action+'-receipt.json'));
+for(const name of names)await absent(resolve(run,'exports',name,receiptLabel+'-receipt.json'));
 const s=await session();
 const report={action,names,runtime:s.runtime,inputCommit:config.inputCommit,startedAt:new Date().toISOString(),status:'running'};
 try{
@@ -34,6 +36,7 @@ try{
  }else if(action==='reload'){
   await s.page.reload();await s.page.waitForFunction(()=>window.shell?.ready);
   assert.equal(await s.page.evaluate(()=>shell.toolchain.systemBuild),s.runtime);
+  await s.command('true'); // Initialize the lazy guest shell after navigation.
  }else{
   for(const name of names)await s.command('gucman '+action+' migration:'+name);
  }
@@ -54,7 +57,7 @@ try{
   const bytes=Buffer.from(result.encoded,'base64'),hash=createHash('sha256').update(bytes).digest('hex');
   const dir=resolve(run,'exports',name);await mkdir(dir,{recursive:true});
   await writeFile(resolve(dir,hash+'.tar'),bytes);
-  await writeFile(resolve(dir,action+'-receipt.json'),JSON.stringify({runtime:s.runtime,sha256:hash,size:bytes.length,guestManifest:result.manifest,method:'Actual guest gucman pack; source build and test scripts run by gucman for build stage'},null,2)+'\n',{flag:'wx'});
+  await writeFile(resolve(dir,receiptLabel+'-receipt.json'),JSON.stringify({runtime:s.runtime,sha256:hash,size:bytes.length,guestManifest:result.manifest,method:'Actual guest gucman pack; source build and test scripts run by gucman for build stage'},null,2)+'\n',{flag:'wx'});
  }
  report.status='passed';
 }catch(error){report.status='failed';report.error=String(error.stack||error);throw error;}

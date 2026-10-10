@@ -377,7 +377,7 @@
     {
       "id": "bzip2",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/bzip2/wasm-package.json",
       "historicalManifestSha256": "831fee1a45e6c523f6f936dadb600d314a4796ff418be6f5005139549b4b8539",
       "historicalEvidence": [
@@ -408,9 +408,17 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
+          "evidence": "batch-01",
+          "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        }
+      ],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
+        "Final independent artifact/evidence/publication review pending.",
+        "Immutable public publication and public installation not yet performed."
       ],
       "candidate": "apps/bzip2",
       "sourceReview": {
@@ -422,7 +430,7 @@
     {
       "id": "bzip2recover",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/bzip2/wasm-package.json",
       "historicalManifestSha256": "831fee1a45e6c523f6f936dadb600d314a4796ff418be6f5005139549b4b8539",
       "historicalEvidence": [
@@ -453,9 +461,17 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
+          "evidence": "batch-01",
+          "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        }
+      ],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
+        "Final independent artifact/evidence/publication review pending.",
+        "Immutable public publication and public installation not yet performed."
       ],
       "candidate": "apps/bzip2recover",
       "sourceReview": {
@@ -727,7 +743,7 @@
     {
       "id": "expat",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/expat/wasm-package.json",
       "historicalManifestSha256": "4a65883306514b27aed9bebbf371e463caaf1e739ec14425ee05794a1b03a3c4",
       "historicalEvidence": [
@@ -747,9 +763,17 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
+          "evidence": "batch-01",
+          "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        }
+      ],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
+        "Final independent artifact/evidence/publication review pending.",
+        "Immutable public publication and public installation not yet performed."
       ],
       "candidate": "apps/expat",
       "sourceReview": {
@@ -2738,7 +2762,7 @@
     {
       "id": "pkgconf",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/pkgconf/wasm-package.json",
       "historicalManifestSha256": "1441bb19f6cfbb6e28ed822bc109742b9a6f7cf3d0fd63175b466b7fd05fee53",
       "historicalEvidence": [
@@ -2763,9 +2787,17 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
+          "evidence": "batch-01",
+          "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        }
+      ],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
+        "Final independent artifact/evidence/publication review pending.",
+        "Immutable public publication and public installation not yet performed."
       ],
       "candidate": "apps/pkgconf",
       "sourceReview": {
@@ -3672,7 +3704,7 @@
     {
       "id": "zlib",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/zlib/wasm-package.json",
       "historicalManifestSha256": "c948b6642abbf109e38c57576ab0c499fcaf45f53d0675fad9f0f0108921e109",
       "historicalEvidence": [
@@ -3697,9 +3729,17 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
+          "evidence": "batch-01",
+          "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        }
+      ],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
+        "Final independent artifact/evidence/publication review pending.",
+        "Immutable public publication and public installation not yet performed."
       ],
       "candidate": "apps/zlib",
       "sourceReview": {
@@ -3739,12 +3779,20 @@
     {
       "id": "cjson",
       "kind": "additional-workload",
-      "state": "source-prepared",
+      "state": "candidate-accepted-awaiting-review",
       "scope": "cJSON 1.7.19 whole/archive consumers",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
+          "evidence": "batch-01",
+          "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        }
+      ],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
+        "Final independent artifact/evidence/publication review pending.",
+        "Immutable public publication and public installation not yet performed."
       ],
       "candidate": "apps/cjson",
       "review": {

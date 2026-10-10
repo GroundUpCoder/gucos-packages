@@ -1,0 +1,60 @@
+[machine-job] queued: node tests/migration/stage.mjs reload zlib cjson pkgconf bzip2 bzip2recover expat
+[machine-job] running: e88aa04c-ab5c-4944-abb6-985c7180d7c7
+gucman: unknown source
+
+
+/usr/local/lib/libz.a: OK
+/usr/local/lib/libz.so: OK
+/usr/local/include/zlib.h: OK
+/usr/local/include/zconf.h: OK
+/usr/local/lib/pkgconfig/zlib.pc: OK
+/usr/local/share/licenses/zlib/LICENSE: OK
+
+bf1d22d7fe312f2cbcd9643d288a43fa93beda6d17969a162f2135ecd570fb13  /home/user/migration-export.tar
+513024
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libcjson.a: OK
+/usr/local/lib/libcjson.so: OK
+/usr/local/include/cjson/cJSON.h: OK
+/usr/local/share/licenses/cjson/LICENSE: OK
+
+2a0b19907c08c6ac868ec0861cef83c800e571756ac9268f98f7e9e796cbae55  /home/user/migration-export.tar
+174592
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/pkgconf: OK
+/usr/local/bin/pkg-config: OK
+/usr/local/share/licenses/pkgconf/COPYING: OK
+
+39cbea94b9eb0ef4b75c4a6746bb8e1eff6de9f9c80e1b6000d4febb547eb656  /home/user/migration-export.tar
+454656
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/bzip2: OK
+/usr/local/bin/bunzip2: OK
+/usr/local/bin/bzcat: OK
+/usr/local/share/licenses/bzip2/LICENSE: OK
+
+0d90b9fcd53fd168f5ef2b4ceec71b797a62baabe1fea7c1fb4ba265b3b09cd3  /home/user/migration-export.tar
+510464
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/bzip2recover: OK
+/usr/local/share/licenses/bzip2recover/LICENSE: OK
+
+3e1ead45d08880337b67ad172c0741b395c0505f6c8c6424875316f6b5207563  /home/user/migration-export.tar
+22528
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libexpat.a: OK
+/usr/local/lib/libexpat.so: OK
+/usr/local/include/expat.h: OK
+/usr/local/include/expat_external.h: OK
+/usr/local/lib/pkgconfig/expat.pc: OK
+/usr/local/share/licenses/expat/COPYING: OK
+
+f8753250ebb8c50ea61da056971ebece360d9ffa85c4c7ba0c3f70db9313fda2  /home/user/migration-export.tar
+778752
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

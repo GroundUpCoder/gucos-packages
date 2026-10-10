@@ -92,3 +92,20 @@ Reviewer found Cairo/Fontconfig pthread feature omissions and unsupported Cairo
 GObject feature advertisement at 5c8da3c. Corrected requirements and transformed
 the effective Cairo feature header in build.sh while retaining exact overlay
 input bytes. Re-review of frozen correction remains pending.
+
+## First six binary candidates accepted privately
+
+Fresh binary install, installed consumer execution/relinking and reload integrity
+passed for zlib/cJSON/pkgconf/bzip2/bzip2recover/Expat. Exact output hashes and
+frozen installed manifests are checked in guest. First reload attempt failed in
+harness setup (lazy shell not initialized after navigation); retained failure
+report/log, corrected with a real `true` guest command after reload, and the
+separate `initialized` attempt passed. No core failure inferred.
+
+Durable exact logs, reports, output checksum maps, runtime/config identities and
+evidence hashes are under docs/research/package-migration/batch-01. Exported
+source-built archives and receipts now exist under each candidate's binaries/;
+they are not yet publicly pushed or in the catalog. The publisher tool pins only
+explicit new names and refuses baseline19 mutations. Final independent review
+must precede supported publication. X client source acceptance now runs in a
+separate 600-second browser reservation after releasing the foundation slot.
