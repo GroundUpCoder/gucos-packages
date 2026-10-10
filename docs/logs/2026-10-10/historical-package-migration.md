@@ -492,3 +492,13 @@ GTK reservation02288ba7 compiled586 units and linked both libraries, then failed
 the version consumer because its include order selected minimal GIO headers.
 Failure retained in batch12; f1e6286 fixes public pkgconfig GIO-first resolution
 and tests that include order explicitly. It is not GTK acceptance.
+
+## User priority hold: machine reservation released
+
+User requested immediate release for the higher-priority app. Sent SIGTERM to
+own scheduler wrapper10738 for HarfBuzz split reservationea53c837. Verified wrapper
+and child10835 exited; scheduler now shows only pickle397c2f03 running. No other
+application was signaled. No package browser/build job remains queued or running.
+Split logs/profile are preserved; this is interrupted evidence, not a pass.
+Browser/build scheduling is on hold pending the user priority constraint being
+lifted. Baseline artifacts, core, old repository and browser disks were not edited.

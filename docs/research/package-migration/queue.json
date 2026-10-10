@@ -4,7 +4,7 @@
   "baselineCommit": "716bfe27a56357513abfc7213d542bda63129cd1",
   "baselineCatalogSha256": "8d7c4cbf0b2110f66aadabf766f0aad93563d090adb46861d31b3869bbba25fd",
   "historicalCommit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
-  "browserHold": false,
+  "browserHold": true,
   "rows": [
     {
       "id": "2048",
@@ -4713,5 +4713,6 @@
   },
   "previousOwnerThread": "01a12509-9373-77dd-b1be-e5935164809b",
   "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
-  "fundingAccount": "gpt"
+  "fundingAccount": "gpt",
+  "browserHoldReason": "User instructed release of machine-wide reservation for higher-priority app; do not enqueue new build/browser jobs while hold remains."
 }

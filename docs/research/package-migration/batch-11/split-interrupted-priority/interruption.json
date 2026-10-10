@@ -1,0 +1,9 @@
+{
+  "reservation": "ea53c837-884f-4e74-afa8-b58377ea1ada",
+  "wrapperPid": 10738,
+  "signal": "SIGTERM",
+  "reason": "User instructed immediate release for higher-priority app",
+  "result": "Interrupted evidence, not acceptance",
+  "verification": "Own wrapper and child exited; scheduler shows only pickle reservation397c2f03 running",
+  "browserHold": true
+}
