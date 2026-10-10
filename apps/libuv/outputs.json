@@ -1,0 +1,94 @@
+[
+  {
+    "path": "lib/libuv.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libuv.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/libuv.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libuv/LICENSE",
+    "mode": 420
+  },
+  {
+    "path": "include/uv.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/aix.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/bsd.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/darwin.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/errno.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/linux.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/os390.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/posix.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/sunos.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/threadpool.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/tree.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/unix.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/version.h",
+    "mode": 420
+  },
+  {
+    "path": "include/uv/win.h",
+    "mode": 420
+  },
+  {
+    "path": "include/wasm-posix-libuv/arpa/inet.h",
+    "mode": 420
+  },
+  {
+    "path": "include/wasm-posix-libuv/ifaddrs.h",
+    "mode": 420
+  },
+  {
+    "path": "include/wasm-posix-libuv/net/if.h",
+    "mode": 420
+  },
+  {
+    "path": "include/wasm-posix-libuv/netdb.h",
+    "mode": 420
+  },
+  {
+    "path": "include/wasm-posix-libuv/platform.h",
+    "mode": 420
+  }
+]

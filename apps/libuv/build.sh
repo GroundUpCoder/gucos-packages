@@ -1,0 +1,102 @@
+#!/bin/sh
+set -eu
+tar -xf source.tar
+stage="$PWD/stage"
+cd source
+mkdir -p "$stage/objects" "$stage/include/uv"
+objects=
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/fs-poll.c -o "$stage/objects/0.o"
+objects="$objects $stage/objects/0.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/idna.c -o "$stage/objects/1.o"
+objects="$objects $stage/objects/1.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/inet.c -o "$stage/objects/2.o"
+objects="$objects $stage/objects/2.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/random.c -o "$stage/objects/3.o"
+objects="$objects $stage/objects/3.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/strscpy.c -o "$stage/objects/4.o"
+objects="$objects $stage/objects/4.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/thread-common.c -o "$stage/objects/5.o"
+objects="$objects $stage/objects/5.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/threadpool.c -o "$stage/objects/6.o"
+objects="$objects $stage/objects/6.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/timer.c -o "$stage/objects/7.o"
+objects="$objects $stage/objects/7.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/uv-data-getter-setters.c -o "$stage/objects/8.o"
+objects="$objects $stage/objects/8.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/uv-common.c -o "$stage/objects/9.o"
+objects="$objects $stage/objects/9.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/version.c -o "$stage/objects/10.o"
+objects="$objects $stage/objects/10.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/strtok.c -o "$stage/objects/11.o"
+objects="$objects $stage/objects/11.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/async.c -o "$stage/objects/12.o"
+objects="$objects $stage/objects/12.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/core.c -o "$stage/objects/13.o"
+objects="$objects $stage/objects/13.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/dl.c -o "$stage/objects/14.o"
+objects="$objects $stage/objects/14.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/fs.c -o "$stage/objects/15.o"
+objects="$objects $stage/objects/15.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/getaddrinfo.c -o "$stage/objects/16.o"
+objects="$objects $stage/objects/16.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/getnameinfo.c -o "$stage/objects/17.o"
+objects="$objects $stage/objects/17.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/loop-watcher.c -o "$stage/objects/18.o"
+objects="$objects $stage/objects/18.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/loop.c -o "$stage/objects/19.o"
+objects="$objects $stage/objects/19.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/pipe.c -o "$stage/objects/20.o"
+objects="$objects $stage/objects/20.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/poll.c -o "$stage/objects/21.o"
+objects="$objects $stage/objects/21.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/process.c -o "$stage/objects/22.o"
+objects="$objects $stage/objects/22.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/random-devurandom.c -o "$stage/objects/23.o"
+objects="$objects $stage/objects/23.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/signal.c -o "$stage/objects/24.o"
+objects="$objects $stage/objects/24.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/stream.c -o "$stage/objects/25.o"
+objects="$objects $stage/objects/25.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/tcp.c -o "$stage/objects/26.o"
+objects="$objects $stage/objects/26.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/thread.c -o "$stage/objects/27.o"
+objects="$objects $stage/objects/27.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/tty.c -o "$stage/objects/28.o"
+objects="$objects $stage/objects/28.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/udp.c -o "$stage/objects/29.o"
+objects="$objects $stage/objects/29.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/posix-poll.c -o "$stage/objects/30.o"
+objects="$objects $stage/objects/30.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/posix-hrtime.c -o "$stage/objects/31.o"
+objects="$objects $stage/objects/31.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/no-fsevents.c -o "$stage/objects/32.o"
+objects="$objects $stage/objects/32.o"
+cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c port/platform.c -o "$stage/objects/33.o"
+objects="$objects $stage/objects/33.o"
+cc -D_GNU_SOURCE -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/unix/no-proctitle.c -o "$stage/objects/title.o"
+objects="$objects $stage/objects/title.o"
+ar rcs "$stage/libuv.a" $objects
+cc --enable-fork -shared $objects -Wl,-soname,libuv.so -o "$stage/libuv.so"
+cp include/uv.h "$stage/include/"
+cp include/uv/*.h "$stage/include/uv/"
+mkdir -p "$stage/include/wasm-posix-libuv"
+cp -R include/wasm-posix-libuv/* "$stage/include/wasm-posix-libuv/"
+
+mkdir -p "$stage/pkgconfig"
+cat > "$stage/pkgconfig/libuv.pc" <<'EOF'
+prefix=/usr/local
+libdir=${prefix}/lib
+includedir=${prefix}/include
+Name: libuv
+Description: Bundled libuv for wasm-posix
+Version: 1.51.0
+Libs: -L${libdir} -luv
+Requires.private:
+Cflags: -I${includedir} -I${includedir}/wasm-posix-libuv
+EOF
+
+mkdir -p "$DESTDIR/lib/pkgconfig" "$DESTDIR/include" "$DESTDIR/share/licenses/libuv"
+cp "$stage/"*.a "$stage/"*.so "$DESTDIR/lib/"
+cp -R "$stage/include/." "$DESTDIR/include/"
+cp "$stage/pkgconfig/"*.pc "$DESTDIR/lib/pkgconfig/"
+cp LICENSE "$DESTDIR/share/licenses/libuv/LICENSE"

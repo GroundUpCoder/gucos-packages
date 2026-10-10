@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/libuv",
+  "archiveSha256": "3ea58e594765b59a40c17aa9c301b592647ab4833533fbb41cc935a17b3d7fe4",
+  "status": "source migration candidate; no new guest execution"
+}
