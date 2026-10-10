@@ -1,0 +1,8 @@
+{
+  "build-pango.json": "28b2a2e32e2598945a5791387107f5e6f5bf12b52443f3e0ba927fff20de10cc",
+  "build-pango.log": "63499309ff222b3ec8b58791b24f77b7542c6dfb8843b8d81ec345f66eb56402",
+  "candidate-manifests.json": "b391e8d7a4e3d1adf90ecad789072668ac860ffcfe47dd0b17a679ca4837dec1",
+  "config.json": "d77d25c9389b732eed9bf21221478ac130b010f7bdfae329c9d850ace8599aa5",
+  "dist-files.json": "c6abc60ef21c0f1b674b3aab57ea8dd40b8cc175c1004e004dc4570a2f49c3aa",
+  "observed-runtime.json": "81d5f211a0724484fbc1ddab3535a4b6d2546fa64b95650bfdf416f9472d442d"
+}
