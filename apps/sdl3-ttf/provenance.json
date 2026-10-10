@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/sdl3-ttf",
+  "archiveSha256": "c706d72a6c82f0e40745aa946044bcbf8c74c66a0efbf2b6f56beec6b1e92853",
+  "status": "source migration candidate; no new guest execution"
+}

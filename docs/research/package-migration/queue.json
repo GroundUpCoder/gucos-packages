@@ -3816,7 +3816,7 @@
     {
       "id": "sdl3-ttf",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/sdl3-ttf/wasm-package.json",
       "historicalManifestSha256": "1a7eb105ca9d64a085e7c4eacf2c5647445dc58dde43626edd84d05f8be63473",
       "historicalEvidence": [
@@ -3848,7 +3848,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Full HarfBuzz dependency, guest build and binary/public gates pending."
+      ],
+      "candidate": "apps/sdl3-ttf"
     },
     {
       "id": "solarwolf",
