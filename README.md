@@ -13,4 +13,5 @@ Package inputs live under apps/. Catalog records refer to immutable Git commits
 and SHA256/size-pinned manifests. Keep upstream URLs and license provenance with each
 package. Binaries may live in release assets or another CORS-enabled object store.
 Publishing recipes does not assert binary compatibility or independent acceptance.
-The repository is currently private; anonymous access is not yet enabled.
+The repository is public. Anonymous browser access is verified separately from
+source publication; see the recorded acceptance evidence when available.
