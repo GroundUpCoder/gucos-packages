@@ -38,3 +38,14 @@ image/PNG/FreeType and Xlib drawing; GTK text/input/resource rendering; Scintill
 prepared-source provenance and execution; reload and cross-package installation.
 No validator weakening, omitted dependency, synthetic runtime receipt or old
 binary retag is part of this design.
+
+## Concrete X11 adapter
+
+apps/gtk3-x11 now retains pinned GTK/GIO source archives and X11 overlays, and
+compiles the original586 GTK/GDK units. Private Cairo compilation, private X11
+relinks, Cairo headers and Cairo/X11 pkg-config overrides are removed from the
+adapter. It retains only GTK/GDK private library/header paths and depends on
+public Cairo/x11-shared. The original build script remains untouched in source.tar.
+This is source preparation, not a passed composition or GUI result. The original
+blocker remains open until actual full closure acceptance; SDL GTK co-installation
+also remains unverified.

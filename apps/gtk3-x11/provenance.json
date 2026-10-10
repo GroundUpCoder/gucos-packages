@@ -1,0 +1,36 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/gtk3-x11/source",
+  "archiveSha256": "f304eef64e41eb1bdf490402a059c0c1c396bd5060ec683776930f894272e193",
+  "additionalArchives": [
+    {
+      "file": "gtk-source.tar",
+      "historicalPath": "vendor/gtk3",
+      "archiveSha256": "3592aaf7aea07a5d8334cf9e1812b5be617a14b294ebcd8d7e8c3aa834692a75"
+    },
+    {
+      "file": "gio-source.tar",
+      "historicalPath": "vendor/gio-core",
+      "archiveSha256": "ff22279230a393630f5ff6171457addeb017e7af53a08644ed7f7a64536eb4b3"
+    }
+  ],
+  "overlays": [
+    {
+      "file": "COPYING-GTK",
+      "historicalPath": "apps/gtk3-x11/COPYING-GTK",
+      "sha256": "b7993225104d90ddd8024fd838faf300bea5e83d91203eab98e29512acebd69c"
+    },
+    {
+      "file": "COPYING-Cairo",
+      "historicalPath": "apps/gtk3-x11/COPYING-Cairo",
+      "sha256": "9e9e8608c4cdda51a78cc3a385f4ec9a2e4c96d5ecad74ac8bca5fca3e563b7d"
+    },
+    {
+      "file": "GLib-COPYING",
+      "historicalPath": "vendor/glib/COPYING",
+      "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb"
+    }
+  ],
+  "status": "adapted source candidate; no new GTK guest acceptance"
+}

@@ -1569,7 +1569,7 @@
     {
       "id": "gtk3-x11",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "apps/gtk3-x11/wasm-package.json",
       "historicalManifestSha256": "b5b5bafc14610799eee068316ef0e66a0ce3f8ccf914baaf0aab6816cdd68953",
       "historicalEvidence": [
@@ -1606,9 +1606,11 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Historical Cairo duplicate-provider conflict: new single-public-provider design prepared, complete GTK closure not yet migrated or accepted."
+        "Provider cleanup implemented in source only; independent review, real guest full closure and GUI acceptance pending.",
+        "Co-installation with the later SDL GTK profile remains unverified."
       ],
-      "design": "gtk-provider-design.md"
+      "design": "gtk-provider-design.md",
+      "candidate": "apps/gtk3-x11"
     },
     {
       "id": "harfbuzz",
