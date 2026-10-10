@@ -33,3 +33,21 @@ are prepared but have not executed. Core owner's first cc-meta send was refused
 because the thread was running; no hold-release confirmation has been received.
 Reviewer acknowledged upcoming serial review and the distinction between source
 preparation and acceptance. Initiator received kickoff.
+
+## Source review and second preparation increment
+
+Independent reviewer examined exact `7e17011ebc024e40f0e543c3c8ec64fc3b4bd25f`,
+confirmed all 156 source blobs and baseline19 preservation, and found cJSON's
+historical automatic source hook incompatible with a library-only installation.
+Corrected library compilation to define CJSON_NO_REQUIRE_SOURCES and strip the
+hook from the installed header. This is a recipe correction, not executed proof.
+Reviewer requires functional X/font/selection/clock checks and installed-library
+consumers before acceptance. Source review does not approve publication.
+
+Prepared xedit with four exact historical source overlays, Lisp modules, regex
+test executable and fork-enabled recipe; also pkgconf 2.3.0, bzip2/bzip2recover
+1.0.8 and Expat 2.7.1. Their guest test scripts preserve upstream bzip2 fixtures
+and add package-specific consumers. These are all unexecuted candidates.
+Added tools/check-migration.py for explicit candidate platform/dependency/output,
+source blob/overlay and baseline preservation checks; it never rewrites provenance.
+All eleven candidates pass these lightweight checks. No browser/build jobs ran.

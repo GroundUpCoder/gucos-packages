@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/bzip2",
+  "archiveSha256": "783b32d10919fa193ea3e392f7a7999fa8295a70ba0dc9cf13355794977e88be",
+  "status": "source migration candidate; no new guest execution"
+}

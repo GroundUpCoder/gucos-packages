@@ -1,0 +1,110 @@
+[
+  {
+    "path": "bin/xedit",
+    "mode": 493
+  },
+  {
+    "path": "libexec/xedit/lsp",
+    "mode": 493
+  },
+  {
+    "path": "libexec/xedit/regex-tests",
+    "mode": 493
+  },
+  {
+    "path": "share/xedit/tests/tests.txt",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xedit/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/Xedit",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/Xedit-color",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/indent.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/lisp.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/auto.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/c.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/html.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/imake.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/lisp.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/make.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/man.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/patch.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/perl.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/python.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/rpm.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/sgml.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/sh.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/xconf.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/xlog.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/progmodes/xrdb.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/syntax.lsp",
+    "mode": 420
+  },
+  {
+    "path": "share/xedit/lisp/xedit.lsp",
+    "mode": 420
+  }
+]

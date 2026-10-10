@@ -1,0 +1,31 @@
+{
+  "name": "xedit",
+  "version": "1.2.5-1",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "dependencyRequirements": {
+    "x11-widgets": {
+      "version": "1.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "config.h",
+    "util.c",
+    "lisp-format.c",
+    "lisp-io.c",
+    "lisp-lisp.c"
+  ]
+}

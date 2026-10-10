@@ -377,7 +377,7 @@
     {
       "id": "bzip2",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/bzip2/wasm-package.json",
       "historicalManifestSha256": "831fee1a45e6c523f6f936dadb600d314a4796ff418be6f5005139549b4b8539",
       "historicalEvidence": [
@@ -409,12 +409,16 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
+        "Independent review pending."
+      ],
+      "candidate": "apps/bzip2"
     },
     {
       "id": "bzip2recover",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/bzip2/wasm-package.json",
       "historicalManifestSha256": "831fee1a45e6c523f6f936dadb600d314a4796ff418be6f5005139549b4b8539",
       "historicalEvidence": [
@@ -446,7 +450,11 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
+        "Independent review pending."
+      ],
+      "candidate": "apps/bzip2recover"
     },
     {
       "id": "cairo",
@@ -707,7 +715,7 @@
     {
       "id": "expat",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/expat/wasm-package.json",
       "historicalManifestSha256": "4a65883306514b27aed9bebbf371e463caaf1e739ec14425ee05794a1b03a3c4",
       "historicalEvidence": [
@@ -728,7 +736,11 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
+        "Independent review pending."
+      ],
+      "candidate": "apps/expat"
     },
     {
       "id": "feh",
@@ -2691,7 +2703,7 @@
     {
       "id": "pkgconf",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/pkgconf/wasm-package.json",
       "historicalManifestSha256": "1441bb19f6cfbb6e28ed822bc109742b9a6f7cf3d0fd63175b466b7fd05fee53",
       "historicalEvidence": [
@@ -2717,7 +2729,11 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
+        "Independent review pending."
+      ],
+      "candidate": "apps/pkgconf"
     },
     {
       "id": "punes",
@@ -3452,8 +3468,8 @@
       "remainingScope": "Missing xedit, xfontsel, xclipboard, oclock, xcutsel",
       "components": {
         "xedit": {
-          "state": "queued",
-          "candidate": null,
+          "state": "source-prepared",
+          "candidate": "apps/xedit",
           "acceptance": []
         },
         "xfontsel": {
@@ -3681,7 +3697,14 @@
         "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
         "Independent review pending."
       ],
-      "candidate": "apps/cjson"
+      "candidate": "apps/cjson",
+      "review": {
+        "commit": "7e17011ebc024e40f0e543c3c8ec64fc3b4bd25f",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "scope": "source-only",
+        "finding": "Historical automatic source hook must be disabled/removed",
+        "resolution": "build.sh now disables CJSON_NO_REQUIRE_SOURCES and strips installed header hook; re-review pending"
+      }
     },
     {
       "id": "lpeg",
