@@ -2564,7 +2564,7 @@
     {
       "id": "libxfce4util",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/libxfce4util/wasm-package.json",
       "historicalManifestSha256": "2c41a69bbffc5a93a09b71668134fbf39fe02d262351f5d380bc605314b06b95",
       "historicalEvidence": [
@@ -2582,7 +2582,8 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/libxfce4util"
     },
     {
       "id": "lua",
