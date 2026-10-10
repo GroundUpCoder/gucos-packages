@@ -1,0 +1,12 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/ncurses",
+  "archiveSha256": "688e99adff2d53baa8709a99d778ed1bbc748cb2208bbbd1fd7316f634db0597",
+  "outputInventoryReference": {
+    "path": "/Users/jku/git/wasm-posix-old/test-results/m4-retained-20261010/review-m4-exposure-8d5662279/baseline/repository/objects/d273ffc9dababdfa273440a76acb28486282c357997ad87236cb3a73de5b1831",
+    "sha256": "d273ffc9dababdfa273440a76acb28486282c357997ad87236cb3a73de5b1831",
+    "size": 11378688,
+    "scope": "Inventory only; five symlinks converted to same-byte regular files. Historical packaging metadata excluded; license added. No historical runtime acceptance inherited."
+  }
+}

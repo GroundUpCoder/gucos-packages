@@ -2908,7 +2908,7 @@
     {
       "id": "ncurses",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-review-pending",
       "historicalManifest": "apps/ncurses/wasm-package.json",
       "historicalManifestSha256": "fe2cc902a42632f0b9e9ea941e983075bac661676405833b15c610aac3c580e7",
       "historicalEvidence": [
@@ -2944,7 +2944,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source/inventory review and fresh guest/binary/public gates pending."
+      ],
+      "candidate": "apps/ncurses"
     },
     {
       "id": "nyancat",
