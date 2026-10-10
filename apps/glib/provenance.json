@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/glib",
+  "archiveSha256": "9d5c4fe37e0071cb2e8af3e8c319f7e71057e53262533b64f06a763ae1ba4d6a",
+  "status": "source migration candidate; no new guest execution"
+}

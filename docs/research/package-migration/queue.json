@@ -1221,7 +1221,7 @@
     {
       "id": "glib",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/glib/wasm-package.json",
       "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
       "historicalEvidence": [
@@ -1251,12 +1251,15 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/glib"
     },
     {
       "id": "gobject",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/glib/wasm-package.json",
       "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
       "historicalEvidence": [
@@ -1284,7 +1287,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/gobject"
     },
     {
       "id": "gtk-desk",
