@@ -2,7 +2,7 @@
 Usage: python3 tests/migration/prepare.py RUN_NAME INPUT_COMMIT NAME [NAME ...]
 This only prepares files; browser execution requires a separate machine-job.
 """
-import hashlib,json,re,shutil,socket,subprocess,sys
+import hashlib,io,json,os,re,shutil,socket,subprocess,sys,tarfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 name,revision,*names=sys.argv[1:]
@@ -33,6 +33,21 @@ for n in names:
   files.append(dict(path=file,**entry('migration/'+n+'/'+file,b)))
  outputs=json.loads(blob('apps/'+n+'/outputs.json'))
  manifest=dict(format=1,**recipe,files=files,build='build.sh',test='test.sh',outputs=outputs,licenses=[o['path'] for o in outputs if o['path'].startswith('share/licenses/')])
+ binary_run=os.environ.get('MIGRATION_BINARY_RUN')
+ if binary_run:
+  receipt=json.loads((Path(binary_run)/'exports'/n/'build-receipt.json').read_text())
+  guest=receipt['guestManifest']
+  for field in ['name','version','dependencies','dependencyRequirements','platform','outputs','licenses']:
+   assert guest[field]==manifest[field],(n,field,'stale source receipt')
+  assert [(f['path'],f['sha256'],f['size']) for f in guest['files']]==[(f['path'],f['sha256'],f['size']) for f in files]
+  b=(Path(binary_run)/'exports'/n/(receipt['sha256']+'.tar')).read_bytes()
+  assert sha(b)==receipt['sha256'] and len(b)==receipt['size']
+  with tarfile.open(fileobj=io.BytesIO(b)) as archive:
+   members=archive.getmembers();assert all(m.isfile() for m in members)
+   assert len(members)==len(outputs) and {m.name for m in members}=={o['path'] for o in outputs}
+   checksums=[sha(archive.extractfile(m).read())+'  /usr/local/'+m.name for m in members]
+  (d/'binary.tar').write_bytes(b);(run/(n+'.sha256')).write_text('\n'.join(checksums)+'\n')
+  manifest.update(runtime=receipt['runtime'],binary=entry('migration/'+n+'/binary.tar',b))
  write(d/'package.json',manifest);catalog['packages'][n]=entry('migration/'+n+'/package.json',(d/'package.json').read_bytes());manifests[n]=manifest
 for n,m in manifests.items():
  for dep in m['dependencies']:assert dep in catalog['packages'],(n,dep,'missing dependency')
