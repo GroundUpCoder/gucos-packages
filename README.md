@@ -48,3 +48,11 @@ Acceptance, immutable publication and independent review are recorded in
 [the expansion journal](docs/logs/2026-10-10/package-expansion.md).
 
 Future builds and publications follow the [platform package contract](docs/package-publication.md). Existing catalog and binary metadata remain unchanged.
+
+The historical migration now also publishes zlib, cJSON, pkgconf, bzip2,
+bzip2recover and Expat. Their guest source/binary/installed-consumer/reload gates
+and live public installation passed on platform 1.0.1. This is the first six-package
+foundation increment, not completion of the historical queue. Other new source
+candidates under apps/ are not installable until added to the catalog after review
+and acceptance. See docs/research/package-migration/queue.json and the migration
+journal for exact per-item scope and remaining work.

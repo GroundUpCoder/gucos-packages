@@ -126,3 +126,14 @@ Failed group log is retained. The retry uses a copy of this task's private test
 profile at the same local origin, with a separately frozen new candidate site;
 no user/historical browser profile is read or changed. Completed dependencies
 and existing output metadata remain available without rebuilding baseline19.
+
+## Public-live batch 01 passed
+
+Fresh actual https://os.groundupcoder.net browser boot observed runtime61a87f88;
+installed all six from immutable public ebb4a05 catalog and unmodified final
+public manifests. All25 payload SHA256s and installed manifest bytes passed.
+Reopened browser ran committed consumers against installed files, including
+static/shared library relinking and bzip2 fixtures. Separate reload stage
+rechecked all25 payloads and exact manifests. All three stages passed; durable
+evidence under batch-01/public-live. Remote main was verified at approved ebb4a05.
+No baseline binary was rebuilt or retagged. This completes only these six items.

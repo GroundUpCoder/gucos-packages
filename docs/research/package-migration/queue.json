@@ -377,7 +377,7 @@
     {
       "id": "bzip2",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/bzip2/wasm-package.json",
       "historicalManifestSha256": "831fee1a45e6c523f6f936dadb600d314a4796ff418be6f5005139549b4b8539",
       "historicalEvidence": [
@@ -414,23 +414,26 @@
           "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
           "evidence": "batch-01",
           "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "public immutable catalog installation on live site; installed consumers and static relink; exact manifest/output preservation on reload",
+          "evidence": "batch-01/public-live"
         }
       ],
-      "blockers": [
-        "Final independent artifact/evidence/publication review pending.",
-        "Immutable public publication and public installation not yet performed."
-      ],
+      "blockers": [],
       "candidate": "apps/bzip2",
       "sourceReview": {
         "commit": "7da0b4a334986858685f930ef50af2352d33b714",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; not publication approval"
-      }
+      },
+      "publicationCommit": "ebb4a05d834eb6c7fe4bfe7f3ecb6ffe32d745fd"
     },
     {
       "id": "bzip2recover",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/bzip2/wasm-package.json",
       "historicalManifestSha256": "831fee1a45e6c523f6f936dadb600d314a4796ff418be6f5005139549b4b8539",
       "historicalEvidence": [
@@ -467,18 +470,21 @@
           "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
           "evidence": "batch-01",
           "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "public immutable catalog installation on live site; installed consumers and static relink; exact manifest/output preservation on reload",
+          "evidence": "batch-01/public-live"
         }
       ],
-      "blockers": [
-        "Final independent artifact/evidence/publication review pending.",
-        "Immutable public publication and public installation not yet performed."
-      ],
+      "blockers": [],
       "candidate": "apps/bzip2recover",
       "sourceReview": {
         "commit": "7da0b4a334986858685f930ef50af2352d33b714",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; not publication approval"
-      }
+      },
+      "publicationCommit": "ebb4a05d834eb6c7fe4bfe7f3ecb6ffe32d745fd"
     },
     {
       "id": "cairo",
@@ -743,7 +749,7 @@
     {
       "id": "expat",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/expat/wasm-package.json",
       "historicalManifestSha256": "4a65883306514b27aed9bebbf371e463caaf1e739ec14425ee05794a1b03a3c4",
       "historicalEvidence": [
@@ -769,18 +775,21 @@
           "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
           "evidence": "batch-01",
           "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "public immutable catalog installation on live site; installed consumers and static relink; exact manifest/output preservation on reload",
+          "evidence": "batch-01/public-live"
         }
       ],
-      "blockers": [
-        "Final independent artifact/evidence/publication review pending.",
-        "Immutable public publication and public installation not yet performed."
-      ],
+      "blockers": [],
       "candidate": "apps/expat",
       "sourceReview": {
         "commit": "7da0b4a334986858685f930ef50af2352d33b714",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; not publication approval"
-      }
+      },
+      "publicationCommit": "ebb4a05d834eb6c7fe4bfe7f3ecb6ffe32d745fd"
     },
     {
       "id": "feh",
@@ -2762,7 +2771,7 @@
     {
       "id": "pkgconf",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/pkgconf/wasm-package.json",
       "historicalManifestSha256": "1441bb19f6cfbb6e28ed822bc109742b9a6f7cf3d0fd63175b466b7fd05fee53",
       "historicalEvidence": [
@@ -2793,18 +2802,21 @@
           "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
           "evidence": "batch-01",
           "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "public immutable catalog installation on live site; installed consumers and static relink; exact manifest/output preservation on reload",
+          "evidence": "batch-01/public-live"
         }
       ],
-      "blockers": [
-        "Final independent artifact/evidence/publication review pending.",
-        "Immutable public publication and public installation not yet performed."
-      ],
+      "blockers": [],
       "candidate": "apps/pkgconf",
       "sourceReview": {
         "commit": "7da0b4a334986858685f930ef50af2352d33b714",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; not publication approval"
-      }
+      },
+      "publicationCommit": "ebb4a05d834eb6c7fe4bfe7f3ecb6ffe32d745fd"
     },
     {
       "id": "punes",
@@ -3704,7 +3716,7 @@
     {
       "id": "zlib",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/zlib/wasm-package.json",
       "historicalManifestSha256": "c948b6642abbf109e38c57576ab0c499fcaf45f53d0675fad9f0f0108921e109",
       "historicalEvidence": [
@@ -3735,18 +3747,21 @@
           "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
           "evidence": "batch-01",
           "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "public immutable catalog installation on live site; installed consumers and static relink; exact manifest/output preservation on reload",
+          "evidence": "batch-01/public-live"
         }
       ],
-      "blockers": [
-        "Final independent artifact/evidence/publication review pending.",
-        "Immutable public publication and public installation not yet performed."
-      ],
+      "blockers": [],
       "candidate": "apps/zlib",
       "sourceReview": {
         "commit": "7da0b4a334986858685f930ef50af2352d33b714",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; not publication approval"
-      }
+      },
+      "publicationCommit": "ebb4a05d834eb6c7fe4bfe7f3ecb6ffe32d745fd"
     },
     {
       "id": "zstd",
@@ -3779,7 +3794,7 @@
     {
       "id": "cjson",
       "kind": "additional-workload",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "scope": "cJSON 1.7.19 whole/archive consumers",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [
@@ -3788,12 +3803,14 @@
           "scope": "guest source build/tests, fresh binary installation, installed consumers, manifest/output integrity after reload",
           "evidence": "batch-01",
           "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "public immutable catalog installation on live site; installed consumers and static relink; exact manifest/output preservation on reload",
+          "evidence": "batch-01/public-live"
         }
       ],
-      "blockers": [
-        "Final independent artifact/evidence/publication review pending.",
-        "Immutable public publication and public installation not yet performed."
-      ],
+      "blockers": [],
       "candidate": "apps/cjson",
       "review": {
         "commit": "7e17011ebc024e40f0e543c3c8ec64fc3b4bd25f",
@@ -3806,7 +3823,8 @@
         "commit": "7da0b4a334986858685f930ef50af2352d33b714",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No blocking source findings; not publication approval"
-      }
+      },
+      "publicationCommit": "ebb4a05d834eb6c7fe4bfe7f3ecb6ffe32d745fd"
     },
     {
       "id": "lpeg",
