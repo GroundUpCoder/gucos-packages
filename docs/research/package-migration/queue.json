@@ -117,7 +117,7 @@
     {
       "id": "atk",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/atk/wasm-package.json",
       "historicalManifestSha256": "1b87120bcd575d00ef4a81849898ea840a2eb679f2fd154dbdb76db7a1dae842",
       "historicalEvidence": [
@@ -144,7 +144,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/atk"
     },
     {
       "id": "autoconf",
@@ -950,7 +953,7 @@
     {
       "id": "fribidi",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/fribidi/wasm-package.json",
       "historicalManifestSha256": "685f27a68f2db97fdce2300abd3d85e14a79e305886dba1ed70d9b255b0fc89e",
       "historicalEvidence": [
@@ -975,7 +978,10 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/fribidi"
     },
     {
       "id": "galculator",
@@ -1156,7 +1162,7 @@
     {
       "id": "gio-core",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/gio-core/wasm-package.json",
       "historicalManifestSha256": "8d2e9ac1a5bd6841a80511e075f1737ceceb2df91ff34477097bcd9c91f71a1a",
       "historicalEvidence": [
@@ -1184,12 +1190,15 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/gio-core"
     },
     {
       "id": "gio-listmodel",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/gio-listmodel/wasm-package.json",
       "historicalManifestSha256": "04331709f700f5b8e275494bb9067a1368812225fbf066c77f74993bac810067",
       "historicalEvidence": [
@@ -1216,7 +1225,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/gio-listmodel"
     },
     {
       "id": "glib",
@@ -1844,7 +1856,7 @@
     {
       "id": "libffi",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/libffi/wasm-package.json",
       "historicalManifestSha256": "ba6535b10bd26cacea9f7aff0cbad135873a70504f89354268d33b0ff4d5fb90",
       "historicalEvidence": [
@@ -1868,9 +1880,16 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/test/install/export; binary acceptance pending",
+          "run": "test-results/migration/graphics-source-v2-61a87f88",
+          "sourceCommit": "c8ca81cb3b1e846931d8589b82f8700213af5de1"
+        }
+      ],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "Fresh binary/installed-consumer/reload acceptance and publication review pending."
       ],
       "candidate": "apps/libffi"
     },
@@ -1944,7 +1963,7 @@
     {
       "id": "libiconv",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/libiconv/wasm-package.json",
       "historicalManifestSha256": "382b952fdbadffeb59827c8e103f06f68df12c74668590697a24cb18e3c44df7",
       "historicalEvidence": [
@@ -1969,16 +1988,23 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/test/install/export; binary acceptance pending",
+          "run": "test-results/migration/graphics-source-v2-61a87f88",
+          "sourceCommit": "c8ca81cb3b1e846931d8589b82f8700213af5de1"
+        }
+      ],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "Fresh binary/installed-consumer/reload acceptance and publication review pending."
       ],
       "candidate": "apps/libiconv"
     },
     {
       "id": "libintl",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/gettext/wasm-package.json",
       "historicalManifestSha256": "148457a5d63806b8e3c9baa921d5f7609ddef8e51783a3e975ce5f96c4ffadc9",
       "historicalEvidence": [
@@ -2005,9 +2031,16 @@
         "libiconv"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/test/install/export; binary acceptance pending",
+          "run": "test-results/migration/graphics-source-v2-61a87f88",
+          "sourceCommit": "c8ca81cb3b1e846931d8589b82f8700213af5de1"
+        }
+      ],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "Fresh binary/installed-consumer/reload acceptance and publication review pending."
       ],
       "candidate": "apps/libintl"
     },
@@ -2570,7 +2603,7 @@
     {
       "id": "pcre2",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/pcre2/wasm-package.json",
       "historicalManifestSha256": "c36ec960359841727c0241aa8eca62c1cfc52e2fb8190f62bd5f1f993eba47ae",
       "historicalEvidence": [
@@ -2595,9 +2628,16 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/test/install/export; binary acceptance pending",
+          "run": "test-results/migration/graphics-source-v2-61a87f88",
+          "sourceCommit": "c8ca81cb3b1e846931d8589b82f8700213af5de1"
+        }
+      ],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "Fresh binary/installed-consumer/reload acceptance and publication review pending."
       ],
       "candidate": "apps/pcre2"
     },

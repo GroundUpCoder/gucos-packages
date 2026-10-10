@@ -1,0 +1,14 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/gio-core",
+  "archiveSha256": "ff22279230a393630f5ff6171457addeb017e7af53a08644ed7f7a64536eb4b3",
+  "overlays": [
+    {
+      "file": "COPYING",
+      "historicalPath": "vendor/glib/COPYING",
+      "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb"
+    }
+  ],
+  "status": "source migration candidate; no new guest execution"
+}

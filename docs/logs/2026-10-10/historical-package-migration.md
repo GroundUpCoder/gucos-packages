@@ -179,3 +179,21 @@ Separate reload checked all declared package output hashes and parsed manifest
 contents. Exact source/binary/GUI/reload evidence and failures are retained under
 batch-02. Exported artifacts are package-local pending independent review and
 publication; no claim of live/public acceptance yet.
+
+## Dependency queue continues
+
+Independent reviewer approved bd69eea for the five X clients, verifying all38
+output payloads/modes and immutable references, retained source/GUI failures and
+exact evidence bytes. Public-live verification is a separate pending step.
+
+libiconv, PCRE2-8, libffi scalar ABI and libintl passed real guest source build,
+static/shared retained port tests, installation and export on61a87f88 in a bounded
+600-second reservation. Binary installation/reload/publication remain pending.
+Added historical GObject wide signal/closure tests before its first execution,
+as reviewer requested; its compilation still uses bundled private GLib headers.
+
+Prepared GIO list-model, GIO core, ATK and FriBidi source candidates. GIO carries
+its upstream GLib COPYING as an explicit pinned input; no full networking claim
+is made merely because interfaces compile. GIO core's old GLib source-header
+path becomes the published GLib private-header directory; actual guest validation
+is still required. These four candidates await source review and execution.
