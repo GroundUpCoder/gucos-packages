@@ -125,3 +125,12 @@ Public acceptance and final publication approval are still pending at this point
 All final consumer exports passed in three bounded jobs: 0e3078c0-4269-4025-b4d6-e6dcf945b0f9, 0c05f989-848d-4781-95f8-2e8c0d2d11a7, 130c6267-c5aa-4fca-9de9-5fbf59438084.
 Each receipt records the exact guest manifest, runtime, tar hash and size.
 Local evidence hashes and job IDs are retained in package-expansion-local-evidence.json.
+
+## Public completion
+
+Independent publication review approved fab65cba24c8c6dd59e11a63e096138e13835c42,
+which was pushed to public main. All 15 additions now passed anonymous public
+binary installation on the actual live OS, followed by JWM/client/PTY interaction,
+launcher and reload persistence checks. A second fresh live profile passed public
+JWM and Lua source builds. See [publication evidence](package-expansion-publication.md)
+for exact jobs, review attribution and limits. No core or hosting changes were made.
