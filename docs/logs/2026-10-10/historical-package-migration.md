@@ -389,3 +389,12 @@ The fresh GTK source stage has passed JPEG, Turbo and GdkPixbuf build/test/insta
 and export; MiniHB build/test/install also passed, its grouped export still pending.
 These observations are not binary-install or public acceptance. The browser run
 remains serial and bounded by the scheduler.
+
+## Six GTK foundation candidates accepted
+
+JPEG, Turbo, GdkPixbuf, MiniHB, Cairo GObject and GTK schemas passed fresh
+exact-binary installation, installed consumers and reload integrity for all97
+outputs plus parsed manifests on61a. Evidence batch-06/binary-install and
+source-clean-gpt; exact exports retained under apps. Independent artifact and
+publication review requested next. GTK schemas is data, not a compiled app.
+Full HarfBuzz/Pango/GTK composition and GUI acceptance are still open.
