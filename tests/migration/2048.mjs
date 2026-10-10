@@ -11,6 +11,24 @@ assert(!attempt||/^[a-zA-Z0-9_-]+$/.test(attempt));
 const label='2048-functional'+(attempt?'-'+attempt:'');
 await assert.rejects(access(resolve(run,label+'.json')),{code:'ENOENT'});
 const report={status:'running',startedAt:new Date().toISOString()};let s,pending;
+function frames(log){
+ const result=[];
+ for(const [,raw] of log.matchAll(/\x1b\[H([\s\S]*?)\x1b\[A/g)){
+  const lines=raw.replace(/\x1b\[[0-9;?]*[A-Za-z]/g,'').replaceAll('\r','').split('\n');
+  const title=/^2048\.c\s+(\d+) pts$/.exec(lines[0]);assert(title,'Invalid completed frame title');
+  const cells=[];
+  for(const row of [3,6,9,12]){
+   assert.equal(lines[row].length,28,'Expected complete four-cell board row');
+   for(let x=0;x<4;x++){
+    const value=lines[row].slice(x*7,(x+1)*7).trim();
+    assert(value==='·'||/^\d+$/.test(value),'Invalid cell: '+value);
+    const n=value==='·'?0:Number(value);assert(n===0||(n>=2&&(n&(n-1))===0));cells.push(n);
+   }
+  }
+  result.push({score:Number(title[1]),cells});
+ }
+ return result;
+}
 async function bounded(promise,ms,label){let timer;try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms);})]);}finally{clearTimeout(timer);}}
 try{
  const config=JSON.parse(await readFile(resolve(run,'config.json')));
@@ -44,15 +62,25 @@ with tarfile.open(fileobj=io.BytesIO(sys.stdin.buffer.read())) as archive:
   s.page.waitForFunction(({start,text})=>shell.busybox.log.slice(start).includes(text),{start,text},{timeout:30000}),
   pending.then(()=>{throw Error('Game ended before '+text);})
  ]);
- await marker('2048');
+ await marker('\x1b[A');
+ const initial=frames(await s.page.evaluate(n=>shell.busybox.log.slice(n),start)).at(-1);
+ assert.equal(initial.score,0);assert.equal(initial.cells.filter(Boolean).length,2);
  await s.page.evaluate(()=>shell.terminal.focus());
- const beforeMoves=await s.page.evaluate(()=>shell.busybox.log.length);
  for(const key of ['a','d','w','s']){await s.page.keyboard.type(key);await s.page.waitForTimeout(200);}
- await s.page.waitForFunction(n=>shell.busybox.log.length>n,beforeMoves,{timeout:10000});
  await s.page.keyboard.type('r');await marker('RESTART? (y/n)');
+ const moved=frames(await s.page.evaluate(n=>shell.busybox.log.slice(n),start));
+ assert(moved.length>1,'No complete movement frames');
+ assert(moved.some(f=>JSON.stringify(f.cells)!==JSON.stringify(initial.cells)),'No board change after keyboard input');
+ const beforeRestart=moved.at(-1);
+ assert(beforeRestart.score>0||beforeRestart.cells.filter(Boolean).length>2,'Board did not progress beyond initial state');
  const restart=await s.page.evaluate(()=>shell.busybox.log.length);
  await s.page.keyboard.type('y');
- await s.page.waitForFunction(n=>shell.busybox.log.slice(n).includes('2048'),restart,{timeout:10000});
+ await s.page.waitForFunction(n=>shell.busybox.log.slice(n).includes('\x1b[A'),restart,{timeout:10000});
+ const reset=frames(await s.page.evaluate(n=>shell.busybox.log.slice(n),restart)).at(-1);
+ assert(reset,'Missing complete restart frame');assert.equal(reset.score,0);
+ assert.equal(reset.cells.filter(Boolean).length,2,'Restart must reset to two occupied cells');
+ assert(reset.cells.every(n=>n===0||n===2||n===4),'Invalid initial tile');
+ report.boards={initial,beforeRestart,reset,completeFrames:moved.length};
  await s.page.keyboard.type('q');await marker('QUIT? (y/n)');await s.page.keyboard.type('y');
  await bounded(pending,30000,'2048 did not exit after confirmation');pending=undefined;
  const log=await s.page.evaluate(n=>shell.busybox.log.slice(n),start);
