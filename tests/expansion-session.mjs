@@ -9,6 +9,7 @@ const {chromium}=require('playwright');
 const root=fileURLToPath(new URL('../',import.meta.url));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 export async function session(){
+ if(process.env.COMPAT_RUN_DIR)return (await import("./compatibility/session.mjs")).session();
  const publicMode=process.env.EXPANSION_PUBLIC==='1';
  if(!publicMode){const release=await readFile(root+'test-results/core-site/release.json');assert.equal(sha(release),'b93d001b36a4624c1f093da6021f989dbf63e7ce05923d5f8ba6b26d9e49f7c5');for(const [path,entry] of Object.entries(JSON.parse(release).files)){const b=await readFile(root+'test-results/core-site/'+path);assert.equal(sha(b),entry.sha256);assert.equal(b.length,entry.size);}}
  const objects=new Map(),packages={};
