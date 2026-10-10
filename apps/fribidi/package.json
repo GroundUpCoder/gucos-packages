@@ -1,0 +1,197 @@
+{
+  "format": 1,
+  "name": "fribidi",
+  "version": "1.0.16-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/fribidi/source.tar",
+      "sha256": "1dd848555676077e499f1419cbc68f39f683d3a6f8f1746a4646dce7af6fde03",
+      "size": 15953920
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/fribidi/build.sh",
+      "sha256": "52d7550e284e41ab31ab6dc6ee3c04b765161acc9788f3e11946f0d1f7ccdd8a",
+      "size": 1238
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/fribidi/test.sh",
+      "sha256": "273f0ca2af041424cdd2222786501ff8f88968ae8d8a172d6432a6de58aeac53",
+      "size": 396
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libfribidi.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libfribidi.so",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/bidi-types.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/common.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/debug.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-arabic.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-begindecls.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-bidi-types-list.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-bidi-types.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-bidi.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-brackets.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-char-sets-cap-rtl.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-char-sets-cp1255.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-char-sets-cp1256.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-char-sets-iso8859-6.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-char-sets-iso8859-8.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-char-sets-list.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-char-sets-utf8.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-char-sets.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-common.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-config.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-deprecated.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-enddecls.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-flags.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-joining-types-list.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-joining-types.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-joining.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-mirroring.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-shape.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-types.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-unicode-version.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi-unicode.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/fribidi.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/joining-types.h",
+      "mode": 420
+    },
+    {
+      "path": "include/fribidi/run.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/fribidi.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/fribidi/COPYING",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/fribidi/COPYING"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/fribidi/binaries/cb182d8de0b75351337f38711d93b2593da0ad46a787dca43458339fb81faaf2.tar",
+    "sha256": "cb182d8de0b75351337f38711d93b2593da0ad46a787dca43458339fb81faaf2",
+    "size": 420352
+  }
+}

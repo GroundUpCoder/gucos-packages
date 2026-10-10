@@ -1,0 +1,216 @@
+{
+  "format": 1,
+  "name": "atk",
+  "version": "2.38.0-1",
+  "dependencies": [
+    "gobject",
+    "libintl"
+  ],
+  "dependencyRequirements": {
+    "gobject": {
+      "version": "2.84.4-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "pthreads"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/atk/source.tar",
+      "sha256": "dca637f6f7394d36b3277a0e8b98ca8aed138e776de8c1765bcfbb6d66218020",
+      "size": 819200
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/atk/build.sh",
+      "sha256": "6e82bf0bc39013aabf548b8d60ea87d338e54975a8ef4a54bc744c3178727813",
+      "size": 2104
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/atk/test.sh",
+      "sha256": "04a20a432c7671f6d407ba50e9971311dbc3f90e043661919a91659d52c3d7f8",
+      "size": 450
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libatk-1.0.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libatk-1.0.so",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkaction.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkcomponent.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkdocument.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkeditabletext.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkgobjectaccessible.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkhyperlink.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkhyperlinkimpl.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkhypertext.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkimage.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkmisc.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atknoopobject.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atknoopobjectfactory.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkobject.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkobjectfactory.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkplug.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkrange.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkregistry.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkrelation.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkrelationtype.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkrelationset.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkselection.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atksocket.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkstate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkstateset.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkstreamablecontent.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atktable.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atktablecell.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atktext.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkutil.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkvalue.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkwindow.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atk-autocleanups.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atk.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atkversion.h",
+      "mode": 420
+    },
+    {
+      "path": "include/atk-1.0/atk/atk-enum-types.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/atk.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/atk/COPYING",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/atk/COPYING"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/atk/binaries/ae54c1fa65c5a1ae43fc3ed4979752108790edcb5590cc32f404751dbeb76b86.tar",
+    "sha256": "ae54c1fa65c5a1ae43fc3ed4979752108790edcb5590cc32f404751dbeb76b86",
+    "size": 1038848
+  }
+}
