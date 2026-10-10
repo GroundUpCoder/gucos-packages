@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xlsfonts-1.0.9",
+  "files": 24,
+  "archiveSha256": "eb63f741cdea772911c252b20b3eb651f576fea9dd82e90a3b7ec688f73045c3",
+  "method": "Every archive file byte-compared with its immutable Git blob identity; package overlays are separate inputs."
+}

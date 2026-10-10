@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/zstd",
+  "files": 644,
+  "archiveSha256": "a1837bf7e970761766ab5f882fa92c698da1d6519a2ab7f27311e090087024ef",
+  "method": "Every archive file byte-compared with its immutable Git blob identity; package overlays are separate inputs."
+}

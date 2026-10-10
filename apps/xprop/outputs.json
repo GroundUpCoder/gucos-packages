@@ -1,0 +1,58 @@
+[
+  {
+    "path": "bin/xprop",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/xprop/libICE-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/libSM-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/libXaw-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/libXft-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/libXmu-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/libXpm-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/libXrandr-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/libXt-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/termcap-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/xev-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/xmessage-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/xprop-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xprop/xterm-COPYING",
+    "mode": 420
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "path": "bin/xev",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/xev/libICE-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/libSM-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/libXaw-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/libXft-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/libXmu-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/libXpm-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/libXrandr-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/libXt-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/termcap-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/xev-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/xmessage-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/xprop-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xev/xterm-COPYING",
+    "mode": 420
+  }
+]

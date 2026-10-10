@@ -1,0 +1,7 @@
+{
+  "name": "xterm",
+  "version": "411-1",
+  "dependencies": [
+    "x11-widgets"
+  ]
+}

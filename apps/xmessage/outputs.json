@@ -1,0 +1,58 @@
+[
+  {
+    "path": "bin/xmessage",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/xmessage/libICE-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/libSM-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/libXaw-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/libXft-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/libXmu-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/libXpm-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/libXrandr-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/libXt-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/termcap-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/xev-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/xmessage-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/xprop-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmessage/xterm-COPYING",
+    "mode": 420
+  }
+]

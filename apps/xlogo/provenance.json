@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xlogo-1.0.7",
+  "files": 28,
+  "archiveSha256": "fd314d7ddb1f7bfab20d25bf90fa9e7305db2b2613f2546368c1f7e00fb88063",
+  "method": "Every archive file byte-compared with its immutable Git blob identity; package overlays are separate inputs."
+}

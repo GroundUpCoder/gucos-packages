@@ -1,0 +1,34 @@
+[
+  {
+    "path": "bin/zstd",
+    "mode": 493
+  },
+  {
+    "path": "lib/libzstd.a",
+    "mode": 420
+  },
+  {
+    "path": "include/zstd.h",
+    "mode": 420
+  },
+  {
+    "path": "include/zdict.h",
+    "mode": 420
+  },
+  {
+    "path": "include/zstd_errors.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/libzstd.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/zstd/LICENSE",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/zstd/COPYING",
+    "mode": 420
+  }
+]

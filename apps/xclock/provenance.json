@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xclock-1.2.1",
+  "files": 38,
+  "archiveSha256": "394edde8dd56ff2c66a6fe7e9e985868d2f98cb36fa61f46805d537175deec3a",
+  "method": "Every archive file byte-compared with its immutable Git blob identity; package overlays are separate inputs."
+}

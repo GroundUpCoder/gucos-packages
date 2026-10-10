@@ -1,0 +1,36 @@
+#!/bin/sh
+set -eu
+if [ -z "${DISPLAY:-}" ]; then
+ display=1
+ while [ -e "/tmp/.X$display-lock" ] || [ -e "/tmp/.X11-unix/X$display" ]; do
+  display=$((display + 1))
+  [ "$display" -le 64 ] || { echo 'No unused X display found' >&2; exit 1; }
+ done
+ DISPLAY=:$display
+fi
+export DISPLAY
+server=
+wm=
+terminal=
+cleanup() {
+ [ -z "$terminal" ] || kill "$terminal" 2>/dev/null || true
+ [ -z "$wm" ] || kill "$wm" 2>/dev/null || true
+ [ -z "$server" ] || kill "$server" 2>/dev/null || true
+ [ -z "$server" ] || wait "$server" 2>/dev/null || true
+}
+trap cleanup EXIT
+trap 'exit 129' HUP
+trap 'exit 130' INT
+trap 'exit 143' TERM
+Xvfb "$DISPLAY" -screen 0 1100x800x24 -fp built-ins -noreset -ac &
+server=$!
+sleep 2
+kill -0 "$server"
+jwm -f /usr/local/share/jwm/wasm.jwmrc &
+wm=$!
+sleep 1
+if command -v xterm >/dev/null 2>&1; then
+ xterm -fn fixed -geometry 80x24+40+50 &
+ terminal=$!
+fi
+wait "$wm"

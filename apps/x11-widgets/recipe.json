@@ -1,0 +1,7 @@
+{
+  "name": "x11-widgets",
+  "version": "1.0-1",
+  "dependencies": [
+    "x11-toolkit"
+  ]
+}
