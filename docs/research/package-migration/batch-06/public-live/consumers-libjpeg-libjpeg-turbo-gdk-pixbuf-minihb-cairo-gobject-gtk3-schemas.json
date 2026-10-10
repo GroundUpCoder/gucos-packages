@@ -1,0 +1,158 @@
+{
+  "action": "consumers",
+  "names": [
+    "libjpeg",
+    "libjpeg-turbo",
+    "gdk-pixbuf",
+    "minihb",
+    "cairo-gobject",
+    "gtk3-schemas"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "528ceb04c4c318ef6ddd3c3e1df728f4d9647391",
+  "startedAt": "2026-10-10T10:58:56.737Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "libjpeg",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "5a44308d58e0f541604e41044cbac2317669e4208f12728cb1e7d930fbdf2513",
+          "size": 1423360
+        },
+        {
+          "path": "build.sh",
+          "sha256": "e70e89968ac0aa966ca7ba368e49e70a4355ae1d5ba294c0cda6b03ac57ffe02",
+          "size": 1324
+        },
+        {
+          "path": "test.sh",
+          "sha256": "f7898f113d30bf4d11ff6d15315df1b43d2aedf4e3f06e79ee8d64136320c317",
+          "size": 1449
+        }
+      ]
+    },
+    {
+      "name": "libjpeg-turbo",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "37e17ba56424fbb9b6a7858197e3a97fa7b4582d17c601888674e1525f1ee350",
+          "size": 3983360
+        },
+        {
+          "path": "build.sh",
+          "sha256": "6aed95a9be32d0274193a6eacc08b04ec18bf0cf1d14859c567de97c87d1bbea",
+          "size": 3114
+        },
+        {
+          "path": "test.sh",
+          "sha256": "322be974e1cd9c8a8e4196faf31a4b6ed89d8d8053568db6e3d2aec54419c0e6",
+          "size": 308
+        }
+      ]
+    },
+    {
+      "name": "gdk-pixbuf",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "eddbaecbccc78e5ab9253627a6c4e8d3bacd3bbebd670c23b035c11fac112a17",
+          "size": 21432320
+        },
+        {
+          "path": "build.sh",
+          "sha256": "46857d669472585cebea970a5c4d9e5164a7f5d4b38eee6addb0942a4dfd65b6",
+          "size": 1913
+        },
+        {
+          "path": "test.sh",
+          "sha256": "4b1cee6d0c02afb16732131e5e415e6eb0bfa5904222b6963815790d3f9a6866",
+          "size": 1339
+        },
+        {
+          "path": "jpeg-decode.c",
+          "sha256": "0db54a77fbedefd7d8692c1e5fcf4bd4a81fceaced826d1d8c0184243194483d",
+          "size": 1419
+        }
+      ]
+    },
+    {
+      "name": "minihb",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "0e576c00ad713f1d743107a525c9d508d5f62ff7be895890e66b55430fe21df8",
+          "size": 4792320
+        },
+        {
+          "path": "build.sh",
+          "sha256": "f5bee03f76da83f98e23ff5293678a36ef396dc143b15c9ea2b28f382297ed6c",
+          "size": 913
+        },
+        {
+          "path": "test.sh",
+          "sha256": "27fe5ca3bcd3be0fee836448df8153dc553c5e12862afed164b83cd76854c881",
+          "size": 511
+        }
+      ]
+    },
+    {
+      "name": "cairo-gobject",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "9ea4a76260e38b65a1de7619b91bcd2a8654469726668c2889523b0bc89f28bb",
+          "size": 81920
+        },
+        {
+          "path": "build.sh",
+          "sha256": "feb36079ee770aa25c312f1ac62d96c6ff678997cbab6284f8c342fa18e8e46b",
+          "size": 1275
+        },
+        {
+          "path": "test.sh",
+          "sha256": "728089479879f6c1712861d0d6a9443d375342bbb6bd4cb2b759aa0b8dee7068",
+          "size": 454
+        }
+      ]
+    },
+    {
+      "name": "gtk3-schemas",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "0144a5a79520ce1755fe17361dc4775be83cb968c3d20218790ba6e846197de9",
+          "size": 51200
+        },
+        {
+          "path": "gio-source.tar",
+          "sha256": "ff22279230a393630f5ff6171457addeb017e7af53a08644ed7f7a64536eb4b3",
+          "size": 15308800
+        },
+        {
+          "path": "GLib-COPYING",
+          "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb",
+          "size": 25967
+        },
+        {
+          "path": "build.sh",
+          "sha256": "36891ccf6acfd90c7ed194d71cb5f6706b5a0f7b61f03d643d717b951520802e",
+          "size": 866
+        },
+        {
+          "path": "test.sh",
+          "sha256": "df18cab93b7617ca90a50581f253b8ddbcf090827dcf3f0a93afbc61bf7dc749",
+          "size": 348
+        },
+        {
+          "path": "schema-check.c",
+          "sha256": "50d95172c87a3d6ad2263eaa776f37ee88b3cfc83a528cc0eceb577dba2567e4",
+          "size": 1206
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-10T10:59:08.665Z"
+}

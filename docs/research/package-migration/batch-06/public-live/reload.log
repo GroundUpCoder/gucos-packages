@@ -1,0 +1,130 @@
+gucman: unknown source
+
+
+/usr/local/lib/libjpeg.a: OK
+/usr/local/lib/libjpeg.so: OK
+/usr/local/include/jpeglib.h: OK
+/usr/local/include/jerror.h: OK
+/usr/local/include/jconfig.h: OK
+/usr/local/include/jmorecfg.h: OK
+/usr/local/lib/pkgconfig/libjpeg.pc: OK
+/usr/local/share/licenses/libjpeg/LICENSE: OK
+
+c03c1f57c5f4909f58d37ca050753f343e2015f3a5b27e9d3def7c8e83d036bc  /home/user/migration-export.tar
+1138176
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libjpeg-turbo.a: OK
+/usr/local/lib/libjpeg-turbo.so: OK
+/usr/local/include/jpeg-turbo/jpeglib.h: OK
+/usr/local/include/jpeg-turbo/jerror.h: OK
+/usr/local/include/jpeg-turbo/jmorecfg.h: OK
+/usr/local/include/jpeg-turbo/jconfig.h: OK
+/usr/local/lib/pkgconfig/libjpeg-turbo.pc: OK
+/usr/local/share/licenses/libjpeg-turbo/LICENSE.md: OK
+/usr/local/share/licenses/libjpeg-turbo/README.ijg: OK
+
+5e14924593a329ea2cb84d0ce2888e335999075056287a5a87ca1ad739560d2e  /home/user/migration-export.tar
+2382336
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libgdk_pixbuf-2.0.a: OK
+/usr/local/lib/libgdk_pixbuf-2.0.so: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-animation.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixdata.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h: OK
+/usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h: OK
+/usr/local/lib/pkgconfig/gdk-pixbuf-2.0.pc: OK
+/usr/local/share/licenses/gdk-pixbuf/COPYING: OK
+
+977090c64595b041d940bc0496f23db2060ad5966cb5d627870500d534edb8f4  /home/user/migration-export.tar
+1006592
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libminihb.a: OK
+/usr/local/lib/libminihb.so: OK
+/usr/local/include/minihb/hb-aat-layout.h: OK
+/usr/local/include/minihb/hb-aat.h: OK
+/usr/local/include/minihb/hb-blob.h: OK
+/usr/local/include/minihb/hb-buffer.h: OK
+/usr/local/include/minihb/hb-cairo.h: OK
+/usr/local/include/minihb/hb-common.h: OK
+/usr/local/include/minihb/hb-coretext.h: OK
+/usr/local/include/minihb/hb-deprecated.h: OK
+/usr/local/include/minihb/hb-directwrite.h: OK
+/usr/local/include/minihb/hb-draw.h: OK
+/usr/local/include/minihb/hb-face.h: OK
+/usr/local/include/minihb/hb-font.h: OK
+/usr/local/include/minihb/hb-ft.h: OK
+/usr/local/include/minihb/hb-gdi.h: OK
+/usr/local/include/minihb/hb-glib.h: OK
+/usr/local/include/minihb/hb-gobject-structs.h: OK
+/usr/local/include/minihb/hb-gobject.h: OK
+/usr/local/include/minihb/hb-graphite2.h: OK
+/usr/local/include/minihb/hb-icu.h: OK
+/usr/local/include/minihb/hb-map.h: OK
+/usr/local/include/minihb/hb-ot-color.h: OK
+/usr/local/include/minihb/hb-ot-deprecated.h: OK
+/usr/local/include/minihb/hb-ot-font.h: OK
+/usr/local/include/minihb/hb-ot-layout.h: OK
+/usr/local/include/minihb/hb-ot-math.h: OK
+/usr/local/include/minihb/hb-ot-meta.h: OK
+/usr/local/include/minihb/hb-ot-metrics.h: OK
+/usr/local/include/minihb/hb-ot-name.h: OK
+/usr/local/include/minihb/hb-ot-shape.h: OK
+/usr/local/include/minihb/hb-ot-var.h: OK
+/usr/local/include/minihb/hb-ot.h: OK
+/usr/local/include/minihb/hb-paint.h: OK
+/usr/local/include/minihb/hb-set.h: OK
+/usr/local/include/minihb/hb-shape-plan.h: OK
+/usr/local/include/minihb/hb-shape.h: OK
+/usr/local/include/minihb/hb-style.h: OK
+/usr/local/include/minihb/hb-subset-repacker.h: OK
+/usr/local/include/minihb/hb-subset.h: OK
+/usr/local/include/minihb/hb-unicode.h: OK
+/usr/local/include/minihb/hb-uniscribe.h: OK
+/usr/local/include/minihb/hb-version.h: OK
+/usr/local/include/minihb/hb-wasm-api.h: OK
+/usr/local/include/minihb/hb.h: OK
+/usr/local/include/minihb/minihb.h: OK
+/usr/local/lib/pkgconfig/minihb.pc: OK
+/usr/local/share/licenses/minihb/COPYING-HARFBUZZ: OK
+/usr/local/share/licenses/minihb/OFL-NotoSans.txt: OK
+
+4cf140e5496a900c0542174e4c449969c23e04e5acba32fa34be69a7ec09feed  /home/user/migration-export.tar
+883712
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libcairo-gobject.a: OK
+/usr/local/lib/libcairo-gobject.so: OK
+/usr/local/include/cairo/cairo-gobject.h: OK
+/usr/local/lib/pkgconfig/cairo-gobject.pc: OK
+/usr/local/share/licenses/cairo-gobject/COPYING: OK
+/usr/local/share/licenses/cairo-gobject/UPSTREAM-NOTICE: OK
+
+12bf0fc89c4b8d78adaa56c6435288060b8890125c6491150cfd443927799224  /home/user/migration-export.tar
+145408
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/share/glib-2.0/schemas/org.gtk.Settings.ColorChooser.gschema.xml: OK
+/usr/local/share/glib-2.0/schemas/org.gtk.Settings.Debug.gschema.xml: OK
+/usr/local/share/glib-2.0/schemas/org.gtk.Settings.EmojiChooser.gschema.xml: OK
+/usr/local/share/glib-2.0/schemas/org.gtk.Settings.FileChooser.gschema.xml: OK
+/usr/local/share/glib-2.0/schemas/gschemas.compiled: OK
+/usr/local/share/licenses/gtk3-schemas/COPYING: OK
+/usr/local/share/licenses/gtk3-schemas/GLib-COPYING: OK
+/usr/local/share/doc/gtk3-schemas/UPSTREAM.json: OK
+/usr/local/share/doc/gtk3-schemas/PORT.md: OK
+
+9172e8f32ddd04a6961ee6349da2d1f039efa74720edcaa0512326822250f642  /home/user/migration-export.tar
+71680
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

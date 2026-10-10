@@ -563,7 +563,7 @@
     {
       "id": "cairo-gobject",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/cairo-gobject/wasm-package.json",
       "historicalManifestSha256": "e73d039108ec402b10c4c525b7733ba22d1ec7693796563566b561e2d4da0657",
       "historicalEvidence": [
@@ -600,11 +600,15 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Fresh binary install, installed static/shared/codec/shaping/schema consumers, reload checksums and parsed manifests; 97 combined outputs",
           "evidence": "batch-06/binary-install"
+        },
+        {
+          "scope": "Public immutable binary installation, installed consumers and reload hashes/parsed manifests; 97 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-06/public-live",
+          "catalogCommit": "7803895147b98546e2d5d4cf91d7923609b83d21"
         }
       ],
-      "blockers": [
-        "Fresh public-live install/consumer/reload acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/cairo-gobject",
       "sourceReview": {
         "commit": "19502f9b3d4ea45bb041b1c5c0566fc2e231a692",
@@ -1165,7 +1169,7 @@
     {
       "id": "gdk-pixbuf",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/gdk-pixbuf/wasm-package.json",
       "historicalManifestSha256": "cfd61a2a5bf1807781eb0967ae8331c4b02385b507c4e6988c65d8cb53317d21",
       "historicalEvidence": [
@@ -1203,11 +1207,15 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Fresh binary install, installed static/shared/codec/shaping/schema consumers, reload checksums and parsed manifests; 97 combined outputs",
           "evidence": "batch-06/binary-install"
+        },
+        {
+          "scope": "Public immutable binary installation, installed consumers and reload hashes/parsed manifests; 97 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-06/public-live",
+          "catalogCommit": "7803895147b98546e2d5d4cf91d7923609b83d21"
         }
       ],
-      "blockers": [
-        "Fresh public-live install/consumer/reload acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/gdk-pixbuf",
       "sourceReview": {
         "commit": "499ee09d8aa6e66662c7ec9cb177c3e814e4924b",
@@ -1657,7 +1665,7 @@
     {
       "id": "gtk3-schemas",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/gtk3-schemas/wasm-package.json",
       "historicalManifestSha256": "f36749b0911a3cfe23ec839d1dc2598085778d90d7256e8f4b640026ca57a2e3",
       "historicalEvidence": [
@@ -1694,11 +1702,15 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Fresh binary install, installed static/shared/codec/shaping/schema consumers, reload checksums and parsed manifests; 97 combined outputs",
           "evidence": "batch-06/binary-install"
+        },
+        {
+          "scope": "Public immutable binary installation, installed consumers and reload hashes/parsed manifests; 97 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-06/public-live",
+          "catalogCommit": "7803895147b98546e2d5d4cf91d7923609b83d21"
         }
       ],
-      "blockers": [
-        "Fresh public-live install/consumer/reload acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/gtk3-schemas",
       "role": "schema/data package; not separately compiled application",
       "sourceReview": {
@@ -2080,7 +2092,7 @@
     {
       "id": "libevent",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/libevent/wasm-package.json",
       "historicalManifestSha256": "cf029d1042a8ed333671d39fb6e161de414851791bcee7a58ade2544f371a05d",
       "historicalEvidence": [
@@ -2121,11 +2133,15 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Fresh binary install, installed static/shared consumers, reload hashes/manifests",
           "evidence": "batch-08/binary-install"
+        },
+        {
+          "scope": "Public immutable binary installation, installed consumers and reload hashes/parsed manifests; 54 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-08/public-live",
+          "catalogCommit": "0c8324235dded71382984c769b54aaf015f4265a"
         }
       ],
-      "blockers": [
-        "Fresh public-live install/consumer/reload acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/libevent",
       "sourceReview": {
         "commit": "ec043c5",
@@ -2341,7 +2357,7 @@
     {
       "id": "libjpeg",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/libjpeg/wasm-package.json",
       "historicalManifestSha256": "76ce5527ccf8331a2e40c189424efdf0f23b3d14e779b42cde0ed091c286db8b",
       "historicalEvidence": [
@@ -2382,11 +2398,15 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Fresh binary install, installed static/shared/codec/shaping/schema consumers, reload checksums and parsed manifests; 97 combined outputs",
           "evidence": "batch-06/binary-install"
+        },
+        {
+          "scope": "Public immutable binary installation, installed consumers and reload hashes/parsed manifests; 97 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-06/public-live",
+          "catalogCommit": "7803895147b98546e2d5d4cf91d7923609b83d21"
         }
       ],
-      "blockers": [
-        "Fresh public-live install/consumer/reload acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/libjpeg",
       "sourceReview": {
         "commit": "73aa5a98f0ffecdc643aa299427b516348efd1eb",
@@ -2408,7 +2428,7 @@
     {
       "id": "libjpeg-turbo",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/libjpeg-turbo/wasm-package.json",
       "historicalManifestSha256": "eef351330736fdf02ba3b58131dc0b942147654645c260859da6330b5c7b746b",
       "historicalEvidence": [
@@ -2442,11 +2462,15 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Fresh binary install, installed static/shared/codec/shaping/schema consumers, reload checksums and parsed manifests; 97 combined outputs",
           "evidence": "batch-06/binary-install"
+        },
+        {
+          "scope": "Public immutable binary installation, installed consumers and reload hashes/parsed manifests; 97 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-06/public-live",
+          "catalogCommit": "7803895147b98546e2d5d4cf91d7923609b83d21"
         }
       ],
-      "blockers": [
-        "Fresh public-live install/consumer/reload acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/libjpeg-turbo",
       "sourceReview": {
         "commit": "73aa5a98f0ffecdc643aa299427b516348efd1eb",
@@ -2553,7 +2577,7 @@
     {
       "id": "libuv",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/libuv/wasm-package.json",
       "historicalManifestSha256": "4f610f9ed3deb03d87bd42a21b755e773e06492fcf682f0a60f9e3302685fc6c",
       "historicalEvidence": [
@@ -2594,11 +2618,15 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Fresh binary install, installed static/shared consumers, reload hashes/manifests",
           "evidence": "batch-08/binary-install"
+        },
+        {
+          "scope": "Public immutable binary installation, installed consumers and reload hashes/parsed manifests; 54 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-08/public-live",
+          "catalogCommit": "0c8324235dded71382984c769b54aaf015f4265a"
         }
       ],
-      "blockers": [
-        "Fresh public-live install/consumer/reload acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/libuv",
       "sourceReview": {
         "commit": "68d6ec8",
@@ -2828,7 +2856,7 @@
     {
       "id": "minihb",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/minihb/wasm-package.json",
       "historicalManifestSha256": "aa1634b986ab7dd18fe700c0c27b0cc1e7534fd6a7915fd93013f661a6f9b838",
       "historicalEvidence": [
@@ -2853,11 +2881,15 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Fresh binary install, installed static/shared/codec/shaping/schema consumers, reload checksums and parsed manifests; 97 combined outputs",
           "evidence": "batch-06/binary-install"
+        },
+        {
+          "scope": "Public immutable binary installation, installed consumers and reload hashes/parsed manifests; 97 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-06/public-live",
+          "catalogCommit": "7803895147b98546e2d5d4cf91d7923609b83d21"
         }
       ],
-      "blockers": [
-        "Fresh public-live install/consumer/reload acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/minihb",
       "sourceReview": {
         "commit": "19502f9b3d4ea45bb041b1c5c0566fc2e231a692",

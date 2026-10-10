@@ -446,3 +446,14 @@ transport or component partition is needed before public publication. No core or
 hosting edits are authorized or made. Fresh private binary acceptance is prepared;
 Pango/GTK source work can proceed with the accepted private HarfBuzz installation.
 The historical translator-adapter hash mismatch remains unchanged and explicit.
+
+## Eight additional public-live acceptances
+
+Reservation4e7afd06 completed public immutable install, installed consumers and
+reload integrity on61a for six GTK foundations (97 outputs) and libevent/libuv
+(54 outputs). Exact reports, logs, manifests and hashes are retained in batch-06
+and batch-08/public-live. These eight entries advance recorded live additions
+from29 to37; they are split package entries, not canonical historical row counts.
+Full GTK GUI remains open. Baseline19 artifacts and references remain unchanged.
+SDL text sourcee6df784 and xmore harnessfdcc11c passed independent gpt review;
+their execution gates remain pending.
