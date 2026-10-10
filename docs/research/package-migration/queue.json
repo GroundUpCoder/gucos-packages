@@ -915,15 +915,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
-        "Independent source/design review pending."
+        "Historical etc/fonts output rejected by package prefix policy. Adapter now uses share/fontconfig; fresh execution pending."
       ],
       "candidate": "apps/fontconfig"
     },
     {
       "id": "freetype",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/freetype/wasm-package.json",
       "historicalManifestSha256": "9344ff6a38266c013c78cdef9af26b50e0e4ba5ace04040bd8361ec415670f39",
       "historicalEvidence": [
@@ -948,7 +947,13 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build and static/shared port consumers/install/export before Fontconfig manifest rejection",
+          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-graphics.log"
+        }
+      ],
       "blockers": [
         "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
         "Independent source/design review pending."
@@ -1253,7 +1258,7 @@
     {
       "id": "glib",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/glib/wasm-package.json",
       "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
       "historicalEvidence": [
@@ -1282,16 +1287,22 @@
         "pcre2"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build, static/shared consumers, installation/export; GObject wide integer generic marshalling",
+          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-glib-gobject.json"
+        }
+      ],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "Fresh binary install, installed consumers, reload and independent publication review pending."
       ],
       "candidate": "apps/glib"
     },
     {
       "id": "gobject",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/glib/wasm-package.json",
       "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
       "historicalEvidence": [
@@ -1318,9 +1329,15 @@
         "libffi"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build, static/shared consumers, installation/export; GObject wide integer generic marshalling",
+          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-glib-gobject.json"
+        }
+      ],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "Fresh binary install, installed consumers, reload and independent publication review pending."
       ],
       "candidate": "apps/gobject"
     },
@@ -2134,7 +2151,7 @@
     {
       "id": "libpng",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/libpng/wasm-package.json",
       "historicalManifestSha256": "498dc8727eb13b2b3f48c387f61127db4c1e4e07e131f39b37319e554bfa8e09",
       "historicalEvidence": [
@@ -2160,7 +2177,13 @@
         "zlib"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build and static/shared port consumers/install/export before Fontconfig manifest rejection",
+          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-graphics.log"
+        }
+      ],
       "blockers": [
         "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
         "Independent source/design review pending."
@@ -2815,7 +2838,7 @@
     {
       "id": "pixman",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/pixman/wasm-package.json",
       "historicalManifestSha256": "8e717772298e82645f91a8a5178b054dadd95c50197b967071df8c56b55b2ace",
       "historicalEvidence": [
@@ -2839,7 +2862,13 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build and static/shared port consumers/install/export before Fontconfig manifest rejection",
+          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-graphics.log"
+        }
+      ],
       "blockers": [
         "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
         "Independent source/design review pending."

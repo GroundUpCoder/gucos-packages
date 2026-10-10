@@ -20,7 +20,7 @@
     "mode": 420
   },
   {
-    "path": "etc/fonts/fonts.conf",
+    "path": "share/fontconfig/fonts.conf",
     "mode": 420
   },
   {
