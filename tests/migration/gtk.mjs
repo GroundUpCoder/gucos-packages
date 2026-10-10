@@ -36,8 +36,9 @@ try {
  await s.page.evaluate(async text=>shell.busybox.write('/tmp/gtk-closure.sha256',new TextEncoder().encode(text)),checksums.toString());
  await s.command(`set -eu
 sha256sum -c /tmp/gtk-closure.sha256
-test "$(find /usr/local -name libcairo.so)" = /usr/local/lib/libcairo.so
-test "$(find /usr/local -name libX11.so)" = /usr/local/lib/libX11.so`);
+for library in libcairo.so libXau.so libxcb.so libX11.so libXext.so libXrender.so libXfixes.so libXi.so libXtst.so; do
+ test "$(find /usr/local -name "$library")" = "/usr/local/lib/$library"
+done`);
  await s.page.evaluate(async encoded=>shell.busybox.write('/tmp/migration-gtk.tar',Uint8Array.from(atob(encoded),c=>c.charCodeAt(0))),archive.toString('base64'));
  pending=s.command(`set -eu
 mkdir -p /tmp/migration-gtk
@@ -103,9 +104,14 @@ echo GTK-X11-PACKAGE-PASS`);
   let timeout;
   try{
    await Promise.race([(async()=>{
-    await s.command(`for f in /tmp/migration-gtk-demo.pid /tmp/migration-gtk-server.pid; do
-if [ -f "$f" ]; then kill "$(cat "$f")" 2>/dev/null || true; fi
-done`);
+    await s.page.evaluate(async()=>{
+     // Same out-of-band kill channel used by the runtime VT close button.
+     for(const path of ['/tmp/migration-gtk-demo.pid','/tmp/migration-gtk-server.pid']){
+      const bytes=await shell.busybox.read(path);
+      const pid=Number(new TextDecoder().decode(bytes));
+      if(Number.isInteger(pid)&&pid>0)shell.busybox.worker.postMessage({type:'kill',pid});
+     }
+    });
     await pending.catch(()=>{});
    })(),new Promise((_,reject)=>{timeout=setTimeout(()=>reject(Error('GTK cleanup exceeded 15 seconds')),15000);})]);
    report.failureCleanup='guest children stopped and parent command settled';

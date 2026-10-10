@@ -43,7 +43,7 @@ def visit(name):
    files[path]=digest(archive.extractfile(f).read())
  assert seen==set(expected);archives[name]={'sha256':digest(b),'size':len(b)}
 visit(root)
-for basename in ['libcairo.so','libX11.so']:
+for basename in ['libcairo.so','libXau.so','libxcb.so','libX11.so','libXext.so','libXrender.so','libXfixes.so','libXi.so','libXtst.so']:
  assert [p for p in files if p.rsplit('/',1)[-1]==basename]==['/usr/local/lib/'+basename]
 sums=''.join(h+'  '+p+'\n' for p,h in sorted(files.items()))
 with (run/'gtk-closure.sha256').open('x') as f:f.write(sums)
