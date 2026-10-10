@@ -1,5 +1,15 @@
 #!/bin/sh
 set -eu
+# Installed public headers must coexist with current libc in either order.
+for order in stdlib-first uv-first; do
+    if [ "$order" = stdlib-first ]; then
+        printf '#include <stdlib.h>\n#include <uv.h>\n' > header-order.c
+    else
+        printf '#include <uv.h>\n#include <stdlib.h>\n' > header-order.c
+    fi
+    printf 'char *(*libc_ptsname)(int) = ptsname;\n' >> header-order.c
+    cc -I"$DESTDIR/include" -I"$DESTDIR/include/wasm-posix-libuv" -c header-order.c -o header-order.o
+done
 cat > consumer.c <<'EOF'
 #include <uv.h>
 #include <assert.h>

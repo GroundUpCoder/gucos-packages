@@ -3,6 +3,9 @@ set -eu
 tar -xf source.tar
 stage="$PWD/stage"
 cd source
+# Core libc now owns ptsname; retain archived sources and adapt extracted header.
+sed '/^static inline char \*ptsname(int fd)/d' include/wasm-posix-libuv/platform.h > platform-current.h
+mv platform-current.h include/wasm-posix-libuv/platform.h
 mkdir -p "$stage/objects" "$stage/include/uv"
 objects=
 cc -D_GNU_SOURCE -D__wasm__ -Iinclude/wasm-posix-libuv -Iinclude -Isrc -Isrc/unix -c src/fs-poll.c -o "$stage/objects/0.o"
