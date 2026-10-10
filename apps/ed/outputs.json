@@ -1,0 +1,14 @@
+[
+  {
+    "path": "bin/ed",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/ed/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "bin/red",
+    "mode": 493
+  }
+]

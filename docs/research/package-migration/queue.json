@@ -743,7 +743,7 @@
     {
       "id": "ed",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/ed/wasm-package.json",
       "historicalManifestSha256": "a3f841e672481b1a15a18c0512010ef8844885ad12471e3de9f247fb70026a53",
       "historicalEvidence": [
@@ -775,7 +775,10 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/ed"
     },
     {
       "id": "expat",
@@ -1777,7 +1780,7 @@
     {
       "id": "jq",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/jq/wasm-package.json",
       "historicalManifestSha256": "2abfcb5e27a3cebb9accab36c6597e01423badbd63a39780af918624f8466bea",
       "historicalEvidence": [
@@ -1809,7 +1812,10 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and new guest acceptance pending."
+      ],
+      "candidate": "apps/jq"
     },
     {
       "id": "jwm",
