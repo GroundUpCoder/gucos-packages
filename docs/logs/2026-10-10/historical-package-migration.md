@@ -345,3 +345,14 @@ with hashes under docs/research/package-migration/account-transition.
 A new serial reservation is completing the already-published Ed/jq public gates.
 Recovered HEAD360e444 records27 live-accepted additions (split package entries,
 not canonical rows); Ed/jq public acceptance and GTK closure remain pending.
+
+## Ed and jq publicly accepted on gpt successor
+
+Serial reservation0746803b-61bd-4c2e-bb83-3aa9df738767 passed fresh public
+installation from reviewed catalogf12e232, installed Ed suite/edit/red wrapper
+and jq query/named-regex consumers, and reload verification of all6 payload
+hashes and parsed manifests on runtime61a87f88. Exact evidence is retained under
+batch-07/public-live. Live-accepted additions now total29 package entries;
+canonical migration completeness is still tracked separately in the queue.
+The interrupted GTK profile is resuming with distinct gpt-resume report/log names
+under reservationc47e3870-ab86-41ef-b0b9-dae8f09302d0; original evidence preserved.

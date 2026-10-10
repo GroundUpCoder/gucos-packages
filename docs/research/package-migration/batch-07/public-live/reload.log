@@ -1,0 +1,19 @@
+gucman: unknown source
+
+
+/usr/local/bin/ed: OK
+/usr/local/share/licenses/ed/COPYING: OK
+/usr/local/bin/red: OK
+
+2e17303839d16bc3a2dec70ee1ce24ed25c7e5ff9f9bf983eb8443faf394a4d4  /home/user/migration-export.tar
+140800
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/jq: OK
+/usr/local/share/licenses/jq/COPYING: OK
+/usr/local/share/licenses/jq/ONIGURUMA-COPYING: OK
+
+45f99dffc83664f7c0bb3e92568acaf794d2b3335361a11befe51784c91d7962  /home/user/migration-export.tar
+1562112
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

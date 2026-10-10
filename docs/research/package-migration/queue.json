@@ -747,7 +747,7 @@
     {
       "id": "ed",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "public-live-accepted",
       "historicalManifest": "vendor/ed/wasm-package.json",
       "historicalManifestSha256": "a3f841e672481b1a15a18c0512010ef8844885ad12471e3de9f247fb70026a53",
       "historicalEvidence": [
@@ -783,6 +783,11 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source build and retained upstream/CLI tests; fresh binary installation, installed CLI consumers and reload payload+parsed-manifest integrity",
           "evidence": "batch-07"
+        },
+        {
+          "scope": "Public immutable binary install, installed consumers and reload with six combined output hashes and parsed manifests; runtime61a87f88",
+          "evidence": "docs/research/package-migration/batch-07/public-live",
+          "catalogCommit": "f12e232575b79d23e76b3a9f7bbf725de245c078"
         }
       ],
       "blockers": [
@@ -1828,7 +1833,7 @@
     {
       "id": "jq",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "public-live-accepted",
       "historicalManifest": "vendor/jq/wasm-package.json",
       "historicalManifestSha256": "2abfcb5e27a3cebb9accab36c6597e01423badbd63a39780af918624f8466bea",
       "historicalEvidence": [
@@ -1864,6 +1869,11 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source build and retained upstream/CLI tests; fresh binary installation, installed CLI consumers and reload payload+parsed-manifest integrity",
           "evidence": "batch-07"
+        },
+        {
+          "scope": "Public immutable binary install, installed consumers and reload with six combined output hashes and parsed manifests; runtime61a87f88",
+          "evidence": "docs/research/package-migration/batch-07/public-live",
+          "catalogCommit": "f12e232575b79d23e76b3a9f7bbf725de245c078"
         }
       ],
       "blockers": [

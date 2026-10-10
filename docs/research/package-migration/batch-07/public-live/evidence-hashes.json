@@ -1,0 +1,46 @@
+{
+  "observed-runtime.json": {
+    "sha256": "87c8bf902b247a380e61c6337c538c6428620e79d6533803cdbc6aeea2a0fa81",
+    "size": 129
+  },
+  "reload.log": {
+    "sha256": "ed8ab797b86fb3464df733ca9f2a422a330baad9ccad03838319991c9b2cf5d3",
+    "size": 570
+  },
+  "config.json": {
+    "sha256": "ef9670e32997398dac6e7ff6b57ee59bd52faf1344214c8cd2a9df4eaad26941",
+    "size": 12334
+  },
+  "reload-ed-jq.json": {
+    "sha256": "41cfde5f4d79e1f29584203c773c17a7835043f679a3a6deaf0700bfb339d88d",
+    "size": 313
+  },
+  "ed.sha256": {
+    "sha256": "b5aa88d1744f479efd057e4223ffc71e471f71b19eb0e72a08a51766d130911f",
+    "size": 272
+  },
+  "consumers.log": {
+    "sha256": "e109d9548070d0cd3b2dca9499e66694a18829f4427cc730ffb5a4e172ab0926",
+    "size": 688
+  },
+  "install-ed-jq.json": {
+    "sha256": "4a77ec1955d9afa72b7681b25f4bd01469c8e55219c282c0c81a58b212fb3ccc",
+    "size": 314
+  },
+  "jq.sha256": {
+    "sha256": "3673946b75f69eabceb2c5f2b294c9d170386f22c1f5a3549cb7099fa0ad416e",
+    "size": 300
+  },
+  "consumers-ed-jq.json": {
+    "sha256": "526217eea400cb9abad22a0a10ce67996c3782ed06f61974292a00adfcdb8114",
+    "size": 1438
+  },
+  "candidate-manifests.json": {
+    "sha256": "5528daae190c4e7a8d8f8636af6308674859a3c24766afed54ec2058097e740c",
+    "size": 4036
+  },
+  "install.log": {
+    "sha256": "a969a47381103fc50e29b76c873ae422a783815f811fca4878d02a05e152a484",
+    "size": 2887
+  }
+}
