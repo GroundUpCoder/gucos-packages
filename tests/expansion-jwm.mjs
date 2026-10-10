@@ -28,7 +28,7 @@ echo JWM-RUNTIME-PASS`);
  const scale=Math.min(box.width/1100,box.height/800),left=box.x+(box.width-1100*scale)/2,top=box.y+(box.height-800*scale)/2;
  await s.page.mouse.move(left+(x+80)*scale,top+(y+title/2)*scale);await s.page.mouse.down();await s.page.mouse.move(left+(x+145)*scale,top+(y+title/2+40)*scale,{steps:12});await s.page.mouse.up();
  await s.page.waitForFunction(()=>shell.busybox.log.includes('JWM-MOVED'));
- await writeFile(s.root+'test-results/jwm-acceptance-v1.png',await canvas.screenshot());
+ await writeFile(s.root+'test-results/jwm-acceptance-'+Date.now()+'.png',await canvas.screenshot());
  await s.page.locator('#terminal-focus').click();assert.match(await pending,/JWM-HIDDEN-PROGRESS-PASS/);
  console.log('PASS real JWM two clients, decorations, browser drag, hidden progress and cleanup');
 }finally{await s.close();}

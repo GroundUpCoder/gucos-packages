@@ -68,3 +68,60 @@ The package uses upstream portable ISO C handling instead: no io.popen or dynami
 module loading. Portable guest build/interpreter/luac/coroutine/file/system test
 passed in test-results/lua-runtime2.log; final pass also includes protected error
 handling and a separately compiled embedding program. No core change made.
+
+## Frozen local acceptance
+
+Final scope is 15 new packages: JWM 2.4.6, XPM/Athena widget libraries,
+11 X clients including xterm (ten excluding xterm), Lua 5.4.9 and Zstandard 1.5.7.
+The X clients are xcalc 1.1.3, xclock 1.2.1, xeyes 1.3.1, xlogo 1.0.7,
+xlsfonts 1.0.9, xkill 1.0.7, xrefresh 1.1.1, xmessage 1.0.7, xprop 1.2.8,
+xev 1.2.7 and xterm 411. All package revisions are -1. No repository outside
+wasm-posix-packages was changed by this package expansion.
+
+Source review of db8eb60 identified two blockers: binary receipts needed full
+binding to committed recipe inputs, and the launcher needed real bounded X server
+readiness rather than a fixed sleep. Commit 4d83501 addresses both. The pinning
+tool requires immutable 40-character commits, frozen metadata and exact guest
+input/identity/output fingerprints. The package-owned readiness helper retries
+XOpenDisplay and uses alarm(15) to bound a stalled handshake. This changed JWM's
+output set, so the final-v1 test profile was discarded. Final-v2 began fresh and
+all final consumer source builds used the corrected frozen inputs.
+
+Executed final-v2 jobs, each through machine-job browser with timeout 300:
+
+| Job | Result |
+| --- | --- |
+| a698b38c-9b11-4e07-ae16-bad92565ff63 | Fresh dependency binary install passed |
+| 8b025027-bb5f-47ca-9863-362fcd4124cd | JWM, xterm, xcalc, xclock source builds passed |
+| e0e7b243-9cc4-4d3b-943b-d017849722f4 | xeyes, xlogo, xlsfonts, xkill source builds passed |
+| c4774432-a19c-4b77-8a97-cfccf386010b | xrefresh, xmessage, xprop, xev source builds passed |
+| 6b0108fa-9196-4925-a55a-b6988d987680 | JWM resize, minimize/restore, two workspaces, terminal/calculator menu launches and manual WM exit passed |
+| 31dc18d8-b05a-4feb-b4cc-054d72e6111d | Launcher passed X startup delayed three seconds, occupied display preservation, child cleanup and stalled-handshake alarm |
+| 1011c31e-647d-412e-ae68-746d3d11944a | Actual browser JWM drag/hidden progress, functional X-client tests and xterm browser-keyboard PTY passed |
+| 3f95f59b-1bfa-4514-ac8c-0890ade3c349 | Lua interpreter/bytecode/protected errors/coroutines/file/system/C embedding and Zstd CLI/static-library/two-thread/error tests passed |
+
+X-client functional assertions: clock pixels tick; eyes follow pointer;
+calculator 1+2 pixels equal 3; xmessage selected button exits 7; xev receives
+KeyPress; xlsfonts lists fixed; xprop writes/reads a root property; xrefresh
+exits 0; xkill terminates the selected xlogo. This is bounded feature acceptance,
+not the full upstream test suites or exhaustive terminal compatibility. JWM has
+fallback icon/font warnings; international font coverage is not established.
+
+Dependency receipts: X11 server is the prior publicly built guest archive
+9cc9c7c53dd4996540f3871b561716a268289ed6ff8eca7611d10aa456b58558,
+not a newly rebuilt server. The current tests reinstall and exercise it.
+Toolkit export cfac272185f414f98c47f9a4874e7b11d369bf32b57b8cfddf7f835ccab182f1
+succeeded in job c7930d66-b57c-4d58-a02f-ad90e378b848; that command then failed
+because its second export reused a destination. The exporter now removes only
+its disposable destination before packing. Widgets export
+f07c450b691593ebaf93331b26c6b978fd56e29f846d4ee996ca8e1f39e77547
+passed job 58a2a232-7eda-42b7-b541-60bf7f548a64.
+
+Historical Eyes.c whitespace is byte-preserved and can trigger diff whitespace
+checks. It is not rewritten. Provenance validation checks every historical blob,
+including file types and the overlay identity. No full whitespace gate is claimed.
+Public acceptance and final publication approval are still pending at this point.
+
+All final consumer exports passed in three bounded jobs: 0e3078c0-4269-4025-b4d6-e6dcf945b0f9, 0c05f989-848d-4781-95f8-2e8c0d2d11a7, 130c6267-c5aa-4fca-9de9-5fbf59438084.
+Each receipt records the exact guest manifest, runtime, tar hash and size.
+Local evidence hashes and job IDs are retained in package-expansion-local-evidence.json.

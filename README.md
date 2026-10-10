@@ -15,3 +15,33 @@ package. Binaries may live in release assets or another CORS-enabled object stor
 Publishing recipes does not assert binary compatibility or independent acceptance.
 The repository is public. Anonymous browser access is verified separately from
 source publication; see the recorded acceptance evidence when available.
+
+## Desktop and development packages
+
+The expansion adds JWM, xterm, xcalc, xclock, xeyes, xlogo, xlsfonts, xkill,
+xrefresh, xmessage, xprop, xev, Lua, Zstandard and the XPM/Athena widget libraries.
+JWM is the desktop session; twm remains an optional existing package.
+
+```sh
+gucman search jwm
+gucman install groundupcoder:jwm
+gucman install groundupcoder:xterm
+gucman install groundupcoder:xcalc
+gucman install groundupcoder:xclock
+gucman install groundupcoder:xeyes
+start-jwm
+```
+
+Optional clients appear in JWM's menu when installed. “Refresh applications”
+updates the menu during a session. Exit from the menu closes the launcher-owned
+session. The OS terminal VT remains available. This is software X11 with core
+fonts, not accelerated X11. Lua uses its portable ISO C profile without `io.popen`
+or dynamic module loading. Zstandard includes the CLI and static development
+library, with assembly and legacy-format support disabled.
+
+The expansion supplies guest-built binaries for those 15 packages plus the X11
+server and toolkit. Binaries require the exact recorded core runtime identity;
+source builds use `gucman build groundupcoder:NAME`. Existing jsmn has a binary;
+twm remains source-only. Package READMEs document each supported profile.
+Acceptance, immutable publication and independent review are recorded in
+[the expansion journal](docs/logs/2026-10-10/package-expansion.md).

@@ -1,0 +1,117 @@
+{
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "sha256": "0c62358e42f94edca29ae39b13fae4bd865c58c87818e3839fc8f8cdf774905c",
+  "size": 15090176,
+  "guestManifest": {
+    "format": 1,
+    "name": "xterm",
+    "version": "411-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59498/xterm/source.tar",
+        "sha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
+        "size": 11612160
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59498/xterm/build.sh",
+        "sha256": "b0e94d7bee90845359e08da647d21d1f31fc95bc8985965b300749aa1316a628",
+        "size": 14480
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59498/xterm/test.sh",
+        "sha256": "6051a217500dc0828949380c189c6b003b5335882bf5b5d8f4dcd9f9034c7bff",
+        "size": 48
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xterm",
+        "mode": 493
+      },
+      {
+        "path": "share/xterm/termcap",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/XTerm",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/libICE-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/libSM-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/libXaw-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/libXft-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/libXmu-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/libXpm-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/libXrandr-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/libXt-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/termcap-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/xev-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/xmessage-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/xprop-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xterm/xterm-COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xterm/libICE-COPYING",
+      "share/licenses/xterm/libSM-COPYING",
+      "share/licenses/xterm/libXaw-COPYING",
+      "share/licenses/xterm/libXft-COPYING",
+      "share/licenses/xterm/libXmu-COPYING",
+      "share/licenses/xterm/libXpm-COPYING",
+      "share/licenses/xterm/libXrandr-COPYING",
+      "share/licenses/xterm/libXt-COPYING",
+      "share/licenses/xterm/termcap-COPYING",
+      "share/licenses/xterm/xev-COPYING",
+      "share/licenses/xterm/xmessage-COPYING",
+      "share/licenses/xterm/xprop-COPYING",
+      "share/licenses/xterm/xterm-COPYING"
+    ]
+  },
+  "method": "gucman pack from installed guest output; no host compilation"
+}

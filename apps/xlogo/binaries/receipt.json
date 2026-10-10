@@ -1,0 +1,69 @@
+{
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "sha256": "05c04ae2f748bce41869f6c572a4390a877ea2f3b5dd10e09d0c18deb8f084ed",
+  "size": 4306944,
+  "guestManifest": {
+    "format": 1,
+    "name": "xlogo",
+    "version": "1.0.7-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "inputs": [
+      "source.tar",
+      "build.sh",
+      "test.sh",
+      "config.h"
+    ],
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59498/xlogo/source.tar",
+        "sha256": "fd314d7ddb1f7bfab20d25bf90fa9e7305db2b2613f2546368c1f7e00fb88063",
+        "size": 829440
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59498/xlogo/build.sh",
+        "sha256": "cc56dab13e983c706540c5757b02b9615867564965887b8d64fd428574d0eeec",
+        "size": 559
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59498/xlogo/test.sh",
+        "sha256": "76e97728d09e377c298321f6183962f6a227fd0867333f2ae54749ddcc1ec464",
+        "size": 47
+      },
+      {
+        "path": "config.h",
+        "url": "http://127.0.0.1:59498/xlogo/config.h",
+        "sha256": "7bab4d56dac6a56796f7d6af23166fb81cb09f2eceea5e5db093c593a3b84557",
+        "size": 292
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xlogo",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/xlogo/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/XLogo",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/XLogo-color",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xlogo/COPYING"
+    ]
+  },
+  "method": "gucman pack from installed guest output; no host compilation"
+}

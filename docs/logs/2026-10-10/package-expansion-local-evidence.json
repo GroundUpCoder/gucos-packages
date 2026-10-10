@@ -1,0 +1,113 @@
+{
+  "profile": "expansion-final-v2",
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "logs": [
+    {
+      "log": "final-v2-a.log",
+      "sha256": "526b3b6a9dc6eb4917a854b3ddb74a8717aab7659037d592f3f981e9e11a7055",
+      "size": 6585,
+      "jobs": [
+        "8b025027-bb5f-47ca-9863-362fcd4124cd"
+      ]
+    },
+    {
+      "log": "final-v2-b.log",
+      "sha256": "2f11d082ad53fa462d5a5224f846819b8a38ee8f57aa380c608db6bab640dbaa",
+      "size": 3705,
+      "jobs": [
+        "e0e7b243-9cc4-4d3b-943b-d017849722f4"
+      ]
+    },
+    {
+      "log": "final-v2-bootstrap.log",
+      "sha256": "6df7f0ec34b19ec51951d48c8a9b62e622a21788c94b03eb4deb1658480c3dd2",
+      "size": 66899,
+      "jobs": [
+        "a698b38c-9b11-4e07-ae16-bad92565ff63"
+      ]
+    },
+    {
+      "log": "final-v2-c.log",
+      "sha256": "b0b7cd112c9972da57cf3bb344dece2f1a240f8a91fdb961eb0469916f20b681",
+      "size": 6904,
+      "jobs": [
+        "c4774432-a19c-4b77-8a97-cfccf386010b"
+      ]
+    },
+    {
+      "log": "final-v2-cli.log",
+      "sha256": "c5be9b2b6ac674fe4331850ca1ccf37edde256353faa0f60361ffd1f77dc4921",
+      "size": 2849,
+      "jobs": [
+        "3f95f59b-1bfa-4514-ac8c-0890ade3c349"
+      ]
+    },
+    {
+      "log": "final-v2-graphics.log",
+      "sha256": "303e95f95ea3423159608a865049a8c39231d329be86add97bba6fa9fda49e94",
+      "size": 1489,
+      "jobs": [
+        "1011c31e-647d-412e-ae68-746d3d11944a"
+      ]
+    },
+    {
+      "log": "final-v2-jwm-features.log",
+      "sha256": "928a484344be2599d08986e75e92fcf37bb9054827851c1c736bf51024060171",
+      "size": 687,
+      "jobs": [
+        "6b0108fa-9196-4925-a55a-b6988d987680"
+      ]
+    },
+    {
+      "log": "final-v2-launcher.log",
+      "sha256": "1f06ac2e774e8a95e3f7028e315419b16603ca886d41275ddac9c22b6c97177d",
+      "size": 267,
+      "jobs": [
+        "31dc18d8-b05a-4feb-b4cc-054d72e6111d"
+      ]
+    },
+    {
+      "log": "final-export-a.log",
+      "sha256": "c53c1bbbcbeafde2c7b77cc948bf85b3f7c9eb640a2896cce7d9aa80d22cbd5d",
+      "size": 1394,
+      "jobs": [
+        "0e3078c0-4269-4025-b4d6-e6dcf945b0f9"
+      ]
+    },
+    {
+      "log": "final-export-b.log",
+      "sha256": "2cc629fd5a5eb7782b9cf6d62050526049c12c0d1ea22b7c49f7616c1c5bd26c",
+      "size": 1414,
+      "jobs": [
+        "0c05f989-848d-4781-95f8-2e8c0d2d11a7"
+      ]
+    },
+    {
+      "log": "final-export-c.log",
+      "sha256": "bc6227273f4adeaeaeb8ca9ca1e0208c59ff7519945251ed0421b26804ca1ad9",
+      "size": 1128,
+      "jobs": [
+        "130c6267-c5aa-4fca-9de9-5fbf59438084"
+      ]
+    }
+  ],
+  "binaries": {
+    "xlsfonts": "ab057800bfb3cea64fd07d250ecc3eb945fca2a51583e7c52914bd84da3c7a56",
+    "xclock": "52e93b8a7263e6bc0ebe2ae76118e8c09fd2bd16b402d455b0562f7fdc591b32",
+    "xrefresh": "ed63cec5b411cefa155f872e7062501c7a1a4a6b9155ea78b07695b2af7901d6",
+    "xterm": "0c62358e42f94edca29ae39b13fae4bd865c58c87818e3839fc8f8cdf774905c",
+    "xmessage": "deadbd3d934eba19ddd7fa8107cf2104922de89e7932c580a34dd1da6b6dafef",
+    "x11-widgets": "f07c450b691593ebaf93331b26c6b978fd56e29f846d4ee996ca8e1f39e77547",
+    "x11-toolkit": "cfac272185f414f98c47f9a4874e7b11d369bf32b57b8cfddf7f835ccab182f1",
+    "xprop": "d25b0a6bf0632a310c984acfddcc421c51eb7af7322f97332e1aedcba4f22c6c",
+    "lua": "c27d7060bb8f6c6f888563e15a88f9f7fbf6341a21ebf4bc0482ab3314f20b8d",
+    "xeyes": "d71f599c1bdc8c45e677297115781a6d05d7de131ea2666212da1cee021d0c25",
+    "xev": "e1e4b6761cbd94790ba4ba4ff537e553f0326224e7a897d763759a1e58741bd4",
+    "jwm": "9c2d4974851dafb4e9ef917651926fd413c3de2eea8f9293565ce919eba0b22c",
+    "zstd": "6e04522e609b9c7b8bc41fbb19b41549b49a8baaed9a4920b36c552fa3abdb23",
+    "x11-server": "9cc9c7c53dd4996540f3871b561716a268289ed6ff8eca7611d10aa456b58558",
+    "xcalc": "da91414af51d290ec2ff8f3ba453340ea59badc56acb29b57d6304fb568ec191",
+    "xkill": "138e81b6fb32e1317077ed2880de06bcb09547e5098aa32baeff2d986300c2db",
+    "xlogo": "05c04ae2f748bce41869f6c572a4390a877ea2f3b5dd10e09d0c18deb8f084ed"
+  }
+}

@@ -29,7 +29,8 @@ not an accelerated desktop or a full Linux distribution.
 
 The source archive preserves the historical port's files; provenance.json pins
 its exact Git tree. Package-owned overlays add the conditional terminal menu and
-session launcher. All compilation occurs in the guest. Development acceptance
-passed real two-client decoration, browser title-bar drag and hidden-VT progress;
-final acceptance and publication receipts are recorded in
-../../docs/logs/2026-10-10/package-expansion.md.
+session launcher. All compilation occurs in the guest. Final local acceptance passed decoration, browser drag, hidden-VT progress,
+resize, minimize/restore, workspace switching, menu launches and clean WM exit.
+The launcher also passed delayed-server readiness, occupied-display preservation,
+child cleanup and bounded stalled-handshake tests. Publication receipts are in
+[the expansion journal](../../docs/logs/2026-10-10/package-expansion.md).

@@ -1,0 +1,61 @@
+{
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "sha256": "138e81b6fb32e1317077ed2880de06bcb09547e5098aa32baeff2d986300c2db",
+  "size": 2253312,
+  "guestManifest": {
+    "format": 1,
+    "name": "xkill",
+    "version": "1.0.7-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "inputs": [
+      "source.tar",
+      "build.sh",
+      "test.sh",
+      "config.h"
+    ],
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59498/xkill/source.tar",
+        "sha256": "d0175324626babc9f8f550796edc46237dc55e5435bf0918c6d21a2dc29ce7fb",
+        "size": 788480
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59498/xkill/build.sh",
+        "sha256": "78358851872be394584a9e5f88c2612b6a569ab84e81c5485cd077d86a4053b1",
+        "size": 389
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59498/xkill/test.sh",
+        "sha256": "72f40c5d82f3beb8a46eb068f94239764075ec5a0e3e438a75f11c663cb0d6e6",
+        "size": 47
+      },
+      {
+        "path": "config.h",
+        "url": "http://127.0.0.1:59498/xkill/config.h",
+        "sha256": "dcdf746cb2b541bb40d39d1f0ef509cb3a485932ca6e9b0b784c4d5b7ab174b7",
+        "size": 292
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xkill",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/xkill/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xkill/COPYING"
+    ]
+  },
+  "method": "gucman pack from installed guest output; no host compilation"
+}

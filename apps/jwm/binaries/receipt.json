@@ -1,0 +1,95 @@
+{
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "sha256": "9c2d4974851dafb4e9ef917651926fd413c3de2eea8f9293565ce919eba0b22c",
+  "size": 9654272,
+  "guestManifest": {
+    "format": 1,
+    "name": "jwm",
+    "version": "2.4.6-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "inputs": [
+      "source.tar",
+      "build.sh",
+      "test.sh",
+      "app-menu.sh",
+      "start-jwm",
+      "wait-display.c"
+    ],
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59498/jwm/source.tar",
+        "sha256": "d9b8cbb59938fa23e1f4f3163678a2adab314f26e7140dc21eb46783b9e932e2",
+        "size": 2355200
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59498/jwm/build.sh",
+        "sha256": "3946a9bfd5d9d289a5762095e318d72d588d4bb32d7870fe2be2ae9fb86829dc",
+        "size": 759
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59498/jwm/test.sh",
+        "sha256": "10b32fdeab908f7c381bff435182618ac390e645b5df4f9570381937fb1912ba",
+        "size": 97
+      },
+      {
+        "path": "app-menu.sh",
+        "url": "http://127.0.0.1:59498/jwm/app-menu.sh",
+        "sha256": "fd82c15656a60886595fb6094f20f596285d0b3ad828840aa59364655890e754",
+        "size": 2174
+      },
+      {
+        "path": "start-jwm",
+        "url": "http://127.0.0.1:59498/jwm/start-jwm",
+        "sha256": "1f55e0aac819ef2dce57d66839527c08f418700ca99f2ae0970982d0e058ecc8",
+        "size": 916
+      },
+      {
+        "path": "wait-display.c",
+        "url": "http://127.0.0.1:59498/jwm/wait-display.c",
+        "sha256": "09bf6d3881c40107721b5192463d08b6366e0199bc807db01a5adb75c81f6d17",
+        "size": 522
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/jwm",
+        "mode": 493
+      },
+      {
+        "path": "share/jwm/system.jwmrc",
+        "mode": 420
+      },
+      {
+        "path": "share/jwm/wasm.jwmrc",
+        "mode": 420
+      },
+      {
+        "path": "share/jwm/app-menu.sh",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/jwm/LICENSE",
+        "mode": 420
+      },
+      {
+        "path": "bin/start-jwm",
+        "mode": 493
+      },
+      {
+        "path": "libexec/jwm/wait-display",
+        "mode": 493
+      }
+    ],
+    "licenses": [
+      "share/licenses/jwm/LICENSE"
+    ]
+  },
+  "method": "gucman pack from installed guest output; no host compilation"
+}

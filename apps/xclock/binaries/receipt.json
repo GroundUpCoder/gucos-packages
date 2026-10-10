@@ -1,0 +1,77 @@
+{
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "sha256": "52e93b8a7263e6bc0ebe2ae76118e8c09fd2bd16b402d455b0562f7fdc591b32",
+  "size": 4346368,
+  "guestManifest": {
+    "format": 1,
+    "name": "xclock",
+    "version": "1.2.1-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "inputs": [
+      "source.tar",
+      "build.sh",
+      "test.sh",
+      "config.h"
+    ],
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59498/xclock/source.tar",
+        "sha256": "394edde8dd56ff2c66a6fe7e9e985868d2f98cb36fa61f46805d537175deec3a",
+        "size": 1146880
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59498/xclock/build.sh",
+        "sha256": "ef64dbba2ef206857355c10c3aac84cbc1ac70350641e19eb9948cf7bb00ceeb",
+        "size": 699
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59498/xclock/test.sh",
+        "sha256": "e6aca0478eaf23cf55bd786eae2ee6994d73d9edbcfbd080a1f86d094f980a97",
+        "size": 48
+      },
+      {
+        "path": "config.h",
+        "url": "http://127.0.0.1:59498/xclock/config.h",
+        "sha256": "120ac19616179eaef8537e7503968303d7610e389754eea7f1682530b6ac7bad",
+        "size": 293
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xclock",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/xclock/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/XClock",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/XClock-ampm",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/XClock-color",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/XClock-grandfather",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xclock/COPYING"
+    ]
+  },
+  "method": "gucman pack from installed guest output; no host compilation"
+}
