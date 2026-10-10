@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/quickjs",
+  "archiveSha256": "5f199234ac4c7ae1e8589f3c389021b35ae4025dd202a2a479108314c1af31c6",
+  "status": "source migration candidate; no new guest execution"
+}

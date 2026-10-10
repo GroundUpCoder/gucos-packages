@@ -3345,7 +3345,7 @@
     {
       "id": "qjs",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "vendor/quickjs/wasm-package.json",
       "historicalManifestSha256": "221c54ef5d62b84b7557485087155ab259d0897317d916df93c1df462b219ad7",
       "historicalEvidence": [
@@ -3377,7 +3377,8 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/qjs"
     },
     {
       "id": "quake",
@@ -3667,7 +3668,7 @@
     {
       "id": "sqlite3",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "vendor/sqlite/wasm-package.json",
       "historicalManifestSha256": "155007e3c636605c77819512634c119aa18bd220fa16f7268ef733bb07ea42bf",
       "historicalEvidence": [
@@ -3699,7 +3700,8 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/sqlite3"
     },
     {
       "id": "tcl",
