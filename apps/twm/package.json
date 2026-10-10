@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "name": "twm",
+  "version": "1.0.13.1-1",
+  "dependencies": [
+    "x11-toolkit"
+  ],
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/twm/source.tar",
+      "sha256": "d7468fd49b93c39136cacfb1f4a85db47661542a16ebd3416780bd8669b4717c",
+      "size": 1740800
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/twm/build.sh",
+      "sha256": "187f74ce90377b8aad64e952587b52632f8d3cd3151c4fe805558b788e81448b",
+      "size": 254
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/twm/test.sh",
+      "sha256": "3799871490fa77d58d07458e4513ecd9f1c43bd9952a32d42d632843043f9f5b",
+      "size": 45
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/twm",
+      "mode": 493
+    },
+    {
+      "path": "share/X11/twm/system.twmrc",
+      "mode": 420
+    },
+    {
+      "path": "share/X11/twm/wasm.twmrc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/twm/COPYING",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/twm/COPYING"
+  ]
+}

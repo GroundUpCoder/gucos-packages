@@ -59,5 +59,11 @@
   ],
   "licenses": [
     "share/licenses/jsmn/LICENSE"
-  ]
+  ],
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/jsmn/binaries/62a4b0e98744881284d52d278abb06ff2feec6794baa067a3cfa047638a3d4af.tar",
+    "sha256": "62a4b0e98744881284d52d278abb06ff2feec6794baa067a3cfa047638a3d4af",
+    "size": 28160
+  }
 }
