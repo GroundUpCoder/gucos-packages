@@ -1,0 +1,102 @@
+gucman: unknown source
+
+gucman: build migration:libevent: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 13712 bytes; transfer finished
+gucman: Resolving: migration:libevent
+gucman: Downloading manifest for migration:libevent (3385 bytes)
+  Connecting; waiting for response…
+  Downloaded 3385 / 3385 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libevent
+gucman: Checking cached object: manifest for migration:libevent
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: libevent (0 remaining after this)
+gucman: Downloading libevent source: source.tar (2600960 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.48 / 2.48 MiB (100%); transfer finished
+gucman: Verifying download: libevent source: source.tar
+gucman: Checking cached object: libevent source: source.tar
+gucman: Downloading libevent source: build.sh (3397 bytes)
+  Connecting; waiting for response…
+  Downloaded 3397 / 3397 bytes (100%); transfer finished
+gucman: Verifying download: libevent source: build.sh
+gucman: Checking cached object: libevent source: build.sh
+gucman: Downloading libevent source: test.sh (1255 bytes)
+  Connecting; waiting for response…
+  Downloaded 1255 / 1255 bytes (100%); transfer finished
+gucman: Verifying download: libevent source: test.sh
+gucman: Checking cached object: libevent source: test.sh
+Building migration:libevent; running trusted recipe with access to your guest files
+1071 functions, 971397 bytes
+582 functions, 530446 bytes
+3 functions, 9429 bytes
+383 functions, 346916 bytes
+LIBEVENT-PASS
+2 functions, 6344 bytes
+LIBEVENT-PASS
+gucman: Installing libevent: 0/31 files
+gucman: Installing libevent: 25/31 files
+gucman: Installing libevent: 31/31 files
+gucman: Preparing checksums: libevent
+gucman: Checksummed libevent: 25/31 files
+gucman: Checksummed libevent: 31/31 files
+gucman: Saving transaction: libevent
+gucman: Verifying staged files: libevent
+gucman: Activating: libevent
+Installed migration:libevent 2.1.12-1
+
+gucman: build migration:libuv: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 13712 bytes; transfer finished
+gucman: Resolving: migration:libuv
+gucman: Downloading manifest for migration:libuv (2676 bytes)
+  Connecting; waiting for response…
+  Downloaded 2676 / 2676 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libuv
+gucman: Checking cached object: manifest for migration:libuv
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: libuv (0 remaining after this)
+gucman: Downloading libuv source: source.tar (3266560 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.12 / 3.12 MiB (100%); transfer finished
+gucman: Verifying download: libuv source: source.tar
+gucman: Checking cached object: libuv source: source.tar
+gucman: Downloading libuv source: build.sh (7059 bytes)
+  Connecting; waiting for response…
+  Downloaded 7059 / 7059 bytes (100%); transfer finished
+gucman: Verifying download: libuv source: build.sh
+gucman: Checking cached object: libuv source: build.sh
+gucman: Downloading libuv source: test.sh (1552 bytes)
+  Connecting; waiting for response…
+  Downloaded 1552 / 1552 bytes (100%); transfer finished
+gucman: Verifying download: libuv source: test.sh
+gucman: Checking cached object: libuv source: test.sh
+Building migration:libuv; running trusted recipe with access to your guest files
+736 functions, 1126020 bytes
+666 functions, 1054460 bytes
+3 functions, 12107 bytes
+667 functions, 1060271 bytes
+LIBUV-PASS
+4 functions, 20993 bytes
+LIBUV-PASS
+gucman: Installing libuv: 0/23 files
+gucman: Installing libuv: 23/23 files
+gucman: Preparing checksums: libuv
+gucman: Checksummed libuv: 23/23 files
+gucman: Saving transaction: libuv
+gucman: Verifying staged files: libuv
+gucman: Activating: libuv
+Installed migration:libuv 1.51.0-1
+
+3f932f799b0ff35a95ddea35fb602ff88921292a4139349df6a6ce9e3f0baea4  /home/user/migration-export.tar
+2466816
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+79f83c17aba434309fa0ea7e3fa8d909a103c7514fd62f85dda8dfcc48b4d1c0  /home/user/migration-export.tar
+1913856
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

@@ -2035,7 +2035,7 @@
     {
       "id": "libevent",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/libevent/wasm-package.json",
       "historicalManifestSha256": "cf029d1042a8ed333671d39fb6e161de414851791bcee7a58ade2544f371a05d",
       "historicalEvidence": [
@@ -2066,7 +2066,13 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest source build, installed recipe static/shared timer/poll consumers and export; libuv both header orders",
+          "evidence": "batch-08/source"
+        }
+      ],
       "blockers": [],
       "candidate": "apps/libevent",
       "sourceReview": {
@@ -2470,7 +2476,7 @@
     {
       "id": "libuv",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/libuv/wasm-package.json",
       "historicalManifestSha256": "4f610f9ed3deb03d87bd42a21b755e773e06492fcf682f0a60f9e3302685fc6c",
       "historicalEvidence": [
@@ -2501,7 +2507,13 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest source build, installed recipe static/shared timer/poll consumers and export; libuv both header orders",
+          "evidence": "batch-08/source"
+        }
+      ],
       "blockers": [],
       "candidate": "apps/libuv",
       "sourceReview": {

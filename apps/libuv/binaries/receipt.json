@@ -1,0 +1,142 @@
+{
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "sha256": "79f83c17aba434309fa0ea7e3fa8d909a103c7514fd62f85dda8dfcc48b4d1c0",
+  "size": 1913856,
+  "guestManifest": {
+    "format": 1,
+    "name": "libuv",
+    "version": "1.51.0-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:49389/migration/libuv/source.tar",
+        "sha256": "3ea58e594765b59a40c17aa9c301b592647ab4833533fbb41cc935a17b3d7fe4",
+        "size": 3266560
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:49389/migration/libuv/build.sh",
+        "sha256": "f1829d17f8f3c67dd71fee259b96154d2302a2acd04177b0052769bf080203a8",
+        "size": 7059
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:49389/migration/libuv/test.sh",
+        "sha256": "65ffba8cb9decc1318c70b9dc64a03f264e7ab27d2a0f74b98e4ac91106f97f7",
+        "size": 1552
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libuv.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libuv.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/libuv.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/libuv/LICENSE",
+        "mode": 420
+      },
+      {
+        "path": "include/uv.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/aix.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/bsd.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/darwin.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/errno.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/linux.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/os390.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/posix.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/sunos.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/threadpool.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/tree.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/unix.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/version.h",
+        "mode": 420
+      },
+      {
+        "path": "include/uv/win.h",
+        "mode": 420
+      },
+      {
+        "path": "include/wasm-posix-libuv/arpa/inet.h",
+        "mode": 420
+      },
+      {
+        "path": "include/wasm-posix-libuv/ifaddrs.h",
+        "mode": 420
+      },
+      {
+        "path": "include/wasm-posix-libuv/net/if.h",
+        "mode": 420
+      },
+      {
+        "path": "include/wasm-posix-libuv/netdb.h",
+        "mode": 420
+      },
+      {
+        "path": "include/wasm-posix-libuv/platform.h",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/libuv/LICENSE"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}
