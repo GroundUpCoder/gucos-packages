@@ -145,9 +145,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "New guest acceptance and independent publication review pending."
       ],
-      "candidate": "apps/atk"
+      "candidate": "apps/atk",
+      "sourceReview": {
+        "commit": "010e993281e0f53b6934145d8dd675853ab5267a",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; guest acceptance and publication pending"
+      }
     },
     {
       "id": "autoconf",
@@ -979,9 +984,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "New guest acceptance and independent publication review pending."
       ],
-      "candidate": "apps/fribidi"
+      "candidate": "apps/fribidi",
+      "sourceReview": {
+        "commit": "010e993281e0f53b6934145d8dd675853ab5267a",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; guest acceptance and publication pending"
+      }
     },
     {
       "id": "galculator",
@@ -1191,9 +1201,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "New guest acceptance and independent publication review pending."
       ],
-      "candidate": "apps/gio-core"
+      "candidate": "apps/gio-core",
+      "sourceReview": {
+        "commit": "010e993281e0f53b6934145d8dd675853ab5267a",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; guest acceptance and publication pending"
+      }
     },
     {
       "id": "gio-listmodel",
@@ -1226,9 +1241,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent source review and new guest acceptance pending."
+        "New guest acceptance and independent publication review pending."
       ],
-      "candidate": "apps/gio-listmodel"
+      "candidate": "apps/gio-listmodel",
+      "sourceReview": {
+        "commit": "010e993281e0f53b6934145d8dd675853ab5267a",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; guest acceptance and publication pending"
+      }
     },
     {
       "id": "glib",
@@ -3590,7 +3610,7 @@
     {
       "id": "x11-apps-more",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "migrated-components-live-accepted",
       "historicalManifest": "apps/x11-apps-more/wasm-package.json",
       "historicalManifestSha256": "d78a8164bbcbd2f17e79637fea68a5c8de8139345c94d03c523baeafa512c450",
       "historicalEvidence": [
@@ -3608,65 +3628,93 @@
       ],
       "mapping": "Seven clients published separately; missing xedit, xfontsel, xclipboard, oclock, xcutsel.",
       "acceptance": [],
-      "blockers": [
-        "Independent artifact/publication review and public installation pending for five additional clients."
-      ],
-      "remainingScope": "Missing xedit, xfontsel, xclipboard, oclock, xcutsel",
+      "blockers": [],
+      "remainingScope": "No missing client binaries; software X11/core-font scope only, optional pixmap and international font warnings retained.",
       "components": {
         "xedit": {
-          "state": "candidate-accepted-awaiting-review",
+          "state": "published-live-accepted",
           "candidate": "apps/xedit",
           "acceptance": [
             {
               "evidence": "batch-02",
               "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
               "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            },
+            {
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "evidence": "batch-02/public-live",
+              "scope": "fresh public immutable install, XTest functional acceptance, exact output hashes and parsed manifest contents after reload"
             }
-          ]
+          ],
+          "publicationCommit": "bd69eea5c6776962c8d669dae034b1cd7d53b1e3"
         },
         "xfontsel": {
-          "state": "candidate-accepted-awaiting-review",
+          "state": "published-live-accepted",
           "candidate": "apps/xfontsel",
           "acceptance": [
             {
               "evidence": "batch-02",
               "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
               "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            },
+            {
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "evidence": "batch-02/public-live",
+              "scope": "fresh public immutable install, XTest functional acceptance, exact output hashes and parsed manifest contents after reload"
             }
-          ]
+          ],
+          "publicationCommit": "bd69eea5c6776962c8d669dae034b1cd7d53b1e3"
         },
         "xclipboard": {
-          "state": "candidate-accepted-awaiting-review",
+          "state": "published-live-accepted",
           "candidate": "apps/xclipboard",
           "acceptance": [
             {
               "evidence": "batch-02",
               "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
               "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            },
+            {
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "evidence": "batch-02/public-live",
+              "scope": "fresh public immutable install, XTest functional acceptance, exact output hashes and parsed manifest contents after reload"
             }
-          ]
+          ],
+          "publicationCommit": "bd69eea5c6776962c8d669dae034b1cd7d53b1e3"
         },
         "oclock": {
-          "state": "candidate-accepted-awaiting-review",
+          "state": "published-live-accepted",
           "candidate": "apps/oclock",
           "acceptance": [
             {
               "evidence": "batch-02",
               "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
               "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            },
+            {
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "evidence": "batch-02/public-live",
+              "scope": "fresh public immutable install, XTest functional acceptance, exact output hashes and parsed manifest contents after reload"
             }
-          ]
+          ],
+          "publicationCommit": "bd69eea5c6776962c8d669dae034b1cd7d53b1e3"
         },
         "xcutsel": {
-          "state": "candidate-accepted-awaiting-review",
+          "state": "published-live-accepted",
           "candidate": "apps/xcutsel",
           "acceptance": [
             {
               "evidence": "batch-02",
               "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
               "scope": "guest source build/test, fresh binary install, functional X events/rendering, reload payload+manifest integrity"
+            },
+            {
+              "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+              "evidence": "batch-02/public-live",
+              "scope": "fresh public immutable install, XTest functional acceptance, exact output hashes and parsed manifest contents after reload"
             }
-          ]
+          ],
+          "publicationCommit": "bd69eea5c6776962c8d669dae034b1cd7d53b1e3"
         }
       }
     },

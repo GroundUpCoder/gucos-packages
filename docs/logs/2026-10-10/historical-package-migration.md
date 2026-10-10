@@ -197,3 +197,19 @@ its upstream GLib COPYING as an explicit pinned input; no full networking claim
 is made merely because interfaces compile. GIO core's old GLib source-header
 path becomes the published GLib private-header directory; actual guest validation
 is still required. These four candidates await source review and execution.
+
+## Five X clients publicly accepted
+
+Pushed independently approved bd69eea. Fresh live-site profile installed all five
+from immutable public references. Guest functional XTest checks passed, including
+xedit save/Lisp/regex, font selection/load, both xcutsel directions, clipboard
+retention and clock redraw. Reload verified all38 output hashes and parsed
+manifest contents. Actual browser observed runtime61a87f88. Exact public logs,
+reports and SHA-256 inventory retained under batch-02/public-live. Existing
+baseline binaries unchanged. No claim of full international fonts, optional
+pixmaps, physical keyboard or OS clipboard acceptance.
+
+Reviewer cleared source010e993 for GIO/ATK/FriBidi, requiring stronger GIO IPC,
+monitoring and module-loading consumers before publication. Added a graphics
+consumer for installed font discovery, X extension versions and Cairo Xlib
+FreeType pixel rendering; syntax only checked, execution pending.

@@ -9,14 +9,17 @@ scope auditing, not duplicate publication. Additional workloads are counted
 separately from the 110 canonical historical names. Bundles/data are not counted
 as separately compiled applications.
 
-Browser hold is active. No browser jobs may start or queue until the user/core
-owner confirms release. Candidate recipes are outside catalog.json. Publication
+Core owner confirmed the browser hold released in cc operation
+`01a1250a-0f24-7937-a981-8b242f04d5bd`. Browser work uses sequential machine-job
+reservations. Unaccepted candidate recipes remain outside catalog.json. Publication
 requires immutable inputs, dependency/provider closure, independent review and
 real guest source/build/install/run/relink/reload acceptance as applicable.
 Baseline19 catalog/artifact bytes and their original provenance are preserved.
 
-Initial candidates: zlib and cJSON foundations; xfontsel, xclipboard, xcutsel and
-oclock from the missing X client group. Xedit and its Lisp/regex support remain
-queued. Then continue the dependency graph toward GTK, Python, games and the
-host-prepared C++ closures. Never substitute guest C compilation for historical
-host C++ preparation.
+Six foundations are live-accepted: zlib, cJSON, pkgconf, bzip2, bzip2recover and
+Expat. Five missing X clients have independently reviewed publication and passed
+separate public-live installation, functional checks and reload verification. The queue records exact
+per-package acceptance and remaining blockers. Source-prepared graphics and GTK
+prerequisites are not accepted merely because their recipes exist. Continue the
+dependency graph toward GTK, Python, games and host-prepared C++ closures. Never
+substitute guest C compilation for historical host C++ preparation.
