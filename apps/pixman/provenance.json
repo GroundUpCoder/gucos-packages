@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/pixman",
+  "archiveSha256": "fc4d0d549ced883de6c725fa84ef0b8abb02b1e2c5f8bd9083c7b6c804c3edcf",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

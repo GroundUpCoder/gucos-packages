@@ -51,3 +51,19 @@ and add package-specific consumers. These are all unexecuted candidates.
 Added tools/check-migration.py for explicit candidate platform/dependency/output,
 source blob/overlay and baseline preservation checks; it never rewrites provenance.
 All eleven candidates pass these lightweight checks. No browser/build jobs ran.
+
+## Reviewed source checkpoint and graphics foundations
+
+Reviewer approved source-only scope at `7da0b4a334986858685f930ef50af2352d33b714`
+with no further blocking findings, independently running the eleven-candidate
+checker. Exact commit pushed to origin/main. This publishes source preparation,
+not installable catalog entries or supported binaries. Two historical xedit
+overlay whitespace lines were deliberately retained byte-for-byte.
+
+Prepared six more candidates: pixman, libpng, FreeType, Fontconfig, x11-shared
+and Cairo. The public Cairo uses the old GTK X11 130-unit Cairo source list and
+three exact overlays, replacing the intended duplicate provider in the future
+GTK closure. x11-shared prepares eight new DSOs from accepted static archives
+without altering the baseline package. Fontconfig retains its two historical
+font inputs and their licenses. All are unbuilt and unaccepted. The provider
+design explicitly keeps the old GTK blocker open until complete closure tests.

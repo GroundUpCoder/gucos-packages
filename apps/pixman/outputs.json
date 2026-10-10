@@ -1,0 +1,26 @@
+[
+  {
+    "path": "lib/libpixman-1.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libpixman-1.so",
+    "mode": 420
+  },
+  {
+    "path": "include/pixman-1/pixman.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pixman-1/pixman-version.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/pixman-1.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/pixman/COPYING",
+    "mode": 420
+  }
+]

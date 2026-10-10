@@ -1,0 +1,242 @@
+[
+  {
+    "path": "lib/libfreetype.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libfreetype.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/freetype2.pc",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/config/ftconfig.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/config/ftheader.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/config/ftmodule.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/config/ftoption.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/config/ftstdlib.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/config/integer-types.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/config/mac-support.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/config/public-macros.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/freetype.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftadvanc.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftbbox.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftbdf.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftbitmap.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftbzip2.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftcache.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftchapters.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftcid.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftcolor.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftdriver.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/fterrdef.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/fterrors.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftfntfmt.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftgasp.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftglyph.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftgxval.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftgzip.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftimage.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftincrem.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftlcdfil.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftlist.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftlogging.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftlzw.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftmac.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftmm.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftmodapi.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftmoderr.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftotval.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftoutln.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftparams.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftpfr.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftrender.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftsizes.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftsnames.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftstroke.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftsynth.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftsystem.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/fttrigon.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/fttypes.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ftwinfnt.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/otsvg.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/t1tables.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/ttnameid.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/tttables.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/freetype/tttags.h",
+    "mode": 420
+  },
+  {
+    "path": "include/freetype2/ft2build.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/freetype/LICENSE.TXT",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/freetype/FTL.TXT",
+    "mode": 420
+  }
+]

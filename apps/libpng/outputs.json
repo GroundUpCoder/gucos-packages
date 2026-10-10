@@ -1,0 +1,30 @@
+[
+  {
+    "path": "lib/libpng16.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libpng16.so",
+    "mode": 420
+  },
+  {
+    "path": "include/png.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pngconf.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pnglibconf.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/libpng.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libpng/LICENSE",
+    "mode": 420
+  }
+]

@@ -410,10 +410,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
-        "Independent review pending."
+        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
       ],
-      "candidate": "apps/bzip2"
+      "candidate": "apps/bzip2",
+      "sourceReview": {
+        "commit": "7da0b4a334986858685f930ef50af2352d33b714",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; not publication approval"
+      }
     },
     {
       "id": "bzip2recover",
@@ -451,15 +455,19 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
-        "Independent review pending."
+        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
       ],
-      "candidate": "apps/bzip2recover"
+      "candidate": "apps/bzip2recover",
+      "sourceReview": {
+        "commit": "7da0b4a334986858685f930ef50af2352d33b714",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; not publication approval"
+      }
     },
     {
       "id": "cairo",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/cairo/wasm-package.json",
       "historicalManifestSha256": "d66343c7f96900624bea953916f04bad2eb3ac299fc9757617f3d672e00a0d07",
       "historicalEvidence": [
@@ -489,7 +497,11 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
+        "Independent source/design review pending."
+      ],
+      "candidate": "apps/cairo"
     },
     {
       "id": "cairo-gobject",
@@ -737,10 +749,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
-        "Independent review pending."
+        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
       ],
-      "candidate": "apps/expat"
+      "candidate": "apps/expat",
+      "sourceReview": {
+        "commit": "7da0b4a334986858685f930ef50af2352d33b714",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; not publication approval"
+      }
     },
     {
       "id": "feh",
@@ -833,7 +849,7 @@
     {
       "id": "fontconfig",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/fontconfig/wasm-package.json",
       "historicalManifestSha256": "2b6f3edc0c047715be796e4ca8af7b444f070293650ab372958a6cd97d6938d8",
       "historicalEvidence": [
@@ -857,12 +873,16 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
+        "Independent source/design review pending."
+      ],
+      "candidate": "apps/fontconfig"
     },
     {
       "id": "freetype",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/freetype/wasm-package.json",
       "historicalManifestSha256": "9344ff6a38266c013c78cdef9af26b50e0e4ba5ace04040bd8361ec415670f39",
       "historicalEvidence": [
@@ -888,7 +908,11 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
+        "Independent source/design review pending."
+      ],
+      "candidate": "apps/freetype"
     },
     {
       "id": "fribidi",
@@ -1460,7 +1484,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Historical Cairo duplicate-provider conflict: new single-public-provider design prepared, complete GTK closure not yet migrated or accepted."
+      ],
+      "design": "gtk-provider-design.md"
     },
     {
       "id": "harfbuzz",
@@ -2006,7 +2033,7 @@
     {
       "id": "libpng",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/libpng/wasm-package.json",
       "historicalManifestSha256": "498dc8727eb13b2b3f48c387f61127db4c1e4e07e131f39b37319e554bfa8e09",
       "historicalEvidence": [
@@ -2033,7 +2060,11 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
+        "Independent source/design review pending."
+      ],
+      "candidate": "apps/libpng"
     },
     {
       "id": "libtool",
@@ -2673,7 +2704,7 @@
     {
       "id": "pixman",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/pixman/wasm-package.json",
       "historicalManifestSha256": "8e717772298e82645f91a8a5178b054dadd95c50197b967071df8c56b55b2ace",
       "historicalEvidence": [
@@ -2698,7 +2729,11 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
+        "Independent source/design review pending."
+      ],
+      "candidate": "apps/pixman"
     },
     {
       "id": "pkgconf",
@@ -2730,10 +2765,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
-        "Independent review pending."
+        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
       ],
-      "candidate": "apps/pkgconf"
+      "candidate": "apps/pkgconf",
+      "sourceReview": {
+        "commit": "7da0b4a334986858685f930ef50af2352d33b714",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; not publication approval"
+      }
     },
     {
       "id": "punes",
@@ -3012,7 +3051,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Historical Cairo duplicate-provider conflict: new single-public-provider design prepared, complete GTK closure not yet migrated or accepted."
+      ],
+      "design": "gtk-provider-design.md"
     },
     {
       "id": "sdk",
@@ -3523,7 +3565,7 @@
     {
       "id": "x11-shared",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "apps/x11-shared/wasm-package.json",
       "historicalManifestSha256": "39a8f16c9c4b8e4bbbcaa481890fad2c8f73462dad49ce4bc5dba83c60c414ee",
       "historicalEvidence": [
@@ -3539,7 +3581,11 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "New guest build/install/run/relink/reload acceptance pending browser-hold release.",
+        "Independent source/design review pending."
+      ],
+      "candidate": "apps/x11-shared"
     },
     {
       "id": "xarchiver",
@@ -3653,10 +3699,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
-        "Independent review pending."
+        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
       ],
-      "candidate": "apps/zlib"
+      "candidate": "apps/zlib",
+      "sourceReview": {
+        "commit": "7da0b4a334986858685f930ef50af2352d33b714",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; not publication approval"
+      }
     },
     {
       "id": "zstd",
@@ -3694,8 +3744,7 @@
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
       "blockers": [
-        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
-        "Independent review pending."
+        "Guest build/install/run/relink/reload acceptance pending browser-hold release."
       ],
       "candidate": "apps/cjson",
       "review": {
@@ -3704,6 +3753,11 @@
         "scope": "source-only",
         "finding": "Historical automatic source hook must be disabled/removed",
         "resolution": "build.sh now disables CJSON_NO_REQUIRE_SOURCES and strips installed header hook; re-review pending"
+      },
+      "sourceReview": {
+        "commit": "7da0b4a334986858685f930ef50af2352d33b714",
+        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
+        "result": "No blocking source findings; not publication approval"
       }
     },
     {
@@ -3742,5 +3796,10 @@
       "acceptance": [],
       "blockers": []
     }
-  ]
+  ],
+  "sourceReview": {
+    "commit": "7da0b4a334986858685f930ef50af2352d33b714",
+    "scope": "11 source candidates; no runtime/publication approval",
+    "pushed": true
+  }
 }

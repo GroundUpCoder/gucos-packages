@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/libpng",
+  "archiveSha256": "2354367acf7e20c345392d63af66ad7331cb6907fbac7907d784133a57fbbf1b",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

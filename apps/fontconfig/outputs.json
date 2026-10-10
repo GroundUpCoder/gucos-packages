@@ -1,0 +1,46 @@
+[
+  {
+    "path": "lib/libfontconfig.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libfontconfig.so",
+    "mode": 420
+  },
+  {
+    "path": "include/fontconfig/fontconfig.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fontconfig/fcfreetype.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/fontconfig.pc",
+    "mode": 420
+  },
+  {
+    "path": "etc/fonts/fonts.conf",
+    "mode": 420
+  },
+  {
+    "path": "share/fonts/wasm-posix/ABeeZee-Regular.ttf",
+    "mode": 420
+  },
+  {
+    "path": "share/fonts/wasm-posix/SourceCodePro-Regular.otf",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/fontconfig/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/fontconfig/ABeeZee-OFL.txt",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/fontconfig/SourceCodePro-LICENSE.md",
+    "mode": 420
+  }
+]
