@@ -465,3 +465,20 @@ and reload integrity for pigz, nyancat, SQLite and QuickJS on61a. Batch-09 and
 batch-10/binary-install retain exact reports, inputs and hashes. No public-live
 claim yet. Pango then GTK source builds now run in the existing clean private
 profile with accepted full HarfBuzz, bounded and serial.
+
+## Four CLI publication and dependency profile reviews
+
+Reviewer approved87329be four CLI artifacts,336f3fb manifests and dd6175b
+catalog; exact publication pushed with60 entries. Public live gates remain
+pending and live additions remain37. HarfBuzz partition5bdbba1 was source-approved:
+static component executes original complete generated build; main relinks DSO
+from its objects. All original52 payload paths remain, plus two license paths.
+Split guest export sizes and source/binary/public gates remain pending.
+
+Pango sourceabc8a5b passed review; it still needs final split-HarfBuzz closure
+acceptance. Lua/LPeg dependency review found baseline Lua5.4 lacks dynamic-module
+support. Corrected with reviewed0ccac81 historical Lua5.5 profile (32 units,
+original LUA_USE_DLOPEN) in separate lua55 paths. Baseline Lua is untouched.
+Ncurses fba7362 review cleared2928 outputs after removing historical generated
+NOTICE; actual upstream COPYING remains. SDL source/harness reviews and2048
+logic source are recorded in queue. All new execution claims remain pending.
