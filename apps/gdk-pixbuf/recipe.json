@@ -51,6 +51,7 @@
   "inputs": [
     "source.tar",
     "build.sh",
-    "test.sh"
+    "test.sh",
+    "jpeg-decode.c"
   ]
 }
