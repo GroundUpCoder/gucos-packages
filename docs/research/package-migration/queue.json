@@ -1,0 +1,3723 @@
+{
+  "format": 1,
+  "ownerThread": "01a12509-9373-77dd-b1be-e5935164809b",
+  "baselineCommit": "716bfe27a56357513abfc7213d542bda63129cd1",
+  "baselineCatalogSha256": "8d7c4cbf0b2110f66aadabf766f0aad93563d090adb46861d31b3869bbba25fd",
+  "historicalCommit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "browserHold": true,
+  "rows": [
+    {
+      "id": "2048",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/2048/wasm-package.json",
+      "historicalManifestSha256": "ef89b37a38270f6b77906f9448c4e29faa1154a11d0b28f82f1a20c657af5c68",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[42]",
+          "revision": "70b5acdc13bc79d9912f871aeb35ed010d16ac57",
+          "run": "/Users/jku/git/wasm-posix-2048-acceptance/test-results/runs/2048-agmxwS",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "cf6360ae8700fc5fb3647d7de7fef9441ce078eceb6ecb869b22f410372a6110",
+          "size": 49152
+        },
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[0]",
+          "revision": "26c7631e7c3f8cad27b37783ea545d456d1c8941",
+          "recordedArtifactSha256": "c426b77e43190611c4d8c2a7cd883e5b3deaafd74157d6ea1af95b5fecd6e21d",
+          "size": 49152,
+          "resultSha256": "a650f89be19ae3c9e43ba63afed05768462000a127c7e205cfc2c8e5919d8c58",
+          "lockSha256": "2724b4b5673293c175a26d6cf41a6ec1442c6a219a291d6f6e55fbc52d7e3cf0"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "ar",
+      "kind": "historical-canonical-name",
+      "state": "core-owned-excluded",
+      "historicalManifest": "apps/bootstrap/wasm-package.json",
+      "historicalManifestSha256": "45a55f1cb33f4750d0bcb6da65586d5d377463f166c589c20ab54f0f00b330c4",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[9]",
+          "sourceCandidate": "/Users/jku/git/wasm-posix-bootstrap-acceptance/test-results/runs/ar-4TSCq4",
+          "artifact": {
+            "sha256": "c90044497b3fdd4ebfc4b1a9db182ac0050549aac7041fc36e769c0a9af9df61",
+            "size": 40960,
+            "compatibilityKey": "5313ea843d1c1fe5f430089c9f8fbb3006501d7101410763c8d0195587f16372"
+          }
+        },
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[1]",
+          "revision": "26c7631e7c3f8cad27b37783ea545d456d1c8941",
+          "recordedArtifactSha256": "e9e52140052a4a23eb897fbc82a3045a9f619e353c9d171b93d12ba740386d27",
+          "size": 41984,
+          "resultSha256": "acfc71142a8e22c08897b3e9a51c8e9a232c45cb00ba4857c62e11e19933c866",
+          "lockSha256": "806d3d44d331571fcdee0b7196aab1589886be5eb3e2fec74a676bcb41bd5c24"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": "fixed core bootstrap",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "ash",
+      "kind": "historical-canonical-name",
+      "state": "core-owned-excluded",
+      "historicalManifest": "vendor/busybox/wasm-package.json",
+      "historicalManifestSha256": "d95a44121e2ee1236280e3e77a11a0a963174e4dc5c1fc83e4313fe6861d2b4c",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[22]",
+          "revision": "60b49e605da3a1e9bfd1e89b4faab87dceff60c3",
+          "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/ash-06T0nW",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "355fdb1d6022a497a3c984e7077b07a1c9ae3915dc7a9d62079595768e46d3b6",
+          "size": 1413120
+        },
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[2]",
+          "revision": "26c7631e7c3f8cad27b37783ea545d456d1c8941",
+          "recordedArtifactSha256": "c75221a08a4e383ee0d7cdfd85b2b4db2be88c6f0eb2646d2e215d1aded0b750",
+          "size": 1413120,
+          "resultSha256": "3d2e8210f068141c6493019cf41a66e3fa1c4a72b1acd581662771393572f6d3",
+          "lockSha256": "7a231265a01065341f4436b558c7187bd9f144b90fb33d1688fb0b9ba0d4a1da"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": "fixed core bootstrap",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "atk",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/atk/wasm-package.json",
+      "historicalManifestSha256": "1b87120bcd575d00ef4a81849898ea840a2eb679f2fd154dbdb76db7a1dae842",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[3]",
+          "revision": "b64ba2d7da6e92d162b86c5380ab4b1341e1e442",
+          "recordedArtifactSha256": "60d1e8e13eef0b64ea67f3a9c0001b8ee028e99993757be59d0f8644e51dc4a1",
+          "size": 1050624,
+          "resultSha256": "f6a36a89125d4b738b350fa22fa551d0e4845e08db5385e7511d353c7fa8bc9c",
+          "lockSha256": "08adfb1ee1b05069155c17ce2266cb3c7326df6ac11972dfc18e5382cddf6e11"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `atk`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/atk-iDP8IM; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/012-atk; sha256: 89c1442cf7d988ba4d2987fd035969308b675b3d6aaf15134dff1f76cfaa46e6"
+        }
+      ],
+      "historicalDependencies": [
+        "gobject"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "autoconf",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/autoconf/wasm-package.json",
+      "historicalManifestSha256": "fff5391f062084f94bdc28ae54c31707aa12efa0c761e3324dfd7e5c28e85409",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[24]",
+          "revision": "91f49e00dd5a2254ce8f57f0cb8a4c5eec1edaab",
+          "run": "/Users/jku/git/wasm-posix-autoconf-acceptance/test-results/runs/autoconf-0zkx9g",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "ca663b079f1b846f59527e017620fe308ab8ea2ab0165220a214c9c0dece330a",
+          "size": 3643904
+        },
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[4]",
+          "revision": "eefb2b516203967a2278abf13f08e7054781b6e6",
+          "recordedArtifactSha256": "790acff696588b115ccf2a557e3691a19ca21b87d07ca9bbfe3101572dc6ff80",
+          "size": 3643904,
+          "resultSha256": "f20347a66069fd350d307fe69a99a09a44515a18107c3fdec04412ca6d71a54b",
+          "lockSha256": "bc647e22bf4909f4058771f6f6bc146bda7fab1dd185bb9207c36df571cec008"
+        }
+      ],
+      "historicalDependencies": [
+        "m4",
+        "make",
+        "perl"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "automake",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/automake/wasm-package.json",
+      "historicalManifestSha256": "bd36bc24e16dda34845c19f6d0381adb42dbaca31a222b9cc849e61bdb477484",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[28]",
+          "revision": "fd7614295fc94337fdefc3ec726e5bb90d0f82ca",
+          "run": "/Users/jku/git/wasm-posix-automake-acceptance/test-results/runs/automake-ER5k30",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "98f28f1362d1803efb53a2f577aaf04643681c973764e418c64c65e555d52711",
+          "size": 2413568
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[28]",
+          "revision": "fd7614295fc94337fdefc3ec726e5bb90d0f82ca",
+          "run": "/Users/jku/git/wasm-posix-automake-acceptance/test-results/runs/automake-ER5k30",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "98f28f1362d1803efb53a2f577aaf04643681c973764e418c64c65e555d52711",
+          "size": 2413568
+        }
+      ],
+      "historicalDependencies": [
+        "autoconf",
+        "make",
+        "perl"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "awk",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gawk/wasm-package.json",
+      "historicalManifestSha256": "ce4cdf332cfc40336c9009118ed860cc5a25f73208912d22e1240eda774a449d",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[34]",
+          "revision": "e3534564f2145ac0ef4ac0fb326fc3d83c1b5a0d",
+          "run": "/Users/jku/git/wasm-posix-awk-acceptance/test-results/runs/awk-PpuOyu",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "9a892ebec800d1f318576feb61335350b6c1d64237a49a95184c772f4c22ce39",
+          "size": 13551104
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[34]",
+          "revision": "e3534564f2145ac0ef4ac0fb326fc3d83c1b5a0d",
+          "run": "/Users/jku/git/wasm-posix-awk-acceptance/test-results/runs/awk-PpuOyu",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "9a892ebec800d1f318576feb61335350b6c1d64237a49a95184c772f4c22ce39",
+          "size": 13551104
+        }
+      ],
+      "historicalDependencies": [
+        "make"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "bison",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/bison/wasm-package.json",
+      "historicalManifestSha256": "7d9e717289a6a83fa3b59296a16f570e367171d3d80ba2581da923fa2bc8746b",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[25]",
+          "revision": "d910f650e3ee7fdc62d2921c01dd78a7708a68f8",
+          "run": "/Users/jku/git/wasm-posix-bison-acceptance/test-results/runs/bison-erFNZz",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "f5fd702ad23e60a1e48034583f1d6bd75e21b792f45b8b43ee1b882baea534f7",
+          "size": 3437056
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[25]",
+          "revision": "d910f650e3ee7fdc62d2921c01dd78a7708a68f8",
+          "run": "/Users/jku/git/wasm-posix-bison-acceptance/test-results/runs/bison-erFNZz",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "f5fd702ad23e60a1e48034583f1d6bd75e21b792f45b8b43ee1b882baea534f7",
+          "size": 3437056
+        }
+      ],
+      "historicalDependencies": [
+        "m4",
+        "make",
+        "perl"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "bitmap",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/bitmap/wasm-package.json",
+      "historicalManifestSha256": "c97ecd69d22fd856c88ab26906dd033a0c680b2ea1d8690c61cd12a79dabee79",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/more-desktop-apps-validation.json",
+          "sha256": "bead6bf25133adf43bfebb5c2d61a7f17797fe860210d0db36d2ed1df711f99b",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 1",
+          "revision": "7479d67d34bedfa67f1681251d6a07adbaed8128",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "f5cee42851808e8989be716701d7df69289be6f53e03b7d09a40d92c5e50fc15",
+            "size": 4669952,
+            "compatibilityKey": "f8040f3547c9257182553a083b250d9ab2c23304abc981824918820f30149f65"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "pkgconf",
+        "x11-apps"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "busybox",
+      "kind": "historical-canonical-name",
+      "state": "core-owned-excluded",
+      "historicalManifest": "vendor/busybox/wasm-package.json",
+      "historicalManifestSha256": "d95a44121e2ee1236280e3e77a11a0a963174e4dc5c1fc83e4313fe6861d2b4c",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[23]",
+          "revision": "7a5eb3a00cc7b396469f30275f58440eebb9c429",
+          "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/busybox-ukhVky",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "e9c4b57a2fe9f34bfc4bd83a7d0cec616571549d58d1c284722494e455323540",
+          "size": 2699264
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[23]",
+          "revision": "7a5eb3a00cc7b396469f30275f58440eebb9c429",
+          "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/busybox-ukhVky",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "e9c4b57a2fe9f34bfc4bd83a7d0cec616571549d58d1c284722494e455323540",
+          "size": 2699264
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": "fixed core bootstrap",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "bzip2",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/bzip2/wasm-package.json",
+      "historicalManifestSha256": "831fee1a45e6c523f6f936dadb600d314a4796ff418be6f5005139549b4b8539",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[30]",
+          "revision": "f8a2b6d69beee42135707d138ea833649a4dfc34",
+          "run": "/Users/jku/git/wasm-posix-bzip2-acceptance/test-results/runs/bzip2-0YnLmO",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "19a9e8e715fe078c37a15028507789739099974922fa1ac137cfe2883f7524ad",
+          "size": 175104
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[30]",
+          "revision": "f8a2b6d69beee42135707d138ea833649a4dfc34",
+          "run": "/Users/jku/git/wasm-posix-bzip2-acceptance/test-results/runs/bzip2-0YnLmO",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "19a9e8e715fe078c37a15028507789739099974922fa1ac137cfe2883f7524ad",
+          "size": 175104
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "bzip2recover",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/bzip2/wasm-package.json",
+      "historicalManifestSha256": "831fee1a45e6c523f6f936dadb600d314a4796ff418be6f5005139549b4b8539",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[31]",
+          "revision": "f8a2b6d69beee42135707d138ea833649a4dfc34",
+          "run": "/Users/jku/git/wasm-posix-bzip2-acceptance/test-results/runs/bzip2recover-mRjRhE",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "7d780b0b9466e06500736f6d2ce76d5f38e481ec819dcfa2ea2b2d8f8dcce7d8",
+          "size": 25088
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[31]",
+          "revision": "f8a2b6d69beee42135707d138ea833649a4dfc34",
+          "run": "/Users/jku/git/wasm-posix-bzip2-acceptance/test-results/runs/bzip2recover-mRjRhE",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "7d780b0b9466e06500736f6d2ce76d5f38e481ec819dcfa2ea2b2d8f8dcce7d8",
+          "size": 25088
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "cairo",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/cairo/wasm-package.json",
+      "historicalManifestSha256": "d66343c7f96900624bea953916f04bad2eb3ac299fc9757617f3d672e00a0d07",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[5]",
+          "revision": "065b4e0f7f8eb02d3e50d7a31c287b255ce2d382",
+          "recordedArtifactSha256": "6a271d43c534cbdd7c92bec805b30d0f8139a55d5ca0def458d134021807c1f1",
+          "size": 4713984,
+          "resultSha256": "c5a02f8316f0f7cb024dacb09c84624fb8bc09c2a671794fbf39ffcb401e9803",
+          "lockSha256": "3479a24546cd42d318e73b7770fc31fd189a1fa854d28e6cfc182aa277c2e9d2"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `cairo`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/cairo-NT8J9A; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/032-cairo; sha256: 4dffd832670e86ea1ed450a4eadba9fd95252b0f02e9e63f190221a31bd6b979"
+        }
+      ],
+      "historicalDependencies": [
+        "fontconfig",
+        "freetype",
+        "libpng",
+        "pixman"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "cairo-gobject",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/cairo-gobject/wasm-package.json",
+      "historicalManifestSha256": "e73d039108ec402b10c4c525b7733ba22d1ec7693796563566b561e2d4da0657",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[6]",
+          "revision": "b64ba2d7da6e92d162b86c5380ab4b1341e1e442",
+          "recordedArtifactSha256": "a2592e113b218d0443d4d1aab7ac6f31883c955995b88c464b0bc6b8014cf00b",
+          "size": 156672,
+          "resultSha256": "a44402421eead6b88076c3edbef719dfa7c8a2e9d9302d8464ba373e97b4f485",
+          "lockSha256": "240d7c68dccf363fe0eca6562fd3983e71bdfcb526be9a0d66fe41e07b2b9d41"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `cairo-gobject`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/cairo-gobject-g62bnO; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/033-cairo-gobject; sha256: e3a3811131de041367db245301f0e4a7f6ededcb53fb4e84562eb26464561482"
+        }
+      ],
+      "historicalDependencies": [
+        "cairo",
+        "gobject"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "cc",
+      "kind": "historical-canonical-name",
+      "state": "core-owned-excluded",
+      "historicalManifest": "apps/bootstrap/wasm-package.json",
+      "historicalManifestSha256": "45a55f1cb33f4750d0bcb6da65586d5d377463f166c589c20ab54f0f00b330c4",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[8]",
+          "sourceCandidate": "/Users/jku/git/wasm-posix-bootstrap-acceptance/test-results/runs/cc-Jmu5IB",
+          "artifact": {
+            "sha256": "dbfeda8b9cb08c75e8213fc8c43bfebcbb8955db5ab4cf513ac611ab639998c2",
+            "size": 30208,
+            "compatibilityKey": "9cce15a0b5daf2dcc32b065c024aa5bf5e3a897658a825296593245a62471652"
+          }
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[8]",
+          "sourceCandidate": "/Users/jku/git/wasm-posix-bootstrap-acceptance/test-results/runs/cc-Jmu5IB",
+          "artifact": {
+            "sha256": "dbfeda8b9cb08c75e8213fc8c43bfebcbb8955db5ab4cf513ac611ab639998c2",
+            "size": 30208,
+            "compatibilityKey": "9cce15a0b5daf2dcc32b065c024aa5bf5e3a897658a825296593245a62471652"
+          }
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": "fixed core bootstrap",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "cpython",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/cpython/wasm-package.json",
+      "historicalManifestSha256": "87c859b52d2136307b948dc83335545ddf82fbef11108ad8a094950a11456c99",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[14]",
+          "revision": "898d0b7c5eb5e498967c19f127bab6ef216a55ca",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/cpython-4A8Myt",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "b837e0589837d4b9c13b66f9c7982fd0a3e97a867e52d0745c62d7fdb4ab9591",
+          "size": 30803456
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `cpython`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/cpython-OzYB8d; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/035-cpython; sha256: 8a0e8c52ee0c87881e51d2a0dbd759e4f3386c6f5284ab5688838c3dfa647edc"
+        }
+      ],
+      "historicalDependencies": [
+        "make",
+        "zlib"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "cpython-idle",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/cpython-idle/wasm-package.json",
+      "historicalManifestSha256": "1d2d3e6ba684a124b348c429f9b114c67ed359a743e7f8aab842f7d521d5f1df",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `cpython-idle`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/cpython-idle-2wv94g; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/039-cpython-idle; sha256: 2cddb5d4ba40d4e887724d5dff8b71b64805bc97365ec78b9ae735b03bc9b296"
+        }
+      ],
+      "historicalDependencies": [
+        "cpython-tkinter"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "cpython-tkinter",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/cpython-tkinter/wasm-package.json",
+      "historicalManifestSha256": "761055bdfefcd3fed4ec859f8de635f97d403c2fa27caed58b78107335b93b34",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `cpython-tkinter`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/cpython-tkinter-awY8np; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/038-cpython-tkinter; sha256: 5d72296e31d465be1ef709ebf1a029e788b1dce2acf43f37b80ca905da23f5ed"
+        }
+      ],
+      "historicalDependencies": [
+        "cpython",
+        "tk"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "doom",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/doom/wasm-package.json",
+      "historicalManifestSha256": "09b9242b37a670f1ee1e325856293510df9b020eb469b82ae788364857592902",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[44]",
+          "revision": "06c0a80ee6cbc5e270da3977ce5c59cbce505e39",
+          "run": "/Users/jku/git/wasm-posix-doom-acceptance/test-results/runs/doom-89IBmv",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "e3b3455fe00e8e632ce7fe8adff6ea8fafbf548442f10097b73f1d97c9130c76",
+          "size": 1629184
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[44]",
+          "revision": "06c0a80ee6cbc5e270da3977ce5c59cbce505e39",
+          "run": "/Users/jku/git/wasm-posix-doom-acceptance/test-results/runs/doom-89IBmv",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "e3b3455fe00e8e632ce7fe8adff6ea8fafbf548442f10097b73f1d97c9130c76",
+          "size": 1629184
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "ed",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/ed/wasm-package.json",
+      "historicalManifestSha256": "a3f841e672481b1a15a18c0512010ef8844885ad12471e3de9f247fb70026a53",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[33]",
+          "revision": "1806716e2a36d0df901540675475139e0365bad8",
+          "run": "/Users/jku/git/wasm-posix-ed-acceptance/test-results/runs/ed-584zyv",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "661563de60f7a817f1c9177440cd4c375b843bb115a94325f5e63a31bb58bec0",
+          "size": 142336
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[33]",
+          "revision": "1806716e2a36d0df901540675475139e0365bad8",
+          "run": "/Users/jku/git/wasm-posix-ed-acceptance/test-results/runs/ed-584zyv",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "661563de60f7a817f1c9177440cd4c375b843bb115a94325f5e63a31bb58bec0",
+          "size": 142336
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "expat",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/expat/wasm-package.json",
+      "historicalManifestSha256": "4a65883306514b27aed9bebbf371e463caaf1e739ec14425ee05794a1b03a3c4",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[6]",
+          "sourceCandidate": "/Users/jku/git/wasm-posix/test-results/runs/expat-CRpQPN"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `expat`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/expat-OOoh9h; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/021-expat; sha256: 6a07e9f31d1c8aa7e3346e1e544908654c40e0e2889c1399e29c41ade67bae5f"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "feh",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/feh/wasm-package.json",
+      "historicalManifestSha256": "c895093ace5ba82a1fd5ac2d1ad3ae83b0b5515b2db96f0f254942e9498943ab",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/more-desktop-apps-validation.json",
+          "sha256": "bead6bf25133adf43bfebb5c2d61a7f17797fe860210d0db36d2ed1df711f99b",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 4",
+          "revision": "7ca28c8e584a8032886d3515bc6b0d1bcf1e8dd7",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "1cd862f39ada0b70a270fb93a4806ae2a3e5f087b9c9b6e45669e85dad69f686",
+            "size": 1195008,
+            "compatibilityKey": "00a60827621a25fe18996c2bcb4dd91d182aba438d95dff46c9ca287cd70d070"
+          }
+        },
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/feh.json",
+          "sha256": "8f678856ed8cdc86e3bede706a02d198fa150771029393ccb37d6f46ac62ac8d",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "f0aa80c7e98e0f97f196eb2c0702eca848b34222",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "c91a364e31abd1d20548d1af678bd289c12c3f7ece43cbe15aac103b1cf5a737",
+            "size": 1195008,
+            "compatibilityKey": "e16058d0d3e8925c984566ef5c8b87f137741eb9d83ea90dddbf02a251112f90"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "imlib2",
+        "x11-apps"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "flex",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/flex/wasm-package.json",
+      "historicalManifestSha256": "5e1f4da083f9d1df997ba13fd5c6710f42a5fd0882d998b6c3dc0faa032d3c3f",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-04/cpp-project-sequence.md",
+          "sha256": "a36de31995c7a9aec9924f8ffa611fcd903b7157d07f617e2d4331b22497181e",
+          "kind": "explicit historical execution journal",
+          "selector": "Flex-LVE6z3 likewise passed both phases; unreviewed/unpublished at this checkpoint"
+        }
+      ],
+      "historicalDependencies": [
+        "m4",
+        "make"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "fltk",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/fltk/wasm-package.json",
+      "historicalManifestSha256": "f09b718cf228e0e2406dd3f07979c7532c1cf25c9ef04d274196c6f9677d0782",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-05/fltk-publication.md",
+          "sha256": "45818fec1b8bf05d2ae7c7c2955e3ce5f110564c8961da05bde6f97c97529509",
+          "kind": "explicit historical execution journal",
+          "selector": "Shared FLTK exact publication and fresh HTTP interaction/consumer acceptance"
+        }
+      ],
+      "historicalDependencies": [
+        "x11-apps",
+        "x11-shared"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "fontconfig",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/fontconfig/wasm-package.json",
+      "historicalManifestSha256": "2b6f3edc0c047715be796e4ca8af7b444f070293650ab372958a6cd97d6938d8",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[7]",
+          "sourceCandidate": "/Users/jku/git/wasm-posix/test-results/runs/fontconfig-bK9dUC"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `fontconfig`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/fontconfig-eJxpVs; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/022-fontconfig; sha256: 3b22fcf19739e31b907fb9dc7b23ab57596de7a9f1a28fedd04b75a728fba7a1"
+        }
+      ],
+      "historicalDependencies": [
+        "expat",
+        "freetype"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "freetype",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/freetype/wasm-package.json",
+      "historicalManifestSha256": "9344ff6a38266c013c78cdef9af26b50e0e4ba5ace04040bd8361ec415670f39",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[6]",
+          "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/freetype-MnAhWk",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "df1075351397adbf4bb8157f0b9a97a4603ba5f1eb34278f5df739ba2a9c8d44",
+          "size": 4615680
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `freetype`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/freetype-8iNLa8; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/020-freetype; sha256: a24c1cb0b762d4d43daed60f88bb92d86b92b7dcf41916d936bb167ab379c1ca"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "fribidi",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/fribidi/wasm-package.json",
+      "historicalManifestSha256": "685f27a68f2db97fdce2300abd3d85e14a79e305886dba1ed70d9b255b0fc89e",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[10]",
+          "revision": "38dd4dbfb0608e553a328d65591ea68ab5f5b50e",
+          "recordedArtifactSha256": "b3c5a7875087856f476c0b18eecf9d556bb408f539a5a6a3213e9c4e8e28eb78",
+          "size": 433152,
+          "resultSha256": "64a50e4de80713e965a1d3f026aa116b258ea6b906b3c84f5e31586058a5db9f",
+          "lockSha256": "bbd03f1ca1cf1ecc168fb0a1745536c0d80fb1e3ab3a24aff4a7cc1890be1c01"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `fribidi`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/fribidi-l1uCvJ; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/042-fribidi; sha256: 9c1b8295c73b313ba849047dfa50bc6e79e299f23461426e8fcca09edae564f6"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "galculator",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/galculator/wasm-package.json",
+      "historicalManifestSha256": "1b66e783c99418ab66c31a55c0b82b8580dff77e695182470089d8351bedabd8",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/galculator.json",
+          "sha256": "b54b2b876b0e12bd2bc20d5b9d4075e9eb289ad8d3dec892adcd89a120801685",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "868ede8d63c10270e3269be8832a6a26bdd47e3e",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "4ec1d1805dee883558b3bfb0a769dbda761b457ef78ee81d02a656a5564dff83",
+            "size": 1166848,
+            "compatibilityKey": "5be95b64e5583768efffc4580c5513301abb979d59af3c2995c52c60e18e1049"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3",
+        "gtk3-schemas",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gameboy",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gameboy/wasm-package.json",
+      "historicalManifestSha256": "0d6b78f589ea5c6e14e9bf4f720b077c75fa47721261678d11ca0a1a396b43d2",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[45]",
+          "revision": "3dc675c27a5a9a1ac4090b7c30ed56e4b10190d2",
+          "run": "/Users/jku/git/wasm-posix-gameboy-acceptance/test-results/runs/gameboy-VcL9It",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "3f2a8c00a91c58860d1f257649ce83390f8184e543679645006cdc027c3d49d5",
+          "size": 692736
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[45]",
+          "revision": "3dc675c27a5a9a1ac4090b7c30ed56e4b10190d2",
+          "run": "/Users/jku/git/wasm-posix-gameboy-acceptance/test-results/runs/gameboy-VcL9It",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "3f2a8c00a91c58860d1f257649ce83390f8184e543679645006cdc027c3d49d5",
+          "size": 692736
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gdk-pixbuf",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gdk-pixbuf/wasm-package.json",
+      "historicalManifestSha256": "cfd61a2a5bf1807781eb0967ae8331c4b02385b507c4e6988c65d8cb53317d21",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[11]",
+          "revision": "92b174341d6d70654c58b290cab05546a85fd9b5",
+          "recordedArtifactSha256": "e27f70b57fccb44fe999b37254877b5c9426e8883d83e37c35d63143a3a02bc3",
+          "size": 1016320,
+          "resultSha256": "6af6d29bf623a6fe9be38058ad62836412f501ba51c413fc379146bd7dccba5c",
+          "lockSha256": "530dbfb943fb9155f3c0f95b16c238726f35d7b7fdc5f72ba4a0279b33212812"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `gdk-pixbuf`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/gdk-pixbuf-H1LVHv; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/048-gdk-pixbuf; sha256: c81725c4b9bc7c23e64ce6dfc84f11d0de4d37888dc132f39dac912c91442f89"
+        }
+      ],
+      "historicalDependencies": [
+        "gio-core",
+        "libjpeg-turbo",
+        "libpng"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gdk3",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gtk3/wasm-package.json",
+      "historicalManifestSha256": "ccb033b26a4cf38bb0455e723d2a05681fd6996d57bb9642c4f87797373e3be2",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/gdk3.json",
+          "sha256": "4e9c046740d17c9ae1be5b8f59d9c3fb8cc5c3a8ae528a77386c58bc5d566f8a",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "f0aa80c7e98e0f97f196eb2c0702eca848b34222",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "b16ee05bc89281af542168afdeba36b3fa242ad0b812d492046aa0bf80df643e",
+            "size": 3365888,
+            "compatibilityKey": "d9ba07193d4d5d184a3f4fd9cd7be4a3102966b4da869d6ac98208a6eac42128"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "cairo-gobject",
+        "gdk-pixbuf",
+        "harfbuzz",
+        "pango",
+        "sdl3"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gettext",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gettext-tools/wasm-package.json",
+      "historicalManifestSha256": "25a532c9bfd0f43526fbbf58c7c8d79961bed3e571e361cdd2359751a8e9ae5d",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[37]",
+          "revision": "f34ca765d87e37a1ff5d0e041b401564f45006f3",
+          "run": "/Users/jku/git/wasm-posix-gettext-acceptance/test-results/runs/gettext-7JnBnp",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "f93f9b929fa9a91dfd41a53bb8600b6cff59da43860af3495065dbf778bb3b7c",
+          "size": 39936000
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[37]",
+          "revision": "f34ca765d87e37a1ff5d0e041b401564f45006f3",
+          "run": "/Users/jku/git/wasm-posix-gettext-acceptance/test-results/runs/gettext-7JnBnp",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "f93f9b929fa9a91dfd41a53bb8600b6cff59da43860af3495065dbf778bb3b7c",
+          "size": 39936000
+        }
+      ],
+      "historicalDependencies": [
+        "autoconf",
+        "libiconv",
+        "make"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gio-core",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gio-core/wasm-package.json",
+      "historicalManifestSha256": "8d2e9ac1a5bd6841a80511e075f1737ceceb2df91ff34477097bcd9c91f71a1a",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[12]",
+          "revision": "d44852fc025be2d391019f7cc32a98717a8b3c4a",
+          "recordedArtifactSha256": "57bff50e7d9f1db9027c8209e538de04f2efcf6b860a468065d23f7d1eb59710",
+          "size": 12576768,
+          "resultSha256": "6337946abd22f3e845341e28bf9f5306f642b66fcdc0f40e1a7cba42125288cc",
+          "lockSha256": "39ebd33fecf9f51c84c4dff9f188a8e4539bf216a43687e0efb6c639aa42c011"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `gio-core`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/gio-core-E4bL1d; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/046-gio-core; sha256: a9bc34afd8201e3ae8e9850d8025b7fcda4846d83f78a95bcf16ee1d8e83e03c"
+        }
+      ],
+      "historicalDependencies": [
+        "gio-listmodel",
+        "zlib"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gio-listmodel",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gio-listmodel/wasm-package.json",
+      "historicalManifestSha256": "04331709f700f5b8e275494bb9067a1368812225fbf066c77f74993bac810067",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[13]",
+          "revision": "b64ba2d7da6e92d162b86c5380ab4b1341e1e442",
+          "recordedArtifactSha256": "8afaaf9a315090c23bef3a6238d557645821ee728dd0cb35e92673e8a65a9883",
+          "size": 319488,
+          "resultSha256": "c23bc395cd2badad5a0bebb83c2ab082cf2cf90e4ab38f6ad811656bf5ba35bc",
+          "lockSha256": "c39fe0e7d62f6035941a5495ae0ce83c272965df3c6faf80a35104849c7990f0"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `gio-listmodel`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/gio-listmodel-8j9zQG; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/044-gio-listmodel; sha256: 22722c1e0864efaef826f280c097fdd4c0f385683024ef89bfee1098fabfd395"
+        }
+      ],
+      "historicalDependencies": [
+        "gobject"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "glib",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/glib/wasm-package.json",
+      "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[4]",
+          "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/glib-kbyzHk",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "0a54fa71889d2d49524dd180ac5ab1b419152b9f06f26ff5cc2cd387f617f9c2",
+          "size": 11360256
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `glib`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/glib-l93rVq; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/009-glib; sha256: a3bd66cde5a9776458bbf31f49a8b213b4b77c146df0a9254751caa2142a087b"
+        }
+      ],
+      "historicalDependencies": [
+        "libiconv",
+        "libintl",
+        "pcre2"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gobject",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/glib/wasm-package.json",
+      "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[15]",
+          "revision": "4e149b48cec234af209c5d0251a858d12db71d7b",
+          "recordedArtifactSha256": "98329327f1852791e486e80f2fc734f004bcce28d19f88929d5516587e484cea",
+          "size": 2451456,
+          "resultSha256": "805bd3d8e1702ba5e5ad913ed72f21f2adca80ff9cc054857e7ed16853a00a8e",
+          "lockSha256": "795a6d3d5feb3bee81c9f596eb071c307cb55b2067a686260a9e02e19338246e"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `gobject`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/gobject-JZBKW3; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/011-gobject; sha256: 1d65d0713bebf9aa33095814fa525ad85ec6d06964376c20c1333460a0b7b6de"
+        }
+      ],
+      "historicalDependencies": [
+        "glib",
+        "libffi"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gtk-desk",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gtk-desk/wasm-package.json",
+      "historicalManifestSha256": "c5529bd99f191da03dfd7e12bef667da77429abc53158c796ad51034d4b061f1",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/gtk-desk.json",
+          "sha256": "4400e398a2217e43264a633076541dc8d100a697978466de8d7b68d82962be3f",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "868ede8d63c10270e3269be8832a6a26bdd47e3e",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "1366f18c2f66e9d6bd14fbb2abd042f24753197add57243ddcbc32da14a3ccdb",
+            "size": 55808,
+            "compatibilityKey": "6cd4896bf51eec57f6e623fb8a014929bf3b7ff016cc91c3d772f3fd6f31363b"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3",
+        "gtk3-schemas",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gtk-desktop",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gtk-desktop/wasm-package.json",
+      "historicalManifestSha256": "a2850b3d1ff05171323ca9c6e4dbfea0b9a5981c718b9cafdf664fa4df526321",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/gtk-desktop.json",
+          "sha256": "1aa752196c9c50edbedc7b71cc7ebf4ccc501c34f69685c186c610e248d09383",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "868ede8d63c10270e3269be8832a6a26bdd47e3e",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "63e6bb138950d240532ba0beb471c84f71b15c4376261b513585e1e69540a151",
+            "size": 144384,
+            "compatibilityKey": "b391ca10dcc71a74be41dda5d680d0dc7667001ebd1cf921406122353755dc96"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "galculator",
+        "gtk-desk",
+        "gtk3",
+        "gtk3-demo",
+        "gtk3-schemas",
+        "l3afpad",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gtk-sdk",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gtk-sdk/wasm-package.json",
+      "historicalManifestSha256": "1e5665d9eca1f77c5efa19059a0932651ffbc19b1320c2242f8dc6e1af39aca3",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/gtk-sdk.json",
+          "sha256": "ce6c52f6d04fda67436990bebf47a46d1d85798a6d8e61bce8d7589a28f82d82",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "868ede8d63c10270e3269be8832a6a26bdd47e3e",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "7b0c782763427f78d8951a134b9af8f9587d9618f59e29f6d0189cd00965d0c1",
+            "size": 14336,
+            "compatibilityKey": "7cfcd2660abfdfb53bc45b82b39f6909bf08d7b8a5d7990d9a9cbb6819049edd"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3",
+        "sdk"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gtk3",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gtk3/wasm-package.json",
+      "historicalManifestSha256": "ccb033b26a4cf38bb0455e723d2a05681fd6996d57bb9642c4f87797373e3be2",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/gtk3.json",
+          "sha256": "ead9724ae502788350ff54a55f8f77c9f874548da3391bf68728f98aee9ee773",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "f0aa80c7e98e0f97f196eb2c0702eca848b34222",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "2312bea03ddf6d6edfbe4d89c1bef92e9cee14ad7599f906e8c37237d2c247c2",
+            "size": 39448576,
+            "compatibilityKey": "38a914ca973d40daf007350bed22ee3c392ca28c2eca33fa9a0344d36d03dc86"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "atk",
+        "gdk3",
+        "gtk3-schemas",
+        "harfbuzz"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gtk3-demo",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gtk3-demo/wasm-package.json",
+      "historicalManifestSha256": "261464e6addf76bb015540178f6c7de7e3b7198f2fd58b00aeb0c2e7ff403378",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/gtk3-demo.json",
+          "sha256": "f5619cae72a8b9e55bc853416653045032bb3d4345b5591e7f04ec5b7f03039a",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "f0aa80c7e98e0f97f196eb2c0702eca848b34222",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "e5c1cc049b585d0e7d5726680e7a7fa59c65e84cbe7516f713fb6b3e731dae42",
+            "size": 273408,
+            "compatibilityKey": "0480557146a59bcc509ab0f09d785f63fc2713d2e41a23dfaaa670a0e97d45d5"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3",
+        "gtk3-schemas",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gtk3-schemas",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gtk3-schemas/wasm-package.json",
+      "historicalManifestSha256": "f36749b0911a3cfe23ec839d1dc2598085778d90d7256e8f4b640026ca57a2e3",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[16]",
+          "revision": "92b174341d6d70654c58b290cab05546a85fd9b5",
+          "recordedArtifactSha256": "c01c962514a675cf57febe6668765481e34e1515c75ed11a3e8871fc4a9f0595",
+          "size": 84480,
+          "resultSha256": "b144d86b58b2ca72cab62245f417c27da7e5815f0900eb2378227d694bd44cf1",
+          "lockSha256": "785a6be0551376aa77237f28d60d30d2c7c26dd0569b4dbb8574fb81d6316243"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `gtk3-schemas`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/gtk3-schemas-2cKpHQ; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/049-gtk3-schemas; sha256: cddf726cf02fa404cd66426f4681f1cf24e8ab93e3bf18ce34cf7cbe482623e1"
+        }
+      ],
+      "historicalDependencies": [
+        "gio-core",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "gtk3-x11",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/gtk3-x11/wasm-package.json",
+      "historicalManifestSha256": "b5b5bafc14610799eee068316ef0e66a0ce3f8ccf914baaf0aab6816cdd68953",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/gtk3-x11.json",
+          "sha256": "161050a8bda1df09230f6108f9fc6e355c5a50b7d1e07b26c8e94cc83e9a3aaa",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "f0aa80c7e98e0f97f196eb2c0702eca848b34222",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "27a045b88a120c05fa0aed85ebede49f5c13675dc78c712356670e5a5309879d",
+            "size": 28618752,
+            "compatibilityKey": "20d47fa4eed0494b92939beb6206951252f8b663dbbbe7caf31be0237afcc080"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `gtk3-x11`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/gtk3-x11-QMrU0f; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/050-gtk3-x11; sha256: 1fdc6ebb646d64cd51ad803da3fafcecebe8584567e8fc0358dc6c4edc26a35b"
+        }
+      ],
+      "historicalDependencies": [
+        "atk",
+        "cairo-gobject",
+        "gdk-pixbuf",
+        "gtk3-schemas",
+        "harfbuzz",
+        "pango",
+        "x11-server"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "harfbuzz",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/harfbuzz/wasm-package.json",
+      "historicalManifestSha256": "867537107b51bcb6295a5d9c69a7e57d33cbc7dd67c5c3e84aaea158d8ea8412",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/harfbuzz.json",
+          "sha256": "bfed04bb4886ce7cd188ea1f9bd65aff57cbde8b929c2166651a72e27049e58b",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "f0aa80c7e98e0f97f196eb2c0702eca848b34222",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "a208b95bd4ae2026bfce2d70b4bf534996c658b8ece5d9a7239a480bb9cc627d",
+            "size": 150369280,
+            "compatibilityKey": "97cc73291cb219b0a91288fa5e8c26c74821914d3fc18d8feb77666bd525ea46"
+          }
+        },
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[18]",
+          "revision": "4e149b48cec234af209c5d0251a858d12db71d7b",
+          "recordedArtifactSha256": "43163f13796b8ef4a30299ac123cbdc2b74c2165f700b10bac2a4090d24cfc55",
+          "size": 150369280,
+          "resultSha256": "3c6191e255bbc92bdc8a098102fae0c94da4ed1e562993375f8754b48d3c5eba",
+          "lockSha256": "9dca6959bc5b6ba3845f0adf607b56531ca74191ee109ba50d58ea3842e228e0"
+        }
+      ],
+      "historicalDependencies": [
+        "freetype",
+        "glib",
+        "zlib"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "hush",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/busybox/wasm-package.json",
+      "historicalManifestSha256": "d95a44121e2ee1236280e3e77a11a0a963174e4dc5c1fc83e4313fe6861d2b4c",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[21]",
+          "revision": "60b49e605da3a1e9bfd1e89b4faab87dceff60c3",
+          "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/hush-5Jq5SS",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "61a5078ecd7e2977dc0ab1a5edd609ac359c0b8e38f741f64a69d87f083cee82",
+          "size": 1282048
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[21]",
+          "revision": "60b49e605da3a1e9bfd1e89b4faab87dceff60c3",
+          "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/hush-5Jq5SS",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "61a5078ecd7e2977dc0ab1a5edd609ac359c0b8e38f741f64a69d87f083cee82",
+          "size": 1282048
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "imlib2",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/imlib2/wasm-package.json",
+      "historicalManifestSha256": "85e7abb6978cb68f8f239543a202f0dd363666bf10d2e2b280f0b81b4d32e33b",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/more-desktop-apps-validation.json",
+          "sha256": "bead6bf25133adf43bfebb5c2d61a7f17797fe860210d0db36d2ed1df711f99b",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 3",
+          "revision": "7479d67d34bedfa67f1681251d6a07adbaed8128",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "174ed923089b89662c5851706e831020aa25537bf98822090992a225f21b43a4",
+            "size": 946176,
+            "compatibilityKey": "42eba23e65715ae9fa2972bed00e424754ddb9e1a860324afcddeb1aa461b483"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `imlib2`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/imlib2-KO72aN; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/051-imlib2; sha256: 524963e2e8c854aa305ff11be18a74f707a2d07a6604be09af48249fd236399d"
+        }
+      ],
+      "historicalDependencies": [
+        "freetype",
+        "gtk3-x11",
+        "libjpeg-turbo",
+        "libpng"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "jq",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/jq/wasm-package.json",
+      "historicalManifestSha256": "2abfcb5e27a3cebb9accab36c6597e01423badbd63a39780af918624f8466bea",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[18]",
+          "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/jq-Gb6t4L",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "7b5c3005cf39f72c860565383c245a5808f938d4915dff54b20a179714c20714",
+          "size": 1555968
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[18]",
+          "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/jq-Gb6t4L",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "7b5c3005cf39f72c860565383c245a5808f938d4915dff54b20a179714c20714",
+          "size": 1555968
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "jwm",
+      "kind": "historical-canonical-name",
+      "state": "existing-scope-audit",
+      "historicalManifest": "apps/jwm/wasm-package.json",
+      "historicalManifestSha256": "f24804d7d07c250950ca24358668a5bf11a6359ec61dad25543a22a9b77e8a99",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/more-desktop-apps-validation.json",
+          "sha256": "bead6bf25133adf43bfebb5c2d61a7f17797fe860210d0db36d2ed1df711f99b",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 5",
+          "revision": "5942424bc24ca5d2fb523e69679ce87249f3e36c",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "aab89f0755e12fc841ab672ca410ebbbcea786b3b694f9921557cd5a13518e3f",
+            "size": 7561728,
+            "compatibilityKey": "027ad626e9d1280bd15897b31c42591ef5162aa2de8ca7c7d36ff480583b6321"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "x11-apps"
+      ],
+      "mapping": "jwm",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "jwm-desktop",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/jwm-desktop/wasm-package.json",
+      "historicalManifestSha256": "23607bd557d22834969c20aec37d2e56e8038cb77300b1fd057f186ff6868c05",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/more-desktop-apps-validation.json",
+          "sha256": "bead6bf25133adf43bfebb5c2d61a7f17797fe860210d0db36d2ed1df711f99b",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 6",
+          "revision": "bb3bd0936cc6cf04e3b4a4b9e3fc39a0d783321f",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "e95bdde8d1ba98a2ca8bce6c9588d5e813e3b1cfb1a6ede8a47e0aef8ed6c946",
+            "size": 27136,
+            "compatibilityKey": "5b078c799f17bc74359496dcd030b9087b11a48acd7728582352ea4ed26d8557"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "jwm",
+        "x11-apps-more"
+      ],
+      "mapping": "start-jwm and helper now supplied by jwm; former desktop bundle/menu/dependency closure not reproduced.",
+      "acceptance": [],
+      "blockers": [],
+      "remainingScope": "Retain current JWM; restore historical desktop/menu dependency coverage"
+    },
+    {
+      "id": "l3afpad",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/l3afpad/wasm-package.json",
+      "historicalManifestSha256": "2d34c7a4ca6a1ee86ae604e9a959e007d973a0d1c7eb9b1d5203e46a35b808b5",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/l3afpad.json",
+          "sha256": "06d96aadb64d3aa9183030f4d6364afc9cbf9d207ce2c2fb85afa9d6003b6615",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "f0aa80c7e98e0f97f196eb2c0702eca848b34222",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "ad5353ee3f97854807bc9e9290e4e948748160e17b508a96a6cbd3efbebdab03",
+            "size": 331264,
+            "compatibilityKey": "623214d9e90b4dd5a2ddd035e4c28648a89977faf7177c54c74d011f5cf0eaf9"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3",
+        "gtk3-schemas",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libc",
+      "kind": "historical-canonical-name",
+      "state": "core-owned-excluded",
+      "historicalManifest": "apps/bootstrap/wasm-package.json",
+      "historicalManifestSha256": "45a55f1cb33f4750d0bcb6da65586d5d377463f166c589c20ab54f0f00b330c4",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[8]",
+          "revision": "6f6eca3388d53ff59de42be81273238af1105fe3",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/libc-JufMVQ",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "3efef5612ec6892cf155e935db42d35a53b5eb7d92b0f17db46a4be76987de77",
+          "size": 3106304
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `libc`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/libc-DQ7rSM; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/000-libc; sha256: a5c1c622599bba4ad4859e9e5fe8a8e531c894767ec741ca19c0a676c4e28eea"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": "fixed core bootstrap",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libevent",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/libevent/wasm-package.json",
+      "historicalManifestSha256": "cf029d1042a8ed333671d39fb6e161de414851791bcee7a58ade2544f371a05d",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[26]",
+          "revision": "90f06fa0eba06688fb3d68f8908391aaa3a70848",
+          "run": "/Users/jku/git/wasm-posix-libevent-acceptance/test-results/runs/libevent-Hzc5tz",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "3cc9b710b72a1ae7d303386d7ab8d577074ab9bbad73d04b400d538b69f4c780",
+          "size": 2446848
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[26]",
+          "revision": "90f06fa0eba06688fb3d68f8908391aaa3a70848",
+          "run": "/Users/jku/git/wasm-posix-libevent-acceptance/test-results/runs/libevent-Hzc5tz",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "3cc9b710b72a1ae7d303386d7ab8d577074ab9bbad73d04b400d538b69f4c780",
+          "size": 2446848
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libffi",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/libffi/wasm-package.json",
+      "historicalManifestSha256": "ba6535b10bd26cacea9f7aff0cbad135873a70504f89354268d33b0ff4d5fb90",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[20]",
+          "revision": "38dd4dbfb0608e553a328d65591ea68ab5f5b50e",
+          "recordedArtifactSha256": "1092371ca85d5fcd350bd5baeb66671b95da85a50db3602b0a392d93ba513e61",
+          "size": 54784,
+          "resultSha256": "9b158325e683e65aae6927c41bb76b8c3f5f0b7b616452919cf92dbefe290688",
+          "lockSha256": "fab5c644bf21c9899684d03b4157bb89ce74012dadfc2137735dca4ed25a58a0"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `libffi`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/libffi-8l98Et; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/010-libffi; sha256: 5606ea9599c07fda89aa65cdc88d88ca8d492b10a5628184ac0c248eb68cd90a"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libfm",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/libfm/wasm-package.json",
+      "historicalManifestSha256": "909d56b2e6efb5164e5485368d1f06cf959f3bc412f1514079d301b1babef1f5",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/desktop-ports-validation.json",
+          "sha256": "0f67f33b7261f337d10da923ce13c652bba437dfe872e559cd7c0e0c0420a9c6",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 2",
+          "run": "libfm-LW8OJ1",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "967d2dfe7307db017145dbc583290c53aad32d2d58a68cdf21f98ceb934c0dba",
+            "size": 3245056,
+            "compatibilityKey": "d7f014a4be12444abc1d6e79f71aa86a851ca1626b9f86296a12449fe22a873e"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `libfm`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/libfm-seMPFh; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/072-libfm; sha256: 3e24807a65092874e0105b438d804d9f1efd1fcf8dbd85a2d32b923fb2083fff"
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3-x11",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libgedit-amtk",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/libgedit-amtk/wasm-package.json",
+      "historicalManifestSha256": "dcae2d5d7d412ff152540ee77f475bc49deb2b29201c4f1db286f543c39d3a29",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/libgedit-amtk.json",
+          "sha256": "8523ff6508dc14fcf78f4d2a4695c4889d3d0da9fc08e311254369d17e0eec5f",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "eea75738412c7b5adfa401284b2f052ce026e302",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "ae72e35716c894b6c0c0c1346d70e31b17476f5a7f28211e32f8cd31a8caa14b",
+            "size": 404480,
+            "compatibilityKey": "3fb08415d6fc588591031ceb7354fcfc4fa2e416d120d89d4cf3ab15cd0cac4b"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3",
+        "libintl",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libiconv",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/libiconv/wasm-package.json",
+      "historicalManifestSha256": "382b952fdbadffeb59827c8e103f06f68df12c74668590697a24cb18e3c44df7",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[1]",
+          "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/libiconv-jrSHyh",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "435a172c0abf0a93cc021ab4c52cae8bc0f9f2f0b8e00baab75b92b63f2fa4c6",
+          "size": 2840064
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `libiconv`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/libiconv-EDNgMq; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/006-libiconv; sha256: b3af3665eacd13db0fab738dd3f08ecd8a66de8d0191d35b34a2348695723d5a"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libintl",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/gettext/wasm-package.json",
+      "historicalManifestSha256": "148457a5d63806b8e3c9baa921d5f7609ddef8e51783a3e975ce5f96c4ffadc9",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[2]",
+          "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/libintl-zE9lQe",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "77c159325b2407290c1409fc744294b13e3f25ebe42da86f2945923ef6490cc5",
+          "size": 307712
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `libintl`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/libintl-QHtGwh; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/007-libintl; sha256: 4380faab823e1c0d446c5fad55fb7b26cd1c28978eeef77f51d874c416f9dc79"
+        }
+      ],
+      "historicalDependencies": [
+        "libiconv"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libjpeg",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/libjpeg/wasm-package.json",
+      "historicalManifestSha256": "76ce5527ccf8331a2e40c189424efdf0f23b3d14e779b42cde0ed091c286db8b",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[19]",
+          "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/libjpeg-2xp8ri",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "9ae40cefdeb2f9c7e1a30c9ef2de613b39cf258b4fd2f173477db355d5c97255",
+          "size": 1127936
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[19]",
+          "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/libjpeg-2xp8ri",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "9ae40cefdeb2f9c7e1a30c9ef2de613b39cf258b4fd2f173477db355d5c97255",
+          "size": 1127936
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libjpeg-turbo",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/libjpeg-turbo/wasm-package.json",
+      "historicalManifestSha256": "eef351330736fdf02ba3b58131dc0b942147654645c260859da6330b5c7b746b",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[23]",
+          "revision": "87905ca26311a08f8ddb9e88cb866292756d7122",
+          "recordedArtifactSha256": "22779e3eb340c3d07e7b347e77914540f4c27696ebea9744a0cdfb66430b935b",
+          "size": 2386944,
+          "resultSha256": "5e5c79c20fcb54204ce04ecb948906231e255d67bb8b33bc0f97043cdefeb46a",
+          "lockSha256": "b6d9f8c0220aa28128d33590e96d333daa8646a0c91635b596b88b8566743920"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `libjpeg-turbo`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/libjpeg-turbo-VnrRYW; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/047-libjpeg-turbo; sha256: 0e7f54aa2c96bb50507cea46df3fabb81eef424363ccd23b0b1986d7c7b18b43"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libpng",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/libpng/wasm-package.json",
+      "historicalManifestSha256": "498dc8727eb13b2b3f48c387f61127db4c1e4e07e131f39b37319e554bfa8e09",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[24]",
+          "revision": "50355b98107af8ff682d660deaf93d9c350f7ec8",
+          "recordedArtifactSha256": "6aee4995b40451fce449d52f9c46ad18c5910f799840f1c28956f3a20ef331be",
+          "size": 1216000,
+          "resultSha256": "71300fcdf6bf95c2f1d2ff8132ab1b1bc63f28a3f41a0323740da041423f8e2d",
+          "lockSha256": "13c9a2c5968e53cd83976c8dccca08684006d5a7673fad6f787c5d24e201a9df"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `libpng`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/libpng-trs7yr; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/031-libpng; sha256: 53f8ca7d36051a85f22b8444251eaf1ae8feab6b59bf78469b53d8528bb62cb8"
+        }
+      ],
+      "historicalDependencies": [
+        "zlib"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libtool",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/libtool/wasm-package.json",
+      "historicalManifestSha256": "5d693f73be71ca7e134ad2767644a3079dfb3d28c11698b61a99ff54e514a6dc",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[29]",
+          "revision": "9fe2885386a4ae7ac50473b7cdf5a3e9c5a594d2",
+          "run": "/Users/jku/git/wasm-posix-libtool-acceptance/test-results/runs/libtool-x419DT",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "281984f7ee78a9f6f41e4e54033741f80deede4e247e364b96ec48b6fd2acea1",
+          "size": 2921472
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[29]",
+          "revision": "9fe2885386a4ae7ac50473b7cdf5a3e9c5a594d2",
+          "run": "/Users/jku/git/wasm-posix-libtool-acceptance/test-results/runs/libtool-x419DT",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "281984f7ee78a9f6f41e4e54033741f80deede4e247e364b96ec48b6fd2acea1",
+          "size": 2921472
+        }
+      ],
+      "historicalDependencies": [
+        "automake",
+        "make"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libuv",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/libuv/wasm-package.json",
+      "historicalManifestSha256": "4f610f9ed3deb03d87bd42a21b755e773e06492fcf682f0a60f9e3302685fc6c",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[27]",
+          "revision": "2c99ad0c4c6c13a72e49dca284b5f9170290bb98",
+          "run": "/Users/jku/git/wasm-posix-libuv-acceptance/test-results/runs/libuv-ZtNN58",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "ca1edc03404f079c0e1ea54929428adaa9a8a305bca292d8b61a42153e8b8bc2",
+          "size": 1915392
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[27]",
+          "revision": "2c99ad0c4c6c13a72e49dca284b5f9170290bb98",
+          "run": "/Users/jku/git/wasm-posix-libuv-acceptance/test-results/runs/libuv-ZtNN58",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "ca1edc03404f079c0e1ea54929428adaa9a8a305bca292d8b61a42153e8b8bc2",
+          "size": 1915392
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libxfce4util",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/libxfce4util/wasm-package.json",
+      "historicalManifestSha256": "2c41a69bbffc5a93a09b71668134fbf39fe02d262351f5d380bc605314b06b95",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `libxfce4util`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/libxfce4util-B6TCJe; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/077-libxfce4util; sha256: fc1fa77ed3d9f0c2b4cb3e7f4485027fd260310b39d0973e51fd509df3af7469"
+        }
+      ],
+      "historicalDependencies": [
+        "gio-core",
+        "libintl",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "lua",
+      "kind": "historical-canonical-name",
+      "state": "existing-scope-audit",
+      "historicalManifest": "vendor/lua/wasm-package.json",
+      "historicalManifestSha256": "e29e0cd239bb3e5af53af9957a55cbd9d8333ea0fe61c232dadabd44a342b159",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[20]",
+          "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/lua-VeYO0g",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "b232557917e8fa2f0ff162bffaba4a3dfce812d81ab46b878c36d2598b15516f",
+          "size": 630784
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[20]",
+          "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/lua-VeYO0g",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "b232557917e8fa2f0ff162bffaba4a3dfce812d81ab46b878c36d2598b15516f",
+          "size": 630784
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": "lua",
+      "acceptance": [],
+      "blockers": [],
+      "remainingScope": "Current ISO C profile lacks historic dynamic modules and io.popen"
+    },
+    {
+      "id": "m4",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/m4/wasm-package.json",
+      "historicalManifestSha256": "6810bb323a927dec92e4bf07437f32e697fcd864aefdd5607811ec6e97694ecf",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/m4.json",
+          "sha256": "be48ce2466f4df2b07a573298fe43fe0dc98d2076ae83f3333f2262c0bf54b13",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "3ae303605b43b08c203c3bf14762dfe44b1dc4a2",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "7220a60eb5dc6dddeb3fa0c7abe8ddc48b7500c23ac000f808441e62e1f3b052",
+            "size": 1137664,
+            "compatibilityKey": "e3f3cfb31c7f01dd188ef5943f66088bd84cd236a57e6f1c403c99103514be7b"
+          }
+        },
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[25]",
+          "revision": "e6f12897da5335ffd3365c9951075a4e86e6c702",
+          "recordedArtifactSha256": "f6caefdaa763305e1f7962d937b0abbb99046f849d0d6d35dc1561aba87933af",
+          "size": 1135616,
+          "resultSha256": "6aa52836843db728ac3efd29b8bf0fb0722da1edac1e1f20d5dd825401de2c36",
+          "lockSha256": "c29f4713333175159772ed68deea0101e1f65638c0f14a45d1fb3abc1a64db7f"
+        }
+      ],
+      "historicalDependencies": [
+        "libiconv",
+        "make"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "make",
+      "kind": "historical-canonical-name",
+      "state": "core-owned-excluded",
+      "historicalManifest": "vendor/make/wasm-package.json",
+      "historicalManifestSha256": "107109c789dd8fb8f94e12646f1c6bccb53f0db329907213d70c4cc219a89642",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[0]",
+          "sourceCandidate": "test-results/runs/make-sih5Oz"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `make`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/make-6EmnFR; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/002-make; sha256: f6123aa04ea2069b3356476feab9411084298c776c5d6954f7fa3636e6be3009"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": "fixed core bootstrap",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "mgba",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/mgba/wasm-package.json",
+      "historicalManifestSha256": "e6398bb15c6140d7217fcbb570838e6fd66dcb5769e2295eeef1dfaf7ad0957a",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[46]",
+          "revision": "f18c9b27428b022bc9353b825e93f11dbc895e5c",
+          "run": "/Users/jku/git/wasm-posix-mgba-acceptance/test-results/runs/mgba-xrZJeo",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "44913addb370ad2b0e5e5377034f063d81ba9ed6cbf953f19b15890bb34bd832",
+          "size": 2723840
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave11/release-set.json",
+          "sha256": "29ce59f858c0a4f92ae14324de1ea2ab5aed2abfad80c4ed8af21460dc898a2c",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[45]",
+          "revision": "f18c9b27428b022bc9353b825e93f11dbc895e5c",
+          "run": "/Users/jku/git/wasm-posix-mgba-acceptance/test-results/runs/mgba-xrZJeo",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "44913addb370ad2b0e5e5377034f063d81ba9ed6cbf953f19b15890bb34bd832",
+          "size": 2723840
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "micropython",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/micropython/wasm-package.json",
+      "historicalManifestSha256": "65186c86d5509270300344d97146628e3c58f99c876035eaeb943fb74199181f",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[40]",
+          "revision": "5c63ad966eec41bbfdd0b6ad2c27e8abdf5ae7f0",
+          "run": "/Users/jku/git/wasm-posix-micropython-acceptance/test-results/runs/micropython-YxIgMw",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "cc07d263364044a1408f92f66e5734b3141ac57dc57bc23155dccee657dafbaa",
+          "size": 1457664
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[40]",
+          "revision": "5c63ad966eec41bbfdd0b6ad2c27e8abdf5ae7f0",
+          "run": "/Users/jku/git/wasm-posix-micropython-acceptance/test-results/runs/micropython-YxIgMw",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "cc07d263364044a1408f92f66e5734b3141ac57dc57bc23155dccee657dafbaa",
+          "size": 1457664
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "minihb",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/minihb/wasm-package.json",
+      "historicalManifestSha256": "aa1634b986ab7dd18fe700c0c27b0cc1e7534fd6a7915fd93013f661a6f9b838",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `minihb`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/minihb-x78I4N; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/043-minihb; sha256: 718f7847c2059b6adcc3332409ce4c1a414b5882a7033bb8d24c710940f6239f"
+        }
+      ],
+      "historicalDependencies": [
+        "freetype"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "ncurses",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/ncurses/wasm-package.json",
+      "historicalManifestSha256": "fe2cc902a42632f0b9e9ea941e983075bac661676405833b15c610aac3c580e7",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/desktop-ports-validation.json",
+          "sha256": "0f67f33b7261f337d10da923ce13c652bba437dfe872e559cd7c0e0c0420a9c6",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 0",
+          "run": "ncurses-pgaOpH",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "32b613180d8396d6ad6ea1ab3a560658be717634b42040d25bec8810b35f740c",
+            "size": 9724416,
+            "compatibilityKey": "83a2534445a5fa6c1464d07c6a3cb0a86d466749868ba50f829ba14f55285f36"
+          }
+        },
+        {
+          "path": "docs/research/package-publication-20261004/release-set.json",
+          "sha256": "6db49620d9b5049b8e0ec32015ce5dfa9ccb7f6b1622f723c2bee9eaac9583d3",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[9]",
+          "revision": "6f6eca3388d53ff59de42be81273238af1105fe3",
+          "run": "test-results/runs/ncurses-CENlbj",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "d273ffc9dababdfa273440a76acb28486282c357997ad87236cb3a73de5b1831",
+          "size": 11378688
+        }
+      ],
+      "historicalDependencies": [
+        "make"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "nyancat",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/nyancat/wasm-package.json",
+      "historicalManifestSha256": "4bf74a3d4df37b72ad0686eb292667149676d03ba6058dda2e0f0b053f591ec0",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[43]",
+          "revision": "118c25e18981d75462f4b3df147bdafac09e5bd7",
+          "run": "/Users/jku/git/wasm-posix-nyancat-acceptance/test-results/runs/nyancat-hKC9w1",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "fb7108849961e21f65d12a55062ee1f48bfa9df26e4d48636d8b48b93faa5255",
+          "size": 206848
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[43]",
+          "revision": "118c25e18981d75462f4b3df147bdafac09e5bd7",
+          "run": "/Users/jku/git/wasm-posix-nyancat-acceptance/test-results/runs/nyancat-hKC9w1",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "fb7108849961e21f65d12a55062ee1f48bfa9df26e4d48636d8b48b93faa5255",
+          "size": 206848
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pango",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/pango/wasm-package.json",
+      "historicalManifestSha256": "4dfa2617abb5073dbeabda42ffe18eabb8a29a0cbe92b018947a6895eef04713",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/pango.json",
+          "sha256": "fb74d3972638b0432b7d2a7dcc03b0bdcb54788488a1640ab5a56cfcd7df268b",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "f0aa80c7e98e0f97f196eb2c0702eca848b34222",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "f616e561982cdc2b761a0ae024cec591d14174c138d1be07110c8ee3298e722e",
+            "size": 3203072,
+            "compatibilityKey": "c61435dc1bb84242f2e9f51fb5016738c29cc38ca8ac8366e6f23f5d979b0d1e"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `pango`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/pango-XpbEG2; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/045-pango; sha256: 91a8270456231ebdab0b0a89e31483f19a88853e1a66a2be2c7f4f6449e0a4cf"
+        }
+      ],
+      "historicalDependencies": [
+        "cairo",
+        "fontconfig",
+        "fribidi",
+        "gio-listmodel",
+        "harfbuzz"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pcmanfm",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/pcmanfm/wasm-package.json",
+      "historicalManifestSha256": "b24b5e3002e0dcbfbe3721e74159158ebd7a951316605d203958f28d03fedb45",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/desktop-ports-validation.json",
+          "sha256": "0f67f33b7261f337d10da923ce13c652bba437dfe872e559cd7c0e0c0420a9c6",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 3",
+          "run": "pcmanfm-dg7g9K",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "8b3537e30dc5bde1777bf8f683c90b8757fadfb376384ce69e5689216196e74c",
+            "size": 893440,
+            "compatibilityKey": "47487d86f149813050e5a373d914b9d7f38d7ac60f862e603087f2e343e382d1"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `pcmanfm`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/pcmanfm-eFKNig; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/082-pcmanfm; sha256: 0805992991d681019ad91b5f2d3dc2ec3e8311eb8f85c7e8642816fc3b5aacef"
+        }
+      ],
+      "historicalDependencies": [
+        "libfm",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pcre2",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/pcre2/wasm-package.json",
+      "historicalManifestSha256": "c36ec960359841727c0241aa8eca62c1cfc52e2fb8190f62bd5f1f993eba47ae",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[3]",
+          "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/pcre2-HehGao",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "de006ba3bcd7039fdf53031d30b0de5001641dda9b80068009cdf9c2060f16a6",
+          "size": 1729024
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `pcre2`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/pcre2-Vgo503; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/008-pcre2; sha256: 4c929695818f3efdc161544ab02f14ee860356c7d831a2a0971e715f52b06ac0"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pcre2grep",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/pcre2-cli/wasm-package.json",
+      "historicalManifestSha256": "2509fd3657d9c78276adc8edddbfd5e72643c042375978c1b769430652624877",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[36]",
+          "revision": "ea2ce58d703fd7e283992322e44ba9bffb1c56ee",
+          "run": "/Users/jku/git/wasm-posix-pcre2-cli-acceptance/test-results/runs/pcre2grep-25UQo6",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "c76fb72d6c224e028a4edae45abb3e0b51bf7123dff934ed92e57b7f87897098",
+          "size": 4675072
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[36]",
+          "revision": "ea2ce58d703fd7e283992322e44ba9bffb1c56ee",
+          "run": "/Users/jku/git/wasm-posix-pcre2-cli-acceptance/test-results/runs/pcre2grep-25UQo6",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "c76fb72d6c224e028a4edae45abb3e0b51bf7123dff934ed92e57b7f87897098",
+          "size": 4675072
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pcre2test",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/pcre2-cli/wasm-package.json",
+      "historicalManifestSha256": "2509fd3657d9c78276adc8edddbfd5e72643c042375978c1b769430652624877",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[35]",
+          "revision": "ea2ce58d703fd7e283992322e44ba9bffb1c56ee",
+          "run": "/Users/jku/git/wasm-posix-pcre2-cli-acceptance/test-results/runs/pcre2test-taYBB2",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "c8baf3a6df180766a315f43876475dc47707c0229572945ba60508a2f07591c8",
+          "size": 5156352
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[35]",
+          "revision": "ea2ce58d703fd7e283992322e44ba9bffb1c56ee",
+          "run": "/Users/jku/git/wasm-posix-pcre2-cli-acceptance/test-results/runs/pcre2test-taYBB2",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "c8baf3a6df180766a315f43876475dc47707c0229572945ba60508a2f07591c8",
+          "size": 5156352
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "perl",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/perl/wasm-package.json",
+      "historicalManifestSha256": "884d07b67601121d234b088606e0d68b25b0e05e8f1a2d248f6e13aeadea871a",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[17]",
+          "revision": "585d8ae4ab43acb0750a21dd48f2084ad48cd54e",
+          "run": "/Users/jku/git/wasm-posix-perl-acceptance/test-results/runs/perl-1WWZPQ",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "0d9ec8fa228a8d5ecf7bd0f05ad1d9699033f9209571b0c630e990aeb83aba5f",
+          "size": 103812096
+        },
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[29]",
+          "revision": "e6f12897da5335ffd3365c9951075a4e86e6c702",
+          "recordedArtifactSha256": "77b7ccfa8da364d994908da9fc9598ceef45ded3a2dda3f3a6566a02d3f2803c",
+          "size": 103812096,
+          "resultSha256": "4deee06b41c63848e949c3f8b9a7a67fb9215ff4a46ae4b8dc4dd5843ad089fa",
+          "lockSha256": "481c1b3967b9a526c0ac16566bf9ba374d9aa7bd113a8f7cd85f68435b4c296e"
+        }
+      ],
+      "historicalDependencies": [
+        "make"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pigz",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/pigz/wasm-package.json",
+      "historicalManifestSha256": "863d987e5fe85e8c68f7ae3cf37dc285fcf6d1d59cefb770f1b7aa1cd702e58b",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[32]",
+          "revision": "6bb10b08d820bcee1d12c37cc1a36ad2a2b4ebde",
+          "run": "/Users/jku/git/wasm-posix-pigz-acceptance/test-results/runs/pigz-5NQhUS",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "f120f225025b25cc9a1f4c9baa9eb5a01e92437c4f71a36e2f25fb8107274a5a",
+          "size": 175616
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[32]",
+          "revision": "6bb10b08d820bcee1d12c37cc1a36ad2a2b4ebde",
+          "run": "/Users/jku/git/wasm-posix-pigz-acceptance/test-results/runs/pigz-5NQhUS",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "f120f225025b25cc9a1f4c9baa9eb5a01e92437c4f71a36e2f25fb8107274a5a",
+          "size": 175616
+        }
+      ],
+      "historicalDependencies": [
+        "zlib"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pixman",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/pixman/wasm-package.json",
+      "historicalManifestSha256": "8e717772298e82645f91a8a5178b054dadd95c50197b967071df8c56b55b2ace",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[30]",
+          "revision": "50355b98107af8ff682d660deaf93d9c350f7ec8",
+          "recordedArtifactSha256": "fed0f944031546b4de5fedd0ce6d276e4697558be8944dae3dad4e869a1c600f",
+          "size": 1895424,
+          "resultSha256": "aa7df02339b645114b0966e739e1b97584ded383169cce50d33989cf25b9a33f",
+          "lockSha256": "ed50e5c048ee8a60a14817b6c18147106776cad94c99f7eda7aa312abeda5112"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `pixman`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/pixman-ArgCpj; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/029-pixman; sha256: 5b41ef0a3eb9977a79ec79b2893bd381a0391b2169a503d07be49898b1875a6a"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pkgconf",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/pkgconf/wasm-package.json",
+      "historicalManifestSha256": "1441bb19f6cfbb6e28ed822bc109742b9a6f7cf3d0fd63175b466b7fd05fee53",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[0]",
+          "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/pkgconf-tMmU87",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "76b13351785bbfa759c403813157e78d22a2c148bde7d751bc3d3435e842cbe8",
+          "size": 229888
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `pkgconf`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/pkgconf-gvN9Ri; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/001-pkgconf; sha256: f6fac0b819d2741a88741bed14936391eaacfa499fb202c19e4e24318fea7a0e"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "punes",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/punes/wasm-package.json",
+      "historicalManifestSha256": "c2bacbdd30c9910b9391ee62b60812c95ab8772ec0bcd2b7164c0624291da3c3",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[47]",
+          "revision": "b07e680bc313a00a81f1bd8793b5fce050aae502",
+          "run": "/Users/jku/git/wasm-posix-punes-acceptance/test-results/runs/punes-DG6ep7",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "80d310d00cc60f18d8a8267541d8c5752b7ae3479f088580e2a995eccc751b58",
+          "size": 4204544
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave11/release-set.json",
+          "sha256": "29ce59f858c0a4f92ae14324de1ea2ab5aed2abfad80c4ed8af21460dc898a2c",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[46]",
+          "revision": "b07e680bc313a00a81f1bd8793b5fce050aae502",
+          "run": "/Users/jku/git/wasm-posix-punes-acceptance/test-results/runs/punes-DG6ep7",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "80d310d00cc60f18d8a8267541d8c5752b7ae3479f088580e2a995eccc751b58",
+          "size": 4204544
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "puzzles",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/puzzles/wasm-package.json",
+      "historicalManifestSha256": "7ed16059fee8f8a30cc094382a619ee030aa04f8dd48fd82486994b67b163ba7",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/more-desktop-apps-validation.json",
+          "sha256": "bead6bf25133adf43bfebb5c2d61a7f17797fe860210d0db36d2ed1df711f99b",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 2",
+          "revision": "63076b980466f30901774b82da81ea61869bcc49",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "ec2f6b48b59356e5612999f3a4b0424bbc2ffb99db9a56a80f10902044d80955",
+            "size": 16834560,
+            "compatibilityKey": "38ca8f31d426dcab71c9dc547dd3238ac778fcb6b90a67afa6416f98a1c38464"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `puzzles`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/puzzles-ZeFYlk; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/087-puzzles; sha256: 1e9290b72194ea57ccee4b866a78f45b19fdbd4fc1b64a7256b47855b6dd0b33"
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3-x11",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pygame-ce",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/pygame-ce/wasm-package.json",
+      "historicalManifestSha256": "eee5a4226c95a3c7e936f748026e3cea1b21eb97b87ef3601355201342a7879f",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/pygame-ce.json",
+          "sha256": "c5634d7f4daaa044e13afc3816b5bc94e4bf6cb7eb461a925e4d5af65757d536",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "eea75738412c7b5adfa401284b2f052ce026e302",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "45ae43e796c13957084f74876e757b16bde28a3d141667eb0d085163954866cf",
+            "size": 3259392,
+            "compatibilityKey": "70b90f51c8e2195b20fe312bba42d77838cfcf8dc1e7887ce946ca7ac4a98042"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `pygame-ce`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/pygame-ce-Xpiwkz; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/092-pygame-ce; sha256: 7a5f2d233ee559b9a90d7206aaa95fd7d9f6efc3e9fc1215500f11d0b30b2e6c"
+        }
+      ],
+      "historicalDependencies": [
+        "cpython",
+        "freetype",
+        "sdl3",
+        "sdl3-gfx",
+        "sdl3-image",
+        "sdl3-mixer",
+        "sdl3-ttf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pygame-games",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/pygame-games/wasm-package.json",
+      "historicalManifestSha256": "99efa68e50b58084a8a21f3e4582843030ab4ac99cf92fa4a9ce0f59dc8b7415",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/pygame-games.json",
+          "sha256": "646005aa62e5681fc0981401ee0db73185ca226a37edfd7a5b758dd862accb2a",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "eea75738412c7b5adfa401284b2f052ce026e302",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "5c8d3d2f2d0a19040cd63f24ab109d1bbde0b79c09a2e48a7e164ef1aed722c4",
+            "size": 240128,
+            "compatibilityKey": "f6834c14bb84cd7fe934106bcd47d7671f0a33693811599bebac382a123f5896"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `pygame-games`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/pygame-games-Ttt3FW; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/093-pygame-games; sha256: 2c279991f7f248f6639a76143b782368676a0173e8f20cd3e5b110fddddee43c"
+        }
+      ],
+      "historicalDependencies": [
+        "pygame-ce"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pyspacewar",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/pyspacewar/wasm-package.json",
+      "historicalManifestSha256": "6ebbe2e344e49813e38dee2accda5d2e61e1d579cc1cce8d2a4de145aed23cbc",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/pyspacewar.json",
+          "sha256": "6e60bcfc2828de2540ef6c3bd1b96a0d8a84d307843ff32a03656d1fa0c01fcb",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "eea75738412c7b5adfa401284b2f052ce026e302",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "757ca19e84dfa0c9b6409e5d081bfdb5a16a9e2d9691776f8bb0071a3d29864b",
+            "size": 1980928,
+            "compatibilityKey": "fe5c0ac84144b89b110ac8d094e66c76f2691f9cca992efd2baa4ac8294c62d5"
+          }
+        },
+        {
+          "path": "docs/research/package-publication-20261004/release-set.json",
+          "sha256": "6db49620d9b5049b8e0ec32015ce5dfa9ccb7f6b1622f723c2bee9eaac9583d3",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[13]",
+          "revision": "898d0b7c5eb5e498967c19f127bab6ef216a55ca",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/pyspacewar-r2DwkO",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "5d6c05db8ad6e85eba7c9dfdbb5c974b10ade09ad9bc95e52a70b41753ac5442",
+          "size": 1980928
+        }
+      ],
+      "historicalDependencies": [
+        "pygame-ce"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "qjs",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/quickjs/wasm-package.json",
+      "historicalManifestSha256": "221c54ef5d62b84b7557485087155ab259d0897317d916df93c1df462b219ad7",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[38]",
+          "revision": "86e2bf37547ecb569a43f8b508d6e435d01aa50f",
+          "run": "/Users/jku/git/wasm-posix-qjs-acceptance/test-results/runs/qjs-aevhvA",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "57e0f49ae7aa002404b251965171252859bae0f0bf076345c2445c23cd25d214",
+          "size": 6267392
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[38]",
+          "revision": "86e2bf37547ecb569a43f8b508d6e435d01aa50f",
+          "run": "/Users/jku/git/wasm-posix-qjs-acceptance/test-results/runs/qjs-aevhvA",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "57e0f49ae7aa002404b251965171252859bae0f0bf076345c2445c23cd25d214",
+          "size": 6267392
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "quake",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/quake/wasm-package.json",
+      "historicalManifestSha256": "fc96c56564b97ee9dd87f5f87f4bf59ab20c8cc6ce2fd0558fbd22fd752d0bf6",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave11/release-set.json",
+          "sha256": "29ce59f858c0a4f92ae14324de1ea2ab5aed2abfad80c4ed8af21460dc898a2c",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[48]",
+          "revision": "9c5ea1ec2bcd7d7d483a0ccdab9a02bf44dd7676",
+          "run": "/Users/jku/git/wasm-posix-quake-acceptance/test-results/runs/quake-SyRw2O",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "61d759c53b35e6d3b1192b538b613cce8d9c28a84731ce9f0b9c1e0317b4db0f",
+          "size": 20374528
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "scintilla",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/scintilla/wasm-package.json",
+      "historicalManifestSha256": "89315e5ee63fcff4e6f54e75ad6a7da3249eeb1cd1c5751a627fc4f300a45123",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
+          "kind": "retained approved artifact and result/lock hashes",
+          "selector": "candidates[32]",
+          "revision": "a916a00fa2affce4f45c31c0d5ba446c285e5be2",
+          "recordedArtifactSha256": "55083dc8f5c114fc650a10de2ae9e230b0db18ba92458c4d482e6dfb6e857eff",
+          "size": 43192320,
+          "resultSha256": "41e1897320c82ba9d022ce2991752f116e8879c7bfb5d733bc0629fffc29f141",
+          "lockSha256": "1f0816ca408127d0d1de6c6ce44122cbc39e1edd350c96c105f2bc5fc4bf4f30"
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3-x11",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "sdk",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/sdk/wasm-package.json",
+      "historicalManifestSha256": "ad5a9fc2f50f9b0409f1d5a05a8c0d1c2f04419b8e3fbe7e3f274339cd5338df",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/sdk.json",
+          "sha256": "ec1b504e8ec2677de3b36b4abaff88353a404401f35693f9133c6c5de3078144",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "868ede8d63c10270e3269be8832a6a26bdd47e3e",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "728f35a09dc80e42c02424d87967dc2c4693453c785f416f75a48a3aa335bfac",
+            "size": 574976,
+            "compatibilityKey": "94e977f48fbf447aec79cb7e1b61bd8f87705805f22798d43c6ecc7b127bfe78"
+          }
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[16]",
+          "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/sdk-tG27yJ",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "54e4386f1ccc8e2f7ed80609456fb953bc410f982a89169396700bf6b3008d89",
+          "size": 591872
+        }
+      ],
+      "historicalDependencies": [
+        "ar",
+        "cc",
+        "libc",
+        "pkgconf"
+      ],
+      "mapping": "Core supplies C compiler/libc/bootstrap; historical SDK bundle and host C++ preparation not a current package.",
+      "acceptance": [],
+      "blockers": [],
+      "remainingScope": "Audit SDK/host-prepared C++ profile; guest cc is C only"
+    },
+    {
+      "id": "sdl3",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/sdl3/wasm-package.json",
+      "historicalManifestSha256": "f28758741fd5db0a28216233c41f47e1377f430842fc16298d32b7c890e397a3",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[1]",
+          "sourceCandidate": "test-results/runs/sdl3-SQMvK2"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `sdl3`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/sdl3-Ehd0TC; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/054-sdl3; sha256: 51199cd53f5a4d6259c00222ed6946f19d15848874999f9af3be72b1e2edec70"
+        }
+      ],
+      "historicalDependencies": [
+        "libc"
+      ],
+      "mapping": "Core owns SDL3-compatible VT shim; not a migration of the full historical package/profile.",
+      "acceptance": [],
+      "blockers": [],
+      "remainingScope": "Audit old package scope against core-owned shim; no duplicate bootstrap"
+    },
+    {
+      "id": "sdl3-gfx",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/sdl3-gfx/wasm-package.json",
+      "historicalManifestSha256": "bd9754f7603f3e81d3912953daeb32bd22be3e5832b80da0f1a69373f99bff88",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[4]",
+          "sourceCandidate": "/Users/jku/git/wasm-posix/test-results/runs/sdl3-gfx-ypeJLR"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `sdl3-gfx`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/sdl3-gfx-PXgVVQ; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/091-sdl3-gfx; sha256: 39809d80bc5a97db79244ce3da7a88f171e54f4e9d3609c905d3abaa49897476"
+        }
+      ],
+      "historicalDependencies": [
+        "sdl3"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "sdl3-image",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/sdl3-image/wasm-package.json",
+      "historicalManifestSha256": "e03879333f1c0ffea29a0cfe573f194d8398f6cc72d2208b842ade6d654fba61",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[2]",
+          "sourceCandidate": "/Users/jku/git/wasm-posix/test-results/runs/sdl3-image-rhpDzc"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `sdl3-image`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/sdl3-image-77ZAGZ; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/088-sdl3-image; sha256: 349f6e7820627a831d1515f13c68c21140302a53ab09c5a3757e02699a88e305"
+        }
+      ],
+      "historicalDependencies": [
+        "sdl3"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "sdl3-mixer",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/sdl3-mixer/wasm-package.json",
+      "historicalManifestSha256": "0ade0656d5d74f9b53cb34e8467dfe514cb0c5a2cfcf8316babbb0e188c9255c",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[3]",
+          "sourceCandidate": "/Users/jku/git/wasm-posix/test-results/runs/sdl3-mixer-dX3UVk"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `sdl3-mixer`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/sdl3-mixer-lQei9I; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/090-sdl3-mixer; sha256: ae821bcda5c40d93218f904f4e9cc0db4e3db6ba7a20838b6f9de59ffbd27db1"
+        }
+      ],
+      "historicalDependencies": [
+        "sdl3"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "sdl3-ttf",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/sdl3-ttf/wasm-package.json",
+      "historicalManifestSha256": "1a7eb105ca9d64a085e7c4eacf2c5647445dc58dde43626edd84d05f8be63473",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/sdl3-ttf.json",
+          "sha256": "7814551cd8ae8ac8993be776ed43ea5dcb81a797517df7763741f5dcc850f19e",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "f0aa80c7e98e0f97f196eb2c0702eca848b34222",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "09125b58af4f657ab93e50124c9db83176b982106b918738bf13871bfe0ef3e8",
+            "size": 600576,
+            "compatibilityKey": "73bcfd6b0d3325dd3873e7bd368c6e0f632fc251e8d4241ad589ce3e461dedac"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `sdl3-ttf`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/sdl3-ttf-k8wJEE; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/089-sdl3-ttf; sha256: fc6dbad708936d5406964f09117da1f2bb212bbcda3aa7a7ac267b5c81254c5c"
+        }
+      ],
+      "historicalDependencies": [
+        "freetype",
+        "harfbuzz",
+        "sdl3"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "solarwolf",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/solarwolf/wasm-package.json",
+      "historicalManifestSha256": "79739bd20fc671f3882de022454157192036cb65bf9fcd723bca09c036fbd7d1",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/solarwolf.json",
+          "sha256": "a746c42e7bcbdd0c30956563f657791e8353e773a84e870bb79b5c31945923db",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "eea75738412c7b5adfa401284b2f052ce026e302",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "ba6135fac653dbbbb53ec1b7d6ff5dad7947e3599ff50ecedfd2d4ceb3d1e6b0",
+            "size": 6535680,
+            "compatibilityKey": "579c3341b9c42c1831755fad93fbf689483fcfc87f5a58b2ba49c6c90c03afff"
+          }
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `solarwolf`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/solarwolf-ySXXGl; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/097-solarwolf; sha256: c8a37f7e07229c398356aed902f30445a456ab01e6903e664e445305a016cafb"
+        }
+      ],
+      "historicalDependencies": [
+        "pygame-ce"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "sqlite3",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/sqlite/wasm-package.json",
+      "historicalManifestSha256": "155007e3c636605c77819512634c119aa18bd220fa16f7268ef733bb07ea42bf",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[39]",
+          "revision": "18ea0c61cbf13481a14e99dcf0cd7529095be5eb",
+          "run": "/Users/jku/git/wasm-posix-sqlite-acceptance/test-results/runs/sqlite3-CDSSwo",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "680db9b6c2a3d14049ff5042d34a262404b2c7c22e7f95f0f511a955618086e0",
+          "size": 2198016
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[39]",
+          "revision": "18ea0c61cbf13481a14e99dcf0cd7529095be5eb",
+          "run": "/Users/jku/git/wasm-posix-sqlite-acceptance/test-results/runs/sqlite3-CDSSwo",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "680db9b6c2a3d14049ff5042d34a262404b2c7c22e7f95f0f511a955618086e0",
+          "size": 2198016
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "tcl",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/tcl/wasm-package.json",
+      "historicalManifestSha256": "34d36da7822b6e7542aa93dff47e7234bda4559a5dc0168194acd61d14bb6338",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `tcl`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/tcl-7JHnyh; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/036-tcl; sha256: a3b94f40272a365ad5fb794d10ec131245dd0e996ad8b5e6bb3ce486f096764e"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "tinyxml2",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/tinyxml2/wasm-package.json",
+      "historicalManifestSha256": "1fe16cc73488e6707059036a538d7d751c467c186be4af5afb65e1e37144f2e9",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-04/tinyxml2-execution.md",
+          "sha256": "2eaed8a6ad426f2709ccece4347777febe17f960994524dc2eb4115eb42ef952",
+          "kind": "explicit historical execution journal",
+          "selector": "tinyxml2-nGVU0f; source/binary 517 checks and completed publication"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "tk",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/tk/wasm-package.json",
+      "historicalManifestSha256": "1f2c8cefc32d80b50de4e19ab3810625f23406cf25288114f8e715116038b3cb",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `tk`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/tk-6xLBNM; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/037-tk; sha256: 2ea58f068804c3029abf81f01a0d8911390165179be114216bd58eee9e50fa3a"
+        }
+      ],
+      "historicalDependencies": [
+        "tcl",
+        "x11-server"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "twm",
+      "kind": "historical-canonical-name",
+      "state": "existing-scope-audit",
+      "historicalManifest": "apps/twm/wasm-package.json",
+      "historicalManifestSha256": "0fae683916fb0296af0451e0922c2560e8958fe69c4d524e1ef943f221882ff8",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-01/twm.md",
+          "sha256": "ccc327933eea99d664b789290fdc046d789bc5d63a1a384d9209987400e8ce60",
+          "kind": "explicit historical execution journal",
+          "selector": "twm-uQgB50 passed both isolated source and binary acceptance"
+        }
+      ],
+      "historicalDependencies": [
+        "x11-apps"
+      ],
+      "mapping": "twm",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "vim",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "vendor/vim/wasm-package.json",
+      "historicalManifestSha256": "dfeb6d66ed497465f5afda976c41cd28b53c33581955afaabb600cc5b19d66e0",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[41]",
+          "revision": "f2203649f4830eb8aaa07f64588c133f4aee0475",
+          "run": "/Users/jku/git/wasm-posix-vim-acceptance/test-results/runs/vim-YOnNuR",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "37481bc41840828174c10ec65b36625b65f02d3a121978b3cd461da21ca55fd8",
+          "size": 48453632
+        },
+        {
+          "path": "docs/research/package-publication-20261004-wave9/release-set.json",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[41]",
+          "revision": "f2203649f4830eb8aaa07f64588c133f4aee0475",
+          "run": "/Users/jku/git/wasm-posix-vim-acceptance/test-results/runs/vim-YOnNuR",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "37481bc41840828174c10ec65b36625b65f02d3a121978b3cd461da21ca55fd8",
+          "size": 48453632
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "x11-apps",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/x11-apps/wasm-package.json",
+      "historicalManifestSha256": "63bfff5cbd9c4475429e5ecb9dd7590628ae93c249ae62310ff7fe58c9d023a7",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/desktop-ports-validation.json",
+          "sha256": "0f67f33b7261f337d10da923ce13c652bba437dfe872e559cd7c0e0c0420a9c6",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 1",
+          "run": "x11-apps-YGJ3NN",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "a70c35ac9b2418d155a34b2f037fb8cff7ee4ad27997712e3817f5a46a42ba53",
+            "size": 49082880,
+            "compatibilityKey": "f678c776169b40e47970d9c0c3a36c931519d173946b8e789dfa0b1654fd4a56"
+          }
+        },
+        {
+          "path": "docs/research/package-publication-20261004/release-set.json",
+          "sha256": "6db49620d9b5049b8e0ec32015ce5dfa9ccb7f6b1622f723c2bee9eaac9583d3",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[12]",
+          "revision": "6f6eca3388d53ff59de42be81273238af1105fe3",
+          "run": "test-results/runs/x11-apps-SoTEb2",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "463114c68c4956f75bb2e5b94c94ab1210bd475dc091e23a5af7d6515340eaeb",
+          "size": 48520704
+        }
+      ],
+      "historicalDependencies": [
+        "fontconfig",
+        "ncurses",
+        "x11-server"
+      ],
+      "mapping": "Split into x11-toolkit, x11-widgets, xterm, xev, xprop, xmessage. Missing libXft SDK and historical Xft/ncurses xterm profile.",
+      "acceptance": [],
+      "blockers": [],
+      "remainingScope": "Missing Xft, Source Code Pro and ncurses xterm profile"
+    },
+    {
+      "id": "x11-apps-more",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/x11-apps-more/wasm-package.json",
+      "historicalManifestSha256": "d78a8164bbcbd2f17e79637fea68a5c8de8139345c94d03c523baeafa512c450",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/x11-apps-more.md",
+          "sha256": "f45d7bf62e5fb8ed8616f08cf49df5ee9b41b7259b802107d61c3beae99c0c81",
+          "kind": "explicit historical execution journal",
+          "selector": "x11-apps-more-AU8pxm passed source and binary phases; artifact SHA-256 7439b50773470adedf8d001aec4cd4e7ee5354de125b0fc670b216c218a07234"
+        }
+      ],
+      "historicalDependencies": [
+        "make",
+        "pkgconf",
+        "x11-apps"
+      ],
+      "mapping": "Seven clients published separately; missing xedit, xfontsel, xclipboard, oclock, xcutsel.",
+      "acceptance": [],
+      "blockers": [],
+      "remainingScope": "Missing xedit, xfontsel, xclipboard, oclock, xcutsel",
+      "components": {
+        "xedit": {
+          "state": "queued",
+          "candidate": null,
+          "acceptance": []
+        },
+        "xfontsel": {
+          "state": "source-prepared",
+          "candidate": "apps/xfontsel",
+          "acceptance": []
+        },
+        "xclipboard": {
+          "state": "source-prepared",
+          "candidate": "apps/xclipboard",
+          "acceptance": []
+        },
+        "oclock": {
+          "state": "source-prepared",
+          "candidate": "apps/oclock",
+          "acceptance": []
+        },
+        "xcutsel": {
+          "state": "source-prepared",
+          "candidate": "apps/xcutsel",
+          "acceptance": []
+        }
+      }
+    },
+    {
+      "id": "x11-server",
+      "kind": "historical-canonical-name",
+      "state": "existing-scope-audit",
+      "historicalManifest": "apps/x11-server/wasm-package.json",
+      "historicalManifestSha256": "9765cf39b1484fda8c4ef491022b2fb490097dc0bc6360afaec4f4b661adfe8d",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "separate source and exact binary proofs",
+          "selector": "separateAcceptance[5]",
+          "sourceCandidate": "/Users/jku/git/wasm-posix/test-results/runs/x11-server-0j63eL"
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `x11-server`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/x11-server-H0DHwf; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/019-x11-server; sha256: 42ed363b663460732a5f07ccca0892615046fa92f8506e7d0dbfd9dcaf86e56c"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": "x11-server",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "x11-shared",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/x11-shared/wasm-package.json",
+      "historicalManifestSha256": "39a8f16c9c4b8e4bbbcaa481890fad2c8f73462dad49ce4bc5dba83c60c414ee",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-04/fltk-execution.md",
+          "sha256": "ad6af491cd0ff5649bf5a3b03af33492e079ae046cb9ded752da0cd4f01371c9",
+          "kind": "explicit historical execution journal",
+          "selector": "x11-shared-v6TPAf passed source and fresh binary acceptance"
+        }
+      ],
+      "historicalDependencies": [
+        "x11-server"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "xarchiver",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/xarchiver/wasm-package.json",
+      "historicalManifestSha256": "f33bab22d18ba4663d069c488e3803ee68de74ce6e141e7d71d116878232fce5",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/harfbuzz-gucman-integration/candidates/xarchiver.json",
+          "sha256": "de1496a37f7fb1e379ec5c1e236e5bce05bc578b9d17c9a2160f791b6dcc210e",
+          "kind": "recorded source and binary acceptance (historical mixed baseline)",
+          "selector": "root",
+          "revision": "868ede8d63c10270e3269be8832a6a26bdd47e3e",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "7d8718f2560634180f228d71c1728af89a68bf255e7b418c9b1c865e3326e748",
+            "size": 785408,
+            "compatibilityKey": "fbf3a69e2fd14d4df3a9949a38bb81ce5be5bffe5851ccbf70a1054bf4fdee04"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "gtk3",
+        "gtk3-schemas",
+        "pkgconf"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "xmag",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/xmag/wasm-package.json",
+      "historicalManifestSha256": "5680332fc9c480b73b677c4badbf8ca31841dea61cbe7c909806d515bc435a7a",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/more-desktop-apps-validation.json",
+          "sha256": "bead6bf25133adf43bfebb5c2d61a7f17797fe860210d0db36d2ed1df711f99b",
+          "kind": "recorded source and binary acceptance",
+          "selector": "package index 0",
+          "revision": "7479d67d34bedfa67f1681251d6a07adbaed8128",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "artifact": {
+            "sha256": "fd696be26d8f54ad472a003ae4454cc7a63290ed9bed351dec05d1c27893b1a1",
+            "size": 4393984,
+            "compatibilityKey": "6ebe65871378fddcdd7b94e42dd5691f0a29651ce308b0bdbcc7cf8e782b87ca"
+          }
+        }
+      ],
+      "historicalDependencies": [
+        "pkgconf",
+        "x11-apps"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "xmahjongg",
+      "kind": "historical-canonical-name",
+      "state": "queued",
+      "historicalManifest": "apps/xmahjongg/wasm-package.json",
+      "historicalManifestSha256": "7ae5f9d8fc5b40973c298b3564fd0777a9b2723445f5faa8eb78d80a8991ab23",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-04/cpp-project-sequence.md",
+          "sha256": "a36de31995c7a9aec9924f8ffa611fcd903b7157d07f617e2d4331b22497181e",
+          "kind": "explicit historical execution journal",
+          "selector": "XMahjongg and TinyXML2 are published; subsequent os2 completion recorded in coverage"
+        }
+      ],
+      "historicalDependencies": [
+        "x11-apps"
+      ],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "zlib",
+      "kind": "historical-canonical-name",
+      "state": "source-prepared",
+      "historicalManifest": "vendor/zlib/wasm-package.json",
+      "historicalManifestSha256": "c948b6642abbf109e38c57576ab0c499fcaf45f53d0675fad9f0f0108921e109",
+      "historicalEvidence": [
+        {
+          "path": "docs/research/package-publication-20261004-wave10/release-set.json",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
+          "kind": "recorded source and binary acceptance",
+          "selector": "reports[5]",
+          "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
+          "run": "/Users/jku/git/wasm-posix/test-results/runs/zlib-o6KMRq",
+          "sourcePassed": true,
+          "binaryPassed": true,
+          "recordedArtifactSha256": "f6e432f8ce6574dc917e1f1a4be4a210f261acd1ad7c75b15f75be76af34d4b3",
+          "size": 523776
+        },
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `zlib`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/zlib-souV9O; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/030-zlib; sha256: 37500bb1ba79671e3d2a69a172c50eb51d56c943d94c079734adfea94978cfcc"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": null,
+      "acceptance": [],
+      "blockers": [
+        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
+        "Independent review pending."
+      ],
+      "candidate": "apps/zlib"
+    },
+    {
+      "id": "zstd",
+      "kind": "historical-canonical-name",
+      "state": "existing-scope-audit",
+      "historicalManifest": "apps/zstd/wasm-package.json",
+      "historicalManifestSha256": "25be457de948d009c15894ea5c0c23a18e4d29cb72264f9a65351c794b63bd42",
+      "historicalEvidence": [
+        {
+          "path": "docs/logs/2026-10-03/libc-07305461-sweep.md",
+          "sha256": "505c6f8036e5f88d09f80027d575ed89b479289725f33f1cd9ebde6448c3eeea",
+          "kind": "journal records source and binary pass",
+          "selector": "- `zstd`: promoted. Source and binary passed. Run: /Users/jku/git/wasm-posix-sweep/test-results/runs/zstd-3XTyPZ; snapshot: /Users/jku/git/wasm-posix-sweep/test-results/libc-07305461-v1/103-zstd; sha256: 6904dce0e22135cc62ad9c42cf38dea38098dac19bb61c34dcdd8be16ace08f2"
+        }
+      ],
+      "historicalDependencies": [],
+      "mapping": "zstd",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "binutils",
+      "kind": "additional-workload",
+      "state": "queued",
+      "scope": "GNU binutils 2.44; excludes DejaGNU/documentation failures",
+      "historicalEvidenceDocument": "../historical-package-inventory/README.md",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "cjson",
+      "kind": "additional-workload",
+      "state": "source-prepared",
+      "scope": "cJSON 1.7.19 whole/archive consumers",
+      "historicalEvidenceDocument": "../historical-package-inventory/README.md",
+      "acceptance": [],
+      "blockers": [
+        "Guest build/install/run/relink/reload acceptance awaits browser-hold release.",
+        "Independent review pending."
+      ],
+      "candidate": "apps/cjson"
+    },
+    {
+      "id": "lpeg",
+      "kind": "additional-workload",
+      "state": "queued",
+      "scope": "LPeg 1.1.0; requires Lua dynamic-module profile",
+      "historicalEvidenceDocument": "../historical-package-inventory/README.md",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "sqlite-series",
+      "kind": "additional-workload",
+      "state": "queued",
+      "scope": "SQLite generate_series loadable extension",
+      "historicalEvidenceDocument": "../historical-package-inventory/README.md",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "pcg32",
+      "kind": "additional-workload",
+      "state": "queued",
+      "scope": "Host C++ preparation, whole/object/archive differential execution",
+      "historicalEvidenceDocument": "../historical-package-inventory/README.md",
+      "acceptance": [],
+      "blockers": []
+    },
+    {
+      "id": "libcxx-support",
+      "kind": "additional-workload",
+      "state": "queued",
+      "scope": "Pinned translated libc++/libc++abi support, not general native guest C++",
+      "historicalEvidenceDocument": "../historical-package-inventory/README.md",
+      "acceptance": [],
+      "blockers": []
+    }
+  ]
+}

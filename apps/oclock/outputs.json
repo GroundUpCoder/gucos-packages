@@ -1,0 +1,14 @@
+[
+  {
+    "path": "bin/oclock",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/oclock/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/Clock-color",
+    "mode": 420
+  }
+]

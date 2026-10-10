@@ -1,0 +1,18 @@
+[
+  {
+    "path": "lib/libcjson.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libcjson.so",
+    "mode": 420
+  },
+  {
+    "path": "include/cjson/cJSON.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/cjson/LICENSE",
+    "mode": 420
+  }
+]
