@@ -9,7 +9,7 @@
     {
       "id": "2048",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-review-pending",
       "historicalManifest": "vendor/2048/wasm-package.json",
       "historicalManifestSha256": "ef89b37a38270f6b77906f9448c4e29faa1154a11d0b28f82f1a20c657af5c68",
       "historicalEvidence": [
@@ -40,7 +40,11 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and all guest/binary/public gates pending.",
+        "Interactive move/restart/quit and cursor restoration acceptance pending."
+      ],
+      "candidate": "apps/2048"
     },
     {
       "id": "ar",
@@ -4548,11 +4552,14 @@
     {
       "id": "lpeg",
       "kind": "additional-workload",
-      "state": "queued",
+      "state": "source-prepared-review-pending",
       "scope": "LPeg 1.1.0; requires Lua dynamic-module profile",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and all guest/binary/public gates pending."
+      ],
+      "candidate": "apps/lpeg"
     },
     {
       "id": "sqlite-series",

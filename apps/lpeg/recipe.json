@@ -1,0 +1,25 @@
+{
+  "name": "lpeg",
+  "version": "1.1.0-1",
+  "dependencies": [
+    "lua"
+  ],
+  "dependencyRequirements": {
+    "lua": {
+      "version": "5.4.9-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh"
+  ]
+}
