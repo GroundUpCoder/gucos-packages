@@ -2574,7 +2574,7 @@
     {
       "id": "m4",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "vendor/m4/wasm-package.json",
       "historicalManifestSha256": "6810bb323a927dec92e4bf07437f32e697fcd864aefdd5607811ec6e97694ecf",
       "historicalEvidence": [
@@ -2610,7 +2610,8 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/m4"
     },
     {
       "id": "make",

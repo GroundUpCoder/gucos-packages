@@ -1,0 +1,25 @@
+{
+  "name": "m4",
+  "version": "1.4.19-1",
+  "dependencies": [
+    "libiconv"
+  ],
+  "dependencyRequirements": {
+    "libiconv": {
+      "version": "1.18-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh"
+  ]
+}
