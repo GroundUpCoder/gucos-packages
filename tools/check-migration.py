@@ -102,6 +102,26 @@ for name in names:
         data = (directory / overlay['file']).read_bytes()
         assert data == git('show', revision + ':' + overlay['historicalPath'], cwd=OLD)
         assert hashlib.sha256(data).hexdigest() == overlay['sha256']
+    if 'preparedArchive' in provenance:
+        prepared = provenance['preparedArchive']
+        archive_path = directory / prepared['file']
+        assert prepared['file'] in recipe['inputs']
+        assert hashlib.sha256(archive_path.read_bytes()).hexdigest() == prepared['sha256']
+        with tarfile.open(archive_path) as archive:
+            members = archive.getmembers()
+            assert len(members) == prepared['fileCount']
+            assert all(m.isfile() and m.name.startswith('generated/') and '..' not in Path(m.name).parts for m in members)
+            original_bytes = archive.extractfile('generated/provenance.json').read()
+            assert hashlib.sha256(original_bytes).hexdigest() == prepared['provenanceSha256']
+            original = json.loads(original_bytes)
+            hashes = dict(original['files'])
+            hashes['provenance.json'] = prepared['provenanceSha256']
+            hashes['manifest.json'] = prepared['manifestSha256']
+            assert original['translationManifestSha256'] == prepared['manifestSha256']
+            assert len(members) == len(hashes)
+            assert {m.name.removeprefix('generated/') for m in members} == set(hashes)
+            for member in members:
+                assert hashlib.sha256(archive.extractfile(member).read()).hexdigest() == hashes[member.name.removeprefix('generated/')]
     print(name, len(seen), 'historical blobs; platform/dependencies/outputs/shell syntax PASS')
 for path in owned:
     for ancestor in Path(path).parents:

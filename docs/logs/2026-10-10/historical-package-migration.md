@@ -231,3 +231,19 @@ layout defect, not evidence of a core runtime defect.
 Prepared IJG JPEG9f, libjpeg-turbo3.1.4.1 and GdkPixbuf source adapters. Turbo's
 historical separate library/header names avoid replacing IJG files; SIMD remains
 disabled. Static/shared retained codec consumers prepared, no guest execution.
+
+## Retained HarfBuzz host preparation
+
+Prepared an unpublished HarfBuzz14.5.0 candidate from pinned tracked sources and
+retained original host-generated C. All40940 provenance-indexed generated files
+and the original translation manifest matched their recorded hashes before
+archiving. The40,942-file prepared archive also includes original provenance and
+manifest, unchanged. No host translation rerun, guest C++ compiler or full
+historical upstream-suite rerun is claimed. Fresh guest compilation of generated
+C, retained shaping/subsetting/FreeType consumers and binary acceptance pending.
+
+Corrected the first graphics ledger wording: the aborted first stage installed
+Pixman/libpng/FreeType but did not export them. The resumed corrected profile
+subsequently exported those same-input installed builds. Source logs and failures
+are retained under batch-04. Graphics fresh binary installation has now passed;
+installed consumers, functional rendering and reload remain pending.

@@ -1,0 +1,184 @@
+[machine-job] queued: node tests/migration/stage.mjs build pixman libpng freetype fontconfig x11-shared cairo
+[machine-job] running: b26c9991-8226-4fb9-a003-4ef20e8eda45
+gucman: unknown source
+
+gucman: build migration:pixman: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:pixman
+gucman: Downloading manifest for migration:pixman (1505 bytes)
+  Connecting; waiting for response…
+  Downloaded 1505 / 1505 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: pixman (0 remaining after this)
+gucman: Downloading pixman source: source.tar (3307520 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.15 / 3.15 MiB (100%); transfer finished
+gucman: Verifying download: pixman source: source.tar
+gucman: Checking cached object: pixman source: source.tar
+gucman: Downloading pixman source: build.sh (1376 bytes)
+  Connecting; waiting for response…
+  Downloaded 1376 / 1376 bytes (100%); transfer finished
+gucman: Verifying download: pixman source: build.sh
+gucman: Checking cached object: pixman source: build.sh
+gucman: Downloading pixman source: test.sh (322 bytes)
+  Connecting; waiting for response…
+  Downloaded 322 / 322 bytes (100%); transfer finished
+gucman: Verifying download: pixman source: test.sh
+gucman: Checking cached object: pixman source: test.sh
+Building migration:pixman; running trusted recipe with access to your guest files
+1175 functions, 874883 bytes
+1110 functions, 794660 bytes
+2 functions, 8111 bytes
+gucman: Installing pixman: 0/6 files
+gucman: Installing pixman: 6/6 files
+gucman: Preparing checksums: pixman
+gucman: Checksummed pixman: 6/6 files
+gucman: Saving transaction: pixman
+gucman: Verifying staged files: pixman
+gucman: Activating: pixman
+Installed migration:pixman 0.46.4-1
+
+gucman: build migration:libpng: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:libpng
+gucman: Downloading manifest for migration:libpng (1584 bytes)
+  Connecting; waiting for response…
+  Downloaded 1584 / 1584 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: zlib (1 remaining after this)
+Already installed: zlib
+gucman: Package 2/2: libpng (0 remaining after this)
+gucman: Downloading libpng source: source.tar (1495040 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.43 / 1.43 MiB (100%); transfer finished
+gucman: Verifying download: libpng source: source.tar
+gucman: Checking cached object: libpng source: source.tar
+gucman: Downloading libpng source: build.sh (3086 bytes)
+  Connecting; waiting for response…
+  Downloaded 3086 / 3086 bytes (100%); transfer finished
+gucman: Verifying download: libpng source: build.sh
+gucman: Checking cached object: libpng source: build.sh
+gucman: Downloading libpng source: test.sh (968 bytes)
+  Connecting; waiting for response…
+  Downloaded 968 / 968 bytes (100%); transfer finished
+gucman: Verifying download: libpng source: test.sh
+gucman: Checking cached object: libpng source: test.sh
+Building migration:libpng; running trusted recipe with access to your guest files
+527 functions, 472215 bytes
+510 functions, 443807 bytes
+2 functions, 6860 bytes
+gucman: Installing libpng: 0/7 files
+gucman: Installing libpng: 7/7 files
+gucman: Preparing checksums: libpng
+gucman: Checksummed libpng: 7/7 files
+gucman: Saving transaction: libpng
+gucman: Verifying staged files: libpng
+gucman: Activating: libpng
+Installed migration:libpng 1.6.58-1
+
+{
+  tail: '\n' +
+    '  Downloaded 747 / 747 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: freetype source: test.sh\n' +
+    'gucman: Checking cached object: freetype source: test.sh\n' +
+    'Building migration:freetype; running trusted recipe with access to your guest files\n'
+}
+gucman: build migration:freetype: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:freetype
+gucman: Downloading manifest for migration:freetype (6222 bytes)
+  Connecting; waiting for response…
+  Downloaded 6222 / 6222 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: freetype (0 remaining after this)
+gucman: Downloading freetype source: source.tar (10762240 bytes)
+  Connecting; waiting for response…
+  Downloaded 10.26 / 10.26 MiB (100%); transfer finished
+gucman: Verifying download: freetype source: source.tar
+gucman: Checking cached object: freetype source: source.tar
+gucman: Downloading freetype source: build.sh (5864 bytes)
+  Connecting; waiting for response…
+  Downloaded 5864 / 5864 bytes (100%); transfer finished
+gucman: Verifying download: freetype source: build.sh
+gucman: Checking cached object: freetype source: build.sh
+gucman: Downloading freetype source: test.sh (747 bytes)
+  Connecting; waiting for response…
+  Downloaded 747 / 747 bytes (100%); transfer finished
+gucman: Verifying download: freetype source: test.sh
+gucman: Checking cached object: freetype source: test.sh
+Building migration:freetype; running trusted recipe with access to your guest files
+1898 functions, 1588790 bytes
+1715 functions, 1427078 bytes
+2 functions, 6508 bytes
+gucman: Installing freetype: 0/60 files
+gucman: Installing freetype: 25/60 files
+gucman: Installing freetype: 50/60 files
+gucman: Installing freetype: 60/60 files
+gucman: Preparing checksums: freetype
+gucman: Checksummed freetype: 25/60 files
+gucman: Checksummed freetype: 50/60 files
+gucman: Checksummed freetype: 60/60 files
+gucman: Saving transaction: freetype
+gucman: Verifying staged files: freetype
+gucman: Activating: freetype
+Installed migration:freetype 2.14.1-1
+
+gucman: build migration:fontconfig: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:fontconfig
+gucman: Downloading manifest for migration:fontconfig (2708 bytes)
+  Connecting; waiting for response…
+  Downloaded 2708 / 2708 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: output outside allowed prefix
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: build migration:fontconfig: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:fontconfig
+gucman: Downloading manifest for migration:fontconfig (2708 bytes)
+  Connecting; waiting for response…
+  Downloaded 2708 / 2708 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: output outside allowed prefix
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:48:96)
+    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:49:27 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

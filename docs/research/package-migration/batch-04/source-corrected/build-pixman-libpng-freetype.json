@@ -1,0 +1,13 @@
+{
+  "action": "build",
+  "names": [
+    "pixman",
+    "libpng",
+    "freetype"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "d85ee1daa4dc100669fcfe4a6b4d11a1ef1181c0",
+  "startedAt": "2026-10-10T09:50:35.752Z",
+  "status": "passed",
+  "finishedAt": "2026-10-10T09:50:46.295Z"
+}

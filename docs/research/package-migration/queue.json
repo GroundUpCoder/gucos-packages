@@ -950,7 +950,7 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build and static/shared port consumers/install/export before Fontconfig manifest rejection",
+          "scope": "guest source build and static/shared port consumers/install before Fontconfig manifest rejection",
           "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-graphics.log"
         }
       ],
@@ -1583,7 +1583,7 @@
     {
       "id": "harfbuzz",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "apps/harfbuzz/wasm-package.json",
       "historicalManifestSha256": "867537107b51bcb6295a5d9c69a7e57d33cbc7dd67c5c3e84aaea158d8ea8412",
       "historicalEvidence": [
@@ -1620,7 +1620,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Host-prepared C++ translation bytes verified against original provenance; independent source review and current guest execution pending."
+      ],
+      "candidate": "apps/harfbuzz"
     },
     {
       "id": "hush",
@@ -2186,7 +2189,7 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build and static/shared port consumers/install/export before Fontconfig manifest rejection",
+          "scope": "guest source build and static/shared port consumers/install before Fontconfig manifest rejection",
           "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-graphics.log"
         }
       ],
@@ -2870,7 +2873,7 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build and static/shared port consumers/install/export before Fontconfig manifest rejection",
+          "scope": "guest source build and static/shared port consumers/install before Fontconfig manifest rejection",
           "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-graphics.log"
         }
       ],
