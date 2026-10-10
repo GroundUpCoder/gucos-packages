@@ -12,3 +12,6 @@ cp source/licenses/JWM "$DESTDIR/share/licenses/jwm/LICENSE"
 cp app-menu.sh "$DESTDIR/share/jwm/app-menu.sh"
 cp start-jwm "$DESTDIR/bin/start-jwm"
 chmod +x "$DESTDIR/bin/start-jwm"
+
+mkdir -p "$DESTDIR/libexec/jwm"
+cc -O2 wait-display.c -I/usr/local/include -L/usr/local/lib -lX11 -lxcb -lXau -o "$DESTDIR/libexec/jwm/wait-display"

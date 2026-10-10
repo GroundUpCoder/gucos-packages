@@ -24,7 +24,7 @@ trap 'exit 130' INT
 trap 'exit 143' TERM
 Xvfb "$DISPLAY" -screen 0 1100x800x24 -fp built-ins -noreset -ac &
 server=$!
-sleep 2
+/usr/local/libexec/jwm/wait-display
 kill -0 "$server"
 jwm -f /usr/local/share/jwm/wasm.jwmrc &
 wm=$!

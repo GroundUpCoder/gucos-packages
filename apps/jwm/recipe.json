@@ -9,6 +9,7 @@
     "build.sh",
     "test.sh",
     "app-menu.sh",
-    "start-jwm"
+    "start-jwm",
+    "wait-display.c"
   ]
 }

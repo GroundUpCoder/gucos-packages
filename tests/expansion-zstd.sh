@@ -13,3 +13,10 @@ C
 cc /tmp/zstd-test.c -I/usr/local/include -L/usr/local/lib -lzstd -o /tmp/zstd-test
 /tmp/zstd-test
 echo ZSTD-CLI-LIBRARY-PASS
+dd if=/dev/zero of=/tmp/zeros bs=1024 count=1024
+zstd -q -T2 -f /tmp/zeros -o /tmp/zeros.zst
+zstd -q -d -f /tmp/zeros.zst -o /tmp/zeros.restored
+cmp /tmp/zeros /tmp/zeros.restored
+printf invalid > /tmp/invalid.zst
+if zstd -q -d -f /tmp/invalid.zst -o /tmp/invalid.out; then exit 1; fi
+echo ZSTD-THREADS-ERROR-PASS

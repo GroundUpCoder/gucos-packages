@@ -5,7 +5,7 @@ const s=await session();
 try{
  for(const name of process.argv.slice(2)){
   if(!/^[a-z0-9-]+$/.test(name))throw Error('unsafe name');
-  await s.command(`gucman pack ${name} /home/user/export.tar`);
+  await s.command(`rm -f /home/user/export.tar\ngucman pack ${name} /home/user/export.tar`);
   const encoded=await s.page.evaluate(async()=>{const bytes=await shell.busybox.read('/home/user/export.tar');const chunks=[];for(let i=0;i<bytes.length;i+=16383)chunks.push(btoa(String.fromCharCode(...bytes.subarray(i,i+16383))));return chunks.join('');});
   const bytes=Buffer.from(encoded,'base64'),hash=createHash('sha256').update(bytes).digest('hex');
   const dir=s.root+'apps/'+name+'/binaries';await mkdir(dir,{recursive:true});await writeFile(dir+'/'+hash+'.tar',bytes);
