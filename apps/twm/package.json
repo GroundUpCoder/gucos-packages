@@ -14,9 +14,9 @@
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/twm/build.sh",
-      "sha256": "187f74ce90377b8aad64e952587b52632f8d3cd3151c4fe805558b788e81448b",
-      "size": 254
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ca9a99c5e06bd645f6f4d7e200606c69aa71b56f/apps/twm/build.sh",
+      "sha256": "56ea37d4a37813a07ac9d16be407931d07034aaee81af113f688f15ff8e0111e",
+      "size": 291
     },
     {
       "path": "test.sh",
