@@ -965,21 +965,23 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "cf6360ae8700fc5fb3647d7de7fef9441ce078eceb6ecb869b22f410372a6110",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[42]",
           "revision": "70b5acdc13bc79d9912f871aeb35ed010d16ac57",
           "run": "/Users/jku/git/wasm-posix-2048-acceptance/test-results/runs/2048-agmxwS",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "cf6360ae8700fc5fb3647d7de7fef9441ce078eceb6ecb869b22f410372a6110",
           "size": 49152
         },
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "c426b77e43190611c4d8c2a7cd883e5b3deaafd74157d6ea1af95b5fecd6e21d",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[0]",
           "revision": "26c7631e7c3f8cad27b37783ea545d456d1c8941",
+          "recordedArtifactSha256": "c426b77e43190611c4d8c2a7cd883e5b3deaafd74157d6ea1af95b5fecd6e21d",
           "size": 49152,
           "resultSha256": "a650f89be19ae3c9e43ba63afed05768462000a127c7e205cfc2c8e5919d8c58",
           "lockSha256": "2724b4b5673293c175a26d6cf41a6ec1442c6a219a291d6f6e55fbc52d7e3cf0"
@@ -1011,10 +1013,11 @@
         },
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "e9e52140052a4a23eb897fbc82a3045a9f619e353c9d171b93d12ba740386d27",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[1]",
           "revision": "26c7631e7c3f8cad27b37783ea545d456d1c8941",
+          "recordedArtifactSha256": "e9e52140052a4a23eb897fbc82a3045a9f619e353c9d171b93d12ba740386d27",
           "size": 41984,
           "resultSha256": "acfc71142a8e22c08897b3e9a51c8e9a232c45cb00ba4857c62e11e19933c866",
           "lockSha256": "806d3d44d331571fcdee0b7196aab1589886be5eb3e2fec74a676bcb41bd5c24"
@@ -1034,21 +1037,23 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "355fdb1d6022a497a3c984e7077b07a1c9ae3915dc7a9d62079595768e46d3b6",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[22]",
           "revision": "60b49e605da3a1e9bfd1e89b4faab87dceff60c3",
           "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/ash-06T0nW",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "355fdb1d6022a497a3c984e7077b07a1c9ae3915dc7a9d62079595768e46d3b6",
           "size": 1413120
         },
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "c75221a08a4e383ee0d7cdfd85b2b4db2be88c6f0eb2646d2e215d1aded0b750",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[2]",
           "revision": "26c7631e7c3f8cad27b37783ea545d456d1c8941",
+          "recordedArtifactSha256": "c75221a08a4e383ee0d7cdfd85b2b4db2be88c6f0eb2646d2e215d1aded0b750",
           "size": 1413120,
           "resultSha256": "3d2e8210f068141c6493019cf41a66e3fa1c4a72b1acd581662771393572f6d3",
           "lockSha256": "7a231265a01065341f4436b558c7187bd9f144b90fb33d1688fb0b9ba0d4a1da"
@@ -1070,10 +1075,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "60d1e8e13eef0b64ea67f3a9c0001b8ee028e99993757be59d0f8644e51dc4a1",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[3]",
           "revision": "b64ba2d7da6e92d162b86c5380ab4b1341e1e442",
+          "recordedArtifactSha256": "60d1e8e13eef0b64ea67f3a9c0001b8ee028e99993757be59d0f8644e51dc4a1",
           "size": 1050624,
           "resultSha256": "f6a36a89125d4b738b350fa22fa551d0e4845e08db5385e7511d353c7fa8bc9c",
           "lockSha256": "08adfb1ee1b05069155c17ce2266cb3c7326df6ac11972dfc18e5382cddf6e11"
@@ -1104,21 +1110,23 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "ca663b079f1b846f59527e017620fe308ab8ea2ab0165220a214c9c0dece330a",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[24]",
           "revision": "91f49e00dd5a2254ce8f57f0cb8a4c5eec1edaab",
           "run": "/Users/jku/git/wasm-posix-autoconf-acceptance/test-results/runs/autoconf-0zkx9g",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "ca663b079f1b846f59527e017620fe308ab8ea2ab0165220a214c9c0dece330a",
           "size": 3643904
         },
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "790acff696588b115ccf2a557e3691a19ca21b87d07ca9bbfe3101572dc6ff80",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[4]",
           "revision": "eefb2b516203967a2278abf13f08e7054781b6e6",
+          "recordedArtifactSha256": "790acff696588b115ccf2a557e3691a19ca21b87d07ca9bbfe3101572dc6ff80",
           "size": 3643904,
           "resultSha256": "f20347a66069fd350d307fe69a99a09a44515a18107c3fdec04412ca6d71a54b",
           "lockSha256": "bc647e22bf4909f4058771f6f6bc146bda7fab1dd185bb9207c36df571cec008"
@@ -1143,24 +1151,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "98f28f1362d1803efb53a2f577aaf04643681c973764e418c64c65e555d52711",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[28]",
           "revision": "fd7614295fc94337fdefc3ec726e5bb90d0f82ca",
           "run": "/Users/jku/git/wasm-posix-automake-acceptance/test-results/runs/automake-ER5k30",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "98f28f1362d1803efb53a2f577aaf04643681c973764e418c64c65e555d52711",
           "size": 2413568
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "98f28f1362d1803efb53a2f577aaf04643681c973764e418c64c65e555d52711",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[28]",
           "revision": "fd7614295fc94337fdefc3ec726e5bb90d0f82ca",
           "run": "/Users/jku/git/wasm-posix-automake-acceptance/test-results/runs/automake-ER5k30",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "98f28f1362d1803efb53a2f577aaf04643681c973764e418c64c65e555d52711",
           "size": 2413568
         }
       ],
@@ -1180,24 +1190,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "9a892ebec800d1f318576feb61335350b6c1d64237a49a95184c772f4c22ce39",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[34]",
           "revision": "e3534564f2145ac0ef4ac0fb326fc3d83c1b5a0d",
           "run": "/Users/jku/git/wasm-posix-awk-acceptance/test-results/runs/awk-PpuOyu",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "9a892ebec800d1f318576feb61335350b6c1d64237a49a95184c772f4c22ce39",
           "size": 13551104
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "9a892ebec800d1f318576feb61335350b6c1d64237a49a95184c772f4c22ce39",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[34]",
           "revision": "e3534564f2145ac0ef4ac0fb326fc3d83c1b5a0d",
           "run": "/Users/jku/git/wasm-posix-awk-acceptance/test-results/runs/awk-PpuOyu",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "9a892ebec800d1f318576feb61335350b6c1d64237a49a95184c772f4c22ce39",
           "size": 13551104
         }
       ],
@@ -1220,24 +1232,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "f5fd702ad23e60a1e48034583f1d6bd75e21b792f45b8b43ee1b882baea534f7",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[25]",
           "revision": "d910f650e3ee7fdc62d2921c01dd78a7708a68f8",
           "run": "/Users/jku/git/wasm-posix-bison-acceptance/test-results/runs/bison-erFNZz",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "f5fd702ad23e60a1e48034583f1d6bd75e21b792f45b8b43ee1b882baea534f7",
           "size": 3437056
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "f5fd702ad23e60a1e48034583f1d6bd75e21b792f45b8b43ee1b882baea534f7",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[25]",
           "revision": "d910f650e3ee7fdc62d2921c01dd78a7708a68f8",
           "run": "/Users/jku/git/wasm-posix-bison-acceptance/test-results/runs/bison-erFNZz",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "f5fd702ad23e60a1e48034583f1d6bd75e21b792f45b8b43ee1b882baea534f7",
           "size": 3437056
         }
       ],
@@ -1287,24 +1301,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "e9c4b57a2fe9f34bfc4bd83a7d0cec616571549d58d1c284722494e455323540",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[23]",
           "revision": "7a5eb3a00cc7b396469f30275f58440eebb9c429",
           "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/busybox-ukhVky",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "e9c4b57a2fe9f34bfc4bd83a7d0cec616571549d58d1c284722494e455323540",
           "size": 2699264
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "e9c4b57a2fe9f34bfc4bd83a7d0cec616571549d58d1c284722494e455323540",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[23]",
           "revision": "7a5eb3a00cc7b396469f30275f58440eebb9c429",
           "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/busybox-ukhVky",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "e9c4b57a2fe9f34bfc4bd83a7d0cec616571549d58d1c284722494e455323540",
           "size": 2699264
         }
       ],
@@ -1322,24 +1338,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "19a9e8e715fe078c37a15028507789739099974922fa1ac137cfe2883f7524ad",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[30]",
           "revision": "f8a2b6d69beee42135707d138ea833649a4dfc34",
           "run": "/Users/jku/git/wasm-posix-bzip2-acceptance/test-results/runs/bzip2-0YnLmO",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "19a9e8e715fe078c37a15028507789739099974922fa1ac137cfe2883f7524ad",
           "size": 175104
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "19a9e8e715fe078c37a15028507789739099974922fa1ac137cfe2883f7524ad",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[30]",
           "revision": "f8a2b6d69beee42135707d138ea833649a4dfc34",
           "run": "/Users/jku/git/wasm-posix-bzip2-acceptance/test-results/runs/bzip2-0YnLmO",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "19a9e8e715fe078c37a15028507789739099974922fa1ac137cfe2883f7524ad",
           "size": 175104
         }
       ],
@@ -1357,24 +1375,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "7d780b0b9466e06500736f6d2ce76d5f38e481ec819dcfa2ea2b2d8f8dcce7d8",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[31]",
           "revision": "f8a2b6d69beee42135707d138ea833649a4dfc34",
           "run": "/Users/jku/git/wasm-posix-bzip2-acceptance/test-results/runs/bzip2recover-mRjRhE",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "7d780b0b9466e06500736f6d2ce76d5f38e481ec819dcfa2ea2b2d8f8dcce7d8",
           "size": 25088
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "7d780b0b9466e06500736f6d2ce76d5f38e481ec819dcfa2ea2b2d8f8dcce7d8",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[31]",
           "revision": "f8a2b6d69beee42135707d138ea833649a4dfc34",
           "run": "/Users/jku/git/wasm-posix-bzip2-acceptance/test-results/runs/bzip2recover-mRjRhE",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "7d780b0b9466e06500736f6d2ce76d5f38e481ec819dcfa2ea2b2d8f8dcce7d8",
           "size": 25088
         }
       ],
@@ -1397,10 +1417,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "6a271d43c534cbdd7c92bec805b30d0f8139a55d5ca0def458d134021807c1f1",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[5]",
           "revision": "065b4e0f7f8eb02d3e50d7a31c287b255ce2d382",
+          "recordedArtifactSha256": "6a271d43c534cbdd7c92bec805b30d0f8139a55d5ca0def458d134021807c1f1",
           "size": 4713984,
           "resultSha256": "c5a02f8316f0f7cb024dacb09c84624fb8bc09c2a671794fbf39ffcb401e9803",
           "lockSha256": "3479a24546cd42d318e73b7770fc31fd189a1fa854d28e6cfc182aa277c2e9d2"
@@ -1429,10 +1450,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "a2592e113b218d0443d4d1aab7ac6f31883c955995b88c464b0bc6b8014cf00b",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[6]",
           "revision": "b64ba2d7da6e92d162b86c5380ab4b1341e1e442",
+          "recordedArtifactSha256": "a2592e113b218d0443d4d1aab7ac6f31883c955995b88c464b0bc6b8014cf00b",
           "size": 156672,
           "resultSha256": "a44402421eead6b88076c3edbef719dfa7c8a2e9d9302d8464ba373e97b4f485",
           "lockSha256": "240d7c68dccf363fe0eca6562fd3983e71bdfcb526be9a0d66fe41e07b2b9d41"
@@ -1499,13 +1521,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "b837e0589837d4b9c13b66f9c7982fd0a3e97a867e52d0745c62d7fdb4ab9591",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[14]",
           "revision": "898d0b7c5eb5e498967c19f127bab6ef216a55ca",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/cpython-4A8Myt",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "b837e0589837d4b9c13b66f9c7982fd0a3e97a867e52d0745c62d7fdb4ab9591",
           "size": 30803456
         },
         {
@@ -1572,24 +1595,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "e3b3455fe00e8e632ce7fe8adff6ea8fafbf548442f10097b73f1d97c9130c76",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[44]",
           "revision": "06c0a80ee6cbc5e270da3977ce5c59cbce505e39",
           "run": "/Users/jku/git/wasm-posix-doom-acceptance/test-results/runs/doom-89IBmv",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "e3b3455fe00e8e632ce7fe8adff6ea8fafbf548442f10097b73f1d97c9130c76",
           "size": 1629184
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "e3b3455fe00e8e632ce7fe8adff6ea8fafbf548442f10097b73f1d97c9130c76",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[44]",
           "revision": "06c0a80ee6cbc5e270da3977ce5c59cbce505e39",
           "run": "/Users/jku/git/wasm-posix-doom-acceptance/test-results/runs/doom-89IBmv",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "e3b3455fe00e8e632ce7fe8adff6ea8fafbf548442f10097b73f1d97c9130c76",
           "size": 1629184
         }
       ],
@@ -1607,24 +1632,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "661563de60f7a817f1c9177440cd4c375b843bb115a94325f5e63a31bb58bec0",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[33]",
           "revision": "1806716e2a36d0df901540675475139e0365bad8",
           "run": "/Users/jku/git/wasm-posix-ed-acceptance/test-results/runs/ed-584zyv",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "661563de60f7a817f1c9177440cd4c375b843bb115a94325f5e63a31bb58bec0",
           "size": 142336
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "661563de60f7a817f1c9177440cd4c375b843bb115a94325f5e63a31bb58bec0",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[33]",
           "revision": "1806716e2a36d0df901540675475139e0365bad8",
           "run": "/Users/jku/git/wasm-posix-ed-acceptance/test-results/runs/ed-584zyv",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "661563de60f7a817f1c9177440cd4c375b843bb115a94325f5e63a31bb58bec0",
           "size": 142336
         }
       ],
@@ -1791,13 +1818,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "df1075351397adbf4bb8157f0b9a97a4603ba5f1eb34278f5df739ba2a9c8d44",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[6]",
           "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/freetype-MnAhWk",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "df1075351397adbf4bb8157f0b9a97a4603ba5f1eb34278f5df739ba2a9c8d44",
           "size": 4615680
         },
         {
@@ -1821,10 +1849,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "b3c5a7875087856f476c0b18eecf9d556bb408f539a5a6a3213e9c4e8e28eb78",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[10]",
           "revision": "38dd4dbfb0608e553a328d65591ea68ab5f5b50e",
+          "recordedArtifactSha256": "b3c5a7875087856f476c0b18eecf9d556bb408f539a5a6a3213e9c4e8e28eb78",
           "size": 433152,
           "resultSha256": "64a50e4de80713e965a1d3f026aa116b258ea6b906b3c84f5e31586058a5db9f",
           "lockSha256": "bbd03f1ca1cf1ecc168fb0a1745536c0d80fb1e3ab3a24aff4a7cc1890be1c01"
@@ -1882,24 +1911,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "3f2a8c00a91c58860d1f257649ce83390f8184e543679645006cdc027c3d49d5",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[45]",
           "revision": "3dc675c27a5a9a1ac4090b7c30ed56e4b10190d2",
           "run": "/Users/jku/git/wasm-posix-gameboy-acceptance/test-results/runs/gameboy-VcL9It",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "3f2a8c00a91c58860d1f257649ce83390f8184e543679645006cdc027c3d49d5",
           "size": 692736
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "3f2a8c00a91c58860d1f257649ce83390f8184e543679645006cdc027c3d49d5",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[45]",
           "revision": "3dc675c27a5a9a1ac4090b7c30ed56e4b10190d2",
           "run": "/Users/jku/git/wasm-posix-gameboy-acceptance/test-results/runs/gameboy-VcL9It",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "3f2a8c00a91c58860d1f257649ce83390f8184e543679645006cdc027c3d49d5",
           "size": 692736
         }
       ],
@@ -1921,10 +1952,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "e27f70b57fccb44fe999b37254877b5c9426e8883d83e37c35d63143a3a02bc3",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[11]",
           "revision": "92b174341d6d70654c58b290cab05546a85fd9b5",
+          "recordedArtifactSha256": "e27f70b57fccb44fe999b37254877b5c9426e8883d83e37c35d63143a3a02bc3",
           "size": 1016320,
           "resultSha256": "6af6d29bf623a6fe9be38058ad62836412f501ba51c413fc379146bd7dccba5c",
           "lockSha256": "530dbfb943fb9155f3c0f95b16c238726f35d7b7fdc5f72ba4a0279b33212812"
@@ -1988,24 +2020,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "f93f9b929fa9a91dfd41a53bb8600b6cff59da43860af3495065dbf778bb3b7c",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[37]",
           "revision": "f34ca765d87e37a1ff5d0e041b401564f45006f3",
           "run": "/Users/jku/git/wasm-posix-gettext-acceptance/test-results/runs/gettext-7JnBnp",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "f93f9b929fa9a91dfd41a53bb8600b6cff59da43860af3495065dbf778bb3b7c",
           "size": 39936000
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "f93f9b929fa9a91dfd41a53bb8600b6cff59da43860af3495065dbf778bb3b7c",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[37]",
           "revision": "f34ca765d87e37a1ff5d0e041b401564f45006f3",
           "run": "/Users/jku/git/wasm-posix-gettext-acceptance/test-results/runs/gettext-7JnBnp",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "f93f9b929fa9a91dfd41a53bb8600b6cff59da43860af3495065dbf778bb3b7c",
           "size": 39936000
         }
       ],
@@ -2026,10 +2060,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "57bff50e7d9f1db9027c8209e538de04f2efcf6b860a468065d23f7d1eb59710",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[12]",
           "revision": "d44852fc025be2d391019f7cc32a98717a8b3c4a",
+          "recordedArtifactSha256": "57bff50e7d9f1db9027c8209e538de04f2efcf6b860a468065d23f7d1eb59710",
           "size": 12576768,
           "resultSha256": "6337946abd22f3e845341e28bf9f5306f642b66fcdc0f40e1a7cba42125288cc",
           "lockSha256": "39ebd33fecf9f51c84c4dff9f188a8e4539bf216a43687e0efb6c639aa42c011"
@@ -2057,10 +2092,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "8afaaf9a315090c23bef3a6238d557645821ee728dd0cb35e92673e8a65a9883",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[13]",
           "revision": "b64ba2d7da6e92d162b86c5380ab4b1341e1e442",
+          "recordedArtifactSha256": "8afaaf9a315090c23bef3a6238d557645821ee728dd0cb35e92673e8a65a9883",
           "size": 319488,
           "resultSha256": "c23bc395cd2badad5a0bebb83c2ab082cf2cf90e4ab38f6ad811656bf5ba35bc",
           "lockSha256": "c39fe0e7d62f6035941a5495ae0ce83c272965df3c6faf80a35104849c7990f0"
@@ -2090,13 +2126,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "0a54fa71889d2d49524dd180ac5ab1b419152b9f06f26ff5cc2cd387f617f9c2",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[4]",
           "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/glib-kbyzHk",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "0a54fa71889d2d49524dd180ac5ab1b419152b9f06f26ff5cc2cd387f617f9c2",
           "size": 11360256
         },
         {
@@ -2123,10 +2160,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "98329327f1852791e486e80f2fc734f004bcce28d19f88929d5516587e484cea",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[15]",
           "revision": "4e149b48cec234af209c5d0251a858d12db71d7b",
+          "recordedArtifactSha256": "98329327f1852791e486e80f2fc734f004bcce28d19f88929d5516587e484cea",
           "size": 2451456,
           "resultSha256": "805bd3d8e1702ba5e5ad913ed72f21f2adca80ff9cc054857e7ed16853a00a8e",
           "lockSha256": "795a6d3d5feb3bee81c9f596eb071c307cb55b2067a686260a9e02e19338246e"
@@ -2318,10 +2356,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "c01c962514a675cf57febe6668765481e34e1515c75ed11a3e8871fc4a9f0595",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[16]",
           "revision": "92b174341d6d70654c58b290cab05546a85fd9b5",
+          "recordedArtifactSha256": "c01c962514a675cf57febe6668765481e34e1515c75ed11a3e8871fc4a9f0595",
           "size": 84480,
           "resultSha256": "b144d86b58b2ca72cab62245f417c27da7e5815f0900eb2378227d694bd44cf1",
           "lockSha256": "785a6be0551376aa77237f28d60d30d2c7c26dd0569b4dbb8574fb81d6316243"
@@ -2413,10 +2452,11 @@
         },
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "43163f13796b8ef4a30299ac123cbdc2b74c2165f700b10bac2a4090d24cfc55",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[18]",
           "revision": "4e149b48cec234af209c5d0251a858d12db71d7b",
+          "recordedArtifactSha256": "43163f13796b8ef4a30299ac123cbdc2b74c2165f700b10bac2a4090d24cfc55",
           "size": 150369280,
           "resultSha256": "3c6191e255bbc92bdc8a098102fae0c94da4ed1e562993375f8754b48d3c5eba",
           "lockSha256": "9dca6959bc5b6ba3845f0adf607b56531ca74191ee109ba50d58ea3842e228e0"
@@ -2436,24 +2476,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "61a5078ecd7e2977dc0ab1a5edd609ac359c0b8e38f741f64a69d87f083cee82",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[21]",
           "revision": "60b49e605da3a1e9bfd1e89b4faab87dceff60c3",
           "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/hush-5Jq5SS",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "61a5078ecd7e2977dc0ab1a5edd609ac359c0b8e38f741f64a69d87f083cee82",
           "size": 1282048
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "61a5078ecd7e2977dc0ab1a5edd609ac359c0b8e38f741f64a69d87f083cee82",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[21]",
           "revision": "60b49e605da3a1e9bfd1e89b4faab87dceff60c3",
           "run": "/Users/jku/git/wasm-posix-busybox-acceptance/test-results/runs/hush-5Jq5SS",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "61a5078ecd7e2977dc0ab1a5edd609ac359c0b8e38f741f64a69d87f083cee82",
           "size": 1282048
         }
       ],
@@ -2514,24 +2556,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "7b5c3005cf39f72c860565383c245a5808f938d4915dff54b20a179714c20714",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[18]",
           "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/jq-Gb6t4L",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "7b5c3005cf39f72c860565383c245a5808f938d4915dff54b20a179714c20714",
           "size": 1555968
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "7b5c3005cf39f72c860565383c245a5808f938d4915dff54b20a179714c20714",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[18]",
           "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/jq-Gb6t4L",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "7b5c3005cf39f72c860565383c245a5808f938d4915dff54b20a179714c20714",
           "size": 1555968
         }
       ],
@@ -2642,13 +2686,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "3efef5612ec6892cf155e935db42d35a53b5eb7d92b0f17db46a4be76987de77",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[8]",
           "revision": "6f6eca3388d53ff59de42be81273238af1105fe3",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/libc-JufMVQ",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "3efef5612ec6892cf155e935db42d35a53b5eb7d92b0f17db46a4be76987de77",
           "size": 3106304
         },
         {
@@ -2672,24 +2717,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "3cc9b710b72a1ae7d303386d7ab8d577074ab9bbad73d04b400d538b69f4c780",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[26]",
           "revision": "90f06fa0eba06688fb3d68f8908391aaa3a70848",
           "run": "/Users/jku/git/wasm-posix-libevent-acceptance/test-results/runs/libevent-Hzc5tz",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "3cc9b710b72a1ae7d303386d7ab8d577074ab9bbad73d04b400d538b69f4c780",
           "size": 2446848
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "3cc9b710b72a1ae7d303386d7ab8d577074ab9bbad73d04b400d538b69f4c780",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[26]",
           "revision": "90f06fa0eba06688fb3d68f8908391aaa3a70848",
           "run": "/Users/jku/git/wasm-posix-libevent-acceptance/test-results/runs/libevent-Hzc5tz",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "3cc9b710b72a1ae7d303386d7ab8d577074ab9bbad73d04b400d538b69f4c780",
           "size": 2446848
         }
       ],
@@ -2707,10 +2754,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "1092371ca85d5fcd350bd5baeb66671b95da85a50db3602b0a392d93ba513e61",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[20]",
           "revision": "38dd4dbfb0608e553a328d65591ea68ab5f5b50e",
+          "recordedArtifactSha256": "1092371ca85d5fcd350bd5baeb66671b95da85a50db3602b0a392d93ba513e61",
           "size": 54784,
           "resultSha256": "9b158325e683e65aae6927c41bb76b8c3f5f0b7b616452919cf92dbefe290688",
           "lockSha256": "fab5c644bf21c9899684d03b4157bb89ce74012dadfc2137735dca4ed25a58a0"
@@ -2806,13 +2854,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "435a172c0abf0a93cc021ab4c52cae8bc0f9f2f0b8e00baab75b92b63f2fa4c6",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[1]",
           "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/libiconv-jrSHyh",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "435a172c0abf0a93cc021ab4c52cae8bc0f9f2f0b8e00baab75b92b63f2fa4c6",
           "size": 2840064
         },
         {
@@ -2838,13 +2887,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "77c159325b2407290c1409fc744294b13e3f25ebe42da86f2945923ef6490cc5",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[2]",
           "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/libintl-zE9lQe",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "77c159325b2407290c1409fc744294b13e3f25ebe42da86f2945923ef6490cc5",
           "size": 307712
         },
         {
@@ -2868,24 +2918,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "9ae40cefdeb2f9c7e1a30c9ef2de613b39cf258b4fd2f173477db355d5c97255",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[19]",
           "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/libjpeg-2xp8ri",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "9ae40cefdeb2f9c7e1a30c9ef2de613b39cf258b4fd2f173477db355d5c97255",
           "size": 1127936
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "9ae40cefdeb2f9c7e1a30c9ef2de613b39cf258b4fd2f173477db355d5c97255",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[19]",
           "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/libjpeg-2xp8ri",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "9ae40cefdeb2f9c7e1a30c9ef2de613b39cf258b4fd2f173477db355d5c97255",
           "size": 1127936
         }
       ],
@@ -2903,10 +2955,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "22779e3eb340c3d07e7b347e77914540f4c27696ebea9744a0cdfb66430b935b",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[23]",
           "revision": "87905ca26311a08f8ddb9e88cb866292756d7122",
+          "recordedArtifactSha256": "22779e3eb340c3d07e7b347e77914540f4c27696ebea9744a0cdfb66430b935b",
           "size": 2386944,
           "resultSha256": "5e5c79c20fcb54204ce04ecb948906231e255d67bb8b33bc0f97043cdefeb46a",
           "lockSha256": "b6d9f8c0220aa28128d33590e96d333daa8646a0c91635b596b88b8566743920"
@@ -2934,10 +2987,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "6aee4995b40451fce449d52f9c46ad18c5910f799840f1c28956f3a20ef331be",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[24]",
           "revision": "50355b98107af8ff682d660deaf93d9c350f7ec8",
+          "recordedArtifactSha256": "6aee4995b40451fce449d52f9c46ad18c5910f799840f1c28956f3a20ef331be",
           "size": 1216000,
           "resultSha256": "71300fcdf6bf95c2f1d2ff8132ab1b1bc63f28a3f41a0323740da041423f8e2d",
           "lockSha256": "13c9a2c5968e53cd83976c8dccca08684006d5a7673fad6f787c5d24e201a9df"
@@ -2966,24 +3020,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "281984f7ee78a9f6f41e4e54033741f80deede4e247e364b96ec48b6fd2acea1",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[29]",
           "revision": "9fe2885386a4ae7ac50473b7cdf5a3e9c5a594d2",
           "run": "/Users/jku/git/wasm-posix-libtool-acceptance/test-results/runs/libtool-x419DT",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "281984f7ee78a9f6f41e4e54033741f80deede4e247e364b96ec48b6fd2acea1",
           "size": 2921472
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "281984f7ee78a9f6f41e4e54033741f80deede4e247e364b96ec48b6fd2acea1",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[29]",
           "revision": "9fe2885386a4ae7ac50473b7cdf5a3e9c5a594d2",
           "run": "/Users/jku/git/wasm-posix-libtool-acceptance/test-results/runs/libtool-x419DT",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "281984f7ee78a9f6f41e4e54033741f80deede4e247e364b96ec48b6fd2acea1",
           "size": 2921472
         }
       ],
@@ -3001,24 +3057,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "ca1edc03404f079c0e1ea54929428adaa9a8a305bca292d8b61a42153e8b8bc2",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[27]",
           "revision": "2c99ad0c4c6c13a72e49dca284b5f9170290bb98",
           "run": "/Users/jku/git/wasm-posix-libuv-acceptance/test-results/runs/libuv-ZtNN58",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "ca1edc03404f079c0e1ea54929428adaa9a8a305bca292d8b61a42153e8b8bc2",
           "size": 1915392
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "ca1edc03404f079c0e1ea54929428adaa9a8a305bca292d8b61a42153e8b8bc2",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[27]",
           "revision": "2c99ad0c4c6c13a72e49dca284b5f9170290bb98",
           "run": "/Users/jku/git/wasm-posix-libuv-acceptance/test-results/runs/libuv-ZtNN58",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "ca1edc03404f079c0e1ea54929428adaa9a8a305bca292d8b61a42153e8b8bc2",
           "size": 1915392
         }
       ],
@@ -3060,24 +3118,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "b232557917e8fa2f0ff162bffaba4a3dfce812d81ab46b878c36d2598b15516f",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[20]",
           "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/lua-VeYO0g",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "b232557917e8fa2f0ff162bffaba4a3dfce812d81ab46b878c36d2598b15516f",
           "size": 630784
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "b232557917e8fa2f0ff162bffaba4a3dfce812d81ab46b878c36d2598b15516f",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[20]",
           "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/lua-VeYO0g",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "b232557917e8fa2f0ff162bffaba4a3dfce812d81ab46b878c36d2598b15516f",
           "size": 630784
         }
       ],
@@ -3113,10 +3173,11 @@
         },
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "f6caefdaa763305e1f7962d937b0abbb99046f849d0d6d35dc1561aba87933af",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[25]",
           "revision": "e6f12897da5335ffd3365c9951075a4e86e6c702",
+          "recordedArtifactSha256": "f6caefdaa763305e1f7962d937b0abbb99046f849d0d6d35dc1561aba87933af",
           "size": 1135616,
           "resultSha256": "6aa52836843db728ac3efd29b8bf0fb0722da1edac1e1f20d5dd825401de2c36",
           "lockSha256": "c29f4713333175159772ed68deea0101e1f65638c0f14a45d1fb3abc1a64db7f"
@@ -3162,24 +3223,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "44913addb370ad2b0e5e5377034f063d81ba9ed6cbf953f19b15890bb34bd832",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[46]",
           "revision": "f18c9b27428b022bc9353b825e93f11dbc895e5c",
           "run": "/Users/jku/git/wasm-posix-mgba-acceptance/test-results/runs/mgba-xrZJeo",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "44913addb370ad2b0e5e5377034f063d81ba9ed6cbf953f19b15890bb34bd832",
           "size": 2723840
         },
         {
           "path": "docs/research/package-publication-20261004-wave11/release-set.json",
-          "sha256": "44913addb370ad2b0e5e5377034f063d81ba9ed6cbf953f19b15890bb34bd832",
+          "sha256": "29ce59f858c0a4f92ae14324de1ea2ab5aed2abfad80c4ed8af21460dc898a2c",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[45]",
           "revision": "f18c9b27428b022bc9353b825e93f11dbc895e5c",
           "run": "/Users/jku/git/wasm-posix-mgba-acceptance/test-results/runs/mgba-xrZJeo",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "44913addb370ad2b0e5e5377034f063d81ba9ed6cbf953f19b15890bb34bd832",
           "size": 2723840
         }
       ],
@@ -3197,24 +3260,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "cc07d263364044a1408f92f66e5734b3141ac57dc57bc23155dccee657dafbaa",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[40]",
           "revision": "5c63ad966eec41bbfdd0b6ad2c27e8abdf5ae7f0",
           "run": "/Users/jku/git/wasm-posix-micropython-acceptance/test-results/runs/micropython-YxIgMw",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "cc07d263364044a1408f92f66e5734b3141ac57dc57bc23155dccee657dafbaa",
           "size": 1457664
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "cc07d263364044a1408f92f66e5734b3141ac57dc57bc23155dccee657dafbaa",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[40]",
           "revision": "5c63ad966eec41bbfdd0b6ad2c27e8abdf5ae7f0",
           "run": "/Users/jku/git/wasm-posix-micropython-acceptance/test-results/runs/micropython-YxIgMw",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "cc07d263364044a1408f92f66e5734b3141ac57dc57bc23155dccee657dafbaa",
           "size": 1457664
         }
       ],
@@ -3269,13 +3334,14 @@
         },
         {
           "path": "docs/research/package-publication-20261004/release-set.json",
-          "sha256": "d273ffc9dababdfa273440a76acb28486282c357997ad87236cb3a73de5b1831",
+          "sha256": "6db49620d9b5049b8e0ec32015ce5dfa9ccb7f6b1622f723c2bee9eaac9583d3",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[9]",
           "revision": "6f6eca3388d53ff59de42be81273238af1105fe3",
           "run": "test-results/runs/ncurses-CENlbj",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "d273ffc9dababdfa273440a76acb28486282c357997ad87236cb3a73de5b1831",
           "size": 11378688
         }
       ],
@@ -3293,24 +3359,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "fb7108849961e21f65d12a55062ee1f48bfa9df26e4d48636d8b48b93faa5255",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[43]",
           "revision": "118c25e18981d75462f4b3df147bdafac09e5bd7",
           "run": "/Users/jku/git/wasm-posix-nyancat-acceptance/test-results/runs/nyancat-hKC9w1",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "fb7108849961e21f65d12a55062ee1f48bfa9df26e4d48636d8b48b93faa5255",
           "size": 206848
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "fb7108849961e21f65d12a55062ee1f48bfa9df26e4d48636d8b48b93faa5255",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[43]",
           "revision": "118c25e18981d75462f4b3df147bdafac09e5bd7",
           "run": "/Users/jku/git/wasm-posix-nyancat-acceptance/test-results/runs/nyancat-hKC9w1",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "fb7108849961e21f65d12a55062ee1f48bfa9df26e4d48636d8b48b93faa5255",
           "size": 206848
         }
       ],
@@ -3405,13 +3473,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "de006ba3bcd7039fdf53031d30b0de5001641dda9b80068009cdf9c2060f16a6",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[3]",
           "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/pcre2-HehGao",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "de006ba3bcd7039fdf53031d30b0de5001641dda9b80068009cdf9c2060f16a6",
           "size": 1729024
         },
         {
@@ -3435,24 +3504,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "c76fb72d6c224e028a4edae45abb3e0b51bf7123dff934ed92e57b7f87897098",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[36]",
           "revision": "ea2ce58d703fd7e283992322e44ba9bffb1c56ee",
           "run": "/Users/jku/git/wasm-posix-pcre2-cli-acceptance/test-results/runs/pcre2grep-25UQo6",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "c76fb72d6c224e028a4edae45abb3e0b51bf7123dff934ed92e57b7f87897098",
           "size": 4675072
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "c76fb72d6c224e028a4edae45abb3e0b51bf7123dff934ed92e57b7f87897098",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[36]",
           "revision": "ea2ce58d703fd7e283992322e44ba9bffb1c56ee",
           "run": "/Users/jku/git/wasm-posix-pcre2-cli-acceptance/test-results/runs/pcre2grep-25UQo6",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "c76fb72d6c224e028a4edae45abb3e0b51bf7123dff934ed92e57b7f87897098",
           "size": 4675072
         }
       ],
@@ -3470,24 +3541,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "c8baf3a6df180766a315f43876475dc47707c0229572945ba60508a2f07591c8",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[35]",
           "revision": "ea2ce58d703fd7e283992322e44ba9bffb1c56ee",
           "run": "/Users/jku/git/wasm-posix-pcre2-cli-acceptance/test-results/runs/pcre2test-taYBB2",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "c8baf3a6df180766a315f43876475dc47707c0229572945ba60508a2f07591c8",
           "size": 5156352
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "c8baf3a6df180766a315f43876475dc47707c0229572945ba60508a2f07591c8",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[35]",
           "revision": "ea2ce58d703fd7e283992322e44ba9bffb1c56ee",
           "run": "/Users/jku/git/wasm-posix-pcre2-cli-acceptance/test-results/runs/pcre2test-taYBB2",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "c8baf3a6df180766a315f43876475dc47707c0229572945ba60508a2f07591c8",
           "size": 5156352
         }
       ],
@@ -3507,21 +3580,23 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "0d9ec8fa228a8d5ecf7bd0f05ad1d9699033f9209571b0c630e990aeb83aba5f",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[17]",
           "revision": "585d8ae4ab43acb0750a21dd48f2084ad48cd54e",
           "run": "/Users/jku/git/wasm-posix-perl-acceptance/test-results/runs/perl-1WWZPQ",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "0d9ec8fa228a8d5ecf7bd0f05ad1d9699033f9209571b0c630e990aeb83aba5f",
           "size": 103812096
         },
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "77b7ccfa8da364d994908da9fc9598ceef45ded3a2dda3f3a6566a02d3f2803c",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[29]",
           "revision": "e6f12897da5335ffd3365c9951075a4e86e6c702",
+          "recordedArtifactSha256": "77b7ccfa8da364d994908da9fc9598ceef45ded3a2dda3f3a6566a02d3f2803c",
           "size": 103812096,
           "resultSha256": "4deee06b41c63848e949c3f8b9a7a67fb9215ff4a46ae4b8dc4dd5843ad089fa",
           "lockSha256": "481c1b3967b9a526c0ac16566bf9ba374d9aa7bd113a8f7cd85f68435b4c296e"
@@ -3543,24 +3618,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "f120f225025b25cc9a1f4c9baa9eb5a01e92437c4f71a36e2f25fb8107274a5a",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[32]",
           "revision": "6bb10b08d820bcee1d12c37cc1a36ad2a2b4ebde",
           "run": "/Users/jku/git/wasm-posix-pigz-acceptance/test-results/runs/pigz-5NQhUS",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "f120f225025b25cc9a1f4c9baa9eb5a01e92437c4f71a36e2f25fb8107274a5a",
           "size": 175616
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "f120f225025b25cc9a1f4c9baa9eb5a01e92437c4f71a36e2f25fb8107274a5a",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[32]",
           "revision": "6bb10b08d820bcee1d12c37cc1a36ad2a2b4ebde",
           "run": "/Users/jku/git/wasm-posix-pigz-acceptance/test-results/runs/pigz-5NQhUS",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "f120f225025b25cc9a1f4c9baa9eb5a01e92437c4f71a36e2f25fb8107274a5a",
           "size": 175616
         }
       ],
@@ -3578,10 +3655,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "fed0f944031546b4de5fedd0ce6d276e4697558be8944dae3dad4e869a1c600f",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[30]",
           "revision": "50355b98107af8ff682d660deaf93d9c350f7ec8",
+          "recordedArtifactSha256": "fed0f944031546b4de5fedd0ce6d276e4697558be8944dae3dad4e869a1c600f",
           "size": 1895424,
           "resultSha256": "aa7df02339b645114b0966e739e1b97584ded383169cce50d33989cf25b9a33f",
           "lockSha256": "ed50e5c048ee8a60a14817b6c18147106776cad94c99f7eda7aa312abeda5112"
@@ -3607,13 +3685,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "76b13351785bbfa759c403813157e78d22a2c148bde7d751bc3d3435e842cbe8",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[0]",
           "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/pkgconf-tMmU87",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "76b13351785bbfa759c403813157e78d22a2c148bde7d751bc3d3435e842cbe8",
           "size": 229888
         },
         {
@@ -3637,24 +3716,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "80d310d00cc60f18d8a8267541d8c5752b7ae3479f088580e2a995eccc751b58",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[47]",
           "revision": "b07e680bc313a00a81f1bd8793b5fce050aae502",
           "run": "/Users/jku/git/wasm-posix-punes-acceptance/test-results/runs/punes-DG6ep7",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "80d310d00cc60f18d8a8267541d8c5752b7ae3479f088580e2a995eccc751b58",
           "size": 4204544
         },
         {
           "path": "docs/research/package-publication-20261004-wave11/release-set.json",
-          "sha256": "80d310d00cc60f18d8a8267541d8c5752b7ae3479f088580e2a995eccc751b58",
+          "sha256": "29ce59f858c0a4f92ae14324de1ea2ab5aed2abfad80c4ed8af21460dc898a2c",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[46]",
           "revision": "b07e680bc313a00a81f1bd8793b5fce050aae502",
           "run": "/Users/jku/git/wasm-posix-punes-acceptance/test-results/runs/punes-DG6ep7",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "80d310d00cc60f18d8a8267541d8c5752b7ae3479f088580e2a995eccc751b58",
           "size": 4204544
         }
       ],
@@ -3810,13 +3891,14 @@
         },
         {
           "path": "docs/research/package-publication-20261004/release-set.json",
-          "sha256": "5d6c05db8ad6e85eba7c9dfdbb5c974b10ade09ad9bc95e52a70b41753ac5442",
+          "sha256": "6db49620d9b5049b8e0ec32015ce5dfa9ccb7f6b1622f723c2bee9eaac9583d3",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[13]",
           "revision": "898d0b7c5eb5e498967c19f127bab6ef216a55ca",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/pyspacewar-r2DwkO",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "5d6c05db8ad6e85eba7c9dfdbb5c974b10ade09ad9bc95e52a70b41753ac5442",
           "size": 1980928
         }
       ],
@@ -3834,24 +3916,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "57e0f49ae7aa002404b251965171252859bae0f0bf076345c2445c23cd25d214",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[38]",
           "revision": "86e2bf37547ecb569a43f8b508d6e435d01aa50f",
           "run": "/Users/jku/git/wasm-posix-qjs-acceptance/test-results/runs/qjs-aevhvA",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "57e0f49ae7aa002404b251965171252859bae0f0bf076345c2445c23cd25d214",
           "size": 6267392
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "57e0f49ae7aa002404b251965171252859bae0f0bf076345c2445c23cd25d214",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[38]",
           "revision": "86e2bf37547ecb569a43f8b508d6e435d01aa50f",
           "run": "/Users/jku/git/wasm-posix-qjs-acceptance/test-results/runs/qjs-aevhvA",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "57e0f49ae7aa002404b251965171252859bae0f0bf076345c2445c23cd25d214",
           "size": 6267392
         }
       ],
@@ -3869,13 +3953,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave11/release-set.json",
-          "sha256": "61d759c53b35e6d3b1192b538b613cce8d9c28a84731ce9f0b9c1e0317b4db0f",
+          "sha256": "29ce59f858c0a4f92ae14324de1ea2ab5aed2abfad80c4ed8af21460dc898a2c",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[48]",
           "revision": "9c5ea1ec2bcd7d7d483a0ccdab9a02bf44dd7676",
           "run": "/Users/jku/git/wasm-posix-quake-acceptance/test-results/runs/quake-SyRw2O",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "61d759c53b35e6d3b1192b538b613cce8d9c28a84731ce9f0b9c1e0317b4db0f",
           "size": 20374528
         }
       ],
@@ -3899,10 +3984,11 @@
       "historicalEvidence": [
         {
           "path": "docs/research/platform-os2-transition-20261005/format1-inventory-v2.json",
-          "sha256": "55083dc8f5c114fc650a10de2ae9e230b0db18ba92458c4d482e6dfb6e857eff",
+          "sha256": "ccdf342cd5b6d3686a9e88583748a979d1c10db986099655bb10630e7803c901",
           "kind": "retained approved artifact and result/lock hashes",
           "selector": "candidates[32]",
           "revision": "a916a00fa2affce4f45c31c0d5ba446c285e5be2",
+          "recordedArtifactSha256": "55083dc8f5c114fc650a10de2ae9e230b0db18ba92458c4d482e6dfb6e857eff",
           "size": 43192320,
           "resultSha256": "41e1897320c82ba9d022ce2991752f116e8879c7bfb5d733bc0629fffc29f141",
           "lockSha256": "1f0816ca408127d0d1de6c6ce44122cbc39e1edd350c96c105f2bc5fc4bf4f30"
@@ -3941,13 +4027,14 @@
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "54e4386f1ccc8e2f7ed80609456fb953bc410f982a89169396700bf6b3008d89",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[16]",
           "revision": "91251b92fc78c28de31ae19f3e480b6c6a1712e1",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/sdk-tG27yJ",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "54e4386f1ccc8e2f7ed80609456fb953bc410f982a89169396700bf6b3008d89",
           "size": 591872
         }
       ],
@@ -4149,24 +4236,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "680db9b6c2a3d14049ff5042d34a262404b2c7c22e7f95f0f511a955618086e0",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[39]",
           "revision": "18ea0c61cbf13481a14e99dcf0cd7529095be5eb",
           "run": "/Users/jku/git/wasm-posix-sqlite-acceptance/test-results/runs/sqlite3-CDSSwo",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "680db9b6c2a3d14049ff5042d34a262404b2c7c22e7f95f0f511a955618086e0",
           "size": 2198016
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "680db9b6c2a3d14049ff5042d34a262404b2c7c22e7f95f0f511a955618086e0",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[39]",
           "revision": "18ea0c61cbf13481a14e99dcf0cd7529095be5eb",
           "run": "/Users/jku/git/wasm-posix-sqlite-acceptance/test-results/runs/sqlite3-CDSSwo",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "680db9b6c2a3d14049ff5042d34a262404b2c7c22e7f95f0f511a955618086e0",
           "size": 2198016
         }
       ],
@@ -4270,24 +4359,26 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "37481bc41840828174c10ec65b36625b65f02d3a121978b3cd461da21ca55fd8",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[41]",
           "revision": "f2203649f4830eb8aaa07f64588c133f4aee0475",
           "run": "/Users/jku/git/wasm-posix-vim-acceptance/test-results/runs/vim-YOnNuR",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "37481bc41840828174c10ec65b36625b65f02d3a121978b3cd461da21ca55fd8",
           "size": 48453632
         },
         {
           "path": "docs/research/package-publication-20261004-wave9/release-set.json",
-          "sha256": "37481bc41840828174c10ec65b36625b65f02d3a121978b3cd461da21ca55fd8",
+          "sha256": "cdd78553f5a4a1443cc67fd95a9a6f3aa61746b75f80cb18b746c5e18c5f3dcf",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[41]",
           "revision": "f2203649f4830eb8aaa07f64588c133f4aee0475",
           "run": "/Users/jku/git/wasm-posix-vim-acceptance/test-results/runs/vim-YOnNuR",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "37481bc41840828174c10ec65b36625b65f02d3a121978b3cd461da21ca55fd8",
           "size": 48453632
         }
       ],
@@ -4327,13 +4418,14 @@
         },
         {
           "path": "docs/research/package-publication-20261004/release-set.json",
-          "sha256": "463114c68c4956f75bb2e5b94c94ab1210bd475dc091e23a5af7d6515340eaeb",
+          "sha256": "6db49620d9b5049b8e0ec32015ce5dfa9ccb7f6b1622f723c2bee9eaac9583d3",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[12]",
           "revision": "6f6eca3388d53ff59de42be81273238af1105fe3",
           "run": "test-results/runs/x11-apps-SoTEb2",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "463114c68c4956f75bb2e5b94c94ab1210bd475dc091e23a5af7d6515340eaeb",
           "size": 48520704
         }
       ],
@@ -4510,13 +4602,14 @@
       "historicalEvidence": [
         {
           "path": "docs/research/package-publication-20261004-wave10/release-set.json",
-          "sha256": "f6e432f8ce6574dc917e1f1a4be4a210f261acd1ad7c75b15f75be76af34d4b3",
+          "sha256": "b844fc81607e0249b84c70013968cbe597572a3e12bcfc028154f1d2611fc1a9",
           "kind": "recorded source and binary acceptance",
           "selector": "reports[5]",
           "revision": "c05d270df7cfc8edc0e8b4343bbe71eabe4067d5",
           "run": "/Users/jku/git/wasm-posix/test-results/runs/zlib-o6KMRq",
           "sourcePassed": true,
           "binaryPassed": true,
+          "recordedArtifactSha256": "f6e432f8ce6574dc917e1f1a4be4a210f261acd1ad7c75b15f75be76af34d4b3",
           "size": 523776
         },
         {

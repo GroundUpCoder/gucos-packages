@@ -14,7 +14,7 @@ def add(name,path,kind,selector,record=None):
     e={'path':path,'sha256':digest(OLD/path),'kind':kind,'selector':selector}
     if record:
         for k in ('revision','run','sourceCandidate','sourcePassed','binaryPassed','sha256','size','resultSha256','lockSha256'):
-            if k in record:e[k]=record[k]
+            if k in record:e['recordedArtifactSha256' if k=='sha256' else k]=record[k]
         a=record.get('artifact',record.get('selectedArtifact'))
         if isinstance(a,dict):e['artifact']={k:a[k] for k in ('sha256','size','compatibilityKey') if k in a}
     evidence[name].append(e)
