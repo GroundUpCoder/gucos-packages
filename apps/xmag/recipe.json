@@ -22,7 +22,8 @@
     "minVersion": "1.0.0",
     "runtimeAbi": 5,
     "features": [
-      "posix-core"
+      "posix-core",
+      "unix-stream"
     ]
   },
   "inputs": [

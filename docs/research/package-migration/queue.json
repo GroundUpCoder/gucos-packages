@@ -3670,7 +3670,7 @@
     {
       "id": "sdl3-gfx",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "apps/sdl3-gfx/wasm-package.json",
       "historicalManifestSha256": "bd9754f7603f3e81d3912953daeb32bd22be3e5832b80da0f1a69373f99bff88",
       "historicalEvidence": [
@@ -3693,7 +3693,8 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/sdl3-gfx"
     },
     {
       "id": "sdl3-image",
