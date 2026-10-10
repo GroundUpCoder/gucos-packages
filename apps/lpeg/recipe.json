@@ -2,11 +2,11 @@
   "name": "lpeg",
   "version": "1.1.0-1",
   "dependencies": [
-    "lua"
+    "lua55"
   ],
   "dependencyRequirements": {
-    "lua": {
-      "version": "5.4.9-1"
+    "lua55": {
+      "version": "5.5.0-1"
     }
   },
   "platform": {

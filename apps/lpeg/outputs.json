@@ -1,10 +1,10 @@
 [
   {
-    "path": "lib/lua/5.4/lpeg.so",
+    "path": "lib/lua/5.5/lpeg.so",
     "mode": 420
   },
   {
-    "path": "share/lua/5.4/re.lua",
+    "path": "share/lua/5.5/re.lua",
     "mode": 420
   },
   {

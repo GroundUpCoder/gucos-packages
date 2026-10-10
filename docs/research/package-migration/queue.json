@@ -4560,7 +4560,7 @@
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
       "blockers": [
-        "Independent source review and all guest/binary/public gates pending."
+        "Revised lua55 dependency and all source/binary/public gates pending."
       ],
       "candidate": "apps/lpeg"
     },
@@ -4600,6 +4600,17 @@
       "acceptance": [],
       "blockers": [
         "Independent source review and guest build/binary/public gates pending."
+      ]
+    },
+    {
+      "id": "lua55",
+      "kind": "historical-profile",
+      "state": "source-prepared-review-pending",
+      "candidate": "apps/lua55",
+      "mapping": "Retained Lua5.5 dynamic-module and static embedding profile; preserves baseline Lua5.4",
+      "acceptance": [],
+      "blockers": [
+        "Independent source review and fresh guest/binary/public acceptance pending."
       ]
     }
   ],
