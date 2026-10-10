@@ -22,3 +22,13 @@ in each package-owned share/licenses subtree.
 
 Current-runtime twm/X11 guest acceptance, public catalog publication, public
 binary install and independent final review remain pending. No deployment claim.
+
+Current-runtime fixture acceptance completed on runtime 2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f:
+X11, toolkit and real twm built entirely in the guest; two independent Xlib
+connections received decorated frames, browser pointer drag moved a frame, and
+clients progressed with the terminal VT selected. Log: /tmp/wasm-posix-x11-twm.log.
+The reviewer found historical twm used shared /tmp/twm-build; the recipe now
+redirects object files into its private source/objects directory. Recording-compiler
+regression passed; public acceptance seeds a poison object at the old path.
+Historical source archive bytes are unchanged. Public mode uses the published
+catalog and immutable inputs, and will be executed after publication approval.

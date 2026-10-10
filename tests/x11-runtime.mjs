@@ -8,7 +8,8 @@ const sha=b=>createHash('sha256').update(b).digest('hex');
 const extra=new Map();
 for(const name of ['x11-server','x11-toolkit','twm'])for(const file of ['source.tar','build.sh','test.sh'])
  extra.set('/package/'+name+'/'+file,await readFile(new URL('../apps/'+name+'/'+file,import.meta.url)));
-const s=await browserSession({extra,gpu:true,timeout:2400000});
+const publicTest=process.env.PUBLIC_PACKAGE_TEST==='1';
+const s=await browserSession({extra,gpu:true,timeout:2400000,allowedOrigins:publicTest?['https://raw.githubusercontent.com']:[]});
 s.page.setDefaultTimeout(2400000);
 try {
  const packages={};
@@ -22,9 +23,11 @@ try {
  const timer=setInterval(async()=>{try {console.log(await s.page.evaluate(()=>({tail:(shell.busybox?.log||'').slice(-450),processes:[...shell.busybox?.windows?.values()||[]].map(v=>v.title.textContent),compiling:[...shell.busybox?.compilations?.values()||[]]})));}catch(e){console.error(e.message);}},30000);
  try {
  console.log(await s.command(`set -eu
-gucman repo remove groundupcoder
-gucman repo add fixture ${s.url}/package/catalog.json
-gucman build fixture:twm
+mkdir -p /tmp/twm-build
+echo poison > /tmp/twm-build/stale.o
+${publicTest?'gucman search twm':`gucman repo remove groundupcoder\ngucman repo add fixture ${s.url}/package/catalog.json`}
+gucman build ${publicTest?'groundupcoder':'fixture'}:twm
+test -f /tmp/twm-build/stale.o
 gucman pack x11-server /home/user/x11-server.tar
 echo X11-BUILD-PASS`));
  await mkdir(new URL('../test-results/',import.meta.url),{recursive:true});
