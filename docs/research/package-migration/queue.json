@@ -2745,7 +2745,7 @@
     {
       "id": "nyancat",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "vendor/nyancat/wasm-package.json",
       "historicalManifestSha256": "4bf74a3d4df37b72ad0686eb292667149676d03ba6058dda2e0f0b053f591ec0",
       "historicalEvidence": [
@@ -2777,7 +2777,8 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/nyancat"
     },
     {
       "id": "pango",
@@ -3021,7 +3022,7 @@
     {
       "id": "pigz",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "vendor/pigz/wasm-package.json",
       "historicalManifestSha256": "863d987e5fe85e8c68f7ae3cf37dc285fcf6d1d59cefb770f1b7aa1cd702e58b",
       "historicalEvidence": [
@@ -3055,7 +3056,8 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/pigz"
     },
     {
       "id": "pixman",

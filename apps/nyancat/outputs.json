@@ -1,0 +1,22 @@
+[
+  {
+    "path": "bin/nyancat",
+    "mode": 493
+  },
+  {
+    "path": "share/doc/nyancat/README.md",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/nyancat/UPSTREAM.json",
+    "mode": 420
+  },
+  {
+    "path": "share/man/man1/nyancat.1",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/nyancat/nyancat.c",
+    "mode": 420
+  }
+]

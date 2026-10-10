@@ -1,0 +1,14 @@
+[
+  {
+    "path": "bin/pigz",
+    "mode": 493
+  },
+  {
+    "path": "bin/unpigz",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/pigz/README",
+    "mode": 420
+  }
+]
