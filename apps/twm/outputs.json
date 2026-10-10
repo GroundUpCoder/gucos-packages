@@ -1,0 +1,18 @@
+[
+  {
+    "path": "bin/twm",
+    "mode": 493
+  },
+  {
+    "path": "share/X11/twm/system.twmrc",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/twm/wasm.twmrc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/twm/COPYING",
+    "mode": 420
+  }
+]

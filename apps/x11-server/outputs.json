@@ -1880,231 +1880,231 @@
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/freetype-LICENSE.TXT",
+    "path": "share/licenses/x11-server/freetype-LICENSE.TXT",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libX11-COPYING",
+    "path": "share/licenses/x11-server/libX11-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libX11-lcUniConv-COPYRIGHT",
+    "path": "share/licenses/x11-server/libX11-lcUniConv-COPYRIGHT",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libXau-COPYING",
+    "path": "share/licenses/x11-server/libXau-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libXext-COPYING",
+    "path": "share/licenses/x11-server/libXext-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libXfixes-COPYING",
+    "path": "share/licenses/x11-server/libXfixes-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libXfont2-COPYING",
+    "path": "share/licenses/x11-server/libXfont2-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libXi-COPYING",
+    "path": "share/licenses/x11-server/libXi-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libXrender-COPYING",
+    "path": "share/licenses/x11-server/libXrender-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libXtst-COPYING",
+    "path": "share/licenses/x11-server/libXtst-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libfontenc-COPYING",
+    "path": "share/licenses/x11-server/libfontenc-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libxcb-COPYING",
+    "path": "share/licenses/x11-server/libxcb-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/libxkbfile-COPYING",
+    "path": "share/licenses/x11-server/libxkbfile-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/pixman-COPYING",
+    "path": "share/licenses/x11-server/pixman-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/rendercheck-COPYING",
+    "path": "share/licenses/x11-server/rendercheck-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xcb-proto-COPYING",
+    "path": "share/licenses/x11-server/xcb-proto-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xkeyboard-config-COPYING",
+    "path": "share/licenses/x11-server/xkeyboard-config-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorg-server-COPYING",
+    "path": "share/licenses/x11-server/xorg-server-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-applewmproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-applewmproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-bigreqsproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-bigreqsproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-compositeproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-compositeproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-damageproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-damageproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-dmxproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-dmxproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-dri2proto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-dri2proto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-dri3proto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-dri3proto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-evieproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-evieproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-fixesproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-fixesproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-fontcacheproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-fontcacheproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-fontsproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-fontsproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-glproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-glproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-inputproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-inputproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-kbproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-kbproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-lg3dproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-lg3dproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-pmproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-pmproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-presentproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-presentproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-printproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-printproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-randrproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-randrproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-recordproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-recordproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-renderproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-renderproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-resourceproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-resourceproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-scrnsaverproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-scrnsaverproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-trapproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-trapproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-videoproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-videoproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-windowswmproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-windowswmproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-x11proto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-x11proto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xcmiscproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xcmiscproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xextproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xextproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xf86bigfontproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xf86bigfontproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xf86dgaproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xf86dgaproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xf86driproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xf86driproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xf86miscproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xf86miscproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xf86rushproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xf86rushproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xf86vidmodeproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xf86vidmodeproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xineramaproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xineramaproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xorgproto-COPYING-xwaylandproto",
+    "path": "share/licenses/x11-server/xorgproto-COPYING-xwaylandproto",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/xtrans-COPYING",
+    "path": "share/licenses/x11-server/xtrans-COPYING",
     "mode": 420
   },
   {
-    "path": "share/doc/x11-server/licenses/zlib-LICENSE",
+    "path": "share/licenses/x11-server/zlib-LICENSE",
     "mode": 420
   }
 ]
