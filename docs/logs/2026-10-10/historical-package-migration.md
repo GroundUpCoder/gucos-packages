@@ -432,3 +432,17 @@ source/media-harness review is pending. No republished core SDL shim or X/GPU
 broker. The preparation helper4a4253c passed review and checks private/public
 input identity; GTK closure freezer was exercised locally on Cairo GObject's
 16-manifest/857-payload dependency closure, not as a new browser acceptance.
+
+## HarfBuzz source acceptance and archive-size boundary
+
+Reservation44a1daff passed full retained generated-C compilation, static/shared
+shaping/subset/FreeType consumers, install52 outputs and export on61a. Raw guest
+archive3dd540e8 is153147392 bytes; it remains intact under test-results and its
+receipt plus52 payload hashes are durable under batch-11/source. No overlarge
+blob was added to Git. The92,323,788-byte static archive and56,817,066-byte DSO
+account for most of the size. Core guc-unpack reads uncompressed ustar directly;
+gzip transport is not supported by this binary install path. A reviewed external
+transport or component partition is needed before public publication. No core or
+hosting edits are authorized or made. Fresh private binary acceptance is prepared;
+Pango/GTK source work can proceed with the accepted private HarfBuzz installation.
+The historical translator-adapter hash mismatch remains unchanged and explicit.
