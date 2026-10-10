@@ -2,9 +2,24 @@
   "format": 1,
   "packages": {
     "jsmn": {
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/f7152b86954d5b570c6eb2264d108cdb22bf1550/apps/jsmn/package.json",
-      "sha256": "d271d245bfa6697ffcee9a11b97d255f23a5098c13c7352f5e48fb44ac078782",
-      "size": 1945
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/cce612244c85482d610ee3ffe3341e2d04bce45f/apps/jsmn/package.json",
+      "sha256": "685bdd61c0fd68d5d1695ad8ad603313c4c3c253c8aac57622556bb59e228bab",
+      "size": 2356
+    },
+    "x11-server": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/cce612244c85482d610ee3ffe3341e2d04bce45f/apps/x11-server/package.json",
+      "sha256": "c858d25b2ed36c9f09a14e7be21a0a4cba007e6029dc36969d735dc3698abb0c",
+      "size": 47563
+    },
+    "x11-toolkit": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/cce612244c85482d610ee3ffe3341e2d04bce45f/apps/x11-toolkit/package.json",
+      "sha256": "64331cb15b94bbf4084f17b0b2d64ec2573af2ad242e68ce6a828d30e7e76b01",
+      "size": 13370
+    },
+    "twm": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/cce612244c85482d610ee3ffe3341e2d04bce45f/apps/twm/package.json",
+      "sha256": "d653739c51d5a80ffd9a92bcb36a6d6d6341bc44c9f0b2df1bebef60274ed885",
+      "size": 1375
     }
   }
 }
