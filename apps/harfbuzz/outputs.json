@@ -164,14 +164,6 @@
     "mode": 420
   },
   {
-    "path": "lib/libharfbuzz-runtime.a",
-    "mode": 420
-  },
-  {
-    "path": "lib/libharfbuzz.a",
-    "mode": 420
-  },
-  {
     "path": "lib/libharfbuzz.so",
     "mode": 420
   },

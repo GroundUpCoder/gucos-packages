@@ -17,3 +17,11 @@ pinned historical tools/cpp-translator/runtime_abi.py bytes. Retained generated
 outputs verify against their original inventory, but translation reproducibility
 from that pinned translator is not established. See the repository audit at
 docs/research/package-migration/harfbuzz-provenance-audit.json.
+
+The monolithic recipe passed source acceptance on61a; see batch-11/source.
+Its153147392-byte raw artifact is retained locally and is not published.
+The revised unpublished recipe depends on harfbuzz-static for both .a files,
+links its DSO from those objects, and owns headers/pkgconfig/provenance/licenses.
+This preserves all52 original payload paths across two components, with two
+additional static-component license paths. Split source/binary/public execution
+remains pending; monolithic acceptance is not acceptance of these new recipes.

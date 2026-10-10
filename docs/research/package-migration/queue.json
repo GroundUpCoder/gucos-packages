@@ -1778,7 +1778,7 @@
     {
       "id": "harfbuzz",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "source-partition-review-pending",
       "historicalManifest": "apps/harfbuzz/wasm-package.json",
       "historicalManifestSha256": "867537107b51bcb6295a5d9c69a7e57d33cbc7dd67c5c3e84aaea158d8ea8412",
       "historicalEvidence": [
@@ -1822,9 +1822,8 @@
         }
       ],
       "blockers": [
-        "Fresh binary/consumer/reload acceptance pending.",
-        "153147392-byte raw export needs reviewed publication transport or component partition; core unpack is uncompressed ustar only.",
-        "Historical translator-adapter hash mismatch remains a reproducibility limitation."
+        "Monolithic source accepted; split static/main recipes require independent review and all fresh guest/binary/public gates.",
+        "Historical translator-adapter hash mismatch: translation reproducibility not established."
       ],
       "candidate": "apps/harfbuzz",
       "sourceReview": {
@@ -4575,6 +4574,17 @@
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
       "blockers": []
+    },
+    {
+      "id": "harfbuzz-static",
+      "kind": "historical-component",
+      "state": "source-prepared-review-pending",
+      "candidate": "apps/harfbuzz-static",
+      "mapping": "harfbuzz static archives partition; main package owns headers and DSO",
+      "acceptance": [],
+      "blockers": [
+        "Independent source review and guest build/binary/public gates pending."
+      ]
     }
   ],
   "sourceReview": {

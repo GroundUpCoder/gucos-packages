@@ -9,7 +9,15 @@ if [ ! -f port/generated/build.sh ]; then
   exit 1
 fi
 mkdir -p "$stage/lib/pkgconfig" "$stage/include/harfbuzz" "$stage/share/harfbuzz"
-sh port/generated/build.sh "$stage"
+# Link the full shared library from the exact installed static component.
+mkdir -p port/build
+(
+ cd port/build
+ ar x /usr/local/lib/libharfbuzz.a
+ printf '%s\n' [0-9]*.o > link.rsp
+ cc -shared @link.rsp /usr/local/lib/libharfbuzz-runtime.a -lglib-2.0 -lpcre2-8 -lintl -liconv -lz -lfreetype -Wl,-soname,libharfbuzz.so -o "$stage/lib/libharfbuzz.so"
+)
+rm -rf port/build
 cp port/generated/include/* "$stage/include/harfbuzz/"
 cp port/generated/provenance.json "$stage/share/harfbuzz/translation.json"
 for component in harfbuzz harfbuzz-subset harfbuzz-raster harfbuzz-vector harfbuzz-gpu; do
