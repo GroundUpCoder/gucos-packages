@@ -356,3 +356,19 @@ batch-07/public-live. Live-accepted additions now total29 package entries;
 canonical migration completeness is still tracked separately in the queue.
 The interrupted GTK profile is resuming with distinct gpt-resume report/log names
 under reservationc47e3870-ab86-41ef-b0b9-dae8f09302d0; original evidence preserved.
+
+## Interrupted-profile recovery remains blocked
+
+The successor retry c47e3870 refused `unfinished publication; run gucman recover`.
+Normal recovery in reservation4ccd1644 then refused `incomplete preparation;
+inspect pending journal before recovery`. Both failure logs are preserved under
+account-transition; no journal or package state was manually removed. This is
+an interruption/recovery limitation, not successful GTK/codec acceptance.
+New clean private run gtk-foundations-gpt-clean-61a87f88 freezes the same
+528ceb04 inputs and61a runtime; reservationadc8ecb8 runs dependency installation
+then codecs and small GTK foundations serially. Interrupted profile is preserved.
+
+Prepared libevent2.1.12 and libuv1.51.0 adapters at ec043c5. All507 archived blobs
+match pinned historical Git; static/shared timer/buffer and pipe/poll consumers
+are prepared. No networking or full upstream-suite claim. Independent source
+review and actual guest execution are pending.

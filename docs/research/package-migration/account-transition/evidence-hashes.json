@@ -7,6 +7,14 @@
     "sha256": "2ca8fb2b3bbc277aadb1720515ce0c9e8fff9f26e907a2ad480e5800e7df51ba",
     "size": 43848
   },
+  "dependencies-gpt-resume-cairo-gio-core-atk-fribidi-pkgconf.json": {
+    "sha256": "a6bb3a53a29b2976a118693a0830bd94c7e302374f6c1f82f75ed6d088dd7ac9",
+    "size": 752
+  },
+  "dependencies-gpt-resume.log": {
+    "sha256": "b35d1abf8a1355296b732e45ecabe4ff9be95c9df004902d9e71b3fca38ee3a7",
+    "size": 732
+  },
   "observed-runtime.json": {
     "sha256": "d7cd3ad1f448bcb7036f816e699c66a771c1b7314f8e0e07f7214b0d463d10cd",
     "size": 123
@@ -22,6 +30,10 @@
   "dependencies-cairo-gio-core-atk-fribidi-pkgconf.json": {
     "sha256": "c3a1bafd7039b21777d65f0a7188f3c4302687f4604beb2a82f2511f51f9f4b4",
     "size": 632
+  },
+  "recover-gpt.log": {
+    "sha256": "b218afe6706cd9ce4b8bd41eb6f75ddcfbf91c18ff84548e7e7791130208ac38",
+    "size": 577
   },
   "candidate-manifests.json": {
     "sha256": "6f7198724bf2ec61956a39c1110412646926eaebf1d8f0aa3d2bf90a4a764427",
