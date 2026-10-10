@@ -2050,7 +2050,7 @@
     {
       "id": "libevent",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/libevent/wasm-package.json",
       "historicalManifestSha256": "cf029d1042a8ed333671d39fb6e161de414851791bcee7a58ade2544f371a05d",
       "historicalEvidence": [
@@ -2086,9 +2086,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Guest source build, installed recipe static/shared timer/poll consumers and export; libuv both header orders",
           "evidence": "batch-08/source"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Fresh binary install, installed static/shared consumers, reload hashes/manifests",
+          "evidence": "batch-08/binary-install"
         }
       ],
-      "blockers": [],
+      "blockers": [
+        "Independent artifact/publication and public-live acceptance pending."
+      ],
       "candidate": "apps/libevent",
       "sourceReview": {
         "commit": "ec043c5",
@@ -2501,7 +2508,7 @@
     {
       "id": "libuv",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/libuv/wasm-package.json",
       "historicalManifestSha256": "4f610f9ed3deb03d87bd42a21b755e773e06492fcf682f0a60f9e3302685fc6c",
       "historicalEvidence": [
@@ -2537,9 +2544,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Guest source build, installed recipe static/shared timer/poll consumers and export; libuv both header orders",
           "evidence": "batch-08/source"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Fresh binary install, installed static/shared consumers, reload hashes/manifests",
+          "evidence": "batch-08/binary-install"
         }
       ],
-      "blockers": [],
+      "blockers": [
+        "Independent artifact/publication and public-live acceptance pending."
+      ],
       "candidate": "apps/libuv",
       "sourceReview": {
         "commit": "68d6ec8",
@@ -2834,7 +2848,7 @@
     {
       "id": "nyancat",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/nyancat/wasm-package.json",
       "historicalManifestSha256": "4bf74a3d4df37b72ad0686eb292667149676d03ba6058dda2e0f0b053f591ec0",
       "historicalEvidence": [
@@ -2865,8 +2879,16 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
-      "blockers": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest build, retained recipe consumers, install and export",
+          "evidence": "batch-09/source"
+        }
+      ],
+      "blockers": [
+        "Fresh binary acceptance and independent artifact/publication review pending."
+      ],
       "candidate": "apps/nyancat",
       "sourceReview": {
         "commit": "723edcc",
@@ -3128,7 +3150,7 @@
     {
       "id": "pigz",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/pigz/wasm-package.json",
       "historicalManifestSha256": "863d987e5fe85e8c68f7ae3cf37dc285fcf6d1d59cefb770f1b7aa1cd702e58b",
       "historicalEvidence": [
@@ -3161,8 +3183,16 @@
         "zlib"
       ],
       "mapping": null,
-      "acceptance": [],
-      "blockers": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest build, retained recipe consumers, install and export",
+          "evidence": "batch-09/source"
+        }
+      ],
+      "blockers": [
+        "Fresh binary acceptance and independent artifact/publication review pending."
+      ],
       "candidate": "apps/pigz",
       "sourceReview": {
         "commit": "723edcc",
@@ -3456,7 +3486,7 @@
     {
       "id": "qjs",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/quickjs/wasm-package.json",
       "historicalManifestSha256": "221c54ef5d62b84b7557485087155ab259d0897317d916df93c1df462b219ad7",
       "historicalEvidence": [
@@ -3487,8 +3517,16 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
-      "blockers": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest build, retained recipe consumers, install and export",
+          "evidence": "batch-10/source"
+        }
+      ],
+      "blockers": [
+        "Fresh binary acceptance and independent artifact/publication review pending."
+      ],
       "candidate": "apps/qjs",
       "sourceReview": {
         "commit": "1ab42b9",
@@ -3784,7 +3822,7 @@
     {
       "id": "sqlite3",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/sqlite/wasm-package.json",
       "historicalManifestSha256": "155007e3c636605c77819512634c119aa18bd220fa16f7268ef733bb07ea42bf",
       "historicalEvidence": [
@@ -3815,8 +3853,16 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
-      "blockers": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "Guest build, retained recipe consumers, install and export",
+          "evidence": "batch-10/source"
+        }
+      ],
+      "blockers": [
+        "Fresh binary acceptance and independent artifact/publication review pending."
+      ],
       "candidate": "apps/sqlite3",
       "sourceReview": {
         "commit": "1ab42b9",

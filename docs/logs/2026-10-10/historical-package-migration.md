@@ -398,3 +398,19 @@ outputs plus parsed manifests on61a. Evidence batch-06/binary-install and
 source-clean-gpt; exact exports retained under apps. Independent artifact and
 publication review requested next. GTK schemas is data, not a compiled app.
 Full HarfBuzz/Pango/GTK composition and GUI acceptance are still open.
+
+## Successor CLI and event-library execution
+
+Reservation781bfb5c completed fresh libevent/libuv binary installation, installed
+static/shared consumers and reload integrity (batch-08/binary-install), then
+source build/test/install/export for pigz/nyancat (batch-09) and SQLite/QuickJS
+(batch-10). No public acceptance is claimed yet. QJS selected upstream suites
+and SQLite retained database checks ran in the guest. Original archives retained.
+
+Reviewer approved GTK GUI harness a1e91fb including partial-startup cleanup and
+all public X/Cairo providers; execution remains pending. GNU m4's skip allowlist
+was restored before source approval. Tcl d1b6e59 has174 historical compilation
+units (163 Tcl/LibTomMath/Unix plus11 embedded zlib), not163 total; reviewer
+verified844 outputs and static embed test. Tcl and m4 guest execution pending.
+HarfBuzz retained generated-C source compilation now runs serially in bounded
+reservation44a1daff; translation reproducibility limitation remains unchanged.
