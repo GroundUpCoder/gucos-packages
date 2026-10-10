@@ -36,6 +36,7 @@
     "gio-source.tar",
     "GLib-COPYING",
     "build.sh",
-    "test.sh"
+    "test.sh",
+    "schema-check.c"
   ]
 }
