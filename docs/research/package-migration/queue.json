@@ -117,7 +117,7 @@
     {
       "id": "atk",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/atk/wasm-package.json",
       "historicalManifestSha256": "1b87120bcd575d00ef4a81849898ea840a2eb679f2fd154dbdb76db7a1dae842",
       "historicalEvidence": [
@@ -143,9 +143,15 @@
         "gobject"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/static+shared retained consumers/install/export; GIO extended files, Unix streams, file watch, module load, local D-Bus and remote activation passed",
+          "evidence": "test-results/migration/gtk-foundations-v4-61a87f88"
+        }
+      ],
       "blockers": [
-        "New guest acceptance and independent publication review pending."
+        "Fresh binary acceptance, independent publication review and public-live acceptance pending."
       ],
       "candidate": "apps/atk",
       "sourceReview": {
@@ -497,7 +503,7 @@
     {
       "id": "cairo",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/cairo/wasm-package.json",
       "historicalManifestSha256": "d66343c7f96900624bea953916f04bad2eb3ac299fc9757617f3d672e00a0d07",
       "historicalEvidence": [
@@ -531,12 +537,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
           "evidence": "batch-04"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed static/shared consumers, font/X extension/Cairo rendering checks, all117 combined output hashes and parsed manifests after reload",
+          "evidence": "batch-04/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/cairo"
+      "blockers": [],
+      "candidate": "apps/cairo",
+      "publicationCommit": "85a890a7771165d99f2b6ef5202d55f009e9727e"
     },
     {
       "id": "cairo-gobject",
@@ -903,7 +913,7 @@
     {
       "id": "fontconfig",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/fontconfig/wasm-package.json",
       "historicalManifestSha256": "2b6f3edc0c047715be796e4ca8af7b444f070293650ab372958a6cd97d6938d8",
       "historicalEvidence": [
@@ -931,17 +941,21 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
           "evidence": "batch-04"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed static/shared consumers, font/X extension/Cairo rendering checks, all117 combined output hashes and parsed manifests after reload",
+          "evidence": "batch-04/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/fontconfig"
+      "blockers": [],
+      "candidate": "apps/fontconfig",
+      "publicationCommit": "85a890a7771165d99f2b6ef5202d55f009e9727e"
     },
     {
       "id": "freetype",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/freetype/wasm-package.json",
       "historicalManifestSha256": "9344ff6a38266c013c78cdef9af26b50e0e4ba5ace04040bd8361ec415670f39",
       "historicalEvidence": [
@@ -971,17 +985,21 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
           "evidence": "batch-04"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed static/shared consumers, font/X extension/Cairo rendering checks, all117 combined output hashes and parsed manifests after reload",
+          "evidence": "batch-04/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/freetype"
+      "blockers": [],
+      "candidate": "apps/freetype",
+      "publicationCommit": "85a890a7771165d99f2b6ef5202d55f009e9727e"
     },
     {
       "id": "fribidi",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/fribidi/wasm-package.json",
       "historicalManifestSha256": "685f27a68f2db97fdce2300abd3d85e14a79e305886dba1ed70d9b255b0fc89e",
       "historicalEvidence": [
@@ -1005,9 +1023,15 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/static+shared retained consumers/install/export; GIO extended files, Unix streams, file watch, module load, local D-Bus and remote activation passed",
+          "evidence": "test-results/migration/gtk-foundations-v4-61a87f88"
+        }
+      ],
       "blockers": [
-        "New guest acceptance and independent publication review pending."
+        "Fresh binary acceptance, independent publication review and public-live acceptance pending."
       ],
       "candidate": "apps/fribidi",
       "sourceReview": {
@@ -1198,7 +1222,7 @@
     {
       "id": "gio-core",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/gio-core/wasm-package.json",
       "historicalManifestSha256": "8d2e9ac1a5bd6841a80511e075f1737ceceb2df91ff34477097bcd9c91f71a1a",
       "historicalEvidence": [
@@ -1225,9 +1249,15 @@
         "zlib"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/static+shared retained consumers/install/export; GIO extended files, Unix streams, file watch, module load, local D-Bus and remote activation passed",
+          "evidence": "test-results/migration/gtk-foundations-v4-61a87f88"
+        }
+      ],
       "blockers": [
-        "New guest acceptance and independent publication review pending."
+        "Fresh binary acceptance, independent publication review and public-live acceptance pending."
       ],
       "candidate": "apps/gio-core",
       "sourceReview": {
@@ -1239,7 +1269,7 @@
     {
       "id": "gio-listmodel",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-accepted",
       "historicalManifest": "vendor/gio-listmodel/wasm-package.json",
       "historicalManifestSha256": "04331709f700f5b8e275494bb9067a1368812225fbf066c77f74993bac810067",
       "historicalEvidence": [
@@ -1265,9 +1295,15 @@
         "gobject"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "guest source build/static+shared retained consumers/install/export; GIO extended files, Unix streams, file watch, module load, local D-Bus and remote activation passed",
+          "evidence": "test-results/migration/gtk-foundations-v4-61a87f88"
+        }
+      ],
       "blockers": [
-        "New guest acceptance and independent publication review pending."
+        "Fresh binary acceptance, independent publication review and public-live acceptance pending."
       ],
       "candidate": "apps/gio-listmodel",
       "sourceReview": {
@@ -2210,7 +2246,7 @@
     {
       "id": "libpng",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/libpng/wasm-package.json",
       "historicalManifestSha256": "498dc8727eb13b2b3f48c387f61127db4c1e4e07e131f39b37319e554bfa8e09",
       "historicalEvidence": [
@@ -2241,12 +2277,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
           "evidence": "batch-04"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed static/shared consumers, font/X extension/Cairo rendering checks, all117 combined output hashes and parsed manifests after reload",
+          "evidence": "batch-04/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/libpng"
+      "blockers": [],
+      "candidate": "apps/libpng",
+      "publicationCommit": "85a890a7771165d99f2b6ef5202d55f009e9727e"
     },
     {
       "id": "libtool",
@@ -2915,7 +2955,7 @@
     {
       "id": "pixman",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/pixman/wasm-package.json",
       "historicalManifestSha256": "8e717772298e82645f91a8a5178b054dadd95c50197b967071df8c56b55b2ace",
       "historicalEvidence": [
@@ -2944,12 +2984,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
           "evidence": "batch-04"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed static/shared consumers, font/X extension/Cairo rendering checks, all117 combined output hashes and parsed manifests after reload",
+          "evidence": "batch-04/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/pixman"
+      "blockers": [],
+      "candidate": "apps/pixman",
+      "publicationCommit": "85a890a7771165d99f2b6ef5202d55f009e9727e"
     },
     {
       "id": "pkgconf",
@@ -3852,7 +3896,7 @@
     {
       "id": "x11-shared",
       "kind": "historical-canonical-name",
-      "state": "candidate-accepted-awaiting-review",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/x11-shared/wasm-package.json",
       "historicalManifestSha256": "39a8f16c9c4b8e4bbbcaa481890fad2c8f73462dad49ce4bc5dba83c60c414ee",
       "historicalEvidence": [
@@ -3872,12 +3916,16 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "source builds/tests with retained first failure and resumed exports; fresh binary install, installed static/shared relinks, installed font/X extension/Cairo text rendering, reload payload+parsed-manifest integrity",
           "evidence": "batch-04"
+        },
+        {
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "scope": "fresh public install, installed static/shared consumers, font/X extension/Cairo rendering checks, all117 combined output hashes and parsed manifests after reload",
+          "evidence": "batch-04/public-live"
         }
       ],
-      "blockers": [
-        "Independent artifact/publication review and public-live acceptance pending."
-      ],
-      "candidate": "apps/x11-shared"
+      "blockers": [],
+      "candidate": "apps/x11-shared",
+      "publicationCommit": "85a890a7771165d99f2b6ef5202d55f009e9727e"
     },
     {
       "id": "xarchiver",

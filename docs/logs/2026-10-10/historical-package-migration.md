@@ -269,3 +269,17 @@ FreeType glyph rendering passed; reload verified all117 output files and
 parsed manifests. Evidence/artifacts retained for independent publication review.
 Single public Cairo provider is accepted within this foundation closure only;
 full GTK/Scintilla composition and runtime acceptance remain pending.
+
+## Graphics foundations publicly accepted
+
+Pushed reviewer-approved85a890a. Fresh public install, retained installed
+static/shared consumers, X extension/font discovery/Cairo FreeType rendering
+and reload all117 combined payload hashes plus parsed manifests passed on61a.
+Evidence under batch-04/public-live. Cairo/X11 foundation providers are accepted;
+this does not establish full GTK/Scintilla composition or GUI support.
+
+GIO list-model, ATK, FriBidi and GIO core source builds/tests/install/export passed.
+Extended installed GIO checks also passed files/cancellation, Unix streams,
+file-watch delivery, GModule load, local D-Bus naming, remote GApplication
+activation and guc-session. Fresh binary acceptance underway; no general
+networking/TLS or Unix-FD-passing claim.
