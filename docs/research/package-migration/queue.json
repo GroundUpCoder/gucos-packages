@@ -1069,7 +1069,7 @@
     {
       "id": "gdk-pixbuf",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/gdk-pixbuf/wasm-package.json",
       "historicalManifestSha256": "cfd61a2a5bf1807781eb0967ae8331c4b02385b507c4e6988c65d8cb53317d21",
       "historicalEvidence": [
@@ -1098,7 +1098,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and guest acceptance pending."
+      ],
+      "candidate": "apps/gdk-pixbuf"
     },
     {
       "id": "gdk3",
@@ -1258,7 +1261,7 @@
     {
       "id": "glib",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/glib/wasm-package.json",
       "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
       "historicalEvidence": [
@@ -1290,19 +1293,19 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build, static/shared consumers, installation/export; GObject wide integer generic marshalling",
-          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-glib-gobject.json"
+          "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
+          "evidence": "batch-03"
         }
       ],
       "blockers": [
-        "Fresh binary install, installed consumers, reload and independent publication review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/glib"
     },
     {
       "id": "gobject",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/glib/wasm-package.json",
       "historicalManifestSha256": "8b55d890b1cb65555cbbc14696700a41fcbc262534c77b7d7dd6cdb7acd82b69",
       "historicalEvidence": [
@@ -1332,12 +1335,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build, static/shared consumers, installation/export; GObject wide integer generic marshalling",
-          "evidence": "test-results/migration/graphics-source-v2-61a87f88/build-glib-gobject.json"
+          "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
+          "evidence": "batch-03"
         }
       ],
       "blockers": [
-        "Fresh binary install, installed consumers, reload and independent publication review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/gobject"
     },
@@ -1893,7 +1896,7 @@
     {
       "id": "libffi",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/libffi/wasm-package.json",
       "historicalManifestSha256": "ba6535b10bd26cacea9f7aff0cbad135873a70504f89354268d33b0ff4d5fb90",
       "historicalEvidence": [
@@ -1920,13 +1923,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build/test/install/export; binary acceptance pending",
-          "run": "test-results/migration/graphics-source-v2-61a87f88",
-          "sourceCommit": "c8ca81cb3b1e846931d8589b82f8700213af5de1"
+          "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
+          "evidence": "batch-03"
         }
       ],
       "blockers": [
-        "Fresh binary/installed-consumer/reload acceptance and publication review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/libffi"
     },
@@ -2000,7 +2002,7 @@
     {
       "id": "libiconv",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/libiconv/wasm-package.json",
       "historicalManifestSha256": "382b952fdbadffeb59827c8e103f06f68df12c74668590697a24cb18e3c44df7",
       "historicalEvidence": [
@@ -2028,20 +2030,19 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build/test/install/export; binary acceptance pending",
-          "run": "test-results/migration/graphics-source-v2-61a87f88",
-          "sourceCommit": "c8ca81cb3b1e846931d8589b82f8700213af5de1"
+          "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
+          "evidence": "batch-03"
         }
       ],
       "blockers": [
-        "Fresh binary/installed-consumer/reload acceptance and publication review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/libiconv"
     },
     {
       "id": "libintl",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/gettext/wasm-package.json",
       "historicalManifestSha256": "148457a5d63806b8e3c9baa921d5f7609ddef8e51783a3e975ce5f96c4ffadc9",
       "historicalEvidence": [
@@ -2071,20 +2072,19 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build/test/install/export; binary acceptance pending",
-          "run": "test-results/migration/graphics-source-v2-61a87f88",
-          "sourceCommit": "c8ca81cb3b1e846931d8589b82f8700213af5de1"
+          "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
+          "evidence": "batch-03"
         }
       ],
       "blockers": [
-        "Fresh binary/installed-consumer/reload acceptance and publication review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/libintl"
     },
     {
       "id": "libjpeg",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/libjpeg/wasm-package.json",
       "historicalManifestSha256": "76ce5527ccf8331a2e40c189424efdf0f23b3d14e779b42cde0ed091c286db8b",
       "historicalEvidence": [
@@ -2116,12 +2116,15 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and guest acceptance pending."
+      ],
+      "candidate": "apps/libjpeg"
     },
     {
       "id": "libjpeg-turbo",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "vendor/libjpeg-turbo/wasm-package.json",
       "historicalManifestSha256": "eef351330736fdf02ba3b58131dc0b942147654645c260859da6330b5c7b746b",
       "historicalEvidence": [
@@ -2146,7 +2149,10 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent source review and guest acceptance pending."
+      ],
+      "candidate": "apps/libjpeg-turbo"
     },
     {
       "id": "libpng",
@@ -2646,7 +2652,7 @@
     {
       "id": "pcre2",
       "kind": "historical-canonical-name",
-      "state": "source-accepted",
+      "state": "candidate-accepted-awaiting-review",
       "historicalManifest": "vendor/pcre2/wasm-package.json",
       "historicalManifestSha256": "c36ec960359841727c0241aa8eca62c1cfc52e2fb8190f62bd5f1f993eba47ae",
       "historicalEvidence": [
@@ -2674,13 +2680,12 @@
       "acceptance": [
         {
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-          "scope": "guest source build/test/install/export; binary acceptance pending",
-          "run": "test-results/migration/graphics-source-v2-61a87f88",
-          "sourceCommit": "c8ca81cb3b1e846931d8589b82f8700213af5de1"
+          "scope": "guest source build/static+shared tests, fresh binary install, installed static+shared consumers and reload output/parsed-manifest integrity",
+          "evidence": "batch-03"
         }
       ],
       "blockers": [
-        "Fresh binary/installed-consumer/reload acceptance and publication review pending."
+        "Independent artifact/publication review and public-live acceptance pending."
       ],
       "candidate": "apps/pcre2"
     },

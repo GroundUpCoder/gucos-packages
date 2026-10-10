@@ -1,0 +1,188 @@
+{
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "sha256": "0a778a37cb429c2d1e324e76da691d254701534e2ee97587594a3221e628529a",
+  "size": 2451456,
+  "guestManifest": {
+    "format": 1,
+    "name": "gobject",
+    "version": "2.84.4-1",
+    "dependencies": [
+      "glib",
+      "libffi"
+    ],
+    "dependencyRequirements": {
+      "glib": {
+        "version": "2.84.4-1"
+      },
+      "libffi": {
+        "version": "3.4.8-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:64027/migration/gobject/source.tar",
+        "sha256": "9d5c4fe37e0071cb2e8af3e8c319f7e71057e53262533b64f06a763ae1ba4d6a",
+        "size": 19445760
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:64027/migration/gobject/build.sh",
+        "sha256": "f1ec2a07307fabffd7a23b3cfaac3f884e91d94307d1122ecba302f9e4d3136c",
+        "size": 1237
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:64027/migration/gobject/test.sh",
+        "sha256": "fa670aa29c62afa92d36f0c2c556962f4dcd31e8072c33c68328df983d6aa366",
+        "size": 485
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libgobject-2.0.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libgobject-2.0.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/gobject-2.0.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/gobject/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/glib-object.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gatomicarray.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gbinding.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gbindinggroup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gboxed.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gclosure.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/genums.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/glib-enumtypes.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/glib-types.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gmarshal.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gobject-autocleanups.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gobject-visibility.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gobject.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gobject_trace.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gobjectnotifyqueue.c",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gparam.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gparamspecs.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gsignal.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gsignalgroup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gsourceclosure.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gtype-private.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gtype.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gtypemodule.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gtypeplugin.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gvalue.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gvaluearray.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gvaluecollector.h",
+        "mode": 420
+      },
+      {
+        "path": "include/glib-2.0/gobject/gvaluetypes.h",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/gobject/COPYING"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

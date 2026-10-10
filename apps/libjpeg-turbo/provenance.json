@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/libjpeg-turbo",
+  "archiveSha256": "37e17ba56424fbb9b6a7858197e3a97fa7b4582d17c601888674e1525f1ee350",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

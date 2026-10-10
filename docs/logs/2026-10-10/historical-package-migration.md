@@ -213,3 +213,21 @@ Reviewer cleared source010e993 for GIO/ATK/FriBidi, requiring stronger GIO IPC,
 monitoring and module-loading consumers before publication. Added a graphics
 consumer for installed font discovery, X extension versions and Cairo Xlib
 FreeType pixel rendering; syntax only checked, execution pending.
+
+## GLib foundation candidate acceptance
+
+libiconv, PCRE2-8, libffi scalar ABI, libintl, GLib and GObject completed source
+builds, fresh binary installation, installed static/shared consumers and reload
+integrity on61a87f88. GObject includes retained wide generic-marshalling tests.
+Evidence and exact exported binaries retained in batch-03 and apps respectively.
+Independent artifact review and public-live acceptance remain pending.
+
+Graphics first source run passed Pixman/libpng/FreeType, then rejected historical
+Fontconfig etc/fonts output before execution. Adapted configuration install and
+compiled search paths to share/fontconfig without changing archived sources.
+Reviewer approved d85ee1d source/test changes; retry underway. This is a package
+layout defect, not evidence of a core runtime defect.
+
+Prepared IJG JPEG9f, libjpeg-turbo3.1.4.1 and GdkPixbuf source adapters. Turbo's
+historical separate library/header names avoid replacing IJG files; SIMD remains
+disabled. Static/shared retained codec consumers prepared, no guest execution.

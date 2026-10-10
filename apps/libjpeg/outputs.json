@@ -1,0 +1,34 @@
+[
+  {
+    "path": "lib/libjpeg.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libjpeg.so",
+    "mode": 420
+  },
+  {
+    "path": "include/jpeglib.h",
+    "mode": 420
+  },
+  {
+    "path": "include/jerror.h",
+    "mode": 420
+  },
+  {
+    "path": "include/jconfig.h",
+    "mode": 420
+  },
+  {
+    "path": "include/jmorecfg.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/libjpeg.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libjpeg/LICENSE",
+    "mode": 420
+  }
+]
