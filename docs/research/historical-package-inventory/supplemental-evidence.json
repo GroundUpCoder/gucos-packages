@@ -1,0 +1,85 @@
+{
+  "oldCommit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "files": [
+    {
+      "path": "docs/PORTABILITY.md",
+      "sha256": "4e813208bec6b05a22e8fe60eb5b60553017061a6762514d0d1191472617d163"
+    },
+    {
+      "path": "docs/CORRECTNESS-ROADMAP.md",
+      "sha256": "09c510cf8c3780baafc27c8d1eff4e27575d9fa2d89f18ff276c80310218084a"
+    },
+    {
+      "path": "docs/PROJECT-WORKLOADS.md",
+      "sha256": "19ef316335eb956c4f087cb027beb918c4fd1d3bb4a67de0095c4294f4e69ea0"
+    },
+    {
+      "path": "docs/BUILD-ROADMAP.md",
+      "sha256": "4b8a5a2b116e2b0d7b1c01abf9609600391241ed12d17e7413ae228be2932218"
+    },
+    {
+      "path": "apps/libarchive/PORT.md",
+      "sha256": "561b865cebb64f157253a796b476da9d07f6f6879257c616fb9f7081bc19ef1a"
+    },
+    {
+      "path": "apps/libcxxabi/README.md",
+      "sha256": "ac9855747d9c64607697824427b4576c9af95d57bfc2ffb22bbdedd97ed867ab"
+    },
+    {
+      "path": "docs/logs/2026-10-04/thread-consolidation.md",
+      "sha256": "f60b3c379318f76459d037fa2292d3e04a932239289406ee22e98046aec9184e"
+    },
+    {
+      "path": "docs/logs/2026-09-30/pygame-expansion.md",
+      "sha256": "27483cc337f3d3a7c59194457ea0c7eba53d46a1306443ae5e9993834e5fdda4"
+    },
+    {
+      "path": "docs/logs/2026-10-03/cpp-llvm-pcg32.md",
+      "sha256": "ce93dae3e838761b3085b4b0560beef089465c91f6dd40c337f1b7ba8a47d57e"
+    },
+    {
+      "path": "docs/logs/2026-10-03/libc-wchar-fork.md",
+      "sha256": "050e9aad1df196a166b39564a15ce42c3445b5df5cbbfe6bc988b53519c3c734"
+    },
+    {
+      "path": "docs/logs/2026-10-05/scintilla-exception-execution.md",
+      "sha256": "ba9cfc1ee97557f5c0fe03b67487d41c429d656de39e4d40aa62c736a6e5d7d7"
+    },
+    {
+      "path": "docs/logs/2026-10-10/gtk3-source-composition-blocker.md",
+      "sha256": "82d3f7711a1d73fb06b1f419b873edb966e600bdd9d2b6d6f6344bf7a39f4e8b"
+    },
+    {
+      "path": "docs/logs/2026-10-10/scintilla-source-blocker.md",
+      "sha256": "f4a2de2d2059e0a66fd08c17a47830e43aeed65dfb4b48a65aafa1d0eecd64e6"
+    },
+    {
+      "path": "docs/logs/2026-10-10/tinyxml2-retained-blocker.md",
+      "sha256": "5982b62f859b00fdcd6c1e6f448849225622afafa8e2b4bde9b1daa9d917cdb4"
+    },
+    {
+      "path": "docs/logs/2026-10-10/fltk-retained-checkpoint.md",
+      "sha256": "3cdecab39d9a0e211abda38418299b1e8cace35482e5e3a97caf3f5348fec08f"
+    },
+    {
+      "path": "docs/logs/2026-10-03/more-desktop-apps.md",
+      "sha256": "16e1bf1de41493648ca6d87cee1a972919b27060b8dec12a2ace99b5d6153bc9"
+    },
+    {
+      "path": "docs/logs/2026-10-03/desktop-ports.md",
+      "sha256": "c3b482b8ee4e3c46ce489ce0563e3a67529b626046abae69cd29ce00aa5836c9"
+    },
+    {
+      "path": "docs/logs/2026-10-03/x11-apps-more.md",
+      "sha256": "f45d7bf62e5fb8ed8616f08cf49df5ee9b41b7259b802107d61c3beae99c0c81"
+    },
+    {
+      "path": "tests/application-plugins.mjs",
+      "sha256": "3ee973d7e97d8023eb975432d602341633a11d56983faf33198ceed4d6ada292"
+    },
+    {
+      "path": "docs/research/cpp-llvm-to-c/pcg32-acceptance.json",
+      "sha256": "76a4b3cfad868a8c320482752859ded933c4ae1567e443a3a365a4d8703f666d"
+    }
+  ]
+}

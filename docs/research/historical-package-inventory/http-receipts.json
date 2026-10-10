@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://os.groundupcoder.net/",
+    "curlExit": 0,
+    "observedAt": "2026-10-10T08:48:46.525779+00:00",
+    "sha256": "6689a3ecde60ffdc83bdb565da381684b39d630a9831764c39ffe550958999d9",
+    "bytes": 266300,
+    "comparedWith": "/tmp/wasm-posix-platform-c4411d72/index.html",
+    "exactMatch": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/main/catalog.json",
+    "curlExit": 0,
+    "observedAt": "2026-10-10T08:48:46.828642+00:00",
+    "sha256": "8d7c4cbf0b2110f66aadabf766f0aad93563d090adb46861d31b3869bbba25fd",
+    "bytes": 5280,
+    "comparedWith": "catalog.json",
+    "exactMatch": true
+  },
+  {
+    "url": "https://os.groundupcoder.net/build.json",
+    "outcome": "Not a served endpoint: Python urllib returned403; curl returned404. No identity conclusion from this path."
+  }
+]
