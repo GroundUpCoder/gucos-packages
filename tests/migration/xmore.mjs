@@ -16,6 +16,7 @@ try{
  report.inputCommit=config.inputCommit;report.harnessSha256=createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex');
  s=await session();report.runtime=s.runtime;await s.command('true');
  for(const name of ['xmag','bitmap']){
+  assert(manifests[name].binary,'Exact binary manifest required: '+name);
   const closureBytes=await readFile(resolve(run,name+'-closure.json')),closure=JSON.parse(closureBytes);
   assert.equal(closure.root,name);assert.equal(closure.inputCommit,config.inputCommit);
   for(const [dep,manifest] of Object.entries(closure.manifests)){
@@ -31,6 +32,11 @@ try{
   const result={name,input,closureSha256:createHash('sha256').update(closureBytes).digest('hex'),fileCount:closure.fileCount};report.packages.push(result);
   await s.page.evaluate(async encoded=>shell.busybox.write('/tmp/xmore.tar',Uint8Array.from(atob(encoded),c=>c.charCodeAt(0))),archive.toString('base64'));
   await s.command('mkdir -p /tmp/migration-'+name+'\ncd /tmp/migration-'+name+'\ntar -xf /tmp/xmore.tar');
+  if(name==='xmag'){
+   const control=await readFile(new URL('xmag-control.c',import.meta.url));
+   result.controlSha256=createHash('sha256').update(control).digest('hex');
+   await s.page.evaluate(async text=>shell.busybox.write('/tmp/migration-xmag-control.c',new TextEncoder().encode(text)),control.toString());
+  }
   const setup=name==='bitmap'?`printf '........\n........\n........\n........\n........\n........\n........\n........\n' > /tmp/original.txt
 atobm -chars '.#' -name sample /tmp/original.txt > /tmp/sample.xbm
 bmtoa -chars '.#' /tmp/sample.xbm > /tmp/roundtrip.txt
@@ -47,7 +53,7 @@ printf '########\n########\n########\n########\n########\n########\n########\n##
 cmp /tmp/expected.txt /tmp/edited.txt`;
   pending=s.command(`set -eu
 cd /tmp/migration-${name}
-cc -I/usr/local/include source/tests/control.c -L/usr/local/lib -lX11 -lxcb -lXau -o control
+cc -I/usr/local/include ${name==='xmag'?'/tmp/migration-xmag-control.c':'source/tests/control.c'} -L/usr/local/lib -lX11 -lxcb -lXau -o control
 ${setup}
 export DISPLAY=:1
 Xvfb :1 -screen 0 800x600x24 -fp built-ins -noreset -ac &
@@ -77,7 +83,7 @@ echo ${name.toUpperCase()}-PASS`);pending.catch(()=>{});
    await s.page.keyboard.press('q');await s.page.evaluate(()=>shell.busybox.write('/tmp/bitmap-done',new TextEncoder().encode('yes')));
   }
   let timer;
-  try{const log=await Promise.race([pending,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(name+' did not exit')),30000);})]);assert(log.includes(name.toUpperCase()+'-PASS'));}finally{clearTimeout(timer);}
+  try{const log=await Promise.race([pending,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(name+' did not exit')),30000);})]);assert(log.includes(name.toUpperCase()+'-PASS'));if(name==='xmag')assert(log.includes('XMAG-6X-PIXELS 57600 240 240'));}finally{clearTimeout(timer);}
   pending=undefined;result.status='passed';
  }
  report.status='passed';
