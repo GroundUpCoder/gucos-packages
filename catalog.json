@@ -230,6 +230,16 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/049d94dfc255dd3f67d9cb5e38b4b3d379ad9ead/apps/gio-core/package.json",
       "sha256": "b33bea10dca6196b5a6e58ec77dd3ebab5a40304f7e21c2367f61fc144c9f9f8",
       "size": 16540
+    },
+    "ed": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/d8990ecb390fdf0e730cba770f0b6b1d352e456b/apps/ed/package.json",
+      "sha256": "d2a5e9e56ad3b91311775df68ef585bec335e3ded7e21703916fdb975af4f871",
+      "size": 1842
+    },
+    "jq": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/d8990ecb390fdf0e730cba770f0b6b1d352e456b/apps/jq/package.json",
+      "sha256": "984011ee71379f868abdd954b54150164653e5a2f90067800725c2961bebe236",
+      "size": 1933
     }
   }
 }
