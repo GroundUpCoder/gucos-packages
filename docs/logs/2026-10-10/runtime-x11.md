@@ -32,3 +32,26 @@ redirects object files into its private source/objects directory. Recording-comp
 regression passed; public acceptance seeds a poison object at the old path.
 Historical source archive bytes are unchanged. Public mode uses the published
 catalog and immutable inputs, and will be executed after publication approval.
+
+## Public acceptance completed
+
+Independent reviewer 01a123e0-2fb3-7521-9fa3-e936e0997405 approved exact package
+tip d68be1f751090a2fdaaff3f9040ac76cbb3d188a, which was pushed to public main.
+Author then executed:
+
+- Fresh public pinned jsmn binary install and reload: PASS, browser job
+  91b48d6e-508a-4e8e-93f9-a47a200ce02a, /tmp/wasm-posix-public-binary.log.
+- PUBLIC_PACKAGE_TEST=1 tests/x11-runtime.mjs: PASS, browser job
+  be2d7afa-6585-4420-8847-7e62b98e21a5, /tmp/wasm-posix-public-x11.log.
+  Fresh guest discovered published catalog, downloaded immutable public inputs,
+  compiled and installed X11 server/toolkit/twm, ignored planted
+  /tmp/twm-build/stale.o, then passed TWM-DECORATED, TWM-MOVED,
+  TWM-HIDDEN-PROGRESS-PASS and X11-TWM-RUNTIME-PASS.
+  Exported X11 tar was 25956864 bytes, SHA256
+  9cc9c7c53dd4996540f3871b561716a268289ed6ff8eca7611d10aa456b58558.
+  This X11 export is test output, not a published binary package.
+
+Both public tests used runtime
+2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f served locally
+from the reviewed core dist. Actual production acceptance is recorded in core's
+completion journal. No host compiler built these applications.
