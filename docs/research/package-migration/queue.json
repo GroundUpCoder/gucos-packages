@@ -1736,7 +1736,7 @@
     {
       "id": "gtk3-x11",
       "kind": "historical-canonical-name",
-      "state": "source-corrected-review-pending",
+      "state": "source-candidate",
       "historicalManifest": "apps/gtk3-x11/wasm-package.json",
       "historicalManifestSha256": "b5b5bafc14610799eee068316ef0e66a0ce3f8ccf914baaf0aab6816cdd68953",
       "historicalEvidence": [
@@ -1778,16 +1778,21 @@
       "design": "gtk-provider-design.md",
       "candidate": "apps/gtk3-x11",
       "sourceReview": {
-        "commit": "267a6ff10ef3c60107fe0b0dd44c212847732956",
-        "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
-        "result": "Approved source/test preparation; fresh full guest acceptance remains required."
+        "commit": "f1e6286e9ef2f40868f917e1a58614985a63b970",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Source preparation approved; fresh guest/binary/public gates remain pending."
       },
       "attempts": [
         {
           "evidence": "docs/research/package-migration/batch-12/gtk-header-failure",
           "result": "All586 units compiled and GTK/GDK linked; consumer failed because minimal GIO header preceded full GIO. No install/export acceptance."
         }
-      ]
+      ],
+      "functionalHarnessReview": {
+        "commit": "8c55b8f621f7d7d4570ebf67f90c2570abe9cfcb",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved closure binding, retained functional checks and bounded cleanup; execution pending."
+      }
     },
     {
       "id": "harfbuzz",
@@ -4128,7 +4133,7 @@
     {
       "id": "tk",
       "kind": "historical-canonical-name",
-      "state": "source-prepared-review-pending",
+      "state": "source-candidate",
       "historicalManifest": "apps/tk/wasm-package.json",
       "historicalManifestSha256": "1f2c8cefc32d80b50de4e19ab3810625f23406cf25288114f8e715116038b3cb",
       "historicalEvidence": [
@@ -4148,7 +4153,17 @@
       "blockers": [
         "Tcl fresh execution prerequisite, independent source review, guest binary/public and retained GUI/upstream pack/grid gates pending."
       ],
-      "candidate": "apps/tk"
+      "candidate": "apps/tk",
+      "sourceReview": {
+        "commit": "5d914383f037e88d801c9a61e775eac5207df41f",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Source preparation approved; fresh guest/binary/public gates remain pending."
+      },
+      "functionalHarnessReview": {
+        "commit": "8c55b8f621f7d7d4570ebf67f90c2570abe9cfcb",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved closure binding, retained functional checks and bounded cleanup; execution pending."
+      }
     },
     {
       "id": "twm",
@@ -4638,22 +4653,27 @@
       ],
       "candidate": "apps/lpeg",
       "sourceReview": {
-        "commit": "0ccac81ea8ff1967f2ae16b53836557850f75837",
+        "commit": "c9f06a192e2181c86a2bad5629e872b60bd0b047",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
-        "result": "Source approved; fresh execution/acceptance of final candidate remains pending."
+        "result": "Source preparation approved; fresh guest/binary/public gates remain pending."
       }
     },
     {
       "id": "sqlite-series",
       "kind": "additional-workload",
-      "state": "source-prepared-review-pending",
+      "state": "source-candidate",
       "scope": "SQLite generate_series loadable extension",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
       "blockers": [
         "Independent source review and fresh guest/binary/public acceptance pending."
       ],
-      "candidate": "apps/sqlite-series"
+      "candidate": "apps/sqlite-series",
+      "sourceReview": {
+        "commit": "c9f06a192e2181c86a2bad5629e872b60bd0b047",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Source preparation approved; fresh guest/binary/public gates remain pending."
+      }
     },
     {
       "id": "pcg32",

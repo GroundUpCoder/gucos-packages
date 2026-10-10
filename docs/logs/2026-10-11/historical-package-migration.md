@@ -10,3 +10,21 @@ browser closure ended the build, with no successful export. Existing profile
 and logs remain preserved. A fresh frozen profile will install accepted public
 dependencies before building the reviewed static/main split. One bounded browser
 reservation at a time; prior completed compatibility gates are not repeated.
+
+## Resumed source preparation and independent reviews
+
+Reservation4b39cd09 uses fresh harfbuzz-split-resumed-gpt-61a87f88, installs
+public dependency binaries, then compiles reviewed static/main components.
+It is still active; no split acceptance or archive-size claim yet.
+
+Independent gpt reviewer approved c9f06a1 SQLite series and retained Lua module
+cache-clearing/reloading and entry lookup checks. These do not establish actual
+DSO unloading. Tk source5d91438 retains124 units and182 outputs; non-display
+recipe checks are separate from GUI acceptance. Harness8c55b8f/7fca56f passed
+review after exact candidate/closure binding and pinned X11 green correction.
+The binding improvement also applies to the unrun GTK harness. GTK source
+correctionf1e6286 is reviewed; its fresh build and GUI are pending.
+
+PCG auditf6c217e is reviewed: retained manifest exists, all17 generated definitions
+are absent. Package-local host preparation is required; no historical pass is
+promoted to current acceptance. Public live additions remain41 split entries.
