@@ -485,6 +485,11 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/55e446def383ab58c7a1d16b137b46aca9165648/apps/quake/package.json",
       "sha256": "2abef87dc6fa6a8f209dd3bce7516d07af905d1aaadcf7fb2f12d39abf12bd0a",
       "size": 4525
+    },
+    "cpython": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/171127986721187d28a88a037871529f9fbb81ea/apps/cpython/package.json",
+      "sha256": "c4a0cc672bf63a4c02b992ec69b29f0cc0b78a0647ad8413640d42ec0a971fe4",
+      "size": 103419
     }
   }
 }
