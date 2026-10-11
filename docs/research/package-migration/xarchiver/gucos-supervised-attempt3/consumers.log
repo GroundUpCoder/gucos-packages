@@ -1,0 +1,42 @@
+gucman: unknown source
+
+
+2 functions, 5421 bytes
+XARCHIVER-STAGED-LINK-PASS
+
+/usr/local/bin/xarchiver: OK
+/usr/local/libexec/xarchiver: OK
+/usr/local/share/applications/xarchiver.desktop: OK
+/usr/local/share/doc/xarchiver/COPYING: OK
+/usr/local/share/doc/xarchiver/PORT.md: OK
+/usr/local/share/licenses/xarchiver/COPYING: OK
+/usr/local/share/licenses/xarchiver/LGPL-2.1.txt: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmime.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmime.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimealias.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimealias.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimecache.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimecache.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeglob.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeglob.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeicon.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeicon.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeint.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeint.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimemagic.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimemagic.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeparent.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeparent.h: OK
+/usr/local/share/pixmaps/xarchiver.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-add.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-close.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-extract.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-green.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-html.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-red.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-select.png: OK
+
+c30e6f47b0eb966866601b4887d53e3ed064ecd01e650111e1fdcb7bf0147cbd  /home/user/migration-export.tar
+936448
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

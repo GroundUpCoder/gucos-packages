@@ -1,0 +1,56 @@
+/usr/local/bin/xarchiver: OK
+/usr/local/libexec/xarchiver: OK
+/usr/local/share/applications/xarchiver.desktop: OK
+/usr/local/share/doc/xarchiver/COPYING: OK
+/usr/local/share/doc/xarchiver/PORT.md: OK
+/usr/local/share/licenses/xarchiver/COPYING: OK
+/usr/local/share/licenses/xarchiver/LGPL-2.1.txt: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmime.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmime.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimealias.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimealias.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimecache.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimecache.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeglob.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeglob.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeicon.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeicon.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeint.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeint.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimemagic.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimemagic.h: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeparent.c: OK
+/usr/local/share/licenses/xarchiver/xdgmime/xdgmimeparent.h: OK
+/usr/local/share/pixmaps/xarchiver.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-add.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-close.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-extract.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-green.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-html.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-red.png: OK
+/usr/local/share/pixmaps/xarchiver/xarchiver-select.png: OK
+<JWM>
+<Program label="Terminal">xterm -fn fixed -title Terminal</Program>
+<Program label="Archive manager">xarchiver</Program>
+<Program label="Archive Manager">/usr/local/bin/desktop-menu launch xarchiver.desktop</Program>
+</JWM>
+/home/user/xarchiver-layout-v2-streamed/supervisor.c: OK
+3 functions, 10135 bytes
+51e704ccf031f2e2f92dd3c9542025655c6d9a2fcfd2a6aac3ff1ca2cd26f365  /home/user/xarchiver-layout-v2-streamed/supervisor
+8 functions, 18123 bytes
+5 functions, 12328 bytes
+WM_READY
+JWM-CONTROL-READY
+setsockopt: Protocol option not available
+
+** (xarchiver:27): WARNING **: 20:45:19.239: Could not find the icon 'package-x-generic'. The 'hicolor' theme
+was not found either, perhaps you need to install it.
+You can get a copy from:
+	http://icon-theme.freedesktop.org/releases
+
+** (xarchiver:27): WARNING **: 20:45:19.987: Failed to measure available space: This browser filesystem operation is not supported
+GLib-GIO-Message: 20:45:21.936: Using the 'memory' GSettings backend.  Your settings will not be saved or shared with other applications.
+
+** (xarchiver:27): WARNING **: 20:45:22.000: Failed to measure available space: This browser filesystem operation is not supported
+
+** (xarchiver:27): WARNING **: 20:45:23.912: Failed to measure available space: This browser filesystem operation is not supported
