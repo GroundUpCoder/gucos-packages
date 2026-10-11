@@ -1155,7 +1155,7 @@
     {
       "id": "galculator",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "vendor/galculator/wasm-package.json",
       "historicalManifestSha256": "1b66e783c99418ab66c31a55c0b82b8580dff77e695182470089d8351bedabd8",
       "historicalEvidence": [
@@ -1179,9 +1179,13 @@
         "gtk3-schemas",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "galculator",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "sourcePreparation": {
+        "revision": "b7abc2e5dfa6f22a8af6f73c32345316a16d6b8a",
+        "scope": "132 historical blobs; nine C units with retained Flex scanner, exact GTK3-X11/pkgconf/libintl/gio-core dependencies and 24 outputs. Independently reviewed for source execution; guest build, GUI and public gates pending."
+      }
     },
     {
       "id": "gameboy",
