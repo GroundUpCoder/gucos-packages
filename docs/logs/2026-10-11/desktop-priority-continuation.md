@@ -391,3 +391,10 @@ Only the provenance comment and two corrected test hashes changed. The
 navigation/cancel-only fixture, dependency identity checks and supervised raw
 exit checks remain unchanged. Execution requires the newly reviewed source-v4
 artifacts and successful binary-v2 installed-consumer/dependency gates.
+
+Independent review accepted 58a0f5b as bounded instrumented-menu Xarchiver
+layout and normal-exit evidence: 47 indexed payload hashes, 35 manifests and
+2,191 closure outputs, six screenshots, and raw wait zero for two distinct
+children (Ctrl+Q and WM close). Before/after receipt and gate bindings agree;
+historical scheduler state was unavailable to the reviewer. Archive operations,
+reload and public acceptance remain pending; catalog acceptance is unchanged.
