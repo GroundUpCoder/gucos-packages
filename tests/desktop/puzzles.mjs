@@ -58,7 +58,7 @@ try{
   await d.command(`n=0; while kill -0 ${w.pid} 2>/dev/null; do n=$((n+1)); [ "$n" -lt 100 ] || exit 1; sleep 0.1; done`);
  }
  if(reload){
-  const previous=JSON.parse(await readFile(resolve(run,'puzzles-jwm-'+attempt+'.json')));assert.equal(previous.status,'passed');
+  const previous=JSON.parse(await readFile(resolve(run,'puzzles-jwm-'+attempt+'.json')));assert.equal(previous.status,'passed');assert.deepEqual(previous.binary,expected.binary,'Reload must retain the exact candidate binary');assert.equal(previous.runtime,s.runtime,'Reload must retain the tested runtime');
   const saved=await s.page.evaluate(async()=>Array.from(await shell.busybox.read('/home/user/jwm-fifteen.sav')||[]));assert.equal(sha(Buffer.from(saved)),previous.savedSha256,'Browser reload retained exact saved bytes');
   await fileDialog(false);assert.equal(await board('browser-reloaded'),previous.movedBoardSha256);
   report.savedSha256=previous.savedSha256;report.movedBoardSha256=previous.movedBoardSha256;
