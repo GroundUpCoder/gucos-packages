@@ -1,0 +1,149 @@
+gucman: unknown source
+
+{
+  tail: ' sdl3-ttf source: test.sh\n' +
+    'Building migration:sdl3-ttf; running trusted recipe with access to your guest files\n' +
+    '251 functions, 231765 bytes\n' +
+    '545 functions, 516049 bytes\n' +
+    'SDL3-TTF-PASS\n' +
+    '796 functions, 709680 bytes\n' +
+    'SDL3-TTF-PASS\n' +
+    '551 functions, 510905 bytes\n'
+}
+gucman: build migration:sdl3-ttf: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20982 bytes; transfer finished
+gucman: Resolving: migration:sdl3-ttf
+gucman: Downloading manifest for migration:sdl3-ttf (2139 bytes)
+  Connecting; waiting for response…
+  Downloaded 2139 / 2139 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sdl3-ttf
+gucman: Checking cached object: manifest for migration:sdl3-ttf
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:harfbuzz-static
+gucman: Checking cached object: manifest for migration:harfbuzz-static
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Plan: 9 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 9 packages
+gucman: Package 1/9: libiconv (8 remaining after this)
+Already installed: libiconv
+gucman: Package 2/9: libintl (7 remaining after this)
+Already installed: libintl
+gucman: Package 3/9: pcre2 (6 remaining after this)
+Already installed: pcre2
+gucman: Package 4/9: glib (5 remaining after this)
+Already installed: glib
+gucman: Package 5/9: zlib (4 remaining after this)
+Already installed: zlib
+gucman: Package 6/9: freetype (3 remaining after this)
+Already installed: freetype
+gucman: Package 7/9: harfbuzz-static (2 remaining after this)
+Already installed: harfbuzz-static
+gucman: Package 8/9: harfbuzz (1 remaining after this)
+Already installed: harfbuzz
+gucman: Package 9/9: sdl3-ttf (0 remaining after this)
+gucman: Downloading sdl3-ttf source: source.tar (1976320 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.88 / 1.88 MiB (100%); transfer finished
+gucman: Verifying download: sdl3-ttf source: source.tar
+gucman: Checking cached object: sdl3-ttf source: source.tar
+gucman: Downloading sdl3-ttf source: build.sh (1183 bytes)
+  Connecting; waiting for response…
+  Downloaded 1183 / 1183 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-ttf source: build.sh
+gucman: Checking cached object: sdl3-ttf source: build.sh
+gucman: Downloading sdl3-ttf source: test.sh (1748 bytes)
+  Connecting; waiting for response…
+  Downloaded 1748 / 1748 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-ttf source: test.sh
+gucman: Checking cached object: sdl3-ttf source: test.sh
+Building migration:sdl3-ttf; running trusted recipe with access to your guest files
+251 functions, 231765 bytes
+545 functions, 516049 bytes
+SDL3-TTF-PASS
+796 functions, 709680 bytes
+SDL3-TTF-PASS
+551 functions, 510905 bytes
+TTF-FONT-HASH 99 1 469 135 1717412826
+TTF-FONT-HASH 99 128 469 135 3645098871
+TTF-FONT-HASH 99 255 469 135 1661761607
+TTF-FONT-HASH 100 1 474 137 3111033474
+TTF-FONT-HASH 100 128 474 137 1174286984
+TTF-FONT-HASH 100 255 474 137 4265778157
+TTF-FONT-PIXELS-PASS file/memory cold/warm repeated opens same-size mutation truncate restore
+TTF-FONT-BENCH {"mode":"file","sample":0,"count":64,"create_ms":0.244844,"render_ms":7.410312,"close_ms":0.146016}
+TTF-FONT-BENCH {"mode":"file","sample":1,"count":64,"create_ms":0.223359,"render_ms":7.151250,"close_ms":0.089297}
+TTF-FONT-BENCH {"mode":"file","sample":2,"count":64,"create_ms":0.220625,"render_ms":7.092500,"close_ms":0.092578}
+TTF-FONT-BENCH {"mode":"file","sample":3,"count":64,"create_ms":0.220234,"render_ms":7.029844,"close_ms":0.087812}
+TTF-FONT-BENCH {"mode":"file","sample":4,"count":64,"create_ms":0.206562,"render_ms":6.958438,"close_ms":0.081406}
+TTF-FONT-BENCH {"mode":"file","sample":5,"count":64,"create_ms":0.210547,"render_ms":6.953984,"close_ms":0.085000}
+TTF-FONT-BENCH {"mode":"file","sample":6,"count":64,"create_ms":0.212734,"render_ms":6.915000,"close_ms":0.082031}
+TTF-FONT-BENCH {"mode":"memory","sample":0,"count":64,"create_ms":0.104375,"render_ms":6.622344,"close_ms":0.053984}
+TTF-FONT-BENCH {"mode":"memory","sample":1,"count":64,"create_ms":0.097891,"render_ms":6.578203,"close_ms":0.048281}
+TTF-FONT-BENCH {"mode":"memory","sample":2,"count":64,"create_ms":0.102656,"render_ms":6.607891,"close_ms":0.052656}
+TTF-FONT-BENCH {"mode":"memory","sample":3,"count":64,"create_ms":0.098516,"render_ms":6.564453,"close_ms":0.050469}
+TTF-FONT-BENCH {"mode":"memory","sample":4,"count":64,"create_ms":0.097031,"render_ms":6.543672,"close_ms":0.049297}
+TTF-FONT-BENCH {"mode":"memory","sample":5,"count":64,"create_ms":0.101328,"render_ms":6.593125,"close_ms":0.053906}
+TTF-FONT-BENCH {"mode":"memory","sample":6,"count":64,"create_ms":0.098047,"render_ms":6.564141,"close_ms":0.049219}
+TTF-FONT-WARM 0.012500 ms/render
+TTF-FONT-PIXELS-PASS file/memory cold/warm repeated opens same-size mutation truncate restore
+TTF-FONT-WARM 0.012500 ms/render
+SDL3-TTF-PACKAGE-PASS
+gucman: Installing sdl3-ttf: 0/7 files
+gucman: Installing sdl3-ttf: 7/7 files
+gucman: Preparing checksums: sdl3-ttf
+gucman: Checksummed sdl3-ttf: 7/7 files
+gucman: Saving transaction: sdl3-ttf
+gucman: Verifying staged files: sdl3-ttf
+gucman: Activating: sdl3-ttf
+Installed migration:sdl3-ttf 3.2.2-3
+
+0ac5d663c849cd55f055b5e34028594b0baf0975e069f1f10042ad44db7f2beb  /home/user/migration-export.tar
+593920
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

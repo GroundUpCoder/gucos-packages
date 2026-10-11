@@ -1,0 +1,109 @@
+gucman: unknown source
+
+{
+  tail: '4util source: test.sh\n' +
+    'Building migration:libxfce4util; running trusted recipe with access to your guest files\n' +
+    '197 functions, 213696 bytes\n' +
+    '121 functions, 133873 bytes\n' +
+    '2 functions, 12636 bytes\n' +
+    'XFCE-UTIL-PASS\n' +
+    'gucman: Installing libxfce4util: 0/27 files\n'
+}
+gucman: build migration:libxfce4util: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20982 bytes; transfer finished
+gucman: Resolving: migration:libxfce4util
+gucman: Downloading manifest for migration:libxfce4util (3713 bytes)
+  Connecting; waiting for response…
+  Downloaded 3713 / 3713 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libxfce4util
+gucman: Checking cached object: manifest for migration:libxfce4util
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Plan: 11 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 11 packages
+gucman: Package 1/11: libiconv (10 remaining after this)
+Already installed: libiconv
+gucman: Package 2/11: libintl (9 remaining after this)
+Already installed: libintl
+gucman: Package 3/11: pcre2 (8 remaining after this)
+Already installed: pcre2
+gucman: Package 4/11: glib (7 remaining after this)
+Already installed: glib
+gucman: Package 5/11: libffi (6 remaining after this)
+Already installed: libffi
+gucman: Package 6/11: gobject (5 remaining after this)
+Already installed: gobject
+gucman: Package 7/11: gio-listmodel (4 remaining after this)
+Already installed: gio-listmodel
+gucman: Package 8/11: zlib (3 remaining after this)
+Already installed: zlib
+gucman: Package 9/11: gio-core (2 remaining after this)
+Already installed: gio-core
+gucman: Package 10/11: pkgconf (1 remaining after this)
+Already installed: pkgconf
+gucman: Package 11/11: libxfce4util (0 remaining after this)
+gucman: Downloading libxfce4util source: source.tar (4116480 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.93 / 3.93 MiB (100%); transfer finished
+gucman: Verifying download: libxfce4util source: source.tar
+gucman: Checking cached object: libxfce4util source: source.tar
+gucman: Downloading libxfce4util source: build.sh (1164 bytes)
+  Connecting; waiting for response…
+  Downloaded 1164 / 1164 bytes (100%); transfer finished
+gucman: Verifying download: libxfce4util source: build.sh
+gucman: Checking cached object: libxfce4util source: build.sh
+gucman: Downloading libxfce4util source: test.sh (1833 bytes)
+  Connecting; waiting for response…
+  Downloaded 1833 / 1833 bytes (100%); transfer finished
+gucman: Verifying download: libxfce4util source: test.sh
+gucman: Checking cached object: libxfce4util source: test.sh
+Building migration:libxfce4util; running trusted recipe with access to your guest files
+197 functions, 213696 bytes
+121 functions, 133873 bytes
+2 functions, 12636 bytes
+XFCE-UTIL-PASS
+gucman: Installing libxfce4util: 0/27 files
+gucman: Installing libxfce4util: 25/27 files
+gucman: Installing libxfce4util: 27/27 files
+gucman: Preparing checksums: libxfce4util
+gucman: Checksummed libxfce4util: 25/27 files
+gucman: Checksummed libxfce4util: 27/27 files
+gucman: Saving transaction: libxfce4util
+gucman: Verifying staged files: libxfce4util
+gucman: Activating: libxfce4util
+Installed migration:libxfce4util 4.20.0-1
+
+9474d3dd607260541510e34a9060737187fb50e051569cc53894e570f51c8748  /home/user/migration-export.tar
+564224
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
