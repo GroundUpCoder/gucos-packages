@@ -1,0 +1,58 @@
+[
+  {
+    "path": "bin/feh",
+    "mode": 493
+  },
+  {
+    "path": "libexec/feh",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/feh.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/feh/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/feh/README.md",
+    "mode": 420
+  },
+  {
+    "path": "share/feh/fonts/NotoSans-Medium.ttf",
+    "mode": 420
+  },
+  {
+    "path": "share/feh/fonts/OFL.txt",
+    "mode": 420
+  },
+  {
+    "path": "share/feh/fonts/README.md",
+    "mode": 420
+  },
+  {
+    "path": "share/feh/fonts/yudit.ttf",
+    "mode": 420
+  },
+  {
+    "path": "share/feh/images/feh.png",
+    "mode": 420
+  },
+  {
+    "path": "share/feh/images/feh.svg",
+    "mode": 420
+  },
+  {
+    "path": "share/feh/images/menubg_default.png",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/feh/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/feh/OFL.txt",
+    "mode": 420
+  }
+]
