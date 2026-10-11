@@ -1,0 +1,20 @@
+{
+  "mode": "binary",
+  "startedAt": "2026-10-11T14:55:04.649Z",
+  "status": "passed",
+  "checks": [
+    "fresh binary install",
+    "default key overrides explicit and environment; yolo permits edit and shell",
+    "reload payloads and default key",
+    "explicit and environment fallbacks",
+    "raw /bin/cc output and malformed UTF-8 produce valid API requests and saved JSON",
+    "damaged saved conversation repaired on resume",
+    "VT: 12 real keyboard editing cases, exact provider input",
+    "VT bracketed paste and terminal restoration after exit, Ctrl-C and Ctrl-D",
+    "X11 xterm: 12 real keyboard editing cases, exact provider input",
+    "X11 xterm termios restoration and desktop cleanup"
+  ],
+  "fixture": "Mock DeepSeek SSE; no live provider request",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "finishedAt": "2026-10-11T14:57:38.086Z"
+}

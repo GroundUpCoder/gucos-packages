@@ -442,8 +442,8 @@
       "size": 3045
     },
     "gucode": {
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/1ddb0a9d422481c092947fb6bee69a03571fa498/apps/gucode/package.json",
-      "sha256": "13d293985e43797230cc58a6403df8beaf3cad1562da62dcc2469bab7c4029a7",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/bbb0f815298b5da5af0481a05eb173f015d8da07/apps/gucode/package.json",
+      "sha256": "c10721e2d62d71f8efe584f7d7e8bfdfd39e535cbbf4d12bc5248dfabcdcbab6",
       "size": 1990
     },
     "xmahjongg": {

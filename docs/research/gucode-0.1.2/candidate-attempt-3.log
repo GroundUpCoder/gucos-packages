@@ -1,0 +1,49 @@
+[machine-job] queued: node tests/gucode/input-update.mjs build
+[machine-job] running: e31fa3a8-9c42-4ec2-836f-f1c1543da54d
+build: core ready
+build: package installed
+VT: editing passed
+build: all acceptance checks passed
+binary: core ready
+binary: package installed
+VT: editing passed
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: X11 xterm edited prompt
+
+'abcd1' !== 'abcd!'
+
+    at drive (file:///Users/jku/git/gucos-packages-gucode-editing/tests/gucode/input-update.mjs:62:64)
+    at async interactive (file:///Users/jku/git/gucos-packages-gucode-editing/tests/gucode/input-update.mjs:132:36)
+    at async file:///Users/jku/git/gucos-packages-gucode-editing/tests/gucode/input-update.mjs:191:2 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 'abcd1',
+  expected: 'abcd!',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2
+node:internal/errors:998
+  const err = new Error(message);
+              ^
+
+Error: Command failed: /Users/jku/Library/pnpm/nodejs/25.8.2/bin/node /Users/jku/git/gucos-packages-gucode-editing/tests/gucode/input-update.mjs binary
+    at genericNodeError (node:internal/errors:998:15)
+    at wrappedFn (node:internal/errors:543:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execFileSync (node:child_process:961:15)
+    at file:///Users/jku/git/gucos-packages-gucode-editing/tests/gucode/input-update.mjs:199:2
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 49417,
+  stdout: null,
+  stderr: null
+}
+
+Node.js v25.8.2

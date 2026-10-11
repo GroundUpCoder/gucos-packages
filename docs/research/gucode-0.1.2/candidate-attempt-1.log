@@ -1,0 +1,16 @@
+[machine-job] queued: node tests/gucode/input-update.mjs build
+[machine-job] running: 4fd78ad2-4041-4513-9892-122dfcea0e77
+build: core ready
+build: package installed
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 180000ms exceeded.
+    at interactive (/Users/jku/git/gucos-packages-gucode-editing/tests/gucode/input-update.mjs:70:15)
+    at async file:///Users/jku/git/gucos-packages-gucode-editing/tests/gucode/input-update.mjs:177:2 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v25.8.2

@@ -1,0 +1,18 @@
+{
+  "mode": "build",
+  "startedAt": "2026-10-11T14:49:47.259Z",
+  "status": "passed",
+  "checks": [
+    "real guest source build",
+    "default key overrides explicit and environment; yolo permits edit and shell",
+    "reload payloads and default key",
+    "explicit and environment fallbacks",
+    "raw /bin/cc output and malformed UTF-8 produce valid API requests and saved JSON",
+    "damaged saved conversation repaired on resume",
+    "VT: 12 real keyboard editing cases, exact provider input",
+    "VT bracketed paste and terminal restoration after exit, Ctrl-C and Ctrl-D"
+  ],
+  "fixture": "Mock DeepSeek SSE; no live provider request",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "finishedAt": "2026-10-11T14:50:01.626Z"
+}

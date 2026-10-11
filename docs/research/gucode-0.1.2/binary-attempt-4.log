@@ -1,0 +1,17 @@
+[machine-job] queued: node tests/gucode/input-update.mjs binary
+[machine-job] running: c8e5b52e-fa43-4e82-9c7a-ab0792d5cb74
+binary: core ready
+binary: package installed
+VT: editing passed
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.evaluate: Target page, context or browser has been closed
+    at Object.command (/Users/jku/git/gucos-packages-gucode-editing/tools/browser.mjs:17:28)
+    at async interactive (/Users/jku/git/gucos-packages-gucode-editing/tests/gucode/input-update.mjs:102:3)
+    at async file:///Users/jku/git/gucos-packages-gucode-editing/tests/gucode/input-update.mjs:191:2 {
+  log: []
+}
+
+Node.js v25.8.2

@@ -1,0 +1,14 @@
+{
+  "baselineRevision": "c303f33d6aae5ed1ba0cf9598534e842cc21914f",
+  "upgrades": {
+    "gucode": {
+      "oldCatalogEntry": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/1ddb0a9d422481c092947fb6bee69a03571fa498/apps/gucode/package.json",
+        "sha256": "13d293985e43797230cc58a6403df8beaf3cad1562da62dcc2469bab7c4029a7",
+        "size": 1990
+      },
+      "oldVersion": "0.1.1",
+      "newVersion": "0.1.2"
+    }
+  }
+}
