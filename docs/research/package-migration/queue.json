@@ -4841,7 +4841,7 @@
     {
       "id": "xmahjongg",
       "kind": "historical-canonical-name",
-      "state": "source-prepared-reviewed",
+      "state": "source-built-reviewed",
       "historicalManifest": "apps/xmahjongg/wasm-package.json",
       "historicalManifestSha256": "7ae5f9d8fc5b40973c298b3564fd0777a9b2723445f5faa8eb78d80a8991ab23",
       "historicalEvidence": [
@@ -4861,6 +4861,11 @@
       "sourcePreparation": {
         "revision": "d107353",
         "scope": "159 historical blobs and1064 exact retained translated inputs independently reviewed; owned guest-C recipe queued. No fresh build/gameplay acceptance yet."
+      },
+      "sourceExecution": {
+        "revision": "0b722c6",
+        "evidence": "docs/research/package-migration/xmahjongg/gucos-source",
+        "scope": "Reviewed fresh guest compilation of retained translated C, staged help/file checks and exact ten-output export. Gameplay/public gates pending."
       }
     },
     {

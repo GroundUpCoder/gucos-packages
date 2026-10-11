@@ -319,3 +319,33 @@ now waits for both typed result files and returns the complete captured response
 through its polling handle. The whole-request deadline and nonzero-status check
 remain. A GUI/reload-only retry is queued; successful install/consumers are not
 repeated. Pending Fifteen/Xapps/Net jobs use the reviewed helper as well.
+
+## 85 accepted packages and the first desktop integration pass
+
+Independent review accepted Tcl/Tk's public gates (`a0583e0`); the publication
+baseline is now the exact 85-entry catalog `b58c944`. Reload verifies persisted
+package bytes and manifests; it does not repeat the Tk GUI interaction.
+
+XMahjongg source export `0b722c6` passed independent review: 3625472 bytes,
+ten outputs, exact retained translated inputs and notices. Its fresh binary
+fixture is prepared; gameplay and publication remain pending.
+
+The desktop bridge's underlying failure was Playwright 1.63 treating an async
+predicate Promise as truthy before resolving its value. The independently
+reviewed explicit awaited polling helper (`e567244`) fixes that path and the two
+editor byte waits. Failed earlier runs remain preserved at `a25d69d`.
+
+2048's actual JWM menu/gameplay/restart/quit/relaunch and fresh-session repetition
+passed independent evidence review at `245ce65`: 27 evidence hashes, 16 inspected
+screenshots and the 12-package/774-file closure. Desktop-apps still awaits the
+four X applications and later public acceptance; no package publication follows
+from this one integration gate.
+
+Real puzzle runs now reach the games. Net's first undo mismatch was confined to
+pointer pixels, while Mines' focus click opened the JWM icon menu. Reviewed
+capture/focus corrections retain the failed evidence. Fifteen and Net reach the
+GTK Save chooser but Enter leaves it open; a retained screenshot shows the typed
+path and enabled Save button. Physical confirmation-button clicks are the next
+reviewed test change, not yet an execution success. Xcalc also reached its
+window; its next test uses physical arithmetic buttons after keyboard input on
+an Xt child left the display unchanged.
