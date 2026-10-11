@@ -121,6 +121,52 @@ else:
         'probe':cpython_reload_probe.__file__,'executable':sys.executable,'prefix':sys.prefix,
         'makefile':sysconfig.get_makefile_filename(),'dataBytes':len(expected)},sort_keys=True))
 `;
+// A private public-preflight adaptation; independent B review required.
+// Pure validation: production execution uses public candidates, while the
+// original binary fixture remains immutable cached input provenance only.
+function validatePublicPreflight({config, candidate, local, catalogBytes, manifestBytes, snapshotSha256}) {
+    const prefix = 'https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/';
+    const artifact = '20bafe7784b7e30f8dd29fc00ec8442d282a1eb6';
+    const manifestCommit = '171127986721187d28a88a037871529f9fbb81ea';
+    const manifestSha256 = 'c4a0cc672bf63a4c02b992ec69b29f0cc0b78a0647ad8413640d42ec0a971fe4';
+    const snapshotPin = '658486b88cde533abfe1616fe8ea09c74b2f3d83f657a96bb59f099123037b15';
+    assert(!Object.hasOwn(config, 'dist'), 'Public run must not serve a local distribution');
+    assert.equal(config.url, 'https://os.groundupcoder.com/');
+    assert(typeof config.inputDist === 'string' && config.inputDist.startsWith('/') && resolve(config.inputDist) === config.inputDist,
+        'Canonical absolute frozen inputDist spelling required');
+    assert.equal(config.inputCommit, artifact);
+    assert.equal(config.expectedRuntime, '19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441');
+    assert.deepEqual(config.candidates, ['cpython']);
+    assert(/^[a-f0-9]{40}$/.test(config.catalogCommit), 'Immutable configured catalog required');
+    assert.equal(config.catalogUrl, prefix + config.catalogCommit + '/catalog.json');
+    assert.equal(snapshotSha256, snapshotPin, 'Coordinator must copy the exact original snapshot into the fresh public run');
+    assert.equal(config.distributionSnapshotSha256, snapshotPin);
+    assert.equal(sha(manifestBytes), manifestSha256); assert.equal(manifestBytes.length, 103419);
+    const published = JSON.parse(manifestBytes.toString('utf8'));
+    const catalog = JSON.parse(catalogBytes.toString('utf8'));
+    assert.deepEqual(catalog.packages.cpython, {
+        url: prefix + manifestCommit + '/apps/cpython/package.json', sha256: manifestSha256, size: 103419
+    }, 'Configured catalog must select the exact reviewed publication');
+    assert.deepEqual(candidate, published, 'Candidate must equal the exact published manifest');
+    for (const file of published.files)
+        assert.equal(file.url, prefix + artifact + '/apps/cpython/' + file.path);
+    assert.equal(published.binary.url, prefix + artifact + '/apps/cpython/binaries/' + published.binary.sha256 + '.tar');
+    // Rebind only the two URL locations. Keep every other key/value, including
+    // unknown fields, so none can disappear during compatibility comparison.
+    const rebound = structuredClone(local);
+    const localOrigin = new URL(local.binary.url).origin;
+    assert(/^http:\/\/127\.0\.0\.1:[0-9]+$/.test(localOrigin), 'Frozen fixture must use one explicit loopback origin');
+    assert.equal(local.binary.url, localOrigin + '/migration/cpython/binary.tar');
+    for (const file of rebound.files) {
+        assert.equal(file.url, localOrigin + '/migration/cpython/' + file.path);
+        file.url = prefix + artifact + '/apps/cpython/' + file.path;
+    }
+    rebound.binary.url = prefix + artifact + '/apps/cpython/binaries/' + rebound.binary.sha256 + '.tar';
+    assert.deepEqual(rebound, published, 'Only verified URL rebinding is permitted');
+    return {origin: config.url, catalogCommit: config.catalogCommit, catalogUrl: config.catalogUrl,
+        catalogSha256: sha(catalogBytes), manifestCommit, manifestSha256,
+        artifactCommit: artifact, cachedSnapshotSha256: snapshotPin, inputDist: config.inputDist};
+}
 try {
     report.harnessSha256 = sha(await readFile(new URL(import.meta.url)));
     const configBytes = await readFile(resolve(run, 'config.json'));
@@ -130,11 +176,26 @@ try {
     assert(m?.name === 'cpython' && m.binary, 'Source fixture is not a binary fixture');
     assert.equal(m.runtime, config.expectedRuntime);
     const inputDist = config.inputDist || config.dist;
-    assert(inputDist && config.dist, 'Frozen local binary/core distribution required');
+    const publicMode = !Object.hasOwn(config, 'dist');
+    if (publicMode) assert(inputDist, 'Frozen cached binary inputs required');
+    else assert(inputDist && config.dist, 'Frozen local binary/core distribution required');
     const snapshot = await readFile(resolve(run, 'dist-files.json'));
     assert.equal(sha(snapshot), config.distributionSnapshotSha256);
     const base = resolve(inputDist, 'migration/cpython');
-    assert.deepEqual(JSON.parse(await readFile(resolve(base, 'package.json'))), m);
+    const localManifest = JSON.parse(await readFile(resolve(base, 'package.json')));
+    let publicPreflight;
+    if (!publicMode) assert.deepEqual(localManifest, m);
+    else {
+        // Only immutable local Git reads; the session still boots production.
+        assert(/^[a-f0-9]{40}$/.test(config.catalogCommit));
+        const gitBytes = spec => execFileSync('git', ['show', spec],
+            {cwd: repo, timeout: 10000, maxBuffer: 4 * 1024 * 1024});
+        publicPreflight = validatePublicPreflight({config, candidate: m, local: localManifest,
+            catalogBytes: gitBytes(config.catalogCommit + ':catalog.json'),
+            manifestBytes: gitBytes('171127986721187d28a88a037871529f9fbb81ea:apps/cpython/package.json'),
+            snapshotSha256: sha(snapshot)});
+        report.publicPreflight = publicPreflight;
+    }
     const archivePath = resolve(base, 'binary.tar'), archive = await readFile(archivePath);
     assert.equal(sha(archive), m.binary.sha256); assert.equal(archive.length, m.binary.size);
     const sums = await readFile(resolve(run, 'cpython.sha256'), 'utf8'), checksums = {};
@@ -163,7 +224,8 @@ try {
     report.bindings = {configSha256: sha(configBytes), candidateManifestsSha256: sha(candidateBytes),
         distributionSnapshotSha256: sha(snapshot), runtime: config.expectedRuntime,
         inputCommit: config.inputCommit, binary: m.binary, checksumsSha256: sha(sums),
-        sessionHelperSha256: sha(await readFile(helperPath)), harnessSha256: report.harnessSha256};
+        sessionHelperSha256: sha(await readFile(helperPath)), harnessSha256: report.harnessSha256,
+        ...(publicMode ? {publicPreflight} : {})};
     // Standard stage install/reload must precede the corresponding invocation.
     const stageAction = mode === 'normal' ? 'install' : 'reload';
     const stageLabel = stageAction + '-' + attempt;

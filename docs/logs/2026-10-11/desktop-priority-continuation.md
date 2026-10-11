@@ -421,3 +421,9 @@ Galculator pacing correction `c8c0d2b` independently passed review. A fresh bina
 Independent review accepted ncurses, awk, Doom and Quake from public evidence `0997f6b`: all 81 indexed evidence hashes, seven passed reports, immutable manifests, 2,951 outputs and twelve payload-equivalent re-export receipts verified. Scope is recorded per package in the migration queue. Canonical archive identities remain unchanged.
 
 Accepted count is now **95** (93 migration-owned plus two separately owned), while the published catalog has 97 entries. Imlib2 and Feh remain pending. Baseline `c303f33` is deliberately unchanged; the 97-entry catalog is not fully accepted. TERM cleanup is terminal recovery, not normal-exit proof.
+
+### CPython public execution preparation
+
+CPython publication metadata is selected on main `9c98af8`; the catalog has 98 entries while accepted scope remains 95 and baseline `c303f33` is unchanged. A authored the public preflight adaptation, independently reviewed by B, preserving B’s raw-completion guard and the retained-extension consumer/reload assertions. Exact driver SHA256 is `972137ce068407f40c068fbb69a282d727957ec56ba4e268087c60bb1d654ed2`.
+
+The fresh public fixture retains the verified original distribution snapshot as cached provenance only and uses the production HTTPS origin without a local distribution override. Execution order is install, normal full consumer once, stage reload, then reloaded verification of the same extension and data. Public runtime results and acceptance remain pending.
