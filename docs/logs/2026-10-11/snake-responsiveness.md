@@ -42,3 +42,9 @@ also passed after addition, scheduler job 4be451c3-8e17-49c4-aed9-750881a4832b.
 The isolated branch merges ongoing published work rather than rewriting it.
 The upgrade plan was aligned with accepted MicroPython baseline 4395482;
 Snake's old catalog identity and output inventory remain unchanged.
+
+At the first scheduled continuation, the original queued process no longer
+existed and no guest execution had begun. The attempted durable scheduler
+parent then exited with the scheduler's explicit queue-full refusal (four
+waiting jobs); it did not start a build or browser. No other job was cancelled
+or reprioritized. Publication remains pending actual acceptance.
