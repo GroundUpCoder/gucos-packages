@@ -32,14 +32,15 @@ try{
  if(live){
   // Pin the old published manifest first, then upgrade through the public catalog.
   const plan=JSON.parse(await readFile(out+'/upgrade-plan.json'));
-  extra.set('/old/catalog.json',Buffer.from(JSON.stringify({format:1,packages:{gucode:plan.upgrades.gucode.oldCatalogEntry,libcurl:JSON.parse(await readFile('catalog.json')).packages.libcurl}})));
-  await s.page.route('https://api.deepseek.com/old-catalog.json',route=>route.fulfill({status:200,headers:cors,contentType:'application/json',body:extra.get('/old/catalog.json')}));
-  await s.command('gucman repo add old https://api.deepseek.com/old-catalog.json\ngucman install old:gucode');
+  const catalogURL='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/main/catalog.json';
+  const oldCatalog={format:1,packages:{gucode:plan.upgrades.gucode.oldCatalogEntry,libcurl:JSON.parse(await readFile('catalog.json')).packages.libcurl}};
+  await s.page.route(catalogURL,route=>route.fulfill({status:200,headers:cors,contentType:'application/json',body:JSON.stringify(oldCatalog)}));
+  await s.command('gucman install groundupcoder:gucode');
   assert.match(await s.command('gucode --version'),/0\.1\.0/);
-  await s.command('gucman repo remove old\ngucman install groundupcoder:gucode');
+  await s.page.unroute(catalogURL);
+  await s.command('gucman install groundupcoder:gucode');
   report.checks.push('public upgrade 0.1.0 to 0.1.1');
  }else{
-  await s.command('gucman install groundupcoder:libcurl');
   const {inputs,...recipe}=JSON.parse(await readFile('apps/gucode/recipe.json'));
   const outputs=JSON.parse(await readFile('apps/gucode/outputs.json')),files=[];
   for(const path of inputs){const b=await readFile('apps/gucode/'+path);extra.set('/candidate/'+path,b);files.push({path,url:s.url+'/candidate/'+path,sha256:sha(b),size:b.length});}
