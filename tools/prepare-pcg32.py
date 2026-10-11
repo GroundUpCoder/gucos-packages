@@ -50,7 +50,8 @@ for before, after in replacements.items():
     driver = driver.replace(before, after)
 driver_path = snapshot / 'apps/pcg32/prepare-driver.py'
 driver_path.write_text(driver)
-env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1')
+(out / 'tmp').mkdir()
+env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', TMPDIR=str(out / 'tmp'))
 result = subprocess.run([sys.executable, str(driver_path)], cwd=snapshot,
                         env=env, capture_output=True, text=True)
 (out / 'host.stdout').write_text(result.stdout)
