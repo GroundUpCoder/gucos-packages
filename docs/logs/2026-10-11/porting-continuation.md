@@ -251,3 +251,25 @@ run and binary reload; no package artifacts changed between these GUI attempts.
 Final immutable manifests `95e9bbc` and catalog `b58c944` were independently
 approved against artifacts `d4d446d`, preserving all prior83entries. Publication
 adds Tcl/Tk for85 entries; those two still require fresh public gates.
+
+## Desktop binary preparation and first actual GUI attempt
+
+Desktop-apps export `a635e9b` passed independent source/artifact review: six
+outputs,18432bytes,SHA828eca9f171fdf97393f3c99fc436993cbdbcfca1cdc05e556b4520b7ac4eaa3.
+Its fresh binary fixture freezes12manifests/774payload hashes. Reviewed2048
+JWM tests and the four X app driver establish no execution success yet.
+The X app driver uses physical input, calculator result equivalence, pointer
+tracking, clock updates, exact editor save/reopen and process lifecycle checks.
+
+Puzzles fresh installation and installed consumers passed. Its first actual
+Fifteen test failed before menu selection because a missing status file was
+passed to TextDecoder as a plain array. Evidence `efcc1b2` retains this failure.
+Independent review reproduced the bug and approved the typed-array correction
+`fc56690`. The GUI-only typed-status retry preserves successful earlier stages;
+its reports now also hash the guest control bridge (`8250cff`). No Fifteen
+menu/gameplay pass is claimed at this point.
+
+XMahjongg source candidate `d107353` passed independent review:159 historical
+Git blobs and1064 exact recovered prepared members, with1060C artifacts and
+separate constructor ordering verified. Its fresh source job is queued. L3afpad
+source execution is active; no new editor execution outcome is claimed.

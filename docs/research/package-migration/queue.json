@@ -3734,7 +3734,9 @@
       ],
       "mapping": "puzzles",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Fresh binary install and consumers passed; initial Fifteen GUI harness failed before menu selection on missing-status decode. Reviewed polling correction and GUI-only retry queued; other desktop games/public gates remain."
+      ],
       "sourcePreparation": {
         "revision": "19b50d8",
         "scope": "319 pinned historical blobs,40 games,132 outputs; independent source review approved; source execution active and Fifteen binary/JWM/save/reload gate queued."
@@ -4824,7 +4826,7 @@
     {
       "id": "xmahjongg",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/xmahjongg/wasm-package.json",
       "historicalManifestSha256": "7ae5f9d8fc5b40973c298b3564fd0777a9b2723445f5faa8eb78d80a8991ab23",
       "historicalEvidence": [
@@ -4838,9 +4840,13 @@
       "historicalDependencies": [
         "x11-apps"
       ],
-      "mapping": null,
+      "mapping": "xmahjongg",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "sourcePreparation": {
+        "revision": "d107353",
+        "scope": "159 historical blobs and1064 exact retained translated inputs independently reviewed; owned guest-C recipe queued. No fresh build/gameplay acceptance yet."
+      }
     },
     {
       "id": "zlib",
