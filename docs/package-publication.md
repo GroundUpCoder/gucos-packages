@@ -3,7 +3,7 @@
 User direction, 2026-10-10, following completed platform 1.0 acceptance: use the
 platform/minVersion/ABI/dependency contract for future builds and publications.
 The authoritative specification is the core repository's `docs/PLATFORM.md`
-(local checkout: `/Users/jku/git/wasm-posix/docs/PLATFORM.md`). Read its current
+(local checkout: `https://github.com/GroundUpCoder/gucos/blob/main/docs/PLATFORM.md`). Read its current
 contract and `tools/platform.json` when preparing a release; do not infer
 compatibility from compiler version or equality of core build hashes.
 

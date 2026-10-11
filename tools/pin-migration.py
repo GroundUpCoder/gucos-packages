@@ -1,4 +1,4 @@
-"""Pin explicitly selected new migrations without rewriting baseline19.
+"""Pin explicitly selected new migrations without rewriting published baseline.
 Usage: python3 tools/pin-migration.py manifests|catalog COMMIT NAME [NAME ...]
 Only use after independent review and actual guest acceptance of the artifacts.
 """
@@ -14,7 +14,7 @@ def frozen(path):
 def entry(path):
  b=frozen(path);return dict(url='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/'+revision+'/'+path,sha256=hashlib.sha256(b).hexdigest(),size=len(b))
 baseline=json.loads(subprocess.check_output(['git','show','716bfe27a56357513abfc7213d542bda63129cd1:catalog.json'],cwd=ROOT))
-assert not set(names)&set(baseline['packages']), 'Baseline mutation forbidden'
+assert not set(names)&set(baseline['packages']), 'Published baseline mutation forbidden'
 catalog=json.loads((ROOT/'catalog.json').read_text())
 for n,e in baseline['packages'].items():assert catalog['packages'][n]==e
 for name in names:

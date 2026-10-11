@@ -20,9 +20,9 @@ run.mkdir(parents=True,exist_ok=False)
 def blob(path):return subprocess.check_output(['git','show',revision+':'+path],cwd=ROOT)
 def sha(b):return hashlib.sha256(b).hexdigest()
 def write(path,x):path.write_text(json.dumps(x,indent=2)+'\n')
-site=run/'site';shutil.copytree('/Users/jku/git/wasm-posix/dist',site)
+site=run/'site';shutil.copytree(os.environ['GUCOS_CORE_DIST'],site)
 core=json.loads((site/'build.json').read_text())
-assert core['runtime']=='61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0'
+assert core['runtime']==os.environ['COMPAT_EXPECT_RUNTIME'], 'Explicit candidate runtime required'
 resume=os.environ.get('MIGRATION_PROFILE_FROM')
 if resume:
  previous=Path(resume).resolve();assert previous.parent==(ROOT/'test-results/migration').resolve()

@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OLD = Path(os.environ['WASM_POSIX_HISTORICAL_CHECKOUT'])
-BASELINE = '716bfe27a56357513abfc7213d542bda63129cd1'
+BASELINE = json.loads((ROOT/'tools/publication-baseline.json').read_text())['revision']
 
 
 def git(*args, cwd=ROOT):
@@ -150,4 +150,4 @@ for name in names:
 for path in owned:
     for ancestor in Path(path).parents:
         assert str(ancestor) not in owned, (path, ancestor, 'ownership ancestor conflict')
-print('PASS: baseline19 untouched; source-only checks, no execution/acceptance claim')
+print('PASS: published baseline untouched; source-only checks, no execution/acceptance claim')

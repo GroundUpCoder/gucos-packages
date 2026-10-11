@@ -2,7 +2,7 @@
 import hashlib, io, json, subprocess, sys, tarfile
 from pathlib import Path
 root = Path(__file__).resolve().parents[2]
-revision = 'fab65cba24c8c6dd59e11a63e096138e13835c42'
+revision = json.loads((root/'tools/publication-baseline.json').read_text())['revision']
 names = 'x11-server x11-toolkit x11-widgets jwm xterm xcalc xclock xeyes xlogo xlsfonts xkill xrefresh xmessage xprop xev lua zstd'.split()
 def blob(rev, path):
     return subprocess.check_output(['git', 'show', rev + ':' + path], cwd=root)

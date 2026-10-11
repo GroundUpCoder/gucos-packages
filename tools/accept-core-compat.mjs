@@ -8,7 +8,7 @@ import {resolve} from 'node:path';
 import assert from 'node:assert/strict';
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(process.argv.includes('--help')){
- console.log('COMPAT_CORE_DIST=/absolute/distribution OR COMPAT_CORE_URL=https://candidate/\nCOMPAT_EXPECT_RUNTIME=<candidate 64-hex build identity> node tools/accept-core-compat.mjs\nOptional: COMPAT_RUN_NAME=<new name>; --probe-only checks boot/identity/transport only.\nUses unchanged public fab65cb artifacts. No package builds or metadata publication.');process.exit(0);
+ console.log('COMPAT_CORE_DIST=/absolute/distribution OR COMPAT_CORE_URL=https://candidate/\nCOMPAT_EXPECT_RUNTIME=<candidate 64-hex build identity> node tools/accept-core-compat.mjs\nOptional: COMPAT_RUN_NAME=<new name>; --probe-only checks boot/identity/transport only.\nUses the relocated immutable publication baseline. No package builds or metadata publication.');process.exit(0);
 }
 assert(process.argv.slice(2).every(x=>x==='--probe-only'),'Unknown argument');
 assert(!process.env.MACHINE_JOB_ID,'Run driver directly: it reserves/releases machine-job for each stage');
@@ -52,7 +52,7 @@ const stages=[
  ['reload-and-integrity-after',['tests/compatibility/check.mjs','reload']],
 ];
 const probeOnly=process.argv.includes('--probe-only');
-const report={...config,scope:probeOnly?'boot-probe-only':'baseline-execution-and-relinking',baselineCatalog:'fab65cba24c8c6dd59e11a63e096138e13835c42',stages:[],status:'running'};
+const report={...config,scope:probeOnly?'boot-probe-only':'baseline-execution-and-relinking',baselineCatalog:JSON.parse(await readFile(new URL('publication-baseline.json',import.meta.url))).revision,stages:[],status:'running'};
 async function save(){await writeFile(resolve(run,'report.json'),JSON.stringify(report,null,2)+'\n');}
 await save();console.log('Evidence:',run);
 for(const [name,args] of probeOnly?stages.slice(0,1):stages){
