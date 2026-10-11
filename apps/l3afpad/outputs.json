@@ -22,5 +22,9 @@
   {
     "path": "share/licenses/l3afpad/COPYING",
     "mode": 420
+  },
+  {
+    "path": "share/licenses/l3afpad/GPL-2.0.txt",
+    "mode": 420
   }
 ]

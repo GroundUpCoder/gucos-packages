@@ -30,6 +30,7 @@
     "source.tar",
     "build.sh",
     "test.sh",
-    "l3afpad.desktop"
+    "l3afpad.desktop",
+    "licenses/GPL-2.0.txt"
   ]
 }

@@ -9,6 +9,7 @@ cc -DHAVE_CONFIG_H -Iport -Isrc -I/usr/local/include/gtk3-x11 -I/usr/local/inclu
 cp data/l3afpad.png "$stage/share/pixmaps/"
 cp PORT.md "$stage/share/doc/l3afpad/"
 cp COPYING "$stage/share/licenses/l3afpad/"
+cp ../licenses/GPL-2.0.txt "$stage/share/licenses/l3afpad/"
 cp ../l3afpad.desktop "$stage/share/applications/"
 printf '#!/bin/sh\nexec gtk3-x11-run /usr/local/libexec/l3afpad "$@"\n' > "$stage/bin/l3afpad"
 chmod +x "$stage/bin/l3afpad"

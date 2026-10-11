@@ -3,5 +3,12 @@
   "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
   "path": "vendor/l3afpad",
   "archiveSha256": "3c5ad7f0d57a732f2249076332c834924dbe8f2460ef54cc99b223313451fb8d",
-  "status": "source migration candidate; no new guest execution"
+  "status": "source migration candidate; no new guest execution",
+  "overlays": [
+    {
+      "file": "licenses/GPL-2.0.txt",
+      "historicalPath": "apps/xmahjongg/licenses/GPL-2.0.txt",
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    }
+  ]
 }
