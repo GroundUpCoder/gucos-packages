@@ -1750,7 +1750,7 @@
     {
       "id": "gtk3-x11",
       "kind": "historical-canonical-name",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/gtk3-x11/wasm-package.json",
       "historicalManifestSha256": "b5b5bafc14610799eee068316ef0e66a0ce3f8ccf914baaf0aab6816cdd68953",
       "historicalEvidence": [
@@ -1800,6 +1800,12 @@
           "scope": "Fresh exact-binary GUI on28-package1958-file closure: sharedX11 SDK, clipboard/blankcursor, click/resize640x480, exact hello123 shifted keyboard input,7182 red/191816 blue screenshot pixels, cleanEscape shutdown;18 public/managed provider copies hash-verified",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-12/functional"
+        },
+        {
+          "scope": "Public immutable install, consumer relink, reload720 outputs and full GUI:1958 closure hashes,18 provider copies, clipboard, typing, resize, screenshot and clean exit",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "catalogCommit": "a7e16e04514873c852eb30fc19aefc59837a0959",
+          "evidence": "docs/research/package-migration/batch-12/public-live"
         }
       ],
       "blockers": [
@@ -3917,7 +3923,7 @@
     {
       "id": "sdl3-gfx",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "historicalManifest": "apps/sdl3-gfx/wasm-package.json",
       "historicalManifestSha256": "bd9754f7603f3e81d3912953daeb32bd22be3e5832b80da0f1a69373f99bff88",
       "historicalEvidence": [
@@ -3944,6 +3950,11 @@
           "scope": "Fresh guest source/core-libc SDL linkage; original static/shared pixel, decoder and mixing tests;15 combined outputs",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-15/source"
+        },
+        {
+          "scope": "Fresh binary install, original static/shared consumers and reload15 combined outputs; image256 exact pixels and mixer6 PCM buffers22472 nonzero samples peak0.30517578125. PCM delivery only, not audibility/fidelity.",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-15/binary-install"
         }
       ],
       "blockers": [
@@ -3959,7 +3970,7 @@
     {
       "id": "sdl3-image",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "historicalManifest": "apps/sdl3-image/wasm-package.json",
       "historicalManifestSha256": "e03879333f1c0ffea29a0cfe573f194d8398f6cc72d2208b842ade6d654fba61",
       "historicalEvidence": [
@@ -3986,6 +3997,11 @@
           "scope": "Fresh guest source/core-libc SDL linkage; original static/shared pixel, decoder and mixing tests;15 combined outputs",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-15/source"
+        },
+        {
+          "scope": "Fresh binary install, original static/shared consumers and reload15 combined outputs; image256 exact pixels and mixer6 PCM buffers22472 nonzero samples peak0.30517578125. PCM delivery only, not audibility/fidelity.",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-15/binary-install"
         }
       ],
       "blockers": [
@@ -4001,7 +4017,7 @@
     {
       "id": "sdl3-mixer",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "historicalManifest": "apps/sdl3-mixer/wasm-package.json",
       "historicalManifestSha256": "0ade0656d5d74f9b53cb34e8467dfe514cb0c5a2cfcf8316babbb0e188c9255c",
       "historicalEvidence": [
@@ -4028,6 +4044,11 @@
           "scope": "Fresh guest source/core-libc SDL linkage; original static/shared pixel, decoder and mixing tests;15 combined outputs",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-15/source"
+        },
+        {
+          "scope": "Fresh binary install, original static/shared consumers and reload15 combined outputs; image256 exact pixels and mixer6 PCM buffers22472 nonzero samples peak0.30517578125. PCM delivery only, not audibility/fidelity.",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-15/binary-install"
         }
       ],
       "blockers": [

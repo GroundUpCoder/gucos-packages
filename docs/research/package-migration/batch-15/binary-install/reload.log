@@ -1,0 +1,33 @@
+gucman: unknown source
+
+
+/usr/local/lib/libSDL3_gfx.a: OK
+/usr/local/lib/libSDL3_gfx.so: OK
+/usr/local/include/SDL3_gfx/SDL_gfxPrimitives.h: OK
+/usr/local/lib/pkgconfig/SDL3_gfx.pc: OK
+/usr/local/share/licenses/sdl3-gfx/LICENSE: OK
+
+4767d079c41e04fd2c83acf9277635f77627e25f9c64771fac46ee3519f2e3c8  /home/user/migration-export.tar
+179712
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libSDL3_image.a: OK
+/usr/local/lib/libSDL3_image.so: OK
+/usr/local/lib/pkgconfig/sdl3-image.pc: OK
+/usr/local/share/licenses/sdl3-image/LICENSE.txt: OK
+/usr/local/include/SDL3_image/SDL_image.h: OK
+
+efcdd1968c002519d4b103c43050256485a780226c6a0f87127df785ede1ce52  /home/user/migration-export.tar
+479744
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libSDL3_mixer.a: OK
+/usr/local/lib/libSDL3_mixer.so: OK
+/usr/local/lib/pkgconfig/sdl3-mixer.pc: OK
+/usr/local/share/licenses/sdl3-mixer/LICENSE.txt: OK
+/usr/local/include/SDL3_mixer/SDL_mixer.h: OK
+
+514f9aa3123deb9ce208ec462de3c11ac328acb4fcd3d09bad05416ca9ac86c5  /home/user/migration-export.tar
+1290240
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

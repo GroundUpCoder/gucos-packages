@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-11T03:50:30.735Z",
+  "canvasHelperSha256": "e96db3cefaa5384a1c535d2b6a28cc936ca305ad9cb9afc354b708809cd24969",
+  "inputCommit": "b87a2fd1362e35d19372fc9c62c655a97c2c378b",
+  "source": {
+    "path": "source.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/85e4a45801cd2f892ef12fc73caa66ae20ba2940/apps/gtk3-x11/source.tar",
+    "sha256": "f304eef64e41eb1bdf490402a059c0c1c396bd5060ec683776930f894272e193",
+    "size": 604160
+  },
+  "closureSha256": "bcf550f86047dd98e760a4c42b2a18beaedd3ca6ae919a754a7604ab39ac95bf",
+  "fileCount": 1958,
+  "harnessSha256": "539e60b87c56882dce901e6b9a0adc4b89d53b1c9169731575840825f97b2854",
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "providerCopies": [
+    {
+      "path": "/usr/local/lib/gucman/packages/cairo/release.kzsxyu/lib/libcairo.so",
+      "sha256": "b8980387cdf9b4bd951b7850f93adef51e5196ac03e4a044497511a198ba4e1d",
+      "kind": "managed-release"
+    },
+    {
+      "path": "/usr/local/lib/libcairo.so",
+      "sha256": "b8980387cdf9b4bd951b7850f93adef51e5196ac03e4a044497511a198ba4e1d",
+      "kind": "public"
+    },
+    {
+      "path": "/usr/local/lib/gucman/packages/x11-shared/release.ibgiwu/lib/libXau.so",
+      "sha256": "1a6a0e38c94e1e78755c3989c12100401ccb451fd82c88ee2dfe7311fef4ee38",
+      "kind": "managed-release"
+    },
+    {
+      "path": "/usr/local/lib/libXau.so",
+      "sha256": "1a6a0e38c94e1e78755c3989c12100401ccb451fd82c88ee2dfe7311fef4ee38",
+      "kind": "public"
+    },
+    {
+      "path": "/usr/local/lib/gucman/packages/x11-shared/release.ibgiwu/lib/libxcb.so",
+      "sha256": "5cdf49bc7e8d044fce71a51fbe164524e72a71553e4de46043d8b0ecf590feec",
+      "kind": "managed-release"
+    },
+    {
+      "path": "/usr/local/lib/libxcb.so",
+      "sha256": "5cdf49bc7e8d044fce71a51fbe164524e72a71553e4de46043d8b0ecf590feec",
+      "kind": "public"
+    },
+    {
+      "path": "/usr/local/lib/gucman/packages/x11-shared/release.ibgiwu/lib/libX11.so",
+      "sha256": "06f5b87728e50fd74e64269d20f203532057bfdbcfe87b8d966ccd0402b19077",
+      "kind": "managed-release"
+    },
+    {
+      "path": "/usr/local/lib/libX11.so",
+      "sha256": "06f5b87728e50fd74e64269d20f203532057bfdbcfe87b8d966ccd0402b19077",
+      "kind": "public"
+    },
+    {
+      "path": "/usr/local/lib/gucman/packages/x11-shared/release.ibgiwu/lib/libXext.so",
+      "sha256": "712277875434e3783743b4cf1d1ad7726736d51b6c4046db5f3d2037d6a49ea4",
+      "kind": "managed-release"
+    },
+    {
+      "path": "/usr/local/lib/libXext.so",
+      "sha256": "712277875434e3783743b4cf1d1ad7726736d51b6c4046db5f3d2037d6a49ea4",
+      "kind": "public"
+    },
+    {
+      "path": "/usr/local/lib/gucman/packages/x11-shared/release.ibgiwu/lib/libXrender.so",
+      "sha256": "bc78f875803d2b731a8303715e490f5df77192dadfdd7ecb6a037a802063be20",
+      "kind": "managed-release"
+    },
+    {
+      "path": "/usr/local/lib/libXrender.so",
+      "sha256": "bc78f875803d2b731a8303715e490f5df77192dadfdd7ecb6a037a802063be20",
+      "kind": "public"
+    },
+    {
+      "path": "/usr/local/lib/gucman/packages/x11-shared/release.ibgiwu/lib/libXfixes.so",
+      "sha256": "27316cef0f0c485b13425d02ebc2dd450e638adb9c86a87ee9f9c4b674d66ba1",
+      "kind": "managed-release"
+    },
+    {
+      "path": "/usr/local/lib/libXfixes.so",
+      "sha256": "27316cef0f0c485b13425d02ebc2dd450e638adb9c86a87ee9f9c4b674d66ba1",
+      "kind": "public"
+    },
+    {
+      "path": "/usr/local/lib/gucman/packages/x11-shared/release.ibgiwu/lib/libXi.so",
+      "sha256": "8e593848d723a0c2fe50fb457555850772552259072177a82867487ebfb93a88",
+      "kind": "managed-release"
+    },
+    {
+      "path": "/usr/local/lib/libXi.so",
+      "sha256": "8e593848d723a0c2fe50fb457555850772552259072177a82867487ebfb93a88",
+      "kind": "public"
+    },
+    {
+      "path": "/usr/local/lib/gucman/packages/x11-shared/release.ibgiwu/lib/libXtst.so",
+      "sha256": "4b66a21e7aed2275072e584730a5781964fbd47b3dfb6af643a30c9ad678409e",
+      "kind": "managed-release"
+    },
+    {
+      "path": "/usr/local/lib/libXtst.so",
+      "sha256": "4b66a21e7aed2275072e584730a5781964fbd47b3dfb6af643a30c9ad678409e",
+      "kind": "public"
+    }
+  ],
+  "pixels": {
+    "red": 7182,
+    "blue": 191816
+  },
+  "finishedAt": "2026-10-11T03:50:42.572Z"
+}

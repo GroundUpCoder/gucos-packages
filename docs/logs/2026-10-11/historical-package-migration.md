@@ -193,3 +193,13 @@ to its notice or JWM-owned app-menu hook. Live core remains61a while current
 public GTK test runs; no core deployment or changes performed here.
 MicroPython source34aa45c retains313 blobs,123-unit project and26 original
 fixtures; source review and fresh execution pending.
+
+## GTK public GUI and SDL binary/media passes
+
+Reservation26f1895e passed public GTK install/consumer/reload and full GUI on61a;
+1958 closure payloads and18 provider copies verified. Own live additions49->50.
+Reservationa1da84e9 passed SDLgfx/image/mixer binary install/consumer/reload,
+256 exact image pixels and6 browser PCM buffers (22472 nonzero samples).
+Retained batch-12/public-live and batch-15/binary-install; exact review pending.
+MicroPython34aa45c independently source-approved; initially queue-full75,
+then submitted after capacity opened. No scheduler bypass or extra workers.
