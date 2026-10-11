@@ -1,0 +1,9 @@
+{
+  "build-desktop-apps.json": "07c71295eeee28cf8d42999b84c2c9944c0bcb093439d8f2290957cfd604c16a",
+  "build-desktop-apps.log": "0869f506e6f36876edacdba9213fd3d07645ee6bf77b7a5a7e80c9b73d313125",
+  "candidate-manifests.json": "5bf0361bd7e09c6f29bf0bd2a0f08ae981a59f720bc4a290ee6bd16d0401f31c",
+  "config.json": "1f069bb923feefe2ac8983ff8ad24f8c8999b75613c9e8349c0f467c35140f51",
+  "dependencies-desktop-entries-jwm-xterm-2048-xcalc-xedit-xclock-xeyes.json": "53d4e94e13d1f02fb1052488915c4b17bdb10817dceb88fd64a46d891b72c6bb",
+  "dependencies.log": "bfd1b2baa7e9350c464eda1025e55f754c896f842f1b08199538e608f71a9f9d",
+  "observed-runtime.json": "4e6871d72ad8ae177496517f9c90ebc4c910708ed2cb697c4ff3eb791747d394"
+}
