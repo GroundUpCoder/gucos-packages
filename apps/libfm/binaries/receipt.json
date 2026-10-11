@@ -1,6 +1,6 @@
 {
   "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
-  "sha256": "d7e08df4dfddfca5b3672e801e174b205e783782c106f3544025747b86fb217f",
+  "sha256": "4dd9df370d74b70ce2715df361e72ee27121d5eaf6f3904c15bbbc4af1859fe1",
   "size": 3223552,
   "guestManifest": {
     "format": 1,
@@ -38,25 +38,25 @@
     "files": [
       {
         "path": "source.tar",
-        "url": "http://127.0.0.1:54179/migration/libfm/source.tar",
+        "url": "http://127.0.0.1:63381/migration/libfm/source.tar",
         "sha256": "edcc6aad7bda75df1a73a7777974b638ac6362767d9b7880e10f4aeb6903dbe9",
         "size": 10455040
       },
       {
         "path": "build.sh",
-        "url": "http://127.0.0.1:54179/migration/libfm/build.sh",
+        "url": "http://127.0.0.1:63381/migration/libfm/build.sh",
         "sha256": "2bb78d227e7d0a9a6763063ac96cdeb56f0fdcbef6f9711825c3b6c70d81f077",
         "size": 5026
       },
       {
         "path": "test.sh",
-        "url": "http://127.0.0.1:54179/migration/libfm/test.sh",
-        "sha256": "2f8e4c05375e63ce6b9ddd25ff266bab1e9198abb33adde826120024d5e8c89e",
-        "size": 4557
+        "url": "http://127.0.0.1:63381/migration/libfm/test.sh",
+        "sha256": "f277804d69d264d92f2bf6c794869df72e64420e91c3448febb2fa98a6f6ec97",
+        "size": 5296
       },
       {
         "path": "consumer.c",
-        "url": "http://127.0.0.1:54179/migration/libfm/consumer.c",
+        "url": "http://127.0.0.1:63381/migration/libfm/consumer.c",
         "sha256": "8d3019c9435f23d0db4331627f22f10256777bef5b429045b19421c1999e414c",
         "size": 2992
       }

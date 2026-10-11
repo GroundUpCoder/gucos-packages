@@ -1,0 +1,15 @@
+{
+  "action": "dependencies",
+  "names": [
+    "gtk3-x11",
+    "gio-core",
+    "pkgconf",
+    "libintl",
+    "x11-shared"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "c2934d58b7191e353958cc61e2751a895236d4c0",
+  "startedAt": "2026-10-11T11:23:02.003Z",
+  "status": "passed",
+  "finishedAt": "2026-10-11T11:31:04.959Z"
+}

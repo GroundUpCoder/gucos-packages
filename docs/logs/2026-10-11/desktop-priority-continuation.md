@@ -379,3 +379,8 @@ Fresh normal log absence and engine-owned reset after exact retained-log reload
 verification replace buffered stdout as query evidence. Gameplay assertions and
 Doom behavior remain unchanged. Stdout is retained separately; inherited TERM
 cleanup is not normal-exit acceptance. Prior query failures remain preserved.
+
+Fresh-profile LibFM/PCManFM source-v4 passed the reviewed c2934d5 source
+contract and exported 111/15 outputs. Prior reverse-dependency failure remains
+preserved. New exports require independent artifact review and new binary
+fixture/test-pin binding before installed or GUI acceptance.

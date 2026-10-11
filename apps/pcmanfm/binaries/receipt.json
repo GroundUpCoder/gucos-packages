@@ -1,6 +1,6 @@
 {
   "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
-  "sha256": "cee3b26c5987dbb38983f8e75c7b2c2a418c41dbc1e511e6014391889c0435de",
+  "sha256": "cb678c1d7bbdf40bde05d4ddeaa65f816d1dd519a5bc42afe6f4eec9aa7df6bb",
   "size": 877568,
   "guestManifest": {
     "format": 1,
@@ -42,25 +42,25 @@
     "files": [
       {
         "path": "source.tar",
-        "url": "http://127.0.0.1:54179/migration/pcmanfm/source.tar",
+        "url": "http://127.0.0.1:63381/migration/pcmanfm/source.tar",
         "sha256": "b50e4e1dbb185347e6e63a80f5bdbcac98b7ae34e3f9a2d7761eec379047cf37",
         "size": 3645440
       },
       {
         "path": "build.sh",
-        "url": "http://127.0.0.1:54179/migration/pcmanfm/build.sh",
+        "url": "http://127.0.0.1:63381/migration/pcmanfm/build.sh",
         "sha256": "7b545367eb6bf8408a19a4a00d72225e74550494e4ccdb21f5d42210589c8c6e",
         "size": 2417
       },
       {
         "path": "test.sh",
-        "url": "http://127.0.0.1:54179/migration/pcmanfm/test.sh",
-        "sha256": "0e7f62632b86bd3d2d731b05c5ed251d65c91cb731f5579933bc91b9b779e9d0",
-        "size": 3660
+        "url": "http://127.0.0.1:63381/migration/pcmanfm/test.sh",
+        "sha256": "b8c1b478750d3b2c46c4c7946dbffb24fff25878e05a125d7aa754683707090d",
+        "size": 4221
       },
       {
         "path": "consumer.c",
-        "url": "http://127.0.0.1:54179/migration/pcmanfm/consumer.c",
+        "url": "http://127.0.0.1:63381/migration/pcmanfm/consumer.c",
         "sha256": "52b42d42b7f983d5f3df8113cb8a4d028af9e2349c7612327203b1dcdbd9b4f2",
         "size": 2152
       }
