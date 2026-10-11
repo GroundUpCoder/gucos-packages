@@ -1,4 +1,4 @@
-// Mines interactive gate: owned JWM entry, safe first-cell opening/undo, GTK save/load,
+// Mines interactive gate: owned JWM entry, flag/undo and safe first-cell opening, GTK save/load,
 // clean quit/relaunch and persisted-board browser reload. No solved-board claim.
 import assert from 'node:assert/strict';
 import {readFile,writeFile,access} from 'node:fs/promises';
@@ -17,7 +17,7 @@ const reload=process.argv.includes('--reload');
 const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'first';
 assert(/^[a-zA-Z0-9_-]+$/.test(attempt));const stem='puzzles-mines-jwm-'+attempt+(reload?'-reload':'');
 await assert.rejects(access(resolve(run,stem+'.json')),{code:'ENOENT'});
-const report={status:'running',startedAt:new Date().toISOString(),scope:reload?'Mines browser reload: persisted bytes, JWM launch, GTK load, prior board pixels, quit':'Mines only: real JWM menu, move/undo, GTK save/load, quit/relaunch'};
+const report={status:'running',startedAt:new Date().toISOString(),scope:reload?'Mines browser reload: persisted bytes, JWM launch, GTK load, prior board pixels, quit':'Mines only: real JWM menu, flag/undo, first-cell opening, GTK save/load, quit/relaunch'};
 async function bounded(p,ms,label){let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms);})]);}finally{clearTimeout(timer);}}
 let s,d;
 try{
@@ -66,11 +66,12 @@ try{
  }else{
  const point={x:w.x+w.width/2+7,y:w.y+w.height/2+7};
  const initial=await board('initial');
+ await canvas.click({button:'right',position:await canvasPosition(canvas,point)});
+ const flagged=await board('flagged');assert.notEqual(flagged,initial,'Physical right click must place a flag');
+ await s.page.keyboard.press('u');assert.equal(await board('flag-undo'),initial,'Undoing a flag restores the pristine board');
  await click(point.x,point.y);const moved=await board('opened');
- assert.notEqual(moved,initial,'A physical cell click must expose the board');
- report.openingPoint=point;
- await s.page.keyboard.press('u');assert.equal(await board('undo'),initial,'Undo must restore exact board pixels');
- await click(point.x,point.y);assert.equal(await board('repeat-opening'),moved);
+ assert.notEqual(moved,initial,'First safe cell opening must expose the board');
+ report.openingPoint=point;report.flaggedBoardSha256=flagged;
  await fileDialog(true);
  const saved=await s.page.evaluate(async()=>Array.from(await shell.busybox.read('/home/user/jwm-mines.sav')||[]));assert(saved.length>100);report.savedSha256=sha(Buffer.from(saved));
  await quit();report.relaunchMenu=await clickMenuEntry(d,entry);w=await observe(d,'window','Mines');assert(w.pid>0);assert.notEqual(w.pid,report.firstWindow.pid);
