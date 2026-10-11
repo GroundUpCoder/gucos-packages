@@ -1,0 +1,23 @@
+--- a/source/port/subprocess-smoke.py
++++ b/source/port/subprocess-smoke.py
+@@ -162,8 +162,19 @@
+             os.close(next_fd)
+ 
+ 
++class DiagnosticResult(unittest.TextTestResult):
++    def addError(self, test, err):
++        error = err[1]
++        if isinstance(error, subprocess.CalledProcessError):
++            print("CPYTHON-SPAWN-ERROR", repr(error.cmd),
++                  "returncode", error.returncode, file=sys.stderr)
++            print("CPYTHON-SPAWN-STDOUT", repr(error.stdout), file=sys.stderr)
++            print("CPYTHON-SPAWN-STDERR", repr(error.stderr), file=sys.stderr)
++        super().addError(test, err)
++
++
+ if __name__ == "__main__":
+-    result = unittest.TextTestRunner(verbosity=2).run(
++    result = unittest.TextTestRunner(verbosity=2, resultclass=DiagnosticResult).run(
+         unittest.defaultTestLoader.loadTestsFromTestCase(SpawnTests))
+     if not result.wasSuccessful():
+         raise SystemExit(1)

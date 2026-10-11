@@ -91,3 +91,12 @@ those results. Public publication and acceptance remain separate gates.
 No pip/ensurepip, HTTPS/OpenSSL, ctypes, bz2/lzma, Tk, free-threading, unrestricted
 subprocess modes or full CPython conformance is claimed. Pure Python files for
 optional modules in the stdlib do not imply their native backends are supplied.
+
+The first staged consumer failed the PATH/cwd/symlink subprocess case.
+A checked diagnostic copy of the original full subprocess suite preserves all
+methods/assertions and adds a TextTestResult error reporter for captured child
+stdout/stderr before normal error reporting. It does not catch away failure,
+change subprocess calls, or repair environment/path behavior. The historical
+archive is unchanged. Diagnostic source retry and cause determination remain
+pending; the prior retained-extension harness pins require deliberate review
+and rebinding before use with this revised consumer.
