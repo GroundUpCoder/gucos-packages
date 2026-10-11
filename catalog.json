@@ -380,6 +380,41 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cbd6f3a5d85541b7763f75778594f01c463095b9/apps/gameboy/package.json",
       "sha256": "b79f39335e6b0ac90a82d5cbb3695916544bbce6641f401a33904bff57d4d7e5",
       "size": 2227
+    },
+    "m4": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/109d929464bcd880c564ad234b0779aae80f6814/apps/m4/package.json",
+      "sha256": "83f202c1a470ca6e1f75354635eab0005e0137fe85e412ca4d469e6c07ed0d73",
+      "size": 2114
+    },
+    "pcre2test": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/109d929464bcd880c564ad234b0779aae80f6814/apps/pcre2test/package.json",
+      "sha256": "a710952e44c302ac9978d18894d922ef18498b1f1b730bc92cf51daf03a798a0",
+      "size": 2135
+    },
+    "pcre2grep": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/109d929464bcd880c564ad234b0779aae80f6814/apps/pcre2grep/package.json",
+      "sha256": "5edc1a3da336fd388ba1dbd93d5f33c42bcbb229a6fa601c812cc9d6a1c96fbd",
+      "size": 2209
+    },
+    "libxfce4util": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/109d929464bcd880c564ad234b0779aae80f6814/apps/libxfce4util/package.json",
+      "sha256": "d3fff17f750020e95e9672526e5d24bbbb3b6e31488ef841c2bd94cb2b6fade6",
+      "size": 4356
+    },
+    "bitmap": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/109d929464bcd880c564ad234b0779aae80f6814/apps/bitmap/package.json",
+      "sha256": "b8d2ff2df6b2c3a5ea8580c0010ce6054312ca3cf7bf9e325ffe05f04d41a951",
+      "size": 3676
+    },
+    "xmag": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/109d929464bcd880c564ad234b0779aae80f6814/apps/xmag/package.json",
+      "sha256": "e3cb83ab8b047a9a130038b5eefe1d2eea37a091dd1928352a937e582e1b11fc",
+      "size": 2171
+    },
+    "sdl3-ttf": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/109d929464bcd880c564ad234b0779aae80f6814/apps/sdl3-ttf/package.json",
+      "sha256": "2ed3c441343685bbaa48ef755e86def0a907b416b6d4df7c629e67ac26720b48",
+      "size": 2778
     }
   }
 }
