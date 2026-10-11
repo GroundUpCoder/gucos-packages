@@ -36,7 +36,7 @@ try{
   await s.page.keyboard.press(save?'Control+Shift+s':'Control+o');await observe(d,'window',save?'Save As':'Open');
   await s.page.keyboard.press('Control+l');await s.page.keyboard.type(path);await s.page.keyboard.press('Enter');await observe(d,'absent',save?'Save As':'Open');
  }
- async function disk(text){await s.page.waitForFunction(async({path,text})=>new TextDecoder().decode(await shell.busybox.read(path)||new Uint8Array())===text,{path,text},{timeout:15000});}
+ async function disk(text){await s.page.waitForFunction(async({path,text})=>{const actual=await shell.busybox.read(path),expected=new TextEncoder().encode(text);return actual?.length===expected.length&&expected.every((b,i)=>actual[i]===b);},{path,text},{timeout:15000});}
  async function save(text){await s.page.keyboard.press('Control+s');await disk(text);}
  await launch();await snap('launched');
  let text;

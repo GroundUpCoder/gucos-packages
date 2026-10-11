@@ -48,7 +48,7 @@ try{
  }
  async function saveExpected(text){
   await s.page.keyboard.press('Control+x');await s.page.keyboard.press('Control+s');
-  await s.page.waitForFunction(async text=>new TextDecoder().decode(await shell.busybox.read('/home/user/jwm-xedit.txt')||new Uint8Array())===text,text,{timeout:15000});
+  await s.page.waitForFunction(async text=>{const actual=await shell.busybox.read('/home/user/jwm-xedit.txt'),expected=new TextEncoder().encode(text);return actual?.length===expected.length&&expected.every((b,i)=>actual[i]===b);},text,{timeout:15000});
  }
  await launch();await snap('launched');
  if(name==='xcalc'){
@@ -66,7 +66,7 @@ try{
   await editorLoad();
   if(reload){
    const prior=JSON.parse(await readFile(resolve(run,'xedit-jwm-'+attempt+'.json')));assert.equal(prior.status,'passed');assert.equal(prior.closureSha256,report.closureSha256,'Reload must use the same accepted private/public closure');assert.equal(prior.runtime,s.runtime);
-   const disk=await s.page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/home/user/jwm-xedit.txt')||new Uint8Array()));assert.equal(disk,prior.saved);
+   const disk=await s.page.evaluate(async()=>Array.from(await shell.busybox.read('/home/user/jwm-xedit.txt')||[]));assert.deepEqual(disk,Array.from(new TextEncoder().encode(prior.saved)));
    await s.page.keyboard.press('Control+End');await s.page.keyboard.type('browser reload');await s.page.keyboard.press('Enter');report.saved=prior.saved+'browser reload\n';
   }else{await s.page.keyboard.type('hello JWM editor');await s.page.keyboard.press('Enter');report.saved='hello JWM editor\n';}
   await saveExpected(report.saved);await snap('saved');
