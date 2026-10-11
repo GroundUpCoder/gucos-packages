@@ -52,3 +52,13 @@ an unchanged explicit pre-addition catalog, reconstructs manifests from frozen
 source/receipts, and pins immutable artifact/manifest commits. It does not advance
 or rewrite tools/publication-baseline.json. This avoids misrepresenting the older
 migration baseline as covering somebody else's ongoing release.
+
+## Production interactive harness
+
+public-attempt-01.json verified the production runtime, public binary installation,
+manifest equality and installed payload hashes. It then reloaded successfully but
+timed out waiting for the interactive agent prompt. The harness had typed the
+installed command directly into the bootstrap shell, whose generic command path
+does not resolve BusyBox-installed packages. The retry launches through
+`sh -c 'exec gucode ...'`, keeping real keyboard input and approval testing. This
+correction changes the test harness only; published application bytes are unchanged.

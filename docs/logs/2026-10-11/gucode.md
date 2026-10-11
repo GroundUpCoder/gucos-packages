@@ -54,3 +54,13 @@ compatibility. Core 1.0.1 always follows redirects and browser CORS applies. The
 agent uses trusted configured API endpoints. Approved shell commands are not
 sandboxed. Conversation compaction, OAuth, multimodal tools and subagents are not
 part of this release. No application-specific changes were made to core.
+
+## Queue reconciliation
+
+The corrected production test's foreground queue reservation vanished at the
+turn boundary; no exact exit code/signal was recoverable. No completion is
+inferred. Preserved initial public failure and exact partial scope in
+`docs/research/gucode/reconciliation.md`. On explicit coordinator request,
+launched a durable parent using the unchanged shared browser scheduler, retaining
+per-attempt output and exit status and preserving all existing jobs. Tag v0.1.0
+remains pending the real production interactive gate.

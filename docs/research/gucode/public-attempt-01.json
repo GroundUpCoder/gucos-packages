@@ -1,0 +1,8 @@
+{
+  "startedAt": "2026-10-11T08:00:18.240Z",
+  "status": "failed",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "publicBinaryInstall": true,
+  "error": "page.waitForFunction: Timeout 180000ms exceeded.\n    at /Users/jku/git/gucos-packages/tests/gucode/public.mjs:29:15",
+  "finishedAt": "2026-10-11T08:04:04.400Z"
+}
