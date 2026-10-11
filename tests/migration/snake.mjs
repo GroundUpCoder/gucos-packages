@@ -53,7 +53,10 @@ puts("SNAKE-TERMIOS-PASS");return 0;}
  await s.command('cc /tmp/snake-session-test.c -o /tmp/snake-session-test');
  async function launch() {
   const start=await s.page.evaluate(()=>shell.busybox.log.length);
-  pending=s.page.evaluate(()=>shell.command('sh')).then(result=>assert.equal(result.code,0));pending.catch(()=>{});
+  await s.page.evaluate(()=>shell.terminal.focus());
+  await s.page.keyboard.type('sh');await s.page.keyboard.press('Enter');
+  await until(()=>s.page.evaluate(()=>shell.busybox.running && shell.ui.busy),'interactive session');
+  pending=s.page.evaluate(()=>shell.busybox.done).then(result=>assert.equal(result.code,0));pending.catch(()=>{});
   await until(()=>s.page.evaluate(start=>/[$#] /.test(shell.busybox.log.slice(start)),start),'interactive shell prompt');
   await s.page.evaluate(()=>shell.terminal.focus());
   await s.page.keyboard.type('exec /tmp/snake-session-test');await s.page.keyboard.press('Enter');
@@ -73,6 +76,13 @@ puts("SNAKE-TERMIOS-PASS");return 0;}
  const reset=(await headSince(restart))[0];
  assert(reset.y>before.y-2,'Restart did not return toward board center');
  report.checks.push('wall-collision','restart');
+ await s.page.evaluate(()=>new Promise(resolve=>shell.terminal.write('',resolve)));
+ const screen=await s.page.evaluate(()=>{const b=shell.terminal.buffer.active;return Array.from({length:b.length},(_,i)=>b.getLine(i)?.translateToString(true)||'');});
+ assert.match(screen[0],/^\|[-]{58}\|/,'Visible top border');
+ assert.match(screen[20],/^\|[-]{58}\|/,'Visible bottom border');
+ assert(screen.some(row=>row.includes('@')),'Visible snake head');
+ assert(screen.some(row=>row.includes('*')),'Visible food');
+ report.checks.push('rendered-board-borders-head-food');
  await s.page.screenshot({path:resolve(run,'snake-playing.png')});
  await s.page.keyboard.press('q');await settled();
  await s.command('echo SNAKE-TERMINAL-RESTORED');
