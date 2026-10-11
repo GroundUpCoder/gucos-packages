@@ -22,9 +22,9 @@
       "size": 1360
     },
     "jwm": {
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9474fca194c5e2f23b321a50a8ba08227888d10f/apps/jwm/package.json",
-      "sha256": "62a8d10be4092d8be29529b9bbe8d5a86ba55c9f2dfb8a2c1cdf17d43568d6ae",
-      "size": 2819
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/c1ca6febf8ac7262a2322ea11afe5f668e7249be/apps/jwm/package.json",
+      "sha256": "9ed55295dbafac39bcbce7c394008283bf031f2dd26f0abbaae277dc8e4d5f77",
+      "size": 3074
     },
     "lua": {
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9474fca194c5e2f23b321a50a8ba08227888d10f/apps/lua/package.json",
@@ -350,6 +350,11 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9474fca194c5e2f23b321a50a8ba08227888d10f/apps/gtk3-x11/package.json",
       "sha256": "0b370341dec3e4a11305eaa07e6669c03ead38c3280492fd3c14d1d80a4c7835",
       "size": 69181
+    },
+    "desktop-entries": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/c1ca6febf8ac7262a2322ea11afe5f668e7249be/apps/desktop-entries/package.json",
+      "sha256": "42a6ff667b0007f906030df686980797af6c6601ad30d382f14f349ffc5de5bb",
+      "size": 2813
     }
   }
 }
