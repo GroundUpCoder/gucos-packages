@@ -41,6 +41,8 @@
     "xarchiver.desktop",
     "LGPL-2.1.txt",
     "main-no-gnu-tar.c",
-    "tar-provider.patch"
+    "tar-provider.patch",
+    "interface-signal-abi.c",
+    "quit-signal-abi.patch"
   ]
 }

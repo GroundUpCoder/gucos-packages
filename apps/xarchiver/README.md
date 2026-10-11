@@ -21,3 +21,11 @@ not an integrity proof. Genuine GUI creation, explicit Test and exact extracted
 bytes, normal quit/reopen and browser reload remain required. No TAR, ZIP or
 other detected-format acceptance is claimed. Upstream alternative TAR providers
 remain available if separately installed; core BusyBox tar is not selected.
+
+The first layout run trapped on Ctrl+Q because the upstream three-argument
+void quit helper was connected directly to two incompatible GTK signals.
+The checked `interface-signal-abi.c` overlay supplies a void two-argument
+menu callback and a gboolean delete-event callback, preserving helper cleanup
+and active-child refusal. `quit-signal-abi.patch` records the exact change;
+the source archive remains unchanged. Build and fresh normal-exit tests of
+both Ctrl+Q and window-manager close are pending independent review/execution.
