@@ -29,6 +29,8 @@
     "subprocess-diagnostic.py",
     "subprocess-diagnostic.patch",
     "getpath-diagnostic.c",
-    "getpath-diagnostic.patch"
+    "getpath-diagnostic.patch",
+    "fileutils-path.c",
+    "fileutils-path.patch"
   ]
 }

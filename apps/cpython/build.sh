@@ -9,6 +9,10 @@ cp site-gucman.py source/Lib/site.py
 printf '%s  source/Modules/getpath.c\n' 5a2ecbe4176c02a0a27fb95a98b0a96ff8712e53865134e0db7ce4bb107116f4 | sha256sum -c -
 printf '%s  getpath-diagnostic.c\n' 43a2b96bbec8e8f9d7892496a3409c259fae7631184aa78228becead8d986d97 | sha256sum -c -
 cp getpath-diagnostic.c source/Modules/getpath.c
+# Preserve a separator for one-character relative directory names.
+printf '%s  source/Python/fileutils.c\n' 7141679d2d4d1ac7faa9f17b4fa3596e042bbd4d32bbab659bb5336c24b79d95 | sha256sum -c -
+printf '%s  fileutils-path.c\n' c43305d02cd0992c9081baa4093ac5864b1ecf4338107b00162a4dbd12236812 | sha256sum -c -
+cp fileutils-path.c source/Python/fileutils.c
 stage="$DESTDIR"
 mkdir -p "$stage/build" "$stage/bin" "$stage/lib/python3.14" "$stage/include/python3.14" "$stage/share/doc/cpython" "$stage/share/licenses/cpython"
 cp README.md "$stage/share/doc/cpython/MIGRATION.md"

@@ -106,3 +106,10 @@ without changing executable selection or the original stat predicate. The
 full subprocess suite additionally requires nonempty executable identities.
 This is diagnostic instrumentation, not a demonstrated path-discovery fix.
 The original source archive is unchanged; installed/reload gates remain pending.
+
+The checked fileutils overlay changes the join separator condition from
+dirlen > 1 to dirlen > 0. The historical helper otherwise joins a one-character
+relative directory and filename without a slash, matching the retained
+.spawn-python diagnostic. Empty and root directory behavior is preserved.
+Runtime verification of this correction remains pending; diagnostics and the
+full strengthened subprocess suite remain enabled.

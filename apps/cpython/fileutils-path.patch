@@ -1,0 +1,11 @@
+--- a/Python/fileutils.c
++++ b/Python/fileutils.c
+@@ -2425,7 +2425,7 @@
+             wcscpy(buffer, dirname);
+         }
+         size_t relstart = dirlen;
+-        if (dirlen > 1 && dirname[dirlen - 1] != SEP) {
++        if (dirlen > 0 && dirname[dirlen - 1] != SEP) {
+             buffer[dirlen] = SEP;
+             relstart += 1;
+         }
