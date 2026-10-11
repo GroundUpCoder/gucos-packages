@@ -344,3 +344,13 @@ Original driver authorship and correction authorship remain distinct. This
 fixes the previously missed async-wait defect without relaxing PID, raw wait
 status or fixture checks. GUI remains held for corrected consumer receipts and
 explicit review of updated embedded test-input pins.
+
+Added the independently reviewed standalone installed-closure gate unchanged.
+The author and independent reviewer remain distinct; proposal comments are
+retained for exact byte identity. Gate SHA256 7880a125ddc39c7bf89a50178d1801b846f04aa4b597c2e72fcffe7a7a6f40d1;
+library SHA256 7e919716bf108cfedb7de4584d688241cacd19ac88d5560efb493ec8a93e74c3.
+Execution requires sequential before/driver/after in one browser reservation
+per phase and exclusive profile ownership. It verifies complete installed
+manifest/payload/mode closure and binds receipts to the profile and reviewed
+driver. Galculator reload requires the completed normal pair. Xarchiver reload
+and PCManFM are excluded. Host checks do not establish guest functionality.
