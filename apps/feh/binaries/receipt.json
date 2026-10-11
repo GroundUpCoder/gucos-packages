@@ -1,0 +1,134 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "06fb7aa51a0381e6f300481ee8dae239161579e874837eef7a6bced0394be433",
+  "size": 1182208,
+  "guestManifest": {
+    "format": 1,
+    "name": "feh",
+    "version": "3.13.1-1",
+    "dependencies": [
+      "imlib2",
+      "x11-shared",
+      "libpng",
+      "gtk3-x11",
+      "x11-toolkit"
+    ],
+    "dependencyRequirements": {
+      "imlib2": {
+        "version": "1.6.1-1"
+      },
+      "x11-shared": {
+        "version": "0.1.0-1"
+      },
+      "libpng": {
+        "version": "1.6.58-1"
+      },
+      "gtk3-x11": {
+        "version": "3.24.43-1"
+      },
+      "x11-toolkit": {
+        "version": "1.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:52893/migration/feh/source.tar",
+        "sha256": "4852202d3f41950ddbd0f5c6dc5cffeabcd213837850c0b39804f64a4edb0c03",
+        "size": 3829760
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:52893/migration/feh/build.sh",
+        "sha256": "8a955a197e949d9e44d9aef36980ca80e5d77a38c3b959ffae7d33285b9a3f1f",
+        "size": 1425
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:52893/migration/feh/test.sh",
+        "sha256": "02798f70d25b587fc811ec00ae83d677066ff0ff4d081dd7007b65427d8afbb9",
+        "size": 952
+      },
+      {
+        "path": "feh.desktop",
+        "url": "http://127.0.0.1:52893/migration/feh/feh.desktop",
+        "sha256": "dbfe1e4ec6f21fdf83164fd8685399c1399dbf5a320a0fedd31834b72b84b3d7",
+        "size": 122
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/feh",
+        "mode": 493
+      },
+      {
+        "path": "libexec/feh",
+        "mode": 493
+      },
+      {
+        "path": "share/applications/feh.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/feh/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/feh/README.md",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/fonts/NotoSans-Medium.ttf",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/fonts/OFL.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/fonts/README.md",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/fonts/yudit.ttf",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/images/feh.png",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/images/feh.svg",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/images/menubg_default.png",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/feh/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/feh/OFL.txt",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/feh/COPYING",
+      "share/licenses/feh/OFL.txt"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}
