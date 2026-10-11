@@ -1,11 +1,11 @@
 {
   "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
-  "sha256": "a63735940dce08520045c638378f3ec50a2c4df2f5168bf1ca91a4e85fbff590",
-  "size": 166400,
+  "sha256": "378a92440f3f0dee4e3fc5cc6d4d81cd1dba456094447545035c92910b04f5e3",
+  "size": 179712,
   "guestManifest": {
     "format": 1,
     "name": "gucode",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "dependencies": [
       "libcurl"
     ],
@@ -25,20 +25,20 @@
     "files": [
       {
         "path": "source.tar",
-        "url": "http://127.0.0.1:36891/candidate/source.tar",
-        "sha256": "be991d3a5aa2d0a8dd4dee072fb3e687a67fbd93daebdfa1455b28c5330f7261",
-        "size": 163840
+        "url": "http://127.0.0.1:52937/candidate/source.tar",
+        "sha256": "36a235f76a49c9f03c35d8bd6be7a8b5d2d0acb0dbca820f195748925c59a2f6",
+        "size": 174080
       },
       {
         "path": "build.sh",
-        "url": "http://127.0.0.1:36891/candidate/build.sh",
-        "sha256": "f3fd87170ca8c86e1a0f9f5419b246d332ab56506350454f64ddcae19c516777",
-        "size": 447
+        "url": "http://127.0.0.1:52937/candidate/build.sh",
+        "sha256": "e27e652e9aa9ce847e3fe8486f3670aaf4d30c09ca72b8d334a1a9a64a1f85c1",
+        "size": 466
       },
       {
         "path": "test.sh",
-        "url": "http://127.0.0.1:36891/candidate/test.sh",
-        "sha256": "e4e689abff2d9ba12ab83dd0ea10f3274f19d33cc15256ef5dff3be581129adc",
+        "url": "http://127.0.0.1:52937/candidate/test.sh",
+        "sha256": "e00c41c820d3500abdd60abe83da921258dc1bb41b1d70e381a469b2377d2e64",
         "size": 196
       }
     ],
