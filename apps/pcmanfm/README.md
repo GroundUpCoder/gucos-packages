@@ -17,7 +17,9 @@ libintl 0.23.1-1 and x11-shared 0.1.0-1. Build/install libfm first.
 The manifest preserves the historical 14 outputs and adds an exact COPYING
 copy at share/licenses/pcmanfm/COPYING (15 outputs). GPL notices remain in the
 archive and historical share/doc location. The only desktop-entry delta adds
-`--no-desktop` to the main launcher. The retained desktop-preferences entry
+`--no-desktop` to the main launcher. This flag is a compatibility no-op in
+this version; ordinary file-manager mode follows from omitting desktop and
+daemon options. The retained desktop-preferences entry
 is not acceptance of desktop-background management. Wrapper XDG configuration
 and lxde menu prefix remain unchanged.
 
