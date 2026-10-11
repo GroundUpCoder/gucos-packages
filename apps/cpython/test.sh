@@ -2,8 +2,9 @@
 set -eu
 # Inputs are supplied by the source recipe or the frozen installed consumer.
 src="$PWD/source"
-diagnostic="$PWD/subprocess-diagnostic.py"
+diagnostic="$src/port/subprocess-diagnostic.py"
 printf '%s  source/port/subprocess-smoke.py\n' 4c478ccdbc535da62c0709d51143b23ee7944d6e03a0dcc094a300c771e78bdf | sha256sum -c -
+cp subprocess-diagnostic.py "$diagnostic"
 python="$DESTDIR/bin/python3.14"
 work=$(mktemp -d /tmp/cpython-consumer.XXXXXX)
 test -s "$DESTDIR/share/licenses/cpython/LICENSE"
