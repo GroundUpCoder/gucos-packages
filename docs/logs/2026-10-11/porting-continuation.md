@@ -91,3 +91,11 @@ configure options, generated-file ordering and strict upstream checks, with one
 make worker. Independent review approves source execution. The Info manual embeds
 its own GFDL license and invariant notices; COPYING applies to the GPL program.
 No new Awk source/binary/public execution has completed yet.
+
+
+The first fresh ncurses source run failed at its staged consumer compile after
+both narrow/wide libraries and tools built. The test supplied only the nested
+include directory, while generated headers also use ncurses/... includes.
+8201e01 adds the staged root include path for both consumer compiles. Failure
+logs are retained in ncurses/gucos-source-attempt1; a full corrected source run
+remains required. No ncurses binary was published from this failure.
