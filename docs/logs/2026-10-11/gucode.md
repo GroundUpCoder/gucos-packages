@@ -64,3 +64,13 @@ inferred. Preserved initial public failure and exact partial scope in
 launched a durable parent using the unchanged shared browser scheduler, retaining
 per-attempt output and exit status and preserving all existing jobs. Tag v0.1.0
 remains pending the real production interactive gate.
+
+## Completed production gate
+
+Job 6e06655e executed the public gate at 09:37–09:38 UTC and exited 0. Both
+packages installed with exact reviewed manifests/payloads; gucode reloaded, took
+real keyboard input and approval, performed a verified DeepSeek file write, and
+exited. Evidence is public.json/public.log/public-scheduler.json. ANSI color was
+not observed on this terminal path; the earlier post-approval timeout remains
+unexplained. No binary/source fix was needed during these retries. All historical
+failures remain committed. This work does not advance the whole-catalog baseline.

@@ -62,3 +62,25 @@ installed command directly into the bootstrap shell, whose generic command path
 does not resolve BusyBox-installed packages. The retry launches through
 `sh -c 'exec gucode ...'`, keeping real keyboard input and approval testing. This
 correction changes the test harness only; published application bytes are unchanged.
+
+## Completed production acceptance
+
+`public.json`, `public.log` and `public-scheduler.json` record the successful
+production-origin gate, 2026-10-11 09:37:04–09:38:11 UTC (scheduler exit 0 at
+09:38:12). Both public package manifests and all installed payloads matched the
+reviewed artifacts. After reload, real keyboard input launched gucode, entered a
+DeepSeek task, approved one write, verified `greeting.txt` contained exactly
+`hello\n`, and exited with `/exit`. The ephemeral key was removed and the browser
+closed. No application or package binary changed during production retries.
+
+ANSI color was not observed in this browser terminal path (`ansiColor: false`);
+color is not claimed verified there. The earlier post-approval timeout remains
+unexplained: this successful run used one approval, so extra approvals were not
+established as its cause. Both failed public attempts remain preserved.
+
+For libcurl specifically, public delivery/install/payload identity passed, and
+production gucode exercised its statically linked shim with DeepSeek. The separate
+installed-archive relink and full network consumer suite was executed against the
+exact same runtime at the local candidate origin, not repeated at production.
+Before/after reload hashes for all payloads were checked in `binary.json`; the
+public gate checks all hashes before reload and executes gucode after reload.
