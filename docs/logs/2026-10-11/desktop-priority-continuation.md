@@ -82,3 +82,19 @@ Upstream alternative providers are preserved. The frozen source fixture queues
 accepted binary dependencies before the application build. The pending GUI scope
 is single-file bzip2 creation, explicit Test, exact extraction, quit/reopen and
 browser reload; a displayed row alone cannot establish archive validity.
+
+
+Feh observer/harness `2c61be7` received independent review. The observer was
+approved, but review found that reciprocal zoom-out/zoom-in could let reset pass
+without changing anything. Correction `a086d5e` now establishes a stable reduced
+image distinct from the initial native hash immediately before reset, then
+requires exact restoration. It also bounds each complete settling operation,
+including bridge awaits and screenshot retention, to 35 seconds. Independent
+review approved the corrected normal/reload driver for execution after binary
+readiness; no GUI acceptance has run.
+
+Xarchiver first-pass layout driver `84a7b1c` and optional JWM working-directory
+support `ef84a48` also passed independent execution review. Discovery captures
+main/menu/New/Open chooser geometry and screenshots, cancels dialogs, and proves
+normal process exit. It neither creates archives nor establishes persistence.
+The default desktop-session shell remains unchanged.
