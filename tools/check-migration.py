@@ -72,6 +72,8 @@ for name in names:
     for output in outputs:
         path = output['path']
         assert not Path(path).is_absolute() and '..' not in Path(path).parts
+        # Match the standalone gucman output-prefix contract before guest admission.
+        assert path.split('/', 1)[0] in {'bin', 'sbin', 'include', 'share', 'libexec', 'lib'} and '/' in path, (name, path, 'output outside allowed prefix')
         assert output['mode'] in (420, 493)
         assert path not in owned, (name, path, owned.get(path))
         owned[path] = name

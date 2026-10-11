@@ -179,3 +179,12 @@ or clean-log claim is made. GTK warnings/critical messages remain retained.
 This advances acceptance accounted for here from88to89, with91catalog entries.
 The87-entry preservation baseline `ec3fa8c` remains unchanged because the
 separately owned gucode/libcurl acceptance is still pending.
+
+LibFM source attempt failed before compilation with the guest manifest error
+`output outside allowed prefix`; dependency installation completed, but no
+LibFM/PCManFM export was produced. Evidence is retained in `2c5cf64`. The declared
+`etc/xdg/libfm/libfm.conf` lies outside the existing gucman output-prefix contract;
+PCManFM also declares two `etc/xdg` files. Application configuration relocation
+and runtime lookup behavior require independent review before retry. The source
+checker now rejects these prefixes before browser admission, reproducing this
+failure locally while both GTK adapter source candidates still pass.
