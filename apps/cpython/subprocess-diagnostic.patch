@@ -1,6 +1,23 @@
 --- a/source/port/subprocess-smoke.py
 +++ b/source/port/subprocess-smoke.py
-@@ -162,8 +162,19 @@
+@@ -55,11 +55,14 @@
+             os.symlink(PYTHON, os.path.join(directory, "spawn-python"))
+             environment = dict(os.environ, PATH=".", SPAWN_MARKER="child-only")
+             result = subprocess.run(
+-                ["spawn-python", "-c", "import os; print(os.getcwd()); "
++                ["spawn-python", "-c", "import os, sys; assert sys.executable; assert sys._base_executable; "
++                 "print(os.getcwd()); "
+                  "print(os.environ['SPAWN_MARKER'])"],
+                 cwd=directory, env=environment, capture_output=True, text=True, check=True)
+             self.assertEqual(result.stdout.splitlines(), [directory, "child-only"])
+-            result = subprocess.run(["./spawn-python", "-c", "print(42)"],
++            result = subprocess.run(["./spawn-python", "-c",
++                                     "import sys; assert sys.executable; "
++                                     "assert sys._base_executable; print(42)"],
+                                     cwd=directory, capture_output=True, check=True)
+             self.assertEqual(result.stdout, b"42\n")
+         self.assertEqual(os.getcwd(), original)
+@@ -162,8 +165,19 @@
              os.close(next_fd)
  
  

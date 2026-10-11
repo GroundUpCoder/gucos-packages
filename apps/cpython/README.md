@@ -100,3 +100,9 @@ change subprocess calls, or repair environment/path behavior. The historical
 archive is unchanged. Diagnostic source retry and cause determination remain
 pending; the prior retained-extension harness pins require deliberate review
 and rebinding before use with this revised consumer.
+
+The diagnostic source iteration adds bounded spawn-python getpath observations
+without changing executable selection or the original stat predicate. The
+full subprocess suite additionally requires nonempty executable identities.
+This is diagnostic instrumentation, not a demonstrated path-discovery fix.
+The original source archive is unchanged; installed/reload gates remain pending.

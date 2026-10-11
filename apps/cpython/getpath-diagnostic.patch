@@ -1,0 +1,179 @@
+--- a/source/Modules/getpath.c
++++ b/source/Modules/getpath.c
+@@ -57,6 +57,134 @@
+ #endif
+ #endif
+ 
++
++
++#ifdef PY_WASM_POSIX_SPAWN
++#include <errno.h>
++#include <unistd.h>
++/* Temporary observation only. Enabled solely while evaluating getpath for an
++ * argv/program basename of spawn-python. At most one header and four candidate
++ * records per process, each bounded independently; no environment mutation. */
++static int getpath_diag_active;
++static unsigned int getpath_diag_header_count, getpath_diag_candidate_count;
++
++static void
++getpath_diag_hex(char out[513], const char *value, size_t length)
++{
++    static const char digits[] = "0123456789abcdef";
++    if (length > 256) length = 256;
++    for (size_t i = 0; i < length; i++) {
++        unsigned char c = (unsigned char)value[i];
++        out[2*i] = digits[c >> 4];
++        out[2*i+1] = digits[c & 15];
++    }
++    out[2*length] = '\0';
++}
++
++static void
++getpath_diag_header(void)
++{
++    int saved_errno = errno;
++    if (getpath_diag_header_count == 0) {
++        getpath_diag_header_count = 1;
++        char cwd[4096], pathhex[513], cwdhex[513];
++        const char *path = getenv("PATH");
++        size_t pathlen = path ? strnlen(path, 257) : 0;
++        errno = 0;
++        int cwd_ok = getcwd(cwd, sizeof cwd) != NULL;
++        int cwd_errno = errno;
++        size_t cwdlen = cwd_ok ? strlen(cwd) : 0;
++        getpath_diag_hex(pathhex, path ? path : "", pathlen);
++        getpath_diag_hex(cwdhex, cwd_ok ? cwd : "", cwdlen);
++        fprintf(stderr, "CPYTHON-GETPATH-DIAG header path_present=%d "
++                "path_hex=%s path_truncated=%d cwd_ok=%d cwd_errno=%d "
++                "cwd_hex=%s cwd_truncated=%d\n",
++                path != NULL, pathhex, pathlen > 256, cwd_ok, cwd_errno,
++                cwdhex, cwdlen > 256);
++    }
++    errno = saved_errno;
++}
++
++static void
++getpath_diag_candidate(const wchar_t *path, int actual_rc,
++                       int actual_errno, const struct stat *actual_st)
++{
++    int saved_errno = errno;
++    if (getpath_diag_candidate_count < 4) {
++        getpath_diag_candidate_count++;
++        /* UTF-32 numeric hex preserves bounded wchar values without locale
++         * conversion/Python allocation. ASCII-only probe copy cannot alter the
++         * original Unicode candidate or its already-computed predicate. */
++        char widehex[1025], ascii[4096], absolute[8192], cwd[4096];
++        char target[256], targethex[513], absolutehex[513];
++        static const char digits[] = "0123456789abcdef";
++        size_t n = 0;
++        while (n < 128 && path[n]) {
++            unsigned long c = (unsigned long)path[n];
++            for (unsigned int j = 0; j < 8; j++)
++                widehex[n*8+j] = digits[(c >> ((7-j)*4)) & 15];
++            n++;
++        }
++        widehex[n*8] = '\0';
++        int wide_truncated = path[n] != 0;
++        size_t a = 0;
++        while (a < sizeof ascii-1 && path[a] &&
++               (unsigned long)path[a] <= 127) {
++            ascii[a] = (char)path[a]; a++;
++        }
++        ascii[a] = '\0';
++        int ascii_complete = path[a] == 0;
++        int cwd_ok = 0, cwd_errno = 0, absolute_ready = 0;
++        int absolute_rc = -2, absolute_errno = 0;
++        unsigned long absolute_mode = 0;
++        ssize_t link_rc = -2;
++        int link_errno = 0;
++        struct stat absolute_st;
++        absolute[0] = '\0';
++        if (ascii_complete) {
++            if (ascii[0] == '/') {
++                memcpy(absolute, ascii, a+1);
++                absolute_ready = 1;
++            } else {
++                errno = 0;
++                cwd_ok = getcwd(cwd, sizeof cwd) != NULL;
++                cwd_errno = errno;
++                if (cwd_ok) {
++                    int size = snprintf(absolute, sizeof absolute,
++                                        "%s/%s", cwd, ascii);
++                    absolute_ready = size >= 0 && (size_t)size < sizeof absolute;
++                }
++            }
++            if (absolute_ready) {
++                errno = 0;
++                absolute_rc = stat(absolute, &absolute_st);
++                absolute_errno = errno;
++                if (absolute_rc == 0) absolute_mode = absolute_st.st_mode;
++            }
++            errno = 0;
++            link_rc = readlink(ascii, target, sizeof target);
++            link_errno = errno;
++        }
++        getpath_diag_hex(targethex, target, link_rc > 0 ? (size_t)link_rc : 0);
++        getpath_diag_hex(absolutehex, absolute, strlen(absolute));
++        fprintf(stderr, "CPYTHON-GETPATH-DIAG candidate wide_hex=%s "
++                "wide_truncated=%d stat_rc=%d errno_after_stat=%d "
++                "mode_valid=%d mode=%lo ascii_probe_complete=%d "
++                "probe_cwd_ok=%d probe_cwd_errno=%d absolute_ready=%d "
++                "absolute_hex=%s absolute_truncated=%d absolute_stat_rc=%d "
++                "absolute_stat_errno=%d absolute_mode=%lo "
++                "readlink_rc=%ld readlink_errno=%d target_hex=%s "
++                "target_maybe_truncated=%d\n",
++                widehex, wide_truncated, actual_rc, actual_errno,
++                actual_rc == 0, actual_rc == 0 ? (unsigned long)actual_st->st_mode : 0,
++                ascii_complete, cwd_ok, cwd_errno, absolute_ready,
++                absolutehex, strlen(absolute) > 256, absolute_rc,
++                absolute_errno, absolute_mode, (long)link_rc, link_errno,
++                targethex, link_rc == (ssize_t)sizeof target);
++    }
++    errno = saved_errno;
++}
++#endif
+ 
+ /* HELPER FUNCTIONS for getpath.py */
+ 
+@@ -241,10 +369,20 @@
+             ? Py_True : Py_False;
+ #else
+         struct stat st;
++#ifdef PY_WASM_POSIX_SPAWN
++        int actual_rc = _Py_wstat(path, &st);
++        int actual_errno = errno;
++        r = (actual_rc == 0) && S_ISREG(st.st_mode) && (st.st_mode & 0111)
++            ? Py_True : Py_False;
++        if (getpath_diag_active)
++            getpath_diag_candidate(path, actual_rc, actual_errno, &st);
++        errno = actual_errno;
++#else
+         r = (_Py_wstat(path, &st) == 0) &&
+             S_ISREG(st.st_mode) &&
+             (st.st_mode & 0111)
+             ? Py_True : Py_False;
++#endif
+ #endif
+         PyMem_Free((void *)path);
+     }
+@@ -959,7 +1097,20 @@
+         return PyStatus_Error("error evaluating initial values");
+     }
+ 
++#ifdef PY_WASM_POSIX_SPAWN
++    int previous_diag_active = getpath_diag_active;
++    const wchar_t *diag_program = config->program_name;
++    if ((!diag_program || !*diag_program) && config->orig_argv.length > 0)
++        diag_program = config->orig_argv.items[0];
++    const wchar_t *diag_base = diag_program ? wcsrchr(diag_program, L'/') : NULL;
++    diag_base = diag_base ? diag_base + 1 : diag_program;
++    getpath_diag_active = diag_base && wcscmp(diag_base, L"spawn-python") == 0;
++    if (getpath_diag_active) getpath_diag_header();
++#endif
+     PyObject *r = PyEval_EvalCode(co, dict, dict);
++#ifdef PY_WASM_POSIX_SPAWN
++    getpath_diag_active = previous_diag_active;
++#endif
+     Py_DECREF(co);
+ 
+     if (!r) {

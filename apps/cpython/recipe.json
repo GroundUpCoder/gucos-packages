@@ -27,6 +27,8 @@
     "site-store.patch",
     "README.md",
     "subprocess-diagnostic.py",
-    "subprocess-diagnostic.patch"
+    "subprocess-diagnostic.patch",
+    "getpath-diagnostic.c",
+    "getpath-diagnostic.patch"
   ]
 }
