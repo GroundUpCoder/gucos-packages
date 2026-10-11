@@ -65,3 +65,29 @@ MicroPython source reservation157e3956 passed all26 retained fixtures and alias
 on19609, archive7881dde0/1,475,584 bytes. Binary reservation487bb8a6 repeated
 fixtures and verified all four outputs/reload. Reviewer approved artifacts and
 final manifest02d2bfe/catalog4395482 for publication; public acceptance pending.
+
+
+### Further source work and execution queue
+
+MicroPython public acceptance completed in batch-16/gucos-public. Game Boy
+catalog a69485f is published after independent artifact/manifests review; its
+fresh public install/render/reload job is queued, so public acceptance remains
+pending. Tcl/Tk source exports completed on runtime19609; the fresh binary,
+consumer, GUI and reload job is queued. The prepared utility batch is currently
+building ncurses after installing its explicit package dependencies.
+
+Quake2ce3b66/a527d7a retains149 exact historical blobs and explicitly excludes
+only the isolated proprietary PAK and inaccurate historical redistribution text.
+Each exclusion pins its original Git blob. Independent review verified the
+complete original shareware ZIP and all16 original payload files in a compressed
+archive. Explicit launch extracts the complete payload into user state while
+preserving existing files and links. The compiler's project reader ignores the
+historical dataFiles metadata; this was independently checked in compiler-driver.
+Corrected source execution is queued. Shooter testff8fb19 adds direct input-effect
+assertions; it has not run and must not yet be cited as gameplay acceptance.
+
+GNU Awk0607fac source preparation retains2,023 historical blobs, historical
+configure options, generated-file ordering and strict upstream checks, with one
+make worker. Independent review approves source execution. The Info manual embeds
+its own GFDL license and invariant notices; COPYING applies to the GPL program.
+No new Awk source/binary/public execution has completed yet.
