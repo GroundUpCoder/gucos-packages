@@ -51,7 +51,7 @@ with tarfile.open(fileobj=io.BytesIO(sys.stdin.buffer.read())) as archive:
   if(name==='sdl3-image'){
    await s.command(`set -eu
 cd /tmp/media-sdl3-image
-cc source/port/check.c -I/usr/local/include -lSDL3_image -lSDL3 -lm -o check`);
+cc source/port/check.c -I/usr/local/include -lSDL3_image -lm -o check`);
    await boundedCommand(`cd /tmp/media-sdl3-image
 echo $$ > /tmp/sdl-media-active.pid
 exec ./check "$PWD/source/upstream/test"`);
@@ -71,7 +71,7 @@ exec ./check "$PWD/source/upstream/test"`);
    });
    await s.command(`set -eu
 cd /tmp/media-sdl3-mixer
-cc source/port/hello-wrapper.c -I/usr/local/include -lSDL3_mixer -lSDL3 -o hello`);
+cc source/port/hello-wrapper.c -I/usr/local/include -lSDL3_mixer -o hello`);
    await boundedCommand(`cd /tmp/media-sdl3-mixer
 echo $$ > /tmp/sdl-media-active.pid
 exec ./hello "$PWD/source/port/fixtures/tone.wav"`);

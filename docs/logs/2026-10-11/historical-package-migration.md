@@ -152,3 +152,13 @@ letterboxed canvases with logical dimensions. Fix1ba0eb4 targets the actual VT,
 inverts core input mapping (nine geometry cases checked), records helper hash
 and caps canvas waits/clicks at10 seconds. Retained all prior failures/probe
 in batch-12/binary-install; full GTK GUI remains pending.
+
+## SDL core link adaptation
+
+Reservatione825a439 failed first SDLgfx build at cannot find -lSDL3; image/mixer
+stages did not run. Evidence retained batch-15/link-flag-failure. Current core
+libc owns SDL symbols (public virtual-terminal fixture links without -lSDL3).
+Adapted four addon recipes/tests and SDL media harness to implicit core libc,
+and removed only historical standalone SDL3 requirements from installed .pc
+metadata. Original source archives, consumer algorithms and checks unchanged.
+Fresh review/execution pending.

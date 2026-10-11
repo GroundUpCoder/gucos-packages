@@ -11,9 +11,9 @@ for source in port/wrappers/*.c; do
  objects="$objects $stage/objects/$name.o"
 done
 ar rcs "$stage/lib/libSDL3_image.a" $objects
-cc -shared $objects -lSDL3 -lm -Wl,-soname,libSDL3_image.so -o "$stage/lib/libSDL3_image.so"
+cc -shared $objects -lm -Wl,-soname,libSDL3_image.so -o "$stage/lib/libSDL3_image.so"
 cp upstream/include/SDL3_image/SDL_image.h "$stage/include/SDL3_image/"
-cp port/sdl3-image.pc "$stage/lib/pkgconfig/"
+sed '/^Requires: sdl3$/d' port/sdl3-image.pc > "$stage/lib/pkgconfig/sdl3-image.pc"
 rm -r "$stage/objects"
 
 mkdir -p "$stage/share/licenses/sdl3-image"

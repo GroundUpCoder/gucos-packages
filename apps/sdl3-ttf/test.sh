@@ -1,6 +1,6 @@
 #!/bin/sh
 set -eu
-links='-lSDL3 -lharfbuzz -lharfbuzz-runtime -lglib-2.0 -lpcre2-8 -lintl -liconv -lz -lfreetype -lm -lpthread'
+links='-lharfbuzz -lharfbuzz-runtime -lglib-2.0 -lpcre2-8 -lintl -liconv -lz -lfreetype -lm -lpthread'
 cc source/port/check.c -I"$DESTDIR/include" -L"$DESTDIR/lib" -lSDL3_ttf $links -o shared-test
 LD_LIBRARY_PATH="$DESTDIR/lib:/usr/local/lib" ./shared-test source/port/fonts/NotoSans-Regular.ttf
 cc source/port/check.c -I"$DESTDIR/include" "$DESTDIR/lib/libSDL3_ttf.a" $links -o static-test

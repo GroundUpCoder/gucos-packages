@@ -10,9 +10,9 @@ for unit in SDL_mixer SDL_mixer_metadata_tags SDL_mixer_spatialization decoder_r
  objects="$objects $stage/objects/$unit.o"
 done
 ar rcs "$stage/lib/libSDL3_mixer.a" $objects
-cc -shared $objects -lSDL3 -lm -lpthread -Wl,-soname,libSDL3_mixer.so -o "$stage/lib/libSDL3_mixer.so"
+cc -shared $objects -lm -lpthread -Wl,-soname,libSDL3_mixer.so -o "$stage/lib/libSDL3_mixer.so"
 cp upstream/include/SDL3_mixer/*.h "$stage/include/SDL3_mixer/"
-cp port/sdl3-mixer.pc "$stage/lib/pkgconfig/"
+sed '/^Requires: sdl3$/d' port/sdl3-mixer.pc > "$stage/lib/pkgconfig/sdl3-mixer.pc"
 rm -r "$stage/objects"
 
 mkdir -p "$stage/share/licenses/sdl3-mixer"
