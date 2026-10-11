@@ -13,10 +13,12 @@ const require=createRequire(new URL('../migration/package.json',import.meta.url)
 const {PNG}=require('pngjs');
 const sha=b=>createHash('sha256').update(b).digest('hex');
 assert(process.env.MACHINE_JOB_ID,'machine-job required');
+const reload=process.argv.includes('--reload');
 const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'first';
-assert(/^[a-zA-Z0-9_-]+$/.test(attempt));const stem='puzzles-jwm-'+attempt;
+assert(/^[a-zA-Z0-9_-]+$/.test(attempt));const stem='puzzles-jwm-'+attempt+(reload?'-reload':'');
 await assert.rejects(access(resolve(run,stem+'.json')),{code:'ENOENT'});
 const report={status:'running',startedAt:new Date().toISOString(),scope:'Fifteen only: real JWM menu, move/undo, GTK save/load, quit/relaunch'};
+async function bounded(p,ms,label){let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms);})]);}finally{clearTimeout(timer);}}
 let s,d;
 try{
  s=await session();report.runtime=s.runtime;await s.command('true');
@@ -42,14 +44,6 @@ try{
   assert(right>left&&bottom>top&&left>=0&&top>=0&&right<=png.width&&bottom<=png.height);
   const rows=[];for(let y=top;y<bottom;y++)rows.push(png.data.subarray((y*png.width+left)*4,(y*png.width+right)*4));return sha(Buffer.concat(rows));
  }
- const initial=await board('initial');let moved;
- for(const key of ['ArrowLeft','ArrowUp','ArrowRight','ArrowDown']){
-  await s.page.keyboard.press(key);const current=await board(key);
-  if(current!==initial){moved=current;report.moveKey=key;break;}
- }
- assert(moved,'At least one legal arrow-key move must change the board');
- await s.page.keyboard.press('u');assert.equal(await board('undo'),initial,'Undo must restore exact board pixels');
- await s.page.keyboard.press(report.moveKey);assert.equal(await board('redo-move'),moved);
  async function fileDialog(save){
   await s.page.keyboard.press('Alt+g');await s.page.keyboard.press('Home');
   // New, Restart, Specific, Random Seed, Load, Save; GTK skips separators.
@@ -59,20 +53,39 @@ try{
   await s.page.keyboard.press('Control+l');await s.page.keyboard.type('/home/user/jwm-fifteen.sav');await s.page.keyboard.press('Enter');
   await observe(d,'absent',save?'Enter name of game file to save':'Enter name of saved game file to load');
  }
- await fileDialog(true);
- const saved=await s.page.evaluate(async()=>Array.from(await shell.busybox.read('/home/user/jwm-fifteen.sav')||[]));assert(saved.length>100);report.savedSha256=sha(Buffer.from(saved));
  async function quit(){
   await s.page.keyboard.press('q');await observe(d,'absent','Fifteen');
   await d.command(`n=0; while kill -0 ${w.pid} 2>/dev/null; do n=$((n+1)); [ "$n" -lt 100 ] || exit 1; sleep 0.1; done`);
  }
+ if(reload){
+  const previous=JSON.parse(await readFile(resolve(run,'puzzles-jwm-'+attempt+'.json')));assert.equal(previous.status,'passed');
+  const saved=await s.page.evaluate(async()=>Array.from(await shell.busybox.read('/home/user/jwm-fifteen.sav')||[]));assert.equal(sha(Buffer.from(saved)),previous.savedSha256,'Browser reload retained exact saved bytes');
+  await fileDialog(false);assert.equal(await board('browser-reloaded'),previous.movedBoardSha256);
+  report.savedSha256=previous.savedSha256;report.movedBoardSha256=previous.movedBoardSha256;
+ }else{
+ const initial=await board('initial');let moved;
+ for(const key of ['ArrowLeft','ArrowUp','ArrowRight','ArrowDown']){
+  await s.page.keyboard.press(key);const current=await board(key);
+  if(current!==initial){moved=current;report.moveKey=key;break;}
+ }
+ assert(moved,'At least one legal arrow-key move must change the board');
+ await s.page.keyboard.press('u');assert.equal(await board('undo'),initial,'Undo must restore exact board pixels');
+ await s.page.keyboard.press(report.moveKey);assert.equal(await board('redo-move'),moved);
+ await fileDialog(true);
+ const saved=await s.page.evaluate(async()=>Array.from(await shell.busybox.read('/home/user/jwm-fifteen.sav')||[]));assert(saved.length>100);report.savedSha256=sha(Buffer.from(saved));
  await quit();report.relaunchMenu=await clickMenuEntry(d,entry);w=await observe(d,'window','Fifteen');assert(w.pid>0);assert.notEqual(w.pid,report.firstWindow.pid);
  await fileDialog(false);assert.equal(await board('loaded'),moved,'Saved game restores exact board after clean relaunch');
+ report.movedBoardSha256=moved;
+ }
  await quit();await d.finish();
  await s.command('test -s /home/user/jwm-fifteen.sav; echo PUZZLES-JWM-TERMINAL-RESTORED');
  report.status='passed';
 }catch(e){report.status='failed';report.error=String(e.stack||e);throw e;}
 finally{
  report.finishedAt=new Date().toISOString();
- if(s){try{await writeFile(resolve(run,stem+'.log'),await s.page.evaluate(()=>shell.busybox.log),{flag:'wx'});}finally{await s.close();}}
+ if(s){
+  try{await bounded((async()=>{const log=await s.page.evaluate(()=>shell.busybox.log);await writeFile(resolve(run,stem+'.log'),log,{flag:'wx'});})(),5000,'Log retention exceeded 5 seconds');}catch(e){report.logError=String(e);}
+  try{await bounded(s.close(),30000,'Session closure exceeded 30 seconds');}catch(e){report.cleanupError=String(e);report.status='failed';}
+ }
  await writeFile(resolve(run,stem+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});
 }
