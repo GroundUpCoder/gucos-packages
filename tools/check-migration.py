@@ -149,7 +149,13 @@ for name in names:
             hashes = dict(original['files'])
             hashes['provenance.json'] = prepared['provenanceSha256']
             hashes['manifest.json'] = prepared['manifestSha256']
-            assert original['translationManifestSha256'] == prepared['manifestSha256']
+            field = prepared.get('manifestHashField', 'translationManifestSha256')
+            assert field in ('translationManifestSha256', 'manifestSha256')
+            assert original[field] == prepared['manifestSha256']
+            responses = prepared.get('responseFiles', {})
+            assert set(responses) <= {'archive.rsp', 'startup.rsp'}
+            assert not (set(responses) & set(hashes))
+            hashes.update(responses)
             assert len(members) == len(hashes)
             assert {m.name.removeprefix('generated/') for m in members} == set(hashes)
             for member in members:

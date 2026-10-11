@@ -1,0 +1,42 @@
+[
+  {
+    "path": "bin/xmahjongg",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/xmahjongg.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmahjongg/Click-LICENSE",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmahjongg/GPL-2.0.txt",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmahjongg/NOTICE",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmahjongg/README",
+    "mode": 420
+  },
+  {
+    "path": "share/xmahjongg/backgrounds/default.gif",
+    "mode": 420
+  },
+  {
+    "path": "share/xmahjongg/layouts/default",
+    "mode": 420
+  },
+  {
+    "path": "share/xmahjongg/tiles/thick.gif",
+    "mode": 420
+  },
+  {
+    "path": "share/xmahjongg/translation.json",
+    "mode": 420
+  }
+]

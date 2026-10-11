@@ -1,0 +1,25 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/xmahjongg",
+  "archiveSha256": "b257af198004daa758ee23b7986a3281d58604a06e6c90be44d5f681d50843b9",
+  "preparedArchive": {
+    "file": "prepared.tar",
+    "sha256": "639aff48585d96c061e8c5c34e31f290bf551b68221f31b9754b4b22d3abb04d",
+    "provenanceSha256": "86e84755bd201145527b3b8a3f6b3831eb2f1fb4a208b68a72171f16ba588703",
+    "manifestSha256": "8684129cf1189325d1ef8f87c3b164b20a3db6908e16cdb99852a76b9d2571ed",
+    "manifestHashField": "manifestSha256",
+    "responseFiles": {
+      "archive.rsp": "c5caaada082e7a14ec71acc5236f82173dfd2541f4fa85d096f4a243ccb90c2c",
+      "startup.rsp": "44b0ad4b858907fa6d8e261d079095b5508eccad4912ce84801bcdb01b4682ba"
+    },
+    "fileCount": 1064
+  },
+  "retainedSourceArchive": {
+    "sha256": "d490da1844d7a99f68833c2670e1dc209f720d02188ba3d322c0bb4295e5f8f0",
+    "size": 5693440,
+    "sourceProofHistoricalPath": "docs/research/platform-os2-transition-20261005/xmahjongg-record/record-intake/source-proof.json",
+    "noticeSha256": "1ce6cfc9c3979225feff9de3ecdc5db8d03d065ce1024763aeec79ba70480592"
+  },
+  "scope": "Retained historical translated C input; fresh guest build and gameplay pending; no host retranslation claim"
+}
