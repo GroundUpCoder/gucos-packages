@@ -103,3 +103,15 @@ Independent gpt reviewer approved public evidence76fb6b4:18 evidence hashes,
 nine console chunks, immutable bindings, all100 payload hashes/modes;63 live
 entries and44 additions supported, baseline19 unchanged. Source batch Lua5.5,
 LPeg,2048,SQLite series is queued serially using prepared c9f06a1 profile.
+
+## Fresh PCG32 host preparation
+
+Serial reservation3635a5fb completed in packages-local snapshot using approved
+helperd2903c4, Python3.12/llvmlite0.50/AppleClang21 and hash-checked WASI SDK30.
+Original488 native outputs matchO0/O2, golden values and shuffle checks pass.
+Fresh pinned translator emits19 definitions rather than old retained17: adds
+C1 default/seeded constructor aliases, removes no symbols. Delta and host
+evidence retained under pcg32-host-preparation; not a generated-byte identity
+claim. Stager initially rejected stale17 count before writing any package;
+updated to require fresh report count19. Candidate retains six guest modes and
+six SDK outputs; source check passes, guest acceptance remains pending.

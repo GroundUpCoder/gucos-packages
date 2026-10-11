@@ -1,0 +1,26 @@
+[
+  {
+    "path": "bin/pcg32-check",
+    "mode": 493
+  },
+  {
+    "path": "include/pcg32/api.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/libpcg32.a",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/pcg32/LICENSE",
+    "mode": 420
+  },
+  {
+    "path": "share/pcg32/native-values.json",
+    "mode": 420
+  },
+  {
+    "path": "share/pcg32/translation.json",
+    "mode": 420
+  }
+]

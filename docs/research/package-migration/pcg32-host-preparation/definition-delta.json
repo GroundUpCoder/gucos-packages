@@ -1,0 +1,12 @@
+{
+  "historicalRetainedManifestSha256": "f2a80b013c6eb6b48d951b7e90bcc196d31d91fa477e0ca3373c8cd177993198",
+  "freshManifestSha256": "fb69858f363feb3a25a4d9e750bba33b88695c9ee0c7b526f1f7764a3392da16",
+  "oldCount": 17,
+  "freshCount": 19,
+  "addedSymbols": [
+    "_ZN5pcg32C1Ev",
+    "_ZN5pcg32C1Eyy"
+  ],
+  "removedSymbols": [],
+  "scope": "Fresh pinned historical translator emits two additional C1 constructor aliases. Original native488-output checks pass. No historical generated-byte identity or guest acceptance claim."
+}
