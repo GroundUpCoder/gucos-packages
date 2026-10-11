@@ -163,3 +163,19 @@ after the earlier desktop fixture. Generated sysconfig naming is an asserted
 contract, not an observed new result; a mismatch must fail. Same-extension
 execution after browser reload remains a separate future gate. No binary or
 public acceptance is added, and Tkinter/IDLE/pygame remain separate packages.
+
+Puzzles public evidence `4d4b1a6` independently passed acceptance review: all96
+indexed files,16passed reports,29immutable manifests/archives and2,090closure
+payload hashes. The three guest repacks preserve all132canonical payload
+bytes/sizes/modes despite differing tar hashes. Six loaded and six browser-reload
+screenshots were independently inspected. Accepted normal interaction scopes are
+Fifteen slide, Net rotation, SameGame connected-group removal, Solo pencil mark,
+Mines flag/first opening and Untangle paced drag, with declared undo/repeat,
+owned-menu/save/load/fresh-PID relaunch and terminal-restoration checks. Reload
+proves exact prior saved-byte and board restoration followed by quit, not a
+second full gameplay pass. No all40 gameplay, solved-board, arbitrary persistence
+or clean-log claim is made. GTK warnings/critical messages remain retained.
+
+This advances acceptance accounted for here from88to89, with91catalog entries.
+The87-entry preservation baseline `ec3fa8c` remains unchanged because the
+separately owned gucode/libcurl acceptance is still pending.

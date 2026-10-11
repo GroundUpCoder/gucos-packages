@@ -3755,7 +3755,7 @@
     {
       "id": "puzzles",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/puzzles/wasm-package.json",
       "historicalManifestSha256": "7ed16059fee8f8a30cc094382a619ee030aa04f8dd48fd82486994b67b163ba7",
       "historicalEvidence": [
@@ -3803,11 +3803,17 @@
           "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
           "evidence": "docs/research/package-migration/puzzles/gucos-binary",
           "evidenceCommit": "cd33207"
+        },
+        {
+          "scope": "Public immutable install/consumers/package reload; six owned-menu GUI scopes: Fifteen slide, Net rotation, SameGame removal, Solo pencil mark, Mines flag/first opening, Untangle drag, each with undo/repeat where declared, GTK save/load, fresh-PID relaunch and exact saved-board restoration. Six fresh-browser reload reports restore saved bytes/board hashes then quit; reload is not another full gameplay pass. No all40 gameplay, solved-board, arbitrary persistence or clean-log claim.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/puzzles/gucos-public",
+          "evidenceCommit": "4d4b1a6",
+          "catalogCommit": "807f2bc5d31179433e6e87a990c0f4514746d951",
+          "reviewerThread": "01a12a36-7ca5-773e-b7ca-28bafb1cd2ea"
         }
       ],
-      "blockers": [
-        "Six bounded private gameplay scopes are independently accepted. Exact artifact publication was independently approved and published at catalog 807f2bc. Fresh public install/integrity, consumers and six-game normal/reload gates remain pending; no all-40 gameplay claim."
-      ],
+      "blockers": [],
       "sourcePreparation": {
         "revision": "19b50d8",
         "scope": "319 pinned historical blobs, 40 games and 132 outputs; independent source preparation review complete."
@@ -3815,13 +3821,13 @@
       "sourceExecution": {
         "revision": "8f06d8a",
         "evidence": "docs/research/package-migration/puzzles/gucos-source",
-        "scope": "Independently reviewed generation of all 40 games and exact 132-output source export. Six bounded private interaction scopes are separately accepted; public acceptance remains pending."
+        "scope": "Independently reviewed generation of all40 games and exact132-output source export. Six bounded private and public interaction/reload scopes are separately accepted."
       },
       "publication": {
         "artifactRevision": "8f06d8a7c1337a6a9725618332cb0540a3d1723a",
         "manifestRevision": "5dc7e9c",
         "catalogRevision": "807f2bc",
-        "scope": "Independently reviewed immutable artifact publication; fresh public acceptance pending."
+        "scope": "Independently reviewed immutable artifact publication and bounded public install/consumer/six-game/restoration acceptance."
       }
     },
     {
