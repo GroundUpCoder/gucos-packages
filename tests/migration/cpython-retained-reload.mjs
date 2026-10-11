@@ -25,7 +25,7 @@ const normalPath = resolve(run, stem + '-normal.json');
 const statePath = resolve(run, stem + '-state.json');
 const python = '/usr/local/bin/python3.14';
 const pinnedSource = '9ca67e57a8e850020cbbea4e3f6a1cbf03f19e75c3260f61e6b3d36395b67e17';
-const pinnedConsumer = '5f45a610b5278038eab31660f50abeb961bfc6a5cd75ec44c6dfc6d4ccdb44af';
+const pinnedConsumer = 'fee38936e3d7cb96884520515542d74fd41b1ffd6026d87ebecfbdb4c3caf3a4';
 const pinnedExtensionSource = 'd584c544395df05500fd9c7e2c3bf5ef8f24a7a5fbb84026a4bf38d66355412b';
 const report = {status: 'running', mode, attempt, startedAt: new Date().toISOString(),
     scope: 'Installed frozen CPython consumers; identical retained xxlimited extension and data across actual browser reload. No source-build, GUI, full conformance or publication acceptance.'};
@@ -128,6 +128,17 @@ try {
     const candidateBytes = await readFile(resolve(run, 'candidate-manifests.json'));
     const candidates = JSON.parse(candidateBytes), m = candidates.cpython;
     assert(m?.name === 'cpython' && m.binary, 'Source fixture is not a binary fixture');
+    // Bind every revised source input and output to the independently reviewed export.
+    const reviewedReceipt = JSON.parse(execFileSync('git', ['show',
+        '20bafe7784b7e30f8dd29fc00ec8442d282a1eb6:apps/cpython/binaries/receipt.json'],
+        {cwd: repo, timeout: 10000, maxBuffer: 4 * 1024 * 1024}));
+    for (const key of ['format','name','version','dependencies','dependencyRequirements','platform','build','test','outputs','licenses'])
+        assert.deepEqual(m[key], reviewedReceipt.guestManifest[key], 'Reviewed CPython contract: ' + key);
+    const tuples = files => files.map(({path,sha256,size}) => ({path,sha256,size}));
+    assert.deepEqual(tuples(m.files), tuples(reviewedReceipt.guestManifest.files));
+    assert.equal(m.binary.sha256, reviewedReceipt.sha256);
+    assert.equal(m.binary.size, reviewedReceipt.size);
+    assert.equal(m.runtime, reviewedReceipt.runtime);
     assert.equal(m.runtime, config.expectedRuntime);
     const inputDist = config.inputDist || config.dist;
     assert(inputDist && config.dist, 'Frozen local binary/core distribution required');
