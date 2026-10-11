@@ -1,6 +1,6 @@
 // Fresh disk: consume the public pinned binary, then reload installed state.
 import assert from 'node:assert/strict';
-import {browserSession} from '../../wasm-posix/tools/browser.mjs';
+import {browserSession} from '../tools/browser.mjs';
 const s=await browserSession({allowedOrigins:['https://raw.githubusercontent.com']});
 try {
  const log=await s.command('set -eu\ngucman search jsmn\ngucman install groundupcoder:jsmn\n/usr/local/bin/jsmn-example');

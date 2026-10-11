@@ -4,8 +4,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import assert from 'node:assert/strict';
 import http from 'node:http';
-const require=createRequire(new URL('../../wasm-posix/package.json',import.meta.url));
-const {chromium}=require('playwright');
+import {chromium} from 'playwright';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 export async function session(){
@@ -47,7 +46,7 @@ export async function session(){
 
  const page=browser.pages()[0]||await browser.newPage();page.setDefaultTimeout(270000);
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto((publicMode?'https://os.groundupcoder.net':origin)+'/?shell=bootstrap');await page.waitForFunction(()=>window.shell?.ready);
+ await page.goto((publicMode?'https://os.groundupcoder.com':origin)+'/?shell=bootstrap');await page.waitForFunction(()=>window.shell?.ready);
  assert.equal(await page.evaluate(()=>crossOriginIsolated),true);
  const runtime=await page.evaluate(()=>shell.toolchain.systemBuild);assert.equal(runtime,'2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f');
  async function command(script){const before=await page.evaluate(()=>(shell.busybox?.log||'').length);const result=await page.evaluate(script=>shell.command("sh -c '"+script.replaceAll("'","'\\''")+"'"),script.replaceAll('https://packages.test',origin));const log=await page.evaluate(n=>shell.busybox.log.slice(n),before);console.log(log);assert.equal(result.code,0,log);assert.deepEqual(errors,[]);return log;}

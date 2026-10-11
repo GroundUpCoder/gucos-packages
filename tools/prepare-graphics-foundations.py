@@ -1,10 +1,11 @@
+import os
 """One-shot, explicit source preparation; never builds or publishes packages."""
 import hashlib
 import json
 import subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-OLD='/Users/jku/git/wasm-posix-old'
+OLD=os.environ['WASM_POSIX_HISTORICAL_CHECKOUT']
 REV='0b9b3245fe11a3bc677d81113cba90cd0ae80446'
 def blob(path):return subprocess.check_output(['git','-C',OLD,'show',REV+':'+path])
 def paths(path):return subprocess.check_output(['git','-C',OLD,'ls-tree','-r','--name-only',REV,path],text=True).splitlines()

@@ -16,19 +16,19 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/libjpeg-turbo/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/libjpeg-turbo/source.tar",
       "sha256": "37e17ba56424fbb9b6a7858197e3a97fa7b4582d17c601888674e1525f1ee350",
       "size": 3983360
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/libjpeg-turbo/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/libjpeg-turbo/build.sh",
       "sha256": "6aed95a9be32d0274193a6eacc08b04ec18bf0cf1d14859c567de97c87d1bbea",
       "size": 3114
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/libjpeg-turbo/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/libjpeg-turbo/test.sh",
       "sha256": "322be974e1cd9c8a8e4196faf31a4b6ed89d8d8053568db6e3d2aec54419c0e6",
       "size": 308
     }
@@ -79,7 +79,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/libjpeg-turbo/binaries/b2f8b15bbfb871fb246d293aebe1f91eca3947f0a5762d0c0ea40f0dae86bd5f.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/libjpeg-turbo/binaries/b2f8b15bbfb871fb246d293aebe1f91eca3947f0a5762d0c0ea40f0dae86bd5f.tar",
     "sha256": "b2f8b15bbfb871fb246d293aebe1f91eca3947f0a5762d0c0ea40f0dae86bd5f",
     "size": 2382336
   }

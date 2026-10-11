@@ -12,7 +12,7 @@ def blob(path):return subprocess.check_output(['git','show',revision+':'+path],c
 def frozen(path):
  b=blob(path);assert b==(ROOT/path).read_bytes(),(path,'not frozen at revision');return b
 def entry(path):
- b=frozen(path);return dict(url='https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/'+revision+'/'+path,sha256=hashlib.sha256(b).hexdigest(),size=len(b))
+ b=frozen(path);return dict(url='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/'+revision+'/'+path,sha256=hashlib.sha256(b).hexdigest(),size=len(b))
 baseline=json.loads(subprocess.check_output(['git','show','716bfe27a56357513abfc7213d542bda63129cd1:catalog.json'],cwd=ROOT))
 assert not set(names)&set(baseline['packages']), 'Baseline mutation forbidden'
 catalog=json.loads((ROOT/'catalog.json').read_text())

@@ -15,7 +15,7 @@ def git(path,commit=revision):return subprocess.check_output(['git','show',commi
 catalog=json.loads(git('catalog.json'));manifests={}
 for name in names:
  ref=catalog['packages'][name]
- prefix='https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/'
+ prefix='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/'
  assert ref['url'].startswith(prefix)
  commit,path=ref['url'][len(prefix):].split('/',1)
  assert re.fullmatch('[a-f0-9]{40}',commit) and path=='apps/'+name+'/package.json'
@@ -29,7 +29,7 @@ for name in names:
  manifests[name]=m
 run.mkdir(exist_ok=False)
 config['inputDist']=config.pop('dist',config.get('inputDist'))
-config.update(url='https://os.groundupcoder.net/',catalogUrl=prefix+revision+'/catalog.json',catalogCommit=revision,candidates=names,baselinePackages={k:v for k,v in catalog['packages'].items() if k not in names})
+config.update(url='https://os.groundupcoder.com/',catalogUrl=prefix+revision+'/catalog.json',catalogCommit=revision,candidates=names,baselinePackages={k:v for k,v in catalog['packages'].items() if k not in names})
 for name in names:shutil.copyfile(source/(name+'.sha256'),run/(name+'.sha256'))
 (run/'config.json').write_text(json.dumps(config,indent=2)+'\n')
 (run/'candidate-manifests.json').write_text(json.dumps(manifests,indent=2)+'\n')

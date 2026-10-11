@@ -17,19 +17,19 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/source.tar",
       "sha256": "2f96f94c985a46d86411b847a0b09ab4699a4b1a6dc78eec0762f813a7988224",
       "size": 2600960
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/build.sh",
       "sha256": "5f29cbdd380264f3df69f29db6b284ccd9786a50438297b90341ceecd3839cc6",
       "size": 3397
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/test.sh",
       "sha256": "a4c393fe4aef316166ce1b14401a0ddc9025f50494ec8af51098529d0bc2cef4",
       "size": 1255
     }
@@ -167,7 +167,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/binaries/3f932f799b0ff35a95ddea35fb602ff88921292a4139349df6a6ce9e3f0baea4.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/binaries/3f932f799b0ff35a95ddea35fb602ff88921292a4139349df6a6ce9e3f0baea4.tar",
     "sha256": "3f932f799b0ff35a95ddea35fb602ff88921292a4139349df6a6ce9e3f0baea4",
     "size": 2466816
   }

@@ -68,19 +68,19 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/source.tar",
       "sha256": "ce3d982dc4c0ba6535d1c4e23dd02742d557f94d75191feba0a871f426c76b64",
       "size": 6553600
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/build.sh",
       "sha256": "7cee14afe8d4358399e3f82df5b9c27e37a9383af241985ad5f692ad6645a213",
       "size": 4541
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/test.sh",
       "sha256": "fbea7869db1396a6935d8486c3930123822b199024faf83e614085c5855d719f",
       "size": 1244
     }
@@ -279,7 +279,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/binaries/b366113bbb33dd92ca204cc960a6f4a0116b99e0a5ee806a2bfd23f8300799c9.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/binaries/b366113bbb33dd92ca204cc960a6f4a0116b99e0a5ee806a2bfd23f8300799c9.tar",
     "sha256": "b366113bbb33dd92ca204cc960a6f4a0116b99e0a5ee806a2bfd23f8300799c9",
     "size": 3197952
   }

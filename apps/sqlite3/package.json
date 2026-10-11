@@ -16,19 +16,19 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/sqlite3/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/sqlite3/source.tar",
       "sha256": "deafe87290b061989abb7ce09b74ec75f8096d8c54eacb7f75fcb1db4eac6b01",
       "size": 11479040
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/sqlite3/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/sqlite3/build.sh",
       "sha256": "b3d09f84604aeab562a590f14c6a2896818aa7fca7361bfc412b991c2b733c83",
       "size": 521
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/sqlite3/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/sqlite3/test.sh",
       "sha256": "021c9e92ab87a7ce61ccec75ea86ca9dd702eb92efa3357c4e2ad6edbdf6334f",
       "size": 1365
     }
@@ -50,7 +50,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/sqlite3/binaries/78054532854aa132c3b2402c9d8598d91213a78cbcaefc533a0aedd75f0b44f1.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/sqlite3/binaries/78054532854aa132c3b2402c9d8598d91213a78cbcaefc533a0aedd75f0b44f1.tar",
     "sha256": "78054532854aa132c3b2402c9d8598d91213a78cbcaefc533a0aedd75f0b44f1",
     "size": 2200064
   }

@@ -1,7 +1,8 @@
+import os
 """Adapt the retained GTK X11 recipe to one public Cairo/X11 provider closure."""
 from pathlib import Path
 import subprocess,tarfile,json,hashlib,shutil,re
-ROOT=Path(__file__).resolve().parents[1];OLD=Path('/Users/jku/git/wasm-posix-old');REV='0b9b3245fe11a3bc677d81113cba90cd0ae80446'
+ROOT=Path(__file__).resolve().parents[1];OLD=Path(os.environ['WASM_POSIX_HISTORICAL_CHECKOUT']);REV='0b9b3245fe11a3bc677d81113cba90cd0ae80446'
 out=ROOT/'apps/gtk3-x11';out.mkdir()
 def blob(p):return subprocess.check_output(['git','-C',str(OLD),'show',REV+':'+p])
 def archive(tree,name):subprocess.run(['python3',str(ROOT/'tools/historical-archive.py'),str(OLD),REV,tree,str(out/name)],cwd=ROOT,check=True)

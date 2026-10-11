@@ -22,25 +22,25 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/source.tar",
       "sha256": "aeb29738b88e55c9ac9fc36de118431b80699b255b6aead8192af24f78755c94",
       "size": 839680
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/build.sh",
       "sha256": "07bf9f4ab8bb754387f0f4bfa1c5c81ae8382f3d09ebbb37bbda01b8bd2a7e45",
       "size": 397
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/test.sh",
       "sha256": "5d108946890db00bdc9b8dd8d6faca9c8a37aefd78907d5a27cf59d1af4452cb",
       "size": 50
     },
     {
       "path": "config.h",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/config.h",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/config.h",
       "sha256": "2e3ab3d07de6f8b5071f5a50800a4f2e3f5777272a2912770e9f0b7ba6b2fbdf",
       "size": 294
     }
@@ -62,7 +62,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/binaries/6d834a84abd60b4d1f90c3e0ef176522961c44c799c6512d9a41345f6749d20f.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xcutsel/binaries/6d834a84abd60b4d1f90c3e0ef176522961c44c799c6512d9a41345f6749d20f.tar",
     "sha256": "6d834a84abd60b4d1f90c3e0ef176522961c44c799c6512d9a41345f6749d20f",
     "size": 4307456
   }

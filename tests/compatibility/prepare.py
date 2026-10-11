@@ -9,7 +9,7 @@ def blob(rev, path):
 def digest(data):
     return hashlib.sha256(data).hexdigest()
 def pinned(entry):
-    prefix = 'https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/'
+    prefix = 'https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/'
     assert entry['url'].startswith(prefix)
     rev, path = entry['url'][len(prefix):].split('/', 1)
     assert len(rev) == 40 and all(c in '0123456789abcdef' for c in rev)
@@ -32,6 +32,6 @@ for name in names:
             checksums.append(digest(archive.extractfile(member).read()) + '  /usr/local/' + member.name)
     packages[name] = manifest
 out = Path(sys.argv[1])
-(out / 'baseline.json').write_text(json.dumps(dict(catalogCommit=revision, catalogSha256=digest(catalog_bytes), catalogUrl='https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/'+revision+'/catalog.json', packages=packages), indent=2)+'\n')
+(out / 'baseline.json').write_text(json.dumps(dict(catalogCommit=revision, catalogSha256=digest(catalog_bytes), catalogUrl='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/'+revision+'/catalog.json', packages=packages), indent=2)+'\n')
 (out / 'installed.sha256').write_text('\n'.join(checksums)+'\n')
 print('Pinned baseline:', len(packages), 'packages,', len(checksums), 'output hashes')

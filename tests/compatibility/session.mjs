@@ -4,8 +4,7 @@ import {createHash} from 'node:crypto';
 import {resolve,sep} from 'node:path';
 import http from 'node:http';
 import assert from 'node:assert/strict';
-const require=createRequire(new URL('../../../wasm-posix/package.json',import.meta.url));
-const {chromium}=require('playwright');
+import {chromium} from 'playwright';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 export async function session(){
  const run=process.env.COMPAT_RUN_DIR;

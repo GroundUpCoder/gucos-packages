@@ -1,7 +1,8 @@
+import os
 """Verify preserved archive bytes against immutable historical Git blobs."""
 from pathlib import Path
 import hashlib,json,subprocess,tarfile
-root=Path(__file__).resolve().parents[1];old=Path('/Users/jku/git/wasm-posix-old')
+root=Path(__file__).resolve().parents[1];old=Path(os.environ['WASM_POSIX_HISTORICAL_CHECKOUT'])
 rev='0b9b3245fe11a3bc677d81113cba90cd0ae80446'
 for p in sorted((root/'apps').glob('*/recipe.json')):
  name=p.parent.name;recipe=json.loads(p.read_text())

@@ -6,19 +6,19 @@
   "files": [
     {
       "path": "source.tar.gz",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/lua/source.tar.gz",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/lua/source.tar.gz",
       "sha256": "2335b6c582a52654f94612bf10d2f4672805d05329aa6568b1d8cd9e5c6fb8e6",
       "size": 373429
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/lua/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/lua/build.sh",
       "sha256": "e3dc841bcb0a48980bb5e8e2a3214824331e65fc3e3e54fe4c76648d1fb6831a",
       "size": 553
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/lua/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/lua/test.sh",
       "sha256": "492eb927b4ddfcfb59381d02f4b72b7e7115df288ddf43c143abf5ca7bc8851f",
       "size": 446
     }
@@ -68,7 +68,7 @@
   ],
   "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/lua/binaries/c27d7060bb8f6c6f888563e15a88f9f7fbf6341a21ebf4bc0482ab3314f20b8d.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/lua/binaries/c27d7060bb8f6c6f888563e15a88f9f7fbf6341a21ebf4bc0482ab3314f20b8d.tar",
     "sha256": "c27d7060bb8f6c6f888563e15a88f9f7fbf6341a21ebf4bc0482ab3314f20b8d",
     "size": 1875968
   }

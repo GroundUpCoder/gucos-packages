@@ -8,31 +8,31 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/source.tar",
       "sha256": "4795c8114d2fec5b93225c5066059dec902f2847f7b5b3e14398fe88880bc8fd",
       "size": 829440
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/build.sh",
       "sha256": "8b5ae4e485e4e8315eb7040de7b1b6bc41a811b656b1d255b5803c30c3dd8392",
       "size": 437
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/test.sh",
       "sha256": "14c88a38e44c504f2b8e21ac26f6bacd6d7e03911852f94be70b4a4eeb7f26a5",
       "size": 47
     },
     {
       "path": "config.h",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/config.h",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/config.h",
       "sha256": "f474a4af30898e370f652ac9bf7e0cd556fbe7dea72bef4e354d4de02e34e0f8",
       "size": 292
     },
     {
       "path": "Eyes.c",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/Eyes.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/Eyes.c",
       "sha256": "1510bf56c7a1e40ae1f953f5b98f001b7d029fc254421374a1b7ab8b6ccb921f",
       "size": 27709
     }
@@ -54,7 +54,7 @@
   ],
   "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/binaries/d71f599c1bdc8c45e677297115781a6d05d7de131ea2666212da1cee021d0c25.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/binaries/d71f599c1bdc8c45e677297115781a6d05d7de131ea2666212da1cee021d0c25.tar",
     "sha256": "d71f599c1bdc8c45e677297115781a6d05d7de131ea2666212da1cee021d0c25",
     "size": 4360704
   }

@@ -35,37 +35,37 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/source.tar",
       "sha256": "0144a5a79520ce1755fe17361dc4775be83cb968c3d20218790ba6e846197de9",
       "size": 51200
     },
     {
       "path": "gio-source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/gio-source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/gio-source.tar",
       "sha256": "ff22279230a393630f5ff6171457addeb017e7af53a08644ed7f7a64536eb4b3",
       "size": 15308800
     },
     {
       "path": "GLib-COPYING",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/GLib-COPYING",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/GLib-COPYING",
       "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb",
       "size": 25967
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/build.sh",
       "sha256": "36891ccf6acfd90c7ed194d71cb5f6706b5a0f7b61f03d643d717b951520802e",
       "size": 866
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/test.sh",
       "sha256": "df18cab93b7617ca90a50581f253b8ddbcf090827dcf3f0a93afbc61bf7dc749",
       "size": 348
     },
     {
       "path": "schema-check.c",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/schema-check.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/schema-check.c",
       "sha256": "50d95172c87a3d6ad2263eaa776f37ee88b3cfc83a528cc0eceb577dba2567e4",
       "size": 1206
     }
@@ -116,7 +116,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/binaries/b8a30510a66dc9f73a5827bf4185af6578dcc7dd19ba805a453b306f123ff9ee.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gtk3-schemas/binaries/b8a30510a66dc9f73a5827bf4185af6578dcc7dd19ba805a453b306f123ff9ee.tar",
     "sha256": "b8a30510a66dc9f73a5827bf4185af6578dcc7dd19ba805a453b306f123ff9ee",
     "size": 71680
   }

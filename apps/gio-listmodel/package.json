@@ -23,25 +23,25 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/source.tar",
       "sha256": "8a987e492c811c0c5dab036b282871846f598b7fd889c0663e321a339aa1031f",
       "size": 348160
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/build.sh",
       "sha256": "9149f1f6cd65b0aacde23a43cf476cdf1dced7fdec3eda9c1d29a6e0a36d35a8",
       "size": 983
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/test.sh",
       "sha256": "974504df9821b0cb5ac2d2291f285766c0b92e61cae5d4854772448ffb43d14c",
       "size": 470
     },
     {
       "path": "COPYING",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/COPYING",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/COPYING",
       "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb",
       "size": 25967
     }
@@ -91,7 +91,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/binaries/c1eb029e65a4e762eef43628876f4380162951645e09a8e5e9a1fde4eb1ec426.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-listmodel/binaries/c1eb029e65a4e762eef43628876f4380162951645e09a8e5e9a1fde4eb1ec426.tar",
     "sha256": "c1eb029e65a4e762eef43628876f4380162951645e09a8e5e9a1fde4eb1ec426",
     "size": 333312
   }

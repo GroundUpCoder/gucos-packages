@@ -8,13 +8,13 @@ import {resolve} from 'node:path';
 import assert from 'node:assert/strict';
 const root=fileURLToPath(new URL('../',import.meta.url));
 if(process.argv.includes('--help')){
- console.log('After activation: COMPAT_CORE_URL=https://os.groundupcoder.net/ COMPAT_EXPECT_RUNTIME=<activated-sha256> node tools/accept-live-desktop.mjs\nOptional COMPAT_RUN_NAME; always a fresh profile. Six separate 300-second browser jobs. No package rebuilds or metadata publication.');process.exit(0);
+ console.log('After activation: COMPAT_CORE_URL=https://os.groundupcoder.com/ COMPAT_EXPECT_RUNTIME=<activated-sha256> node tools/accept-live-desktop.mjs\nOptional COMPAT_RUN_NAME; always a fresh profile. Six separate 300-second browser jobs. No package rebuilds or metadata publication.');process.exit(0);
 }
 assert.equal(process.argv.length,2,'No positional arguments');
 assert(!process.env.MACHINE_JOB_ID,'Run directly; each stage reserves/releases its own browser job');
 assert(!process.env.COMPAT_CORE_DIST,'Live smoke accepts COMPAT_CORE_URL only');
 assert.match(process.env.COMPAT_EXPECT_RUNTIME||'',/^[a-f0-9]{64}$/);
-const url=new URL(process.env.COMPAT_CORE_URL||'https://os.groundupcoder.net/');
+const url=new URL(process.env.COMPAT_CORE_URL||'https://os.groundupcoder.com/');
 assert(['https:','http:'].includes(url.protocol));assert(!url.username&&!url.password&&!url.search&&!url.hash);
 if(!url.pathname.endsWith('/'))url.pathname+='/';
 const name=process.env.COMPAT_RUN_NAME||new Date().toISOString().replace(/[:.]/g,'-');assert.match(name,/^[a-zA-Z0-9_-]+$/);

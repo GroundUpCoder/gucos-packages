@@ -8,7 +8,7 @@ root=Path(__file__).resolve().parents[1]
 mode,revision=sys.argv[1:]
 assert re.fullmatch('[a-f0-9]{40}',revision),'full immutable commit SHA required'
 subprocess.run(['git','cat-file','-e',revision+'^{commit}'],cwd=root,check=True)
-base='https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/'+revision+'/'
+base='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/'+revision+'/'
 def entry(path):
  b=(root/path).read_bytes();committed=subprocess.check_output(['git','show',revision+':'+path],cwd=root);assert b==committed,(path,'not committed at input revision')
  return dict(url=base+path,sha256=hashlib.sha256(b).hexdigest(),size=len(b))

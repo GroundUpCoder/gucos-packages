@@ -1,3 +1,4 @@
+import os
 """Prepare missing PCG32 translations in an isolated package-local snapshot.
 
 Run with the pinned translator Python under machine-job. This runs only host
@@ -12,7 +13,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-OLD = Path('/Users/jku/git/wasm-posix-old')
+OLD = Path(os.environ['WASM_POSIX_HISTORICAL_CHECKOUT'])
 REV = '0b9b3245fe11a3bc677d81113cba90cd0ae80446'
 if not __debug__:
     raise RuntimeError('Preparation requires assertions; unset PYTHONOPTIMIZE and omit -O')

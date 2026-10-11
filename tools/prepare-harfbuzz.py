@@ -1,8 +1,9 @@
+import os
 """Snapshot retained host-prepared HarfBuzz C with original provenance; no translation."""
 from pathlib import Path
 import gzip,hashlib,io,json,subprocess,tarfile
 ROOT=Path(__file__).resolve().parents[1]
-OLD=Path('/Users/jku/git/wasm-posix-old')
+OLD=Path(os.environ['WASM_POSIX_HISTORICAL_CHECKOUT'])
 REV='0b9b3245fe11a3bc677d81113cba90cd0ae80446'
 prepared=OLD/'apps/harfbuzz/port/generated';original=json.loads((prepared/'provenance.json').read_text())
 sha=lambda b:hashlib.sha256(b).hexdigest()

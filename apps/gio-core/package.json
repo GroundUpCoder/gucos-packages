@@ -40,25 +40,25 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/source.tar",
       "sha256": "ff22279230a393630f5ff6171457addeb017e7af53a08644ed7f7a64536eb4b3",
       "size": 15308800
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/build.sh",
       "sha256": "fb1a6f9844235e6c4d0d392b94cf2de97ae46944f87dcbce56777412fbb9bbd9",
       "size": 10078
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/test.sh",
       "sha256": "6b8b1e4355ee457899feae2851287ac786f1803eb45aa7ff118382750dc66346",
       "size": 558
     },
     {
       "path": "COPYING",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/COPYING",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/COPYING",
       "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb",
       "size": 25967
     }
@@ -708,7 +708,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/binaries/6b892d770c237e944354b7170bac7368775e7f9ee0b252658c1aa151eaa72e7a.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fbdf31288a820a0ed59b69d7c47b32a69d150821/apps/gio-core/binaries/6b892d770c237e944354b7170bac7368775e7f9ee0b252658c1aa151eaa72e7a.tar",
     "sha256": "6b892d770c237e944354b7170bac7368775e7f9ee0b252658c1aa151eaa72e7a",
     "size": 12630016
   }

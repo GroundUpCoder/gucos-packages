@@ -47,25 +47,25 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/source.tar",
       "sha256": "d51f616c1773d8fe43b8ac2d3bc7617e55f289033434e24ec4f6d0a828d741a2",
       "size": 8048640
     },
     {
       "path": "prepared.tar.gz",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/prepared.tar.gz",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/prepared.tar.gz",
       "sha256": "6920b176bb1da9759b77733cb9acc860b0ba0ed12f4f85ab7dbdbf3f6e6d67a9",
       "size": 18677179
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/build.sh",
       "sha256": "28beb3b75b206b0ea28150ae4f75eb7e5e2e51951dc49f9d257c6ff55befbaa0",
       "size": 1448
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/test.sh",
       "sha256": "95c0f47212f7ca06709d947668e73ee3405546b7916c58e81c4acd618ac08a7f",
       "size": 828
     }
@@ -280,7 +280,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/binaries/ee4dfdeb64c0650362eab799d2cb94299025711238f4f8a45564cc3436255bd2.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/binaries/ee4dfdeb64c0650362eab799d2cb94299025711238f4f8a45564cc3436255bd2.tar",
     "sha256": "ee4dfdeb64c0650362eab799d2cb94299025711238f4f8a45564cc3436255bd2",
     "size": 61039104
   }

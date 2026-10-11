@@ -22,49 +22,49 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/source.tar",
       "sha256": "34900bb42e7e3a9da5eae9d796b2a321dfd283c6eabca37a0352a5c5f7025f7e",
       "size": 3194880
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/build.sh",
       "sha256": "26dcf9abdb2c2d10e3f1473c6aabdcda7a690c74c095546f6746ec25471667ec",
       "size": 1843
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/test.sh",
       "sha256": "7de6f3bec21ecead67fe15b901c770ae5719f90e4c37121ccb2c904657be9196",
       "size": 117
     },
     {
       "path": "config.h",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/config.h",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/config.h",
       "sha256": "16e8737b475f4645c489e15b7bd6c881a8de117d865ddd792fedb5fcfe988cf9",
       "size": 375
     },
     {
       "path": "util.c",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/util.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/util.c",
       "sha256": "5f62916f93b3153ca0e3ba6958c884758a12cfe7be7e3ae74c213f925212dca8",
       "size": 25493
     },
     {
       "path": "lisp-format.c",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/lisp-format.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/lisp-format.c",
       "sha256": "3ae0c7c36e89a67d6e20c4245b6d7839974bcf6b2191d2c6b7dc43f7b7ac7e37",
       "size": 56526
     },
     {
       "path": "lisp-io.c",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/lisp-io.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/lisp-io.c",
       "sha256": "fc9f3c70b65eca60fcfb3407f1679eef0295cca3db4bf73127f9c42694688052",
       "size": 15545
     },
     {
       "path": "lisp-lisp.c",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/lisp-lisp.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/lisp-lisp.c",
       "sha256": "f624c0b1dfd26f1754d3c1970ab7358027cf212db7b4502143329883cfd9219f",
       "size": 154233
     }
@@ -186,7 +186,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/binaries/4b6d0f82b31c046546a11b19351480b17af0269686f2fd3aa6eae462a0fb75a7.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/binaries/4b6d0f82b31c046546a11b19351480b17af0269686f2fd3aa6eae462a0fb75a7.tar",
     "sha256": "4b6d0f82b31c046546a11b19351480b17af0269686f2fd3aa6eae462a0fb75a7",
     "size": 20440064
   }

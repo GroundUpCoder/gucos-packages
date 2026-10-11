@@ -32,19 +32,19 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/cairo-gobject/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/cairo-gobject/source.tar",
       "sha256": "9ea4a76260e38b65a1de7619b91bcd2a8654469726668c2889523b0bc89f28bb",
       "size": 81920
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/cairo-gobject/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/cairo-gobject/build.sh",
       "sha256": "feb36079ee770aa25c312f1ac62d96c6ff678997cbab6284f8c342fa18e8e46b",
       "size": 1275
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/cairo-gobject/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/cairo-gobject/test.sh",
       "sha256": "728089479879f6c1712861d0d6a9443d375342bbb6bd4cb2b759aa0b8dee7068",
       "size": 454
     }
@@ -83,7 +83,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/cairo-gobject/binaries/ab38e684434172c7e16f8660f19393f9ef4b5bbef9617c184c8ed3f7ec282425.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/cairo-gobject/binaries/ab38e684434172c7e16f8660f19393f9ef4b5bbef9617c184c8ed3f7ec282425.tar",
     "sha256": "ab38e684434172c7e16f8660f19393f9ef4b5bbef9617c184c8ed3f7ec282425",
     "size": 145408
   }

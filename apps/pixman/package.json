@@ -17,19 +17,19 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/pixman/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/pixman/source.tar",
       "sha256": "fc4d0d549ced883de6c725fa84ef0b8abb02b1e2c5f8bd9083c7b6c804c3edcf",
       "size": 3307520
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/pixman/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/pixman/build.sh",
       "sha256": "ae103bdd7fe27382ef2f688d3e0e0200230e83795d0df963dfe0e9c002c31348",
       "size": 1376
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/pixman/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/pixman/test.sh",
       "sha256": "b519bae7e2ce606e868b3dcaefa9725debf83e505da727d33de043d7eebb611a",
       "size": 322
     }
@@ -67,7 +67,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/pixman/binaries/17696915f5e29783d60cf519862b4b545cfe00c7374f8dc7d26a51feb8019047.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/pixman/binaries/17696915f5e29783d60cf519862b4b545cfe00c7374f8dc7d26a51feb8019047.tar",
     "sha256": "17696915f5e29783d60cf519862b4b545cfe00c7374f8dc7d26a51feb8019047",
     "size": 1887744
   }

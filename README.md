@@ -1,4 +1,4 @@
-# wasm-posix packages
+# gucos packages
 
 Runtime package sources for the standalone browser OS. Neither the OS build nor
 its hosting deployment reads this checkout. Browser gucman discovers catalog.json,

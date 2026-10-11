@@ -8,19 +8,19 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/source.tar",
       "sha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
       "size": 11612160
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/build.sh",
       "sha256": "b0e94d7bee90845359e08da647d21d1f31fc95bc8985965b300749aa1316a628",
       "size": 14480
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/test.sh",
       "sha256": "6051a217500dc0828949380c189c6b003b5335882bf5b5d8f4dcd9f9034c7bff",
       "size": 48
     }
@@ -110,7 +110,7 @@
   ],
   "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/binaries/0c62358e42f94edca29ae39b13fae4bd865c58c87818e3839fc8f8cdf774905c.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/binaries/0c62358e42f94edca29ae39b13fae4bd865c58c87818e3839fc8f8cdf774905c.tar",
     "sha256": "0c62358e42f94edca29ae39b13fae4bd865c58c87818e3839fc8f8cdf774905c",
     "size": 15090176
   }

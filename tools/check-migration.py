@@ -1,3 +1,4 @@
+import os
 """Read-only validation of explicitly selected, unpublished migration candidates.
 
 Usage: python3 tools/check-migration.py NAME [NAME ...]
@@ -12,7 +13,7 @@ import tarfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OLD = Path('/Users/jku/git/wasm-posix-old')
+OLD = Path(os.environ['WASM_POSIX_HISTORICAL_CHECKOUT'])
 BASELINE = '716bfe27a56357513abfc7213d542bda63129cd1'
 
 
@@ -55,7 +56,7 @@ for name in names:
     platform = recipe['platform']
     assert platform['target'] == 'wasm32-wasm-posix'
     assert platform['minVersion'] == '1.0.0' and platform['runtimeAbi'] == 5
-    features = read(Path('/Users/jku/git/wasm-posix/tools/platform.json'))['features']
+    features = read(ROOT / 'tools/platform.json')['features']
     assert set(platform['features']) <= set(features)
     if any(o['path'].endswith(('.a', '.o')) for o in outputs):
         assert platform['objectAbi'] == 3

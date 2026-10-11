@@ -3,7 +3,7 @@
 import assert from 'node:assert/strict';
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {browserSession} from '../../wasm-posix/tools/browser.mjs';
+import {browserSession} from '../tools/browser.mjs';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const extra=new Map();
 for(const name of ['x11-server','x11-toolkit','twm'])for(const file of ['source.tar','build.sh','test.sh'])

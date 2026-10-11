@@ -23,19 +23,19 @@
   "files": [
     {
       "path": "source.tar",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/source.tar",
       "sha256": "0e576c00ad713f1d743107a525c9d508d5f62ff7be895890e66b55430fe21df8",
       "size": 4792320
     },
     {
       "path": "build.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/build.sh",
       "sha256": "f5bee03f76da83f98e23ff5293678a36ef396dc143b15c9ea2b28f382297ed6c",
       "size": 913
     },
     {
       "path": "test.sh",
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/test.sh",
       "sha256": "27fe5ca3bcd3be0fee836448df8153dc553c5e12862afed164b83cd76854c881",
       "size": 511
     }
@@ -246,7 +246,7 @@
   ],
   "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
   "binary": {
-    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/binaries/d03b22c1b47d3cf7c9f4ccccb29b265771ef352cdf1c29ff48ddc63ba3c56cd2.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/binaries/d03b22c1b47d3cf7c9f4ccccb29b265771ef352cdf1c29ff48ddc63ba3c56cd2.tar",
     "sha256": "d03b22c1b47d3cf7c9f4ccccb29b265771ef352cdf1c29ff48ddc63ba3c56cd2",
     "size": 883712
   }
