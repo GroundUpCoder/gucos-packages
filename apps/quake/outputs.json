@@ -20,10 +20,6 @@
     "mode": 420
   },
   {
-    "path": "share/quake/id1/pak0.pak",
-    "mode": 420
-  },
-  {
     "path": "share/quake/id1/autoexec.cfg",
     "mode": 420
   },
@@ -32,7 +28,19 @@
     "mode": 420
   },
   {
-    "path": "share/licenses/quake/PROVENANCE.md",
+    "path": "share/quake/quake106.zip",
+    "mode": 420
+  },
+  {
+    "path": "share/quake/shareware-payload.tar.gz",
+    "mode": 420
+  },
+  {
+    "path": "share/quake/shareware-inventory.json",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/quake/SHAREWARE-PROVENANCE.md",
     "mode": 420
   }
 ]

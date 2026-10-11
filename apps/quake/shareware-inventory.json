@@ -1,0 +1,82 @@
+[
+  {
+    "path": "CWSDPMI.EXE",
+    "size": 25920,
+    "sha256": "0a890815df6cbdc052915a856c16944cedec825267e7b6e453c351a0cdc695f2"
+  },
+  {
+    "path": "GENVXD.DLL",
+    "size": 17408,
+    "sha256": "ef446c02db3adc5687288739b484ad933d9e1ce8c196f8951b969b1bc3c7d776"
+  },
+  {
+    "path": "HELP.TXT",
+    "size": 5404,
+    "sha256": "fb762348875647992b53732d50e41cf966cfecaca7c6ea2f7f682742d84a9f54"
+  },
+  {
+    "path": "ID1/PAK0.PAK",
+    "size": 18689235,
+    "sha256": "35a9c55e5e5a284a159ad2a62e0e8def23d829561fe2f54eb402dbc0a9a946af"
+  },
+  {
+    "path": "LICINFO.TXT",
+    "size": 9311,
+    "sha256": "8d654834d085c088d603fb6879a874799e8b4cc6ae9317bbf826afd83bc72e31"
+  },
+  {
+    "path": "MGENVXD.VXD",
+    "size": 9883,
+    "sha256": "4568f96cb70a2abf47f156f1fb1b432019155b6b4e5e3bf5fd773e1ecf5ee3e0"
+  },
+  {
+    "path": "ORDER.TXT",
+    "size": 3869,
+    "sha256": "1e04e5899b36c3e47dac6c771cb1fdaee0e1528db0d720b8db06e83ea5c631da"
+  },
+  {
+    "path": "PDIPX.COM",
+    "size": 26511,
+    "sha256": "868c16e2a561ebc955ab873013a8b2a5e6d2cdd95d185915da51a9294dea15e9"
+  },
+  {
+    "path": "Q95.BAT",
+    "size": 65,
+    "sha256": "cac38ce5180160a624353c9bc0baede63613e5aa3bca07653145bc9943323deb"
+  },
+  {
+    "path": "QLAUNCH.EXE",
+    "size": 314880,
+    "sha256": "83ce5209f15623fd0a00726e1e6cfee900829971e3294270b8efbca28ea1aac3"
+  },
+  {
+    "path": "READV106.TXT",
+    "size": 8774,
+    "sha256": "0a496875fce806ebc175bc6bebedc9d739381dceacc5636cf83ef60cf056ab0d"
+  },
+  {
+    "path": "QUAKE.EXE",
+    "size": 404480,
+    "sha256": "7cdb244122cc607cc6f162524bfcac60f6d11d8ca2ff07473d6cd962311161fb"
+  },
+  {
+    "path": "QUAKEUDP.DLL",
+    "size": 32256,
+    "sha256": "de88488c178319d5e4aaf3a9d664406f6df8e8cc049d87dfdc048a254598137a"
+  },
+  {
+    "path": "README.TXT",
+    "size": 19087,
+    "sha256": "9ade267c7e22a1c4c4aa8fa3dd58ad3354c173ae2cfc39344093cea534316d61"
+  },
+  {
+    "path": "SLICNSE.TXT",
+    "size": 10036,
+    "sha256": "070cdf6a6410adef8fb5f83a4e5ccdb9e2301d2e48d460bb3a67a0f5ba9d70a8"
+  },
+  {
+    "path": "TECHINFO.TXT",
+    "size": 76067,
+    "sha256": "b7c080df7487e69b0c3f9c6b3a8eff5ce29741f5c596d3d6a08534649691d314"
+  }
+]

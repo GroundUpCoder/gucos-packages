@@ -17,6 +17,10 @@
     "build.sh",
     "test.sh",
     "launch.sh",
-    "gucos-quake.desktop"
+    "gucos-quake.desktop",
+    "quake106.zip",
+    "shareware-payload.tar.gz",
+    "shareware-inventory.json",
+    "SHAREWARE-PROVENANCE.md"
   ]
 }
