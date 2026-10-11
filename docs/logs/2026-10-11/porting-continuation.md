@@ -99,3 +99,30 @@ include directory, while generated headers also use ncurses/... includes.
 8201e01 adds the staged root include path for both consumer compiles. Failure
 logs are retained in ncurses/gucos-source-attempt1; a full corrected source run
 remains required. No ncurses binary was published from this failure.
+
+
+### Reviewed utility source exports
+
+The runtime19609 source batch completed: m4, pcre2test, pcre2grep, libxfce4util,
+bitmap, xmag and SDL3_ttf passed; ncurses failed as recorded above. Independent
+review verified every receipt input and output inventory plus archive/evidence
+hashes in c2effb2,2b62fbc,d3e7c47. Fresh combined binary installation, installed
+consumers, bitmap/xmag GUI and reload are queued in utilities-gucos-binary.
+The seven new artifacts remain outside the public catalog pending those gates.
+
+m4 skips exactly the optional125–130 changeword and stackovf checks. PCRE test
+scope is8-bit/no-JIT, with disabled16/32-bit/JIT/\C tests; grep script callouts
+are unsupported and its miscellaneous-arguments section is explicitly unchecked.
+Xfce static/shared config/resource and64KiB entry fixtures passed. Bitmap source
+scope is converter roundtrip; xmag source scope is version execution. Their
+reviewed f6a7fba GUI gate requires exact all-set8x8 saved bitmap and exact240x240
+red magnification pixels, physical keyboard quit and terminal recovery.
+SDL3_ttf source checks include static/shared consumers and six exact font pixel
+hashes, file/memory cache/mutation checks and retained performance bounds.
+
+Vim f25fa47 source preparation is independently reviewed, with2,231 exact blobs
+and1,853 outputs including the full runtime. Interactive gate f47efa6 (diagnostics
+extended4466d85) uses normal startup without VIMRUNTIME overrides, physical
+editing and exact rendered token colors, split/resize/save and stty restoration.
+Source and binary execution remain pending; prepare runs are frozen for Vim,
+GNU Awk and the corrected ncurses source retry.
