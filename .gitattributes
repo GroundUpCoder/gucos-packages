@@ -2,3 +2,5 @@
 * text=auto
 # Acceptance evidence is byte-preserved, including guest CRLF diagnostics.
 docs/research/package-migration/** -text
+
+docs/research/snake/** -text
