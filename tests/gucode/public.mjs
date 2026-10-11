@@ -23,12 +23,15 @@ try{
  report.publicBinaryInstall=true;
  await s.page.reload();await s.page.waitForFunction(()=>window.shell?.ready);await s.command('gucode --version\nmkdir -p /tmp/gucode-ui');
  await write('/tmp/gucode-key',await readFile(process.env.DEEPSEEK_KEY_FILE));
+ console.log('Public payload verification and reload passed');
  const start=await s.page.evaluate(()=>shell.busybox.log.length);
  await s.page.evaluate(()=>shell.terminal.focus());
- await s.page.keyboard.type('gucode --key-file /tmp/gucode-key -C /tmp/gucode-ui');await s.page.keyboard.press('Enter');
+ await s.page.keyboard.type("sh -c 'exec gucode --key-file /tmp/gucode-key -C /tmp/gucode-ui'");await s.page.keyboard.press('Enter');
  await s.page.waitForFunction(start=>shell.busybox.log.slice(start).includes('gucode> '),start);
+ console.log('Interactive gucode prompt reached');
  await s.page.keyboard.type('Use write_file to create greeting.txt containing exactly hello followed by a newline. Then say done.');await s.page.keyboard.press('Enter');
  await s.page.waitForFunction(start=>shell.busybox.log.slice(start).includes('Allow this action? [y/N]'),start);
+ console.log('Permission prompt reached');
  await s.page.keyboard.type('y');await s.page.keyboard.press('Enter');
  await s.page.waitForFunction(start=>(shell.busybox.log.slice(start).match(/gucode> /g)||[]).length>=2,start);
  const content=await s.page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/tmp/gucode-ui/greeting.txt')));assert.equal(content,'hello\n');
