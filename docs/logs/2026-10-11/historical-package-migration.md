@@ -203,3 +203,8 @@ Reservationa1da84e9 passed SDLgfx/image/mixer binary install/consumer/reload,
 Retained batch-12/public-live and batch-15/binary-install; exact review pending.
 MicroPython34aa45c independently source-approved; initially queue-full75,
 then submitted after capacity opened. No scheduler bypass or extra workers.
+
+MicroPython initial source run failed at manifest validation before compilation:
+core manager.sh reserves lib/wasm-posix. Retained batch-16/reserved-path-failure.
+Adapted executable output and both relative wrappers to libexec/micropython;
+313 source blobs,123 units,26 fixture tests unchanged. Fresh review required.
