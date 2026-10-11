@@ -3,6 +3,41 @@ set -eu
 # Source stage: real file operations and direct menu generation, without X.
 # Installed stage additionally exercises a managed foreground menu daemon.
 work=$(mktemp -d /tmp/fmm.XXXXXX)
+# Relocation preserves upstream bytes and declared regular-file modes.
+cmp "source/libfm-1.3.2/data/libfm.conf" "$DESTDIR/share/libfm/xdg/libfm/libfm.conf"
+test -f "$DESTDIR/share/libfm/xdg/libfm/libfm.conf" && test ! -L "$DESTDIR/share/libfm/xdg/libfm/libfm.conf"
+test "$(stat -c %a "$DESTDIR/share/libfm/xdg/libfm/libfm.conf")" = 644
+# A stub observes launcher environment/argv without starting GTK or an X client.
+mkdir -p "$work/stub"
+cat > "$work/stub/gtk3-x11-run" <<'STUB'
+#!/bin/sh
+printf '%s\n' "$XDG_CONFIG_DIRS" "${XDG_MENU_PREFIX-unset}"
+printf '<%s>\n' "$@"
+STUB
+chmod 755 "$work/stub/gtk3-x11-run"
+for launcher in libfm-pref-apps lxshortcut; do
+ test -f "$DESTDIR/bin/$launcher" && test ! -L "$DESTDIR/bin/$launcher"
+ test "$(stat -c %a "$DESTDIR/bin/$launcher")" = 755
+ target=/usr/local/libexec/libfm/$launcher
+ for scenario in unset empty custom; do
+  (
+   case "$scenario" in
+    unset) unset XDG_CONFIG_DIRS XDG_MENU_PREFIX;;
+    empty) export XDG_CONFIG_DIRS= XDG_MENU_PREFIX=;;
+    custom) export XDG_CONFIG_DIRS='/tmp/caller one:/tmp/caller-two' XDG_MENU_PREFIX=custom-;;
+   esac
+   PATH="$work/stub:$PATH" "$DESTDIR/bin/$launcher" 'space argument' '' '*' --no-desktop
+  ) > "$work/wrapper.actual"
+  case "$scenario" in
+   custom) dirs='/tmp/caller one:/tmp/caller-two'; prefix=custom-;;
+   unset) dirs=/usr/local/etc/xdg:/etc/xdg; prefix=unset;;
+   empty) dirs=/usr/local/etc/xdg:/etc/xdg; prefix=;;
+  esac
+  { printf '%s\n' "$dirs:/usr/local/share/libfm/xdg" "$prefix"; printf '<%s>\n' "$target" 'space argument' '' '*' --no-desktop; } > "$work/wrapper.expected"
+  cmp "$work/wrapper.expected" "$work/wrapper.actual"
+ done
+done
+# End launcher-only checks.
 daemon=
 cleanup() {
  if test -n "$daemon"; then
@@ -37,6 +72,9 @@ Exec=/bin/true
 Categories=Utility;
 DESKTOP
 cc -I"$DESTDIR/include" -I"$DESTDIR/include/libfm" -I"$DESTDIR/include/menu-cache" $(pkgconf --cflags libfm libmenu-cache) "-DTEST_ROOT=\"$work/files\"" consumer.c -L"$DESTDIR/lib" $(pkgconf --libs libfm libmenu-cache) -o "$work/consumer"
+# A separate process avoids GLib's cached XDG directories. Set non-default
+# sentinels before loading, so this proves loading rather than built-in defaults.
+XDG_CONFIG_DIRS="$DESTDIR/share/libfm/xdg" "$work/consumer" config
 "$work/consumer"
 "$DESTDIR/libexec/menu-cache/menu-cache-gen" -i "$XDG_CONFIG_HOME/menus/test.menu" -o "$work/menu.cache" -l C
 test -s "$work/menu.cache"
