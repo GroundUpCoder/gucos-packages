@@ -5,7 +5,7 @@ import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import {createRequire} from 'node:module';
 import assert from 'node:assert/strict';
-const require=createRequire(new URL('../../../wasm-posix/package.json',import.meta.url));
+const require=createRequire(new URL('./package.json',import.meta.url));
 const {PNG}=require('pngjs');
 assert(process.env.MACHINE_JOB_ID,'machine-job browser reservation required');
 const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'';
