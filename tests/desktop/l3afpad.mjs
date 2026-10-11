@@ -34,8 +34,8 @@ try{
   await d.command(`n=0; while kill -0 ${w.pid} 2>/dev/null; do n=$((n+1)); [ "$n" -lt 100 ] || exit 1; sleep 0.1; done`);
  }
  async function chooser(save){
-  await s.page.keyboard.press(save?'Control+Shift+s':'Control+o');await observe(d,'window',save?'Save As':'Open');
-  await s.page.keyboard.press('Control+l');await s.page.keyboard.type(path);await s.page.keyboard.press('Enter');await observe(d,'absent',save?'Save As':'Open');
+  await s.page.keyboard.press(save?'Control+Shift+s':'Control+o');const dialog=await observe(d,'window',save?'Save As':'Open');
+  await s.page.keyboard.press('Control+l');await s.page.keyboard.type(path);assert(dialog.width>=400&&dialog.height>=250);await canvas.click({position:await canvasPosition(canvas,{x:dialog.x+dialog.width-52,y:dialog.y+dialog.height-24})});await observe(d,'absent',save?'Save As':'Open');
  }
  async function disk(text){await poll(s.page,async({path,text})=>{const actual=await shell.busybox.read(path),expected=new TextEncoder().encode(text);return actual?.length===expected.length&&expected.every((b,i)=>actual[i]===b);},{path,text},15000);}
  async function save(text){await s.page.keyboard.press('Control+s');await disk(text);}
