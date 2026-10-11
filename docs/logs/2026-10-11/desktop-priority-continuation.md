@@ -384,3 +384,10 @@ Fresh-profile LibFM/PCManFM source-v4 passed the reviewed c2934d5 source
 contract and exported 111/15 outputs. Prior reverse-dependency failure remains
 preserved. New exports require independent artifact review and new binary
 fixture/test-pin binding before installed or GUI acceptance.
+
+Applied independently reviewed PCManFM layout input rebinding, driver SHA256
+9c5ccf9a4152328e9ae591ac420a46bab1cd2d173b02469d1e302fc265e39cfd.
+Only the provenance comment and two corrected test hashes changed. The
+navigation/cancel-only fixture, dependency identity checks and supervised raw
+exit checks remain unchanged. Execution requires the newly reviewed source-v4
+artifacts and successful binary-v2 installed-consumer/dependency gates.
