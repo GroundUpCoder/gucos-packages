@@ -4852,7 +4852,7 @@
     {
       "id": "xmahjongg",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/xmahjongg/wasm-package.json",
       "historicalManifestSha256": "7ae5f9d8fc5b40973c298b3564fd0777a9b2723445f5faa8eb78d80a8991ab23",
       "historicalEvidence": [
@@ -4867,7 +4867,14 @@
         "x11-apps"
       ],
       "mapping": "xmahjongg",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "revision": "6f5fd60",
+          "catalogRevision": "af4a3091575d97cfd23145fbfedaa6a01d69f2d7",
+          "evidence": "docs/research/package-migration/xmahjongg/gucos-public",
+          "scope": "Independently reviewed public install/consumer/reload and real JWM pair removal, undo/redo, new board, quit/relaunch in two sessions on runtime19609f47. No saved-game or winning-game claim."
+        }
+      ],
       "blockers": [],
       "sourcePreparation": {
         "revision": "d107353",
