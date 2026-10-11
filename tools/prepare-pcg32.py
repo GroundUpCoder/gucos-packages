@@ -14,7 +14,9 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 OLD = Path('/Users/jku/git/wasm-posix-old')
 REV = '0b9b3245fe11a3bc677d81113cba90cd0ae80446'
-assert __debug__ and sys.version_info >= (3, 12)
+if not __debug__:
+    raise RuntimeError('Preparation requires assertions; unset PYTHONOPTIMIZE and omit -O')
+assert sys.version_info >= (3, 12)
 assert os.environ.get('MACHINE_JOB_ID'), 'Host preparation requires machine-job'
 out = Path(sys.argv[1]).resolve()
 assert out.is_relative_to(ROOT / 'test-results')
