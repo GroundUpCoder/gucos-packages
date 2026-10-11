@@ -375,6 +375,11 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/02d2bfed5e2b717a9bb198a507b8ee2b6a60b898/apps/micropython/package.json",
       "sha256": "e20b2168af8ba33d50f086255b2bf88d940a1bf691376f5e237dfcf4e165c698",
       "size": 1967
+    },
+    "gameboy": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cbd6f3a5d85541b7763f75778594f01c463095b9/apps/gameboy/package.json",
+      "sha256": "b79f39335e6b0ac90a82d5cbb3695916544bbce6641f401a33904bff57d4d7e5",
+      "size": 2227
     }
   }
 }
