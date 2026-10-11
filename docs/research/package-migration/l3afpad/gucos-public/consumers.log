@@ -1,0 +1,18 @@
+gucman: unknown source
+
+
+  --codeset=CODESET        Set codeset to open file
+L3AFPAD-STAGED-HELP-PASS
+
+/usr/local/bin/l3afpad: OK
+/usr/local/libexec/l3afpad: OK
+/usr/local/share/applications/l3afpad.desktop: OK
+/usr/local/share/pixmaps/l3afpad.png: OK
+/usr/local/share/doc/l3afpad/PORT.md: OK
+/usr/local/share/licenses/l3afpad/COPYING: OK
+/usr/local/share/licenses/l3afpad/GPL-2.0.txt: OK
+
+a0dd4dbaad96932342d81f6327d93673728d0235f886c1c07bed8c00d53d164d  /home/user/migration-export.tar
+310784
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

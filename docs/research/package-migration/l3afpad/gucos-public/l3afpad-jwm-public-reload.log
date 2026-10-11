@@ -1,0 +1,36 @@
+/usr/local/bin/l3afpad: OK
+/usr/local/libexec/l3afpad: OK
+/usr/local/share/applications/l3afpad.desktop: OK
+/usr/local/share/pixmaps/l3afpad.png: OK
+/usr/local/share/doc/l3afpad/PORT.md: OK
+/usr/local/share/licenses/l3afpad/COPYING: OK
+/usr/local/share/licenses/l3afpad/GPL-2.0.txt: OK
+4 functions, 11169 bytes
+WM_READY
+JWM-CONTROL-READY
+
+** (l3afpad:24): WARNING **: 16:48:19.691: Could not find the icon 'user-home-symbolic-ltr'. The 'hicolor' theme
+was not found either, perhaps you need to install it.
+You can get a copy from:
+	http://icon-theme.freedesktop.org/releases
+GLib-GIO-Message: 16:48:19.797: Using the 'memory' GSettings backend.  Your settings will not be saved or shared with other applications.
+
+** (l3afpad:24): WARNING **: 16:48:19.891: Failed to measure available space: This browser filesystem operation is not supported
+
+** (l3afpad:24): CRITICAL **: 16:48:20.570: gtk_widget_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+
+** (l3afpad:24): CRITICAL **: 16:48:20.570: gtk_widget_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+
+** (l3afpad:104): WARNING **: 16:48:28.234: Could not find the icon 'user-home-symbolic-ltr'. The 'hicolor' theme
+was not found either, perhaps you need to install it.
+You can get a copy from:
+	http://icon-theme.freedesktop.org/releases
+GLib-GIO-Message: 16:48:28.307: Using the 'memory' GSettings backend.  Your settings will not be saved or shared with other applications.
+
+** (l3afpad:104): WARNING **: 16:48:28.395: Failed to measure available space: This browser filesystem operation is not supported
+
+** (l3afpad:104): CRITICAL **: 16:48:29.024: gtk_widget_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+
+** (l3afpad:104): CRITICAL **: 16:48:29.024: gtk_widget_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+JWM-CONTROL-PASS
+L3AFPAD-JWM-TERMINAL-RESTORED

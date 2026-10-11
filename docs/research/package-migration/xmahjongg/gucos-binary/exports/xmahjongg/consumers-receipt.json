@@ -1,0 +1,116 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "4d347cdf92fe6b8dd4eaf31971d186c4fd885ecb5f6ccd95e340d074e78d9b6c",
+  "size": 3625472,
+  "guestManifest": {
+    "format": 1,
+    "name": "xmahjongg",
+    "version": "3.7.0-2",
+    "dependencies": [
+      "x11-server"
+    ],
+    "dependencyRequirements": {
+      "x11-server": {
+        "version": "21.1.24-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:62898/migration/xmahjongg/source.tar",
+        "sha256": "b257af198004daa758ee23b7986a3281d58604a06e6c90be44d5f681d50843b9",
+        "size": 2048000
+      },
+      {
+        "path": "prepared.tar",
+        "url": "http://127.0.0.1:62898/migration/xmahjongg/prepared.tar",
+        "sha256": "639aff48585d96c061e8c5c34e31f290bf551b68221f31b9754b4b22d3abb04d",
+        "size": 3645440
+      },
+      {
+        "path": "NOTICE",
+        "url": "http://127.0.0.1:62898/migration/xmahjongg/NOTICE",
+        "sha256": "1ce6cfc9c3979225feff9de3ecdc5db8d03d065ce1024763aeec79ba70480592",
+        "size": 24142
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:62898/migration/xmahjongg/build.sh",
+        "sha256": "9aff3ee82f49de1d03f1a5f295a0ce31d775f65e09558b6131899699e2bd5bc6",
+        "size": 411
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:62898/migration/xmahjongg/test.sh",
+        "sha256": "b0ea47f823b4d7a7ec78fd4fa26eeaecffcebe0a406cad2d4a9ac09ce36153df",
+        "size": 249
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xmahjongg",
+        "mode": 493
+      },
+      {
+        "path": "share/applications/xmahjongg.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmahjongg/Click-LICENSE",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmahjongg/GPL-2.0.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmahjongg/NOTICE",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmahjongg/README",
+        "mode": 420
+      },
+      {
+        "path": "share/xmahjongg/backgrounds/default.gif",
+        "mode": 420
+      },
+      {
+        "path": "share/xmahjongg/layouts/default",
+        "mode": 420
+      },
+      {
+        "path": "share/xmahjongg/tiles/thick.gif",
+        "mode": 420
+      },
+      {
+        "path": "share/xmahjongg/translation.json",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xmahjongg/Click-LICENSE",
+      "share/licenses/xmahjongg/GPL-2.0.txt",
+      "share/licenses/xmahjongg/NOTICE",
+      "share/licenses/xmahjongg/README"
+    ],
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "binary": {
+      "url": "http://127.0.0.1:62898/migration/xmahjongg/binary.tar",
+      "sha256": "6433c2f08812c90ebef657174b42334853e22e62ca2e449a807415ddc1592bc8",
+      "size": 3625472
+    }
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

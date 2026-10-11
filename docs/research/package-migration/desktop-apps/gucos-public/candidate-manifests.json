@@ -1,0 +1,138 @@
+{
+  "desktop-apps": {
+    "format": 1,
+    "name": "desktop-apps",
+    "version": "1.0.0-1",
+    "dependencies": [
+      "desktop-entries",
+      "jwm",
+      "xterm",
+      "2048",
+      "xcalc",
+      "xedit",
+      "xclock",
+      "xeyes"
+    ],
+    "dependencyRequirements": {
+      "desktop-entries": {
+        "version": "1.0.0-1"
+      },
+      "jwm": {
+        "version": "2.4.6-2"
+      },
+      "xterm": {
+        "version": "411-1"
+      },
+      "2048": {
+        "version": "0.1.0-1"
+      },
+      "xcalc": {
+        "version": "1.1.3-1"
+      },
+      "xedit": {
+        "version": "1.2.5-1"
+      },
+      "xclock": {
+        "version": "1.2.1-1"
+      },
+      "xeyes": {
+        "version": "1.3.1-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/source.tar",
+        "sha256": "5e8dd3a51976f5dce2419df6e7156a3937c7391c873fb9aecc855a91cb2328b2",
+        "size": 20480
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/build.sh",
+        "sha256": "2d5754d5dbb753d33b07f6117bd98ea1ea8e19a93c8db790fb05d08f1440813e",
+        "size": 238
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/test.sh",
+        "sha256": "6dbb23ac6d92399fdbe35e2de70f47443cc57ef6d33c905f6ab8247ca7eff6fd",
+        "size": 189
+      },
+      {
+        "path": "gucos-desktop-2048.desktop",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-2048.desktop",
+        "sha256": "7e57c6084efed3830cf4367372b0abae3e6aaefbca0fdfe55ba3d031227f7411",
+        "size": 80
+      },
+      {
+        "path": "gucos-desktop-xcalc.desktop",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-xcalc.desktop",
+        "sha256": "34d20cd5a55285edb76db380a34661fa4dfde08f25eb3005d7af1b0d1acfefa4",
+        "size": 89
+      },
+      {
+        "path": "gucos-desktop-xedit.desktop",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-xedit.desktop",
+        "sha256": "e78f5c00e4340bbff47fd5330b071c6420442c1b94235cf2b1cd32140442ff9f",
+        "size": 90
+      },
+      {
+        "path": "gucos-desktop-xclock.desktop",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-xclock.desktop",
+        "sha256": "0f0341e11667036182e42ef5ae19b2bdb1569abfba138085e3dea9883dd07a86",
+        "size": 86
+      },
+      {
+        "path": "gucos-desktop-xeyes.desktop",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-xeyes.desktop",
+        "sha256": "74f70530e67d661cb81b484aa8f0086a026bc4d610bf848eb8d58c4703d169db",
+        "size": 83
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "share/applications/gucos-desktop-2048.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/applications/gucos-desktop-xcalc.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/applications/gucos-desktop-xedit.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/applications/gucos-desktop-xclock.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/applications/gucos-desktop-xeyes.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/desktop-apps/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/desktop-apps/LICENSE"
+    ],
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/binaries/828eca9f171fdf97393f3c99fc436993cbdbcfca1cdc05e556b4520b7ac4eaa3.tar",
+      "sha256": "828eca9f171fdf97393f3c99fc436993cbdbcfca1cdc05e556b4520b7ac4eaa3",
+      "size": 18432
+    }
+  }
+}

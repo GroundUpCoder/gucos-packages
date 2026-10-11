@@ -445,6 +445,11 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/ab2a7f6eed3bdf98b4477e707289f4be457c5e66/apps/gucode/package.json",
       "sha256": "18b80fdd06c809090c88623a45f9a0d000ea287d1150bc349d8e1890897d2bb4",
       "size": 1990
+    },
+    "xmahjongg": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6369573f28d5421366f4a6fa016964b1a6f22589/apps/xmahjongg/package.json",
+      "sha256": "9361f5880fee4789aed13702a58075b7623eca8ff28b2d16a045553976be7751",
+      "size": 3295
     }
   }
 }

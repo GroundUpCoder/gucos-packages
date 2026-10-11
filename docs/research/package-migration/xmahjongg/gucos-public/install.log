@@ -1,0 +1,130 @@
+gucman: unknown source
+
+{
+  tail: 'erifying download: x11-server archive\n' +
+    'gucman: Checking cached object: x11-server archive\n' +
+    'gucman: Unpacking: x11-server\n' +
+    'gucman: Installing x11-server: 0/527 files\n' +
+    'gucman: Installing x11-server: 25/527 files\n' +
+    'gucman: Installing x11-server: 50/527 files\n'
+}
+{
+  tail: '11-server: 275/527 files\n' +
+    'gucman: Installing x11-server: 300/527 files\n' +
+    'gucman: Installing x11-server: 325/527 files\n' +
+    'gucman: Installing x11-server: 350/527 files\n' +
+    'gucman: Installing x11-server: 375/527 files\n' +
+    'gucman: Installing x11-server: 400/527 files\n'
+}
+gucman: install migration:xmahjongg: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 24609 bytes; transfer finished
+gucman: Resolving: migration:xmahjongg
+gucman: Downloading manifest for migration:xmahjongg (3295 bytes)
+  Connecting; waiting for response…
+  Downloaded 3295 / 3295 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xmahjongg
+gucman: Checking cached object: manifest for migration:xmahjongg
+gucman: Resolving: migration:x11-server
+gucman: Downloading manifest for migration:x11-server (47963 bytes)
+  Connecting; waiting for response…
+  Downloaded 47963 / 47963 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: x11-server (1 remaining after this)
+gucman: Downloading x11-server archive (25956864 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.47 / 24.75 MiB (9%)
+  Downloaded 7.87 / 24.75 MiB (31%)
+  Downloaded 12.25 / 24.75 MiB (49%)
+  Downloaded 17.73 / 24.75 MiB (71%)
+  Downloaded 21.72 / 24.75 MiB (87%)
+  Downloaded 24.75 / 24.75 MiB (100%); transfer finished
+gucman: Verifying download: x11-server archive
+gucman: Checking cached object: x11-server archive
+gucman: Unpacking: x11-server
+gucman: Installing x11-server: 0/527 files
+gucman: Installing x11-server: 25/527 files
+gucman: Installing x11-server: 50/527 files
+gucman: Installing x11-server: 75/527 files
+gucman: Installing x11-server: 100/527 files
+gucman: Installing x11-server: 125/527 files
+gucman: Installing x11-server: 150/527 files
+gucman: Installing x11-server: 175/527 files
+gucman: Installing x11-server: 200/527 files
+gucman: Installing x11-server: 225/527 files
+gucman: Installing x11-server: 250/527 files
+gucman: Installing x11-server: 275/527 files
+gucman: Installing x11-server: 300/527 files
+gucman: Installing x11-server: 325/527 files
+gucman: Installing x11-server: 350/527 files
+gucman: Installing x11-server: 375/527 files
+gucman: Installing x11-server: 400/527 files
+gucman: Installing x11-server: 425/527 files
+gucman: Installing x11-server: 450/527 files
+gucman: Installing x11-server: 475/527 files
+gucman: Installing x11-server: 500/527 files
+gucman: Installing x11-server: 525/527 files
+gucman: Installing x11-server: 527/527 files
+gucman: Preparing checksums: x11-server
+gucman: Checksummed x11-server: 25/527 files
+gucman: Checksummed x11-server: 50/527 files
+gucman: Checksummed x11-server: 75/527 files
+gucman: Checksummed x11-server: 100/527 files
+gucman: Checksummed x11-server: 125/527 files
+gucman: Checksummed x11-server: 150/527 files
+gucman: Checksummed x11-server: 175/527 files
+gucman: Checksummed x11-server: 200/527 files
+gucman: Checksummed x11-server: 225/527 files
+gucman: Checksummed x11-server: 250/527 files
+gucman: Checksummed x11-server: 275/527 files
+gucman: Checksummed x11-server: 300/527 files
+gucman: Checksummed x11-server: 325/527 files
+gucman: Checksummed x11-server: 350/527 files
+gucman: Checksummed x11-server: 375/527 files
+gucman: Checksummed x11-server: 400/527 files
+gucman: Checksummed x11-server: 425/527 files
+gucman: Checksummed x11-server: 450/527 files
+gucman: Checksummed x11-server: 475/527 files
+gucman: Checksummed x11-server: 500/527 files
+gucman: Checksummed x11-server: 525/527 files
+gucman: Checksummed x11-server: 527/527 files
+gucman: Saving transaction: x11-server
+gucman: Verifying staged files: x11-server
+gucman: Activating: x11-server
+Installed migration:x11-server 21.1.24-1
+gucman: Package 2/2: xmahjongg (0 remaining after this)
+gucman: Downloading xmahjongg archive (3625472 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 3.46 MiB (0%)
+  Downloaded 3.46 / 3.46 MiB (100%); transfer finished
+gucman: Verifying download: xmahjongg archive
+gucman: Checking cached object: xmahjongg archive
+gucman: Unpacking: xmahjongg
+gucman: Installing xmahjongg: 0/10 files
+gucman: Installing xmahjongg: 10/10 files
+gucman: Preparing checksums: xmahjongg
+gucman: Checksummed xmahjongg: 10/10 files
+gucman: Saving transaction: xmahjongg
+gucman: Verifying staged files: xmahjongg
+gucman: Activating: xmahjongg
+Installed migration:xmahjongg 3.7.0-2
+
+/usr/local/bin/xmahjongg: OK
+/usr/local/share/applications/xmahjongg.desktop: OK
+/usr/local/share/licenses/xmahjongg/Click-LICENSE: OK
+/usr/local/share/licenses/xmahjongg/GPL-2.0.txt: OK
+/usr/local/share/licenses/xmahjongg/NOTICE: OK
+/usr/local/share/licenses/xmahjongg/README: OK
+/usr/local/share/xmahjongg/backgrounds/default.gif: OK
+/usr/local/share/xmahjongg/layouts/default: OK
+/usr/local/share/xmahjongg/tiles/thick.gif: OK
+/usr/local/share/xmahjongg/translation.json: OK
+
+ee29b92245629ccf4f4d15b6d3ade2bb0f3d6fcc01025460c1705a69f3f43d42  /home/user/migration-export.tar
+3625472
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

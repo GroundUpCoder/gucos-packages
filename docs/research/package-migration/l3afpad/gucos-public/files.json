@@ -1,0 +1,122 @@
+{
+  "l3afpad-jwm-public-reload.log": {
+    "sha256": "60b9f935edddc9cfc6b5068f2d6cf53aa48d205b098cbb25c9b5a41a565cfb22",
+    "size": 1895
+  },
+  "l3afpad-jwm-public-reload-undo-saved.png": {
+    "sha256": "5cf314af10dcd5a38cc7ee3e6502f83740934c7004bceef09d1b9fff12be4bca",
+    "size": 12995
+  },
+  "l3afpad-jwm-public-undo-saved.png": {
+    "sha256": "563b9fab757a7e183c209523e297ba20ae16ba14c68c9c39801eeb8b5c9b2cc8",
+    "size": 11738
+  },
+  "dependencies.log": {
+    "sha256": "1fcd7e91bb01b1a90e8326031258289bd572ad7e2c625ebd5869033e95a4ee14",
+    "size": 8018
+  },
+  "l3afpad-jwm-public-reload.json": {
+    "sha256": "b93941566fec170cc5745b4f97560a19eff806e17f5293f237d655e4f1b76f1c",
+    "size": 2096
+  },
+  "observed-runtime.json": {
+    "sha256": "c1d9b39edc1d23af256c7c1e88ccc9d30925bf9439aee11d68159d85c18ff3b7",
+    "size": 129
+  },
+  "editor-reload.log": {
+    "sha256": "4c9ed83d934f45dd7d98709276c02e7af28679aaf3490ec426fe96c6d9e9102b",
+    "size": 1900
+  },
+  "l3afpad-jwm-public.json": {
+    "sha256": "ec05340444de14abdc2d350b15dc673f9c4d8e10bfadbbe84547ce04709c52aa",
+    "size": 2086
+  },
+  "reload.log": {
+    "sha256": "3b3aed39fa78ded3b3a564431cd1f45da961899e2698e9d685e31cf973dfe118",
+    "size": 483
+  },
+  "reload-l3afpad.json": {
+    "sha256": "704117b844d6d3f232ad16736e00a70682ede20ea88ac20c608f11b131a418f8",
+    "size": 308
+  },
+  "config.json": {
+    "sha256": "c55f1929c5ff2e368334a689d5af0e4f95334a15a41c5370240fe4caa6de2bc3",
+    "size": 23891
+  },
+  "l3afpad-jwm-public-reload-reopened-saved.png": {
+    "sha256": "4caa8ce96a8050102848ec00980ba0723a27cb611d9f8b0d468ef35d81490acd",
+    "size": 13451
+  },
+  "l3afpad-jwm-public-reload-launched.png": {
+    "sha256": "c13fed02bab762db7d0ced96f86e3ad5e8f11baa3d7df7d0687d1bf3b3ec0db2",
+    "size": 9536
+  },
+  "l3afpad.sha256": {
+    "sha256": "789a94089237b12c5a9de48a65c8ce3aa60ff0712a1b93de9bdb8bc2c87b8790",
+    "size": 720
+  },
+  "README.md": {
+    "sha256": "bb77d439ef6181dee9d3b653c60dc8d01d466ef68af5cc06bee14154975f17b6",
+    "size": 507
+  },
+  "install-l3afpad.json": {
+    "sha256": "fe3bfd453f758d2e2e31ca613181c8e705fd035e190165daac3a94d85e980e12",
+    "size": 309
+  },
+  "consumers.log": {
+    "sha256": "989f1e1c79b40703c48e339bdd40d04249f0a15ce50fc13ff1c11a2d58e18a34",
+    "size": 561
+  },
+  "consumers-l3afpad.json": {
+    "sha256": "48675d4aaea165172b6b5ac77d783d994b1d47a4d28bb3471e8e00532db6eaf2",
+    "size": 1233
+  },
+  "editor.log": {
+    "sha256": "a626cf85efa42d20c6676be50fe74bffc21c119e9a93bb9e887f0ef25523b8fd",
+    "size": 1763
+  },
+  "l3afpad-jwm-public.log": {
+    "sha256": "7fc8b204c6c17c60f082c8823140469420aaccc372de57f11f1fdd71e4ccef74",
+    "size": 1758
+  },
+  "dependencies-jwm-desktop-entries-xterm.json": {
+    "sha256": "990dcf84644371af726c9bc3bf8fac0de609d026c81b17a15e7b2df2db7469dd",
+    "size": 346
+  },
+  "l3afpad-jwm-public-reopened-saved.png": {
+    "sha256": "0df5ff7a194fed66d830bd3f9f4120b9f86b3a20a13ba2078237fb12dd768d40",
+    "size": 13043
+  },
+  "l3afpad-jwm-public-redo-saved.png": {
+    "sha256": "6fc643806b07600ba412c98ec6cca67cba828f8cd337773b90fa798a52cdeb53",
+    "size": 11954
+  },
+  "l3afpad-jwm-public-reload-redo-saved.png": {
+    "sha256": "ab4b47833baf5e6e56dbce32be83ad13aa69f5c88be7909826530e004649eb1d",
+    "size": 13082
+  },
+  "candidate-manifests.json": {
+    "sha256": "0753180b770100563363fd7d7e1c8837ca7458eb80f332f58c3e8fb2cf285589",
+    "size": 3284
+  },
+  "install.log": {
+    "sha256": "6961255a648fd60cd7de8acab2caf7b812ce4b972e96d943eed39b6947bbdc62",
+    "size": 47091
+  },
+  "l3afpad-jwm-public-launched.png": {
+    "sha256": "e6afe664fd2d229415eb80b0938472b84979fb830e6f99997f3388ea93c39cad",
+    "size": 9534
+  },
+  "exports/l3afpad/reload-receipt.json": {
+    "sha256": "4bbbf7462ee5c7af3f3cf766139df433519132b0ee2c4a121c256c83fba03c7e",
+    "size": 3570
+  },
+  "exports/l3afpad/consumers-receipt.json": {
+    "sha256": "4bbbf7462ee5c7af3f3cf766139df433519132b0ee2c4a121c256c83fba03c7e",
+    "size": 3570
+  },
+  "exports/l3afpad/install-receipt.json": {
+    "sha256": "4bbbf7462ee5c7af3f3cf766139df433519132b0ee2c4a121c256c83fba03c7e",
+    "size": 3570
+  }
+}

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Scientific Calculator
+Exec=galculator
+Icon=galculator
+Categories=Utility;Calculator;
+Terminal=false

@@ -1,0 +1,3 @@
+# XMahjongg private binary interaction evidence
+
+Source/export0b722c6, runtime19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441. Install/consumer/dependency/package reload and two fresh-session GUI runs passed. Actual JWM menu, hint-assisted pair removal, undo/redo, new board, quit/relaunch and terminal restoration. No saved-game restoration or winning claim. Physical minimize/restore produces a normal exposure repaint before tile comparisons; exact source-defined tile-counter rectangle is excluded from native pixel hash and separately inspected through screenshots. Independent review must verify144/142/144/142counts and restored tiles in both runs. Earlier failed repaint comparisons remain retained under desktop-priority.

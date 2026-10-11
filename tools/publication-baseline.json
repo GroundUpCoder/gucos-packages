@@ -1,4 +1,4 @@
 {
-  "revision": "b58c9448cfffd7af085285fc6aea55ddb3c4387f",
-  "description": "85 live-accepted catalog entries after independently reviewed Tcl/Tk public install, consumers, GUI and package reload; Snake1.0.0-2 preserved."
+  "revision": "ec3fa8c4e3b4bf01afe2f77b32b242b51d81d301",
+  "description": "87 live-accepted entries after independent desktop-apps public install, five JWM app interaction scopes and browser reload review. Preserve later XM/gucode/libcurl catalog entries outside this baseline."
 }

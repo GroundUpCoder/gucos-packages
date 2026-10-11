@@ -1,0 +1,30 @@
+{
+  "README.md": {
+    "sha256": "18381dbcad811e29c0401061dd9fd5b1cb2be37fc5e4744f7cae0c63821d85a3",
+    "size": 758
+  },
+  "puzzles-untangle-jwm-native-dragged.png": {
+    "sha256": "8f5eb45a67fda54bd7830ee7bd800925ab5694fb918b9c7676cabce2456badd6",
+    "size": 30861
+  },
+  "puzzles-untangle-jwm-native-failure.png": {
+    "sha256": "5eab8e80cfe3264606aa9104681681408b160d7434368649f6880d77a9876460",
+    "size": 31015
+  },
+  "puzzles-untangle-jwm-native-initial.png": {
+    "sha256": "1bdcc3e3ff0041b83c68768a0a3f9eadb4a97d651d8d277bf083f51ba8e034d9",
+    "size": 31436
+  },
+  "puzzles-untangle-jwm-native-undo.png": {
+    "sha256": "1bdcc3e3ff0041b83c68768a0a3f9eadb4a97d651d8d277bf083f51ba8e034d9",
+    "size": 31436
+  },
+  "puzzles-untangle-jwm-native.json": {
+    "sha256": "e9e982412f8b68fe4e7c45a53e68398a081adcdaf0a77a3699fd7697cd7128ee",
+    "size": 4662
+  },
+  "puzzles-untangle-jwm-native.log": {
+    "sha256": "50c739c4595742d1750e3b60aa74f1693de175b6c14eacf3cac25c0348bb6fba",
+    "size": 5450
+  }
+}

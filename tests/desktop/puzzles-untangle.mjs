@@ -1,3 +1,4 @@
+import {installObserver as installPixels,observe as observePixels} from './menu-xapps.mjs';
 // Untangle interactive gate: owned JWM entry, point drag/undo, GTK save/load,
 // clean quit/relaunch and persisted-board browser reload. No solved-board claim.
 import assert from 'node:assert/strict';
@@ -30,6 +31,7 @@ try{
  await s.page.evaluate(async text=>shell.busybox.write('/tmp/puzzles.sha256',new TextEncoder().encode(text)),await readFile(resolve(run,'puzzles.sha256'),'utf8'));
  await s.command('sha256sum -c /tmp/puzzles.sha256');
  report.harnessSha256=sha(await readFile(new URL(import.meta.url)));
+ report.pixelObserver=await installPixels(s);
  d=await desktopSession(s);report.helpers=d.helper;const canvas=await visibleCanvas(s.page);
  const click=async(x,y)=>canvas.click({position:await canvasPosition(canvas,{x,y})});
  const entry='gucos-puzzles-untangle.desktop';report.menu=await clickMenuEntry(d,entry);
@@ -41,11 +43,7 @@ try{
   let last,stable=0;const deadline=Date.now()+30000;
   while(Date.now()<deadline){
   await s.page.waitForTimeout(250);const bytes=await canvas.screenshot();
-  const png=PNG.sync.read(bytes),box=await canvas.boundingBox();
-  const a=await canvasPosition(canvas,{x:w.x+6,y:w.y+35}),b=await canvasPosition(canvas,{x:w.x+w.width-6,y:w.y+w.height-30});
-  const left=Math.round(a.x*png.width/box.width),top=Math.round(a.y*png.height/box.height),right=Math.round(b.x*png.width/box.width),bottom=Math.round(b.y*png.height/box.height);
-  assert(right>left&&bottom>top&&left>=0&&top>=0&&right<=png.width&&bottom<=png.height);
-  const rows=[];for(let y=top;y<bottom;y++)rows.push(png.data.subarray((y*png.width+left)*4,(y*png.width+right)*4));const hash=sha(Buffer.concat(rows));
+  const pixels=await observePixels(d,'puzzle-board','Untangle');const hash=`${pixels.width}x${pixels.height}:${pixels.hash}`;
   stable=hash===last?stable+1:0;last=hash;
   if(stable>=5&&(equal===undefined||hash===equal)&&(different===undefined||hash!==different)){await writeFile(resolve(run,stem+'-'+label+'.png'),bytes,{flag:'wx'});return hash;}
   }throw Error('Board failed to reach expected settled pixels: '+label);
@@ -68,8 +66,8 @@ try{
  if(reload){
   const previous=JSON.parse(await readFile(resolve(run,'puzzles-untangle-jwm-'+attempt+'.json')));assert.equal(previous.status,'passed');assert.equal(previous.savePath,savePath);assert.deepEqual(previous.binary,expected.binary,'Reload must retain the exact candidate binary');assert.equal(previous.runtime,s.runtime,'Reload must retain the tested runtime');
   const saved=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),savePath);assert.equal(sha(Buffer.from(saved)),previous.savedSha256,'Browser reload retained exact saved bytes');
-  await fileDialog(false);assert.equal(await board('browser-reloaded',{equal:previous.movedBoardSha256}),previous.movedBoardSha256);
-  report.savedSha256=previous.savedSha256;report.movedBoardSha256=previous.movedBoardSha256;
+  await fileDialog(false);assert.equal(await board('browser-reloaded',{equal:previous.movedBoardPixelHash}),previous.movedBoardPixelHash);
+  report.savedSha256=previous.savedSha256;report.movedBoardPixelHash=previous.movedBoardPixelHash;
  }else{
  const initial=await board('initial');
  // Untangle draws movable points as filled blue circles. Locate one from
@@ -89,7 +87,24 @@ try{
  const points=groups[0],from={x:points.reduce((n,p)=>n+p[0],0)/points.length*box.width/raw.width,y:points.reduce((n,p)=>n+p[1],0)/points.length*box.height/raw.height};
  const center=await canvasPosition(canvas,{x:w.x+w.width/2,y:w.y+w.height/2});
  const to={x:from.x+(center.x-from.x)*0.25,y:from.y+(center.y-from.y)*0.25};assert(Math.hypot(to.x-from.x,to.y-from.y)>10);
- async function drag(){await s.page.mouse.move(box.x+from.x,box.y+from.y);await s.page.mouse.down();await s.page.mouse.move(box.x+to.x,box.y+to.y,{steps:8});await s.page.mouse.up();}
+ let dragIndex=0;
+ async function drag(){
+  const index=++dragIndex;
+  await s.page.mouse.move(box.x+from.x,box.y+from.y);await s.page.mouse.down();
+  try{
+   await s.page.waitForTimeout(200);
+   for(let step=1;step<=8;step++){
+    await s.page.mouse.move(box.x+from.x+(to.x-from.x)*step/8,box.y+from.y+(to.y-from.y)*step/8);
+    await s.page.waitForTimeout(50);
+   }
+   // Untangle release commits the last processed motion, not release coordinates.
+   await s.page.waitForTimeout(200);
+   const pixels=await observePixels(d,'puzzle-board','Untangle');
+   (report.heldDrags??=[]).push({index,endpoint:to,pixels});
+   await writeFile(resolve(run,stem+'-held-drag-'+index+'.png'),await canvas.screenshot(),{flag:'wx'});
+  }finally{await s.page.mouse.up();}
+  await s.page.waitForTimeout(200);
+ }
  await drag();const moved=await board('dragged',{different:initial});report.drag={from,to,blueComponents:groups.length};
  await s.page.keyboard.press('u');assert.equal(await board('undo',{equal:initial}),initial,'Undo must restore the initial graph');
  await drag();assert.equal(await board('repeat-drag',{equal:moved}),moved);
@@ -97,7 +112,7 @@ try{
  const saved=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),savePath);assert(saved.length>100);report.savedSha256=sha(Buffer.from(saved));
  await quit();report.relaunchMenu=await clickMenuEntry(d,entry);w=await observe(d,'window','Untangle');assert(w.pid>0);assert.notEqual(w.pid,report.firstWindow.pid);
  await fileDialog(false);assert.equal(await board('loaded',{equal:moved}),moved,'Saved game restores exact board after clean relaunch');
- report.movedBoardSha256=moved;
+ report.movedBoardPixelHash=moved;
  }
  await quit();await d.finish();
  await s.command('test -s '+savePath+'; echo PUZZLES-JWM-TERMINAL-RESTORED');

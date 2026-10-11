@@ -1155,7 +1155,7 @@
     {
       "id": "galculator",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "vendor/galculator/wasm-package.json",
       "historicalManifestSha256": "1b66e783c99418ab66c31a55c0b82b8580dff77e695182470089d8351bedabd8",
       "historicalEvidence": [
@@ -1179,9 +1179,13 @@
         "gtk3-schemas",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "galculator",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "sourcePreparation": {
+        "revision": "b7abc2e5dfa6f22a8af6f73c32345316a16d6b8a",
+        "scope": "132 historical blobs; nine C units with retained Flex scanner, exact GTK3-X11/pkgconf/libintl/gio-core dependencies and 24 outputs. Independently reviewed for source execution; guest build, GUI and public gates pending."
+      }
     },
     {
       "id": "gameboy",
@@ -2160,7 +2164,7 @@
     {
       "id": "l3afpad",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/l3afpad/wasm-package.json",
       "historicalManifestSha256": "2d34c7a4ca6a1ee86ae604e9a959e007d973a0d1c7eb9b1d5203e46a35b808b5",
       "historicalEvidence": [
@@ -2185,7 +2189,14 @@
         "pkgconf"
       ],
       "mapping": "l3afpad",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "revision": "6132bc0",
+          "catalogRevision": "175cf8f19ed54198789ce39780b1419454b3209e",
+          "evidence": "docs/research/package-migration/l3afpad/gucos-public",
+          "scope": "Independently reviewed public install, consumer, real JWM editor exact save/undo/redo/reopen, package reload and browser persistence on runtime19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441."
+        }
+      ],
       "blockers": [],
       "sourcePreparation": {
         "revision": "a1c6a43",
@@ -4841,7 +4852,7 @@
     {
       "id": "xmahjongg",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/xmahjongg/wasm-package.json",
       "historicalManifestSha256": "7ae5f9d8fc5b40973c298b3564fd0777a9b2723445f5faa8eb78d80a8991ab23",
       "historicalEvidence": [
@@ -4856,7 +4867,14 @@
         "x11-apps"
       ],
       "mapping": "xmahjongg",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "revision": "6f5fd60",
+          "catalogRevision": "af4a3091575d97cfd23145fbfedaa6a01d69f2d7",
+          "evidence": "docs/research/package-migration/xmahjongg/gucos-public",
+          "scope": "Independently reviewed public install/consumer/reload and real JWM pair removal, undo/redo, new board, quit/relaunch in two sessions on runtime19609f47. No saved-game or winning-game claim."
+        }
+      ],
       "blockers": [],
       "sourcePreparation": {
         "revision": "d107353",

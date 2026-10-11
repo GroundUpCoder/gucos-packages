@@ -7,6 +7,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+/* A queried child can disappear between XQueryTree and its properties. */
+static int (*previous_error_handler)(Display *,XErrorEvent *);
+static int observation_error(Display *d,XErrorEvent *e){
+ if(e->error_code==BadWindow)return 0;
+ return previous_error_handler(d,e);
+}
 static Window named(Display*d,Window w,const char*target,int depth){
  if(depth>16)return None;
  XWindowAttributes a;if(!XGetWindowAttributes(d,w,&a)||a.map_state!=IsViewable)return None;
@@ -29,6 +35,7 @@ static int property(Display*d,Window w,const char*key,Atom type,Atom value){
 }
 int main(int argc,char**argv){
  if(argc<2||argc>3)return 1;Display*d=XOpenDisplay(NULL);if(!d)return 2;
+ previous_error_handler=XSetErrorHandler(observation_error);
  Window root=DefaultRootWindow(d);
  for(int i=0;i<300;i++){
   if(!strcmp(argv[1],"wm")&&property(d,root,"_NET_SUPPORTING_WM_CHECK",XA_WINDOW,None)){
