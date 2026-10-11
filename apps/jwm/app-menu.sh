@@ -76,4 +76,7 @@ untangle|Untangle
 GAMES
  printf '%s\n' '</Menu>'
 fi
+if command -v desktop-menu >/dev/null 2>&1; then
+ desktop-menu jwm-items
+fi
 printf '%s\n' '</JWM>'
