@@ -235,3 +235,10 @@ Galculator layout evidence is retained under `galculator/gucos-layout-attempt1`.
 It captured Basic/Scientific layouts but failed configuration directory creation
 and saving (zero bytes). No arithmetic or persistence acceptance is claimed.
 Its PID-disappearance close check likewise does not directly prove exit status.
+
+CPython source attempt 1 compiled and reached staged consumers, then failed one
+of 16 subprocess tests (temporary symlink, changed cwd and PATH=.). The child
+returned 1; captured stderr is absent from the exception report, so cause is
+unknown. Evidence retained in `cpython/gucos-source-attempt1`; no export or
+acceptance is claimed. The other 15 subprocess cases, smoke and atomic checks
+passed. Failed profile remains preserved for a reviewed diagnostic follow-up.

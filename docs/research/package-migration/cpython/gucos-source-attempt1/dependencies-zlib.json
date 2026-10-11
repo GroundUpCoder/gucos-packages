@@ -1,0 +1,11 @@
+{
+  "action": "dependencies",
+  "names": [
+    "zlib"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "9faf8e57f008dea55fcd9d25cb6942443f714c3f",
+  "startedAt": "2026-10-11T09:57:12.545Z",
+  "status": "passed",
+  "finishedAt": "2026-10-11T09:57:16.316Z"
+}

@@ -1,0 +1,30 @@
+gucman: unknown source
+
+gucman: install migration:zlib: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 25082 bytes; transfer finished
+gucman: Resolving: migration:zlib
+gucman: Downloading manifest for migration:zlib (2061 bytes)
+  Connecting; waiting for response…
+  Downloaded 2061 / 2061 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: zlib (0 remaining after this)
+gucman: Downloading zlib archive (513024 bytes)
+  Connecting; waiting for response…
+  Downloaded 513024 / 513024 bytes (100%); transfer finished
+gucman: Verifying download: zlib archive
+gucman: Checking cached object: zlib archive
+gucman: Unpacking: zlib
+gucman: Installing zlib: 0/6 files
+gucman: Installing zlib: 6/6 files
+gucman: Preparing checksums: zlib
+gucman: Checksummed zlib: 6/6 files
+gucman: Saving transaction: zlib
+gucman: Verifying staged files: zlib
+gucman: Activating: zlib
+Installed migration:zlib 1.3.2-1
+
