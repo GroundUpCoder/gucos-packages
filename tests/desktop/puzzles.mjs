@@ -66,8 +66,8 @@ try{
  if(reload){
   const previous=JSON.parse(await readFile(resolve(run,'puzzles-jwm-'+attempt+'.json')));assert.equal(previous.status,'passed');assert.equal(previous.savePath,savePath);assert.deepEqual(previous.binary,expected.binary,'Reload must retain the exact candidate binary');assert.equal(previous.runtime,s.runtime,'Reload must retain the tested runtime');
   const saved=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),savePath);assert.equal(sha(Buffer.from(saved)),previous.savedSha256,'Browser reload retained exact saved bytes');
-  await fileDialog(false);assert.equal(await board('browser-reloaded',{equal:previous.movedBoardSha256}),previous.movedBoardSha256);
-  report.savedSha256=previous.savedSha256;report.movedBoardSha256=previous.movedBoardSha256;
+  await fileDialog(false);assert.equal(await board('browser-reloaded',{equal:previous.movedBoardPixelHash}),previous.movedBoardPixelHash);
+  report.savedSha256=previous.savedSha256;report.movedBoardPixelHash=previous.movedBoardPixelHash;
  }else{
  const initial=await board('initial');let moved;
  for(const key of ['ArrowLeft','ArrowUp','ArrowRight','ArrowDown']){
@@ -81,7 +81,7 @@ try{
  const saved=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),savePath);assert(saved.length>100);report.savedSha256=sha(Buffer.from(saved));
  await quit();report.relaunchMenu=await clickMenuEntry(d,entry);w=await observe(d,'window','Fifteen');assert(w.pid>0);assert.notEqual(w.pid,report.firstWindow.pid);
  await fileDialog(false);assert.equal(await board('loaded',{equal:moved}),moved,'Saved game restores exact board after clean relaunch');
- report.movedBoardSha256=moved;
+ report.movedBoardPixelHash=moved;
  }
  await quit();await d.finish();
  await s.command('test -s '+savePath+'; echo PUZZLES-JWM-TERMINAL-RESTORED');
