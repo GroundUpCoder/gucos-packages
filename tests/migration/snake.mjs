@@ -35,7 +35,13 @@ try {
  await s.page.evaluate(async text=>shell.busybox.write('/tmp/snake-expected.sha256',new TextEncoder().encode(text)),checksums);
  await s.command('sha256sum -c /tmp/snake-expected.sha256');
  report.checks.push('frozen-output-checksums');
- await s.command('stty -g > /tmp/snake-before');
+ await s.page.evaluate(async()=>shell.busybox.write('/tmp/snake-termios.c',new TextEncoder().encode(`#include <termios.h>
+#include <stdio.h>
+int main(void){struct termios t;if(tcgetattr(0,&t))return 1;
+printf("%lu %lu %lu %lu",(unsigned long)t.c_iflag,(unsigned long)t.c_oflag,(unsigned long)t.c_cflag,(unsigned long)t.c_lflag);
+for(int i=0;i<NCCS;i++)printf(" %u",(unsigned)t.c_cc[i]);puts("");return 0;}
+`)));
+ await s.command('cc /tmp/snake-termios.c -o /tmp/snake-termios\n/tmp/snake-termios > /tmp/snake-before');
  const start=await s.page.evaluate(()=>shell.busybox.log.length);
  pending=s.command('echo $$ > /tmp/snake-test.pid\nexec snake');pending.catch(()=>{});
  await until(async()=>(await headSince(start)).length>=2,'initial movement');
@@ -53,7 +59,7 @@ try {
  report.checks.push('wall-collision','restart');
  await s.page.screenshot({path:resolve(run,'snake-playing.png')});
  await s.page.keyboard.press('q');await settled();
- await s.command('stty -g > /tmp/snake-after\ncmp /tmp/snake-before /tmp/snake-after\necho SNAKE-TERMINAL-RESTORED');
+ await s.command('/tmp/snake-termios > /tmp/snake-after\ncmp /tmp/snake-before /tmp/snake-after\necho SNAKE-TERMINAL-RESTORED');
  const log=await s.page.evaluate(start=>shell.busybox.log.slice(start),start);
  assert(log.includes('\x1b[?25h\x1b[?1049l'));
  report.checks.push('single-q-exit','cursor-and-alternate-screen-restored','termios-restored');
@@ -61,7 +67,7 @@ try {
  pending=s.command('echo $$ > /tmp/snake-test.pid\nexec snake');pending.catch(()=>{});
  await until(async()=>(await headSince(second)).length>=1,'relaunch');
  await s.page.evaluate(()=>shell.terminal.focus());await s.page.keyboard.press('Control+c');await settled();
- await s.command('stty -g > /tmp/snake-after\ncmp /tmp/snake-before /tmp/snake-after\necho SNAKE-CTRL-C-PASS');
+ await s.command('/tmp/snake-termios > /tmp/snake-after\ncmp /tmp/snake-before /tmp/snake-after\necho SNAKE-CTRL-C-PASS');
  report.checks.push('relaunch','ctrl-c-exit','termios-restored-after-ctrl-c');
  report.status='passed';
 } catch(error) {
