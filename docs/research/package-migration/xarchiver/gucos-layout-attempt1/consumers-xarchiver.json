@@ -1,0 +1,53 @@
+{
+  "action": "consumers",
+  "names": [
+    "xarchiver"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "fe4f012eee57110da5808a0d9a5ed5b97a40a172",
+  "startedAt": "2026-10-11T09:46:18.202Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "xarchiver",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "3079314237de853ead97dd53edecdb01d4d0be4e60a2350c4cb94189769994bf",
+          "size": 4638720
+        },
+        {
+          "path": "build.sh",
+          "sha256": "5954cdd0b902d84a03f8ca3c1a9a431f14df0755666787dc27b4b8a061dd4422",
+          "size": 1822
+        },
+        {
+          "path": "test.sh",
+          "sha256": "6f142c488d6fcb754de770727d745b3bd95efd77197f32907663282511bac548",
+          "size": 730
+        },
+        {
+          "path": "xarchiver.desktop",
+          "sha256": "23b247629298194f1659998664e8cc6a2497136b198b29a2cbe3cecfc68a8978",
+          "size": 150
+        },
+        {
+          "path": "LGPL-2.1.txt",
+          "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb",
+          "size": 25967
+        },
+        {
+          "path": "main-no-gnu-tar.c",
+          "sha256": "ac66d73aba59a2e2af15700cb068ac8631c1d087714c3d64a39ee4b4ea01dc07",
+          "size": 50720
+        },
+        {
+          "path": "tar-provider.patch",
+          "sha256": "d374b528568b000aad236630d0f3ec771d89479e0be6d15d6b84ec9f364e2e3d",
+          "size": 483
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T09:46:21.077Z"
+}

@@ -1,0 +1,11 @@
+{
+  "action": "install",
+  "names": [
+    "xarchiver"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "fe4f012eee57110da5808a0d9a5ed5b97a40a172",
+  "startedAt": "2026-10-11T09:38:13.511Z",
+  "status": "passed",
+  "finishedAt": "2026-10-11T09:46:17.469Z"
+}

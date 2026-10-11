@@ -1,0 +1,65 @@
+{
+  "status": "completed-layout-discovery",
+  "scope": "Layout discovery only: real menu launch, main/menu/chooser screenshots and clean quit. No compression, extraction or persistence acceptance.",
+  "startedAt": "2026-10-11T09:47:43.374Z",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "http://127.0.0.1:55409/migration/xarchiver/binary.tar",
+    "sha256": "a309654d4252f17f0b527337f1adb7df5081e13a224253a162dc340744b8eeb8",
+    "size": 935424
+  },
+  "harnessSha256": "9d610fa9d09ad1cdab6a7cc3f826b920affda2a8d6635ba54eab44d9c788cada",
+  "observer": {
+    "observerSha256": "33aea82fc674972ac9e18b9678936e3bdae89068f26661750ce8d9ff8b68b2b6",
+    "menuHelperSha256": "40101586a3f90a55c1b6c1aa1c8bf1f7c12f8fa812099c808384c05248c23513"
+  },
+  "helpers": {
+    "observerSha256": "e12e48ac3ed320457181fc16a84f175700bc585d9ff761f3c2d3c75c72824149",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+    "sessionHelperSha256": "5d4365a25306f79315b29324cd71ddac2e75477ccf71e6ca1f116cef03d4a3fc"
+  },
+  "menu": {
+    "id": "xarchiver.desktop",
+    "index": 2,
+    "geometry": {
+      "id": 2097188,
+      "x": 0,
+      "y": 419,
+      "width": 129,
+      "height": 152,
+      "pid": 0
+    },
+    "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"Archive manager\">xarchiver</Program>\n<Program label=\"Archive Manager\">/usr/local/bin/desktop-menu launch xarchiver.desktop</Program>\n</JWM>\n"
+  },
+  "main": {
+    "id": 6291458,
+    "x": 104,
+    "y": 109,
+    "width": 600,
+    "height": 400,
+    "pid": 25
+  },
+  "new": {
+    "id": 6291556,
+    "x": 4,
+    "y": 24,
+    "width": 792,
+    "height": 542,
+    "pid": 25
+  },
+  "open": {
+    "id": 6292580,
+    "x": 4,
+    "y": 24,
+    "width": 792,
+    "height": 542,
+    "pid": 25
+  },
+  "config": {
+    "bytes": 606,
+    "sha256": "bf74e018391249c2e02596dfade63aae98f50be8435ebcb2a2ff2bae3685c9b4",
+    "text": "[xarchiver]\npreferred_format=-1\nprefer_unzip=true\nconfirm_deletion=true\nsort_filename_content=false\nadvanced_isearch=true\nauto_expand=true\nstore_output=false\nicon_size=2\nshow_archive_comment=false\nshow_sidebar=true\nshow_location_bar=true\nshow_toolbar=true\npreferred_web_browser=\npreferred_editor=\npreferred_viewer=\npreferred_archiver=\npreferred_custom_cmd=\npreferred_temp_dir=/tmp\npreferred_extract_dir=/tmp\nallow_sub_dir=0\nensure_directory=true\noverwrite=false\nfull_path=2\ntouch=false\nfresh=false\nupdate=false\nstore_path=false\nupdadd=true\nfreshen=false\nrecurse=true\nsolid_archive=false\nremove_files=false\n"
+  },
+  "finishedAt": "2026-10-11T09:47:52.641Z"
+}

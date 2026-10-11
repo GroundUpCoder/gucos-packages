@@ -219,3 +219,11 @@ Execution requires reviewed binary/dependency artifacts and a browser reservatio
 hard-timeout cleanup remains unverified, so failed profiles are retained.
 No private coordination notes or metadata were copied, and no runtime acceptance
 is claimed by this implementation review.
+
+Xarchiver binary layout attempt 1 reached main/menu/New/Open screenshots but
+crashed with a WebAssembly unreachable trap on Ctrl+Q. Its unchanged report
+claims clean quit incorrectly: PID disappearance and terminal restoration are
+insufficient normal-exit oracles. Evidence and a corrective assessment are
+retained under `docs/research/package-migration/xarchiver/gucos-layout-attempt1`.
+Independent source diagnosis is pending. This supplies no archive-operation or
+functional acceptance and does not change the 91-package accepted baseline.
