@@ -973,12 +973,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Reviewed source fixture prepared; sequential dependency install and Imlib2/Feh source build queued. Binary install, X11/GUI/reload, immutable publication review and public acceptance remain pending."
+        "First source attempt failed on missing X11/Intrinsic.h; retained at 92a0ed8. Corrected source retry is approved and waiting for queue capacity. Binary export, real menu/image interaction and reload/publication acceptance remain pending."
       ],
       "candidate": "apps/feh",
       "sourcePreparation": {
-        "commit": "34e1811",
-        "scope": "Independently approved for source-build execution and bounded headless consumers. Imlib2 precedes Feh. Fresh source execution, X11 interaction and publication acceptance remain pending."
+        "commit": "4f6fd53",
+        "scope": "Independently approved exact x11-toolkit 1.0-1 header-provider dependency correction; historical source and linkage unchanged."
       }
     },
     {
@@ -2042,7 +2042,7 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Reviewed source fixture prepared; sequential dependency install and Imlib2/Feh source build queued. Binary install, X11/GUI/reload, immutable publication review and public acceptance remain pending."
+        "Headless source consumer passed during the combined run retained at 92a0ed8, but Feh failed before combined export. Exact binary export and independent review, native X11 consumer with separately recorded reload, and publication remain pending."
       ],
       "candidate": "apps/imlib2",
       "sourcePreparation": {
@@ -2364,7 +2364,7 @@
     {
       "id": "libfm",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/libfm/wasm-package.json",
       "historicalManifestSha256": "909d56b2e6efb5164e5485368d1f06cf959f3bc412f1514079d301b1babef1f5",
       "historicalEvidence": [
@@ -2393,9 +2393,15 @@
         "gtk3-x11",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "libfm",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Source execution/export, installed consumers, local GUI file operations and browser reload remain pending. Application-launch callbacks and automatic menu-daemon startup are outside staged acceptance."
+      ],
+      "sourcePreparation": {
+        "commit": "c480734",
+        "scope": "Independently approved owned source preparation; exact historical blobs, dependency/output/license contracts and bounded headless consumers reviewed. LibFM precedes PCManFM."
+      }
     },
     {
       "id": "libgedit-amtk",
@@ -3314,7 +3320,7 @@
     {
       "id": "pcmanfm",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/pcmanfm/wasm-package.json",
       "historicalManifestSha256": "b24b5e3002e0dcbfbe3721e74159158ebd7a951316605d203958f28d03fedb45",
       "historicalEvidence": [
@@ -3343,9 +3349,15 @@
         "libfm",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "pcmanfm",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Source execution/export, installed consumers, local GUI file operations and browser reload remain pending. Application-launch callbacks and automatic menu-daemon startup are outside staged acceptance."
+      ],
+      "sourcePreparation": {
+        "commit": "c480734",
+        "scope": "Independently approved owned source preparation; exact historical blobs, dependency/output/license contracts and bounded headless consumers reviewed. LibFM precedes PCManFM."
+      }
     },
     {
       "id": "pcre2",
