@@ -54,6 +54,6 @@ try{
  await quit();await d.finish();await s.command('echo L3AFPAD-JWM-TERMINAL-RESTORED');report.status='passed';
 }catch(e){report.status='failed';report.error=String(e.stack||e);throw e;}
 finally{
- report.finishedAt=new Date().toISOString();if(s){try{await bounded((async()=>{await writeFile(resolve(run,stem+'.log'),await s.page.evaluate(()=>shell.busybox.log),{flag:'wx'});})(),5000);}catch(e){report.logError=String(e);}try{await bounded(s.close(),30000);}catch(e){report.cleanupError=String(e);report.status='failed';}}
+ report.finishedAt=new Date().toISOString();if(s){if(report.status==='failed'){try{report.diskBytes=await bounded(s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),path),5000);await bounded((async()=>writeFile(resolve(run,stem+'-failure.png'),await (await visibleCanvas(s.page)).screenshot(),{flag:'wx'}))(),5000);}catch(e){report.diagnosticError=String(e);}}try{await bounded((async()=>{await writeFile(resolve(run,stem+'.log'),await s.page.evaluate(()=>shell.busybox.log),{flag:'wx'});})(),5000);}catch(e){report.logError=String(e);}try{await bounded(s.close(),30000);}catch(e){report.cleanupError=String(e);report.status='failed';}}
  await writeFile(resolve(run,stem+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});if(report.status!=='passed')process.exitCode=1;
 }
