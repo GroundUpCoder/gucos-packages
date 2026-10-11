@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "name": "quake",
+  "attempt": "condebug-reloaded",
+  "canvasHelperSha256": "e96db3cefaa5384a1c535d2b6a28cc936ca305ad9cb9afc354b708809cd24969",
+  "startedAt": "2026-10-11T12:13:04.562Z",
+  "scope": "Retained shareware rendering, new-game/level keyboard workload and process cleanup; no sound or multiplayer acceptance",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "queryPhase": "reloaded",
+  "queryBinding": {
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "profile": "/Users/jku/git/gucos-packages-porting/test-results/migration/cli-shooters-gucos-binary-v3/profile",
+    "configSha256": "1aa137f960aa968a7eb966b92cc73ffcdfe97c406fbb01fe09223a0b9d74a3dc",
+    "candidatesSha256": "6b7c3a4708797770f07dd7f448ecd9657d1abb9e27a1da53ed8aad2de1811fcb",
+    "checksumsSha256": "5820f72afadf64964727ac8acb2a2c41091f6402e6562af8e613acf7853174c7",
+    "harnessSha256": "1899a6586c4fa01e87113da6ac2da7bdcbf2d7fc5b41288a0ca392c0d19309de"
+  },
+  "debugPath": "/home/user/.local/share/quake/id1/qconsole.log",
+  "debugSamples": [
+    {
+      "file": "quake-condebug-reloaded-debug-sample-001.log",
+      "label": "pre-reload-retained",
+      "size": 4115,
+      "sha256": "516d7e0e6b8915c025adf8485b3e1e068e8be8884876944a333b4b8f5bb465e8"
+    },
+    {
+      "file": "quake-condebug-reloaded-debug-sample-002.log",
+      "label": "post-launch-initialization",
+      "size": 408,
+      "sha256": "de784a0cad82902e67c0a008ec29577db45ea519e7360f5f5e1f8bda0d233d1a"
+    },
+    {
+      "file": "quake-condebug-reloaded-debug-sample-003.log",
+      "label": "query-1",
+      "size": 1583,
+      "sha256": "63312910fcb435c128db268fbb1e548d6a51be36a095809238be9a2790279eb2"
+    },
+    {
+      "file": "quake-condebug-reloaded-debug-sample-004.log",
+      "label": "query-2",
+      "size": 2790,
+      "sha256": "32ab2e32de0e2869056ac2aa08914d038cecffb58d52422da28d5f9b926b7b3f"
+    },
+    {
+      "file": "quake-condebug-reloaded-debug-sample-005.log",
+      "label": "query-3",
+      "size": 4094,
+      "sha256": "d17a6f63d4caf317bf63d874210636dba0f6f57ccd8c54691787140c86f72beb"
+    }
+  ],
+  "priorDebug": {
+    "attempt": "condebug-normal",
+    "sha256": "516d7e0e6b8915c025adf8485b3e1e068e8be8884876944a333b4b8f5bb465e8",
+    "size": 4115
+  },
+  "retainedLogVerifiedAcrossReload": true,
+  "harnessSha256": "1899a6586c4fa01e87113da6ac2da7bdcbf2d7fc5b41288a0ca392c0d19309de",
+  "colors": 1226,
+  "engineLogResetVerified": true,
+  "quakeQueries": [
+    {
+      "serial": 1,
+      "command": "status; edict 1; echo quakestate1done",
+      "marker": "quakestate1done",
+      "logOffset": 408,
+      "origin": "'480.0 -352.0  88.0'",
+      "ammo": 25
+    },
+    {
+      "serial": 2,
+      "command": "status; edict 1; echo quakestate2done",
+      "marker": "quakestate2done",
+      "logOffset": 1583,
+      "origin": "'480.0 -151.0  61.8'",
+      "ammo": 25
+    },
+    {
+      "serial": 3,
+      "command": "status; edict 1; echo quakestate3done",
+      "marker": "quakestate3done",
+      "logOffset": 2790,
+      "origin": "'480.0 -101.4  49.4'",
+      "ammo": 24
+    }
+  ],
+  "inputEvidence": {
+    "before": {
+      "origin": "'480.0 -352.0  88.0'",
+      "ammo": 25
+    },
+    "moved": {
+      "origin": "'480.0 -151.0  61.8'",
+      "ammo": 25
+    },
+    "fired": {
+      "origin": "'480.0 -101.4  49.4'",
+      "ammo": 24
+    }
+  },
+  "debugFinal": {
+    "size": 4094,
+    "sha256": "d17a6f63d4caf317bf63d874210636dba0f6f57ccd8c54691787140c86f72beb"
+  },
+  "finishedAt": "2026-10-11T12:13:22.695Z"
+}

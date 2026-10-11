@@ -1,0 +1,51 @@
+]status; edict 1; echo quakestate2done
+host:    UNNAMED
+version: 1.09
+map:     e1m1
+players: 1 active (1 max)
+
+#1  player              0   0:00:12
+   LOCAL
+
+EDICT 1:
+modelindex      59.0
+absmin         '463.0 -169.8  37.2'
+absmax         '497.0 -135.8  95.2'
+movetype         3.0
+solid            3.0
+origin         '480.0 -152.8  62.2'
+oldorigin      '480.0 -155.9  63.0'
+velocity       '  0.0 170.5 -42.6'
+angles         ' -0.0  90.0   0.0'
+classname      player
+model          progs/player.mdl
+frame           10.0
+mins           '-16.0 -16.0 -24.0'
+maxs           ' 16.0  16.0  32.0'
+size           ' 32.0  32.0  56.0'
+think          player_run()
+nextthink        7.7
+health         100.0
+weapon           1.0
+weaponmodel    progs/v_shot.mdl
+currentammo     25.0
+ammo_shells     25.0
+items          4353.0
+takedamage       2.0
+view_ofs       '  0.0   0.0  22.0'
+v_angle        '  0.0  90.0   0.0'
+idealpitch       2.4
+netname        player
+flags          4616.0
+colormap         1.0
+team             1.0
+max_health     100.0
+watertype       -1.0
+th_pain        player_pain()
+th_die         PlayerDie()
+walkframe        5.0
+attack_finished  1.4
+jump_flag      -80.0
+air_finished    19.6
+dmg              2.0
+quakestate2done 
