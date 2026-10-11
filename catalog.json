@@ -300,6 +300,21 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/336f3fbdf644cbf68f53ab50f15431df41a733e2/apps/qjs/package.json",
       "sha256": "4510d4c8d9cd2d45ec63a1c3f32d3bbb134a0fd8dae93e312516107b8eab427a",
       "size": 1819
+    },
+    "harfbuzz-static": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ac9d6658097e3f40c7642c793d51f9a5120a6613/apps/harfbuzz-static/package.json",
+      "sha256": "59de229dacd9129a736a8f48e763396969303c327c23fc6d8ba369e86c875c0d",
+      "size": 2857
+    },
+    "harfbuzz": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ac9d6658097e3f40c7642c793d51f9a5120a6613/apps/harfbuzz/package.json",
+      "sha256": "3a975555c75f039efbd6340bd4aa42bfe2a7b10e8601eb1f8f564d661c3e52b3",
+      "size": 6456
+    },
+    "pango": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ac9d6658097e3f40c7642c793d51f9a5120a6613/apps/pango/package.json",
+      "sha256": "75bb5ada186617ce9863a5c562ddc653a4fc5ab9d35b17f84bbb9a2a85093b96",
+      "size": 6463
     }
   }
 }
