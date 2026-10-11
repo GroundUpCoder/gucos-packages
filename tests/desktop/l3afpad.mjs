@@ -35,7 +35,8 @@ try{
  }
  async function chooser(save){
   await s.page.keyboard.press(save?'Control+Shift+s':'Control+o');const dialog=await observe(d,'window',save?'Save As':'Open');
-  await s.page.keyboard.press('Control+l');await s.page.keyboard.type(path);assert(dialog.width>=400&&dialog.height>=250);await canvas.click({position:await canvasPosition(canvas,{x:dialog.x+dialog.width-52,y:dialog.y+dialog.height-24})});await observe(d,'absent',save?'Save As':'Open');
+  await s.page.keyboard.press('Control+l');await s.page.keyboard.type(path);// Allow chooser filename metadata validation to settle before accepting.
+  await s.page.waitForTimeout(5000);assert(dialog.width>=400&&dialog.height>=250);await canvas.click({position:await canvasPosition(canvas,{x:dialog.x+dialog.width-52,y:dialog.y+dialog.height-24})});await observe(d,'absent',save?'Save As':'Open');
  }
  async function disk(text){await poll(s.page,async({path,text})=>{const actual=await shell.busybox.read(path),expected=new TextEncoder().encode(text);return actual?.length===expected.length&&expected.every((b,i)=>actual[i]===b);},{path,text},15000);}
  async function save(text){await s.page.keyboard.press('Control+s');await disk(text);}
