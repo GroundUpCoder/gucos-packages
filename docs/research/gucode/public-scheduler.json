@@ -1,0 +1,177 @@
+{
+  "startedAt": "2026-10-11T09:01:37.937085+00:00",
+  "parentPid": 97825,
+  "status": "passed",
+  "preservedExistingJobIds": [
+    "4e496c5f-7715-46b5-958f-11a37db05a8f",
+    "d39885ee-ee7c-44ac-9be2-29b74cf5e9a9",
+    "c0d1f8e3-3414-4c65-ae3c-c00cc4de2a36",
+    "3aa8ee42-76da-432a-b011-88885594f2fb",
+    "e6121b1b-ad50-4804-94de-01f5ebbfc204"
+  ],
+  "harnessSha256": "a725a78bb4e0e952e79c165641e08c6600f95bb6109fab9ba7988f48dc7d30de",
+  "attempts": [
+    {
+      "number": 1,
+      "startedAt": "2026-10-11T09:01:37.937435+00:00",
+      "log": "scheduler-001.log",
+      "schedulerPid": 97831,
+      "finishedAt": "2026-10-11T09:01:40.008803+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 2,
+      "startedAt": "2026-10-11T09:02:10.014368+00:00",
+      "log": "scheduler-002.log",
+      "schedulerPid": 98526,
+      "finishedAt": "2026-10-11T09:02:12.088471+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 3,
+      "startedAt": "2026-10-11T09:02:42.099383+00:00",
+      "log": "scheduler-003.log",
+      "schedulerPid": 99397,
+      "finishedAt": "2026-10-11T09:02:44.174010+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 4,
+      "startedAt": "2026-10-11T09:03:14.177734+00:00",
+      "log": "scheduler-004.log",
+      "schedulerPid": 478,
+      "finishedAt": "2026-10-11T09:03:16.256106+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 5,
+      "startedAt": "2026-10-11T09:03:46.266991+00:00",
+      "log": "scheduler-005.log",
+      "schedulerPid": 1692,
+      "finishedAt": "2026-10-11T09:03:48.366920+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 6,
+      "startedAt": "2026-10-11T09:04:18.377747+00:00",
+      "log": "scheduler-006.log",
+      "schedulerPid": 2465,
+      "finishedAt": "2026-10-11T09:04:20.444398+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 7,
+      "startedAt": "2026-10-11T09:04:50.445592+00:00",
+      "log": "scheduler-007.log",
+      "schedulerPid": 3131,
+      "finishedAt": "2026-10-11T09:04:52.561153+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 8,
+      "startedAt": "2026-10-11T09:05:22.562531+00:00",
+      "log": "scheduler-008.log",
+      "schedulerPid": 3847,
+      "finishedAt": "2026-10-11T09:05:24.642133+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 9,
+      "startedAt": "2026-10-11T09:05:54.652932+00:00",
+      "log": "scheduler-009.log",
+      "schedulerPid": 4418,
+      "finishedAt": "2026-10-11T09:05:56.726249+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 10,
+      "startedAt": "2026-10-11T09:06:26.732819+00:00",
+      "log": "scheduler-010.log",
+      "schedulerPid": 5232,
+      "finishedAt": "2026-10-11T09:06:28.802851+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 11,
+      "startedAt": "2026-10-11T09:06:58.813571+00:00",
+      "log": "scheduler-011.log",
+      "schedulerPid": 5971,
+      "finishedAt": "2026-10-11T09:07:00.890268+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 12,
+      "startedAt": "2026-10-11T09:07:30.901116+00:00",
+      "log": "scheduler-012.log",
+      "schedulerPid": 6785,
+      "finishedAt": "2026-10-11T09:07:32.990245+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 13,
+      "startedAt": "2026-10-11T09:08:02.995614+00:00",
+      "log": "scheduler-013.log",
+      "schedulerPid": 7603,
+      "finishedAt": "2026-10-11T09:08:05.075658+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 14,
+      "startedAt": "2026-10-11T09:08:35.076984+00:00",
+      "log": "scheduler-014.log",
+      "schedulerPid": 8171,
+      "finishedAt": "2026-10-11T09:08:37.161999+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 15,
+      "startedAt": "2026-10-11T09:09:07.164825+00:00",
+      "log": "scheduler-015.log",
+      "schedulerPid": 8654,
+      "finishedAt": "2026-10-11T09:09:09.237354+00:00",
+      "returncode": 75,
+      "browserGateStarted": false,
+      "admissionRetry": true
+    },
+    {
+      "number": 16,
+      "startedAt": "2026-10-11T09:09:39.242847+00:00",
+      "log": "scheduler-016.log",
+      "schedulerPid": 9305,
+      "schedulerJobId": "6e06655e-8a85-4696-8697-1eee68da1818",
+      "finishedAt": "2026-10-11T09:38:12.097295+00:00",
+      "returncode": 0,
+      "browserGateStarted": true
+    }
+  ],
+  "finishedAt": "2026-10-11T09:38:12.097332+00:00",
+  "returncode": 0
+}

@@ -89,3 +89,21 @@ handles up to six real keyboard approval prompts before requiring return to the
 agent prompt. This is test instrumentation, not a product fix. The durable parent
 again uses only the ordinary shared scheduler and retries only admission errors.
 Tag v0.1.0 and full public interactive acceptance remain pending.
+
+## Final observed result — supersedes pending status above
+
+Diagnostic job `6e06655e-8a85-4696-8697-1eee68da1818` executed successfully.
+Production browser report: 09:37:04.885–09:38:11.759 UTC. Durable scheduler exit
+0: 09:38:12.097 UTC. Evidence: `public.json`, `public.log`, and
+`public-scheduler.json`. The transcript shows one approval, an actual verified
+`hello\n` file write through DeepSeek, return to gucode prompt, and `/exit`.
+Public installation/payload verification and reload passed for the scope above.
+The key was removed and the context closed. Prior failures remain historical
+evidence; the previous post-approval timeout's cause remains unknown.
+
+ANSI color was not observed. Separate production-origin libcurl archive relink
+is not claimed: candidate installed-archive relink/network tests plus identical
+public-installed artifacts and production gucode networking establish the tested
+scope. This report accepts these two packages within that stated scope, not other
+catalog entries. The migration owner remains responsible for any whole-catalog
+baseline decision and its independently accepted package set.
