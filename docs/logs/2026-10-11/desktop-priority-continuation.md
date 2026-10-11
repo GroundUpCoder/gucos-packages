@@ -204,3 +204,18 @@ current catalog entries. Current, remote-main and published `807f2bc` catalogs
 were compared and are identical. The preservation baseline therefore advances
 to `807f2bc5d31179433e6e87a990c0f4514746d951` (91), with each package retaining
 its recorded test scope. This does not complete the remaining migration queue.
+
+The CPython retained-extension driver independently passed bounded execution
+review. Its reviewed code is copied unchanged as
+`tests/migration/cpython-retained-reload.mjs`, SHA-256
+`aa6fddc892243037612c432836426fc53236c02ac20ed23ba132f9c61a6592e5`.
+The leading proposal comment is retained for byte identity; this record supplies
+the subsequent approval. One attempt and frozen binary profile must run
+`stage install -> driver normal -> stage reload -> driver reloaded`. Normal runs
+the exact installed consumer itself, so a separate consumer stage would duplicate
+work. Reload imports the same retained extension and checks five retained files
+without compilation or reseeding, plus `.pth` inclusion/exclusion/cleanup.
+Execution requires reviewed binary/dependency artifacts and a browser reservation;
+hard-timeout cleanup remains unverified, so failed profiles are retained.
+No private coordination notes or metadata were copied, and no runtime acceptance
+is claimed by this implementation review.
