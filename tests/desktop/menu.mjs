@@ -10,11 +10,13 @@ export async function installObserver(s){
  await s.command('cc /tmp/jwm-observe.c -I/usr/local/include -L/usr/local/lib -lX11 -lxcb -lXau -o /tmp/jwm-observe');
  return {observerSha256:hash(source),menuHelperSha256:hash(await readFile(new URL(import.meta.url)))};
 }
-export async function observe(s,mode,title){
- assert(['wm','menu','window','absent'].includes(mode));assert(!title||/^[A-Za-z0-9 ._-]+$/.test(title));
+export async function observe(s,mode,title,detail){
+ assert(['wm','menu','window','absent','child','pixels'].includes(mode));assert(!title||/^[A-Za-z0-9 ._-]+$/.test(title));
  let timer;
- const log=await Promise.race([s.command(`DISPLAY=:1 /tmp/jwm-observe ${mode}${title?` '${title}'`:''}`),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('X observer exceeded 40 seconds; caller must close the session')),40000);})]).finally(()=>clearTimeout(timer));
+ assert(detail===undefined||/^[0-9.]+$/.test(String(detail)));
+ const log=await Promise.race([s.command(`DISPLAY=:1 /tmp/jwm-observe ${mode}${title?` '${title}'`:''}${detail===undefined?'':` '${detail}'`}`),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('X observer exceeded 40 seconds; caller must close the session')),40000);})]).finally(()=>clearTimeout(timer));
  if(mode==='wm'||mode==='absent')return log;
+ if(mode==='pixels'){const m=log.match(/PIXELS (\d+) (\d+) (\d+) (\d+)/);assert(m,'Missing observed pixels');const [hash,different,width,height]=m.slice(1).map(Number);return {hash,different,width,height};}
  const m=log.match(/WINDOW (\d+) (-?\d+) (-?\d+) (\d+) (\d+) (\d+)/);assert(m,'Live X window geometry missing');
  const [id,x,y,width,height,pid]=m.slice(1).map(Number);return {id,x,y,width,height,pid};
 }
