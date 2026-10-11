@@ -111,6 +111,17 @@ remains unchanged. Building 40 games does not establish gameplay for all 40.
 
 LibFM/menu-cache and PCManFM source candidates `c480734` preserve 400 and 124
 historical blobs with 111 and 15 outputs. Source-only checks pass. Independent
-implementation review is pending before source execution; local GUI file
-operations and reload are separate gates. Application-launch callbacks remain
+implementation review approved source execution; the frozen source job is queued.
+Local GUI file operations and reload are separate gates. Application-launch callbacks remain
 outside the proposed scope.
+
+PCManFM layout discovery `ade6e96` independently passed execution review. The
+reviewed driver SHA-256 is
+`ca0266acd2b4e339e8a7b2db9c3130f2c42174c80675761169518dd077d6e947`.
+Execution requires a reviewed LibFM/PCManFM binary fixture and installed dependency
+closure; the frozen source fixture is not eligible input. The bounded scope is
+real menu launch, fixture navigation, cancel-only new-folder dialog, unchanged
+fixture tree and bytes, and normal exit with terminal restoration. Rename is
+omitted. Screenshots must independently confirm the sole `probe.txt` and absence
+of error or progress overlays. This approval establishes no functional, reload
+or public acceptance. Original implementation authorship is retained.
