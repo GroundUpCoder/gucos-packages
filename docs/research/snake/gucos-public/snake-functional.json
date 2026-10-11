@@ -1,0 +1,26 @@
+{
+  "startedAt": "2026-10-11T04:37:56.529Z",
+  "status": "passed",
+  "checks": [
+    "frozen-output-checksums",
+    "initial-frame",
+    "timer-movement",
+    "actual-arrow-key-turn",
+    "wall-collision",
+    "restart",
+    "rendered-board-borders-head-food",
+    "single-q-exit",
+    "cursor-and-alternate-screen-restored",
+    "termios-restored",
+    "relaunch",
+    "ctrl-c-exit",
+    "termios-restored-after-ctrl-c"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/binaries/d7b6a5804fdbd3bfa8cc6782e8204f44c187b8d9445eb4ffefd1aa9934a3ee20.tar",
+    "sha256": "d7b6a5804fdbd3bfa8cc6782e8204f44c187b8d9445eb4ffefd1aa9934a3ee20",
+    "size": 39936
+  },
+  "finishedAt": "2026-10-11T04:37:59.495Z"
+}

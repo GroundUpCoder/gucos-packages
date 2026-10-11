@@ -1,0 +1,14 @@
+{
+  "baselineRevision": "9390bab6ae40e973fa5082cecff850aefa4c6ac5",
+  "upgrades": {
+    "jwm": {
+      "oldCatalogEntry": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9474fca194c5e2f23b321a50a8ba08227888d10f/apps/jwm/package.json",
+        "sha256": "62a8d10be4092d8be29529b9bbe8d5a86ba55c9f2dfb8a2c1cdf17d43568d6ae",
+        "size": 2819
+      },
+      "oldVersion": "2.4.6-1",
+      "newVersion": "2.4.6-2"
+    }
+  }
+}

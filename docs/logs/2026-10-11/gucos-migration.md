@@ -28,5 +28,6 @@ are explicitly opt-in via WASM_POSIX_HISTORICAL_CHECKOUT; ordinary published
 package operations need no historical checkout. Historical logs and recipes on
 checkpoint branches retain their original references as provenance.
 
-Original repositories require owner action for archival because the collaborator
-account lacks admin rights. No old browser disk or historical worktree was removed.
+GitHub API verification on 2026-10-11 confirms both GroundUpCoder/wasm-posix
+and GroundUpCoder/wasm-posix-packages are archived. The owner completed archival
+after migration. No old browser disk or historical worktree was removed.

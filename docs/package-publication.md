@@ -36,3 +36,15 @@ candidate and live platform 1.0 acceptance. They may remain on the verified lega
 mapping. This guidance changes no existing manifest, catalog or binary and does
 not issue new platform metadata by itself. The package journal records the
 [completed acceptance](logs/2026-10-10/platform-1.0-package-acceptance.md).
+
+## Explicit upgrades of accepted packages
+
+`tools/pin-migration.py` reads `tools/publication-baseline.json`. New additions
+keep all baseline catalog entries unchanged. An existing package upgrade requires
+`--upgrade-plan PATH`, recording the exact baseline revision, old catalog entry,
+old version and new version; the output paths and modes must remain identical.
+The plan and exact artifacts require independent review. Pinning is deliberately
+one-shot against the pre-upgrade catalog. After reviewed publication and live
+upgrade/install/reload acceptance, advance the baseline to that accepted catalog
+commit before publishing subsequent additions. Do not advance it to an unaccepted
+candidate merely to bypass a preservation check.
