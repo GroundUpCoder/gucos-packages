@@ -1,0 +1,47 @@
+gucman: unknown source
+
+gucman: build migration:2048: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 17462 bytes; transfer finished
+gucman: Resolving: migration:2048
+gucman: Downloading manifest for migration:2048 (1295 bytes)
+  Connecting; waiting for response…
+  Downloaded 1295 / 1295 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:2048
+gucman: Checking cached object: manifest for migration:2048
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: 2048 (0 remaining after this)
+gucman: Downloading 2048 source: source.tar (30720 bytes)
+  Connecting; waiting for response…
+  Downloaded 30720 / 30720 bytes (100%); transfer finished
+gucman: Verifying download: 2048 source: source.tar
+gucman: Checking cached object: 2048 source: source.tar
+gucman: Downloading 2048 source: build.sh (300 bytes)
+  Connecting; waiting for response…
+  Downloaded 300 / 300 bytes (100%); transfer finished
+gucman: Verifying download: 2048 source: build.sh
+gucman: Checking cached object: 2048 source: build.sh
+gucman: Downloading 2048 source: test.sh (142 bytes)
+  Connecting; waiting for response…
+  Downloaded 142 / 142 bytes (100%); transfer finished
+gucman: Verifying download: 2048 source: test.sh
+gucman: Checking cached object: 2048 source: test.sh
+Building migration:2048; running trusted recipe with access to your guest files
+22 functions, 27679 bytes
+All 13 tests executed successfully
+2048-LOGIC-PASS
+gucman: Installing 2048: 0/4 files
+gucman: Installing 2048: 4/4 files
+gucman: Preparing checksums: 2048
+gucman: Checksummed 2048: 4/4 files
+gucman: Saving transaction: 2048
+gucman: Verifying staged files: 2048
+gucman: Activating: 2048
+Installed migration:2048 0.1.0-1
+
+8d77c54d84083668a4b5e6a678a92503d3587d9e3d15103e19bdc557dc9c7555  /home/user/migration-export.tar
+35328
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

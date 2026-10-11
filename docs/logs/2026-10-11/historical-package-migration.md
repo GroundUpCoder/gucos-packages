@@ -115,3 +115,11 @@ evidence retained under pcg32-host-preparation; not a generated-byte identity
 claim. Stager initially rejected stale17 count before writing any package;
 updated to require fresh report count19. Candidate retains six guest modes and
 six SDK outputs; source check passes, guest acceptance remains pending.
+
+## Dynamic workloads source acceptance
+
+Reservatione48b6f24 passed all four separate source stages on61a: Lua5.5 (7
+outputs/1550848 bytes), LPeg (5/172544),2048 (4/35328), SQLite series (2/52224).
+Retained exact raw exports/receipts and batch-13/source logs/reports. Baseline
+Lua5.4 is unchanged. Module tests cover loading/cache/entry lookup, not actual
+DSO unloading. Fresh binary and2048 gameplay acceptance remain pending.

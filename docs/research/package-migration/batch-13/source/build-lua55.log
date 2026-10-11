@@ -1,0 +1,49 @@
+gucman: unknown source
+
+gucman: build migration:lua55: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 17462 bytes; transfer finished
+gucman: Resolving: migration:lua55
+gucman: Downloading manifest for migration:lua55 (1521 bytes)
+  Connecting; waiting for response…
+  Downloaded 1521 / 1521 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:lua55
+gucman: Checking cached object: manifest for migration:lua55
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: lua55 (0 remaining after this)
+gucman: Downloading lua55 source: source.tar (993280 bytes)
+  Connecting; waiting for response…
+  Downloaded 993280 / 993280 bytes (100%); transfer finished
+gucman: Verifying download: lua55 source: source.tar
+gucman: Checking cached object: lua55 source: source.tar
+gucman: Downloading lua55 source: build.sh (895 bytes)
+  Connecting; waiting for response…
+  Downloaded 895 / 895 bytes (100%); transfer finished
+gucman: Verifying download: lua55 source: build.sh
+gucman: Checking cached object: lua55 source: build.sh
+gucman: Downloading lua55 source: test.sh (1140 bytes)
+  Connecting; waiting for response…
+  Downloaded 1140 / 1140 bytes (100%); transfer finished
+gucman: Verifying download: lua55 source: test.sh
+gucman: Checking cached object: lua55 source: test.sh
+Building migration:lua55; running trusted recipe with access to your guest files
+1162 functions, 626228 bytes
+LUA55-CLOSURE-BYTECODE-PASS
+2 functions, 4489 bytes
+LUA55-DYNAMIC-MODULE-PASS
+1131 functions, 614252 bytes
+gucman: Installing lua55: 0/7 files
+gucman: Installing lua55: 7/7 files
+gucman: Preparing checksums: lua55
+gucman: Checksummed lua55: 7/7 files
+gucman: Saving transaction: lua55
+gucman: Verifying staged files: lua55
+gucman: Activating: lua55
+Installed migration:lua55 5.5.0-1
+
+c7367892bdcad10585decd1a4a9a09488e6234b5e01daf990f158004879bd9a1  /home/user/migration-export.tar
+1550848
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

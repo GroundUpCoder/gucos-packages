@@ -9,7 +9,7 @@
     {
       "id": "2048",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "vendor/2048/wasm-package.json",
       "historicalManifestSha256": "ef89b37a38270f6b77906f9448c4e29faa1154a11d0b28f82f1a20c657af5c68",
       "historicalEvidence": [
@@ -39,9 +39,15 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "scope": "Fresh guest source build, original retained recipe tests, install and export; four packages18 outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/source"
+        }
+      ],
       "blockers": [
-        "Guest source/binary/public gates pending.",
+        "Fresh binary installed consumers/reload and public acceptance pending.",
         "Interactive move/restart/quit and cursor restoration acceptance pending."
       ],
       "candidate": "apps/2048",
@@ -4696,12 +4702,18 @@
     {
       "id": "lpeg",
       "kind": "additional-workload",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "scope": "LPeg 1.1.0; requires Lua dynamic-module profile",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "scope": "Fresh guest source build, original retained recipe tests, install and export; four packages18 outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/source"
+        }
+      ],
       "blockers": [
-        "Guest source/binary/public gates pending on reviewed lua55 dependency."
+        "Fresh binary installed consumers/reload and public acceptance pending."
       ],
       "candidate": "apps/lpeg",
       "sourceReview": {
@@ -4713,12 +4725,18 @@
     {
       "id": "sqlite-series",
       "kind": "additional-workload",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "scope": "SQLite generate_series loadable extension",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "scope": "Fresh guest source build, original retained recipe tests, install and export; four packages18 outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/source"
+        }
+      ],
       "blockers": [
-        "Independent source review and fresh guest/binary/public acceptance pending."
+        "Fresh binary installed consumers/reload and public acceptance pending."
       ],
       "candidate": "apps/sqlite-series",
       "sourceReview": {
@@ -4799,12 +4817,18 @@
     {
       "id": "lua55",
       "kind": "historical-profile",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "candidate": "apps/lua55",
       "mapping": "Retained Lua5.5 dynamic-module and static embedding profile; preserves baseline Lua5.4",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "scope": "Fresh guest source build, original retained recipe tests, install and export; four packages18 outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/source"
+        }
+      ],
       "blockers": [
-        "Fresh guest/binary/public acceptance pending."
+        "Fresh binary installed consumers/reload and public acceptance pending."
       ],
       "sourceReview": {
         "commit": "0ccac81ea8ff1967f2ae16b53836557850f75837",

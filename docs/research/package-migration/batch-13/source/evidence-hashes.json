@@ -1,0 +1,15 @@
+{
+  "build-2048.json": "d467fadacfc96c39e9ed431c42c4cf2dde746dcca44844456362379213ce137b",
+  "build-2048.log": "dd5faab55f97817363792a6bfb45aa9af88f8c79195674897364adcbcad872b9",
+  "build-lpeg.json": "eb3a0b5c3612034cdb5a178254469bc15ecf7a1be750c2be97d5a855ae841ade",
+  "build-lpeg.log": "8d3c8f5e62eebbce95ed35bc1715164086e4265306b4a95357f538beb9645053",
+  "build-lua55.json": "c2b114db07099b7535f7a04b45d872fe6ad3969a3de842e16fe8d8a097131dfd",
+  "build-lua55.log": "7e5308a7bbd7949597b584b07945670dd5938a4b170deaee9e5b2bb72451b891",
+  "build-sqlite-series.json": "5facf5c5df0c7aafedc2f89b1b911049c8ef5e0b1b1cb1ee2168df8b4d927297",
+  "build-sqlite-series.log": "f74893275a00b550b06a5e8392582db645e572d6a418b4ac0ff65ffbeb89c9c5",
+  "candidate-manifests.json": "d9583b34730b1895f7bdeb64c928e9a7731910e6e86bd9c5b4f171100b8df2b6",
+  "config.json": "23df4ce50ce400e1f55eb92505857d4043103828fc7d9f6e984102bbf565c28b",
+  "dependencies-sqlite3.json": "4a514a76e7d487317556632c266187733d4a2d4dca9c27a29801363229e089cc",
+  "dependencies.log": "894c917f6b7bca208f745a65e05274d76ea782bbaeb0c355bae4bc9c3b0618dc",
+  "observed-runtime.json": "de20401ccedb50e9776f19679c819ca6c161c100c86b2aece02012015fee2138"
+}
