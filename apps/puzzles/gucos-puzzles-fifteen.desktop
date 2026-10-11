@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Fifteen
+Exec=sgt-fifteen
+TryExec=sgt-fifteen
+Terminal=false
+Categories=Game;LogicGame;

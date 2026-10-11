@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/puzzles/source",
+  "archiveSha256": "41b1d3406a4f10f4d79816c2378fd11d071b4ba25dbbc070d0540e8aa5815c6f",
+  "status": "source migration candidate; no new guest execution"
+}
