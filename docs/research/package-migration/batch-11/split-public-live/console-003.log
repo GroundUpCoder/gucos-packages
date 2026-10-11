@@ -1,0 +1,23 @@
+{
+  tail: 'ifest for migration:pango (6463 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 6463 / 6463 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for migration:pango\n' +
+    'gucman: Checking cached object: manifest for migration:pango\n'
+}
+{
+  tail: 'nload: manifest for migration:gio-listmodel\n' +
+    'gucman: Checking cached object: manifest for migration:gio-listmodel\n' +
+    'gucman: Resolving: migration:gobject\n' +
+    'gucman: Downloading manifest for migration:gobject (4578 bytes)\n' +
+    '  Connecting; waiting for response…\n'
+}
+{
+  tail: '44 / 24.75 MiB (50%)\n' +
+    '  Downloaded 17.64 / 24.75 MiB (71%)\n' +
+    '  Downloaded 22.55 / 24.75 MiB (91%)\n' +
+    '  Downloaded 24.75 / 24.75 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: x11-server archive\n' +
+    'gucman: Checking cached object: x11-server archive\n'
+}
+

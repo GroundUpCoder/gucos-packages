@@ -83,3 +83,18 @@ Fresh gtk-binary-gpt-61a87f88 has28 manifests/1958 payload hashes frozen against
 public dependency artifacts, and queued install/consumers/reload/GUI with logs
 redirected to persistent files. PCG32 host retry is queued on the same exclusive
 browser lane as a conservative serial reservation; it cannot overlap GTK.
+
+## HarfBuzz/Pango public live acceptance
+
+Reservation7908c3a8 completed all three stages against immutable catalog6270524
+on public61a: install, static/shared shaping/subset/FreeType/Pango Arabic
+consumers and relink, browser reload,100 exact payload hashes and manifests.
+Raw execution-console chunks are preserved with reports/config/hashes in
+batch-11/split-public-live. Public-live additions41 ->44; catalog63 = baseline19
+plus44 split entries, not63 canonical historical rows. Historical HarfBuzz
+translator reproducibility limitation remains. GTK binary job7f8f8ebc now runs.
+
+PCG staging review621d547 held for incomplete consumed-input inventory and
+optimized-Python assertion bypass. Fixd2903c4 requires all consumed hash entries
+and explicit non-optimized guards in both tools; independent gpt reviewer
+approved the correction for preparation-tool scope only. No PCG guest pass yet.

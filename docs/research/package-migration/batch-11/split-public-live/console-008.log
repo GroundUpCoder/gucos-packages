@@ -1,0 +1,94 @@
+{
+  tail: 'gucman: unknown source\n' +
+    '33005 functions, 49103485 bytes\n' +
+    'HARFBUZZ-CONSUMER-PASS\n'
+}
+33005 functions, 49103478 bytes
+HARFBUZZ-CONSUMER-PASS
+2 functions, 16752 bytes
+HARFBUZZ-CONSUMER-PASS
+
+
+1273 functions, 1096438 bytes
+Fontconfig fonts: 2
+Layout: 547 x 140, lines=4, unknown=0
+PANGO-HARFBUZZ-ARABIC-PASS
+PANGO-PASS
+3 functions, 26350 bytes
+Fontconfig fonts: 2
+Layout: 547 x 140, lines=4, unknown=0
+PANGO-HARFBUZZ-ARABIC-PASS
+PANGO-PASS
+
+/usr/local/lib/libharfbuzz-runtime.a: OK
+/usr/local/lib/libharfbuzz.a: OK
+/usr/local/share/licenses/harfbuzz-static/ABeeZee-OFL.txt: OK
+/usr/local/share/licenses/harfbuzz-static/COPYING: OK
+
+97aec6da74d68241b4be5c0aa87a95cae782cde61a44d055872931c5fc05c4dc  /home/user/migration-export.tar
+92932096
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/include/harfbuzz/hb-aat-layout.h: OK
+/usr/local/include/harfbuzz/hb-aat.h: OK
+/usr/local/include/harfbuzz/hb-blob.h: OK
+/usr/local/include/harfbuzz/hb-buffer.h: OK
+/usr/local/include/harfbuzz/hb-common.h: OK
+/usr/local/include/harfbuzz/hb-cplusplus.hh: OK
+/usr/local/include/harfbuzz/hb-deprecated.h: OK
+/usr/local/include/harfbuzz/hb-draw.h: OK
+/usr/local/include/harfbuzz/hb-face.h: OK
+/usr/local/include/harfbuzz/hb-features.h: OK
+/usr/local/include/harfbuzz/hb-font.h: OK
+/usr/local/include/harfbuzz/hb-ft.h: OK
+/usr/local/include/harfbuzz/hb-glib.h: OK
+/usr/local/include/harfbuzz/hb-gpu.h: OK
+/usr/local/include/harfbuzz/hb-map.h: OK
+/usr/local/include/harfbuzz/hb-ot-color.h: OK
+/usr/local/include/harfbuzz/hb-ot-deprecated.h: OK
+/usr/local/include/harfbuzz/hb-ot-fetch.h: OK
+/usr/local/include/harfbuzz/hb-ot-font.h: OK
+/usr/local/include/harfbuzz/hb-ot-layout.h: OK
+/usr/local/include/harfbuzz/hb-ot-math.h: OK
+/usr/local/include/harfbuzz/hb-ot-meta.h: OK
+/usr/local/include/harfbuzz/hb-ot-metrics.h: OK
+/usr/local/include/harfbuzz/hb-ot-name.h: OK
+/usr/local/include/harfbuzz/hb-ot-shape.h: OK
+/usr/local/include/harfbuzz/hb-ot-var.h: OK
+/usr/local/include/harfbuzz/hb-ot.h: OK
+/usr/local/include/harfbuzz/hb-paint.h: OK
+/usr/local/include/harfbuzz/hb-raster.h: OK
+/usr/local/include/harfbuzz/hb-script-list.h: OK
+/usr/local/include/harfbuzz/hb-set.h: OK
+/usr/local/include/harfbuzz/hb-shape-plan.h: OK
+/usr/local/include/harfbuzz/hb-shape.h: OK
+/usr/local/include/harfbuzz/hb-style.h: OK
+/usr/local/include/harfbuzz/hb-subset-depend.h: OK
+/usr/local/include/harfbuzz/hb-subset-serialize.h: OK
+/usr/local/include/harfbuzz/hb-subset.h: OK
+/usr/local/include/harfbuzz/hb-unicode.h: OK
+/usr/local/include/harfbuzz/hb-vector.h: OK
+/usr/local/include/harfbuzz/hb-version.h: OK
+/usr/local/include/harfbuzz/hb.h: OK
+/usr/local/lib/libharfbuzz.so: OK
+/usr/local/lib/pkgconfig/harfbuzz-gpu.pc: OK
+/usr/local/lib/pkgconfig/harfbuzz-raster.pc: OK
+/usr/local/lib/pkgconfig/harfbuzz-subset.pc: OK
+/usr/local/lib/pkgconfig/harfbuzz-vector.pc: OK
+/usr/local/lib/pkgconfig/harfbuzz.pc: OK
+/usr/local/share/harfbuzz/translation.json: OK
+/usr/local/share/licenses/harfbuzz/ABeeZee-OFL.txt: OK
+/usr/local/share/licenses/harfbuzz/COPYING: OK
+
+{
+  tail: 'OK\n' +
+    '/usr/local/share/harfbuzz/translation.json: OK\n' +
+    '/usr/local/share/licenses/harfbuzz/ABeeZee-OFL.txt: OK\n' +
+    '/usr/local/share/licenses/harfbuzz/COPYING: OK\n' +
+    'd5a8985a9f8468ae46876c66f42d43ef482a43200ce4963ade320feefdbbffcb  /home/user/migration-export.tar\n'
+}
+d5a8985a9f8468ae46876c66f42d43ef482a43200ce4963ade320feefdbbffcb  /home/user/migration-export.tar
+61039104
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+

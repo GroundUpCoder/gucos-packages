@@ -1,0 +1,103 @@
+{
+  tail: 'aded 7.24 / 58.21 MiB (12%)\n' +
+    '  Downloaded 10.24 / 58.21 MiB (17%)\n' +
+    '  Downloaded 13.29 / 58.21 MiB (22%)\n' +
+    '  Downloaded 16.50 / 58.21 MiB (28%)\n' +
+    '  Downloaded 20.48 / 58.21 MiB (35%)\n' +
+    '  Downloaded 23.79 / 58.21 MiB (40%)\n' +
+    '  Downloaded 27.60 / 58.21 MiB (47%)\n'
+}
+gucman: install migration:harfbuzz: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 17526 bytes; transfer finished
+gucman: Resolving: migration:harfbuzz
+gucman: Downloading manifest for migration:harfbuzz (6456 bytes)
+  Connecting; waiting for response…
+  Downloaded 6456 / 6456 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:harfbuzz-static
+gucman: Checking cached object: manifest for migration:harfbuzz-static
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Plan: 8 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 8 packages
+gucman: Package 1/8: libiconv (7 remaining after this)
+Already installed: libiconv
+gucman: Package 2/8: libintl (6 remaining after this)
+Already installed: libintl
+gucman: Package 3/8: pcre2 (5 remaining after this)
+Already installed: pcre2
+gucman: Package 4/8: glib (4 remaining after this)
+Already installed: glib
+gucman: Package 5/8: zlib (3 remaining after this)
+Already installed: zlib
+gucman: Package 6/8: freetype (2 remaining after this)
+Already installed: freetype
+gucman: Package 7/8: harfbuzz-static (1 remaining after this)
+Already installed: harfbuzz-static
+gucman: Package 8/8: harfbuzz (0 remaining after this)
+gucman: Downloading harfbuzz archive (61039104 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 58.21 MiB (0%)
+  Downloaded 4.70 / 58.21 MiB (8%)
+  Downloaded 7.24 / 58.21 MiB (12%)
+  Downloaded 10.24 / 58.21 MiB (17%)
+  Downloaded 13.29 / 58.21 MiB (22%)
+  Downloaded 16.50 / 58.21 MiB (28%)
+  Downloaded 20.48 / 58.21 MiB (35%)
+  Downloaded 23.79 / 58.21 MiB (40%)
+  Downloaded 27.60 / 58.21 MiB (47%)
+  Downloaded 31.56 / 58.21 MiB (54%)
+  Downloaded 35.87 / 58.21 MiB (61%)
+  Downloaded 40.51 / 58.21 MiB (69%)
+  Downloaded 45.18 / 58.21 MiB (77%)
+  Downloaded 50.04 / 58.21 MiB (85%)
+  Downloaded 55.01 / 58.21 MiB (94%)
+  Downloaded 58.21 / 58.21 MiB (100%); transfer finished
+gucman: Verifying download: harfbuzz archive
+gucman: Checking cached object: harfbuzz archive
+gucman: Unpacking: harfbuzz
+gucman: Installing harfbuzz: 0/50 files
+gucman: Installing harfbuzz: 25/50 files
+gucman: Installing harfbuzz: 50/50 files
+gucman: Preparing checksums: harfbuzz
+gucman: Checksummed harfbuzz: 25/50 files
+gucman: Checksummed harfbuzz: 50/50 files
+gucman: Saving transaction: harfbuzz
+gucman: Verifying staged files: harfbuzz
+gucman: Activating: harfbuzz
+Installed migration:harfbuzz 14.5.0-1
+
+

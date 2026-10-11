@@ -1,0 +1,674 @@
+{
+  "harfbuzz-static": {
+    "format": 1,
+    "name": "harfbuzz-static",
+    "version": "14.5.0-1",
+    "dependencies": [
+      "glib",
+      "pcre2",
+      "libintl",
+      "libiconv",
+      "zlib",
+      "freetype"
+    ],
+    "dependencyRequirements": {
+      "glib": {
+        "version": "2.84.4-1"
+      },
+      "pcre2": {
+        "version": "10.46-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      },
+      "libiconv": {
+        "version": "1.18-1"
+      },
+      "zlib": {
+        "version": "1.3.2-1"
+      },
+      "freetype": {
+        "version": "2.14.1-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz-static/source.tar",
+        "sha256": "d51f616c1773d8fe43b8ac2d3bc7617e55f289033434e24ec4f6d0a828d741a2",
+        "size": 8048640
+      },
+      {
+        "path": "prepared.tar.gz",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz-static/prepared.tar.gz",
+        "sha256": "6920b176bb1da9759b77733cb9acc860b0ba0ed12f4f85ab7dbdbf3f6e6d67a9",
+        "size": 18677179
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz-static/build.sh",
+        "sha256": "7d6b7acf251243cbfec0407eebcb4c59b2e6646977d2c1bbdfcad74e9a2008a7",
+        "size": 543
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz-static/test.sh",
+        "sha256": "ec5b9a4fc56a0877ddb803a5b5b4d00aeec18a6f8e36e1c0ef7262ce03cf7628",
+        "size": 450
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libharfbuzz-runtime.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libharfbuzz.a",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz-static/ABeeZee-OFL.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz-static/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/harfbuzz-static/ABeeZee-OFL.txt",
+      "share/licenses/harfbuzz-static/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz-static/binaries/4c61baf13f213f7aa7eeace60e6d6c9612bfd7e8420146e41eacca3ca8b183b5.tar",
+      "sha256": "4c61baf13f213f7aa7eeace60e6d6c9612bfd7e8420146e41eacca3ca8b183b5",
+      "size": 92932096
+    }
+  },
+  "harfbuzz": {
+    "format": 1,
+    "name": "harfbuzz",
+    "version": "14.5.0-1",
+    "dependencies": [
+      "harfbuzz-static",
+      "glib",
+      "pcre2",
+      "libintl",
+      "libiconv",
+      "zlib",
+      "freetype"
+    ],
+    "dependencyRequirements": {
+      "glib": {
+        "version": "2.84.4-1"
+      },
+      "pcre2": {
+        "version": "10.46-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      },
+      "libiconv": {
+        "version": "1.18-1"
+      },
+      "zlib": {
+        "version": "1.3.2-1"
+      },
+      "freetype": {
+        "version": "2.14.1-1"
+      },
+      "harfbuzz-static": {
+        "version": "14.5.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/source.tar",
+        "sha256": "d51f616c1773d8fe43b8ac2d3bc7617e55f289033434e24ec4f6d0a828d741a2",
+        "size": 8048640
+      },
+      {
+        "path": "prepared.tar.gz",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/prepared.tar.gz",
+        "sha256": "6920b176bb1da9759b77733cb9acc860b0ba0ed12f4f85ab7dbdbf3f6e6d67a9",
+        "size": 18677179
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/build.sh",
+        "sha256": "28beb3b75b206b0ea28150ae4f75eb7e5e2e51951dc49f9d257c6ff55befbaa0",
+        "size": 1448
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/test.sh",
+        "sha256": "95c0f47212f7ca06709d947668e73ee3405546b7916c58e81c4acd618ac08a7f",
+        "size": 828
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "include/harfbuzz/hb-aat-layout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-aat.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-blob.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-buffer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-common.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-cplusplus.hh",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-deprecated.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-draw.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-face.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-features.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ft.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-glib.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-gpu.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-map.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-color.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-deprecated.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-fetch.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-layout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-math.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-meta.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-metrics.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-name.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-shape.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-var.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-paint.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-raster.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-script-list.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-set.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-shape-plan.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-shape.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-style.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-subset-depend.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-subset-serialize.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-subset.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-unicode.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-vector.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-version.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/libharfbuzz.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-gpu.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-raster.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-subset.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-vector.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/harfbuzz/translation.json",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz/ABeeZee-OFL.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/harfbuzz/ABeeZee-OFL.txt",
+      "share/licenses/harfbuzz/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/harfbuzz/binaries/ee4dfdeb64c0650362eab799d2cb94299025711238f4f8a45564cc3436255bd2.tar",
+      "sha256": "ee4dfdeb64c0650362eab799d2cb94299025711238f4f8a45564cc3436255bd2",
+      "size": 61039104
+    }
+  },
+  "pango": {
+    "format": 1,
+    "name": "pango",
+    "version": "1.50.14-1",
+    "dependencies": [
+      "cairo",
+      "fontconfig",
+      "fribidi",
+      "harfbuzz",
+      "gio-listmodel",
+      "gobject",
+      "glib",
+      "freetype",
+      "pcre2",
+      "libintl",
+      "libiconv",
+      "zlib"
+    ],
+    "dependencyRequirements": {
+      "cairo": {
+        "version": "1.18.4-1"
+      },
+      "fontconfig": {
+        "version": "2.15.0-1"
+      },
+      "fribidi": {
+        "version": "1.0.16-1"
+      },
+      "harfbuzz": {
+        "version": "14.5.0-1"
+      },
+      "gio-listmodel": {
+        "version": "2.84.4-1"
+      },
+      "gobject": {
+        "version": "2.84.4-1"
+      },
+      "glib": {
+        "version": "2.84.4-1"
+      },
+      "freetype": {
+        "version": "2.14.1-1"
+      },
+      "pcre2": {
+        "version": "10.46-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      },
+      "libiconv": {
+        "version": "1.18-1"
+      },
+      "zlib": {
+        "version": "1.3.2-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/source.tar",
+        "sha256": "ce3d982dc4c0ba6535d1c4e23dd02742d557f94d75191feba0a871f426c76b64",
+        "size": 6553600
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/build.sh",
+        "sha256": "7cee14afe8d4358399e3f82df5b9c27e37a9383af241985ad5f692ad6645a213",
+        "size": 4541
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/test.sh",
+        "sha256": "fbea7869db1396a6935d8486c3930123822b199024faf83e614085c5855d719f",
+        "size": 1244
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libpango-1.0.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpango-1.0.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpangoft2-1.0.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpangoft2-1.0.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpangocairo-1.0.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpangocairo-1.0.so",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-attributes.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-bidi-type.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-break.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-color.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-context.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-coverage.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-direction.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-engine.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-fontmap.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-fontset.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-fontset-simple.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-glyph.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-glyph-item.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-gravity.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-item.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-language.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-layout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-matrix.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-markup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-modules.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-renderer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-script.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-tabs.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-types.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-utils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-version-macros.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-enum-types.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-features.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangofc-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangofc-fontmap.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangofc-decoder.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangoft2.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangocairo.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/pango.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/pangocairo.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/pangoft2.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/pango/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/pango/Noto-CJK.txt",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/pango/COPYING",
+      "share/licenses/pango/Noto-CJK.txt"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/e1b9ab389dea429d91f1a7be81881baf49d69e4f/apps/pango/binaries/b366113bbb33dd92ca204cc960a6f4a0116b99e0a5ee806a2bfd23f8300799c9.tar",
+      "sha256": "b366113bbb33dd92ca204cc960a6f4a0116b99e0a5ee806a2bfd23f8300799c9",
+      "size": 3197952
+    }
+  }
+}
