@@ -1,0 +1,343 @@
+{
+  "status": "passed",
+  "mode": "normal",
+  "attempt": "retained",
+  "startedAt": "2026-10-11T13:03:02.081Z",
+  "scope": "Installed frozen CPython consumers; identical retained xxlimited extension and data across actual browser reload. No source-build, GUI, full conformance or publication acceptance.",
+  "harnessSha256": "fde1a0a80b5e9e39ff514bcd39a4f9976a35000de34bf75856f19ed3bc2d5de1",
+  "archiveVerification": {
+    "verifiedFiles": 1114
+  },
+  "source": {
+    "archiveSha256": "9ca67e57a8e850020cbbea4e3f6a1cbf03f19e75c3260f61e6b3d36395b67e17",
+    "consumerSha256": "fee38936e3d7cb96884520515542d74fd41b1ffd6026d87ebecfbdb4c3caf3a4",
+    "extensionSourceSha256": "d584c544395df05500fd9c7e2c3bf5ef8f24a7a5fbb84026a4bf38d66355412b"
+  },
+  "bindings": {
+    "configSha256": "18ebbefca039a5f8807e2b78fbb97f7b55f7550765edbf3cbab179a2f817831f",
+    "candidateManifestsSha256": "600426e35d68344222be3b43de22da460cbf0936d59b211f1272926ef544cfc6",
+    "distributionSnapshotSha256": "658486b88cde533abfe1616fe8ea09c74b2f3d83f657a96bb59f099123037b15",
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "inputCommit": "20bafe7784b7e30f8dd29fc00ec8442d282a1eb6",
+    "binary": {
+      "url": "http://127.0.0.1:65128/migration/cpython/binary.tar",
+      "sha256": "df58ee282b2a7da185ad43788d7b1e1df17871c284ca0651a402502c21d01d41",
+      "size": 31484928
+    },
+    "checksumsSha256": "df32cb0152e33372522b5a11aaa86928752e95ede778e534647567db5a14ba11",
+    "sessionHelperSha256": "6f37d0e065a3a8aad1a715191806bc59c3ed2011b629b95b60b29c4d064ce675",
+    "harnessSha256": "fde1a0a80b5e9e39ff514bcd39a4f9976a35000de34bf75856f19ed3bc2d5de1"
+  },
+  "stage": {
+    "reportSha256": "65f809356b160d98033408f03ea26b23153107e23768aa5582b4e2ef98c6d678",
+    "receiptSha256": "69307530a5aa3edcbdf10f6ea6539f9032cca8e1dd22abfed935f2a6cb1a98bc",
+    "action": "install"
+  },
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "rawCommands": [
+    {
+      "sequence": 1,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 0,
+      "valid": true,
+      "scriptSha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "faults": []
+    },
+    {
+      "sequence": 2,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 59104,
+      "valid": true,
+      "scriptSha256": "6d2248caec1ecc60a63ebeeab3fde5beeddfc17b79766d13d9efabecf6c6450c",
+      "faults": []
+    },
+    {
+      "sequence": 3,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 59104,
+      "valid": true,
+      "scriptSha256": "b3ba1fadba02d0368abaabca90840cbcba53691928e61bd714c04acd8520295a",
+      "faults": []
+    },
+    {
+      "sequence": 4,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 59104,
+      "valid": true,
+      "scriptSha256": "d3903a88d7d57dd6ce9bfd420db88530027c09d9395f30ebb00a5e1dee33d3e3",
+      "faults": []
+    },
+    {
+      "sequence": 5,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 63401,
+      "valid": true,
+      "scriptSha256": "3aa4d1693dbb136755524130e5a82536d8f6b318b5c3c9ce79e9f83564e24eec",
+      "faults": []
+    },
+    {
+      "sequence": 6,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 63401,
+      "valid": true,
+      "scriptSha256": "e326a3dee54d2f469d126e38d08cf63da0269a5c53068d173b454c526aa3ecf8",
+      "faults": []
+    },
+    {
+      "sequence": 7,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 63425,
+      "valid": true,
+      "scriptSha256": "abf0200f0cbd6ccfdfdf80a1aca2eedeea9addb2e689b92082375c12d139abcf",
+      "faults": []
+    },
+    {
+      "sequence": 8,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 63425,
+      "valid": true,
+      "scriptSha256": "27d5904714bf5c0f0e3b42e86ab04a5a1ec7a576fafa5701edbffde79ffa35c4",
+      "faults": []
+    },
+    {
+      "sequence": 9,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 64022,
+      "valid": true,
+      "scriptSha256": "bb6786a0448df25c7d22493467442fa821a74d21fcf1b9cfa8e0cf25ab0e46a7",
+      "faults": []
+    },
+    {
+      "sequence": 10,
+      "events": [
+        {
+          "type": "command-exit",
+          "status": 0
+        }
+      ],
+      "logLength": 123126,
+      "valid": true,
+      "scriptSha256": "6d2248caec1ecc60a63ebeeab3fde5beeddfc17b79766d13d9efabecf6c6450c",
+      "faults": []
+    }
+  ],
+  "pthBytesSha256": "eef5e567071343055e58de5d8add9d0dd93afa7c9f2e231301643b6af7ec09d1",
+  "guestScriptSha256": "bb6786a0448df25c7d22493467442fa821a74d21fcf1b9cfa8e0cf25ab0e46a7",
+  "result": {
+    "dataBytes": 37,
+    "executable": "/usr/local/bin/python3.14",
+    "extension": "/home/user/cpython-retained-retained/site/xxlimited.so",
+    "makefile": "/usr/local/lib/gucman/packages/cpython/current/lib/python3.14/config-3.14/Makefile",
+    "phase": "normal",
+    "prefix": "/usr/local/lib/gucman/packages/cpython/current",
+    "probe": "/home/user/cpython-retained-retained/site/cpython_reload_probe.py"
+  },
+  "retained": [
+    {
+      "path": "/home/user/cpython-retained-retained/site/xxlimited.so",
+      "size": 25047,
+      "sha256": "7872febe6be6bf23e661d00ed4c54a43ccb721997feb9e09a7ffd7f61eecdc92"
+    },
+    {
+      "path": "/home/user/cpython-retained-retained/site/cpython_reload_probe.py",
+      "size": 12,
+      "sha256": "0a775022744f64c352863f165f2e125898419999bc57c83204772036d0ef6b2e"
+    },
+    {
+      "path": "/home/user/cpython-retained-retained/probe.py",
+      "size": 1887,
+      "sha256": "4d8f75849f1a450ba24036ff937a7c4936c5235390d6d1c36fc3b6aef48dbcb6"
+    },
+    {
+      "path": "/home/user/cpython-retained-retained/data.bin",
+      "size": 37,
+      "sha256": "2808376610cf72be526a634a0211c9fcb2ed8d7d84ad8407d5fcfb811e4f5135"
+    },
+    {
+      "path": "/home/user/cpython-retained-retained/compressed.bin",
+      "size": 44,
+      "sha256": "31d0d9588be0127386072e5e97d9632264e7267f8aee685eb2a3148832b058dc"
+    }
+  ],
+  "consumer": {
+    "work": "/tmp/cpython-consumer.sutvuu",
+    "original": {
+      "path": "/tmp/cpython-consumer.sutvuu/xxlimited.so",
+      "size": 25047,
+      "sha256": "7872febe6be6bf23e661d00ed4c54a43ccb721997feb9e09a7ffd7f61eecdc92"
+    },
+    "siteCopy": {
+      "path": "/tmp/cpython-consumer.sutvuu/site/xxlimited.so",
+      "size": 25047,
+      "sha256": "7872febe6be6bf23e661d00ed4c54a43ccb721997feb9e09a7ffd7f61eecdc92"
+    },
+    "cleanedPth": "/usr/local/lib/python3.14/site-packages/cpython-consumer.sutvuu.pth",
+    "logSha256": "61a588e39c34c9e4f2d0e78214b042ca97d31d945dc34e5e8dc5443ec26b9e35"
+  },
+  "pthCleanupVerified": true,
+  "commandTimedOut": false,
+  "rawAudit": {
+    "records": [
+      {
+        "sequence": 1,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 0,
+        "valid": true
+      },
+      {
+        "sequence": 2,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 59104,
+        "valid": true
+      },
+      {
+        "sequence": 3,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 59104,
+        "valid": true
+      },
+      {
+        "sequence": 4,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 59104,
+        "valid": true
+      },
+      {
+        "sequence": 5,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 63401,
+        "valid": true
+      },
+      {
+        "sequence": 6,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 63401,
+        "valid": true
+      },
+      {
+        "sequence": 7,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 63425,
+        "valid": true
+      },
+      {
+        "sequence": 8,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 63425,
+        "valid": true
+      },
+      {
+        "sequence": 9,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 64022,
+        "valid": true
+      },
+      {
+        "sequence": 10,
+        "events": [
+          {
+            "type": "command-exit",
+            "status": 0
+          }
+        ],
+        "logLength": 123126,
+        "valid": true
+      }
+    ],
+    "faults": []
+  },
+  "sessionLogSha256": "d453b4f7c34b9a6062927f6a9605fb33f5e35e1b9dbdbdccb4d44ebeaa21975a",
+  "pageErrors": [],
+  "finishedAt": "2026-10-11T13:03:15.485Z",
+  "commandLogSha256": "d453b4f7c34b9a6062927f6a9605fb33f5e35e1b9dbdbdccb4d44ebeaa21975a"
+}
