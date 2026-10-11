@@ -80,7 +80,9 @@ try{
  await s.page.mouse.move(box.x+position.x,box.y+position.y);
  let held;
  try{await s.page.mouse.down({button:'left'});await s.page.waitForTimeout(200);
-  const p=await observePixels(d,'puzzle-board','Mines');held=`${p.width}x${p.height}:${p.hash}`;report.heldBoardPixelHash=held;
+  let lastHeld,stableHeld=0;const holdDeadline=Date.now()+5000;
+  while(Date.now()<holdDeadline){const p=await observePixels(d,'puzzle-board','Mines'),hash=`${p.width}x${p.height}:${p.hash}`;stableHeld=hash===lastHeld?stableHeld+1:0;lastHeld=hash;if(stableHeld>=2&&hash!==initial){held=hash;break;}await s.page.waitForTimeout(100);}
+  assert(held,'Held press must visibly change pristine board before release');report.heldBoardPixelHash=held;
   await writeFile(resolve(run,stem+'-held.png'),await canvas.screenshot(),{flag:'wx'});
  }finally{await s.page.mouse.up({button:'left'});}
  // Do not move away until release has produced a stable opened board.
