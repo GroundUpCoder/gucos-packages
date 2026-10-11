@@ -715,7 +715,7 @@
     {
       "id": "cpython",
       "kind": "historical-canonical-name",
-      "state": "source-prepared-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/cpython/wasm-package.json",
       "historicalManifestSha256": "87c859b52d2136307b948dc83335545ddf82fbef11108ad8a094950a11456c99",
       "historicalEvidence": [
@@ -742,14 +742,28 @@
         "make",
         "zlib"
       ],
-      "mapping": null,
-      "acceptance": [],
+      "mapping": "cpython",
+      "acceptance": [
+        {
+          "scope": "Installed foundation consumer including all 16 subprocess tests, atomic, smoke, layout, zlib, extension, site and launcher checks; five identical retained files and same extension across explicit browser reload without recompilation or reseeding; .pth inclusion, -S exclusion and cleanup. Raw-zero evidence covers serialized foreground shells, not independent child waitpid. No full Python, GUI or broader library conformance claim.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/cpython/gucos-public",
+          "evidenceCommit": "abe65b2",
+          "catalogCommit": "9c98af867adfa0b6671f0aaa8ddda7ac7ceb3f0f",
+          "independentReview": "Passed independent retained public evidence review; all 27 indexed files and 1114 canonical/re-export payload identities verified."
+        }
+      ],
       "blockers": [],
       "candidate": "apps/cpython",
       "sourceReview": {
         "commit": "9faf8e5",
         "reviewerThread": "01a12a36-7ca5-773e-b7ca-28bafb1cd2ea",
         "result": "Independent source-execution approval only:5149 historical blobs, pre-freeze store-prefix overlay,1114 outputs and bounded consumers. Guest build/export and all binary/reload/public gates pending."
+      },
+      "publication": {
+        "artifactRevision": "20bafe7784b7e30f8dd29fc00ec8442d282a1eb6",
+        "manifestRevision": "171127986721187d28a88a037871529f9fbb81ea",
+        "catalogRevision": "9c98af867adfa0b6671f0aaa8ddda7ac7ceb3f0f"
       }
     },
     {
