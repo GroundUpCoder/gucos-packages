@@ -307,3 +307,18 @@ CPython copied-profile inspection actually confirmed stageAvailable=false and
 raw command status0. No reproduction ran and no substitute interpreter was used.
 The original subprocess failure cause remains unknown; a reviewed diagnostic
 full-suite rebuild is now needed to capture its hidden child error streams.
+
+PCManFM layout-v2 code is copied unchanged following independent review.
+Original observer/layout authorship and the adapted supervisor/session design
+are preserved. The gate requires35 exact installed manifests, approved LibFM
+and PCManFM exports, an isolated profile and the sole22-byte probe fixture.
+It covers address navigation, cancelled new-folder dialog, unchanged fixture
+and actual child wait status zero through an explicitly instrumented menu.
+No rename/file-operation, reload or public acceptance is approved. The proposal
+comment remains for byte identity; this record supplies subsequent review.
+
+- `pcmanfm-layout-v2.mjs`: `bffe32e846d5378be718966533c2e747c0012e1b6b218cc7a2dc42930ced2008`
+
+- `pcmanfm-layout-v2-session.mjs`: `0cb73d42ed4c6f680ac111f27e752a7aa256e52b4173ab6c883494e1bad56763`
+
+- `pcmanfm-layout-v2-supervisor.c`: `a9a6aa3358dd457f889e258f6c0fa3ea7fbdcc9893c7f42be2c729ec822a7658`
