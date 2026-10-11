@@ -1,0 +1,410 @@
+{
+  "xedit-jwm-public-saved.png": {
+    "sha256": "ab108daf08f0ef1e16b0154faff6dd6b6f83b8d8cb47907e8947d43cae8c9b11",
+    "size": 9935
+  },
+  "xedit.log": {
+    "sha256": "5b8a51c8572d134f88f93e58a6e454209c0c5c01dd4b30a7213cbfa1b1064836",
+    "size": 36799
+  },
+  "xeyes-jwm-public-launched.png": {
+    "sha256": "be42991f44cd9b83d378b5a7e3d750f6ef017c4a112f9aaf0c2e8e6951afe13c",
+    "size": 7291
+  },
+  "2048-jwm-public-reloaded-restarted.png": {
+    "sha256": "065d6c56cb7b3e46d149dfd35c5b2d78c2de33b3cc297daef67e056ce7991079",
+    "size": 8440
+  },
+  "2048-jwm-public-reloaded-moved.png": {
+    "sha256": "a4430ca2be6fed5867ac72e90e12331e0953004c83fc770f6b23b6ccb0656224",
+    "size": 8589
+  },
+  "xcalc-jwm-public-cleared-zero.png": {
+    "sha256": "60dc6f2b4c386f3fb04a825cb63f3e02fe43ca5072b3782eb1a62b1ff495a1d8",
+    "size": 8677
+  },
+  "xcalc-jwm-public-reloaded-sum-three.png": {
+    "sha256": "3913667dc47fa3406fe8a3a5bdffa9ddbc5cbc9bdd439883a336a4b7ab8f4f02",
+    "size": 8702
+  },
+  "2048-jwm-public-idle.png": {
+    "sha256": "45527b0f1f2e1f3ccdb726dfd989be8d6ab6e9e1de4659a4ed61b780aa733abd",
+    "size": 8514
+  },
+  "xeyes.log": {
+    "sha256": "76024e8362623683d004d0749ce9c5bbca6aa26d0fc390c807d1be80da5767d6",
+    "size": 36577
+  },
+  "xcalc-jwm-public-reloaded-cleared-zero.png": {
+    "sha256": "19569936a4c7aca410bb36588087ff0932ff0c8d2e76598dfef6d7663227a297",
+    "size": 8680
+  },
+  "xclock-jwm-public-launched.png": {
+    "sha256": "b512a17d48775f820ac4f4614f4c0a6b62ba8f596b3aaea06e3ad4a25e0ff498",
+    "size": 7646
+  },
+  "xeyes-jwm-public-look-left.png": {
+    "sha256": "840421979017952ccf3b015672aaae786b6b01be093f7fae8bef3ada63db523b",
+    "size": 7287
+  },
+  "xedit-jwm-public-reload-loaded.png": {
+    "sha256": "ed489860d9039135ec65a262704d4d1cd681819616e6aa23c04830a94bc2d8ec",
+    "size": 9438
+  },
+  "2048-jwm-public-quit-prompt-83.png": {
+    "sha256": "b041b9f1d3c5fca79fe7da3ec82e39476a64adc615fb5e878c22fc5c16ffdb01",
+    "size": 8559
+  },
+  "xeyes-jwm-public-reloaded-relaunched.png": {
+    "sha256": "40caf08c59ee660849c5b003925336fd21992996c8db01a4b463db50deecfde6",
+    "size": 7219
+  },
+  "2048-jwm-public-reloaded-quit-prompt-83.png": {
+    "sha256": "bf01a19287f903800b937ed69efd6422f7ee82c09ee01f7f4f977a2f41b79cad",
+    "size": 8598
+  },
+  "xeyes-jwm-public-relaunched.png": {
+    "sha256": "d85fde575c6e4bbf43088dbc41f149c052a7d58380b6148f0128a72a9a0771d7",
+    "size": 7229
+  },
+  "observed-runtime.json": {
+    "sha256": "c1d9b39edc1d23af256c7c1e88ccc9d30925bf9439aee11d68159d85c18ff3b7",
+    "size": 129
+  },
+  "xcalc-jwm-public-launched.png": {
+    "sha256": "47ce08ef2f20babe684b56bc3b78270154abc601801aae212db6bb8eea501949",
+    "size": 8734
+  },
+  "xedit-jwm-public-relaunched.png": {
+    "sha256": "d5b30fd51507bb940c1e32dd4670de007d6d1a9f87e9b613c88c884c481ea067",
+    "size": 7972
+  },
+  "install-desktop-apps.json": {
+    "sha256": "eba44334677947104463e923b3408f0450378d9a31900e2d513178b735ae3edc",
+    "size": 314
+  },
+  "xcalc-jwm-public-reloaded-direct-three.png": {
+    "sha256": "a8264738dbccc84f8d4e51f16ef9d5271fe7eb1fffeedfd688c345ff6298ae1a",
+    "size": 8692
+  },
+  "xclock-jwm-public.json": {
+    "sha256": "1dd6002e0b63deba7b7fe79bbaedb049fa0997a57be8b73ddea75222f4d7b933",
+    "size": 3575
+  },
+  "xclock-jwm-public.log": {
+    "sha256": "73871a90c76b4a5055f4ebe4d43abc3d999848166924a70e0b211937d5078ea5",
+    "size": 36687
+  },
+  "xedit-jwm-public-reload-launched.png": {
+    "sha256": "f679d761bd9f2f12c5eef001f7289e897b8b4dc2f5845f908ce4b4fa36896d1b",
+    "size": 8189
+  },
+  "reload.log": {
+    "sha256": "eed92afdae1a614d61d20d735ecc295975e1e119be1ae70de0400b67ba7f47b8",
+    "size": 557
+  },
+  "xcalc-jwm-public-relaunched.png": {
+    "sha256": "dd6f7ecf2aee9e0431cc4920c30fcc61f9b647807bf31d43322e3688b811125a",
+    "size": 8656
+  },
+  "xclock-jwm-public-reloaded.json": {
+    "sha256": "322980b68612e72bfa74d9c157295b3cfd774ebfe55ec0f098df6e81a14ed768",
+    "size": 3575
+  },
+  "xcalc-jwm-public-direct-three.png": {
+    "sha256": "90bbd6f0908dffa06a07244b1e1827582a35890a044e15c56e261594a571fef5",
+    "size": 8694
+  },
+  "xeyes-reload.log": {
+    "sha256": "76024e8362623683d004d0749ce9c5bbca6aa26d0fc390c807d1be80da5767d6",
+    "size": 36577
+  },
+  "2048-jwm-public-quit-prompt-25.png": {
+    "sha256": "a9f0563135c27acf48c30552d0291a817ea6a80fe5ff476494ec873bb58ad2cf",
+    "size": 8494
+  },
+  "desktop-closure.sha256": {
+    "sha256": "1371bde4b30faf6752b476fae9b7a804abe8f6cd2d1f661eb0b6aac3fde23bb3",
+    "size": 84428
+  },
+  "2048-jwm-public-reloaded-quit-prompt-25.png": {
+    "sha256": "e1374e820f1d19bd61e9a68e425283aa034c34030ced5d4f91110a7fe1c2c5be",
+    "size": 8467
+  },
+  "xclock-jwm-public-reloaded-launched.png": {
+    "sha256": "21c71ea027f2872728aab2f7f0fa84bd9554da5af14a4fc3fbfd4c481f6cee04",
+    "size": 7597
+  },
+  "config.json": {
+    "sha256": "b1ee1294da5ca6819b2e0fe36617ec5a22cbdb805ab3f5ceb4bbfd10406f2c59",
+    "size": 24174
+  },
+  "2048-jwm-public-restart-prompt.png": {
+    "sha256": "ea76e600f5c195b31b51f435bbf52b2a2b8e74427438b09a77983341adab6383",
+    "size": 8729
+  },
+  "2048-jwm-public-reloaded-restart-prompt.png": {
+    "sha256": "1fc8129cb9b85b991329a757ff1f3ba14614cc5bfc7a130b1fb33700a5c0fdb7",
+    "size": 8735
+  },
+  "2048-jwm-public-reloaded-idle.png": {
+    "sha256": "8d2d939ac6e8de4dde6bfd056681a585e4472785253ec9f0ccb7b4b26ee29b36",
+    "size": 8504
+  },
+  "xeyes-jwm-public-reloaded.json": {
+    "sha256": "e76b5ea4d7e5dee7ed547237caeabecb301866df099303914a85cb3d2c8a5fe3",
+    "size": 3570
+  },
+  "xedit-jwm-public-reload.log": {
+    "sha256": "9f3d032be378dcc62fd4df69874e967bfa77c1d09397d52a41d713e2a2136ede",
+    "size": 36793
+  },
+  "xeyes-jwm-public-look-right.png": {
+    "sha256": "573b8a2f9ba7e4b9ab4195ecb7120164169683e789dca94e632e1212f8c6e5f2",
+    "size": 7301
+  },
+  "xclock-reload.log": {
+    "sha256": "ab5e2349cd0fa4ab7b3789c472db5900765216540e8e4f76c259667cf8fb8887",
+    "size": 37365
+  },
+  "xeyes-jwm-public-reloaded-look-right.png": {
+    "sha256": "ed358f2b14b8f4d3f6dc1953566c9b677cd3235c37f2be50276b5849c7e5c9c4",
+    "size": 7297
+  },
+  "xcalc-reload.log": {
+    "sha256": "39b0aad2560c6f546f49d0ed05536c89df13cd2a7e5efc220d6191aa181782c1",
+    "size": 37109
+  },
+  "xedit-jwm-public-loaded.png": {
+    "sha256": "aef0214b6d7ef6c00227be5a5f989901e56375a05da142aa9246aeaa69a40b90",
+    "size": 9068
+  },
+  "xedit-jwm-public-filename-1.png": {
+    "sha256": "1e24349a1de0dd6ad141e8623ccb6eb011254b6bc210dcaf3af0b852755f8a6e",
+    "size": 8631
+  },
+  "2048-jwm-public-moved.png": {
+    "sha256": "a1acaae20fd2bedbcf7e87a5daabcea6526e701465d623a96f663d2fe79a75d5",
+    "size": 8585
+  },
+  "xedit-jwm-public-reload-saved.png": {
+    "sha256": "5f5286ce53e13f5ac010df5fc2218a472b7f8aac26b932dd5b128616164fea75",
+    "size": 10258
+  },
+  "xedit-jwm-public-reload.json": {
+    "sha256": "b3b212e8a39584194cfcc59c5ef50cb667bbc2b87607a8edd816da3ac13b8ed7",
+    "size": 3397
+  },
+  "xedit-jwm-public.json": {
+    "sha256": "d29fc4cf641e12e58f728e2bbde4fb4712a91bf9f60ef61d3525dfb313f59886",
+    "size": 3371
+  },
+  "xclock-jwm-public-ticked.png": {
+    "sha256": "c623f8bbcbdaf9d6da9d840b649390e74235230aa67911727ab62848435738e2",
+    "size": 7630
+  },
+  "xclock-jwm-public-reloaded-relaunched.png": {
+    "sha256": "67ff3c36cf784c9f111ee1700f9c4678fb7ed3e901488993eda4b7c2a63c41ef",
+    "size": 7500
+  },
+  "xedit-jwm-public-filename-2.png": {
+    "sha256": "a39fb5cffeaa9f077c634d1e3f979e57fd5f5ee2f5193b7b0e5ddef804407ec5",
+    "size": 8438
+  },
+  "reload-desktop-apps.json": {
+    "sha256": "0da221bf38f0888ee18053b73269ba531f9285d2dadd39d108f7221320aa1e10",
+    "size": 313
+  },
+  "README.md": {
+    "sha256": "296b839da74fe4c0bcc57d649efee26fd209112ba3c5d0d7f0df3120f96ea3b3",
+    "size": 566
+  },
+  "xedit-jwm-public-reload-filename-2.png": {
+    "sha256": "899ad12136226689647bdef479d16f32aeb8a4149c283e69bf0e757b4cce473f",
+    "size": 8436
+  },
+  "xedit-jwm-public-reload-reopened-saved.png": {
+    "sha256": "482e3ad252edef7010b1b03f57912f892ebf0a6a13cedd5347ffcdaafd5b73b7",
+    "size": 10232
+  },
+  "xcalc-jwm-public.log": {
+    "sha256": "c602d7c48d285df975fc43f401b61ec5bc9a26cd8b0f1648e2ef1a978e30091d",
+    "size": 37103
+  },
+  "2048-jwm-public-relaunched.png": {
+    "sha256": "0d422c8dd265f62a3447a2cd062c9b8f304d3ab35e286dae3a8db8298f9e56b6",
+    "size": 8569
+  },
+  "2048-jwm-public-restarted.png": {
+    "sha256": "a934c0843240dea3bc2a504095acdb83d794ffdc0e092b0a8a8429cf3cdd0770",
+    "size": 8473
+  },
+  "xcalc.log": {
+    "sha256": "39b0aad2560c6f546f49d0ed05536c89df13cd2a7e5efc220d6191aa181782c1",
+    "size": 37109
+  },
+  "xedit-jwm-public-reload-filename-1.png": {
+    "sha256": "28e0c0f77a2bfd9a9a7206bac1550956f670352fc367cfb6aebabed923aac748",
+    "size": 8628
+  },
+  "xcalc-jwm-public-sum-three.png": {
+    "sha256": "6d981dbdf21dbcdb4903e54fc5380c46654db957a3c5dfffb6d3ace7c88800a6",
+    "size": 8703
+  },
+  "xedit-jwm-public-launched.png": {
+    "sha256": "154915193511616e06f11528218970c58f4056341c521dd6535b3dfef0b39c23",
+    "size": 8192
+  },
+  "consumers-desktop-apps.json": {
+    "sha256": "ba6aa1022f960b40da501f7b491f887a3f62dc860832bc742661d2b1eb16f6d2",
+    "size": 1793
+  },
+  "2048-jwm-public-initial.png": {
+    "sha256": "45527b0f1f2e1f3ccdb726dfd989be8d6ab6e9e1de4659a4ed61b780aa733abd",
+    "size": 8514
+  },
+  "2048-reload.log": {
+    "sha256": "a39457f1eaeb9df3404fc531511b9532960b8b78b888e1b78289b8005d52e4d8",
+    "size": 36546
+  },
+  "xcalc-jwm-public.json": {
+    "sha256": "4b3edb276777e6308cb8097fbf88649f02249ec2e155882ef9a6284171d63df9",
+    "size": 3805
+  },
+  "2048-jwm-public.json": {
+    "sha256": "276206f1927c7a3a9e8ade1fb544189d5f639e6b31623599923f664b61346c00",
+    "size": 3298
+  },
+  "consumers.log": {
+    "sha256": "c2d64d960c56c7b2accacbf52fd574916fe94843bf9f10149a94e1fa4dbe56c2",
+    "size": 578
+  },
+  "desktop-apps.sha256": {
+    "sha256": "12c5839b570e10282a041d59f1b88d469b888fa3f24a5b2909d74d7e15cd306a",
+    "size": 733
+  },
+  "xclock.log": {
+    "sha256": "24b23987416792d33a6cca41c932d9b295ca8098a68d17c05905ac9ddc4f919c",
+    "size": 37029
+  },
+  "desktop-closure.json": {
+    "sha256": "3447543d664a5a1b4805db42a2a275010938284cf3512fb6d293e34d5ceb2466",
+    "size": 110014
+  },
+  "xedit-jwm-public-typed.png": {
+    "sha256": "a4801da3c6cbce1c71fdb581e0a0029b8d8b924da169674b5f237f39b6608229",
+    "size": 9309
+  },
+  "xedit-jwm-public-reopened-saved.png": {
+    "sha256": "6c181cd7b17cf2861cc1c15bdc0b3dc6e4a1741fa44d5ee7b2a3128f8284541d",
+    "size": 9909
+  },
+  "xedit-jwm-public.log": {
+    "sha256": "9f3d032be378dcc62fd4df69874e967bfa77c1d09397d52a41d713e2a2136ede",
+    "size": 36793
+  },
+  "2048-jwm-public-reloaded.json": {
+    "sha256": "97846a76d1ba8633e18ec31f2dee9a53becba36876cfa77d07c36dd0f27e30df",
+    "size": 3298
+  },
+  "xeyes-jwm-public-reloaded.log": {
+    "sha256": "63266f04270c66481847170497c139b49b7369d8c62dca540a3f800a7351e704",
+    "size": 36571
+  },
+  "2048.log": {
+    "sha256": "bde1c3fc5767a8d651acc74a965609be844b9382eaf81d211cc2a30f4ce9c7fb",
+    "size": 36546
+  },
+  "2048-jwm-public.log": {
+    "sha256": "5df7dc8140690abd3cd00516e794a38595dd7a0108c470470e8123d67b5ab437",
+    "size": 36541
+  },
+  "xedit-jwm-public-reload-relaunched.png": {
+    "sha256": "885c45655d93cd6d1be657c2c986dd2adfac6767bb1f28cc85d010d059a71af9",
+    "size": 7971
+  },
+  "xclock-jwm-public-relaunched.png": {
+    "sha256": "db7e9c7e4e5adc376d108a37e1cea27b3414ae0bdf6a714559276f3c448cfc7d",
+    "size": 7569
+  },
+  "xclock-jwm-public-reloaded.log": {
+    "sha256": "73871a90c76b4a5055f4ebe4d43abc3d999848166924a70e0b211937d5078ea5",
+    "size": 36687
+  },
+  "xcalc-jwm-public-reloaded.json": {
+    "sha256": "01a9031d940e0077b4b743926789746126217f8bee7ebf45b676c9e10b0afec7",
+    "size": 3805
+  },
+  "xeyes-jwm-public.json": {
+    "sha256": "d102706e229ca844525e529805c40763774754ad9183bf3d835f31fe54a01f70",
+    "size": 3570
+  },
+  "xedit-jwm-public-reload-typed.png": {
+    "sha256": "6c1aec0c98a77af701b7a1551a22a242978141a7254da461f4b53d60dfac72e2",
+    "size": 9634
+  },
+  "xclock-jwm-public-reloaded-ticked.png": {
+    "sha256": "9a8f808dabf8fda8e2dadf04e6a51907d19b36739608d3800697d955950ed8ef",
+    "size": 7588
+  },
+  "candidate-manifests.json": {
+    "sha256": "4896d1e3cd0b21eed1ba4a7c4e41d89565d62289d211ae9277ea8b4aab0d8472",
+    "size": 4684
+  },
+  "install.log": {
+    "sha256": "b167c45db0a0cf88d15f0116a1630a68b21a6e1ac3905c298c8167fea6787c60",
+    "size": 17465
+  },
+  "xcalc-jwm-public-reloaded.log": {
+    "sha256": "c602d7c48d285df975fc43f401b61ec5bc9a26cd8b0f1648e2ef1a978e30091d",
+    "size": 37103
+  },
+  "xeyes-jwm-public-reloaded-launched.png": {
+    "sha256": "83acc4c16cb3317f73cbdf222906c2a99ba40dcd2dd0a353070d0ddc6e006257",
+    "size": 7290
+  },
+  "2048-jwm-public-reloaded.log": {
+    "sha256": "4d0cc426521f4e01e7fed175a09e6f4948eb2872b446dfc7df08fd6d74982691",
+    "size": 36541
+  },
+  "xeyes-jwm-public-reloaded-look-left.png": {
+    "sha256": "6a274bee840d78945d6c206bbfacc61b946963fdd93c881d6b1353c11f1f0137",
+    "size": 7287
+  },
+  "xedit-reload.log": {
+    "sha256": "5b8a51c8572d134f88f93e58a6e454209c0c5c01dd4b30a7213cbfa1b1064836",
+    "size": 36799
+  },
+  "xcalc-jwm-public-reloaded-relaunched.png": {
+    "sha256": "4e9ada98200a8ee24cb0ab9018b0703167e3b855a1b8614fcd79273fabcc42cc",
+    "size": 8655
+  },
+  "xeyes-jwm-public.log": {
+    "sha256": "63266f04270c66481847170497c139b49b7369d8c62dca540a3f800a7351e704",
+    "size": 36571
+  },
+  "2048-jwm-public-reloaded-relaunched.png": {
+    "sha256": "ce37cc8d9139daf9c70a6055058058e5fc24a5ecc64affc864168bf6da7f2b77",
+    "size": 8608
+  },
+  "2048-jwm-public-reloaded-initial.png": {
+    "sha256": "8d2d939ac6e8de4dde6bfd056681a585e4472785253ec9f0ccb7b4b26ee29b36",
+    "size": 8504
+  },
+  "xcalc-jwm-public-reloaded-launched.png": {
+    "sha256": "33150b429bf8721ba104097d5437eed75f23948beebef40da4d0a01cf4931c12",
+    "size": 8733
+  },
+  "exports/desktop-apps/reload-receipt.json": {
+    "sha256": "f7a88e2653c59f8476eb86733c816928579c842895bf4d574f5c32e68b215a39",
+    "size": 4964
+  },
+  "exports/desktop-apps/consumers-receipt.json": {
+    "sha256": "f7a88e2653c59f8476eb86733c816928579c842895bf4d574f5c32e68b215a39",
+    "size": 4964
+  },
+  "exports/desktop-apps/install-receipt.json": {
+    "sha256": "f7a88e2653c59f8476eb86733c816928579c842895bf4d574f5c32e68b215a39",
+    "size": 4964
+  }
+}

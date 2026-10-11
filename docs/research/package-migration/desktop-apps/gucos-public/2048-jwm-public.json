@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-11T07:52:40.741Z",
+  "scope": "Owned JWM entry launches accepted 2048 in xterm; real movement/restart/quit and relaunch; screenshots require independent review",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "closureSha256": "3447543d664a5a1b4805db42a2a275010938284cf3512fb6d293e34d5ceb2466",
+  "payloadFiles": 774,
+  "harnessSha256": "774027bccb161702cc5649f63ec8fe9983dc28c35ea1b1b05b0554cd5fb11479",
+  "helpers": {
+    "observerSha256": "1e128762b83a291dce18b47ed8ce28d691ffe1b09ae18798a00587b6b65a0ef6",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+    "sessionHelperSha256": "d26195b1e3477cf439ffc7c0d4e1945ca674543fd5b0f1e95fdbbc7087a618b1"
+  },
+  "menu": {
+    "id": "gucos-desktop-2048.desktop",
+    "index": 5,
+    "geometry": {
+      "id": 2097188,
+      "x": 0,
+      "y": 209,
+      "width": 129,
+      "height": 362,
+      "pid": 0
+    },
+    "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"Calculator\">xcalc -fn fixed</Program>\n<Program label=\"Text editor\">xedit -xrm \"*font: fixed\"</Program>\n<Program label=\"Clock\">xclock -update 1</Program>\n<Program label=\"Eyes\">xeyes</Program>\n<Program label=\"2048\">/usr/local/bin/desktop-menu launch gucos-desktop-2048.desktop</Program>\n<Program label=\"Calculator\">/usr/local/bin/desktop-menu launch gucos-desktop-xcalc.desktop</Program>\n<Program label=\"Clock\">/usr/local/bin/desktop-menu launch gucos-desktop-xclock.desktop</Program>\n<Program label=\"Text Editor\">/usr/local/bin/desktop-menu launch gucos-desktop-xedit.desktop</Program>\n<Program label=\"Eyes\">/usr/local/bin/desktop-menu launch gucos-desktop-xeyes.desktop</Program>\n</JWM>\n"
+  },
+  "firstWindow": {
+    "id": 6291467,
+    "x": 32,
+    "y": 52,
+    "width": 499,
+    "height": 316,
+    "pid": 25
+  },
+  "relaunchMenu": {
+    "id": "gucos-desktop-2048.desktop",
+    "index": 5,
+    "geometry": {
+      "id": 2097262,
+      "x": 0,
+      "y": 209,
+      "width": 129,
+      "height": 362,
+      "pid": 0
+    },
+    "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"Calculator\">xcalc -fn fixed</Program>\n<Program label=\"Text editor\">xedit -xrm \"*font: fixed\"</Program>\n<Program label=\"Clock\">xclock -update 1</Program>\n<Program label=\"Eyes\">xeyes</Program>\n<Program label=\"2048\">/usr/local/bin/desktop-menu launch gucos-desktop-2048.desktop</Program>\n<Program label=\"Calculator\">/usr/local/bin/desktop-menu launch gucos-desktop-xcalc.desktop</Program>\n<Program label=\"Clock\">/usr/local/bin/desktop-menu launch gucos-desktop-xclock.desktop</Program>\n<Program label=\"Text Editor\">/usr/local/bin/desktop-menu launch gucos-desktop-xedit.desktop</Program>\n<Program label=\"Eyes\">/usr/local/bin/desktop-menu launch gucos-desktop-xeyes.desktop</Program>\n</JWM>\n"
+  },
+  "boardHashes": {
+    "initial": "e1a900b381e541e6398a8cb90649b36a52f8e05bf3adc178a3e981c3fb1311f4",
+    "moved": "58588ed2725fd866f75c3254cb5a8c7de0f79f87c773929aae4a970e8d5566ff"
+  },
+  "finishedAt": "2026-10-11T07:52:52.379Z"
+}

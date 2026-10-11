@@ -1,0 +1,3939 @@
+{
+  "root": "desktop-apps",
+  "inputCommit": "a635e9b018224cab728c1de100da4c1003024712",
+  "manifests": {
+    "desktop-apps": {
+      "format": 1,
+      "name": "desktop-apps",
+      "version": "1.0.0-1",
+      "dependencies": [
+        "desktop-entries",
+        "jwm",
+        "xterm",
+        "2048",
+        "xcalc",
+        "xedit",
+        "xclock",
+        "xeyes"
+      ],
+      "dependencyRequirements": {
+        "desktop-entries": {
+          "version": "1.0.0-1"
+        },
+        "jwm": {
+          "version": "2.4.6-2"
+        },
+        "xterm": {
+          "version": "411-1"
+        },
+        "2048": {
+          "version": "0.1.0-1"
+        },
+        "xcalc": {
+          "version": "1.1.3-1"
+        },
+        "xedit": {
+          "version": "1.2.5-1"
+        },
+        "xclock": {
+          "version": "1.2.1-1"
+        },
+        "xeyes": {
+          "version": "1.3.1-1"
+        }
+      },
+      "platform": {
+        "target": "wasm32-wasm-posix",
+        "minVersion": "1.0.0",
+        "runtimeAbi": 5,
+        "features": [
+          "posix-core"
+        ]
+      },
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/source.tar",
+          "sha256": "5e8dd3a51976f5dce2419df6e7156a3937c7391c873fb9aecc855a91cb2328b2",
+          "size": 20480
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/build.sh",
+          "sha256": "2d5754d5dbb753d33b07f6117bd98ea1ea8e19a93c8db790fb05d08f1440813e",
+          "size": 238
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/test.sh",
+          "sha256": "6dbb23ac6d92399fdbe35e2de70f47443cc57ef6d33c905f6ab8247ca7eff6fd",
+          "size": 189
+        },
+        {
+          "path": "gucos-desktop-2048.desktop",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-2048.desktop",
+          "sha256": "7e57c6084efed3830cf4367372b0abae3e6aaefbca0fdfe55ba3d031227f7411",
+          "size": 80
+        },
+        {
+          "path": "gucos-desktop-xcalc.desktop",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-xcalc.desktop",
+          "sha256": "34d20cd5a55285edb76db380a34661fa4dfde08f25eb3005d7af1b0d1acfefa4",
+          "size": 89
+        },
+        {
+          "path": "gucos-desktop-xedit.desktop",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-xedit.desktop",
+          "sha256": "e78f5c00e4340bbff47fd5330b071c6420442c1b94235cf2b1cd32140442ff9f",
+          "size": 90
+        },
+        {
+          "path": "gucos-desktop-xclock.desktop",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-xclock.desktop",
+          "sha256": "0f0341e11667036182e42ef5ae19b2bdb1569abfba138085e3dea9883dd07a86",
+          "size": 86
+        },
+        {
+          "path": "gucos-desktop-xeyes.desktop",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/gucos-desktop-xeyes.desktop",
+          "sha256": "74f70530e67d661cb81b484aa8f0086a026bc4d610bf848eb8d58c4703d169db",
+          "size": 83
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "share/applications/gucos-desktop-2048.desktop",
+          "mode": 420
+        },
+        {
+          "path": "share/applications/gucos-desktop-xcalc.desktop",
+          "mode": 420
+        },
+        {
+          "path": "share/applications/gucos-desktop-xedit.desktop",
+          "mode": 420
+        },
+        {
+          "path": "share/applications/gucos-desktop-xclock.desktop",
+          "mode": 420
+        },
+        {
+          "path": "share/applications/gucos-desktop-xeyes.desktop",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/desktop-apps/LICENSE",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/desktop-apps/LICENSE"
+      ],
+      "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/a635e9b018224cab728c1de100da4c1003024712/apps/desktop-apps/binaries/828eca9f171fdf97393f3c99fc436993cbdbcfca1cdc05e556b4520b7ac4eaa3.tar",
+        "sha256": "828eca9f171fdf97393f3c99fc436993cbdbcfca1cdc05e556b4520b7ac4eaa3",
+        "size": 18432
+      }
+    },
+    "desktop-entries": {
+      "format": 1,
+      "name": "desktop-entries",
+      "version": "1.0.0-1",
+      "dependencies": [],
+      "dependencyRequirements": {},
+      "platform": {
+        "target": "wasm32-wasm-posix",
+        "minVersion": "1.0.0",
+        "runtimeAbi": 5,
+        "features": [
+          "posix-core"
+        ]
+      },
+      "files": [
+        {
+          "path": "main.c",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/desktop-entries/main.c",
+          "sha256": "1a3e319e8992738cd0c346db43260592bbf31cd90802769a6c646410f935e113",
+          "size": 9258
+        },
+        {
+          "path": "test.c",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/desktop-entries/test.c",
+          "sha256": "29f9cd950991063c076b16afb7b48c9bb3c9de697918747179914b618b4e10c2",
+          "size": 2826
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/desktop-entries/build.sh",
+          "sha256": "a398a2f063b9e5e5a2d7e6a6c429f42f8b46dfb78704e36a5f1ed7d92968c6ee",
+          "size": 316
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/desktop-entries/test.sh",
+          "sha256": "516f7c2d10c4432b9a9a96d41573ccc85484b7b0a890cde3f471da6a6ced8677",
+          "size": 2508
+        },
+        {
+          "path": "README.md",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/desktop-entries/README.md",
+          "sha256": "be3f60c7b48546fe8f7ad7dba7cf39dbd3d21c5d449a098772721b99b0db9c19",
+          "size": 2883
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/desktop-entries/LICENSE",
+          "sha256": "3f2bf733d13b1e20f7457acc5baf47aa94b3982901cce4f6d7e80438bf9b6b13",
+          "size": 11344
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "bin/desktop-menu",
+          "mode": 493
+        },
+        {
+          "path": "share/doc/desktop-entries/README.md",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/desktop-entries/LICENSE",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/desktop-entries/LICENSE"
+      ],
+      "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/desktop-entries/binaries/50b09e40f76b88dab0be5d1810ce0b71b368db87e7cdeb4ac5791a0ddb56bf3b.tar",
+        "sha256": "50b09e40f76b88dab0be5d1810ce0b71b368db87e7cdeb4ac5791a0ddb56bf3b",
+        "size": 40448
+      }
+    },
+    "jwm": {
+      "format": 1,
+      "name": "jwm",
+      "version": "2.4.6-2",
+      "dependencies": [
+        "x11-widgets"
+      ],
+      "platform": {
+        "target": "wasm32-wasm-posix",
+        "minVersion": "1.0.0",
+        "runtimeAbi": 5,
+        "features": [
+          "posix-core",
+          "unix-stream"
+        ]
+      },
+      "dependencyRequirements": {
+        "x11-widgets": {
+          "version": "1.0-1"
+        }
+      },
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/jwm/source.tar",
+          "sha256": "d9b8cbb59938fa23e1f4f3163678a2adab314f26e7140dc21eb46783b9e932e2",
+          "size": 2355200
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/jwm/build.sh",
+          "sha256": "3946a9bfd5d9d289a5762095e318d72d588d4bb32d7870fe2be2ae9fb86829dc",
+          "size": 759
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/jwm/test.sh",
+          "sha256": "10b32fdeab908f7c381bff435182618ac390e645b5df4f9570381937fb1912ba",
+          "size": 97
+        },
+        {
+          "path": "app-menu.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/jwm/app-menu.sh",
+          "sha256": "7fba3f209124f2b75be9dc8ab3941d84dea431467b78c6295991253dfed110d8",
+          "size": 2250
+        },
+        {
+          "path": "start-jwm",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/jwm/start-jwm",
+          "sha256": "1f55e0aac819ef2dce57d66839527c08f418700ca99f2ae0970982d0e058ecc8",
+          "size": 916
+        },
+        {
+          "path": "wait-display.c",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/jwm/wait-display.c",
+          "sha256": "09bf6d3881c40107721b5192463d08b6366e0199bc807db01a5adb75c81f6d17",
+          "size": 522
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "bin/jwm",
+          "mode": 493
+        },
+        {
+          "path": "share/jwm/system.jwmrc",
+          "mode": 420
+        },
+        {
+          "path": "share/jwm/wasm.jwmrc",
+          "mode": 420
+        },
+        {
+          "path": "share/jwm/app-menu.sh",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/jwm/LICENSE",
+          "mode": 420
+        },
+        {
+          "path": "bin/start-jwm",
+          "mode": 493
+        },
+        {
+          "path": "libexec/jwm/wait-display",
+          "mode": 493
+        }
+      ],
+      "licenses": [
+        "share/licenses/jwm/LICENSE"
+      ],
+      "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/cc86e704fb4b4f9a4897247f8da0c451537f6572/apps/jwm/binaries/8872b11c376190f6c6a64d3bf696574330d60735a27b6d37d7cb11dfe9792792.tar",
+        "sha256": "8872b11c376190f6c6a64d3bf696574330d60735a27b6d37d7cb11dfe9792792",
+        "size": 9654272
+      }
+    },
+    "x11-widgets": {
+      "format": 1,
+      "name": "x11-widgets",
+      "version": "1.0-1",
+      "dependencies": [
+        "x11-toolkit"
+      ],
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-widgets/source.tar",
+          "sha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
+          "size": 11612160
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-widgets/build.sh",
+          "sha256": "a1ad115b67673c9748dbaed7f70def83c10f2d5d906ba1602323d5becc8175f2",
+          "size": 31318
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-widgets/test.sh",
+          "sha256": "6785f5648aea6ec6f9600a5b5d57f00cfe404db2fbed55902604b5966ab0162a",
+          "size": 83
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "lib/libXpm.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libXaw7.a",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/libICE-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/libSM-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/libXaw-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/libXft-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/libXmu-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/libXpm-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/libXrandr-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/libXt-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/termcap-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/xev-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/xmessage-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/xprop-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-widgets/xterm-COPYING",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/x11-widgets/libICE-COPYING",
+        "share/licenses/x11-widgets/libSM-COPYING",
+        "share/licenses/x11-widgets/libXaw-COPYING",
+        "share/licenses/x11-widgets/libXft-COPYING",
+        "share/licenses/x11-widgets/libXmu-COPYING",
+        "share/licenses/x11-widgets/libXpm-COPYING",
+        "share/licenses/x11-widgets/libXrandr-COPYING",
+        "share/licenses/x11-widgets/libXt-COPYING",
+        "share/licenses/x11-widgets/termcap-COPYING",
+        "share/licenses/x11-widgets/xev-COPYING",
+        "share/licenses/x11-widgets/xmessage-COPYING",
+        "share/licenses/x11-widgets/xprop-COPYING",
+        "share/licenses/x11-widgets/xterm-COPYING"
+      ],
+      "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-widgets/binaries/f07c450b691593ebaf93331b26c6b978fd56e29f846d4ee996ca8e1f39e77547.tar",
+        "sha256": "f07c450b691593ebaf93331b26c6b978fd56e29f846d4ee996ca8e1f39e77547",
+        "size": 1338880
+      }
+    },
+    "x11-toolkit": {
+      "format": 1,
+      "name": "x11-toolkit",
+      "version": "1.0-1",
+      "dependencies": [
+        "x11-server"
+      ],
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/x11-toolkit/source.tar",
+          "sha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
+          "size": 11612160
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/x11-toolkit/build.sh",
+          "sha256": "e56586a43eafa68339dc445701d9175a77c6c258c2fffbef2f87424219dd403a",
+          "size": 78353
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/x11-toolkit/test.sh",
+          "sha256": "51ccf7d74dbf37ca470a49df29c1f2ccd3e5cecdcbad6325549a919706ebc4d5",
+          "size": 50
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "lib/libXmu.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libXt.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libSM.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libICE.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libXrandr.a",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/CallbackI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Composite.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/CompositeP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ConstrainP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Constraint.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ConvertI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Core.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/CoreP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/CreateI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/EventI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/HookObjI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ICE/ICE.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ICE/ICEconn.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ICE/ICElib.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ICE/ICEmsg.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ICE/ICEproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ICE/ICEutil.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/InitialI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Intrinsic.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/IntrinsicI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/IntrinsicP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Object.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ObjectP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/PassivGraI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/RectObj.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/RectObjP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ResConfigP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ResourceI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/SM/SM.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/SM/SMlib.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/SM/SMproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/SelectionI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Shell.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ShellI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ShellP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/StringDefs.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ThreadsI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/TranslateI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/VarargsI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Vendor.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/VendorP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/AllWidgets.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/AsciiSink.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/AsciiSinkP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/AsciiSrc.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/AsciiSrcP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/AsciiText.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/AsciiTextP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Box.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/BoxP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Cardinals.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Command.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/CommandP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Dialog.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/DialogP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Form.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/FormP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Grip.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/GripP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Label.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/LabelP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/List.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/ListP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/MenuButtoP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/MenuButton.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/MultiSink.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/MultiSinkP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/MultiSrc.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/MultiSrcP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Paned.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/PanedP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Panner.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/PannerP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Porthole.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/PortholeP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Repeater.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/RepeaterP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Reports.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Scrollbar.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/ScrollbarP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Simple.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/SimpleMenP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/SimpleMenu.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/SimpleP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Sme.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/SmeBSB.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/SmeBSBP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/SmeLine.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/SmeLineP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/SmeP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/StripCharP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/StripChart.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Template.c",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Template.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/TemplateP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Text.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/TextP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/TextSink.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/TextSinkP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/TextSrc.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/TextSrcP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Tip.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/TipP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Toggle.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/ToggleP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Tree.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/TreeP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/VendorEP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/Viewport.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/ViewportP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/XawImP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xaw/XawInit.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Atoms.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/CharSet.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/CloseHook.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Converters.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/CurUtil.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/CvtCache.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/DisplayQue.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Drawing.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Editres.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/EditresP.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Error.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/ExtAgent.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Initer.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Lookup.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Misc.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/StdCmap.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/StdSel.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/SysUtil.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/WhitePoint.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/WidgetNode.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/WinUtil.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Xct.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmu/Xmu.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xtos.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xrandr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/xpm.h",
+          "mode": 420
+        },
+        {
+          "path": "include/termcap.h",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/libICE-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/libSM-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/libXaw-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/libXft-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/libXmu-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/libXpm-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/libXrandr-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/libXt-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/termcap-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/xev-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/xmessage-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/xprop-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-toolkit/xterm-COPYING",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/x11-toolkit/libICE-COPYING",
+        "share/licenses/x11-toolkit/libSM-COPYING",
+        "share/licenses/x11-toolkit/libXaw-COPYING",
+        "share/licenses/x11-toolkit/libXft-COPYING",
+        "share/licenses/x11-toolkit/libXmu-COPYING",
+        "share/licenses/x11-toolkit/libXpm-COPYING",
+        "share/licenses/x11-toolkit/libXrandr-COPYING",
+        "share/licenses/x11-toolkit/libXt-COPYING",
+        "share/licenses/x11-toolkit/termcap-COPYING",
+        "share/licenses/x11-toolkit/xev-COPYING",
+        "share/licenses/x11-toolkit/xmessage-COPYING",
+        "share/licenses/x11-toolkit/xprop-COPYING",
+        "share/licenses/x11-toolkit/xterm-COPYING"
+      ],
+      "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-toolkit/binaries/cfac272185f414f98c47f9a4874e7b11d369bf32b57b8cfddf7f835ccab182f1.tar",
+        "sha256": "cfac272185f414f98c47f9a4874e7b11d369bf32b57b8cfddf7f835ccab182f1",
+        "size": 2518016
+      }
+    },
+    "x11-server": {
+      "format": 1,
+      "name": "x11-server",
+      "version": "21.1.24-1",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/x11-server/source.tar",
+          "sha256": "2ccd5531c19bb29af3d9a1757ecdb5417a7daf3e32ad4f3a55f9b717681d891a",
+          "size": 25978880
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/x11-server/build.sh",
+          "sha256": "f545c14a806de54aba6457e4dafcd5e3a5ced74e959039db6768484b15aa6152",
+          "size": 247
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/x11-server/test.sh",
+          "sha256": "6fb747c4359ab19ddc6a20d2a20ce8f2115f69f630e918d6abd3c1d58a82d4f2",
+          "size": 148
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "bin/Xvfb",
+          "mode": 493
+        },
+        {
+          "path": "lib/libxcb.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-render.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-damage.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-sync.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-xinput.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-xfixes.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-shape.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-randr.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-present.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-composite.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-record.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-xtest.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libxcb-xkb.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libXau.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libX11.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libXext.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libXrender.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libXtst.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libXfixes.a",
+          "mode": 420
+        },
+        {
+          "path": "lib/libXi.a",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/DECkeysym.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/HPkeysym.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ImUtil.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Sunkeysym.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/X.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/XF86keysym.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/XKBlib.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/XWDFile.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xalloca.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xarch.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xatom.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xauth.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xcms.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xdefs.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xfuncproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xfuncs.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xlib-xcb.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xlib.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/XlibConf.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xlibint.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xlocale.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xmd.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xos.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xos_r.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xosdefs.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xpoll.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xprotostr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xregion.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xresource.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xthreads.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xtrans/Xtrans.c",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xtrans/Xtrans.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xtrans/Xtransint.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xtrans/Xtranslcl.c",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xtrans/Xtranssock.c",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xtrans/Xtransutil.c",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xtrans/transport.c",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xutil.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xw32defs.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xwindows.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/Xwinsock.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/ap_keysym.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/cursorfont.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/dri/xf86dri.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/dri/xf86driproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/dri/xf86dristr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/EVI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/EVIproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/MITMisc.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XEVI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XI.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XI2.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XI2proto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XInput.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XInput2.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XIproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKB.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKBbells.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKBconfig.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKBfile.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKBgeom.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKBproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKBrules.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKBsrv.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKBstr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKM.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XKMformat.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XLbx.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XResproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XShm.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XTest.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xag.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xcup.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xdbe.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xext.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xfixes.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xge.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xrender.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xv.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XvMC.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/XvMCproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/Xvproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/ag.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/agproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/applewmconst.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/applewmproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/bigreqsproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/bigreqstr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/composite.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/compositeproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/cup.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/cupproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/damageproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/damagewire.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dbe.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dbeproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dmx.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dmxproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dpms.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dpmsconst.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dpmsproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dri2proto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dri2tokens.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/dri3proto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/extutil.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/ge.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/geproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/lbx.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/lbxproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/mitmiscconst.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/mitmiscproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/multibuf.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/multibufconst.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/multibufproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/panoramiXproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/presentproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/presenttokens.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/randr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/randrproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/record.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/recordconst.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/recordproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/recordstr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/render.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/renderproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/saver.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/saverproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/secur.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/security.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/securproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/shape.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/shapeconst.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/shapeproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/shapestr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/shm.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/shmproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/shmstr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/sync.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/syncconst.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/syncproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/syncstr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xcmiscproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xcmiscstr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86bigfont.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86bigfproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86bigfstr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86dga.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86dga1const.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86dga1proto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86dga1str.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86dgaconst.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86dgaproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86dgastr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86vm.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86vmproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xf86vmstr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xfixesproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xfixeswire.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xtestconst.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xtestext1.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xtestext1const.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xtestext1proto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xtestproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/extensions/xwaylandproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/fonts/FS.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/fonts/FSproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/fonts/font.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/fonts/fontenc.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/fonts/fontproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/fonts/fontstruct.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/fonts/fsmasks.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/fonts/libxfont2.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/keysym.h",
+          "mode": 420
+        },
+        {
+          "path": "include/X11/keysymdef.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/bigreq.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/composite.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/damage.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/dbe.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/dpms.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/dri2.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/dri3.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/ge.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/glx.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/present.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/randr.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/record.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/render.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/res.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/screensaver.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/shape.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/shm.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/sync.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xc_misc.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xcb.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xcbext.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xevie.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xf86dri.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xfixes.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xinerama.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xinput.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xkb.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xprint.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xproto.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xselinux.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xtest.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xv.h",
+          "mode": 420
+        },
+        {
+          "path": "include/xcb/xvmc.h",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/applewmproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/bigreqsproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/compositeproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/damageproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/dmxproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/dpmsproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/dri2proto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/dri3proto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/fixesproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/fontsproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/glproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/inputproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/kbproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/presentproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/randrproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/recordproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/renderproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/resourceproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/scrnsaverproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/videoproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/x11.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xau.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-composite.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-damage.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-present.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-proto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-randr.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-record.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-render.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-shape.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-sync.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-xfixes.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-xinput.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-xkb.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb-xtest.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcb.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xcmiscproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xext.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xextproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xf86bigfontproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xf86dgaproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xf86driproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xf86vidmodeproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xfixes.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xi.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xineramaproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xrender.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xtst.pc",
+          "mode": 420
+        },
+        {
+          "path": "lib/pkgconfig/xwaylandproto.pc",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/XErrorDB",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/Xcms.txt",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/C/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/C/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/C/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/am_ET.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/am_ET.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/am_ET.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/armscii-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/armscii-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/armscii-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/compose.dir",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/cs_CZ.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/cs_CZ.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/cs_CZ.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/el_GR.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/el_GR.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/el_GR.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/en_US.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/en_US.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/en_US.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/fi_FI.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/fi_FI.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/fi_FI.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/georgian-academy/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/georgian-academy/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/georgian-academy/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/georgian-ps/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/georgian-ps/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/georgian-ps/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ibm-cp1133/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ibm-cp1133/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ibm-cp1133/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iscii-dev/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iscii-dev/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iscii-dev/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/isiri-3342/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/isiri-3342/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/isiri-3342/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-1/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-1/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-1/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-10/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-10/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-10/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-11/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-11/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-11/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-13/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-13/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-13/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-14/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-14/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-14/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-15/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-15/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-15/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-2/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-2/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-2/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-3/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-3/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-3/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-4/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-4/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-4/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-5/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-5/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-5/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-6/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-6/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-6/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-7/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-7/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-7/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-9/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-9/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-9/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-9e/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-9e/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/iso8859-9e/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja.JIS/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja.JIS/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja.JIS/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja.SJIS/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja.SJIS/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja.SJIS/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja_JP.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja_JP.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ja_JP.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/km_KH.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/km_KH.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/km_KH.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ko/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ko/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ko/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ko_KR.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ko_KR.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ko_KR.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/koi8-c/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/koi8-c/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/koi8-c/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/koi8-r/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/koi8-r/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/koi8-r/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/koi8-u/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/koi8-u/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/koi8-u/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/locale.alias",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/locale.dir",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/microsoft-cp1251/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/microsoft-cp1251/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/microsoft-cp1251/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/microsoft-cp1255/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/microsoft-cp1255/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/microsoft-cp1255/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/microsoft-cp1256/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/microsoft-cp1256/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/microsoft-cp1256/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/mulelao-1/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/mulelao-1/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/mulelao-1/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/nokhchi-1/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/nokhchi-1/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/nokhchi-1/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/pt_BR.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/pt_BR.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/pt_BR.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/pt_PT.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/pt_PT.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/pt_PT.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ru_RU.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ru_RU.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/ru_RU.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/sr_RS.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/sr_RS.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/sr_RS.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/tatar-cyr/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/tatar-cyr/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/tatar-cyr/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/th_TH/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/th_TH/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/th_TH/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/th_TH.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/th_TH.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/th_TH.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/tscii-0/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/tscii-0/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/tscii-0/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/vi_VN.tcvn/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/vi_VN.tcvn/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/vi_VN.tcvn/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/vi_VN.viscii/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/vi_VN.viscii/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/vi_VN.viscii/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN.gb18030/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN.gb18030/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN.gb18030/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN.gbk/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN.gbk/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_CN.gbk/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_HK.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_HK.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_HK.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_HK.big5/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_HK.big5/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_HK.big5/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_HK.big5hkscs/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_HK.big5hkscs/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_HK.big5hkscs/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_TW/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_TW/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_TW/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_TW.UTF-8/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_TW.UTF-8/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_TW.UTF-8/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_TW.big5/Compose",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_TW.big5/XI18N_OBJS",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/locale/zh_TW.big5/XLC_LOCALE",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/freetype-LICENSE.TXT",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libX11-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libX11-lcUniConv-COPYRIGHT",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libXau-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libXext-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libXfixes-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libXfont2-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libXi-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libXrender-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libXtst-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libfontenc-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libxcb-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/libxkbfile-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/pixman-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/rendercheck-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xcb-proto-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xkeyboard-config-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorg-server-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-applewmproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-bigreqsproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-compositeproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-damageproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-dmxproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-dri2proto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-dri3proto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-evieproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-fixesproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-fontcacheproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-fontsproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-glproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-inputproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-kbproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-lg3dproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-pmproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-presentproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-printproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-randrproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-recordproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-renderproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-resourceproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-scrnsaverproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-trapproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-videoproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-windowswmproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-x11proto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xcmiscproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xextproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xf86bigfontproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xf86dgaproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xf86driproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xf86miscproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xf86rushproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xf86vidmodeproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xineramaproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xorgproto-COPYING-xwaylandproto",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/xtrans-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/x11-server/zlib-LICENSE",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/x11-server/freetype-LICENSE.TXT",
+        "share/licenses/x11-server/libX11-COPYING",
+        "share/licenses/x11-server/libX11-lcUniConv-COPYRIGHT",
+        "share/licenses/x11-server/libXau-COPYING",
+        "share/licenses/x11-server/libXext-COPYING",
+        "share/licenses/x11-server/libXfixes-COPYING",
+        "share/licenses/x11-server/libXfont2-COPYING",
+        "share/licenses/x11-server/libXi-COPYING",
+        "share/licenses/x11-server/libXrender-COPYING",
+        "share/licenses/x11-server/libXtst-COPYING",
+        "share/licenses/x11-server/libfontenc-COPYING",
+        "share/licenses/x11-server/libxcb-COPYING",
+        "share/licenses/x11-server/libxkbfile-COPYING",
+        "share/licenses/x11-server/pixman-COPYING",
+        "share/licenses/x11-server/rendercheck-COPYING",
+        "share/licenses/x11-server/xcb-proto-COPYING",
+        "share/licenses/x11-server/xkeyboard-config-COPYING",
+        "share/licenses/x11-server/xorg-server-COPYING",
+        "share/licenses/x11-server/xorgproto-COPYING-applewmproto",
+        "share/licenses/x11-server/xorgproto-COPYING-bigreqsproto",
+        "share/licenses/x11-server/xorgproto-COPYING-compositeproto",
+        "share/licenses/x11-server/xorgproto-COPYING-damageproto",
+        "share/licenses/x11-server/xorgproto-COPYING-dmxproto",
+        "share/licenses/x11-server/xorgproto-COPYING-dri2proto",
+        "share/licenses/x11-server/xorgproto-COPYING-dri3proto",
+        "share/licenses/x11-server/xorgproto-COPYING-evieproto",
+        "share/licenses/x11-server/xorgproto-COPYING-fixesproto",
+        "share/licenses/x11-server/xorgproto-COPYING-fontcacheproto",
+        "share/licenses/x11-server/xorgproto-COPYING-fontsproto",
+        "share/licenses/x11-server/xorgproto-COPYING-glproto",
+        "share/licenses/x11-server/xorgproto-COPYING-inputproto",
+        "share/licenses/x11-server/xorgproto-COPYING-kbproto",
+        "share/licenses/x11-server/xorgproto-COPYING-lg3dproto",
+        "share/licenses/x11-server/xorgproto-COPYING-pmproto",
+        "share/licenses/x11-server/xorgproto-COPYING-presentproto",
+        "share/licenses/x11-server/xorgproto-COPYING-printproto",
+        "share/licenses/x11-server/xorgproto-COPYING-randrproto",
+        "share/licenses/x11-server/xorgproto-COPYING-recordproto",
+        "share/licenses/x11-server/xorgproto-COPYING-renderproto",
+        "share/licenses/x11-server/xorgproto-COPYING-resourceproto",
+        "share/licenses/x11-server/xorgproto-COPYING-scrnsaverproto",
+        "share/licenses/x11-server/xorgproto-COPYING-trapproto",
+        "share/licenses/x11-server/xorgproto-COPYING-videoproto",
+        "share/licenses/x11-server/xorgproto-COPYING-windowswmproto",
+        "share/licenses/x11-server/xorgproto-COPYING-x11proto",
+        "share/licenses/x11-server/xorgproto-COPYING-xcmiscproto",
+        "share/licenses/x11-server/xorgproto-COPYING-xextproto",
+        "share/licenses/x11-server/xorgproto-COPYING-xf86bigfontproto",
+        "share/licenses/x11-server/xorgproto-COPYING-xf86dgaproto",
+        "share/licenses/x11-server/xorgproto-COPYING-xf86driproto",
+        "share/licenses/x11-server/xorgproto-COPYING-xf86miscproto",
+        "share/licenses/x11-server/xorgproto-COPYING-xf86rushproto",
+        "share/licenses/x11-server/xorgproto-COPYING-xf86vidmodeproto",
+        "share/licenses/x11-server/xorgproto-COPYING-xineramaproto",
+        "share/licenses/x11-server/xorgproto-COPYING-xwaylandproto",
+        "share/licenses/x11-server/xtrans-COPYING",
+        "share/licenses/x11-server/zlib-LICENSE"
+      ],
+      "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-server/binaries/9cc9c7c53dd4996540f3871b561716a268289ed6ff8eca7611d10aa456b58558.tar",
+        "sha256": "9cc9c7c53dd4996540f3871b561716a268289ed6ff8eca7611d10aa456b58558",
+        "size": 25956864
+      }
+    },
+    "xterm": {
+      "format": 1,
+      "name": "xterm",
+      "version": "411-1",
+      "dependencies": [
+        "x11-widgets"
+      ],
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/source.tar",
+          "sha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
+          "size": 11612160
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/build.sh",
+          "sha256": "b0e94d7bee90845359e08da647d21d1f31fc95bc8985965b300749aa1316a628",
+          "size": 14480
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/test.sh",
+          "sha256": "6051a217500dc0828949380c189c6b003b5335882bf5b5d8f4dcd9f9034c7bff",
+          "size": 48
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "bin/xterm",
+          "mode": 493
+        },
+        {
+          "path": "share/xterm/termcap",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/app-defaults/XTerm",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/libICE-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/libSM-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/libXaw-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/libXft-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/libXmu-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/libXpm-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/libXrandr-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/libXt-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/termcap-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/xev-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/xmessage-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/xprop-COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xterm/xterm-COPYING",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/xterm/libICE-COPYING",
+        "share/licenses/xterm/libSM-COPYING",
+        "share/licenses/xterm/libXaw-COPYING",
+        "share/licenses/xterm/libXft-COPYING",
+        "share/licenses/xterm/libXmu-COPYING",
+        "share/licenses/xterm/libXpm-COPYING",
+        "share/licenses/xterm/libXrandr-COPYING",
+        "share/licenses/xterm/libXt-COPYING",
+        "share/licenses/xterm/termcap-COPYING",
+        "share/licenses/xterm/xev-COPYING",
+        "share/licenses/xterm/xmessage-COPYING",
+        "share/licenses/xterm/xprop-COPYING",
+        "share/licenses/xterm/xterm-COPYING"
+      ],
+      "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xterm/binaries/0c62358e42f94edca29ae39b13fae4bd865c58c87818e3839fc8f8cdf774905c.tar",
+        "sha256": "0c62358e42f94edca29ae39b13fae4bd865c58c87818e3839fc8f8cdf774905c",
+        "size": 15090176
+      }
+    },
+    "2048": {
+      "format": 1,
+      "name": "2048",
+      "version": "0.1.0-1",
+      "dependencies": [],
+      "dependencyRequirements": {},
+      "platform": {
+        "target": "wasm32-wasm-posix",
+        "minVersion": "1.0.0",
+        "runtimeAbi": 5,
+        "features": [
+          "posix-core"
+        ]
+      },
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/2048/source.tar",
+          "sha256": "99c0486649f357380f1d60d9929ad9733ffa235c0e10f80e13170a23c74ba37f",
+          "size": 30720
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/2048/build.sh",
+          "sha256": "ef0d190bf2b8d4c9f621aaa034543f7623801b328b5e910afd73f31f5d6876a5",
+          "size": 300
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/2048/test.sh",
+          "sha256": "9a25e6f80d7e6b0ebefff65f58d4c090eefa9a3089184af27b6f590399edb6c8",
+          "size": 142
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "bin/2048",
+          "mode": 493
+        },
+        {
+          "path": "share/doc/2048/README.md",
+          "mode": 420
+        },
+        {
+          "path": "share/doc/2048/UPSTREAM.json",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/2048/LICENSE",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/2048/LICENSE"
+      ],
+      "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/2048/binaries/8d77c54d84083668a4b5e6a678a92503d3587d9e3d15103e19bdc557dc9c7555.tar",
+        "sha256": "8d77c54d84083668a4b5e6a678a92503d3587d9e3d15103e19bdc557dc9c7555",
+        "size": 35328
+      }
+    },
+    "xcalc": {
+      "format": 1,
+      "name": "xcalc",
+      "version": "1.1.3-1",
+      "dependencies": [
+        "x11-widgets"
+      ],
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/source.tar",
+          "sha256": "23668deaf491ccf708739769673b9fa6508be7de38c62f2e89edc40af101850f",
+          "size": 911360
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/build.sh",
+          "sha256": "c2a58a43cb7aebbb677a6d5145b24a9c2ee7cf8f8c1d02b74ec1300fb2b53cfc",
+          "size": 569
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/test.sh",
+          "sha256": "8d1e80db152c2560a0fc785c97f5ed450396532ad5948656c8076567608cfe60",
+          "size": 47
+        },
+        {
+          "path": "config.h",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/config.h",
+          "sha256": "ef6a54aa0320ac1808e06b3efb7cad696692bf4d6225b2f465d9314550a58ad6",
+          "size": 292
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "bin/xcalc",
+          "mode": 493
+        },
+        {
+          "path": "share/licenses/xcalc/COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/app-defaults/XCalc",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/app-defaults/XCalc-color",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/xcalc/COPYING"
+      ],
+      "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xcalc/binaries/da91414af51d290ec2ff8f3ba453340ea59badc56acb29b57d6304fb568ec191.tar",
+        "sha256": "da91414af51d290ec2ff8f3ba453340ea59badc56acb29b57d6304fb568ec191",
+        "size": 4465664
+      }
+    },
+    "xedit": {
+      "format": 1,
+      "name": "xedit",
+      "version": "1.2.5-1",
+      "dependencies": [
+        "x11-widgets"
+      ],
+      "dependencyRequirements": {
+        "x11-widgets": {
+          "version": "1.0-1"
+        }
+      },
+      "platform": {
+        "target": "wasm32-wasm-posix",
+        "minVersion": "1.0.0",
+        "runtimeAbi": 5,
+        "features": [
+          "posix-core",
+          "unix-stream"
+        ]
+      },
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/source.tar",
+          "sha256": "34900bb42e7e3a9da5eae9d796b2a321dfd283c6eabca37a0352a5c5f7025f7e",
+          "size": 3194880
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/build.sh",
+          "sha256": "26dcf9abdb2c2d10e3f1473c6aabdcda7a690c74c095546f6746ec25471667ec",
+          "size": 1843
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/test.sh",
+          "sha256": "7de6f3bec21ecead67fe15b901c770ae5719f90e4c37121ccb2c904657be9196",
+          "size": 117
+        },
+        {
+          "path": "config.h",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/config.h",
+          "sha256": "16e8737b475f4645c489e15b7bd6c881a8de117d865ddd792fedb5fcfe988cf9",
+          "size": 375
+        },
+        {
+          "path": "util.c",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/util.c",
+          "sha256": "5f62916f93b3153ca0e3ba6958c884758a12cfe7be7e3ae74c213f925212dca8",
+          "size": 25493
+        },
+        {
+          "path": "lisp-format.c",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/lisp-format.c",
+          "sha256": "3ae0c7c36e89a67d6e20c4245b6d7839974bcf6b2191d2c6b7dc43f7b7ac7e37",
+          "size": 56526
+        },
+        {
+          "path": "lisp-io.c",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/lisp-io.c",
+          "sha256": "fc9f3c70b65eca60fcfb3407f1679eef0295cca3db4bf73127f9c42694688052",
+          "size": 15545
+        },
+        {
+          "path": "lisp-lisp.c",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/lisp-lisp.c",
+          "sha256": "f624c0b1dfd26f1754d3c1970ab7358027cf212db7b4502143329883cfd9219f",
+          "size": 154233
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "bin/xedit",
+          "mode": 493
+        },
+        {
+          "path": "libexec/xedit/lsp",
+          "mode": 493
+        },
+        {
+          "path": "libexec/xedit/regex-tests",
+          "mode": 493
+        },
+        {
+          "path": "share/xedit/tests/tests.txt",
+          "mode": 420
+        },
+        {
+          "path": "share/licenses/xedit/COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/app-defaults/Xedit",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/app-defaults/Xedit-color",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/indent.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/lisp.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/auto.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/c.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/html.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/imake.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/lisp.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/make.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/man.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/patch.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/perl.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/python.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/rpm.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/sgml.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/sh.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/xconf.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/xlog.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/progmodes/xrdb.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/syntax.lsp",
+          "mode": 420
+        },
+        {
+          "path": "share/xedit/lisp/xedit.lsp",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/xedit/COPYING"
+      ],
+      "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/xedit/binaries/4b6d0f82b31c046546a11b19351480b17af0269686f2fd3aa6eae462a0fb75a7.tar",
+        "sha256": "4b6d0f82b31c046546a11b19351480b17af0269686f2fd3aa6eae462a0fb75a7",
+        "size": 20440064
+      }
+    },
+    "xclock": {
+      "format": 1,
+      "name": "xclock",
+      "version": "1.2.1-1",
+      "dependencies": [
+        "x11-widgets"
+      ],
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xclock/source.tar",
+          "sha256": "394edde8dd56ff2c66a6fe7e9e985868d2f98cb36fa61f46805d537175deec3a",
+          "size": 1146880
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xclock/build.sh",
+          "sha256": "ef64dbba2ef206857355c10c3aac84cbc1ac70350641e19eb9948cf7bb00ceeb",
+          "size": 699
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xclock/test.sh",
+          "sha256": "e6aca0478eaf23cf55bd786eae2ee6994d73d9edbcfbd080a1f86d094f980a97",
+          "size": 48
+        },
+        {
+          "path": "config.h",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xclock/config.h",
+          "sha256": "120ac19616179eaef8537e7503968303d7610e389754eea7f1682530b6ac7bad",
+          "size": 293
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "bin/xclock",
+          "mode": 493
+        },
+        {
+          "path": "share/licenses/xclock/COPYING",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/app-defaults/XClock",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/app-defaults/XClock-ampm",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/app-defaults/XClock-color",
+          "mode": 420
+        },
+        {
+          "path": "share/X11/app-defaults/XClock-grandfather",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/xclock/COPYING"
+      ],
+      "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xclock/binaries/52e93b8a7263e6bc0ebe2ae76118e8c09fd2bd16b402d455b0562f7fdc591b32.tar",
+        "sha256": "52e93b8a7263e6bc0ebe2ae76118e8c09fd2bd16b402d455b0562f7fdc591b32",
+        "size": 4346368
+      }
+    },
+    "xeyes": {
+      "format": 1,
+      "name": "xeyes",
+      "version": "1.3.1-1",
+      "dependencies": [
+        "x11-widgets"
+      ],
+      "files": [
+        {
+          "path": "source.tar",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/source.tar",
+          "sha256": "4795c8114d2fec5b93225c5066059dec902f2847f7b5b3e14398fe88880bc8fd",
+          "size": 829440
+        },
+        {
+          "path": "build.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/build.sh",
+          "sha256": "8b5ae4e485e4e8315eb7040de7b1b6bc41a811b656b1d255b5803c30c3dd8392",
+          "size": 437
+        },
+        {
+          "path": "test.sh",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/test.sh",
+          "sha256": "14c88a38e44c504f2b8e21ac26f6bacd6d7e03911852f94be70b4a4eeb7f26a5",
+          "size": 47
+        },
+        {
+          "path": "config.h",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/config.h",
+          "sha256": "f474a4af30898e370f652ac9bf7e0cd556fbe7dea72bef4e354d4de02e34e0f8",
+          "size": 292
+        },
+        {
+          "path": "Eyes.c",
+          "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/Eyes.c",
+          "sha256": "1510bf56c7a1e40ae1f953f5b98f001b7d029fc254421374a1b7ab8b6ccb921f",
+          "size": 27709
+        }
+      ],
+      "build": "build.sh",
+      "test": "test.sh",
+      "outputs": [
+        {
+          "path": "bin/xeyes",
+          "mode": 493
+        },
+        {
+          "path": "share/licenses/xeyes/COPYING",
+          "mode": 420
+        }
+      ],
+      "licenses": [
+        "share/licenses/xeyes/COPYING"
+      ],
+      "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+      "binary": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xeyes/binaries/d71f599c1bdc8c45e677297115781a6d05d7de131ea2666212da1cee021d0c25.tar",
+        "sha256": "d71f599c1bdc8c45e677297115781a6d05d7de131ea2666212da1cee021d0c25",
+        "size": 4360704
+      }
+    }
+  },
+  "archives": {
+    "desktop-entries": {
+      "sha256": "50b09e40f76b88dab0be5d1810ce0b71b368db87e7cdeb4ac5791a0ddb56bf3b",
+      "size": 40448
+    },
+    "x11-server": {
+      "sha256": "9cc9c7c53dd4996540f3871b561716a268289ed6ff8eca7611d10aa456b58558",
+      "size": 25956864
+    },
+    "x11-toolkit": {
+      "sha256": "cfac272185f414f98c47f9a4874e7b11d369bf32b57b8cfddf7f835ccab182f1",
+      "size": 2518016
+    },
+    "x11-widgets": {
+      "sha256": "f07c450b691593ebaf93331b26c6b978fd56e29f846d4ee996ca8e1f39e77547",
+      "size": 1338880
+    },
+    "jwm": {
+      "sha256": "8872b11c376190f6c6a64d3bf696574330d60735a27b6d37d7cb11dfe9792792",
+      "size": 9654272
+    },
+    "xterm": {
+      "sha256": "0c62358e42f94edca29ae39b13fae4bd865c58c87818e3839fc8f8cdf774905c",
+      "size": 15090176
+    },
+    "2048": {
+      "sha256": "8d77c54d84083668a4b5e6a678a92503d3587d9e3d15103e19bdc557dc9c7555",
+      "size": 35328
+    },
+    "xcalc": {
+      "sha256": "da91414af51d290ec2ff8f3ba453340ea59badc56acb29b57d6304fb568ec191",
+      "size": 4465664
+    },
+    "xedit": {
+      "sha256": "4b6d0f82b31c046546a11b19351480b17af0269686f2fd3aa6eae462a0fb75a7",
+      "size": 20440064
+    },
+    "xclock": {
+      "sha256": "52e93b8a7263e6bc0ebe2ae76118e8c09fd2bd16b402d455b0562f7fdc591b32",
+      "size": 4346368
+    },
+    "xeyes": {
+      "sha256": "d71f599c1bdc8c45e677297115781a6d05d7de131ea2666212da1cee021d0c25",
+      "size": 4360704
+    },
+    "desktop-apps": {
+      "sha256": "828eca9f171fdf97393f3c99fc436993cbdbcfca1cdc05e556b4520b7ac4eaa3",
+      "size": 18432
+    }
+  },
+  "checksumsSha256": "1371bde4b30faf6752b476fae9b7a804abe8f6cd2d1f661eb0b6aac3fde23bb3",
+  "fileCount": 774
+}

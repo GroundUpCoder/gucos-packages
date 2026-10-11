@@ -1,0 +1,395 @@
+gucman: unknown source
+
+{
+  tail: 'gets\n' +
+    'gucman: Plan: 12 packages (including dependencies); checking compatibility\n' +
+    'gucman: Checking file ownership for 12 packages\n' +
+    'gucman: Package 1/12: desktop-entries (11 remaining after this)\n' +
+    'gucman: Downloading desktop-entries archive (40448 bytes)\n'
+}
+{
+  tail: 'x11-server: 75/527 files\n' +
+    'gucman: Installing x11-server: 100/527 files\n' +
+    'gucman: Installing x11-server: 125/527 files\n' +
+    'gucman: Installing x11-server: 150/527 files\n' +
+    'gucman: Installing x11-server: 175/527 files\n' +
+    'gucman: Installing x11-server: 200/527 files\n'
+}
+{
+  tail: ' checksums: x11-server\n' +
+    'gucman: Checksummed x11-server: 25/527 files\n' +
+    'gucman: Checksummed x11-server: 50/527 files\n' +
+    'gucman: Checksummed x11-server: 75/527 files\n' +
+    'gucman: Checksummed x11-server: 100/527 files\n' +
+    'gucman: Checksummed x11-server: 125/527 files\n'
+}
+{
+  tail: '\n' +
+    'gucman: Verifying staged files: x11-widgets\n' +
+    'gucman: Activating: x11-widgets\n' +
+    'Installed migration:x11-widgets 1.0-1\n' +
+    'gucman: Package 5/12: jwm (7 remaining after this)\n' +
+    'gucman: Downloading jwm archive (9654272 bytes)\n' +
+    '  Connecting; waiting for response…\n'
+}
+{
+  tail: '(59%)\n' +
+    '  Downloaded 16.03 / 19.49 MiB (82%)\n' +
+    '  Downloaded 19.49 / 19.49 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: xedit archive\n' +
+    'gucman: Checking cached object: xedit archive\n' +
+    'gucman: Unpacking: xedit\n' +
+    'gucman: Installing xedit: 0/27 files\n'
+}
+gucman: install migration:desktop-apps: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 23788 bytes; transfer finished
+gucman: Resolving: migration:desktop-apps
+gucman: Downloading manifest for migration:desktop-apps (4392 bytes)
+  Connecting; waiting for response…
+  Downloaded 4392 / 4392 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:desktop-apps
+gucman: Checking cached object: manifest for migration:desktop-apps
+gucman: Resolving: migration:desktop-entries
+gucman: Downloading manifest for migration:desktop-entries (2813 bytes)
+  Connecting; waiting for response…
+  Downloaded 2813 / 2813 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:desktop-entries
+gucman: Checking cached object: manifest for migration:desktop-entries
+gucman: Resolving: migration:jwm
+gucman: Downloading manifest for migration:jwm (3074 bytes)
+  Connecting; waiting for response…
+  Downloaded 3074 / 3074 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:jwm
+gucman: Checking cached object: manifest for migration:jwm
+gucman: Resolving: migration:x11-widgets
+gucman: Downloading manifest for migration:x11-widgets (3420 bytes)
+  Connecting; waiting for response…
+  Downloaded 3420 / 3420 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Downloading manifest for migration:x11-toolkit (13770 bytes)
+  Connecting; waiting for response…
+  Downloaded 13770 / 13770 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Downloading manifest for migration:x11-server (47963 bytes)
+  Connecting; waiting for response…
+  Downloaded 47963 / 47963 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:xterm
+gucman: Downloading manifest for migration:xterm (3315 bytes)
+  Connecting; waiting for response…
+  Downloaded 3315 / 3315 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xterm
+gucman: Checking cached object: manifest for migration:xterm
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:2048
+gucman: Downloading manifest for migration:2048 (1929 bytes)
+  Connecting; waiting for response…
+  Downloaded 1929 / 1929 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:2048
+gucman: Checking cached object: manifest for migration:2048
+gucman: Resolving: migration:xcalc
+gucman: Downloading manifest for migration:xcalc (2072 bytes)
+  Connecting; waiting for response…
+  Downloaded 2072 / 2072 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xcalc
+gucman: Checking cached object: manifest for migration:xcalc
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:xedit
+gucman: Downloading manifest for migration:xedit (5337 bytes)
+  Connecting; waiting for response…
+  Downloaded 5337 / 5337 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xedit
+gucman: Checking cached object: manifest for migration:xedit
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:xclock
+gucman: Downloading manifest for migration:xclock (2257 bytes)
+  Connecting; waiting for response…
+  Downloaded 2257 / 2257 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xclock
+gucman: Checking cached object: manifest for migration:xclock
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:xeyes
+gucman: Downloading manifest for migration:xeyes (2191 bytes)
+  Connecting; waiting for response…
+  Downloaded 2191 / 2191 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xeyes
+gucman: Checking cached object: manifest for migration:xeyes
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Plan: 12 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 12 packages
+gucman: Package 1/12: desktop-entries (11 remaining after this)
+gucman: Downloading desktop-entries archive (40448 bytes)
+  Connecting; waiting for response…
+  Downloaded 40448 / 40448 bytes (100%); transfer finished
+gucman: Verifying download: desktop-entries archive
+gucman: Checking cached object: desktop-entries archive
+gucman: Unpacking: desktop-entries
+gucman: Installing desktop-entries: 0/3 files
+gucman: Installing desktop-entries: 3/3 files
+gucman: Preparing checksums: desktop-entries
+gucman: Checksummed desktop-entries: 3/3 files
+gucman: Saving transaction: desktop-entries
+gucman: Verifying staged files: desktop-entries
+gucman: Activating: desktop-entries
+Installed migration:desktop-entries 1.0.0-1
+gucman: Package 2/12: x11-server (10 remaining after this)
+gucman: Downloading x11-server archive (25956864 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.81 / 24.75 MiB (11%)
+  Downloaded 7.33 / 24.75 MiB (29%)
+  Downloaded 12.41 / 24.75 MiB (50%)
+  Downloaded 17.31 / 24.75 MiB (69%)
+  Downloaded 22.23 / 24.75 MiB (89%)
+  Downloaded 24.75 / 24.75 MiB (100%); transfer finished
+gucman: Verifying download: x11-server archive
+gucman: Checking cached object: x11-server archive
+gucman: Unpacking: x11-server
+gucman: Installing x11-server: 0/527 files
+gucman: Installing x11-server: 25/527 files
+gucman: Installing x11-server: 50/527 files
+gucman: Installing x11-server: 75/527 files
+gucman: Installing x11-server: 100/527 files
+gucman: Installing x11-server: 125/527 files
+gucman: Installing x11-server: 150/527 files
+gucman: Installing x11-server: 175/527 files
+gucman: Installing x11-server: 200/527 files
+gucman: Installing x11-server: 225/527 files
+gucman: Installing x11-server: 250/527 files
+gucman: Installing x11-server: 275/527 files
+gucman: Installing x11-server: 300/527 files
+gucman: Installing x11-server: 325/527 files
+gucman: Installing x11-server: 350/527 files
+gucman: Installing x11-server: 375/527 files
+gucman: Installing x11-server: 400/527 files
+gucman: Installing x11-server: 425/527 files
+gucman: Installing x11-server: 450/527 files
+gucman: Installing x11-server: 475/527 files
+gucman: Installing x11-server: 500/527 files
+gucman: Installing x11-server: 525/527 files
+gucman: Installing x11-server: 527/527 files
+gucman: Preparing checksums: x11-server
+gucman: Checksummed x11-server: 25/527 files
+gucman: Checksummed x11-server: 50/527 files
+gucman: Checksummed x11-server: 75/527 files
+gucman: Checksummed x11-server: 100/527 files
+gucman: Checksummed x11-server: 125/527 files
+gucman: Checksummed x11-server: 150/527 files
+gucman: Checksummed x11-server: 175/527 files
+gucman: Checksummed x11-server: 200/527 files
+gucman: Checksummed x11-server: 225/527 files
+gucman: Checksummed x11-server: 250/527 files
+gucman: Checksummed x11-server: 275/527 files
+gucman: Checksummed x11-server: 300/527 files
+gucman: Checksummed x11-server: 325/527 files
+gucman: Checksummed x11-server: 350/527 files
+gucman: Checksummed x11-server: 375/527 files
+gucman: Checksummed x11-server: 400/527 files
+gucman: Checksummed x11-server: 425/527 files
+gucman: Checksummed x11-server: 450/527 files
+gucman: Checksummed x11-server: 475/527 files
+gucman: Checksummed x11-server: 500/527 files
+gucman: Checksummed x11-server: 525/527 files
+gucman: Checksummed x11-server: 527/527 files
+gucman: Saving transaction: x11-server
+gucman: Verifying staged files: x11-server
+gucman: Activating: x11-server
+Installed migration:x11-server 21.1.24-1
+gucman: Package 3/12: x11-toolkit (9 remaining after this)
+gucman: Downloading x11-toolkit archive (2518016 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.40 / 2.40 MiB (100%); transfer finished
+gucman: Verifying download: x11-toolkit archive
+gucman: Checking cached object: x11-toolkit archive
+gucman: Unpacking: x11-toolkit
+gucman: Installing x11-toolkit: 0/157 files
+gucman: Installing x11-toolkit: 25/157 files
+gucman: Installing x11-toolkit: 50/157 files
+gucman: Installing x11-toolkit: 75/157 files
+gucman: Installing x11-toolkit: 100/157 files
+gucman: Installing x11-toolkit: 125/157 files
+gucman: Installing x11-toolkit: 150/157 files
+gucman: Installing x11-toolkit: 157/157 files
+gucman: Preparing checksums: x11-toolkit
+gucman: Checksummed x11-toolkit: 25/157 files
+gucman: Checksummed x11-toolkit: 50/157 files
+gucman: Checksummed x11-toolkit: 75/157 files
+gucman: Checksummed x11-toolkit: 100/157 files
+gucman: Checksummed x11-toolkit: 125/157 files
+gucman: Checksummed x11-toolkit: 150/157 files
+gucman: Checksummed x11-toolkit: 157/157 files
+gucman: Saving transaction: x11-toolkit
+gucman: Verifying staged files: x11-toolkit
+gucman: Activating: x11-toolkit
+Installed migration:x11-toolkit 1.0-1
+gucman: Package 4/12: x11-widgets (8 remaining after this)
+gucman: Downloading x11-widgets archive (1338880 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.28 / 1.28 MiB (100%); transfer finished
+gucman: Verifying download: x11-widgets archive
+gucman: Checking cached object: x11-widgets archive
+gucman: Unpacking: x11-widgets
+gucman: Installing x11-widgets: 0/15 files
+gucman: Installing x11-widgets: 15/15 files
+gucman: Preparing checksums: x11-widgets
+gucman: Checksummed x11-widgets: 15/15 files
+gucman: Saving transaction: x11-widgets
+gucman: Verifying staged files: x11-widgets
+gucman: Activating: x11-widgets
+Installed migration:x11-widgets 1.0-1
+gucman: Package 5/12: jwm (7 remaining after this)
+gucman: Downloading jwm archive (9654272 bytes)
+  Connecting; waiting for response…
+  Downloaded 4.59 / 9.21 MiB (49%)
+  Downloaded 9.21 / 9.21 MiB (100%); transfer finished
+gucman: Verifying download: jwm archive
+gucman: Checking cached object: jwm archive
+gucman: Unpacking: jwm
+gucman: Installing jwm: 0/7 files
+gucman: Installing jwm: 7/7 files
+gucman: Preparing checksums: jwm
+gucman: Checksummed jwm: 7/7 files
+gucman: Saving transaction: jwm
+gucman: Verifying staged files: jwm
+gucman: Activating: jwm
+Installed migration:jwm 2.4.6-2
+gucman: Package 6/12: xterm (6 remaining after this)
+gucman: Downloading xterm archive (15090176 bytes)
+  Connecting; waiting for response…
+  Downloaded 4.81 / 14.39 MiB (33%)
+  Downloaded 8.86 / 14.39 MiB (61%)
+  Downloaded 12.90 / 14.39 MiB (89%)
+  Downloaded 14.39 / 14.39 MiB (100%); transfer finished
+gucman: Verifying download: xterm archive
+gucman: Checking cached object: xterm archive
+gucman: Unpacking: xterm
+gucman: Installing xterm: 0/16 files
+gucman: Installing xterm: 16/16 files
+gucman: Preparing checksums: xterm
+gucman: Checksummed xterm: 16/16 files
+gucman: Saving transaction: xterm
+gucman: Verifying staged files: xterm
+gucman: Activating: xterm
+Installed migration:xterm 411-1
+gucman: Package 7/12: 2048 (5 remaining after this)
+gucman: Downloading 2048 archive (35328 bytes)
+  Connecting; waiting for response…
+  Downloaded 35328 / 35328 bytes (100%); transfer finished
+gucman: Verifying download: 2048 archive
+gucman: Checking cached object: 2048 archive
+gucman: Unpacking: 2048
+gucman: Installing 2048: 0/4 files
+gucman: Installing 2048: 4/4 files
+gucman: Preparing checksums: 2048
+gucman: Checksummed 2048: 4/4 files
+gucman: Saving transaction: 2048
+gucman: Verifying staged files: 2048
+gucman: Activating: 2048
+Installed migration:2048 0.1.0-1
+gucman: Package 8/12: xcalc (4 remaining after this)
+gucman: Downloading xcalc archive (4465664 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.47 / 4.26 MiB (57%)
+  Downloaded 4.26 / 4.26 MiB (100%); transfer finished
+gucman: Verifying download: xcalc archive
+gucman: Checking cached object: xcalc archive
+gucman: Unpacking: xcalc
+gucman: Installing xcalc: 0/4 files
+gucman: Installing xcalc: 4/4 files
+gucman: Preparing checksums: xcalc
+gucman: Checksummed xcalc: 4/4 files
+gucman: Saving transaction: xcalc
+gucman: Verifying staged files: xcalc
+gucman: Activating: xcalc
+Installed migration:xcalc 1.1.3-1
+gucman: Package 9/12: xedit (3 remaining after this)
+gucman: Downloading xedit archive (20440064 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.40 / 19.49 MiB (12%)
+  Downloaded 7.02 / 19.49 MiB (35%)
+  Downloaded 11.67 / 19.49 MiB (59%)
+  Downloaded 16.03 / 19.49 MiB (82%)
+  Downloaded 19.49 / 19.49 MiB (100%); transfer finished
+gucman: Verifying download: xedit archive
+gucman: Checking cached object: xedit archive
+gucman: Unpacking: xedit
+gucman: Installing xedit: 0/27 files
+gucman: Installing xedit: 25/27 files
+gucman: Installing xedit: 27/27 files
+gucman: Preparing checksums: xedit
+gucman: Checksummed xedit: 25/27 files
+gucman: Checksummed xedit: 27/27 files
+gucman: Saving transaction: xedit
+gucman: Verifying staged files: xedit
+gucman: Activating: xedit
+Installed migration:xedit 1.2.5-1
+gucman: Package 10/12: xclock (2 remaining after this)
+gucman: Downloading xclock archive (4346368 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.20 / 4.15 MiB (4%)
+  Downloaded 4.15 / 4.15 MiB (100%); transfer finished
+gucman: Verifying download: xclock archive
+gucman: Checking cached object: xclock archive
+gucman: Unpacking: xclock
+gucman: Installing xclock: 0/6 files
+gucman: Installing xclock: 6/6 files
+gucman: Preparing checksums: xclock
+gucman: Checksummed xclock: 6/6 files
+gucman: Saving transaction: xclock
+gucman: Verifying staged files: xclock
+gucman: Activating: xclock
+Installed migration:xclock 1.2.1-1
+gucman: Package 11/12: xeyes (1 remaining after this)
+gucman: Downloading xeyes archive (4360704 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.73 / 4.16 MiB (65%)
+  Downloaded 4.16 / 4.16 MiB (100%); transfer finished
+gucman: Verifying download: xeyes archive
+gucman: Checking cached object: xeyes archive
+gucman: Unpacking: xeyes
+gucman: Installing xeyes: 0/2 files
+gucman: Installing xeyes: 2/2 files
+gucman: Preparing checksums: xeyes
+gucman: Checksummed xeyes: 2/2 files
+gucman: Saving transaction: xeyes
+gucman: Verifying staged files: xeyes
+gucman: Activating: xeyes
+Installed migration:xeyes 1.3.1-1
+gucman: Package 12/12: desktop-apps (0 remaining after this)
+gucman: Downloading desktop-apps archive (18432 bytes)
+  Connecting; waiting for response…
+  Downloaded 18432 / 18432 bytes (100%); transfer finished
+gucman: Verifying download: desktop-apps archive
+gucman: Checking cached object: desktop-apps archive
+gucman: Unpacking: desktop-apps
+gucman: Installing desktop-apps: 0/6 files
+gucman: Installing desktop-apps: 6/6 files
+gucman: Preparing checksums: desktop-apps
+gucman: Checksummed desktop-apps: 6/6 files
+gucman: Saving transaction: desktop-apps
+gucman: Verifying staged files: desktop-apps
+gucman: Activating: desktop-apps
+Installed migration:desktop-apps 1.0.0-1
+
+/usr/local/share/applications/gucos-desktop-2048.desktop: OK
+/usr/local/share/applications/gucos-desktop-xcalc.desktop: OK
+/usr/local/share/applications/gucos-desktop-xedit.desktop: OK
+/usr/local/share/applications/gucos-desktop-xclock.desktop: OK
+/usr/local/share/applications/gucos-desktop-xeyes.desktop: OK
+/usr/local/share/licenses/desktop-apps/LICENSE: OK
+
+c4abff55c511a93516449c41eb390bacda34e86e99ba719a1105ef0cb69a82bd  /home/user/migration-export.tar
+18432
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

@@ -1,0 +1,16 @@
+gucman: unknown source
+
+
+DESKTOP-APPS-STAGED
+
+/usr/local/share/applications/gucos-desktop-2048.desktop: OK
+/usr/local/share/applications/gucos-desktop-xcalc.desktop: OK
+/usr/local/share/applications/gucos-desktop-xedit.desktop: OK
+/usr/local/share/applications/gucos-desktop-xclock.desktop: OK
+/usr/local/share/applications/gucos-desktop-xeyes.desktop: OK
+/usr/local/share/licenses/desktop-apps/LICENSE: OK
+
+c4abff55c511a93516449c41eb390bacda34e86e99ba719a1105ef0cb69a82bd  /home/user/migration-export.tar
+18432
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
