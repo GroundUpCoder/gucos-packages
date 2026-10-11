@@ -1,4 +1,4 @@
 {
-  "revision": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
-  "description": "83 live-accepted catalog entries after independently reviewed seven-utility public install/consumer/GUI/reload gates; Snake1.0.0-2 preserved."
+  "revision": "b58c9448cfffd7af085285fc6aea55ddb3c4387f",
+  "description": "85 live-accepted catalog entries after independently reviewed Tcl/Tk public install, consumers, GUI and package reload; Snake1.0.0-2 preserved."
 }

@@ -4387,7 +4387,7 @@
     {
       "id": "tcl",
       "kind": "historical-canonical-name",
-      "state": "binary-tested-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/tcl/wasm-package.json",
       "historicalManifestSha256": "34d36da7822b6e7542aa93dff47e7234bda4559a5dc0168194acd61d14bb6338",
       "historicalEvidence": [
@@ -4399,11 +4399,16 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Reviewed immutable publication prepared; public install/consumer/GUI/reload pending."
+      "mapping": "tcl",
+      "acceptance": [
+        {
+          "revision": "a0583e0",
+          "catalog": "b58c9448cfffd7af085285fc6aea55ddb3c4387f",
+          "evidence": "docs/research/package-migration/tcl-tk/gucos-public",
+          "scope": "Independent review approved public install, exact consumers and 1553-file closure, Tk widget/keyboard/PNG/pack/grid functional gate, package-byte reload. GUI was not repeated after reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/tcl",
       "sourceReview": {
         "commit": "d1b6e59",
@@ -4433,7 +4438,7 @@
     {
       "id": "tk",
       "kind": "historical-canonical-name",
-      "state": "binary-tested-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/tk/wasm-package.json",
       "historicalManifestSha256": "1f2c8cefc32d80b50de4e19ab3810625f23406cf25288114f8e715116038b3cb",
       "historicalEvidence": [
@@ -4448,11 +4453,16 @@
         "tcl",
         "x11-server"
       ],
-      "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Reviewed immutable publication prepared; public install/consumer/GUI/reload pending."
+      "mapping": "tk",
+      "acceptance": [
+        {
+          "revision": "a0583e0",
+          "catalog": "b58c9448cfffd7af085285fc6aea55ddb3c4387f",
+          "evidence": "docs/research/package-migration/tcl-tk/gucos-public",
+          "scope": "Independent review approved public install, exact consumers and 1553-file closure, Tk widget/keyboard/PNG/pack/grid functional gate, package-byte reload. GUI was not repeated after reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/tk",
       "sourceReview": {
         "commit": "5d914383f037e88d801c9a61e775eac5207df41f",
