@@ -5,6 +5,7 @@ import {readFile,writeFile,access} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import {session} from '../compatibility/session.mjs';
+import {poll} from './poll.mjs';
 import {desktopSession} from './session.mjs';
 import {clickMenuEntry} from './menu.mjs';
 import {installObserver,observe} from './menu-xapps.mjs';
@@ -48,7 +49,7 @@ try{
  }
  async function saveExpected(text){
   await s.page.keyboard.press('Control+x');await s.page.keyboard.press('Control+s');
-  await s.page.waitForFunction(async text=>{const actual=await shell.busybox.read('/home/user/jwm-xedit.txt'),expected=new TextEncoder().encode(text);return actual?.length===expected.length&&expected.every((b,i)=>actual[i]===b);},text,{timeout:15000});
+  await poll(s.page,async text=>{const actual=await shell.busybox.read('/home/user/jwm-xedit.txt'),expected=new TextEncoder().encode(text);return actual?.length===expected.length&&expected.every((b,i)=>actual[i]===b);},text,15000);
  }
  await launch();await snap('launched');
  if(name==='xcalc'){

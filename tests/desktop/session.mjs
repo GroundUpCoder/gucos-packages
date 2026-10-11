@@ -3,10 +3,12 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
+import {poll} from './poll.mjs';
 import {installObserver} from './menu.mjs';
 async function bounded(p,ms,label){let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms);})]);}finally{clearTimeout(timer);}}
 export async function desktopSession(s){
  const helper=await installObserver(s);
+ helper.pollHelperSha256=createHash('sha256').update(await readFile(new URL('./poll.mjs',import.meta.url))).digest('hex');
  helper.sessionHelperSha256=createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex');
  const pending=s.command(`set -eu
 rm -rf /tmp/jwm-test-control
@@ -55,15 +57,14 @@ echo JWM-CONTROL-PASS`);
   await write(stem+'.request',script+'\n');await write(stem+'.ready','ready');
   // Take one complete response snapshot; status readiness alone does not bind
   // a later read of both files. Missing output is not an empty successful result.
-  const handle=await race(s.page.waitForFunction(async stem=>{
+  const response=await race(poll(s.page,async stem=>{
    const status=await shell.busybox.read(stem+'.code');
    if(!ArrayBuffer.isView(status))return false;
    const code=new TextDecoder().decode(status);if(!/^[0-9]+\n$/.test(code))return false;
    const bytes=await shell.busybox.read(stem+'.output');
    if(!ArrayBuffer.isView(bytes))return false;
    return {code,output:new TextDecoder().decode(bytes)};
-  },stem,{timeout:45000}));
-  let response;try{response=await handle.jsonValue();}finally{await handle.dispose();}
+  },stem,45000));
   const {code,output}=response;
   assert.match(code,/^[0-9]+\n$/);assert.equal(Number(code),0,output);return output;
  })(),45000,'Complete JWM observation request exceeded 45 seconds');}
