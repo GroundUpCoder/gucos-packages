@@ -57,11 +57,13 @@ int main(int argc,char**argv){
  if(argc<2||argc>4)return 1;
  int simple=!strcmp(argv[1],"wm")||!strcmp(argv[1],"menu");
  int title=!strcmp(argv[1],"window")||!strcmp(argv[1],"absent")||!strcmp(argv[1],"frame");
+ int board=!strcmp(argv[1],"puzzle-board");
  int tiles=!strcmp(argv[1],"mahjongg-tiles");
  int child=!strcmp(argv[1],"child"),pixels=!strcmp(argv[1],"pixels");unsigned long requested=0;
  if(simple){if(argc!=2)return 1;}
  else if(title){if(argc!=3||!*argv[2])return 1;}
  else if(child){if(argc!=4||!*argv[2]||!path_valid(argv[3]))return 1;}
+ else if(board){if(argc!=3||!*argv[2])return 1;}
  else if(tiles){if(argc!=3||strcmp(argv[2],"XMahjongg"))return 1;}
  else if(pixels){if(argc<3||!*argv[2]||(argc==4&&(!number(argv[3],&requested)||!requested)))return 1;}
  else return 1;
@@ -84,15 +86,18 @@ int main(int argc,char**argv){
   if(w&&!strcmp(argv[1],"frame")){
    Window r,p,*children=NULL;unsigned count=0;if(XQueryTree(d,w,&r,&p,&children,&count))w=p==root?None:p;else w=None;if(children)XFree(children);
   }
-  if(w&&(pixels||tiles)){
+  if(w&&(pixels||tiles||board)){
    XWindowAttributes a;if(!XGetWindowAttributes(d,w,&a))return 4;
    int height=argc==4?(int)requested:a.height;if(height<1||height>a.height||a.width<1||a.width>4096||height>4096||(unsigned long)a.width*height>4194304UL||a.map_state!=IsViewable)return 4;
-   XImage*im=XGetImage(d,w,0,0,a.width,height,AllPlanes,ZPixmap);if(!im)return 4;
+   int left=board?6:0,top=board?35:0,width=board?a.width-12:a.width;
+   if(board)height=a.height-65;
+   if(width<1||height<1)return 4;
+   XImage*im=XGetImage(d,w,left,top,width,height,AllPlanes,ZPixmap);if(!im)return 4;
    unsigned long hash=2166136261UL,first=XGetPixel(im,0,0),different=0;
-   for(int y=0;y<height;y++)for(int x=0;x<a.width;x++){/* FancyCounter clears this source-defined rectangle on count changes. */
+   for(int y=0;y<height;y++)for(int x=0;x<width;x++){/* FancyCounter clears this source-defined rectangle on count changes. */
     if(tiles&&x>=10&&x<118&&y>=12&&y<50)continue;
     unsigned long pixel=XGetPixel(im,x,y);different+=pixel!=first;hash=(hash^pixel)*16777619UL;}
-   printf("PIXELS %lu %lu %d %d\n",hash,different,a.width,height);XDestroyImage(im);XCloseDisplay(d);return different>10?0:5;
+   printf("PIXELS %lu %lu %d %d\n",hash,different,width,height);XDestroyImage(im);XCloseDisplay(d);return different>10?0:5;
  }
   if(argc==3&&!strcmp(argv[1],"absent")&&!w){puts("WINDOW_ABSENT");XCloseDisplay(d);return 0;}
   if(w&&strcmp(argv[1],"absent")){

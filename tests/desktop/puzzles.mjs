@@ -1,3 +1,4 @@
+import {installObserver as installPixels,observe as observePixels} from './menu-xapps.mjs';
 // First interactive scope: Fifteen via its owned JWM entry, keyboard move/undo,
 // GTK save/load, clean quit/relaunch. Other games need their own evidence.
 import assert from 'node:assert/strict';
@@ -30,6 +31,7 @@ try{
  await s.page.evaluate(async text=>shell.busybox.write('/tmp/puzzles.sha256',new TextEncoder().encode(text)),await readFile(resolve(run,'puzzles.sha256'),'utf8'));
  await s.command('sha256sum -c /tmp/puzzles.sha256');
  report.harnessSha256=sha(await readFile(new URL(import.meta.url)));
+ report.pixelObserver=await installPixels(s);
  d=await desktopSession(s);report.helpers=d.helper;const canvas=await visibleCanvas(s.page);
  const click=async(x,y)=>canvas.click({position:await canvasPosition(canvas,{x,y})});
  const entry='gucos-puzzles-fifteen.desktop';report.menu=await clickMenuEntry(d,entry);
@@ -41,11 +43,7 @@ try{
   let last,stable=0;const deadline=Date.now()+30000;
   while(Date.now()<deadline){
   await s.page.waitForTimeout(250);const bytes=await canvas.screenshot();
-  const png=PNG.sync.read(bytes),box=await canvas.boundingBox();
-  const a=await canvasPosition(canvas,{x:w.x+6,y:w.y+35}),b=await canvasPosition(canvas,{x:w.x+w.width-6,y:w.y+w.height-30});
-  const left=Math.round(a.x*png.width/box.width),top=Math.round(a.y*png.height/box.height),right=Math.round(b.x*png.width/box.width),bottom=Math.round(b.y*png.height/box.height);
-  assert(right>left&&bottom>top&&left>=0&&top>=0&&right<=png.width&&bottom<=png.height);
-  const rows=[];for(let y=top;y<bottom;y++)rows.push(png.data.subarray((y*png.width+left)*4,(y*png.width+right)*4));const hash=sha(Buffer.concat(rows));
+  const pixels=await observePixels(d,'puzzle-board','Fifteen');const hash=String(pixels.hash);
   stable=hash===last?stable+1:0;last=hash;
   if(stable>=5&&(equal===undefined||hash===equal)&&(different===undefined||hash!==different)){await writeFile(resolve(run,stem+'-'+label+'.png'),bytes,{flag:'wx'});return hash;}
   }throw Error('Board failed to reach expected settled pixels: '+label);
