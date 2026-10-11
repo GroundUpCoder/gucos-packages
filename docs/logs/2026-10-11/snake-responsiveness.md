@@ -66,3 +66,27 @@ not physical-key latency or Xterm/JWM desktop latency. Functional checks also
 verified collision/restart, board rendering, single-q/Ctrl-C exit and termios
 restoration. Upgrade 1.0.0-1 to 1.0.0-2 retained the exact expected files across
 reload. Native checks were supplementary; guest results are now verified.
+
+## Published and accepted live
+
+Independent artifact approval covered 28074d45e70ab5353de8df7998f9972157b17191.
+Immutable selection review approved manifest fe7234e26d5913fdeede1266220e3bf79409f434
+and catalog b0d5005fcf592090ef65dbef41a93de20b53e7cc. Publication was a normal
+fast-forward push to main, preserving the other 75 entries and all concurrent
+published work. Anonymous HTTP retrieval verified the main catalog entry and
+every Snake source, manifest and binary hash/size.
+
+Live scheduler job b7bc2da3-b13e-4031-90e7-324a87139e85 passed fresh installation,
+keyboard gameplay/timing, reload, 1.0.0-1 to 1.0.0-2 upgrade and post-upgrade
+reload on https://os.groundupcoder.com/ using the actual main catalog URL.
+Live idle intervals: 108.085, 108.48, 111.98, 112.31 ms. Live perpendicular-key
+responses: 4.40, 4.92, 2.875, 2.495, 2.305 ms. This is automated terminal-path
+measurement, not physical keyboard/Xterm latency. Exact installed checksums
+survived reload in both fresh-install and upgrade profiles.
+
+Evidence is retained under public/ and public-upgrade/ with hash inventories.
+The publication baseline advances to the accepted catalog only after these
+live checks. Existing installations can use `gucman upgrade snake` (or
+`gucman install snake`, as exercised by the upgrade acceptance fixture).
+No core deployment, user-profile access, other worktree edits, other job
+cancellation or scheduling-priority changes were performed.
