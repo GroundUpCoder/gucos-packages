@@ -1,0 +1,75 @@
+gucman: unknown source
+
+gucman: build migration:micropython: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19318 bytes; transfer finished
+gucman: Resolving: migration:micropython
+gucman: Downloading manifest for migration:micropython (1324 bytes)
+  Connecting; waiting for response…
+  Downloaded 1324 / 1324 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:micropython
+gucman: Checking cached object: manifest for migration:micropython
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: micropython (0 remaining after this)
+gucman: Downloading micropython source: source.tar (3430400 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.27 / 3.27 MiB (100%); transfer finished
+gucman: Verifying download: micropython source: source.tar
+gucman: Checking cached object: micropython source: source.tar
+gucman: Downloading micropython source: build.sh (491 bytes)
+  Connecting; waiting for response…
+  Downloaded 491 / 491 bytes (100%); transfer finished
+gucman: Verifying download: micropython source: build.sh
+gucman: Checking cached object: micropython source: build.sh
+gucman: Downloading micropython source: test.sh (414 bytes)
+  Connecting; waiting for response…
+  Downloaded 414 / 414 bytes (100%); transfer finished
+gucman: Verifying download: micropython source: test.sh
+gucman: Checking cached object: micropython source: test.sh
+Building migration:micropython; running trusted recipe with access to your guest files
+1397 functions, 1467779 bytes
+MICROPYTHON-CLOSURE-42
+MICROPYTHON-UPSTREAM: class1.py
+MICROPYTHON-UPSTREAM: class2.py
+MICROPYTHON-UPSTREAM: class_super.py
+MICROPYTHON-UPSTREAM: closure1.py
+MICROPYTHON-UPSTREAM: closure2.py
+MICROPYTHON-UPSTREAM: closure_defargs.py
+MICROPYTHON-UPSTREAM: closure_manyvars.py
+MICROPYTHON-UPSTREAM: closure_namedarg.py
+MICROPYTHON-UPSTREAM: dict_get.py
+MICROPYTHON-UPSTREAM: dict_setdefault.py
+MICROPYTHON-UPSTREAM: generator1.py
+MICROPYTHON-UPSTREAM: generator2.py
+MICROPYTHON-UPSTREAM: generator_args.py
+MICROPYTHON-UPSTREAM: generator_closure.py
+MICROPYTHON-UPSTREAM: generator_send.py
+MICROPYTHON-UPSTREAM: generator_throw.py
+MICROPYTHON-UPSTREAM: int_big_add.py
+MICROPYTHON-UPSTREAM: int_big_div.py
+MICROPYTHON-UPSTREAM: int_big_mul.py
+MICROPYTHON-UPSTREAM: list_extend.py
+MICROPYTHON-UPSTREAM: list_pop.py
+MICROPYTHON-UPSTREAM: list_slice.py
+MICROPYTHON-UPSTREAM: list_slice_assign.py
+MICROPYTHON-UPSTREAM: list_sort.py
+MICROPYTHON-UPSTREAM: seq_unpack.py
+MICROPYTHON-UPSTREAM: unpack1.py
+ValueError: intentional rejection
+MICROPYTHON-ACCEPTANCE-PASS
+MICROPYTHON-ALIAS-VERSION-PASS
+gucman: Installing micropython: 0/4 files
+gucman: Installing micropython: 4/4 files
+gucman: Preparing checksums: micropython
+gucman: Checksummed micropython: 4/4 files
+gucman: Saving transaction: micropython
+gucman: Verifying staged files: micropython
+gucman: Activating: micropython
+Installed migration:micropython 1.28.0-1
+
+7881dde0ddaea273f0380b230d398ebffd6a9c2001131ccdc22adfab8de94656  /home/user/migration-export.tar
+1475584
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
