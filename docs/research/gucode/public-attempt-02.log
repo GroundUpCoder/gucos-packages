@@ -1,0 +1,66 @@
+[machine-job] queued: node tests/gucode/public.mjs
+[machine-job] running: e1b34150-3ab1-4a89-b9de-4e22897213e3
+gucman: install groundupcoder:gucode: reading catalogs and resolving dependencies
+gucman: Reading catalog: groundupcoder
+  Connecting; waiting for response…
+  Downloaded 24883 bytes; transfer finished
+gucman: Resolving: groundupcoder:gucode
+gucman: Downloading manifest for groundupcoder:gucode (1990 bytes)
+  Connecting; waiting for response…
+  Downloaded 1990 / 1990 bytes (100%); transfer finished
+gucman: Verifying download: manifest for groundupcoder:gucode
+gucman: Checking cached object: manifest for groundupcoder:gucode
+gucman: Resolving: groundupcoder:libcurl
+gucman: Downloading manifest for groundupcoder:libcurl (3045 bytes)
+  Connecting; waiting for response…
+  Downloaded 3045 / 3045 bytes (100%); transfer finished
+gucman: Verifying download: manifest for groundupcoder:libcurl
+gucman: Checking cached object: manifest for groundupcoder:libcurl
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: libcurl (1 remaining after this)
+gucman: Downloading libcurl archive (23040 bytes)
+  Connecting; waiting for response…
+  Downloaded 23040 / 23040 bytes (100%); transfer finished
+gucman: Verifying download: libcurl archive
+gucman: Checking cached object: libcurl archive
+gucman: Unpacking: libcurl
+gucman: Installing libcurl: 0/3 files
+gucman: Installing libcurl: 3/3 files
+gucman: Preparing checksums: libcurl
+gucman: Checksummed libcurl: 3/3 files
+gucman: Saving transaction: libcurl
+gucman: Verifying staged files: libcurl
+gucman: Activating: libcurl
+Installed groundupcoder:libcurl 0.1.0
+gucman: Package 2/2: gucode (0 remaining after this)
+gucman: Downloading gucode archive (159232 bytes)
+  Connecting; waiting for response…
+  Downloaded 159232 / 159232 bytes (100%); transfer finished
+gucman: Verifying download: gucode archive
+gucman: Checking cached object: gucode archive
+gucman: Unpacking: gucode
+gucman: Installing gucode: 0/3 files
+gucman: Installing gucode: 3/3 files
+gucman: Preparing checksums: gucode
+gucman: Checksummed gucode: 3/3 files
+gucman: Saving transaction: gucode
+gucman: Verifying staged files: gucode
+gucman: Activating: gucode
+Installed groundupcoder:gucode 0.1.0
+gucode 0.1.0
+
+Public payload verification and reload passed
+Interactive gucode prompt reached
+Permission prompt reached
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.waitForFunction: Timeout 180000ms exceeded.
+    at /Users/jku/git/gucos-packages/tests/gucode/public.mjs:36:15 {
+  log: [],
+  name: 'TimeoutError'
+}
+
+Node.js v25.8.2
