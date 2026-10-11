@@ -40,9 +40,11 @@ try {
 #include <unistd.h>
 #include <sys/wait.h>
 #include <signal.h>
+#include <spawn.h>
+extern char **environ;
 int main(void){struct termios before,after;int status;
 if(tcgetattr(0,&before))return 1;signal(SIGINT,SIG_IGN);
-pid_t p=fork();if(p<0)return 2;if(!p){char *args[]={"snake",0};execv("/usr/local/bin/snake",args);_exit(127);}
+pid_t p;char *args[]={"snake",0};if(posix_spawn(&p,"/usr/local/bin/snake",0,0,args,environ))return 2;
 if(waitpid(p,&status,0)!=p || status || tcgetattr(0,&after))return 3;
 if(before.c_iflag!=after.c_iflag || before.c_oflag!=after.c_oflag || before.c_cflag!=after.c_cflag || before.c_lflag!=after.c_lflag)return 4;
 for(int i=0;i<NCCS;i++)if(before.c_cc[i]!=after.c_cc[i])return 5;
