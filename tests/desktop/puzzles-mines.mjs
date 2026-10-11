@@ -35,7 +35,7 @@ try{
  const entry='gucos-puzzles-mines.desktop';report.menu=await clickMenuEntry(d,entry);
  let w=await observe(d,'window','Mines');assert(w.pid>0,'GTK client PID required for lifecycle proof');report.firstWindow=w;
  // Focus via the title bar so the first safe cell remains unopened.
- assert(w.y>=24);await click(w.x+12,w.y-12);
+ assert(w.y>=24);await click(w.x+w.width/2,w.y-12);
  // Compare only the board interior, excluding menu/status/WM/cursor changes.
  async function board(label,{equal,different}={}){
   const screen=await canvas.boundingBox(),outside=await canvasPosition(canvas,{x:799,y:599});await s.page.mouse.move(screen.x+outside.x,screen.y+outside.y);
