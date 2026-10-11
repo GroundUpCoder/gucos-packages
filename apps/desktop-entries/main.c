@@ -43,6 +43,20 @@ static int owned(const char *id,char *path) {
  while(fgets(line,sizeof line,f)&&++count<=100000)if(!strcmp(line,expected)){found=1;break;}
  fclose(f); return found;
 }
+static int xml_utf8(const unsigned char *s) {
+ while(*s){
+  unsigned c=*s++,value;int n;
+  if(c<128){if(c<32||c==127)return 0;continue;}
+  if(c>=0xc2&&c<=0xdf){value=c&31;n=1;}
+  else if(c>=0xe0&&c<=0xef){value=c&15;n=2;}
+  else if(c>=0xf0&&c<=0xf4){value=c&7;n=3;}
+  else return 0;
+  for(int i=0;i<n;i++){if((*s&0xc0)!=0x80)return 0;value=(value<<6)|(*s++&63);}
+  if((n==2&&value<0x800)||(n==3&&value<0x10000)||value>0x10ffff||
+     (value>=0xd800&&value<=0xdfff)||value==0xfffe||value==0xffff)return 0;
+ }
+ return 1;
+}
 static char *unescape(const char *s) {
  char *r=malloc(strlen(s)+1),*out=r; if(!r)return NULL;
  while(*s){
@@ -55,7 +69,7 @@ static char *unescape(const char *s) {
   /* No control characters in display text or executable arguments. */
   if(c<32||c==127){free(r);return NULL;} *out++=c;
  }
- *out=0; return r;
+ *out=0;if(!xml_utf8((unsigned char *)r)){free(r);return NULL;} return r;
 }
 static int boolean(const char *s,int *value) {
  if(!strcmp(s,"true")){*value=1;return 1;} if(!strcmp(s,"false")){*value=0;return 1;} return 0;

@@ -18,6 +18,10 @@ static int read_text(const char *text,struct entry *e) {
  int ok=read_entry(path,e);assert(!unlink(path));return ok;
 }
 int main(void) {
+ assert(xml_utf8((const unsigned char *)"뱀 🐍 & \"text\""));
+ assert(!xml_utf8((const unsigned char *)"\xc0\xaf"));assert(!xml_utf8((const unsigned char *)"\xed\xa0\x80"));
+ assert(!xml_utf8((const unsigned char *)"\xef\xbf\xbe"));assert(!xml_utf8((const unsigned char *)"\xf4\x90\x80\x80"));
+ assert(!xml_utf8((const unsigned char *)"\xe2\x82"));assert(!xml_utf8((const unsigned char *)"\x80"));
  const char *a[]={"prog","literal; & | $(x)","","100%","Name & \"label\"","/a/test.desktop","--icon","an icon"};
  good("prog \"literal; & | \\$(x)\" \"\" 100%% %c %k %i %F",a,8);
  const char *b[]={"prog","a\"b","a\\b","`x`"};good("prog \"a\\\"b\" \"a\\\\b\" \"\\`x\\`\"",b,4);
