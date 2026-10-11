@@ -154,3 +154,12 @@ manifests and 1,982 payload hashes. Install, consumer and layout discovery await
 scheduler admission. Arithmetic, settings behavior and public acceptance remain
 separate gates. Both runs used runtime `19609f47` and frozen source inputs
 `cd33207`; neither changes the 91 published / 88 accepted-here counts.
+
+CPython foundation `9faf8e5` independently passed source-execution review:
+5,149 exact historical blobs, compressed source archive, pre-freeze package-store
+prefix correction, 1,114 outputs and bounded consumers. A source fixture freezes
+that revision against runtime `19609f47`; execution waits for normal admission
+after the earlier desktop fixture. Generated sysconfig naming is an asserted
+contract, not an observed new result; a mismatch must fail. Same-extension
+execution after browser reload remains a separate future gate. No binary or
+public acceptance is added, and Tkinter/IDLE/pygame remain separate packages.

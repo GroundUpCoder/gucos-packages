@@ -703,7 +703,7 @@
     {
       "id": "cpython",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/cpython/wasm-package.json",
       "historicalManifestSha256": "87c859b52d2136307b948dc83335545ddf82fbef11108ad8a094950a11456c99",
       "historicalEvidence": [
@@ -732,7 +732,13 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/cpython",
+      "sourceReview": {
+        "commit": "9faf8e5",
+        "reviewerThread": "01a12a36-7ca5-773e-b7ca-28bafb1cd2ea",
+        "result": "Independent source-execution approval only:5149 historical blobs, pre-freeze store-prefix overlay,1114 outputs and bounded consumers. Guest build/export and all binary/reload/public gates pending."
+      }
     },
     {
       "id": "cpython-idle",
