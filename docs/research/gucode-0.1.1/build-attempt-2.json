@@ -1,0 +1,13 @@
+{
+  "mode": "build",
+  "startedAt": "2026-10-11T10:37:34.034Z",
+  "status": "failed",
+  "checks": [
+    "real guest source build",
+    "default key overrides explicit and environment; yolo permits edit and shell"
+  ],
+  "fixture": "Mock DeepSeek SSE; no live provider request",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'read')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:44)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at read (/tmp/gucode-011-release/tests/gucode/key-update.mjs:14:59)\n    at verify (/tmp/gucode-011-release/tests/gucode/key-update.mjs:66:111)\n    at async file:///tmp/gucode-011-release/tests/gucode/key-update.mjs:72:78",
+  "finishedAt": "2026-10-11T10:38:25.130Z"
+}

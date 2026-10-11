@@ -1,0 +1,77 @@
+# gucode 0.1.1 release evidence
+
+Application source: https://github.com/josephkimgpt/gucode at
+51384a2d9bc77f2f22af2166836ff4d8944119b9. Source archive correspondence is recorded
+in apps/gucode/provenance.json. The application changes credential precedence,
+adds the --yolo alias, and fixes malformed UTF-8 tool output and saved-session
+recovery. The requested pull also adds upstream conversation/resource limits and session preservation.
+A review follow-up rejects collisions between repaired tool IDs before execution.
+No core or libcurl package changes.
+
+Native release and ASan/UBSan binaries passed all 26 regression groups and nine resource-test groups under
+machine-job. Six existing vendored cJSON deprecation warnings, no sanitizer
+findings. Independent read-only review by agent /root/review cleared source,
+upgrade plan and final frozen artifact 40242e8b31ad1dcf3aa6eeabde8052eb9e5b51b6 with no blockers.
+
+The exact old entry and 0.1.0 to 0.1.1 transition are in upgrade-plan.json.
+The requested pull advanced the accepted publication baseline to 807f2bc,
+which includes gucode 0.1.0. This release uses the existing pin-migration.py
+upgrade workflow against that baseline. All unrelated entries and output paths/modes must
+remain unchanged.
+
+The key-update.mjs acceptance harness uses a real guest and synthetic keys with
+a deterministic DeepSeek-shaped SSE fixture. It builds from source, exports,
+installs the binary in a fresh context, verifies installed payload hashes, tests
+reload, key precedence/fallbacks, --yolo write/shell behavior, raw /bin/cc output,
+and damaged-session recovery. Public mode installs 0.1.0, upgrades through the
+public catalog, and repeats those execution checks. It makes no live provider
+request and does not claim live DeepSeek acceptance for this revision.
+
+Expected candidate runtime:
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441,
+explicit distribution /Users/jku/git/gucos/dist, copied to
+agentone:/tmp/gucode-011-release/dist, platform 1.0.1. The remote machine uses
+its existing machine-wide scheduler; no local browser job for this task runs
+concurrently. Reports describe
+actual executed scope; a queued job is not acceptance.
+
+
+## Candidate execution
+
+build.json and binary.json passed on the explicit 1.0.1 distribution, using
+source revision 51384a2d9bc77f2f22af2166836ff4d8944119b9. The fresh binary context
+verified all installed output hashes before and after reload. The source build
+also rebuilt the unchanged published libcurl source dependency; no libcurl
+artifact or catalog entry is replaced by this release. Exported gucode archive:
+a63735940dce08520045c638378f3ec50a2c4df2f5168bf1ca91a4e85fbff590,
+166400 bytes. remote-candidate.exit records exit 0 for the sequential source and
+fresh-binary acceptance under one existing remote browser reservation.
+
+Earlier attempts are preserved separately. Attempt 1 stopped at dependency
+ownership because the harness mixed repository source URLs. Attempt 2 built the
+package and passed the first credential/action check, then accessed the lazy
+guest filesystem before initializing it after reload. Both were harness fixes;
+the final reports are the accepted candidate scope. Local queue-full attempts
+never built a package. Public delivery and public upgrade/reload passed as recorded below.
+
+
+## Public acceptance
+
+Published catalog commit: c303f33d6aae5ed1ba0cf9598534e842cc21914f.
+Immutable manifest commit: 1ddb0a9d422481c092947fb6bee69a03571fa498.
+Immutable artifact commit: 40242e8b31ad1dcf3aa6eeabde8052eb9e5b51b6.
+Only the gucode entry changed; all 91 catalog entries passed check-catalog.py.
+
+public-delivery.json verifies the ordinary public main catalog URL, immutable
+manifest, each source input, and binary against their exact hashes and sizes.
+public.json and remote-public.log/exit record production-origin acceptance at
+https://os.groundupcoder.com on the runtime above, 2026-10-11 10:46:50–10:48:05 UTC,
+under machine-job ee9629f4-689e-4874-856b-941de06158f1. The test first selected the
+previous public 0.1.0 manifest using a temporary catalog route, then removed that
+route and upgraded through the actual public catalog to 0.1.1. Payload hashes,
+reload, credential precedence/fallbacks, --yolo actions, malformed tool output,
+and saved-session repair passed. Provider responses were deterministic fixtures;
+this does not claim a live DeepSeek call. No core hosting changes were made.
+
+Independent final review by /root/review cleared these exact published identities
+and acceptance evidence, and advancement of the publication baseline to c303f33.
