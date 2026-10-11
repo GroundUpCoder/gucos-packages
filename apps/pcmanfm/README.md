@@ -62,3 +62,10 @@ user/data/cache directories and a staged configuration root exercise relative
 an exact fixture desktop entry. These guest assertions await execution.
 Source archive, inventory and provenance remain unchanged; all relocation
 adaptations are recorded in owned build/test files.
+
+Consumer file checks distinguish regular staged files from gucman-installed
+managed links. Installed checks require the exact package/current link, owned
+path entry, canonical release payload and original regular-file mode. Config
+bytes and launcher environment/argument checks remain unchanged. The original
+silent failure did not trace its exact failing assertion. Revised test pins
+require explicit review and rebuilt receipts before further acceptance.
