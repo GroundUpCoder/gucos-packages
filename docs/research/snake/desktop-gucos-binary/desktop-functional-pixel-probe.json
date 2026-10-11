@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-10-11T04:46:56.653Z",
+  "status": "failed",
+  "checks": [
+    "frozen-candidate-manifests-and-payloads"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"Snake\">/usr/local/bin/desktop-menu launch wasm-posix-snake.desktop</Program>\n</JWM>\n",
+  "snakeIndex": 1,
+  "observerSha256": "12b987526ee0c4e434c98e768ada8d7dc27253d3141f9474ce64e4f5325efdcf",
+  "harnessSha256": "2694283c9ed5e8beb341942dbd8817d86ee2a8ca3092cc3454c7573b0243d319",
+  "error": "AssertionError [ERR_ASSERTION]: 2263 functions, 2274955 bytes\nDESKTOP-WM-READY\nDESKTOP-MENU 0 449 129 122\nDESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\nDESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\nDESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\nDESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\nDESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\nDESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\nDESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\nDESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\nDESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\nX connection to :1 broken (explicit kill or server shutdown).\r\nxterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server \":1\"\r\n\n\n3 !== 0\n\n    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)",
+  "finishedAt": "2026-10-11T04:47:27.380Z"
+}

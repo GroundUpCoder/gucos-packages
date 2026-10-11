@@ -1,0 +1,28 @@
+/usr/local/bin/desktop-menu: OK
+/usr/local/share/doc/desktop-entries/README.md: OK
+/usr/local/share/licenses/desktop-entries/LICENSE: OK
+/usr/local/bin/jwm: OK
+/usr/local/share/jwm/system.jwmrc: OK
+/usr/local/share/jwm/wasm.jwmrc: OK
+/usr/local/share/jwm/app-menu.sh: OK
+/usr/local/share/licenses/jwm/LICENSE: OK
+/usr/local/bin/start-jwm: OK
+/usr/local/libexec/jwm/wait-display: OK
+<JWM>
+<Program label="Terminal">xterm -fn fixed -title Terminal</Program>
+<Program label="Snake">/usr/local/bin/desktop-menu launch wasm-posix-snake.desktop</Program>
+</JWM>
+2263 functions, 2274955 bytes
+DESKTOP-WM-READY
+DESKTOP-MENU 0 449 129 122
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+X connection to :1 broken (explicit kill or server shutdown).
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":1"
