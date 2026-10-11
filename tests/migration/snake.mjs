@@ -35,15 +35,29 @@ try {
  await s.page.evaluate(async text=>shell.busybox.write('/tmp/snake-expected.sha256',new TextEncoder().encode(text)),checksums);
  await s.command('sha256sum -c /tmp/snake-expected.sha256');
  report.checks.push('frozen-output-checksums');
- await s.page.evaluate(async()=>shell.busybox.write('/tmp/snake-termios.c',new TextEncoder().encode(`#include <termios.h>
+ await s.page.evaluate(async()=>shell.busybox.write('/tmp/snake-session-test.c',new TextEncoder().encode(`#include <termios.h>
 #include <stdio.h>
-int main(void){struct termios t;if(tcgetattr(0,&t))return 1;
-printf("%lu %lu %lu %lu",(unsigned long)t.c_iflag,(unsigned long)t.c_oflag,(unsigned long)t.c_cflag,(unsigned long)t.c_lflag);
-for(int i=0;i<NCCS;i++)printf(" %u",(unsigned)t.c_cc[i]);puts("");return 0;}
+#include <unistd.h>
+#include <sys/wait.h>
+#include <signal.h>
+int main(void){struct termios before,after;int status;
+if(tcgetattr(0,&before))return 1;signal(SIGINT,SIG_IGN);
+pid_t p=fork();if(p<0)return 2;if(!p){char *args[]={"snake",0};execv("/usr/local/bin/snake",args);_exit(127);}
+if(waitpid(p,&status,0)!=p || status || tcgetattr(0,&after))return 3;
+if(before.c_iflag!=after.c_iflag || before.c_oflag!=after.c_oflag || before.c_cflag!=after.c_cflag || before.c_lflag!=after.c_lflag)return 4;
+for(int i=0;i<NCCS;i++)if(before.c_cc[i]!=after.c_cc[i])return 5;
+puts("SNAKE-TERMIOS-PASS");return 0;}
 `)));
- await s.command('cc /tmp/snake-termios.c -o /tmp/snake-termios\n/tmp/snake-termios > /tmp/snake-before');
+ await s.command('cc /tmp/snake-session-test.c -o /tmp/snake-session-test');
+ async function launch() {
+  const start=await s.page.evaluate(()=>shell.busybox.log.length);
+  pending=s.page.evaluate(()=>shell.command('sh')).then(result=>assert.equal(result.code,0));pending.catch(()=>{});
+  await until(()=>s.page.evaluate(start=>/[$#] /.test(shell.busybox.log.slice(start)),start),'interactive shell prompt');
+  await s.page.evaluate(()=>shell.terminal.focus());
+  await s.page.keyboard.type('exec /tmp/snake-session-test');await s.page.keyboard.press('Enter');
+ }
  const start=await s.page.evaluate(()=>shell.busybox.log.length);
- pending=s.command('echo $$ > /tmp/snake-test.pid\nexec snake');pending.catch(()=>{});
+ await launch();
  await until(async()=>(await headSince(start)).length>=2,'initial movement');
  await s.page.evaluate(()=>shell.terminal.focus());
  const before=(await headSince(start)).at(-1);
@@ -59,23 +73,22 @@ for(int i=0;i<NCCS;i++)printf(" %u",(unsigned)t.c_cc[i]);puts("");return 0;}
  report.checks.push('wall-collision','restart');
  await s.page.screenshot({path:resolve(run,'snake-playing.png')});
  await s.page.keyboard.press('q');await settled();
- await s.command('/tmp/snake-termios > /tmp/snake-after\ncmp /tmp/snake-before /tmp/snake-after\necho SNAKE-TERMINAL-RESTORED');
+ await s.command('echo SNAKE-TERMINAL-RESTORED');
  const log=await s.page.evaluate(start=>shell.busybox.log.slice(start),start);
  assert(log.includes('\x1b[?25h\x1b[?1049l'));
+ assert(log.includes('SNAKE-TERMIOS-PASS'));
  report.checks.push('single-q-exit','cursor-and-alternate-screen-restored','termios-restored');
  const second=await s.page.evaluate(()=>shell.busybox.log.length);
- pending=s.command('echo $$ > /tmp/snake-test.pid\nexec snake');pending.catch(()=>{});
+ await launch();
  await until(async()=>(await headSince(second)).length>=1,'relaunch');
  await s.page.evaluate(()=>shell.terminal.focus());await s.page.keyboard.press('Control+c');await settled();
- await s.command('/tmp/snake-termios > /tmp/snake-after\ncmp /tmp/snake-before /tmp/snake-after\necho SNAKE-CTRL-C-PASS');
+ assert((await s.page.evaluate(start=>shell.busybox.log.slice(start),second)).includes('SNAKE-TERMIOS-PASS'));
+ await s.command('echo SNAKE-CTRL-C-PASS');
  report.checks.push('relaunch','ctrl-c-exit','termios-restored-after-ctrl-c');
  report.status='passed';
 } catch(error) {
  report.status='failed';report.error=String(error.stack||error);
- if(s&&pending)try{await s.page.evaluate(async()=>{
-  const b=await shell.busybox.read('/tmp/snake-test.pid');const pid=Number(new TextDecoder().decode(b));
-  if(Number.isInteger(pid)&&pid>0)shell.busybox.worker.postMessage({type:'kill',pid});
- });await settled();}catch{}
+ if(s&&pending)try{await s.page.keyboard.press('q');await s.page.keyboard.type('exit');await s.page.keyboard.press('Enter');await settled();}catch{}
  throw error;
 } finally {
  report.finishedAt=new Date().toISOString();
