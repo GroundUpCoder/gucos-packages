@@ -1,0 +1,11 @@
+{
+  "assessment.md": "3b064263bc4d3a05bc310a8561db737934a3bcd98acb45467d73f57379ca101d",
+  "candidate-manifests.json": "ac710396d9731c2b702b1803648a2ee254e1f835b915a745fbb34eafef1023b5",
+  "config.json": "94daf92279cc263e06d86adca4b5b227e6c76b9c1d0de457da008a2a1fd8a204",
+  "consumers-paced-galculator.json": "1d7b12320f27572618f5785d8418213c2ef006bd391fd81303be1142a5064b5e",
+  "consumers.log": "0a0e05a5ba27f6e5ae1fa9f86a3547effa112ea7124c397ca0096123e998cca3",
+  "galculator.sha256": "1d7594ea384b416d3f48d3fef9ecfdf8587cc6495810b98ccd5c6be2fde8b8f7",
+  "install-paced-galculator.json": "a9a12f777b28c1a50c40f08750027bae1a6d9d6bcc810f117a50adcfe33533e3",
+  "install.log": "5e3e349d137c7e670da23b303561a5b15e01be4651c8b6db778a992482e0c157",
+  "observed-runtime.json": "18cb448b971eb3377126b9860f22fa06dabe62be5e6f89874003574ca2176304"
+}
