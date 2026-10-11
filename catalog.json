@@ -355,6 +355,21 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/c1ca6febf8ac7262a2322ea11afe5f668e7249be/apps/desktop-entries/package.json",
       "sha256": "42a6ff667b0007f906030df686980797af6c6601ad30d382f14f349ffc5de5bb",
       "size": 2813
+    },
+    "sdl3-gfx": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/523d1fedf9ba61d3b03e1ff2f059cf1f0e5e3f78/apps/sdl3-gfx/package.json",
+      "sha256": "1910011e5fb53c7734f58c581dbbc824dcc9f2ee9cac37b25d821c1b1e40d32d",
+      "size": 2082
+    },
+    "sdl3-image": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/523d1fedf9ba61d3b03e1ff2f059cf1f0e5e3f78/apps/sdl3-image/package.json",
+      "sha256": "931a2e73a7d8aaff21a77730017ebaafa4f1030cadacd75682e5425eaa18cbec",
+      "size": 2104
+    },
+    "sdl3-mixer": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/523d1fedf9ba61d3b03e1ff2f059cf1f0e5e3f78/apps/sdl3-mixer/package.json",
+      "sha256": "4ab7fa51a571ab3e3e83d77ff8c9d17b324778468c9ab01c123a1c0f4129a2bb",
+      "size": 2123
     }
   }
 }
