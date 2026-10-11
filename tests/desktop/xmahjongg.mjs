@@ -20,7 +20,7 @@ try{
  assert.equal(closure.root,'xmahjongg');assert.equal(closure.inputCommit,config.inputCommit);assert.deepEqual(closure.manifests.xmahjongg,candidate);assert.equal(sha(sums),closure.checksumsSha256);
  for(const [name,expected] of Object.entries(closure.manifests))assert.deepEqual(await s.page.evaluate(async name=>JSON.parse(new TextDecoder().decode(await shell.busybox.read('/usr/local/lib/gucman/packages/'+name+'/current/manifest.json'))),name),expected);
  await s.page.evaluate(async text=>shell.busybox.write('/tmp/xmahjongg-closure.sha256',new TextEncoder().encode(text)),sums.toString());await s.command('sha256sum -c /tmp/xmahjongg-closure.sha256');
- report.closureSha256=sha(bytes);report.harnessSha256=sha(await readFile(new URL(import.meta.url)));report.observer=await installObserver(s);d=await desktopSession(s);report.helpers=d.helper;
+ report.pixelScope={excludedCounter:{x:10,y:12,width:108,height:38},reason:'Source-defined counter clear overlaps top tile edges; count screenshots require separate review'};report.closureSha256=sha(bytes);report.harnessSha256=sha(await readFile(new URL(import.meta.url)));report.observer=await installObserver(s);d=await desktopSession(s);report.helpers=d.helper;
  const canvas=await visibleCanvas(s.page);let w,pid;
  async function launch(){
   (report.menus??=[]).push(await clickMenuEntry(d,'xmahjongg.desktop'));w=await observe(d,'window','XMahjongg');
@@ -30,7 +30,7 @@ try{
  }
  async function board(label,{equal,different}={}){return bounded((async()=>{
   let last,stable=0;
-  for(;;){await s.page.waitForTimeout(250);const pixels=await observe(d,'pixels','XMahjongg');assert(pixels.different>100,'Rendered tile board required');stable=pixels.hash===last?stable+1:0;last=pixels.hash;
+  for(;;){await s.page.waitForTimeout(250);const pixels=await observe(d,'mahjongg-tiles','XMahjongg');assert(pixels.different>100,'Rendered tile board required');stable=pixels.hash===last?stable+1:0;last=pixels.hash;
    if(stable>=5&&(equal===undefined||pixels.hash===equal)&&(different===undefined||pixels.hash!==different)){await writeFile(resolve(run,stem+'-'+label+'.png'),await canvas.screenshot(),{flag:'wx'});return pixels.hash;}
   }
  })(),30000);}

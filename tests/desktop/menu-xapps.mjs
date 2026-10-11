@@ -11,16 +11,17 @@ export async function installObserver(s){
  return {observerSha256:hash(source),menuHelperSha256:hash(await readFile(new URL(import.meta.url)))};
 }
 export async function observe(s,mode,title,detail){
- assert(['wm','menu','window','absent','child','pixels','frame'].includes(mode));assert(!title||/^[A-Za-z0-9 ._-]+$/.test(title));
+ assert(['wm','menu','window','absent','child','pixels','frame','mahjongg-tiles'].includes(mode));assert(!title||/^[A-Za-z0-9 ._-]+$/.test(title));
  let timer;
  if(['wm','menu'].includes(mode)){assert.equal(title,undefined);assert.equal(detail,undefined);}
  else assert(title,'Window title required');
+ if(mode==='mahjongg-tiles')assert.equal(title,'XMahjongg');
  if(mode==='child'){assert(typeof detail==='string'&&/^\d+(\.\d+)*$/.test(detail)&&detail.length<128);const parts=detail.split('.');assert(parts.length<=16&&parts.every(p=>Number.isSafeInteger(Number(p))&&Number(p)<=4096));}
  else if(mode==='pixels'&&detail!==undefined)assert(/^\d+$/.test(String(detail))&&Number.isInteger(Number(detail))&&Number(detail)>0&&Number(detail)<=4096);
  else assert.equal(detail,undefined);
  const log=await Promise.race([s.command(`DISPLAY=:1 /tmp/jwm-xapps-observe ${mode}${title?` '${title}'`:''}${detail===undefined?'':` '${detail}'`}`),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('X observer exceeded 40 seconds; caller must close the session')),40000);})]).finally(()=>clearTimeout(timer));
  if(mode==='wm'||mode==='absent')return log;
- if(mode==='pixels'){const m=log.match(/PIXELS (\d+) (\d+) (\d+) (\d+)/);assert(m,'Missing observed pixels');const [hash,different,width,height]=m.slice(1).map(Number);return {hash,different,width,height};}
+ if(mode==='pixels'||mode==='mahjongg-tiles'){const m=log.match(/PIXELS (\d+) (\d+) (\d+) (\d+)/);assert(m,'Missing observed pixels');const [hash,different,width,height]=m.slice(1).map(Number);return {hash,different,width,height};}
  const m=log.match(/WINDOW (\d+) (-?\d+) (-?\d+) (\d+) (\d+) (\d+)/);assert(m,'Live X window geometry missing');
  const [id,x,y,width,height,pid]=m.slice(1).map(Number);return {id,x,y,width,height,pid};
 }
