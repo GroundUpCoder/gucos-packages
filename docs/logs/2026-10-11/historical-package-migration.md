@@ -98,3 +98,8 @@ PCG staging review621d547 held for incomplete consumed-input inventory and
 optimized-Python assertion bypass. Fixd2903c4 requires all consumed hash entries
 and explicit non-optimized guards in both tools; independent gpt reviewer
 approved the correction for preparation-tool scope only. No PCG guest pass yet.
+
+Independent gpt reviewer approved public evidence76fb6b4:18 evidence hashes,
+nine console chunks, immutable bindings, all100 payload hashes/modes;63 live
+entries and44 additions supported, baseline19 unchanged. Source batch Lua5.5,
+LPeg,2048,SQLite series is queued serially using prepared c9f06a1 profile.
