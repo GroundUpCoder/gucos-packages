@@ -10,8 +10,10 @@ const require=createRequire(new URL('./package.json',import.meta.url));
 const {PNG}=require('pngjs');
 assert(process.env.MACHINE_JOB_ID);
 const run=process.env.COMPAT_RUN_DIR,name=process.argv[2];assert(['doom','quake'].includes(name));
-await assert.rejects(access(resolve(run,name+'-functional.json')),{code:'ENOENT'});
-const report={status:'running',name,canvasHelperSha256,startedAt:new Date().toISOString(),scope:'Retained shareware rendering, new-game/level keyboard workload and process cleanup; no sound or multiplayer acceptance'};
+const attempt=process.env.MIGRATION_ATTEMPT||'';assert(!attempt||/^[a-zA-Z0-9_-]+$/.test(attempt));
+const stem=name+(attempt?'-'+attempt:'');
+await assert.rejects(access(resolve(run,stem+'-functional.json')),{code:'ENOENT'});
+const report={status:'running',name,attempt,canvasHelperSha256,startedAt:new Date().toISOString(),scope:'Retained shareware rendering, new-game/level keyboard workload and process cleanup; no sound or multiplayer acceptance'};
 let s;
 try {
  s=await session();report.runtime=s.runtime;await s.command('true');
@@ -32,7 +34,7 @@ try {
   await s.page.waitForTimeout(250);
  }
  assert(colors.size>50,'Nontrivial retained game rendering');report.colors=colors.size;
- await writeFile(resolve(run,name+'-frame.png'),frame,{flag:'wx'});
+ await writeFile(resolve(run,stem+'-frame.png'),frame,{flag:'wx'});
  await canvas.click();
  if(name==='doom'){
   for(let i=0;i<4;i++){await s.page.keyboard.press('Enter',{delay:100});await s.page.waitForTimeout(500);}
@@ -62,7 +64,7 @@ try {
   const out=new PNG({width:w,height:h});PNG.bitblt(png,out,x,y,w,h,0,0);return out;
  }
  const beforeState=name==='quake'?await quakeState():null;
- const level=await canvas.screenshot();await writeFile(resolve(run,name+'-level.png'),level,{flag:'wx'});
+ const level=await canvas.screenshot();await writeFile(resolve(run,stem+'-level.png'),level,{flag:'wx'});
  if(name==='doom')assert(!PNG.sync.read(level).data.equals(PNG.sync.read(frame).data),'New-game frame differs from title');
  const move=name==='doom'?'ArrowUp':'w',fire=name==='doom'?'Control':'/';
  await s.page.keyboard.down(move);await s.page.waitForTimeout(1000);await s.page.keyboard.up(move);
@@ -72,7 +74,7 @@ try {
  if(name==='doom'){
   await s.page.waitForTimeout(600);const idle=await doomAmmo();
   assert(ammoBefore.data.equals(idle.data),'Ammo digits stay stable without fire input');
-  await writeFile(resolve(run,'doom-ammo-before.png'),PNG.sync.write(ammoBefore),{flag:'wx'});
+  await writeFile(resolve(run,stem+'-ammo-before.png'),PNG.sync.write(ammoBefore),{flag:'wx'});
  }
  await s.page.keyboard.down(fire);await s.page.waitForTimeout(500);await s.page.keyboard.up(fire);
  if(name==='quake'){
@@ -80,15 +82,15 @@ try {
   report.inputEvidence={before:beforeState,moved:movedState,fired};
  }else{
   const ammoAfter=await doomAmmo();assert(!ammoBefore.data.equals(ammoAfter.data),'Physical fire key changes otherwise stable ammo digits');
-  await writeFile(resolve(run,'doom-ammo-after.png'),PNG.sync.write(ammoAfter),{flag:'wx'});
+  await writeFile(resolve(run,stem+'-ammo-after.png'),PNG.sync.write(ammoAfter),{flag:'wx'});
   report.inputEvidence={ammoStableWithoutInput:true,ammoChangedAfterFire:true};
  }
- const played=await canvas.screenshot();await writeFile(resolve(run,name+'-played.png'),played,{flag:'wx'});
+ const played=await canvas.screenshot();await writeFile(resolve(run,stem+'-played.png'),played,{flag:'wx'});
  assert(!PNG.sync.read(played).data.equals(PNG.sync.read(level).data),'Rendered frame changes during movement/fire workload');
  await s.page.keyboard.press('Escape');await s.page.waitForTimeout(250);
- await writeFile(resolve(run,name+'-menu.png'),await canvas.screenshot(),{flag:'wx'});
+ await writeFile(resolve(run,stem+'-menu.png'),await canvas.screenshot(),{flag:'wx'});
  await s.page.locator('#terminal-focus').click();await s.command('kill -TERM "$(cat /tmp/game.pid)"');
  await s.page.waitForFunction(()=>[...shell.busybox.windows.values()].filter(v=>v.shown).length===0);
  await s.command('echo GAME-TERMINAL-RECOVERED');report.status='passed';
 } catch(error){report.status='failed';report.error=String(error.stack||error);throw error;}
-finally{report.finishedAt=new Date().toISOString();if(s){await writeFile(resolve(run,name+'-stdout.log'),await s.page.evaluate(async n=>new TextDecoder().decode(await shell.busybox.read('/tmp/'+n+'.log')),name).catch(()=>''),{flag:'wx'});await writeFile(resolve(run,name+'-functional.log'),await s.page.evaluate(()=>shell.busybox?.log||'').catch(()=>''),{flag:'wx'});await s.close();}await writeFile(resolve(run,name+'-functional.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});}
+finally{report.finishedAt=new Date().toISOString();if(s){await writeFile(resolve(run,stem+'-stdout.log'),await s.page.evaluate(async n=>new TextDecoder().decode(await shell.busybox.read('/tmp/'+n+'.log')),name).catch(()=>''),{flag:'wx'});await writeFile(resolve(run,stem+'-functional.log'),await s.page.evaluate(()=>shell.busybox?.log||'').catch(()=>''),{flag:'wx'});await s.close();}await writeFile(resolve(run,stem+'-functional.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});}
