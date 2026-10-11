@@ -8,11 +8,13 @@
   "excludedHistoricalPaths": [
     {
       "path": "vendor/quake/data/id1/pak0.pak",
-      "reason": "Replace isolated proprietary data and inaccurate redistribution claim with complete compressed original distribution"
+      "reason": "Replace isolated proprietary data and inaccurate redistribution claim with complete compressed original distribution",
+      "historicalBlob": "88c2532d1f385620f4c29cb7b0d67b0d34356108"
     },
     {
       "path": "vendor/quake/data/PROVENANCE.md",
-      "reason": "Replace isolated proprietary data and inaccurate redistribution claim with complete compressed original distribution"
+      "reason": "Replace isolated proprietary data and inaccurate redistribution claim with complete compressed original distribution",
+      "historicalBlob": "ac9a3a8fb3afd2a246cdeb6f5a94ebbfd64fb938"
     }
   ],
   "sharewareDistribution": {
