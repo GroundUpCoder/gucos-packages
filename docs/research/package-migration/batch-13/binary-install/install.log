@@ -1,0 +1,177 @@
+gucman: unknown source
+
+gucman: install migration:lua55: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 18310 bytes; transfer finished
+gucman: Resolving: migration:lua55
+gucman: Downloading manifest for migration:lua55 (1787 bytes)
+  Connecting; waiting for response…
+  Downloaded 1787 / 1787 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:lua55
+gucman: Checking cached object: manifest for migration:lua55
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: lua55 (0 remaining after this)
+gucman: Downloading lua55 archive (1550848 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.48 / 1.48 MiB (100%); transfer finished
+gucman: Verifying download: lua55 archive
+gucman: Checking cached object: lua55 archive
+gucman: Unpacking: lua55
+gucman: Installing lua55: 0/7 files
+gucman: Installing lua55: 7/7 files
+gucman: Preparing checksums: lua55
+gucman: Checksummed lua55: 7/7 files
+gucman: Saving transaction: lua55
+gucman: Verifying staged files: lua55
+gucman: Activating: lua55
+Installed migration:lua55 5.5.0-1
+
+gucman: install migration:lpeg: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 18310 bytes; transfer finished
+gucman: Resolving: migration:lpeg
+gucman: Downloading manifest for migration:lpeg (1700 bytes)
+  Connecting; waiting for response…
+  Downloaded 1700 / 1700 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:lpeg
+gucman: Checking cached object: manifest for migration:lpeg
+gucman: Resolving: migration:lua55
+gucman: Checking cached object: manifest for migration:lua55
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: lua55 (1 remaining after this)
+Already installed: lua55
+gucman: Package 2/2: lpeg (0 remaining after this)
+gucman: Downloading lpeg archive (172544 bytes)
+  Connecting; waiting for response…
+  Downloaded 172544 / 172544 bytes (100%); transfer finished
+gucman: Verifying download: lpeg archive
+gucman: Checking cached object: lpeg archive
+gucman: Unpacking: lpeg
+gucman: Installing lpeg: 0/5 files
+gucman: Installing lpeg: 5/5 files
+gucman: Preparing checksums: lpeg
+gucman: Checksummed lpeg: 5/5 files
+gucman: Saving transaction: lpeg
+gucman: Verifying staged files: lpeg
+gucman: Activating: lpeg
+Installed migration:lpeg 1.1.0-1
+
+gucman: install migration:2048: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 18310 bytes; transfer finished
+gucman: Resolving: migration:2048
+gucman: Downloading manifest for migration:2048 (1558 bytes)
+  Connecting; waiting for response…
+  Downloaded 1558 / 1558 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:2048
+gucman: Checking cached object: manifest for migration:2048
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: 2048 (0 remaining after this)
+gucman: Downloading 2048 archive (35328 bytes)
+  Connecting; waiting for response…
+  Downloaded 35328 / 35328 bytes (100%); transfer finished
+gucman: Verifying download: 2048 archive
+gucman: Checking cached object: 2048 archive
+gucman: Unpacking: 2048
+gucman: Installing 2048: 0/4 files
+gucman: Installing 2048: 4/4 files
+gucman: Preparing checksums: 2048
+gucman: Checksummed 2048: 4/4 files
+gucman: Saving transaction: 2048
+gucman: Verifying staged files: 2048
+gucman: Activating: 2048
+Installed migration:2048 0.1.0-1
+
+gucman: install migration:sqlite-series: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 18310 bytes; transfer finished
+gucman: Resolving: migration:sqlite-series
+gucman: Downloading manifest for migration:sqlite-series (1561 bytes)
+  Connecting; waiting for response…
+  Downloaded 1561 / 1561 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sqlite-series
+gucman: Checking cached object: manifest for migration:sqlite-series
+gucman: Resolving: migration:sqlite3
+gucman: Downloading manifest for migration:sqlite3 (1860 bytes)
+  Connecting; waiting for response…
+  Downloaded 1860 / 1860 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sqlite3
+gucman: Checking cached object: manifest for migration:sqlite3
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: sqlite3 (1 remaining after this)
+gucman: Downloading sqlite3 archive (2200064 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.10 / 2.10 MiB (100%); transfer finished
+gucman: Verifying download: sqlite3 archive
+gucman: Checking cached object: sqlite3 archive
+gucman: Unpacking: sqlite3
+gucman: Installing sqlite3: 0/2 files
+gucman: Installing sqlite3: 2/2 files
+gucman: Preparing checksums: sqlite3
+gucman: Checksummed sqlite3: 2/2 files
+gucman: Saving transaction: sqlite3
+gucman: Verifying staged files: sqlite3
+gucman: Activating: sqlite3
+Installed migration:sqlite3 3.53.1-1
+gucman: Package 2/2: sqlite-series (0 remaining after this)
+gucman: Downloading sqlite-series archive (52224 bytes)
+  Connecting; waiting for response…
+  Downloaded 52224 / 52224 bytes (100%); transfer finished
+gucman: Verifying download: sqlite-series archive
+gucman: Checking cached object: sqlite-series archive
+gucman: Unpacking: sqlite-series
+gucman: Installing sqlite-series: 0/2 files
+gucman: Installing sqlite-series: 2/2 files
+gucman: Preparing checksums: sqlite-series
+gucman: Checksummed sqlite-series: 2/2 files
+gucman: Saving transaction: sqlite-series
+gucman: Verifying staged files: sqlite-series
+gucman: Activating: sqlite-series
+Installed migration:sqlite-series 3.53.1-1
+
+/usr/local/bin/lua55: OK
+/usr/local/lib/liblua5.5.a: OK
+/usr/local/include/lua5.5/lua.h: OK
+/usr/local/include/lua5.5/luaconf.h: OK
+/usr/local/include/lua5.5/lualib.h: OK
+/usr/local/include/lua5.5/lauxlib.h: OK
+/usr/local/share/licenses/lua55/lua.h: OK
+
+6acd31ed4e2978b7a5902ac4d0db120feb27b5b9f882034bb46aac5836791b51  /home/user/migration-export.tar
+1550848
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/lua/5.5/lpeg.so: OK
+/usr/local/share/lua/5.5/re.lua: OK
+/usr/local/share/doc/lpeg/lpeg.html: OK
+/usr/local/share/doc/lpeg/re.html: OK
+/usr/local/share/licenses/lpeg/LICENSE: OK
+
+02b2ea563b1e11c3e8e34cdf00a65be070493c739620e7babf6a3ff6bc3b7e09  /home/user/migration-export.tar
+172544
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/2048: OK
+/usr/local/share/doc/2048/README.md: OK
+/usr/local/share/doc/2048/UPSTREAM.json: OK
+/usr/local/share/licenses/2048/LICENSE: OK
+
+86b336ceb620362f2c4f37c2e7dabb14a2a9d6093186f40f47aaff91c7b48ec6  /home/user/migration-export.tar
+35328
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/sqlite3/series.so: OK
+/usr/local/share/licenses/sqlite-series/series.c: OK
+
+a6cd52f0f08f1ebcf90d67f59db19c1e1794ee0b0d54c75c6fc342db711c0cd8  /home/user/migration-export.tar
+52224
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

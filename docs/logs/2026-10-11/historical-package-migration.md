@@ -123,3 +123,18 @@ outputs/1550848 bytes), LPeg (5/172544),2048 (4/35328), SQLite series (2/52224).
 Retained exact raw exports/receipts and batch-13/source logs/reports. Baseline
 Lua5.4 is unchanged. Module tests cover loading/cache/entry lookup, not actual
 DSO unloading. Fresh binary and2048 gameplay acceptance remain pending.
+
+## Dynamic binaries and PCG32 guest source
+
+Reservationc19cf6ba passed four-package install/consumers/reload,18 payloads;
+2048 functional test verified changed board/score, restart two tiles/zero score,
+normal quit and cursor restoration. batch-13/binary-install retains evidence.
+PCG3222235215 source passed all six modes (488 checks each), installed6 files
+and exported8fa70c7b/106496 bytes; batch-14/source and exact artifact retained.
+Fresh PCG binary acceptance and independent artifact/public reviews remain.
+
+GTK source and binary stage checks passed; GUI failed before launch twice:
+missing PNG dependency then package-manager release copies counted as duplicate
+providers. Reviewed fixes0f0e445/a9d18d2 own the PNG dependency and hash-check
+managed copies while rejecting actual private providers. Original failures and
+read-only provider probe retained in private run; functional retry is running.

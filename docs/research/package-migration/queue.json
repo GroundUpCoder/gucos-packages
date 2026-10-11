@@ -9,7 +9,7 @@
     {
       "id": "2048",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "historicalManifest": "vendor/2048/wasm-package.json",
       "historicalManifestSha256": "ef89b37a38270f6b77906f9448c4e29faa1154a11d0b28f82f1a20c657af5c68",
       "historicalEvidence": [
@@ -44,11 +44,15 @@
           "scope": "Fresh guest source build, original retained recipe tests, install and export; four packages18 outputs",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-13/source"
+        },
+        {
+          "scope": "Fresh binary install, installed consumers, browser reload integrity;2048 physical move/restart/quit/cursor restoration passed",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/binary-install"
         }
       ],
       "blockers": [
-        "Fresh binary installed consumers/reload and public acceptance pending.",
-        "Interactive move/restart/quit and cursor restoration acceptance pending."
+        "Exact artifact review and public acceptance pending."
       ],
       "candidate": "apps/2048",
       "sourceReview": {
@@ -4702,7 +4706,7 @@
     {
       "id": "lpeg",
       "kind": "additional-workload",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "scope": "LPeg 1.1.0; requires Lua dynamic-module profile",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [
@@ -4710,10 +4714,15 @@
           "scope": "Fresh guest source build, original retained recipe tests, install and export; four packages18 outputs",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-13/source"
+        },
+        {
+          "scope": "Fresh binary install, installed consumers, browser reload integrity;2048 physical move/restart/quit/cursor restoration passed",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/binary-install"
         }
       ],
       "blockers": [
-        "Fresh binary installed consumers/reload and public acceptance pending."
+        "Exact artifact review and public acceptance pending."
       ],
       "candidate": "apps/lpeg",
       "sourceReview": {
@@ -4725,7 +4734,7 @@
     {
       "id": "sqlite-series",
       "kind": "additional-workload",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "scope": "SQLite generate_series loadable extension",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [
@@ -4733,10 +4742,15 @@
           "scope": "Fresh guest source build, original retained recipe tests, install and export; four packages18 outputs",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-13/source"
+        },
+        {
+          "scope": "Fresh binary install, installed consumers, browser reload integrity;2048 physical move/restart/quit/cursor restoration passed",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/binary-install"
         }
       ],
       "blockers": [
-        "Fresh binary installed consumers/reload and public acceptance pending."
+        "Exact artifact review and public acceptance pending."
       ],
       "candidate": "apps/sqlite-series",
       "sourceReview": {
@@ -4748,17 +4762,22 @@
     {
       "id": "pcg32",
       "kind": "additional-workload",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "scope": "Host C++ preparation, whole/object/archive differential execution",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [
         {
           "scope": "Fresh host translation and nativeO0/O2 equality of488 outputs;19 definitions, five shared symbols; guest execution explicitly not-run",
           "evidence": "docs/research/package-migration/pcg32-host-preparation"
+        },
+        {
+          "scope": "Fresh guest six modes:488 values each under whole/object/archive links with native and dispatch backends; installed6 outputs and106496-byte export",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-14/source"
         }
       ],
       "blockers": [
-        "Fresh guest whole/object/archive checks under both backends, binary/reload and publication acceptance pending."
+        "Fresh binary installed consumers/reload, exact artifact review and public acceptance pending."
       ],
       "preparationAudit": "docs/research/package-migration/pcg32-retained-output-audit.json",
       "candidate": "apps/pcg32"
@@ -4817,7 +4836,7 @@
     {
       "id": "lua55",
       "kind": "historical-profile",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "candidate": "apps/lua55",
       "mapping": "Retained Lua5.5 dynamic-module and static embedding profile; preserves baseline Lua5.4",
       "acceptance": [
@@ -4825,10 +4844,15 @@
           "scope": "Fresh guest source build, original retained recipe tests, install and export; four packages18 outputs",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-13/source"
+        },
+        {
+          "scope": "Fresh binary install, installed consumers, browser reload integrity;2048 physical move/restart/quit/cursor restoration passed",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/binary-install"
         }
       ],
       "blockers": [
-        "Fresh binary installed consumers/reload and public acceptance pending."
+        "Exact artifact review and public acceptance pending."
       ],
       "sourceReview": {
         "commit": "0ccac81ea8ff1967f2ae16b53836557850f75837",
