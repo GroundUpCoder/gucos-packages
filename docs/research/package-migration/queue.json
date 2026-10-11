@@ -1164,7 +1164,7 @@
     {
       "id": "gameboy",
       "kind": "historical-canonical-name",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/gameboy/wasm-package.json",
       "historicalManifestSha256": "0d6b78f589ea5c6e14e9bf4f720b077c75fa47721261678d11ca0a1a396b43d2",
       "historicalEvidence": [
@@ -1194,11 +1194,17 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Independent artifact/publication review and live public acceptance pending."
+      "mapping": "gameboy",
+      "acceptance": [
+        {
+          "scope": "Built-in ROM palette/animation, package install, exact output checksums, SIGTERM cleanup, terminal recovery and reload; excludes external ROMs, controls, audio and CPU conformance",
+          "evidence": "docs/research/package-migration/gameboy/gucos-public",
+          "evidenceCommit": "e543a151b0c1d6b1e5f0aeba5aecf24355d11473",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "independentReview": "Approved after exact artifact, frozen input and all14 evidence hash checks"
+        }
       ],
+      "blockers": [],
       "candidate": "apps/gameboy",
       "sourceReview": {
         "commit": "e091004",
