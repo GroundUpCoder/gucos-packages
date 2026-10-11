@@ -3755,18 +3755,31 @@
         "pkgconf"
       ],
       "mapping": "puzzles",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "scope": "Private only: Fifteen, Net, Same Game and Solo bounded physical interaction, exact save/reopen and browser reload persistence; independently accepted.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/puzzles/gucos-binary",
+          "evidenceCommit": "9ee1628"
+        },
+        {
+          "scope": "Private only: Mines flag/undo, safe first opening, exact save/reopen and browser reload persistence; independently accepted.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/puzzles/gucos-binary",
+          "evidenceCommit": "8c5922e"
+        }
+      ],
       "blockers": [
-        "Fresh binary install and consumers passed; initial Fifteen GUI harness failed before menu selection on missing-status decode. Reviewed polling correction and GUI-only retry queued; other desktop games/public gates remain."
+        "Five private interaction scopes are independently accepted: Fifteen, Net, Same Game and Solo normal/reload evidence at 9ee1628, plus Mines flag/undo, safe first opening and persistence normal/reload evidence at 8c5922e. Untangle repeat-drag acceptance remains pending; paced-input correction d49e5ff is approved for execution only. Immutable publication review, publication and fresh public acceptance remain pending."
       ],
       "sourcePreparation": {
         "revision": "19b50d8",
-        "scope": "319 pinned historical blobs,40 games,132 outputs; independent source review approved; source execution active and Fifteen binary/JWM/save/reload gate queued."
+        "scope": "319 pinned historical blobs, 40 games and 132 outputs; independent source preparation review complete."
       },
       "sourceExecution": {
         "revision": "8f06d8a",
         "evidence": "docs/research/package-migration/puzzles/gucos-source",
-        "scope": "Reviewed40gamegeneration and132outputsourceexport; interactivebinary/publicpending."
+        "scope": "Independently reviewed generation of all 40 games and exact 132-output source export. Source execution does not establish gameplay acceptance; five bounded private interaction scopes are separately accepted."
       }
     },
     {
@@ -4782,7 +4795,7 @@
     {
       "id": "xarchiver",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/xarchiver/wasm-package.json",
       "historicalManifestSha256": "f33bab22d18ba4663d069c488e3803ee68de74ce6e141e7d71d116878232fce5",
       "historicalEvidence": [
@@ -4809,10 +4822,14 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent implementation review, fresh source build, binary install/consumer/GUI/reload, immutable publication review and public acceptance remain pending.",
+        "Fresh source build, binary install/consumer/GUI/reload, immutable publication review and public acceptance remain pending; source-only implementation review approved 1fd0a18.",
         "Historical GNU tar flags are incompatible with core BusyBox tar; package-owned bounded plain-TAR backend adaptation is under development and requires independent review."
       ],
-      "candidate": "apps/xarchiver"
+      "candidate": "apps/xarchiver",
+      "sourcePreparation": {
+        "commit": "1fd0a18",
+        "scope": "220 pinned historical blobs, 37 C translation units and 31 outputs; independently approved for source-build execution. Archive backend adaptation, application behavior and acceptance remain pending."
+      }
     },
     {
       "id": "xmag",
