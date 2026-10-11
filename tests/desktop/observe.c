@@ -21,6 +21,16 @@ int main(int argc,char **argv) {
    Atom type;int format;unsigned long count,rest;unsigned char *data=NULL;
    int ready=XGetWindowProperty(d,root,XInternAtom(d,"_NET_SUPPORTING_WM_CHECK",False),0,1,False,XA_WINDOW,&type,&format,&count,&rest,&data)==Success&&type==XA_WINDOW&&format==32&&count==1;
    if(data)XFree(data);if(ready){puts("DESKTOP-WM-READY");fflush(stdout);XCloseDisplay(d);return 0;}
+  }else if(!strcmp(argv[1],"menu")){
+   Window r,parent,*children=NULL;unsigned count=0;
+   if(XQueryTree(d,root,&r,&parent,&children,&count))for(unsigned k=0;k<count;k++){
+    Atom type;int format;unsigned long n,rest;unsigned char *data=NULL;
+    int menu=XGetWindowProperty(d,children[k],XInternAtom(d,"_NET_WM_WINDOW_TYPE",False),0,1,False,XA_ATOM,&type,&format,&n,&rest,&data)==Success&&type==XA_ATOM&&format==32&&n==1&&*(Atom *)data==XInternAtom(d,"_NET_WM_WINDOW_TYPE_MENU",False);
+    if(data)XFree(data);
+    XWindowAttributes a;
+    if(menu&&XGetWindowAttributes(d,children[k],&a)&&a.map_state==IsViewable){printf("DESKTOP-MENU %d %d %d %d\n",a.x,a.y,a.width,a.height);fflush(stdout);XFree(children);XCloseDisplay(d);return 0;}
+   }
+   if(children)XFree(children);
   }else{
    Window w=find(d,root,0);
    if(closed&&w==None){puts("DESKTOP-SNAKE-CLOSED");fflush(stdout);XCloseDisplay(d);return 0;}

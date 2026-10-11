@@ -43,6 +43,7 @@ trap cleanup EXIT
 jwm -f /usr/local/share/jwm/wasm.jwmrc &
 wm=$!
 /tmp/desktop-observe wm
+/tmp/desktop-observe menu
 /tmp/desktop-observe snake
 /tmp/desktop-observe closed
 kill -0 "$wm"
@@ -57,10 +58,12 @@ echo DESKTOP-GAME-PASS`);
  await marker('DESKTOP-WM-READY');
  const canvas=await visibleCanvas(s.page);
  await canvas.click({position:await canvasPosition(canvas,{x:10,y:585})});
- await s.page.waitForTimeout(150);
+ await marker('DESKTOP-MENU ');
  await writeFile(output('desktop-menu.png'),await canvas.screenshot(),{flag:'wx'});
- for(let i=0;i<=index;i++)await s.page.keyboard.press('ArrowDown');
- await s.page.keyboard.press('Enter');
+ const log=await s.page.evaluate(()=>shell.busybox.log);
+ const geometry=log.match(/DESKTOP-MENU (\d+) (\d+) (\d+) (\d+)/);assert(geometry);
+ const [x,y,width,height]=geometry.slice(1).map(Number);
+ await canvas.click({position:await canvasPosition(canvas,{x:x+width/2,y:y+1+(index+0.5)*(height-2)/(programs.length+2)})});
  await marker('DESKTOP-SNAKE-BOARD');report.checks.push('actual-jwm-menu-selection','xterm-pty-game-board-pixels');
  await s.page.keyboard.press('ArrowUp');
  await writeFile(output('desktop-snake.png'),await canvas.screenshot(),{flag:'wx'});
