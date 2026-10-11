@@ -242,3 +242,22 @@ returned 1; captured stderr is absent from the exception report, so cause is
 unknown. Evidence retained in `cpython/gucos-source-attempt1`; no export or
 acceptance is claimed. The other 15 subprocess cases, smoke and atomic checks
 passed. Failed profile remains preserved for a reviewed diagnostic follow-up.
+
+The independently reviewed Xarchiver layout-v2 implementation is copied unchanged
+under `tests/desktop/`. The proposal comment remains for byte identity; review
+now approves execution only after independent corrected-export review. The
+driver explicitly instruments one private JWM menu command, preserving the owned
+desktop entry and wrapper. It binds the X PID to the supervisor child and requires
+raw wait status zero for separate Ctrl+Q and WM-close launches. Fatal/page errors
+and missing logs fail. This is not an unmodified-menu, archive-function,
+active-child-refusal, persistence or public-acceptance claim. Original observer
+and driver authorship is preserved; the new supervisor/session adaptation received
+independent review. The retained flat JWM theme/dependency identities are required.
+
+Reviewed code SHA-256:
+
+- `xarchiver-layout-v2.mjs`: `9938b6be40760c3fe232d6b3ced097903de7bafa6112f42a04e33c502d4ff481`
+
+- `xarchiver-layout-v2-session.mjs`: `814f8045e3de5bb2f785244e995d5c8b9ae5a15c75d4dbaeb4077428e28376de`
+
+- `xarchiver-layout-v2-supervisor.c`: `68247a233a517f33e5ceba8ad979dbb3149a62a9a4f582b604073ecda0fc2678`
