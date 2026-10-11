@@ -1,0 +1,16 @@
+{
+  "canvasHelperSha256": "e96db3cefaa5384a1c535d2b6a28cc936ca305ad9cb9afc354b708809cd24969",
+  "status": "passed",
+  "startedAt": "2026-10-11T05:43:29.254Z",
+  "scope": "Built-in ROM palette, animation, process termination and terminal recovery; no external ROM, controls, audio or CPU conformance claim",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "harnessSha256": "e78881a7e2ec76b28a5eccf71abe6a18f12b3eb80f063cc862e163cec2cdd7bf",
+  "palette": {
+    "155,188,15": 92192,
+    "139,172,15": 181764,
+    "48,98,48": 180540,
+    "15,56,15": 71136
+  },
+  "animated": true,
+  "finishedAt": "2026-10-11T05:43:30.968Z"
+}

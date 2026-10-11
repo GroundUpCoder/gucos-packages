@@ -1,0 +1,16 @@
+{
+  "candidate-manifests.json": "569d05f4f9e097d1a4e4fdaa3b9215cb7951f9298ba62cb54fe7779b41251c7f",
+  "config.json": "bef4f8acf5b0a679e2df7fe43b9739148989d9f806402a19a4df9a816393accf",
+  "gameboy-animated.png": "88ce2c591dfc634eb48f9baa52c06abafb4ae1f0be6a4f134e54eacb8dd19739",
+  "gameboy-frame.png": "2d015935ab13d0f42e2763f9b8f881083355c6bec717ae1917558958b3709412",
+  "gameboy-functional.json": "e93686da85bd140fd89fae5161a8e70c9d89c349839818b2250180484386b0ae",
+  "gameboy-functional.log": "11cd254c8ce0b131ce342bd62493bacd3daeedf82bd122c22ce8576701d6da3e",
+  "gameboy-stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gameboy.sha256": "894759b24482b99cf8db1f175b0a14f034eb1d1e53f7bc31b45272c8704c8011",
+  "gameplay.log": "e547a52bf0cacd6edaecc1e75b507e9ff6b702f2d928c8d6a930e63f9acf1ca4",
+  "install-gameboy.json": "4fec79c7f22d45e2d001fdc0ca220873f6d1906b76f90ef4ad92da0f8a8f4e3e",
+  "install.log": "585ec03e3450ac9f737ce64cff99eff8dc7f76b4b61e17af55f700ef88a595bb",
+  "observed-runtime.json": "c1d9b39edc1d23af256c7c1e88ccc9d30925bf9439aee11d68159d85c18ff3b7",
+  "reload-gameboy.json": "ace92c22770197e4e15103623ae66eaf2f39a548f59ca320eebe458fd02a507b",
+  "reload.log": "e518f58cb58e2128c283566c4092166c401460ec14fc1ad732ecb7c3af8df0d3"
+}
