@@ -19,9 +19,11 @@ nonterminal output (correctly rejected by game), and fork needing compiler flag.
 They did not establish gameplay failures. Corrected harness launches a real
 interactive shell and uses posix_spawn. No changed game binary was substituted.
 Source/harness preparation approved at ec66666 by independent reviewer01a123e0;
-final harness/evidence/artifact publication review remains pending at this record.
+final harness and artifact4acd079, then catalog9832b2f, were independently approved by reviewer01a123e0 before publication.
 The b00185e run under superseded-log-only passed log assertions but failed visual
 inspection: direct shell.command left the bootstrap prompt redrawing over output.
 Corrected05f8990 launches sh through keyboard/UI and verifies rendered borders,
 head and food before capturing the screenshot. No game-source changes required.
-Public installation acceptance has not run yet. Main migration queue untouched.
+Public acceptance passed on https://os.groundupcoder.net at 2026-10-11 03:28 UTC: fresh binary installation from published catalog9832b2f, actual keyboard gameplay, terminal restoration, and browser reload. The default main catalog now contains Snake. Main migration queue untouched.
+
+Play: `gucman install snake`, then `snake`. WASD, HJKL or arrow keys steer; r restarts after game over; q quits. The port is a terminal program and has a desktop entry for subsequent launcher integration. It does not itself change JWM.
