@@ -1,0 +1,10 @@
+{
+  "mode": "build",
+  "startedAt": "2026-10-11T10:34:30.148Z",
+  "status": "failed",
+  "checks": [],
+  "fixture": "Mock DeepSeek SSE; no live provider request",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "error": "Error: Guest exit 1\ngucman: build candidate:gucode: reading catalogs and resolving dependencies\ngucman: Reading catalog: candidate\n  Connecting; waiting for response…\n  Downloaded 21601 bytes; transfer finished\ngucman: Resolving: candidate:gucode\ngucman: Downloading manifest for candidate:gucode (994 bytes)\n  Connecting; waiting for response…\n  Downloaded 994 / 994 bytes (100%); transfer finished\ngucman: Verifying download: manifest for candidate:gucode\ngucman: Checking cached object: manifest for candidate:gucode\ngucman: Resolving: candidate:libcurl\ngucman: Checking cached object: manifest for candidate:libcurl\ngucman: Plan: 2 packages (including dependencies); checking compatibility\ngucman: Checking file ownership for 2 packages\ngucman: installed package belongs to another source URL\n\n    at Object.command (file:///tmp/gucode-011-release/tools/browser.mjs:19:29)\n    at async file:///tmp/gucode-011-release/tests/gucode/key-update.mjs:53:3",
+  "finishedAt": "2026-10-11T10:34:57.183Z"
+}

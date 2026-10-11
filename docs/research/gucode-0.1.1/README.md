@@ -34,3 +34,22 @@ agentone:/tmp/gucode-011-release/dist, platform 1.0.1. The remote machine uses
 its existing machine-wide scheduler; no local browser job for this task runs
 concurrently. Reports describe
 actual executed scope; a queued job is not acceptance.
+
+
+## Candidate execution
+
+build.json and binary.json passed on the explicit 1.0.1 distribution, using
+source revision 51384a2d9bc77f2f22af2166836ff4d8944119b9. The fresh binary context
+verified all installed output hashes before and after reload. The source build
+also rebuilt the unchanged published libcurl source dependency; no libcurl
+artifact or catalog entry is replaced by this release. Exported gucode archive:
+a63735940dce08520045c638378f3ec50a2c4df2f5168bf1ca91a4e85fbff590,
+166400 bytes. remote-candidate.exit records exit 0 for the sequential source and
+fresh-binary acceptance under one existing remote browser reservation.
+
+Earlier attempts are preserved separately. Attempt 1 stopped at dependency
+ownership because the harness mixed repository source URLs. Attempt 2 built the
+package and passed the first credential/action check, then accessed the lazy
+guest filesystem before initializing it after reload. Both were harness fixes;
+the final reports are the accepted candidate scope. Local queue-full attempts
+never built a package. Public delivery and public upgrade/reload remain pending.
