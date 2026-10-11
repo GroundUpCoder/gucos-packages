@@ -42,8 +42,95 @@ async function bounded(promise, ms, what) {
         timer = setTimeout(() => { timedOut = true; reject(Error(what + ' timed out; guest must not be reused')); }, ms);
     })]); } finally { clearTimeout(timer); }
 }
+// B driver-local raw completion observation; preserves the runtime callback.
+function installRawAudit() {
+    const key = '__cpythonRawAudit';
+    if (Object.hasOwn(window, key)) throw Error('Audit already installed');
+    const Original = window.Worker;
+    let worker, active = null, sequence = 0, lastLogLength = 0;
+    const records = [], faults = [];
+    const fault = text => { if (faults.length < 8) faults.push(text); };
+    const fatal = /fatal:\s*wasm trap|\bpid \d+(?: thread \d+)? crashed:|RuntimeError:|uncaught|unhandled.*rejection/i;
+    function log() {
+        const value = window.shell?.busybox?.log;
+        if (typeof value !== 'string' || value.length > 16 * 1024 * 1024 || value.length < lastLogLength)
+            throw Error('Missing, oversized or truncated raw log');
+        lastLogLength = value.length;
+        if (fatal.test(value)) throw Error('Fatal/crash evidence in raw log');
+        return value.length;
+    }
+    function receive({data}) {
+        if (data?.type !== 'command-exit' && data?.type !== 'halt') return;
+        if (!active) { fault('Unmatched completion'); return; }
+        if (active.events.length >= 2) { fault('Completion overflow'); return; }
+        active.events.push({type: data.type, status: Number.isSafeInteger(data.status) ? data.status : null});
+    }
+    function attach(value) {
+        if (worker) { fault('Owner worker replaced or duplicated'); return; }
+        worker = value; worker.addEventListener('message', receive);
+    }
+    const Wrapped = new Proxy(Original, {construct(target, args, receiver) {
+        const value = Reflect.construct(target, args, receiver);
+        if (args[1]?.name === 'busybox-filesystem-owner') attach(value);
+        return value;
+    }});
+    window.Worker = Wrapped;
+    if (window.shell?.busybox?.worker) attach(window.shell.busybox.worker);
+    const audit = {
+        begin() {
+            if (active || faults.length || sequence >= 128 || window.Worker !== Wrapped)
+                throw Error('Invalid command audit state');
+            if (worker && (window.shell?.busybox?.worker !== worker || window.shell.busybox.running))
+                throw Error('Owner identity changed or foreground command already running');
+            if (worker) log();
+            active = {sequence: ++sequence, events: []};
+            return sequence;
+        },
+        end(id) {
+            const record = active;
+            if (!record || record.sequence !== id) throw Error('Command sequence mismatch');
+            active = null; records.push(record);
+            if (!worker || window.shell?.busybox?.worker !== worker || window.shell.busybox.running)
+                fault('Missing/changed owner or command still running');
+            try { record.logLength = log(); } catch (e) { fault(String(e)); }
+            record.valid = !faults.length && record.events.length === 1 &&
+                record.events[0].type === 'command-exit' && record.events[0].status === 0;
+            if (!record.valid) fault('Missing/multiple/nonzero/non-command completion');
+            return {record, faults: [...faults]};
+        },
+        finish() {
+            try {
+                if (active || window.Worker !== Wrapped || !worker || window.shell?.busybox?.worker !== worker)
+                    fault('Unfinished or changed audit at teardown');
+                try { log(); } catch (e) { fault(String(e)); }
+                return {records, faults: [...faults]};
+            } finally {
+                if (worker) worker.removeEventListener('message', receive);
+                if (window.Worker === Wrapped) window.Worker = Original;
+                delete window[key];
+            }
+        }
+    };
+    window[key] = audit;
+}
+const pageErrors = [];
+let auditInstalled = false;
+const pageError = error => { if (pageErrors.length < 8) pageErrors.push(String(error).slice(0, 2048)); };
+
 async function command(script, ms = 60000) {
-    const result = await bounded(s.command(script), ms, 'Guest command');
+    assert.deepEqual(pageErrors, [], 'Page error before command');
+    const id = await bounded(s.page.evaluate(() => window.__cpythonRawAudit.begin()), 5000, 'Audit begin');
+    let result, failure;
+    try { result = await bounded(s.command(script), ms, 'Guest command'); }
+    catch (e) { failure = e; }
+    const observed = await bounded(s.page.evaluate(id => window.__cpythonRawAudit.end(id), id), 5000, 'Raw completion capture');
+    (report.rawCommands ??= []).push({...observed.record, scriptSha256: sha(script), faults: observed.faults});
+    assert.deepEqual(observed.faults, [], 'Raw completion audit faults');
+    assert.equal(observed.record.valid, true, 'Exactly one raw command-exit status zero required');
+    assert.deepEqual(pageErrors, [], 'Page error during command');
+    if (failure) throw failure;
+    assert.equal(typeof result, 'string');
+    assert(commandLog.length + result.length <= 16 * 1024 * 1024, 'Command log cap');
     commandLog += result;
     return result;
 }
@@ -216,12 +303,15 @@ try {
     // session() owns browser/server startup and its failure cleanup. The outer
     // machine-job deadline also bounds helper startup and descendant teardown.
     s = await session(); report.runtime = s.runtime;
+    s.page.on('pageerror', pageError);
     if (mode === 'reloaded') {
         await bounded(s.page.reload(), 120000, 'Browser reload');
         await s.page.waitForFunction(() => window.shell?.ready, null, {timeout: 120000});
         assert.equal(await s.page.evaluate(() => shell.toolchain.systemBuild), config.expectedRuntime);
         report.browserReloadObserved = true;
     }
+    await bounded(s.page.evaluate(installRawAudit), 5000, 'Install raw completion audit');
+    auditInstalled = true;
     await command('true');
     assert.equal(await s.page.evaluate(() => [...shell.busybox.windows.values()].filter(w => w.shown).length), 0);
     assert.deepEqual(JSON.parse((await guestBytes('/usr/local/lib/gucman/packages/cpython/current/manifest.json')).toString()), m);
@@ -301,16 +391,34 @@ echo CPYTHON-RETAINED-PTH-CLEANUP-PASS
 } finally {
     report.commandTimedOut = timedOut;
     if (s) {
+        if (auditInstalled) {
+            try {
+                report.rawAudit = await bounded(s.page.evaluate(() => window.__cpythonRawAudit.finish()), 5000, 'Final raw completion audit');
+                assert.deepEqual(report.rawAudit.faults, []);
+                assert.deepEqual(report.rawAudit.records, (report.rawCommands || []).map(({scriptSha256, faults, ...record}) => record));
+            } catch (e) { report.rawAuditError = String(e); report.status = 'failed'; }
+        }
         // A timeout does not cancel a running guest command. Never send another
         // command into that shell; close its browser and report cleanup unknown.
         if (report.status !== 'passed') report.pthCleanupVerified = false;
         try {
-            const raw = await bounded(s.page.evaluate(() => shell.busybox?.log || ''), 5000, 'Log read');
+            const raw = await bounded(s.page.evaluate(() => {
+                const log = shell.busybox?.log;
+                if (typeof log !== 'string' || log.length > 16 * 1024 * 1024) throw Error('Raw log missing or oversized');
+                return log;
+            }), 5000, 'Log read');
             await writeFile(resolve(run, label + '-session.log'), raw, {flag: 'wx'});
             report.sessionLogSha256 = sha(raw);
+            assert(!/fatal:\s*wasm trap|\bpid \d+(?: thread \d+)? crashed:|RuntimeError:|uncaught|unhandled.*rejection/i.test(raw), 'Fatal/crash evidence');
         } catch (e) { report.logError = String(e); report.status = 'failed'; }
+        report.pageErrors = [...pageErrors];
+        if (pageErrors.length) report.status = 'failed';
+        if (report.status !== 'passed') report.pthCleanupVerified = false;
         try { await bounded(s.close(), 30000, 'Session close'); }
         catch (e) { report.cleanupError = String(e); report.status = 'failed'; }
+        report.pageErrors = [...pageErrors];
+        if (pageErrors.length) { report.status = 'failed'; report.pthCleanupVerified = false; }
+        s.page.off('pageerror', pageError);
     }
     report.finishedAt = new Date().toISOString();
     try {
