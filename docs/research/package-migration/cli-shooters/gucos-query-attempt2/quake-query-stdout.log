@@ -1,0 +1,115 @@
+Host_Init
+Added packfile /home/user/.local/share/quake/id1/pak0.pak (339 files)
+FindFile: can't find gfx/pop.lmp
+Playing shareware version.
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : gfx.wad
+Console initialized.
+Exe: xx:xx:xx xx/xx/xx
+ 8.0 megabyte heap
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : gfx/palette.lmp
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : gfx/colormap.lmp
+256k surface cache
+
+Sound Initialization
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : gfx/conback.lmp
+========Quake Initialized=========
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : quake.rc
+execing quake.rc
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : default.cfg
+execing default.cfg
+Unknown command "volume"
+FindFile: can't find config.cfg
+couldn't exec config.cfg
+FindFile: /home/user/.local/share/quake/id1/autoexec.cfg
+execing autoexec.cfg
+Unknown command "the"
+Unknown command "`"
+Unknown command "`"
+Unknown command "`"
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs.dat
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : maps/e1m1.bsp
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/player.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/eyes.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/h_player.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/gib1.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/gib2.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/gib3.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/s_bubble.spr
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/s_explod.spr
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/v_axe.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/v_shot.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/v_nail.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/v_rock.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/v_shot2.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/v_nail2.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/v_rock2.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/bolt.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/bolt2.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/bolt3.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/lavaball.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/missile.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/grenade.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/spike.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/s_spike.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/backpack.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/zom_gib.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/v_light.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/armor.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/g_nail.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/soldier.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/h_guard.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : maps/b_nail0.bsp
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/quaddama.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : maps/b_bh100.bsp
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : maps/b_shell0.bsp
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : maps/b_bh10.bsp
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : maps/b_bh25.bsp
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : maps/b_nail1.bsp
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/h_dog.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/dog.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/suit.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : progs/g_shot.mdl
+PackFile: /home/user/.local/share/quake/id1/pak0.pak : maps/b_explob.bsp
+3 demo(s) in loop
+
+VERSION 1.09 SERVER (24778 CRC)
+
+
+
+the Slipgate Complex
+player entered the game
+]status; edict 1; echo quakestate1done
+host:    UNNAMED
+version: 1.09
+map:     e1m1
+players: 1 active (1 max)
+
+#1  player              0   0:00:07
+   LOCAL
+
+EDICT 1:
+modelindex      59.0
+absmin         '463.0 -369.0  63.0'
+absmax         '497.0 -335.0 121.0'
+movetype         3.0
+solid            3.0
+origin         '480.0 -352.0  88.0'
+oldorigin      '480.0 -352.0  88.0'
+angles         ' -0.0  90.0   0.0'
+classname      player
+model          progs/player.mdl
+frame           14.0
+mins           '-16.0 -16.0 -24.0'
+maxs           ' 16.0  16.0  32.0'
+size           ' 32.0  32.0  56.0'
+think          player_stand1()
+nextthink        5.6
+health         100.0
+weapon           1.0
+weaponmodel    progs/v_shot.mdl
+currentammo     25.0
+ammo_shells     25.0
+items          4353.0
+takedamage       2.0
+view_ofs       '  0.0   0.0  22.0'
+v_angle        '  0.0  

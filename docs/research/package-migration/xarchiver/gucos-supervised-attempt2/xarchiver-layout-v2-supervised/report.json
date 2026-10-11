@@ -1,0 +1,163 @@
+{
+  "status": "passed-layout-and-two-normal-exits",
+  "startedAt": "2026-10-11T11:11:32.074Z",
+  "scope": "Instrumented private JWM menu command -> unmodified owned desktop-menu entry -> package wrapper. Layout and two normal-exit cases only; no archive or persistence acceptance.",
+  "cases": [
+    {
+      "mode": "ctrlq",
+      "status": "passed",
+      "startedAt": "2026-10-11T11:11:33.232Z",
+      "launch": {
+        "instrumented": true,
+        "supervisor": "/home/user/xarchiver-layout-v2-supervised/supervisor",
+        "delegates": "/usr/local/bin/desktop-menu launch xarchiver.desktop",
+        "menuSha256": "da8eebbad7f6c9f90d1734481066191233588bfd1fb49b1cdefbcb79ed7112d0",
+        "jwmrcSha256": "af200ea5c4613096b3387312ce2058cfdd4f6c310bcd7bb485b807ff2dc33a04"
+      },
+      "helpers": {
+        "observerSha256": "e12e48ac3ed320457181fc16a84f175700bc585d9ff761f3c2d3c75c72824149",
+        "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+        "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+        "sessionHelperSha256": "814f8045e3de5bb2f785244e995d5c8b9ae5a15c75d4dbaeb4077428e28376de"
+      },
+      "menu": {
+        "index": 2,
+        "popup": {
+          "id": 2097188,
+          "x": 0,
+          "y": 419,
+          "width": 129,
+          "height": 152,
+          "pid": 0
+        }
+      },
+      "main": {
+        "id": 6291458,
+        "x": 104,
+        "y": 109,
+        "width": 600,
+        "height": 400,
+        "pid": 27
+      },
+      "supervisorPid": 24,
+      "new": {
+        "id": 6291550,
+        "x": 4,
+        "y": 24,
+        "width": 792,
+        "height": 542,
+        "pid": 27
+      },
+      "open": {
+        "id": 6292652,
+        "x": 4,
+        "y": 24,
+        "width": 792,
+        "height": 542,
+        "pid": 27
+      },
+      "exit": {
+        "pid": 27,
+        "rawStatus": 0,
+        "exited": 1,
+        "exitCode": 0,
+        "signaled": 0,
+        "signal": 0
+      },
+      "sessionLogSha256": "8cae6aef917cb737e3fad61ddeba12ee68666650ded5479847b60f77d459c25a",
+      "finishedAt": "2026-10-11T11:11:41.724Z"
+    },
+    {
+      "mode": "wmclose",
+      "status": "passed",
+      "startedAt": "2026-10-11T11:11:41.724Z",
+      "launch": {
+        "instrumented": true,
+        "supervisor": "/home/user/xarchiver-layout-v2-supervised/supervisor",
+        "delegates": "/usr/local/bin/desktop-menu launch xarchiver.desktop",
+        "menuSha256": "f0e3c8d0e493234e6fe32732f8a9f8da2f73316a4a57bc3fe1642b792c539709",
+        "jwmrcSha256": "9e307043b789fb1e8c9e6943606d5f0071edd5f9a3cb4f79ddfc993e444dc569"
+      },
+      "helpers": {
+        "observerSha256": "e12e48ac3ed320457181fc16a84f175700bc585d9ff761f3c2d3c75c72824149",
+        "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+        "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+        "sessionHelperSha256": "814f8045e3de5bb2f785244e995d5c8b9ae5a15c75d4dbaeb4077428e28376de"
+      },
+      "menu": {
+        "index": 2,
+        "popup": {
+          "id": 2097188,
+          "x": 0,
+          "y": 419,
+          "width": 129,
+          "height": 152,
+          "pid": 0
+        }
+      },
+      "main": {
+        "id": 6291458,
+        "x": 104,
+        "y": 109,
+        "width": 600,
+        "height": 400,
+        "pid": 119
+      },
+      "supervisorPid": 118,
+      "frame": {
+        "id": 2097207,
+        "x": 100,
+        "y": 85,
+        "width": 608,
+        "height": 428,
+        "pid": 0
+      },
+      "closePoint": {
+        "x": 692,
+        "y": 97
+      },
+      "exit": {
+        "pid": 119,
+        "rawStatus": 0,
+        "exited": 1,
+        "exitCode": 0,
+        "signaled": 0,
+        "signal": 0
+      },
+      "sessionLogSha256": "2a044153dbdd790ee4dea79cad1c8b9981dc06aa29cbe1d4a06337bac36e9551",
+      "finishedAt": "2026-10-11T11:11:45.041Z"
+    }
+  ],
+  "guest": "/home/user/xarchiver-layout-v2-supervised",
+  "awaitedPollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+  "binding": {
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "inputCommit": "85cbacb8a69ff0850606b63a8e367fe4c0968900",
+    "binary": {
+      "url": "http://127.0.0.1:60813/migration/xarchiver/binary.tar",
+      "sha256": "76635ed31d405fbd096f0bb960f023d9f6a966005de183449f1488c7d7e494ca",
+      "size": 936448
+    },
+    "configSha256": "ba86824c32499a216627e7780f6ecc6b731937fa04ff565508a48ad1e3cb80e2",
+    "candidateSha256": "1a83519824b82553b766cdd792424f5d1f206a980ca6e667ac1548de4674ecbe",
+    "checksumsSha256": "34e2ee3384f3046bc0491534a1de8b83b188c36791415c78c30b077336fd8fb6",
+    "validation": "EXACT-BINARY-OUTPUTS-PASS\n",
+    "distributionSnapshotSha256": "66115ee0bba2930413b987c52340013d4f9af92bdf7783d15de7bba6973943e6"
+  },
+  "sourceHashes": {
+    "xarchiver-layout-v2.mjs": "ad13a80c4795dc665770d7d06e325b85e01b08f592866f5cc45b103eeef4b50e",
+    "xarchiver-layout-v2-session.mjs": "814f8045e3de5bb2f785244e995d5c8b9ae5a15c75d4dbaeb4077428e28376de",
+    "xarchiver-layout-v2-supervisor.c": "68247a233a517f33e5ceba8ad979dbb3149a62a9a4f582b604073ecda0fc2678"
+  },
+  "ownedEntry": {
+    "sha256": "23b247629298194f1659998664e8cc6a2497136b198b29a2cbe3cecfc68a8978",
+    "text": "[Desktop Entry]\nType=Application\nName=Archive Manager\nExec=xarchiver %f\nTryExec=xarchiver\nIcon=xarchiver\nCategories=Utility;Archiving;\nTerminal=false\n"
+  },
+  "supervisorCompile": "/home/user/xarchiver-layout-v2-supervised/supervisor.c: OK\n3 functions, 10137 bytes\n5bca86c773516ea9a7dad628b72f51b9f86f972011ad78846ea5e3b7336ec223  /home/user/xarchiver-layout-v2-supervised/supervisor\n",
+  "observer": {
+    "observerSha256": "33aea82fc674972ac9e18b9678936e3bdae89068f26661750ce8d9ff8b68b2b6",
+    "menuHelperSha256": "40101586a3f90a55c1b6c1aa1c8bf1f7c12f8fa812099c808384c05248c23513"
+  },
+  "sessionLogSha256": "658612dd7b3645d90ec3f893e74caa08d4b818779a9f042817baa388286d72ad",
+  "finishedAt": "2026-10-11T11:11:45.121Z"
+}

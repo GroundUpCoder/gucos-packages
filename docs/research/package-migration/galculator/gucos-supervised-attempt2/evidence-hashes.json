@@ -1,0 +1,10 @@
+{
+  "assessment.md": "71c336842de4973de74ab738d12827a2c7e9615cbdec1d30938701123d0e4561",
+  "candidate-manifests.json": "9dc9c9a5a55e08821867d1a81f367b2f65386bdb11eb98eab2267e378b84cb09",
+  "closure-normal-before.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "config.json": "49911b44b27d24fb833c6126bd35a324dcf41d4b1af4fe0864433c4662e085aa",
+  "migration-closure-galculator-supervised-normal-before/migration-installed-closure-lib.mjs": "7e919716bf108cfedb7de4584d688241cacd19ac88d5560efb493ec8a93e74c3",
+  "migration-closure-galculator-supervised-normal-before/migration-installed-closure.mjs": "7880a125ddc39c7bf89a50178d1801b846f04aa4b597c2e72fcffe7a7a6f40d1",
+  "migration-closure-galculator-supervised-normal-before/report.json": "f92fb217de26d80be502128babf31aa2f8fabc28e413787cc102d1c9a1a3a3a6",
+  "observed-runtime.json": "5e95f7c9c3c334e987109758c3cd07e3d24d993029fb57867f0af1745d3694e0"
+}

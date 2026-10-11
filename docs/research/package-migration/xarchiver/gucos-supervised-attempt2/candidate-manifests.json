@@ -1,0 +1,250 @@
+{
+  "xarchiver": {
+    "format": 1,
+    "name": "xarchiver",
+    "version": "0.5.4.22-3",
+    "dependencies": [
+      "gtk3-x11",
+      "pkgconf",
+      "libintl",
+      "gio-core",
+      "bzip2"
+    ],
+    "dependencyRequirements": {
+      "gtk3-x11": {
+        "version": "3.24.43-1"
+      },
+      "pkgconf": {
+        "version": "2.3.0-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      },
+      "gio-core": {
+        "version": "2.84.4-1"
+      },
+      "bzip2": {
+        "version": "1.0.8-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:60813/migration/xarchiver/source.tar",
+        "sha256": "3079314237de853ead97dd53edecdb01d4d0be4e60a2350c4cb94189769994bf",
+        "size": 4638720
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:60813/migration/xarchiver/build.sh",
+        "sha256": "923c0b58fb0820b8da996465b542115a2375d2b2c47cc2fe42d7be56e465f1f6",
+        "size": 1991
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:60813/migration/xarchiver/test.sh",
+        "sha256": "6f142c488d6fcb754de770727d745b3bd95efd77197f32907663282511bac548",
+        "size": 730
+      },
+      {
+        "path": "xarchiver.desktop",
+        "url": "http://127.0.0.1:60813/migration/xarchiver/xarchiver.desktop",
+        "sha256": "23b247629298194f1659998664e8cc6a2497136b198b29a2cbe3cecfc68a8978",
+        "size": 150
+      },
+      {
+        "path": "LGPL-2.1.txt",
+        "url": "http://127.0.0.1:60813/migration/xarchiver/LGPL-2.1.txt",
+        "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb",
+        "size": 25967
+      },
+      {
+        "path": "main-no-gnu-tar.c",
+        "url": "http://127.0.0.1:60813/migration/xarchiver/main-no-gnu-tar.c",
+        "sha256": "ac66d73aba59a2e2af15700cb068ac8631c1d087714c3d64a39ee4b4ea01dc07",
+        "size": 50720
+      },
+      {
+        "path": "tar-provider.patch",
+        "url": "http://127.0.0.1:60813/migration/xarchiver/tar-provider.patch",
+        "sha256": "d374b528568b000aad236630d0f3ec771d89479e0be6d15d6b84ec9f364e2e3d",
+        "size": 483
+      },
+      {
+        "path": "interface-signal-abi.c",
+        "url": "http://127.0.0.1:60813/migration/xarchiver/interface-signal-abi.c",
+        "sha256": "f464b9a2c5b9f0f89061fa32ddd3739f1be699ee42006307b0ff948a0985c7bf",
+        "size": 73601
+      },
+      {
+        "path": "quit-signal-abi.patch",
+        "url": "http://127.0.0.1:60813/migration/xarchiver/quit-signal-abi.patch",
+        "sha256": "9d9b62f1f620ff5c1863dbe89ad50bb3093177ecad69ae43eb61badb8a77e6ce",
+        "size": 1727
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xarchiver",
+        "mode": 493
+      },
+      {
+        "path": "libexec/xarchiver",
+        "mode": 493
+      },
+      {
+        "path": "share/applications/xarchiver.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/xarchiver/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/xarchiver/PORT.md",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/LGPL-2.1.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmime.c",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmime.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimealias.c",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimealias.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimecache.c",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimecache.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimeglob.c",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimeglob.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimeicon.c",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimeicon.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimeint.c",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimeint.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimemagic.c",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimemagic.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimeparent.c",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xarchiver/xdgmime/xdgmimeparent.h",
+        "mode": 420
+      },
+      {
+        "path": "share/pixmaps/xarchiver.png",
+        "mode": 420
+      },
+      {
+        "path": "share/pixmaps/xarchiver/xarchiver-add.png",
+        "mode": 420
+      },
+      {
+        "path": "share/pixmaps/xarchiver/xarchiver-close.png",
+        "mode": 420
+      },
+      {
+        "path": "share/pixmaps/xarchiver/xarchiver-extract.png",
+        "mode": 420
+      },
+      {
+        "path": "share/pixmaps/xarchiver/xarchiver-green.png",
+        "mode": 420
+      },
+      {
+        "path": "share/pixmaps/xarchiver/xarchiver-html.png",
+        "mode": 420
+      },
+      {
+        "path": "share/pixmaps/xarchiver/xarchiver-red.png",
+        "mode": 420
+      },
+      {
+        "path": "share/pixmaps/xarchiver/xarchiver-select.png",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xarchiver/COPYING",
+      "share/licenses/xarchiver/LGPL-2.1.txt",
+      "share/licenses/xarchiver/xdgmime/xdgmime.c",
+      "share/licenses/xarchiver/xdgmime/xdgmime.h",
+      "share/licenses/xarchiver/xdgmime/xdgmimealias.c",
+      "share/licenses/xarchiver/xdgmime/xdgmimealias.h",
+      "share/licenses/xarchiver/xdgmime/xdgmimecache.c",
+      "share/licenses/xarchiver/xdgmime/xdgmimecache.h",
+      "share/licenses/xarchiver/xdgmime/xdgmimeglob.c",
+      "share/licenses/xarchiver/xdgmime/xdgmimeglob.h",
+      "share/licenses/xarchiver/xdgmime/xdgmimeicon.c",
+      "share/licenses/xarchiver/xdgmime/xdgmimeicon.h",
+      "share/licenses/xarchiver/xdgmime/xdgmimeint.c",
+      "share/licenses/xarchiver/xdgmime/xdgmimeint.h",
+      "share/licenses/xarchiver/xdgmime/xdgmimemagic.c",
+      "share/licenses/xarchiver/xdgmime/xdgmimemagic.h",
+      "share/licenses/xarchiver/xdgmime/xdgmimeparent.c",
+      "share/licenses/xarchiver/xdgmime/xdgmimeparent.h"
+    ],
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "binary": {
+      "url": "http://127.0.0.1:60813/migration/xarchiver/binary.tar",
+      "sha256": "76635ed31d405fbd096f0bb960f023d9f6a966005de183449f1488c7d7e494ca",
+      "size": 936448
+    }
+  }
+}

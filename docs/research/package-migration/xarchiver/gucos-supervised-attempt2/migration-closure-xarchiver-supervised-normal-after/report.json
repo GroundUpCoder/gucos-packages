@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "scope": "Installed immutable closure identity only; no GUI or package functionality acceptance",
+  "app": "xarchiver",
+  "phase": "normal",
+  "edge": "after",
+  "attempt": "supervised",
+  "machineJobId": "46e1fcb0-8054-4f50-95d9-f9a34b085e5c",
+  "startedAt": "2026-10-11T11:11:45.162Z",
+  "error": "Error: spawnSync python3 ETIMEDOUT\n    at Object.spawnSync (node:internal/child_process:1127:20)\n    at spawnSync (node:child_process:911:24)\n    at execFileSync (node:child_process:954:15)\n    at frozenClosure (file:///Users/jku/git/gucos-packages-porting/tests/desktop/migration-installed-closure-lib.mjs:48:28)\n    at file:///Users/jku/git/gucos-packages-porting/tests/desktop/migration-installed-closure.mjs:54:22",
+  "finishedAt": "2026-10-11T11:12:15.979Z"
+}

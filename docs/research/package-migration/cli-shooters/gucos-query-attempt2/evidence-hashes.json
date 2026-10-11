@@ -1,0 +1,13 @@
+{
+  "assessment.md": "f775f3e766607fcc2ee30681f6111b2c5bd75ae7d425544dd8ed0dec7e864732",
+  "candidate-manifests.json": "6b7c3a4708797770f07dd7f448ecd9657d1abb9e27a1da53ed8aad2de1811fcb",
+  "config.json": "1aa137f960aa968a7eb966b92cc73ffcdfe97c406fbb01fe09223a0b9d74a3dc",
+  "observed-runtime.json": "264b1f8ea724dda0d23f1ceff8f75251600462d211d2a964913709ef320f7974",
+  "quake-query-frame.png": "f1493be968e1c72284e7ef266c2d599f88e082e29899c5566d1636ed2813210c",
+  "quake-query-functional.json": "f9ea44093150b4700fa25530f016b740086ff8366c7fd1d6866871fbf08c4ebe",
+  "quake-query-functional.log": "b8fe81b6f8e2e0c58fafd4edc16077e91be01b9550e07c85abec4c639fcd614e",
+  "quake-query-query-1-failure.png": "824a341f115ef2a8ec7f1663ac267a98b06fb55c5d495b8c8b568a77808cb688",
+  "quake-query-query-1.log": "7424e522dfe08b58b959adc303f39ecd70a3a36723cad8e67b01b795705d6324",
+  "quake-query-stdout.log": "9719d569ec231f24ac54d31b691fdb3055a4f2a8dcb136b1133927739dc8b736",
+  "quake-query.log": "b8e80dff2e42444184e7bf1e875bbb5eeb5e8e8b44aa84c636b8632c017392ca"
+}

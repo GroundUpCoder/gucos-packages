@@ -1,0 +1,392 @@
+gucman: unknown source
+
+{
+  tail: 'd object: manifest for migration:freetype\n' +
+    'gucman: Resolving: migration:fontconfig\n' +
+    'gucman: Checking cached object: manifest for migration:fontconfig\n' +
+    'gucman: Resolving: migration:freetype\n' +
+    'gucman: Checking cached object: manifest for migration:freetype\n'
+}
+{
+  tail: 'hecking cached object: manifest for migration:atk\n' +
+    'gucman: Resolving: migration:gobject\n' +
+    'gucman: Checking cached object: manifest for migration:gobject\n' +
+    'gucman: Resolving: migration:libintl\n' +
+    'gucman: Checking cached object: manifest for migration:libintl\n'
+}
+gucman: build migration:libfm: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 25274 bytes; transfer finished
+gucman: Resolving: migration:libfm
+gucman: Downloading manifest for migration:libfm (10205 bytes)
+  Connecting; waiting for response…
+  Downloaded 10205 / 10205 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libfm
+gucman: Checking cached object: manifest for migration:libfm
+gucman: Resolving: migration:gtk3-x11
+gucman: Checking cached object: manifest for migration:gtk3-x11
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:pango
+gucman: Checking cached object: manifest for migration:pango
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:harfbuzz-static
+gucman: Checking cached object: manifest for migration:harfbuzz-static
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:gdk-pixbuf
+gucman: Checking cached object: manifest for migration:gdk-pixbuf
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:cairo-gobject
+gucman: Checking cached object: manifest for migration:cairo-gobject
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:atk
+gucman: Checking cached object: manifest for migration:atk
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gtk3-schemas
+gucman: Checking cached object: manifest for migration:gtk3-schemas
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Plan: 29 packages (including dependencies); checking compatibility
+gucman: reinstall dependent with dependency update: pcmanfm
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: build migration:libfm: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 25274 bytes; transfer finished
+gucman: Resolving: migration:libfm
+gucman: Downloading manifest for migration:libfm (10205 bytes)
+  Connecting; waiting for response…
+  Downloaded 10205 / 10205 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libfm
+gucman: Checking cached object: manifest for migration:libfm
+gucman: Resolving: migration:gtk3-x11
+gucman: Checking cached object: manifest for migration:gtk3-x11
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:pango
+gucman: Checking cached object: manifest for migration:pango
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:harfbuzz-static
+gucman: Checking cached object: manifest for migration:harfbuzz-static
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:gdk-pixbuf
+gucman: Checking cached object: manifest for migration:gdk-pixbuf
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:cairo-gobject
+gucman: Checking cached object: manifest for migration:cairo-gobject
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:atk
+gucman: Checking cached object: manifest for migration:atk
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gtk3-schemas
+gucman: Checking cached object: manifest for migration:gtk3-schemas
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Plan: 29 packages (including dependencies); checking compatibility
+gucman: reinstall dependent with dependency update: pcmanfm
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)
+    at async file:///Users/jku/git/gucos-packages-porting/tests/migration/stage.mjs:49:27 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

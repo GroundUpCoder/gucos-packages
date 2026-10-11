@@ -1,0 +1,5 @@
+<JWM>
+<Program label="Terminal">xterm -fn fixed -title Terminal</Program>
+<Program label="Archive manager">xarchiver</Program>
+<Program label="Archive Manager">/usr/local/bin/desktop-menu launch xarchiver.desktop</Program>
+</JWM>

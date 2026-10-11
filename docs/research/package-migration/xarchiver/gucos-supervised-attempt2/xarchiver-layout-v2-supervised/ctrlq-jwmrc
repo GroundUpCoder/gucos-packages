@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<JWM>
+ <RootMenu onroot="123" height="24">
+  <Include>/home/user/xarchiver-layout-v2-supervised/ctrlq/menu.xml</Include>
+  <Restart label="Refresh applications"/>
+  <Exit label="Exit" confirm="false"/>
+ </RootMenu>
+ <Tray x="0" y="-1" height="30" autohide="off">
+  <TrayButton label="JWM" width="60">root:1</TrayButton>
+  <Pager width="100" labeled="true"/>
+  <TaskList maxwidth="240"/>
+  <Clock width="80" format="%H:%M"/>
+ </Tray>
+ <WindowStyle decorations="flat"><Font>fixed</Font><Width>4</Width><Height>24</Height><Corner>0</Corner><Foreground>#eeeeee</Foreground><Background>#384052</Background><Active><Foreground>#ffffff</Foreground><Background>#286caa</Background></Active></WindowStyle>
+ <TrayStyle><Font>fixed</Font><Foreground>#ffffff</Foreground><Background>#303848</Background></TrayStyle>
+ <TaskListStyle list="all" group="false"><Font>fixed</Font><Foreground>#eeeeee</Foreground><Background>#384052</Background><Active><Foreground>#ffffff</Foreground><Background>#286caa</Background></Active></TaskListStyle>
+ <PagerStyle><Font>fixed</Font><Foreground>#8796aa</Foreground><Background>#303848</Background><Text>#ffffff</Text><Active><Foreground>#aaccff</Foreground><Background>#286caa</Background></Active></PagerStyle>
+ <MenuStyle><Font>fixed</Font><Foreground>#ffffff</Foreground><Background>#303848</Background><Active><Foreground>#ffffff</Foreground><Background>#286caa</Background></Active></MenuStyle>
+ <PopupStyle><Font>fixed</Font></PopupStyle>
+ <Desktops width="2" height="1"><Background type="solid">#182334</Background></Desktops>
+ <FocusModel>click</FocusModel><MoveMode>opaque</MoveMode><ResizeMode>opaque</ResizeMode><SnapMode>none</SnapMode>
+ <Key key="Up">up</Key><Key key="Down">down</Key><Key key="Return">select</Key><Key key="Escape">escape</Key>
+</JWM>
