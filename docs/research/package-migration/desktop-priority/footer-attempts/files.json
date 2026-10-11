@@ -1,0 +1,170 @@
+{
+  "xmahjongg-gucos-binary/xmahjongg-jwm-first.json": {
+    "sha256": "4084650ed7fad11e66bd494faa6af23e501f6c947ed2314984482f62ee64366f",
+    "size": 1845
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-first-failure.png": {
+    "sha256": "370351f862841234c55cf64a99cd1f4289f47ee77787c392c4e230a58904f235",
+    "size": 89630
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-first.log": {
+    "sha256": "bcdb4e55820aec89f6a9ce5dfc7ed1832c2a0b002b116dfcf8ac26af2c6d1cce",
+    "size": 26340
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-first-hint-selected.png": {
+    "sha256": "7f2d9a1c8863156dfb3ba05d0ca5a3120c6f475bdc18ec2292077ca70e7c14a4",
+    "size": 89465
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-first-pair-removed.png": {
+    "sha256": "b4f647ae84720fd5f59d3b9ef4482829110f0b238da56a209702fd1c00915580",
+    "size": 88117
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-first-initial.png": {
+    "sha256": "d5be77edd89e470161948a79f5c99e1d772bb0dc7e479197ec7f25770c7f3060",
+    "size": 89380
+  },
+  "puzzles-gucos-binary/puzzles-jwm-footer-undo.png": {
+    "sha256": "ec693a738174d24b2851f8ea9a5bb3d7756f628eeabafeb63c790599a3264dde",
+    "size": 12200
+  },
+  "puzzles-gucos-binary/puzzles-mines-jwm-footer-failure.png": {
+    "sha256": "e7bad8e49cb352d44fb4ef015420f7bbd516de8a8b6da2439eb8008fe8867b33",
+    "size": 26139
+  },
+  "puzzles-gucos-binary/puzzles-net-jwm-footer-failure.png": {
+    "sha256": "3a91e5b0e00dc14fa28e5db9060c4f4091280d4871a6d953bbab122a8a227899",
+    "size": 26085
+  },
+  "puzzles-gucos-binary/puzzles-mines-jwm-footer.log": {
+    "sha256": "028433cee5cf2995a202fdb4643ec62b4cd7c4ab9c94b1e7e6f8586e760e0551",
+    "size": 5926
+  },
+  "puzzles-gucos-binary/puzzles-mines-jwm-footer-flag-undo.png": {
+    "sha256": "6bd1e8afe649f13fd7c73a6c16f5fa9a621aed428f18228e38848aa6c4284b7c",
+    "size": 9753
+  },
+  "puzzles-gucos-binary/puzzles-jwm-footer-ArrowLeft.png": {
+    "sha256": "582a0216e8197695cc75c96af61b2a9dbb8058efe92670b634802add7a808a64",
+    "size": 12091
+  },
+  "puzzles-gucos-binary/puzzles-jwm-footer.log": {
+    "sha256": "97af6f4971e5ba6ee5254d7ca5c3278dc22154dbd94067fcef569f70fbd208c9",
+    "size": 5930
+  },
+  "puzzles-gucos-binary/puzzles-jwm-footer-initial.png": {
+    "sha256": "ec693a738174d24b2851f8ea9a5bb3d7756f628eeabafeb63c790599a3264dde",
+    "size": 12200
+  },
+  "puzzles-gucos-binary/net-footer.log": {
+    "sha256": "f2192880c9511b42647f1d2ca53dbc6d638519e733c3cc310a051599ad6be70b",
+    "size": 6462
+  },
+  "puzzles-gucos-binary/puzzles-jwm-footer.json": {
+    "sha256": "38f433e0b1d1680b2251e69618958b506a93fd84568ad961db0417546ad45d0e",
+    "size": 4580
+  },
+  "puzzles-gucos-binary/puzzles-net-jwm-footer-initial.png": {
+    "sha256": "1a0d4531f5c9722090dff4113e270917852fb807a661f7e846bc0495e46c054b",
+    "size": 9458
+  },
+  "puzzles-gucos-binary/puzzles-net-jwm-footer-rotated.png": {
+    "sha256": "d3b10e70f7a23c41a413c051b8a94e38571e90ea81e72971a42bd360bb6d0171",
+    "size": 9436
+  },
+  "puzzles-gucos-binary/puzzles-net-jwm-footer.log": {
+    "sha256": "3b87dc6d9c69666c0d96b63cc2d1836db8e8a37e0ae80b2b854a3a14d2e5588c",
+    "size": 5922
+  },
+  "puzzles-gucos-binary/puzzles-mines-jwm-footer-initial.png": {
+    "sha256": "6bd1e8afe649f13fd7c73a6c16f5fa9a621aed428f18228e38848aa6c4284b7c",
+    "size": 9753
+  },
+  "puzzles-gucos-binary/puzzles-mines-jwm-footer-opened.png": {
+    "sha256": "8fed67cc9bc73fe42d9c118873892b9e5ca62e1bda6768ce75d47a20ea2255a1",
+    "size": 12086
+  },
+  "puzzles-gucos-binary/puzzles-net-jwm-footer.json": {
+    "sha256": "00296c55c5fffe97d430f58bc4edf388f8fde37ecbfda07d833f72112f32b4d3",
+    "size": 4607
+  },
+  "puzzles-gucos-binary/puzzles-net-jwm-footer-repeat-rotation.png": {
+    "sha256": "1641ad222164a3c37a88375c0afb057395ed250fca7d8666f598c9384a6c08e4",
+    "size": 9435
+  },
+  "puzzles-gucos-binary/puzzles-jwm-footer-failure.png": {
+    "sha256": "1ceb96c0900a2cb13695078b4c8284759637e5f6af023652480ba721caa78be3",
+    "size": 26203
+  },
+  "puzzles-gucos-binary/puzzles-mines-jwm-footer.json": {
+    "sha256": "ef0713497772dfe26d38a4acfc102be9ef67fdcdddfae5fccc56fbf72b94dedc",
+    "size": 4724
+  },
+  "puzzles-gucos-binary/puzzles-net-jwm-footer-undo.png": {
+    "sha256": "b43399b25612ba28d91e5f5d4ad3a70c34bd657b5225edc5f4a4641e0ca4cf3e",
+    "size": 9458
+  },
+  "puzzles-gucos-binary/fifteen-footer.log": {
+    "sha256": "efe431cec8fa45a1a1fa900cca9d5907cc2ca3beef4fef0906697558a1278249",
+    "size": 6454
+  },
+  "puzzles-gucos-binary/puzzles-mines-jwm-footer-flagged.png": {
+    "sha256": "5851103086d217ba071399496df89bdabf93bd4995f2266b7411962d55ae7161",
+    "size": 10008
+  },
+  "puzzles-gucos-binary/puzzles-jwm-footer-redo-move.png": {
+    "sha256": "582a0216e8197695cc75c96af61b2a9dbb8058efe92670b634802add7a808a64",
+    "size": 12091
+  },
+  "puzzles-gucos-binary/mines-footer.log": {
+    "sha256": "d6bf558d5655ccfeeedd655569e97a31da182bf125a612155fd71e8c88cf1371",
+    "size": 6466
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-footer.log": {
+    "sha256": "e7df26245b3deef06cbeaf16458b94e144e7f31a59ee35ecbb784e9b96d1c31b",
+    "size": 36638
+  },
+  "desktop-apps-gucos-binary/xcalc-jwm-footer-relaunched.png": {
+    "sha256": "b855fc66e67810d36209dff86e04f67a1ad311c1ba5e41e51617a817cf053c7a",
+    "size": 8646
+  },
+  "desktop-apps-gucos-binary/xcalc-jwm-footer.json": {
+    "sha256": "531f0878bb52f5ca7fd4f2e3cb865be78976d2a80e5433e4c864b1e69cd283de",
+    "size": 3711
+  },
+  "desktop-apps-gucos-binary/xcalc-jwm-footer.log": {
+    "sha256": "03a5f0a651b23808fe305eca3490fa383beace38e032bf174cb0116ff9477efd",
+    "size": 37103
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-footer-launched.png": {
+    "sha256": "7a7040e13d8e0b487e96745240ed5cf5263611213bf8f38f826b66cf2983c7dd",
+    "size": 8181
+  },
+  "desktop-apps-gucos-binary/xcalc-jwm-footer-sum-three.png": {
+    "sha256": "e065ffd2f07854f2f23743d9daa8e43d6da592750a6326aeeea15db27047ab6b",
+    "size": 8690
+  },
+  "desktop-apps-gucos-binary/xcalc-jwm-footer-direct-three.png": {
+    "sha256": "18fc09c3f816b50d02f4d7aed601f3a4dfee79723a79e22a3f5a5ff1fab8083c",
+    "size": 8682
+  },
+  "desktop-apps-gucos-binary/xcalc-jwm-footer-cleared-zero.png": {
+    "sha256": "b1d82903bf2fbaa1112190fc6c1f642270f34bb237a4f3ef2224870f4d5e919b",
+    "size": 8666
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-footer.json": {
+    "sha256": "69d29bf46006c19c0c665002d4095aa3f4cb923bd998c5add37955a23be74f63",
+    "size": 2478
+  },
+  "desktop-apps-gucos-binary/xcalc-jwm-footer-launched.png": {
+    "sha256": "fc9d09ca389eadcf6b69eaac69dca0b1f0edfd5a742a13c91a7dd31a0e783698",
+    "size": 8723
+  },
+  "l3afpad-gucos-binary/l3afpad-jwm-first.json": {
+    "sha256": "d1f5e78c3d3ede4cebf86a523ff353e41e32cbc9352067163d5e0a67fef5b0f7",
+    "size": 1969
+  },
+  "l3afpad-gucos-binary/l3afpad-jwm-first.log": {
+    "sha256": "04755cc75ef0820b9617a55a143e172cbc921a82092e3372456889135cf9308c",
+    "size": 954
+  }
+}
