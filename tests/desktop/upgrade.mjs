@@ -15,8 +15,8 @@ try {
  s=await session();report.runtime=s.runtime;
  // Package ownership is tied to the catalog URL. Serve the frozen old catalog
  // at the same URL for the initial install, then reveal the frozen candidate.
- assert.deepEqual(config.baselinePackages.jwm,plan.upgrades.jwm.oldCatalogEntry);
- const oldCatalog={format:1,packages:config.baselinePackages};
+ if(config.baselinePackages.jwm)assert.deepEqual(config.baselinePackages.jwm,plan.upgrades.jwm.oldCatalogEntry);
+ const oldCatalog={format:1,packages:{...config.baselinePackages,jwm:plan.upgrades.jwm.oldCatalogEntry}};
  await s.page.route(config.catalogUrl,route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(oldCatalog)}));
  await s.command('set -eu\ngucman repo remove migration || true\ngucman repo add migration '+config.catalogUrl+'\ngucman install migration:jwm');
  await s.page.unroute(config.catalogUrl);

@@ -22,3 +22,21 @@ publication, and MicroPython source correction 123f6d5. SDL evidence hashes,
 source/receipt inventories and static/shared/media/reload checks were independently
 verified; their build runtime remains 61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0.
 These approvals do not substitute for the pending new public execution gates.
+
+## Desktop execution before publication
+
+Source reservation d0213f4a passed desktop-entries and JWM builds on runtime
+19609; exact exports are in cc86e70. Fresh binary reservation b00b7b67 initially
+failed an incorrectly modeled cross-catalog upgrade. Corrected stable-source
+fixture 23645e8 passed the 2.4.6-1 to 2.4.6-2 transaction under reservation
+3f6b3322. Its menu click launched Snake, but the observer assumed pure ANSI
+colors instead of accepted xterm colors. Diagnostic screenshot confirmed the
+board. Reviewer approved exact resource palette correction 1f83b76.
+
+Reservation dab47d9c passed actual menu selection, board pixels (80 green,
+11 red, 958 cyan), single-q close, surviving JWM and clean exit; exact installed
+payloads and reload passed. ArrowUp was sent but directional motion was not
+measured by this desktop test; that behavior is separately proven by the
+production terminal Snake test. All failures and final passes are retained in
+docs/research/snake/desktop-gucos-binary with byte-preserved evidence hashes.
+Public acceptance remains pending.
