@@ -271,7 +271,7 @@
     {
       "id": "awk",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/gawk/wasm-package.json",
       "historicalManifestSha256": "ce4cdf332cfc40336c9009118ed860cc5a25f73208912d22e1240eda774a449d",
       "historicalEvidence": [
@@ -304,10 +304,17 @@
         "make"
       ],
       "mapping": "awk",
-      "acceptance": [],
-      "blockers": [
-        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      "acceptance": [
+        {
+          "scope": "Installed basic and GNU-feature consumers; installed-output reload integrity. Consumer suite ran before reload; no full conformance claim.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/cli-shooters/gucos-public",
+          "evidenceCommit": "0997f6b",
+          "catalogCommit": "9f9c654a67dd8a5e85ab49538658a6f89cea7f9a",
+          "independentReview": "Passed retained public evidence review."
+        }
       ],
+      "blockers": [],
       "sourcePreparation": {
         "revision": "0607fac",
         "scope": "Independent source review complete; new guest build, binary and public acceptance pending"
@@ -317,6 +324,11 @@
         "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
         "evidence": "docs/research/package-migration/awk/gucos-source",
         "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
+      },
+      "publication": {
+        "artifactRevision": "136d5623c55eb56b86ab209c0eafa935b2e1d186",
+        "manifestRevision": "55e446def383ab58c7a1d16b137b46aca9165648",
+        "catalogRevision": "9f9c654a67dd8a5e85ab49538658a6f89cea7f9a"
       }
     },
     {
@@ -786,7 +798,7 @@
     {
       "id": "doom",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/doom/wasm-package.json",
       "historicalManifestSha256": "09b9242b37a670f1ee1e325856293510df9b020eb469b82ae788364857592902",
       "historicalEvidence": [
@@ -817,10 +829,17 @@
       ],
       "historicalDependencies": [],
       "mapping": "doom",
-      "acceptance": [],
-      "blockers": [
-        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      "acceptance": [
+        {
+          "scope": "Fresh public normal and browser-reloaded shareware rendering, new game, movement and physical firing with stable no-input ammunition then changed ammunition. TERM terminal recovery only; no raw-zero normal exit, sound, multiplayer, saved-game or general gameplay claim.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/cli-shooters/gucos-public",
+          "evidenceCommit": "0997f6b",
+          "catalogCommit": "9f9c654a67dd8a5e85ab49538658a6f89cea7f9a",
+          "independentReview": "Passed retained public evidence review."
+        }
       ],
+      "blockers": [],
       "sourcePreparation": {
         "revision": "576497e",
         "scope": "Independent source review complete; new guest build, binary and public acceptance pending"
@@ -830,6 +849,11 @@
         "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
         "evidence": "docs/research/package-migration/doom/gucos-source",
         "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
+      },
+      "publication": {
+        "artifactRevision": "136d5623c55eb56b86ab209c0eafa935b2e1d186",
+        "manifestRevision": "55e446def383ab58c7a1d16b137b46aca9165648",
+        "catalogRevision": "9f9c654a67dd8a5e85ab49538658a6f89cea7f9a"
       }
     },
     {
@@ -3137,7 +3161,7 @@
     {
       "id": "ncurses",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/ncurses/wasm-package.json",
       "historicalManifestSha256": "fe2cc902a42632f0b9e9ea941e983075bac661676405833b15c610aac3c580e7",
       "historicalEvidence": [
@@ -3172,10 +3196,17 @@
         "make"
       ],
       "mapping": "ncurses",
-      "acceptance": [],
-      "blockers": [
-        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      "acceptance": [
+        {
+          "scope": "Installed terminfo CLI utilities and compiled narrow/wide linked consumers; installed-output reload integrity. Consumer suite ran before reload; no full conformance claim.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/cli-shooters/gucos-public",
+          "evidenceCommit": "0997f6b",
+          "catalogCommit": "9f9c654a67dd8a5e85ab49538658a6f89cea7f9a",
+          "independentReview": "Passed retained public evidence review."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/ncurses",
       "sourceReview": {
         "commit": "fba736202eaa2b4b8f942fb549ffc760c05bedfe",
@@ -3187,6 +3218,11 @@
         "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
         "evidence": "docs/research/package-migration/ncurses/gucos-source",
         "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
+      },
+      "publication": {
+        "artifactRevision": "136d5623c55eb56b86ab209c0eafa935b2e1d186",
+        "manifestRevision": "55e446def383ab58c7a1d16b137b46aca9165648",
+        "catalogRevision": "9f9c654a67dd8a5e85ab49538658a6f89cea7f9a"
       }
     },
     {
@@ -4015,7 +4051,7 @@
     {
       "id": "quake",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/quake/wasm-package.json",
       "historicalManifestSha256": "fc96c56564b97ee9dd87f5f87f4bf59ab20c8cc6ce2fd0558fbd22fd752d0bf6",
       "historicalEvidence": [
@@ -4034,10 +4070,17 @@
       ],
       "historicalDependencies": [],
       "mapping": "quake",
-      "acceptance": [],
-      "blockers": [
-        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      "acceptance": [
+        {
+          "scope": "Fresh public normal/reloaded e1m1 queries with exact command/marker, movement and ammunition 25/25/24; retained debug-log bytes across browser reload before engine-owned reset and fresh append-only queries. Not saved-game persistence. TERM terminal recovery only; no normal-exit, sound, multiplayer or general gameplay claim.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/cli-shooters/gucos-public",
+          "evidenceCommit": "0997f6b",
+          "catalogCommit": "9f9c654a67dd8a5e85ab49538658a6f89cea7f9a",
+          "independentReview": "Passed retained public evidence review."
+        }
       ],
+      "blockers": [],
       "sourcePreparation": {
         "revision": "a527d7a",
         "scope": "Independent source review complete; new guest build, binary and public acceptance pending"
@@ -4047,6 +4090,11 @@
         "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
         "evidence": "docs/research/package-migration/quake/gucos-source",
         "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
+      },
+      "publication": {
+        "artifactRevision": "136d5623c55eb56b86ab209c0eafa935b2e1d186",
+        "manifestRevision": "55e446def383ab58c7a1d16b137b46aca9165648",
+        "catalogRevision": "9f9c654a67dd8a5e85ab49538658a6f89cea7f9a"
       }
     },
     {
