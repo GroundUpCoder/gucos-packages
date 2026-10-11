@@ -427,3 +427,9 @@ Accepted count is now **95** (93 migration-owned plus two separately owned), whi
 CPython publication metadata is selected on main `9c98af8`; the catalog has 98 entries while accepted scope remains 95 and baseline `c303f33` is unchanged. A authored the public preflight adaptation, independently reviewed by B, preserving B’s raw-completion guard and the retained-extension consumer/reload assertions. Exact driver SHA256 is `972137ce068407f40c068fbb69a282d727957ec56ba4e268087c60bb1d654ed2`.
 
 The fresh public fixture retains the verified original distribution snapshot as cached provenance only and uses the production HTTPS origin without a local distribution override. Execution order is install, normal full consumer once, stage reload, then reloaded verification of the same extension and data. Public runtime results and acceptance remain pending.
+
+### CPython public acceptance
+
+Independent review accepted the bounded CPython foundation scope from `abe65b2`: four passed public reports, 27 indexed evidence files, all 1,114 canonical/re-export payloads equal in bytes/sizes/modes, the full installed consumer, and five identical retained files across explicit browser reload. The 25,045-byte extension was retained without recompilation or reseeding. Normal and reloaded phases recorded 10 and 6 raw-zero foreground shell completions, with no recorded audit faults, page errors or timeouts. This does not establish independent Python-child waitpid status or general Python/GUI conformance.
+
+Accepted count is **96** (94 migration-owned plus two separately owned), against 98 published entries. Imlib2 and Feh remain pending. Publication baseline `c303f33` remains unchanged.
