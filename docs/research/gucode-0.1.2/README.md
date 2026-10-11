@@ -63,3 +63,29 @@ cover approval editing and denial, malformed paste, EOF and SIGTERM.
 The immutable manifest is bbb0f815298b5da5af0481a05eb173f015d8da07.
 Catalog preservation checks compare all98 entries against43b29ff and prove only
 gucode changed; check-catalog.py validates all98 published entries.
+
+## Public acceptance
+
+Catalog commit e659a47df2eef9756520bdc9d71b49602c821952 was published after
+independent final candidate approval. Application main0e76ca1 and annotated
+v0.1.2 were pushed to josephkimgpt/gucode. Public delivery verification passed
+catalog/manifest/source/binary hashes and sizes without authentication.
+
+Production-origin browser job1ba9f1dc-bb63-4bd7-85e7-bca0047aaf3d passed from
+2026-10-11T15:00:42Z to15:15:23Z. It installed0.1.1 from the retained old manifest,
+removed that catalog interception, upgraded through the actual public catalog,
+verified all payloads, reloaded, and passed VT and X11 editing/restoration checks.
+public.json explicitly binds the selected binary/source hashes and runtime.
+Provider responses remained deterministic fixtures; no live DeepSeek claim.
+
+Desktop dependency installation was slow but progressing. Read-only Node
+inspector queries sampled shell.busybox.log; no guest data or assertions were
+changed. A planned timeout extension was never installed: the run completed
+and the process exited before the extension command could attach. It passed
+within the original15-minute browser and30-minute scheduler deadlines.
+
+The preservation baseline retains exactly the previous91 package names, updating
+only gucode; it is not a complete accepted-package inventory. Main's98-entry
+catalog and the other97 package entries remain unchanged. Five separately
+recorded later acceptances retain their scope; Imlib2/Feh are not newly accepted.
+The exact side ref, commit and checks are in baseline-preservation.json.

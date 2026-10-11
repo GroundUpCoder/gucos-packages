@@ -1,0 +1,3 @@
+[machine-job] queued: python3 tests/gucode/verify-input-delivery.py
+[machine-job] running: 89eba9ca-5436-4840-9894-10ba1ab75305
+PASS public catalog, manifest, source inputs and binary hash/size

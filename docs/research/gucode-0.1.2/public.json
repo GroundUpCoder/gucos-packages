@@ -1,0 +1,25 @@
+{
+  "mode": "public",
+  "startedAt": "2026-10-11T15:00:42.422Z",
+  "status": "passed",
+  "checks": [
+    "public upgrade 0.1.1 to 0.1.2",
+    "default key overrides explicit and environment; yolo permits edit and shell",
+    "reload payloads and default key",
+    "explicit and environment fallbacks",
+    "raw /bin/cc output and malformed UTF-8 produce valid API requests and saved JSON",
+    "damaged saved conversation repaired on resume",
+    "VT: 12 real keyboard editing cases, exact provider input",
+    "VT bracketed paste and terminal restoration after exit, Ctrl-C and Ctrl-D",
+    "X11 xterm: 12 real keyboard editing cases, exact provider input",
+    "X11 xterm termios restoration and desktop cleanup"
+  ],
+  "fixture": "Mock DeepSeek SSE; no live provider request",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "sha256": "378a92440f3f0dee4e3fc5cc6d4d81cd1dba456094447545035c92910b04f5e3",
+    "size": 179712
+  },
+  "sourceArchiveSha256": "36a235f76a49c9f03c35d8bd6be7a8b5d2d0acb0dbca820f195748925c59a2f6",
+  "finishedAt": "2026-10-11T15:15:23.491Z"
+}

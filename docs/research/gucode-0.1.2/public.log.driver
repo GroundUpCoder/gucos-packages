@@ -1,0 +1,43 @@
+[machine-job] queued: node tests/gucode/input-update.mjs public
+[machine-job] running: 1ba9f1dc-bb63-4bd7-85e7-bca0047aaf3d
+public: core ready
+VT: editing passed
+Debugger listening on ws://127.0.0.1:9229/e78122ec-f31a-4fca-a840-d021ab9394cf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/e78122ec-f31a-4fca-a840-d021ab9394cf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/e78122ec-f31a-4fca-a840-d021ab9394cf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/e78122ec-f31a-4fca-a840-d021ab9394cf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/e78122ec-f31a-4fca-a840-d021ab9394cf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/e78122ec-f31a-4fca-a840-d021ab9394cf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/eeeb957c-0769-4e15-828d-743e55fcfcc7
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/eeeb957c-0769-4e15-828d-743e55fcfcc7
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/707f7a10-d27d-4594-a00e-80f424d349ae
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/707f7a10-d27d-4594-a00e-80f424d349ae
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/0bb15a03-d3c9-4738-88c3-9852b59bcbee
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/0bb15a03-d3c9-4738-88c3-9852b59bcbee
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger listening on ws://127.0.0.1:9229/35817dc3-d2ba-4736-99e9-4e34404c1ecc
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Debugger ending on ws://127.0.0.1:9229/35817dc3-d2ba-4736-99e9-4e34404c1ecc
+For help, see: https://nodejs.org/en/docs/inspector
+X11 xterm: editing passed
+public: all acceptance checks passed

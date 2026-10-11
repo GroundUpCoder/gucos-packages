@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "previousBaseline": "c303f33d6aae5ed1ba0cf9598534e842cc21914f",
+  "baselineRevision": "5163296ea17fa45b1894b0ba20496b270ab99975",
+  "durableRef": "refs/heads/acceptance/gucode-0.1.2",
+  "preservedNames": 91,
+  "changedBaselineEntries": [
+    "gucode"
+  ],
+  "mainCatalogEntries": 98,
+  "mainCatalogCommit": "e659a47df2eef9756520bdc9d71b49602c821952",
+  "note": "Preservation baseline, not the complete accepted-package inventory; five additional acceptances remain separately recorded and Imlib2/Feh are not newly accepted."
+}

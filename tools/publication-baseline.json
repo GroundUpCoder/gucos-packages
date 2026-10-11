@@ -1,4 +1,4 @@
 {
-  "revision": "c303f33d6aae5ed1ba0cf9598534e842cc21914f",
-  "description": "91 entries accepted within recorded scopes:89 migration-owned acceptances including six Puzzles games, plus separately owned gucode/libcurl acceptance a690713. Preserve exact package identities; libcurl production-origin archive relink and untested package features are not claimed. gucode upgraded to 0.1.1 after independent artifact and final acceptance review, public delivery verification and production-origin upgrade/install/reload; provider mocked (docs/research/gucode-0.1.1)."
+  "revision": "5163296ea17fa45b1894b0ba20496b270ab99975",
+  "description": "Preservation baseline, not the complete accepted-package inventory; five additional acceptances remain separately recorded and Imlib2/Feh are not newly accepted. Retains the previous 91 names with gucode upgraded to 0.1.2 after reviewed source, native, candidate VT/X11, public upgrade/reload and payload-hash acceptance."
 }

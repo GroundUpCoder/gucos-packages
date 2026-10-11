@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "version": "0.1.2",
+  "verified": [
+    {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/bbb0f815298b5da5af0481a05eb173f015d8da07/apps/gucode/package.json",
+      "sha256": "c10721e2d62d71f8efe584f7d7e8bfdfd39e535cbbf4d12bc5248dfabcdcbab6",
+      "size": 1990
+    },
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/c7f06efced0513e9cd299a33460d0a3cdb516309/apps/gucode/source.tar",
+      "sha256": "36a235f76a49c9f03c35d8bd6be7a8b5d2d0acb0dbca820f195748925c59a2f6",
+      "size": 174080
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/c7f06efced0513e9cd299a33460d0a3cdb516309/apps/gucode/build.sh",
+      "sha256": "e27e652e9aa9ce847e3fe8486f3670aaf4d30c09ca72b8d334a1a9a64a1f85c1",
+      "size": 466
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/c7f06efced0513e9cd299a33460d0a3cdb516309/apps/gucode/test.sh",
+      "sha256": "e00c41c820d3500abdd60abe83da921258dc1bb41b1d70e381a469b2377d2e64",
+      "size": 196
+    },
+    {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/c7f06efced0513e9cd299a33460d0a3cdb516309/apps/gucode/binaries/378a92440f3f0dee4e3fc5cc6d4d81cd1dba456094447545035c92910b04f5e3.tar",
+      "sha256": "378a92440f3f0dee4e3fc5cc6d4d81cd1dba456094447545035c92910b04f5e3",
+      "size": 179712
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+gucode 0.1.2
+
+
+[write_file] {"path":"result.txt","content":"updated\n"}
+File written
+
+
+[shell] {"command":"test -z \"${DEEPSEEK_API_KEY:-}\" && cat result.txt"}
+updated
+
+Verified
+
+
+[write_file] {"path":"result.txt","content":"updated\n"}
+File written
+
+
+[shell] {"command":"test -z \"${DEEPSEEK_API_KEY:-}\" && cat result.txt"}
+updated
+
+Verified
+
+
+[write_file] {"path":"result.txt","content":"updated\n"}
+File written
+
+
+[shell] {"command":"test -z \"${DEEPSEEK_API_KEY:-}\" && cat result.txt"}
+updated
+
+Verified
+
+
+[write_file] {"path":"result.txt","content":"updated\n"}
+File written
+
+
+[shell] {"command":"head -c 2000 /bin/cc; cat invalid.dat"}
+?asm?????�??N?`??N?`???????N?`??????N?`??~??~N?`????N?`???~??N?`?????N?`???N?`???N?`????????N?`?~????N?`?~???N?`??|??????N?`?|??|N?`?|??N?`?????�???c
+__cc_yield???c?__compile_chunk???c?write???c?lseek???c?isatty???c?__thread_wait???c?__getcwd???c?__exit???c?getpid???c?__on_sigdisp???c?__spawn_kill???CB??????????????????????????????????????????????????????	?
+????	???????p?V????�???????r???A���????A���????A�????A????A????A????A????A���????A���????A????A????A????A????A????A????A????A????A????A????A???�???main???alloca???__process_umask???__errno_set???__set_program_name???exit? ?__set_environ?!?__get_environ?"?__run_atexits?#?__process_clone_signals?7?__process_signals?8?__sig_dispatch?9?__fork_enabled???__thread_state???__stack_pointer??
+__tls_init?L
+__tls_base??
+__tls_size???__tls_align???memory???__indirect_function_table???__heap_base??	v??A????????????	
+?????A?????A???????A????????A??????A?????^[?A#?????? !"#$%&'()*+,-./?A9??0123456789:;<=>?@ABCDEFGHI
+[display truncated; full result sent to model]
+Verified
+gucode: repaired invalid UTF-8 in saved conversation
+
+
+[write_file] {"path":"result.txt","content":"updated\n"}
+File written
+
+
+[shell] {"command":"head -c 2000 /bin/cc; cat invalid.dat"}
+?asm?????�??N?`??N?`???????N?`??????N?`??~??~N?`????N?`???~??N?`?????N?`???N?`???N?`????????N?`?~????N?`?~???N?`??|??????N?`?|??|N?`?|??N?`?????�???c
+__cc_yield???c?__compile_chunk???c?write???c?lseek???c?isatty???c?__thread_wait???c?__getcwd???c?__exit???c?getpid???c?__on_sigdisp???c?__spawn_kill???CB??????????????????????????????????????????????????????	?
+????	???????p?V????�???????r???A���????A���????A�????A????A????A????A????A���????A���????A????A????A????A????A????A????A????A????A????A????A???�???main???alloca???__process_umask???__errno_set???__set_program_name???exit? ?__set_environ?!?__get_environ?"?__run_atexits?#?__process_clone_signals?7?__process_signals?8?__sig_dispatch?9?__fork_enabled???__thread_state???__stack_pointer??
+__tls_init?L
+__tls_base??
+__tls_size???__tls_align???memory???__indirect_function_table???__heap_base??	v??A????????????	
+?????A?????A???????A????????A??????A?????^[?A#?????? !"#$%&'()*+,-./?A9??0123456789:;<=>?@ABCDEFGHI
+[display truncated; full result sent to model]
+Verified
+3 functions, 5847 bytes
+
+
+BusyBox v1.37.0-wasm (2026-07-09 14:38:25 KST) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+~ $ sh /tmp/input-test.sh; exit
+gucode 0.1.2 · deepseek-flash
+Type /help for commands.
+
+[?2004h[2Kgucode> [8C[2Kgucode> w[9C[2Kgucode> wo[10C[2Kgucode> wor[11C[2Kgucode> worl[12C[2Kgucode> world[13C[2Kgucode> world[8C[2Kgucode> hworld[9C[2Kgucode> heworld[10C[2Kgucode> helworld[11C[2Kgucode> hellworld[12C[2Kgucode> helloworld[13C[2Kgucode> hello world[14C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> a[9C[2Kgucode> ab[10C[2Kgucode> abd[11C[2Kgucode> abd[10C[2Kgucode> abcd[11C[2Kgucode> abcd[12C[2Kgucode> abcd![13C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> b[9C[2Kgucode> ba[10C[2Kgucode> bad[11C[2Kgucode> [8C[2Kgucode> g[9C[2Kgucode> go[10C[2Kgucode> goo[11C[2Kgucode> good[12C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> h[9C[2Kgucode> he[10C[2Kgucode> hel[11C[2Kgucode> hell[12C[2Kgucode> hello[13C[2Kgucode> hello [14C[2Kgucode> hello w[15C[2Kgucode> hello wr[16C[2Kgucode> hello wro[17C[2Kgucode> hello wron[18C[2Kgucode> hello wrong[19C[2Kgucode> hello [14C[2Kgucode> hello w[15C[2Kgucode> hello wo[16C[2Kgucode> hello wor[17C[2Kgucode> hello worl[18C[2Kgucode> hello world[19C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> a[9C[2Kgucode> ab[10C[2Kgucode> abc[11C[2Kgucode> abcd[12C[2Kgucode> abcde[13C[2Kgucode> abcdef[14C[2Kgucode> abcdef[8C[2Kgucode> abcdef[9C[2Kgucode> abcdef[10C[2Kgucode> ab[10C[2Kgucode> abX[11C[2Kgucode> abXY[12C[2Kgucode> abXYcdef[16C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> 1[9C[2Kgucode> 12[10C[2Kgucode> 123[11C[2Kgucode> 1234[12C[2Kgucode> 1234[8C[2Kgucode> 1234[9C[2Kgucode> 134[9C[2Kgucode> 134[11C[2Kgucode> 13[10C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> a[9C[2Kgucode> ab[10C[2Kgucode> abc[11C[2Kgucode> abc[8C[2Kgucode> bc[8C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> 가[10C[2Kgucode> 가나[12C[2Kgucode> 가[10C[2Kgucode> 가다[12C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> 가다[12C[2Kgucode> 가다[12C[2Kgucode> 가다![13C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> d[9C[2Kgucode> dr[10C[2Kgucode> dra[11C[2Kgucode> draf[12C[2Kgucode> draft[13C[2Kgucode> 가다![13C[2Kgucode> draft[13C[2Kgucode> draft [14C[2Kgucode> draft u[15C[2Kgucode> draft up[16C[2Kgucode> draft upd[17C[2Kgucode> draft upda[18C[2Kgucode> draft updat[19C[2Kgucode> draft update[20C[2Kgucode> draft updated[21C[2Kgucode> 가다![13C[2Kgucode> draft updated[21C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> a[9C[2Kgucode> aa[10C[2Kgucode> aaa[11C[2Kgucode> aaaa[12C[2Kgucode> aaaaa[13C[2Kgucode> aaaaaa[14C[2Kgucode> aaaaaaa[15C[2Kgucode> aaaaaaaa[16C[2Kgucode> aaaaaaaaa[17C[2Kgucode> aaaaaaaaaa[18C[2Kgucode> aaaaaaaaaaa[19C[2Kgucode> aaaaaaaaaaaa[20C[2Kgucode> aaaaaaaaaaaaa[21C[2Kgucode> aaaaaaaaaaaaaa[22C[2Kgucode> aaaaaaaaaaaaaaa[23C[2Kgucode> aaaaaaaaaaaaaaaa[24C[2Kgucode> aaaaaaaaaaaaaaaaa[25C[2Kgucode> aaaaaaaaaaaaaaaaaa[26C[2Kgucode> aaaaaaaaaaaaaaaaaaa[27C[2Kgucode> aaaaaaaaaaaaaaaaaaaa[28C[2Kgucode> aaaaaaaaaaaaaaaaaaaaa[29C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaa[30C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaa[31C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaa[32C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaa[33C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaa[34C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaa[35C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaa[36C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaa[37C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[38C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[39C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[40C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[41C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[42C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[43C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[44C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[45C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[46C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[47C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[48C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[49C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[50C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[51C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[52C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[53C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[54C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[55C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[56C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[57C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[58C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[59C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[60C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[61C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[62C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[63C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[64C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[65C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[66C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[67C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[68C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[69C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[70C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[71C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[72C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[73C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[74C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[75C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[76C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[77C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[78C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[79C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[80C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[81C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[82C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[83C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[84C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[85C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[86C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[87C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[88C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[89C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[90C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[91C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[92C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[93C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[94C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[95C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[96C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[97C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[98C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[99C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[100C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[101C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[102C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[103C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[104C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[105C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[106C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[107C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[108C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[109C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[110C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[111C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[112C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[113C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[114C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[115C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[116C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[117C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[118C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[119C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[120C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[121C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[122C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[123C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[124C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[125C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[126C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[127C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[128C[2Kgucode> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[8C[2Kgucode> Xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[9C[2Kgucode> Xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[129C[2Kgucode> XaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaY[130C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> a[9C[2Kgucode> ab[10C[2Kgucode> abc[11C[H[2J[2Kgucode> abc[11C[2Kgucode> abc[8C[2Kgucode> Xabc[9C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> hello world[19C[?2004l
+Editing verified
+
+[?2004h[2Kgucode> [8C[2Kgucode> /[9C[2Kgucode> /e[10C[2Kgucode> /ex[11C[2Kgucode> /exi[12C[2Kgucode> /exit[13C[?2004l
+TERMSTATE before=16640:3:2816:398:4:0:0:127:0:21:0:0:3:28:26:0:17:19:0:0:1:0:0:0 after=16640:3:2816:398:4:0:0:127:0:21:0:0:3:28:26:0:17:19:0:0:1:0:0:0
+INPUT-RESTORED
+
+
+BusyBox v1.37.0-wasm (2026-07-09 14:38:25 KST) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+~ $ sh /tmp/input-test.sh; exit
+gucode 0.1.2 · deepseek-flash
+Type /help for commands.
+
+[?2004h[2Kgucode> [8C[?2004l
+TERMSTATE before=16640:3:2816:398:4:0:0:127:0:21:0:0:3:28:26:0:17:19:0:0:1:0:0:0 after=16640:3:2816:398:4:0:0:127:0:21:0:0:3:28:26:0:17:19:0:0:1:0:0:0
+INPUT-RESTORED
+
+
+BusyBox v1.37.0-wasm (2026-07-09 14:38:25 KST) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+~ $ sh /tmp/input-test.sh; exit
+gucode 0.1.2 · deepseek-flash
+Type /help for commands.
+
+[?2004h[2Kgucode> [8C[?2004l
+TERMSTATE before=16640:3:2816:398:4:0:0:127:0:21:0:0:3:28:26:0:17:19:0:0:1:0:0:0 after=16640:3:2816:398:4:0:0:127:0:21:0:0:3:28:26:0:17:19:0:0:1:0:0:0
+INPUT-RESTORED
+gucman: install groundupcoder:jwm: reading catalogs and resolving dependencies
+gucman: Reading catalog: groundupcoder
+  Connecting; waiting for response…
+  Downloaded 26770 bytes; transfer finished
+gucman: Resolving: groundupcoder:jwm
+gucman: Downloading manifest for groundupcoder:jwm (3074 bytes)
+  Connecting; waiting for response…
+  Downloaded 3074 / 3074 bytes (100%); transfer finished
+gucman: Verifying download: manifest for groundupcoder:jwm
+gucman: Checking cached object: manifest for groundupcoder:jwm
+gucman: Resolving: groundupcoder:x11-widgets
+gucman: Downloading manifest for groundupcoder:x11-widgets (3420 bytes)
+  Connecting; waiting for response…
+  Downloaded 3420 / 3420 bytes (100%); transfer finished
+gucman: Verifying download: manifest for groundupcoder:x11-widgets
+gucman: Checking cached object: manifest for groundupcoder:x11-widgets
+gucman: Resolving: groundupcoder:x11-toolkit
+gucman: Downloading manifest for groundupcoder:x11-toolkit (13770 bytes)
+  Connecting; waiting for response…
+  Downloaded 13770 / 13770 bytes (100%); transfer finished
+gucman: Verifying download: manifest for groundupcoder:x11-toolkit
+gucman: Checking cached object: manifest for groundupcoder:x11-toolkit
+gucman: Resolving: groundupcoder:x11-server
+gucman: Downloading manifest for groundupcoder:x11-server (47963 bytes)
+  Connecting; waiting for response…
+  Downloaded 47963 / 47963 bytes (100%); transfer finished
+gucman: Verifying download: manifest for groundupcoder:x11-server
+gucman: Checking cached object: manifest for groundupcoder:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+gucman: Downloading x11-server archive (25956864 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.33 / 24.75 MiB (9%)
+  Downloaded 7.29 / 24.75 MiB (29%)
+  Downloaded 8.22 / 24.75 MiB (33%)
+  Downloaded 16.01 / 24.75 MiB (64%)
+  Downloaded 24.75 / 24.75 MiB (100%); transfer finished
+gucman: Verifying download: x11-server archive
+gucman: Checking cached object: x11-server archive
+gucman: Unpacking: x11-server
+gucman: Installing x11-server: 0/527 files
+gucman: Installing x11-server: 25/527 files
+gucman: Installing x11-server: 50/527 files
+gucman: Installing x11-server: 75/527 files
+gucman: Installing x11-server: 100/527 files
+gucman: Installing x11-server: 125/527 files
+gucman: Installing x11-server: 150/527 files
+gucman: Installing x11-server: 175/527 files
+gucman: Installing x11-server: 200/527 files
+gucman: Installing x11-server: 225/527 files
+gucman: Installing x11-server: 250/527 files
+gucman: Installing x11-server: 275/527 files
+gucman: Installing x11-server: 300/527 files
+gucman: Installing x11-server: 325/527 files
+gucman: Installing x11-server: 350/527 files
+gucman: Installing x11-server: 375/527 files
+gucman: Installing x11-server: 400/527 files
+gucman: Installing x11-server: 425/527 files
+gucman: Installing x11-server: 450/527 files
+gucman: Installing x11-server: 475/527 files
+gucman: Installing x11-server: 500/527 files
+gucman: Installing x11-server: 525/527 files
+gucman: Installing x11-server: 527/527 files
+gucman: Preparing checksums: x11-server
+gucman: Checksummed x11-server: 25/527 files
+gucman: Checksummed x11-server: 50/527 files
+gucman: Checksummed x11-server: 75/527 files
+gucman: Checksummed x11-server: 100/527 files
+gucman: Checksummed x11-server: 125/527 files
+gucman: Checksummed x11-server: 150/527 files
+gucman: Checksummed x11-server: 175/527 files
+gucman: Checksummed x11-server: 200/527 files
+gucman: Checksummed x11-server: 225/527 files
+gucman: Checksummed x11-server: 250/527 files
+gucman: Checksummed x11-server: 275/527 files
+gucman: Checksummed x11-server: 300/527 files
+gucman: Checksummed x11-server: 325/527 files
+gucman: Checksummed x11-server: 350/527 files
+gucman: Checksummed x11-server: 375/527 files
+gucman: Checksummed x11-server: 400/527 files
+gucman: Checksummed x11-server: 425/527 files
+gucman: Checksummed x11-server: 450/527 files
+gucman: Checksummed x11-server: 475/527 files
+gucman: Checksummed x11-server: 500/527 files
+gucman: Checksummed x11-server: 525/527 files
+gucman: Checksummed x11-server: 527/527 files
+gucman: Saving transaction: x11-server
+gucman: Verifying staged files: x11-server
+gucman: Activating: x11-server
+Installed groundupcoder:x11-server 21.1.24-1
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+gucman: Downloading x11-toolkit archive (2518016 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.40 / 2.40 MiB (100%); transfer finished
+gucman: Verifying download: x11-toolkit archive
+gucman: Checking cached object: x11-toolkit archive
+gucman: Unpacking: x11-toolkit
+gucman: Installing x11-toolkit: 0/157 files
+gucman: Installing x11-toolkit: 25/157 files
+gucman: Installing x11-toolkit: 50/157 files
+gucman: Installing x11-toolkit: 75/157 files
+gucman: Installing x11-toolkit: 100/157 files
+gucman: Installing x11-toolkit: 125/157 files
+gucman: Installing x11-toolkit: 150/157 files
+gucman: Installing x11-toolkit: 157/157 files
+gucman: Preparing checksums: x11-toolkit
+gucman: Checksummed x11-toolkit: 25/157 files
+gucman: Checksummed x11-toolkit: 50/157 files
+gucman: Checksummed x11-toolkit: 75/157 files
+gucman: Checksummed x11-toolkit: 100/157 files
+gucman: Checksummed x11-toolkit: 125/157 files
+gucman: Checksummed x11-toolkit: 150/157 files
+gucman: Checksummed x11-toolkit: 157/157 files
+gucman: Saving transaction: x11-toolkit
+gucman: Verifying staged files: x11-toolkit
+gucman: Activating: x11-toolkit
+Installed groundupcoder:x11-toolkit 1.0-1
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+gucman: Downloading x11-widgets archive (1338880 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.28 / 1.28 MiB (100%); transfer finished
+gucman: Verifying download: x11-widgets archive
+gucman: Checking cached object: x11-widgets archive
+gucman: Unpacking: x11-widgets
+gucman: Installing x11-widgets: 0/15 files
+gucman: Installing x11-widgets: 15/15 files
+gucman: Preparing checksums: x11-widgets
+gucman: Checksummed x11-widgets: 15/15 files
+gucman: Saving transaction: x11-widgets
+gucman: Verifying staged files: x11-widgets
+gucman: Activating: x11-widgets
+Installed groundupcoder:x11-widgets 1.0-1
+gucman: Package 4/4: jwm (0 remaining after this)
+gucman: Downloading jwm archive (9654272 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.14 / 9.21 MiB (23%)
+  Downloaded 6.37 / 9.21 MiB (69%)
+  Downloaded 8.09 / 9.21 MiB (87%)
+  Downloaded 9.21 / 9.21 MiB (100%); transfer finished
+gucman: Verifying download: jwm archive
+gucman: Checking cached object: jwm archive
+gucman: Unpacking: jwm
+gucman: Installing jwm: 0/7 files
+gucman: Installing jwm: 7/7 files
+gucman: Preparing checksums: jwm
+gucman: Checksummed jwm: 7/7 files
+gucman: Saving transaction: jwm
+gucman: Verifying staged files: jwm
+gucman: Activating: jwm
+Installed groundupcoder:jwm 2.4.6-2
+gucman: install groundupcoder:xterm: reading catalogs and resolving dependencies
+gucman: Reading catalog: groundupcoder
+  Connecting; waiting for response…
+  Downloaded 26770 bytes; transfer finished
+gucman: Resolving: groundupcoder:xterm
+gucman: Downloading manifest for groundupcoder:xterm (3315 bytes)
+  Connecting; waiting for response…
+  Downloaded 3315 / 3315 bytes (100%); transfer finished
+gucman: Verifying download: manifest for groundupcoder:xterm
+gucman: Checking cached object: manifest for groundupcoder:xterm
+gucman: Resolving: groundupcoder:x11-widgets
+gucman: Checking cached object: manifest for groundupcoder:x11-widgets
+gucman: Resolving: groundupcoder:x11-toolkit
+gucman: Checking cached object: manifest for groundupcoder:x11-toolkit
+gucman: Resolving: groundupcoder:x11-server
+gucman: Checking cached object: manifest for groundupcoder:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xterm (0 remaining after this)
+gucman: Downloading xterm archive (15090176 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.38 / 14.39 MiB (16%)
+  Downloaded 5.84 / 14.39 MiB (40%)
+  Downloaded 13.84 / 14.39 MiB (96%)
+  Downloaded 14.39 / 14.39 MiB (100%); transfer finished
+gucman: Verifying download: xterm archive
+gucman: Checking cached object: xterm archive
+gucman: Unpacking: xterm
+gucman: Installing xterm: 0/16 files
+gucman: Installing xterm: 16/16 files
+gucman: Preparing checksums: xterm
+gucman: Checksummed xterm: 16/16 files
+gucman: Saving transaction: xterm
+gucman: Verifying staged files: xterm
+gucman: Activating: xterm
+Installed groundupcoder:xterm 411-1
+2221 functions, 2231573 bytes
+LIVE-JWM-XTERM-FOCUSED
+before=16640:3:2816:398:4:255:0:8:0:21:0:0:3:28:26:0:17:19:0:0:1:0:0:0 after=16640:3:2816:398:4:255:0:8:0:21:0:0:3:28:26:0:17:19:0:0:1:0:0:0
+XTERM-INPUT-RESTORED
