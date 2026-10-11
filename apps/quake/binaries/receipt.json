@@ -1,0 +1,132 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "2c1a0c8ba7f88e0d0aace145757ada263284c4ea968705adfb173793ce4a07f0",
+  "size": 19772416,
+  "guestManifest": {
+    "format": 1,
+    "name": "quake",
+    "version": "0.1.0-3",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "sdl3-vt"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59520/migration/quake/source.tar",
+        "sha256": "0d4fdf8feeaa9433c9298ea9a7519092662d64d8f7528d694f4d126d2cc0e81c",
+        "size": 1433600
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59520/migration/quake/build.sh",
+        "sha256": "fc4c6128d4ce7c3ece8f3800a87200d972ad5dce82d7149e788164cf31d9d82d",
+        "size": 831
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59520/migration/quake/test.sh",
+        "sha256": "8ecb372dea2828af9189fb74f446ae2cb1f1a2de6fee2ee2af9105fbaf561a95",
+        "size": 1385
+      },
+      {
+        "path": "launch.sh",
+        "url": "http://127.0.0.1:59520/migration/quake/launch.sh",
+        "sha256": "5e26ff6bf8828892695a4434686d9392cb8d918ff75472efe67c764b871ffa6c",
+        "size": 1161
+      },
+      {
+        "path": "gucos-quake.desktop",
+        "url": "http://127.0.0.1:59520/migration/quake/gucos-quake.desktop",
+        "sha256": "3e61668ab7454d9edfa839f37e162f64b13a12cf102c8da6490cee9cf975b1ee",
+        "size": 87
+      },
+      {
+        "path": "quake106.zip",
+        "url": "http://127.0.0.1:59520/migration/quake/quake106.zip",
+        "sha256": "ec6c9d34b1ae0252ac0066045b6611a7919c2a0d78a3a66d9387a8f597553239",
+        "size": 9094045
+      },
+      {
+        "path": "shareware-payload.tar.gz",
+        "url": "http://127.0.0.1:59520/migration/quake/shareware-payload.tar.gz",
+        "sha256": "4d4e5eadac98761443f734a9bf98916b58428ed916a38854205037f2c6fb3571",
+        "size": 8993495
+      },
+      {
+        "path": "shareware-inventory.json",
+        "url": "http://127.0.0.1:59520/migration/quake/shareware-inventory.json",
+        "sha256": "3fd036f4cd80fe1f81c9dfb53e141972ef004f4935b86fc1bbfca638b34a37f8",
+        "size": 2165
+      },
+      {
+        "path": "SHAREWARE-PROVENANCE.md",
+        "url": "http://127.0.0.1:59520/migration/quake/SHAREWARE-PROVENANCE.md",
+        "sha256": "0dbb675fd0fd66a17b0545af024a6712dc4f40aeb1d65dece81de4308054aa9b",
+        "size": 892
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/quake",
+        "mode": 493
+      },
+      {
+        "path": "libexec/quake",
+        "mode": 493
+      },
+      {
+        "path": "share/applications/gucos-quake.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/quake/1-gnu.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/quake/2-SHAREWARE-LICENSE.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/quake/id1/autoexec.cfg",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/quake/LICENSE-INFO.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/quake/quake106.zip",
+        "mode": 420
+      },
+      {
+        "path": "share/quake/shareware-payload.tar.gz",
+        "mode": 420
+      },
+      {
+        "path": "share/quake/shareware-inventory.json",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/quake/SHAREWARE-PROVENANCE.md",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/quake/1-gnu.txt",
+      "share/licenses/quake/2-SHAREWARE-LICENSE.txt",
+      "share/licenses/quake/LICENSE-INFO.txt",
+      "share/licenses/quake/SHAREWARE-PROVENANCE.md"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

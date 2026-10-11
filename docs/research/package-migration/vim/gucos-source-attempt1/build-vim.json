@@ -1,0 +1,12 @@
+{
+  "action": "build",
+  "names": [
+    "vim"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "4466d858737b4d8e1831f0ec05ffe8b632be6106",
+  "startedAt": "2026-10-11T06:05:13.369Z",
+  "status": "failed",
+  "error": "AssertionError [ERR_ASSERTION]: gucman: build migration:vim: reading catalogs and resolving dependencies\ngucman: Reading catalog: migration\n  Connecting; waiting for response…\n  Downloaded 20980 bytes; transfer finished\ngucman: Resolving: migration:vim\ngucman: Downloading manifest for migration:vim (156417 bytes)\n  Connecting; waiting for response…\n  Downloaded 156417 / 156417 bytes (100%); transfer finished\ngucman: Verifying download: manifest for migration:vim\ngucman: Checking cached object: manifest for migration:vim\ngucman: unsafe output path\n\n\n1 !== 0\n\n    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/migration/stage.mjs:49:27",
+  "finishedAt": "2026-10-11T06:05:29.964Z"
+}

@@ -1,0 +1,7468 @@
+{
+  "vim": {
+    "format": 1,
+    "name": "vim",
+    "version": "9.1-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59615/migration/vim/source.tar",
+        "sha256": "a1ad039a2d502eff9fe9ec7842b910557d8c06b5ae2b314e77d62c02477d08e0",
+        "size": 38277120
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59615/migration/vim/build.sh",
+        "sha256": "560112d102356ae970df4fd5b41a8552ed25b1e92bce80409a196c9765bbca73",
+        "size": 369
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59615/migration/vim/test.sh",
+        "sha256": "632c1282d1fb19b6005296b9f9127157364a72ae1647a23a2f8333d2c3e9bdd9",
+        "size": 450
+      },
+      {
+        "path": "project.json",
+        "url": "http://127.0.0.1:59615/migration/vim/project.json",
+        "sha256": "3add9996127b77ae89d83d9bfac441bd90bdee17d10838e7fef97ca02e0aa564",
+        "size": 2925
+      },
+      {
+        "path": "vimrc",
+        "url": "http://127.0.0.1:59615/migration/vim/vimrc",
+        "sha256": "29d2c3836cc79dfbdcf08cd2ee4c770f712e3d4be2fd207d9886c435fd0c4232",
+        "size": 103
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/vim",
+        "mode": 493
+      },
+      {
+        "path": "share/vim/vimrc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/vim/LICENSE",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/RstFold.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/ada.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/adacomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/bitbake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/cargo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/cargo/quickfix.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/ccomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/clojurecomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/context.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/contextcomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/csscomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/decada.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/dist/ft.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/dist/json.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/dist/man.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/dist/script.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/dist/vim.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/dist/vim9.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/dist/vimindent.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/freebasic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/getscript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/gnat.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/gzip.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/haskellcomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/htmlcomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/javascriptcomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/netrw.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/netrwFileHandlers.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/netrwSettings.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/netrw_gitignore.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/paste.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/phpcomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/python.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/python3complete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/pythoncomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/racket.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/rubycomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/rust.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/rust/debugging.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/rustfmt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/spellfile.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/sqlcomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/syntaxcomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/tar.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/tohtml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/typeset.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/vimball.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/html32.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/html401f.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/html401s.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/html401t.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/html40f.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/html40s.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/html40t.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/xhtml10f.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/xhtml10s.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/xhtml10t.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/xhtml11.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/xsd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xml/xsl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xmlcomplete.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/xmlformat.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/zig/fmt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/autoload/zip.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/bugreport.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/blue.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/darkblue.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/default.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/delek.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/desert.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/elflord.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/evening.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/habamax.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/industry.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/koehler.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/lists/csscolors.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/lists/default.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/lunaperche.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/morning.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/murphy.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/pablo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/peachpuff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/quiet.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/retrobox.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/ron.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/shine.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/slate.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/sorbet.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/tools/check_colors.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/torte.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/wildcharm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/zaibatsu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/colors/zellner.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/ant.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/bcc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/bdf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/cargo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/checkstyle.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/cm3.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/context.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/cs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/csslint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/cucumber.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/dart.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/dart2js.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/dart2native.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/dartanalyser.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/dartdevc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/dartdoc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/dartfmt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/decada.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/dot.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/dotnet.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/erlang.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/eruby.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/eslint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/fbc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/fortran_F.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/fortran_cv.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/fortran_elf90.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/fortran_g77.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/fortran_lf95.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/fpc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/g95.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/gawk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/gcc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/gfortran.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/ghc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/gjs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/gnat.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/go.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/haml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/hare.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/hp_acc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/icc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/icon.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/ifort.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/intel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/irix5_c.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/irix5_cpp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/javac.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/jest.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/jikes.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/jjs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/jshint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/jsonlint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/mcs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/mips_c.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/mipspro_c89.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/mipspro_cpp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/modelsim_vcom.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/msbuild.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/msvc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/neato.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/ocaml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/onsgmls.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/pbx.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/perl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/perlcritic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/php.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/podchecker.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/powershell.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/pylint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/pyunit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/raco.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/racomake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/racosetup.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/racotest.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/rake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/rhino.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/rspec.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/rst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/rubocop.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/ruby.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/rubyunit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/rustc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/sass.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/scdoc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/se.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/shellcheck.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/sml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/spectral.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/splint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/stack.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/standard.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/stylelint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/tcl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/tex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/tidy.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/ts-node.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/tsc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/typedoc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/xbuild.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/xmllint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/xmlwf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/xo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/yamllint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/zig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/zig_build.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/zig_build_exe.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/zig_test.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/compiler/zsh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/defaults.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/delmenu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/arabic.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/autocmd.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/builtin.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/change.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/channel.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/cmdline.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/debug.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/debugger.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/develop.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/diff.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/digraph.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/doctags.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/editing.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/eval.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/farsi.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/filetype.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/fold.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/ft_ada.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/ft_context.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/ft_mp.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/ft_ps1.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/ft_raku.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/ft_rust.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/ft_sql.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/gui.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/gui_w32.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/gui_x11.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/hangulin.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/hebrew.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/help.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/helphelp.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/howto.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/if_cscop.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/if_lua.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/if_mzsch.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/if_ole.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/if_perl.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/if_pyth.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/if_ruby.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/if_sniff.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/if_tcl.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/indent.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/index.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/insert.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/intro.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/map.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/mbyte.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/message.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/mlang.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/motion.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/netbeans.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/options.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_390.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_amiga.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_beos.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_dos.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_haiku.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_mac.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_mint.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_msdos.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_os2.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_qnx.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_risc.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_unix.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_vms.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/os_win32.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pattern.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pi_getscript.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pi_gzip.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pi_logipat.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pi_netrw.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pi_paren.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pi_spec.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pi_tar.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pi_vimball.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/pi_zip.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/popup.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/print.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/quickfix.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/quickref.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/quotes.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/recover.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/remote.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/repeat.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/rileft.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/russian.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/scroll.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/sign.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/spell.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/sponsor.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/starting.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/syntax.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/tabpage.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/tags",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/tagsrch.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/term.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/terminal.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/test_urls.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/testing.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/textprop.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/tips.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/todo.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/uganda.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/undo.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/userfunc.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_01.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_02.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_03.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_04.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_05.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_06.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_07.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_08.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_09.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_10.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_11.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_12.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_20.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_21.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_22.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_23.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_24.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_25.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_26.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_27.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_28.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_29.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_30.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_31.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_32.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_40.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_41.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_42.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_43.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_44.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_45.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_50.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_51.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_52.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_90.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/usr_toc.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/various.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/version4.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/version5.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/version6.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/version7.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/version8.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/version9.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/vi_diff.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/vim9.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/vim9class.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/visual.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/windows.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/doc/workshop.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/evim.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/filetype.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftoff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/8th.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/a2ps.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/aap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/abap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/abaqus.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ada.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/alsaconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ant.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/apache.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/arch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/art.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/asm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/aspvbs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/automake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/awk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/bash.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/basic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/bdf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/bitbake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/bst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/btm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/bzl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/c.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/calendar.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/cdrdaoconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/cfg.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/changelog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/chatito.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/chicken.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/clojure.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/cmake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/cobol.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/conf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/config.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/confini.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/context.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/corn.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/cpp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/crm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/crontab.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/cs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/csc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/csh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/css.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/cucumber.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/cvsrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/debchangelog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/debcontrol.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/debsources.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/denyhosts.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/desktop.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/dictconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/dictdconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/diff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/dircolors.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/docbk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/dockerfile.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/dosbatch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/dosini.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/dtd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/dtrace.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/dune.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/eiffel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/elinks.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/elixir.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/elm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/erlang.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/eruby.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/eterm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/expect.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/falcon.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/fennel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/fetchmail.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/fish.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/flexwiki.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/forth.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/fortran.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/fpcmake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/framescript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/freebasic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/fstab.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/fvwm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gdb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gdscript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gdshader.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/git.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gitattributes.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gitcommit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gitconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gitignore.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gitrebase.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gitsendemail.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/go.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gpg.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gprof.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/groovy.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/group.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/grub.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/gyp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/haml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/hamster.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/hare.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/haskell.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/heex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/help.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/hgcommit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/hog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/hostconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/hostsaccess.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/html.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/htmldjango.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/i3config.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/icon.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/indent.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/initex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ishd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/j.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/java.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/javascript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/javascriptreact.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/jproperties.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/json.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/json5.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/jsonc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/jsonnet.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/jsp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/julia.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/kconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/kotlin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/kwt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ld.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/less.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/lftp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/libao.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/limits.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/liquid.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/lisp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/livebook.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/logcheck.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/loginaccess.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/logindefs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/logtalk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/lprolog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/lua.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/luau.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/lynx.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/m3build.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/m3quake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/m4.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/mail.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/mailaliases.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/mailcap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/make.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/man.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/manconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/markdown.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/masm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/matlab.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/mermaid.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/meson.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/mf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/mma.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/modconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/modula2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/modula3.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/mp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/mplayerconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/mrxvtrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/msmessages.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/muttrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/nanorc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/neomuttrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/netrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/nginx.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/nix.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/nroff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/nsis.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/objc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/objdump.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/obse.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ocaml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/occam.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/octave.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/openvpn.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/pamconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/pascal.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/passwd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/pbtxt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/pdf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/perl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/php.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/pinfo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/plaintex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/pod.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/poefilter.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/poke.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/postscr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/procmail.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/prolog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/protocols.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ps1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ps1xml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/pymanifest.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/pyrex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/python.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/qb64.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/qf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/qml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/quake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/quarto.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/r.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/racc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/racket.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/raku.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/readline.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/registry.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/reva.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/rhelp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/rmd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/rnc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/rnoweb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/routeros.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/rpl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/rrst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/rst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ruby.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/rust.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sass.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sbt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/scala.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/scdoc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/scheme.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/screen.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/scss.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sed.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sensors.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/services.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/setserial.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sexplib.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sgml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sieve.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/slpconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/slpreg.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/slpspi.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/solidity.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/solution.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/spec.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sql.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/ssa.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sshconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sudoers.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/svg.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/swayconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/swift.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/swiftgyb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/swig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/sysctl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/systemd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/systemverilog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/tap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/tcl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/tcsh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/terminfo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/tex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/text.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/tidy.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/tmux.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/toml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/treetop.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/tt2html.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/typescript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/typescriptreact.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/udevconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/udevperm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/udevrules.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/unison.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/updatedb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/urlshortcut.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/usd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/vb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/vdf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/verilog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/vhdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/vim.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/vroom.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/vue.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/wat.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/wget.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/wget2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xcompose.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xdefaults.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xf86conf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xhtml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xinetd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xmodmap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xsd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/xslt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/yaml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/zig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/zimbu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugin/zsh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/ftplugof.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/gvimrc_example.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/icons/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/import/dist/vimhelp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/import/dist/vimhighlight.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/aap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/ada.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/ant.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/automake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/awk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/bash.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/basic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/bib.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/bitbake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/bst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/bzl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/c.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/cdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/ch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/chaiscript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/changelog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/chatito.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/clojure.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/cmake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/cobol.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/config.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/context.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/cpp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/cs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/css.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/cucumber.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/cuda.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/d.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/dictconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/dictdconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/docbk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/dosbatch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/dtd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/dtrace.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/dts.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/dune.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/dylan.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/eiffel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/elm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/erlang.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/eruby.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/eterm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/expect.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/falcon.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/fennel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/fish.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/fortran.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/framescript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/freebasic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/gdscript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/gitconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/gitolite.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/go.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/gyp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/haml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/hamster.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/hare.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/hog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/html.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/htmldjango.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/idlang.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/ishd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/j.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/java.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/javascript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/javascriptreact.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/json.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/jsonc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/jsp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/julia.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/kotlin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/krl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/ld.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/less.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/lifelines.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/liquid.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/lisp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/livebook.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/logtalk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/lua.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/luau.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/mail.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/make.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/matlab.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/meson.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/mf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/mma.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/mp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/nginx.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/nsis.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/objc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/obse.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/ocaml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/occam.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/pascal.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/perl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/php.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/postscr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/pov.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/prolog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/ps1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/pyrex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/python.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/qb64.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/qml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/quarto.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/r.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/racket.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/raku.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/raml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/rapid.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/readline.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/rhelp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/rmd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/rnoweb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/rpl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/rrst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/rst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/ruby.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/rust.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/sas.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/sass.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/scala.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/scheme.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/scss.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/sdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/sh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/sml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/solidity.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/sql.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/sqlanywhere.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/sshconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/systemverilog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/tcl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/tcsh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/teraterm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/testdir/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/testdir/runtest.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/tex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/tf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/tilde.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/treetop.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/typescript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/typescriptreact.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/vb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/verilog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/vhdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/vim.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/vroom.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/vue.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/wat.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/xf86conf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/xhtml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/xinetd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/xml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/xsd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/xslt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/yacc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/yaml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/zig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/zimbu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indent/zsh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/indoff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/accents.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/arabic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/arabic_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/armenian-eastern_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/armenian-western_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/belarusian-jcuken.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/bulgarian-bds.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/bulgarian-phonetic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/canfr-win.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/croatian.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/croatian_cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/croatian_iso-8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/croatian_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/czech.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/czech_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/dvorak.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/esperanto.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/esperanto_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/french-azerty.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/german-qwertz.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/greek.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/greek_cp1253.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/greek_cp737.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/greek_iso-8859-7.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/greek_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/hebrew.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/hebrew_cp1255.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/hebrew_iso-8859-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/hebrew_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/hebrewp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/hebrewp_cp1255.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/hebrewp_iso-8859-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/hebrewp_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/kana.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/kazakh-jcuken.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/korean-dubeolsik_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/korean.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/lithuanian-baltic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/magyar_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/mongolian_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/oldturkic-orkhon_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/oldturkic-yenisei_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/persian-iranian_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/persian.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/pinyin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/polish-slash.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/polish-slash_cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/polish-slash_cp852.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/polish-slash_iso-8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/polish-slash_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/russian-dvorak.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/russian-jcuken.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/russian-jcukenmac.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/russian-jcukenwin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/russian-jcukenwintype.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/russian-typograph.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/russian-yawerty.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/serbian-latin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/serbian-latin_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/serbian.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/serbian_cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/serbian_cp1251.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/serbian_iso-8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/serbian_iso-8859-5.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/serbian_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/sinhala-phonetic_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/sinhala.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/slovak.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/slovak_cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/slovak_iso-8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/slovak_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/tamil_tscii.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/thaana-phonetic_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/thaana.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/turkish-f.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/turkish-q.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/ukrainian-dvorak.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/ukrainian-jcuken.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/vietnamese-telex_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/vietnamese-viqr_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/keymap/vietnamese-vni_utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_af.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_af.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_af_af.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_af_af.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ca.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ca.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ca_es.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ca_es.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_chinese(gb)_gb.936.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_chinese(taiwan)_taiwan.950.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_chinese_gb.936.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_chinese_taiwan.950.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_cs.cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_cs.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_cs_cz.cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_cs_cz.iso_8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_cs_cz.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_cs_cz.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_czech_czech_republic.1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_czech_czech_republic.1252.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_czech_czech_republic.ascii.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_da.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_da.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_de.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_de.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_de_de.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_de_de.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_en_gb.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_en_gb.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_english_united_kingdom.1252.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_english_united_kingdom.ascii.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_eo.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_eo_eo.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_eo_xx.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_es.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_es.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_es_es.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_es_es.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_fi.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_fi.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_fi_fi.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_fi_fi.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_finnish_finland.1252.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_fr.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_fr.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_fr_fr.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_fr_fr.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_french_france.1252.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_german_germany.1252.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_hu.iso_8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_hu.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_hu_hu.iso_8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_hu_hu.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_is.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_is.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_is_is.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_is_is.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_it.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_it.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_it_it.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_it_it.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_italian_italy.1252.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja.cp932.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja.euc-jp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja.eucjp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja.ujis.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja_jp.cp932.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja_jp.euc-jp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja_jp.eucjp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja_jp.ujis.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ja_jp.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_japanese_japan.932.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ko.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ko_kr.euckr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ko_kr.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ko_kr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_nl.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_nl.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_nl_nl.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_nl_nl.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_no.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_no.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_no_no.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_no_no.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pl.cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pl_pl.cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pl_pl.iso_8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pl_pl.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_polish_poland.1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pt_br.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pt_br.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pt_br.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pt_pt.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pt_pt.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_pt_pt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ru.cp1251.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ru.koi8-r.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ru.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ru.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ru_ru.cp1251.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ru_ru.koi8-r.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ru_ru.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_ru_ru.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sk.cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sk_sk.1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sk_sk.cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sk_sk.iso_8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sk_sk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sl_si.cp1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sl_si.latin2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sl_si.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_slovak_slovak_republic.1250.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_spanish_spain.850.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sr.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sr_rs.ascii.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sr_rs.iso_8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sr_rs.iso_8859-5.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sr_rs.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sr_yu.ascii.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sr_yu.iso_8859-2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sr_yu.iso_8859-5.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sr_yu.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sv.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sv.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sv_se.latin1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_sv_se.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_tr.cp1254.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_tr.iso_8859-9.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_tr.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_tr_tr.cp1254.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_tr_tr.iso_8859-9.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_tr_tr.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_uk_ua.cp1251.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_uk_ua.koi8-u.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_uk_ua.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_vi_vn.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh.big5.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh.cp936.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh.cp950.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh.gb2312.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh_cn.18030.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh_cn.cp936.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh_cn.gb2312.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh_cn.gbk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh_cn.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh_tw.big5.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh_tw.cp950.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/lang/menu_zh_tw.utf-8.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macmap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/editexisting.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/hanoi/hanoi.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/justify.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/less.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/life/life.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/matchit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/maze/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/shellmenu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/swapmous.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/urm/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/macros/urm/urm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/makemenu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/menu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/mswin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/optwin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/cfilter/plugin/cfilter.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/dvorak/dvorak/disable.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/dvorak/dvorak/enable.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/dvorak/plugin/dvorak.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editexisting/plugin/editexisting.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/autoload/editorconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/autoload/editorconfig_core.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/autoload/editorconfig_core/fnmatch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/autoload/editorconfig_core/handler.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/autoload/editorconfig_core/ini.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/autoload/editorconfig_core/util.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/doc/editorconfig.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/doc/tags",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/ftdetect/editorconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/editorconfig/plugin/editorconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/justify/plugin/justify.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/matchit/autoload/matchit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/matchit/doc/matchit.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/matchit/doc/tags",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/matchit/plugin/matchit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/shellmenu/plugin/shellmenu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/swapmouse/plugin/swapmouse.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/pack/dist/opt/termdebug/plugin/termdebug.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/getscriptPlugin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/gzip.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/logiPat.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/manpager.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/matchparen.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/netrwPlugin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/rrhelper.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/spellfile.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/tarPlugin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/tohtml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/vimballPlugin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/plugin/zipPlugin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/scripts.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/synmenu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/2html.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/8th.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/a2ps.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/a65.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/aap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/abap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/abaqus.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/abc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/abel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/acedb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ada.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/aflex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ahdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/aidl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/alsaconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/amiga.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/aml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ampl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ant.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/antlr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/apache.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/apachestyle.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/aptconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/arch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/arduino.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/art.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/asciidoc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/asm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/asm68k.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/asmh8300.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/asn.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/aspperl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/aspvbs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/asterisk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/asteriskvm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/atlas.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/autodoc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/autohotkey.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/autoit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/automake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ave.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/avra.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/awk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ayacc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/b.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/baan.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bash.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/basic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bdf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bib.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bindzone.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bitbake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/blank.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bsdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/btm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bzl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/bzr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/c.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cabal.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cabalconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cabalproject.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/calendar.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/catalog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cdrdaoconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cdrtoc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cfg.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/chaiscript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/change.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/changelog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/chaskell.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/chatito.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cheetah.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/chicken.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/chill.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/chordpro.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/clean.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/clipper.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/clojure.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cmake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cmod.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cmusrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cobol.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/coco.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/colortest.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/conaryrecipe.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/conf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/config.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/confini.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/context.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cpp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/crm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/crontab.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/csc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/csdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/csh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/csp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/css.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cterm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ctrlh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cucumber.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cuda.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cupl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cuplsim.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cvs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cvsrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cweb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cynlib.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/cynpp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/d.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dart.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/datascript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dcd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dcl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/deb822sources.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/debchangelog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/debcontrol.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/debcopyright.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/debsources.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/def.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/denyhosts.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dep3patch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/desc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/desktop.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dictconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dictdconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/diff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dircolors.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dirpager.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/diva.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/django.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dns.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dnsmasq.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/docbk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/docbksgml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/docbkxml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dockerfile.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dosbatch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dosini.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dot.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/doxygen.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dracula.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dsl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dtd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dtml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dtrace.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dts.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dune.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dylan.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dylanintr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/dylanlid.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ecd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/edif.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/editorconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/eiffel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/elf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/elinks.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/elm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/elmfilt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/erlang.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/eruby.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/esmtprc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/esqlc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/esterel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/eterm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/euphoria3.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/euphoria4.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/eviews.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/exim.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/expect.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/exports.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/falcon.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fan.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fasm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fdcc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fetchmail.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fgl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fish.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/flexwiki.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/focexec.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/form.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/forth.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fortran.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/foxpro.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fpcmake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/framescript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/freebasic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fstab.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fvwm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/fvwm2m4.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gdb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gdmo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gdresource.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gdscript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gdshader.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gedcom.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gemtext.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gift.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/git.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gitattributes.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gitcommit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gitconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gitignore.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gitolite.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gitrebase.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gitsendemail.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gkrellmrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gnash.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gnuplot.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/go.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/godoc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gpg.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gprof.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/grads.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gretl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/groff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/groovy.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/group.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/grub.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gsp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gtkrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gvpr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/gyp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/haml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hamster.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hare.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/haskell.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/haste.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hastepreproc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/help.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/help_ru.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hercules.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hgcommit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hitest.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hlsplaylist.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hollywood.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hostconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/hostsaccess.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/html.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/htmlcheetah.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/htmldjango.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/htmlm4.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/htmlos.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/i3config.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ia64.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ibasic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/icemenu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/icon.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/idl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/idlang.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/indent.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/inform.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/initex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/initng.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/inittab.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ipfilter.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ishd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/iss.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ist.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/j.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/jal.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/jam.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/jargon.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/java.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/javacc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/javascript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/javascriptreact.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/jess.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/jgraph.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/jovial.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/jproperties.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/json.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/json5.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/jsonc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/jsp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/julia.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/kconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/kivy.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/kix.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/kotlin.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/krl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/kscript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/kwt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lace.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/latte.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ld.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ldapconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ldif.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/less.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lftp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lhaskell.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/libao.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lifelines.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lilo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/limits.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/liquid.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lisp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lite.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/litestep.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/livebook.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/loginaccess.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/logindefs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/logtalk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lotos.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lout.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lpc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lprolog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lscript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lsl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lss.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lua.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/luau.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lynx.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/lyrics.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/m3build.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/m3quake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/m4.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mail.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mailaliases.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mailcap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/make.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mallard.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/man.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/manconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/manual.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/maple.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/markdown.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/masm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mason.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/master.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/matlab.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/maxima.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mermaid.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/meson.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/messages.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mgl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mgp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mib.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mix.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mma.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mmix.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mmp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/modconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/model.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/modsim3.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/modula2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/modula3.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mojo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/monk.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/moo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mplayerconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mrxvtrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/msidl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/msmessages.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/msql.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mupad.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/murphi.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mush.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/muttrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/mysql.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/n1ql.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/named.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/nanorc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/nasm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/nastran.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/natural.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ncf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/neomuttrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/netrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/netrw.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/nginx.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ninja.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/nix.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/nosyntax.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/nqc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/nroff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/nsis.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/obj.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/objc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/objcpp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/obse.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ocaml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/occam.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/omnimark.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/opam.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/openroad.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/openscad.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/openvpn.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/opl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ora.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pacmanlog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pamconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pamenv.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/papp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pascal.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/passwd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pbtxt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pcap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pccts.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pdf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/perl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pfmain.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/php.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/phtml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pic.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pike.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pilrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pine.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pinfo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/plaintex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pli.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/plm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/plp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/plsql.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/po.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pod.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/poefilter.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/poke.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/postscr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pov.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/povini.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ppd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ppwiz.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/prescribe.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/privoxy.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/procmail.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/progress.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/prolog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/promela.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/proto.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/protocols.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ps1.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ps1xml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/psf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/psl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ptcap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/purifylog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pymanifest.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/pyrex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/python.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/python2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/qb64.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/qf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/qml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/quake.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/quarto.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/r.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/racc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/racket.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/radiance.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/raku.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/raml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rapid.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ratpoison.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rcs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rcslog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/readline.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rebol.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/redif.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/registry.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rego.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/remind.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/resolv.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/reva.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rexx.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rhelp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rib.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rmd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rnc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rng.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rnoweb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/robots.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/routeros.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rpcgen.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rpl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rrst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rst.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rtf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ruby.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/rust.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/samba.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sas.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sass.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sather.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sbt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/scala.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/scdoc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/scheme.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/scilab.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/screen.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/scss.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sdc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sed.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sendpr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sensors.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/services.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/setserial.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sexplib.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sgml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sgmldecl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sgmllnx.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/shared/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/shared/context-data-context.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/shared/context-data-interfaces.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/shared/context-data-metafun.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/shared/context-data-tex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/shared/debversions.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/shared/hgcommitDiff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/shared/typescriptcommon.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sicad.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sieve.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sil.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/simula.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sinda.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sindacmp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sindaout.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sisu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/skill.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/slang.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/slice.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/slpconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/slpreg.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/slpspi.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/slrnrc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/slrnsc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/smarty.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/smcl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/smil.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/smith.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/snnsnet.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/snnspat.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/snnsres.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/snobol4.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/solidity.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/spec.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/specman.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/spice.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/splint.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/spup.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/spyce.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sql.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sqlanywhere.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sqlforms.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sqlhana.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sqlinformix.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sqlj.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sqloracle.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sqr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/squid.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/squirrel.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/srec.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/srt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/ssa.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sshconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sshdconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/st.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/stata.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/stp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/strace.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/structurizr.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sudoers.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/svg.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/svn.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/swayconfig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/swift.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/swiftgyb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/swig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/syncolor.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/synload.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/syntax.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/sysctl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/systemd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/systemverilog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tads.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tags.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tak.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/takcmp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/takout.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tar.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/taskdata.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/taskedit.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tasm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tcl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tcsh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/template.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/teraterm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/terminfo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/testdir/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/testdir/input/vim_ex_commands.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/testdir/input/vim_keymap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/testdir/input/vim_variables.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/testdir/runtest.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tex.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/texinfo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/texmf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tidy.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tilde.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tli.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tmux.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/toml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tpp.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/trasys.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/treetop.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/trustees.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tsalt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tsscl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tssgm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tssop.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tt2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tt2html.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/tt2js.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/typescript.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/typescriptreact.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/uc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/udevconf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/udevperm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/udevrules.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/uil.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/unison.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/updatedb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/upstart.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/upstreamdat.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/upstreaminstalllog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/upstreamlog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/upstreamrpt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/urlshortcut.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/usserverlog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/usw2kagtlog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/valgrind.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vdf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vera.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/verilog.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/verilogams.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vgrindefs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vhdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vim.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/viminfo.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/virata.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vmasm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/voscm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vrml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vroom.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vsejcl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/vue.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/wat.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/wdiff.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/wdl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/web.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/webmacro.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/wget.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/wget2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/whitespace.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/winbatch.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/wml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/wsh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/wsml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/wvdial.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xbl.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xcompose.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xdefaults.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xf86conf.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xhtml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xinetd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xkb.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xmath.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xmodmap.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xpm.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xpm2.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xquery.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xs.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xsd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xslt.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/xxd.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/yacc.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/yaml.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/z8a.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/zig.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/zimbu.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/zir.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/zserio.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/syntax/zsh.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tools/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tools/ccfilter_README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tools/efm_filter.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tools/emoji_list.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tools/mve.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tools/unicode.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tools/vimspell.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tutor/README.el.cp737.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tutor/README.el.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tutor/README.ru.utf-8.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tutor/README.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/tutor/tutor.vim",
+        "mode": 420
+      },
+      {
+        "path": "share/vim/vim91/vimrc_example.vim",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/vim/LICENSE"
+    ]
+  }
+}
