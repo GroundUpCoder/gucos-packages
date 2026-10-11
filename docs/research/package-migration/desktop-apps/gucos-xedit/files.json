@@ -1,0 +1,98 @@
+{
+  "xedit-jwm-focus-reload-filename-2.png": {
+    "sha256": "47d570244fcbd0dc5307bff7e082aa0a2ac5c51b52218a95b61fd9caf1e2fddf",
+    "size": 8423
+  },
+  "xedit-jwm-focus-reload.log": {
+    "sha256": "18f8e17a6984759e3f66021a8cd6fa5d34c3c36961e2be7494299c64a1eac4ff",
+    "size": 36793
+  },
+  "xedit-jwm-focus-reload-filename-1.png": {
+    "sha256": "a6e25e51e95182a133db96ea0d9f34a1d42aba1c24f75694b7e91612004287ed",
+    "size": 8629
+  },
+  "xedit-jwm-focus-relaunched.png": {
+    "sha256": "0681bef1b0882bbdffd03376e13e44fba11887be842fc05f36f75f9fa80cb2dd",
+    "size": 7971
+  },
+  "xedit-jwm-focus-loaded.png": {
+    "sha256": "2d1c8670dcf1dad69a2dd8699b2e38fa9657ee8278c648c8fe8e20e2c5094949",
+    "size": 9040
+  },
+  "xedit-jwm-focus-launched.png": {
+    "sha256": "4895e9b28095f76b7dcaac5b981150c16b54e3947583106f815c434a99e66a99",
+    "size": 8191
+  },
+  "xedit-jwm-focus-reload.json": {
+    "sha256": "4216478e97d216a56bf0b198d1e293900200e61f2bc2b274c5b00fa0337096eb",
+    "size": 3397
+  },
+  "desktop-closure.sha256": {
+    "sha256": "1371bde4b30faf6752b476fae9b7a804abe8f6cd2d1f661eb0b6aac3fde23bb3",
+    "size": 84428
+  },
+  "config.json": {
+    "sha256": "bcf92fad0b2af2653ca585065fd18b2a0271a30a3ba2a63ae8af623652579a94",
+    "size": 23720
+  },
+  "xedit-jwm-focus-reload-relaunched.png": {
+    "sha256": "0681bef1b0882bbdffd03376e13e44fba11887be842fc05f36f75f9fa80cb2dd",
+    "size": 7971
+  },
+  "xedit-jwm-focus-reload-typed.png": {
+    "sha256": "99648b6213460c48aa888f5f50b403da68ab34c39ee18f75a6fac6807ffe8944",
+    "size": 9614
+  },
+  "xedit-jwm-focus-reload-reopened-saved.png": {
+    "sha256": "3eaaa506dfe09414632a1efc8e6dabbf467abc09750a3cedfe8ebced466a01d1",
+    "size": 10179
+  },
+  "xedit-jwm-focus-filename-1.png": {
+    "sha256": "a6e25e51e95182a133db96ea0d9f34a1d42aba1c24f75694b7e91612004287ed",
+    "size": 8629
+  },
+  "xedit-jwm-focus-saved.png": {
+    "sha256": "1899f159af8a8ef562898569bdb94839e3330c0937e7b88d23c9e4c54e760051",
+    "size": 9901
+  },
+  "xedit-jwm-focus-reload-launched.png": {
+    "sha256": "4895e9b28095f76b7dcaac5b981150c16b54e3947583106f815c434a99e66a99",
+    "size": 8191
+  },
+  "xedit-jwm-focus.json": {
+    "sha256": "4f8f0d18a99cb5594031e5356c6baa02d31a28e716af79bee36ee13a23539f8f",
+    "size": 3371
+  },
+  "xedit-jwm-focus-filename-2.png": {
+    "sha256": "47d570244fcbd0dc5307bff7e082aa0a2ac5c51b52218a95b61fd9caf1e2fddf",
+    "size": 8423
+  },
+  "xedit-jwm-focus-reload-loaded.png": {
+    "sha256": "228e3a773b542e9acbfb8899ff59dfbdbc8f255831608862a8eebc15286920a8",
+    "size": 9414
+  },
+  "desktop-closure.json": {
+    "sha256": "97a094decb4e94703393d14508c1b7f90b541b055d62036261dd6914c19aa844",
+    "size": 109263
+  },
+  "xedit-jwm-focus-typed.png": {
+    "sha256": "ca9c76801a746ef4b48c7a16cbe02d01d3fb18aa45f95b208ff8b6a3c37046e8",
+    "size": 9284
+  },
+  "candidate-manifests.json": {
+    "sha256": "76876d1dd76cca2054b13e8d187e7483bb53c16b07cebec71c0ee7a117c38625",
+    "size": 3933
+  },
+  "xedit-jwm-focus-reopened-saved.png": {
+    "sha256": "7bef5b3d34fe581b88f69c8b22b4d9417d604d396847c4a81bb6ccd676b3b04b",
+    "size": 9855
+  },
+  "xedit-jwm-focus-reload-saved.png": {
+    "sha256": "af90184adcfa0733326042ce0c774b57c1e8be3377ad9657814c25cd64112391",
+    "size": 10230
+  },
+  "xedit-jwm-focus.log": {
+    "sha256": "18f8e17a6984759e3f66021a8cd6fa5d34c3c36961e2be7494299c64a1eac4ff",
+    "size": 36793
+  }
+}
