@@ -47,3 +47,9 @@ Evidence is retained in batch-11/split-binary-install, covering100 outputs.
 Pango consumers now pass on the final split closure. Exact artifact review and
 public acceptance remain pending; the historical translator mismatch remains.
 Corrected GTK source is running separately under reservation0700a781.
+
+Independent gpt reviewer approved exact artifact commit e1b9ab3 and final
+manifest ac9d665 / catalog6270524 publication. All100 payloads and20-package
+closure verified; catalog check passes63 entries with previous60 unchanged.
+Fresh public run hb-pango-public-gpt-61a87f88 prepared against6270524.
+Public acceptance remains pending; live-accepted additions still41.

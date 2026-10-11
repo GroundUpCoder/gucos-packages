@@ -1797,7 +1797,7 @@
     {
       "id": "harfbuzz",
       "kind": "historical-canonical-name",
-      "state": "binary-accepted-review-pending",
+      "state": "published-public-acceptance-pending",
       "historicalManifest": "apps/harfbuzz/wasm-package.json",
       "historicalManifestSha256": "867537107b51bcb6295a5d9c69a7e57d33cbc7dd67c5c3e84aaea158d8ea8412",
       "historicalEvidence": [
@@ -1851,7 +1851,7 @@
         }
       ],
       "blockers": [
-        "Independent exact artifact review and public publication/acceptance pending.",
+        "Fresh public live acceptance pending.",
         "Historical translator-adapter hash mismatch: translation reproducibility not established."
       ],
       "candidate": "apps/harfbuzz",
@@ -1859,6 +1859,17 @@
         "commit": "5bdbba1e53e78d2260b481bc69bbe20dd8887bd6",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Source approved; fresh execution/acceptance of final candidate remains pending."
+      },
+      "artifactReview": {
+        "commit": "e1b9ab389dea429d91f1a7be81881baf49d69e4f",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Exact artifacts approved for immutable publication; 100 outputs and 20-package closure verified."
+      },
+      "publicationReview": {
+        "manifestCommit": "ac9d6658097e3f40c7642c793d51f9a5120a6613",
+        "catalogCommit": "62705241047bca6cb31fce29f91f4917308a4157",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved push and serial public acceptance; baseline19 and prior60 preserved."
       }
     },
     {
@@ -3047,7 +3058,7 @@
     {
       "id": "pango",
       "kind": "historical-canonical-name",
-      "state": "binary-accepted-review-pending",
+      "state": "published-public-acceptance-pending",
       "historicalManifest": "vendor/pango/wasm-package.json",
       "historicalManifestSha256": "4dfa2617abb5073dbeabda42ffe18eabb8a29a0cbe92b018947a6895eef04713",
       "historicalEvidence": [
@@ -3093,13 +3104,24 @@
         }
       ],
       "blockers": [
-        "Independent exact artifact review and public publication/acceptance pending."
+        "Fresh public live acceptance pending."
       ],
       "candidate": "apps/pango",
       "sourceReview": {
         "commit": "19502f9b3d4ea45bb041b1c5c0566fc2e231a692",
         "reviewerThread": "01a123e0-2fb3-7521-9fa3-e936e0997405",
         "result": "No source/test blocker; new guest acceptance pending."
+      },
+      "artifactReview": {
+        "commit": "e1b9ab389dea429d91f1a7be81881baf49d69e4f",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Exact artifacts approved for immutable publication; 100 outputs and 20-package closure verified."
+      },
+      "publicationReview": {
+        "manifestCommit": "ac9d6658097e3f40c7642c793d51f9a5120a6613",
+        "catalogCommit": "62705241047bca6cb31fce29f91f4917308a4157",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved push and serial public acceptance; baseline19 and prior60 preserved."
       }
     },
     {
@@ -4714,7 +4736,7 @@
     {
       "id": "harfbuzz-static",
       "kind": "historical-component",
-      "state": "binary-accepted-review-pending",
+      "state": "published-public-acceptance-pending",
       "candidate": "apps/harfbuzz-static",
       "mapping": "harfbuzz static archives partition; main package owns headers and DSO",
       "acceptance": [
@@ -4730,12 +4752,23 @@
         }
       ],
       "blockers": [
-        "Independent exact artifact review and public publication/acceptance pending."
+        "Fresh public live acceptance pending."
       ],
       "sourceReview": {
         "commit": "5bdbba1e53e78d2260b481bc69bbe20dd8887bd6",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Source approved; fresh execution/acceptance of final candidate remains pending."
+      },
+      "artifactReview": {
+        "commit": "e1b9ab389dea429d91f1a7be81881baf49d69e4f",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Exact artifacts approved for immutable publication; 100 outputs and 20-package closure verified."
+      },
+      "publicationReview": {
+        "manifestCommit": "ac9d6658097e3f40c7642c793d51f9a5120a6613",
+        "catalogCommit": "62705241047bca6cb31fce29f91f4917308a4157",
+        "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
+        "result": "Approved push and serial public acceptance; baseline19 and prior60 preserved."
       }
     },
     {
