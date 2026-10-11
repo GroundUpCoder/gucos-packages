@@ -227,3 +227,11 @@ insufficient normal-exit oracles. Evidence and a corrective assessment are
 retained under `docs/research/package-migration/xarchiver/gucos-layout-attempt1`.
 Independent source diagnosis is pending. This supplies no archive-operation or
 functional acceptance and does not change the 91-package accepted baseline.
+
+Xarchiver quit signal adapters are prepared in c79bd05 with a checked source
+preimage, unchanged historical archive and exact patch. Source-only checks pass
+for 220 blobs; independent implementation review and guest rebuild remain pending.
+Galculator layout evidence is retained under `galculator/gucos-layout-attempt1`.
+It captured Basic/Scientific layouts but failed configuration directory creation
+and saving (zero bytes). No arithmetic or persistence acceptance is claimed.
+Its PID-disappearance close check likewise does not directly prove exit status.

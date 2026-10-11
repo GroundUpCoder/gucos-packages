@@ -1,0 +1,38 @@
+{
+  "action": "consumers",
+  "names": [
+    "galculator"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "65e51d0e3bcb822544d364e4bef8cd0bcfc7cb9c",
+  "startedAt": "2026-10-11T09:55:40.608Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "galculator",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "672d2a942776a4e29bbe6363fd75af469d1e218fbb17a789c0bc1ad6bc7f24ec",
+          "size": 3399680
+        },
+        {
+          "path": "build.sh",
+          "sha256": "a23061cd0db825599fe545b4b09298f7e8b7376e7ce00810bf03cc2fbe70d5d0",
+          "size": 1151
+        },
+        {
+          "path": "test.sh",
+          "sha256": "087750e3c5cc556f8f4f4fef82c0e82beb1fc5c584dba1685e7c76dff253f68e",
+          "size": 827
+        },
+        {
+          "path": "galculator.desktop",
+          "sha256": "e462d1415562afa405f85cc6ec97a09463a4348bf45af84deea87f03e50955d8",
+          "size": 138
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T09:55:43.230Z"
+}

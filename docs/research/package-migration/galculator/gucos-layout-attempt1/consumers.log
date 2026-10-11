@@ -1,0 +1,35 @@
+gucman: unknown source
+
+
+2 functions, 5422 bytes
+GALCULATOR-STAGED-LINK-PASS
+
+/usr/local/bin/galculator: OK
+/usr/local/libexec/galculator: OK
+/usr/local/share/galculator/ui/about.ui: OK
+/usr/local/share/galculator/ui/basic_buttons_gtk2.ui: OK
+/usr/local/share/galculator/ui/basic_buttons_gtk3.ui: OK
+/usr/local/share/galculator/ui/classic_view.ui: OK
+/usr/local/share/galculator/ui/dispctrl_bottom_gtk2.ui: OK
+/usr/local/share/galculator/ui/dispctrl_bottom_gtk3.ui: OK
+/usr/local/share/galculator/ui/dispctrl_right_gtk2.ui: OK
+/usr/local/share/galculator/ui/dispctrl_right_gtk3.ui: OK
+/usr/local/share/galculator/ui/dispctrl_right_vertical_gtk2.ui: OK
+/usr/local/share/galculator/ui/dispctrl_right_vertical_gtk3.ui: OK
+/usr/local/share/galculator/ui/main_frame.ui: OK
+/usr/local/share/galculator/ui/main_frame_hildon.ui: OK
+/usr/local/share/galculator/ui/paper_view.ui: OK
+/usr/local/share/galculator/ui/prefs-ume.ui: OK
+/usr/local/share/galculator/ui/prefs_gtk2.ui: OK
+/usr/local/share/galculator/ui/prefs_gtk3.ui: OK
+/usr/local/share/galculator/ui/scientific_buttons_gtk2.ui: OK
+/usr/local/share/galculator/ui/scientific_buttons_gtk3.ui: OK
+/usr/local/share/applications/galculator.desktop: OK
+/usr/local/share/pixmaps/galculator.png: OK
+/usr/local/share/doc/galculator/PORT.md: OK
+/usr/local/share/licenses/galculator/COPYING: OK
+
+ac67570a54d4650a3ec26a4c5a55ef0616d417dcf50bdf4d5984728e47573f5f  /home/user/migration-export.tar
+1132544
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

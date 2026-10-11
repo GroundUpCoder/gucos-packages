@@ -1,0 +1,42 @@
+/usr/local/bin/galculator: OK
+/usr/local/libexec/galculator: OK
+/usr/local/share/galculator/ui/about.ui: OK
+/usr/local/share/galculator/ui/basic_buttons_gtk2.ui: OK
+/usr/local/share/galculator/ui/basic_buttons_gtk3.ui: OK
+/usr/local/share/galculator/ui/classic_view.ui: OK
+/usr/local/share/galculator/ui/dispctrl_bottom_gtk2.ui: OK
+/usr/local/share/galculator/ui/dispctrl_bottom_gtk3.ui: OK
+/usr/local/share/galculator/ui/dispctrl_right_gtk2.ui: OK
+/usr/local/share/galculator/ui/dispctrl_right_gtk3.ui: OK
+/usr/local/share/galculator/ui/dispctrl_right_vertical_gtk2.ui: OK
+/usr/local/share/galculator/ui/dispctrl_right_vertical_gtk3.ui: OK
+/usr/local/share/galculator/ui/main_frame.ui: OK
+/usr/local/share/galculator/ui/main_frame_hildon.ui: OK
+/usr/local/share/galculator/ui/paper_view.ui: OK
+/usr/local/share/galculator/ui/prefs-ume.ui: OK
+/usr/local/share/galculator/ui/prefs_gtk2.ui: OK
+/usr/local/share/galculator/ui/prefs_gtk3.ui: OK
+/usr/local/share/galculator/ui/scientific_buttons_gtk2.ui: OK
+/usr/local/share/galculator/ui/scientific_buttons_gtk3.ui: OK
+/usr/local/share/applications/galculator.desktop: OK
+/usr/local/share/pixmaps/galculator.png: OK
+/usr/local/share/doc/galculator/PORT.md: OK
+/usr/local/share/licenses/galculator/COPYING: OK
+8 functions, 18123 bytes
+5 functions, 12328 bytes
+WM_READY
+JWM-CONTROL-READY
+[galculator] configuration file: Failed to create directory /home/user/.config/galculator.
+[galculator] configuration file: couldn't open configuration file /home/user/.config/galculator/galculator.conf for reading. Nothing to worry about if you are starting galculator for the first time. Using defaults.
+
+** (galculator:26): WARNING **: 18:57:09.135: Could not load a pixbuf from /org/gtk/libgtk/theme/Adwaita/assets/bullet-symbolic.svg.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+(galculator:26): Pango-CRITICAL **: 18:57:09.509: pango_shape_internal: assertion 'paragraph_text <= item_text' failed
+
+(galculator:26): Pango-CRITICAL **: 18:57:09.514: pango_shape_internal: assertion 'paragraph_text <= item_text' failed
+
+(galculator:26): Pango-CRITICAL **: 18:57:09.518: pango_shape_internal: assertion 'paragraph_text <= item_text' failed
+[galculator] configuration file: couldn't save/write to configuration file /home/user/.config/galculator/galculator.conf.
+JWM-CONTROL-PASS
+GALCULATOR-LAYOUT-TERMINAL-RESTORED
