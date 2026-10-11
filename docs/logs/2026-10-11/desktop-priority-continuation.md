@@ -415,3 +415,9 @@ Independent review approved `3b2f7e3` for bounded publication readiness: 133 ind
 Immutable manifests `13421d9` and catalog candidate `a50ac30` add these two reviewed artifacts. Independent publication review is pending; accepted count stays 91. The public Feh preflight needs a reviewed adaptation for immutable public URLs while retaining exact source and binary identities. No public functional execution is claimed.
 
 Galculator pacing correction `c8c0d2b` independently passed review. A fresh binary-v4 attempt is queued with complete install, consumer, closure, normal and reload gates; prior failures remain preserved.
+
+### Four public CLI/game acceptances
+
+Independent review accepted ncurses, awk, Doom and Quake from public evidence `0997f6b`: all 81 indexed evidence hashes, seven passed reports, immutable manifests, 2,951 outputs and twelve payload-equivalent re-export receipts verified. Scope is recorded per package in the migration queue. Canonical archive identities remain unchanged.
+
+Accepted count is now **95** (93 migration-owned plus two separately owned), while the published catalog has 97 entries. Imlib2 and Feh remain pending. Baseline `c303f33` is deliberately unchanged; the 97-entry catalog is not fully accepted. TERM cleanup is terminal recovery, not normal-exit proof.
