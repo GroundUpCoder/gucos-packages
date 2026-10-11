@@ -370,6 +370,11 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/523d1fedf9ba61d3b03e1ff2f059cf1f0e5e3f78/apps/sdl3-mixer/package.json",
       "sha256": "4ab7fa51a571ab3e3e83d77ff8c9d17b324778468c9ab01c123a1c0f4129a2bb",
       "size": 2123
+    },
+    "micropython": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/02d2bfed5e2b717a9bb198a507b8ee2b6a60b898/apps/micropython/package.json",
+      "sha256": "e20b2168af8ba33d50f086255b2bf88d940a1bf691376f5e237dfcf4e165c698",
+      "size": 1967
     }
   }
 }
