@@ -1,0 +1,39 @@
+gucman: unknown source
+
+gucman: install migration:micropython: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20440 bytes; transfer finished
+gucman: Resolving: migration:micropython
+gucman: Downloading manifest for migration:micropython (1596 bytes)
+  Connecting; waiting for response…
+  Downloaded 1596 / 1596 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:micropython
+gucman: Checking cached object: manifest for migration:micropython
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: micropython (0 remaining after this)
+gucman: Downloading micropython archive (1475584 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.41 / 1.41 MiB (100%); transfer finished
+gucman: Verifying download: micropython archive
+gucman: Checking cached object: micropython archive
+gucman: Unpacking: micropython
+gucman: Installing micropython: 0/4 files
+gucman: Installing micropython: 4/4 files
+gucman: Preparing checksums: micropython
+gucman: Checksummed micropython: 4/4 files
+gucman: Saving transaction: micropython
+gucman: Verifying staged files: micropython
+gucman: Activating: micropython
+Installed migration:micropython 1.28.0-1
+
+/usr/local/bin/micropython: OK
+/usr/local/bin/python: OK
+/usr/local/libexec/micropython: OK
+/usr/local/share/licenses/micropython/LICENSE: OK
+
+76f99ef83c7de99758210b272ce0de072a0b7cbcc72e6c5a8310852e82c48ed6  /home/user/migration-export.tar
+1475584
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
