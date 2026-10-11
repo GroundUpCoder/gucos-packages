@@ -322,3 +322,18 @@ comment remains for byte identity; this record supplies subsequent review.
 - `pcmanfm-layout-v2-session.mjs`: `0cb73d42ed4c6f680ac111f27e752a7aa256e52b4173ab6c883494e1bad56763`
 
 - `pcmanfm-layout-v2-supervisor.c`: `a9a6aa3358dd457f889e258f6c0fa3ea7fbdcc9893c7f42be2c729ec822a7658`
+
+Independent re-review approved awaited completion polling for Xarchiver and
+Galculator, correcting the earlier unreliable async Playwright predicate. Exact
+postimage hashes are ad13a80c4795dc665770d7d06e325b85e01b08f592866f5cc45b103eeef4b50e
+and c21d10e4b17a79e4d8b96ab2224d9e3eb465baa33b66a091d1774e9187f4fdb8.
+PCManFM remains held for separate confirmation.
+Feh v2 revised code is copied unchanged after independent review: driver
+2ac7adf4af76bdd78c623294b21e03dbc8639f323066e9f9c39e7c99dc79560f, closure
+fef1ee4565f7481ceae29da055e209d5f5b4babf64b84d692c0160b135392286.
+It preserves original observer bytes, verifies recursive installed manifests
+and payload hashes/modes, and uses awaited polling plus actual child wait status.
+Navigation compares exact image content; zoom/reset uses the post-navigation
+viewport. Instrumented menu provenance remains explicit. Failed observations
+are retained. Source/mock checks are not runtime or functional acceptance.
+The retained host archive-check timeout is a failed check, not a pass.

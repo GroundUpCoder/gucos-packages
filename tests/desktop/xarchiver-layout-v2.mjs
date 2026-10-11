@@ -30,12 +30,14 @@ const {session}=await load('tests/compatibility/session.mjs');
 const {installObserver,observe,rootMenuRows}=await load('tests/desktop/menu-xapps.mjs');
 const {visibleCanvas,canvasPosition}=await load('tests/migration/canvas.mjs');
 const {desktopSession}=await import('./xarchiver-layout-v2-session.mjs');
+const {poll}=await load('tests/desktop/poll.mjs');
 const fatal=/fatal:\s*wasm trap|\bpid \d+(?: thread \d+)? crashed:|RuntimeError:|uncaught|unhandled.*rejection/i;
 async function readGuest(path){return Buffer.from(await bounded(s.page.evaluate(async path=>{const b=await shell.busybox.read(path);if(!ArrayBuffer.isView(b))throw Error('Missing guest evidence: '+path);return Array.from(b);},path),15000,'Guest evidence read timeout'));}
 async function put(path,bytes){await bounded(s.page.evaluate(async({path,bytes})=>shell.busybox.write(path,Uint8Array.from(bytes)),{path,bytes:Array.from(Buffer.from(bytes))}),15000,'Guest upload timeout');}
 async function rawLog(){const text=await bounded(s.page.evaluate(()=>shell.busybox.log),5000,'Raw log timeout');assert.equal(typeof text,'string');return text;}
 async function noCrash(){const text=await rawLog();assert(!fatal.test(text),'Fatal/crash evidence in session');assert.deepEqual(errors,[]);return text;}
 try{
+ report.awaitedPollHelperSha256=sha(await readFile(resolve(repo,'tests/desktop/poll.mjs')));
  const configBytes=await readFile(resolve(run,'config.json')),config=JSON.parse(configBytes);
  const candidateBytes=await readFile(resolve(run,'candidate-manifests.json')),m=JSON.parse(candidateBytes).xarchiver;
  assert(m?.binary&&m.runtime===config.expectedRuntime,'Frozen corrected binary fixture required');
@@ -114,7 +116,7 @@ print('EXACT-BINARY-OUTPUTS-PASS')`,resolve(base,'binary.tar')],{input:JSON.stri
    const point={x:c.frame.x+c.frame.width-4-12,y:c.main.y-12};c.closePoint=point;
    await canvas.click({position:await canvasPosition(canvas,point)});
   }
-  await bounded(s.page.waitForFunction(async path=>{const b=await shell.busybox.read(path);return ArrayBuffer.isView(b)&&new TextDecoder().decode(b)==='done\n';},g+'/done',{timeout:15000}),18000,'Supervisor did not finish');
+  await bounded(poll(s.page,async path=>{const b=await shell.busybox.read(path);return ArrayBuffer.isView(b)&&new TextDecoder().decode(b)==='done\n';},g+'/done',15000),18000,'Supervisor did not finish');
   const resultBytes=await readGuest(g+'/result.json');await host(mode+'-waitpid.json',resultBytes);c.exit=JSON.parse(resultBytes.toString());
   assert.equal(c.exit.pid,pid);assert.equal(c.exit.exited,1);assert.equal(c.exit.exitCode,0);assert.equal(c.exit.signaled,0);assert.equal(c.exit.signal,0);assert.equal(c.exit.rawStatus,0);
   await observe(d,'absent',title);await noCrash();
