@@ -207,3 +207,30 @@ The exact historical Perl inventory was found in the retained approved archive
 a8dec66dbe65c47f4ae6eea29f7313cb184922d3fa3a537d7fcc6d9d4651a9ad.
 It is an output reference for later source work, not current-platform acceptance.
 Playable JWM work remains the new-package priority while current jobs finish.
+
+## Reviewed source exports and JWM game acceptance preparation
+
+Ncurses `1dee6db`, Awk/Doom `a41fc47`, and Quake `136d562` source
+exports passed independent review on runtime `19609f47`. Their retained evidence
+and exact archives are under each package's `gucos-source` directory and
+`binaries/`. Ncurses has 2,928 outputs; Awk 5; Doom 7; Quake 11. Awk's
+`make check` passed all enabled checks; unsupported configurations remain the
+explicit skips recorded in its log. Doom/Quake staged launcher fixtures do not
+establish gameplay. Fresh binary and public gates remain outstanding.
+
+Vim's first run failed at output-path validation before compilation. Reviewed
+correction `54c5e55` omits two obsolete Windows locale forwarding aliases with
+parentheses, retaining their translation targets and all source bytes. Its
+1,851-output retry is prepared; no successful build is claimed.
+
+Puzzles source execution and the first Fifteen binary/JWM test are scheduled.
+The reviewed helper handles the accepted JWM Puzzles submenu and services
+observations inside the one foreground guest shell. Fifteen's harness uses
+physical menu/key input, move/undo pixel comparison, GTK save/load, process
+exit/relaunch and a separate persisted-browser reload. These are unexecuted
+acceptance gates, not completed gameplay claims. Other puzzle games and the
+2048/calculator/editor desktop batch still need their own interactive evidence.
+
+The published count remains 83, with 76 live-accepted in their documented
+scopes; seven newly published utilities await their public gates. Snake
+1.0.0-2 is preserved. No core build or deployment was performed.

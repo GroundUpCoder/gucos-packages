@@ -271,7 +271,7 @@
     {
       "id": "awk",
       "kind": "historical-canonical-name",
-      "state": "source-prepared-reviewed",
+      "state": "source-built-reviewed",
       "historicalManifest": "vendor/gawk/wasm-package.json",
       "historicalManifestSha256": "ce4cdf332cfc40336c9009118ed860cc5a25f73208912d22e1240eda774a449d",
       "historicalEvidence": [
@@ -305,10 +305,18 @@
       ],
       "mapping": "awk",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      ],
       "sourcePreparation": {
         "revision": "0607fac",
         "scope": "Independent source review complete; new guest build, binary and public acceptance pending"
+      },
+      "sourceExecution": {
+        "revision": "a41fc47",
+        "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+        "evidence": "docs/research/package-migration/awk/gucos-source",
+        "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
       }
     },
     {
@@ -767,7 +775,7 @@
     {
       "id": "doom",
       "kind": "historical-canonical-name",
-      "state": "source-prepared-reviewed",
+      "state": "source-built-reviewed",
       "historicalManifest": "vendor/doom/wasm-package.json",
       "historicalManifestSha256": "09b9242b37a670f1ee1e325856293510df9b020eb469b82ae788364857592902",
       "historicalEvidence": [
@@ -799,10 +807,18 @@
       "historicalDependencies": [],
       "mapping": "doom",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      ],
       "sourcePreparation": {
         "revision": "576497e",
         "scope": "Independent source review complete; new guest build, binary and public acceptance pending"
+      },
+      "sourceExecution": {
+        "revision": "a41fc47",
+        "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+        "evidence": "docs/research/package-migration/doom/gucos-source",
+        "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
       }
     },
     {
@@ -3056,7 +3072,7 @@
     {
       "id": "ncurses",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-built-reviewed",
       "historicalManifest": "apps/ncurses/wasm-package.json",
       "historicalManifestSha256": "fe2cc902a42632f0b9e9ea941e983075bac661676405833b15c610aac3c580e7",
       "historicalEvidence": [
@@ -3090,16 +3106,22 @@
       "historicalDependencies": [
         "make"
       ],
-      "mapping": null,
+      "mapping": "ncurses",
       "acceptance": [],
       "blockers": [
-        "Fresh guest/binary/public gates pending."
+        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
       ],
       "candidate": "apps/ncurses",
       "sourceReview": {
         "commit": "fba736202eaa2b4b8f942fb549ffc760c05bedfe",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Source approved; fresh execution/acceptance of final candidate remains pending."
+      },
+      "sourceExecution": {
+        "revision": "1dee6db",
+        "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+        "evidence": "docs/research/package-migration/ncurses/gucos-source",
+        "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
       }
     },
     {
@@ -3686,7 +3708,7 @@
       "blockers": [],
       "sourcePreparation": {
         "revision": "19b50d8",
-        "scope": "319 pinned historical blobs,40 games,132 outputs; independent source review approved; guest build queued"
+        "scope": "319 pinned historical blobs,40 games,132 outputs; independent source review approved; source execution active and Fifteen binary/JWM/save/reload gate queued."
       }
     },
     {
@@ -3874,7 +3896,7 @@
     {
       "id": "quake",
       "kind": "historical-canonical-name",
-      "state": "source-prepared-reviewed",
+      "state": "source-built-reviewed",
       "historicalManifest": "vendor/quake/wasm-package.json",
       "historicalManifestSha256": "fc96c56564b97ee9dd87f5f87f4bf59ab20c8cc6ce2fd0558fbd22fd752d0bf6",
       "historicalEvidence": [
@@ -3894,10 +3916,18 @@
       "historicalDependencies": [],
       "mapping": "quake",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      ],
       "sourcePreparation": {
         "revision": "a527d7a",
         "scope": "Independent source review complete; new guest build, binary and public acceptance pending"
+      },
+      "sourceExecution": {
+        "revision": "136d562",
+        "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+        "evidence": "docs/research/package-migration/quake/gucos-source",
+        "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
       }
     },
     {
@@ -4449,8 +4479,8 @@
       "acceptance": [],
       "blockers": [],
       "sourcePreparation": {
-        "revision": "f25fa47",
-        "scope": "Exact historical source and adapted project reviewed; execution pending"
+        "revision": "54c5e55",
+        "scope": "Reviewed omission of two obsolete Windows locale aliases; first run rejected unsafe paths before compilation. Corrected retry prepared; not yet built."
       }
     },
     {
