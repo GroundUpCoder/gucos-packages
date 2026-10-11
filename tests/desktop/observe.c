@@ -39,10 +39,11 @@ int main(int argc,char **argv) {
     XImage *im=XGetImage(d,w,0,0,a.width,a.height,AllPlanes,ZPixmap);
     unsigned green=0,red=0,cyan=0;
     if(im){for(int y=0;y<a.height;y++)for(int x=0;x<a.width;x++){
-     unsigned p=XGetPixel(im,x,y),r=(p>>16)&255,g=(p>>8)&255,b=p&255;
-     if(g>100&&g>r*2&&g>b*2)green++;
-     if(r>100&&r>g*2&&r>b*2)red++;
-     if(g>100&&b>100&&r<80)cyan++;
+     /* Exact accepted xterm resource palette, not pure ANSI primaries. */
+     unsigned p=XGetPixel(im,x,y)&0xffffff;
+     if(p==0x98c379)green++;
+     if(p==0xef6b73)red++;
+     if(p==0x56b6c2)cyan++;
     }XDestroyImage(im);}
     if(i%25==0){printf("DESKTOP-SNAKE-PIXELS %lu %d %d %u %u %u\n",w,a.width,a.height,green,red,cyan);fflush(stdout);}
     if(green>20&&red>5&&cyan>100){XSetInputFocus(d,w,RevertToParent,CurrentTime);XSync(d,False);printf("DESKTOP-SNAKE-BOARD %u %u %u\n",green,red,cyan);fflush(stdout);XCloseDisplay(d);return 0;}
