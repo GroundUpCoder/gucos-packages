@@ -1,12 +1,12 @@
 {
   "expectedRuntime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-  "dist": "/Users/jku/git/wasm-posix-packages-snake/test-results/migration/snake-binary-4/site",
-  "inputCommit": "b00185e3babd428f47af5db90d97a9da84fc0d48",
+  "dist": "/Users/jku/git/wasm-posix-packages-snake/test-results/migration/snake-binary-5/site",
+  "inputCommit": "05f899077134e68cb97ecd7c7fc170fce533507d",
   "resumedPrivateProfile": null,
   "candidates": [
     "snake"
   ],
-  "catalogUrl": "http://127.0.0.1:54467/migration/catalog.json",
+  "catalogUrl": "http://127.0.0.1:54538/migration/catalog.json",
   "baselinePackages": {
     "jsmn": {
       "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/cce612244c85482d610ee3ffe3341e2d04bce45f/apps/jsmn/package.json",
@@ -324,5 +324,5 @@
       "size": 6463
     }
   },
-  "distributionSnapshotSha256": "65ffb23366b03dccd4420b70bf63a4793c3abcb0a54921e74528fec0b3268209"
+  "distributionSnapshotSha256": "9ac1369cf4283c877c609882576dc009616d9a5c00f09779afa8f2d4f792f472"
 }

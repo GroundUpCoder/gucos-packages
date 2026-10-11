@@ -9,8 +9,8 @@ Source build/logic job48e573dc passed, source commit4121c27. Binary archive
 d7b6a5804fdbd3bfa8cc6782e8204f44c187b8d9445eb4ffefd1aa9934a3ee20,
 39936bytes, five outputs. Fresh installation, actual interactive shell keyboard
 play (timer movement, arrow turn, wall collision, restart, one-q exit, Ctrl-C,
-terminal modes/cursor restoration), and browser reload passed jobf760ddf2.
-Harness b00185e uses posix_spawn wrapper to compare termios before/after the exact
+terminal modes/cursor restoration), and browser reload passed jobc5b62b4f.
+Harness05f8990 uses posix_spawn wrapper to compare termios before/after the exact
 installed game; it verifies all frozen payload hashes before gameplay. Screenshot
 is an actual Playwright screenshot. All receipts distinguish source and binary.
 
@@ -20,4 +20,8 @@ They did not establish gameplay failures. Corrected harness launches a real
 interactive shell and uses posix_spawn. No changed game binary was substituted.
 Source/harness preparation approved at ec66666 by independent reviewer01a123e0;
 final harness/evidence/artifact publication review remains pending at this record.
+The b00185e run under superseded-log-only passed log assertions but failed visual
+inspection: direct shell.command left the bootstrap prompt redrawing over output.
+Corrected05f8990 launches sh through keyboard/UI and verifies rendered borders,
+head and food before capturing the screenshot. No game-source changes required.
 Public installation acceptance has not run yet. Main migration queue untouched.
