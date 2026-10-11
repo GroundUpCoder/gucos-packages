@@ -1,0 +1,14 @@
+{
+  "baselineRevision": "10c3dbda30f41f140505eeb8c3f979726c6132d3",
+  "upgrades": {
+    "snake": {
+      "oldCatalogEntry": {
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9474fca194c5e2f23b321a50a8ba08227888d10f/apps/snake/package.json",
+        "sha256": "5cb9fa3e66e381cfdace3d2db51d18a5350b7fe5f1dac21e18d67796116a9331",
+        "size": 3750
+      },
+      "oldVersion": "1.0.0-1",
+      "newVersion": "1.0.0-2"
+    }
+  }
+}

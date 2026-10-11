@@ -4,6 +4,16 @@
 #include <assert.h>
 int main(void) {
  rows=12; cols=24; rng_state=42; init_game();
+ assert(TICK_MS==100);
+ int hx=snake_x[0],hy=snake_y[0];
+ assert(!handle_input(27) && !handle_input('['));
+ assert(snake_x[0]==hx && snake_y[0]==hy);
+ assert(handle_input('A')==1 && snake_y[0]==hy-1);
+ assert(handle_input('a')==1 && snake_x[0]==hx-1 && snake_y[0]==hy-1);
+ assert(!handle_input('d') && snake_x[0]==hx-1); /* reversal ignored */
+ assert(!handle_input('z') && snake_x[0]==hx-1);
+ assert(handle_input('a')==1 && snake_x[0]==hx-2); /* same direction advances */
+ init_game();
  int x=1,y=0; input_char(27,&x,&y); input_char('[',&x,&y); input_char('A',&x,&y);
  assert(x==0 && y==-1); x=1;y=0; input_char('a',&x,&y); assert(x==1 && y==0);
  snake_len=4; snake_x[0]=5;snake_y[0]=5;snake_x[1]=5;snake_y[1]=6;
