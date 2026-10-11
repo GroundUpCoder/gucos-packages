@@ -933,7 +933,7 @@
     {
       "id": "feh",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/feh/wasm-package.json",
       "historicalManifestSha256": "c895093ace5ba82a1fd5ac2d1ad3ae83b0b5515b2db96f0f254942e9498943ab",
       "historicalEvidence": [
@@ -973,9 +973,13 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent implementation review, fresh source build, binary install/consumer/GUI/reload, immutable publication review and public acceptance remain pending."
+        "Reviewed source fixture prepared; sequential dependency install and Imlib2/Feh source build queued. Binary install, X11/GUI/reload, immutable publication review and public acceptance remain pending."
       ],
-      "candidate": "apps/feh"
+      "candidate": "apps/feh",
+      "sourcePreparation": {
+        "commit": "34e1811",
+        "scope": "Independently approved for source-build execution and bounded headless consumers. Imlib2 precedes Feh. Fresh source execution, X11 interaction and publication acceptance remain pending."
+      }
     },
     {
       "id": "flex",
@@ -2004,7 +2008,7 @@
     {
       "id": "imlib2",
       "kind": "historical-canonical-name",
-      "state": "source-prepared",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/imlib2/wasm-package.json",
       "historicalManifestSha256": "85e7abb6978cb68f8f239543a202f0dd363666bf10d2e2b280f0b81b4d32e33b",
       "historicalEvidence": [
@@ -2038,9 +2042,13 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Independent implementation review, fresh source build, binary install/consumer/GUI/reload, immutable publication review and public acceptance remain pending."
+        "Reviewed source fixture prepared; sequential dependency install and Imlib2/Feh source build queued. Binary install, X11/GUI/reload, immutable publication review and public acceptance remain pending."
       ],
-      "candidate": "apps/imlib2"
+      "candidate": "apps/imlib2",
+      "sourcePreparation": {
+        "commit": "7765bfb",
+        "scope": "Independently approved for source-build execution and bounded headless consumers. Imlib2 precedes Feh. Fresh source execution, X11 interaction and publication acceptance remain pending."
+      }
     },
     {
       "id": "jq",

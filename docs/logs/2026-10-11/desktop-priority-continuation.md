@@ -57,3 +57,18 @@ blobs, three overlays, generated headers, fonts and assets, with 14 outputs.
 Its source tests specify exact file/directory image dimensions. Both source-only
 validation passes preserve the publication baseline; independent review and all
 guest/private/public acceptance stages remain pending.
+
+
+Independent review approved Imlib2 `7765bfb` and Feh `34e1811` for source-build
+execution, with Imlib2 available first. The exact frozen source fixture uses
+`5aa9d59` and runtime `19609f47`; the queued sequence installs accepted binary
+GTK3-X11/JPEG dependencies before building Imlib2 and Feh. This avoids rebuilding
+unchanged dependency sources. Approval covers the bounded headless consumers;
+X11 rendering, actual Feh menu/navigation/pixels/lifecycle/reload remain open.
+Feh version reporting uses a substring assertion; image-dimension outputs use
+exact comparisons.
+
+The proposed Xarchiver BusyBox TAR adaptation was not implemented: source audit
+found caller/error-handling and filename-parsing issues beyond a small flag fix.
+No patch or acceptance resulted. Its existing single-file bzip2 backend is now
+being audited against the accepted bzip2 provider as a separate bounded scope.
