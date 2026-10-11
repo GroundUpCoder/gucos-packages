@@ -44,6 +44,7 @@ try {
   const cell=shell.terminal.buffer.active.getLine(0).getCell(i);
   return {text:cell.getChars(),mode:cell.getFgColorMode(),color:cell.getFgColor()};
  }));
+ report.colors=colors;
  assert.deepEqual(colors.map(c=>c.text),['i','m','r','4']);
  for(const i of [0,2,3])assert.notEqual(colors[i].mode,0,'C syntax token must have a foreground color');
  assert.ok(new Set(colors.map(c=>`${c.mode}:${c.color}`)).size>=3,'C types, statements and literals render distinct colors');
@@ -53,6 +54,8 @@ try {
  await page.waitForTimeout(300);
  await line(':call writefile([string(&lines), string(&columns), string(winnr("$"))], "/home/user/vim-size")');
  const size=await page.evaluate(()=>({rows:shell.terminal.rows,cols:shell.terminal.cols}));
+ report.terminalSize=size;
+ await line(':call writefile([$VIMRUNTIME], "/home/user/vim-runtime")');
  await page.screenshot({path:resolve(run,'vim-editing.png')});
  await line(':wqa');await page.waitForFunction(()=>shell.terminal.buffer.active.type==='normal');
  // Read the diagnostic files through the shell after Vim has finished writing,
@@ -64,6 +67,8 @@ try {
 
  await line('exit');const result=await pending;pending=undefined;assert.equal(result.code,0);
  await s.command('cmp /tmp/vim-term-before /tmp/vim-term-after; echo VIM-TERMINAL-RESTORED');
+ report.vimRuntime=(await page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/home/user/vim-runtime')))).trim();
+ assert.equal(report.vimRuntime,'/usr/local/share/vim/vim91');
  report.status='passed';
 }catch(error){report.status='failed';report.error=String(error.stack||error);throw error;}
 finally{
