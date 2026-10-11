@@ -1,0 +1,56 @@
+gucman: unknown source
+
+{
+  tail: ': Unpacking: x11-toolkit\n' +
+    'gucman: Installing x11-toolkit: 0/157 files\n' +
+    'gucman: Installing x11-toolkit: 25/157 files\n' +
+    'gucman: Installing x11-toolkit: 50/157 files\n' +
+    'gucman: Installing x11-toolkit: 75/157 files\n' +
+    'gucman: Installing x11-toolkit: 100/157 files\n'
+}
+gucman: install migration:x11-toolkit: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 25267 bytes; transfer finished
+gucman: Resolving: migration:x11-toolkit
+gucman: Downloading manifest for migration:x11-toolkit (13770 bytes)
+  Connecting; waiting for response…
+  Downloaded 13770 / 13770 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: x11-server (1 remaining after this)
+Already installed: x11-server
+gucman: Package 2/2: x11-toolkit (0 remaining after this)
+gucman: Downloading x11-toolkit archive (2518016 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.39 / 2.40 MiB (16%)
+  Downloaded 1.23 / 2.40 MiB (51%)
+  Downloaded 2.40 / 2.40 MiB (100%); transfer finished
+gucman: Verifying download: x11-toolkit archive
+gucman: Checking cached object: x11-toolkit archive
+gucman: Unpacking: x11-toolkit
+gucman: Installing x11-toolkit: 0/157 files
+gucman: Installing x11-toolkit: 25/157 files
+gucman: Installing x11-toolkit: 50/157 files
+gucman: Installing x11-toolkit: 75/157 files
+gucman: Installing x11-toolkit: 100/157 files
+gucman: Installing x11-toolkit: 125/157 files
+gucman: Installing x11-toolkit: 150/157 files
+gucman: Installing x11-toolkit: 157/157 files
+gucman: Preparing checksums: x11-toolkit
+gucman: Checksummed x11-toolkit: 25/157 files
+gucman: Checksummed x11-toolkit: 50/157 files
+gucman: Checksummed x11-toolkit: 75/157 files
+gucman: Checksummed x11-toolkit: 100/157 files
+gucman: Checksummed x11-toolkit: 125/157 files
+gucman: Checksummed x11-toolkit: 150/157 files
+gucman: Checksummed x11-toolkit: 157/157 files
+gucman: Saving transaction: x11-toolkit
+gucman: Verifying staged files: x11-toolkit
+gucman: Activating: x11-toolkit
+Installed migration:x11-toolkit 1.0-1
+

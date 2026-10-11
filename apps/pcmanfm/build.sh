@@ -5,7 +5,7 @@ stage="$DESTDIR"
 src="$PWD/source"
 up=$src/pcmanfm-1.3.2
 build="$PWD/build"
-mkdir -p "$build" "$stage/bin" "$stage/libexec" "$stage/share/pcmanfm/ui" "$stage/share/applications" "$stage/etc/xdg/pcmanfm/default" "$stage/include" "$stage/etc/xdg/menus" "$stage/lib/pcmanfm" "$stage/share/doc/pcmanfm"
+mkdir -p "$build" "$stage/bin" "$stage/libexec" "$stage/share/pcmanfm/ui" "$stage/share/applications" "$stage/share/pcmanfm/xdg/pcmanfm/default" "$stage/include" "$stage/share/pcmanfm/xdg/menus" "$stage/lib/pcmanfm" "$stage/share/doc/pcmanfm"
 export PKG_CONFIG_PATH=/usr/local/lib/gtk3-x11/pkgconfig:/usr/local/lib/pkgconfig
 pc=/usr/local/bin/pkgconf
 flags="-I/usr/local/include/gtk3-x11 $($pc --cflags libfm-gtk3)"
@@ -16,11 +16,13 @@ for name in pcmanfm app-config main-win tab-page desktop volume-manager pref sin
  objects="$objects $build/$name.o"
 done
 cc $objects $libs -o "$stage/libexec/pcmanfm"
-cp "$src/pcmanfm" "$stage/bin/pcmanfm"
-chmod +x "$stage/bin/pcmanfm"
+# Preserve the archived launcher; adapt only the installed configuration search.
+sed 's@^export XDG_CONFIG_DIRS=.*@export XDG_CONFIG_DIRS=${XDG_CONFIG_DIRS:-/usr/local/etc/xdg:/etc/xdg}:/usr/local/share/pcmanfm/xdg:/usr/local/share/libfm/xdg@' "$src/pcmanfm" > "$stage/bin/pcmanfm"
+chmod 755 "$stage/bin/pcmanfm"
 cp "$up/data/ui/"*.ui "$stage/share/pcmanfm/ui/"
-cp "$src/applications.menu" "$stage/etc/xdg/menus/lxde-applications.menu"
-cp "$up/data/pcmanfm.conf" "$stage/etc/xdg/pcmanfm/default/"
+cp "$src/applications.menu" "$stage/share/pcmanfm/xdg/menus/lxde-applications.menu"
+cp "$up/data/pcmanfm.conf" "$stage/share/pcmanfm/xdg/pcmanfm/default/"
+chmod 644 "$stage/share/pcmanfm/xdg/menus/lxde-applications.menu" "$stage/share/pcmanfm/xdg/pcmanfm/default/pcmanfm.conf"
 for name in pcmanfm pcmanfm-desktop-pref; do
  sed 's/^_//' "$up/data/$name.desktop.in" > "$stage/share/applications/$name.desktop"
 done

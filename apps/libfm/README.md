@@ -19,7 +19,7 @@ adaptations are retained. Installed paths and pkg-config prefixes stay
 
 Exact direct requirements are gtk3-x11 3.24.43-1, gio-core 2.84.4-1,
 pkgconf 2.3.0-1 and libintl 0.23.1-1. `outputs.json` declares the historical
-109 paths plus two explicit `share/licenses/libfm` copies: 111 total.
+109 payload files (with the configuration relocation below) plus two explicit `share/licenses/libfm` copies: 111 total.
 The GPLv2 COPYING and menu-cache LGPL2.1 COPYING remain in the historical doc
 locations too. Individual LGPL2.1-or-later and Exo-derived LGPL2-or-later
 notices remain in the exact source archive; this bundle is not uniformly GPL.
@@ -42,3 +42,25 @@ child-setup callbacks in fm-app-info, fm-terminal and fm-action against current
 GLib spawning. No assertion is made about these callbacks, helper GUI behavior,
 remote backends, FIFO copying or removable media. Fresh installed consumer,
 auto-start lifecycle and reload gates remain before those scopes are accepted.
+
+The owned adapter relocates `etc/xdg/libfm/libfm.conf` to
+`share/libfm/xdg/libfm/libfm.conf`, preserving its exact bytes and mode 0644.
+The separate `share/libfm/libfm.conf` copy remains. This fits gucman's allowed
+output roots without changing core policy or the 111-file contract.
+Both helper launchers preserve nonempty caller `XDG_CONFIG_DIRS`, default
+unset/empty values to `/usr/local/etc/xdg:/etc/xdg`, and append
+`/usr/local/share/libfm/xdg`. They preserve menu-prefix environment and argv
+and delegate to `gtk3-x11-run`. Standalone library consumers must include this
+configuration root themselves; no global GLib/GTK environment is changed.
+LibFM reads system directories in reverse order (first directory wins), then
+user configuration. User configuration paths and writes remain unchanged.
+
+Tests compare relocated bytes to the retained extracted source and check file
+modes. Stub GTK delegation checks unset, empty and custom XDG environments,
+menu-prefix preservation, and spaced/empty/literal-glob arguments. A separate
+headless consumer invocation uses an isolated user directory and the staged
+configuration root, sets sentinel values, and asserts actual LibFM config
+loading. The existing private menu generator/managed-daemon tests keep their
+original isolated XDG roots. These new guest assertions await execution.
+Original historical source archive, inventory and provenance remain unchanged;
+relocation and launcher changes exist only in the owned build/test adapters.

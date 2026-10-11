@@ -1,0 +1,13 @@
+{
+  "action": "build",
+  "names": [
+    "libfm",
+    "pcmanfm"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "c4807341259d6189d689b5046184d3313d96b205",
+  "startedAt": "2026-10-11T09:34:34.092Z",
+  "status": "failed",
+  "error": "AssertionError [ERR_ASSERTION]: gucman: build migration:libfm: reading catalogs and resolving dependencies\ngucman: Reading catalog: migration\n  Connecting; waiting for response…\n  Downloaded 25274 bytes; transfer finished\ngucman: Resolving: migration:libfm\ngucman: Downloading manifest for migration:libfm (10197 bytes)\n  Connecting; waiting for response…\n  Downloaded 10197 / 10197 bytes (100%); transfer finished\ngucman: Verifying download: manifest for migration:libfm\ngucman: Checking cached object: manifest for migration:libfm\ngucman: output outside allowed prefix\n\n\n1 !== 0\n\n    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/migration/stage.mjs:49:27",
+  "finishedAt": "2026-10-11T09:34:35.373Z"
+}

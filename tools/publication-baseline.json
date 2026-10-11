@@ -1,4 +1,4 @@
 {
-  "revision": "ec3fa8c4e3b4bf01afe2f77b32b242b51d81d301",
-  "description": "87 live-accepted entries after independent desktop-apps public install, five JWM app interaction scopes and browser reload review. Preserve later XM/gucode/libcurl catalog entries outside this baseline."
+  "revision": "807f2bc5d31179433e6e87a990c0f4514746d951",
+  "description": "91 entries accepted within recorded scopes:89 migration-owned acceptances including six Puzzles games, plus separately owned gucode/libcurl acceptance a690713. Preserve exact package identities; libcurl production-origin archive relink and untested package features are not claimed."
 }

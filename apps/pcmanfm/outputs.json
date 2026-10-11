@@ -4,11 +4,11 @@
     "mode": 493
   },
   {
-    "path": "etc/xdg/menus/lxde-applications.menu",
+    "path": "share/pcmanfm/xdg/menus/lxde-applications.menu",
     "mode": 420
   },
   {
-    "path": "etc/xdg/pcmanfm/default/pcmanfm.conf",
+    "path": "share/pcmanfm/xdg/pcmanfm/default/pcmanfm.conf",
     "mode": 420
   },
   {

@@ -14,7 +14,13 @@ static void operation(FmFileOpType type,const char *from,const char *to){
  assert(fm_job_run_sync(FM_JOB(job)));g_object_unref(job);
 }
 int main(int argc, char **argv){
- (void)argv;
+ if (argc == 2 && !strcmp(argv[1], "config")) {
+ FmConfig *cfg=fm_config_new();assert(cfg);
+ cfg->single_click=TRUE;cfg->thumbnail_max=-1;
+ fm_config_load_from_file(cfg,NULL);
+ assert(!cfg->single_click && cfg->thumbnail_max==2048);
+ g_object_unref(cfg);puts("LIBFM-RELOCATED-CONFIG-PASS");return 0;
+ }
  if (argc > 1) {
  alarm(30);menu_cache_init(0);MenuCache *cache=menu_cache_lookup_sync("test.menu");assert(cache);MenuCacheDir *root=menu_cache_dup_root_dir(cache);assert(root);
  MenuCacheItem *item=menu_cache_find_child_by_id(root,"fixture.desktop");assert(item);assert(!strcmp(menu_cache_item_get_name(item),"File Manager Fixture"));menu_cache_item_unref(item);menu_cache_item_unref((MenuCacheItem*)root);menu_cache_unref(cache);alarm(0);

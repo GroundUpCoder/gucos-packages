@@ -179,3 +179,28 @@ or clean-log claim is made. GTK warnings/critical messages remain retained.
 This advances acceptance accounted for here from88to89, with91catalog entries.
 The87-entry preservation baseline `ec3fa8c` remains unchanged because the
 separately owned gucode/libcurl acceptance is still pending.
+
+LibFM source attempt failed before compilation with the guest manifest error
+`output outside allowed prefix`; dependency installation completed, but no
+LibFM/PCManFM export was produced. Evidence is retained in `2c5cf64`. The declared
+`etc/xdg/libfm/libfm.conf` lies outside the existing gucman output-prefix contract;
+PCManFM also declares two `etc/xdg` files. Application configuration relocation
+and runtime lookup behavior require independent review before retry. The source
+checker now rejects these prefixes before browser admission, reproducing this
+failure locally while both GTK adapter source candidates still pass.
+
+The separate gucode/libcurl owner reported final scoped acceptance in `a690713`,
+merged through `b0796d4`. The migration owner fetched and read the retained
+production report, transcript, scheduler exit0 and reconciliation. The exact
+public write/approval/exit/reload result passed; ANSI color was not observed.
+Libcurl retains candidate-origin installed archive relink/network-suite evidence
+and exact public-installed identities plus production gucode networking; no
+separate production-origin archive relink or full curl compatibility is claimed.
+Original independent source/artifact/merge review and author-executed test roles
+remain distinct. Failed attempts and unresolved earlier timeout cause are retained.
+
+Combining these two scoped acceptances with89 accepted here accounts for all91
+current catalog entries. Current, remote-main and published `807f2bc` catalogs
+were compared and are identical. The preservation baseline therefore advances
+to `807f2bc5d31179433e6e87a990c0f4514746d951` (91), with each package retaining
+its recorded test scope. This does not complete the remaining migration queue.

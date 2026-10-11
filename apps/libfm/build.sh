@@ -47,14 +47,15 @@ for name in vfs-menu vfs-search gtk-fileprop-x-desktop gtk-fileprop-x-shortcut g
  cc -O2 $common $flags -I"$build/fm" -I"$build/mc" -I"$fm/src" -I"$fm/src/base" -I"$fm/src/job" -I"$fm/src/gtk" -I"$fm/src/extra" -c "$fm/src/modules/$name.c" -o "$build/$name.o"
  cc -shared "$build/$name.o" -L"$stage/lib" -lfm-gtk3 -lfm -lfm-extra -lmenu-cache $libs -o "$stage/lib/libfm/modules/$name.so"
 done
-mkdir -p "$stage/bin" "$stage/libexec/libfm" "$stage/etc/xdg/libfm" "$stage/share/mime/packages"
+mkdir -p "$stage/bin" "$stage/libexec/libfm" "$stage/share/libfm/xdg/libfm" "$stage/share/mime/packages"
 for name in libfm-pref-apps lxshortcut; do
  cc -O2 $common $flags -I"$build/fm" -I"$fm/src" -I"$fm/src/base" -I"$fm/src/job" -I"$fm/src/gtk" '-DPACKAGE_UI_DIR="/usr/local/share/libfm/ui"' "$fm/src/tools/$name.c" -L"$stage/lib" -lfm-gtk3 -lfm -lmenu-cache $libs -o "$stage/libexec/libfm/$name"
- printf '#!/bin/sh\nexec gtk3-x11-run /usr/local/libexec/libfm/%s "$@"\n' "$name" > "$stage/bin/$name"
- chmod +x "$stage/bin/$name"
+ printf '#!/bin/sh\nexport XDG_CONFIG_DIRS=${XDG_CONFIG_DIRS:-/usr/local/etc/xdg:/etc/xdg}:/usr/local/share/libfm/xdg\nexec gtk3-x11-run /usr/local/libexec/libfm/%s "$@"\n' "$name" > "$stage/bin/$name"
+ chmod 755 "$stage/bin/$name"
 done
 cp "$fm/data/images/"*.png "$stage/share/libfm/images/"
-cp "$fm/data/libfm.conf" "$stage/etc/xdg/libfm/"
+cp "$fm/data/libfm.conf" "$stage/share/libfm/xdg/libfm/"
+chmod 644 "$stage/share/libfm/xdg/libfm/libfm.conf"
 cp "$fm/data/libfm.xml" "$stage/share/mime/packages/"
 cp "$fm/src/"*.h "$fm/src/base/"*.h "$fm/src/job/"*.h "$fm/src/gtk/"*.h "$fm/src/extra/"*.h "$stage/include/libfm/"
 cp "$build/mc/menu-cache.h" "$stage/include/menu-cache/"
