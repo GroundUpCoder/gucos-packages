@@ -66,7 +66,7 @@ try{
  if(reload){
   const previous=JSON.parse(await readFile(resolve(run,'puzzles-jwm-'+attempt+'.json')));assert.equal(previous.status,'passed');assert.equal(previous.savePath,savePath);assert.deepEqual(previous.binary,expected.binary,'Reload must retain the exact candidate binary');assert.equal(previous.runtime,s.runtime,'Reload must retain the tested runtime');
   const saved=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),savePath);assert.equal(sha(Buffer.from(saved)),previous.savedSha256,'Browser reload retained exact saved bytes');
-  await fileDialog(false);assert.equal(await board('browser-reloaded'),previous.movedBoardSha256);
+  await fileDialog(false);assert.equal(await board('browser-reloaded',{equal:previous.movedBoardSha256}),previous.movedBoardSha256);
   report.savedSha256=previous.savedSha256;report.movedBoardSha256=previous.movedBoardSha256;
  }else{
  const initial=await board('initial');let moved;
@@ -75,12 +75,12 @@ try{
   if(current!==initial){moved=current;report.moveKey=key;break;}
  }
  assert(moved,'At least one legal arrow-key move must change the board');
- await s.page.keyboard.press('u');assert.equal(await board('undo'),initial,'Undo must restore exact board pixels');
- await s.page.keyboard.press(report.moveKey);assert.equal(await board('redo-move'),moved);
+ await s.page.keyboard.press('u');assert.equal(await board('undo',{equal:initial}),initial,'Undo must restore exact board pixels');
+ await s.page.keyboard.press(report.moveKey);assert.equal(await board('redo-move',{equal:moved}),moved);
  await fileDialog(true);
  const saved=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),savePath);assert(saved.length>100);report.savedSha256=sha(Buffer.from(saved));
  await quit();report.relaunchMenu=await clickMenuEntry(d,entry);w=await observe(d,'window','Fifteen');assert(w.pid>0);assert.notEqual(w.pid,report.firstWindow.pid);
- await fileDialog(false);assert.equal(await board('loaded'),moved,'Saved game restores exact board after clean relaunch');
+ await fileDialog(false);assert.equal(await board('loaded',{equal:moved}),moved,'Saved game restores exact board after clean relaunch');
  report.movedBoardSha256=moved;
  }
  await quit();await d.finish();
