@@ -12,7 +12,9 @@
 #include <errno.h>
 #include <time.h>
 
-#define MAX_SNAKE 1000
+#define MAX_COLS 60
+#define MAX_ROWS 22
+#define MAX_SNAKE ((MAX_COLS - 2) * (MAX_ROWS - 3))
 #define INITIAL_LEN 5
 
 static struct termios orig_termios;
@@ -256,8 +258,8 @@ int main(int argc, char **argv) {
     rng_state = 42;
     get_terminal_size();
     if (rows < 10 || cols < 20) { fprintf(stderr, "snake: terminal must be at least 20x10\n"); return 1; }
-    if (rows > 22) rows = 22;
-    if (cols > 60) cols = 60;
+    if (rows > MAX_ROWS) rows = MAX_ROWS;
+    if (cols > MAX_COLS) cols = MAX_COLS;
     if (enable_raw_mode() != 0) { perror("snake: termios"); return 1; }
     atexit(cleanup);
     signal(SIGTERM, stop); signal(SIGHUP, stop); signal(SIGINT, stop);
