@@ -1,0 +1,74 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "52fd9ba8625c8be1ebd4ae53baf31f2c71d87fbf18af831208cbbef72eaa82dd",
+  "size": 12820992,
+  "guestManifest": {
+    "format": 1,
+    "name": "awk",
+    "version": "5.4.1-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/136d5623c55eb56b86ab209c0eafa935b2e1d186/apps/awk/source.tar",
+        "sha256": "a1bd1714f0d4eafb474e9721829e65930219665b3b63e83623d33d9e5911daa3",
+        "size": 19312640
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/136d5623c55eb56b86ab209c0eafa935b2e1d186/apps/awk/build.sh",
+        "sha256": "99991fcbff285c9b007e333965863b6475dba8ee188baca7cd3f3d62b96572fe",
+        "size": 1383
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/136d5623c55eb56b86ab209c0eafa935b2e1d186/apps/awk/test.sh",
+        "sha256": "6cee8d9a40544c5655190d9548b0a60d73f6d79c9495b103e159018a5c9b2809",
+        "size": 555
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/gawk",
+        "mode": 493
+      },
+      {
+        "path": "bin/awk",
+        "mode": 493
+      },
+      {
+        "path": "share/info/gawk.info",
+        "mode": 420
+      },
+      {
+        "path": "share/man/man1/gawk.1",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/awk/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/awk/COPYING"
+    ],
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/136d5623c55eb56b86ab209c0eafa935b2e1d186/apps/awk/binaries/1da2a85aba885c9fd34b9697092c86be5399b289e0f674b18a5915781bc121fe.tar",
+      "sha256": "1da2a85aba885c9fd34b9697092c86be5399b289e0f674b18a5915781bc121fe",
+      "size": 12820992
+    }
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}
