@@ -292,3 +292,11 @@ configuration relocation and staged lookup/menu tests; the earlier manifest
 rejection remains separate evidence. Archive hashes, sizes and modes were checked
 on retention. Independent artifact review and private GUI/public gates remain
 pending; these source results do not establish GUI behavior or normal close.
+
+Corrected Xarchiver c79bd05 source build passed; new archive is 936448 bytes,
+SHA256 76635ed31d405fbd096f0bb960f023d9f6a966005de183449f1488c7d7e494ca,
+31 exact regular outputs/modes. Independent export review and supervised quit
+execution remain pending. Original defective archive/evidence remain retained.
+CLI/shooter install and consumer gates passed, then Doom private passed and
+Quake failed its live-shareware-level assertion. Reload did not execute; no
+acceptance advances from these partial results. Both runs are retained.
