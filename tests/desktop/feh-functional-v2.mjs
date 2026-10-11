@@ -34,6 +34,48 @@ async function readGuest(p){return Buffer.from(await bounded(s.page.evaluate(asy
 async function put(p,b){await bounded(s.page.evaluate(async({p,b})=>shell.busybox.write(p,Uint8Array.from(b)),{p,b:Array.from(Buffer.from(b))}),15000,'Guest upload deadline');}
 async function raw(){const log=await bounded(s.page.evaluate(()=>shell.busybox.log),5000,'Raw log deadline');assert.equal(typeof log,'string');return log;}
 async function noCrash(){assert(!fatal.test(await raw()),'Fatal/crash evidence');assert.deepEqual(pageErrors,[]);}
+// A proposed URL-only public preflight. Original private equality stays exact.
+function checkedManifest(name,local,candidate){
+ assert(['imlib2','feh'].includes(name));
+ if(/^http:\/\/127\.0\.0\.1:[0-9]+\/migration\//.test(candidate?.binary?.url||'')){
+  assert.deepEqual(local,candidate,'Exact private frozen manifest');
+  return {kind:'private-exact',localSha256:sha(JSON.stringify(local))};
+ }
+ const manifestCommit='13421d9c28b7b2b58d8184a0e9989b88a8076ac6';
+ const catalogCommit='a50ac305be3456843987c4ee02e4a6a10fecca90';
+ const artifactCommit='d7e0823581298bf91e5ce09cac79c1c95fab4ced';
+ const raw='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/';
+ const git=path=>execFileSync('git',['show',path],{cwd:repo,timeout:10000,maxBuffer:4*1024*1024});
+ const publicBytes=git(manifestCommit+':apps/'+name+'/package.json');
+ const catalogBytes=git(catalogCommit+':catalog.json');
+ const published=JSON.parse(publicBytes),catalog=JSON.parse(catalogBytes);
+ assert.deepEqual(catalog.packages[name],{url:raw+manifestCommit+'/apps/'+name+'/package.json',sha256:sha(publicBytes),size:publicBytes.length},'Exact reviewed catalog pin');
+ assert.deepEqual(candidate,published,'Only exact reviewed public candidate is permitted');
+ const receipt=JSON.parse(git(artifactCommit+':apps/'+name+'/binaries/receipt.json'));
+ function identity(m){
+  const v=structuredClone(m);
+  assert(Array.isArray(v.files));
+  for(const f of v.files)delete f.url;
+  if(v.binary)delete v.binary.url;
+  return v;
+ }
+ // Full structural equality: only files[].url and binary.url can differ.
+ assert.deepEqual(identity(published),identity({...receipt.guestManifest,runtime:receipt.runtime,binary:{sha256:receipt.sha256,size:receipt.size}}),'Complete reviewed artifact identity');
+ assert.deepEqual(identity(local),identity(published),'Local/public difference must be URLs only');
+ for(const f of published.files){
+  assert(/^[A-Za-z0-9_.-]+$/.test(f.path));
+  assert.equal(f.url,raw+artifactCommit+'/apps/'+name+'/'+f.path,'Exact immutable source URL');
+ }
+ assert.equal(published.binary.url,raw+artifactCommit+'/apps/'+name+'/binaries/'+receipt.sha256+'.tar','Exact immutable binary URL');
+ if(local.binary.url!==published.binary.url){
+  const match=/^(http:\/\/127\.0\.0\.1:[0-9]+)\/migration\/(imlib2|feh)\/binary\.tar$/.exec(local.binary.url);
+  assert(match&&match[2]===name,'Expected retained loopback binary URL');
+  const url=new URL(match[1]);assert(Number(url.port)>0&&Number(url.port)<=65535);
+  for(const f of local.files)assert.equal(f.url,match[1]+'/migration/'+name+'/'+f.path,'Exact retained loopback source URL');
+ }else assert.deepEqual(local,published,'Public local metadata must also be exact');
+ return {kind:'reviewed-public-url-rebind',manifestCommit,catalogCommit,artifactCommit,
+  manifestSha256:sha(publicBytes),catalogSha256:sha(catalogBytes),localSha256:sha(JSON.stringify(local))};
+}
 try{
  const configBytes=await readFile(resolve(run,'config.json')),config=JSON.parse(configBytes),candidateBytes=await readFile(resolve(run,'candidate-manifests.json')),candidates=JSON.parse(candidateBytes);
  assert.equal(config.expectedRuntime,'19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441');
@@ -45,7 +87,8 @@ try{
   for(const key of ['format','name','version','dependencies','dependencyRequirements','platform','build','test','outputs','licenses'])assert.deepEqual(m[key],reviewed[key],'Reviewed source/export contract: '+name+'/'+key);
   const tuples=files=>files.map(({path,sha256,size})=>({path,sha256,size}));assert.deepEqual(tuples(m.files),tuples(reviewed.files));
   assert(m?.binary&&m.runtime===config.expectedRuntime);assert.equal(m.binary.sha256,hash);assert.equal(m.binary.size,size);
-  const base=resolve(config.inputDist||config.dist,'migration',name);assert.deepEqual(JSON.parse(await readFile(resolve(base,'package.json'))),m);
+  const base=resolve(config.inputDist||config.dist,'migration',name);
+  (report.binding.manifestPreflight??={})[name]=checkedManifest(name,JSON.parse(await readFile(resolve(base,'package.json'))),m);
   const archive=await readFile(resolve(base,'binary.tar'));assert.equal(sha(archive),hash);assert.equal(archive.length,size);
   assert.equal(m.files.find(f=>f.path==='source.tar')?.sha256,sourceHash);
   for(const f of m.files){assert(/^[A-Za-z0-9_.-]+$/.test(f.path));const b=await readFile(resolve(base,f.path));assert.equal(b.length,f.size);assert.equal(sha(b),f.sha256);}
