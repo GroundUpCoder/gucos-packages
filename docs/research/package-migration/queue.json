@@ -2893,7 +2893,7 @@
     {
       "id": "micropython",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "vendor/micropython/wasm-package.json",
       "historicalManifestSha256": "65186c86d5509270300344d97146628e3c58f99c876035eaeb943fb74199181f",
       "historicalEvidence": [
@@ -2925,7 +2925,10 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Source review and fresh guest/binary/public acceptance pending."
+      ],
+      "candidate": "apps/micropython"
     },
     {
       "id": "minihb",
