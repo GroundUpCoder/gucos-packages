@@ -42,6 +42,9 @@ try{
 mkdir -p /tmp/migration-tk
 cd /tmp/migration-tk
 tar -xf /tmp/migration-tk.tar
+# This isolated browser profile boots a new guest on each session. Lock files
+# can survive a failed prior session even though its processes cannot.
+rm -f /tmp/.X1-lock /tmp/.X11-unix/X1
 export DISPLAY=:1
 Xvfb :1 -screen 0 800x600x24 -fp built-ins -ac -noreset &
 server=$!
