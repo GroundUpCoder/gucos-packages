@@ -61,7 +61,7 @@ try{
  async function discover(){for(let i=0;i<100;i++){const value=await sample('window');if(value)return value;await s.page.waitForTimeout(150);}throw Error('Feh window not found');}
  const w=report.window=await discover();assert(w.pid>0&&w.y>=24);
  await canvas.click({position:await canvasPosition(canvas,{x:w.x+w.width/2,y:w.y-12})});
- async function settled(label,predicate=()=>true){
+ async function settled(label,predicate=()=>true){return bounded((async()=>{
   const box=await canvas.boundingBox(),point=await canvasPosition(canvas,{x:799,y:599});await s.page.mouse.move(box.x+point.x,box.y+point.y);
   let previous,stable=0;const until=Date.now()+30000;
   while(Date.now()<until){
@@ -70,7 +70,7 @@ try{
    if(value&&stable>=3&&predicate(value)){await writeFile(resolve(run,stem+'-'+label+'.png'),await canvas.screenshot(),{flag:'wx'});return value;}
    await s.page.waitForTimeout(150);
   }throw Error('Feh failed settled pixel oracle: '+label);
- }
+ })(),35000);}
  const first=report.initial=await settled('initial',v=>(v.red.count===4800&&v.green.count===0)||(v.green.count===4800&&v.red.count===0));
  const color=first.red.count?'red':'green',other=color==='red'?'green':'red';
  const identity=v=>`${v.width}x${v.height}:${v.hash}`;
@@ -78,6 +78,7 @@ try{
  await s.page.keyboard.press('ArrowLeft');report.previous=await settled('previous',v=>identity(v)===identity(first));
  await s.page.keyboard.press('ArrowDown');report.zoomOut=await settled('zoom-out',v=>v[color].count>0&&v[color].count<first[color].count&&v[other].count===0);
  await s.page.keyboard.press('ArrowUp');report.zoomIn=await settled('zoom-in',v=>v[color].count>report.zoomOut[color].count);
+ await s.page.keyboard.press('ArrowDown');report.beforeReset=await settled('before-reset',v=>v[color].count>0&&v[color].count<first[color].count&&v[other].count===0&&identity(v)!==identity(first));
  await s.page.keyboard.press('Shift+Digit8');report.reset=await settled('reset',v=>identity(v)===identity(first));
  await s.page.keyboard.press('q');
  let absent=false;for(let i=0;i<100;i++){if(await sample('absent')){absent=true;break;}await s.page.waitForTimeout(100);}assert(absent,'Feh window did not disappear');
