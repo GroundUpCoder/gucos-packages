@@ -5,7 +5,8 @@ import {resolve} from 'node:path';
 import assert from 'node:assert/strict';
 assert(process.env.MACHINE_JOB_ID);
 const run=process.env.COMPAT_RUN_DIR;
-await assert.rejects(access(resolve(run,'snake-functional.json')),{code:'ENOENT'});
+for(const file of ['snake-functional.json','snake-functional.log','snake-playing.png'])
+ await assert.rejects(access(resolve(run,file)),{code:'ENOENT'});
 const report={startedAt:new Date().toISOString(),status:'running',checks:[]};
 let s,pending;
 async function headSince(start) {
@@ -30,6 +31,10 @@ try {
  assert(manifests.snake.binary);
  const installed=await s.page.evaluate(async()=>JSON.parse(new TextDecoder().decode(await shell.busybox.read('/usr/local/lib/gucman/packages/snake/current/manifest.json'))));
  assert.deepEqual(installed,manifests.snake);report.binary=installed.binary;
+ const checksums=await readFile(resolve(run,'snake.sha256'),'utf8');
+ await s.page.evaluate(async text=>shell.busybox.write('/tmp/snake-expected.sha256',new TextEncoder().encode(text)),checksums);
+ await s.command('sha256sum -c /tmp/snake-expected.sha256');
+ report.checks.push('frozen-output-checksums');
  await s.command('stty -g > /tmp/snake-before');
  const start=await s.page.evaluate(()=>shell.busybox.log.length);
  pending=s.command('echo $$ > /tmp/snake-test.pid\nexec snake');pending.catch(()=>{});
