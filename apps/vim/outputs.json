@@ -3740,14 +3740,6 @@
     "mode": 420
   },
   {
-    "path": "share/vim/vim91/lang/menu_chinese(gb)_gb.936.vim",
-    "mode": 420
-  },
-  {
-    "path": "share/vim/vim91/lang/menu_chinese(taiwan)_taiwan.950.vim",
-    "mode": 420
-  },
-  {
     "path": "share/vim/vim91/lang/menu_chinese_gb.936.vim",
     "mode": 420
   },
