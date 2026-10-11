@@ -69,7 +69,7 @@ try{
  await write('/tmp/key-home/.guc/creds/deepseek-api-key','default-test\r\n');await write('/tmp/explicit-key','explicit-test');
  async function run(key,args=''){wanted=key;const before=requests;const log=await s.command('HOME=/tmp/key-home DEEPSEEK_API_KEY=env-test gucode --yolo --no-color -C /tmp/key-task '+args+' -p '+quote('Write result.txt then check it using shell'));assert.equal(requests-before,3);assert(!log.includes('Allow this action?'));assert.equal((await read('/tmp/key-task/result.txt')).toString(),'updated\n');}
  await run('default-test','--key-file /tmp/explicit-key');report.checks.push('default key overrides explicit and environment; yolo permits edit and shell');
- await s.page.reload();await s.page.waitForFunction(()=>window.shell?.ready);await verify();await run('default-test');report.checks.push('reload payloads and default key');
+ await s.page.reload();await s.page.waitForFunction(()=>window.shell?.ready);await s.command('gucode --version');await verify();await run('default-test');report.checks.push('reload payloads and default key');
  await s.command('rm /tmp/key-home/.guc/creds/deepseek-api-key');await run('explicit-test','--key-file /tmp/explicit-key');await run('env-test');report.checks.push('explicit and environment fallbacks');
  await write('/tmp/key-task/invalid.dat',Buffer.from([0xff,0xed,0xa0,0x80,0x74,0x61,0x69,0x6c]));
  binaryOutput=true;await run('env-test','--session binary-session.json');
