@@ -47,7 +47,10 @@ int main(int argc,char**argv){
   if(w&&strcmp(argv[1],"absent")){
    XWindowAttributes a;int x,y;Window child;
    if(XGetWindowAttributes(d,w,&a)&&XTranslateCoordinates(d,w,root,0,0,&x,&y,&child)){
-    printf("WINDOW %lu %d %d %d %d\n",w,x,y,a.width,a.height);XCloseDisplay(d);return 0;
+    Atom actual;int format;unsigned long count,rest,pid=0;unsigned char*bytes=NULL;
+    if(XGetWindowProperty(d,w,XInternAtom(d,"_NET_WM_PID",False),0,1,False,XA_CARDINAL,&actual,&format,&count,&rest,&bytes)==Success&&actual==XA_CARDINAL&&format==32&&count==1)pid=*(unsigned long*)bytes;
+    if(bytes)XFree(bytes);
+    printf("WINDOW %lu %d %d %d %d %lu\n",w,x,y,a.width,a.height,pid);XCloseDisplay(d);return 0;
    }
   }
   usleep(100000);

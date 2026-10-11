@@ -15,8 +15,8 @@ export async function observe(s,mode,title){
  let timer;
  const log=await Promise.race([s.command(`DISPLAY=:1 /tmp/jwm-observe ${mode}${title?` '${title}'`:''}`),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('X observer exceeded 40 seconds; caller must close the session')),40000);})]).finally(()=>clearTimeout(timer));
  if(mode==='wm'||mode==='absent')return log;
- const m=log.match(/WINDOW (\d+) (-?\d+) (-?\d+) (\d+) (\d+)/);assert(m,'Live X window geometry missing');
- const [id,x,y,width,height]=m.slice(1).map(Number);return {id,x,y,width,height};
+ const m=log.match(/WINDOW (\d+) (-?\d+) (-?\d+) (\d+) (\d+) (\d+)/);assert(m,'Live X window geometry missing');
+ const [id,x,y,width,height,pid]=m.slice(1).map(Number);return {id,x,y,width,height,pid};
 }
 // JWM includes a historical Puzzles submenu before the owned desktop entries.
 // Count it as one root row; its descendants are not rows of this popup.
