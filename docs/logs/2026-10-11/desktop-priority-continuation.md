@@ -285,3 +285,10 @@ is claimed. Original and adapted helper authorship is preserved.
 - `galculator-functional-session.mjs`: `7c87c276ef07ad5da579c59cd2b61f312cb31563134353c2ffb0993fa9c789d4`
 
 - `galculator-functional-supervisor.c`: `045089d8876fda9bf2897e82504ae62459cf71b74093a155c4ea37f4dd1328eb`
+
+LibFM/PCManFM corrected source run e970787 passed and exported 111/15 exact
+regular outputs on runtime19609. Retained source logs and receipts preserve the
+configuration relocation and staged lookup/menu tests; the earlier manifest
+rejection remains separate evidence. Archive hashes, sizes and modes were checked
+on retention. Independent artifact review and private GUI/public gates remain
+pending; these source results do not establish GUI behavior or normal close.
