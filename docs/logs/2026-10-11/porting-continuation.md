@@ -51,3 +51,17 @@ bytes passed anonymous HTTP hashes. Reviewer verified committed public evidence
 3f285c2 and approved advancing the baseline to accepted catalog10c3dbd.
 Snake terminal and desktop integration are complete. SDL, MicroPython and the
 remaining historical queue retain their own separate acceptance gates.
+
+## SDL addons accepted and MicroPython progressed
+
+SDL manifest523d1fe/catalog37928af passed independent immutable review. Public
+reservation4fb6e49b on19609 passed all three install/consumer/relink/reload gates,
+256 exact image pixels and six browser PCM buffers with22,472 nonzero samples.
+Evidence33535be was independently verified. Original61a build provenance remains
+unchanged; accepted catalog now74 entries (53 historical additions, original19,
+Snake and desktop-entries).
+
+MicroPython source reservation157e3956 passed all26 retained fixtures and alias
+on19609, archive7881dde0/1,475,584 bytes. Binary reservation487bb8a6 repeated
+fixtures and verified all four outputs/reload. Reviewer approved artifacts and
+final manifest02d2bfe/catalog4395482 for publication; public acceptance pending.
