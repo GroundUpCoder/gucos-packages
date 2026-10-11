@@ -1,0 +1,36 @@
+/usr/local/include/Imlib2.h: OK
+/usr/local/lib/imlib2/loaders/argb.so: OK
+/usr/local/lib/imlib2/loaders/bmp.so: OK
+/usr/local/lib/imlib2/loaders/ff.so: OK
+/usr/local/lib/imlib2/loaders/ico.so: OK
+/usr/local/lib/imlib2/loaders/jpeg.so: OK
+/usr/local/lib/imlib2/loaders/lbm.so: OK
+/usr/local/lib/imlib2/loaders/png.so: OK
+/usr/local/lib/imlib2/loaders/pnm.so: OK
+/usr/local/lib/imlib2/loaders/xpm.so: OK
+/usr/local/lib/libImlib2.so: OK
+/usr/local/lib/pkgconfig/imlib2.pc: OK
+/usr/local/share/doc/imlib2/COPYING: OK
+/usr/local/share/licenses/imlib2/COPYING: OK
+/usr/local/share/licenses/imlib2/COPYING-PLAIN: OK
+/usr/local/bin/feh: OK
+/usr/local/libexec/feh: OK
+/usr/local/share/applications/feh.desktop: OK
+/usr/local/share/doc/feh/COPYING: OK
+/usr/local/share/doc/feh/README.md: OK
+/usr/local/share/feh/fonts/NotoSans-Medium.ttf: OK
+/usr/local/share/feh/fonts/OFL.txt: OK
+/usr/local/share/feh/fonts/README.md: OK
+/usr/local/share/feh/fonts/yudit.ttf: OK
+/usr/local/share/feh/images/feh.png: OK
+/usr/local/share/feh/images/feh.svg: OK
+/usr/local/share/feh/images/menubg_default.png: OK
+/usr/local/share/licenses/feh/COPYING: OK
+/usr/local/share/licenses/feh/OFL.txt: OK
+/tmp/imlib2-x11-streamed/consumer.c: OK
+2 functions, 16529 bytes
+d640819d8ce15afcfecfb83bdb6fcbb29cc502969458a049394d6ad3e7200406  /tmp/imlib2-x11-streamed/consumer
+IMLIB2-X11-READY
+IMLIB2-PASS
+IMLIB2-X11-CLEANUP-PASS
+IMLIB2-X11-TERMINAL-RESTORED
