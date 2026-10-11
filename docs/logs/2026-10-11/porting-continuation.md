@@ -292,3 +292,22 @@ Net has a separate physical tile rotation, undo, save/load and reload driver
 the prior reload report to the current binary and runtime; `21456b0` adds these
 assertions to both puzzle drivers. No Net execution or gameplay pass is claimed.
 Counts remain 85 published and 83 live-accepted within documented scopes.
+
+## Public Tcl/Tk results and editor/game test review
+
+Tcl/Tk public install, installed consumers, GUI and reload all passed; evidence
+is retained at `a0583e0` under `tcl-tk/gucos-public`. Independent acceptance
+review remains pending, so the accepted baseline remains 83 entries for now.
+Desktop-apps fresh installation has completed and its queued interaction gates
+continue. The reviewed Net normal/reload gate is now queued as well.
+
+L3afpad source export `db80df4` passed independent review. Its editor test and
+Xedit's test now compare raw saved bytes, including length, after review found
+that text decoding could hide a UTF-8 BOM (`eee21a0`). These implementation gates
+are approved for execution; no editor GUI pass is implied.
+
+Mines gate review identified that undoing its first opening legitimately leaves
+a start-cell marker. The corrected driver (`4c58d80`) tests flag/undo before
+opening, then opening/save/relaunch/reload. It waits for settled expected board
+pixels, moves the pointer outside the game, and uses attempt-specific save paths.
+Independent review approved execution subject to screenshot/crop inspection.

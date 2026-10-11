@@ -2160,7 +2160,7 @@
     {
       "id": "l3afpad",
       "kind": "historical-canonical-name",
-      "state": "source-prepared-reviewed",
+      "state": "source-built-reviewed",
       "historicalManifest": "vendor/l3afpad/wasm-package.json",
       "historicalManifestSha256": "2d34c7a4ca6a1ee86ae604e9a959e007d973a0d1c7eb9b1d5203e46a35b808b5",
       "historicalEvidence": [
@@ -2190,6 +2190,11 @@
       "sourcePreparation": {
         "revision": "a1c6a43",
         "scope": "139 historical blobs, additional pinned GPL text,7outputs; source job queued, GUI/public pending."
+      },
+      "sourceExecution": {
+        "revision": "db80df48e834c80ed0723e49a4e1a5d9ad7cae69",
+        "evidence": "docs/research/package-migration/l3afpad/gucos-source",
+        "scope": "Independently reviewed fresh source build, staged help test and exact seven-output export; editor binary/GUI/public gates pending."
       }
     },
     {
