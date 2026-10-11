@@ -22,3 +22,8 @@ Source archive provenance and individual source hashes are in provenance.json.
 The application and vendored cJSON license files are installed with the binary.
 Build uses the guest compiler and installed libcurl archive, with platform target
 wasm32-wasm-posix, minimum platform 1.0.1 and runtime ABI 5.
+
+Version 0.1.1 checks `$HOME/.guc/creds/deepseek-api-key` first, followed by
+`--key-file`, then `DEEPSEEK_API_KEY`. Missing default files fall back; invalid
+or unreadable default files fail. `--yolo` is an alias for `--yes`, permitting
+edits and shell actions without confirmation.
