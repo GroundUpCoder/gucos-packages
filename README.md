@@ -1,5 +1,9 @@
 # gucos packages
 
+Packages for [gucos](https://github.com/GroundUpCoder/gucos), running at
+[os.groundupcoder.com](https://os.groundupcoder.com/). This repository supersedes
+wasm-posix-packages. See [migration and validation](docs/MIGRATION.md).
+
 Runtime package sources for the standalone browser OS. Neither the OS build nor
 its hosting deployment reads this checkout. Browser gucman discovers catalog.json,
 verifies pinned manifests and inputs, and builds or installs explicitly requested
