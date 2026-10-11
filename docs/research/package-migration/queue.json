@@ -1155,7 +1155,7 @@
     {
       "id": "gameboy",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "binary-accepted-review-pending",
       "historicalManifest": "vendor/gameboy/wasm-package.json",
       "historicalManifestSha256": "0d6b78f589ea5c6e14e9bf4f720b077c75fa47721261678d11ca0a1a396b43d2",
       "historicalEvidence": [
@@ -1188,7 +1188,7 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Fresh source/binary palette/animation/close and public/reload acceptance pending."
+        "Independent artifact/publication review and live public acceptance pending."
       ],
       "candidate": "apps/gameboy",
       "sourceReview": {
@@ -2928,7 +2928,7 @@
     {
       "id": "micropython",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/micropython/wasm-package.json",
       "historicalManifestSha256": "65186c86d5509270300344d97146628e3c58f99c876035eaeb943fb74199181f",
       "historicalEvidence": [
@@ -2959,10 +2959,15 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Source review and fresh guest/binary/public acceptance pending."
+      "acceptance": [
+        {
+          "scope": "Fresh source and binary26 fixture/alias tests, then public immutable install, fixtures and reload; four exact payloads",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "catalogCommit": "4395482",
+          "evidence": "docs/research/package-migration/batch-16/gucos-public"
+        }
       ],
+      "blockers": [],
       "candidate": "apps/micropython",
       "sourceReview": {
         "commit": "123f6d5",
@@ -4254,7 +4259,7 @@
     {
       "id": "tcl",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-built",
       "historicalManifest": "apps/tcl/wasm-package.json",
       "historicalManifestSha256": "34d36da7822b6e7542aa93dff47e7234bda4559a5dc0168194acd61d14bb6338",
       "historicalEvidence": [
@@ -4268,7 +4273,9 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Fresh binary/GUI/public gates pending."
+      ],
       "candidate": "apps/tcl",
       "sourceReview": {
         "commit": "d1b6e59",
@@ -4298,7 +4305,7 @@
     {
       "id": "tk",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-built",
       "historicalManifest": "apps/tk/wasm-package.json",
       "historicalManifestSha256": "1f2c8cefc32d80b50de4e19ab3810625f23406cf25288114f8e715116038b3cb",
       "historicalEvidence": [
@@ -4316,7 +4323,7 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Tcl fresh execution prerequisite, independent source review, guest binary/public and retained GUI/upstream pack/grid gates pending."
+        "Fresh binary/GUI/public gates pending."
       ],
       "candidate": "apps/tk",
       "sourceReview": {
