@@ -30,7 +30,7 @@ try{
  const click=async(x,y)=>canvas.click({position:await canvasPosition(canvas,{x,y})});
  const snap=async label=>{await writeFile(resolve(run,stem+'-'+label+'.png'),await canvas.screenshot(),{flag:'wx'});};
  const pixels=async (height=undefined)=>observe(d,'pixels',klass,height);
- let w,pid;
+ let w,pid,loads=0;
  async function launch(){
   (report.menus??=[]).push(await clickMenuEntry(d,entry));w=await observe(d,'window',klass);
   const ids=(await d.command('for f in /proc/[0-9]*/comm; do IFS= read -r comm < "$f" || continue; if [ "$comm" = '+name+' ]; then p=${f#/proc/}; echo "${p%/comm}"; fi; done')).trim().split(/\s+/).map(Number);assert.equal(ids.length,1,'Isolated fixture must have one app process');assert(Number.isInteger(ids[0])&&ids[0]>0);pid=ids[0];
@@ -44,7 +44,7 @@ try{
  }
  async function editorLoad(){
   const field=await observe(d,'child',klass,'0.0.3');assert(field.width>100&&field.height<65,'Expected Xedit filename field geometry');
-  await click(field.x+field.width/2,field.y+field.height/2);await s.page.keyboard.press('Control+a');await s.page.keyboard.press('Control+k');await typeText(s.page,editorPath);
+  await click(field.x+field.width/2,field.y+field.height/2);await s.page.waitForTimeout(200);await s.page.keyboard.press('Control+a');await s.page.keyboard.press('Control+k');await typeText(s.page,editorPath);await snap('filename-'+(++loads));
   const load=await observe(d,'child',klass,'0.0.2');assert(load.width<120&&load.height<65);await click(load.x+load.width/2,load.y+load.height/2);await s.page.waitForTimeout(300);
   await click(w.x+w.width/2,w.y+w.height*0.75);
  }
