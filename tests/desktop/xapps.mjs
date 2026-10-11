@@ -16,7 +16,7 @@ assert(process.env.MACHINE_JOB_ID);const name=process.argv[2];assert(['xcalc','x
 const reload=process.argv.includes('--reload');assert(!reload||name==='xedit','--reload is the editor persistence branch');
 const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'first';assert(/^[a-zA-Z0-9_-]+$/.test(attempt));const stem=name+'-jwm-'+attempt+(reload?'-reload':'');
 await assert.rejects(access(resolve(run,stem+'.json')),{code:'ENOENT'});
-const report={status:'running',startedAt:new Date().toISOString(),name,scope:'Owned JWM menu launch, physical input/function, quit/relaunch; editor saves and reopens'};let s,d;
+const report={status:'running',startedAt:new Date().toISOString(),name,scope:'Owned JWM menu launch, physical input/function, quit/relaunch; editor saves and reopens'};let s,d;const editorPath='/home/user/jwm-xedit-'+attempt+'.txt';
 try{
  s=await session();report.runtime=s.runtime;await s.command('true');
  const config=JSON.parse(await readFile(resolve(run,'config.json'))),candidate=JSON.parse(await readFile(resolve(run,'candidate-manifests.json')))['desktop-apps'];assert(candidate.binary);
@@ -33,7 +33,7 @@ try{
  async function launch(){
   (report.menus??=[]).push(await clickMenuEntry(d,entry));w=await observe(d,'window',klass);
   const ids=(await d.command('for f in /proc/[0-9]*/comm; do IFS= read -r comm < "$f" || continue; if [ "$comm" = '+name+' ]; then p=${f#/proc/}; echo "${p%/comm}"; fi; done')).trim().split(/\s+/).map(Number);assert.equal(ids.length,1,'Isolated fixture must have one app process');assert(Number.isInteger(ids[0])&&ids[0]>0);pid=ids[0];
-  (report.pids??=[]).push(pid);await click(w.x+w.width/2,w.y+w.height/2);await s.page.waitForTimeout(300);assert((await pixels()).different>10);
+  (report.pids??=[]).push(pid);await click(w.x+w.width/2,name==='xeyes'?w.y-12:w.y+w.height/2);await s.page.waitForTimeout(300);assert((await pixels()).different>10);
  }
  async function close(){
   // Accepted JWM uses a 24-pixel title bar; click its ordinary close button.
@@ -43,13 +43,13 @@ try{
  }
  async function editorLoad(){
   const field=await observe(d,'child',klass,'0.0.3');assert(field.width>100&&field.height<65,'Expected Xedit filename field geometry');
-  await click(field.x+field.width/2,field.y+field.height/2);await s.page.keyboard.press('Control+a');await s.page.keyboard.press('Control+k');await s.page.keyboard.type('/home/user/jwm-xedit.txt');
+  await click(field.x+field.width/2,field.y+field.height/2);await s.page.keyboard.press('Control+a');await s.page.keyboard.press('Control+k');await s.page.keyboard.type(editorPath);
   const load=await observe(d,'child',klass,'0.0.2');assert(load.width<120&&load.height<65);await click(load.x+load.width/2,load.y+load.height/2);await s.page.waitForTimeout(300);
   await click(w.x+w.width/2,w.y+w.height*0.75);
  }
  async function saveExpected(text){
-  await s.page.keyboard.press('Control+x');await s.page.keyboard.press('Control+s');
-  await poll(s.page,async text=>{const actual=await shell.busybox.read('/home/user/jwm-xedit.txt'),expected=new TextEncoder().encode(text);return actual?.length===expected.length&&expected.every((b,i)=>actual[i]===b);},text,15000);
+  const button=await observe(d,'child',klass,'0.0.1');assert(button.width<120&&button.height<65);await click(button.x+button.width/2,button.y+button.height/2);
+  await poll(s.page,async({text,path})=>{const actual=await shell.busybox.read(path),expected=new TextEncoder().encode(text);return actual?.length===expected.length&&expected.every((b,i)=>actual[i]===b);},{text,path:editorPath},15000);
  }
  await launch();await snap('launched');
  if(name==='xcalc'){
@@ -62,19 +62,19 @@ try{
   assert.notEqual(sum.hash,zero.hash);assert.equal(sum.hash,three.hash,'1+2 display must equal directly entered3');report.result={sum,zero,three};report.calculatorGeometry=w;
  }else if(name==='xeyes'){
   const box=await canvas.boundingBox();const move=async p=>{const q=await canvasPosition(canvas,p);await s.page.mouse.move(box.x+q.x,box.y+q.y);await s.page.waitForTimeout(400);};
-  await move({x:5,y:5});const left=await pixels();await snap('look-left');await move({x:790,y:560});const right=await pixels();await snap('look-right');assert.notEqual(left.hash,right.hash);report.result={left,right};
+  await move({x:5,y:5});const left=await pixels();await snap('look-left');await move({x:790,y:560});let right=await pixels();for(let i=0;i<20&&right.hash===left.hash;i++){await s.page.waitForTimeout(250);right=await pixels();}await snap('look-right');assert.notEqual(left.hash,right.hash);report.result={left,right};
  }else if(name==='xclock'){
   const before=await pixels();let after=before;
   for(let i=0;i<70&&after.hash===before.hash;i++){await s.page.waitForTimeout(1000);after=await pixels();}
   assert.notEqual(after.hash,before.hash,'Default minute-update clock must advance');report.result={before,after};await snap('ticked');
  }else{
-  await editorLoad();
+  await editorLoad();await snap('loaded');
   if(reload){
    const prior=JSON.parse(await readFile(resolve(run,'xedit-jwm-'+attempt+'.json')));assert.equal(prior.status,'passed');assert.equal(prior.closureSha256,report.closureSha256,'Reload must use the same accepted private/public closure');assert.equal(prior.runtime,s.runtime);
-   const disk=await s.page.evaluate(async()=>Array.from(await shell.busybox.read('/home/user/jwm-xedit.txt')||[]));assert.deepEqual(disk,Array.from(new TextEncoder().encode(prior.saved)));
+   const disk=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),editorPath);assert.deepEqual(disk,Array.from(new TextEncoder().encode(prior.saved)));
    await s.page.keyboard.press('Control+End');await s.page.keyboard.type('browser reload');await s.page.keyboard.press('Enter');report.saved=prior.saved+'browser reload\n';
   }else{await s.page.keyboard.type('hello JWM editor');await s.page.keyboard.press('Enter');report.saved='hello JWM editor\n';}
-  await saveExpected(report.saved);await snap('saved');
+  await snap('typed');await saveExpected(report.saved);await snap('saved');
  }
  await close();const firstPid=pid;await launch();assert.notEqual(pid,firstPid);await snap('relaunched');
  if(name==='xedit'){
@@ -83,6 +83,6 @@ try{
  await close();await d.finish();await s.command('echo XAPP-JWM-TERMINAL-RESTORED');report.status='passed';
 }catch(e){report.status='failed';report.error=String(e.stack||e);throw e;}
 finally{
- report.finishedAt=new Date().toISOString();if(s){try{await bounded((async()=>{await writeFile(resolve(run,stem+'.log'),await s.page.evaluate(()=>shell.busybox.log),{flag:'wx'});})(),5000);}catch(e){report.logError=String(e);}try{await bounded(s.close(),30000);}catch(e){report.cleanupError=String(e);report.status='failed';}}
+ report.finishedAt=new Date().toISOString();if(s){if(report.status==='failed'){try{report.editorDisk=await bounded(s.page.evaluate(async path=>{const b=await shell.busybox.read(path);return b?{present:true,bytes:Array.from(b)}:{present:false};},editorPath),5000);await bounded((async()=>writeFile(resolve(run,stem+'-failure.png'),await (await visibleCanvas(s.page)).screenshot(),{flag:'wx'}))(),5000);}catch(e){report.diagnosticError=String(e);}}try{await bounded((async()=>{await writeFile(resolve(run,stem+'.log'),await s.page.evaluate(()=>shell.busybox.log),{flag:'wx'});})(),5000);}catch(e){report.logError=String(e);}try{await bounded(s.close(),30000);}catch(e){report.cleanupError=String(e);report.status='failed';}}
  await writeFile(resolve(run,stem+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});if(report.status!=='passed')process.exitCode=1;
 }
