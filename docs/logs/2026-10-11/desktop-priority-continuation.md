@@ -98,3 +98,19 @@ support `ef84a48` also passed independent execution review. Discovery captures
 main/menu/New/Open chooser geometry and screenshots, cancels dialogs, and proves
 normal process exit. It neither creates archives nor establishes persistence.
 The default desktop-session shell remains unchanged.
+
+
+Puzzles Untangle normal/reload evidence `cd33207` passed independent review,
+completing six bounded private game scopes. The review verified all 74 indexed
+evidence files, 319 historical source blobs, 132 binary outputs and licenses.
+The exact artifact from `8f06d8a` is published through manifest `5dc7e9c` and
+catalog `807f2bc`; all previous 90 catalog entries are preserved. Fresh public
+install, consumers and six-game normal/reload checks are queued. The catalog
+contains 91 packages with 88 publicly accepted here; the accepted baseline
+remains unchanged. Building 40 games does not establish gameplay for all 40.
+
+LibFM/menu-cache and PCManFM source candidates `c480734` preserve 400 and 124
+historical blobs with 111 and 15 outputs. Source-only checks pass. Independent
+implementation review is pending before source execution; local GUI file
+operations and reload are separate gates. Application-launch callbacks remain
+outside the proposed scope.

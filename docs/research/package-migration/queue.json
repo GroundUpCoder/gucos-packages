@@ -3775,10 +3775,16 @@
           "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
           "evidence": "docs/research/package-migration/puzzles/gucos-binary",
           "evidenceCommit": "8c5922e"
+        },
+        {
+          "scope": "Private only: Untangle paced drag, exact undo/repeat, save/reopen and browser reload persistence; independently accepted. No solved-board claim.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/puzzles/gucos-binary",
+          "evidenceCommit": "cd33207"
         }
       ],
       "blockers": [
-        "Five private interaction scopes are independently accepted: Fifteen, Net, Same Game and Solo normal/reload evidence at 9ee1628, plus Mines flag/undo, safe first opening and persistence normal/reload evidence at 8c5922e. Untangle repeat-drag acceptance remains pending; paced-input correction d49e5ff is approved for execution only. Immutable publication review, publication and fresh public acceptance remain pending."
+        "Six bounded private gameplay scopes are independently accepted. Exact artifact publication was independently approved and published at catalog 807f2bc. Fresh public install/integrity, consumers and six-game normal/reload gates remain pending; no all-40 gameplay claim."
       ],
       "sourcePreparation": {
         "revision": "19b50d8",
@@ -3787,7 +3793,13 @@
       "sourceExecution": {
         "revision": "8f06d8a",
         "evidence": "docs/research/package-migration/puzzles/gucos-source",
-        "scope": "Independently reviewed generation of all 40 games and exact 132-output source export. Source execution does not establish gameplay acceptance; five bounded private interaction scopes are separately accepted."
+        "scope": "Independently reviewed generation of all 40 games and exact 132-output source export. Six bounded private interaction scopes are separately accepted; public acceptance remains pending."
+      },
+      "publication": {
+        "artifactRevision": "8f06d8a7c1337a6a9725618332cb0540a3d1723a",
+        "manifestRevision": "5dc7e9c",
+        "catalogRevision": "807f2bc",
+        "scope": "Independently reviewed immutable artifact publication; fresh public acceptance pending."
       }
     },
     {
