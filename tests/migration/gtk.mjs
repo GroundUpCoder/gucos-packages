@@ -5,6 +5,7 @@ import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import {createRequire} from 'node:module';
 import assert from 'node:assert/strict';
+import {visibleCanvas,canvasPosition,canvasHelperSha256} from './canvas.mjs';
 const require=createRequire(new URL('./package.json',import.meta.url));
 const {PNG}=require('pngjs');
 assert(process.env.MACHINE_JOB_ID,'machine-job browser reservation required');
@@ -12,7 +13,7 @@ const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'';
 assert(!attempt||/^[a-zA-Z0-9_-]+$/.test(attempt));
 const label='gtk-functional'+(attempt?'-'+attempt:'');
 await assert.rejects(access(resolve(run,label+'.json')),{code:'ENOENT'});
-const report={status:'running',startedAt:new Date().toISOString()};
+const report={status:'running',startedAt:new Date().toISOString(),canvasHelperSha256};
 let s,pending;
 try {
  const config=JSON.parse(await readFile(resolve(run,'config.json')));
@@ -102,19 +103,19 @@ echo GTK-X11-PACKAGE-PASS`);
   pending.then(()=>{throw Error('GTK ended before '+text);})
  ]);
  await marker('GTK-X11-READY');await marker('GTK-X11-CLIPBOARD-PASS');
- const canvas=s.page.locator('.screen:not([hidden]) canvas').last();
+ const canvas=await visibleCanvas(s.page);
  async function point(name){
   const log=await s.page.evaluate(()=>shell.busybox.log);
   const m=log.match(new RegExp('GTK-X11-'+name+' (-?\\d+) (-?\\d+) (\\d+) (\\d+)'));
   assert.ok(m,log);return {x:+m[1]+ +m[3]/2,y:+m[2]+ +m[4]/2};
  }
- await canvas.click({position:await point('BUTTON')});
+ await canvas.click({position:await canvasPosition(canvas,await point('BUTTON')),timeout:10000});
  await marker('GTK-X11-CLICK 1');await marker('GTK-X11-SIZE 640 480');
- await canvas.click({position:await point('ENTRY')});
+ await canvas.click({position:await canvasPosition(canvas,await point('ENTRY')),timeout:10000});
  await s.page.keyboard.press('Control+a');await s.page.keyboard.type('hello 123/');
  await s.page.keyboard.press('Shift+KeyA');await s.page.keyboard.press('Shift+Minus');await s.page.keyboard.press('Shift+Digit1');
  await marker('GTK-X11-TEXT hello 123/A_!');
- const frame=await canvas.screenshot();await writeFile(resolve(run,label+'.png'),frame,{flag:'wx'});
+ const frame=await canvas.screenshot({timeout:10000});await writeFile(resolve(run,label+'.png'),frame,{flag:'wx'});
  const png=PNG.sync.read(frame);let red=0,blue=0;
  for(let i=0;i<png.data.length;i+=4){const [r,g,b]=png.data.subarray(i,i+3);if(r>180&&g<100&&b<100)red++;if(b>100&&b>r*2&&b>g*1.5)blue++;}
  report.pixels={red,blue};assert.ok(red>500&&blue>500,JSON.stringify(report.pixels));
