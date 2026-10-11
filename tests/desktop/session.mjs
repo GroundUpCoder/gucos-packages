@@ -1,10 +1,13 @@
 // One foreground guest shell owns X/JWM and services read-only observation
 // requests. Never attempt a second BusyBoxSession.start while it is running.
 import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 import {installObserver} from './menu.mjs';
 async function bounded(p,ms,label){let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms);})]);}finally{clearTimeout(timer);}}
 export async function desktopSession(s){
  const helper=await installObserver(s);
+ helper.sessionHelperSha256=createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex');
  const pending=s.command(`set -eu
 rm -rf /tmp/jwm-test-control
 mkdir /tmp/jwm-test-control
