@@ -933,7 +933,7 @@
     {
       "id": "feh",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "apps/feh/wasm-package.json",
       "historicalManifestSha256": "c895093ace5ba82a1fd5ac2d1ad3ae83b0b5515b2db96f0f254942e9498943ab",
       "historicalEvidence": [
@@ -972,7 +972,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent implementation review, fresh source build, binary install/consumer/GUI/reload, immutable publication review and public acceptance remain pending."
+      ],
+      "candidate": "apps/feh"
     },
     {
       "id": "flex",
@@ -2001,7 +2004,7 @@
     {
       "id": "imlib2",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "apps/imlib2/wasm-package.json",
       "historicalManifestSha256": "85e7abb6978cb68f8f239543a202f0dd363666bf10d2e2b280f0b81b4d32e33b",
       "historicalEvidence": [
@@ -2034,7 +2037,10 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent implementation review, fresh source build, binary install/consumer/GUI/reload, immutable publication review and public acceptance remain pending."
+      ],
+      "candidate": "apps/imlib2"
     },
     {
       "id": "jq",
@@ -4776,7 +4782,7 @@
     {
       "id": "xarchiver",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared",
       "historicalManifest": "apps/xarchiver/wasm-package.json",
       "historicalManifestSha256": "f33bab22d18ba4663d069c488e3803ee68de74ce6e141e7d71d116878232fce5",
       "historicalEvidence": [
@@ -4802,7 +4808,11 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Independent implementation review, fresh source build, binary install/consumer/GUI/reload, immutable publication review and public acceptance remain pending.",
+        "Historical GNU tar flags are incompatible with core BusyBox tar; package-owned bounded plain-TAR backend adaptation is under development and requires independent review."
+      ],
+      "candidate": "apps/xarchiver"
     },
     {
       "id": "xmag",

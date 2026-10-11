@@ -34,4 +34,26 @@ The catalog contains 90 entries; 88 now have acceptance accounted for in this co
 
 Independent source/UI audit established Galculator's fresh defaults (Basic, decimal, radians, algebraic; display remembering disabled). Layout-discovery driver `166db78` is approved for execution after reviewed binary fixture preparation. It retains actual Basic/View-menu/Scientific screenshots through physical input and normal quit; it makes no numeric or preference-persistence acceptance claim. Numeric tests must establish guarded geometry from those screenshots, compare rendered 3/0/3 and 144/0/144 results, and verify app-written Scientific-mode configuration across relaunch and browser reload without seeding configuration.
 
-Independent readiness audit reverified the retained CLI/shooter fixture's 93 files and Vim v2's 70 files on runtime `19609f47`. Source exports remain ncurses `1dee6db`, Awk/Doom `a41fc47`, Quake `136d562`. Vim remains an unexecuted corrected source fixture (1,851 outputs, two obsolete aliases omitted). Shooter driver `87a57c4` introduces distinct host evidence names for fresh-session repeated gameplay; review remains pending. Priority game jobs retain their place ahead of this batch.
+Independent readiness audit reverified the retained CLI/shooter fixture's 93 files and Vim v2's 70 files on runtime `19609f47`. Source exports remain ncurses `1dee6db`, Awk/Doom `a41fc47`, Quake `136d562`. Vim remains an unexecuted corrected source fixture (1,851 outputs, two obsolete aliases omitted). Shooter driver `87a57c4` introduces distinct host evidence names for fresh-session repeated gameplay; independent execution review approved the exact driver at `87a57c44aafb9d78675525785fed6af928b162dd`. Fresh install/gameplay/reload acceptance remains pending. Priority game jobs retain their place ahead of this batch.
+
+
+## Additional owned desktop source preparation
+
+Xarchiver `1fd0a18` retains all 220 historical blobs from revision
+`0b9b3245fe11a3bc677d81113cba90cd0ae80446`, builds the 37 historical C units,
+and declares 31 outputs including the complete license-notice closure. Its
+source-only provenance, shell syntax, platform, dependencies and output ownership
+checks passed. Independent implementation review is pending. The historical tar
+backend emits GNU-only options unsupported by the core BusyBox provider; a
+package-owned plain-TAR compatibility profile is being developed for separate
+review. No archive-function or publication acceptance is claimed.
+
+Imlib2 `7765bfb` retains 178 historical blobs, including the original 1.6.1
+ximage/grab overlays, and declares 15 outputs with nine dynamic image loaders.
+Its staged headless consumer covers PNG roundtrip, scaling, JPEG roundtrip and
+missing-file behavior; it has not run. The original X11 pixel consumer remains
+intact and requires separate execution. Feh `34e1811` retains 222 historical
+blobs, three overlays, generated headers, fonts and assets, with 14 outputs.
+Its source tests specify exact file/directory image dimensions. Both source-only
+validation passes preserve the publication baseline; independent review and all
+guest/private/public acceptance stages remain pending.
