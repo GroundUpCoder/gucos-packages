@@ -53,3 +53,14 @@ manifest ac9d665 / catalog6270524 publication. All100 payloads and20-package
 closure verified; catalog check passes63 entries with previous60 unchanged.
 Fresh public run hb-pango-public-gpt-61a87f88 prepared against6270524.
 Public acceptance remains pending; live-accepted additions still41.
+
+## PCG32 preparation helper and scheduling correction
+
+Independent gpt reviewer approved helper9eec742 (including3f742e4): exact
+historical snapshot, original native488-output assertions and explicit guest
+not-run. Initial host reservationd1ba8aad unexpectedly ran alongside browser
+0700a781 because scheduler build/browser lanes are independent, despite shared
+weights. Stopped own wrapper33887 with SIGTERM promptly; exit143, not a pass.
+Partial packages-local pcg32-host-gpt-61a87f88 snapshot retained. Host preparation
+will use the serial reservation lane or wait for the browser to finish.
+No old/core files changed; no default-account threads used.
