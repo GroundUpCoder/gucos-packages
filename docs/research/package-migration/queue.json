@@ -2160,7 +2160,7 @@
     {
       "id": "l3afpad",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/l3afpad/wasm-package.json",
       "historicalManifestSha256": "2d34c7a4ca6a1ee86ae604e9a959e007d973a0d1c7eb9b1d5203e46a35b808b5",
       "historicalEvidence": [
@@ -2185,7 +2185,14 @@
         "pkgconf"
       ],
       "mapping": "l3afpad",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "revision": "6132bc0",
+          "catalogRevision": "175cf8f19ed54198789ce39780b1419454b3209e",
+          "evidence": "docs/research/package-migration/l3afpad/gucos-public",
+          "scope": "Independently reviewed public install, consumer, real JWM editor exact save/undo/redo/reopen, package reload and browser persistence on runtime19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441."
+        }
+      ],
       "blockers": [],
       "sourcePreparation": {
         "revision": "a1c6a43",
