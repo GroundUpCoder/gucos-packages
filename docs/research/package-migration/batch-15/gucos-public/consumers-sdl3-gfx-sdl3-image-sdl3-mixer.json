@@ -1,0 +1,75 @@
+{
+  "action": "consumers",
+  "names": [
+    "sdl3-gfx",
+    "sdl3-image",
+    "sdl3-mixer"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "35f4ac8c3fa90f56f7baf207281f6f3e3728dda0",
+  "startedAt": "2026-10-11T04:59:02.652Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "sdl3-gfx",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "d3c3ca63b4a7ebf621bc6adb70a52b541fe87da610145abc8a6166f108238413",
+          "size": 225280
+        },
+        {
+          "path": "build.sh",
+          "sha256": "0a6a2abad7ca662777dfa22231b7e2ec35e83755ab754a10db021cd56d897ad8",
+          "size": 623
+        },
+        {
+          "path": "test.sh",
+          "sha256": "8e3e5e15e96d30dd36194322067045f6cf5b0e682af8a65f6c472e23bb09755e",
+          "size": 524
+        }
+      ]
+    },
+    {
+      "name": "sdl3-image",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "fda0d407af1cc4a27860cae7364d362ac70951a794f65530394658a312423a51",
+          "size": 1792000
+        },
+        {
+          "path": "build.sh",
+          "sha256": "cbee4d39f582167f989ddbe0f4ef8b97a3e6d12dc7f4d805f38bec625d987592",
+          "size": 834
+        },
+        {
+          "path": "test.sh",
+          "sha256": "ac335528db2d4198f2c95577216bcb9a0279415e5925ec43806e08949c8ed327",
+          "size": 397
+        }
+      ]
+    },
+    {
+      "name": "sdl3-mixer",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "776c28ebfbb254e369db4969c17655723c799bc7f3b69cf94e333648c3919177",
+          "size": 1945600
+        },
+        {
+          "path": "build.sh",
+          "sha256": "479f4fc47bb83689aa6c455a984746687ec8a5fb23ba00582e929a8d75009331",
+          "size": 997
+        },
+        {
+          "path": "test.sh",
+          "sha256": "cd3a1621a785ad0146704794bfb90de558e056dd314610bd3c3915193bc55980",
+          "size": 360
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T04:59:06.747Z"
+}

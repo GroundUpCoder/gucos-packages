@@ -1,0 +1,18 @@
+{
+  "sdl-media.json": "5bff3065695a49297748733e90a20c93944e587fc3a5e730c4d565ff89ec0458",
+  "sdl3-gfx.sha256": "d536f085fc1fdecdcc5d73c1c6c4cee883c18f779afdecc7e82df5b444b2ee10",
+  "observed-runtime.json": "c1d9b39edc1d23af256c7c1e88ccc9d30925bf9439aee11d68159d85c18ff3b7",
+  "reload.log": "93dc08eabd1ad20ea1abfc3724fd8354ba2684b059a3dbbdfc7c11f4d0020df7",
+  "install-sdl3-gfx-sdl3-image-sdl3-mixer.json": "f100b1394fd356bb95356fdaea6346d87e582bebd8ec64ce5c234a70e16eebf6",
+  "config.json": "7af9995fae82a246314887abe57adbe3635990e06849a792234de822521686d0",
+  "sdl3-mixer.sha256": "114aebf4c47648a149b13d597e0e602b98999430575c1be4d583b255b51d9eec",
+  "sdl-media.png": "9088639707ea4862e33437f6b1eba55d0ab3897857292e842c622c398cc471c4",
+  "reload-sdl3-gfx-sdl3-image-sdl3-mixer.json": "5476a0fa667fe525bd65d236c2a83df080469555d6f2207d9bf49de291b6dd69",
+  "media-console.log": "4150d41f04b210362407117b8adde554d2cea7241be6f2b41e2b5b5704c64358",
+  "sdl-media.log": "236fe81d055ef58856cd9b938d1f6dd78d1528a704b57e4a14c16a460ac97c3c",
+  "consumers.log": "c316b8125593c45ced1a34bbc4a342d4fe8a66ff722ed50906734aee14b9823d",
+  "candidate-manifests.json": "8d7e355847e542833c4fb761683410776b18c49312ff99c8bebaeb5139a1c4a6",
+  "install.log": "1f629661516cdb46389e7b281ab500fe716639af4d97d06764950083a78dda64",
+  "sdl3-image.sha256": "4279afde0e4370ab7102cb08042271603b4d2f5f614fd51308b4d0a2f9087e4e",
+  "consumers-sdl3-gfx-sdl3-image-sdl3-mixer.json": "2199ed353252ca795eb0fb0e32378c2f4f6108ec2f445f522a00f341ddd8cd21"
+}
