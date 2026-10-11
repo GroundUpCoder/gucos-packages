@@ -363,3 +363,12 @@ Full native histograms and exact 64x48 zoom extents are required; restoration
 requires the original exact pixels. Near-primary bounds reflect the retained
 screenshot, while native and green scaling remain untested. Both prior failed
 attempts remain intact. Execution requires a fresh exclusive profile.
+
+Applied independently reviewed streaming archive readers unchanged. Standalone
+helper f91c33c1cc9d81af2235998f2d2e35635e3efbe2c1a6a0db21279f77b243477e;
+Feh helper c71353a51cb27487587e1d17fde2b76384e571b7b384f26356f92e8d98c5fa8e.
+Exact membership, modes, full payload hashes and existing deadlines remain.
+Old/new frozen metadata matched in the author checks; independent review
+verified source and synthetic rejection cases. Neither stall cause nor speedup
+is established. New complete attempts are required; prior failed after-checks
+cannot be replaced by a differently bound receipt.

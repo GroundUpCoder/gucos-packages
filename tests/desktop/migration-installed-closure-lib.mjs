@@ -45,11 +45,57 @@ export async function frozenClosure(repo,config,candidates,app){
   assert.equal(archive.length,m.binary.size);assert.equal(sha(archive),m.binary.sha256);
   assert(Array.isArray(m.outputs)&&m.outputs.length>0);assert.equal(new Set(m.outputs.map(o=>o.path)).size,m.outputs.length);
   for(const o of m.outputs){assert(safe(o.path),'Unsafe output');assert(Number.isInteger(o.mode)&&o.mode>=0&&o.mode<=0o7777);}
-  const payload=JSON.parse(execFileSync('python3',['-c',`import io,json,sys,tarfile,hashlib
-with tarfile.open(fileobj=io.BytesIO(sys.stdin.buffer.read())) as t:
- ms=t.getmembers()
- assert len(ms)==len({m.name for m in ms}) and all(m.isfile() for m in ms)
- print(json.dumps([dict(path=m.name,mode=m.mode,sha256=hashlib.sha256(t.extractfile(m).read()).hexdigest()) for m in ms]))`],{input:archive,timeout:30000,maxBuffer:8*1024*1024}));
+  // B proposed single-pass reader; existing archive hash/size checks stay above.
+  // Header and payload share one bounded child input stream; no Python whole-archive copy.
+  const archiveStarted=Date.now();
+  const archiveIdentity={package:name,sha256:m.binary.sha256,size:archive.length,outputs:m.outputs.length};
+  process.stderr.write('[closure-archive] '+JSON.stringify({...archiveIdentity,phase:'start'})+'\n');
+  let payload;
+  try{
+   const header=Buffer.from(JSON.stringify(m.outputs)+'\n');assert(header.length<=4*1024*1024,'Archive header cap');
+   payload=JSON.parse(execFileSync('python3',['-c',`import json,sys,tarfile,hashlib
+phase="header"; member=""; count=0; expected_count=0
+# Diagnostics contain bounded repr strings; no archive-controlled newlines.
+def progress():
+ print("phase=%s members=%d expected=%d member=%s" % (phase,count,expected_count,repr(member[:160])),file=sys.stderr,flush=True)
+try:
+ header=sys.stdin.buffer.readline(4*1024*1024+1)
+ assert len(header)<=4*1024*1024 and header.endswith(b"\\n"), "invalid bounded archive header"
+ spec=json.loads(header); expected={o["path"]:o["mode"] for o in spec}
+ assert len(expected)==len(spec)>0, "duplicate/empty expected output set"
+ expected_count=len(expected); seen=set(); payload=[]
+ phase="open"; progress()
+ with tarfile.open(fileobj=sys.stdin.buffer,mode="r|*") as t:
+  for m in t:
+   member=m.name; count+=1; phase="member-header"
+   if count<=8 or count&(count-1)==0: progress()
+   assert m.isfile(), "nonregular archive member"
+   assert m.name not in seen, "duplicate archive member"
+   assert m.name in expected, "unexpected archive member"
+   assert m.mode==expected[m.name], "archive mode mismatch"
+   assert m.size>=0, "negative member size"
+   seen.add(m.name); phase="member-data"
+   digest=hashlib.sha256(); remaining=m.size
+   with t.extractfile(m) as f:
+    while remaining:
+     chunk=f.read(min(1024*1024,remaining))
+     assert chunk, "truncated archive member"
+     remaining-=len(chunk); digest.update(chunk)
+    assert f.read(1)==b"", "member size mismatch"
+   payload.append(dict(path=m.name,mode=m.mode,sha256=digest.hexdigest()))
+  phase="membership"
+  assert seen==set(expected), "missing archive member"
+ phase="complete"; progress()
+ print(json.dumps(payload))
+except BaseException:
+ progress()
+ raise
+`],{input:Buffer.concat([header,archive]),timeout:30000,maxBuffer:8*1024*1024,stdio:['pipe','pipe','pipe']}));
+  }catch(error){
+   const detail=Buffer.isBuffer(error.stderr)?error.stderr.subarray(-8192).toString():'';
+   throw Error('Closure archive reader failed '+JSON.stringify({...archiveIdentity,elapsedMs:Date.now()-archiveStarted,code:error.code||null,signal:error.signal||null})+' '+String(error.message).slice(0,300)+'\n'+detail);
+  }
+  process.stderr.write('[closure-archive] '+JSON.stringify({...archiveIdentity,phase:'complete',elapsedMs:Date.now()-archiveStarted})+'\n');
   const sorted=a=>a.slice().sort((a,b)=>a.path.localeCompare(b.path));
   assert.deepEqual(sorted(payload.map(({path,mode})=>({path,mode}))),sorted(m.outputs));
   for(const o of payload){assert(!all.has(o.path),'Duplicate package output ownership');all.set(o.path,o);}
