@@ -1,0 +1,9 @@
+{
+  "build-libfm-pcmanfm.json": "e3a579c64155f01702e4e514461ba22f176a23a3d8b57d237eb0186ccb99790d",
+  "build.log": "d852a5428b97e3990913689d355d8d109bfabf83c27c02319ecc42b5990f19f5",
+  "candidate-manifests.json": "25f3fa9d97b38f7f73449d59cc123bb9774dbf6f2c2483aea9ad60fa0bcac7ac",
+  "config.json": "6b635588fdf9d5761547a743e3c93815f4d111e098809571dbc8413d42d9fbef",
+  "dependencies-gtk3-x11-gio-core-libintl.json": "1a59ac621ae5bdb3e188e36b41977c07d9432412ca43e0e14bf0df8467fa13a1",
+  "dependencies.log": "fc72630983336436d36bb3b419c7772ed71b921c9468c0374626801c58f602f6",
+  "observed-runtime.json": "17faf3de1a13dbdfad1c97029c4447b1fd27af56956f3c4746fcf48afdc22374"
+}
