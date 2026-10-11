@@ -1,3 +1,4 @@
+import {typeText} from './keyboard.mjs';
 // Physical JWM/input gates for the accepted X applications advertised by
 // desktop-apps. Observers read X geometry/pixels only; no synthetic X events.
 import assert from 'node:assert/strict';
@@ -24,7 +25,7 @@ try{
  assert.equal(closure.root,'desktop-apps');assert.equal(closure.inputCommit,config.inputCommit);assert.deepEqual(closure.manifests['desktop-apps'],candidate);assert.equal(sha(sums),closure.checksumsSha256);assert(closure.manifests[name]);
  for(const [n,expected] of Object.entries(closure.manifests))assert.deepEqual(await s.page.evaluate(async n=>JSON.parse(new TextDecoder().decode(await shell.busybox.read('/usr/local/lib/gucman/packages/'+n+'/current/manifest.json'))),n),expected);
  await s.page.evaluate(async text=>shell.busybox.write('/tmp/xapps-closure.sha256',new TextEncoder().encode(text)),sums.toString());await s.command('sha256sum -c /tmp/xapps-closure.sha256');
- report.closureSha256=sha(bytes);report.harnessSha256=sha(await readFile(new URL(import.meta.url)));report.observer=await installObserver(s);d=await desktopSession(s);report.desktopHelpers=d.helper;
+ report.closureSha256=sha(bytes);report.harnessSha256=sha(await readFile(new URL(import.meta.url)));report.keyboardHelperSha256=sha(await readFile(new URL('./keyboard.mjs',import.meta.url)));report.observer=await installObserver(s);d=await desktopSession(s);report.desktopHelpers=d.helper;
  const klass={xcalc:'XCalc',xedit:'Xedit',xclock:'XClock',xeyes:'XEyes'}[name],entry='gucos-desktop-'+name+'.desktop';const canvas=await visibleCanvas(s.page);
  const click=async(x,y)=>canvas.click({position:await canvasPosition(canvas,{x,y})});
  const snap=async label=>{await writeFile(resolve(run,stem+'-'+label+'.png'),await canvas.screenshot(),{flag:'wx'});};
@@ -43,7 +44,7 @@ try{
  }
  async function editorLoad(){
   const field=await observe(d,'child',klass,'0.0.3');assert(field.width>100&&field.height<65,'Expected Xedit filename field geometry');
-  await click(field.x+field.width/2,field.y+field.height/2);await s.page.keyboard.press('Control+a');await s.page.keyboard.press('Control+k');await s.page.keyboard.type(editorPath);
+  await click(field.x+field.width/2,field.y+field.height/2);await s.page.keyboard.press('Control+a');await s.page.keyboard.press('Control+k');await typeText(s.page,editorPath);
   const load=await observe(d,'child',klass,'0.0.2');assert(load.width<120&&load.height<65);await click(load.x+load.width/2,load.y+load.height/2);await s.page.waitForTimeout(300);
   await click(w.x+w.width/2,w.y+w.height*0.75);
  }
@@ -72,13 +73,13 @@ try{
   if(reload){
    const prior=JSON.parse(await readFile(resolve(run,'xedit-jwm-'+attempt+'.json')));assert.equal(prior.status,'passed');assert.equal(prior.closureSha256,report.closureSha256,'Reload must use the same accepted private/public closure');assert.equal(prior.runtime,s.runtime);
    const disk=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),editorPath);assert.deepEqual(disk,Array.from(new TextEncoder().encode(prior.saved)));
-   await s.page.keyboard.press('Control+End');await s.page.keyboard.type('browser reload');await s.page.keyboard.press('Enter');report.saved=prior.saved+'browser reload\n';
-  }else{await s.page.keyboard.type('hello JWM editor');await s.page.keyboard.press('Enter');report.saved='hello JWM editor\n';}
+   await s.page.keyboard.press('Control+End');await typeText(s.page,'browser reload');await s.page.keyboard.press('Enter');report.saved=prior.saved+'browser reload\n';
+  }else{await typeText(s.page,'hello JWM editor');await s.page.keyboard.press('Enter');report.saved='hello JWM editor\n';}
   await snap('typed');await saveExpected(report.saved);await snap('saved');
  }
  await close();const firstPid=pid;await launch();assert.notEqual(pid,firstPid);await snap('relaunched');
  if(name==='xedit'){
-  await editorLoad();await s.page.keyboard.press('Control+End');await s.page.keyboard.type('reopened');await s.page.keyboard.press('Enter');report.saved+='reopened\n';await saveExpected(report.saved);await snap('reopened-saved');
+  await editorLoad();await s.page.keyboard.press('Control+End');await typeText(s.page,'reopened');await s.page.keyboard.press('Enter');report.saved+='reopened\n';await saveExpected(report.saved);await snap('reopened-saved');
  }
  await close();await d.finish();await s.command('echo XAPP-JWM-TERMINAL-RESTORED');report.status='passed';
 }catch(e){report.status='failed';report.error=String(e.stack||e);throw e;}
