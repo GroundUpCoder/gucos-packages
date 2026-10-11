@@ -57,8 +57,8 @@ try{
   // Physical clicks avoid assuming keyboard translations on an Xt child.
   assert(w.width>=210&&w.width<=260&&w.height>=380&&w.height<=430,'Unexpected default calculator layout');
   const button=async(col,row)=>{assert(col>=0&&col<5&&row>=0&&row<11);await click(w.x+4+(col+0.5)*(w.width-8)/5,w.y+62+(row+0.5)*(w.height-66)/11);await s.page.waitForTimeout(150);};
-  await button(4,0);await button(1,9);await button(4,9);await button(2,9);await button(4,10);const sum=await pixels(65);await snap('sum-three');
-  await button(4,0);const zero=await pixels(65);await button(3,9);const three=await pixels(65);await snap('direct-three');
+  await button(4,0);await button(1,9);await button(4,9);await button(2,9);await button(4,10);const sum=await pixels(60);await snap('sum-three');
+  await button(4,0);const zero=await pixels(60);await snap('cleared-zero');await button(3,9);const three=await pixels(60);await snap('direct-three');
   assert.notEqual(sum.hash,zero.hash);assert.equal(sum.hash,three.hash,'1+2 display must equal directly entered3');report.result={sum,zero,three};report.calculatorGeometry=w;
  }else if(name==='xeyes'){
   const box=await canvas.boundingBox();const move=async p=>{const q=await canvasPosition(canvas,p);await s.page.mouse.move(box.x+q.x,box.y+q.y);await s.page.waitForTimeout(400);};
