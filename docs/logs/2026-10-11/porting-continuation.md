@@ -349,3 +349,18 @@ path and enabled Save button. Physical confirmation-button clicks are the next
 reviewed test change, not yet an execution success. Xcalc also reached its
 window; its next test uses physical arithmetic buttons after keyboard input on
 an Xt child left the display unchanged.
+
+## Additional reviewed game harnesses
+
+XMahjongg's driver (`f80ba2d`) passed independent implementation review. It uses
+an actual menu launch and the retained game's `h`, Space, Return sequence to
+remove exactly one hinted pair, including the three-hint case; undo/redo, new
+board, quit/relaunch, pixel checks and screenshots remain execution gates. The
+fresh binary fixture freezes two manifests and 537 payload hashes. There is no
+saved-game restoration claim.
+
+Untangle's separate driver (`64104ea`) also passed independent implementation
+review, including offline coordinate/scale fixtures. It locates a rendered blue
+point from screenshot pixels, drags it with real mouse events, and requires
+exact undo/repeat and save/load/reload equality. Neither review is gameplay
+acceptance. Both await browser capacity after preserved queued jobs.
