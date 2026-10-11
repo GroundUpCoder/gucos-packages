@@ -53,9 +53,13 @@ try{
  }
  await launch();await snap('launched');
  if(name==='xcalc'){
-  await s.page.keyboard.press('Backspace');await s.page.keyboard.type('1+2=');await s.page.waitForTimeout(250);const sum=await pixels(65);await snap('sum-three');
-  await s.page.keyboard.press('Backspace');await s.page.waitForTimeout(150);const zero=await pixels(65);await s.page.keyboard.type('3');await s.page.waitForTimeout(250);const three=await pixels(65);
-  assert.notEqual(sum.hash,zero.hash);assert.equal(sum.hash,three.hash,'1+2 display must equal directly entered3');report.result={sum,zero,three};
+  // Default scientific layout: five columns and eleven button rows.
+  // Physical clicks avoid assuming keyboard translations on an Xt child.
+  assert(w.width>=210&&w.width<=260&&w.height>=380&&w.height<=430,'Unexpected default calculator layout');
+  const button=async(col,row)=>{assert(col>=0&&col<5&&row>=0&&row<11);await click(w.x+4+(col+0.5)*(w.width-8)/5,w.y+62+(row+0.5)*(w.height-66)/11);await s.page.waitForTimeout(150);};
+  await button(4,0);await button(1,9);await button(4,9);await button(2,9);await button(4,10);const sum=await pixels(65);await snap('sum-three');
+  await button(4,0);const zero=await pixels(65);await button(3,9);const three=await pixels(65);await snap('direct-three');
+  assert.notEqual(sum.hash,zero.hash);assert.equal(sum.hash,three.hash,'1+2 display must equal directly entered3');report.result={sum,zero,three};report.calculatorGeometry=w;
  }else if(name==='xeyes'){
   const box=await canvas.boundingBox();const move=async p=>{const q=await canvasPosition(canvas,p);await s.page.mouse.move(box.x+q.x,box.y+q.y);await s.page.waitForTimeout(400);};
   await move({x:5,y:5});const left=await pixels();await snap('look-left');await move({x:790,y:560});const right=await pixels();await snap('look-right');assert.notEqual(left.hash,right.hash);report.result={left,right};
