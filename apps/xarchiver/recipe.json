@@ -1,0 +1,40 @@
+{
+  "name": "xarchiver",
+  "version": "0.5.4.22-3",
+  "dependencies": [
+    "gtk3-x11",
+    "pkgconf",
+    "libintl",
+    "gio-core"
+  ],
+  "dependencyRequirements": {
+    "gtk3-x11": {
+      "version": "3.24.43-1"
+    },
+    "pkgconf": {
+      "version": "2.3.0-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    },
+    "gio-core": {
+      "version": "2.84.4-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "xarchiver.desktop",
+    "LGPL-2.1.txt"
+  ]
+}

@@ -1,0 +1,126 @@
+[
+  {
+    "path": "bin/xarchiver",
+    "mode": 493
+  },
+  {
+    "path": "libexec/xarchiver",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/xarchiver.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/xarchiver/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/xarchiver/PORT.md",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/LGPL-2.1.txt",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmime.c",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmime.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimealias.c",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimealias.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimecache.c",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimecache.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimeglob.c",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimeglob.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimeicon.c",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimeicon.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimeint.c",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimeint.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimemagic.c",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimemagic.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimeparent.c",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xarchiver/xdgmime/xdgmimeparent.h",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/xarchiver.png",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/xarchiver/xarchiver-add.png",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/xarchiver/xarchiver-close.png",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/xarchiver/xarchiver-extract.png",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/xarchiver/xarchiver-green.png",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/xarchiver/xarchiver-html.png",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/xarchiver/xarchiver-red.png",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/xarchiver/xarchiver-select.png",
+    "mode": 420
+  }
+]
