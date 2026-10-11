@@ -12,7 +12,7 @@ import {visibleCanvas,canvasPosition} from '../migration/canvas.mjs';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 async function bounded(p,ms){let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('X app test deadline')),ms);})]);}finally{clearTimeout(timer);}}
 assert(process.env.MACHINE_JOB_ID);const name=process.argv[2];assert(['xcalc','xedit','xclock','xeyes'].includes(name));
-const reload=process.argv.includes('--reload');
+const reload=process.argv.includes('--reload');assert(!reload||name==='xedit','--reload is the editor persistence branch');
 const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'first';assert(/^[a-zA-Z0-9_-]+$/.test(attempt));const stem=name+'-jwm-'+attempt+(reload?'-reload':'');
 await assert.rejects(access(resolve(run,stem+'.json')),{code:'ENOENT'});
 const report={status:'running',startedAt:new Date().toISOString(),name,scope:'Owned JWM menu launch, physical input/function, quit/relaunch; editor saves and reopens'};let s,d;
@@ -48,7 +48,7 @@ try{
  }
  async function saveExpected(text){
   await s.page.keyboard.press('Control+x');await s.page.keyboard.press('Control+s');
-  await s.page.waitForFunction(async text=>new TextDecoder().decode(await shell.busybox.read('/home/user/jwm-xedit.txt')||[])===text,text,{timeout:15000});
+  await s.page.waitForFunction(async text=>new TextDecoder().decode(await shell.busybox.read('/home/user/jwm-xedit.txt')||new Uint8Array())===text,text,{timeout:15000});
  }
  await launch();await snap('launched');
  if(name==='xcalc'){
@@ -66,7 +66,7 @@ try{
   await editorLoad();
   if(reload){
    const prior=JSON.parse(await readFile(resolve(run,'xedit-jwm-'+attempt+'.json')));assert.equal(prior.status,'passed');assert.equal(prior.closureSha256,report.closureSha256,'Reload must use the same accepted private/public closure');assert.equal(prior.runtime,s.runtime);
-   const disk=await s.page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/home/user/jwm-xedit.txt')||[]));assert.equal(disk,prior.saved);
+   const disk=await s.page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/home/user/jwm-xedit.txt')||new Uint8Array()));assert.equal(disk,prior.saved);
    await s.page.keyboard.press('Control+End');await s.page.keyboard.type('browser reload');await s.page.keyboard.press('Enter');report.saved=prior.saved+'browser reload\n';
   }else{await s.page.keyboard.type('hello JWM editor');await s.page.keyboard.press('Enter');report.saved='hello JWM editor\n';}
   await saveExpected(report.saved);await snap('saved');

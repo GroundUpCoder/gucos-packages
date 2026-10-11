@@ -50,7 +50,7 @@ echo JWM-CONTROL-PASS`);
  function command(script){return bounded((async()=>{
   const stem='/tmp/jwm-test-control/'+(++serial);
   await write(stem+'.request',script+'\n');await write(stem+'.ready','ready');
-  await race(s.page.waitForFunction(async path=>/^[0-9]+\n$/.test(new TextDecoder().decode(await shell.busybox.read(path)||[])),stem+'.code',{timeout:45000}));
+  await race(s.page.waitForFunction(async path=>/^[0-9]+\n$/.test(new TextDecoder().decode(await shell.busybox.read(path)||new Uint8Array())),stem+'.code',{timeout:45000}));
   const {code,output}=await s.page.evaluate(async stem=>({code:new TextDecoder().decode(await shell.busybox.read(stem+'.code')),output:new TextDecoder().decode(await shell.busybox.read(stem+'.output'))}),stem);
   assert.match(code,/^[0-9]+\n$/);assert.equal(Number(code),0,output);return output;
  })(),45000,'Complete JWM observation request exceeded 45 seconds');}
