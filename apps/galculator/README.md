@@ -15,3 +15,11 @@ The staged test checks payload presence and GTK dependency linking. It does
 not launch galculator: main calls gtk_init before argument parsing. Source
 build, real menu launch, callback arithmetic/scientific input, quit/relaunch,
 browser reload, independent review and public gates remain required.
+
+The first layout run could not create or save its default configuration.
+The checked `main-config-dirs.c` overlay creates missing parent directories
+and reports all creation failures with captured errno; the original archive
+and explicit GALCULATOR_CONFIG behavior are unchanged. `config-dirs.patch`
+records the exact adaptation. Missing parents explain the source behavior but
+were not directly observed in that run. Fresh default-directory creation and
+Scientific-mode persistence still require reviewed runtime tests.
