@@ -126,3 +126,22 @@ extended4466d85) uses normal startup without VIMRUNTIME overrides, physical
 editing and exact rendered token colors, split/resize/save and stty restoration.
 Source and binary execution remain pending; prepare runs are frozen for Vim,
 GNU Awk and the corrected ncurses source retry.
+
+
+### Resumed execution after idle audit
+
+Merged4ac38c8 without conflict, preserving live-accepted Snake1.0.0-2 and all76
+catalog identities. The previously queued Game Boy public test had not started;
+its resumed run now passes install, exact payload hashes, built-in ROM palette
+and animation, process cleanup/terminal recovery and reload on runtime19609.
+Evidence e543a15 is committed; final independent review is pending. Scope excludes
+external ROMs, user controls, audio and CPU conformance.
+
+Tcl/Tk's retained binary install and installed consumers passed. Its GUI observer
+failed because it expected full-intensity green, but the retained named-green
+fixture and Tk implementation produce128.6f95d09 corrects only that observer;
+GUI retry and reload remain queued without repeating completed installation.
+Seven utility packages are running fresh binary acceptance. Corrected ncurses,
+Awk, Doom, Quake and Vim source runs are queued sequentially. All browser work
+uses the single machine-job lane. No new package addition was published in this
+resume step. Review completion and timed continuation wakeups are registered.
