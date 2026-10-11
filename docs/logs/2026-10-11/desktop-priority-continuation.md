@@ -372,3 +372,10 @@ Old/new frozen metadata matched in the author checks; independent review
 verified source and synthetic rejection cases. Neither stall cause nor speedup
 is established. New complete attempts are required; prior failed after-checks
 cannot be replaced by a differently bound receipt.
+
+Applied independently reviewed Quake condebug harness unchanged, SHA256
+1899a6586c4fa01e87113da6ac2da7bdcbf2d7fc5b41288a0ca392c0d19309de.
+Fresh normal log absence and engine-owned reset after exact retained-log reload
+verification replace buffered stdout as query evidence. Gameplay assertions and
+Doom behavior remain unchanged. Stdout is retained separately; inherited TERM
+cleanup is not normal-exit acceptance. Prior query failures remain preserved.
