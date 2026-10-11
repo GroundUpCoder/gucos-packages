@@ -36,7 +36,16 @@ catalog=json.loads(blob('catalog.json'));baseline=dict(catalog['packages']);mani
 def entry(path,b):return dict(url=origin+'/'+path,sha256=sha(b),size=len(b))
 for n in names:
  recipe=json.loads(blob('apps/'+n+'/recipe.json'));assert recipe['name']==n
- assert n not in baseline, 'baseline candidate replacement prohibited'
+ if n in baseline:
+  plan=json.loads(Path(os.environ['MIGRATION_UPGRADE_PLAN']).read_text())
+  accepted=json.loads(subprocess.check_output(['git','show',plan['baselineRevision']+':catalog.json'],cwd=ROOT))
+  upgrade=plan['upgrades'][n]
+  assert upgrade['oldCatalogEntry']==accepted['packages'][n]==baseline[n]
+  old=blob('apps/'+n+'/package.json')
+  assert sha(old)==baseline[n]['sha256'], 'baseline manifest differs from catalog'
+  assert json.loads(old)['version']==upgrade['oldVersion']
+  assert recipe['version']==upgrade['newVersion']!=upgrade['oldVersion']
+  assert json.loads(blob('apps/'+n+'/outputs.json'))==json.loads(old)['outputs'], 'Upgrade output set changed'
  inputs=recipe.pop('inputs');d=site/'migration'/n;d.mkdir(parents=True)
  files=[]
  for file in inputs:

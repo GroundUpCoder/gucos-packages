@@ -317,9 +317,9 @@
       "size": 6443
     },
     "snake": {
-      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9474fca194c5e2f23b321a50a8ba08227888d10f/apps/snake/package.json",
-      "sha256": "5cb9fa3e66e381cfdace3d2db51d18a5350b7fe5f1dac21e18d67796116a9331",
-      "size": 3750
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fe7234e26d5913fdeede1266220e3bf79409f434/apps/snake/package.json",
+      "sha256": "1ff119577c14240d69a186303f472bc86fd46ff9c290fece11833594e6269974",
+      "size": 3751
     },
     "lua55": {
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9474fca194c5e2f23b321a50a8ba08227888d10f/apps/lua55/package.json",

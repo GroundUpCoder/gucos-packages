@@ -1,0 +1,13 @@
+
+/usr/local/bin/snake: OK
+/usr/local/share/doc/snake/README.md: OK
+/usr/local/share/doc/snake/provenance.json: OK
+/usr/local/share/licenses/snake/LICENSE: OK
+/usr/local/share/applications/wasm-posix-snake.desktop: OK
+
+3 functions, 6704 bytes
+
+SNAKE-TERMINAL-RESTORED
+
+SNAKE-CTRL-C-PASS
+

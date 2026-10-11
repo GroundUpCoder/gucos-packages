@@ -1,0 +1,13 @@
+gucman: unknown source
+
+
+/usr/local/bin/snake: OK
+/usr/local/share/doc/snake/README.md: OK
+/usr/local/share/doc/snake/provenance.json: OK
+/usr/local/share/licenses/snake/LICENSE: OK
+/usr/local/share/applications/wasm-posix-snake.desktop: OK
+
+a88bd928fb555c1d8a00a024c751b1da682dee2827234c9dfb2c79283c182084  /home/user/migration-export.tar
+40448
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

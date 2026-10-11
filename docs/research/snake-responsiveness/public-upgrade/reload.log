@@ -1,0 +1,12 @@
+
+
+/usr/local/bin/snake: OK
+/usr/local/share/doc/snake/README.md: OK
+/usr/local/share/doc/snake/provenance.json: OK
+/usr/local/share/licenses/snake/LICENSE: OK
+/usr/local/share/applications/wasm-posix-snake.desktop: OK
+
+db7150611c1d89f71f23cd3b84136f8b90ba7eca80a061d29fdd4b86a67a54ac  /home/user/migration-export.tar
+40448
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
