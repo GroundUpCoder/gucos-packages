@@ -71,3 +71,21 @@ has no browser; its sole child uses ordinary `machine-job --kind browser`.
 Existing Galculator, Untangle, imlib2/feh and Xarchiver reservations were preserved.
 This is a queue registration, not a production pass. Whole-catalog acceptance
 must not be advanced on the basis of the missing job or publication alone.
+
+## Executed durable attempt 02
+
+The durable parent survived the turn boundary and recorded an executed gate:
+08:55:41–08:59:37 UTC, scheduler exit 1 at 08:59:38. See
+`public-attempt-02.json`, `public-attempt-02-scheduler.json`, and
+`public-attempt-02.log`. Public install/payload verification/reload passed;
+console milestones establish that the interactive gucode prompt and permission
+prompt were reached. After keyboard approval, the harness timed out waiting for
+the second gucode prompt. It did not retain the terminal transcript, so the cause
+is unresolved: an additional tool approval is one hypothesis, not an observed
+fact. No successful file write or completed interactive task is claimed.
+
+The next harness records a redacted terminal transcript and progress flags, and
+handles up to six real keyboard approval prompts before requiring return to the
+agent prompt. This is test instrumentation, not a product fix. The durable parent
+again uses only the ordinary shared scheduler and retries only admission errors.
+Tag v0.1.0 and full public interactive acceptance remain pending.

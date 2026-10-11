@@ -1,0 +1,26 @@
+{
+  "startedAt": "2026-10-11T08:41:40.701626+00:00",
+  "parentPid": 75903,
+  "status": "failed",
+  "preservedExistingJobIds": [
+    "a7a2ff5b-5c03-4e85-a6ab-0c7e58b5a5fd",
+    "9a209885-56f5-47d4-ad9b-de020674aa2e",
+    "b53e263d-b9ac-4bd2-80ff-54406c5eae66",
+    "db62d2ae-5832-48ae-a005-cb9187eb7514"
+  ],
+  "harnessSha256": "6cca6abd335e9ef60494f18c5173b1b34d73083ac354f19ad9d043d5dbbf822e",
+  "attempts": [
+    {
+      "number": 1,
+      "startedAt": "2026-10-11T08:41:40.702039+00:00",
+      "log": "scheduler-001.log",
+      "schedulerPid": 75909,
+      "schedulerJobId": "e1b34150-3ab1-4a89-b9de-4e22897213e3",
+      "finishedAt": "2026-10-11T08:59:38.175572+00:00",
+      "returncode": 1,
+      "browserGateStarted": true
+    }
+  ],
+  "finishedAt": "2026-10-11T08:59:38.175627+00:00",
+  "returncode": 1
+}
