@@ -1,0 +1,43 @@
+{
+  "action": "consumers",
+  "names": [
+    "xmahjongg"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "0b722c663c885b77c2ad126e03a1c23844d27ffc",
+  "startedAt": "2026-10-11T07:23:21.904Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "xmahjongg",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "b257af198004daa758ee23b7986a3281d58604a06e6c90be44d5f681d50843b9",
+          "size": 2048000
+        },
+        {
+          "path": "prepared.tar",
+          "sha256": "639aff48585d96c061e8c5c34e31f290bf551b68221f31b9754b4b22d3abb04d",
+          "size": 3645440
+        },
+        {
+          "path": "NOTICE",
+          "sha256": "1ce6cfc9c3979225feff9de3ecdc5db8d03d065ce1024763aeec79ba70480592",
+          "size": 24142
+        },
+        {
+          "path": "build.sh",
+          "sha256": "9aff3ee82f49de1d03f1a5f295a0ce31d775f65e09558b6131899699e2bd5bc6",
+          "size": 411
+        },
+        {
+          "path": "test.sh",
+          "sha256": "b0ea47f823b4d7a7ec78fd4fa26eeaecffcebe0a406cad2d4a9ac09ce36153df",
+          "size": 249
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T07:23:23.589Z"
+}

@@ -1,0 +1,174 @@
+{
+  "xmahjongg-jwm-expose-reloaded-undo.png": {
+    "sha256": "7377fafa2cff792ae6bae92f78ab9bd30343379b7bfdfc912e6ff1640e5e1d3c",
+    "size": 89374
+  },
+  "xmahjongg-jwm-expose-reloaded-redo-before-expose.png": {
+    "sha256": "2e6e8e21b289e82e856dc798dfd7c1556a5902c09cecbfbaa7638e5d77e6fe30",
+    "size": 89676
+  },
+  "xmahjongg-jwm-expose-reloaded-new-board.png": {
+    "sha256": "e606fc3a4c6099f4cfa060ba709fa06f4f44d5364729b6a7bbb89d3a38749262",
+    "size": 88104
+  },
+  "xmahjongg-closure.sha256": {
+    "sha256": "f9c2e33da7cd5b52452852601aa2df90348e1194eedaf7b3ebb6b1e0a46bc236",
+    "size": 59524
+  },
+  "xmahjongg-jwm-expose-undo.png": {
+    "sha256": "4629ea4a42bf01d5da45d16912eb34fa16fb92efcd1f6e4d3ca3fa59a52a373c",
+    "size": 86344
+  },
+  "xmahjongg.sha256": {
+    "sha256": "834d27baea515488ce92db295352921d5a3b2a9dc0ebee79007b7e5f69b15401",
+    "size": 1098
+  },
+  "xmahjongg-jwm-expose-undo-before-expose.png": {
+    "sha256": "fe79da389d439344c64cd42731d00bfd83800e1c37877560b01f8da3be9ded9b",
+    "size": 86705
+  },
+  "xmahjongg-jwm-expose-reloaded-relaunched.png": {
+    "sha256": "4efcdb95899a2fd83ee52f9133e2a9bd1dc0fc0583fc6cdb01d06a19e93e0dc7",
+    "size": 88494
+  },
+  "install-xmahjongg.json": {
+    "sha256": "fbd696abd67074260722a96877abd032061f2c0b9ace6b09ece50a517f3e92e7",
+    "size": 311
+  },
+  "config.json": {
+    "sha256": "e828e4b8eef7c21a607bde7548a8d5653a75e69c43aae3587d95014ceca14140",
+    "size": 23714
+  },
+  "xmahjongg-jwm-expose-reloaded-redo.png": {
+    "sha256": "1f31db9d2f0506cca5d0cc56e372116897b37ae99e51fd8074c229e9da56ec61",
+    "size": 89267
+  },
+  "xmahjongg-jwm-expose-reloaded.log": {
+    "sha256": "bf245cc3af6a7f18f64a405889740f23b36b119cd9079f81010bdac16cee50f7",
+    "size": 26437
+  },
+  "xmahjongg-jwm-expose-reloaded-relaunched-before-expose.png": {
+    "sha256": "4efcdb95899a2fd83ee52f9133e2a9bd1dc0fc0583fc6cdb01d06a19e93e0dc7",
+    "size": 88494
+  },
+  "xmahjongg-jwm-expose-relaunched-before-expose.png": {
+    "sha256": "30df37a7ac1fe9e7a07695951b5569f7d281a477feec89b333a2f668a0072028",
+    "size": 87603
+  },
+  "xmahjongg-jwm-expose-redo.png": {
+    "sha256": "d290ee63c18f3190fb869835cd57f5b8a4425238b0fe4e6910c7e46ff3897667",
+    "size": 86425
+  },
+  "xmahjongg-jwm-expose-new-board-before-expose.png": {
+    "sha256": "3f54292bfc21892448494f90c0e69827369bb2ebde88760457a6c3c62b6b67ac",
+    "size": 89092
+  },
+  "xmahjongg-jwm-expose-reloaded-pair-removed-before-expose.png": {
+    "sha256": "91e9e564e5e70b83dda7a49c1716606a394000152c76cdb3b1b6fb755398f9f8",
+    "size": 89525
+  },
+  "xmahjongg-jwm-expose-reloaded-pair-removed.png": {
+    "sha256": "1f31db9d2f0506cca5d0cc56e372116897b37ae99e51fd8074c229e9da56ec61",
+    "size": 89267
+  },
+  "README.md": {
+    "sha256": "08dd24f1f2ca8d2f89b0360b4f93e99e7296ce41ab7918d3ca9c44c53d7ef55c",
+    "size": 748
+  },
+  "reload-xmahjongg.json": {
+    "sha256": "7483cfd954b49df90007cfea17a5de4033f08fafd10d378bd664f76452d974c2",
+    "size": 310
+  },
+  "xmahjongg-jwm-expose-pair-removed.png": {
+    "sha256": "d290ee63c18f3190fb869835cd57f5b8a4425238b0fe4e6910c7e46ff3897667",
+    "size": 86425
+  },
+  "xmahjongg-jwm-expose.json": {
+    "sha256": "e4beb6d8ab3e0e369bf8184600d7b79c6936ef6fae18c727197e833eeeeb8e32",
+    "size": 2325
+  },
+  "xmahjongg-jwm-expose.log": {
+    "sha256": "8501b6447aba8856d4d998b130c36fa7ab9af59be95e947877469777753116d7",
+    "size": 26437
+  },
+  "consumers-xmahjongg.json": {
+    "sha256": "20ef1fbbd0cd233c0f632dd389ee516e073ee83c522f90ec8b72485a0c36512b",
+    "size": 1224
+  },
+  "xmahjongg-jwm-expose-reloaded-initial.png": {
+    "sha256": "7377fafa2cff792ae6bae92f78ab9bd30343379b7bfdfc912e6ff1640e5e1d3c",
+    "size": 89374
+  },
+  "xmahjongg-jwm-expose-initial-before-expose.png": {
+    "sha256": "4629ea4a42bf01d5da45d16912eb34fa16fb92efcd1f6e4d3ca3fa59a52a373c",
+    "size": 86344
+  },
+  "xmahjongg-jwm-expose-reloaded.json": {
+    "sha256": "a5aa2bb7aedb0ef02a554d0e8e19c7fa7ec9b9773c5c8484aaf0ccdd8aff86b8",
+    "size": 2324
+  },
+  "dependencies-jwm-desktop-entries-xterm.json": {
+    "sha256": "b67fe24abeea4bdff0148aedd3fd61aae263a16fc4626469070d264c580b00eb",
+    "size": 346
+  },
+  "xmahjongg-jwm-expose-pair-removed-before-expose.png": {
+    "sha256": "8076f9fcb7ad31488c276f7c5798dc6c9ddabdab9a2d9f0a74174701dc34c57c",
+    "size": 86671
+  },
+  "xmahjongg-jwm-expose-relaunched.png": {
+    "sha256": "30df37a7ac1fe9e7a07695951b5569f7d281a477feec89b333a2f668a0072028",
+    "size": 87603
+  },
+  "xmahjongg-jwm-expose-new-board.png": {
+    "sha256": "080c1d4ea83643cdc0e62d251c186797a692e5ad078da3d85d5f8e490cc4f8fe",
+    "size": 89474
+  },
+  "xmahjongg-jwm-expose-redo-before-expose.png": {
+    "sha256": "fe16ef98742b735aa43df358c0826165623e870acc91d8481738b7625c339b10",
+    "size": 86818
+  },
+  "xmahjongg-jwm-expose-reloaded-hint-selected.png": {
+    "sha256": "13a3d9e6e95f9033d60f588d523d5c68e5b708d40cb55598d5d12c8f1ab33cc2",
+    "size": 89406
+  },
+  "xmahjongg-closure.json": {
+    "sha256": "26ea35aef3fd6b610c47c8a27b41ea74e01ceedc2857a50c4d3112b3e1da47b7",
+    "size": 60519
+  },
+  "xmahjongg-jwm-expose-reloaded-initial-before-expose.png": {
+    "sha256": "7377fafa2cff792ae6bae92f78ab9bd30343379b7bfdfc912e6ff1640e5e1d3c",
+    "size": 89374
+  },
+  "xmahjongg-jwm-expose-initial.png": {
+    "sha256": "4629ea4a42bf01d5da45d16912eb34fa16fb92efcd1f6e4d3ca3fa59a52a373c",
+    "size": 86344
+  },
+  "xmahjongg-jwm-expose-reloaded-undo-before-expose.png": {
+    "sha256": "c32e755d7f916950781c3a791ac059101d091557cb9f8f48afb9c0894092cc9f",
+    "size": 89768
+  },
+  "candidate-manifests.json": {
+    "sha256": "ee07e4d2e1c47611bda445cda383a68183e70331e35a146fd58151fa0b8aee97",
+    "size": 3009
+  },
+  "xmahjongg-jwm-expose-hint-selected.png": {
+    "sha256": "a1ce0b31e556d4fa9babde2ee321f7321674c0f90611e599e917e5d7ae30a4e9",
+    "size": 86445
+  },
+  "xmahjongg-jwm-expose-reloaded-new-board-before-expose.png": {
+    "sha256": "8c2c3ed92225f7236f3c28f6eaa57f80b23dcd5aee7eaf32d43c607d8d513bac",
+    "size": 87769
+  },
+  "exports/xmahjongg/reload-receipt.json": {
+    "sha256": "64ac033759e5c0c2f93ca49ad739d59b87981af0de728c6200fb7b7d9a49d301",
+    "size": 3294
+  },
+  "exports/xmahjongg/consumers-receipt.json": {
+    "sha256": "64ac033759e5c0c2f93ca49ad739d59b87981af0de728c6200fb7b7d9a49d301",
+    "size": 3294
+  },
+  "exports/xmahjongg/install-receipt.json": {
+    "sha256": "64ac033759e5c0c2f93ca49ad739d59b87981af0de728c6200fb7b7d9a49d301",
+    "size": 3294
+  }
+}
