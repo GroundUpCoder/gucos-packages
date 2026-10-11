@@ -77,13 +77,14 @@ try{
  const raw=PNG.sync.read(await canvas.screenshot()),box=await canvas.boundingBox();
  const tl=await canvasPosition(canvas,{x:w.x+6,y:w.y+35}),br=await canvasPosition(canvas,{x:w.x+w.width-6,y:w.y+w.height-30});
  const x0=Math.ceil(tl.x*raw.width/box.width),y0=Math.ceil(tl.y*raw.height/box.height),x1=Math.floor(br.x*raw.width/box.width),y1=Math.floor(br.y*raw.height/box.height);
+ const sx=(br.x-tl.x)*raw.width/box.width/(w.width-12),sy=(br.y-tl.y)*raw.height/box.height/(w.height-65);assert(sx>0&&sy>0);
  const seen=new Uint8Array(raw.width*raw.height),groups=[];
  const color=(x,y)=>{const p=(y*raw.width+x)*4,[r,g,b]=raw.data.subarray(p,p+3);return r>220&&g<25&&b<25?1:b>220&&r<25&&g<25?2:g>=110&&g<=145&&r<25&&b<25?3:0;};
  for(let y=y0;y<y1;y++)for(let x=x0;x<x1;x++){
   const c=color(x,y);if(!c||seen[y*raw.width+x])continue;
   const todo=[[x,y]],points=[];seen[y*raw.width+x]=1;
   while(todo.length){const [a,b]=todo.pop();points.push([a,b]);for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){const cX=a+dx,cY=b+dy;if(cX<x0||cX>=x1||cY<y0||cY>=y1||seen[cY*raw.width+cX]||color(cX,cY)!==c)continue;seen[cY*raw.width+cX]=1;todo.push([cX,cY]);}}
-  const nativeArea=points.length*800*600/(raw.width*raw.height);if(nativeArea>1200)groups.push({points,nativeArea,color:c});
+  const nativeArea=points.length/(sx*sy);if(nativeArea>1200)groups.push({points,nativeArea,color:c});
  }
  assert(groups.length,'Expected a connected multi-tile primary-color group');
  const group=groups[0],cx=group.points.reduce((n,p)=>n+p[0],0)/group.points.length,cy=group.points.reduce((n,p)=>n+p[1],0)/group.points.length;
