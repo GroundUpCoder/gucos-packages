@@ -1,0 +1,63 @@
+
+/usr/local/include/Imlib2.h: OK
+/usr/local/lib/imlib2/loaders/argb.so: OK
+/usr/local/lib/imlib2/loaders/bmp.so: OK
+/usr/local/lib/imlib2/loaders/ff.so: OK
+/usr/local/lib/imlib2/loaders/ico.so: OK
+/usr/local/lib/imlib2/loaders/jpeg.so: OK
+/usr/local/lib/imlib2/loaders/lbm.so: OK
+/usr/local/lib/imlib2/loaders/png.so: OK
+/usr/local/lib/imlib2/loaders/pnm.so: OK
+/usr/local/lib/imlib2/loaders/xpm.so: OK
+/usr/local/lib/libImlib2.so: OK
+/usr/local/lib/pkgconfig/imlib2.pc: OK
+/usr/local/share/doc/imlib2/COPYING: OK
+/usr/local/share/licenses/imlib2/COPYING: OK
+/usr/local/share/licenses/imlib2/COPYING-PLAIN: OK
+
+/usr/local/bin/feh: OK
+/usr/local/libexec/feh: OK
+/usr/local/share/applications/feh.desktop: OK
+/usr/local/share/doc/feh/COPYING: OK
+/usr/local/share/doc/feh/README.md: OK
+/usr/local/share/feh/fonts/NotoSans-Medium.ttf: OK
+/usr/local/share/feh/fonts/OFL.txt: OK
+/usr/local/share/feh/fonts/README.md: OK
+/usr/local/share/feh/fonts/yudit.ttf: OK
+/usr/local/share/feh/images/feh.png: OK
+/usr/local/share/feh/images/feh.svg: OK
+/usr/local/share/feh/images/menubg_default.png: OK
+/usr/local/share/licenses/feh/COPYING: OK
+/usr/local/share/licenses/feh/OFL.txt: OK
+
+
+
+9 functions, 15473 bytes
+
+8 functions, 18123 bytes
+
+5 functions, 12328 bytes
+
+{
+  tail: '/feh.svg: OK\n' +
+    '/usr/local/share/feh/images/menubg_default.png: OK\n' +
+    '/usr/local/share/licenses/feh/COPYING: OK\n' +
+    '/usr/local/share/licenses/feh/OFL.txt: OK\n' +
+    '9 functions, 15473 bytes\n' +
+    '8 functions, 18123 bytes\n' +
+    '5 functions, 12328 bytes\n' +
+    'WM_READY\n' +
+    'JWM-CONTROL-READY\n'
+}
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+Error: Feh failed settled pixel oracle: previous
+    at file:///Users/jku/git/gucos-packages-porting/tests/desktop/feh.mjs:72:10
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processImmediate (node:internal/timers:472:9)
+    at async bounded (file:///Users/jku/git/gucos-packages-porting/tests/desktop/feh.mjs:21:51)
+    at async file:///Users/jku/git/gucos-packages-porting/tests/desktop/feh.mjs:78:59
+
+Node.js v25.8.2

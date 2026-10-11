@@ -1,0 +1,112 @@
+{
+  "status": "failed",
+  "directory": "/home/user/feh-gate-private",
+  "reload": false,
+  "scope": "Owned menu, two persisted images, next/previous, zoom-out/reset, normal quit; no slideshow-position or preference persistence claim.",
+  "startedAt": "2026-10-11T10:10:46.941Z",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binaries": {
+    "imlib2": {
+      "url": "http://127.0.0.1:57800/migration/imlib2/binary.tar",
+      "sha256": "43adacc717051755db71a86bee4486bb7a0a2eeb5865f49ee723744f13e690df",
+      "size": 937472
+    },
+    "feh": {
+      "url": "http://127.0.0.1:57800/migration/feh/binary.tar",
+      "sha256": "06fb7aa51a0381e6f300481ee8dae239161579e874837eef7a6bced0394be433",
+      "size": 1182208
+    }
+  },
+  "fixtures": {
+    "red.png": {
+      "size": 188,
+      "sha256": "d6574bd9113366798297807868d6082d7c681035a26c861c2caeca401f551996"
+    },
+    "green.png": {
+      "size": 188,
+      "sha256": "43df3c0b99badc924bfc1986568ed92d812656bdb33ae53e8caa0d8b13165ff1"
+    }
+  },
+  "metadata": "",
+  "observerSha256": "15c5ae24aa8fb2538ffe34c67f19c10872959d19b1e8f0badd6820b9817556b5",
+  "harnessSha256": "d055e7c0ea67a95ad6e31231a63b7fa56966e7c192affc1e1746d5fdd8783677",
+  "menuHelper": {
+    "observerSha256": "33aea82fc674972ac9e18b9678936e3bdae89068f26661750ce8d9ff8b68b2b6",
+    "menuHelperSha256": "40101586a3f90a55c1b6c1aa1c8bf1f7c12f8fa812099c808384c05248c23513"
+  },
+  "helpers": {
+    "observerSha256": "e12e48ac3ed320457181fc16a84f175700bc585d9ff761f3c2d3c75c72824149",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+    "sessionHelperSha256": "5d4365a25306f79315b29324cd71ddac2e75477ccf71e6ca1f116cef03d4a3fc"
+  },
+  "menu": {
+    "id": "feh.desktop",
+    "index": 2,
+    "geometry": {
+      "id": 2097188,
+      "x": 0,
+      "y": 419,
+      "width": 129,
+      "height": 152,
+      "pid": 0
+    },
+    "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"Image viewer\">feh /usr/local/share/feh/images</Program>\n<Program label=\"feh Image Viewer\">/usr/local/bin/desktop-menu launch feh.desktop</Program>\n</JWM>\n"
+  },
+  "window": {
+    "xid": 6291457,
+    "pid": 30,
+    "x": 32,
+    "y": 52,
+    "width": 80,
+    "height": 60
+  },
+  "initial": {
+    "xid": 6291457,
+    "pid": 30,
+    "x": 4,
+    "y": 24,
+    "width": 792,
+    "height": 542,
+    "hash": 1170500933,
+    "red": {
+      "count": 0,
+      "minX": -1,
+      "minY": -1,
+      "maxX": -1,
+      "maxY": -1
+    },
+    "green": {
+      "count": 4800,
+      "minX": 356,
+      "minY": 241,
+      "maxX": 435,
+      "maxY": 300
+    }
+  },
+  "next": {
+    "xid": 6291457,
+    "pid": 30,
+    "x": 32,
+    "y": 52,
+    "width": 80,
+    "height": 60,
+    "hash": 1875684549,
+    "red": {
+      "count": 4800,
+      "minX": 0,
+      "minY": 0,
+      "maxX": 79,
+      "maxY": 59
+    },
+    "green": {
+      "count": 0,
+      "minX": -1,
+      "minY": -1,
+      "maxX": -1,
+      "maxY": -1
+    }
+  },
+  "error": "Error: Feh failed settled pixel oracle: previous\n    at file:///Users/jku/git/gucos-packages-porting/tests/desktop/feh.mjs:72:10\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:472:9)\n    at async bounded (file:///Users/jku/git/gucos-packages-porting/tests/desktop/feh.mjs:21:51)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/desktop/feh.mjs:78:59",
+  "finishedAt": "2026-10-11T10:11:22.511Z"
+}

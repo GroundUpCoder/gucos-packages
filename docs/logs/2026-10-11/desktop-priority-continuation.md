@@ -261,3 +261,9 @@ Reviewed code SHA-256:
 - `xarchiver-layout-v2-session.mjs`: `814f8045e3de5bb2f785244e995d5c8b9ae5a15c75d4dbaeb4077428e28376de`
 
 - `xarchiver-layout-v2-supervisor.c`: `68247a233a517f33e5ceba8ad979dbb3149a62a9a4f582b604073ecda0fc2678`
+
+Imlib2/Feh first functional attempt passed install/consumers/dependencies and
+Imlib2 normal X11 checks, then failed Feh previous-image pixel comparison.
+Initial and next observations have different client geometry. Cause is not yet
+established; no reload ran. Partial/failure evidence is retained together under
+`imlib2-feh/gucos-functional-attempt1`, without acceptance advancement.
