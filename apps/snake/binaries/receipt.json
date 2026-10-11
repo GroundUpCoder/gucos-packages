@@ -1,11 +1,11 @@
 {
-  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
-  "sha256": "d7b6a5804fdbd3bfa8cc6782e8204f44c187b8d9445eb4ffefd1aa9934a3ee20",
-  "size": 39936,
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "0b8d91f8dfe9da464a391629a2d4f8b2693a6b5150fac8493e7c3d8bf0813f0d",
+  "size": 40448,
   "guestManifest": {
     "format": 1,
     "name": "snake",
-    "version": "1.0.0-1",
+    "version": "1.0.0-2",
     "dependencies": [],
     "dependencyRequirements": {},
     "platform": {
@@ -19,57 +19,57 @@
     "files": [
       {
         "path": "main.c",
-        "url": "http://127.0.0.1:54070/migration/snake/main.c",
-        "sha256": "d38330bda741ae042cf8c73acfee011b6d782d8088f6f90d090ab59ab24f7598",
-        "size": 9260
+        "url": "http://127.0.0.1:59446/migration/snake/main.c",
+        "sha256": "75f6f4e27b72e3055bac3022db95573236957bc4d3c9a35adb513dcdad1293e8",
+        "size": 9815
       },
       {
         "path": "upstream.c",
-        "url": "http://127.0.0.1:54070/migration/snake/upstream.c",
+        "url": "http://127.0.0.1:59446/migration/snake/upstream.c",
         "sha256": "82b0a3149bb0466f6209fa9cf777cbbf0dd0c12197037689e5f494bb145cfd55",
         "size": 7602
       },
       {
         "path": "LICENSE",
-        "url": "http://127.0.0.1:54070/migration/snake/LICENSE",
+        "url": "http://127.0.0.1:59446/migration/snake/LICENSE",
         "sha256": "3f2bf733d13b1e20f7457acc5baf47aa94b3982901cce4f6d7e80438bf9b6b13",
         "size": 11344
       },
       {
         "path": "README.md",
-        "url": "http://127.0.0.1:54070/migration/snake/README.md",
-        "sha256": "a99dc2d54fea060c9d479723953706cabd53a4906cbe8c886da8a1462de15091",
-        "size": 618
+        "url": "http://127.0.0.1:59446/migration/snake/README.md",
+        "sha256": "58df367943df721419d84e9ab1e02c36a977bc9256cc79ceab572c4036c7087c",
+        "size": 1084
       },
       {
         "path": "provenance.json",
-        "url": "http://127.0.0.1:54070/migration/snake/provenance.json",
+        "url": "http://127.0.0.1:59446/migration/snake/provenance.json",
         "sha256": "b31794ded78014922d5eef3c34f2bde3ac7eda1aa421aa0c20eeacc9fa617ab3",
         "size": 660
       },
       {
         "path": "snake.desktop",
-        "url": "http://127.0.0.1:54070/migration/snake/snake.desktop",
+        "url": "http://127.0.0.1:59446/migration/snake/snake.desktop",
         "sha256": "290d82eeedb0e2c98e6069145b9ebf558a02fd253d43840adf84d32dc4aa7b29",
         "size": 139
       },
       {
         "path": "build.sh",
-        "url": "http://127.0.0.1:54070/migration/snake/build.sh",
+        "url": "http://127.0.0.1:59446/migration/snake/build.sh",
         "sha256": "fc45ed354c281832c119580cd2e7e3bf9e0eb00a9cdbc389dfa44792db1d5507",
         "size": 364
       },
       {
         "path": "test.sh",
-        "url": "http://127.0.0.1:54070/migration/snake/test.sh",
+        "url": "http://127.0.0.1:59446/migration/snake/test.sh",
         "sha256": "f9bd081349393e6ed26e8734cb35a93d0cc793ecf16732cdcfbfb39e6c2b06a0",
         "size": 323
       },
       {
         "path": "logic-test.c",
-        "url": "http://127.0.0.1:54070/migration/snake/logic-test.c",
-        "sha256": "14c281c3fcc5cf52f4a95f3569db40480bd8d5a421f7d9b3bd0d3c925a6b7e7c",
-        "size": 1266
+        "url": "http://127.0.0.1:59446/migration/snake/logic-test.c",
+        "sha256": "9ce8659b15c71b6f0bf247c2a2b56b1222c6cc27658ea3bb0a2bc6987149c477",
+        "size": 2145
       }
     ],
     "build": "build.sh",

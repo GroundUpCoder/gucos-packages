@@ -48,3 +48,21 @@ existed and no guest execution had begun. The attempted durable scheduler
 parent then exited with the scheduler's explicit queue-full refusal (four
 waiting jobs); it did not start a build or browser. No other job was cancelled
 or reprioritized. Publication remains pending actual acceptance.
+
+## Private acceptance completed
+
+Scheduler job 345a6afc-4952-497b-b5b7-2f62b6f0f278 completed all stages
+successfully on 2026-10-11: guest source compilation/logic tests, fresh binary
+installation, keyboard gameplay/timing, reload, old-to-new upgrade and reload.
+Exact reports, logs, manifests, receipts, checksums and screenshot are retained
+under docs/research/snake-responsiveness/{source,binary,upgrade}, with evidence
+hash inventories. The archive is 40448 bytes, SHA-256
+0b8d91f8dfe9da464a391629a2d4f8b2693a6b5150fac8493e7c3d8bf0813f0d.
+
+Observed idle intervals were 105.72, 111.20, 111.51 and 111.65 ms. Five
+perpendicular key responses were 3.355, 1.995, 2.365, 5.045 and 2.105 ms.
+These measure the automated bootstrap terminal path to head-output receipt,
+not physical-key latency or Xterm/JWM desktop latency. Functional checks also
+verified collision/restart, board rendering, single-q/Ctrl-C exit and termios
+restoration. Upgrade 1.0.0-1 to 1.0.0-2 retained the exact expected files across
+reload. Native checks were supplementary; guest results are now verified.
