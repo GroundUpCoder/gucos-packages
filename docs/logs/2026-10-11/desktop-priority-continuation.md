@@ -29,3 +29,72 @@ Desktop-apps public evidence f53bc85 passed independent acceptance review: 102 i
 Independent review approved public evidence `6f5fd60`: all 50 indexed files, 537 closure payloads, immutable catalog/manifest/artifact bindings, real JWM launch and pair removal/undo/redo, new boards, quit/relaunch and repeated gameplay after package reload. Screenshots verify 144 → 142 → 144 → 142 in both sessions. No saved-game or winning-game claim.
 
 The catalog contains 90 entries; 88 now have acceptance accounted for in this continuation. The preservation baseline remains the accepted 87-entry `ec3fa8c` snapshot because the newer catalog also contains independently owned gucode/libcurl additions outside this review. Their catalog entries are preserved. Mines private opening/save/reload evidence `8c5922e` is independently accepted; Untangle paced-input retry follows reviewed `d49e5ff`. Puzzles publication remains pending.
+
+## Next GUI and retained-fixture gates
+
+Independent source/UI audit established Galculator's fresh defaults (Basic, decimal, radians, algebraic; display remembering disabled). Layout-discovery driver `166db78` is approved for execution after reviewed binary fixture preparation. It retains actual Basic/View-menu/Scientific screenshots through physical input and normal quit; it makes no numeric or preference-persistence acceptance claim. Numeric tests must establish guarded geometry from those screenshots, compare rendered 3/0/3 and 144/0/144 results, and verify app-written Scientific-mode configuration across relaunch and browser reload without seeding configuration.
+
+Independent readiness audit reverified the retained CLI/shooter fixture's 93 files and Vim v2's 70 files on runtime `19609f47`. Source exports remain ncurses `1dee6db`, Awk/Doom `a41fc47`, Quake `136d562`. Vim remains an unexecuted corrected source fixture (1,851 outputs, two obsolete aliases omitted). Shooter driver `87a57c4` introduces distinct host evidence names for fresh-session repeated gameplay; independent execution review approved the exact driver at `87a57c44aafb9d78675525785fed6af928b162dd`. Fresh install/gameplay/reload acceptance remains pending. Priority game jobs retain their place ahead of this batch.
+
+
+## Additional owned desktop source preparation
+
+Xarchiver `1fd0a18` retains all 220 historical blobs from revision
+`0b9b3245fe11a3bc677d81113cba90cd0ae80446`, builds the 37 historical C units,
+and declares 31 outputs including the complete license-notice closure. Its
+source-only provenance, shell syntax, platform, dependencies and output ownership
+checks passed. Independent implementation review is pending. The historical tar
+backend emits GNU-only options unsupported by the core BusyBox provider; a
+package-owned plain-TAR compatibility profile is being developed for separate
+review. No archive-function or publication acceptance is claimed.
+
+Imlib2 `7765bfb` retains 178 historical blobs, including the original 1.6.1
+ximage/grab overlays, and declares 15 outputs with nine dynamic image loaders.
+Its staged headless consumer covers PNG roundtrip, scaling, JPEG roundtrip and
+missing-file behavior; it has not run. The original X11 pixel consumer remains
+intact and requires separate execution. Feh `34e1811` retains 222 historical
+blobs, three overlays, generated headers, fonts and assets, with 14 outputs.
+Its source tests specify exact file/directory image dimensions. Both source-only
+validation passes preserve the publication baseline; independent review and all
+guest/private/public acceptance stages remain pending.
+
+
+Independent review approved Imlib2 `7765bfb` and Feh `34e1811` for source-build
+execution, with Imlib2 available first. The exact frozen source fixture uses
+`5aa9d59` and runtime `19609f47`; the queued sequence installs accepted binary
+GTK3-X11/JPEG dependencies before building Imlib2 and Feh. This avoids rebuilding
+unchanged dependency sources. Approval covers the bounded headless consumers;
+X11 rendering, actual Feh menu/navigation/pixels/lifecycle/reload remain open.
+Feh version reporting uses a substring assertion; image-dimension outputs use
+exact comparisons.
+
+The proposed Xarchiver BusyBox TAR adaptation was not implemented: source audit
+found caller/error-handling and filename-parsing issues beyond a small flag fix.
+No patch or acceptance resulted. Its existing single-file bzip2 backend is now
+being audited against the accepted bzip2 provider as a separate bounded scope.
+
+
+Xarchiver `2d74f6aa2c4952679cd4862b7524a919680c49ef` independently passed
+source-execution review. It declares accepted bzip2 1.0.8-1 and a single guarded
+C overlay disabling unverified standard gtar/tar discovery. The original source
+archive is unchanged, and the declared patch exactly records the overlay diff.
+Upstream alternative providers are preserved. The frozen source fixture queues
+accepted binary dependencies before the application build. The pending GUI scope
+is single-file bzip2 creation, explicit Test, exact extraction, quit/reopen and
+browser reload; a displayed row alone cannot establish archive validity.
+
+
+Feh observer/harness `2c61be7` received independent review. The observer was
+approved, but review found that reciprocal zoom-out/zoom-in could let reset pass
+without changing anything. Correction `a086d5e` now establishes a stable reduced
+image distinct from the initial native hash immediately before reset, then
+requires exact restoration. It also bounds each complete settling operation,
+including bridge awaits and screenshot retention, to 35 seconds. Independent
+review approved the corrected normal/reload driver for execution after binary
+readiness; no GUI acceptance has run.
+
+Xarchiver first-pass layout driver `84a7b1c` and optional JWM working-directory
+support `ef84a48` also passed independent execution review. Discovery captures
+main/menu/New/Open chooser geometry and screenshots, cancels dialogs, and proves
+normal process exit. It neither creates archives nor establishes persistence.
+The default desktop-session shell remains unchanged.

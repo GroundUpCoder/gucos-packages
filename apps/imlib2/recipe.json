@@ -1,0 +1,39 @@
+{
+  "name": "imlib2",
+  "version": "1.6.1-1",
+  "dependencies": [
+    "x11-shared",
+    "freetype",
+    "libpng",
+    "libjpeg-turbo"
+  ],
+  "dependencyRequirements": {
+    "x11-shared": {
+      "version": "0.1.0-1"
+    },
+    "freetype": {
+      "version": "2.14.1-1"
+    },
+    "libpng": {
+      "version": "1.6.58-1"
+    },
+    "libjpeg-turbo": {
+      "version": "3.1.4.1-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "consumer-headless.c"
+  ]
+}

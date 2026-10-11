@@ -1,0 +1,17 @@
+--- a/src/main.c
++++ b/src/main.c
+@@ -912,10 +912,10 @@
+ 	/* tape archive */
+ 
+ 	type = XARCHIVETYPE_TAR;
+-	path = g_find_program_in_path("gtar");
+-
+-	if (!path)
+-		path = g_find_program_in_path("tar");
++	/* This package has no verified GNU-compatible tar provider. Core BusyBox
++	 * tar lacks options used by xa_tar_*. Keep upstream alternative-provider
++	 * detection below, without advertising the incompatible standard backend. */
++	path = NULL;
+ 
+ 	standard = (path != NULL);
+ 

@@ -1,7 +1,7 @@
 {
   "README.md": {
-    "sha256": "28ca4ee6a4a1c221140d7189d000306cd3b6983e8f50c23c526ea0512908cebb",
-    "size": 753
+    "sha256": "06f47b50c4ea1c07bc5368433a438b7ea8d842f7536fb7bbe0ef005523a85936",
+    "size": 925
   },
   "candidate-manifests.json": {
     "sha256": "00668deb8eabbf9fd780ac6731b8052217893dbdbbfe28ffd1beb928e220ff43",
@@ -235,8 +235,64 @@
     "sha256": "b4d57a6b7d8e61bf353ae241036bcfef898728fc57c8e512dfe17b795c3a8766",
     "size": 6741
   },
+  "puzzles-untangle-jwm-paced-dragged.png": {
+    "sha256": "7d4ec67491e1cc78a37479c8341f70c04e1fcf07d606594d127bb8e253bd4e52",
+    "size": 35580
+  },
+  "puzzles-untangle-jwm-paced-held-drag-1.png": {
+    "sha256": "f3f9345dfa16aa6addeeb50230938f95df10de2cccfe9c2f48e4f1186d62ae17",
+    "size": 36075
+  },
+  "puzzles-untangle-jwm-paced-held-drag-2.png": {
+    "sha256": "f3f9345dfa16aa6addeeb50230938f95df10de2cccfe9c2f48e4f1186d62ae17",
+    "size": 36075
+  },
+  "puzzles-untangle-jwm-paced-initial.png": {
+    "sha256": "12556ec58e9416297f4aa981f78fa3a73a18fbf8f6ca4c31675db3d2b1ff5ef3",
+    "size": 36589
+  },
+  "puzzles-untangle-jwm-paced-loaded.png": {
+    "sha256": "492b4d44bc9678c321d85e1e7d86c5dce3b912004db1cebb931e63f714afc0fa",
+    "size": 35582
+  },
+  "puzzles-untangle-jwm-paced-reload-browser-reloaded.png": {
+    "sha256": "7d4ec67491e1cc78a37479c8341f70c04e1fcf07d606594d127bb8e253bd4e52",
+    "size": 35580
+  },
+  "puzzles-untangle-jwm-paced-reload.json": {
+    "sha256": "e5706f9efd5c874a7293aaf29c9c9cc15c645ad6c41ea220918a08d28d0f8983",
+    "size": 4340
+  },
+  "puzzles-untangle-jwm-paced-reload.log": {
+    "sha256": "7242058008cfe0d8a4a0c87292f1e594fd4e4a3d8a9de3e969645be0671de4ac",
+    "size": 6254
+  },
+  "puzzles-untangle-jwm-paced-repeat-drag.png": {
+    "sha256": "7d4ec67491e1cc78a37479c8341f70c04e1fcf07d606594d127bb8e253bd4e52",
+    "size": 35580
+  },
+  "puzzles-untangle-jwm-paced-undo.png": {
+    "sha256": "12556ec58e9416297f4aa981f78fa3a73a18fbf8f6ca4c31675db3d2b1ff5ef3",
+    "size": 36589
+  },
+  "puzzles-untangle-jwm-paced.json": {
+    "sha256": "ac4d3418e2fc4b0945ab20c2bf9b672c7222f0c76965316af8111fbf04fc310d",
+    "size": 7909
+  },
+  "puzzles-untangle-jwm-paced.log": {
+    "sha256": "5cb4f33744d2337ed1305abfa59bf6008ae4fb4d1449ce6f0127c9644346541d",
+    "size": 6765
+  },
   "puzzles.sha256": {
     "sha256": "845811113ecd7c7b31560665f95ea35ed0f19a28a6f3496bfb30367e884a7dd0",
     "size": 13557
+  },
+  "untangle-paced-reload.log": {
+    "sha256": "d2d97da3ba10f9592349807b73c6c69e81a749416669ff1c701d7433d76daa57",
+    "size": 6260
+  },
+  "untangle-paced.log": {
+    "sha256": "9cbea7cef7bca77d0d903dbd1a019e045f10728e1896ef75585ac7372b93ab02",
+    "size": 7057
   }
 }

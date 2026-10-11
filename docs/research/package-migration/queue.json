@@ -933,7 +933,7 @@
     {
       "id": "feh",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/feh/wasm-package.json",
       "historicalManifestSha256": "c895093ace5ba82a1fd5ac2d1ad3ae83b0b5515b2db96f0f254942e9498943ab",
       "historicalEvidence": [
@@ -972,7 +972,14 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Reviewed source fixture prepared; sequential dependency install and Imlib2/Feh source build queued. Binary install, X11/GUI/reload, immutable publication review and public acceptance remain pending."
+      ],
+      "candidate": "apps/feh",
+      "sourcePreparation": {
+        "commit": "34e1811",
+        "scope": "Independently approved for source-build execution and bounded headless consumers. Imlib2 precedes Feh. Fresh source execution, X11 interaction and publication acceptance remain pending."
+      }
     },
     {
       "id": "flex",
@@ -2001,7 +2008,7 @@
     {
       "id": "imlib2",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/imlib2/wasm-package.json",
       "historicalManifestSha256": "85e7abb6978cb68f8f239543a202f0dd363666bf10d2e2b280f0b81b4d32e33b",
       "historicalEvidence": [
@@ -2034,7 +2041,14 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Reviewed source fixture prepared; sequential dependency install and Imlib2/Feh source build queued. Binary install, X11/GUI/reload, immutable publication review and public acceptance remain pending."
+      ],
+      "candidate": "apps/imlib2",
+      "sourcePreparation": {
+        "commit": "7765bfb",
+        "scope": "Independently approved for source-build execution and bounded headless consumers. Imlib2 precedes Feh. Fresh source execution, X11 interaction and publication acceptance remain pending."
+      }
     },
     {
       "id": "jq",
@@ -3749,18 +3763,31 @@
         "pkgconf"
       ],
       "mapping": "puzzles",
-      "acceptance": [],
+      "acceptance": [
+        {
+          "scope": "Private only: Fifteen, Net, Same Game and Solo bounded physical interaction, exact save/reopen and browser reload persistence; independently accepted.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/puzzles/gucos-binary",
+          "evidenceCommit": "9ee1628"
+        },
+        {
+          "scope": "Private only: Mines flag/undo, safe first opening, exact save/reopen and browser reload persistence; independently accepted.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/puzzles/gucos-binary",
+          "evidenceCommit": "8c5922e"
+        }
+      ],
       "blockers": [
-        "Fresh binary install and consumers passed; initial Fifteen GUI harness failed before menu selection on missing-status decode. Reviewed polling correction and GUI-only retry queued; other desktop games/public gates remain."
+        "Five private interaction scopes are independently accepted: Fifteen, Net, Same Game and Solo normal/reload evidence at 9ee1628, plus Mines flag/undo, safe first opening and persistence normal/reload evidence at 8c5922e. Untangle repeat-drag acceptance remains pending; paced-input correction d49e5ff is approved for execution only. Immutable publication review, publication and fresh public acceptance remain pending."
       ],
       "sourcePreparation": {
         "revision": "19b50d8",
-        "scope": "319 pinned historical blobs,40 games,132 outputs; independent source review approved; source execution active and Fifteen binary/JWM/save/reload gate queued."
+        "scope": "319 pinned historical blobs, 40 games and 132 outputs; independent source preparation review complete."
       },
       "sourceExecution": {
         "revision": "8f06d8a",
         "evidence": "docs/research/package-migration/puzzles/gucos-source",
-        "scope": "Reviewed40gamegeneration and132outputsourceexport; interactivebinary/publicpending."
+        "scope": "Independently reviewed generation of all 40 games and exact 132-output source export. Source execution does not establish gameplay acceptance; five bounded private interaction scopes are separately accepted."
       }
     },
     {
@@ -4776,7 +4803,7 @@
     {
       "id": "xarchiver",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/xarchiver/wasm-package.json",
       "historicalManifestSha256": "f33bab22d18ba4663d069c488e3803ee68de74ce6e141e7d71d116878232fce5",
       "historicalEvidence": [
@@ -4802,7 +4829,14 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Source build/export, binary install, genuine single-file bzip2 GUI create/Test/extract with exact bytes, quit/reopen/browser reload, immutable publication review and public acceptance remain pending. No TAR or other-format acceptance."
+      ],
+      "candidate": "apps/xarchiver",
+      "sourcePreparation": {
+        "commit": "2d74f6aa2c4952679cd4862b7524a919680c49ef",
+        "scope": "220 pinned historical blobs, 37 C units and 31 outputs. Exact bzip2 dependency and declared overlay disabling unverified GNU-tar discovery independently approved for source execution. Binary dependencies then source build queued."
+      }
     },
     {
       "id": "xmag",

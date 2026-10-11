@@ -6,7 +6,14 @@ import {createHash} from 'node:crypto';
 import {poll} from './poll.mjs';
 import {installObserver} from './menu.mjs';
 async function bounded(p,ms,label){let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms);})]);}finally{clearTimeout(timer);}}
-export async function desktopSession(s){
+export async function desktopSession(s,{workingDirectory}={}){
+ // JWM children inherit this directory; later request-shell cd cannot change it.
+ // Restrict to ordinary absolute guest paths before interpolation into the shell.
+ if(workingDirectory!==undefined){
+  assert(typeof workingDirectory==='string' && workingDirectory.startsWith('/home/user/'));
+  assert(workingDirectory.length<=240 && /^\/home\/user\/[A-Za-z0-9_/-]+$/.test(workingDirectory));
+  assert(workingDirectory.split('/').slice(1).every(part=>part.length>0));
+ }
  const helper=await installObserver(s);
  helper.pollHelperSha256=createHash('sha256').update(await readFile(new URL('./poll.mjs',import.meta.url))).digest('hex');
  helper.sessionHelperSha256=createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex');
@@ -26,7 +33,7 @@ cleanup() {
 }
 trap cleanup EXIT
 /usr/local/libexec/jwm/wait-display
-jwm -f /usr/local/share/jwm/wasm.jwmrc &
+${workingDirectory?`cd '${workingDirectory}'\n`:''}jwm -f /usr/local/share/jwm/wasm.jwmrc &
 wm=$!
 /tmp/jwm-observe wm
 echo JWM-CONTROL-READY
@@ -68,7 +75,7 @@ echo JWM-CONTROL-PASS`);
   const {code,output}=response;
   assert.match(code,/^[0-9]+\n$/);assert.equal(Number(code),0,output);return output;
  })(),45000,'Complete JWM observation request exceeded 45 seconds');}
- return {...s,command,helper,pending,finish:()=>bounded((async()=>{
+ return {...s,command,helper,workingDirectory,pending,finish:()=>bounded((async()=>{
   await write('/tmp/jwm-test-control/stop','stop');await write('/tmp/jwm-test-control/'+(++serial)+'.ready','ready');
   assert.match(await pending,/JWM-CONTROL-PASS/);
   await s.page.waitForFunction(()=>[...shell.busybox.windows.values()].filter(v=>v.shown).length===0,null,{timeout:15000});

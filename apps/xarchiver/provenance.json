@@ -1,0 +1,14 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/xarchiver",
+  "archiveSha256": "3079314237de853ead97dd53edecdb01d4d0be4e60a2350c4cb94189769994bf",
+  "overlays": [
+    {
+      "file": "LGPL-2.1.txt",
+      "historicalPath": "vendor/glib/COPYING",
+      "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb"
+    }
+  ],
+  "status": "source migration candidate; no new guest execution"
+}

@@ -1,0 +1,3588 @@
+gucman: unknown source
+
+{
+  tail: 'cting; waiting for response…\n' +
+    '  Downloaded 6862 / 6862 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for migration:freetype\n' +
+    'gucman: Checking cached object: manifest for migration:freetype\n' +
+    'gucman: Resolving: migration:fontconfig\n'
+}
+{
+  tail: 'for migration:zlib\n' +
+    'gucman: Resolving: migration:glib\n' +
+    'gucman: Checking cached object: manifest for migration:glib\n' +
+    'gucman: Resolving: migration:gobject\n' +
+    'gucman: Checking cached object: manifest for migration:gobject\n' +
+    'gucman: Resolving: migration:libintl\n'
+}
+{
+  tail: ' 5.41 / 24.78 MiB (21%)\n' +
+    '  Downloaded 10.68 / 24.78 MiB (43%)\n' +
+    '  Downloaded 15.99 / 24.78 MiB (64%)\n' +
+    '  Downloaded 21.31 / 24.78 MiB (85%)\n' +
+    '  Downloaded 24.78 / 24.78 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: x11-server source: source.tar\n'
+}
+{
+  tail: 'nloaded 148 / 148 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: x11-server source: test.sh\n' +
+    'gucman: Checking cached object: x11-server source: test.sh\n' +
+    'Building migration:x11-server; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: 'nloaded 148 / 148 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: x11-server source: test.sh\n' +
+    'gucman: Checking cached object: x11-server source: test.sh\n' +
+    'Building migration:x11-server; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: "ruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition\n" +
+    "/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition\n"
+}
+{
+  tail: "ng.h:37: warning: macro 'xmalloc' redefined with an incompatible definition\n" +
+    "/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition\n" +
+    'gucman: Installing x11-server: 0/527 files\n'
+}
+{
+  tail: '11-server: 225/527 files\n' +
+    'gucman: Installing x11-server: 250/527 files\n' +
+    'gucman: Installing x11-server: 275/527 files\n' +
+    'gucman: Installing x11-server: 300/527 files\n' +
+    'gucman: Installing x11-server: 325/527 files\n' +
+    'gucman: Installing x11-server: 350/527 files\n'
+}
+{
+  tail: 'tions, 601416 bytes\n' +
+    '2207 functions, 2356397 bytes\n' +
+    '196 functions, 174203 bytes\n' +
+    '61 functions, 77095 bytes\n' +
+    '44 functions, 45759 bytes\n' +
+    '138 functions, 151278 bytes\n' +
+    '43 functions, 45632 bytes\n' +
+    '2 functions, 4955 bytes\n' +
+    'gucman: Installing x11-shared: 0/17 files\n'
+}
+{
+  tail: 'sted recipe with access to your guest files\n' +
+    '1898 functions, 1588790 bytes\n' +
+    '1715 functions, 1427078 bytes\n' +
+    '2 functions, 6508 bytes\n' +
+    'gucman: Installing freetype: 0/60 files\n' +
+    'gucman: Installing freetype: 25/60 files\n' +
+    'gucman: Installing freetype: 50/60 files\n'
+}
+{
+  tail: 'ed migration:libpng 1.6.58-1\n' +
+    'gucman: Package 10/29: cairo (19 remaining after this)\n' +
+    'gucman: Downloading cairo source: source.tar (6932480 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 0.02 / 6.61 MiB (0%)\n' +
+    '  Downloaded 5.18 / 6.61 MiB (78%)\n'
+}
+{
+  tail: 'ched object: cairo source: cairo-xlib-surface.c\n' +
+    'Building migration:cairo; running trusted recipe with access to your guest files\n' +
+    '3336 functions, 2131823 bytes\n' +
+    '2684 functions, 1685851 bytes\n' +
+    '2 functions, 8322 bytes\n' +
+    'gucman: Installing cairo: 0/16 files\n'
+}
+{
+  tail: 'fying staged files: libiconv\n' +
+    'gucman: Activating: libiconv\n' +
+    'Installed migration:libiconv 1.18-1\n' +
+    'gucman: Package 13/29: libintl (16 remaining after this)\n' +
+    'gucman: Downloading libintl source: source.tar (5058560 bytes)\n' +
+    '  Connecting; waiting for response…\n'
+}
+{
+  tail: 'Downloaded 17509 / 17509 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: glib source: build.sh\n' +
+    'gucman: Checking cached object: glib source: build.sh\n' +
+    'gucman: Downloading glib source: test.sh (428 bytes)\n' +
+    '  Connecting; waiting for response…\n'
+}
+{
+  tail: '7842 bytes\n' +
+    'GLIB-PASS\n' +
+    'gucman: Installing glib: 0/140 files\n' +
+    'gucman: Installing glib: 25/140 files\n' +
+    'gucman: Installing glib: 50/140 files\n' +
+    'gucman: Installing glib: 75/140 files\n' +
+    'gucman: Installing glib: 100/140 files\n' +
+    'gucman: Installing glib: 125/140 files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: 'ed\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: 'ed\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: 'ed\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: 'ed\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: 'ed\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: '\n' +
+    '  Downloaded 828 / 828 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '\n' +
+    '  Downloaded 828 / 828 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '\n' +
+    '  Downloaded 828 / 828 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '\n' +
+    '  Downloaded 828 / 828 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '\n' +
+    '  Downloaded 828 / 828 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '\n' +
+    '  Downloaded 828 / 828 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '00%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: '00%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: '00%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: '00%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz source: test.sh\n' +
+    'Building migration:harfbuzz; running trusted recipe with access to your guest files\n' +
+    '37719 functions, 57081099 bytes\n'
+}
+{
+  tail: 'se…\n' +
+    '  Downloaded 485 / 485 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: gobject source: test.sh\n' +
+    'gucman: Checking cached object: gobject source: test.sh\n' +
+    'Building migration:gobject; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '4 / 1244 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: pango source: test.sh\n' +
+    'gucman: Checking cached object: pango source: test.sh\n' +
+    'Building migration:pango; running trusted recipe with access to your guest files\n' +
+    '2 functions, 7733 bytes\n'
+}
+{
+  tail: 'ucman: Verifying download: gio-core source: test.sh\n' +
+    'gucman: Checking cached object: gio-core source: test.sh\n' +
+    'gucman: Checking cached object: gio-core source: COPYING\n' +
+    'Building migration:gio-core; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: 'gucman: Checking cached object: gio-core source: COPYING\n' +
+    'Building migration:gio-core; running trusted recipe with access to your guest files\n' +
+    'GIO: 25 / 207 source files\n' +
+    'GIO: 50 / 207 source files\n' +
+    'GIO: 75 / 207 source files\n' +
+    'GIO: 100 / 207 source files\n'
+}
+{
+  tail: ' files\n' +
+    '25 functions, 30102 bytes\n' +
+    '6136 functions, 4996895 bytes\n' +
+    '2 functions, 5896 bytes\n' +
+    '6 functions, 21518 bytes\n' +
+    '2198 functions, 1718263 bytes\n' +
+    '2 functions, 14331 bytes\n' +
+    'gucman: Installing gio-core: 0/159 files\n' +
+    'gucman: Installing gio-core: 25/159 files\n'
+}
+{
+  tail: 'peg-turbo\n' +
+    'gucman: Activating: libjpeg-turbo\n' +
+    'Installed migration:libjpeg-turbo 3.1.4.1-1\n' +
+    'gucman: Package 24/29: gdk-pixbuf (5 remaining after this)\n' +
+    'gucman: Downloading gdk-pixbuf source: source.tar (21432320 bytes)\n' +
+    '  Connecting; waiting for response…\n'
+}
+{
+  tail: 'e…\n' +
+    '  Downloaded 2104 / 2104 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: atk source: build.sh\n' +
+    'gucman: Checking cached object: atk source: build.sh\n' +
+    'gucman: Downloading atk source: test.sh (450 bytes)\n' +
+    '  Connecting; waiting for response…\n'
+}
+{
+  tail: 'ource: gtk-source.tar (37212160 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 0.02 / 35.49 MiB (0%)\n' +
+    '  Downloaded 0.84 / 35.49 MiB (2%)\n' +
+    '  Downloaded 2.52 / 35.49 MiB (7%)\n' +
+    '  Downloaded 3.05 / 35.49 MiB (8%)\n' +
+    '  Downloaded 3.36 / 35.49 MiB (9%)\n'
+}
+{
+  tail: '\n' +
+    '  Downloaded 718 / 718 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: gtk3-x11 source: test.sh\n' +
+    'gucman: Checking cached object: gtk3-x11 source: test.sh\n' +
+    'Building migration:gtk3-x11; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: 'inished\n' +
+    'gucman: Verifying download: gtk3-x11 source: test.sh\n' +
+    'gucman: Checking cached object: gtk3-x11 source: test.sh\n' +
+    'Building migration:gtk3-x11; running trusted recipe with access to your guest files\n' +
+    'GTK X11: 25 / 586 units\n' +
+    'GTK X11: 50 / 586 units\n'
+}
+{
+  tail: 'ce: test.sh\n' +
+    'gucman: Checking cached object: gtk3-x11 source: test.sh\n' +
+    'Building migration:gtk3-x11; running trusted recipe with access to your guest files\n' +
+    'GTK X11: 25 / 586 units\n' +
+    'GTK X11: 50 / 586 units\n' +
+    'GTK X11: 75 / 586 units\n' +
+    'GTK X11: 100 / 586 units\n'
+}
+{
+  tail: 'ng migration:gtk3-x11; running trusted recipe with access to your guest files\n' +
+    'GTK X11: 25 / 586 units\n' +
+    'GTK X11: 50 / 586 units\n' +
+    'GTK X11: 75 / 586 units\n' +
+    'GTK X11: 100 / 586 units\n' +
+    'GTK X11: 125 / 586 units\n' +
+    'GTK X11: 150 / 586 units\n' +
+    'GTK X11: 175 / 586 units\n'
+}
+{
+  tail: ' access to your guest files\n' +
+    'GTK X11: 25 / 586 units\n' +
+    'GTK X11: 50 / 586 units\n' +
+    'GTK X11: 75 / 586 units\n' +
+    'GTK X11: 100 / 586 units\n' +
+    'GTK X11: 125 / 586 units\n' +
+    'GTK X11: 150 / 586 units\n' +
+    'GTK X11: 175 / 586 units\n' +
+    'GTK X11: 200 / 586 units\n' +
+    'GTK X11: 225 / 586 units\n'
+}
+{
+  tail: 's\n' +
+    'GTK X11: 50 / 586 units\n' +
+    'GTK X11: 75 / 586 units\n' +
+    'GTK X11: 100 / 586 units\n' +
+    'GTK X11: 125 / 586 units\n' +
+    'GTK X11: 150 / 586 units\n' +
+    'GTK X11: 175 / 586 units\n' +
+    'GTK X11: 200 / 586 units\n' +
+    'GTK X11: 225 / 586 units\n' +
+    'GTK X11: 250 / 586 units\n' +
+    'GTK X11: 275 / 586 units\n'
+}
+{
+  tail: 'GTK X11: 100 / 586 units\n' +
+    'GTK X11: 125 / 586 units\n' +
+    'GTK X11: 150 / 586 units\n' +
+    'GTK X11: 175 / 586 units\n' +
+    'GTK X11: 200 / 586 units\n' +
+    'GTK X11: 225 / 586 units\n' +
+    'GTK X11: 250 / 586 units\n' +
+    'GTK X11: 275 / 586 units\n' +
+    'GTK X11: 300 / 586 units\n' +
+    'GTK X11: 325 / 586 units\n'
+}
+{
+  tail: 'GTK X11: 150 / 586 units\n' +
+    'GTK X11: 175 / 586 units\n' +
+    'GTK X11: 200 / 586 units\n' +
+    'GTK X11: 225 / 586 units\n' +
+    'GTK X11: 250 / 586 units\n' +
+    'GTK X11: 275 / 586 units\n' +
+    'GTK X11: 300 / 586 units\n' +
+    'GTK X11: 325 / 586 units\n' +
+    'GTK X11: 350 / 586 units\n' +
+    'GTK X11: 375 / 586 units\n'
+}
+{
+  tail: 'GTK X11: 175 / 586 units\n' +
+    'GTK X11: 200 / 586 units\n' +
+    'GTK X11: 225 / 586 units\n' +
+    'GTK X11: 250 / 586 units\n' +
+    'GTK X11: 275 / 586 units\n' +
+    'GTK X11: 300 / 586 units\n' +
+    'GTK X11: 325 / 586 units\n' +
+    'GTK X11: 350 / 586 units\n' +
+    'GTK X11: 375 / 586 units\n' +
+    'GTK X11: 400 / 586 units\n'
+}
+{
+  tail: 'GTK X11: 250 / 586 units\n' +
+    'GTK X11: 275 / 586 units\n' +
+    'GTK X11: 300 / 586 units\n' +
+    'GTK X11: 325 / 586 units\n' +
+    'GTK X11: 350 / 586 units\n' +
+    'GTK X11: 375 / 586 units\n' +
+    'GTK X11: 400 / 586 units\n' +
+    'GTK X11: 425 / 586 units\n' +
+    'GTK X11: 450 / 586 units\n' +
+    'GTK X11: 475 / 586 units\n'
+}
+{
+  tail: 'GTK X11: 275 / 586 units\n' +
+    'GTK X11: 300 / 586 units\n' +
+    'GTK X11: 325 / 586 units\n' +
+    'GTK X11: 350 / 586 units\n' +
+    'GTK X11: 375 / 586 units\n' +
+    'GTK X11: 400 / 586 units\n' +
+    'GTK X11: 425 / 586 units\n' +
+    'GTK X11: 450 / 586 units\n' +
+    'GTK X11: 475 / 586 units\n' +
+    'GTK X11: 500 / 586 units\n'
+}
+{
+  tail: 'GTK X11: 325 / 586 units\n' +
+    'GTK X11: 350 / 586 units\n' +
+    'GTK X11: 375 / 586 units\n' +
+    'GTK X11: 400 / 586 units\n' +
+    'GTK X11: 425 / 586 units\n' +
+    'GTK X11: 450 / 586 units\n' +
+    'GTK X11: 475 / 586 units\n' +
+    'GTK X11: 500 / 586 units\n' +
+    'GTK X11: 525 / 586 units\n' +
+    'GTK X11: 550 / 586 units\n'
+}
+{
+  tail: 'ns, 39565 bytes\n' +
+    'Packed and verified 534 resources\n' +
+    '9 functions, 37886 bytes\n' +
+    '2 functions, 6109 bytes\n' +
+    'GTK-X11-LINK-VERSION-PASS\n' +
+    'gucman: Installing gtk3-x11: 0/720 files\n' +
+    'gucman: Installing gtk3-x11: 25/720 files\n' +
+    'gucman: Installing gtk3-x11: 50/720 files\n'
+}
+{
+  tail: 'Installing gtk3-x11: 275/720 files\n' +
+    'gucman: Installing gtk3-x11: 300/720 files\n' +
+    'gucman: Installing gtk3-x11: 325/720 files\n' +
+    'gucman: Installing gtk3-x11: 350/720 files\n' +
+    'gucman: Installing gtk3-x11: 375/720 files\n' +
+    'gucman: Installing gtk3-x11: 400/720 files\n'
+}
+{
+  tail: 'man: Installing gtk3-x11: 700/720 files\n' +
+    'gucman: Installing gtk3-x11: 720/720 files\n' +
+    'gucman: Preparing checksums: gtk3-x11\n' +
+    'gucman: Checksummed gtk3-x11: 25/720 files\n' +
+    'gucman: Checksummed gtk3-x11: 50/720 files\n' +
+    'gucman: Checksummed gtk3-x11: 75/720 files\n'
+}
+{
+  tail: 'ce: galculator.desktop\n' +
+    'Building migration:galculator; running trusted recipe with access to your guest files\n' +
+    '334 functions, 388508 bytes\n' +
+    '2 functions, 5422 bytes\n' +
+    'Dynamic loader: Cannot open shared library: libgtk-3.so (needed by /tmp/galculator-link)\n'
+}
+gucman: build migration:galculator: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 24812 bytes; transfer finished
+gucman: Resolving: migration:galculator
+gucman: Downloading manifest for migration:galculator (3619 bytes)
+  Connecting; waiting for response…
+  Downloaded 3619 / 3619 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:galculator
+gucman: Checking cached object: manifest for migration:galculator
+gucman: Resolving: migration:gtk3-x11
+gucman: Downloading manifest for migration:gtk3-x11 (69181 bytes)
+  Connecting; waiting for response…
+  Downloaded 69181 / 69181 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gtk3-x11
+gucman: Checking cached object: manifest for migration:gtk3-x11
+gucman: Resolving: migration:pkgconf
+gucman: Downloading manifest for migration:pkgconf (1868 bytes)
+  Connecting; waiting for response…
+  Downloaded 1868 / 1868 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:x11-shared
+gucman: Downloading manifest for migration:x11-shared (3519 bytes)
+  Connecting; waiting for response…
+  Downloaded 3519 / 3519 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:x11-server
+gucman: Downloading manifest for migration:x11-server (47963 bytes)
+  Connecting; waiting for response…
+  Downloaded 47963 / 47963 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:cairo
+gucman: Downloading manifest for migration:cairo (4546 bytes)
+  Connecting; waiting for response…
+  Downloaded 4546 / 4546 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:pixman
+gucman: Downloading manifest for migration:pixman (2143 bytes)
+  Connecting; waiting for response…
+  Downloaded 2143 / 2143 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Resolving: migration:freetype
+gucman: Downloading manifest for migration:freetype (6862 bytes)
+  Connecting; waiting for response…
+  Downloaded 6862 / 6862 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:fontconfig
+gucman: Downloading manifest for migration:fontconfig (3509 bytes)
+  Connecting; waiting for response…
+  Downloaded 3509 / 3509 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:expat
+gucman: Downloading manifest for migration:expat (2087 bytes)
+  Connecting; waiting for response…
+  Downloaded 2087 / 2087 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Resolving: migration:libpng
+gucman: Downloading manifest for migration:libpng (2222 bytes)
+  Connecting; waiting for response…
+  Downloaded 2222 / 2222 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Downloading manifest for migration:zlib (2061 bytes)
+  Connecting; waiting for response…
+  Downloaded 2061 / 2061 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:pango
+gucman: Downloading manifest for migration:pango (6443 bytes)
+  Connecting; waiting for response…
+  Downloaded 6443 / 6443 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pango
+gucman: Checking cached object: manifest for migration:pango
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:fribidi
+gucman: Downloading manifest for migration:fribidi (4735 bytes)
+  Connecting; waiting for response…
+  Downloaded 4735 / 4735 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:harfbuzz
+gucman: Downloading manifest for migration:harfbuzz (6431 bytes)
+  Connecting; waiting for response…
+  Downloaded 6431 / 6431 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:harfbuzz-static
+gucman: Downloading manifest for migration:harfbuzz-static (2832 bytes)
+  Connecting; waiting for response…
+  Downloaded 2832 / 2832 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:harfbuzz-static
+gucman: Checking cached object: manifest for migration:harfbuzz-static
+gucman: Resolving: migration:glib
+gucman: Downloading manifest for migration:glib (13467 bytes)
+  Connecting; waiting for response…
+  Downloaded 13467 / 13467 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Downloading manifest for migration:libiconv (2119 bytes)
+  Connecting; waiting for response…
+  Downloaded 2119 / 2119 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Downloading manifest for migration:libintl (2246 bytes)
+  Connecting; waiting for response…
+  Downloaded 2246 / 2246 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Downloading manifest for migration:pcre2 (2031 bytes)
+  Connecting; waiting for response…
+  Downloaded 2031 / 2031 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:gio-listmodel
+gucman: Downloading manifest for migration:gio-listmodel (2811 bytes)
+  Connecting; waiting for response…
+  Downloaded 2811 / 2811 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Downloading manifest for migration:gobject (4558 bytes)
+  Connecting; waiting for response…
+  Downloaded 4558 / 4558 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libffi
+gucman: Downloading manifest for migration:libffi (2081 bytes)
+  Connecting; waiting for response…
+  Downloaded 2081 / 2081 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:gdk-pixbuf
+gucman: Downloading manifest for migration:gdk-pixbuf (4134 bytes)
+  Connecting; waiting for response…
+  Downloaded 4134 / 4134 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gdk-pixbuf
+gucman: Checking cached object: manifest for migration:gdk-pixbuf
+gucman: Resolving: migration:gio-core
+gucman: Downloading manifest for migration:gio-core (16515 bytes)
+  Connecting; waiting for response…
+  Downloaded 16515 / 16515 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Downloading manifest for migration:libjpeg-turbo (2477 bytes)
+  Connecting; waiting for response…
+  Downloaded 2477 / 2477 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:cairo-gobject
+gucman: Downloading manifest for migration:cairo-gobject (2487 bytes)
+  Connecting; waiting for response…
+  Downloaded 2487 / 2487 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:cairo-gobject
+gucman: Checking cached object: manifest for migration:cairo-gobject
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:atk
+gucman: Downloading manifest for migration:atk (4981 bytes)
+  Connecting; waiting for response…
+  Downloaded 4981 / 4981 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:atk
+gucman: Checking cached object: manifest for migration:atk
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gtk3-schemas
+gucman: Downloading manifest for migration:gtk3-schemas (3822 bytes)
+  Connecting; waiting for response…
+  Downloaded 3822 / 3822 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gtk3-schemas
+gucman: Checking cached object: manifest for migration:gtk3-schemas
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Plan: 29 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 29 packages
+gucman: Package 1/29: pkgconf (28 remaining after this)
+gucman: Downloading pkgconf source: source.tar (501760 bytes)
+  Connecting; waiting for response…
+  Downloaded 501760 / 501760 bytes (100%); transfer finished
+gucman: Verifying download: pkgconf source: source.tar
+gucman: Checking cached object: pkgconf source: source.tar
+gucman: Downloading pkgconf source: build.sh (602 bytes)
+  Connecting; waiting for response…
+  Downloaded 602 / 602 bytes (100%); transfer finished
+gucman: Verifying download: pkgconf source: build.sh
+gucman: Checking cached object: pkgconf source: build.sh
+gucman: Downloading pkgconf source: test.sh (516 bytes)
+  Connecting; waiting for response…
+  Downloaded 516 / 516 bytes (100%); transfer finished
+gucman: Verifying download: pkgconf source: test.sh
+gucman: Checking cached object: pkgconf source: test.sh
+Building migration:pkgconf; running trusted recipe with access to your guest files
+255 functions, 225765 bytes
+2.3.0
+-L/example/lib -lbase -lm
+-L/example/lib -lbase -lm
+gucman: Installing pkgconf: 0/3 files
+gucman: Installing pkgconf: 3/3 files
+gucman: Preparing checksums: pkgconf
+gucman: Checksummed pkgconf: 3/3 files
+gucman: Saving transaction: pkgconf
+gucman: Verifying staged files: pkgconf
+gucman: Activating: pkgconf
+Installed migration:pkgconf 2.3.0-1
+gucman: Package 2/29: x11-server (27 remaining after this)
+gucman: Downloading x11-server source: source.tar (25978880 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 24.78 MiB (0%)
+  Downloaded 5.41 / 24.78 MiB (21%)
+  Downloaded 10.68 / 24.78 MiB (43%)
+  Downloaded 15.99 / 24.78 MiB (64%)
+  Downloaded 21.31 / 24.78 MiB (85%)
+  Downloaded 24.78 / 24.78 MiB (100%); transfer finished
+gucman: Verifying download: x11-server source: source.tar
+gucman: Checking cached object: x11-server source: source.tar
+gucman: Downloading x11-server source: build.sh (247 bytes)
+  Connecting; waiting for response…
+  Downloaded 247 / 247 bytes (100%); transfer finished
+gucman: Verifying download: x11-server source: build.sh
+gucman: Checking cached object: x11-server source: build.sh
+gucman: Downloading x11-server source: test.sh (148 bytes)
+  Connecting; waiting for response…
+  Downloaded 148 / 148 bytes (100%); transfer finished
+gucman: Verifying download: x11-server source: test.sh
+gucman: Checking cached object: x11-server source: test.sh
+Building migration:x11-server; running trusted recipe with access to your guest files
+7072 functions, 14791393 bytes
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+gucman: Installing x11-server: 0/527 files
+gucman: Installing x11-server: 25/527 files
+gucman: Installing x11-server: 50/527 files
+gucman: Installing x11-server: 75/527 files
+gucman: Installing x11-server: 100/527 files
+gucman: Installing x11-server: 125/527 files
+gucman: Installing x11-server: 150/527 files
+gucman: Installing x11-server: 175/527 files
+gucman: Installing x11-server: 200/527 files
+gucman: Installing x11-server: 225/527 files
+gucman: Installing x11-server: 250/527 files
+gucman: Installing x11-server: 275/527 files
+gucman: Installing x11-server: 300/527 files
+gucman: Installing x11-server: 325/527 files
+gucman: Installing x11-server: 350/527 files
+gucman: Installing x11-server: 375/527 files
+gucman: Installing x11-server: 400/527 files
+gucman: Installing x11-server: 425/527 files
+gucman: Installing x11-server: 450/527 files
+gucman: Installing x11-server: 475/527 files
+gucman: Installing x11-server: 500/527 files
+gucman: Installing x11-server: 525/527 files
+gucman: Installing x11-server: 527/527 files
+gucman: Preparing checksums: x11-server
+gucman: Checksummed x11-server: 25/527 files
+gucman: Checksummed x11-server: 50/527 files
+gucman: Checksummed x11-server: 75/527 files
+gucman: Checksummed x11-server: 100/527 files
+gucman: Checksummed x11-server: 125/527 files
+gucman: Checksummed x11-server: 150/527 files
+gucman: Checksummed x11-server: 175/527 files
+gucman: Checksummed x11-server: 200/527 files
+gucman: Checksummed x11-server: 225/527 files
+gucman: Checksummed x11-server: 250/527 files
+gucman: Checksummed x11-server: 275/527 files
+gucman: Checksummed x11-server: 300/527 files
+gucman: Checksummed x11-server: 325/527 files
+gucman: Checksummed x11-server: 350/527 files
+gucman: Checksummed x11-server: 375/527 files
+gucman: Checksummed x11-server: 400/527 files
+gucman: Checksummed x11-server: 425/527 files
+gucman: Checksummed x11-server: 450/527 files
+gucman: Checksummed x11-server: 475/527 files
+gucman: Checksummed x11-server: 500/527 files
+gucman: Checksummed x11-server: 525/527 files
+gucman: Checksummed x11-server: 527/527 files
+gucman: Saving transaction: x11-server
+gucman: Verifying staged files: x11-server
+gucman: Activating: x11-server
+Installed migration:x11-server 21.1.24-1
+gucman: Package 3/29: x11-shared (26 remaining after this)
+gucman: Downloading x11-shared source: source.tar (81920 bytes)
+  Connecting; waiting for response…
+  Downloaded 81920 / 81920 bytes (100%); transfer finished
+gucman: Verifying download: x11-shared source: source.tar
+gucman: Checking cached object: x11-shared source: source.tar
+gucman: Downloading x11-shared source: build.sh (721 bytes)
+  Connecting; waiting for response…
+  Downloaded 721 / 721 bytes (100%); transfer finished
+gucman: Verifying download: x11-shared source: build.sh
+gucman: Checking cached object: x11-shared source: build.sh
+gucman: Downloading x11-shared source: test.sh (438 bytes)
+  Connecting; waiting for response…
+  Downloaded 438 / 438 bytes (100%); transfer finished
+gucman: Verifying download: x11-shared source: test.sh
+gucman: Checking cached object: x11-shared source: test.sh
+Building migration:x11-shared; running trusted recipe with access to your guest files
+7 functions, 11575 bytes
+746 functions, 601416 bytes
+2207 functions, 2356397 bytes
+196 functions, 174203 bytes
+61 functions, 77095 bytes
+44 functions, 45759 bytes
+138 functions, 151278 bytes
+43 functions, 45632 bytes
+2 functions, 4955 bytes
+gucman: Installing x11-shared: 0/17 files
+gucman: Installing x11-shared: 17/17 files
+gucman: Preparing checksums: x11-shared
+gucman: Checksummed x11-shared: 17/17 files
+gucman: Saving transaction: x11-shared
+gucman: Verifying staged files: x11-shared
+gucman: Activating: x11-shared
+Installed migration:x11-shared 0.1.0-1
+gucman: Package 4/29: pixman (25 remaining after this)
+gucman: Downloading pixman source: source.tar (3307520 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.38 / 3.15 MiB (43%)
+  Downloaded 3.15 / 3.15 MiB (100%); transfer finished
+gucman: Verifying download: pixman source: source.tar
+gucman: Checking cached object: pixman source: source.tar
+gucman: Downloading pixman source: build.sh (1376 bytes)
+  Connecting; waiting for response…
+  Downloaded 1376 / 1376 bytes (100%); transfer finished
+gucman: Verifying download: pixman source: build.sh
+gucman: Checking cached object: pixman source: build.sh
+gucman: Downloading pixman source: test.sh (322 bytes)
+  Connecting; waiting for response…
+  Downloaded 322 / 322 bytes (100%); transfer finished
+gucman: Verifying download: pixman source: test.sh
+gucman: Checking cached object: pixman source: test.sh
+Building migration:pixman; running trusted recipe with access to your guest files
+1175 functions, 874883 bytes
+1110 functions, 794660 bytes
+2 functions, 8111 bytes
+gucman: Installing pixman: 0/6 files
+gucman: Installing pixman: 6/6 files
+gucman: Preparing checksums: pixman
+gucman: Checksummed pixman: 6/6 files
+gucman: Saving transaction: pixman
+gucman: Verifying staged files: pixman
+gucman: Activating: pixman
+Installed migration:pixman 0.46.4-1
+gucman: Package 5/29: freetype (24 remaining after this)
+gucman: Downloading freetype source: source.tar (10762240 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 10.26 MiB (0%)
+  Downloaded 5.33 / 10.26 MiB (51%)
+  Downloaded 10.26 / 10.26 MiB (100%); transfer finished
+gucman: Verifying download: freetype source: source.tar
+gucman: Checking cached object: freetype source: source.tar
+gucman: Downloading freetype source: build.sh (5864 bytes)
+  Connecting; waiting for response…
+  Downloaded 5864 / 5864 bytes (100%); transfer finished
+gucman: Verifying download: freetype source: build.sh
+gucman: Checking cached object: freetype source: build.sh
+gucman: Downloading freetype source: test.sh (747 bytes)
+  Connecting; waiting for response…
+  Downloaded 747 / 747 bytes (100%); transfer finished
+gucman: Verifying download: freetype source: test.sh
+gucman: Checking cached object: freetype source: test.sh
+Building migration:freetype; running trusted recipe with access to your guest files
+1898 functions, 1588790 bytes
+1715 functions, 1427078 bytes
+2 functions, 6508 bytes
+gucman: Installing freetype: 0/60 files
+gucman: Installing freetype: 25/60 files
+gucman: Installing freetype: 50/60 files
+gucman: Installing freetype: 60/60 files
+gucman: Preparing checksums: freetype
+gucman: Checksummed freetype: 25/60 files
+gucman: Checksummed freetype: 50/60 files
+gucman: Checksummed freetype: 60/60 files
+gucman: Saving transaction: freetype
+gucman: Verifying staged files: freetype
+gucman: Activating: freetype
+Installed migration:freetype 2.14.1-1
+gucman: Package 6/29: expat (23 remaining after this)
+gucman: Downloading expat source: source.tar (1474560 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 1.41 MiB (1%)
+  Downloaded 1.41 / 1.41 MiB (100%); transfer finished
+gucman: Verifying download: expat source: source.tar
+gucman: Checking cached object: expat source: source.tar
+gucman: Downloading expat source: build.sh (611 bytes)
+  Connecting; waiting for response…
+  Downloaded 611 / 611 bytes (100%); transfer finished
+gucman: Verifying download: expat source: build.sh
+gucman: Checking cached object: expat source: build.sh
+gucman: Downloading expat source: test.sh (918 bytes)
+  Connecting; waiting for response…
+  Downloaded 918 / 918 bytes (100%); transfer finished
+gucman: Verifying download: expat source: test.sh
+gucman: Checking cached object: expat source: test.sh
+Building migration:expat; running trusted recipe with access to your guest files
+364 functions, 324368 bytes
+367 functions, 321653 bytes
+3 functions, 6749 bytes
+EXPAT-CONSUMERS-PASS
+gucman: Installing expat: 0/6 files
+gucman: Installing expat: 6/6 files
+gucman: Preparing checksums: expat
+gucman: Checksummed expat: 6/6 files
+gucman: Saving transaction: expat
+gucman: Verifying staged files: expat
+gucman: Activating: expat
+Installed migration:expat 2.7.1-1
+gucman: Package 7/29: fontconfig (22 remaining after this)
+gucman: Downloading fontconfig source: source.tar (1648640 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.57 / 1.57 MiB (100%); transfer finished
+gucman: Verifying download: fontconfig source: source.tar
+gucman: Checking cached object: fontconfig source: source.tar
+gucman: Downloading fontconfig source: build.sh (2103 bytes)
+  Connecting; waiting for response…
+  Downloaded 2103 / 2103 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: build.sh
+gucman: Checking cached object: fontconfig source: build.sh
+gucman: Downloading fontconfig source: test.sh (428 bytes)
+  Connecting; waiting for response…
+  Downloaded 428 / 428 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: test.sh
+gucman: Checking cached object: fontconfig source: test.sh
+gucman: Downloading fontconfig source: ABeeZee-Regular.ttf (46016 bytes)
+  Connecting; waiting for response…
+  Downloaded 46016 / 46016 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: ABeeZee-Regular.ttf
+gucman: Checking cached object: fontconfig source: ABeeZee-Regular.ttf
+gucman: Downloading fontconfig source: SourceCodePro-Regular.otf (131128 bytes)
+  Connecting; waiting for response…
+  Downloaded 131128 / 131128 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: SourceCodePro-Regular.otf
+gucman: Checking cached object: fontconfig source: SourceCodePro-Regular.otf
+Building migration:fontconfig; running trusted recipe with access to your guest files
+819 functions, 661394 bytes
+762 functions, 603739 bytes
+3 functions, 8651 bytes
+gucman: Installing fontconfig: 0/11 files
+gucman: Installing fontconfig: 11/11 files
+gucman: Preparing checksums: fontconfig
+gucman: Checksummed fontconfig: 11/11 files
+gucman: Saving transaction: fontconfig
+gucman: Verifying staged files: fontconfig
+gucman: Activating: fontconfig
+Installed migration:fontconfig 2.15.0-1
+gucman: Package 8/29: zlib (21 remaining after this)
+gucman: Downloading zlib source: source.tar (1269760 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.21 / 1.21 MiB (100%); transfer finished
+gucman: Verifying download: zlib source: source.tar
+gucman: Checking cached object: zlib source: source.tar
+gucman: Downloading zlib source: build.sh (785 bytes)
+  Connecting; waiting for response…
+  Downloaded 785 / 785 bytes (100%); transfer finished
+gucman: Verifying download: zlib source: build.sh
+gucman: Checking cached object: zlib source: build.sh
+gucman: Downloading zlib source: test.sh (344 bytes)
+  Connecting; waiting for response…
+  Downloaded 344 / 344 bytes (100%); transfer finished
+gucman: Verifying download: zlib source: test.sh
+gucman: Checking cached object: zlib source: test.sh
+Building migration:zlib; running trusted recipe with access to your guest files
+158 functions, 172922 bytes
+167 functions, 180950 bytes
+zlib version 1.3.2 = 0x1320, compile flags = 0x95
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+12 functions, 28822 bytes
+zlib version 1.3.2 = 0x1320, compile flags = 0x95
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+gucman: Installing zlib: 0/6 files
+gucman: Installing zlib: 6/6 files
+gucman: Preparing checksums: zlib
+gucman: Checksummed zlib: 6/6 files
+gucman: Saving transaction: zlib
+gucman: Verifying staged files: zlib
+gucman: Activating: zlib
+Installed migration:zlib 1.3.2-1
+gucman: Package 9/29: libpng (20 remaining after this)
+gucman: Downloading libpng source: source.tar (1495040 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.43 / 1.43 MiB (100%); transfer finished
+gucman: Verifying download: libpng source: source.tar
+gucman: Checking cached object: libpng source: source.tar
+gucman: Downloading libpng source: build.sh (3086 bytes)
+  Connecting; waiting for response…
+  Downloaded 3086 / 3086 bytes (100%); transfer finished
+gucman: Verifying download: libpng source: build.sh
+gucman: Checking cached object: libpng source: build.sh
+gucman: Downloading libpng source: test.sh (968 bytes)
+  Connecting; waiting for response…
+  Downloaded 968 / 968 bytes (100%); transfer finished
+gucman: Verifying download: libpng source: test.sh
+gucman: Checking cached object: libpng source: test.sh
+Building migration:libpng; running trusted recipe with access to your guest files
+527 functions, 472215 bytes
+510 functions, 443807 bytes
+2 functions, 6860 bytes
+gucman: Installing libpng: 0/7 files
+gucman: Installing libpng: 7/7 files
+gucman: Preparing checksums: libpng
+gucman: Checksummed libpng: 7/7 files
+gucman: Saving transaction: libpng
+gucman: Verifying staged files: libpng
+gucman: Activating: libpng
+Installed migration:libpng 1.6.58-1
+gucman: Package 10/29: cairo (19 remaining after this)
+gucman: Downloading cairo source: source.tar (6932480 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 6.61 MiB (0%)
+  Downloaded 5.18 / 6.61 MiB (78%)
+  Downloaded 6.61 / 6.61 MiB (100%); transfer finished
+gucman: Verifying download: cairo source: source.tar
+gucman: Checking cached object: cairo source: source.tar
+gucman: Downloading cairo source: build.sh (1550 bytes)
+  Connecting; waiting for response…
+  Downloaded 1550 / 1550 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: build.sh
+gucman: Checking cached object: cairo source: build.sh
+gucman: Downloading cairo source: test.sh (921 bytes)
+  Connecting; waiting for response…
+  Downloaded 921 / 921 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: test.sh
+gucman: Checking cached object: cairo source: test.sh
+gucman: Downloading cairo source: sources.txt (3237 bytes)
+  Connecting; waiting for response…
+  Downloaded 3237 / 3237 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: sources.txt
+gucman: Checking cached object: cairo source: sources.txt
+gucman: Downloading cairo source: config.h (870 bytes)
+  Connecting; waiting for response…
+  Downloaded 870 / 870 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: config.h
+gucman: Checking cached object: cairo source: config.h
+gucman: Downloading cairo source: cairo-features.h (432 bytes)
+  Connecting; waiting for response…
+  Downloaded 432 / 432 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: cairo-features.h
+gucman: Checking cached object: cairo source: cairo-features.h
+gucman: Downloading cairo source: cairo-xlib-surface.c (67046 bytes)
+  Connecting; waiting for response…
+  Downloaded 67046 / 67046 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: cairo-xlib-surface.c
+gucman: Checking cached object: cairo source: cairo-xlib-surface.c
+Building migration:cairo; running trusted recipe with access to your guest files
+3336 functions, 2131823 bytes
+2684 functions, 1685851 bytes
+2 functions, 8322 bytes
+gucman: Installing cairo: 0/16 files
+gucman: Installing cairo: 16/16 files
+gucman: Preparing checksums: cairo
+gucman: Checksummed cairo: 16/16 files
+gucman: Saving transaction: cairo
+gucman: Verifying staged files: cairo
+gucman: Activating: cairo
+Installed migration:cairo 1.18.4-1
+gucman: Package 11/29: fribidi (18 remaining after this)
+gucman: Downloading fribidi source: source.tar (15953920 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 15.21 MiB (0%)
+  Downloaded 5.06 / 15.21 MiB (33%)
+  Downloaded 10.12 / 15.21 MiB (66%)
+  Downloaded 15.21 / 15.21 MiB (100%); transfer finished
+gucman: Verifying download: fribidi source: source.tar
+gucman: Checking cached object: fribidi source: source.tar
+gucman: Downloading fribidi source: build.sh (1238 bytes)
+  Connecting; waiting for response…
+  Downloaded 1238 / 1238 bytes (100%); transfer finished
+gucman: Verifying download: fribidi source: build.sh
+gucman: Checking cached object: fribidi source: build.sh
+gucman: Downloading fribidi source: test.sh (396 bytes)
+  Connecting; waiting for response…
+  Downloaded 396 / 396 bytes (100%); transfer finished
+gucman: Verifying download: fribidi source: test.sh
+gucman: Checking cached object: fribidi source: test.sh
+Building migration:fribidi; running trusted recipe with access to your guest files
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+72 functions, 124691 bytes
+43 functions, 98289 bytes
+2 functions, 5643 bytes
+gucman: Installing fribidi: 0/37 files
+gucman: Installing fribidi: 25/37 files
+gucman: Installing fribidi: 37/37 files
+gucman: Preparing checksums: fribidi
+gucman: Checksummed fribidi: 25/37 files
+gucman: Checksummed fribidi: 37/37 files
+gucman: Saving transaction: fribidi
+gucman: Verifying staged files: fribidi
+gucman: Activating: fribidi
+Installed migration:fribidi 1.0.16-1
+gucman: Package 12/29: libiconv (17 remaining after this)
+gucman: Downloading libiconv source: source.tar (17141760 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 16.35 MiB (0%)
+  Downloaded 5.38 / 16.35 MiB (32%)
+  Downloaded 10.50 / 16.35 MiB (64%)
+  Downloaded 15.75 / 16.35 MiB (96%)
+  Downloaded 16.35 / 16.35 MiB (100%); transfer finished
+gucman: Verifying download: libiconv source: source.tar
+gucman: Checking cached object: libiconv source: source.tar
+gucman: Downloading libiconv source: build.sh (1309 bytes)
+  Connecting; waiting for response…
+  Downloaded 1309 / 1309 bytes (100%); transfer finished
+gucman: Verifying download: libiconv source: build.sh
+gucman: Checking cached object: libiconv source: build.sh
+gucman: Downloading libiconv source: test.sh (269 bytes)
+  Connecting; waiting for response…
+  Downloaded 269 / 269 bytes (100%); transfer finished
+gucman: Verifying download: libiconv source: test.sh
+gucman: Checking cached object: libiconv source: test.sh
+Building migration:libiconv; running trusted recipe with access to your guest files
+491 functions, 1358297 bytes
+492 functions, 1360868 bytes
+ICONV-PASS
+2 functions, 10515 bytes
+ICONV-PASS
+gucman: Installing libiconv: 0/6 files
+gucman: Installing libiconv: 6/6 files
+gucman: Preparing checksums: libiconv
+gucman: Checksummed libiconv: 6/6 files
+gucman: Saving transaction: libiconv
+gucman: Verifying staged files: libiconv
+gucman: Activating: libiconv
+Installed migration:libiconv 1.18-1
+gucman: Package 13/29: libintl (16 remaining after this)
+gucman: Downloading libintl source: source.tar (5058560 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 4.82 MiB (0%)
+  Downloaded 2.39 / 4.82 MiB (49%)
+  Downloaded 4.82 / 4.82 MiB (100%); transfer finished
+gucman: Verifying download: libintl source: source.tar
+gucman: Checking cached object: libintl source: source.tar
+gucman: Downloading libintl source: build.sh (5437 bytes)
+  Connecting; waiting for response…
+  Downloaded 5437 / 5437 bytes (100%); transfer finished
+gucman: Verifying download: libintl source: build.sh
+gucman: Checking cached object: libintl source: build.sh
+gucman: Downloading libintl source: test.sh (339 bytes)
+  Connecting; waiting for response…
+  Downloaded 339 / 339 bytes (100%); transfer finished
+gucman: Verifying download: libintl source: test.sh
+gucman: Checking cached object: libintl source: test.sh
+Building migration:libintl; running trusted recipe with access to your guest files
+70 functions, 84897 bytes
+58 functions, 79287 bytes
+GETTEXT-PASS
+2 functions, 10903 bytes
+GETTEXT-PASS
+gucman: Installing libintl: 0/6 files
+gucman: Installing libintl: 6/6 files
+gucman: Preparing checksums: libintl
+gucman: Checksummed libintl: 6/6 files
+gucman: Saving transaction: libintl
+gucman: Verifying staged files: libintl
+gucman: Activating: libintl
+Installed migration:libintl 0.23.1-1
+gucman: Package 14/29: pcre2 (15 remaining after this)
+gucman: Downloading pcre2 source: source.tar (6563840 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 6.26 MiB (0%)
+  Downloaded 3.39 / 6.26 MiB (54%)
+  Downloaded 6.26 / 6.26 MiB (100%); transfer finished
+gucman: Verifying download: pcre2 source: source.tar
+gucman: Checking cached object: pcre2 source: source.tar
+gucman: Downloading pcre2 source: build.sh (5388 bytes)
+  Connecting; waiting for response…
+  Downloaded 5388 / 5388 bytes (100%); transfer finished
+gucman: Verifying download: pcre2 source: build.sh
+gucman: Checking cached object: pcre2 source: build.sh
+gucman: Downloading pcre2 source: test.sh (281 bytes)
+  Connecting; waiting for response…
+  Downloaded 281 / 281 bytes (100%); transfer finished
+gucman: Verifying download: pcre2 source: test.sh
+gucman: Checking cached object: pcre2 source: test.sh
+Building migration:pcre2; running trusted recipe with access to your guest files
+181 functions, 737864 bytes
+142 functions, 630878 bytes
+2 functions, 8088 bytes
+gucman: Installing pcre2: 0/5 files
+gucman: Installing pcre2: 5/5 files
+gucman: Preparing checksums: pcre2
+gucman: Checksummed pcre2: 5/5 files
+gucman: Saving transaction: pcre2
+gucman: Verifying staged files: pcre2
+gucman: Activating: pcre2
+Installed migration:pcre2 10.46-1
+gucman: Package 15/29: glib (14 remaining after this)
+gucman: Downloading glib source: source.tar (19445760 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 18.54 MiB (0%)
+  Downloaded 4.02 / 18.54 MiB (21%)
+  Downloaded 8.20 / 18.54 MiB (44%)
+  Downloaded 13.45 / 18.54 MiB (72%)
+  Downloaded 18.17 / 18.54 MiB (97%)
+  Downloaded 18.54 / 18.54 MiB (100%); transfer finished
+gucman: Verifying download: glib source: source.tar
+gucman: Checking cached object: glib source: source.tar
+gucman: Downloading glib source: build.sh (17509 bytes)
+  Connecting; waiting for response…
+  Downloaded 17509 / 17509 bytes (100%); transfer finished
+gucman: Verifying download: glib source: build.sh
+gucman: Checking cached object: glib source: build.sh
+gucman: Downloading glib source: test.sh (428 bytes)
+  Connecting; waiting for response…
+  Downloaded 428 / 428 bytes (100%); transfer finished
+gucman: Verifying download: glib source: test.sh
+gucman: Checking cached object: glib source: test.sh
+Building migration:glib; running trusted recipe with access to your guest files
+2963 functions, 2625246 bytes
+1923 functions, 1680238 bytes
+GLIB-PASS
+4 functions, 17842 bytes
+GLIB-PASS
+gucman: Installing glib: 0/140 files
+gucman: Installing glib: 25/140 files
+gucman: Installing glib: 50/140 files
+gucman: Installing glib: 75/140 files
+gucman: Installing glib: 100/140 files
+gucman: Installing glib: 125/140 files
+gucman: Installing glib: 140/140 files
+gucman: Preparing checksums: glib
+gucman: Checksummed glib: 25/140 files
+gucman: Checksummed glib: 50/140 files
+gucman: Checksummed glib: 75/140 files
+gucman: Checksummed glib: 100/140 files
+gucman: Checksummed glib: 125/140 files
+gucman: Checksummed glib: 140/140 files
+gucman: Saving transaction: glib
+gucman: Verifying staged files: glib
+gucman: Activating: glib
+Installed migration:glib 2.84.4-1
+gucman: Package 16/29: harfbuzz-static (13 remaining after this)
+gucman: Downloading harfbuzz-static source: source.tar (8048640 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 7.68 MiB (0%)
+  Downloaded 4.09 / 7.68 MiB (53%)
+  Downloaded 7.68 / 7.68 MiB (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: source.tar
+gucman: Checking cached object: harfbuzz-static source: source.tar
+gucman: Downloading harfbuzz-static source: prepared.tar.gz (18677179 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 17.81 MiB (0%)
+  Downloaded 2.98 / 17.81 MiB (16%)
+  Downloaded 5.48 / 17.81 MiB (30%)
+  Downloaded 8.61 / 17.81 MiB (48%)
+  Downloaded 12.12 / 17.81 MiB (68%)
+  Downloaded 15.89 / 17.81 MiB (89%)
+  Downloaded 17.81 / 17.81 MiB (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: prepared.tar.gz
+gucman: Checking cached object: harfbuzz-static source: prepared.tar.gz
+gucman: Downloading harfbuzz-static source: build.sh (543 bytes)
+  Connecting; waiting for response…
+  Downloaded 543 / 543 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: build.sh
+gucman: Checking cached object: harfbuzz-static source: build.sh
+gucman: Downloading harfbuzz-static source: test.sh (450 bytes)
+  Connecting; waiting for response…
+  Downloaded 450 / 450 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: test.sh
+gucman: Checking cached object: harfbuzz-static source: test.sh
+Building migration:harfbuzz-static; running trusted recipe with access to your guest files
+37719 functions, 57081099 bytes
+33005 functions, 49103476 bytes
+HARFBUZZ-CONSUMER-PASS
+gucman: Installing harfbuzz-static: 0/4 files
+gucman: Installing harfbuzz-static: 4/4 files
+gucman: Preparing checksums: harfbuzz-static
+gucman: Checksummed harfbuzz-static: 4/4 files
+gucman: Saving transaction: harfbuzz-static
+gucman: Verifying staged files: harfbuzz-static
+gucman: Activating: harfbuzz-static
+Installed migration:harfbuzz-static 14.5.0-1
+gucman: Package 17/29: harfbuzz (12 remaining after this)
+gucman: Checking cached object: harfbuzz source: source.tar
+gucman: Checking cached object: harfbuzz source: prepared.tar.gz
+gucman: Downloading harfbuzz source: build.sh (1448 bytes)
+  Connecting; waiting for response…
+  Downloaded 1448 / 1448 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz source: build.sh
+gucman: Checking cached object: harfbuzz source: build.sh
+gucman: Downloading harfbuzz source: test.sh (828 bytes)
+  Connecting; waiting for response…
+  Downloaded 828 / 828 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz source: test.sh
+gucman: Checking cached object: harfbuzz source: test.sh
+Building migration:harfbuzz; running trusted recipe with access to your guest files
+37719 functions, 57081099 bytes
+33005 functions, 49103469 bytes
+HARFBUZZ-CONSUMER-PASS
+2 functions, 16743 bytes
+HARFBUZZ-CONSUMER-PASS
+gucman: Installing harfbuzz: 0/50 files
+gucman: Installing harfbuzz: 25/50 files
+gucman: Installing harfbuzz: 50/50 files
+gucman: Preparing checksums: harfbuzz
+gucman: Checksummed harfbuzz: 25/50 files
+gucman: Checksummed harfbuzz: 50/50 files
+gucman: Saving transaction: harfbuzz
+gucman: Verifying staged files: harfbuzz
+gucman: Activating: harfbuzz
+Installed migration:harfbuzz 14.5.0-1
+gucman: Package 18/29: libffi (11 remaining after this)
+gucman: Downloading libffi source: source.tar (61440 bytes)
+  Connecting; waiting for response…
+  Downloaded 61440 / 61440 bytes (100%); transfer finished
+gucman: Verifying download: libffi source: source.tar
+gucman: Checking cached object: libffi source: source.tar
+gucman: Downloading libffi source: build.sh (766 bytes)
+  Connecting; waiting for response…
+  Downloaded 766 / 766 bytes (100%); transfer finished
+gucman: Verifying download: libffi source: build.sh
+gucman: Checking cached object: libffi source: build.sh
+gucman: Downloading libffi source: test.sh (266 bytes)
+  Connecting; waiting for response…
+  Downloaded 266 / 266 bytes (100%); transfer finished
+gucman: Verifying download: libffi source: test.sh
+gucman: Checking cached object: libffi source: test.sh
+Building migration:libffi; running trusted recipe with access to your guest files
+10 functions, 11562 bytes
+21 functions, 29097 bytes
+FFI-PASS
+11 functions, 23060 bytes
+FFI-PASS
+gucman: Installing libffi: 0/6 files
+gucman: Installing libffi: 6/6 files
+gucman: Preparing checksums: libffi
+gucman: Checksummed libffi: 6/6 files
+gucman: Saving transaction: libffi
+gucman: Verifying staged files: libffi
+gucman: Activating: libffi
+Installed migration:libffi 3.4.8-1
+gucman: Package 19/29: gobject (10 remaining after this)
+gucman: Checking cached object: gobject source: source.tar
+gucman: Downloading gobject source: build.sh (1237 bytes)
+  Connecting; waiting for response…
+  Downloaded 1237 / 1237 bytes (100%); transfer finished
+gucman: Verifying download: gobject source: build.sh
+gucman: Checking cached object: gobject source: build.sh
+gucman: Downloading gobject source: test.sh (485 bytes)
+  Connecting; waiting for response…
+  Downloaded 485 / 485 bytes (100%); transfer finished
+gucman: Verifying download: gobject source: test.sh
+gucman: Checking cached object: gobject source: test.sh
+Building migration:gobject; running trusted recipe with access to your guest files
+1106 functions, 970435 bytes
+981 functions, 791781 bytes
+3 functions, 10124 bytes
+983 functions, 794723 bytes
+GOBJECT-WIDE-PASS
+5 functions, 15024 bytes
+GOBJECT-WIDE-PASS
+gucman: Installing gobject: 0/32 files
+gucman: Installing gobject: 25/32 files
+gucman: Installing gobject: 32/32 files
+gucman: Preparing checksums: gobject
+gucman: Checksummed gobject: 25/32 files
+gucman: Checksummed gobject: 32/32 files
+gucman: Saving transaction: gobject
+gucman: Verifying staged files: gobject
+gucman: Activating: gobject
+Installed migration:gobject 2.84.4-1
+gucman: Package 20/29: gio-listmodel (9 remaining after this)
+gucman: Downloading gio-listmodel source: source.tar (348160 bytes)
+  Connecting; waiting for response…
+  Downloaded 348160 / 348160 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: source.tar
+gucman: Checking cached object: gio-listmodel source: source.tar
+gucman: Downloading gio-listmodel source: build.sh (983 bytes)
+  Connecting; waiting for response…
+  Downloaded 983 / 983 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: build.sh
+gucman: Checking cached object: gio-listmodel source: build.sh
+gucman: Downloading gio-listmodel source: test.sh (470 bytes)
+  Connecting; waiting for response…
+  Downloaded 470 / 470 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: test.sh
+gucman: Checking cached object: gio-listmodel source: test.sh
+gucman: Downloading gio-listmodel source: COPYING (25967 bytes)
+  Connecting; waiting for response…
+  Downloaded 25967 / 25967 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: COPYING
+gucman: Checking cached object: gio-listmodel source: COPYING
+Building migration:gio-listmodel; running trusted recipe with access to your guest files
+65 functions, 75703 bytes
+79 functions, 83161 bytes
+14 functions, 18208 bytes
+gucman: Installing gio-listmodel: 0/9 files
+gucman: Installing gio-listmodel: 9/9 files
+gucman: Preparing checksums: gio-listmodel
+gucman: Checksummed gio-listmodel: 9/9 files
+gucman: Saving transaction: gio-listmodel
+gucman: Verifying staged files: gio-listmodel
+gucman: Activating: gio-listmodel
+Installed migration:gio-listmodel 2.84.4-1
+gucman: Package 21/29: pango (8 remaining after this)
+gucman: Downloading pango source: source.tar (6553600 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 6.25 MiB (0%)
+  Downloaded 4.53 / 6.25 MiB (72%)
+  Downloaded 6.25 / 6.25 MiB (100%); transfer finished
+gucman: Verifying download: pango source: source.tar
+gucman: Checking cached object: pango source: source.tar
+gucman: Downloading pango source: build.sh (4541 bytes)
+  Connecting; waiting for response…
+  Downloaded 4541 / 4541 bytes (100%); transfer finished
+gucman: Verifying download: pango source: build.sh
+gucman: Checking cached object: pango source: build.sh
+gucman: Downloading pango source: test.sh (1244 bytes)
+  Connecting; waiting for response…
+  Downloaded 1244 / 1244 bytes (100%); transfer finished
+gucman: Verifying download: pango source: test.sh
+gucman: Checking cached object: pango source: test.sh
+Building migration:pango; running trusted recipe with access to your guest files
+2 functions, 7733 bytes
+1072 functions, 972671 bytes
+270 functions, 255313 bytes
+123 functions, 155627 bytes
+1273 functions, 1096241 bytes
+Fontconfig fonts: 2
+Layout: 547 x 140, lines=4, unknown=0
+PANGO-HARFBUZZ-ARABIC-PASS
+PANGO-PASS
+3 functions, 26165 bytes
+Fontconfig fonts: 2
+Layout: 547 x 140, lines=4, unknown=0
+PANGO-HARFBUZZ-ARABIC-PASS
+PANGO-PASS
+gucman: Installing pango: 0/46 files
+gucman: Installing pango: 25/46 files
+gucman: Installing pango: 46/46 files
+gucman: Preparing checksums: pango
+gucman: Checksummed pango: 25/46 files
+gucman: Checksummed pango: 46/46 files
+gucman: Saving transaction: pango
+gucman: Verifying staged files: pango
+gucman: Activating: pango
+Installed migration:pango 1.50.14-1
+gucman: Package 22/29: gio-core (7 remaining after this)
+gucman: Downloading gio-core source: source.tar (15308800 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.05 / 14.60 MiB (0%)
+  Downloaded 3.78 / 14.60 MiB (25%)
+  Downloaded 6.29 / 14.60 MiB (43%)
+  Downloaded 7.79 / 14.60 MiB (53%)
+  Downloaded 8.57 / 14.60 MiB (58%)
+  Downloaded 9.09 / 14.60 MiB (62%)
+  Downloaded 10.74 / 14.60 MiB (73%)
+  Downloaded 13.35 / 14.60 MiB (91%)
+  Downloaded 14.60 / 14.60 MiB (100%); transfer finished
+gucman: Verifying download: gio-core source: source.tar
+gucman: Checking cached object: gio-core source: source.tar
+gucman: Downloading gio-core source: build.sh (10078 bytes)
+  Connecting; waiting for response…
+  Downloaded 10078 / 10078 bytes (100%); transfer finished
+gucman: Verifying download: gio-core source: build.sh
+gucman: Checking cached object: gio-core source: build.sh
+gucman: Downloading gio-core source: test.sh (558 bytes)
+  Connecting; waiting for response…
+  Downloaded 558 / 558 bytes (100%); transfer finished
+gucman: Verifying download: gio-core source: test.sh
+gucman: Checking cached object: gio-core source: test.sh
+gucman: Checking cached object: gio-core source: COPYING
+Building migration:gio-core; running trusted recipe with access to your guest files
+GIO: 25 / 207 source files
+GIO: 50 / 207 source files
+GIO: 75 / 207 source files
+GIO: 100 / 207 source files
+GIO: 125 / 207 source files
+GIO: 150 / 207 source files
+GIO: 175 / 207 source files
+GIO: 200 / 207 source files
+25 functions, 30102 bytes
+6136 functions, 4996895 bytes
+2 functions, 5896 bytes
+6 functions, 21518 bytes
+2198 functions, 1718263 bytes
+2 functions, 14331 bytes
+gucman: Installing gio-core: 0/159 files
+gucman: Installing gio-core: 25/159 files
+gucman: Installing gio-core: 50/159 files
+gucman: Installing gio-core: 75/159 files
+gucman: Installing gio-core: 100/159 files
+gucman: Installing gio-core: 125/159 files
+gucman: Installing gio-core: 150/159 files
+gucman: Installing gio-core: 159/159 files
+gucman: Preparing checksums: gio-core
+gucman: Checksummed gio-core: 25/159 files
+gucman: Checksummed gio-core: 50/159 files
+gucman: Checksummed gio-core: 75/159 files
+gucman: Checksummed gio-core: 100/159 files
+gucman: Checksummed gio-core: 125/159 files
+gucman: Checksummed gio-core: 150/159 files
+gucman: Checksummed gio-core: 159/159 files
+gucman: Saving transaction: gio-core
+gucman: Verifying staged files: gio-core
+gucman: Activating: gio-core
+Installed migration:gio-core 2.84.4-1
+gucman: Package 23/29: libjpeg-turbo (6 remaining after this)
+gucman: Downloading libjpeg-turbo source: source.tar (3983360 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.89 / 3.80 MiB (23%)
+  Downloaded 3.80 / 3.80 MiB (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: source.tar
+gucman: Checking cached object: libjpeg-turbo source: source.tar
+gucman: Downloading libjpeg-turbo source: build.sh (3114 bytes)
+  Connecting; waiting for response…
+  Downloaded 3114 / 3114 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: build.sh
+gucman: Checking cached object: libjpeg-turbo source: build.sh
+gucman: Downloading libjpeg-turbo source: test.sh (308 bytes)
+  Connecting; waiting for response…
+  Downloaded 308 / 308 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: test.sh
+gucman: Checking cached object: libjpeg-turbo source: test.sh
+Building migration:libjpeg-turbo; running trusted recipe with access to your guest files
+1007 functions, 937091 bytes
+982 functions, 898151 bytes
+2 functions, 10950 bytes
+gucman: Installing libjpeg-turbo: 0/9 files
+gucman: Installing libjpeg-turbo: 9/9 files
+gucman: Preparing checksums: libjpeg-turbo
+gucman: Checksummed libjpeg-turbo: 9/9 files
+gucman: Saving transaction: libjpeg-turbo
+gucman: Verifying staged files: libjpeg-turbo
+gucman: Activating: libjpeg-turbo
+Installed migration:libjpeg-turbo 3.1.4.1-1
+gucman: Package 24/29: gdk-pixbuf (5 remaining after this)
+gucman: Downloading gdk-pixbuf source: source.tar (21432320 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 20.44 MiB (0%)
+  Downloaded 0.75 / 20.44 MiB (3%)
+  Downloaded 1.23 / 20.44 MiB (6%)
+  Downloaded 2.88 / 20.44 MiB (14%)
+  Downloaded 5.52 / 20.44 MiB (26%)
+  Downloaded 8.83 / 20.44 MiB (43%)
+  Downloaded 12.53 / 20.44 MiB (61%)
+  Downloaded 16.19 / 20.44 MiB (79%)
+  Downloaded 20.44 / 20.44 MiB (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: source.tar
+gucman: Checking cached object: gdk-pixbuf source: source.tar
+gucman: Downloading gdk-pixbuf source: build.sh (1913 bytes)
+  Connecting; waiting for response…
+  Downloaded 1913 / 1913 bytes (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: build.sh
+gucman: Checking cached object: gdk-pixbuf source: build.sh
+gucman: Downloading gdk-pixbuf source: test.sh (1339 bytes)
+  Connecting; waiting for response…
+  Downloaded 1339 / 1339 bytes (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: test.sh
+gucman: Checking cached object: gdk-pixbuf source: test.sh
+gucman: Downloading gdk-pixbuf source: jpeg-decode.c (1419 bytes)
+  Connecting; waiting for response…
+  Downloaded 1419 / 1419 bytes (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: jpeg-decode.c
+gucman: Checking cached object: gdk-pixbuf source: jpeg-decode.c
+Building migration:gdk-pixbuf; running trusted recipe with access to your guest files
+369 functions, 447247 bytes
+343 functions, 421989 bytes
+2 functions, 8961 bytes
+343 functions, 423501 bytes
+GDK-PIXBUF-JPEG-DECODE-PASS
+2 functions, 13646 bytes
+GDK-PIXBUF-JPEG-DECODE-PASS
+gucman: Installing gdk-pixbuf: 0/16 files
+gucman: Installing gdk-pixbuf: 16/16 files
+gucman: Preparing checksums: gdk-pixbuf
+gucman: Checksummed gdk-pixbuf: 16/16 files
+gucman: Saving transaction: gdk-pixbuf
+gucman: Verifying staged files: gdk-pixbuf
+gucman: Activating: gdk-pixbuf
+Installed migration:gdk-pixbuf 2.42.12-1
+gucman: Package 25/29: cairo-gobject (4 remaining after this)
+gucman: Downloading cairo-gobject source: source.tar (81920 bytes)
+  Connecting; waiting for response…
+  Downloaded 81920 / 81920 bytes (100%); transfer finished
+gucman: Verifying download: cairo-gobject source: source.tar
+gucman: Checking cached object: cairo-gobject source: source.tar
+gucman: Downloading cairo-gobject source: build.sh (1275 bytes)
+  Connecting; waiting for response…
+  Downloaded 1275 / 1275 bytes (100%); transfer finished
+gucman: Verifying download: cairo-gobject source: build.sh
+gucman: Checking cached object: cairo-gobject source: build.sh
+gucman: Downloading cairo-gobject source: test.sh (454 bytes)
+  Connecting; waiting for response…
+  Downloaded 454 / 454 bytes (100%); transfer finished
+gucman: Verifying download: cairo-gobject source: test.sh
+gucman: Checking cached object: cairo-gobject source: test.sh
+Building migration:cairo-gobject; running trusted recipe with access to your guest files
+40 functions, 65341 bytes
+42 functions, 72459 bytes
+CAIRO-GOBJECT-PASS
+2 functions, 13354 bytes
+CAIRO-GOBJECT-PASS
+gucman: Installing cairo-gobject: 0/6 files
+gucman: Installing cairo-gobject: 6/6 files
+gucman: Preparing checksums: cairo-gobject
+gucman: Checksummed cairo-gobject: 6/6 files
+gucman: Saving transaction: cairo-gobject
+gucman: Verifying staged files: cairo-gobject
+gucman: Activating: cairo-gobject
+Installed migration:cairo-gobject 1.18.4-1
+gucman: Package 26/29: atk (3 remaining after this)
+gucman: Downloading atk source: source.tar (819200 bytes)
+  Connecting; waiting for response…
+  Downloaded 819200 / 819200 bytes (100%); transfer finished
+gucman: Verifying download: atk source: source.tar
+gucman: Checking cached object: atk source: source.tar
+gucman: Downloading atk source: build.sh (2104 bytes)
+  Connecting; waiting for response…
+  Downloaded 2104 / 2104 bytes (100%); transfer finished
+gucman: Verifying download: atk source: build.sh
+gucman: Checking cached object: atk source: build.sh
+gucman: Downloading atk source: test.sh (450 bytes)
+  Connecting; waiting for response…
+  Downloaded 450 / 450 bytes (100%); transfer finished
+gucman: Verifying download: atk source: test.sh
+gucman: Checking cached object: atk source: test.sh
+Building migration:atk; running trusted recipe with access to your guest files
+393 functions, 380558 bytes
+212 functions, 232354 bytes
+2 functions, 8819 bytes
+gucman: Installing atk: 0/39 files
+gucman: Installing atk: 25/39 files
+gucman: Installing atk: 39/39 files
+gucman: Preparing checksums: atk
+gucman: Checksummed atk: 25/39 files
+gucman: Checksummed atk: 39/39 files
+gucman: Saving transaction: atk
+gucman: Verifying staged files: atk
+gucman: Activating: atk
+Installed migration:atk 2.38.0-1
+gucman: Package 27/29: gtk3-schemas (2 remaining after this)
+gucman: Downloading gtk3-schemas source: source.tar (51200 bytes)
+  Connecting; waiting for response…
+  Downloaded 51200 / 51200 bytes (100%)
+  Downloaded 51200 / 51200 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-schemas source: source.tar
+gucman: Checking cached object: gtk3-schemas source: source.tar
+gucman: Checking cached object: gtk3-schemas source: gio-source.tar
+gucman: Checking cached object: gtk3-schemas source: GLib-COPYING
+gucman: Downloading gtk3-schemas source: build.sh (866 bytes)
+  Connecting; waiting for response…
+  Downloaded 866 / 866 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-schemas source: build.sh
+gucman: Checking cached object: gtk3-schemas source: build.sh
+gucman: Downloading gtk3-schemas source: test.sh (348 bytes)
+  Connecting; waiting for response…
+  Downloaded 348 / 348 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-schemas source: test.sh
+gucman: Checking cached object: gtk3-schemas source: test.sh
+gucman: Downloading gtk3-schemas source: schema-check.c (1206 bytes)
+  Connecting; waiting for response…
+  Downloaded 1206 / 1206 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-schemas source: schema-check.c
+gucman: Checking cached object: gtk3-schemas source: schema-check.c
+Building migration:gtk3-schemas; running trusted recipe with access to your guest files
+85 functions, 112791 bytes
+2 functions, 6882 bytes
+2 functions, 13155 bytes
+SCHEMA-PASS org.gtk.Settings.ColorChooser 2 keys
+SCHEMA-PASS org.gtk.Settings.Debug 2 keys
+SCHEMA-PASS org.gtk.Settings.EmojiChooser 1 keys
+SCHEMA-PASS org.gtk.Settings.FileChooser 16 keys
+GTK-SCHEMAS-ALL-PASS
+gucman: Installing gtk3-schemas: 0/9 files
+gucman: Installing gtk3-schemas: 9/9 files
+gucman: Preparing checksums: gtk3-schemas
+gucman: Checksummed gtk3-schemas: 9/9 files
+gucman: Saving transaction: gtk3-schemas
+gucman: Verifying staged files: gtk3-schemas
+gucman: Activating: gtk3-schemas
+Installed migration:gtk3-schemas 0.1.0-1
+gucman: Package 28/29: gtk3-x11 (1 remaining after this)
+gucman: Downloading gtk3-x11 source: source.tar (604160 bytes)
+  Connecting; waiting for response…
+  Downloaded 252023 / 604160 bytes (41%)
+  Downloaded 585062 / 604160 bytes (96%)
+  Downloaded 604160 / 604160 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: source.tar
+gucman: Checking cached object: gtk3-x11 source: source.tar
+gucman: Downloading gtk3-x11 source: gtk-source.tar (37212160 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 35.49 MiB (0%)
+  Downloaded 0.84 / 35.49 MiB (2%)
+  Downloaded 2.52 / 35.49 MiB (7%)
+  Downloaded 3.05 / 35.49 MiB (8%)
+  Downloaded 3.36 / 35.49 MiB (9%)
+  Downloaded 3.62 / 35.49 MiB (10%)
+  Downloaded 4.69 / 35.49 MiB (13%)
+  Downloaded 6.23 / 35.49 MiB (17%)
+  Downloaded 8.51 / 35.49 MiB (23%)
+  Downloaded 10.56 / 35.49 MiB (29%)
+  Downloaded 13.58 / 35.49 MiB (38%)
+  Downloaded 16.15 / 35.49 MiB (45%)
+  Downloaded 20.81 / 35.49 MiB (58%)
+  Downloaded 24.67 / 35.49 MiB (69%)
+  Downloaded 26.09 / 35.49 MiB (73%)
+  Downloaded 26.86 / 35.49 MiB (75%)
+  Downloaded 28.91 / 35.49 MiB (81%)
+  Downloaded 30.91 / 35.49 MiB (87%)
+  Downloaded 32.05 / 35.49 MiB (90%)
+  Downloaded 35.49 / 35.49 MiB (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: gtk-source.tar
+gucman: Checking cached object: gtk3-x11 source: gtk-source.tar
+gucman: Checking cached object: gtk3-x11 source: gio-source.tar
+gucman: Downloading gtk3-x11 source: COPYING-GTK (25383 bytes)
+  Connecting; waiting for response…
+  Downloaded 25383 / 25383 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: COPYING-GTK
+gucman: Checking cached object: gtk3-x11 source: COPYING-GTK
+gucman: Downloading gtk3-x11 source: COPYING-Cairo (26533 bytes)
+  Connecting; waiting for response…
+  Downloaded 26533 / 26533 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: COPYING-Cairo
+gucman: Checking cached object: gtk3-x11 source: COPYING-Cairo
+gucman: Checking cached object: gtk3-x11 source: GLib-COPYING
+gucman: Downloading gtk3-x11 source: build.sh (308360 bytes)
+  Connecting; waiting for response…
+  Downloaded 60000 / 308360 bytes (19%)
+  Downloaded 308360 / 308360 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: build.sh
+gucman: Checking cached object: gtk3-x11 source: build.sh
+gucman: Downloading gtk3-x11 source: test.sh (718 bytes)
+  Connecting; waiting for response…
+  Downloaded 718 / 718 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: test.sh
+gucman: Checking cached object: gtk3-x11 source: test.sh
+Building migration:gtk3-x11; running trusted recipe with access to your guest files
+GTK X11: 25 / 586 units
+GTK X11: 50 / 586 units
+GTK X11: 75 / 586 units
+GTK X11: 100 / 586 units
+GTK X11: 125 / 586 units
+GTK X11: 150 / 586 units
+GTK X11: 175 / 586 units
+GTK X11: 200 / 586 units
+GTK X11: 225 / 586 units
+GTK X11: 250 / 586 units
+GTK X11: 275 / 586 units
+GTK X11: 300 / 586 units
+GTK X11: 325 / 586 units
+GTK X11: 350 / 586 units
+GTK X11: 375 / 586 units
+GTK X11: 400 / 586 units
+GTK X11: 425 / 586 units
+GTK X11: 450 / 586 units
+GTK X11: 475 / 586 units
+GTK X11: 500 / 586 units
+GTK X11: 525 / 586 units
+GTK X11: 550 / 586 units
+GTK X11: 575 / 586 units
+1940 functions, 1729193 bytes
+18270 functions, 14752787 bytes
+28 functions, 39565 bytes
+Packed and verified 534 resources
+9 functions, 37886 bytes
+2 functions, 6109 bytes
+GTK-X11-LINK-VERSION-PASS
+gucman: Installing gtk3-x11: 0/720 files
+gucman: Installing gtk3-x11: 25/720 files
+gucman: Installing gtk3-x11: 50/720 files
+gucman: Installing gtk3-x11: 75/720 files
+gucman: Installing gtk3-x11: 100/720 files
+gucman: Installing gtk3-x11: 125/720 files
+gucman: Installing gtk3-x11: 150/720 files
+gucman: Installing gtk3-x11: 175/720 files
+gucman: Installing gtk3-x11: 200/720 files
+gucman: Installing gtk3-x11: 225/720 files
+gucman: Installing gtk3-x11: 250/720 files
+gucman: Installing gtk3-x11: 275/720 files
+gucman: Installing gtk3-x11: 300/720 files
+gucman: Installing gtk3-x11: 325/720 files
+gucman: Installing gtk3-x11: 350/720 files
+gucman: Installing gtk3-x11: 375/720 files
+gucman: Installing gtk3-x11: 400/720 files
+gucman: Installing gtk3-x11: 425/720 files
+gucman: Installing gtk3-x11: 450/720 files
+gucman: Installing gtk3-x11: 475/720 files
+gucman: Installing gtk3-x11: 500/720 files
+gucman: Installing gtk3-x11: 525/720 files
+gucman: Installing gtk3-x11: 550/720 files
+gucman: Installing gtk3-x11: 575/720 files
+gucman: Installing gtk3-x11: 600/720 files
+gucman: Installing gtk3-x11: 625/720 files
+gucman: Installing gtk3-x11: 650/720 files
+gucman: Installing gtk3-x11: 675/720 files
+gucman: Installing gtk3-x11: 700/720 files
+gucman: Installing gtk3-x11: 720/720 files
+gucman: Preparing checksums: gtk3-x11
+gucman: Checksummed gtk3-x11: 25/720 files
+gucman: Checksummed gtk3-x11: 50/720 files
+gucman: Checksummed gtk3-x11: 75/720 files
+gucman: Checksummed gtk3-x11: 100/720 files
+gucman: Checksummed gtk3-x11: 125/720 files
+gucman: Checksummed gtk3-x11: 150/720 files
+gucman: Checksummed gtk3-x11: 175/720 files
+gucman: Checksummed gtk3-x11: 200/720 files
+gucman: Checksummed gtk3-x11: 225/720 files
+gucman: Checksummed gtk3-x11: 250/720 files
+gucman: Checksummed gtk3-x11: 275/720 files
+gucman: Checksummed gtk3-x11: 300/720 files
+gucman: Checksummed gtk3-x11: 325/720 files
+gucman: Checksummed gtk3-x11: 350/720 files
+gucman: Checksummed gtk3-x11: 375/720 files
+gucman: Checksummed gtk3-x11: 400/720 files
+gucman: Checksummed gtk3-x11: 425/720 files
+gucman: Checksummed gtk3-x11: 450/720 files
+gucman: Checksummed gtk3-x11: 475/720 files
+gucman: Checksummed gtk3-x11: 500/720 files
+gucman: Checksummed gtk3-x11: 525/720 files
+gucman: Checksummed gtk3-x11: 550/720 files
+gucman: Checksummed gtk3-x11: 575/720 files
+gucman: Checksummed gtk3-x11: 600/720 files
+gucman: Checksummed gtk3-x11: 625/720 files
+gucman: Checksummed gtk3-x11: 650/720 files
+gucman: Checksummed gtk3-x11: 675/720 files
+gucman: Checksummed gtk3-x11: 700/720 files
+gucman: Checksummed gtk3-x11: 720/720 files
+gucman: Saving transaction: gtk3-x11
+gucman: Verifying staged files: gtk3-x11
+gucman: Activating: gtk3-x11
+Installed migration:gtk3-x11 3.24.43-1
+gucman: Package 29/29: galculator (0 remaining after this)
+gucman: Downloading galculator source: source.tar (3399680 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.24 / 3.24 MiB (100%); transfer finished
+gucman: Verifying download: galculator source: source.tar
+gucman: Checking cached object: galculator source: source.tar
+gucman: Downloading galculator source: build.sh (1151 bytes)
+  Connecting; waiting for response…
+  Downloaded 1151 / 1151 bytes (100%); transfer finished
+gucman: Verifying download: galculator source: build.sh
+gucman: Checking cached object: galculator source: build.sh
+gucman: Downloading galculator source: test.sh (814 bytes)
+  Connecting; waiting for response…
+  Downloaded 814 / 814 bytes (100%); transfer finished
+gucman: Verifying download: galculator source: test.sh
+gucman: Checking cached object: galculator source: test.sh
+gucman: Downloading galculator source: galculator.desktop (138 bytes)
+  Connecting; waiting for response…
+  Downloaded 138 / 138 bytes (100%); transfer finished
+gucman: Verifying download: galculator source: galculator.desktop
+gucman: Checking cached object: galculator source: galculator.desktop
+Building migration:galculator; running trusted recipe with access to your guest files
+334 functions, 388508 bytes
+2 functions, 5422 bytes
+Dynamic loader: Cannot open shared library: libgtk-3.so (needed by /tmp/galculator-link)
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: build migration:galculator: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 24812 bytes; transfer finished
+gucman: Resolving: migration:galculator
+gucman: Downloading manifest for migration:galculator (3619 bytes)
+  Connecting; waiting for response…
+  Downloaded 3619 / 3619 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:galculator
+gucman: Checking cached object: manifest for migration:galculator
+gucman: Resolving: migration:gtk3-x11
+gucman: Downloading manifest for migration:gtk3-x11 (69181 bytes)
+  Connecting; waiting for response…
+  Downloaded 69181 / 69181 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gtk3-x11
+gucman: Checking cached object: manifest for migration:gtk3-x11
+gucman: Resolving: migration:pkgconf
+gucman: Downloading manifest for migration:pkgconf (1868 bytes)
+  Connecting; waiting for response…
+  Downloaded 1868 / 1868 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:x11-shared
+gucman: Downloading manifest for migration:x11-shared (3519 bytes)
+  Connecting; waiting for response…
+  Downloaded 3519 / 3519 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:x11-server
+gucman: Downloading manifest for migration:x11-server (47963 bytes)
+  Connecting; waiting for response…
+  Downloaded 47963 / 47963 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:cairo
+gucman: Downloading manifest for migration:cairo (4546 bytes)
+  Connecting; waiting for response…
+  Downloaded 4546 / 4546 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:pixman
+gucman: Downloading manifest for migration:pixman (2143 bytes)
+  Connecting; waiting for response…
+  Downloaded 2143 / 2143 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Resolving: migration:freetype
+gucman: Downloading manifest for migration:freetype (6862 bytes)
+  Connecting; waiting for response…
+  Downloaded 6862 / 6862 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:fontconfig
+gucman: Downloading manifest for migration:fontconfig (3509 bytes)
+  Connecting; waiting for response…
+  Downloaded 3509 / 3509 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:expat
+gucman: Downloading manifest for migration:expat (2087 bytes)
+  Connecting; waiting for response…
+  Downloaded 2087 / 2087 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Resolving: migration:libpng
+gucman: Downloading manifest for migration:libpng (2222 bytes)
+  Connecting; waiting for response…
+  Downloaded 2222 / 2222 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Downloading manifest for migration:zlib (2061 bytes)
+  Connecting; waiting for response…
+  Downloaded 2061 / 2061 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:pango
+gucman: Downloading manifest for migration:pango (6443 bytes)
+  Connecting; waiting for response…
+  Downloaded 6443 / 6443 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pango
+gucman: Checking cached object: manifest for migration:pango
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:fribidi
+gucman: Downloading manifest for migration:fribidi (4735 bytes)
+  Connecting; waiting for response…
+  Downloaded 4735 / 4735 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:harfbuzz
+gucman: Downloading manifest for migration:harfbuzz (6431 bytes)
+  Connecting; waiting for response…
+  Downloaded 6431 / 6431 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:harfbuzz-static
+gucman: Downloading manifest for migration:harfbuzz-static (2832 bytes)
+  Connecting; waiting for response…
+  Downloaded 2832 / 2832 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:harfbuzz-static
+gucman: Checking cached object: manifest for migration:harfbuzz-static
+gucman: Resolving: migration:glib
+gucman: Downloading manifest for migration:glib (13467 bytes)
+  Connecting; waiting for response…
+  Downloaded 13467 / 13467 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Downloading manifest for migration:libiconv (2119 bytes)
+  Connecting; waiting for response…
+  Downloaded 2119 / 2119 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Downloading manifest for migration:libintl (2246 bytes)
+  Connecting; waiting for response…
+  Downloaded 2246 / 2246 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Downloading manifest for migration:pcre2 (2031 bytes)
+  Connecting; waiting for response…
+  Downloaded 2031 / 2031 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:gio-listmodel
+gucman: Downloading manifest for migration:gio-listmodel (2811 bytes)
+  Connecting; waiting for response…
+  Downloaded 2811 / 2811 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Downloading manifest for migration:gobject (4558 bytes)
+  Connecting; waiting for response…
+  Downloaded 4558 / 4558 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libffi
+gucman: Downloading manifest for migration:libffi (2081 bytes)
+  Connecting; waiting for response…
+  Downloaded 2081 / 2081 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:gdk-pixbuf
+gucman: Downloading manifest for migration:gdk-pixbuf (4134 bytes)
+  Connecting; waiting for response…
+  Downloaded 4134 / 4134 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gdk-pixbuf
+gucman: Checking cached object: manifest for migration:gdk-pixbuf
+gucman: Resolving: migration:gio-core
+gucman: Downloading manifest for migration:gio-core (16515 bytes)
+  Connecting; waiting for response…
+  Downloaded 16515 / 16515 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Downloading manifest for migration:libjpeg-turbo (2477 bytes)
+  Connecting; waiting for response…
+  Downloaded 2477 / 2477 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:cairo-gobject
+gucman: Downloading manifest for migration:cairo-gobject (2487 bytes)
+  Connecting; waiting for response…
+  Downloaded 2487 / 2487 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:cairo-gobject
+gucman: Checking cached object: manifest for migration:cairo-gobject
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:atk
+gucman: Downloading manifest for migration:atk (4981 bytes)
+  Connecting; waiting for response…
+  Downloaded 4981 / 4981 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:atk
+gucman: Checking cached object: manifest for migration:atk
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gtk3-schemas
+gucman: Downloading manifest for migration:gtk3-schemas (3822 bytes)
+  Connecting; waiting for response…
+  Downloaded 3822 / 3822 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gtk3-schemas
+gucman: Checking cached object: manifest for migration:gtk3-schemas
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Plan: 29 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 29 packages
+gucman: Package 1/29: pkgconf (28 remaining after this)
+gucman: Downloading pkgconf source: source.tar (501760 bytes)
+  Connecting; waiting for response…
+  Downloaded 501760 / 501760 bytes (100%); transfer finished
+gucman: Verifying download: pkgconf source: source.tar
+gucman: Checking cached object: pkgconf source: source.tar
+gucman: Downloading pkgconf source: build.sh (602 bytes)
+  Connecting; waiting for response…
+  Downloaded 602 / 602 bytes (100%); transfer finished
+gucman: Verifying download: pkgconf source: build.sh
+gucman: Checking cached object: pkgconf source: build.sh
+gucman: Downloading pkgconf source: test.sh (516 bytes)
+  Connecting; waiting for response…
+  Downloaded 516 / 516 bytes (100%); transfer finished
+gucman: Verifying download: pkgconf source: test.sh
+gucman: Checking cached object: pkgconf source: test.sh
+Building migration:pkgconf; running trusted recipe with access to your guest files
+255 functions, 225765 bytes
+2.3.0
+-L/example/lib -lbase -lm
+-L/example/lib -lbase -lm
+gucman: Installing pkgconf: 0/3 files
+gucman: Installing pkgconf: 3/3 files
+gucman: Preparing checksums: pkgconf
+gucman: Checksummed pkgconf: 3/3 files
+gucman: Saving transaction: pkgconf
+gucman: Verifying staged files: pkgconf
+gucman: Activating: pkgconf
+Installed migration:pkgconf 2.3.0-1
+gucman: Package 2/29: x11-server (27 remaining after this)
+gucman: Downloading x11-server source: source.tar (25978880 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 24.78 MiB (0%)
+  Downloaded 5.41 / 24.78 MiB (21%)
+  Downloaded 10.68 / 24.78 MiB (43%)
+  Downloaded 15.99 / 24.78 MiB (64%)
+  Downloaded 21.31 / 24.78 MiB (85%)
+  Downloaded 24.78 / 24.78 MiB (100%); transfer finished
+gucman: Verifying download: x11-server source: source.tar
+gucman: Checking cached object: x11-server source: source.tar
+gucman: Downloading x11-server source: build.sh (247 bytes)
+  Connecting; waiting for response…
+  Downloaded 247 / 247 bytes (100%); transfer finished
+gucman: Verifying download: x11-server source: build.sh
+gucman: Checking cached object: x11-server source: build.sh
+gucman: Downloading x11-server source: test.sh (148 bytes)
+  Connecting; waiting for response…
+  Downloaded 148 / 148 bytes (100%); transfer finished
+gucman: Verifying download: x11-server source: test.sh
+gucman: Checking cached object: x11-server source: test.sh
+Building migration:x11-server; running trusted recipe with access to your guest files
+7072 functions, 14791393 bytes
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:37: warning: macro 'xmalloc' redefined with an incompatible definition
+/tmp/gucman.slruuu/builds/x11-server/source/X11/src/locking.h:38: warning: macro 'xfree' redefined with an incompatible definition
+gucman: Installing x11-server: 0/527 files
+gucman: Installing x11-server: 25/527 files
+gucman: Installing x11-server: 50/527 files
+gucman: Installing x11-server: 75/527 files
+gucman: Installing x11-server: 100/527 files
+gucman: Installing x11-server: 125/527 files
+gucman: Installing x11-server: 150/527 files
+gucman: Installing x11-server: 175/527 files
+gucman: Installing x11-server: 200/527 files
+gucman: Installing x11-server: 225/527 files
+gucman: Installing x11-server: 250/527 files
+gucman: Installing x11-server: 275/527 files
+gucman: Installing x11-server: 300/527 files
+gucman: Installing x11-server: 325/527 files
+gucman: Installing x11-server: 350/527 files
+gucman: Installing x11-server: 375/527 files
+gucman: Installing x11-server: 400/527 files
+gucman: Installing x11-server: 425/527 files
+gucman: Installing x11-server: 450/527 files
+gucman: Installing x11-server: 475/527 files
+gucman: Installing x11-server: 500/527 files
+gucman: Installing x11-server: 525/527 files
+gucman: Installing x11-server: 527/527 files
+gucman: Preparing checksums: x11-server
+gucman: Checksummed x11-server: 25/527 files
+gucman: Checksummed x11-server: 50/527 files
+gucman: Checksummed x11-server: 75/527 files
+gucman: Checksummed x11-server: 100/527 files
+gucman: Checksummed x11-server: 125/527 files
+gucman: Checksummed x11-server: 150/527 files
+gucman: Checksummed x11-server: 175/527 files
+gucman: Checksummed x11-server: 200/527 files
+gucman: Checksummed x11-server: 225/527 files
+gucman: Checksummed x11-server: 250/527 files
+gucman: Checksummed x11-server: 275/527 files
+gucman: Checksummed x11-server: 300/527 files
+gucman: Checksummed x11-server: 325/527 files
+gucman: Checksummed x11-server: 350/527 files
+gucman: Checksummed x11-server: 375/527 files
+gucman: Checksummed x11-server: 400/527 files
+gucman: Checksummed x11-server: 425/527 files
+gucman: Checksummed x11-server: 450/527 files
+gucman: Checksummed x11-server: 475/527 files
+gucman: Checksummed x11-server: 500/527 files
+gucman: Checksummed x11-server: 525/527 files
+gucman: Checksummed x11-server: 527/527 files
+gucman: Saving transaction: x11-server
+gucman: Verifying staged files: x11-server
+gucman: Activating: x11-server
+Installed migration:x11-server 21.1.24-1
+gucman: Package 3/29: x11-shared (26 remaining after this)
+gucman: Downloading x11-shared source: source.tar (81920 bytes)
+  Connecting; waiting for response…
+  Downloaded 81920 / 81920 bytes (100%); transfer finished
+gucman: Verifying download: x11-shared source: source.tar
+gucman: Checking cached object: x11-shared source: source.tar
+gucman: Downloading x11-shared source: build.sh (721 bytes)
+  Connecting; waiting for response…
+  Downloaded 721 / 721 bytes (100%); transfer finished
+gucman: Verifying download: x11-shared source: build.sh
+gucman: Checking cached object: x11-shared source: build.sh
+gucman: Downloading x11-shared source: test.sh (438 bytes)
+  Connecting; waiting for response…
+  Downloaded 438 / 438 bytes (100%); transfer finished
+gucman: Verifying download: x11-shared source: test.sh
+gucman: Checking cached object: x11-shared source: test.sh
+Building migration:x11-shared; running trusted recipe with access to your guest files
+7 functions, 11575 bytes
+746 functions, 601416 bytes
+2207 functions, 2356397 bytes
+196 functions, 174203 bytes
+61 functions, 77095 bytes
+44 functions, 45759 bytes
+138 functions, 151278 bytes
+43 functions, 45632 bytes
+2 functions, 4955 bytes
+gucman: Installing x11-shared: 0/17 files
+gucman: Installing x11-shared: 17/17 files
+gucman: Preparing checksums: x11-shared
+gucman: Checksummed x11-shared: 17/17 files
+gucman: Saving transaction: x11-shared
+gucman: Verifying staged files: x11-shared
+gucman: Activating: x11-shared
+Installed migration:x11-shared 0.1.0-1
+gucman: Package 4/29: pixman (25 remaining after this)
+gucman: Downloading pixman source: source.tar (3307520 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.38 / 3.15 MiB (43%)
+  Downloaded 3.15 / 3.15 MiB (100%); transfer finished
+gucman: Verifying download: pixman source: source.tar
+gucman: Checking cached object: pixman source: source.tar
+gucman: Downloading pixman source: build.sh (1376 bytes)
+  Connecting; waiting for response…
+  Downloaded 1376 / 1376 bytes (100%); transfer finished
+gucman: Verifying download: pixman source: build.sh
+gucman: Checking cached object: pixman source: build.sh
+gucman: Downloading pixman source: test.sh (322 bytes)
+  Connecting; waiting for response…
+  Downloaded 322 / 322 bytes (100%); transfer finished
+gucman: Verifying download: pixman source: test.sh
+gucman: Checking cached object: pixman source: test.sh
+Building migration:pixman; running trusted recipe with access to your guest files
+1175 functions, 874883 bytes
+1110 functions, 794660 bytes
+2 functions, 8111 bytes
+gucman: Installing pixman: 0/6 files
+gucman: Installing pixman: 6/6 files
+gucman: Preparing checksums: pixman
+gucman: Checksummed pixman: 6/6 files
+gucman: Saving transaction: pixman
+gucman: Verifying staged files: pixman
+gucman: Activating: pixman
+Installed migration:pixman 0.46.4-1
+gucman: Package 5/29: freetype (24 remaining after this)
+gucman: Downloading freetype source: source.tar (10762240 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 10.26 MiB (0%)
+  Downloaded 5.33 / 10.26 MiB (51%)
+  Downloaded 10.26 / 10.26 MiB (100%); transfer finished
+gucman: Verifying download: freetype source: source.tar
+gucman: Checking cached object: freetype source: source.tar
+gucman: Downloading freetype source: build.sh (5864 bytes)
+  Connecting; waiting for response…
+  Downloaded 5864 / 5864 bytes (100%); transfer finished
+gucman: Verifying download: freetype source: build.sh
+gucman: Checking cached object: freetype source: build.sh
+gucman: Downloading freetype source: test.sh (747 bytes)
+  Connecting; waiting for response…
+  Downloaded 747 / 747 bytes (100%); transfer finished
+gucman: Verifying download: freetype source: test.sh
+gucman: Checking cached object: freetype source: test.sh
+Building migration:freetype; running trusted recipe with access to your guest files
+1898 functions, 1588790 bytes
+1715 functions, 1427078 bytes
+2 functions, 6508 bytes
+gucman: Installing freetype: 0/60 files
+gucman: Installing freetype: 25/60 files
+gucman: Installing freetype: 50/60 files
+gucman: Installing freetype: 60/60 files
+gucman: Preparing checksums: freetype
+gucman: Checksummed freetype: 25/60 files
+gucman: Checksummed freetype: 50/60 files
+gucman: Checksummed freetype: 60/60 files
+gucman: Saving transaction: freetype
+gucman: Verifying staged files: freetype
+gucman: Activating: freetype
+Installed migration:freetype 2.14.1-1
+gucman: Package 6/29: expat (23 remaining after this)
+gucman: Downloading expat source: source.tar (1474560 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 1.41 MiB (1%)
+  Downloaded 1.41 / 1.41 MiB (100%); transfer finished
+gucman: Verifying download: expat source: source.tar
+gucman: Checking cached object: expat source: source.tar
+gucman: Downloading expat source: build.sh (611 bytes)
+  Connecting; waiting for response…
+  Downloaded 611 / 611 bytes (100%); transfer finished
+gucman: Verifying download: expat source: build.sh
+gucman: Checking cached object: expat source: build.sh
+gucman: Downloading expat source: test.sh (918 bytes)
+  Connecting; waiting for response…
+  Downloaded 918 / 918 bytes (100%); transfer finished
+gucman: Verifying download: expat source: test.sh
+gucman: Checking cached object: expat source: test.sh
+Building migration:expat; running trusted recipe with access to your guest files
+364 functions, 324368 bytes
+367 functions, 321653 bytes
+3 functions, 6749 bytes
+EXPAT-CONSUMERS-PASS
+gucman: Installing expat: 0/6 files
+gucman: Installing expat: 6/6 files
+gucman: Preparing checksums: expat
+gucman: Checksummed expat: 6/6 files
+gucman: Saving transaction: expat
+gucman: Verifying staged files: expat
+gucman: Activating: expat
+Installed migration:expat 2.7.1-1
+gucman: Package 7/29: fontconfig (22 remaining after this)
+gucman: Downloading fontconfig source: source.tar (1648640 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.57 / 1.57 MiB (100%); transfer finished
+gucman: Verifying download: fontconfig source: source.tar
+gucman: Checking cached object: fontconfig source: source.tar
+gucman: Downloading fontconfig source: build.sh (2103 bytes)
+  Connecting; waiting for response…
+  Downloaded 2103 / 2103 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: build.sh
+gucman: Checking cached object: fontconfig source: build.sh
+gucman: Downloading fontconfig source: test.sh (428 bytes)
+  Connecting; waiting for response…
+  Downloaded 428 / 428 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: test.sh
+gucman: Checking cached object: fontconfig source: test.sh
+gucman: Downloading fontconfig source: ABeeZee-Regular.ttf (46016 bytes)
+  Connecting; waiting for response…
+  Downloaded 46016 / 46016 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: ABeeZee-Regular.ttf
+gucman: Checking cached object: fontconfig source: ABeeZee-Regular.ttf
+gucman: Downloading fontconfig source: SourceCodePro-Regular.otf (131128 bytes)
+  Connecting; waiting for response…
+  Downloaded 131128 / 131128 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: SourceCodePro-Regular.otf
+gucman: Checking cached object: fontconfig source: SourceCodePro-Regular.otf
+Building migration:fontconfig; running trusted recipe with access to your guest files
+819 functions, 661394 bytes
+762 functions, 603739 bytes
+3 functions, 8651 bytes
+gucman: Installing fontconfig: 0/11 files
+gucman: Installing fontconfig: 11/11 files
+gucman: Preparing checksums: fontconfig
+gucman: Checksummed fontconfig: 11/11 files
+gucman: Saving transaction: fontconfig
+gucman: Verifying staged files: fontconfig
+gucman: Activating: fontconfig
+Installed migration:fontconfig 2.15.0-1
+gucman: Package 8/29: zlib (21 remaining after this)
+gucman: Downloading zlib source: source.tar (1269760 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.21 / 1.21 MiB (100%); transfer finished
+gucman: Verifying download: zlib source: source.tar
+gucman: Checking cached object: zlib source: source.tar
+gucman: Downloading zlib source: build.sh (785 bytes)
+  Connecting; waiting for response…
+  Downloaded 785 / 785 bytes (100%); transfer finished
+gucman: Verifying download: zlib source: build.sh
+gucman: Checking cached object: zlib source: build.sh
+gucman: Downloading zlib source: test.sh (344 bytes)
+  Connecting; waiting for response…
+  Downloaded 344 / 344 bytes (100%); transfer finished
+gucman: Verifying download: zlib source: test.sh
+gucman: Checking cached object: zlib source: test.sh
+Building migration:zlib; running trusted recipe with access to your guest files
+158 functions, 172922 bytes
+167 functions, 180950 bytes
+zlib version 1.3.2 = 0x1320, compile flags = 0x95
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+12 functions, 28822 bytes
+zlib version 1.3.2 = 0x1320, compile flags = 0x95
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+gucman: Installing zlib: 0/6 files
+gucman: Installing zlib: 6/6 files
+gucman: Preparing checksums: zlib
+gucman: Checksummed zlib: 6/6 files
+gucman: Saving transaction: zlib
+gucman: Verifying staged files: zlib
+gucman: Activating: zlib
+Installed migration:zlib 1.3.2-1
+gucman: Package 9/29: libpng (20 remaining after this)
+gucman: Downloading libpng source: source.tar (1495040 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.43 / 1.43 MiB (100%); transfer finished
+gucman: Verifying download: libpng source: source.tar
+gucman: Checking cached object: libpng source: source.tar
+gucman: Downloading libpng source: build.sh (3086 bytes)
+  Connecting; waiting for response…
+  Downloaded 3086 / 3086 bytes (100%); transfer finished
+gucman: Verifying download: libpng source: build.sh
+gucman: Checking cached object: libpng source: build.sh
+gucman: Downloading libpng source: test.sh (968 bytes)
+  Connecting; waiting for response…
+  Downloaded 968 / 968 bytes (100%); transfer finished
+gucman: Verifying download: libpng source: test.sh
+gucman: Checking cached object: libpng source: test.sh
+Building migration:libpng; running trusted recipe with access to your guest files
+527 functions, 472215 bytes
+510 functions, 443807 bytes
+2 functions, 6860 bytes
+gucman: Installing libpng: 0/7 files
+gucman: Installing libpng: 7/7 files
+gucman: Preparing checksums: libpng
+gucman: Checksummed libpng: 7/7 files
+gucman: Saving transaction: libpng
+gucman: Verifying staged files: libpng
+gucman: Activating: libpng
+Installed migration:libpng 1.6.58-1
+gucman: Package 10/29: cairo (19 remaining after this)
+gucman: Downloading cairo source: source.tar (6932480 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 6.61 MiB (0%)
+  Downloaded 5.18 / 6.61 MiB (78%)
+  Downloaded 6.61 / 6.61 MiB (100%); transfer finished
+gucman: Verifying download: cairo source: source.tar
+gucman: Checking cached object: cairo source: source.tar
+gucman: Downloading cairo source: build.sh (1550 bytes)
+  Connecting; waiting for response…
+  Downloaded 1550 / 1550 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: build.sh
+gucman: Checking cached object: cairo source: build.sh
+gucman: Downloading cairo source: test.sh (921 bytes)
+  Connecting; waiting for response…
+  Downloaded 921 / 921 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: test.sh
+gucman: Checking cached object: cairo source: test.sh
+gucman: Downloading cairo source: sources.txt (3237 bytes)
+  Connecting; waiting for response…
+  Downloaded 3237 / 3237 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: sources.txt
+gucman: Checking cached object: cairo source: sources.txt
+gucman: Downloading cairo source: config.h (870 bytes)
+  Connecting; waiting for response…
+  Downloaded 870 / 870 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: config.h
+gucman: Checking cached object: cairo source: config.h
+gucman: Downloading cairo source: cairo-features.h (432 bytes)
+  Connecting; waiting for response…
+  Downloaded 432 / 432 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: cairo-features.h
+gucman: Checking cached object: cairo source: cairo-features.h
+gucman: Downloading cairo source: cairo-xlib-surface.c (67046 bytes)
+  Connecting; waiting for response…
+  Downloaded 67046 / 67046 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: cairo-xlib-surface.c
+gucman: Checking cached object: cairo source: cairo-xlib-surface.c
+Building migration:cairo; running trusted recipe with access to your guest files
+3336 functions, 2131823 bytes
+2684 functions, 1685851 bytes
+2 functions, 8322 bytes
+gucman: Installing cairo: 0/16 files
+gucman: Installing cairo: 16/16 files
+gucman: Preparing checksums: cairo
+gucman: Checksummed cairo: 16/16 files
+gucman: Saving transaction: cairo
+gucman: Verifying staged files: cairo
+gucman: Activating: cairo
+Installed migration:cairo 1.18.4-1
+gucman: Package 11/29: fribidi (18 remaining after this)
+gucman: Downloading fribidi source: source.tar (15953920 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 15.21 MiB (0%)
+  Downloaded 5.06 / 15.21 MiB (33%)
+  Downloaded 10.12 / 15.21 MiB (66%)
+  Downloaded 15.21 / 15.21 MiB (100%); transfer finished
+gucman: Verifying download: fribidi source: source.tar
+gucman: Checking cached object: fribidi source: source.tar
+gucman: Downloading fribidi source: build.sh (1238 bytes)
+  Connecting; waiting for response…
+  Downloaded 1238 / 1238 bytes (100%); transfer finished
+gucman: Verifying download: fribidi source: build.sh
+gucman: Checking cached object: fribidi source: build.sh
+gucman: Downloading fribidi source: test.sh (396 bytes)
+  Connecting; waiting for response…
+  Downloaded 396 / 396 bytes (100%); transfer finished
+gucman: Verifying download: fribidi source: test.sh
+gucman: Checking cached object: fribidi source: test.sh
+Building migration:fribidi; running trusted recipe with access to your guest files
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+/__wasm_posix__/include/stddef.h:7: warning: macro 'NULL' redefined with an incompatible definition
+72 functions, 124691 bytes
+43 functions, 98289 bytes
+2 functions, 5643 bytes
+gucman: Installing fribidi: 0/37 files
+gucman: Installing fribidi: 25/37 files
+gucman: Installing fribidi: 37/37 files
+gucman: Preparing checksums: fribidi
+gucman: Checksummed fribidi: 25/37 files
+gucman: Checksummed fribidi: 37/37 files
+gucman: Saving transaction: fribidi
+gucman: Verifying staged files: fribidi
+gucman: Activating: fribidi
+Installed migration:fribidi 1.0.16-1
+gucman: Package 12/29: libiconv (17 remaining after this)
+gucman: Downloading libiconv source: source.tar (17141760 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 16.35 MiB (0%)
+  Downloaded 5.38 / 16.35 MiB (32%)
+  Downloaded 10.50 / 16.35 MiB (64%)
+  Downloaded 15.75 / 16.35 MiB (96%)
+  Downloaded 16.35 / 16.35 MiB (100%); transfer finished
+gucman: Verifying download: libiconv source: source.tar
+gucman: Checking cached object: libiconv source: source.tar
+gucman: Downloading libiconv source: build.sh (1309 bytes)
+  Connecting; waiting for response…
+  Downloaded 1309 / 1309 bytes (100%); transfer finished
+gucman: Verifying download: libiconv source: build.sh
+gucman: Checking cached object: libiconv source: build.sh
+gucman: Downloading libiconv source: test.sh (269 bytes)
+  Connecting; waiting for response…
+  Downloaded 269 / 269 bytes (100%); transfer finished
+gucman: Verifying download: libiconv source: test.sh
+gucman: Checking cached object: libiconv source: test.sh
+Building migration:libiconv; running trusted recipe with access to your guest files
+491 functions, 1358297 bytes
+492 functions, 1360868 bytes
+ICONV-PASS
+2 functions, 10515 bytes
+ICONV-PASS
+gucman: Installing libiconv: 0/6 files
+gucman: Installing libiconv: 6/6 files
+gucman: Preparing checksums: libiconv
+gucman: Checksummed libiconv: 6/6 files
+gucman: Saving transaction: libiconv
+gucman: Verifying staged files: libiconv
+gucman: Activating: libiconv
+Installed migration:libiconv 1.18-1
+gucman: Package 13/29: libintl (16 remaining after this)
+gucman: Downloading libintl source: source.tar (5058560 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 4.82 MiB (0%)
+  Downloaded 2.39 / 4.82 MiB (49%)
+  Downloaded 4.82 / 4.82 MiB (100%); transfer finished
+gucman: Verifying download: libintl source: source.tar
+gucman: Checking cached object: libintl source: source.tar
+gucman: Downloading libintl source: build.sh (5437 bytes)
+  Connecting; waiting for response…
+  Downloaded 5437 / 5437 bytes (100%); transfer finished
+gucman: Verifying download: libintl source: build.sh
+gucman: Checking cached object: libintl source: build.sh
+gucman: Downloading libintl source: test.sh (339 bytes)
+  Connecting; waiting for response…
+  Downloaded 339 / 339 bytes (100%); transfer finished
+gucman: Verifying download: libintl source: test.sh
+gucman: Checking cached object: libintl source: test.sh
+Building migration:libintl; running trusted recipe with access to your guest files
+70 functions, 84897 bytes
+58 functions, 79287 bytes
+GETTEXT-PASS
+2 functions, 10903 bytes
+GETTEXT-PASS
+gucman: Installing libintl: 0/6 files
+gucman: Installing libintl: 6/6 files
+gucman: Preparing checksums: libintl
+gucman: Checksummed libintl: 6/6 files
+gucman: Saving transaction: libintl
+gucman: Verifying staged files: libintl
+gucman: Activating: libintl
+Installed migration:libintl 0.23.1-1
+gucman: Package 14/29: pcre2 (15 remaining after this)
+gucman: Downloading pcre2 source: source.tar (6563840 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 6.26 MiB (0%)
+  Downloaded 3.39 / 6.26 MiB (54%)
+  Downloaded 6.26 / 6.26 MiB (100%); transfer finished
+gucman: Verifying download: pcre2 source: source.tar
+gucman: Checking cached object: pcre2 source: source.tar
+gucman: Downloading pcre2 source: build.sh (5388 bytes)
+  Connecting; waiting for response…
+  Downloaded 5388 / 5388 bytes (100%); transfer finished
+gucman: Verifying download: pcre2 source: build.sh
+gucman: Checking cached object: pcre2 source: build.sh
+gucman: Downloading pcre2 source: test.sh (281 bytes)
+  Connecting; waiting for response…
+  Downloaded 281 / 281 bytes (100%); transfer finished
+gucman: Verifying download: pcre2 source: test.sh
+gucman: Checking cached object: pcre2 source: test.sh
+Building migration:pcre2; running trusted recipe with access to your guest files
+181 functions, 737864 bytes
+142 functions, 630878 bytes
+2 functions, 8088 bytes
+gucman: Installing pcre2: 0/5 files
+gucman: Installing pcre2: 5/5 files
+gucman: Preparing checksums: pcre2
+gucman: Checksummed pcre2: 5/5 files
+gucman: Saving transaction: pcre2
+gucman: Verifying staged files: pcre2
+gucman: Activating: pcre2
+Installed migration:pcre2 10.46-1
+gucman: Package 15/29: glib (14 remaining after this)
+gucman: Downloading glib source: source.tar (19445760 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 18.54 MiB (0%)
+  Downloaded 4.02 / 18.54 MiB (21%)
+  Downloaded 8.20 / 18.54 MiB (44%)
+  Downloaded 13.45 / 18.54 MiB (72%)
+  Downloaded 18.17 / 18.54 MiB (97%)
+  Downloaded 18.54 / 18.54 MiB (100%); transfer finished
+gucman: Verifying download: glib source: source.tar
+gucman: Checking cached object: glib source: source.tar
+gucman: Downloading glib source: build.sh (17509 bytes)
+  Connecting; waiting for response…
+  Downloaded 17509 / 17509 bytes (100%); transfer finished
+gucman: Verifying download: glib source: build.sh
+gucman: Checking cached object: glib source: build.sh
+gucman: Downloading glib source: test.sh (428 bytes)
+  Connecting; waiting for response…
+  Downloaded 428 / 428 bytes (100%); transfer finished
+gucman: Verifying download: glib source: test.sh
+gucman: Checking cached object: glib source: test.sh
+Building migration:glib; running trusted recipe with access to your guest files
+2963 functions, 2625246 bytes
+1923 functions, 1680238 bytes
+GLIB-PASS
+4 functions, 17842 bytes
+GLIB-PASS
+gucman: Installing glib: 0/140 files
+gucman: Installing glib: 25/140 files
+gucman: Installing glib: 50/140 files
+gucman: Installing glib: 75/140 files
+gucman: Installing glib: 100/140 files
+gucman: Installing glib: 125/140 files
+gucman: Installing glib: 140/140 files
+gucman: Preparing checksums: glib
+gucman: Checksummed glib: 25/140 files
+gucman: Checksummed glib: 50/140 files
+gucman: Checksummed glib: 75/140 files
+gucman: Checksummed glib: 100/140 files
+gucman: Checksummed glib: 125/140 files
+gucman: Checksummed glib: 140/140 files
+gucman: Saving transaction: glib
+gucman: Verifying staged files: glib
+gucman: Activating: glib
+Installed migration:glib 2.84.4-1
+gucman: Package 16/29: harfbuzz-static (13 remaining after this)
+gucman: Downloading harfbuzz-static source: source.tar (8048640 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 7.68 MiB (0%)
+  Downloaded 4.09 / 7.68 MiB (53%)
+  Downloaded 7.68 / 7.68 MiB (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: source.tar
+gucman: Checking cached object: harfbuzz-static source: source.tar
+gucman: Downloading harfbuzz-static source: prepared.tar.gz (18677179 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 17.81 MiB (0%)
+  Downloaded 2.98 / 17.81 MiB (16%)
+  Downloaded 5.48 / 17.81 MiB (30%)
+  Downloaded 8.61 / 17.81 MiB (48%)
+  Downloaded 12.12 / 17.81 MiB (68%)
+  Downloaded 15.89 / 17.81 MiB (89%)
+  Downloaded 17.81 / 17.81 MiB (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: prepared.tar.gz
+gucman: Checking cached object: harfbuzz-static source: prepared.tar.gz
+gucman: Downloading harfbuzz-static source: build.sh (543 bytes)
+  Connecting; waiting for response…
+  Downloaded 543 / 543 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: build.sh
+gucman: Checking cached object: harfbuzz-static source: build.sh
+gucman: Downloading harfbuzz-static source: test.sh (450 bytes)
+  Connecting; waiting for response…
+  Downloaded 450 / 450 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz-static source: test.sh
+gucman: Checking cached object: harfbuzz-static source: test.sh
+Building migration:harfbuzz-static; running trusted recipe with access to your guest files
+37719 functions, 57081099 bytes
+33005 functions, 49103476 bytes
+HARFBUZZ-CONSUMER-PASS
+gucman: Installing harfbuzz-static: 0/4 files
+gucman: Installing harfbuzz-static: 4/4 files
+gucman: Preparing checksums: harfbuzz-static
+gucman: Checksummed harfbuzz-static: 4/4 files
+gucman: Saving transaction: harfbuzz-static
+gucman: Verifying staged files: harfbuzz-static
+gucman: Activating: harfbuzz-static
+Installed migration:harfbuzz-static 14.5.0-1
+gucman: Package 17/29: harfbuzz (12 remaining after this)
+gucman: Checking cached object: harfbuzz source: source.tar
+gucman: Checking cached object: harfbuzz source: prepared.tar.gz
+gucman: Downloading harfbuzz source: build.sh (1448 bytes)
+  Connecting; waiting for response…
+  Downloaded 1448 / 1448 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz source: build.sh
+gucman: Checking cached object: harfbuzz source: build.sh
+gucman: Downloading harfbuzz source: test.sh (828 bytes)
+  Connecting; waiting for response…
+  Downloaded 828 / 828 bytes (100%); transfer finished
+gucman: Verifying download: harfbuzz source: test.sh
+gucman: Checking cached object: harfbuzz source: test.sh
+Building migration:harfbuzz; running trusted recipe with access to your guest files
+37719 functions, 57081099 bytes
+33005 functions, 49103469 bytes
+HARFBUZZ-CONSUMER-PASS
+2 functions, 16743 bytes
+HARFBUZZ-CONSUMER-PASS
+gucman: Installing harfbuzz: 0/50 files
+gucman: Installing harfbuzz: 25/50 files
+gucman: Installing harfbuzz: 50/50 files
+gucman: Preparing checksums: harfbuzz
+gucman: Checksummed harfbuzz: 25/50 files
+gucman: Checksummed harfbuzz: 50/50 files
+gucman: Saving transaction: harfbuzz
+gucman: Verifying staged files: harfbuzz
+gucman: Activating: harfbuzz
+Installed migration:harfbuzz 14.5.0-1
+gucman: Package 18/29: libffi (11 remaining after this)
+gucman: Downloading libffi source: source.tar (61440 bytes)
+  Connecting; waiting for response…
+  Downloaded 61440 / 61440 bytes (100%); transfer finished
+gucman: Verifying download: libffi source: source.tar
+gucman: Checking cached object: libffi source: source.tar
+gucman: Downloading libffi source: build.sh (766 bytes)
+  Connecting; waiting for response…
+  Downloaded 766 / 766 bytes (100%); transfer finished
+gucman: Verifying download: libffi source: build.sh
+gucman: Checking cached object: libffi source: build.sh
+gucman: Downloading libffi source: test.sh (266 bytes)
+  Connecting; waiting for response…
+  Downloaded 266 / 266 bytes (100%); transfer finished
+gucman: Verifying download: libffi source: test.sh
+gucman: Checking cached object: libffi source: test.sh
+Building migration:libffi; running trusted recipe with access to your guest files
+10 functions, 11562 bytes
+21 functions, 29097 bytes
+FFI-PASS
+11 functions, 23060 bytes
+FFI-PASS
+gucman: Installing libffi: 0/6 files
+gucman: Installing libffi: 6/6 files
+gucman: Preparing checksums: libffi
+gucman: Checksummed libffi: 6/6 files
+gucman: Saving transaction: libffi
+gucman: Verifying staged files: libffi
+gucman: Activating: libffi
+Installed migration:libffi 3.4.8-1
+gucman: Package 19/29: gobject (10 remaining after this)
+gucman: Checking cached object: gobject source: source.tar
+gucman: Downloading gobject source: build.sh (1237 bytes)
+  Connecting; waiting for response…
+  Downloaded 1237 / 1237 bytes (100%); transfer finished
+gucman: Verifying download: gobject source: build.sh
+gucman: Checking cached object: gobject source: build.sh
+gucman: Downloading gobject source: test.sh (485 bytes)
+  Connecting; waiting for response…
+  Downloaded 485 / 485 bytes (100%); transfer finished
+gucman: Verifying download: gobject source: test.sh
+gucman: Checking cached object: gobject source: test.sh
+Building migration:gobject; running trusted recipe with access to your guest files
+1106 functions, 970435 bytes
+981 functions, 791781 bytes
+3 functions, 10124 bytes
+983 functions, 794723 bytes
+GOBJECT-WIDE-PASS
+5 functions, 15024 bytes
+GOBJECT-WIDE-PASS
+gucman: Installing gobject: 0/32 files
+gucman: Installing gobject: 25/32 files
+gucman: Installing gobject: 32/32 files
+gucman: Preparing checksums: gobject
+gucman: Checksummed gobject: 25/32 files
+gucman: Checksummed gobject: 32/32 files
+gucman: Saving transaction: gobject
+gucman: Verifying staged files: gobject
+gucman: Activating: gobject
+Installed migration:gobject 2.84.4-1
+gucman: Package 20/29: gio-listmodel (9 remaining after this)
+gucman: Downloading gio-listmodel source: source.tar (348160 bytes)
+  Connecting; waiting for response…
+  Downloaded 348160 / 348160 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: source.tar
+gucman: Checking cached object: gio-listmodel source: source.tar
+gucman: Downloading gio-listmodel source: build.sh (983 bytes)
+  Connecting; waiting for response…
+  Downloaded 983 / 983 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: build.sh
+gucman: Checking cached object: gio-listmodel source: build.sh
+gucman: Downloading gio-listmodel source: test.sh (470 bytes)
+  Connecting; waiting for response…
+  Downloaded 470 / 470 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: test.sh
+gucman: Checking cached object: gio-listmodel source: test.sh
+gucman: Downloading gio-listmodel source: COPYING (25967 bytes)
+  Connecting; waiting for response…
+  Downloaded 25967 / 25967 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel source: COPYING
+gucman: Checking cached object: gio-listmodel source: COPYING
+Building migration:gio-listmodel; running trusted recipe with access to your guest files
+65 functions, 75703 bytes
+79 functions, 83161 bytes
+14 functions, 18208 bytes
+gucman: Installing gio-listmodel: 0/9 files
+gucman: Installing gio-listmodel: 9/9 files
+gucman: Preparing checksums: gio-listmodel
+gucman: Checksummed gio-listmodel: 9/9 files
+gucman: Saving transaction: gio-listmodel
+gucman: Verifying staged files: gio-listmodel
+gucman: Activating: gio-listmodel
+Installed migration:gio-listmodel 2.84.4-1
+gucman: Package 21/29: pango (8 remaining after this)
+gucman: Downloading pango source: source.tar (6553600 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 6.25 MiB (0%)
+  Downloaded 4.53 / 6.25 MiB (72%)
+  Downloaded 6.25 / 6.25 MiB (100%); transfer finished
+gucman: Verifying download: pango source: source.tar
+gucman: Checking cached object: pango source: source.tar
+gucman: Downloading pango source: build.sh (4541 bytes)
+  Connecting; waiting for response…
+  Downloaded 4541 / 4541 bytes (100%); transfer finished
+gucman: Verifying download: pango source: build.sh
+gucman: Checking cached object: pango source: build.sh
+gucman: Downloading pango source: test.sh (1244 bytes)
+  Connecting; waiting for response…
+  Downloaded 1244 / 1244 bytes (100%); transfer finished
+gucman: Verifying download: pango source: test.sh
+gucman: Checking cached object: pango source: test.sh
+Building migration:pango; running trusted recipe with access to your guest files
+2 functions, 7733 bytes
+1072 functions, 972671 bytes
+270 functions, 255313 bytes
+123 functions, 155627 bytes
+1273 functions, 1096241 bytes
+Fontconfig fonts: 2
+Layout: 547 x 140, lines=4, unknown=0
+PANGO-HARFBUZZ-ARABIC-PASS
+PANGO-PASS
+3 functions, 26165 bytes
+Fontconfig fonts: 2
+Layout: 547 x 140, lines=4, unknown=0
+PANGO-HARFBUZZ-ARABIC-PASS
+PANGO-PASS
+gucman: Installing pango: 0/46 files
+gucman: Installing pango: 25/46 files
+gucman: Installing pango: 46/46 files
+gucman: Preparing checksums: pango
+gucman: Checksummed pango: 25/46 files
+gucman: Checksummed pango: 46/46 files
+gucman: Saving transaction: pango
+gucman: Verifying staged files: pango
+gucman: Activating: pango
+Installed migration:pango 1.50.14-1
+gucman: Package 22/29: gio-core (7 remaining after this)
+gucman: Downloading gio-core source: source.tar (15308800 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.05 / 14.60 MiB (0%)
+  Downloaded 3.78 / 14.60 MiB (25%)
+  Downloaded 6.29 / 14.60 MiB (43%)
+  Downloaded 7.79 / 14.60 MiB (53%)
+  Downloaded 8.57 / 14.60 MiB (58%)
+  Downloaded 9.09 / 14.60 MiB (62%)
+  Downloaded 10.74 / 14.60 MiB (73%)
+  Downloaded 13.35 / 14.60 MiB (91%)
+  Downloaded 14.60 / 14.60 MiB (100%); transfer finished
+gucman: Verifying download: gio-core source: source.tar
+gucman: Checking cached object: gio-core source: source.tar
+gucman: Downloading gio-core source: build.sh (10078 bytes)
+  Connecting; waiting for response…
+  Downloaded 10078 / 10078 bytes (100%); transfer finished
+gucman: Verifying download: gio-core source: build.sh
+gucman: Checking cached object: gio-core source: build.sh
+gucman: Downloading gio-core source: test.sh (558 bytes)
+  Connecting; waiting for response…
+  Downloaded 558 / 558 bytes (100%); transfer finished
+gucman: Verifying download: gio-core source: test.sh
+gucman: Checking cached object: gio-core source: test.sh
+gucman: Checking cached object: gio-core source: COPYING
+Building migration:gio-core; running trusted recipe with access to your guest files
+GIO: 25 / 207 source files
+GIO: 50 / 207 source files
+GIO: 75 / 207 source files
+GIO: 100 / 207 source files
+GIO: 125 / 207 source files
+GIO: 150 / 207 source files
+GIO: 175 / 207 source files
+GIO: 200 / 207 source files
+25 functions, 30102 bytes
+6136 functions, 4996895 bytes
+2 functions, 5896 bytes
+6 functions, 21518 bytes
+2198 functions, 1718263 bytes
+2 functions, 14331 bytes
+gucman: Installing gio-core: 0/159 files
+gucman: Installing gio-core: 25/159 files
+gucman: Installing gio-core: 50/159 files
+gucman: Installing gio-core: 75/159 files
+gucman: Installing gio-core: 100/159 files
+gucman: Installing gio-core: 125/159 files
+gucman: Installing gio-core: 150/159 files
+gucman: Installing gio-core: 159/159 files
+gucman: Preparing checksums: gio-core
+gucman: Checksummed gio-core: 25/159 files
+gucman: Checksummed gio-core: 50/159 files
+gucman: Checksummed gio-core: 75/159 files
+gucman: Checksummed gio-core: 100/159 files
+gucman: Checksummed gio-core: 125/159 files
+gucman: Checksummed gio-core: 150/159 files
+gucman: Checksummed gio-core: 159/159 files
+gucman: Saving transaction: gio-core
+gucman: Verifying staged files: gio-core
+gucman: Activating: gio-core
+Installed migration:gio-core 2.84.4-1
+gucman: Package 23/29: libjpeg-turbo (6 remaining after this)
+gucman: Downloading libjpeg-turbo source: source.tar (3983360 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.89 / 3.80 MiB (23%)
+  Downloaded 3.80 / 3.80 MiB (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: source.tar
+gucman: Checking cached object: libjpeg-turbo source: source.tar
+gucman: Downloading libjpeg-turbo source: build.sh (3114 bytes)
+  Connecting; waiting for response…
+  Downloaded 3114 / 3114 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: build.sh
+gucman: Checking cached object: libjpeg-turbo source: build.sh
+gucman: Downloading libjpeg-turbo source: test.sh (308 bytes)
+  Connecting; waiting for response…
+  Downloaded 308 / 308 bytes (100%); transfer finished
+gucman: Verifying download: libjpeg-turbo source: test.sh
+gucman: Checking cached object: libjpeg-turbo source: test.sh
+Building migration:libjpeg-turbo; running trusted recipe with access to your guest files
+1007 functions, 937091 bytes
+982 functions, 898151 bytes
+2 functions, 10950 bytes
+gucman: Installing libjpeg-turbo: 0/9 files
+gucman: Installing libjpeg-turbo: 9/9 files
+gucman: Preparing checksums: libjpeg-turbo
+gucman: Checksummed libjpeg-turbo: 9/9 files
+gucman: Saving transaction: libjpeg-turbo
+gucman: Verifying staged files: libjpeg-turbo
+gucman: Activating: libjpeg-turbo
+Installed migration:libjpeg-turbo 3.1.4.1-1
+gucman: Package 24/29: gdk-pixbuf (5 remaining after this)
+gucman: Downloading gdk-pixbuf source: source.tar (21432320 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 20.44 MiB (0%)
+  Downloaded 0.75 / 20.44 MiB (3%)
+  Downloaded 1.23 / 20.44 MiB (6%)
+  Downloaded 2.88 / 20.44 MiB (14%)
+  Downloaded 5.52 / 20.44 MiB (26%)
+  Downloaded 8.83 / 20.44 MiB (43%)
+  Downloaded 12.53 / 20.44 MiB (61%)
+  Downloaded 16.19 / 20.44 MiB (79%)
+  Downloaded 20.44 / 20.44 MiB (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: source.tar
+gucman: Checking cached object: gdk-pixbuf source: source.tar
+gucman: Downloading gdk-pixbuf source: build.sh (1913 bytes)
+  Connecting; waiting for response…
+  Downloaded 1913 / 1913 bytes (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: build.sh
+gucman: Checking cached object: gdk-pixbuf source: build.sh
+gucman: Downloading gdk-pixbuf source: test.sh (1339 bytes)
+  Connecting; waiting for response…
+  Downloaded 1339 / 1339 bytes (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: test.sh
+gucman: Checking cached object: gdk-pixbuf source: test.sh
+gucman: Downloading gdk-pixbuf source: jpeg-decode.c (1419 bytes)
+  Connecting; waiting for response…
+  Downloaded 1419 / 1419 bytes (100%); transfer finished
+gucman: Verifying download: gdk-pixbuf source: jpeg-decode.c
+gucman: Checking cached object: gdk-pixbuf source: jpeg-decode.c
+Building migration:gdk-pixbuf; running trusted recipe with access to your guest files
+369 functions, 447247 bytes
+343 functions, 421989 bytes
+2 functions, 8961 bytes
+343 functions, 423501 bytes
+GDK-PIXBUF-JPEG-DECODE-PASS
+2 functions, 13646 bytes
+GDK-PIXBUF-JPEG-DECODE-PASS
+gucman: Installing gdk-pixbuf: 0/16 files
+gucman: Installing gdk-pixbuf: 16/16 files
+gucman: Preparing checksums: gdk-pixbuf
+gucman: Checksummed gdk-pixbuf: 16/16 files
+gucman: Saving transaction: gdk-pixbuf
+gucman: Verifying staged files: gdk-pixbuf
+gucman: Activating: gdk-pixbuf
+Installed migration:gdk-pixbuf 2.42.12-1
+gucman: Package 25/29: cairo-gobject (4 remaining after this)
+gucman: Downloading cairo-gobject source: source.tar (81920 bytes)
+  Connecting; waiting for response…
+  Downloaded 81920 / 81920 bytes (100%); transfer finished
+gucman: Verifying download: cairo-gobject source: source.tar
+gucman: Checking cached object: cairo-gobject source: source.tar
+gucman: Downloading cairo-gobject source: build.sh (1275 bytes)
+  Connecting; waiting for response…
+  Downloaded 1275 / 1275 bytes (100%); transfer finished
+gucman: Verifying download: cairo-gobject source: build.sh
+gucman: Checking cached object: cairo-gobject source: build.sh
+gucman: Downloading cairo-gobject source: test.sh (454 bytes)
+  Connecting; waiting for response…
+  Downloaded 454 / 454 bytes (100%); transfer finished
+gucman: Verifying download: cairo-gobject source: test.sh
+gucman: Checking cached object: cairo-gobject source: test.sh
+Building migration:cairo-gobject; running trusted recipe with access to your guest files
+40 functions, 65341 bytes
+42 functions, 72459 bytes
+CAIRO-GOBJECT-PASS
+2 functions, 13354 bytes
+CAIRO-GOBJECT-PASS
+gucman: Installing cairo-gobject: 0/6 files
+gucman: Installing cairo-gobject: 6/6 files
+gucman: Preparing checksums: cairo-gobject
+gucman: Checksummed cairo-gobject: 6/6 files
+gucman: Saving transaction: cairo-gobject
+gucman: Verifying staged files: cairo-gobject
+gucman: Activating: cairo-gobject
+Installed migration:cairo-gobject 1.18.4-1
+gucman: Package 26/29: atk (3 remaining after this)
+gucman: Downloading atk source: source.tar (819200 bytes)
+  Connecting; waiting for response…
+  Downloaded 819200 / 819200 bytes (100%); transfer finished
+gucman: Verifying download: atk source: source.tar
+gucman: Checking cached object: atk source: source.tar
+gucman: Downloading atk source: build.sh (2104 bytes)
+  Connecting; waiting for response…
+  Downloaded 2104 / 2104 bytes (100%); transfer finished
+gucman: Verifying download: atk source: build.sh
+gucman: Checking cached object: atk source: build.sh
+gucman: Downloading atk source: test.sh (450 bytes)
+  Connecting; waiting for response…
+  Downloaded 450 / 450 bytes (100%); transfer finished
+gucman: Verifying download: atk source: test.sh
+gucman: Checking cached object: atk source: test.sh
+Building migration:atk; running trusted recipe with access to your guest files
+393 functions, 380558 bytes
+212 functions, 232354 bytes
+2 functions, 8819 bytes
+gucman: Installing atk: 0/39 files
+gucman: Installing atk: 25/39 files
+gucman: Installing atk: 39/39 files
+gucman: Preparing checksums: atk
+gucman: Checksummed atk: 25/39 files
+gucman: Checksummed atk: 39/39 files
+gucman: Saving transaction: atk
+gucman: Verifying staged files: atk
+gucman: Activating: atk
+Installed migration:atk 2.38.0-1
+gucman: Package 27/29: gtk3-schemas (2 remaining after this)
+gucman: Downloading gtk3-schemas source: source.tar (51200 bytes)
+  Connecting; waiting for response…
+  Downloaded 51200 / 51200 bytes (100%)
+  Downloaded 51200 / 51200 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-schemas source: source.tar
+gucman: Checking cached object: gtk3-schemas source: source.tar
+gucman: Checking cached object: gtk3-schemas source: gio-source.tar
+gucman: Checking cached object: gtk3-schemas source: GLib-COPYING
+gucman: Downloading gtk3-schemas source: build.sh (866 bytes)
+  Connecting; waiting for response…
+  Downloaded 866 / 866 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-schemas source: build.sh
+gucman: Checking cached object: gtk3-schemas source: build.sh
+gucman: Downloading gtk3-schemas source: test.sh (348 bytes)
+  Connecting; waiting for response…
+  Downloaded 348 / 348 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-schemas source: test.sh
+gucman: Checking cached object: gtk3-schemas source: test.sh
+gucman: Downloading gtk3-schemas source: schema-check.c (1206 bytes)
+  Connecting; waiting for response…
+  Downloaded 1206 / 1206 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-schemas source: schema-check.c
+gucman: Checking cached object: gtk3-schemas source: schema-check.c
+Building migration:gtk3-schemas; running trusted recipe with access to your guest files
+85 functions, 112791 bytes
+2 functions, 6882 bytes
+2 functions, 13155 bytes
+SCHEMA-PASS org.gtk.Settings.ColorChooser 2 keys
+SCHEMA-PASS org.gtk.Settings.Debug 2 keys
+SCHEMA-PASS org.gtk.Settings.EmojiChooser 1 keys
+SCHEMA-PASS org.gtk.Settings.FileChooser 16 keys
+GTK-SCHEMAS-ALL-PASS
+gucman: Installing gtk3-schemas: 0/9 files
+gucman: Installing gtk3-schemas: 9/9 files
+gucman: Preparing checksums: gtk3-schemas
+gucman: Checksummed gtk3-schemas: 9/9 files
+gucman: Saving transaction: gtk3-schemas
+gucman: Verifying staged files: gtk3-schemas
+gucman: Activating: gtk3-schemas
+Installed migration:gtk3-schemas 0.1.0-1
+gucman: Package 28/29: gtk3-x11 (1 remaining after this)
+gucman: Downloading gtk3-x11 source: source.tar (604160 bytes)
+  Connecting; waiting for response…
+  Downloaded 252023 / 604160 bytes (41%)
+  Downloaded 585062 / 604160 bytes (96%)
+  Downloaded 604160 / 604160 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: source.tar
+gucman: Checking cached object: gtk3-x11 source: source.tar
+gucman: Downloading gtk3-x11 source: gtk-source.tar (37212160 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 35.49 MiB (0%)
+  Downloaded 0.84 / 35.49 MiB (2%)
+  Downloaded 2.52 / 35.49 MiB (7%)
+  Downloaded 3.05 / 35.49 MiB (8%)
+  Downloaded 3.36 / 35.49 MiB (9%)
+  Downloaded 3.62 / 35.49 MiB (10%)
+  Downloaded 4.69 / 35.49 MiB (13%)
+  Downloaded 6.23 / 35.49 MiB (17%)
+  Downloaded 8.51 / 35.49 MiB (23%)
+  Downloaded 10.56 / 35.49 MiB (29%)
+  Downloaded 13.58 / 35.49 MiB (38%)
+  Downloaded 16.15 / 35.49 MiB (45%)
+  Downloaded 20.81 / 35.49 MiB (58%)
+  Downloaded 24.67 / 35.49 MiB (69%)
+  Downloaded 26.09 / 35.49 MiB (73%)
+  Downloaded 26.86 / 35.49 MiB (75%)
+  Downloaded 28.91 / 35.49 MiB (81%)
+  Downloaded 30.91 / 35.49 MiB (87%)
+  Downloaded 32.05 / 35.49 MiB (90%)
+  Downloaded 35.49 / 35.49 MiB (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: gtk-source.tar
+gucman: Checking cached object: gtk3-x11 source: gtk-source.tar
+gucman: Checking cached object: gtk3-x11 source: gio-source.tar
+gucman: Downloading gtk3-x11 source: COPYING-GTK (25383 bytes)
+  Connecting; waiting for response…
+  Downloaded 25383 / 25383 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: COPYING-GTK
+gucman: Checking cached object: gtk3-x11 source: COPYING-GTK
+gucman: Downloading gtk3-x11 source: COPYING-Cairo (26533 bytes)
+  Connecting; waiting for response…
+  Downloaded 26533 / 26533 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: COPYING-Cairo
+gucman: Checking cached object: gtk3-x11 source: COPYING-Cairo
+gucman: Checking cached object: gtk3-x11 source: GLib-COPYING
+gucman: Downloading gtk3-x11 source: build.sh (308360 bytes)
+  Connecting; waiting for response…
+  Downloaded 60000 / 308360 bytes (19%)
+  Downloaded 308360 / 308360 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: build.sh
+gucman: Checking cached object: gtk3-x11 source: build.sh
+gucman: Downloading gtk3-x11 source: test.sh (718 bytes)
+  Connecting; waiting for response…
+  Downloaded 718 / 718 bytes (100%); transfer finished
+gucman: Verifying download: gtk3-x11 source: test.sh
+gucman: Checking cached object: gtk3-x11 source: test.sh
+Building migration:gtk3-x11; running trusted recipe with access to your guest files
+GTK X11: 25 / 586 units
+GTK X11: 50 / 586 units
+GTK X11: 75 / 586 units
+GTK X11: 100 / 586 units
+GTK X11: 125 / 586 units
+GTK X11: 150 / 586 units
+GTK X11: 175 / 586 units
+GTK X11: 200 / 586 units
+GTK X11: 225 / 586 units
+GTK X11: 250 / 586 units
+GTK X11: 275 / 586 units
+GTK X11: 300 / 586 units
+GTK X11: 325 / 586 units
+GTK X11: 350 / 586 units
+GTK X11: 375 / 586 units
+GTK X11: 400 / 586 units
+GTK X11: 425 / 586 units
+GTK X11: 450 / 586 units
+GTK X11: 475 / 586 units
+GTK X11: 500 / 586 units
+GTK X11: 525 / 586 units
+GTK X11: 550 / 586 units
+GTK X11: 575 / 586 units
+1940 functions, 1729193 bytes
+18270 functions, 14752787 bytes
+28 functions, 39565 bytes
+Packed and verified 534 resources
+9 functions, 37886 bytes
+2 functions, 6109 bytes
+GTK-X11-LINK-VERSION-PASS
+gucman: Installing gtk3-x11: 0/720 files
+gucman: Installing gtk3-x11: 25/720 files
+gucman: Installing gtk3-x11: 50/720 files
+gucman: Installing gtk3-x11: 75/720 files
+gucman: Installing gtk3-x11: 100/720 files
+gucman: Installing gtk3-x11: 125/720 files
+gucman: Installing gtk3-x11: 150/720 files
+gucman: Installing gtk3-x11: 175/720 files
+gucman: Installing gtk3-x11: 200/720 files
+gucman: Installing gtk3-x11: 225/720 files
+gucman: Installing gtk3-x11: 250/720 files
+gucman: Installing gtk3-x11: 275/720 files
+gucman: Installing gtk3-x11: 300/720 files
+gucman: Installing gtk3-x11: 325/720 files
+gucman: Installing gtk3-x11: 350/720 files
+gucman: Installing gtk3-x11: 375/720 files
+gucman: Installing gtk3-x11: 400/720 files
+gucman: Installing gtk3-x11: 425/720 files
+gucman: Installing gtk3-x11: 450/720 files
+gucman: Installing gtk3-x11: 475/720 files
+gucman: Installing gtk3-x11: 500/720 files
+gucman: Installing gtk3-x11: 525/720 files
+gucman: Installing gtk3-x11: 550/720 files
+gucman: Installing gtk3-x11: 575/720 files
+gucman: Installing gtk3-x11: 600/720 files
+gucman: Installing gtk3-x11: 625/720 files
+gucman: Installing gtk3-x11: 650/720 files
+gucman: Installing gtk3-x11: 675/720 files
+gucman: Installing gtk3-x11: 700/720 files
+gucman: Installing gtk3-x11: 720/720 files
+gucman: Preparing checksums: gtk3-x11
+gucman: Checksummed gtk3-x11: 25/720 files
+gucman: Checksummed gtk3-x11: 50/720 files
+gucman: Checksummed gtk3-x11: 75/720 files
+gucman: Checksummed gtk3-x11: 100/720 files
+gucman: Checksummed gtk3-x11: 125/720 files
+gucman: Checksummed gtk3-x11: 150/720 files
+gucman: Checksummed gtk3-x11: 175/720 files
+gucman: Checksummed gtk3-x11: 200/720 files
+gucman: Checksummed gtk3-x11: 225/720 files
+gucman: Checksummed gtk3-x11: 250/720 files
+gucman: Checksummed gtk3-x11: 275/720 files
+gucman: Checksummed gtk3-x11: 300/720 files
+gucman: Checksummed gtk3-x11: 325/720 files
+gucman: Checksummed gtk3-x11: 350/720 files
+gucman: Checksummed gtk3-x11: 375/720 files
+gucman: Checksummed gtk3-x11: 400/720 files
+gucman: Checksummed gtk3-x11: 425/720 files
+gucman: Checksummed gtk3-x11: 450/720 files
+gucman: Checksummed gtk3-x11: 475/720 files
+gucman: Checksummed gtk3-x11: 500/720 files
+gucman: Checksummed gtk3-x11: 525/720 files
+gucman: Checksummed gtk3-x11: 550/720 files
+gucman: Checksummed gtk3-x11: 575/720 files
+gucman: Checksummed gtk3-x11: 600/720 files
+gucman: Checksummed gtk3-x11: 625/720 files
+gucman: Checksummed gtk3-x11: 650/720 files
+gucman: Checksummed gtk3-x11: 675/720 files
+gucman: Checksummed gtk3-x11: 700/720 files
+gucman: Checksummed gtk3-x11: 720/720 files
+gucman: Saving transaction: gtk3-x11
+gucman: Verifying staged files: gtk3-x11
+gucman: Activating: gtk3-x11
+Installed migration:gtk3-x11 3.24.43-1
+gucman: Package 29/29: galculator (0 remaining after this)
+gucman: Downloading galculator source: source.tar (3399680 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.24 / 3.24 MiB (100%); transfer finished
+gucman: Verifying download: galculator source: source.tar
+gucman: Checking cached object: galculator source: source.tar
+gucman: Downloading galculator source: build.sh (1151 bytes)
+  Connecting; waiting for response…
+  Downloaded 1151 / 1151 bytes (100%); transfer finished
+gucman: Verifying download: galculator source: build.sh
+gucman: Checking cached object: galculator source: build.sh
+gucman: Downloading galculator source: test.sh (814 bytes)
+  Connecting; waiting for response…
+  Downloaded 814 / 814 bytes (100%); transfer finished
+gucman: Verifying download: galculator source: test.sh
+gucman: Checking cached object: galculator source: test.sh
+gucman: Downloading galculator source: galculator.desktop (138 bytes)
+  Connecting; waiting for response…
+  Downloaded 138 / 138 bytes (100%); transfer finished
+gucman: Verifying download: galculator source: galculator.desktop
+gucman: Checking cached object: galculator source: galculator.desktop
+Building migration:galculator; running trusted recipe with access to your guest files
+334 functions, 388508 bytes
+2 functions, 5422 bytes
+Dynamic loader: Cannot open shared library: libgtk-3.so (needed by /tmp/galculator-link)
+
+
+127 !== 0
+
+    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)
+    at async file:///Users/jku/git/gucos-packages-porting/tests/migration/stage.mjs:49:27 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 127,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

@@ -450,6 +450,11 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6369573f28d5421366f4a6fa016964b1a6f22589/apps/xmahjongg/package.json",
       "sha256": "9361f5880fee4789aed13702a58075b7623eca8ff28b2d16a045553976be7751",
       "size": 3295
+    },
+    "puzzles": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/5dc7e9ce57794316a454e969419a0e720953a6dc/apps/puzzles/package.json",
+      "sha256": "87fde4d8a5c66d6a4857916c287a3b0edf03c94c58e16a004af0ecdb61d23be4",
+      "size": 13501
     }
   }
 }

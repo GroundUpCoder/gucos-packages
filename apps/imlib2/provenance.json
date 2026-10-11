@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/imlib2/source",
+  "archiveSha256": "e6b74f0375815f53c18ecca27165e41813b168def4311c525ca6761d01201715",
+  "status": "source migration candidate; no new guest execution"
+}
