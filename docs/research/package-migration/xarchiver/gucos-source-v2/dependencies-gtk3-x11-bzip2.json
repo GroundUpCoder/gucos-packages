@@ -1,0 +1,12 @@
+{
+  "action": "dependencies",
+  "names": [
+    "gtk3-x11",
+    "bzip2"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "cd3320746ca1e66bce3ec13b535280adec341345",
+  "startedAt": "2026-10-11T08:59:39.174Z",
+  "status": "passed",
+  "finishedAt": "2026-10-11T09:07:56.052Z"
+}

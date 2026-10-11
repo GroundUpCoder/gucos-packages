@@ -1,0 +1,9 @@
+{
+  "build-xarchiver.json": "c725dbd4b49ea266560222b860f9f10f16f1645fc07e1292cb7dbb307f5898b1",
+  "build.log": "6c5b2a82b3108090aa659d6885dbc000696706e9510eda4e28a042f97255eb18",
+  "candidate-manifests.json": "8e41aa1f5b719e9f72f443b9dd6dc1d74c207b37b9bd97ec3f819e0be80d42ab",
+  "config.json": "f431417196d82293d52a0198cf6817af229300e747b7f194542531977e1edf0d",
+  "dependencies-gtk3-x11-bzip2.json": "f0cc58d8a18fa3864ae2049a589368378a353c7809bd39a3a51b97515a9acf7f",
+  "dependencies.log": "cc1c13164fd793de31b8dc0b5247823f664d11251bc7f3eb7e7a13eece21dfb7",
+  "observed-runtime.json": "657032c64680e3c920c2df77207c2d579883f767a9ef8b21b7469c8158cd1be8"
+}
