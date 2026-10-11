@@ -42,24 +42,30 @@ try {
  }else await s.page.waitForTimeout(4000);
  let quakeQuery = 0;
  async function quakeState(){
-  const serial=++quakeQuery,marker=`QUAKE_STATE_${serial}_DONE`;
+  const serial=++quakeQuery,marker=`quakestate${serial}done`;
   const command=`status; edict 1; echo ${marker}`;
-  const readLog=()=>s.page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/tmp/quake.log')));
+  async function boundedQuery(promise,ms,label){
+   let timer;
+   try{return await Promise.race([promise,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms);})]);}
+   finally{clearTimeout(timer);}
+  }
+  const readLog=()=>boundedQuery(s.page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/tmp/quake.log'))),5000,'Quake log read timeout');
   const prior=await readLog();let fresh='';
   try{
    await s.page.keyboard.press('Backquote');
    // Console toggle is queued after key-event draining; allow a subsequent frame.
    await s.page.waitForTimeout(500);
    await s.page.keyboard.type(command,{delay:60});await s.page.keyboard.press('Enter');
+   // Poll deadline plus at most one bounded read; the outer job bounds all input.
    const deadline=Date.now()+15000;
    while(Date.now()<deadline){
     const log=await readLog();assert(log.startsWith(prior),'Quake log truncated or replaced');fresh=log.slice(prior.length);
-    if(fresh.split(/\r?\n/).includes(marker))break;
+    if(fresh.split(/\r?\n/).includes(marker+' '))break;
     await s.page.waitForTimeout(150);
    }
    await writeFile(resolve(run,stem+`-query-${serial}.log`),fresh,{flag:'wx'});
    assert(fresh.split(/\r?\n/).includes(']'+command),'Complete fresh console command echo required');
-   assert(fresh.split(/\r?\n/).includes(marker),'Fresh query completion marker required');
+   assert(fresh.split(/\r?\n/).includes(marker+' '),'Fresh query completion marker required');
    assert.match(fresh,/map:\s+e1m1/,'Expected live shareware level in fresh query');
    assert(!/Unknown command/.test(fresh),'Unknown console command');
    const block=fresh.slice(fresh.lastIndexOf('EDICT 1:'));
@@ -70,7 +76,7 @@ try {
    return {origin:origin[1].trim(),ammo:Number(ammo[1])};
   }catch(error){
    report.failedQuakeQuery={serial,command,marker,logOffset:prior.length,suffix:fresh};
-   await writeFile(resolve(run,stem+`-query-${serial}-failure.png`),await canvas.screenshot(),{flag:'wx'});
+   await writeFile(resolve(run,stem+`-query-${serial}-failure.png`),await boundedQuery(canvas.screenshot(),5000,'Quake failure screenshot timeout'),{flag:'wx'});
    throw error;
   }
  }
