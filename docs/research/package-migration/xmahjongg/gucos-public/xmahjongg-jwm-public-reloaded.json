@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-11T08:07:18.440Z",
+  "scope": "Owned menu, documented hint-assisted pair removal, undo/redo, new board, quit/relaunch. Screenshots require independent review; no saved-game restoration.",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "pixelScope": {
+    "excludedCounter": {
+      "x": 10,
+      "y": 12,
+      "width": 108,
+      "height": 38
+    },
+    "reason": "Source-defined counter clear overlaps top tile edges; count screenshots require separate review"
+  },
+  "closureSha256": "13bdf001f4c9a405adfc8c370228c7b6676fb55355428bc153bbd3d587c4fd35",
+  "harnessSha256": "09109f7a114997847ca9d245b8323182dfaa0041ad56ddb057cfd1ba5e9b9548",
+  "observer": {
+    "observerSha256": "33aea82fc674972ac9e18b9678936e3bdae89068f26661750ce8d9ff8b68b2b6",
+    "menuHelperSha256": "40101586a3f90a55c1b6c1aa1c8bf1f7c12f8fa812099c808384c05248c23513"
+  },
+  "helpers": {
+    "observerSha256": "e12e48ac3ed320457181fc16a84f175700bc585d9ff761f3c2d3c75c72824149",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+    "sessionHelperSha256": "d26195b1e3477cf439ffc7c0d4e1945ca674543fd5b0f1e95fdbbc7087a618b1"
+  },
+  "menus": [
+    {
+      "id": "xmahjongg.desktop",
+      "index": 1,
+      "geometry": {
+        "id": 2097188,
+        "x": 0,
+        "y": 449,
+        "width": 129,
+        "height": 122,
+        "pid": 0
+      },
+      "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"XMahjongg\">/usr/local/bin/desktop-menu launch xmahjongg.desktop</Program>\n</JWM>\n"
+    },
+    {
+      "id": "xmahjongg.desktop",
+      "index": 1,
+      "geometry": {
+        "id": 2097350,
+        "x": 0,
+        "y": 449,
+        "width": 129,
+        "height": 122,
+        "pid": 0
+      },
+      "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"XMahjongg\">/usr/local/bin/desktop-menu launch xmahjongg.desktop</Program>\n</JWM>\n"
+    }
+  ],
+  "pids": [
+    25,
+    300
+  ],
+  "boards": {
+    "initial": 359563852,
+    "removed": 2826953260,
+    "fresh": 309669804
+  },
+  "finishedAt": "2026-10-11T08:07:45.523Z"
+}
