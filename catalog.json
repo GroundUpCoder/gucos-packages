@@ -415,6 +415,16 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/109d929464bcd880c564ad234b0779aae80f6814/apps/sdl3-ttf/package.json",
       "sha256": "2ed3c441343685bbaa48ef755e86def0a907b416b6d4df7c629e67ac26720b48",
       "size": 2778
+    },
+    "tcl": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/95e9bbcac6b8d437d8d2591f7253f2a219f29cd7/apps/tcl/package.json",
+      "sha256": "c0eb80d0a1853db381ea55a18385985bf0add8695d3ad13c00b025094de53530",
+      "size": 68744
+    },
+    "tk": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/95e9bbcac6b8d437d8d2591f7253f2a219f29cd7/apps/tk/package.json",
+      "sha256": "b73e5bd33e94f2b5956a6a6789849609e9a0c5d2fc9aacac3e10e2d285b18d07",
+      "size": 15916
     }
   }
 }
