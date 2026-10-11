@@ -14,6 +14,13 @@ int main(void) {
  assert(!handle_input('z') && snake_x[0]==hx-1);
  assert(handle_input('a')==1 && snake_x[0]==hx-2); /* same direction advances */
  init_game();
+ int input[2],saved_stdin=dup(0);assert(saved_stdin>=0 && pipe(input)==0);
+ assert(write(input[1],"wa",2)==2);close(input[1]);
+ assert(dup2(input[0],0)==0);close(input[0]);
+ assert(poll_key()); /* Both turns delivered by one read, neither discarded. */
+ assert(snake_x[0]==hx-1 && snake_y[0]==hy-1 && dir_x==-1 && dir_y==0);
+ assert(dup2(saved_stdin,0)==0);close(saved_stdin);
+ init_game();
  int x=1,y=0; input_char(27,&x,&y); input_char('[',&x,&y); input_char('A',&x,&y);
  assert(x==0 && y==-1); x=1;y=0; input_char('a',&x,&y); assert(x==1 && y==0);
  snake_len=4; snake_x[0]=5;snake_y[0]=5;snake_x[1]=5;snake_y[1]=6;
