@@ -267,3 +267,21 @@ Imlib2 normal X11 checks, then failed Feh previous-image pixel comparison.
 Initial and next observations have different client geometry. Cause is not yet
 established; no reload ran. Partial/failure evidence is retained together under
 `imlib2-feh/gucos-functional-attempt1`, without acceptance advancement.
+
+Galculator functional driver code was independently reviewed and copied
+unchanged to `tests/desktop/`. Execution remains conditional on independent
+review of the corrected eba5f3d binary export and fresh dependency-bound fixture.
+Its explicitly instrumented menu launch requires actual child wait status zero.
+Normal checks an absent config parent without precreation, app-created mode=1
+configuration and fresh-PID restoration; reload preserves exact config bytes
+without reseeding or selecting the mode. Arithmetic compares distinct direct
+0/3/12/144 references with 1+2 and physical square-button results. The proposal
+comments are retained for exact byte identity; this record supplies subsequent
+review approval. No execution, arithmetic, persistence or public acceptance
+is claimed. Original and adapted helper authorship is preserved.
+
+- `galculator-functional.mjs`: `0074a6a5eed08c8b301bc8027dff0dcf03d6bc9fce3d7e954bd5db177a22c8f8`
+
+- `galculator-functional-session.mjs`: `7c87c276ef07ad5da579c59cd2b61f312cb31563134353c2ffb0993fa9c789d4`
+
+- `galculator-functional-supervisor.c`: `045089d8876fda9bf2897e82504ae62459cf71b74093a155c4ea37f4dd1328eb`
