@@ -1,4 +1,4 @@
 {
-  "revision": "175cf8f19ed54198789ce39780b1419454b3209e",
-  "description": "86 live-accepted entries after independently reviewed L3afpad public install, JWM editor save/undo/redo/reopen and browser persistence; current desktop-apps publication remains pending public acceptance."
+  "revision": "ec3fa8c4e3b4bf01afe2f77b32b242b51d81d301",
+  "description": "87 live-accepted entries after independent desktop-apps public install, five JWM app interaction scopes and browser reload review. Preserve later XM/gucode/libcurl catalog entries outside this baseline."
 }
