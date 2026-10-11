@@ -162,3 +162,15 @@ Adapted four addon recipes/tests and SDL media harness to implicit core libc,
 and removed only historical standalone SDL3 requirements from installed .pc
 metadata. Original source archives, consumer algorithms and checks unchanged.
 Fresh review/execution pending.
+
+## GTK exact binary GUI acceptance
+
+Reservation7e1576eb passed full functional harness1ba0eb4 on61a with the reviewed
+VT/letterbox fix. Exact28-package/1958-file closure,18 public/managed provider
+copies, X11 SDK/cursor/clipboard, click-driven640x480 resize, exact keyboard
+text, red7182/blue191816 screenshot pixels, Escape cleanup all passed.
+Evidence and screenshot retained batch-12/functional. Raw artifact unchanged
+18f6fa22/22784000. Artifact review/public acceptance still pending.
+Five-package publication046ac7b/7faceb3 independently approved; prior64 entries
+including concurrent Snake preserved. Catalog69 includes separate Snake work;
+own historical-migration live additions remain44 until five new public gates pass.
