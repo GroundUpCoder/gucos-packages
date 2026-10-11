@@ -17,6 +17,7 @@
     "build.sh",
     "test.sh",
     "launch.sh",
-    "gucos-doom.desktop"
+    "gucos-doom.desktop",
+    "doom-shareware-notice.txt"
   ]
 }

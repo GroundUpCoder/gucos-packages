@@ -22,5 +22,9 @@
   {
     "path": "share/games/doom/doom1.wad",
     "mode": 420
+  },
+  {
+    "path": "share/licenses/doom/doom-shareware-notice.txt",
+    "mode": 420
   }
 ]
