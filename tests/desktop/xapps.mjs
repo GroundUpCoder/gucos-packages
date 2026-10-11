@@ -35,8 +35,9 @@ try{
   (report.pids??=[]).push(pid);await click(w.x+w.width/2,w.y+w.height/2);await s.page.waitForTimeout(300);assert((await pixels()).different>10);
  }
  async function close(){
-  // JWM Alt+F4 requests the ordinary WM close protocol; no signal is injected.
-  await s.page.keyboard.press('Alt+F4');await observe(d,'absent',klass);
+  // Accepted JWM uses a 24-pixel title bar; click its ordinary close button.
+  const frame=await observe(d,'frame',klass);assert(w.y-frame.y>=24&&w.y-frame.y<=32);
+  await click(frame.x+frame.width-16,frame.y+16);await observe(d,'absent',klass);
   await d.command(`n=0; while kill -0 ${pid} 2>/dev/null; do n=$((n+1)); [ "$n" -lt 100 ] || exit 1; sleep 0.1; done`);
  }
  async function editorLoad(){
