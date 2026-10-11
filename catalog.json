@@ -345,6 +345,11 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/046ac7b7b1588f970d070df50d2956d6e8ad0b5e/apps/pcg32/package.json",
       "sha256": "99a3aeda6a70a6de744384d864a14b9bb9dddc5eef6de5cadb543c60dcb7ec6c",
       "size": 2418
+    },
+    "gtk3-x11": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/336e2ce49361cacde88e37167800188e19a30304/apps/gtk3-x11/package.json",
+      "sha256": "93feb9cf663169840510f2d75b421c6d1dd4c455ea8cb54fea67e76bc2642f90",
+      "size": 69226
     }
   }
 }
