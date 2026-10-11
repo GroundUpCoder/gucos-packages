@@ -1155,7 +1155,7 @@
     {
       "id": "gameboy",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-candidate",
       "historicalManifest": "vendor/gameboy/wasm-package.json",
       "historicalManifestSha256": "0d6b78f589ea5c6e14e9bf4f720b077c75fa47721261678d11ca0a1a396b43d2",
       "historicalEvidence": [
@@ -1187,7 +1187,14 @@
       "historicalDependencies": [],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Fresh source/binary palette/animation/close and public/reload acceptance pending."
+      ],
+      "candidate": "apps/gameboy",
+      "sourceReview": {
+        "commit": "e091004",
+        "result": "Independent source review approved; eight historical blobs and licensing verified. Built-in fixture excludes external ROM, input, audio and CPU conformance."
+      }
     },
     {
       "id": "gdk-pixbuf",
@@ -2751,7 +2758,7 @@
     {
       "id": "lua",
       "kind": "historical-canonical-name",
-      "state": "existing-scope-audit",
+      "state": "mapped-workload-live-accepted",
       "historicalManifest": "vendor/lua/wasm-package.json",
       "historicalManifestSha256": "e29e0cd239bb3e5af53af9957a55cbd9d8333ea0fe61c232dadabd44a342b159",
       "historicalEvidence": [
@@ -2781,10 +2788,32 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": "lua",
-      "acceptance": [],
+      "mapping": "Historical Lua 5.5 workload is provided by lua55 (lua55 command and SDK); baseline Lua 5.4 remains unchanged.",
+      "acceptance": [
+        {
+          "scope": "Fresh guest source build, original retained recipe tests, install and export; four packages18 outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/source"
+        },
+        {
+          "scope": "Fresh binary install, installed consumers, browser reload integrity;2048 physical move/restart/quit/cursor restoration passed",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-13/binary-install"
+        },
+        {
+          "scope": "Fresh public immutable install, installed consumers/relink and reload;2048 gameplay or six PCG modes where applicable",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "catalogCommit": "7faceb3acbecd57921c022bfde6baf7b681118ea",
+          "evidence": "docs/research/package-migration/batch-13/public-live"
+        }
+      ],
       "blockers": [],
-      "remainingScope": "Current ISO C profile lacks historic dynamic modules and io.popen"
+      "remainingScope": "Current ISO C profile lacks historic dynamic modules and io.popen",
+      "scopeAudit": {
+        "historicalProject": "vendor/lua/bin.json at 0b9b3245fe11a3bc677d81113cba90cd0ae80446 identifies Lua 5.5.0",
+        "candidate": "apps/lua55",
+        "review": "Independent publication_review reconciliation; retained historical tree, bytecode, dynamic-module and static-embedding acceptance. Command/SDK rename is deliberate."
+      }
     },
     {
       "id": "m4",
@@ -2934,7 +2963,11 @@
       "blockers": [
         "Source review and fresh guest/binary/public acceptance pending."
       ],
-      "candidate": "apps/micropython"
+      "candidate": "apps/micropython",
+      "sourceReview": {
+        "commit": "123f6d5",
+        "result": "Independent continuation source review approved libexec path correction; fresh guest execution pending."
+      }
     },
     {
       "id": "minihb",
