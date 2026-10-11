@@ -11,6 +11,9 @@ import subprocess
 import sys
 import tarfile
 
+if not __debug__:
+    raise RuntimeError('Staging requires assertions; unset PYTHONOPTIMIZE and omit -O')
+
 ROOT = Path(__file__).resolve().parents[1]
 OLD = Path('/Users/jku/git/wasm-posix-old')
 REV = '0b9b3245fe11a3bc677d81113cba90cd0ae80446'
@@ -25,6 +28,8 @@ assert report['outputs_compared_per_mode'] == 488
 assert report['native_optimizations'] == ['O0', 'O2']
 work = Path(report['retainedWorkspace']).resolve()
 assert work.is_relative_to(run)
+required = {'joined/manifest.json', 'client.c', 'native-values.json'}
+assert required <= report['retainedFiles'].keys(), 'Incomplete retained input inventory'
 for name, digest in report['retainedFiles'].items():
     path = (work / name).resolve()
     assert path.is_relative_to(work) and sha(path.read_bytes()) == digest
@@ -32,6 +37,7 @@ manifest_bytes = (work / 'joined/manifest.json').read_bytes()
 manifest = json.loads(manifest_bytes)
 assert len(manifest['artifacts']) == 17
 assert all('constructorPriority' not in r for r in manifest['artifacts'])
+assert {'joined/'+r['path'] for r in manifest['artifacts']} <= report['retainedFiles'].keys(), 'Uninventoried definition input'
 files = {}
 for row in manifest['artifacts']:
     name = row['path']

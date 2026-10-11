@@ -1,0 +1,421 @@
+{
+  tail: '11-server: 175/527 files\n' +
+    'gucman: Installing x11-server: 200/527 files\n' +
+    'gucman: Installing x11-server: 225/527 files\n' +
+    'gucman: Installing x11-server: 250/527 files\n' +
+    'gucman: Installing x11-server: 275/527 files\n' +
+    'gucman: Installing x11-server: 300/527 files\n'
+}
+{
+  tail: 'ed 2.69 / 3.39 MiB (79%)\n' +
+    '  Downloaded 3.39 / 3.39 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: x11-shared archive\n' +
+    'gucman: Checking cached object: x11-shared archive\n' +
+    'gucman: Unpacking: x11-shared\n' +
+    'gucman: Installing x11-shared: 0/17 files\n'
+}
+gucman: install migration:pango: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 17526 bytes; transfer finished
+gucman: Resolving: migration:pango
+gucman: Downloading manifest for migration:pango (6463 bytes)
+  Connecting; waiting for response…
+  Downloaded 6463 / 6463 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pango
+gucman: Checking cached object: manifest for migration:pango
+gucman: Resolving: migration:cairo
+gucman: Downloading manifest for migration:cairo (4586 bytes)
+  Connecting; waiting for response…
+  Downloaded 4586 / 4586 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:pixman
+gucman: Downloading manifest for migration:pixman (2163 bytes)
+  Connecting; waiting for response…
+  Downloaded 2163 / 2163 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:fontconfig
+gucman: Downloading manifest for migration:fontconfig (3539 bytes)
+  Connecting; waiting for response…
+  Downloaded 3539 / 3539 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:expat
+gucman: Downloading manifest for migration:expat (2107 bytes)
+  Connecting; waiting for response…
+  Downloaded 2107 / 2107 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Resolving: migration:libpng
+gucman: Downloading manifest for migration:libpng (2242 bytes)
+  Connecting; waiting for response…
+  Downloaded 2242 / 2242 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:x11-shared
+gucman: Downloading manifest for migration:x11-shared (3539 bytes)
+  Connecting; waiting for response…
+  Downloaded 3539 / 3539 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:x11-server
+gucman: Downloading manifest for migration:x11-server (47983 bytes)
+  Connecting; waiting for response…
+  Downloaded 47983 / 47983 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:fribidi
+gucman: Downloading manifest for migration:fribidi (4755 bytes)
+  Connecting; waiting for response…
+  Downloaded 4755 / 4755 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:harfbuzz-static
+gucman: Checking cached object: manifest for migration:harfbuzz-static
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:gio-listmodel
+gucman: Downloading manifest for migration:gio-listmodel (2836 bytes)
+  Connecting; waiting for response…
+  Downloaded 2836 / 2836 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Downloading manifest for migration:gobject (4578 bytes)
+  Connecting; waiting for response…
+  Downloaded 4578 / 4578 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libffi
+gucman: Downloading manifest for migration:libffi (2101 bytes)
+  Connecting; waiting for response…
+  Downloaded 2101 / 2101 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Plan: 20 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 20 packages
+gucman: Package 1/20: pixman (19 remaining after this)
+gucman: Downloading pixman archive (1887744 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.80 / 1.80 MiB (100%); transfer finished
+gucman: Verifying download: pixman archive
+gucman: Checking cached object: pixman archive
+gucman: Unpacking: pixman
+gucman: Installing pixman: 0/6 files
+gucman: Installing pixman: 6/6 files
+gucman: Preparing checksums: pixman
+gucman: Checksummed pixman: 6/6 files
+gucman: Saving transaction: pixman
+gucman: Verifying staged files: pixman
+gucman: Activating: pixman
+Installed migration:pixman 0.46.4-1
+gucman: Package 2/20: freetype (18 remaining after this)
+Already installed: freetype
+gucman: Package 3/20: expat (17 remaining after this)
+gucman: Downloading expat archive (778752 bytes)
+  Connecting; waiting for response…
+  Downloaded 778752 / 778752 bytes (100%); transfer finished
+gucman: Verifying download: expat archive
+gucman: Checking cached object: expat archive
+gucman: Unpacking: expat
+gucman: Installing expat: 0/6 files
+gucman: Installing expat: 6/6 files
+gucman: Preparing checksums: expat
+gucman: Checksummed expat: 6/6 files
+gucman: Saving transaction: expat
+gucman: Verifying staged files: expat
+gucman: Activating: expat
+Installed migration:expat 2.7.1-1
+gucman: Package 4/20: fontconfig (16 remaining after this)
+gucman: Downloading fontconfig archive (1678848 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.60 / 1.60 MiB (100%); transfer finished
+gucman: Verifying download: fontconfig archive
+gucman: Checking cached object: fontconfig archive
+gucman: Unpacking: fontconfig
+gucman: Installing fontconfig: 0/11 files
+gucman: Installing fontconfig: 11/11 files
+gucman: Preparing checksums: fontconfig
+gucman: Checksummed fontconfig: 11/11 files
+gucman: Saving transaction: fontconfig
+gucman: Verifying staged files: fontconfig
+gucman: Activating: fontconfig
+Installed migration:fontconfig 2.15.0-1
+gucman: Package 5/20: zlib (15 remaining after this)
+Already installed: zlib
+gucman: Package 6/20: libpng (14 remaining after this)
+gucman: Downloading libpng archive (1205760 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.15 / 1.15 MiB (100%); transfer finished
+gucman: Verifying download: libpng archive
+gucman: Checking cached object: libpng archive
+gucman: Unpacking: libpng
+gucman: Installing libpng: 0/7 files
+gucman: Installing libpng: 7/7 files
+gucman: Preparing checksums: libpng
+gucman: Checksummed libpng: 7/7 files
+gucman: Saving transaction: libpng
+gucman: Verifying staged files: libpng
+gucman: Activating: libpng
+Installed migration:libpng 1.6.58-1
+gucman: Package 7/20: x11-server (13 remaining after this)
+gucman: Downloading x11-server archive (25956864 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.34 / 24.75 MiB (9%)
+  Downloaded 7.55 / 24.75 MiB (30%)
+  Downloaded 12.44 / 24.75 MiB (50%)
+  Downloaded 17.64 / 24.75 MiB (71%)
+  Downloaded 22.55 / 24.75 MiB (91%)
+  Downloaded 24.75 / 24.75 MiB (100%); transfer finished
+gucman: Verifying download: x11-server archive
+gucman: Checking cached object: x11-server archive
+gucman: Unpacking: x11-server
+gucman: Installing x11-server: 0/527 files
+gucman: Installing x11-server: 25/527 files
+gucman: Installing x11-server: 50/527 files
+gucman: Installing x11-server: 75/527 files
+gucman: Installing x11-server: 100/527 files
+gucman: Installing x11-server: 125/527 files
+gucman: Installing x11-server: 150/527 files
+gucman: Installing x11-server: 175/527 files
+gucman: Installing x11-server: 200/527 files
+gucman: Installing x11-server: 225/527 files
+gucman: Installing x11-server: 250/527 files
+gucman: Installing x11-server: 275/527 files
+gucman: Installing x11-server: 300/527 files
+gucman: Installing x11-server: 325/527 files
+gucman: Installing x11-server: 350/527 files
+gucman: Installing x11-server: 375/527 files
+gucman: Installing x11-server: 400/527 files
+gucman: Installing x11-server: 425/527 files
+gucman: Installing x11-server: 450/527 files
+gucman: Installing x11-server: 475/527 files
+gucman: Installing x11-server: 500/527 files
+gucman: Installing x11-server: 525/527 files
+gucman: Installing x11-server: 527/527 files
+gucman: Preparing checksums: x11-server
+gucman: Checksummed x11-server: 25/527 files
+gucman: Checksummed x11-server: 50/527 files
+gucman: Checksummed x11-server: 75/527 files
+gucman: Checksummed x11-server: 100/527 files
+gucman: Checksummed x11-server: 125/527 files
+gucman: Checksummed x11-server: 150/527 files
+gucman: Checksummed x11-server: 175/527 files
+gucman: Checksummed x11-server: 200/527 files
+gucman: Checksummed x11-server: 225/527 files
+gucman: Checksummed x11-server: 250/527 files
+gucman: Checksummed x11-server: 275/527 files
+gucman: Checksummed x11-server: 300/527 files
+gucman: Checksummed x11-server: 325/527 files
+gucman: Checksummed x11-server: 350/527 files
+gucman: Checksummed x11-server: 375/527 files
+gucman: Checksummed x11-server: 400/527 files
+gucman: Checksummed x11-server: 425/527 files
+gucman: Checksummed x11-server: 450/527 files
+gucman: Checksummed x11-server: 475/527 files
+gucman: Checksummed x11-server: 500/527 files
+gucman: Checksummed x11-server: 525/527 files
+gucman: Checksummed x11-server: 527/527 files
+gucman: Saving transaction: x11-server
+gucman: Verifying staged files: x11-server
+gucman: Activating: x11-server
+Installed migration:x11-server 21.1.24-1
+gucman: Package 8/20: x11-shared (12 remaining after this)
+gucman: Downloading x11-shared archive (3554304 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.69 / 3.39 MiB (79%)
+  Downloaded 3.39 / 3.39 MiB (100%); transfer finished
+gucman: Verifying download: x11-shared archive
+gucman: Checking cached object: x11-shared archive
+gucman: Unpacking: x11-shared
+gucman: Installing x11-shared: 0/17 files
+gucman: Installing x11-shared: 17/17 files
+gucman: Preparing checksums: x11-shared
+gucman: Checksummed x11-shared: 17/17 files
+gucman: Saving transaction: x11-shared
+gucman: Verifying staged files: x11-shared
+gucman: Activating: x11-shared
+Installed migration:x11-shared 0.1.0-1
+gucman: Package 9/20: cairo (11 remaining after this)
+gucman: Downloading cairo archive (5186048 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.09 / 4.95 MiB (62%)
+  Downloaded 4.95 / 4.95 MiB (100%); transfer finished
+gucman: Verifying download: cairo archive
+gucman: Checking cached object: cairo archive
+gucman: Unpacking: cairo
+gucman: Installing cairo: 0/16 files
+gucman: Installing cairo: 16/16 files
+gucman: Preparing checksums: cairo
+gucman: Checksummed cairo: 16/16 files
+gucman: Saving transaction: cairo
+gucman: Verifying staged files: cairo
+gucman: Activating: cairo
+Installed migration:cairo 1.18.4-1
+gucman: Package 10/20: fribidi (10 remaining after this)
+gucman: Downloading fribidi archive (420352 bytes)
+  Connecting; waiting for response…
+  Downloaded 420352 / 420352 bytes (100%); transfer finished
+gucman: Verifying download: fribidi archive
+gucman: Checking cached object: fribidi archive
+gucman: Unpacking: fribidi
+gucman: Installing fribidi: 0/37 files
+gucman: Installing fribidi: 25/37 files
+gucman: Installing fribidi: 37/37 files
+gucman: Preparing checksums: fribidi
+gucman: Checksummed fribidi: 25/37 files
+gucman: Checksummed fribidi: 37/37 files
+gucman: Saving transaction: fribidi
+gucman: Verifying staged files: fribidi
+gucman: Activating: fribidi
+Installed migration:fribidi 1.0.16-1
+gucman: Package 11/20: libiconv (9 remaining after this)
+Already installed: libiconv
+gucman: Package 12/20: libintl (8 remaining after this)
+Already installed: libintl
+gucman: Package 13/20: pcre2 (7 remaining after this)
+Already installed: pcre2
+gucman: Package 14/20: glib (6 remaining after this)
+Already installed: glib
+gucman: Package 15/20: harfbuzz-static (5 remaining after this)
+Already installed: harfbuzz-static
+gucman: Package 16/20: harfbuzz (4 remaining after this)
+Already installed: harfbuzz
+gucman: Package 17/20: libffi (3 remaining after this)
+gucman: Downloading libffi archive (44032 bytes)
+  Connecting; waiting for response…
+  Downloaded 44032 / 44032 bytes (100%); transfer finished
+gucman: Verifying download: libffi archive
+gucman: Checking cached object: libffi archive
+gucman: Unpacking: libffi
+gucman: Installing libffi: 0/6 files
+gucman: Installing libffi: 6/6 files
+gucman: Preparing checksums: libffi
+gucman: Checksummed libffi: 6/6 files
+gucman: Saving transaction: libffi
+gucman: Verifying staged files: libffi
+gucman: Activating: libffi
+Installed migration:libffi 3.4.8-1
+gucman: Package 18/20: gobject (2 remaining after this)
+gucman: Downloading gobject archive (2451456 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.34 / 2.34 MiB (100%); transfer finished
+gucman: Verifying download: gobject archive
+gucman: Checking cached object: gobject archive
+gucman: Unpacking: gobject
+gucman: Installing gobject: 0/32 files
+gucman: Installing gobject: 25/32 files
+gucman: Installing gobject: 32/32 files
+gucman: Preparing checksums: gobject
+gucman: Checksummed gobject: 25/32 files
+gucman: Checksummed gobject: 32/32 files
+gucman: Saving transaction: gobject
+gucman: Verifying staged files: gobject
+gucman: Activating: gobject
+Installed migration:gobject 2.84.4-1
+gucman: Package 19/20: gio-listmodel (1 remaining after this)
+gucman: Downloading gio-listmodel archive (333312 bytes)
+  Connecting; waiting for response…
+  Downloaded 333312 / 333312 bytes (100%); transfer finished
+gucman: Verifying download: gio-listmodel archive
+gucman: Checking cached object: gio-listmodel archive
+gucman: Unpacking: gio-listmodel
+gucman: Installing gio-listmodel: 0/9 files
+gucman: Installing gio-listmodel: 9/9 files
+gucman: Preparing checksums: gio-listmodel
+gucman: Checksummed gio-listmodel: 9/9 files
+gucman: Saving transaction: gio-listmodel
+gucman: Verifying staged files: gio-listmodel
+gucman: Activating: gio-listmodel
+Installed migration:gio-listmodel 2.84.4-1
+gucman: Package 20/20: pango (0 remaining after this)
+gucman: Downloading pango archive (3197952 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.70 / 3.05 MiB (55%)
+  Downloaded 3.05 / 3.05 MiB (100%); transfer finished
+gucman: Verifying download: pango archive
+gucman: Checking cached object: pango archive
+gucman: Unpacking: pango
+gucman: Installing pango: 0/46 files
+gucman: Installing pango: 25/46 files
+gucman: Installing pango: 46/46 files
+gucman: Preparing checksums: pango
+gucman: Checksummed pango: 25/46 files
+gucman: Checksummed pango: 46/46 files
+gucman: Saving transaction: pango
+gucman: Verifying staged files: pango
+gucman: Activating: pango
+Installed migration:pango 1.50.14-1
+
+/usr/local/lib/libharfbuzz-runtime.a: OK
+/usr/local/lib/libharfbuzz.a: OK
+/usr/local/share/licenses/harfbuzz-static/ABeeZee-OFL.txt: OK
+/usr/local/share/licenses/harfbuzz-static/COPYING: OK
+
+{
+  tail: 'cman: Activating: pango\n' +
+    'Installed migration:pango 1.50.14-1\n' +
+    '/usr/local/lib/libharfbuzz-runtime.a: OK\n' +
+    '/usr/local/lib/libharfbuzz.a: OK\n' +
+    '/usr/local/share/licenses/harfbuzz-static/ABeeZee-OFL.txt: OK\n' +
+    '/usr/local/share/licenses/harfbuzz-static/COPYING: OK\n'
+}
+
