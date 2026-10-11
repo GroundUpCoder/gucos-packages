@@ -1,0 +1,169 @@
+{
+  "action": "consumers",
+  "names": [
+    "m4",
+    "pcre2test",
+    "pcre2grep",
+    "libxfce4util",
+    "bitmap",
+    "xmag",
+    "sdl3-ttf"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "d3e7c474bd117cad5712119372c42b93a2d6dd4b",
+  "startedAt": "2026-10-11T06:21:30.944Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "m4",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "833993484122f2c9f79f5cc0cde7da68917032f36dc3682cb977f84ebce42309",
+          "size": 14960640
+        },
+        {
+          "path": "build.sh",
+          "sha256": "848b42bde65a55aaf59b2ceedcddfd8255c40d2dfd677284495d5c1f52c41067",
+          "size": 2002
+        },
+        {
+          "path": "test.sh",
+          "sha256": "619f28148ef0f361eeb81cc670d1ee2070bb574859a98cefaa8b2d48a3c93a08",
+          "size": 766
+        }
+      ]
+    },
+    {
+      "name": "pcre2test",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "16cfb76f2c91848e9d6b8a7477f6137039a1f77b60389a76eaae4937a5511feb",
+          "size": 3143680
+        },
+        {
+          "path": "pcre2-source.tar",
+          "sha256": "541a5c679917786129572b88ba936925163b7dd7c1718b7395afccc696af52a5",
+          "size": 6563840
+        },
+        {
+          "path": "build.sh",
+          "sha256": "bf36f07cbb5455215d9938691d2cf70178453bb0d280ebc9827736dcdb504e50",
+          "size": 5110
+        },
+        {
+          "path": "test.sh",
+          "sha256": "fd2520f5a286e3477588e295d9f5e401606b38e7e6e060346aefc57a52b6146d",
+          "size": 540
+        }
+      ]
+    },
+    {
+      "name": "pcre2grep",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "16cfb76f2c91848e9d6b8a7477f6137039a1f77b60389a76eaae4937a5511feb",
+          "size": 3143680
+        },
+        {
+          "path": "pcre2-source.tar",
+          "sha256": "541a5c679917786129572b88ba936925163b7dd7c1718b7395afccc696af52a5",
+          "size": 6563840
+        },
+        {
+          "path": "build.sh",
+          "sha256": "e1b9a8bdbb25b95f584eb08625e5ff9df9249e6baa7f05f6356d572799242257",
+          "size": 4957
+        },
+        {
+          "path": "test.sh",
+          "sha256": "676e61b003c0f408956f0f3678a8917b259115e7136fac3226309cb16f035ca1",
+          "size": 533
+        }
+      ]
+    },
+    {
+      "name": "libxfce4util",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "daa28172038429e1b00719172c18860f4661e966d5588980eacf276e9a8dc71e",
+          "size": 4116480
+        },
+        {
+          "path": "build.sh",
+          "sha256": "1688fb68235248752b8ab4da32d65b373c154ffb979f540616c4c53473503b3c",
+          "size": 1164
+        },
+        {
+          "path": "test.sh",
+          "sha256": "1cb7caad45c5126e63a24290887a6a2faa66c4bdff04dab4818353a332e4801e",
+          "size": 1833
+        }
+      ]
+    },
+    {
+      "name": "bitmap",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "2b7161091f88aec901ddc7881ba587959919ab97e961c2dd0790026d965d6834",
+          "size": 1751040
+        },
+        {
+          "path": "build.sh",
+          "sha256": "0a596fe26b0384daaa23b9754227543d474b121f583ccd8a6bbc879dc7960027",
+          "size": 1479
+        },
+        {
+          "path": "test.sh",
+          "sha256": "742ecd257c9efe2f2e1069362a2cfb3aa94e6e5142c9cfc2ac3d0ca4b1da7f6a",
+          "size": 349
+        }
+      ]
+    },
+    {
+      "name": "xmag",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "ae9df17300d555c17c714ef479704bffcf49f7b226432ace8cd3947d6037e01a",
+          "size": 870400
+        },
+        {
+          "path": "build.sh",
+          "sha256": "14191a79c88926604f601276d9aec4b699af84f5c5ee67607b5795dcfb9f660d",
+          "size": 838
+        },
+        {
+          "path": "test.sh",
+          "sha256": "1dd797a37207922f403211b5bb33eca50a7bb492a6757b3386c2b1373da37b69",
+          "size": 47
+        }
+      ]
+    },
+    {
+      "name": "sdl3-ttf",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "c706d72a6c82f0e40745aa946044bcbf8c74c66a0efbf2b6f56beec6b1e92853",
+          "size": 1976320
+        },
+        {
+          "path": "build.sh",
+          "sha256": "86a9e971b1a1b1189453571a52b89ad99d5569b0c83e8adfcfd050c9367e0e0a",
+          "size": 1183
+        },
+        {
+          "path": "test.sh",
+          "sha256": "ee0e18cbb3c2e985449731528a5a3e4487e895e09f8c5ae62cdbef426cffa387",
+          "size": 1748
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T06:22:17.852Z"
+}

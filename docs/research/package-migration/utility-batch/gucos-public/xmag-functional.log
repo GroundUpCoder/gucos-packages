@@ -1,0 +1,10 @@
+/usr/local/bin/xmag: OK
+/usr/local/share/doc/xmag/COPYING: OK
+/usr/local/share/licenses/xmag/COPYING: OK
+/usr/local/share/X11/app-defaults/Xmag: OK
+2272 functions, 2281210 bytes
+Warning: Cannot convert string "8x13bold" to type FontStruct
+XMAG-6X-PIXELS 57600 240 240
+XGRAPHICS-READY
+XGRAPHICS-PASS
+XGRAPHICS-TERMINAL-RECOVERED
