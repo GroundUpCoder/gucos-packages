@@ -43,7 +43,7 @@ try{
   let last,stable=0;const deadline=Date.now()+30000;
   while(Date.now()<deadline){
   await s.page.waitForTimeout(250);const bytes=await canvas.screenshot();
-  const pixels=await observePixels(d,'puzzle-board','Fifteen');const hash=String(pixels.hash);
+  const pixels=await observePixels(d,'puzzle-board','Fifteen');const hash=`${pixels.width}x${pixels.height}:${pixels.hash}`;
   stable=hash===last?stable+1:0;last=hash;
   if(stable>=5&&(equal===undefined||hash===equal)&&(different===undefined||hash!==different)){await writeFile(resolve(run,stem+'-'+label+'.png'),bytes,{flag:'wx'});return hash;}
   }throw Error('Board failed to reach expected settled pixels: '+label);
