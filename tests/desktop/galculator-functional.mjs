@@ -163,13 +163,26 @@ print('EXACT-BINARY-OUTPUTS-PASS')`,resolve(base,'binary.tar')],{input:JSON.stri
    assert(stable>=2,'Numeric display did not settle');await noCrash();await host(mode+'-'+label+'-numeric.png',value.bytes);await screen(label);
    (c.numeric??={})[label]={sha256:sha(value.pixels),width:value.width,height:value.height};return value;
   }
-  async function digits(text){await s.page.keyboard.press('Escape');for(const ch of text)await s.page.keyboard.press(ch);}
+  let digitEntry=0;
+  async function digits(text){
+   const entry=++digitEntry,observations=[];let prefix='';
+   await s.page.keyboard.press('Escape');await s.page.waitForTimeout(150);
+   for(const ch of text){
+    await s.page.keyboard.press(ch,{delay:50});await s.page.waitForTimeout(150);
+    prefix+=ch;observations.push(await numeric('entry-'+entry+'-prefix-'+prefix));
+   }
+   return observations;
+  }
   // Independent direct-digit references and negative controls, newly captured each launch.
   await digits('0');const zero=await numeric('reference-0');
   await digits('3');const three=await numeric('reference-3');
   await digits('12');const twelve=await numeric('reference-12');
-  await digits('144');const square=await numeric('reference-144');
-  assert.equal(new Set([zero,three,twelve,square].map(x=>sha(x.pixels))).size,4,'Blank/stuck/non-discriminating display');
+  await digits('14');const fourteen=await numeric('reference-14');
+  const squarePrefixes=await digits('144');const square=await numeric('reference-144');
+  assert.deepEqual(squarePrefixes[1].pixels,fourteen.pixels,'Independent 14 prefix matches direct 14');
+  assert.notDeepEqual(squarePrefixes[2].pixels,squarePrefixes[1].pixels,'Second 4 must change the settled 14 display');
+  assert.notDeepEqual(square.pixels,fourteen.pixels,'144 reference must differ from 14');
+  assert.equal(new Set([zero,three,twelve,fourteen,square].map(x=>sha(x.pixels))).size,5,'Blank/stuck/non-discriminating display');
   await digits('1');await s.page.keyboard.press('Shift+Equal');await s.page.keyboard.press('2');await s.page.keyboard.press('Enter');
   const sum=await numeric('one-plus-two');assert.deepEqual(sum.pixels,three.pixels);assert.notDeepEqual(sum.pixels,twelve.pixels);assert.notDeepEqual(sum.pixels,zero.pixels);
   await digits('12');const before=await numeric('before-square');assert.deepEqual(before.pixels,twelve.pixels);
