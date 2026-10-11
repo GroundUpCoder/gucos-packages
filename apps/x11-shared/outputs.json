@@ -1,0 +1,70 @@
+[
+  {
+    "path": "lib/libXau.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/libxcb.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/libX11.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/libXext.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/libXrender.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/libXfixes.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/libXi.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/libXtst.so",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-shared/libXau-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-shared/libxcb-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-shared/libX11-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-shared/libXext-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-shared/libXrender-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-shared/libXfixes-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-shared/libXi-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-shared/libXtst-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-shared/libX11-lcUniConv-COPYRIGHT",
+    "mode": 420
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/libffi",
+  "archiveSha256": "b2c730b04e3a9016532c35a75e22799f0429082b6b57179db47d41daced17453",
+  "status": "source migration candidate; no new guest execution"
+}

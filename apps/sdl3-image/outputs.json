@@ -1,0 +1,22 @@
+[
+  {
+    "path": "lib/libSDL3_image.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libSDL3_image.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/sdl3-image.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/sdl3-image/LICENSE.txt",
+    "mode": 420
+  },
+  {
+    "path": "include/SDL3_image/SDL_image.h",
+    "mode": 420
+  }
+]

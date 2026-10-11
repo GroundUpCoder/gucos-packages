@@ -1,0 +1,61 @@
+{
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "sha256": "ed63cec5b411cefa155f872e7062501c7a1a4a6b9155ea78b07695b2af7901d6",
+  "size": 2350080,
+  "guestManifest": {
+    "format": 1,
+    "name": "xrefresh",
+    "version": "1.1.1-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "inputs": [
+      "source.tar",
+      "build.sh",
+      "test.sh",
+      "config.h"
+    ],
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59498/xrefresh/source.tar",
+        "sha256": "82b9cf99fd88c31d1f835b0cced987b0f5c8fddfbd7d8bb43375bc4ab3b25de9",
+        "size": 798720
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59498/xrefresh/build.sh",
+        "sha256": "109e514a1814b9068f55cd8605f54bcf3ceab4e62dacda2551147a1596de7d73",
+        "size": 401
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59498/xrefresh/test.sh",
+        "sha256": "2c1052dcd74f2e1310f32411b8eb60b4533041d0684329fb4d8b65084c769423",
+        "size": 50
+      },
+      {
+        "path": "config.h",
+        "url": "http://127.0.0.1:59498/xrefresh/config.h",
+        "sha256": "56f6258f715509cf5335d9e2db015bd815528dfe8a6bfaa86170bc728c8b536a",
+        "size": 295
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xrefresh",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/xrefresh/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xrefresh/COPYING"
+    ]
+  },
+  "method": "gucman pack from installed guest output; no host compilation"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "jwm",
+  "version": "2.4.6-1",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "app-menu.sh",
+    "start-jwm",
+    "wait-display.c"
+  ]
+}

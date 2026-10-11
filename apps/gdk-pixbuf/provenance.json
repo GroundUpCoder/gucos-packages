@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/gdk-pixbuf",
+  "archiveSha256": "eddbaecbccc78e5ab9253627a6c4e8d3bacd3bbebd670c23b035c11fac112a17",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

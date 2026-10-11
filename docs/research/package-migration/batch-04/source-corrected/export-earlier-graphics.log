@@ -1,0 +1,53 @@
+[machine-job] queued: node tests/migration/stage.mjs build pixman libpng freetype
+[machine-job] running: d3a1c291-ca09-4850-9cd1-8b1ca490ad88
+gucman: unknown source
+
+gucman: build migration:pixman: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 11488 bytes; transfer finished
+gucman: Resolving: migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: pixman (0 remaining after this)
+Already installed: pixman
+
+gucman: build migration:libpng: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 11488 bytes; transfer finished
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: zlib (1 remaining after this)
+Already installed: zlib
+gucman: Package 2/2: libpng (0 remaining after this)
+Already installed: libpng
+
+gucman: build migration:freetype: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 11488 bytes; transfer finished
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: freetype (0 remaining after this)
+Already installed: freetype
+
+17696915f5e29783d60cf519862b4b545cfe00c7374f8dc7d26a51feb8019047  /home/user/migration-export.tar
+1887744
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+c91417e30d04cb21c25bc2464fd8b79a5e5bec04952fb3f09f8bd0c02e971820  /home/user/migration-export.tar
+1205760
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+eb6565775d8e3a887969a67b10e048aaf898f23f618dc1de06f54a25edf2adb7  /home/user/migration-export.tar
+4600320
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

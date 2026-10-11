@@ -1,0 +1,290 @@
+{
+  "format": 1,
+  "name": "freetype",
+  "version": "2.14.1-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/freetype/source.tar",
+      "sha256": "dbdbe87ddc4aad1410835da39bc30424180a623cdc67c35b2c8dace706d5bc83",
+      "size": 10762240
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/freetype/build.sh",
+      "sha256": "e6ca72bcb027d734a9f78c7292dc2e5a39b6727503966c3b39bfb3be38b70afa",
+      "size": 5864
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/freetype/test.sh",
+      "sha256": "32d0779658600f6ecb80b917e82db20bcd304ae1c2d3a3c786e02ec7f5758602",
+      "size": 747
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libfreetype.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libfreetype.so",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/freetype2.pc",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/config/ftconfig.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/config/ftheader.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/config/ftmodule.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/config/ftoption.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/config/ftstdlib.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/config/integer-types.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/config/mac-support.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/config/public-macros.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/freetype.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftadvanc.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftbbox.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftbdf.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftbitmap.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftbzip2.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftcache.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftchapters.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftcid.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftcolor.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftdriver.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/fterrdef.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/fterrors.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftfntfmt.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftgasp.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftglyph.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftgxval.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftgzip.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftimage.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftincrem.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftlcdfil.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftlist.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftlogging.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftlzw.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftmac.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftmm.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftmodapi.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftmoderr.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftotval.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftoutln.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftparams.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftpfr.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftrender.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftsizes.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftsnames.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftstroke.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftsynth.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftsystem.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/fttrigon.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/fttypes.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ftwinfnt.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/otsvg.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/t1tables.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/ttnameid.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/tttables.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/freetype/tttags.h",
+      "mode": 420
+    },
+    {
+      "path": "include/freetype2/ft2build.h",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/freetype/LICENSE.TXT",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/freetype/FTL.TXT",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/freetype/LICENSE.TXT",
+    "share/licenses/freetype/FTL.TXT"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/07d7c2154d04bf546d23ecccb1b17c96f3829eb3/apps/freetype/binaries/eb6565775d8e3a887969a67b10e048aaf898f23f618dc1de06f54a25edf2adb7.tar",
+    "sha256": "eb6565775d8e3a887969a67b10e048aaf898f23f618dc1de06f54a25edf2adb7",
+    "size": 4600320
+  }
+}

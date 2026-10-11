@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/libevent",
+  "archiveSha256": "2f96f94c985a46d86411b847a0b09ab4699a4b1a6dc78eec0762f813a7988224",
+  "status": "source migration candidate; no new guest execution"
+}

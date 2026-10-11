@@ -1,0 +1,26 @@
+gucman: unknown source
+
+{
+  tail: 'ownloaded 4.39 / 4.39 MiB (100%)\n' +
+    '  Downloaded 4.39 / 4.39 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: freetype archive\n' +
+    'gucman: Checking cached object: freetype archive\n' +
+    'gucman: Unpacking: freetype\n' +
+    'gucman: Installing freetype: 0/60 files\n'
+}
+{
+  tail: '4.75 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: x11-server archive\n' +
+    'gucman: Checking cached object: x11-server archive\n' +
+    'gucman: Unpacking: x11-server\n' +
+    'gucman: Installing x11-server: 0/527 files\n' +
+    'gucman: Installing x11-server: 25/527 files\n'
+}
+{
+  tail: '11-server: 250/527 files\n' +
+    'gucman: Installing x11-server: 275/527 files\n' +
+    'gucman: Installing x11-server: 300/527 files\n' +
+    'gucman: Installing x11-server: 325/527 files\n' +
+    'gucman: Installing x11-server: 350/527 files\n' +
+    'gucman: Installing x11-server: 375/527 files\n'
+}

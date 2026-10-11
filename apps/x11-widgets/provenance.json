@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps/source",
+  "files": 774,
+  "archiveSha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
+  "method": "Every archive file byte-compared with its immutable Git blob identity; package overlays are separate inputs."
+}

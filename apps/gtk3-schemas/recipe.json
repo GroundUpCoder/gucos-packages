@@ -1,0 +1,42 @@
+{
+  "name": "gtk3-schemas",
+  "version": "0.1.0-1",
+  "dependencies": [
+    "gio-core",
+    "glib",
+    "libintl",
+    "pkgconf"
+  ],
+  "dependencyRequirements": {
+    "gio-core": {
+      "version": "2.84.4-1"
+    },
+    "glib": {
+      "version": "2.84.4-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    },
+    "pkgconf": {
+      "version": "2.3.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "pthreads",
+      "unix-stream"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "gio-source.tar",
+    "GLib-COPYING",
+    "build.sh",
+    "test.sh",
+    "schema-check.c"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/pcre2",
+  "archiveSha256": "541a5c679917786129572b88ba936925163b7dd7c1718b7395afccc696af52a5",
+  "status": "source migration candidate; no new guest execution"
+}

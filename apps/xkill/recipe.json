@@ -1,0 +1,13 @@
+{
+  "name": "xkill",
+  "version": "1.0.7-1",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "config.h"
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "path": "bin/pcre2grep",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/pcre2grep/LICENCE.md",
+    "mode": 420
+  }
+]

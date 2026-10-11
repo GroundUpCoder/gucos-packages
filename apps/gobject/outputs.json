@@ -1,0 +1,130 @@
+[
+  {
+    "path": "lib/libgobject-2.0.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libgobject-2.0.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/gobject-2.0.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/gobject/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/glib-object.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gatomicarray.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gbinding.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gbindinggroup.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gboxed.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gclosure.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/genums.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/glib-enumtypes.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/glib-types.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gmarshal.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gobject-autocleanups.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gobject-visibility.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gobject.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gobject_trace.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gobjectnotifyqueue.c",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gparam.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gparamspecs.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gsignal.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gsignalgroup.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gsourceclosure.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gtype-private.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gtype.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gtypemodule.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gtypeplugin.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gvalue.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gvaluearray.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gvaluecollector.h",
+    "mode": 420
+  },
+  {
+    "path": "include/glib-2.0/gobject/gvaluetypes.h",
+    "mode": 420
+  }
+]

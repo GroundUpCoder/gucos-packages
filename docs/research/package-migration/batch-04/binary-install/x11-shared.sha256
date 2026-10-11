@@ -1,0 +1,17 @@
+1a6a0e38c94e1e78755c3989c12100401ccb451fd82c88ee2dfe7311fef4ee38  /usr/local/lib/libXau.so
+5cdf49bc7e8d044fce71a51fbe164524e72a71553e4de46043d8b0ecf590feec  /usr/local/lib/libxcb.so
+06f5b87728e50fd74e64269d20f203532057bfdbcfe87b8d966ccd0402b19077  /usr/local/lib/libX11.so
+712277875434e3783743b4cf1d1ad7726736d51b6c4046db5f3d2037d6a49ea4  /usr/local/lib/libXext.so
+bc78f875803d2b731a8303715e490f5df77192dadfdd7ecb6a037a802063be20  /usr/local/lib/libXrender.so
+27316cef0f0c485b13425d02ebc2dd450e638adb9c86a87ee9f9c4b674d66ba1  /usr/local/lib/libXfixes.so
+8e593848d723a0c2fe50fb457555850772552259072177a82867487ebfb93a88  /usr/local/lib/libXi.so
+4b66a21e7aed2275072e584730a5781964fbd47b3dfb6af643a30c9ad678409e  /usr/local/lib/libXtst.so
+56abe29bb1d9806a9e04fa9f80fed2c0f18027594df3f098148d814aef6bddfa  /usr/local/share/licenses/x11-shared/libXau-COPYING
+c5ffbfeaa501071ceeb97b7de2c0d703fdaa35de01c0fb6cbac1c28453a3e9fd  /usr/local/share/licenses/x11-shared/libxcb-COPYING
+2e7012a140f000735a7172674a2d314398d79622444fba65d108b029b29ab283  /usr/local/share/licenses/x11-shared/libX11-COPYING
+fd62910be4b13829d94e76c1447cf840953f0e225c4dc6c79349c84dd0557f22  /usr/local/share/licenses/x11-shared/libXext-COPYING
+bbe1db89c48816c48248796adac91defd8fbde1141b145f01511781ab87f29a1  /usr/local/share/licenses/x11-shared/libXrender-COPYING
+a07d8a5a6972638a745a03983207a1052881c24eea29021fdca7794bea8d7774  /usr/local/share/licenses/x11-shared/libXfixes-COPYING
+9392174bc86e291369fd2f61f3ed325962735a5f5c585ce8d7ebd365e2a5639f  /usr/local/share/licenses/x11-shared/libXi-COPYING
+940190489c7a0e5ae3d83fc4fcbd79e0cd1b765bf1a4efd408293c1ee0332ceb  /usr/local/share/licenses/x11-shared/libXtst-COPYING
+b7492b0e0cb9117d13dc928130ca8303185008f7231bc91a9a2071b381f5f490  /usr/local/share/licenses/x11-shared/libX11-lcUniConv-COPYRIGHT

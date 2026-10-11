@@ -1,0 +1,15 @@
+{
+  "source/build-gio-core.json": "1715ea1aeaa127bd56b4ef1577067ed120064661699a0fe68c4c44be9a974bca",
+  "source/build-gio-core.log": "d758913958a528eb7391ca23c79a03f970894933d90f1cdeda0bf7a37bb89127",
+  "source/build-gio-job.log": "a1c31e73eef894e6703bebf221b36f61c1785bfa4e38d0b0063ee8c8299a3192",
+  "source/build-gio-listmodel-atk-fribidi.json": "edf621d05735e9becddbafe1d611816e8f8f9b588c200219913b3aa5c0c072da",
+  "source/build-listmodel-atk-fribidi.log": "0f2896381d5338e0b30d6fcc639464bcc88c3193496f7bac89712995863945cc",
+  "source/candidate-manifests.json": "4e18705dd85a0e0496f344b739eeb33dec85d96f44c15c5a8b20137b8cde16f8",
+  "source/config.json": "02d378b653b602acf59ea91372a963e0261bf10f580e1c2dc84645bd1da477a2",
+  "source/dist-files.json": "dd420b3678c4f722721193750fd3b9ae2212439d9a56ce249e8de3f16670c095",
+  "source/gio-extended-console.log": "3685fc4e95a5aaca52cb0dd8210e4f7f0251fba32c6a46496113aad0e211959b",
+  "source/gio-functional-console.log": "ae5d95984a5a486d34862fc3b965df58e5fe936cbd844003dae734deb550ef8d",
+  "source/gio-functional-extended.log": "07518bc7173d731af79815455f44b884d5bea669d42c1eeaed154ccb5932adbb",
+  "source/gio-functional.log": "e4e1baf7df2bdf32d6603e848a8ce86d7bc549bbe675a515fbfeb3bbb990a2e9",
+  "source/observed-runtime.json": "664ff10ac1223386e91637a7423d4f2a211fc0fb25cbfec21b56781bc91aa12c"
+}

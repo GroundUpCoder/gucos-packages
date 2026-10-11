@@ -1,0 +1,50 @@
+{
+  "reload-libevent-libuv.json": {
+    "sha256": "b8db424507718a074ecc40bec976784ec4d6a5f46c17d76e5d7c934767ee8656",
+    "size": 322
+  },
+  "dist-files.json": {
+    "sha256": "c580b4db259e16706be974a5ab9de112ee56292d0d85e5e929c4aacedeb3a8c4",
+    "size": 38666
+  },
+  "install-libevent-libuv.json": {
+    "sha256": "06480f1d4617263b6a88dde262820ecdf517c320e603a00361a54518ddb0885c",
+    "size": 323
+  },
+  "observed-runtime.json": {
+    "sha256": "83757f8ef0df708c87a73041ce3280cce96b707f357f665e0db199aaa91e1f9f",
+    "size": 123
+  },
+  "libevent.sha256": {
+    "sha256": "db3eef67814c1d98e50f91ff5b12faf095bed0e587efc70d23b612f1d929b477",
+    "size": 3209
+  },
+  "reload.log": {
+    "sha256": "26175184c089960cf99a2ef84485f662de2450fbf8f9bdf4a075f1c2f9404110",
+    "size": 2515
+  },
+  "consumers-libevent-libuv.json": {
+    "sha256": "27359f7e2320e63f495c9802835c2a023619385b2d7624c75f15ba2fa7681e63",
+    "size": 1460
+  },
+  "config.json": {
+    "sha256": "e4a56b82f8fa6a620382432d9aed377da551c876157f04d3b4ee484980a39b59",
+    "size": 13819
+  },
+  "libuv.sha256": {
+    "sha256": "967ad4e7212c032d93feca7e1a0f7d23ac39f38dfcb188e130f14e872548bddd",
+    "size": 2283
+  },
+  "consumers.log": {
+    "sha256": "6c57f6246d0c20347c1351d05d36649ceffdf7d23bf5deeb86ad1e0285bb9baa",
+    "size": 2780
+  },
+  "candidate-manifests.json": {
+    "sha256": "5eeaa838234fd907f4ad78c672ff9587d5bc00bbb72a9cb3643ae0a62c4bf3f2",
+    "size": 7254
+  },
+  "install.log": {
+    "sha256": "6a4115d75992fa92ade50a01bcc60046a1f31ae593cbfb94e01b0643fbd76f1e",
+    "size": 5083
+  }
+}

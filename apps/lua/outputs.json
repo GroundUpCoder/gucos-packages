@@ -1,0 +1,38 @@
+[
+  {
+    "path": "bin/lua",
+    "mode": 493
+  },
+  {
+    "path": "bin/luac",
+    "mode": 493
+  },
+  {
+    "path": "lib/liblua.a",
+    "mode": 420
+  },
+  {
+    "path": "include/lua.h",
+    "mode": 420
+  },
+  {
+    "path": "include/luaconf.h",
+    "mode": 420
+  },
+  {
+    "path": "include/lualib.h",
+    "mode": 420
+  },
+  {
+    "path": "include/lauxlib.h",
+    "mode": 420
+  },
+  {
+    "path": "include/lua.hpp",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/lua/lua.h",
+    "mode": 420
+  }
+]

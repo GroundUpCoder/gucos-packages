@@ -1,0 +1,14 @@
+{
+  "source-corrected/build-fontconfig-x11-shared-cairo.json": "fe6561ee5e11dbcd9c63d461f195e116949c5ef1786a0012ab0b026c1b64ab23",
+  "source-corrected/build-graphics.log": "5c679b1406e9931e78ff7f0627bc424469d7df961850f2201c7165aeee3a415c",
+  "source-corrected/build-pixman-libpng-freetype.json": "5968776889ad346c7a50c273c59bb24c6bd18091f3e8613caabccd9a80ffa0fa",
+  "source-corrected/candidate-manifests.json": "6133c30e6f6e49067d6743be017a47272920dbf07d83ef4c2cbd65ca2326c40f",
+  "source-corrected/config.json": "cb2dc7f68eda101a49fac212c1d01b46f1ae37cef2a2a8e0cbbacc950fedd423",
+  "source-corrected/export-earlier-graphics.log": "6cc9e6378d84994b42ffd68d2f1f6dff829c4c2ff30d749dc62caaeffe0d4ae5",
+  "source-corrected/graphics-functional-console.log": "c76605d40c2e8f2c268c062368230fb2da3140a274e58b416d51d5a57868fbf3",
+  "source-corrected/graphics-functional.log": "e3bd0c2f57a551512f4973bda96a81b3af5db9222934954b978f2a8caf4c7989",
+  "source-corrected/observed-runtime.json": "664ff10ac1223386e91637a7423d4f2a211fc0fb25cbfec21b56781bc91aa12c",
+  "source-first/build-graphics.log": "3eeeffbb340b6fb6a4ba6609edf4e2ffe1fee33687adf969679ed6a5ea0ed2ee",
+  "source-first/build-pixman-libpng-freetype-fontconfig-x11-shared-cairo.json": "d3acf294d9ef5f849ce781ca5546204c930b37ef73fc77b7845031c581e69380",
+  "source-first/config.json": "fba4cb9d0cff99f3a8de338f41b37276353bed5e54c971ef7100e6b7d4bc6604"
+}

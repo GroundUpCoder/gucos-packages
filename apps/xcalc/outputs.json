@@ -1,0 +1,18 @@
+[
+  {
+    "path": "bin/xcalc",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/xcalc/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/XCalc",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/XCalc-color",
+    "mode": 420
+  }
+]

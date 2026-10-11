@@ -1,0 +1,62 @@
+[
+  {
+    "path": "lib/libXpm.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libXaw7.a",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/libICE-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/libSM-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/libXaw-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/libXft-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/libXmu-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/libXpm-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/libXrandr-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/libXt-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/termcap-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/xev-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/xmessage-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/xprop-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/x11-widgets/xterm-COPYING",
+    "mode": 420
+  }
+]

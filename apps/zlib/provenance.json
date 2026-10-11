@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/zlib",
+  "archiveSha256": "2b9ad1bee3da8914d9b045fd73d8a0df01ca2dec0b6c2f04c5f2c30e570ded71",
+  "status": "source migration candidate; no new guest execution"
+}

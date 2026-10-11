@@ -1,0 +1,119 @@
+{
+  "action": "consumers",
+  "names": [
+    "zlib",
+    "cjson",
+    "pkgconf",
+    "bzip2",
+    "bzip2recover",
+    "expat"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "7da0b4a334986858685f930ef50af2352d33b714",
+  "startedAt": "2026-10-10T09:26:56.187Z",
+  "status": "failed",
+  "consumerInputs": [
+    {
+      "name": "zlib",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "2b9ad1bee3da8914d9b045fd73d8a0df01ca2dec0b6c2f04c5f2c30e570ded71",
+          "size": 1269760
+        },
+        {
+          "path": "build.sh",
+          "sha256": "aa5c4a00ee1b926ebfe5cb76e1909d352b9281b9e734f1efb55454dc41003bf9",
+          "size": 785
+        },
+        {
+          "path": "test.sh",
+          "sha256": "0e57a22d7479739ceaaa1e9e796d944f99e9edda911a8dbb9a264a7c2a7e4e06",
+          "size": 344
+        }
+      ]
+    },
+    {
+      "name": "cjson",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "a7597e37fb9b3c11e250f271a51de2b10e91e79ebbfeba7b350d32e674e4e8f0",
+          "size": 112640
+        },
+        {
+          "path": "build.sh",
+          "sha256": "43a2910e69e6ddb10d0fd37cd7b728aa4dfd42ca592dc78d50d85942345c054b",
+          "size": 440
+        },
+        {
+          "path": "test.sh",
+          "sha256": "9893fed904f6c961c842cadd7aa8e317550e6655393e3ad8a96aa03d84c9a1ed",
+          "size": 927
+        }
+      ]
+    },
+    {
+      "name": "pkgconf",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "0f4681ad18cedeead41be89d831a416f1ed650496631d1b45cabe79474d1c0d5",
+          "size": 501760
+        },
+        {
+          "path": "build.sh",
+          "sha256": "028446faa2d7cab17f7ae7c2926b163a6360fb5ebd32679f0d61a8c74c399925",
+          "size": 602
+        },
+        {
+          "path": "test.sh",
+          "sha256": "78539ed6ef3afc9993cc6dbaf59cb8055a297691405dd9c69283261fbec75d07",
+          "size": 516
+        }
+      ]
+    },
+    {
+      "name": "bzip2",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "783b32d10919fa193ea3e392f7a7999fa8295a70ba0dc9cf13355794977e88be",
+          "size": 839680
+        },
+        {
+          "path": "build.sh",
+          "sha256": "6193003e254a1ed0d596e82b20f5ed007bb0938c169ed83a4f29bdb6cceea231",
+          "size": 366
+        },
+        {
+          "path": "test.sh",
+          "sha256": "f8df9b2ad7039df882ffc732f5d1b39244919c9f53224daf03021d32f5bc6359",
+          "size": 617
+        }
+      ]
+    },
+    {
+      "name": "bzip2recover",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "783b32d10919fa193ea3e392f7a7999fa8295a70ba0dc9cf13355794977e88be",
+          "size": 839680
+        },
+        {
+          "path": "build.sh",
+          "sha256": "77231ac7cbd2db0a80cac77047cdbd0bf4894073f3ba8324bcdcf612417e12bf",
+          "size": 225
+        },
+        {
+          "path": "test.sh",
+          "sha256": "66a24ea4a821881e2772dd29618d1f3b08ddc61088db8f4ea0bc42720cfd8c91",
+          "size": 288
+        }
+      ]
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: mkdir: can't create directory 'recovery': File exists\n\n\n1 !== 0\n\n    at Object.command (file:///Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:48:96)\n    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:40:4",
+  "finishedAt": "2026-10-10T09:26:58.490Z"
+}

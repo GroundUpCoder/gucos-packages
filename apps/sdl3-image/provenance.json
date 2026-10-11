@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/sdl3-image",
+  "archiveSha256": "fda0d407af1cc4a27860cae7364d362ac70951a794f65530394658a312423a51",
+  "status": "source migration candidate; no new guest execution"
+}

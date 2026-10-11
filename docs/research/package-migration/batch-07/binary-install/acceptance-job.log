@@ -1,0 +1,5 @@
+[machine-job] queued: sh -c set -e
+node tests/migration/stage.mjs install ed jq > "$COMPAT_RUN_DIR/install.log" 2>&1
+node tests/migration/stage.mjs consumers ed jq > "$COMPAT_RUN_DIR/consumers.log" 2>&1
+node tests/migration/stage.mjs reload ed jq > "$COMPAT_RUN_DIR/reload.log" 2>&1
+[machine-job] running: f840eda5-05f9-4e1f-930c-63ed9bd5ca38

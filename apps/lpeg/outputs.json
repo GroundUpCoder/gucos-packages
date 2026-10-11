@@ -1,0 +1,22 @@
+[
+  {
+    "path": "lib/lua/5.5/lpeg.so",
+    "mode": 420
+  },
+  {
+    "path": "share/lua/5.5/re.lua",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/lpeg/lpeg.html",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/lpeg/re.html",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/lpeg/LICENSE",
+    "mode": 420
+  }
+]

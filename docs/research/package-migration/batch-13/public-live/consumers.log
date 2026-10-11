@@ -1,0 +1,74 @@
+gucman: unknown source
+
+
+LUA55-CLOSURE-BYTECODE-PASS
+2 functions, 4498 bytes
+LUA55-DYNAMIC-MODULE-PASS
+1131 functions, 614261 bytes
+
+
+General tests for LPeg library
+LPeg 1.1.0
++
+testing large dynamic Cc
++
++
++
+testing back references
+testing large grammars
+testing UTF-8 ranges
+testing 're' module
+OK
+LPEG-UPSTREAM-PASS
+LUA-PLUGIN-PASS
+
+
+All 13 tests executed successfully
+2048-LOGIC-PASS
+
+
+SERIES|5050|100
+STEP|3,6,9,12
+RELOAD|42
+DESC|5,3,1,-1
+EMPTY|0
+SQLITE-PLUGIN-PASS
+
+/usr/local/bin/lua55: OK
+/usr/local/lib/liblua5.5.a: OK
+/usr/local/include/lua5.5/lua.h: OK
+/usr/local/include/lua5.5/luaconf.h: OK
+/usr/local/include/lua5.5/lualib.h: OK
+/usr/local/include/lua5.5/lauxlib.h: OK
+/usr/local/share/licenses/lua55/lua.h: OK
+
+004286b2d43ebc991b17f35ad79185accadfdcdc38c4adee2028006afdfb4d34  /home/user/migration-export.tar
+1550848
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/lua/5.5/lpeg.so: OK
+/usr/local/share/lua/5.5/re.lua: OK
+/usr/local/share/doc/lpeg/lpeg.html: OK
+/usr/local/share/doc/lpeg/re.html: OK
+/usr/local/share/licenses/lpeg/LICENSE: OK
+
+9db147f1473337e383e97b50b16ed383bf38564b902f0e0688f7138aa7b726e8  /home/user/migration-export.tar
+172544
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/2048: OK
+/usr/local/share/doc/2048/README.md: OK
+/usr/local/share/doc/2048/UPSTREAM.json: OK
+/usr/local/share/licenses/2048/LICENSE: OK
+
+c9b5dedd04cb370aef4e482aed362134cdf48576cdd760cd625d54f27c80e97f  /home/user/migration-export.tar
+35328
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/sqlite3/series.so: OK
+/usr/local/share/licenses/sqlite-series/series.c: OK
+
+72224dbaa881ec5aa0b986d27a2caf7a1cc536c346fb4fd2e5ae2702fb8c5741  /home/user/migration-export.tar
+52224
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

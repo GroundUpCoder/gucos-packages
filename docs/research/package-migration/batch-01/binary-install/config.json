@@ -1,0 +1,112 @@
+{
+  "expectedRuntime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "dist": "/Users/jku/git/wasm-posix-packages/test-results/migration/first-binaries-61a87f88/site",
+  "inputCommit": "7da0b4a334986858685f930ef50af2352d33b714",
+  "candidates": [
+    "zlib",
+    "cjson",
+    "pkgconf",
+    "bzip2",
+    "bzip2recover",
+    "expat"
+  ],
+  "catalogUrl": "http://127.0.0.1:64088/migration/catalog.json",
+  "baselinePackages": {
+    "jsmn": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/cce612244c85482d610ee3ffe3341e2d04bce45f/apps/jsmn/package.json",
+      "sha256": "685bdd61c0fd68d5d1695ad8ad603313c4c3c253c8aac57622556bb59e228bab",
+      "size": 2356
+    },
+    "x11-server": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/x11-server/package.json",
+      "sha256": "586314ed29251dcabeb7b7ecf5e33d02dd1711ec8e4d563c004e177df6dbbbac",
+      "size": 47983
+    },
+    "x11-toolkit": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/x11-toolkit/package.json",
+      "sha256": "5c950cab84a19bd5fe65a2f5a765224a903c0fac0d04113d15343aaceb6a5390",
+      "size": 13790
+    },
+    "twm": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/637199fc8cb2d68a7aa3d4be581759fc17b1ae22/apps/twm/package.json",
+      "sha256": "fe34d6bb5d8526074646cfeb00ae2dafe586325ecdd33f147c5f56a4500940c4",
+      "size": 1375
+    },
+    "jwm": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/jwm/package.json",
+      "sha256": "7c6d85b5558c4cfbf667d115a4f60d551bd7b0f5e951d26d69f28eeaf4ef5a8c",
+      "size": 2854
+    },
+    "lua": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/lua/package.json",
+      "sha256": "186702e6ed0331b1cce6f9e5d3f002ba836bfcb3292bbe57b9711344b84c2494",
+      "size": 2058
+    },
+    "x11-widgets": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/x11-widgets/package.json",
+      "sha256": "f27166a2c57a9b8c202b65098433bb39ab77a1142e2320da63cb2adf7d51f830",
+      "size": 3440
+    },
+    "xcalc": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xcalc/package.json",
+      "sha256": "1e3743cc8edcf23c0b8f5c44c87dcda8f6ef62891837af59b3fec79374cd95bd",
+      "size": 2097
+    },
+    "xclock": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xclock/package.json",
+      "sha256": "149c88a3846b01cb06570332eaa846b87d0402cf3207af3243c02cdf37800a3f",
+      "size": 2282
+    },
+    "xev": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xev/package.json",
+      "sha256": "fafad07311be1a42eaf38246b9a80dff46f313aab47313a0d236a81f2873bead",
+      "size": 3125
+    },
+    "xeyes": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xeyes/package.json",
+      "sha256": "ecf596cea580ab5e7d3ec8304be8a20258d6dc0893f239c39ce153713d7bc029",
+      "size": 2221
+    },
+    "xkill": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xkill/package.json",
+      "sha256": "00f2432bae931f358f450e27560e388ea5d8cb39d9e097119166d56df0ca5235",
+      "size": 1937
+    },
+    "xlogo": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xlogo/package.json",
+      "sha256": "e0f8ad5f6afa849eafa7e94e07417d64aa37487f5289ef381b5077151e5137ac",
+      "size": 2097
+    },
+    "xlsfonts": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xlsfonts/package.json",
+      "sha256": "1e17475e58346b9fbc8d83904ebcf2c8c176723f11ebde2fa224778f87095a01",
+      "size": 1964
+    },
+    "xmessage": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xmessage/package.json",
+      "sha256": "caf8271ef67ab2ca12b5917f31d607e6a9d05a03dfc0a1f086c1ab1817c49939",
+      "size": 3287
+    },
+    "xprop": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xprop/package.json",
+      "sha256": "2a64dca6bb0032ce7f4782e84a4a66428501b0d33f603d6f382bc1452bb700e2",
+      "size": 3190
+    },
+    "xrefresh": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xrefresh/package.json",
+      "sha256": "d8f5f540d55e6c1c54f64c85b1164e20fbe203885db587f646f6243b8df27e79",
+      "size": 1964
+    },
+    "xterm": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/xterm/package.json",
+      "sha256": "fb4ea5c1d49ddbae969b607a3e9c5089edf91b8514f5b37ec84a031e002f268a",
+      "size": 3335
+    },
+    "zstd": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ed61c5f766c79bdb2cd9e49f476c04cb5a8d41b9/apps/zstd/package.json",
+      "sha256": "9bcb68b1805773065cfee77b6d524dbf49c7d650b3281b0a042c75e755e19fa6",
+      "size": 2067
+    }
+  },
+  "distributionSnapshotSha256": "2fac36ff13adc2aef2af6f5a599238423a3f20e42c7744cec44a2766ed5485a0"
+}

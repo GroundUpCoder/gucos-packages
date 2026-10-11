@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/pigz",
+  "archiveSha256": "7b0a06d573dffe542ab4b46a7c259843df7fc2a86d170f3183c15d54c092355f",
+  "status": "source migration candidate; no new guest execution"
+}

@@ -1,0 +1,174 @@
+{
+  "format": 1,
+  "name": "libevent",
+  "version": "2.1.12-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "pthreads"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/source.tar",
+      "sha256": "2f96f94c985a46d86411b847a0b09ab4699a4b1a6dc78eec0762f813a7988224",
+      "size": 2600960
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/build.sh",
+      "sha256": "5f29cbdd380264f3df69f29db6b284ccd9786a50438297b90341ceecd3839cc6",
+      "size": 3397
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/test.sh",
+      "sha256": "a4c393fe4aef316166ce1b14401a0ddc9025f50494ec8af51098529d0bc2cef4",
+      "size": 1255
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libevent.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libevent.so",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/libevent.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/libevent/LICENSE",
+      "mode": 420
+    },
+    {
+      "path": "include/event.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/buffer.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/buffer_compat.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/bufferevent.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/bufferevent_compat.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/bufferevent_ssl.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/bufferevent_struct.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/dns.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/dns_compat.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/dns_struct.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/event-config.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/event.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/event_compat.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/event_struct.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/http.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/http_compat.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/http_struct.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/keyvalq_struct.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/listener.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/rpc.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/rpc_compat.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/rpc_struct.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/tag.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/tag_compat.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/thread.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/util.h",
+      "mode": 420
+    },
+    {
+      "path": "include/event2/visibility.h",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/libevent/LICENSE"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/46134c9e6e273a35051c230ded59e5525b76e98a/apps/libevent/binaries/3f932f799b0ff35a95ddea35fb602ff88921292a4139349df6a6ce9e3f0baea4.tar",
+    "sha256": "3f932f799b0ff35a95ddea35fb602ff88921292a4139349df6a6ce9e3f0baea4",
+    "size": 2466816
+  }
+}

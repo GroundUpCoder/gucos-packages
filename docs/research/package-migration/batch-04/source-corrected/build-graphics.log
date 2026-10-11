@@ -1,0 +1,235 @@
+[machine-job] queued: node tests/migration/stage.mjs build fontconfig x11-shared cairo
+[machine-job] running: d574579f-54d5-4d4c-a6a8-6c7656535ec1
+gucman: unknown source
+
+gucman: build migration:fontconfig: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 11488 bytes; transfer finished
+gucman: Resolving: migration:fontconfig
+gucman: Downloading manifest for migration:fontconfig (2715 bytes)
+  Connecting; waiting for response…
+  Downloaded 2715 / 2715 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Plan: 3 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 3 packages
+gucman: Package 1/3: freetype (2 remaining after this)
+Already installed: freetype
+gucman: Package 2/3: expat (1 remaining after this)
+Already installed: expat
+gucman: Package 3/3: fontconfig (0 remaining after this)
+gucman: Downloading fontconfig source: source.tar (1648640 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.57 / 1.57 MiB (100%); transfer finished
+gucman: Verifying download: fontconfig source: source.tar
+gucman: Checking cached object: fontconfig source: source.tar
+gucman: Downloading fontconfig source: build.sh (2103 bytes)
+  Connecting; waiting for response…
+  Downloaded 2103 / 2103 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: build.sh
+gucman: Checking cached object: fontconfig source: build.sh
+gucman: Downloading fontconfig source: test.sh (428 bytes)
+  Connecting; waiting for response…
+  Downloaded 428 / 428 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: test.sh
+gucman: Checking cached object: fontconfig source: test.sh
+gucman: Downloading fontconfig source: ABeeZee-Regular.ttf (46016 bytes)
+  Connecting; waiting for response…
+  Downloaded 46016 / 46016 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: ABeeZee-Regular.ttf
+gucman: Checking cached object: fontconfig source: ABeeZee-Regular.ttf
+gucman: Downloading fontconfig source: SourceCodePro-Regular.otf (131128 bytes)
+  Connecting; waiting for response…
+  Downloaded 131128 / 131128 bytes (100%); transfer finished
+gucman: Verifying download: fontconfig source: SourceCodePro-Regular.otf
+gucman: Checking cached object: fontconfig source: SourceCodePro-Regular.otf
+Building migration:fontconfig; running trusted recipe with access to your guest files
+819 functions, 661394 bytes
+762 functions, 603739 bytes
+3 functions, 8651 bytes
+gucman: Installing fontconfig: 0/11 files
+gucman: Installing fontconfig: 11/11 files
+gucman: Preparing checksums: fontconfig
+gucman: Checksummed fontconfig: 11/11 files
+gucman: Saving transaction: fontconfig
+gucman: Verifying staged files: fontconfig
+gucman: Activating: fontconfig
+Installed migration:fontconfig 2.15.0-1
+
+gucman: build migration:x11-shared: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 11488 bytes; transfer finished
+gucman: Resolving: migration:x11-shared
+gucman: Downloading manifest for migration:x11-shared (2877 bytes)
+  Connecting; waiting for response…
+  Downloaded 2877 / 2877 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: x11-server (1 remaining after this)
+Already installed: x11-server
+gucman: Package 2/2: x11-shared (0 remaining after this)
+gucman: Downloading x11-shared source: source.tar (81920 bytes)
+  Connecting; waiting for response…
+  Downloaded 81920 / 81920 bytes (100%); transfer finished
+gucman: Verifying download: x11-shared source: source.tar
+gucman: Checking cached object: x11-shared source: source.tar
+gucman: Downloading x11-shared source: build.sh (721 bytes)
+  Connecting; waiting for response…
+  Downloaded 721 / 721 bytes (100%); transfer finished
+gucman: Verifying download: x11-shared source: build.sh
+gucman: Checking cached object: x11-shared source: build.sh
+gucman: Downloading x11-shared source: test.sh (438 bytes)
+  Connecting; waiting for response…
+  Downloaded 438 / 438 bytes (100%); transfer finished
+gucman: Verifying download: x11-shared source: test.sh
+gucman: Checking cached object: x11-shared source: test.sh
+Building migration:x11-shared; running trusted recipe with access to your guest files
+7 functions, 11575 bytes
+746 functions, 601416 bytes
+2207 functions, 2356377 bytes
+196 functions, 174203 bytes
+61 functions, 77095 bytes
+44 functions, 45759 bytes
+138 functions, 151278 bytes
+43 functions, 45632 bytes
+2 functions, 4955 bytes
+gucman: Installing x11-shared: 0/17 files
+gucman: Installing x11-shared: 17/17 files
+gucman: Preparing checksums: x11-shared
+gucman: Checksummed x11-shared: 17/17 files
+gucman: Saving transaction: x11-shared
+gucman: Verifying staged files: x11-shared
+gucman: Activating: x11-shared
+Installed migration:x11-shared 0.1.0-1
+
+{
+  tail: 'ed\n' +
+    'gucman: Resolving: migration:cairo\n' +
+    'gucman: Downloading manifest for migration:cairo (3605 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 3605 / 3605 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for migration:cairo\n'
+}
+{
+  tail: ' 67046 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: cairo source: cairo-xlib-surface.c\n' +
+    'gucman: Checking cached object: cairo source: cairo-xlib-surface.c\n' +
+    'Building migration:cairo; running trusted recipe with access to your guest files\n'
+}
+gucman: build migration:cairo: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 11488 bytes; transfer finished
+gucman: Resolving: migration:cairo
+gucman: Downloading manifest for migration:cairo (3605 bytes)
+  Connecting; waiting for response…
+  Downloaded 3605 / 3605 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 9 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 9 packages
+gucman: Package 1/9: pixman (8 remaining after this)
+Already installed: pixman
+gucman: Package 2/9: freetype (7 remaining after this)
+Already installed: freetype
+gucman: Package 3/9: expat (6 remaining after this)
+Already installed: expat
+gucman: Package 4/9: fontconfig (5 remaining after this)
+Already installed: fontconfig
+gucman: Package 5/9: zlib (4 remaining after this)
+Already installed: zlib
+gucman: Package 6/9: libpng (3 remaining after this)
+Already installed: libpng
+gucman: Package 7/9: x11-server (2 remaining after this)
+Already installed: x11-server
+gucman: Package 8/9: x11-shared (1 remaining after this)
+Already installed: x11-shared
+gucman: Package 9/9: cairo (0 remaining after this)
+gucman: Downloading cairo source: source.tar (6932480 bytes)
+  Connecting; waiting for response…
+  Downloaded 6.61 / 6.61 MiB (100%); transfer finished
+gucman: Verifying download: cairo source: source.tar
+gucman: Checking cached object: cairo source: source.tar
+gucman: Downloading cairo source: build.sh (1550 bytes)
+  Connecting; waiting for response…
+  Downloaded 1550 / 1550 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: build.sh
+gucman: Checking cached object: cairo source: build.sh
+gucman: Downloading cairo source: test.sh (921 bytes)
+  Connecting; waiting for response…
+  Downloaded 921 / 921 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: test.sh
+gucman: Checking cached object: cairo source: test.sh
+gucman: Downloading cairo source: sources.txt (3237 bytes)
+  Connecting; waiting for response…
+  Downloaded 3237 / 3237 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: sources.txt
+gucman: Checking cached object: cairo source: sources.txt
+gucman: Downloading cairo source: config.h (870 bytes)
+  Connecting; waiting for response…
+  Downloaded 870 / 870 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: config.h
+gucman: Checking cached object: cairo source: config.h
+gucman: Downloading cairo source: cairo-features.h (432 bytes)
+  Connecting; waiting for response…
+  Downloaded 432 / 432 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: cairo-features.h
+gucman: Checking cached object: cairo source: cairo-features.h
+gucman: Downloading cairo source: cairo-xlib-surface.c (67046 bytes)
+  Connecting; waiting for response…
+  Downloaded 67046 / 67046 bytes (100%); transfer finished
+gucman: Verifying download: cairo source: cairo-xlib-surface.c
+gucman: Checking cached object: cairo source: cairo-xlib-surface.c
+Building migration:cairo; running trusted recipe with access to your guest files
+3336 functions, 2131823 bytes
+2684 functions, 1685851 bytes
+2 functions, 8322 bytes
+gucman: Installing cairo: 0/16 files
+gucman: Installing cairo: 16/16 files
+gucman: Preparing checksums: cairo
+gucman: Checksummed cairo: 16/16 files
+gucman: Saving transaction: cairo
+gucman: Verifying staged files: cairo
+gucman: Activating: cairo
+Installed migration:cairo 1.18.4-1
+
+8d9021358b714d913a7836e85c36006fc4cb437b4e5c85786ab257ac7155908d  /home/user/migration-export.tar
+1678848
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+819c9d89c9042504ada022966227c4f014dbdca6b31cce72753ac8ae2ad5ae05  /home/user/migration-export.tar
+3554304
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+631a7c11e639b0d4695bb83356aee3827d3d489a9ae902e3614a8d38c8369e10  /home/user/migration-export.tar
+5186048
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

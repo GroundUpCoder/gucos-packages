@@ -1,0 +1,49 @@
+[machine-job] queued: node tests/migration/xclients.mjs
+[machine-job] running: 48bfc985-d3fd-4e66-8027-20d948df7e9f
+
+{
+  tail: 'ing "menu12" to type Pixmap\n' +
+    'Warning: Cannot convert string "xlogo11" to type Pixmap\n' +
+    'MAPPED Xedit\n' +
+    'MAPPED XFontSel\n' +
+    'MAPPED XClipboard\n' +
+    'MAPPED XCutsel\n' +
+    'MAPPED Clock\n' +
+    'XEDIT-SAVE-PASS\n' +
+    'FONT-SELECTION-LOAD-PASS\n' +
+    'CUTSEL-BIDIRECTIONAL-PASS\n' +
+    'CLIPBOARD-TRANSFER-PASS\n'
+}
+{
+  tail: 'ing "menu12" to type Pixmap\n' +
+    'Warning: Cannot convert string "xlogo11" to type Pixmap\n' +
+    'MAPPED Xedit\n' +
+    'MAPPED XFontSel\n' +
+    'MAPPED XClipboard\n' +
+    'MAPPED XCutsel\n' +
+    'MAPPED Clock\n' +
+    'XEDIT-SAVE-PASS\n' +
+    'FONT-SELECTION-LOAD-PASS\n' +
+    'CUTSEL-BIDIRECTIONAL-PASS\n' +
+    'CLIPBOARD-TRANSFER-PASS\n'
+}
+2330 functions, 2321669 bytes
+hello
+Warning: Missing charsets in String to FontSet conversion
+Warning: Missing charsets in String to FontSet conversion
+Warning: Missing charsets in String to FontSet conversion
+Warning: Cannot convert string "menu12" to type Pixmap
+Warning: Cannot convert string "xlogo11" to type Pixmap
+MAPPED Xedit
+MAPPED XFontSel
+MAPPED XClipboard
+MAPPED XCutsel
+MAPPED Clock
+XEDIT-SAVE-PASS
+FONT-SELECTION-LOAD-PASS
+CUTSEL-BIDIRECTIONAL-PASS
+CLIPBOARD-TRANSFER-PASS
+OCLOCK-UPDATE-PASS
+MIGRATED-XCLIENTS-PASS
+MIGRATION-GUI-PASS
+

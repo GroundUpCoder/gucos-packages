@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/cairo-gobject",
+  "archiveSha256": "9ea4a76260e38b65a1de7619b91bcd2a8654469726668c2889523b0bc89f28bb",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

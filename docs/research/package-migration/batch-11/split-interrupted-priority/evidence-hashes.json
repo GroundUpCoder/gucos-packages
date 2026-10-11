@@ -1,0 +1,8 @@
+{
+  "build-harfbuzz-static.json": "3312d3d272890a1085e7423e40bf6282b45730ee5590b212a58e05eee8835785",
+  "build-harfbuzz-static.log": "83e15a32fbeea93c58bf5937f1094be1dab104207b4d460f8d260e816db5b113",
+  "candidate-manifests.json": "83fdafc4adfec0f0eed18c0610049ef993e3e429152a11d19ce0eddee4b044b8",
+  "config.json": "88eebfa13200705abc9cb2564f5d03e030c7f9bfad635289b9cfc12e3944b35f",
+  "interruption.json": "d588ae255b11601defeeba5fb01896724f48f7cd23d55603b46b97581b2a5ac6",
+  "observed-runtime.json": "5131bb303345d1f4507fad43109cb55ce42756457204ba6faefd0e6609aadc08"
+}

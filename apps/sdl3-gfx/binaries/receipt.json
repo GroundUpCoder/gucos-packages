@@ -1,0 +1,70 @@
+{
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "sha256": "78542f6705c6e0cbf9d6d2e2663a8301dce0ff3770c119a280b61b90cf6dbe75",
+  "size": 179712,
+  "guestManifest": {
+    "format": 1,
+    "name": "sdl3-gfx",
+    "version": "2.0.23-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "sdl3-vt"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:55435/migration/sdl3-gfx/source.tar",
+        "sha256": "d3c3ca63b4a7ebf621bc6adb70a52b541fe87da610145abc8a6166f108238413",
+        "size": 225280
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:55435/migration/sdl3-gfx/build.sh",
+        "sha256": "0a6a2abad7ca662777dfa22231b7e2ec35e83755ab754a10db021cd56d897ad8",
+        "size": 623
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:55435/migration/sdl3-gfx/test.sh",
+        "sha256": "8e3e5e15e96d30dd36194322067045f6cf5b0e682af8a65f6c472e23bb09755e",
+        "size": 524
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libSDL3_gfx.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libSDL3_gfx.so",
+        "mode": 420
+      },
+      {
+        "path": "include/SDL3_gfx/SDL_gfxPrimitives.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/SDL3_gfx.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/sdl3-gfx/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/sdl3-gfx/LICENSE"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

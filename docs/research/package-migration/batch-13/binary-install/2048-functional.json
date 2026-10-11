@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-11T03:21:05.219Z",
+  "inputCommit": "b43fd6e3f54431d0ea37d622a408e2aff5d7d389",
+  "harnessSha256": "d135f486eb7c5b87537019cb1c7756e99b3a9e8691fba19df53ee78c7d83a81f",
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "http://127.0.0.1:54404/migration/2048/binary.tar",
+    "sha256": "8d77c54d84083668a4b5e6a678a92503d3587d9e3d15103e19bdc557dc9c7555",
+    "size": 35328
+  },
+  "boards": {
+    "initial": {
+      "score": 0,
+      "cells": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "beforeRestart": {
+      "score": 4,
+      "cells": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        2,
+        0,
+        4,
+        2
+      ]
+    },
+    "reset": {
+      "score": 0,
+      "cells": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "completeFrames": 9
+  },
+  "checks": [
+    "movement-redraw",
+    "restart-confirmation-redraw",
+    "quit-confirmation-normal-exit",
+    "cursor-restored",
+    "subsequent-terminal-command"
+  ],
+  "finishedAt": "2026-10-11T03:21:06.701Z"
+}

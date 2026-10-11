@@ -1,0 +1,38 @@
+[
+  {
+    "path": "lib/libjpeg-turbo.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libjpeg-turbo.so",
+    "mode": 420
+  },
+  {
+    "path": "include/jpeg-turbo/jpeglib.h",
+    "mode": 420
+  },
+  {
+    "path": "include/jpeg-turbo/jerror.h",
+    "mode": 420
+  },
+  {
+    "path": "include/jpeg-turbo/jmorecfg.h",
+    "mode": 420
+  },
+  {
+    "path": "include/jpeg-turbo/jconfig.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/libjpeg-turbo.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libjpeg-turbo/LICENSE.md",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libjpeg-turbo/README.ijg",
+    "mode": 420
+  }
+]

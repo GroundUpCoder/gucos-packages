@@ -1,0 +1,66 @@
+[
+  {
+    "path": "bin/xterm",
+    "mode": 493
+  },
+  {
+    "path": "share/xterm/termcap",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/XTerm",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/libICE-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/libSM-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/libXaw-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/libXft-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/libXmu-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/libXpm-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/libXrandr-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/libXt-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/termcap-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/xev-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/xmessage-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/xprop-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xterm/xterm-COPYING",
+    "mode": 420
+  }
+]

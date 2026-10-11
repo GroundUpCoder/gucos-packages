@@ -1,0 +1,125 @@
+{
+  "pigz": {
+    "format": 1,
+    "name": "pigz",
+    "version": "2.8-1",
+    "dependencies": [
+      "zlib"
+    ],
+    "dependencyRequirements": {
+      "zlib": {
+        "version": "1.3.2-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:49406/migration/pigz/source.tar",
+        "sha256": "7b0a06d573dffe542ab4b46a7c259843df7fc2a86d170f3183c15d54c092355f",
+        "size": 522240
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:49406/migration/pigz/build.sh",
+        "sha256": "63ce3200049a6dfc1d9d8f15a7db176ca30f35144b279dbce7e3417a1b7e08d8",
+        "size": 368
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:49406/migration/pigz/test.sh",
+        "sha256": "1f807b743a79f4dacf1229ced5168579d3909dd9da7b0cdfa411816ada6eb78f",
+        "size": 996
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/pigz",
+        "mode": 493
+      },
+      {
+        "path": "bin/unpigz",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/pigz/README",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/pigz/README"
+    ]
+  },
+  "nyancat": {
+    "format": 1,
+    "name": "nyancat",
+    "version": "0.1.0-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:49406/migration/nyancat/source.tar",
+        "sha256": "9052e7c23a9a60fd05b5e73c778d3609215b813022e520e1099221f5354e3fd7",
+        "size": 122880
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:49406/migration/nyancat/build.sh",
+        "sha256": "ed8f33a467b3a10930e84c8b1d2ef52bb6da850f5191627f50447d2862343973",
+        "size": 366
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:49406/migration/nyancat/test.sh",
+        "sha256": "b9c0a6881997ed273c5846193e736ee20facb2c0c1bc2ac5a10c6f6b38b22f61",
+        "size": 421
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/nyancat",
+        "mode": 493
+      },
+      {
+        "path": "share/doc/nyancat/README.md",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/nyancat/UPSTREAM.json",
+        "mode": 420
+      },
+      {
+        "path": "share/man/man1/nyancat.1",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/nyancat/nyancat.c",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/nyancat/nyancat.c"
+    ]
+  }
+}

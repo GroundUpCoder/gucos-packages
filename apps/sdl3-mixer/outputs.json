@@ -1,0 +1,22 @@
+[
+  {
+    "path": "lib/libSDL3_mixer.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libSDL3_mixer.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/sdl3-mixer.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/sdl3-mixer/LICENSE.txt",
+    "mode": 420
+  },
+  {
+    "path": "include/SDL3_mixer/SDL_mixer.h",
+    "mode": 420
+  }
+]

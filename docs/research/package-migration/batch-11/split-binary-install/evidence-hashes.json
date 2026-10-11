@@ -1,0 +1,14 @@
+{
+  "candidate-manifests.json": "04ee6af99f0a15768bbbaff7c62a1a508450bb72298766bbb052ac1d16828501",
+  "config.json": "27c2322c091dda59b56a9c66b11071f5cbd467e56bdd7ee9837f0d5e8f315ff3",
+  "consumers-harfbuzz-static-harfbuzz-pango.json": "9a1d77c0e406d0cca7182fc0ac139b02ec7fb4d999b4ed4f7413fa9448af3996",
+  "consumers.log": "a5c80bce31239cc2e3248d79f7864c9e3d53b21e4f103c441ec052f42a8ba485",
+  "harfbuzz-static.sha256": "a382ff749c5c6233482d1dac25344a31970e83c1640e4de8ef6959e2188eaf19",
+  "harfbuzz.sha256": "70865e508e05a071a2570d6411f010e7bc9c67980734bb993a3996ba33901877",
+  "install-harfbuzz-static-harfbuzz-pango.json": "67d10b0ba1395c16458c7d7f6f93faa7f7ddda608d07553bd3259ad569f52941",
+  "install.log": "e7d15d98f65d1a2f0b91a3341103e3daf1edab63e33f6cffbd9636c2e24bab13",
+  "observed-runtime.json": "9d385f5c40ce17d0cfc9fb5d6d844cf70803bd0d113719b23fae7df4759351fe",
+  "pango.sha256": "d67157a58d8c1c017466a2ae0aeafc06c57fb90deffb7e2a81ec5d4772a49f0a",
+  "reload-harfbuzz-static-harfbuzz-pango.json": "6fa075e1c4fd7e93349b8b917eabfc6303a529d6388dbbeaa4b532264a4127ab",
+  "reload.log": "479a0878fda432d0a3aadda76a9e2755f96cee02cff8215e313da82090938eff"
+}

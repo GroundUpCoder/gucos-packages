@@ -1,0 +1,186 @@
+[
+  {
+    "path": "lib/libpango-1.0.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libpango-1.0.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/libpangoft2-1.0.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libpangoft2-1.0.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/libpangocairo-1.0.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libpangocairo-1.0.so",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-attributes.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-bidi-type.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-break.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-color.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-context.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-coverage.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-direction.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-engine.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-font.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-fontmap.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-fontset.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-fontset-simple.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-glyph.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-glyph-item.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-gravity.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-item.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-language.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-layout.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-matrix.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-markup.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-modules.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-renderer.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-script.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-tabs.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-types.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-utils.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-version-macros.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-enum-types.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pango-features.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pangofc-font.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pangofc-fontmap.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pangofc-decoder.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pangoft2.h",
+    "mode": 420
+  },
+  {
+    "path": "include/pango-1.0/pango/pangocairo.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/pango.pc",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/pangocairo.pc",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/pangoft2.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/pango/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/pango/Noto-CJK.txt",
+    "mode": 420
+  }
+]

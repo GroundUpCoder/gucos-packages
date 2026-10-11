@@ -1,0 +1,7 @@
+{
+  "name": "xmessage",
+  "version": "1.0.7-1",
+  "dependencies": [
+    "x11-widgets"
+  ]
+}

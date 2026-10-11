@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "name": "snake",
+  "version": "1.0.0-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "main.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/main.c",
+      "sha256": "d38330bda741ae042cf8c73acfee011b6d782d8088f6f90d090ab59ab24f7598",
+      "size": 9260
+    },
+    {
+      "path": "upstream.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/upstream.c",
+      "sha256": "82b0a3149bb0466f6209fa9cf777cbbf0dd0c12197037689e5f494bb145cfd55",
+      "size": 7602
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/LICENSE",
+      "sha256": "3f2bf733d13b1e20f7457acc5baf47aa94b3982901cce4f6d7e80438bf9b6b13",
+      "size": 11344
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/README.md",
+      "sha256": "a99dc2d54fea060c9d479723953706cabd53a4906cbe8c886da8a1462de15091",
+      "size": 618
+    },
+    {
+      "path": "provenance.json",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/provenance.json",
+      "sha256": "b31794ded78014922d5eef3c34f2bde3ac7eda1aa421aa0c20eeacc9fa617ab3",
+      "size": 660
+    },
+    {
+      "path": "snake.desktop",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/snake.desktop",
+      "sha256": "290d82eeedb0e2c98e6069145b9ebf558a02fd253d43840adf84d32dc4aa7b29",
+      "size": 139
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/build.sh",
+      "sha256": "fc45ed354c281832c119580cd2e7e3bf9e0eb00a9cdbc389dfa44792db1d5507",
+      "size": 364
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/test.sh",
+      "sha256": "f9bd081349393e6ed26e8734cb35a93d0cc793ecf16732cdcfbfb39e6c2b06a0",
+      "size": 323
+    },
+    {
+      "path": "logic-test.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/logic-test.c",
+      "sha256": "14c281c3fcc5cf52f4a95f3569db40480bd8d5a421f7d9b3bd0d3c925a6b7e7c",
+      "size": 1266
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/snake",
+      "mode": 493
+    },
+    {
+      "path": "share/doc/snake/README.md",
+      "mode": 420
+    },
+    {
+      "path": "share/doc/snake/provenance.json",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/snake/LICENSE",
+      "mode": 420
+    },
+    {
+      "path": "share/applications/wasm-posix-snake.desktop",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/snake/LICENSE"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/4acd07913299ef874d9e376757bff33dd2936ccb/apps/snake/binaries/d7b6a5804fdbd3bfa8cc6782e8204f44c187b8d9445eb4ffefd1aa9934a3ee20.tar",
+    "sha256": "d7b6a5804fdbd3bfa8cc6782e8204f44c187b8d9445eb4ffefd1aa9934a3ee20",
+    "size": 39936
+  }
+}

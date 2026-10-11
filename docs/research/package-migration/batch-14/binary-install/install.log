@@ -1,0 +1,41 @@
+gucman: unknown source
+
+gucman: install migration:pcg32: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 17719 bytes; transfer finished
+gucman: Resolving: migration:pcg32
+gucman: Downloading manifest for migration:pcg32 (1946 bytes)
+  Connecting; waiting for response…
+  Downloaded 1946 / 1946 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pcg32
+gucman: Checking cached object: manifest for migration:pcg32
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: pcg32 (0 remaining after this)
+gucman: Downloading pcg32 archive (106496 bytes)
+  Connecting; waiting for response…
+  Downloaded 106496 / 106496 bytes (100%); transfer finished
+gucman: Verifying download: pcg32 archive
+gucman: Checking cached object: pcg32 archive
+gucman: Unpacking: pcg32
+gucman: Installing pcg32: 0/6 files
+gucman: Installing pcg32: 6/6 files
+gucman: Preparing checksums: pcg32
+gucman: Checksummed pcg32: 6/6 files
+gucman: Saving transaction: pcg32
+gucman: Verifying staged files: pcg32
+gucman: Activating: pcg32
+Installed migration:pcg32 0.1.0-1
+
+/usr/local/bin/pcg32-check: OK
+/usr/local/include/pcg32/api.h: OK
+/usr/local/lib/libpcg32.a: OK
+/usr/local/share/licenses/pcg32/LICENSE: OK
+/usr/local/share/pcg32/native-values.json: OK
+/usr/local/share/pcg32/translation.json: OK
+
+4834564b737d867a37e251d45b75249bb3c14c16a61464c325bea6096cbae45b  /home/user/migration-export.tar
+106496
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

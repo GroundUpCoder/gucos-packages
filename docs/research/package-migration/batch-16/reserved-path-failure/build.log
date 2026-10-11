@@ -1,0 +1,44 @@
+gucman: unknown source
+
+gucman: build migration:micropython: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19668 bytes; transfer finished
+gucman: Resolving: migration:micropython
+gucman: Downloading manifest for migration:micropython (1331 bytes)
+  Connecting; waiting for response…
+  Downloaded 1331 / 1331 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:micropython
+gucman: Checking cached object: manifest for migration:micropython
+gucman: reserved package state
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: build migration:micropython: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19668 bytes; transfer finished
+gucman: Resolving: migration:micropython
+gucman: Downloading manifest for migration:micropython (1331 bytes)
+  Connecting; waiting for response…
+  Downloaded 1331 / 1331 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:micropython
+gucman: Checking cached object: manifest for migration:micropython
+gucman: reserved package state
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:48:96)
+    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:49:27 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

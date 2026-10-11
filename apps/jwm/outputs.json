@@ -1,0 +1,30 @@
+[
+  {
+    "path": "bin/jwm",
+    "mode": 493
+  },
+  {
+    "path": "share/jwm/system.jwmrc",
+    "mode": 420
+  },
+  {
+    "path": "share/jwm/wasm.jwmrc",
+    "mode": 420
+  },
+  {
+    "path": "share/jwm/app-menu.sh",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/jwm/LICENSE",
+    "mode": 420
+  },
+  {
+    "path": "bin/start-jwm",
+    "mode": 493
+  },
+  {
+    "path": "libexec/jwm/wait-display",
+    "mode": 493
+  }
+]

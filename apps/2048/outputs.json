@@ -1,0 +1,18 @@
+[
+  {
+    "path": "bin/2048",
+    "mode": 493
+  },
+  {
+    "path": "share/doc/2048/README.md",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/2048/UPSTREAM.json",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/2048/LICENSE",
+    "mode": 420
+  }
+]

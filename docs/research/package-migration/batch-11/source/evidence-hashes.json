@@ -1,0 +1,38 @@
+{
+  "dist-files.json": {
+    "sha256": "c6abc60ef21c0f1b674b3aab57ea8dd40b8cc175c1004e004dc4570a2f49c3aa",
+    "size": 43848
+  },
+  "build-receipt.json": {
+    "sha256": "46f66267e239ea48f4b7870619127cfa058dc0f57ddbfb6844fb89cb723b6072",
+    "size": 6645
+  },
+  "observed-runtime.json": {
+    "sha256": "81d5f211a0724484fbc1ddab3535a4b6d2546fa64b95650bfdf416f9472d442d",
+    "size": 123
+  },
+  "config.json": {
+    "sha256": "d77d25c9389b732eed9bf21221478ac130b010f7bdfae329c9d850ace8599aa5",
+    "size": 13412
+  },
+  "artifact-location.json": {
+    "sha256": "05811448abe10423de6dc6d32fba1f74ebeafa174f32974b4772c5ca516ced6e",
+    "size": 475
+  },
+  "build-harfbuzz.json": {
+    "sha256": "49b6a900d9ff0a1b556bb407936764d97c53ac249eccc97a68c95f0d749b7a2a",
+    "size": 308
+  },
+  "build-harfbuzz.log": {
+    "sha256": "c29207c44261d423afc638636373ffb014fbe0126cc2f8e73dd52f311aa933ce",
+    "size": 11509
+  },
+  "candidate-manifests.json": {
+    "sha256": "b391e8d7a4e3d1adf90ecad789072668ac860ffcfe47dd0b17a679ca4837dec1",
+    "size": 104991
+  },
+  "payload-inventory.json": {
+    "sha256": "366589b41f3ce79274a375566a5a005880189bf9519292eeb8518e6bf6119eea",
+    "size": 8839
+  }
+}

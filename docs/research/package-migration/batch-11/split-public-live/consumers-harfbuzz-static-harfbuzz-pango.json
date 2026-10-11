@@ -1,0 +1,85 @@
+{
+  "action": "consumers",
+  "names": [
+    "harfbuzz-static",
+    "harfbuzz",
+    "pango"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "f1e6286e9ef2f40868f917e1a58614985a63b970",
+  "startedAt": "2026-10-11T03:04:13.390Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "harfbuzz-static",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "d51f616c1773d8fe43b8ac2d3bc7617e55f289033434e24ec4f6d0a828d741a2",
+          "size": 8048640
+        },
+        {
+          "path": "prepared.tar.gz",
+          "sha256": "6920b176bb1da9759b77733cb9acc860b0ba0ed12f4f85ab7dbdbf3f6e6d67a9",
+          "size": 18677179
+        },
+        {
+          "path": "build.sh",
+          "sha256": "7d6b7acf251243cbfec0407eebcb4c59b2e6646977d2c1bbdfcad74e9a2008a7",
+          "size": 543
+        },
+        {
+          "path": "test.sh",
+          "sha256": "ec5b9a4fc56a0877ddb803a5b5b4d00aeec18a6f8e36e1c0ef7262ce03cf7628",
+          "size": 450
+        }
+      ]
+    },
+    {
+      "name": "harfbuzz",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "d51f616c1773d8fe43b8ac2d3bc7617e55f289033434e24ec4f6d0a828d741a2",
+          "size": 8048640
+        },
+        {
+          "path": "prepared.tar.gz",
+          "sha256": "6920b176bb1da9759b77733cb9acc860b0ba0ed12f4f85ab7dbdbf3f6e6d67a9",
+          "size": 18677179
+        },
+        {
+          "path": "build.sh",
+          "sha256": "28beb3b75b206b0ea28150ae4f75eb7e5e2e51951dc49f9d257c6ff55befbaa0",
+          "size": 1448
+        },
+        {
+          "path": "test.sh",
+          "sha256": "95c0f47212f7ca06709d947668e73ee3405546b7916c58e81c4acd618ac08a7f",
+          "size": 828
+        }
+      ]
+    },
+    {
+      "name": "pango",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "ce3d982dc4c0ba6535d1c4e23dd02742d557f94d75191feba0a871f426c76b64",
+          "size": 6553600
+        },
+        {
+          "path": "build.sh",
+          "sha256": "7cee14afe8d4358399e3f82df5b9c27e37a9383af241985ad5f692ad6645a213",
+          "size": 4541
+        },
+        {
+          "path": "test.sh",
+          "sha256": "fbea7869db1396a6935d8486c3930123822b199024faf83e614085c5855d719f",
+          "size": 1244
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T03:08:47.187Z"
+}

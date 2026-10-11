@@ -1,0 +1,13 @@
+{
+  "name": "xclock",
+  "version": "1.2.1-1",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "config.h"
+  ]
+}

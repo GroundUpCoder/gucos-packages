@@ -1,0 +1,10 @@
+[
+  {
+    "path": "bin/qjs",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/qjs/LICENSE",
+    "mode": 420
+  }
+]

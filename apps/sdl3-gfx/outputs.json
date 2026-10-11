@@ -1,0 +1,22 @@
+[
+  {
+    "path": "lib/libSDL3_gfx.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libSDL3_gfx.so",
+    "mode": 420
+  },
+  {
+    "path": "include/SDL3_gfx/SDL_gfxPrimitives.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/SDL3_gfx.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/sdl3-gfx/LICENSE",
+    "mode": 420
+  }
+]

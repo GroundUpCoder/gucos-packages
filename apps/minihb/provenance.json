@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/minihb",
+  "archiveSha256": "0e576c00ad713f1d743107a525c9d508d5f62ff7be895890e66b55430fe21df8",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

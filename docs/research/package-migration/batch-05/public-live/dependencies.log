@@ -1,0 +1,31 @@
+gucman: unknown source
+
+gucman: install migration:pkgconf: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 12784 bytes; transfer finished
+gucman: Resolving: migration:pkgconf
+gucman: Downloading manifest for migration:pkgconf (1888 bytes)
+  Connecting; waiting for response…
+  Downloaded 1888 / 1888 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: pkgconf (0 remaining after this)
+gucman: Downloading pkgconf archive (454656 bytes)
+  Connecting; waiting for response…
+  Downloaded 262144 / 454656 bytes (57%)
+  Downloaded 454656 / 454656 bytes (100%); transfer finished
+gucman: Verifying download: pkgconf archive
+gucman: Checking cached object: pkgconf archive
+gucman: Unpacking: pkgconf
+gucman: Installing pkgconf: 0/3 files
+gucman: Installing pkgconf: 3/3 files
+gucman: Preparing checksums: pkgconf
+gucman: Checksummed pkgconf: 3/3 files
+gucman: Saving transaction: pkgconf
+gucman: Verifying staged files: pkgconf
+gucman: Activating: pkgconf
+Installed migration:pkgconf 2.3.0-1
+

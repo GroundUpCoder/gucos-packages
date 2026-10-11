@@ -1,0 +1,6 @@
+[machine-job] queued: sh -c set -e
+node tests/migration/stage.mjs install pixman libpng freetype fontconfig x11-shared cairo > "$COMPAT_RUN_DIR/install.log" 2>&1
+node tests/migration/stage.mjs consumers pixman libpng freetype fontconfig x11-shared cairo > "$COMPAT_RUN_DIR/consumers.log" 2>&1
+node tests/migration/graphics.mjs > "$COMPAT_RUN_DIR/graphics-console.log" 2>&1
+node tests/migration/stage.mjs reload pixman libpng freetype fontconfig x11-shared cairo > "$COMPAT_RUN_DIR/reload.log" 2>&1
+[machine-job] running: b490ed4f-ba1f-43b1-9322-8435f6d15282

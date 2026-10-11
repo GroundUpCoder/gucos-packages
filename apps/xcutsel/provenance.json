@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xclipboard-1.1.6",
+  "archiveSha256": "aeb29738b88e55c9ac9fc36de118431b80699b255b6aead8192af24f78755c94",
+  "status": "source migration candidate; no new guest execution"
+}

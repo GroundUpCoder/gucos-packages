@@ -1,0 +1,150 @@
+gucman: unknown source
+
+
+/usr/local/lib/libpixman-1.a: OK
+/usr/local/lib/libpixman-1.so: OK
+/usr/local/include/pixman-1/pixman.h: OK
+/usr/local/include/pixman-1/pixman-version.h: OK
+/usr/local/lib/pkgconfig/pixman-1.pc: OK
+/usr/local/share/licenses/pixman/COPYING: OK
+
+48856cbb0804e1e0c055ded38dd2f80232d749fc11a0c225c25268e3f675ecc1  /home/user/migration-export.tar
+1887744
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libpng16.a: OK
+/usr/local/lib/libpng16.so: OK
+/usr/local/include/png.h: OK
+/usr/local/include/pngconf.h: OK
+/usr/local/include/pnglibconf.h: OK
+/usr/local/lib/pkgconfig/libpng.pc: OK
+/usr/local/share/licenses/libpng/LICENSE: OK
+
+0601659fadb02deec765c58fcfb0497943d12203f34f31bed2f224f59b50fc03  /home/user/migration-export.tar
+1205760
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libfreetype.a: OK
+/usr/local/lib/libfreetype.so: OK
+/usr/local/lib/pkgconfig/freetype2.pc: OK
+/usr/local/include/freetype2/freetype/config/ftconfig.h: OK
+/usr/local/include/freetype2/freetype/config/ftheader.h: OK
+/usr/local/include/freetype2/freetype/config/ftmodule.h: OK
+/usr/local/include/freetype2/freetype/config/ftoption.h: OK
+/usr/local/include/freetype2/freetype/config/ftstdlib.h: OK
+/usr/local/include/freetype2/freetype/config/integer-types.h: OK
+/usr/local/include/freetype2/freetype/config/mac-support.h: OK
+/usr/local/include/freetype2/freetype/config/public-macros.h: OK
+/usr/local/include/freetype2/freetype/freetype.h: OK
+/usr/local/include/freetype2/freetype/ftadvanc.h: OK
+/usr/local/include/freetype2/freetype/ftbbox.h: OK
+/usr/local/include/freetype2/freetype/ftbdf.h: OK
+/usr/local/include/freetype2/freetype/ftbitmap.h: OK
+/usr/local/include/freetype2/freetype/ftbzip2.h: OK
+/usr/local/include/freetype2/freetype/ftcache.h: OK
+/usr/local/include/freetype2/freetype/ftchapters.h: OK
+/usr/local/include/freetype2/freetype/ftcid.h: OK
+/usr/local/include/freetype2/freetype/ftcolor.h: OK
+/usr/local/include/freetype2/freetype/ftdriver.h: OK
+/usr/local/include/freetype2/freetype/fterrdef.h: OK
+/usr/local/include/freetype2/freetype/fterrors.h: OK
+/usr/local/include/freetype2/freetype/ftfntfmt.h: OK
+/usr/local/include/freetype2/freetype/ftgasp.h: OK
+/usr/local/include/freetype2/freetype/ftglyph.h: OK
+/usr/local/include/freetype2/freetype/ftgxval.h: OK
+/usr/local/include/freetype2/freetype/ftgzip.h: OK
+/usr/local/include/freetype2/freetype/ftimage.h: OK
+/usr/local/include/freetype2/freetype/ftincrem.h: OK
+/usr/local/include/freetype2/freetype/ftlcdfil.h: OK
+/usr/local/include/freetype2/freetype/ftlist.h: OK
+/usr/local/include/freetype2/freetype/ftlogging.h: OK
+/usr/local/include/freetype2/freetype/ftlzw.h: OK
+/usr/local/include/freetype2/freetype/ftmac.h: OK
+/usr/local/include/freetype2/freetype/ftmm.h: OK
+/usr/local/include/freetype2/freetype/ftmodapi.h: OK
+/usr/local/include/freetype2/freetype/ftmoderr.h: OK
+/usr/local/include/freetype2/freetype/ftotval.h: OK
+/usr/local/include/freetype2/freetype/ftoutln.h: OK
+/usr/local/include/freetype2/freetype/ftparams.h: OK
+/usr/local/include/freetype2/freetype/ftpfr.h: OK
+/usr/local/include/freetype2/freetype/ftrender.h: OK
+/usr/local/include/freetype2/freetype/ftsizes.h: OK
+/usr/local/include/freetype2/freetype/ftsnames.h: OK
+/usr/local/include/freetype2/freetype/ftstroke.h: OK
+/usr/local/include/freetype2/freetype/ftsynth.h: OK
+/usr/local/include/freetype2/freetype/ftsystem.h: OK
+/usr/local/include/freetype2/freetype/fttrigon.h: OK
+/usr/local/include/freetype2/freetype/fttypes.h: OK
+/usr/local/include/freetype2/freetype/ftwinfnt.h: OK
+/usr/local/include/freetype2/freetype/otsvg.h: OK
+/usr/local/include/freetype2/freetype/t1tables.h: OK
+/usr/local/include/freetype2/freetype/ttnameid.h: OK
+/usr/local/include/freetype2/freetype/tttables.h: OK
+/usr/local/include/freetype2/freetype/tttags.h: OK
+/usr/local/include/freetype2/ft2build.h: OK
+/usr/local/share/licenses/freetype/LICENSE.TXT: OK
+/usr/local/share/licenses/freetype/FTL.TXT: OK
+
+c32d9d3d57a27afe5f083bb1d6953243557bfefc0947cf011717b601ce229da6  /home/user/migration-export.tar
+4600320
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libfontconfig.a: OK
+/usr/local/lib/libfontconfig.so: OK
+/usr/local/include/fontconfig/fontconfig.h: OK
+/usr/local/include/fontconfig/fcfreetype.h: OK
+/usr/local/lib/pkgconfig/fontconfig.pc: OK
+/usr/local/share/fontconfig/fonts.conf: OK
+/usr/local/share/fonts/wasm-posix/ABeeZee-Regular.ttf: OK
+/usr/local/share/fonts/wasm-posix/SourceCodePro-Regular.otf: OK
+/usr/local/share/licenses/fontconfig/COPYING: OK
+/usr/local/share/licenses/fontconfig/ABeeZee-OFL.txt: OK
+/usr/local/share/licenses/fontconfig/SourceCodePro-LICENSE.md: OK
+
+b357930d34ac138c3531141b7de3400d1bf3c60571752ce6cf8434c9c3d3f94f  /home/user/migration-export.tar
+1678848
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libXau.so: OK
+/usr/local/lib/libxcb.so: OK
+/usr/local/lib/libX11.so: OK
+/usr/local/lib/libXext.so: OK
+/usr/local/lib/libXrender.so: OK
+/usr/local/lib/libXfixes.so: OK
+/usr/local/lib/libXi.so: OK
+/usr/local/lib/libXtst.so: OK
+/usr/local/share/licenses/x11-shared/libXau-COPYING: OK
+/usr/local/share/licenses/x11-shared/libxcb-COPYING: OK
+/usr/local/share/licenses/x11-shared/libX11-COPYING: OK
+/usr/local/share/licenses/x11-shared/libXext-COPYING: OK
+/usr/local/share/licenses/x11-shared/libXrender-COPYING: OK
+/usr/local/share/licenses/x11-shared/libXfixes-COPYING: OK
+/usr/local/share/licenses/x11-shared/libXi-COPYING: OK
+/usr/local/share/licenses/x11-shared/libXtst-COPYING: OK
+/usr/local/share/licenses/x11-shared/libX11-lcUniConv-COPYRIGHT: OK
+
+32b058ba4acc9036a03cb4f5e881391fd60233a8f74e820f315476b38a979b07  /home/user/migration-export.tar
+3554304
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libcairo.a: OK
+/usr/local/lib/libcairo.so: OK
+/usr/local/lib/pkgconfig/cairo.pc: OK
+/usr/local/lib/pkgconfig/cairo-ft.pc: OK
+/usr/local/lib/pkgconfig/cairo-xlib.pc: OK
+/usr/local/lib/pkgconfig/cairo-xlib-xrender.pc: OK
+/usr/local/include/cairo/cairo.h: OK
+/usr/local/include/cairo/cairo-version.h: OK
+/usr/local/include/cairo/cairo-features.h: OK
+/usr/local/include/cairo/cairo-deprecated.h: OK
+/usr/local/include/cairo/cairo-ft.h: OK
+/usr/local/include/cairo/cairo-xlib.h: OK
+/usr/local/include/cairo/cairo-xlib-xrender.h: OK
+/usr/local/share/licenses/cairo/COPYING: OK
+/usr/local/share/licenses/cairo/COPYING-LGPL-2.1: OK
+/usr/local/share/licenses/cairo/COPYING-MPL-1.1: OK
+
+fb7631d52af09b7c61beec5af0aed4451e2629826c141d7b85a86673656c970d  /home/user/migration-export.tar
+5186048
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

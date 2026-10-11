@@ -1,0 +1,26 @@
+{
+  "dist-files.json": {
+    "sha256": "d68ab8eb50dbd28c917ae6ff7b9ff63f4ed78ed70adc02cc781ccbf2316697b5",
+    "size": 38381
+  },
+  "observed-runtime.json": {
+    "sha256": "64599d63e320cb53dddf5eb6c6475c04191219cbba63a40d12893ae47f4035c6",
+    "size": 123
+  },
+  "build-libevent-libuv.json": {
+    "sha256": "533461901ad10303ca96ae0b07d415486f7e4975914c5576365d5fc341cf616b",
+    "size": 321
+  },
+  "config.json": {
+    "sha256": "2126fbf447ae526db50446a5b51d970bb269d8fd58b14903974631396e31cce2",
+    "size": 13812
+  },
+  "candidate-manifests.json": {
+    "sha256": "f0608e04916ca6a5ae827354f3ecc076fc54382ac02fc0deb11e20c464461c24",
+    "size": 6695
+  },
+  "build.log": {
+    "sha256": "27c1576d58998b04f681bf1fd2c2211a8386cec8717f05356031355c1b175247",
+    "size": 4471
+  }
+}

@@ -1,0 +1,43 @@
+gucman: unknown source
+
+{
+  tail: 'se…\n' +
+    '  Downloaded 339 / 339 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: libintl source: test.sh\n' +
+    'gucman: Checking cached object: libintl source: test.sh\n' +
+    'Building migration:libintl; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: 'or response…\n' +
+    '  Downloaded 428 / 428 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: glib source: test.sh\n' +
+    'gucman: Checking cached object: glib source: test.sh\n' +
+    'Building migration:glib; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: 'after this)\n' +
+    'gucman: Downloading zlib source: source.tar (1269760 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 0.80 / 1.21 MiB (65%)\n' +
+    '  Downloaded 1.21 / 1.21 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: zlib source: source.tar\n'
+}
+{
+  tail: '(0 remaining after this)\n' +
+    'gucman: Downloading harfbuzz-static source: source.tar (8048640 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 7.68 / 7.68 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: source.tar\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: '50 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: harfbuzz-static source: test.sh\n' +
+    'gucman: Checking cached object: harfbuzz-static source: test.sh\n' +
+    'Building migration:harfbuzz-static; running trusted recipe with access to your guest files\n'
+}

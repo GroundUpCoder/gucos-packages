@@ -1,0 +1,109 @@
+{
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "sha256": "e1e4b6761cbd94790ba4ba4ff537e553f0326224e7a897d763759a1e58741bd4",
+  "size": 5191680,
+  "guestManifest": {
+    "format": 1,
+    "name": "xev",
+    "version": "1.2.7-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59498/xev/source.tar",
+        "sha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
+        "size": 11612160
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59498/xev/build.sh",
+        "sha256": "e68513da559267ad53aa1f32c3ba285a9076574ca03bfc4a68736e07be949747",
+        "size": 752
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59498/xev/test.sh",
+        "sha256": "8eae8b6c6fe2e243b14c23fb4057e0c31b09a80a008e8e6095ca157cf640ec75",
+        "size": 45
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xev",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/xev/libICE-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/libSM-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/libXaw-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/libXft-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/libXmu-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/libXpm-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/libXrandr-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/libXt-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/termcap-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/xev-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/xmessage-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/xprop-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xev/xterm-COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xev/libICE-COPYING",
+      "share/licenses/xev/libSM-COPYING",
+      "share/licenses/xev/libXaw-COPYING",
+      "share/licenses/xev/libXft-COPYING",
+      "share/licenses/xev/libXmu-COPYING",
+      "share/licenses/xev/libXpm-COPYING",
+      "share/licenses/xev/libXrandr-COPYING",
+      "share/licenses/xev/libXt-COPYING",
+      "share/licenses/xev/termcap-COPYING",
+      "share/licenses/xev/xev-COPYING",
+      "share/licenses/xev/xmessage-COPYING",
+      "share/licenses/xev/xprop-COPYING",
+      "share/licenses/xev/xterm-COPYING"
+    ]
+  },
+  "method": "gucman pack from installed guest output; no host compilation"
+}

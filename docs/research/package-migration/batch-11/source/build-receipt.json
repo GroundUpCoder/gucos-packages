@@ -1,0 +1,291 @@
+{
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "sha256": "3dd540e8d654e5ae6bacb630a269c953e8bdfbd95d11e82f1651991ebae4901f",
+  "size": 153147392,
+  "guestManifest": {
+    "format": 1,
+    "name": "harfbuzz",
+    "version": "14.5.0-1",
+    "dependencies": [
+      "glib",
+      "pcre2",
+      "libintl",
+      "libiconv",
+      "zlib",
+      "freetype"
+    ],
+    "dependencyRequirements": {
+      "glib": {
+        "version": "2.84.4-1"
+      },
+      "pcre2": {
+        "version": "10.46-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      },
+      "libiconv": {
+        "version": "1.18-1"
+      },
+      "zlib": {
+        "version": "1.3.2-1"
+      },
+      "freetype": {
+        "version": "2.14.1-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:49321/migration/harfbuzz/source.tar",
+        "sha256": "d51f616c1773d8fe43b8ac2d3bc7617e55f289033434e24ec4f6d0a828d741a2",
+        "size": 8048640
+      },
+      {
+        "path": "prepared.tar.gz",
+        "url": "http://127.0.0.1:49321/migration/harfbuzz/prepared.tar.gz",
+        "sha256": "6920b176bb1da9759b77733cb9acc860b0ba0ed12f4f85ab7dbdbf3f6e6d67a9",
+        "size": 18677179
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:49321/migration/harfbuzz/build.sh",
+        "sha256": "d0c5a218923599b555a9731bb2d0bb28321b260c5ee826c5fbe7e3698ab0ba29",
+        "size": 1115
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:49321/migration/harfbuzz/test.sh",
+        "sha256": "70db296113c356a294ca93d2715f0cbfa594cc9b74835b9979161f936445f15c",
+        "size": 828
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "include/harfbuzz/hb-aat-layout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-aat.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-blob.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-buffer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-common.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-cplusplus.hh",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-deprecated.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-draw.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-face.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-features.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ft.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-glib.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-gpu.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-map.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-color.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-deprecated.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-fetch.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-layout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-math.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-meta.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-metrics.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-name.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-shape.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-var.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-paint.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-raster.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-script-list.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-set.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-shape-plan.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-shape.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-style.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-subset-depend.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-subset-serialize.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-subset.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-unicode.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-vector.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-version.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/libharfbuzz-runtime.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libharfbuzz.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libharfbuzz.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-gpu.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-raster.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-subset.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-vector.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/harfbuzz/translation.json",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz/ABeeZee-OFL.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/harfbuzz/ABeeZee-OFL.txt",
+      "share/licenses/harfbuzz/COPYING"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

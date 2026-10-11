@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xrefresh-1.1.1",
+  "files": 21,
+  "archiveSha256": "82b9cf99fd88c31d1f835b0cced987b0f5c8fddfbd7d8bb43375bc4ab3b25de9",
+  "method": "Every archive file byte-compared with its immutable Git blob identity; package overlays are separate inputs."
+}

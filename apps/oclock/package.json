@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "name": "oclock",
+  "version": "1.0.6-1",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "dependencyRequirements": {
+    "x11-widgets": {
+      "version": "1.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/oclock/source.tar",
+      "sha256": "28b346372e21da5813347aa5f639281f450eba10fdb3b239cb74569355bff02c",
+      "size": 798720
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/oclock/build.sh",
+      "sha256": "f52a4e807228727140d62bab4b6c6c0e12262a2b14ef46c5c25ecafb1f11577b",
+      "size": 519
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/oclock/test.sh",
+      "sha256": "b661ef85e2495a916f0a0535534a41c353fbc9eba984ae7ef7eb8854b52c3374",
+      "size": 49
+    },
+    {
+      "path": "config.h",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/oclock/config.h",
+      "sha256": "7dbad6d4c7f8d9a7c7a5fd7e17dced5a818bcfd9b2746852b36754761c903cc7",
+      "size": 293
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/oclock",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/oclock/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/X11/app-defaults/Clock-color",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/oclock/COPYING"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/736bbcab3c0918c221b6175cc46064490075da13/apps/oclock/binaries/d99fed7b0cd540514df0f4b04652f4fff8c98fd0f3abb1cda1d7cfa5a2cf792b.tar",
+    "sha256": "d99fed7b0cd540514df0f4b04652f4fff8c98fd0f3abb1cda1d7cfa5a2cf792b",
+    "size": 4314624
+  }
+}

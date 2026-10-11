@@ -1,0 +1,60 @@
+[machine-job] queued: node tests/migration/stage.mjs consumers zlib cjson pkgconf bzip2 bzip2recover expat
+[machine-job] running: 2dd5de66-ba57-40df-a051-b5c2e9235758
+gucman: unknown source
+
+
+167 functions, 180949 bytes
+zlib version 1.3.2 = 0x1320, compile flags = 0x95
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+12 functions, 28821 bytes
+zlib version 1.3.2 = 0x1320, compile flags = 0x95
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek:  hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+
+
+113 functions, 75634 bytes
+2 functions, 7475 bytes
+CJSON-CONSUMERS-PASS
+
+
+2.3.0
+-L/example/lib -lbase -lm
+-L/example/lib -lbase -lm
+
+
+BZIP2-ACCEPTANCE-PASS
+
+
+mkdir: can't create directory 'recovery': File exists
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: mkdir: can't create directory 'recovery': File exists
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:48:96)
+    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:40:4 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

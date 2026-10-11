@@ -1,0 +1,30 @@
+[
+  {
+    "path": "bin/lua55",
+    "mode": 493
+  },
+  {
+    "path": "lib/liblua5.5.a",
+    "mode": 420
+  },
+  {
+    "path": "include/lua5.5/lua.h",
+    "mode": 420
+  },
+  {
+    "path": "include/lua5.5/luaconf.h",
+    "mode": 420
+  },
+  {
+    "path": "include/lua5.5/lualib.h",
+    "mode": 420
+  },
+  {
+    "path": "include/lua5.5/lauxlib.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/lua55/lua.h",
+    "mode": 420
+  }
+]

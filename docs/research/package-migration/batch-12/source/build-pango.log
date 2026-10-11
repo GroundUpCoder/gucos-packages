@@ -1,0 +1,184 @@
+gucman: unknown source
+
+{
+  tail: 'ecking cached object: manifest for migration:freetype\n' +
+    'gucman: Resolving: migration:pcre2\n' +
+    'gucman: Checking cached object: manifest for migration:pcre2\n' +
+    'gucman: Resolving: migration:libintl\n' +
+    'gucman: Checking cached object: manifest for migration:libintl\n'
+}
+{
+  tail: 'es\n' +
+    '1273 functions, 1096241 bytes\n' +
+    'Fontconfig fonts: 2\n' +
+    'Layout: 547 x 140, lines=4, unknown=0\n' +
+    'PANGO-HARFBUZZ-ARABIC-PASS\n' +
+    'PANGO-PASS\n' +
+    '3 functions, 26165 bytes\n' +
+    'Fontconfig fonts: 2\n' +
+    'Layout: 547 x 140, lines=4, unknown=0\n' +
+    'PANGO-HARFBUZZ-ARABIC-PASS\n' +
+    'PANGO-PASS\n'
+}
+gucman: build migration:pango: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 14596 bytes; transfer finished
+gucman: Resolving: migration:pango
+gucman: Downloading manifest for migration:pango (5806 bytes)
+  Connecting; waiting for response…
+  Downloaded 5806 / 5806 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pango
+gucman: Checking cached object: manifest for migration:pango
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Plan: 19 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 19 packages
+gucman: Package 1/19: pixman (18 remaining after this)
+Already installed: pixman
+gucman: Package 2/19: freetype (17 remaining after this)
+Already installed: freetype
+gucman: Package 3/19: expat (16 remaining after this)
+Already installed: expat
+gucman: Package 4/19: fontconfig (15 remaining after this)
+Already installed: fontconfig
+gucman: Package 5/19: zlib (14 remaining after this)
+Already installed: zlib
+gucman: Package 6/19: libpng (13 remaining after this)
+Already installed: libpng
+gucman: Package 7/19: x11-server (12 remaining after this)
+Already installed: x11-server
+gucman: Package 8/19: x11-shared (11 remaining after this)
+Already installed: x11-shared
+gucman: Package 9/19: cairo (10 remaining after this)
+Already installed: cairo
+gucman: Package 10/19: fribidi (9 remaining after this)
+Already installed: fribidi
+gucman: Package 11/19: libiconv (8 remaining after this)
+Already installed: libiconv
+gucman: Package 12/19: libintl (7 remaining after this)
+Already installed: libintl
+gucman: Package 13/19: pcre2 (6 remaining after this)
+Already installed: pcre2
+gucman: Package 14/19: glib (5 remaining after this)
+Already installed: glib
+gucman: Package 15/19: harfbuzz (4 remaining after this)
+Already installed: harfbuzz
+gucman: Package 16/19: libffi (3 remaining after this)
+Already installed: libffi
+gucman: Package 17/19: gobject (2 remaining after this)
+Already installed: gobject
+gucman: Package 18/19: gio-listmodel (1 remaining after this)
+Already installed: gio-listmodel
+gucman: Package 19/19: pango (0 remaining after this)
+gucman: Downloading pango source: source.tar (6553600 bytes)
+  Connecting; waiting for response…
+  Downloaded 6.25 / 6.25 MiB (100%); transfer finished
+gucman: Verifying download: pango source: source.tar
+gucman: Checking cached object: pango source: source.tar
+gucman: Downloading pango source: build.sh (4541 bytes)
+  Connecting; waiting for response…
+  Downloaded 4541 / 4541 bytes (100%); transfer finished
+gucman: Verifying download: pango source: build.sh
+gucman: Checking cached object: pango source: build.sh
+gucman: Downloading pango source: test.sh (1244 bytes)
+  Connecting; waiting for response…
+  Downloaded 1244 / 1244 bytes (100%); transfer finished
+gucman: Verifying download: pango source: test.sh
+gucman: Checking cached object: pango source: test.sh
+Building migration:pango; running trusted recipe with access to your guest files
+2 functions, 7733 bytes
+1072 functions, 972671 bytes
+270 functions, 255313 bytes
+123 functions, 155627 bytes
+1273 functions, 1096241 bytes
+Fontconfig fonts: 2
+Layout: 547 x 140, lines=4, unknown=0
+PANGO-HARFBUZZ-ARABIC-PASS
+PANGO-PASS
+3 functions, 26165 bytes
+Fontconfig fonts: 2
+Layout: 547 x 140, lines=4, unknown=0
+PANGO-HARFBUZZ-ARABIC-PASS
+PANGO-PASS
+gucman: Installing pango: 0/46 files
+gucman: Installing pango: 25/46 files
+gucman: Installing pango: 46/46 files
+gucman: Preparing checksums: pango
+gucman: Checksummed pango: 25/46 files
+gucman: Checksummed pango: 46/46 files
+gucman: Saving transaction: pango
+gucman: Verifying staged files: pango
+gucman: Activating: pango
+Installed migration:pango 1.50.14-1
+
+b366113bbb33dd92ca204cc960a6f4a0116b99e0a5ee806a2bfd23f8300799c9  /home/user/migration-export.tar
+3197952
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

@@ -1,0 +1,17 @@
+{
+  "action": "reload",
+  "names": [
+    "zlib",
+    "cjson",
+    "pkgconf",
+    "bzip2",
+    "bzip2recover",
+    "expat"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "7da0b4a334986858685f930ef50af2352d33b714",
+  "startedAt": "2026-10-10T09:17:57.941Z",
+  "status": "failed",
+  "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'write')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:27)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:43:17",
+  "finishedAt": "2026-10-10T09:17:58.331Z"
+}

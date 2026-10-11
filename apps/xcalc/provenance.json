@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xcalc-1.1.3",
+  "files": 27,
+  "archiveSha256": "23668deaf491ccf708739769673b9fa6508be7de38c62f2e89edc40af101850f",
+  "method": "Every archive file byte-compared with its immutable Git blob identity; package overlays are separate inputs."
+}

@@ -1,0 +1,195 @@
+{
+  "sdl3-gfx": {
+    "format": 1,
+    "name": "sdl3-gfx",
+    "version": "2.0.23-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "sdl3-vt"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:49955/migration/sdl3-gfx/source.tar",
+        "sha256": "d3c3ca63b4a7ebf621bc6adb70a52b541fe87da610145abc8a6166f108238413",
+        "size": 225280
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:49955/migration/sdl3-gfx/build.sh",
+        "sha256": "f0e4491fa406bb824f61180930bcc1474009189f5bfbdebb898b826b9435713c",
+        "size": 599
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:49955/migration/sdl3-gfx/test.sh",
+        "sha256": "70bec970819b4c24e75dcc92c18c5da8f89115c26b779ab6b09cdeed145cecc9",
+        "size": 538
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libSDL3_gfx.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libSDL3_gfx.so",
+        "mode": 420
+      },
+      {
+        "path": "include/SDL3_gfx/SDL_gfxPrimitives.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/SDL3_gfx.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/sdl3-gfx/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/sdl3-gfx/LICENSE"
+    ]
+  },
+  "sdl3-image": {
+    "format": 1,
+    "name": "sdl3-image",
+    "version": "3.2.6-2",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "sdl3-vt"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:49955/migration/sdl3-image/source.tar",
+        "sha256": "fda0d407af1cc4a27860cae7364d362ac70951a794f65530394658a312423a51",
+        "size": 1792000
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:49955/migration/sdl3-image/build.sh",
+        "sha256": "762af070fab982ae5c952486b72a54bb1c6e83b1d627875328b3c9d5c1679c81",
+        "size": 803
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:49955/migration/sdl3-image/test.sh",
+        "sha256": "1acca8f79710895a7e7cdbb9d8a36cea59cbd08e506aa1041d8d6c4cad5df30e",
+        "size": 411
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libSDL3_image.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libSDL3_image.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/sdl3-image.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/sdl3-image/LICENSE.txt",
+        "mode": 420
+      },
+      {
+        "path": "include/SDL3_image/SDL_image.h",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/sdl3-image/LICENSE.txt"
+    ]
+  },
+  "sdl3-mixer": {
+    "format": 1,
+    "name": "sdl3-mixer",
+    "version": "3.2.4-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "sdl3-vt",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:49955/migration/sdl3-mixer/source.tar",
+        "sha256": "776c28ebfbb254e369db4969c17655723c799bc7f3b69cf94e333648c3919177",
+        "size": 1945600
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:49955/migration/sdl3-mixer/build.sh",
+        "sha256": "073d8e5c412fdc4a99dd84b7d25966e0b5f4e2bea6ddb02a7903ee67f69ec0ba",
+        "size": 966
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:49955/migration/sdl3-mixer/test.sh",
+        "sha256": "b34be4b9625738f6779dd00f6f177d0add979db912041eb50527a282927a0969",
+        "size": 374
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libSDL3_mixer.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libSDL3_mixer.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/sdl3-mixer.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/sdl3-mixer/LICENSE.txt",
+        "mode": 420
+      },
+      {
+        "path": "include/SDL3_mixer/SDL_mixer.h",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/sdl3-mixer/LICENSE.txt"
+    ]
+  }
+}

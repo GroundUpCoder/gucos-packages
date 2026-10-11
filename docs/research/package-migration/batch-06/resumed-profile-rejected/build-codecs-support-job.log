@@ -1,0 +1,4 @@
+[machine-job] queued: sh -c set -e
+node tests/migration/stage.mjs build libjpeg libjpeg-turbo gdk-pixbuf > "$COMPAT_RUN_DIR/build-codecs.log" 2>&1
+node tests/migration/stage.mjs build minihb cairo-gobject gtk3-schemas > "$COMPAT_RUN_DIR/build-gtk-support.log" 2>&1
+[machine-job] running: 3b636832-81b0-415c-80bd-c1d997d75964

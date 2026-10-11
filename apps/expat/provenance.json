@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/expat",
+  "archiveSha256": "44b8ee4be1960db276e49c70729b931f0ee818affe88cd1536ddeb2c66a1fd9e",
+  "status": "source migration candidate; no new guest execution"
+}

@@ -1,0 +1,16 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xeyes-1.3.1",
+  "files": 29,
+  "archiveSha256": "4795c8114d2fec5b93225c5066059dec902f2847f7b5b3e14398fe88880bc8fd",
+  "method": "Every archive file byte-compared with its immutable Git blob identity; package overlays are separate inputs.",
+  "overlays": [
+    {
+      "file": "Eyes.c",
+      "historicalPath": "apps/x11-apps-more/source/overlays/xeyes-Eyes.c",
+      "blob": "c48f361df411795cda87cb33e7a6208726634795",
+      "sha256": "1510bf56c7a1e40ae1f953f5b98f001b7d029fc254421374a1b7ab8b6ccb921f"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/pkgconf",
+  "archiveSha256": "0f4681ad18cedeead41be89d831a416f1ed650496631d1b45cabe79474d1c0d5",
+  "status": "source migration candidate; no new guest execution"
+}

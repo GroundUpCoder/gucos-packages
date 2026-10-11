@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Acceptance evidence is byte-preserved, including guest CRLF diagnostics.
+docs/research/package-migration/** -text

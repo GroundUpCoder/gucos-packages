@@ -1,0 +1,26 @@
+gucman: unknown source
+
+gucman: install migration:cairo: reading catalogs and resolving dependencies
+gucman: unfinished publication; run gucman recover
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: install migration:cairo: reading catalogs and resolving dependencies
+gucman: unfinished publication; run gucman recover
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:48:96)
+    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:43:27 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

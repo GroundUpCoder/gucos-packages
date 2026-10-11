@@ -1,0 +1,8 @@
+[machine-job] queued: node tests/migration/graphics.mjs
+[machine-job] running: 587c0b10-aae4-43c7-a6e6-46ac4e4a2fcf
+
+2 functions, 19895 bytes
+Installed font match: /usr/local/share/fonts/wasm-posix/ABeeZee-Regular.ttf (2 system fonts)
+Rendered FreeType glyph pixels: 767
+GRAPHICS-CONSUMER-PASS
+

@@ -1,0 +1,4 @@
+[machine-job] queued: sh -c set -e
+node tests/migration/stage.mjs build gio-listmodel atk fribidi > "$COMPAT_RUN_DIR/build-listmodel-atk-fribidi.log" 2>&1
+node tests/migration/stage.mjs build gio-core > "$COMPAT_RUN_DIR/build-gio-core.log" 2>&1
+[machine-job] running: 6e886af8-c37a-4221-814c-638a567e4c7a

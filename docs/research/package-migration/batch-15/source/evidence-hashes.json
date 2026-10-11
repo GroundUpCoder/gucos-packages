@@ -1,0 +1,11 @@
+{
+  "build-sdl3-gfx.json": "e1a916529156071b9fb7715e2346f2b9e9e84cffb81a3b0c6440a6d3b97e329f",
+  "build-sdl3-gfx.log": "b92b2b63c1f52916d3670c091d2e060d72100ae102bbd47b78dbdf53b0662531",
+  "build-sdl3-image.json": "70d98645b765c09da9a874d25796b32e52d8cdacfe2ad6aaba4a68825b440a4e",
+  "build-sdl3-image.log": "33f3750801db2e8607fdcac7bebcc3236ca52ef9731fccaf419cda8b6d3b1c0a",
+  "build-sdl3-mixer.json": "f9b9a818e8197fd9ceb8600bda1843ea72902be8823737c9d73192ab988d92c6",
+  "build-sdl3-mixer.log": "ba3611bde6ea42920896b869f03a5578ebb9917b28a188bdd687d7213f643d3f",
+  "candidate-manifests.json": "6fad889afe4aeb67a28f17f57cc7219f1e11af4bce3d922d2ba64100ef00ec8f",
+  "config.json": "27ba7160682da83a9c78c36d527cb107cad1b6900753587148af7a2e548653a0",
+  "observed-runtime.json": "a73abd8cf7e9d0db68105168ffb4304f5577d439143d48fcfd39f8fd28675172"
+}

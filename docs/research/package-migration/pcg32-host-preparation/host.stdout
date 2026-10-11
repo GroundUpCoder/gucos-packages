@@ -1,0 +1,44 @@
+{
+  "upstream_revision": "70099eadb86d3999c38cf69d2c55f8adc1f7fe34",
+  "sysroot_sha256": "0c8f3e0acab6d3061834395a16550c359766909fda046af3d9b8cf3bfdb1c2cc",
+  "clang": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "native_optimizations": [
+    "O0",
+    "O2"
+  ],
+  "outputs_compared_per_mode": 488,
+  "native_values_sha256": "a46183b86a1cbdb2225ce5db7b09e208837998dc5d62ff0a0e2516d1271b5ec6",
+  "inputs_sha256": {
+    "apps/pcg32/api.h": "eb5830c5a27091b190b3c2ac7c6a8651d549025cac955536f64bf10b7f19b892",
+    "apps/pcg32/prepare-driver.py": "9159930b61a58b765cdd6184b30ccac5ec4f8016c40421cf55b69de98a27a3f1",
+    "apps/pcg32/provenance.json": "75778f0ba3ffeaef57c70e12da03576988e44146052075c37a437f431662f4c1",
+    "apps/pcg32/samples.cpp": "f381e307454d70af75256abf7283e12c5a833da556ce64e6b60af80917e6fc19",
+    "apps/pcg32/shuffle.cpp": "7cd34902a90435ceb32404fbc19444d8cf23b4555ab51bb00ce71fb963c9296d",
+    "apps/pcg32/translation-api.h": "386e608c9b988811901e648da5c2ce491aec0e81779c41a1f192c551ba31f271",
+    "apps/pcg32/upstream/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "apps/pcg32/upstream/README.md": "fa84d3e41aa9fb8a334369295ddaca229e33f7ce7aa2b3307a92d7368f7f8641",
+    "apps/pcg32/upstream/pcg32-demo.cpp": "983c1490f5129c9f686d5c30831d962d31de994d6d1ef54bbfe093c0a3ea3cf4",
+    "apps/pcg32/upstream/pcg32-demo.out": "8f4d984dfe3c5d63bca26b574eee3aa60bc35822a5b17e7560144afb9e96c92d",
+    "apps/pcg32/upstream/pcg32.h": "47273535c04686dea687f794e397ca36a62272a44dfe5e3467d32185f11c5dc8",
+    "tools/cpp-translator/build-libcxx.py": "5a3bd9aa6ae5679c268680750d08682401eb08b6dad527a65972234ea6492f42",
+    "tools/cpp-translator/frontend-abi.hpp": "03b58792e87d73048a2cfc3c5a31acac26306d3297eec24f3e7e2aa1fd1ce11e",
+    "tools/cpp-translator/runtime_abi.py": "c416b5915ad8b7da2a29aa224cf513681958ff2082689650a19942fa0122e183",
+    "tools/cpp-translator/storage.py": "d4ad115e72bb43094d958c3e4af195345bfb47a884975fe319b8e4df6b4e17e8",
+    "tools/cpp-translator/tests/run-generated.mjs": "b7b0cfd52ed8138de444d646cc9a559d464427fea52ba3ac88c522400c285304",
+    "tools/cpp-translator/thread_runtime.py": "f4af2aa1eb45d24813f5adc793a53f9395be5c7fabfd8bae799b0d2d77f9c8bd",
+    "tools/cpp-translator/translate.py": "e95604fa8c2a05f54b5020556e58a5031e9d0a340e376b5989b7dc3b216905ee",
+    "tools/cpp-translator/wasi-libc.hpp": "cef63a3a20e29915e34c8f2ae9691a9bdef4723481156ab6ba196616d4a4df09"
+  },
+  "definition_files": 19,
+  "shared_symbols": [
+    "_ZN5pcg324seedEyy",
+    "_ZN5pcg328nextUIntEj",
+    "_ZN5pcg328nextUIntEv",
+    "_ZN5pcg32C1Eyy",
+    "_ZN5pcg32C2Eyy"
+  ],
+  "execution": {
+    "status": "not-run",
+    "scope": "Guest whole/object/archive acceptance remains pending"
+  }
+}

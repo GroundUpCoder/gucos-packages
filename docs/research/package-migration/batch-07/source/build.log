@@ -1,0 +1,98 @@
+[machine-job] queued: node tests/migration/stage.mjs build ed jq
+[machine-job] running: b4cd405a-99e7-4023-bbb4-c177e5355b52
+gucman: unknown source
+
+gucman: build migration:ed: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 12039 bytes; transfer finished
+gucman: Resolving: migration:ed
+gucman: Downloading manifest for migration:ed (1189 bytes)
+  Connecting; waiting for response…
+  Downloaded 1189 / 1189 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:ed
+gucman: Checking cached object: manifest for migration:ed
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: ed (0 remaining after this)
+gucman: Downloading ed source: source.tar (460800 bytes)
+  Connecting; waiting for response…
+  Downloaded 460800 / 460800 bytes (100%); transfer finished
+gucman: Verifying download: ed source: source.tar
+gucman: Checking cached object: ed source: source.tar
+gucman: Downloading ed source: build.sh (386 bytes)
+  Connecting; waiting for response…
+  Downloaded 386 / 386 bytes (100%); transfer finished
+gucman: Verifying download: ed source: build.sh
+gucman: Checking cached object: ed source: build.sh
+gucman: Downloading ed source: test.sh (483 bytes)
+  Connecting; waiting for response…
+  Downloaded 483 / 483 bytes (100%); transfer finished
+gucman: Verifying download: ed source: test.sh
+gucman: Checking cached object: ed source: test.sh
+Building migration:ed; running trusted recipe with access to your guest files
+149 functions, 119110 bytes
+testing ed-1.22.2...
+tests completed successfully.
+11
+17
+ALPHA
+ED-ACCEPTANCE-PASS
+gucman: Installing ed: 0/3 files
+gucman: Installing ed: 3/3 files
+gucman: Preparing checksums: ed
+gucman: Checksummed ed: 3/3 files
+gucman: Saving transaction: ed
+gucman: Verifying staged files: ed
+gucman: Activating: ed
+Installed migration:ed 1.22.2-1
+
+gucman: build migration:jq: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 12039 bytes; transfer finished
+gucman: Resolving: migration:jq
+gucman: Downloading manifest for migration:jq (1279 bytes)
+  Connecting; waiting for response…
+  Downloaded 1279 / 1279 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:jq
+gucman: Checking cached object: manifest for migration:jq
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: jq (0 remaining after this)
+gucman: Downloading jq source: source.tar (3266560 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.12 / 3.12 MiB (100%); transfer finished
+gucman: Verifying download: jq source: source.tar
+gucman: Checking cached object: jq source: source.tar
+gucman: Downloading jq source: build.sh (1758 bytes)
+  Connecting; waiting for response…
+  Downloaded 1758 / 1758 bytes (100%); transfer finished
+gucman: Verifying download: jq source: build.sh
+gucman: Checking cached object: jq source: build.sh
+gucman: Downloading jq source: test.sh (366 bytes)
+  Connecting; waiting for response…
+  Downloaded 366 / 366 bytes (100%); transfer finished
+gucman: Verifying download: jq source: test.sh
+gucman: Checking cached object: jq source: test.sh
+Building migration:jq; running trusted recipe with access to your guest files
+1406 functions, 1551708 bytes
+JQ-ACCEPTANCE-PASS
+JQ-REGEX-PASS
+gucman: Installing jq: 0/3 files
+gucman: Installing jq: 3/3 files
+gucman: Preparing checksums: jq
+gucman: Checksummed jq: 3/3 files
+gucman: Saving transaction: jq
+gucman: Verifying staged files: jq
+gucman: Activating: jq
+Installed migration:jq 1.7.1-1
+
+c57538abc6b97299ed3ba9d4f557a63a975222e3d4e7c192284fa144d213e0cb  /home/user/migration-export.tar
+140800
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+526c776c552ca0b8ca8f7dce69f77b2609b4729f6aa3b7e016c2d0ede7fec51f  /home/user/migration-export.tar
+1562112
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

@@ -1,0 +1,265 @@
+[machine-job] queued: node tests/migration/stage.mjs consumers libiconv pcre2 libffi libintl glib gobject
+[machine-job] running: 70bfefd2-27cb-4ca6-bee6-3750421ecb97
+gucman: unknown source
+
+
+492 functions, 1360877 bytes
+ICONV-PASS
+2 functions, 10524 bytes
+ICONV-PASS
+
+
+142 functions, 630919 bytes
+2 functions, 8129 bytes
+
+
+21 functions, 29266 bytes
+FFI-PASS
+11 functions, 23229 bytes
+FFI-PASS
+
+
+58 functions, 79296 bytes
+GETTEXT-PASS
+2 functions, 10912 bytes
+GETTEXT-PASS
+
+
+1923 functions, 1680247 bytes
+GLIB-PASS
+4 functions, 17851 bytes
+GLIB-PASS
+
+
+981 functions, 791824 bytes
+3 functions, 10165 bytes
+983 functions, 794798 bytes
+GOBJECT-WIDE-PASS
+5 functions, 15097 bytes
+GOBJECT-WIDE-PASS
+
+/usr/local/lib/libiconv.a: OK
+/usr/local/lib/libiconv.so: OK
+/usr/local/include/iconv.h: OK
+/usr/local/include/localcharset.h: OK
+/usr/local/lib/pkgconfig/libiconv.pc: OK
+/usr/local/share/licenses/libiconv/COPYING.LIB: OK
+
+5202712c7f6e4417368cab549f6153ab3f6475d7ea74df25ab16088d78de655c  /home/user/migration-export.tar
+2840064
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libpcre2-8.a: OK
+/usr/local/lib/libpcre2-8.so: OK
+/usr/local/include/pcre2.h: OK
+/usr/local/lib/pkgconfig/libpcre2-8.pc: OK
+/usr/local/share/licenses/pcre2/LICENCE.md: OK
+
+5c439316da114653bc14ddb1efbe100e97421a47b1967592e1fa61645b7ca785  /home/user/migration-export.tar
+1720320
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libffi.a: OK
+/usr/local/lib/libffi.so: OK
+/usr/local/include/ffi.h: OK
+/usr/local/include/ffitarget.h: OK
+/usr/local/lib/pkgconfig/libffi.pc: OK
+/usr/local/share/licenses/libffi/LICENSE: OK
+
+5a9409371164395a91385a9bd72a23cd2343b995dec182d2f24c700dce7ce939  /home/user/migration-export.tar
+44032
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libintl.a: OK
+/usr/local/lib/libintl.so: OK
+/usr/local/include/libintl.h: OK
+/usr/local/lib/pkgconfig/libintl.pc: OK
+/usr/local/share/licenses/libintl/COPYING: OK
+/usr/local/share/licenses/libintl/COPYING.LIB: OK
+
+91ea5dd701bf63de2e10c9c081eec953c79f6c5a16242f36fac32aeac49487c0  /home/user/migration-export.tar
+299008
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libglib-2.0.a: OK
+/usr/local/lib/libglib-2.0.so: OK
+/usr/local/lib/pkgconfig/glib-2.0.pc: OK
+/usr/local/share/licenses/glib/COPYING: OK
+/usr/local/include/glib-2.0/glib.h: OK
+/usr/local/include/glib-2.0/glib-unix.h: OK
+/usr/local/include/glib-2.0/glibconfig.h: OK
+/usr/local/include/glib-2.0/glib/deprecated/gallocator.h: OK
+/usr/local/include/glib-2.0/glib/deprecated/gcache.h: OK
+/usr/local/include/glib-2.0/glib/deprecated/gcompletion.h: OK
+/usr/local/include/glib-2.0/glib/deprecated/gmain.h: OK
+/usr/local/include/glib-2.0/glib/deprecated/grel.h: OK
+/usr/local/include/glib-2.0/glib/deprecated/gthread.h: OK
+/usr/local/include/glib-2.0/glib/galloca.h: OK
+/usr/local/include/glib-2.0/glib/garray.h: OK
+/usr/local/include/glib-2.0/glib/gasyncqueue.h: OK
+/usr/local/include/glib-2.0/glib/gasyncqueueprivate.h: OK
+/usr/local/include/glib-2.0/glib/gatomic.h: OK
+/usr/local/include/glib-2.0/glib/gbacktrace.h: OK
+/usr/local/include/glib-2.0/glib/gbase64.h: OK
+/usr/local/include/glib-2.0/glib/gbitlock.h: OK
+/usr/local/include/glib-2.0/glib/gbookmarkfile.h: OK
+/usr/local/include/glib-2.0/glib/gbsearcharray.h: OK
+/usr/local/include/glib-2.0/glib/gbytes.h: OK
+/usr/local/include/glib-2.0/glib/gcharset.h: OK
+/usr/local/include/glib-2.0/glib/gcharsetprivate.h: OK
+/usr/local/include/glib-2.0/glib/gchecksum.h: OK
+/usr/local/include/glib-2.0/glib/gconstructor-wasm-posix.h: OK
+/usr/local/include/glib-2.0/glib/gconstructor.h: OK
+/usr/local/include/glib-2.0/glib/gconstructorprivate.h: OK
+/usr/local/include/glib-2.0/glib/gconvert.h: OK
+/usr/local/include/glib-2.0/glib/gconvertprivate.h: OK
+/usr/local/include/glib-2.0/glib/gdataset.h: OK
+/usr/local/include/glib-2.0/glib/gdatasetprivate.h: OK
+/usr/local/include/glib-2.0/glib/gdate.h: OK
+/usr/local/include/glib-2.0/glib/gdatetime-private.h: OK
+/usr/local/include/glib-2.0/glib/gdatetime.h: OK
+/usr/local/include/glib-2.0/glib/gdir.h: OK
+/usr/local/include/glib-2.0/glib/genviron.h: OK
+/usr/local/include/glib-2.0/glib/gerror.h: OK
+/usr/local/include/glib-2.0/glib/gfileutils.h: OK
+/usr/local/include/glib-2.0/glib/ggettext.h: OK
+/usr/local/include/glib-2.0/glib/ghash.h: OK
+/usr/local/include/glib-2.0/glib/ghmac.h: OK
+/usr/local/include/glib-2.0/glib/ghook.h: OK
+/usr/local/include/glib-2.0/glib/ghostutils.h: OK
+/usr/local/include/glib-2.0/glib/gi18n-lib.h: OK
+/usr/local/include/glib-2.0/glib/gi18n.h: OK
+/usr/local/include/glib-2.0/glib/giochannel.h: OK
+/usr/local/include/glib-2.0/glib/gjournal-private.h: OK
+/usr/local/include/glib-2.0/glib/gkeyfile.h: OK
+/usr/local/include/glib-2.0/glib/glib-autocleanups.h: OK
+/usr/local/include/glib-2.0/glib/glib-init.h: OK
+/usr/local/include/glib-2.0/glib/glib-object.h: OK
+/usr/local/include/glib-2.0/glib/glib-private.h: OK
+/usr/local/include/glib-2.0/glib/glib-typeof.h: OK
+/usr/local/include/glib-2.0/glib/glib-unix.h: OK
+/usr/local/include/glib-2.0/glib/glib-unixprivate.h: OK
+/usr/local/include/glib-2.0/glib/glib-visibility.h: OK
+/usr/local/include/glib-2.0/glib/glib.h: OK
+/usr/local/include/glib-2.0/glib/glib_trace.h: OK
+/usr/local/include/glib-2.0/glib/glibconfig.h: OK
+/usr/local/include/glib-2.0/glib/glibintl.h: OK
+/usr/local/include/glib-2.0/glib/glist.h: OK
+/usr/local/include/glib-2.0/glib/gmacros.h: OK
+/usr/local/include/glib-2.0/glib/gmain-internal.h: OK
+/usr/local/include/glib-2.0/glib/gmain.h: OK
+/usr/local/include/glib-2.0/glib/gmappedfile.h: OK
+/usr/local/include/glib-2.0/glib/gmarkup.h: OK
+/usr/local/include/glib-2.0/glib/gmem.h: OK
+/usr/local/include/glib-2.0/glib/gmessages.h: OK
+/usr/local/include/glib-2.0/glib/gmirroringtable.h: OK
+/usr/local/include/glib-2.0/glib/gnode.h: OK
+/usr/local/include/glib-2.0/glib/goption.h: OK
+/usr/local/include/glib-2.0/glib/gpathbuf.h: OK
+/usr/local/include/glib-2.0/glib/gpattern.h: OK
+/usr/local/include/glib-2.0/glib/gpoll.h: OK
+/usr/local/include/glib-2.0/glib/gprimes.h: OK
+/usr/local/include/glib-2.0/glib/gprintf.h: OK
+/usr/local/include/glib-2.0/glib/gprintfint.h: OK
+/usr/local/include/glib-2.0/glib/gqsort.h: OK
+/usr/local/include/glib-2.0/glib/gquark.h: OK
+/usr/local/include/glib-2.0/glib/gqueue.h: OK
+/usr/local/include/glib-2.0/glib/grand.h: OK
+/usr/local/include/glib-2.0/glib/grcbox.h: OK
+/usr/local/include/glib-2.0/glib/grcboxprivate.h: OK
+/usr/local/include/glib-2.0/glib/grefcount.h: OK
+/usr/local/include/glib-2.0/glib/grefstring.h: OK
+/usr/local/include/glib-2.0/glib/gregex.h: OK
+/usr/local/include/glib-2.0/glib/gscanner.h: OK
+/usr/local/include/glib-2.0/glib/gscripttable.h: OK
+/usr/local/include/glib-2.0/glib/gsequence.h: OK
+/usr/local/include/glib-2.0/glib/gshell.h: OK
+/usr/local/include/glib-2.0/glib/gslice.h: OK
+/usr/local/include/glib-2.0/glib/gslist.h: OK
+/usr/local/include/glib-2.0/glib/gspawn-private.h: OK
+/usr/local/include/glib-2.0/glib/gspawn.h: OK
+/usr/local/include/glib-2.0/glib/gstdio.h: OK
+/usr/local/include/glib-2.0/glib/gstdioprivate.h: OK
+/usr/local/include/glib-2.0/glib/gstrfuncs.h: OK
+/usr/local/include/glib-2.0/glib/gstring.h: OK
+/usr/local/include/glib-2.0/glib/gstringchunk.h: OK
+/usr/local/include/glib-2.0/glib/gstrvbuilder.h: OK
+/usr/local/include/glib-2.0/glib/gtestutils.h: OK
+/usr/local/include/glib-2.0/glib/gthread-wasm-posix.h: OK
+/usr/local/include/glib-2.0/glib/gthread.h: OK
+/usr/local/include/glib-2.0/glib/gthreadpool.h: OK
+/usr/local/include/glib-2.0/glib/gthreadprivate.h: OK
+/usr/local/include/glib-2.0/glib/gtimer.h: OK
+/usr/local/include/glib-2.0/glib/gtimezone.h: OK
+/usr/local/include/glib-2.0/glib/gtrace-private.h: OK
+/usr/local/include/glib-2.0/glib/gtranslit-data.h: OK
+/usr/local/include/glib-2.0/glib/gtrashstack.h: OK
+/usr/local/include/glib-2.0/glib/gtree.h: OK
+/usr/local/include/glib-2.0/glib/gtypes.h: OK
+/usr/local/include/glib-2.0/glib/gunibreak.h: OK
+/usr/local/include/glib-2.0/glib/gunichartables.h: OK
+/usr/local/include/glib-2.0/glib/gunicode.h: OK
+/usr/local/include/glib-2.0/glib/gunicodeprivate.h: OK
+/usr/local/include/glib-2.0/glib/gunicomp.h: OK
+/usr/local/include/glib-2.0/glib/gunidecomp.h: OK
+/usr/local/include/glib-2.0/glib/guri.h: OK
+/usr/local/include/glib-2.0/glib/guriprivate.h: OK
+/usr/local/include/glib-2.0/glib/gutils.h: OK
+/usr/local/include/glib-2.0/glib/gutilsprivate.h: OK
+/usr/local/include/glib-2.0/glib/guuid.h: OK
+/usr/local/include/glib-2.0/glib/gvalgrind.h: OK
+/usr/local/include/glib-2.0/glib/gvariant-core.h: OK
+/usr/local/include/glib-2.0/glib/gvariant-internal.h: OK
+/usr/local/include/glib-2.0/glib/gvariant-serialiser.h: OK
+/usr/local/include/glib-2.0/glib/gvariant.h: OK
+/usr/local/include/glib-2.0/glib/gvarianttype-private.h: OK
+/usr/local/include/glib-2.0/glib/gvarianttype.h: OK
+/usr/local/include/glib-2.0/glib/gvarianttypeinfo.h: OK
+/usr/local/include/glib-2.0/glib/gversion.h: OK
+/usr/local/include/glib-2.0/glib/gversionmacros.h: OK
+/usr/local/include/glib-2.0/glib/gwakeup.h: OK
+/usr/local/include/glib-2.0/glib/gwin32.h: OK
+/usr/local/include/glib-2.0/glib/msvc_recommended_pragmas.h: OK
+/usr/local/include/glib-2.0/glib/valgrind.h: OK
+
+03832a8d590af581f7f8a13d55ff73c751e8bb70b25f9dbbd6ce9c77420dd9a8  /home/user/migration-export.tar
+11364864
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libgobject-2.0.a: OK
+/usr/local/lib/libgobject-2.0.so: OK
+/usr/local/lib/pkgconfig/gobject-2.0.pc: OK
+/usr/local/share/licenses/gobject/COPYING: OK
+/usr/local/include/glib-2.0/glib-object.h: OK
+/usr/local/include/glib-2.0/gobject/gatomicarray.h: OK
+/usr/local/include/glib-2.0/gobject/gbinding.h: OK
+/usr/local/include/glib-2.0/gobject/gbindinggroup.h: OK
+/usr/local/include/glib-2.0/gobject/gboxed.h: OK
+/usr/local/include/glib-2.0/gobject/gclosure.h: OK
+/usr/local/include/glib-2.0/gobject/genums.h: OK
+/usr/local/include/glib-2.0/gobject/glib-enumtypes.h: OK
+/usr/local/include/glib-2.0/gobject/glib-types.h: OK
+/usr/local/include/glib-2.0/gobject/gmarshal.h: OK
+/usr/local/include/glib-2.0/gobject/gobject-autocleanups.h: OK
+/usr/local/include/glib-2.0/gobject/gobject-visibility.h: OK
+/usr/local/include/glib-2.0/gobject/gobject.h: OK
+/usr/local/include/glib-2.0/gobject/gobject_trace.h: OK
+/usr/local/include/glib-2.0/gobject/gobjectnotifyqueue.c: OK
+/usr/local/include/glib-2.0/gobject/gparam.h: OK
+/usr/local/include/glib-2.0/gobject/gparamspecs.h: OK
+/usr/local/include/glib-2.0/gobject/gsignal.h: OK
+/usr/local/include/glib-2.0/gobject/gsignalgroup.h: OK
+/usr/local/include/glib-2.0/gobject/gsourceclosure.h: OK
+/usr/local/include/glib-2.0/gobject/gtype-private.h: OK
+/usr/local/include/glib-2.0/gobject/gtype.h: OK
+/usr/local/include/glib-2.0/gobject/gtypemodule.h: OK
+/usr/local/include/glib-2.0/gobject/gtypeplugin.h: OK
+/usr/local/include/glib-2.0/gobject/gvalue.h: OK
+/usr/local/include/glib-2.0/gobject/gvaluearray.h: OK
+/usr/local/include/glib-2.0/gobject/gvaluecollector.h: OK
+/usr/local/include/glib-2.0/gobject/gvaluetypes.h: OK
+
+f0c0560589b8d3d0955d69fd0d49a1433ae6f6e1cae6574d25bb8c7b172450dd  /home/user/migration-export.tar
+2451456
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
