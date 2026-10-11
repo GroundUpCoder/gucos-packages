@@ -64,6 +64,8 @@ echo DESKTOP-GAME-PASS`);
  const geometry=log.match(/DESKTOP-MENU (\d+) (\d+) (\d+) (\d+)/);assert(geometry);
  const [x,y,width,height]=geometry.slice(1).map(Number);
  await canvas.click({position:await canvasPosition(canvas,{x:x+width/2,y:y+1+(index+0.5)*(height-2)/(programs.length+2)})});
+ await s.page.waitForTimeout(1000);
+ await writeFile(output('desktop-launched.png'),await canvas.screenshot(),{flag:'wx'});
  await marker('DESKTOP-SNAKE-BOARD');report.checks.push('actual-jwm-menu-selection','xterm-pty-game-board-pixels');
  await s.page.keyboard.press('ArrowUp');
  await writeFile(output('desktop-snake.png'),await canvas.screenshot(),{flag:'wx'});

@@ -44,6 +44,7 @@ int main(int argc,char **argv) {
      if(r>100&&r>g*2&&r>b*2)red++;
      if(g>100&&b>100&&r<80)cyan++;
     }XDestroyImage(im);}
+    if(i%25==0){printf("DESKTOP-SNAKE-PIXELS %lu %d %d %u %u %u\n",w,a.width,a.height,green,red,cyan);fflush(stdout);}
     if(green>20&&red>5&&cyan>100){XSetInputFocus(d,w,RevertToParent,CurrentTime);XSync(d,False);printf("DESKTOP-SNAKE-BOARD %u %u %u\n",green,red,cyan);fflush(stdout);XCloseDisplay(d);return 0;}
    }
   }
