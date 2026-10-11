@@ -156,3 +156,30 @@ The same independent review approves the Tcl/Tk artifacts and green128 observer
 correction, and the seven utility source exports, without granting their pending
 binary/GUI/public acceptance. Tcl consumers retained15,185 passed,54 skipped,
 zero failed; Tk static linking passed. Remaining gates continue as scheduled.
+
+
+### Playable desktop priority and seven utility publications
+
+User priority now places puzzles and menu-accessible games/apps first after
+preserving already active/queued acceptance work. Puzzles19b50d8 has independent
+source approval (319 exact historical files,40 games,132 outputs), and its source
+build is queued. Six owned menu entries require real menu/input/save/relaunch
+acceptance; no gameplay acceptance is inferred from CLI generation. A separate
+desktop-apps candidatefe6cbb2 owns entries for2048,xcalc,xedit,xclock,xeyes and
+pins the accepted applications plus JWM/xterm/desktop-entries. Its concrete
+source review is pending. Existing application payloads remain untouched.
+
+Independent review approves seven utility binary gates and immutable publication:
+artifacts d3e7c47, manifests109d929, catalogd7e931c, private evidence11b568f.
+All24 evidence hashes and71 output identities match;21 retained exports cover
+install/consumers/reload. Bitmap invert/save yields exact8x8 all-set output;
+xmag yields exactly57,600 red pixels spanning240x240 at6x, with actual q exits.
+Source and binary exclusions remain those documented above. Catalog publication
+adds seven entries (83 total) while preserving all76 prior entries; these seven
+must not be marked live-accepted before fresh public gates.76 existing entries
+retain completed live acceptance.
+
+Tk's corrected-color retry exposed staleX1 files left by the first failed GUI
+session.3ffe455 removes those files in the isolated fresh-boot test profile;
+independent review approves the observer-only cleanup. Package bytes unchanged;
+a successful GUI/reload retry is still required. Failed evidence is retained.
