@@ -132,6 +132,7 @@ print('BINARY-PAYLOAD-PASS')`,archivePath],{input:JSON.stringify({outputs:m.outp
         report.packages[name] = {manifest: m, checksumFileSha256: sha(sums[name]), checkedFiles: entries.size};
     }
     const {session} = await helper('tests/compatibility/session.mjs');
+    const {poll} = await helper('tests/desktop/poll.mjs');
     const {desktopSession} = await import('./pcmanfm-layout-v2-session.mjs');
     const {installObserver, observe, rootMenuRows} = await helper('tests/desktop/menu-xapps.mjs');
     const {visibleCanvas, canvasPosition} = await helper('tests/migration/canvas.mjs');
@@ -245,7 +246,7 @@ print('BINARY-PAYLOAD-PASS')`,archivePath],{input:JSON.stringify({outputs:m.outp
     assert.equal((await readGuest('/proc/'+child+'/cmdline')).toString(),report.processIdentity.cmdline);
     await noCrash();
     await s.page.keyboard.press('Control+q');
-    await bounded(s.page.waitForFunction(async path=>{const b=await shell.busybox.read(path);return ArrayBuffer.isView(b)&&new TextDecoder().decode(b)==='done\n';},caseDir+'/done',{timeout:15000}),18000,'Supervisor result timeout');
+    await bounded(poll(s.page,async path=>{const b=await shell.busybox.read(path);return ArrayBuffer.isView(b)&&new TextDecoder().decode(b)==='done\n';},caseDir+'/done',15000),18000,'Supervisor result timeout');
     const result=await readGuest(caseDir+'/result.json');await save('waitpid.json',result);report.exit=JSON.parse(result.toString());
     assert.deepEqual(report.exit,{pid:child,rawStatus:0,exited:1,exitCode:0,signaled:0,signal:0});
     await noCrash();

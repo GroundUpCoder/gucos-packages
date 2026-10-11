@@ -337,3 +337,10 @@ Navigation compares exact image content; zoom/reset uses the post-navigation
 viewport. Instrumented menu provenance remains explicit. Failed observations
 are retained. Source/mock checks are not runtime or functional acceptance.
 The retained host archive-check timeout is a failed check, not a pass.
+
+The independently reviewed PCManFM awaited-poll correction is applied exactly:
+postimage c1488bf2ff1499c7ebbf6c16c33d9a21086ad9f4e0ea2458a8e204cf7112f156.
+Original driver authorship and correction authorship remain distinct. This
+fixes the previously missed async-wait defect without relaxing PID, raw wait
+status or fixture checks. GUI remains held for corrected consumer receipts and
+explicit review of updated embedded test-input pins.
