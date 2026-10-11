@@ -1797,7 +1797,7 @@
     {
       "id": "harfbuzz",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "historicalManifest": "apps/harfbuzz/wasm-package.json",
       "historicalManifestSha256": "867537107b51bcb6295a5d9c69a7e57d33cbc7dd67c5c3e84aaea158d8ea8412",
       "historicalEvidence": [
@@ -1843,10 +1843,15 @@
           "scope": "Guest main-component shared link from accepted static dependency; static/shared shaping/subset/FreeType consumers, install50 outputs and61039104-byte export",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-11/split-main-source"
+        },
+        {
+          "scope": "Fresh exact binary install, installed consumer relinking and browser reload integrity against final split HarfBuzz closure; 100 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-11/split-binary-install"
         }
       ],
       "blockers": [
-        "Fresh binary consumers/reload, artifact review and public publication/acceptance pending.",
+        "Independent exact artifact review and public publication/acceptance pending.",
         "Historical translator-adapter hash mismatch: translation reproducibility not established."
       ],
       "candidate": "apps/harfbuzz",
@@ -3042,7 +3047,7 @@
     {
       "id": "pango",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "historicalManifest": "vendor/pango/wasm-package.json",
       "historicalManifestSha256": "4dfa2617abb5073dbeabda42ffe18eabb8a29a0cbe92b018947a6895eef04713",
       "historicalEvidence": [
@@ -3080,10 +3085,15 @@
           "scope": "Guest source build/test/install/export46 outputs against accepted monolithic private HarfBuzz",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-12/source"
+        },
+        {
+          "scope": "Fresh exact binary install, installed consumer relinking and browser reload integrity against final split HarfBuzz closure; 100 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-11/split-binary-install"
         }
       ],
       "blockers": [
-        "Fresh binary installed consumers/reload and publication pending; must validate against final split HarfBuzz closure."
+        "Independent exact artifact review and public publication/acceptance pending."
       ],
       "candidate": "apps/pango",
       "sourceReview": {
@@ -4704,7 +4714,7 @@
     {
       "id": "harfbuzz-static",
       "kind": "historical-component",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "candidate": "apps/harfbuzz-static",
       "mapping": "harfbuzz static archives partition; main package owns headers and DSO",
       "acceptance": [
@@ -4712,10 +4722,15 @@
           "scope": "Guest source compilation using retained generated C; shaping/subset/FreeType consumer, install4 outputs and actual92932096-byte export",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-11/split-static-source"
+        },
+        {
+          "scope": "Fresh exact binary install, installed consumer relinking and browser reload integrity against final split HarfBuzz closure; 100 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-11/split-binary-install"
         }
       ],
       "blockers": [
-        "Fresh binary consumers/reload, artifact review and public publication/acceptance pending."
+        "Independent exact artifact review and public publication/acceptance pending."
       ],
       "sourceReview": {
         "commit": "5bdbba1e53e78d2260b481bc69bbe20dd8887bd6",

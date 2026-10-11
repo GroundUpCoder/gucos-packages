@@ -38,3 +38,12 @@ below100MiB; original153MB monolithic export remains preserved and unpublished.
 Receipts/artifacts and split-source evidence are retained. Fresh combined binary
 acceptance includes Pango to establish its relinked consumers on the final split
 closure. Publication and translator reproducibility remain separate pending scopes.
+
+## Final split binary acceptance
+
+Reservation755e5c04 completed fresh install, installed consumers and browser
+reload for harfbuzz-static, harfbuzz and Pango: all three reports passed on61a.
+Evidence is retained in batch-11/split-binary-install, covering100 outputs.
+Pango consumers now pass on the final split closure. Exact artifact review and
+public acceptance remain pending; the historical translator mismatch remains.
+Corrected GTK source is running separately under reservation0700a781.
