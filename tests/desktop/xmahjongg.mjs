@@ -1,4 +1,4 @@
-// Documented h+Return takes a hinted pair; u/r undo/redo it. No save-game claim.
+// h+Space selects a hinted tile/pair; Return removes it, including 3-hint boards.
 import assert from 'node:assert/strict';
 import {readFile,writeFile,access} from 'node:fs/promises';
 import {resolve} from 'node:path';
@@ -36,7 +36,7 @@ try{
  })(),30000);}
  async function quit(){await s.page.keyboard.press('q');await observe(d,'absent','XMahjongg');await d.command(`n=0; while kill -0 ${pid} 2>/dev/null; do n=$((n+1)); [ "$n" -lt 100 ] || exit 1; sleep 0.1; done`);}
  await launch();const initial=await board('initial');
- await s.page.keyboard.press('h');await s.page.waitForTimeout(150);await s.page.keyboard.press('Enter');await s.page.keyboard.press('Escape');const removed=await board('pair-removed',{different:initial});
+ await s.page.keyboard.press('h');await s.page.keyboard.press('Space');await s.page.waitForTimeout(150);await writeFile(resolve(run,stem+'-hint-selected.png'),await canvas.screenshot(),{flag:'wx'});await s.page.keyboard.press('Enter');await s.page.keyboard.press('Escape');const removed=await board('pair-removed',{different:initial});
  await s.page.keyboard.press('u');await s.page.keyboard.press('Escape');assert.equal(await board('undo',{equal:initial}),initial);
  await s.page.keyboard.press('r');await s.page.keyboard.press('Escape');assert.equal(await board('redo',{equal:removed}),removed);
  await s.page.keyboard.press('n');await s.page.keyboard.press('Escape');const fresh=await board('new-board',{different:removed});
