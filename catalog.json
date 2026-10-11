@@ -455,6 +455,16 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/5dc7e9ce57794316a454e969419a0e720953a6dc/apps/puzzles/package.json",
       "sha256": "87fde4d8a5c66d6a4857916c287a3b0edf03c94c58e16a004af0ecdb61d23be4",
       "size": 13501
+    },
+    "imlib2": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/13421d9c28b7b2b58d8184a0e9989b88a8076ac6/apps/imlib2/package.json",
+      "sha256": "163a29eb8a9258dec73b72dd50a3b97822d36dff8f44e8f01cfeb10daf3d89d9",
+      "size": 3425
+    },
+    "feh": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/13421d9c28b7b2b58d8184a0e9989b88a8076ac6/apps/feh/package.json",
+      "sha256": "fb693d96be7ec922e5f826b1ae6a47254ca4ee281c3635605744d3efe5510acc",
+      "size": 3354
     }
   }
 }
