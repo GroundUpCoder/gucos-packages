@@ -1,6 +1,6 @@
 // Install the accepted Snake before exercising the reviewed replacement transaction.
 import {session} from '../compatibility/session.mjs';
-import {readFile,writeFile} from 'node:fs/promises';
+import {readFile,writeFile,access} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import assert from 'node:assert/strict';
 assert(process.env.MACHINE_JOB_ID);
@@ -9,6 +9,8 @@ const plan=JSON.parse(await readFile(new URL('../../docs/research/snake-responsi
 const config=JSON.parse(await readFile(resolve(run,'config.json')));
 const expected=JSON.parse(await readFile(resolve(run,'candidate-manifests.json')));
 const attempt=process.env.MIGRATION_ATTEMPT||'';assert(!attempt||/^[a-zA-Z0-9_-]+$/.test(attempt));
+const reportPath=resolve(run,'snake-upgrade'+(attempt?'-'+attempt:'')+'.json');
+await assert.rejects(access(reportPath),{code:'ENOENT'});
 const report={status:'running',startedAt:new Date().toISOString()};
 let s;
 try {
@@ -27,4 +29,4 @@ try {
  assert.deepEqual(await installed(),expected.snake);
  report.newVersion=expected.snake.version;report.status='passed';
 } catch(error) {report.status='failed';report.error=String(error.stack||error);throw error;}
-finally {report.finishedAt=new Date().toISOString();await writeFile(resolve(run,'snake-upgrade'+(attempt?'-'+attempt:'')+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});if(s)await s.close();}
+finally {report.finishedAt=new Date().toISOString();try {await writeFile(reportPath,JSON.stringify(report,null,2)+'\n',{flag:'wx'});} finally {if(s)await s.close();}}

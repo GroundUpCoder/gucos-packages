@@ -88,10 +88,12 @@ puts("SNAKE-TERMIOS-PASS");return 0;}
   const count=await s.page.evaluate(()=>snakeFrames.length);
   await s.page.waitForFunction(n=>snakeFrames.length>n,count,{polling:5});
   await s.page.waitForTimeout(15);
-  const marker=await s.page.evaluate(()=>({at:performance.now(),count:snakeFrames.length}));
-  await s.page.keyboard.press('ArrowRight');
-  await s.page.waitForFunction(n=>snakeFrames.length>n,marker.count,{polling:5});
-  const frame=await s.page.evaluate(n=>snakeFrames[n],marker.count);
+  const marker=await s.page.evaluate(()=>({at:performance.now(),count:snakeFrames.length,head:snakeFrames.at(-1)}));
+  marker.up=trial%2===0;
+  await s.page.keyboard.press(marker.up?'ArrowUp':'ArrowRight');
+  await s.page.waitForFunction(m=>snakeFrames.slice(m.count).some(f=>m.up?f.y<m.head.y:f.x>m.head.x),marker,{polling:5});
+  const frame=await s.page.evaluate(m=>snakeFrames.slice(m.count).find(f=>m.up?f.y<m.head.y:f.x>m.head.x),marker);
+  assert(marker.up?frame.x===marker.head.x:frame.y===marker.head.y,'Perpendicular turn moved along the wrong axis');
   report.inputLatenciesMs.push(frame.at-marker.at);
  }
  const sorted=[...report.inputLatenciesMs].sort((a,b)=>a-b);
