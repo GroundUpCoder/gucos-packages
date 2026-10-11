@@ -1,0 +1,12 @@
+{
+  "assessment.md": "4bbfba5eff4d7ad1ab94317322247ac293ecb576e7f06341940586c437ecb5b3",
+  "candidate-manifests.json": "9ca531f702f65af3e0dbe5303c17673ddfb78d41fb324941cc738ac2ad154b38",
+  "config.json": "9a568b91670c7cb575f3fc4fd8260af703b28f0914798f5ffc612dac3e037b10",
+  "consumers-libfm-pcmanfm.json": "6403e00d79ef50abf65e9522dbe2570f63b217b222ce3d9775864f5668fcde2d",
+  "consumers.log": "89494168405f3c9ee3c7c5fcd1a0087f10921f7f7a8704ababea1b0179ecbc46",
+  "install-libfm-pcmanfm.json": "cfce15435e9aa07d831d8323243cbea96651719ebf7419f99766c65756e8ff71",
+  "install.log": "a01d75bb504c4ad293f3ef5902bca4522dfeb72e2bd90e13474cabc4f606c26f",
+  "libfm.sha256": "2133cc47b67593ba610394a4561fe692007541728657a7c4678e27e026d413d4",
+  "observed-runtime.json": "c20b8f923da60e63f7462b2da8134bbf3cc5ccdec692b72f6a440afa33153032",
+  "pcmanfm.sha256": "7900582a12c3d5ea71272b63ff88fb0c97c5e83e4aa9c9417db496e4e215f179"
+}

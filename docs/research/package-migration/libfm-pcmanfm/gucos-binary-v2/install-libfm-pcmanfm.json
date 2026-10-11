@@ -1,0 +1,12 @@
+{
+  "action": "install",
+  "names": [
+    "libfm",
+    "pcmanfm"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "78d0d1e9be03a0f582595fadf2b97a4d3028b78a",
+  "startedAt": "2026-10-11T12:19:26.155Z",
+  "status": "passed",
+  "finishedAt": "2026-10-11T12:28:36.532Z"
+}

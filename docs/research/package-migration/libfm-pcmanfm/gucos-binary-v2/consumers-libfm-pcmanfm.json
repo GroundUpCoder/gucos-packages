@@ -1,0 +1,40 @@
+{
+  "action": "consumers",
+  "names": [
+    "libfm",
+    "pcmanfm"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "78d0d1e9be03a0f582595fadf2b97a4d3028b78a",
+  "startedAt": "2026-10-11T12:28:37.244Z",
+  "status": "failed",
+  "consumerInputs": [
+    {
+      "name": "libfm",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "edcc6aad7bda75df1a73a7777974b638ac6362767d9b7880e10f4aeb6903dbe9",
+          "size": 10455040
+        },
+        {
+          "path": "build.sh",
+          "sha256": "2bb78d227e7d0a9a6763063ac96cdeb56f0fdcbef6f9711825c3b6c70d81f077",
+          "size": 5026
+        },
+        {
+          "path": "test.sh",
+          "sha256": "f277804d69d264d92f2bf6c794869df72e64420e91c3448febb2fa98a6f6ec97",
+          "size": 5296
+        },
+        {
+          "path": "consumer.c",
+          "sha256": "8d3019c9435f23d0db4331627f22f10256777bef5b429045b19421c1999e414c",
+          "size": 2992
+        }
+      ]
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: cmp: /usr/local/share/libfm/xdg/libfm/libfm.conf: No such file or directory\n\n\n2 !== 0\n\n    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/migration/stage.mjs:40:4",
+  "finishedAt": "2026-10-11T12:28:38.615Z"
+}
