@@ -183,3 +183,27 @@ Tk's corrected-color retry exposed staleX1 files left by the first failed GUI
 session.3ffe455 removes those files in the isolated fresh-boot test profile;
 independent review approves the observer-only cleanup. Package bytes unchanged;
 a successful GUI/reload retry is still required. Failed evidence is retained.
+
+
+### Reconciled historical scope audit
+
+Independent read-only audit closes JWM, X11-server and Zstd ledger rows against
+exact already-accepted manifest/binary identities. This changes no published
+package count. Twm remains a published source recipe with actual public guest
+build/decoration/pointer/hidden-VT acceptance; it has no published binary, so
+binary installation/reload remains open. Catalog acceptance counts include that
+explicit source-recipe scope and do not mean every catalog entry has a binary.
+
+Core ownership of the SDL shim and C toolchain only partially maps the historical
+standalone SDL/SDK packages. Their packaging and exact tests remain open. Core
+ash is not hush; custom core ar/nm/ranlib are not the GNU binutils workload;
+translated libc++ support remains distinct. Accepted fontconfig already includes
+Source Code Pro, removing that missing-font claim from x11-apps; libXft and the
+Xft/ncurses xterm profile remain. gtk3-x11 does not satisfy SDL/Broadway profiles.
+
+The exact historical Perl inventory was found in the retained approved archive
+77b7ccfa8da364d994908da9fc9598ceef45ded3a2dda3f3a6566a02d3f2803c,
+103,812,096 bytes. Its relative-files member lists1,934 paths, SHA256
+a8dec66dbe65c47f4ae6eea29f7313cb184922d3fa3a537d7fcc6d9d4651a9ad.
+It is an output reference for later source work, not current-platform acceptance.
+Playable JWM work remains the new-package priority while current jobs finish.

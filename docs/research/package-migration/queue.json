@@ -1969,7 +1969,7 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
+      "mapping": "Unmapped BusyBox hush package; core shell is ash",
       "acceptance": [],
       "blockers": []
     },
@@ -2073,7 +2073,7 @@
     {
       "id": "jwm",
       "kind": "historical-canonical-name",
-      "state": "existing-scope-audit",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/jwm/wasm-package.json",
       "historicalManifestSha256": "f24804d7d07c250950ca24358668a5bf11a6359ec61dad25543a22a9b77e8a99",
       "historicalEvidence": [
@@ -2095,8 +2095,14 @@
       "historicalDependencies": [
         "x11-apps"
       ],
-      "mapping": "jwm",
-      "acceptance": [],
+      "mapping": "jwm@2.4.6-2",
+      "acceptance": [
+        {
+          "scope": "Existing published profile independently audited; original provenance retained",
+          "evidence": "docs/research/snake/desktop-gucos-public",
+          "audit": "Exact manifest and binary identities unchanged from accepted publication"
+        }
+      ],
       "blockers": []
     },
     {
@@ -3927,7 +3933,7 @@
     {
       "id": "sdk",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "existing-scope-audit",
       "historicalManifest": "vendor/sdk/wasm-package.json",
       "historicalManifestSha256": "ad5a9fc2f50f9b0409f1d5a05a8c0d1c2f04419b8e3fbe7e3f274339cd5338df",
       "historicalEvidence": [
@@ -3964,15 +3970,17 @@
         "libc",
         "pkgconf"
       ],
-      "mapping": "Core supplies C compiler/libc/bootstrap; historical SDK bundle and host C++ preparation not a current package.",
+      "mapping": "Core C compiler/libc/ar and cc --install-sdk-headers; historical SDK package publication not migrated",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Standalone SDK publication and exact historical acceptance remain; translated C++ is separate"
+      ],
       "remainingScope": "Audit SDK/host-prepared C++ profile; guest cc is C only"
     },
     {
       "id": "sdl3",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "existing-scope-audit",
       "historicalManifest": "vendor/sdl3/wasm-package.json",
       "historicalManifestSha256": "f28758741fd5db0a28216233c41f47e1377f430842fc16298d32b7c890e397a3",
       "historicalEvidence": [
@@ -3993,9 +4001,11 @@
       "historicalDependencies": [
         "libc"
       ],
-      "mapping": "Core owns SDL3-compatible VT shim; not a migration of the full historical package/profile.",
+      "mapping": "Core libc SDL3-compatible VT shim; historical standalone libSDL3 packaging not migrated",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Separate libSDL3.a/libSDL3.so/sdl3.pc package and exact historical tests remain"
+      ],
       "remainingScope": "Audit old package scope against core-owned shim; no duplicate bootstrap"
     },
     {
@@ -4396,9 +4406,11 @@
       "historicalDependencies": [
         "x11-apps"
       ],
-      "mapping": "twm",
+      "mapping": "twm@1.0.13.1-1; published source recipe with recorded public guest build/functional acceptance; no binary",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Binary export/publication/install/reload remains absent; preserve existing public source acceptance"
+      ]
     },
     {
       "id": "vim",
@@ -4480,9 +4492,11 @@
         "ncurses",
         "x11-server"
       ],
-      "mapping": "Split into x11-toolkit, x11-widgets, xterm, xev, xprop, xmessage. Missing libXft SDK and historical Xft/ncurses xterm profile.",
+      "mapping": "x11-toolkit + x11-widgets + xterm + xev + xprop + xmessage; Source Code Pro supplied by accepted fontconfig",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "libXft SDK and Xft/ncurses xterm profile remain missing"
+      ],
       "remainingScope": "Missing Xft, Source Code Pro and ncurses xterm profile"
     },
     {
@@ -4599,7 +4613,7 @@
     {
       "id": "x11-server",
       "kind": "historical-canonical-name",
-      "state": "existing-scope-audit",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/x11-server/wasm-package.json",
       "historicalManifestSha256": "9765cf39b1484fda8c4ef491022b2fb490097dc0bc6360afaec4f4b661adfe8d",
       "historicalEvidence": [
@@ -4618,8 +4632,14 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": "x11-server",
-      "acceptance": [],
+      "mapping": "x11-server@21.1.24-1",
+      "acceptance": [
+        {
+          "scope": "Existing published profile independently audited; original provenance retained",
+          "evidence": "docs/logs/2026-10-10/platform-1.0-package-acceptance.md",
+          "audit": "Exact manifest and binary identities unchanged from accepted publication"
+        }
+      ],
       "blockers": []
     },
     {
@@ -4801,7 +4821,7 @@
     {
       "id": "zstd",
       "kind": "historical-canonical-name",
-      "state": "existing-scope-audit",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/zstd/wasm-package.json",
       "historicalManifestSha256": "25be457de948d009c15894ea5c0c23a18e4d29cb72264f9a65351c794b63bd42",
       "historicalEvidence": [
@@ -4813,8 +4833,14 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": "zstd",
-      "acceptance": [],
+      "mapping": "zstd@1.5.7-1",
+      "acceptance": [
+        {
+          "scope": "Existing published profile independently audited; original provenance retained",
+          "evidence": "docs/logs/2026-10-10/platform-1.0-package-acceptance.md",
+          "audit": "Exact manifest and binary identities unchanged from accepted publication"
+        }
+      ],
       "blockers": []
     },
     {
@@ -4824,7 +4850,8 @@
       "scope": "GNU binutils 2.44; excludes DejaGNU/documentation failures",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "mapping": "Unmapped GNU binutils 2.44 workload; core ar/nm/ranlib are not equivalent"
     },
     {
       "id": "cjson",
@@ -4964,7 +4991,8 @@
       "scope": "Pinned translated libc++/libc++abi support, not general native guest C++",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "mapping": "Unmapped pinned translated libc++/libc++abi support profile; no general guest-native C++ claim"
     },
     {
       "id": "harfbuzz-static",
