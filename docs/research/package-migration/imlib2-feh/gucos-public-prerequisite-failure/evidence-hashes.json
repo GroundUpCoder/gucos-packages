@@ -1,0 +1,13 @@
+{
+  "assessment.md": "37ca900c4799f22caa2f7df0080bb2f57218b619de12c6c2111eb2e05a1ed27a",
+  "candidate-manifests.json": "484ef0cb72f5756d0fdff7d52b9499d155e0c790e2c4f360f6d9110fa3398d7e",
+  "config.json": "830f14c809aa821049cf1d803d56b0623c502830ec8121aeb01523ae5dc07d81",
+  "consumers-public-imlib2-feh.json": "fd91bf3050c7e0accb9beb863dae444ba204f661cf0a3b10d7c6cb752e11e638",
+  "consumers.log": "26bc37c569adfe2dea4e39a86dfe88321a4caa93e0991ec67f442559bcd2e0cc",
+  "feh.sha256": "c9d01c452e80d18471eb0662fa8dd1ebe3cbc3e75d16830dba7ce18f00471945",
+  "imlib2.sha256": "5d4d98d8a3b68a7776403d283c0d5c800d96495ed5b361e59376f2a66c7dba8a",
+  "install-public-imlib2-feh.json": "b3340687238d3b5bfcf81b53acf847c939e44bafe5ef581e2ab08a0c0b2adbb1",
+  "install.log": "4dbd6ae0a89d3303bdeb7da227b777e44549f6f61f4f5f55e16cdd06de3211c0",
+  "observed-runtime.json": "c1d9b39edc1d23af256c7c1e88ccc9d30925bf9439aee11d68159d85c18ff3b7",
+  "public-delivery.json": "fb7cc0955979c7729b0b15b429515b758a9b1c9881ae2f7b39a49cd88a067c2f"
+}

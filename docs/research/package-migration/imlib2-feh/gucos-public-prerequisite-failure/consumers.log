@@ -1,0 +1,25 @@
+gucman: unknown source
+
+
+cc: cannot find -lImlib2
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: cc: cannot find -lImlib2
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)
+    at async file:///Users/jku/git/gucos-packages-porting/tests/migration/stage.mjs:40:4 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

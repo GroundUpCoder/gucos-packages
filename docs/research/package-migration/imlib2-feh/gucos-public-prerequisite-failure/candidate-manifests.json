@@ -1,0 +1,270 @@
+{
+  "imlib2": {
+    "format": 1,
+    "name": "imlib2",
+    "version": "1.6.1-1",
+    "dependencies": [
+      "x11-shared",
+      "freetype",
+      "libpng",
+      "libjpeg-turbo"
+    ],
+    "dependencyRequirements": {
+      "x11-shared": {
+        "version": "0.1.0-1"
+      },
+      "freetype": {
+        "version": "2.14.1-1"
+      },
+      "libpng": {
+        "version": "1.6.58-1"
+      },
+      "libjpeg-turbo": {
+        "version": "3.1.4.1-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/imlib2/source.tar",
+        "sha256": "e6b74f0375815f53c18ecca27165e41813b168def4311c525ca6761d01201715",
+        "size": 4321280
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/imlib2/build.sh",
+        "sha256": "d2b0b1c7e54b9b8190190671f768f10db9dad0f2f39958cc41bb855faa70a36d",
+        "size": 1751
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/imlib2/test.sh",
+        "sha256": "57410bc415f102075f8124256d45a6a2ffb10f0aea596743296a84e085db283b",
+        "size": 346
+      },
+      {
+        "path": "consumer-headless.c",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/imlib2/consumer-headless.c",
+        "sha256": "b085ebae1f878daae99c0c1ca1c718b43470a2d9132b320ef30b9af008ed4309",
+        "size": 2035
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "include/Imlib2.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/imlib2/loaders/argb.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/imlib2/loaders/bmp.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/imlib2/loaders/ff.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/imlib2/loaders/ico.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/imlib2/loaders/jpeg.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/imlib2/loaders/lbm.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/imlib2/loaders/png.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/imlib2/loaders/pnm.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/imlib2/loaders/xpm.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libImlib2.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/imlib2.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/imlib2/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/imlib2/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/imlib2/COPYING-PLAIN",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/imlib2/COPYING",
+      "share/licenses/imlib2/COPYING-PLAIN"
+    ],
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/imlib2/binaries/43adacc717051755db71a86bee4486bb7a0a2eeb5865f49ee723744f13e690df.tar",
+      "sha256": "43adacc717051755db71a86bee4486bb7a0a2eeb5865f49ee723744f13e690df",
+      "size": 937472
+    }
+  },
+  "feh": {
+    "format": 1,
+    "name": "feh",
+    "version": "3.13.1-1",
+    "dependencies": [
+      "imlib2",
+      "x11-shared",
+      "libpng",
+      "gtk3-x11",
+      "x11-toolkit"
+    ],
+    "dependencyRequirements": {
+      "imlib2": {
+        "version": "1.6.1-1"
+      },
+      "x11-shared": {
+        "version": "0.1.0-1"
+      },
+      "libpng": {
+        "version": "1.6.58-1"
+      },
+      "gtk3-x11": {
+        "version": "3.24.43-1"
+      },
+      "x11-toolkit": {
+        "version": "1.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/feh/source.tar",
+        "sha256": "4852202d3f41950ddbd0f5c6dc5cffeabcd213837850c0b39804f64a4edb0c03",
+        "size": 3829760
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/feh/build.sh",
+        "sha256": "8a955a197e949d9e44d9aef36980ca80e5d77a38c3b959ffae7d33285b9a3f1f",
+        "size": 1425
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/feh/test.sh",
+        "sha256": "02798f70d25b587fc811ec00ae83d677066ff0ff4d081dd7007b65427d8afbb9",
+        "size": 952
+      },
+      {
+        "path": "feh.desktop",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/feh/feh.desktop",
+        "sha256": "dbfe1e4ec6f21fdf83164fd8685399c1399dbf5a320a0fedd31834b72b84b3d7",
+        "size": 122
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/feh",
+        "mode": 493
+      },
+      {
+        "path": "libexec/feh",
+        "mode": 493
+      },
+      {
+        "path": "share/applications/feh.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/feh/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/feh/README.md",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/fonts/NotoSans-Medium.ttf",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/fonts/OFL.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/fonts/README.md",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/fonts/yudit.ttf",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/images/feh.png",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/images/feh.svg",
+        "mode": 420
+      },
+      {
+        "path": "share/feh/images/menubg_default.png",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/feh/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/feh/OFL.txt",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/feh/COPYING",
+      "share/licenses/feh/OFL.txt"
+    ],
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/feh/binaries/06fb7aa51a0381e6f300481ee8dae239161579e874837eef7a6bced0394be433.tar",
+      "sha256": "06fb7aa51a0381e6f300481ee8dae239161579e874837eef7a6bced0394be433",
+      "size": 1182208
+    }
+  }
+}

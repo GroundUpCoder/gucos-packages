@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-11T12:18:16.266002+00:00",
+  "catalogUrl": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/afc9123f932f3a1319e53a00c5a37a182ad29280/catalog.json",
+  "catalogSha256": "c08386d7fb7398df4b604d6c03ed18328d05600afa734b3a30d7f1b34298cd02",
+  "verified": [
+    {
+      "name": "imlib2",
+      "kind": "manifest",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/13421d9c28b7b2b58d8184a0e9989b88a8076ac6/apps/imlib2/package.json",
+      "sha256": "163a29eb8a9258dec73b72dd50a3b97822d36dff8f44e8f01cfeb10daf3d89d9",
+      "size": 3425
+    },
+    {
+      "name": "imlib2",
+      "kind": "archive",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/imlib2/binaries/43adacc717051755db71a86bee4486bb7a0a2eeb5865f49ee723744f13e690df.tar",
+      "sha256": "43adacc717051755db71a86bee4486bb7a0a2eeb5865f49ee723744f13e690df",
+      "size": 937472
+    },
+    {
+      "name": "feh",
+      "kind": "manifest",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/13421d9c28b7b2b58d8184a0e9989b88a8076ac6/apps/feh/package.json",
+      "sha256": "fb693d96be7ec922e5f826b1ae6a47254ca4ee281c3635605744d3efe5510acc",
+      "size": 3354
+    },
+    {
+      "name": "feh",
+      "kind": "archive",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d7e0823581298bf91e5ce09cac79c1c95fab4ced/apps/feh/binaries/06fb7aa51a0381e6f300481ee8dae239161579e874837eef7a6bced0394be433.tar",
+      "sha256": "06fb7aa51a0381e6f300481ee8dae239161579e874837eef7a6bced0394be433",
+      "size": 1182208
+    }
+  ]
+}
