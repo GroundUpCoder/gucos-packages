@@ -1,6 +1,7 @@
 // Retained Imlib2 X11 consumer; independent review required before execution.
 // Runs the retained consumer unchanged; owns one Xvfb and never starts JWM.
 import assert from 'node:assert/strict';
+import {verifyPublicPreflight} from './imlib2-public-preflight.mjs';
 import {readFile, writeFile, access} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
@@ -73,7 +74,12 @@ try {
         assert(m && m.name === name && m.binary, 'Binary candidate required: ' + name);
         assert.equal(m.runtime, config.expectedRuntime);
         const base = resolve(inputDist, 'migration', name);
-        assert.deepEqual(JSON.parse(await readFile(resolve(base, 'package.json'))), m);
+        const cachedBytes = await readFile(resolve(base, 'package.json'));
+        if (config.dist) assert.deepEqual(JSON.parse(cachedBytes), m);
+        else {
+            report.publicPreflightHelperSha256 = sha(await readFile(new URL('./imlib2-public-preflight.mjs', import.meta.url)));
+            (report.publicPreflight ??= {})[name] = await verifyPublicPreflight({repo, config, name, candidate: m, cachedBytes});
+        }
         const archivePath = resolve(base, 'binary.tar');
         const archive = await readFile(archivePath);
         assert.equal(archive.length, m.binary.size);
