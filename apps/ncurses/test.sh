@@ -31,7 +31,7 @@ int main(void){
  puts("NCURSES-CONSUMER-PASS");return 0;
 }
 C
-cc -I"$DESTDIR"/include/ncurses /tmp/curses-consumer.c -L"$DESTDIR"/lib -lncurses -ltinfo -o /tmp/curses-consumer
+cc -I"$DESTDIR"/include -I"$DESTDIR"/include/ncurses /tmp/curses-consumer.c -L"$DESTDIR"/lib -lncurses -ltinfo -o /tmp/curses-consumer
 /tmp/curses-consumer
 test -s /tmp/curses-screen
 cat > /tmp/curses-wide.c <<'C'
@@ -58,7 +58,7 @@ int main(void){
  puts("NCURSESW-CONSUMER-PASS");return 0;
 }
 C
-cc -I"$DESTDIR"/include/ncursesw /tmp/curses-wide.c -L"$DESTDIR"/lib -lncursesw -ltinfow -o /tmp/curses-wide
+cc -I"$DESTDIR"/include -I"$DESTDIR"/include/ncursesw /tmp/curses-wide.c -L"$DESTDIR"/lib -lncursesw -ltinfow -o /tmp/curses-wide
 /tmp/curses-wide
 test -s /tmp/curses-wide-screen
 echo NCURSES-PACKAGE-PASS
