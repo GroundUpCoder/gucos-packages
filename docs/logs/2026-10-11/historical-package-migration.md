@@ -138,3 +138,17 @@ missing PNG dependency then package-manager release copies counted as duplicate
 providers. Reviewed fixes0f0e445/a9d18d2 own the PNG dependency and hash-check
 managed copies while rejecting actual private providers. Original failures and
 read-only provider probe retained in private run; functional retry is running.
+
+## Binary evidence and GUI targeting correction
+
+PCG fresh binary install, six consumer modes and reload passed (six outputs);
+batch-14/binary-install retained. Four dynamic artifacts were independently
+approved at b43543e for immutable pinning; PCG approval at that point was
+source-only. GTK binary install/consumer/reload passed720 outputs. Managed
+provider checks verified all18 public/release copies. GUI reached X11 SDK, blank
+cursor and clipboard success, then old .screen locator timed out250 seconds.
+Guest children were stopped and command settled. Frozen61a uses .vt and
+letterboxed canvases with logical dimensions. Fix1ba0eb4 targets the actual VT,
+inverts core input mapping (nine geometry cases checked), records helper hash
+and caps canvas waits/clicks at10 seconds. Retained all prior failures/probe
+in batch-12/binary-install; full GTK GUI remains pending.

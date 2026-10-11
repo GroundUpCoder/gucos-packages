@@ -1746,7 +1746,7 @@
     {
       "id": "gtk3-x11",
       "kind": "historical-canonical-name",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-functional-pending",
       "historicalManifest": "apps/gtk3-x11/wasm-package.json",
       "historicalManifestSha256": "b5b5bafc14610799eee068316ef0e66a0ce3f8ccf914baaf0aab6816cdd68953",
       "historicalEvidence": [
@@ -1786,10 +1786,15 @@
           "scope": "Corrected GIO-first pkg-config:586 guest compilation units, GTK/GDK linking, version consumer, installation/export of720 outputs",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-12/corrected-source"
+        },
+        {
+          "scope": "Fresh binary install/version consumer/reload720 outputs;28-package1958-hash closure passes. GUI got through X11 SDK/cursor/clipboard then old .screen selector timed out. No full GUI pass.",
+          "evidence": "docs/research/package-migration/batch-12/binary-install",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0"
         }
       ],
       "blockers": [
-        "Fresh exact binary consumers/reload, GUI/composition and publication acceptance pending."
+        "Updated .vt and letterbox input harness needs fresh GUI acceptance, then artifact review/publication."
       ],
       "design": "gtk-provider-design.md",
       "candidate": "apps/gtk3-x11",
@@ -4762,7 +4767,7 @@
     {
       "id": "pcg32",
       "kind": "additional-workload",
-      "state": "source-accepted-binary-pending",
+      "state": "binary-accepted-review-pending",
       "scope": "Host C++ preparation, whole/object/archive differential execution",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [
@@ -4774,10 +4779,15 @@
           "scope": "Fresh guest six modes:488 values each under whole/object/archive links with native and dispatch backends; installed6 outputs and106496-byte export",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-14/source"
+        },
+        {
+          "scope": "Fresh binary install, all six installed-consumer modes488 checks each, reload and six payload hashes",
+          "evidence": "docs/research/package-migration/batch-14/binary-install",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0"
         }
       ],
       "blockers": [
-        "Fresh binary installed consumers/reload, exact artifact review and public acceptance pending."
+        "Exact artifact review and public acceptance pending."
       ],
       "preparationAudit": "docs/research/package-migration/pcg32-retained-output-audit.json",
       "candidate": "apps/pcg32"
