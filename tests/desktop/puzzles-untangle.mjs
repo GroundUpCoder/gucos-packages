@@ -87,7 +87,24 @@ try{
  const points=groups[0],from={x:points.reduce((n,p)=>n+p[0],0)/points.length*box.width/raw.width,y:points.reduce((n,p)=>n+p[1],0)/points.length*box.height/raw.height};
  const center=await canvasPosition(canvas,{x:w.x+w.width/2,y:w.y+w.height/2});
  const to={x:from.x+(center.x-from.x)*0.25,y:from.y+(center.y-from.y)*0.25};assert(Math.hypot(to.x-from.x,to.y-from.y)>10);
- async function drag(){await s.page.mouse.move(box.x+from.x,box.y+from.y);await s.page.mouse.down();await s.page.mouse.move(box.x+to.x,box.y+to.y,{steps:8});await s.page.mouse.up();}
+ let dragIndex=0;
+ async function drag(){
+  const index=++dragIndex;
+  await s.page.mouse.move(box.x+from.x,box.y+from.y);await s.page.mouse.down();
+  try{
+   await s.page.waitForTimeout(200);
+   for(let step=1;step<=8;step++){
+    await s.page.mouse.move(box.x+from.x+(to.x-from.x)*step/8,box.y+from.y+(to.y-from.y)*step/8);
+    await s.page.waitForTimeout(50);
+   }
+   // Untangle release commits the last processed motion, not release coordinates.
+   await s.page.waitForTimeout(200);
+   const pixels=await observePixels(d,'puzzle-board','Untangle');
+   (report.heldDrags??=[]).push({index,endpoint:to,pixels});
+   await writeFile(resolve(run,stem+'-held-drag-'+index+'.png'),await canvas.screenshot(),{flag:'wx'});
+  }finally{await s.page.mouse.up();}
+  await s.page.waitForTimeout(200);
+ }
  await drag();const moved=await board('dragged',{different:initial});report.drag={from,to,blueComponents:groups.length};
  await s.page.keyboard.press('u');assert.equal(await board('undo',{equal:initial}),initial,'Undo must restore the initial graph');
  await drag();assert.equal(await board('repeat-drag',{equal:moved}),moved);
