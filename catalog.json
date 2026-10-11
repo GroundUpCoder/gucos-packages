@@ -315,6 +315,11 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/ac9d6658097e3f40c7642c793d51f9a5120a6613/apps/pango/package.json",
       "sha256": "75bb5ada186617ce9863a5c562ddc653a4fc5ab9d35b17f84bbb9a2a85093b96",
       "size": 6463
+    },
+    "snake": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/25c60110185dd964eef183e70aadd7f560e6d9dd/apps/snake/package.json",
+      "sha256": "7cb056ce98f46a7a11e99aaa4ccc029582ca19a3376d8eef8cabc64c12c7e3c3",
+      "size": 3800
     }
   }
 }

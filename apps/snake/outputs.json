@@ -1,0 +1,22 @@
+[
+  {
+    "path": "bin/snake",
+    "mode": 493
+  },
+  {
+    "path": "share/doc/snake/README.md",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/snake/provenance.json",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/snake/LICENSE",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/wasm-posix-snake.desktop",
+    "mode": 420
+  }
+]

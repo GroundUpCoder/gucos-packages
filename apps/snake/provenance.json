@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/GroundUpCoder/c-compiler",
+  "commit": "ceeaa2df06f63b95e77c442819e659062783804e",
+  "files": {
+    "vendor/snake/main.c": "82b0a3149bb0466f6209fa9cf777cbbf0dd0c12197037689e5f494bb145cfd55",
+    "vendor/snake/README.md": "291987bfdcee286af968646be64201b5404fd4c2063a72d5977cb7374bfdf094",
+    "vendor/snake/bin.json": "7ef90e682faf9701ad65e66beb6ba7feda2191a5e102135b54e4feaa89de47b4",
+    "LICENSE": "3f2bf733d13b1e20f7457acc5baf47aa94b3982901cce4f6d7e80438bf9b6b13"
+  },
+  "license": "Apache-2.0 (repository LICENSE; no file-specific license)",
+  "changes": "main.c is modified; upstream.c is the unchanged original."
+}
