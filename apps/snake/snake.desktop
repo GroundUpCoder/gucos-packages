@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Snake
+Comment=Play terminal Snake
+Exec=snake
+TryExec=snake
+Terminal=true
+Categories=Game;ArcadeGame;

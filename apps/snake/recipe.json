@@ -1,0 +1,25 @@
+{
+  "name": "snake",
+  "version": "1.0.0-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "inputs": [
+    "main.c",
+    "upstream.c",
+    "LICENSE",
+    "README.md",
+    "provenance.json",
+    "snake.desktop",
+    "build.sh",
+    "test.sh",
+    "logic-test.c"
+  ]
+}
