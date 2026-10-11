@@ -72,3 +72,13 @@ The proposed Xarchiver BusyBox TAR adaptation was not implemented: source audit
 found caller/error-handling and filename-parsing issues beyond a small flag fix.
 No patch or acceptance resulted. Its existing single-file bzip2 backend is now
 being audited against the accepted bzip2 provider as a separate bounded scope.
+
+
+Xarchiver `2d74f6aa2c4952679cd4862b7524a919680c49ef` independently passed
+source-execution review. It declares accepted bzip2 1.0.8-1 and a single guarded
+C overlay disabling unverified standard gtar/tar discovery. The original source
+archive is unchanged, and the declared patch exactly records the overlay diff.
+Upstream alternative providers are preserved. The frozen source fixture queues
+accepted binary dependencies before the application build. The pending GUI scope
+is single-file bzip2 creation, explicit Test, exact extraction, quit/reopen and
+browser reload; a displayed row alone cannot establish archive validity.

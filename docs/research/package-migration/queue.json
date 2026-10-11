@@ -4830,13 +4830,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Fresh source build, binary install/consumer/GUI/reload, immutable publication review and public acceptance remain pending; source-only implementation review approved 1fd0a18.",
-        "Historical GNU tar flags are incompatible with core BusyBox tar; package-owned bounded plain-TAR backend adaptation is under development and requires independent review."
+        "Source build/export, binary install, genuine single-file bzip2 GUI create/Test/extract with exact bytes, quit/reopen/browser reload, immutable publication review and public acceptance remain pending. No TAR or other-format acceptance."
       ],
       "candidate": "apps/xarchiver",
       "sourcePreparation": {
-        "commit": "1fd0a18",
-        "scope": "220 pinned historical blobs, 37 C translation units and 31 outputs; independently approved for source-build execution. Archive backend adaptation, application behavior and acceptance remain pending."
+        "commit": "2d74f6aa2c4952679cd4862b7524a919680c49ef",
+        "scope": "220 pinned historical blobs, 37 C units and 31 outputs. Exact bzip2 dependency and declared overlay disabling unverified GNU-tar discovery independently approved for source execution. Binary dependencies then source build queued."
       }
     },
     {
