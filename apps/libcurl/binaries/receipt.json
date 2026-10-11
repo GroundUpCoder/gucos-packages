@@ -1,0 +1,85 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "58d69c1ae6263d60f0c7224cb06c76281c089134c5ce2b4778bba8caf0e0956b",
+  "size": 23040,
+  "guestManifest": {
+    "format": 1,
+    "name": "libcurl",
+    "version": "0.1.0",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.1",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "curl.c",
+        "url": "http://127.0.0.1:65535/candidate/libcurl/curl.c",
+        "sha256": "565c61eff2273fec04d91cc694d91e1ac8f5c5931a8f5cf9f6fd54ef8538ae92",
+        "size": 11401
+      },
+      {
+        "path": "include/curl/curl.h",
+        "url": "http://127.0.0.1:65535/candidate/libcurl/include/curl/curl.h",
+        "sha256": "412c40bb183914cc49918fe4a17cf21b5b6cc914ee25c127bd418e3be6f578ab",
+        "size": 2281
+      },
+      {
+        "path": "LICENSE",
+        "url": "http://127.0.0.1:65535/candidate/libcurl/LICENSE",
+        "sha256": "6df47e11fb8c1e33d88a1840065167059d85ce1c5a1a35ed97d2988c1e7095c5",
+        "size": 1075
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:65535/candidate/libcurl/build.sh",
+        "sha256": "3265d7c743d443beb3a6275edbf76405b3fcb93949084ef3404bcd0ac9456a02",
+        "size": 283
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:65535/candidate/libcurl/test.sh",
+        "sha256": "d09aaa409b518ef1f6d473f80e136c0570e0659a98ee453acb26935a87133eff",
+        "size": 99
+      },
+      {
+        "path": "test.c",
+        "url": "http://127.0.0.1:65535/candidate/libcurl/test.c",
+        "sha256": "b460c9e563fa2b8f8fcc64c16c5805a336320ed1e5cb575be7a9ef4b754f176f",
+        "size": 733
+      },
+      {
+        "path": "network-test.c",
+        "url": "http://127.0.0.1:65535/candidate/libcurl/network-test.c",
+        "sha256": "a9b3bd44db9762e8598d253bcf78bc5bdb67d1015c35f77fd42b32ea0df9130e",
+        "size": 4060
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libcurl.a",
+        "mode": 420
+      },
+      {
+        "path": "include/curl/curl.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/libcurl/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/libcurl/LICENSE"
+    ]
+  },
+  "method": "Actual guest gucman build/test and pack on platform 1.0.1"
+}

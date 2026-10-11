@@ -1,0 +1,67 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "49a02810e72eba20db9714253aa2e70567cc734631d0023dae4b03a0d5853e13",
+  "size": 159232,
+  "guestManifest": {
+    "format": 1,
+    "name": "gucode",
+    "version": "0.1.0",
+    "dependencies": [
+      "libcurl"
+    ],
+    "dependencyRequirements": {
+      "libcurl": {
+        "version": "0.1.0"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.1",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:65535/candidate/gucode/source.tar",
+        "sha256": "b63b20b97278985d90d8816beb866b81dac9b0c1ae0a6df674cd9df50b9095fa",
+        "size": 153600
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:65535/candidate/gucode/build.sh",
+        "sha256": "f3fd87170ca8c86e1a0f9f5419b246d332ab56506350454f64ddcae19c516777",
+        "size": 447
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:65535/candidate/gucode/test.sh",
+        "sha256": "383bf2922f8b3e0ac2dddd35f4bf18858162821cc76060a945d828f1450a9a89",
+        "size": 196
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/gucode",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/gucode/LICENSE",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/gucode/cJSON-LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/gucode/LICENSE",
+      "share/licenses/gucode/cJSON-LICENSE"
+    ]
+  },
+  "method": "Actual guest gucman build/test and pack on platform 1.0.1"
+}

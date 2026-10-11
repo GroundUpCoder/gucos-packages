@@ -1,0 +1,24 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "status": "passed",
+  "startedAt": "2026-10-11T07:38:27.575Z",
+  "libcurl": {
+    "archiveSha256": "58d69c1ae6263d60f0c7224cb06c76281c089134c5ce2b4778bba8caf0e0956b",
+    "installedPayloads": {
+      "lib/libcurl.a": "9d5e8ce9cd710e7eaea90ff75fabd85ad274793c70ee336274178906b14aab39",
+      "include/curl/curl.h": "412c40bb183914cc49918fe4a17cf21b5b6cc914ee25c127bd418e3be6f578ab",
+      "share/licenses/libcurl/LICENSE": "6df47e11fb8c1e33d88a1840065167059d85ce1c5a1a35ed97d2988c1e7095c5"
+    }
+  },
+  "gucode": {
+    "archiveSha256": "49a02810e72eba20db9714253aa2e70567cc734631d0023dae4b03a0d5853e13",
+    "installedPayloads": {
+      "bin/gucode": "d52e70ab6ef7f0e8e57c146bee0908a0bbc1a3d1749056adab46bd5114a72ba5",
+      "share/licenses/gucode/LICENSE": "f9ed962dfb0637eed15e5bcee0f0ca4e7c6eb375a8b71f8b14b50b0dc47e79f0",
+      "share/licenses/gucode/cJSON-LICENSE": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c"
+    }
+  },
+  "freshBinaryInstall": true,
+  "reloadPayloads": true,
+  "finishedAt": "2026-10-11T07:38:34.236Z"
+}

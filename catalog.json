@@ -435,6 +435,16 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/f1690a45a32223ee5e2dcdbed3ef858b0dfedcbb/apps/desktop-apps/package.json",
       "sha256": "4ce26eb853baeda9fbefceb2d2b79b9319fb95784e1259863267552f1dea3803",
       "size": 4392
+    },
+    "libcurl": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/ab2a7f6eed3bdf98b4477e707289f4be457c5e66/apps/libcurl/package.json",
+      "sha256": "d38bbfd35a83d679940a0a6ce881ce3b5b3055141e2b1f7aee4dc0c02d250c41",
+      "size": 3045
+    },
+    "gucode": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/ab2a7f6eed3bdf98b4477e707289f4be457c5e66/apps/gucode/package.json",
+      "sha256": "18b80fdd06c809090c88623a45f9a0d000ea287d1150bc349d8e1890897d2bb4",
+      "size": 1990
     }
   }
 }

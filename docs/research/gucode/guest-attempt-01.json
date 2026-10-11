@@ -1,0 +1,8 @@
+{
+  "startedAt": "2026-10-11T07:25:22.486Z",
+  "expectedRuntime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "status": "failed",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "error": "Error: Guest exit 1\ngucman: build candidate:libcurl: reading catalogs and resolving dependencies\ngucman: Reading catalog: candidate\n  Connecting; waiting for response…\n  Downloaded 347 bytes; transfer finished\ngucman: Reading catalog: groundupcoder\n  Connecting; waiting for response…\nguc-fetch: https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/main/catalog.json: Failed to fetch\ngucman: source unavailable or invalid: groundupcoder (https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/main/catalog.json)\ngucman: restore or remove unavailable sources before resolving packages\ngucman: build candidate:gucode: reading catalogs and resolving dependencies\ngucman: Reading catalog: candidate\n  Connecting; waiting for response…\n  Downloaded 347 bytes; transfer finished\ngucman: Reading catalog: groundupcoder\n  Connecting; waiting for response…\nguc-fetch: https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/main/catalog.json: Failed to fetch\ngucman: source unavailable or invalid: groundupcoder (https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/main/catalog.json)\ngucman: restore or remove unavailable sources before resolving packages\n\n    at Object.command (file:///Users/jku/git/gucos-packages/tools/browser.mjs:19:29)\n    at async file:///Users/jku/git/gucos-packages/tests/gucode/guest.mjs:29:14",
+  "finishedAt": "2026-10-11T07:25:23.223Z"
+}
