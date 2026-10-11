@@ -32,7 +32,7 @@ try{
  let w,pid;
  async function launch(){
   (report.menus??=[]).push(await clickMenuEntry(d,entry));w=await observe(d,'window',klass);
-  const ids=(await d.command('pidof '+name)).trim().split(/\s+/).map(Number);assert.equal(ids.length,1,'Isolated fixture must have one app process');assert(Number.isInteger(ids[0])&&ids[0]>0);pid=ids[0];
+  const ids=(await d.command('for f in /proc/[0-9]*/comm; do IFS= read -r comm < "$f" || continue; if [ "$comm" = '+name+' ]; then p=${f#/proc/}; echo "${p%/comm}"; fi; done')).trim().split(/\s+/).map(Number);assert.equal(ids.length,1,'Isolated fixture must have one app process');assert(Number.isInteger(ids[0])&&ids[0]>0);pid=ids[0];
   (report.pids??=[]).push(pid);await click(w.x+w.width/2,w.y+w.height/2);await s.page.waitForTimeout(300);assert((await pixels()).different>10);
  }
  async function close(){
