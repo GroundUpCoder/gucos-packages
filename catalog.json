@@ -425,6 +425,11 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/95e9bbcac6b8d437d8d2591f7253f2a219f29cd7/apps/tk/package.json",
       "sha256": "b73e5bd33e94f2b5956a6a6789849609e9a0c5d2fc9aacac3e10e2d285b18d07",
       "size": 15916
+    },
+    "l3afpad": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/882f308737123246612bf428774bb4af7e1c1f48/apps/l3afpad/package.json",
+      "sha256": "1d69e96ace2f94370a67b4dc77e80f8532146c37351c6269c4fa9e68e51114f9",
+      "size": 3061
     }
   }
 }
