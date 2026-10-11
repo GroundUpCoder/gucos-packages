@@ -58,6 +58,7 @@ try{
   await s.page.keyboard.press('Enter');
   const dialog=await observe(d,'window',save?'Enter name of game file to save':'Enter name of saved game file to load');
   await s.page.keyboard.press('Control+l');await s.page.keyboard.type(savePath);
+  await s.page.waitForTimeout(5000); // Diagnostic: allow filename metadata validation to settle.
   assert(dialog.width>=400&&dialog.height>=250,'Expected GTK chooser dimensions');await click(dialog.x+dialog.width-52,dialog.y+dialog.height-24);
   await observe(d,'absent',save?'Enter name of game file to save':'Enter name of saved game file to load');
  }
