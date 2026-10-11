@@ -1,6 +1,6 @@
 // Retained built-in ROM acceptance, adapted to a standalone graphical VT.
 import {session} from '../compatibility/session.mjs';
-import {visibleCanvas} from './canvas.mjs';
+import {visibleCanvas,canvasHelperSha256} from './canvas.mjs';
 import {readFile,writeFile,access} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
@@ -11,7 +11,7 @@ const {PNG}=require('pngjs');
 assert(process.env.MACHINE_JOB_ID);
 const run=process.env.COMPAT_RUN_DIR;
 await assert.rejects(access(resolve(run,'gameboy-functional.json')),{code:'ENOENT'});
-const report={status:'running',startedAt:new Date().toISOString(),scope:'Built-in ROM palette, animation, process termination and terminal recovery; no external ROM, controls, audio or CPU conformance claim'};
+const report={canvasHelperSha256,status:'running',startedAt:new Date().toISOString(),scope:'Built-in ROM palette, animation, process termination and terminal recovery; no external ROM, controls, audio or CPU conformance claim'};
 let s;
 try {
  s=await session();report.runtime=s.runtime;await s.command('true');
@@ -48,4 +48,4 @@ try {
  await s.command('echo GAMEBOY-TERMINAL-RECOVERED');
  report.status='passed';
 } catch(error){report.status='failed';report.error=String(error.stack||error);throw error;}
-finally{report.finishedAt=new Date().toISOString();if(s){await writeFile(resolve(run,'gameboy-functional.log'),await s.page.evaluate(()=>shell.busybox?.log||'').catch(()=>''),{flag:'wx'});await s.close();}await writeFile(resolve(run,'gameboy-functional.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});}
+finally{report.finishedAt=new Date().toISOString();if(s){await writeFile(resolve(run,'gameboy-stdout.log'),await s.page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/tmp/gameboy.log'))).catch(()=>''),{flag:'wx'});await writeFile(resolve(run,'gameboy-functional.log'),await s.page.evaluate(()=>shell.busybox?.log||'').catch(()=>''),{flag:'wx'});await s.close();}await writeFile(resolve(run,'gameboy-functional.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});}
