@@ -1,10 +1,10 @@
 """Verify anonymous public delivery of the exact selected gucode manifest/inputs."""
-import hashlib,json,urllib.request,time
+import hashlib,json,urllib.request
 from pathlib import Path
 root=Path(__file__).resolve().parents[2]
 entry=json.loads((root/'catalog.json').read_text())['packages']['gucode']
 url='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/main/catalog.json'
-public=json.load(urllib.request.urlopen(url+'?verify='+str(time.time_ns())))
+public=json.load(urllib.request.urlopen(url))
 assert public['packages']['gucode']==entry
 verified=[]
 def fetch(ref):
