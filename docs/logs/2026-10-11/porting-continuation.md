@@ -311,3 +311,11 @@ a start-cell marker. The corrected driver (`4c58d80`) tests flag/undo before
 opening, then opening/save/relaunch/reload. It waits for settled expected board
 pixels, moves the pointer outside the game, and uses attempt-specific save paths.
 Independent review approved execution subject to screenshot/crop inspection.
+
+Desktop-apps' first 2048 GUI gate failed before menu interaction when the bridge
+reread its result after polling status. Evidence `9938e31` preserves the failure
+alongside successful installation/consumers. The independently reviewed helper
+now waits for both typed result files and returns the complete captured response
+through its polling handle. The whole-request deadline and nonzero-status check
+remain. A GUI/reload-only retry is queued; successful install/consumers are not
+repeated. Pending Fifteen/Xapps/Net jobs use the reviewed helper as well.
