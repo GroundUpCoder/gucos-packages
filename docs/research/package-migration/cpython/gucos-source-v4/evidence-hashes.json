@@ -1,0 +1,9 @@
+{
+  "assessment.md": "00fb8f136a6caee9a5b72fc706735be42933bdbcc81676db4c34b7666a51f9f5",
+  "build-cpython.json": "c42599c31a5d8e3bf44fb014dd661394cc35e743b680a68e8c149171cba6ad11",
+  "build-receipt.json": "15a2eef15b2af126976130fe88bed6674eaa8159782dfd28fe8b729446fdb07a",
+  "build.log": "45101a8abcfbdf37c473258ac646652e0e9e483ff3f9000a820dcc90cc772829",
+  "candidate-manifests.json": "6f27554a37e92258a47e39adc7ad5daf8524f267d0c4854d34867c8a0f0cc692",
+  "config.json": "d9ffa692e0b1fe4a6b3af3a94131907ae013d9d5b195c69957f166f8b4a0d2eb",
+  "observed-runtime.json": "8f6986aee1462d798e97ea0126410e231d8d9b3b23f9e35f2185c0146ae27dec"
+}
