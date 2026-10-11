@@ -12,16 +12,27 @@ export async function installObserver(s){
 }
 export async function observe(s,mode,title){
  assert(['wm','menu','window','absent'].includes(mode));assert(!title||/^[A-Za-z0-9 ._-]+$/.test(title));
- const log=await s.command(`DISPLAY=:1 /tmp/jwm-observe ${mode}${title?` '${title}'`:''}`);
+ let timer;
+ const log=await Promise.race([s.command(`DISPLAY=:1 /tmp/jwm-observe ${mode}${title?` '${title}'`:''}`),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('X observer exceeded 40 seconds; caller must close the session')),40000);})]).finally(()=>clearTimeout(timer));
  if(mode==='wm'||mode==='absent')return log;
  const m=log.match(/WINDOW (\d+) (-?\d+) (-?\d+) (\d+) (\d+)/);assert(m,'Live X window geometry missing');
  const [id,x,y,width,height]=m.slice(1).map(Number);return {id,x,y,width,height};
 }
+// JWM includes a historical Puzzles submenu before the owned desktop entries.
+// Count it as one root row; its descendants are not rows of this popup.
+export function rootMenuRows(xml){
+ const rows=[];let depth=0;
+ for(const token of xml.match(/<Menu\b[^>]*>|<\/Menu\s*>|<Program\b[^>]*>[\s\S]*?<\/Program\s*>|<Separator\s*\/>/g)||[]){
+  if(/^<Menu\b/.test(token)){if(depth===0)rows.push(token);depth++;}
+  else if(/^<\/Menu/.test(token)){assert(depth>0,'Unbalanced JWM menu');depth--;}
+  else if(depth===0){assert(!token.startsWith('<Separator'),'Variable-height root separator needs explicit geometry');rows.push(token);}
+ }
+ assert.equal(depth,0,'Unbalanced JWM menu');return rows;
+}
 export async function clickMenuEntry(s,id){
  assert(/^[A-Za-z0-9._-]+\.desktop$/.test(id));
  const menu=await s.command('sh /usr/local/share/jwm/app-menu.sh');
- assert(!menu.includes('<Menu '),'Expected the accepted flat application menu');
- const items=menu.split('\n').filter(line=>line.includes('<Program '));
+ const items=rootMenuRows(menu);
  const index=items.findIndex(line=>line.includes(' launch '+id+'<'));
  assert(index>=0,'Installed owned entry missing from JWM menu: '+id);
  const canvas=await visibleCanvas(s.page);

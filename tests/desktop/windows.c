@@ -1,4 +1,6 @@
-/* Read-only X11 observations for real browser-driven JWM acceptance. */
+/* Read-only X11 observations for real browser-driven JWM acceptance.
+ * absent means no viewable matching window, not process termination.
+ * Harness lifecycle checks and its outer deadline are separate obligations. */
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <X11/Xatom.h>
