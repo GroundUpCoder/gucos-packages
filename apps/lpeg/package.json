@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "name": "lpeg",
+  "version": "1.1.0-1",
+  "dependencies": [
+    "lua55"
+  ],
+  "dependencyRequirements": {
+    "lua55": {
+      "version": "5.5.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/lpeg/source.tar",
+      "sha256": "90000a4ad480e6f53f29fe326faf727f29102c8d7425406c03dc5e24c9bc6256",
+      "size": 276480
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/lpeg/build.sh",
+      "sha256": "9deda2b8188d0b8904b4666e5c452a037615c957cbe55eeffe51206a89e9adb4",
+      "size": 619
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/lpeg/test.sh",
+      "sha256": "a28b43031a318127d453f0231ede57788c20aef5aba185ea3444ad3d66c92093",
+      "size": 675
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/lua/5.5/lpeg.so",
+      "mode": 420
+    },
+    {
+      "path": "share/lua/5.5/re.lua",
+      "mode": 420
+    },
+    {
+      "path": "share/doc/lpeg/lpeg.html",
+      "mode": 420
+    },
+    {
+      "path": "share/doc/lpeg/re.html",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/lpeg/LICENSE",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/lpeg/LICENSE"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/lpeg/binaries/120a3db5cb214b0449f27eb708042c16d1a15ca27ce81d038a3704eba42030d7.tar",
+    "sha256": "120a3db5cb214b0449f27eb708042c16d1a15ca27ce81d038a3704eba42030d7",
+    "size": 172544
+  }
+}

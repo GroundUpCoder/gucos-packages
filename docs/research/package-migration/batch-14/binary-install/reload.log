@@ -1,0 +1,14 @@
+gucman: unknown source
+
+
+/usr/local/bin/pcg32-check: OK
+/usr/local/include/pcg32/api.h: OK
+/usr/local/lib/libpcg32.a: OK
+/usr/local/share/licenses/pcg32/LICENSE: OK
+/usr/local/share/pcg32/native-values.json: OK
+/usr/local/share/pcg32/translation.json: OK
+
+4834564b737d867a37e251d45b75249bb3c14c16a61464c325bea6096cbae45b  /home/user/migration-export.tar
+106496
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

@@ -1,0 +1,62 @@
+gucman: unknown source
+
+gucman: build migration:pcg32: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 17719 bytes; transfer finished
+gucman: Resolving: migration:pcg32
+gucman: Downloading manifest for migration:pcg32 (1681 bytes)
+  Connecting; waiting for response…
+  Downloaded 1681 / 1681 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pcg32
+gucman: Checking cached object: manifest for migration:pcg32
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: pcg32 (0 remaining after this)
+gucman: Downloading pcg32 source: source.tar (51200 bytes)
+  Connecting; waiting for response…
+  Downloaded 51200 / 51200 bytes (100%); transfer finished
+gucman: Verifying download: pcg32 source: source.tar
+gucman: Checking cached object: pcg32 source: source.tar
+gucman: Downloading pcg32 source: prepared.tar (133120 bytes)
+  Connecting; waiting for response…
+  Downloaded 133120 / 133120 bytes (100%); transfer finished
+gucman: Verifying download: pcg32 source: prepared.tar
+gucman: Checking cached object: pcg32 source: prepared.tar
+gucman: Downloading pcg32 source: build.sh (692 bytes)
+  Connecting; waiting for response…
+  Downloaded 692 / 692 bytes (100%); transfer finished
+gucman: Verifying download: pcg32 source: build.sh
+gucman: Checking cached object: pcg32 source: build.sh
+gucman: Downloading pcg32 source: test.sh (892 bytes)
+  Connecting; waiting for response…
+  Downloaded 892 / 892 bytes (100%); transfer finished
+gucman: Verifying download: pcg32 source: test.sh
+gucman: Checking cached object: pcg32 source: test.sh
+Building migration:pcg32; running trusted recipe with access to your guest files
+22 functions, 44432 bytes
+22 functions, 44428 bytes
+22 functions, 44428 bytes
+22 functions, 44432 bytes
+PCG32-488-PASS whole native
+PCG32-488-PASS objects native
+PCG32-488-PASS archive native
+22 functions, 189717 bytes
+22 functions, 189717 bytes
+22 functions, 189721 bytes
+PCG32-488-PASS whole dispatch
+PCG32-488-PASS objects dispatch
+PCG32-488-PASS archive dispatch
+gucman: Installing pcg32: 0/6 files
+gucman: Installing pcg32: 6/6 files
+gucman: Preparing checksums: pcg32
+gucman: Checksummed pcg32: 6/6 files
+gucman: Saving transaction: pcg32
+gucman: Verifying staged files: pcg32
+gucman: Activating: pcg32
+Installed migration:pcg32 0.1.0-1
+
+8fa70c7bd11fdfdad5de83ec0bf48436ef9b48742db0cc93a18ca9af4a5aee1c  /home/user/migration-export.tar
+106496
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

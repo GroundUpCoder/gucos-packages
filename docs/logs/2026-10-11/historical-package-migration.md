@@ -103,3 +103,52 @@ Independent gpt reviewer approved public evidence76fb6b4:18 evidence hashes,
 nine console chunks, immutable bindings, all100 payload hashes/modes;63 live
 entries and44 additions supported, baseline19 unchanged. Source batch Lua5.5,
 LPeg,2048,SQLite series is queued serially using prepared c9f06a1 profile.
+
+## Fresh PCG32 host preparation
+
+Serial reservation3635a5fb completed in packages-local snapshot using approved
+helperd2903c4, Python3.12/llvmlite0.50/AppleClang21 and hash-checked WASI SDK30.
+Original488 native outputs matchO0/O2, golden values and shuffle checks pass.
+Fresh pinned translator emits19 definitions rather than old retained17: adds
+C1 default/seeded constructor aliases, removes no symbols. Delta and host
+evidence retained under pcg32-host-preparation; not a generated-byte identity
+claim. Stager initially rejected stale17 count before writing any package;
+updated to require fresh report count19. Candidate retains six guest modes and
+six SDK outputs; source check passes, guest acceptance remains pending.
+
+## Dynamic workloads source acceptance
+
+Reservatione48b6f24 passed all four separate source stages on61a: Lua5.5 (7
+outputs/1550848 bytes), LPeg (5/172544),2048 (4/35328), SQLite series (2/52224).
+Retained exact raw exports/receipts and batch-13/source logs/reports. Baseline
+Lua5.4 is unchanged. Module tests cover loading/cache/entry lookup, not actual
+DSO unloading. Fresh binary and2048 gameplay acceptance remain pending.
+
+## Dynamic binaries and PCG32 guest source
+
+Reservationc19cf6ba passed four-package install/consumers/reload,18 payloads;
+2048 functional test verified changed board/score, restart two tiles/zero score,
+normal quit and cursor restoration. batch-13/binary-install retains evidence.
+PCG3222235215 source passed all six modes (488 checks each), installed6 files
+and exported8fa70c7b/106496 bytes; batch-14/source and exact artifact retained.
+Fresh PCG binary acceptance and independent artifact/public reviews remain.
+
+GTK source and binary stage checks passed; GUI failed before launch twice:
+missing PNG dependency then package-manager release copies counted as duplicate
+providers. Reviewed fixes0f0e445/a9d18d2 own the PNG dependency and hash-check
+managed copies while rejecting actual private providers. Original failures and
+read-only provider probe retained in private run; functional retry is running.
+
+## Binary evidence and GUI targeting correction
+
+PCG fresh binary install, six consumer modes and reload passed (six outputs);
+batch-14/binary-install retained. Four dynamic artifacts were independently
+approved at b43543e for immutable pinning; PCG approval at that point was
+source-only. GTK binary install/consumer/reload passed720 outputs. Managed
+provider checks verified all18 public/release copies. GUI reached X11 SDK, blank
+cursor and clipboard success, then old .screen locator timed out250 seconds.
+Guest children were stopped and command settled. Frozen61a uses .vt and
+letterboxed canvases with logical dimensions. Fix1ba0eb4 targets the actual VT,
+inverts core input mapping (nine geometry cases checked), records helper hash
+and caps canvas waits/clicks at10 seconds. Retained all prior failures/probe
+in batch-12/binary-install; full GTK GUI remains pending.

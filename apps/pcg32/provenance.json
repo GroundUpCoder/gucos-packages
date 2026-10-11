@@ -1,0 +1,14 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/pcg32",
+  "archiveSha256": "49d4faae32849c0f852fbbb5b939b2d70ae38921d3e7b0175c9cd0740c9cbd7e",
+  "preparedArchive": {
+    "file": "prepared.tar",
+    "sha256": "f11e7c49b996f21182a2e3d58c576af38f7cc8ebca4a12934bc43f47ed060b15",
+    "provenanceSha256": "81ac0d2097eb328b85091687748512bfbc9d5f3c06d759bdea53ea1fb165cd09",
+    "manifestSha256": "fb69858f363feb3a25a4d9e750bba33b88695c9ee0c7b526f1f7764a3392da16",
+    "fileCount": 27
+  },
+  "scope": "PCG32 bounded scalar adapter SDK; host translation refreshed, guest execution pending"
+}

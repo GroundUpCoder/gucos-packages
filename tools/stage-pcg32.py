@@ -35,7 +35,7 @@ for name, digest in report['retainedFiles'].items():
     assert path.is_relative_to(work) and sha(path.read_bytes()) == digest
 manifest_bytes = (work / 'joined/manifest.json').read_bytes()
 manifest = json.loads(manifest_bytes)
-assert len(manifest['artifacts']) == 17
+assert len(manifest['artifacts']) == report['definition_files'] == 19
 assert all('constructorPriority' not in r for r in manifest['artifacts'])
 assert {'joined/'+r['path'] for r in manifest['artifacts']} <= report['retainedFiles'].keys(), 'Uninventoried definition input'
 files = {}
@@ -131,7 +131,7 @@ upstream release. It exports the two C adapter functions and a488-value checker;
 it does not claim general guest C++ or SIMD support.
 
 Fresh host preparation retains the pinned translator, real WASI SDK30 headers,
-four seeds, O0/O2 agreement, published golden values and17 generated definitions.
+four seeds, O0/O2 agreement, published golden values and19 generated definitions.
 Guest tests require all488 results under whole-program, object and installed
 archive links with both compiler backends. The checker converts any failing
 index to exit1 and prints the full index, avoiding exit-code truncation.

@@ -1,0 +1,31 @@
+gucman: unknown source
+
+gucman: install migration:sqlite3: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 17462 bytes; transfer finished
+gucman: Resolving: migration:sqlite3
+gucman: Downloading manifest for migration:sqlite3 (1860 bytes)
+  Connecting; waiting for response…
+  Downloaded 1860 / 1860 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sqlite3
+gucman: Checking cached object: manifest for migration:sqlite3
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sqlite3 (0 remaining after this)
+gucman: Downloading sqlite3 archive (2200064 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 2.10 MiB (0%)
+  Downloaded 2.10 / 2.10 MiB (100%); transfer finished
+gucman: Verifying download: sqlite3 archive
+gucman: Checking cached object: sqlite3 archive
+gucman: Unpacking: sqlite3
+gucman: Installing sqlite3: 0/2 files
+gucman: Installing sqlite3: 2/2 files
+gucman: Preparing checksums: sqlite3
+gucman: Checksummed sqlite3: 2/2 files
+gucman: Saving transaction: sqlite3
+gucman: Verifying staged files: sqlite3
+gucman: Activating: sqlite3
+Installed migration:sqlite3 3.53.1-1
+

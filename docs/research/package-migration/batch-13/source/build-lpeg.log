@@ -1,0 +1,63 @@
+gucman: unknown source
+
+gucman: build migration:lpeg: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 17462 bytes; transfer finished
+gucman: Resolving: migration:lpeg
+gucman: Downloading manifest for migration:lpeg (1436 bytes)
+  Connecting; waiting for response…
+  Downloaded 1436 / 1436 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:lpeg
+gucman: Checking cached object: manifest for migration:lpeg
+gucman: Resolving: migration:lua55
+gucman: Checking cached object: manifest for migration:lua55
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: lua55 (1 remaining after this)
+Already installed: lua55
+gucman: Package 2/2: lpeg (0 remaining after this)
+gucman: Downloading lpeg source: source.tar (276480 bytes)
+  Connecting; waiting for response…
+  Downloaded 276480 / 276480 bytes (100%); transfer finished
+gucman: Verifying download: lpeg source: source.tar
+gucman: Checking cached object: lpeg source: source.tar
+gucman: Downloading lpeg source: build.sh (619 bytes)
+  Connecting; waiting for response…
+  Downloaded 619 / 619 bytes (100%); transfer finished
+gucman: Verifying download: lpeg source: build.sh
+gucman: Checking cached object: lpeg source: build.sh
+gucman: Downloading lpeg source: test.sh (675 bytes)
+  Connecting; waiting for response…
+  Downloaded 675 / 675 bytes (100%); transfer finished
+gucman: Verifying download: lpeg source: test.sh
+gucman: Checking cached object: lpeg source: test.sh
+Building migration:lpeg; running trusted recipe with access to your guest files
+158 functions, 102308 bytes
+General tests for LPeg library
+LPeg 1.1.0
++
+testing large dynamic Cc
++
++
++
+testing back references
+testing large grammars
+testing UTF-8 ranges
+testing 're' module
+OK
+LPEG-UPSTREAM-PASS
+LUA-PLUGIN-PASS
+gucman: Installing lpeg: 0/5 files
+gucman: Installing lpeg: 5/5 files
+gucman: Preparing checksums: lpeg
+gucman: Checksummed lpeg: 5/5 files
+gucman: Saving transaction: lpeg
+gucman: Verifying staged files: lpeg
+gucman: Activating: lpeg
+Installed migration:lpeg 1.1.0-1
+
+120a3db5cb214b0449f27eb708042c16d1a15ca27ce81d038a3704eba42030d7  /home/user/migration-export.tar
+172544
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

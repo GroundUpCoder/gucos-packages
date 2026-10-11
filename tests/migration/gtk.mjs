@@ -5,14 +5,15 @@ import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import {createRequire} from 'node:module';
 import assert from 'node:assert/strict';
-const require=createRequire(new URL('../../../wasm-posix/package.json',import.meta.url));
+import {visibleCanvas,canvasPosition,canvasHelperSha256} from './canvas.mjs';
+const require=createRequire(new URL('./package.json',import.meta.url));
 const {PNG}=require('pngjs');
 assert(process.env.MACHINE_JOB_ID,'machine-job browser reservation required');
 const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'';
 assert(!attempt||/^[a-zA-Z0-9_-]+$/.test(attempt));
 const label='gtk-functional'+(attempt?'-'+attempt:'');
 await assert.rejects(access(resolve(run,label+'.json')),{code:'ENOENT'});
-const report={status:'running',startedAt:new Date().toISOString()};
+const report={status:'running',startedAt:new Date().toISOString(),canvasHelperSha256};
 let s,pending;
 try {
  const config=JSON.parse(await readFile(resolve(run,'config.json')));
@@ -36,11 +37,32 @@ try {
   assert.deepEqual(installed,expected,'Installed closure manifest: '+name);
  }
  await s.page.evaluate(async text=>shell.busybox.write('/tmp/gtk-closure.sha256',new TextEncoder().encode(text)),checksums.toString());
- await s.command(`set -eu
-sha256sum -c /tmp/gtk-closure.sha256
-for library in libcairo.so libXau.so libxcb.so libX11.so libXext.so libXrender.so libXfixes.so libXi.so libXtst.so; do
- test "$(find /usr/local -name "$library")" = "/usr/local/lib/$library"
-done`);
+ await s.command('sha256sum -c /tmp/gtk-closure.sha256');
+ const libraries=['libcairo.so','libXau.so','libxcb.so','libX11.so','libXext.so','libXrender.so','libXfixes.so','libXi.so','libXtst.so'];
+ const found=await s.command(`set -eu
+for library in ${libraries.join(' ')}; do find /usr/local -name "$library"; done`);
+ const paths=found.trim().split('\n');assert.equal(new Set(paths).size,paths.length);
+ const expectedHashes=new Map(checksums.toString().trim().split('\n').map(line=>[line.slice(66),line.slice(0,64)]));
+ report.providerCopies=[];
+ for(const library of libraries){
+  const publicPath='/usr/local/lib/'+library,owner=library==='libcairo.so'?'cairo':'x11-shared';
+  const matches=paths.filter(path=>path.endsWith('/'+library));
+  assert.equal(matches.filter(path=>path===publicPath).length,1,'One public provider: '+library);
+  for(const path of matches){
+   if(path!==publicPath){
+    const prefix='/usr/local/lib/gucman/packages/'+owner+'/';
+    assert(path.startsWith(prefix),'Unexpected private provider: '+path);
+    const parts=path.slice(prefix.length).split('/');
+    assert(parts.length===3&&/^release\.[a-zA-Z0-9]+$/.test(parts[0])&&parts[1]==='lib'&&parts[2]===library,'Unexpected managed provider: '+path);
+   }
+   const hash=await s.page.evaluate(async path=>{
+    const bytes=await shell.busybox.read(path);
+    return [...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(b=>b.toString(16).padStart(2,'0')).join('');
+   },path);
+   assert.equal(hash,expectedHashes.get(publicPath),'Managed/public provider payload: '+path);
+   report.providerCopies.push({path,sha256:hash,kind:path===publicPath?'public':'managed-release'});
+  }
+ }
  await s.page.evaluate(async encoded=>shell.busybox.write('/tmp/migration-gtk.tar',Uint8Array.from(atob(encoded),c=>c.charCodeAt(0))),archive.toString('base64'));
  pending=s.command(`set -eu
 mkdir -p /tmp/migration-gtk
@@ -81,19 +103,19 @@ echo GTK-X11-PACKAGE-PASS`);
   pending.then(()=>{throw Error('GTK ended before '+text);})
  ]);
  await marker('GTK-X11-READY');await marker('GTK-X11-CLIPBOARD-PASS');
- const canvas=s.page.locator('.screen:not([hidden]) canvas').last();
+ const canvas=await visibleCanvas(s.page);
  async function point(name){
   const log=await s.page.evaluate(()=>shell.busybox.log);
   const m=log.match(new RegExp('GTK-X11-'+name+' (-?\\d+) (-?\\d+) (\\d+) (\\d+)'));
   assert.ok(m,log);return {x:+m[1]+ +m[3]/2,y:+m[2]+ +m[4]/2};
  }
- await canvas.click({position:await point('BUTTON')});
+ await canvas.click({position:await canvasPosition(canvas,await point('BUTTON')),timeout:10000});
  await marker('GTK-X11-CLICK 1');await marker('GTK-X11-SIZE 640 480');
- await canvas.click({position:await point('ENTRY')});
+ await canvas.click({position:await canvasPosition(canvas,await point('ENTRY')),timeout:10000});
  await s.page.keyboard.press('Control+a');await s.page.keyboard.type('hello 123/');
  await s.page.keyboard.press('Shift+KeyA');await s.page.keyboard.press('Shift+Minus');await s.page.keyboard.press('Shift+Digit1');
  await marker('GTK-X11-TEXT hello 123/A_!');
- const frame=await canvas.screenshot();await writeFile(resolve(run,label+'.png'),frame,{flag:'wx'});
+ const frame=await canvas.screenshot({timeout:10000});await writeFile(resolve(run,label+'.png'),frame,{flag:'wx'});
  const png=PNG.sync.read(frame);let red=0,blue=0;
  for(let i=0;i<png.data.length;i+=4){const [r,g,b]=png.data.subarray(i,i+3);if(r>180&&g<100&&b<100)red++;if(b>100&&b>r*2&&b>g*1.5)blue++;}
  report.pixels={red,blue};assert.ok(red>500&&blue>500,JSON.stringify(report.pixels));

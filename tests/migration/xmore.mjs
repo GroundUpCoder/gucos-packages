@@ -4,6 +4,7 @@ import {readFile,writeFile,access} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
+import {visibleCanvas,canvasPosition,canvasHelperSha256} from './canvas.mjs';
 assert(process.env.MACHINE_JOB_ID,'machine-job browser reservation required');
 const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'';
 assert(!attempt||/^[a-zA-Z0-9_-]+$/.test(attempt));
@@ -71,13 +72,15 @@ wait "$app"
 app=
 echo ${name.toUpperCase()}-PASS`);pending.catch(()=>{});
   await Promise.race([s.page.waitForFunction(t=>shell.busybox?.log.includes(t),name.toUpperCase()+'-READY',{timeout:180000}),pending.then(()=>{throw Error(name+' ended before GUI readiness');})]);
-  const canvas=s.page.locator('.screen:not([hidden]) canvas').last();
+  report.canvasHelperSha256=canvasHelperSha256;
+  const canvas=await visibleCanvas(s.page);
   if(name==='xmag'){
-   await canvas.click({position:{x:220,y:220}});await s.page.keyboard.press('q');
+   await canvas.click({position:await canvasPosition(canvas,{x:220,y:220}),timeout:10000});await s.page.keyboard.press('q');
   }else{
    const text=await s.page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/tmp/bitmap-coordinates')));
    const [x,y]=text.trim().split(' ').map(Number);assert(Number.isFinite(x)&&Number.isFinite(y));
-   const box=await canvas.boundingBox();assert(box);await s.page.mouse.move(box.x+x,box.y+y);
+   const point=await canvasPosition(canvas,{x,y});
+   const box=await canvas.boundingBox();assert(box);await canvas.focus({timeout:10000});await s.page.mouse.move(box.x+point.x,box.y+point.y);
    await s.page.keyboard.press('i');await s.page.keyboard.press('Control+s');
    await s.page.waitForFunction(async()=>{const b=await shell.busybox.read('/tmp/sample.xbm');return b&&new TextDecoder().decode(b).includes('0xff');},null,{timeout:15000});
    await s.page.keyboard.press('q');await s.page.evaluate(()=>shell.busybox.write('/tmp/bitmap-done',new TextEncoder().encode('yes')));
