@@ -17,7 +17,7 @@ const reload=process.argv.includes('--reload');
 const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'first';
 assert(/^[a-zA-Z0-9_-]+$/.test(attempt));const stem='puzzles-jwm-'+attempt+(reload?'-reload':'');
 await assert.rejects(access(resolve(run,stem+'.json')),{code:'ENOENT'});
-const report={status:'running',startedAt:new Date().toISOString(),scope:'Fifteen only: real JWM menu, move/undo, GTK save/load, quit/relaunch'};
+const report={status:'running',startedAt:new Date().toISOString(),scope:reload?'Fifteen browser reload: persisted bytes, JWM launch, GTK load, prior board pixels, quit':'Fifteen only: real JWM menu, move/undo, GTK save/load, quit/relaunch'};
 async function bounded(p,ms,label){let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms);})]);}finally{clearTimeout(timer);}}
 let s,d;
 try{
@@ -88,4 +88,5 @@ finally{
   try{await bounded(s.close(),30000,'Session closure exceeded 30 seconds');}catch(e){report.cleanupError=String(e);report.status='failed';}
  }
  await writeFile(resolve(run,stem+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});
+ if(report.status!=='passed')process.exitCode=1;
 }
