@@ -1,0 +1,187 @@
+{
+  "doom": {
+    "format": 1,
+    "name": "doom",
+    "version": "0.1.0-3",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "sdl3-vt"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59257/migration/doom/source.tar",
+        "sha256": "9bada6dfbaae60491f2fbb7fb306eb64a65346ea1c85dac9e3859345dde5ac4b",
+        "size": 6000640
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59257/migration/doom/build.sh",
+        "sha256": "9ee2736c363eb2111bcacd1d2f9217922fc11f8b375c7c6cd60241268220e427",
+        "size": 638
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59257/migration/doom/test.sh",
+        "sha256": "0c458c9abb97b710a0204a51214ed84bb06c6c05d41d495d904688bf0c108a78",
+        "size": 691
+      },
+      {
+        "path": "launch.sh",
+        "url": "http://127.0.0.1:59257/migration/doom/launch.sh",
+        "sha256": "bd3a8ddd9380679fbcfb12a2fd9e009415000b0205f04c99ab611863b73e69ac",
+        "size": 275
+      },
+      {
+        "path": "gucos-doom.desktop",
+        "url": "http://127.0.0.1:59257/migration/doom/gucos-doom.desktop",
+        "sha256": "41a21567ee933ecf90bddf97ed3a477dd48b6cce3c9b9fbeb495d46abb629630",
+        "size": 85
+      },
+      {
+        "path": "doom-shareware-notice.txt",
+        "url": "http://127.0.0.1:59257/migration/doom/doom-shareware-notice.txt",
+        "sha256": "1482321ff0640a41f039d771f7a2abe62b32ff76f6fd458c291cb981df94d083",
+        "size": 8656
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/doom",
+        "mode": 493
+      },
+      {
+        "path": "libexec/doom",
+        "mode": 493
+      },
+      {
+        "path": "share/applications/gucos-doom.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/doom/1-LICENSE",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/doom/2-LICENSE",
+        "mode": 420
+      },
+      {
+        "path": "share/games/doom/doom1.wad",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/doom/doom-shareware-notice.txt",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/doom/1-LICENSE",
+      "share/licenses/doom/2-LICENSE",
+      "share/licenses/doom/doom-shareware-notice.txt"
+    ]
+  },
+  "quake": {
+    "format": 1,
+    "name": "quake",
+    "version": "0.1.0-3",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "sdl3-vt"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59257/migration/quake/source.tar",
+        "sha256": "771ae475b536124d38ee7559c3973b73911dcc69deedf4f69e124ebb6c410314",
+        "size": 20121600
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59257/migration/quake/build.sh",
+        "sha256": "2851fe2b0c6f33ec865185c130e883afdaa6ba82c11496fbd8d971c8cada7f83",
+        "size": 758
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59257/migration/quake/test.sh",
+        "sha256": "5334965941a0ff3c1d531d0dd2563fc3619fbc798dc677d56170bd6b72a011c9",
+        "size": 1204
+      },
+      {
+        "path": "launch.sh",
+        "url": "http://127.0.0.1:59257/migration/quake/launch.sh",
+        "sha256": "ad79b36364232de43912407670532b27be4c4c43376f0c15ce41aaa8a3684c86",
+        "size": 612
+      },
+      {
+        "path": "gucos-quake.desktop",
+        "url": "http://127.0.0.1:59257/migration/quake/gucos-quake.desktop",
+        "sha256": "3e61668ab7454d9edfa839f37e162f64b13a12cf102c8da6490cee9cf975b1ee",
+        "size": 87
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/quake",
+        "mode": 493
+      },
+      {
+        "path": "libexec/quake",
+        "mode": 493
+      },
+      {
+        "path": "share/applications/gucos-quake.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/quake/1-gnu.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/quake/2-SHAREWARE-LICENSE.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/quake/id1/pak0.pak",
+        "mode": 420
+      },
+      {
+        "path": "share/quake/id1/autoexec.cfg",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/quake/LICENSE-INFO.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/quake/PROVENANCE.md",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/quake/1-gnu.txt",
+      "share/licenses/quake/2-SHAREWARE-LICENSE.txt",
+      "share/licenses/quake/LICENSE-INFO.txt",
+      "share/licenses/quake/PROVENANCE.md"
+    ]
+  }
+}

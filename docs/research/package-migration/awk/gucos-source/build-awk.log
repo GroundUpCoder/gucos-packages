@@ -1,0 +1,1103 @@
+gucman: unknown source
+
+{
+  tail: '. yes\n' +
+    'checking for long long int... yes\n' +
+    'checking for unsigned long long int... (cached) yes\n' +
+    'checking for intmax_t... yes\n' +
+    'checking for uintmax_t... yes\n' +
+    'checking for ssize_t... yes\n' +
+    'checking size of unsigned int... 4\n' +
+    'checking size of unsigned long... 4\n'
+}
+{
+  tail: 'rysubnm\n' +
+    'aryunasgn\n' +
+    'asgext\n' +
+    'assignnumfield\n' +
+    'assignnumfield2\n' +
+    'assignnumfield3\n' +
+    'awkpath\n' +
+    'back89\n' +
+    'backgsub\n' +
+    'badassign1\n' +
+    'badbuild\n' +
+    'callparam\n' +
+    'case-check\n' +
+    'childin\n' +
+    'clobber\n' +
+    'close_status\n' +
+    'closebad\n' +
+    'clsflnam\n' +
+    'cmdlinefsbacknl\n' +
+    'cmdlinefsbacknl2\n' +
+    'compare\n' +
+    'compare2\n' +
+    'concat1\n' +
+    'concat2\n'
+}
+{
+  tail: 'b\n' +
+    'posix_compare\n' +
+    'prdupval\n' +
+    'prec\n' +
+    'printf-corners\n' +
+    'printf0\n' +
+    'printf1\n' +
+    'printfchar\n' +
+    'prmarscl\n' +
+    'prmreuse\n' +
+    'prt1eval\n' +
+    'prtoeval\n' +
+    'rand\n' +
+    'randtest\n' +
+    'module cache: compile failed for /:1835:3601:0.0: WebAssembly.compile(): expected magic word 00 61 73 6d, found 23 20 54 48 @+0\n'
+}
+{
+  tail: ' for /:1835:3601:0.0: WebAssembly.compile(): expected magic word 00 61 73 6d, found 23 20 54 48 @+0\n' +
+    'range1\n' +
+    'range2\n' +
+    'readbuf\n' +
+    'rebrackloc\n' +
+    'rebt8b1\n' +
+    'rebuild\n' +
+    'redfilnm\n' +
+    'regeq\n' +
+    'regex3minus\n' +
+    'regexpbad\n' +
+    'regexpbrack\n' +
+    'regexpbrack2\n' +
+    'regexpbrack3\n' +
+    'regexprange\n' +
+    'regexpuparrow\n'
+}
+{
+  tail: 'bugeval4\n' +
+    'dbugtypedre1\n' +
+    'dbugtypedre2\n' +
+    'delmessy\n' +
+    'delsub\n' +
+    'devfd\n' +
+    'devfd1\n' +
+    'devfd2\n' +
+    'dfacheck1\n' +
+    'dumpvars\n' +
+    'elemnew1\n' +
+    'elemnew2\n' +
+    'elemnew3\n' +
+    'elemnew4\n' +
+    'equiv\n' +
+    'errno\n' +
+    'exit\n' +
+    'fieldwdth\n' +
+    'forcenum\n' +
+    'fpat1\n' +
+    'fpat2\n' +
+    'fpat3\n' +
+    'fpat4\n' +
+    'fpat5\n' +
+    'fpat6\n' +
+    'fpat7\n' +
+    'fpat8\n' +
+    'fpat9\n' +
+    'fpatnull\n' +
+    'fsfwfs\n' +
+    'functab1\n' +
+    'functab2\n'
+}
+gucman: build migration:awk: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20978 bytes; transfer finished
+gucman: Resolving: migration:awk
+gucman: Downloading manifest for migration:awk (1338 bytes)
+  Connecting; waiting for response…
+  Downloaded 1338 / 1338 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:awk
+gucman: Checking cached object: manifest for migration:awk
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: awk (0 remaining after this)
+gucman: Downloading awk source: source.tar (19312640 bytes)
+  Connecting; waiting for response…
+  Downloaded 16.94 / 18.42 MiB (91%)
+  Downloaded 18.42 / 18.42 MiB (100%); transfer finished
+gucman: Verifying download: awk source: source.tar
+gucman: Checking cached object: awk source: source.tar
+gucman: Downloading awk source: build.sh (1383 bytes)
+  Connecting; waiting for response…
+  Downloaded 1383 / 1383 bytes (100%); transfer finished
+gucman: Verifying download: awk source: build.sh
+gucman: Checking cached object: awk source: build.sh
+gucman: Downloading awk source: test.sh (555 bytes)
+  Connecting; waiting for response…
+  Downloaded 555 / 555 bytes (100%); transfer finished
+gucman: Verifying download: awk source: test.sh
+gucman: Checking cached object: awk source: test.sh
+Building migration:awk; running trusted recipe with access to your guest files
+checking for a BSD-compatible install... ./build-aux/install-sh -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... ./build-aux/install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... wasm32-unknown-none
+checking host system type... wasm32-unknown-none
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... no
+checking whether cc accepts -g... yes
+checking for cc option to enable C11 features... unsupported
+checking for cc option to enable C99 features... unsupported
+checking for cc option to enable C89 features... unsupported
+checking whether cc understands -c and -o together... yes
+checking dependency style of cc... none
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for stdbool.h... yes
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for bison... no
+checking for byacc... no
+checking whether ln -s works... yes
+checking for gcc... (cached) cc
+checking whether the compiler supports GNU C... (cached) no
+checking whether cc accepts -g... (cached) yes
+checking for cc option to enable C11 features... (cached) unsupported
+checking for cc option to enable C99 features... (cached) unsupported
+checking for cc option to enable C89 features... (cached) unsupported
+checking whether cc understands -c and -o together... (cached) yes
+checking dependency style of cc... (cached) none
+checking how to run the C preprocessor... cc -E
+checking for variable-length arrays... no: __STDC_NO_VLA__ is defined
+checking how to run the C preprocessor... cc -E
+checking for ranlib... ranlib
+checking whether make sets $(MAKE)... (cached) yes
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking for special development options... no
+checking for z/OS USS compilation... no
+checking for library containing strerror... none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking if we are using EBCDIC... no
+checking for a sed that does not truncate output... /bin/sed
+checking whether NLS is requested... no
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld... cc
+checking if the linker (cc) is GNU ld... no
+checking for shared library run path origin... done
+checking 32-bit host C ABI... yes
+checking for ELF binary format... no
+checking for the common suffixes of directories in the library search path... lib,lib,lib
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking whether to use NLS... no
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... no
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for locale.h... yes
+checking for libintl.h... no
+checking for mcheck.h... no
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for stddef.h... yes
+checking for string.h... (cached) yes
+checking for spawn.h... yes
+checking for sys/procctl.h... no
+checking for sys/sysctl.h... no
+checking for sys/ioctl.h... yes
+checking for sys/param.h... yes
+checking for sys/personality.h... no
+checking for sys/select.h... yes
+checking for sys/socket.h... yes
+checking for sys/time.h... (cached) yes
+checking for uchar.h... yes
+checking for unistd.h... (cached) yes
+checking for termios.h... yes
+checking for stropts.h... no
+checking for wchar.h... (cached) yes
+checking for wctype.h... yes
+checking for bool, true, false... no
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for memory.h... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... int
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for unsigned long long int... (cached) yes
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for ssize_t... yes
+checking size of unsigned int... 4
+checking size of unsigned long... 4
+checking for socklen_t... yes
+checking for getaddrinfo... yes
+checking for library containing fmod... none required
+checking for library containing isinf... no
+checking for library containing ismod... no
+checking for library containing isnan... no
+checking for __etoa_l... no
+checking for atexit... yes
+checking for btowc... yes
+checking for fmod... yes
+checking for fwrite_unlocked... no
+checking for gai_strerror... yes
+checking for getgrent... no
+checking for getgroups... no
+checking for grantpt... yes
+checking for isascii... yes
+checking for isblank... yes
+checking for gettimeofday... yes
+checking for clock_gettime... yes
+checking for lstat... yes
+checking for getdtablesize... no
+checking for _NSGetExecutablePath... no
+checking for posix_spawnp... yes
+checking for mbrtoc32... yes
+checking for c32rtomb... yes
+checking for mtrace... no
+checking for personality... no
+checking for posix_openpt... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for setsid... yes
+checking for sigprocmask... yes
+checking for procctl... no
+checking for sysctl... no
+checking for strcasecmp... yes
+checking for strcoll... yes
+checking for strftime... yes
+checking for strncasecmp... yes
+checking for strsignal... yes
+checking for timegm... yes
+checking for waitpid... yes
+checking for wctype... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking whether C compiler accepts ... yes
+checking size of void *... 4
+checking whether getpgrp requires zero arguments... yes
+checking for printf %F format... yes
+checking for printf %a format... yes
+checking for gethostbyname... no
+checking for gethostbyname in -lnsl... no
+checking for connect... yes
+checking where to find the socket library calls... the standard library
+checking for struct stat.st_blksize... yes
+checking for struct passwd.pw_passwd... yes
+checking for struct group.gr_passwd... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for cc options needed to detect all undeclared functions... none needed
+checking for struct tm.tm_zone... yes
+checking whether char is unsigned... no
+checking for an ANSI C-conforming const... yes
+checking for C/C++ restrict keyword... __restrict__
+checking for inline... inline
+checking for preprocessor stringizing operator... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating support/Makefile
+config.status: creating awklib/Makefile
+config.status: creating doc/Makefile
+config.status: creating extras/Makefile
+config.status: creating po/Makefile.in
+config.status: creating test/Makefile
+config.status: creating gawkbug
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make  all-recursive
+make[1]: Entering directory '/tmp/gucman.adguuu/builds/awk/source'
+Making all in support
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/support'
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o dfa.o dfa.c
+/__wasm_posix__/include/limits.h:27: warning: macro 'RE_DUP_MAX' redefined with an incompatible definition
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o getopt.o getopt.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o getopt1.o getopt1.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o localeinfo.o localeinfo.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o minrx.o minrx.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o random.o random.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o regex.o regex.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o malloc/dynarray_at_failure.o malloc/dynarray_at_failure.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o malloc/dynarray_emplace_enlarge.o malloc/dynarray_emplace_enlarge.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o malloc/dynarray_finalize.o malloc/dynarray_finalize.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o malloc/dynarray_resize.o malloc/dynarray_resize.c
+cc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o malloc/dynarray_resize_clear.o malloc/dynarray_resize_clear.c
+rm -f libsupport.a
+ar cru libsupport.a dfa.o getopt.o getopt1.o localeinfo.o minrx.o random.o regex.o malloc/dynarray_at_failure.o malloc/dynarray_emplace_enlarge.o malloc/dynarray_finalize.o malloc/dynarray_resize.o malloc/dynarray_resize_clear.o  
+ranlib libsupport.a
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/support'
+Making all in .
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source'
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o array.o array.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o awkgram.o awkgram.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o builtin.o builtin.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o cint_array.o cint_array.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o command.o command.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o debug.o debug.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o eval.o eval.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o ext.o ext.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o field.o field.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o floatcomp.o floatcomp.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o gawkapi.o gawkapi.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o gawkmisc.o gawkmisc.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o int_array.o int_array.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o io.o io.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o main.o main.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o mpfr.o mpfr.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o msg.o msg.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o node.o node.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o printf.o printf.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o profile.o profile.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o re.o re.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o replace.o replace.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o str_array.o str_array.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o symbol.o symbol.c
+cc -DDEFPATH='".:/usr/local/share/awk"' -DDEFLIBPATH="\"/usr/local/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/local/share/locale"' -I"./support" -I.   -D__unix__ -O2 --enable-fork -O2 --enable-fork -c -o version.o version.c
+cc -O2 --enable-fork -O2 --enable-fork   -o gawk array.o awkgram.o builtin.o cint_array.o command.o debug.o eval.o ext.o field.o floatcomp.o gawkapi.o gawkmisc.o int_array.o io.o main.o mpfr.o msg.o node.o printf.o profile.o re.o replace.o str_array.o symbol.o version.o support/libsupport.a       
+1374 functions, 5429990 bytes
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source'
+Making all in extras
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/extras'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/extras'
+Making all in doc
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/doc'
+Making all in awklib
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/awklib'
+rm -f pwcat.c
+ln -s ./eg/lib/pwcat.c .
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I.. -I../support -D__unix__  -O2 --enable-fork -c -o pwcat.o pwcat.c
+cc  -O2 --enable-fork   -o pwcat pwcat.o  
+5 functions, 6819 bytes
+rm -f grcat.c
+ln -s ./eg/lib/grcat.c .
+cc -DHAVE_CONFIG_H -I. -I..  -I.. -I.. -I../support -D__unix__  -O2 --enable-fork -c -o grcat.o grcat.c
+cc  -O2 --enable-fork   -o grcat grcat.o  
+2 functions, 4422 bytes
+sed 's;/usr/local/libexec/awk;/usr/local/libexec/awk;' < ./eg/lib/passwdawk.in > passwd.awk
+sed 's;/usr/local/libexec/awk;/usr/local/libexec/awk;' < ./eg/lib/groupawk.in > group.awk
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/awklib'
+Making all in po
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/po'
+Making all in test
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/test'
+make[1]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source'
+make  check-recursive
+make[1]: Entering directory '/tmp/gucman.adguuu/builds/awk/source'
+Making check in support
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/support'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/support'
+Making check in .
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source'
+make  check-local
+make[3]: Entering directory '/tmp/gucman.adguuu/builds/awk/source'
+make[3]: Nothing to be done for 'check-local'.
+make[3]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source'
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source'
+Making check in extras
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/extras'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/extras'
+Making check in doc
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/doc'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/doc'
+Making check in awklib
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/awklib'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/awklib'
+Making check in po
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/po'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/po'
+Making check in test
+make[2]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/test'
+
+Any output from "cmp" is bad news, although some differences
+in floating point values are probably benign -- in particular,
+some systems may omit a leading zero and the floating point
+precision may lead to slightly different output in a few cases.
+
+Locale environment:
+	LC_ALL="C" LANG="C"
+
+======== Starting basic tests ========
+addcomma
+anchgsub
+anchor
+argarray
+argcasfile
+arrayind1
+arrayind2
+arrayind3
+arrayparm
+arrayprm2
+arrayprm3
+arrayref
+arrymem1
+arryref2
+arryref3
+arryref4
+arryref5
+arynasty
+arynocls
+aryprm1
+aryprm2
+aryprm3
+aryprm4
+aryprm5
+aryprm6
+aryprm7
+aryprm8
+aryprm9
+arysubnm
+aryunasgn
+asgext
+assignnumfield
+assignnumfield2
+assignnumfield3
+awkpath
+back89
+backgsub
+badassign1
+badbuild
+callparam
+case-check
+childin
+clobber
+close_status
+closebad
+clsflnam
+cmdlinefsbacknl
+cmdlinefsbacknl2
+compare
+compare2
+concat1
+concat2
+concat3
+concat4
+concat5
+convfmt
+datanonl
+defref
+delargv
+delarpm2
+delarprm
+delfunc
+dfacheck2
+dfamb1
+dfastress
+divzero
+divzero2
+dynlj
+elemnew5
+elemnew6
+eofsplit
+eofsrc1
+escapebrace
+exit2
+exitval1
+exitval2
+exitval3
+fcall_exit
+fcall_exit2
+fieldassign
+fieldindex
+fldchg
+fldchgnf
+fldterm
+fmtmix
+fnamedat
+fnarray
+fnarray2
+fnaryscl
+fnasgnm
+fnmisc
+fordel
+forref
+forsimp
+fsbs
+fscaret
+fsnul1
+fsrs
+fsspcoln
+fstabplus
+funsemnl
+funsmnam
+funstack
+getline
+getline2
+getline3
+getline4
+getline5
+getlnbuf
+getlnfa
+getnr2tb
+getnr2tm
+greek-equiv
+greek-utf
+gsubasgn
+gsubnulli18n
+gsubtest
+gsubtst2
+gsubtst3
+gsubtst4
+gsubtst5
+gsubtst6
+gsubtst7
+gsubtst8
+hex
+hex2
+hex3
+hsprint
+inpref
+inputred
+intest
+intprec
+iobug1
+leaddig
+leadnl
+litoct
+longsub
+longwrds
+manglprm
+match4
+match5
+matchbadarg1
+matchbadarg2
+matchuninitialized
+math
+membug1
+memleak
+memleak4
+messages
+minusstr
+mmap8k
+nasty
+nasty2
+negexp
+negrange
+nested
+nfldstr
+nfloop
+nfneg
+nfset
+nlfldsep
+nlinstr
+nlstrina
+noeffect
+nofile
+nofmtch
+noloop1
+noloop2
+nonl
+noparms
+nors
+nulinsrc
+nulrsend
+numindex
+numrange
+numstr1
+numsubstr
+octsub
+ofmt
+ofmta
+ofmtbig
+ofmtfidl
+ofmts
+ofmtstrnum
+ofs1
+onlynl
+opasnidx
+opasnslf
+paramasfunc1
+paramasfunc2
+paramdup
+paramres
+paramtyp
+paramuninitglobal
+parse1
+parsefld
+parseme
+pcntplus
+posix-inf
+posix2008sub
+posix_compare
+prdupval
+prec
+printf-corners
+printf0
+printf1
+printfchar
+prmarscl
+prmreuse
+prt1eval
+prtoeval
+rand
+randtest
+module cache: compile failed for /:1835:3601:0.0: WebAssembly.compile(): expected magic word 00 61 73 6d, found 23 20 54 48 @+0
+range1
+range2
+readbuf
+rebrackloc
+rebt8b1
+rebuild
+redfilnm
+regeq
+regex3minus
+regexpbad
+regexpbrack
+regexpbrack2
+regexpbrack3
+regexprange
+regexpuparrow
+regrange
+reindops
+reparse
+resplit
+rri1
+rs
+rscompat
+rsnul1nl
+rsnulbig
+rsnulbig2
+rsnullre
+rsnulw
+rstest1
+rstest2
+rstest3
+rstest4
+rstest5
+rswhite
+scalar
+sclforin
+sclifin
+setrec0
+setrec1
+shortest-match
+sigpipe1
+sortempty
+sortglos
+spacere
+splitany
+splitargv
+splitarr
+splitdef
+splitvar
+splitwht
+splitwht2
+status-close
+strcat1
+strfieldnum
+strnum1
+strnum2
+strsubscript
+strtod
+subamp
+subback
+subi18n
+subsepnm
+subslash
+substr
+swaplns
+synerr1
+synerr2
+synerr3
+tailrecurse
+tradanch
+trailbs
+tweakfld
+uninit2
+uninit3
+uninit4
+uninit5
+uninitialized
+unterm
+uparrfs
+uplus
+uplus2
+wideidx
+wideidx2
+widesub
+widesub2
+widesub3
+widesub4
+wjposer1
+zero2
+zeroe0
+zeroflag
+======== Done with basic tests ========
+======== Starting Unix tests ========
+fflush
+getlnhd
+localenl
+pid
+pipeio1
+pipeio2
+poundbang
+rtlen
+rtlen01
+space
+strftlng
+======== Done with Unix tests ========
+======== Starting gawk extension tests ========
+aadelete1
+aadelete2
+aarray1
+aasort
+aasorti
+ar2fn_elnew_sc
+ar2fn_elnew_sc2
+ar2fn_fmod
+ar2fn_unxptyp_aref
+ar2fn_unxptyp_val
+argtest
+arraysort
+arraysort2
+arraytype
+asortbool
+asortsymtab
+backw
+badargs
+beginfile1
+beginfile2
+binmode1
+charasbytes
+clos1way
+clos1way2
+clos1way3
+clos1way4
+clos1way5
+clos1way6
+colonwarn
+crlf
+csv1
+csv2
+csv3
+csvodd
+dbugarray1
+dbugarray2
+dbugarray3
+dbugarray4
+dbugeval
+dbugeval2
+dbugeval3
+dbugeval4
+dbugtypedre1
+dbugtypedre2
+delmessy
+delsub
+devfd
+devfd1
+devfd2
+dfacheck1
+dumpvars
+elemnew1
+elemnew2
+elemnew3
+elemnew4
+equiv
+errno
+exit
+fieldwdth
+forcenum
+fpat1
+fpat2
+fpat3
+fpat4
+fpat5
+fpat6
+fpat7
+fpat8
+fpat9
+fpatnull
+fsfwfs
+functab1
+functab2
+functab3
+functab6
+funlen
+fwtest
+fwtest2
+fwtest3
+fwtest4
+fwtest5
+fwtest6
+fwtest7
+fwtest8
+genpot
+gensub
+gensub2
+gensub3
+gensub4
+gensub5
+getlndir
+gnuops2
+gnuops3
+gnureops
+gsubind
+hexfloat
+icasefs
+icasers
+id
+igncdym
+igncfs
+ignrcas2
+ignrcas4
+ignrcase
+incdupe
+incdupe2
+incdupe3
+incdupe4
+incdupe5
+incdupe6
+incdupe7
+include
+include2
+indirectbuiltin
+indirectbuiltin3
+indirectbuiltin4
+indirectbuiltin5
+indirectbuiltin6
+indirectcall
+indirectcall2
+indirectcall3
+intarray
+iolint
+isarrayunset
+lint
+lintexp
+lintindex
+lintint
+lintlength
+lintold
+lintplus
+lintplus2
+lintplus3
+lintset
+lintsubarray
+linttypeof
+lintwarn
+manyfiles
+match1
+match2
+match3
+mdim1
+mdim2
+mdim3
+mdim4
+mdim5
+mdim6
+mdim7
+mdim8
+mdim9
+memleak2
+memleak3
+mixed1
+mktime
+modifiers
+muldimposix
+nastyparm
+negtime
+next
+nondec
+nondec2
+nonfatal1
+nonfatal2
+nonfatal3
+nsawk1a
+nsawk1b
+nsawk1c
+nsawk2a
+nsawk2b
+nsbad
+nsbad2
+nsbad3
+nsbad_cmd
+nsforloop
+nsfuncrecurse
+nsidentifier
+nsindirect1
+nsindirect2
+nsprof1
+nsprof2
+nsprof3
+octdec
+patsplit
+posix
+printfbad1
+printfbad2
+printfbad3
+printfbad4
+printhuge
+procinfs
+profile0
+profile1
+profile2
+profile3
+profile4
+profile5
+profile6
+profile7
+profile8
+profile9
+profile10
+profile11
+profile12
+profile13
+profile14
+profile15
+profile16
+profile17
+pty1
+pty2
+re_test
+rebuf
+regexsub
+reginttrad
+regnul1
+regnul2
+regx8bit
+reint
+reint2
+rsgetline
+rsglstdin
+rsstart1
+rsstart2
+rsstart3
+rstest6
+sandbox1
+shadow
+shadowbuiltin
+sortfor
+sortfor2
+sortu
+sourcesplit
+split_after_fpat
+splitarg4
+strftfld
+strftime
+strtonum
+strtonum1
+stupid1
+stupid2
+stupid3
+stupid4
+stupid5
+switch2
+symtab1
+symtab2
+symtab3
+symtab4
+symtab5
+symtab6
+symtab7
+symtab8
+symtab9
+symtab10
+symtab11
+symtab12
+timeout
+typedregex1
+typedregex2
+typedregex3
+typedregex4
+typedregex5
+typedregex6
+typeof1
+typeof2
+typeof3
+typeof4
+typeof5
+typeof6
+typeof7
+typeof8
+typeof9
+unicode1
+watchpoint1
+gawk is not compiled to support the array debug tests
+======== Done with gawk extension tests ========
+/bin/sh: locale: not found
+%%%%%%%%%% Inadequate locale support: skipping charset tests.
+%%%%%%%%%% At least en_US.UTF-8, fr_FR.UTF-8, ru_RU.UTF-8, ja_JP.UTF-8 and el_GR.iso88597@euro are needed.
+======== Starting dynamic extension tests ========
+dynamic extension tests not supported on this system
+======== Done with dynamic extension tests ========
+======== Starting MPFR tests ========
+MPFR tests not supported on this system
+======== Done with MPFR tests ========
+======== Starting PMA tests ========
+PMA tests not supported on this system
+======== Done with PMA tests ========
+======== Starting machine-specific tests ========
+If any of these tests fail, don't worry too much.
+double1
+double2
+inf-nan-torture
+intformat
+======== Done with machine-specific tests ========
+make[3]: Entering directory '/tmp/gucman.adguuu/builds/awk/source/test'
+ALL TESTS PASSED
+make[3]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/test'
+make[2]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source/test'
+make[1]: Leaving directory '/tmp/gucman.adguuu/builds/awk/source'
+GNU-AWK-FEATURES-PASS
+AWK-ACCEPTANCE-PASS
+gucman: Installing awk: 0/5 files
+gucman: Installing awk: 5/5 files
+gucman: Preparing checksums: awk
+gucman: Checksummed awk: 5/5 files
+gucman: Saving transaction: awk
+gucman: Verifying staged files: awk
+gucman: Activating: awk
+Installed migration:awk 5.4.1-1
+
+{
+  tail: ' Checksummed awk: 5/5 files\n' +
+    'gucman: Saving transaction: awk\n' +
+    'gucman: Verifying staged files: awk\n' +
+    'gucman: Activating: awk\n' +
+    'Installed migration:awk 5.4.1-1\n' +
+    '1da2a85aba885c9fd34b9697092c86be5399b289e0f674b18a5915781bc121fe  /home/user/migration-export.tar\n'
+}
+1da2a85aba885c9fd34b9697092c86be5399b289e0f674b18a5915781bc121fe  /home/user/migration-export.tar
+12820992
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
