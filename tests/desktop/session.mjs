@@ -2,6 +2,7 @@
 // requests. Never attempt a second BusyBoxSession.start while it is running.
 import assert from 'node:assert/strict';
 import {installObserver} from './menu.mjs';
+async function bounded(p,ms,label){let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error(label)),ms);})]);}finally{clearTimeout(timer);}}
 export async function desktopSession(s){
  const helper=await installObserver(s);
  const pending=s.command(`set -eu
@@ -30,7 +31,8 @@ while :; do
  if [ -f /tmp/jwm-test-control/stop ]; then break; fi
  code=0
  sh /tmp/jwm-test-control/$n.request > /tmp/jwm-test-control/$n.output 2>&1 || code=$?
- echo "$code" > /tmp/jwm-test-control/$n.code
+ echo "$code" > /tmp/jwm-test-control/$n.code.tmp
+mv /tmp/jwm-test-control/$n.code.tmp /tmp/jwm-test-control/$n.code
  n=$((n+1))
 done
 kill -0 "$wm"
@@ -45,16 +47,16 @@ echo JWM-CONTROL-PASS`);
  await race(s.page.waitForFunction(()=>shell.busybox?.log.includes('JWM-CONTROL-READY'),null,{timeout:60000}));
  let serial=0;
  const write=async(path,text)=>s.page.evaluate(async({path,text})=>shell.busybox.write(path,new TextEncoder().encode(text)),{path,text});
- async function command(script){
+ function command(script){return bounded((async()=>{
   const stem='/tmp/jwm-test-control/'+(++serial);
   await write(stem+'.request',script+'\n');await write(stem+'.ready','ready');
-  await race(s.page.waitForFunction(async path=>!!await shell.busybox.read(path),stem+'.code',{timeout:45000}));
+  await race(s.page.waitForFunction(async path=>/^[0-9]+\n$/.test(new TextDecoder().decode(await shell.busybox.read(path)||[])),stem+'.code',{timeout:45000}));
   const {code,output}=await s.page.evaluate(async stem=>({code:new TextDecoder().decode(await shell.busybox.read(stem+'.code')),output:new TextDecoder().decode(await shell.busybox.read(stem+'.output'))}),stem);
-  assert.equal(Number(code),0,output);return output;
- }
- return {...s,command,helper,pending,finish:async()=>{
+  assert.match(code,/^[0-9]+\n$/);assert.equal(Number(code),0,output);return output;
+ })(),45000,'Complete JWM observation request exceeded 45 seconds');}
+ return {...s,command,helper,pending,finish:()=>bounded((async()=>{
   await write('/tmp/jwm-test-control/stop','stop');await write('/tmp/jwm-test-control/'+(++serial)+'.ready','ready');
-  let timer;try{assert.match(await Promise.race([pending,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('JWM shutdown exceeded 30 seconds')),30000);})]),/JWM-CONTROL-PASS/);}finally{clearTimeout(timer);}
+  assert.match(await pending,/JWM-CONTROL-PASS/);
   await s.page.waitForFunction(()=>[...shell.busybox.windows.values()].filter(v=>v.shown).length===0,null,{timeout:15000});
- }};
+ })(),45000,'Complete JWM shutdown exceeded 45 seconds')};
 }
