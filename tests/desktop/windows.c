@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include <stdlib.h>
 static Window named(Display*d,Window w,const char*target,int depth){
  if(depth>16)return None;
  XWindowAttributes a;if(!XGetWindowAttributes(d,w,&a)||a.map_state!=IsViewable)return None;
@@ -28,21 +27,8 @@ static int property(Display*d,Window w,const char*key,Atom type,Atom value){
  int ok=XGetWindowProperty(d,w,XInternAtom(d,key,False),0,1,False,type,&actual,&format,&count,&rest,&bytes)==Success&&actual==type&&format==32&&count==1;
  if(ok&&value)ok=*(Atom*)bytes==value;if(bytes)XFree(bytes);return ok;
 }
-static Window descend(Display*d,Window w,const char*path){
- char copy[128];if(strlen(path)>=sizeof copy)return None;strcpy(copy,path);
- for(char*part=strtok(copy,".");part;part=strtok(NULL,".")){
-  char*end;unsigned long index=strtoul(part,&end,10);if(*end)return None;
-  Window root,parent,*children=NULL;unsigned count=0;
-  if(!XQueryTree(d,w,&root,&parent,&children,&count))return None;
-  for(unsigned i=0;i<count;i++)for(unsigned j=i+1;j<count;j++){
-   XWindowAttributes a,b;if(!XGetWindowAttributes(d,children[i],&a)||!XGetWindowAttributes(d,children[j],&b)){XFree(children);return None;}
-   if(b.y<a.y||(b.y==a.y&&b.x<a.x)){Window t=children[i];children[i]=children[j];children[j]=t;}
-  }
-  if(index>=count){if(children)XFree(children);return None;}w=children[index];XFree(children);
- }return w;
-}
 int main(int argc,char**argv){
- if(argc<2||argc>4)return 1;Display*d=XOpenDisplay(NULL);if(!d)return 2;
+ if(argc<2||argc>3)return 1;Display*d=XOpenDisplay(NULL);if(!d)return 2;
  Window root=DefaultRootWindow(d);
  for(int i=0;i<300;i++){
   if(!strcmp(argv[1],"wm")&&property(d,root,"_NET_SUPPORTING_WM_CHECK",XA_WINDOW,None)){
@@ -56,16 +42,7 @@ int main(int argc,char**argv){
     if(property(d,children[k],"_NET_WM_WINDOW_TYPE",XA_ATOM,XInternAtom(d,"_NET_WM_WINDOW_TYPE_MENU",False))&&XGetWindowAttributes(d,children[k],&a)&&a.map_state==IsViewable){w=children[k];break;}
    }
    if(children)XFree(children);
-  }else if(argc>=3)w=named(d,root,argv[2],0);
-  if(w&&!strcmp(argv[1],"child")&&argc==4)w=descend(d,w,argv[3]);
-  if(w&&!strcmp(argv[1],"pixels")){
-   XWindowAttributes a;if(!XGetWindowAttributes(d,w,&a))return 4;
-   int height=argc==4?atoi(argv[3]):a.height;if(height<1||height>a.height)return 4;
-   XImage*im=XGetImage(d,w,0,0,a.width,height,AllPlanes,ZPixmap);if(!im)return 4;
-   unsigned long hash=2166136261UL,first=XGetPixel(im,0,0),different=0;
-   for(int y=0;y<height;y++)for(int x=0;x<a.width;x++){unsigned long pixel=XGetPixel(im,x,y);different+=pixel!=first;hash=(hash^pixel)*16777619UL;}
-   printf("PIXELS %lu %lu %d %d\n",hash,different,a.width,height);XDestroyImage(im);XCloseDisplay(d);return different>10?0:5;
- }
+  }else if(argc==3)w=named(d,root,argv[2],0);
   if(argc==3&&!strcmp(argv[1],"absent")&&!w){puts("WINDOW_ABSENT");XCloseDisplay(d);return 0;}
   if(w&&strcmp(argv[1],"absent")){
    XWindowAttributes a;int x,y;Window child;
