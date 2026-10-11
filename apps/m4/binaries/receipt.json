@@ -1,0 +1,78 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "d5db74831a6f08bd2f87bf52c4f446a38cf0c5664b4c66fd64c7c7e0e09d80d7",
+  "size": 1120768,
+  "guestManifest": {
+    "format": 1,
+    "name": "m4",
+    "version": "1.4.19-1",
+    "dependencies": [
+      "libiconv"
+    ],
+    "dependencyRequirements": {
+      "libiconv": {
+        "version": "1.18-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:58999/migration/m4/source.tar",
+        "sha256": "833993484122f2c9f79f5cc0cde7da68917032f36dc3682cb977f84ebce42309",
+        "size": 14960640
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:58999/migration/m4/build.sh",
+        "sha256": "848b42bde65a55aaf59b2ceedcddfd8255c40d2dfd677284495d5c1f52c41067",
+        "size": 2002
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:58999/migration/m4/test.sh",
+        "sha256": "619f28148ef0f361eeb81cc670d1ee2070bb574859a98cefaa8b2d48a3c93a08",
+        "size": 766
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/m4",
+        "mode": 493
+      },
+      {
+        "path": "share/info/m4.info",
+        "mode": 420
+      },
+      {
+        "path": "share/info/m4.info-1",
+        "mode": 420
+      },
+      {
+        "path": "share/info/m4.info-2",
+        "mode": 420
+      },
+      {
+        "path": "share/man/man1/m4.1",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/m4/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/m4/COPYING"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}
