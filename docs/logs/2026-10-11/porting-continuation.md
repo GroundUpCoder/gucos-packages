@@ -40,3 +40,14 @@ measured by this desktop test; that behavior is separately proven by the
 production terminal Snake test. All failures and final passes are retained in
 docs/research/snake/desktop-gucos-binary with byte-preserved evidence hashes.
 Public acceptance remains pending.
+
+## Snake desktop publication complete
+
+Manifest c1ca6fe and catalog 10c3dbd were independently reviewed and published.
+Production reservation b6051afb passed on os.groundupcoder.com/runtime19609:
+old-to-new JWM, exact payload install, actual menu launch, board pixels, single-q
+close, JWM survival and reload. All 71 packages / 406 active objects / 849,601,657
+bytes passed anonymous HTTP hashes. Reviewer verified committed public evidence
+3f285c2 and approved advancing the baseline to accepted catalog10c3dbd.
+Snake terminal and desktop integration are complete. SDL, MicroPython and the
+remaining historical queue retain their own separate acceptance gates.

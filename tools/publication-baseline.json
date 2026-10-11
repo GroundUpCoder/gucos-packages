@@ -1,4 +1,4 @@
 {
-  "revision": "9390bab6ae40e973fa5082cecff850aefa4c6ac5",
-  "description": "First relocated accepted catalog; historical wasm-posix baseline remains in Git history."
+  "revision": "10c3dbda30f41f140505eeb8c3f979726c6132d3",
+  "description": "Independently reviewed and production-accepted desktop launcher/JWM catalog; 71 entries."
 }
