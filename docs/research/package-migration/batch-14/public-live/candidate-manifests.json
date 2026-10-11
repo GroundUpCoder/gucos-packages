@@ -1,0 +1,81 @@
+{
+  "pcg32": {
+    "format": 1,
+    "name": "pcg32",
+    "version": "0.1.0-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/pcg32/source.tar",
+        "sha256": "49d4faae32849c0f852fbbb5b939b2d70ae38921d3e7b0175c9cd0740c9cbd7e",
+        "size": 51200
+      },
+      {
+        "path": "prepared.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/pcg32/prepared.tar",
+        "sha256": "f11e7c49b996f21182a2e3d58c576af38f7cc8ebca4a12934bc43f47ed060b15",
+        "size": 133120
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/pcg32/build.sh",
+        "sha256": "8243e72b405c9806711c74096a32ca335fbf5bfb165d6cc41a49b943db053643",
+        "size": 692
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/pcg32/test.sh",
+        "sha256": "16a6526a2d99044e31d426700275386e6c898a91f2a6075358a90b2d9059ea8c",
+        "size": 892
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/pcg32-check",
+        "mode": 493
+      },
+      {
+        "path": "include/pcg32/api.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpcg32.a",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/pcg32/LICENSE",
+        "mode": 420
+      },
+      {
+        "path": "share/pcg32/native-values.json",
+        "mode": 420
+      },
+      {
+        "path": "share/pcg32/translation.json",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/pcg32/LICENSE"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/79ce140881d9f49f84d1e0ebad2ce5325ea83dd1/apps/pcg32/binaries/8fa70c7bd11fdfdad5de83ec0bf48436ef9b48742db0cc93a18ca9af4a5aee1c.tar",
+      "sha256": "8fa70c7bd11fdfdad5de83ec0bf48436ef9b48742db0cc93a18ca9af4a5aee1c",
+      "size": 106496
+    }
+  }
+}

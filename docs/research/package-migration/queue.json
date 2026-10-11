@@ -9,7 +9,7 @@
     {
       "id": "2048",
       "kind": "historical-canonical-name",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/2048/wasm-package.json",
       "historicalManifestSha256": "ef89b37a38270f6b77906f9448c4e29faa1154a11d0b28f82f1a20c657af5c68",
       "historicalEvidence": [
@@ -49,11 +49,15 @@
           "scope": "Fresh binary install, installed consumers, browser reload integrity;2048 physical move/restart/quit/cursor restoration passed",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-13/binary-install"
+        },
+        {
+          "scope": "Fresh public immutable install, installed consumers/relink and reload;2048 gameplay or six PCG modes where applicable",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "catalogCommit": "7faceb3acbecd57921c022bfde6baf7b681118ea",
+          "evidence": "docs/research/package-migration/batch-13/public-live"
         }
       ],
-      "blockers": [
-        "Exact artifact review and public acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/2048",
       "sourceReview": {
         "commit": "07befb1c2e8698c4058c57354334adf354715914",
@@ -3910,7 +3914,7 @@
     {
       "id": "sdl3-gfx",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "apps/sdl3-gfx/wasm-package.json",
       "historicalManifestSha256": "bd9754f7603f3e81d3912953daeb32bd22be3e5832b80da0f1a69373f99bff88",
       "historicalEvidence": [
@@ -3932,8 +3936,16 @@
         "sdl3"
       ],
       "mapping": null,
-      "acceptance": [],
-      "blockers": [],
+      "acceptance": [
+        {
+          "scope": "Fresh guest source/core-libc SDL linkage; original static/shared pixel, decoder and mixing tests;15 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-15/source"
+        }
+      ],
+      "blockers": [
+        "Fresh binary consumers/reload, media checks where applicable, artifact review and public acceptance pending."
+      ],
       "candidate": "apps/sdl3-gfx",
       "sourceReview": {
         "commit": "fd443b45d69866e1e906bbc3b36d328f756e582d",
@@ -3944,7 +3956,7 @@
     {
       "id": "sdl3-image",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "apps/sdl3-image/wasm-package.json",
       "historicalManifestSha256": "e03879333f1c0ffea29a0cfe573f194d8398f6cc72d2208b842ade6d654fba61",
       "historicalEvidence": [
@@ -3966,9 +3978,15 @@
         "sdl3"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "scope": "Fresh guest source/core-libc SDL linkage; original static/shared pixel, decoder and mixing tests;15 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-15/source"
+        }
+      ],
       "blockers": [
-        "Fresh guest/binary/reload and browser-specific image/audio acceptance pending."
+        "Fresh binary consumers/reload, media checks where applicable, artifact review and public acceptance pending."
       ],
       "candidate": "apps/sdl3-image",
       "sourceReview": {
@@ -3980,7 +3998,7 @@
     {
       "id": "sdl3-mixer",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "apps/sdl3-mixer/wasm-package.json",
       "historicalManifestSha256": "0ade0656d5d74f9b53cb34e8467dfe514cb0c5a2cfcf8316babbb0e188c9255c",
       "historicalEvidence": [
@@ -4002,9 +4020,15 @@
         "sdl3"
       ],
       "mapping": null,
-      "acceptance": [],
+      "acceptance": [
+        {
+          "scope": "Fresh guest source/core-libc SDL linkage; original static/shared pixel, decoder and mixing tests;15 combined outputs",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-15/source"
+        }
+      ],
       "blockers": [
-        "Fresh guest/binary/reload and browser-specific image/audio acceptance pending."
+        "Fresh binary consumers/reload, media checks where applicable, artifact review and public acceptance pending."
       ],
       "candidate": "apps/sdl3-mixer",
       "sourceReview": {
@@ -4716,7 +4740,7 @@
     {
       "id": "lpeg",
       "kind": "additional-workload",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "scope": "LPeg 1.1.0; requires Lua dynamic-module profile",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [
@@ -4729,11 +4753,15 @@
           "scope": "Fresh binary install, installed consumers, browser reload integrity;2048 physical move/restart/quit/cursor restoration passed",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-13/binary-install"
+        },
+        {
+          "scope": "Fresh public immutable install, installed consumers/relink and reload;2048 gameplay or six PCG modes where applicable",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "catalogCommit": "7faceb3acbecd57921c022bfde6baf7b681118ea",
+          "evidence": "docs/research/package-migration/batch-13/public-live"
         }
       ],
-      "blockers": [
-        "Exact artifact review and public acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/lpeg",
       "sourceReview": {
         "commit": "c9f06a192e2181c86a2bad5629e872b60bd0b047",
@@ -4744,7 +4772,7 @@
     {
       "id": "sqlite-series",
       "kind": "additional-workload",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "scope": "SQLite generate_series loadable extension",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [
@@ -4757,11 +4785,15 @@
           "scope": "Fresh binary install, installed consumers, browser reload integrity;2048 physical move/restart/quit/cursor restoration passed",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-13/binary-install"
+        },
+        {
+          "scope": "Fresh public immutable install, installed consumers/relink and reload;2048 gameplay or six PCG modes where applicable",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "catalogCommit": "7faceb3acbecd57921c022bfde6baf7b681118ea",
+          "evidence": "docs/research/package-migration/batch-13/public-live"
         }
       ],
-      "blockers": [
-        "Exact artifact review and public acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/sqlite-series",
       "sourceReview": {
         "commit": "c9f06a192e2181c86a2bad5629e872b60bd0b047",
@@ -4772,7 +4804,7 @@
     {
       "id": "pcg32",
       "kind": "additional-workload",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "scope": "Host C++ preparation, whole/object/archive differential execution",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [
@@ -4789,11 +4821,15 @@
           "scope": "Fresh binary install, all six installed-consumer modes488 checks each, reload and six payload hashes",
           "evidence": "docs/research/package-migration/batch-14/binary-install",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0"
+        },
+        {
+          "scope": "Fresh public immutable install, installed consumers/relink and reload;2048 gameplay or six PCG modes where applicable",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "catalogCommit": "7faceb3acbecd57921c022bfde6baf7b681118ea",
+          "evidence": "docs/research/package-migration/batch-14/public-live"
         }
       ],
-      "blockers": [
-        "Exact artifact review and public acceptance pending."
-      ],
+      "blockers": [],
       "preparationAudit": "docs/research/package-migration/pcg32-retained-output-audit.json",
       "candidate": "apps/pcg32"
     },
@@ -4851,7 +4887,7 @@
     {
       "id": "lua55",
       "kind": "historical-profile",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "candidate": "apps/lua55",
       "mapping": "Retained Lua5.5 dynamic-module and static embedding profile; preserves baseline Lua5.4",
       "acceptance": [
@@ -4864,11 +4900,15 @@
           "scope": "Fresh binary install, installed consumers, browser reload integrity;2048 physical move/restart/quit/cursor restoration passed",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-13/binary-install"
+        },
+        {
+          "scope": "Fresh public immutable install, installed consumers/relink and reload;2048 gameplay or six PCG modes where applicable",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "catalogCommit": "7faceb3acbecd57921c022bfde6baf7b681118ea",
+          "evidence": "docs/research/package-migration/batch-13/public-live"
         }
       ],
-      "blockers": [
-        "Exact artifact review and public acceptance pending."
-      ],
+      "blockers": [],
       "sourceReview": {
         "commit": "0ccac81ea8ff1967f2ae16b53836557850f75837",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",

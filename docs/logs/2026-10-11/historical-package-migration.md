@@ -174,3 +174,14 @@ Evidence and screenshot retained batch-12/functional. Raw artifact unchanged
 Five-package publication046ac7b/7faceb3 independently approved; prior64 entries
 including concurrent Snake preserved. Catalog69 includes separate Snake work;
 own historical-migration live additions remain44 until five new public gates pass.
+
+## Five public passes and corrected SDL source passes
+
+Reservationa6200c2f passed public install/consumers/reload for Lua55,LPeg,2048,
+SQLite-series andPCG, plus public2048 gameplay;24 combined outputs. Evidence
+retained batch-13/public-live and batch-14/public-live. Own live migration
+additions44 ->49; catalog also includes independently owned Snake.
+Reservation5482e93e passed corrected SDLgfx/image/mixer source and original
+static/shared consumers,15 combined outputs (179712/479744/1290240 bytes).
+Artifacts and batch-15/source evidence retained. Binary/media acceptance pending.
+GTK publication336e2ce/a7e16e0 independently approved and public job queued.

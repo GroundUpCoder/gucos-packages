@@ -1,0 +1,12 @@
+{
+  "candidate-manifests.json": "98a0b4dafe4c1f0764847082392048ff55fd481d0d12e531b2acb9b8c4d29477",
+  "config.json": "4a59b49004c8183551e890606ecccb6db423501b8e0cdfec0872b2f4b1f8e110",
+  "consumers-pcg32.json": "4277f01eec2794d85548a779675e6b2c20e7890c0c419b27b939b216cb62c7d6",
+  "consumers.log": "bf17c8c902a69efedf97ca666bdddb878fb2feeeb7187bb014a1ccbad28b5c84",
+  "install-pcg32.json": "fc697c14299dcc0a238192f78809bafffd78e014d4324c67153500cec70e636a",
+  "install.log": "7b476d35f6fd792bbf48428d4d65904cc45c2db5a6ce4c09b6b8bb0579fcf29d",
+  "observed-runtime.json": "87c8bf902b247a380e61c6337c538c6428620e79d6533803cdbc6aeea2a0fa81",
+  "pcg32.sha256": "1fd18a3d6116e07a26dc46e8e280fc5a157478579498f1d9ffbd3d57622ce675",
+  "reload-pcg32.json": "b7e85a3b538c8f9a871c20247428e5d25a4d28b17b8e6d44ab12a5e154d8c342",
+  "reload.log": "8dbd8081bc4c9f1d3a8a2ecb3f04627626fd59af47be3a8a3a029110a458d718"
+}

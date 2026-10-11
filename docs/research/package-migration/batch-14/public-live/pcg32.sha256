@@ -1,0 +1,6 @@
+d1ce029859bc537bc2f11959bfba8087dbc339b031aa55bd5a61b12e3cfdf4d1  /usr/local/bin/pcg32-check
+eb5830c5a27091b190b3c2ac7c6a8651d549025cac955536f64bf10b7f19b892  /usr/local/include/pcg32/api.h
+bf7bf4e3e9f0951fe99cbdd111c5b00cb4ee9a4059a84ddbba64834dd8f1b950  /usr/local/lib/libpcg32.a
+cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30  /usr/local/share/licenses/pcg32/LICENSE
+07d0d5e25dc48d26015c69883d4dd876ff90fd082640040a10153025271a4260  /usr/local/share/pcg32/native-values.json
+81ac0d2097eb328b85091687748512bfbc9d5f3c06d759bdea53ea1fb165cd09  /usr/local/share/pcg32/translation.json

@@ -1,0 +1,18 @@
+{
+  "2048-console.log": "64cc0fdb055c002b63342c325a206c1944727a6b8b5546c7a198af4db7fc38ea",
+  "2048-functional.json": "551a687186402ce533d6dfe35693a11e8582fbab7b0d26612a99f28160aff878",
+  "2048-functional.log": "7082d93b1ffbf7bce9b033040a530c24b599bf0d909207e07e19c1e5d70dcb7a",
+  "2048.sha256": "934cbd95307e51129381f7ac447000499815444f836cdcf58aa01acb67ffb653",
+  "candidate-manifests.json": "a4cb8a89161bfecc713bb0578f3c5ec0b3f2e19dee7f6727db35be33c7710e8c",
+  "config.json": "53a1e593d7eec5e99c6a1eef301479f6ac87958e859a223e27488ce049b57271",
+  "consumers-lua55-lpeg-2048-sqlite-series.json": "7147782f56fc7fb57a5415e4d9d8d8358bedf2922ab187e084a91f53a88d0edd",
+  "consumers.log": "b4e96091b2c6213fa25aeccafe0e4db9e126dbc4affaf91f5bc79969a7ba8cb8",
+  "install-lua55-lpeg-2048-sqlite-series.json": "6bce053b3ae0912fecbab2a8152b5690a263f3cf5a98c5c3a2f24b0e866bdcdc",
+  "install.log": "7fe9217caaa490383c539e3e2bd731d72cfbd8f2c630d9e87fca5df94258a1c3",
+  "lpeg.sha256": "7e55609e7cb9879143b4b3085b27e0a7241d0a7a45412e2b1aba84c7c9c340a6",
+  "lua55.sha256": "7e2ea9ba504c7d28121c6b0ad65358fd56100a7d86c02bf320ed2bd19dc40590",
+  "observed-runtime.json": "87c8bf902b247a380e61c6337c538c6428620e79d6533803cdbc6aeea2a0fa81",
+  "reload-lua55-lpeg-2048-sqlite-series.json": "60ae65074eb81a5fd06b9cb506ef4e10c119b8a442b8a4f89920e5c358a341ec",
+  "reload.log": "65c2c8a4cfd1d270a4c8ddd7fdd7b0c8afdf4a8854b9aa612b4b6329dd5a3474",
+  "sqlite-series.sha256": "aa593ccb68fb2dd750d8643563cdbf3fe715da3a386f73ef7f25250da10df666"
+}

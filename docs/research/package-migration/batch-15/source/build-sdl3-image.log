@@ -1,0 +1,49 @@
+gucman: unknown source
+
+gucman: build migration:sdl3-image: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19787 bytes; transfer finished
+gucman: Resolving: migration:sdl3-image
+gucman: Downloading manifest for migration:sdl3-image (1463 bytes)
+  Connecting; waiting for response…
+  Downloaded 1463 / 1463 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sdl3-image
+gucman: Checking cached object: manifest for migration:sdl3-image
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sdl3-image (0 remaining after this)
+gucman: Downloading sdl3-image source: source.tar (1792000 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.71 / 1.71 MiB (100%); transfer finished
+gucman: Verifying download: sdl3-image source: source.tar
+gucman: Checking cached object: sdl3-image source: source.tar
+gucman: Downloading sdl3-image source: build.sh (834 bytes)
+  Connecting; waiting for response…
+  Downloaded 834 / 834 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-image source: build.sh
+gucman: Checking cached object: sdl3-image source: build.sh
+gucman: Downloading sdl3-image source: test.sh (397 bytes)
+  Connecting; waiting for response…
+  Downloaded 397 / 397 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-image source: test.sh
+gucman: Checking cached object: sdl3-image source: test.sh
+Building migration:sdl3-image; running trusted recipe with access to your guest files
+203 functions, 168895 bytes
+550 functions, 513097 bytes
+753 functions, 660689 bytes
+SDL3-IMAGE-CONSUMER-PASS
+SDL3-IMAGE-CONSUMER-PASS
+gucman: Installing sdl3-image: 0/5 files
+gucman: Installing sdl3-image: 5/5 files
+gucman: Preparing checksums: sdl3-image
+gucman: Checksummed sdl3-image: 5/5 files
+gucman: Saving transaction: sdl3-image
+gucman: Verifying staged files: sdl3-image
+gucman: Activating: sdl3-image
+Installed migration:sdl3-image 3.2.6-2
+
+70f05fc9813e9d9fec687b13df76afe0d015688d5d473d1b90786189dedea6ff  /home/user/migration-export.tar
+479744
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
