@@ -273,3 +273,22 @@ XMahjongg source candidate `d107353` passed independent review:159 historical
 Git blobs and1064 exact recovered prepared members, with1060C artifacts and
 separate constructor ordering verified. Its fresh source job is queued. L3afpad
 source execution is active; no new editor execution outcome is claimed.
+
+## L3afpad source result and further desktop gates
+
+L3afpad completed its fresh source build on runtime `19609f47`, using frozen
+inputs `a1c6a43`. Evidence/export `db80df4` retains the 310784-byte archive
+`c2e645ab03588a01fed7999fc011b152b118c89bb0c7e597661c896883be5000`.
+The source test checks staged option parsing; interactive editing and public
+acceptance remain pending. The source result is under independent review.
+
+Tcl/Tk public acceptance is now executing. The four reviewed X application
+menu/input/relaunch gates, including Xedit persistence across browser sessions,
+are queued after the existing desktop installation job. All browser jobs remain
+serialized, with durable scheduler parents and foreground descendants.
+
+Net has a separate physical tile rotation, undo, save/load and reload driver
+(`f7fe776`), preserving the Fifteen interaction driver. Review requested binding
+the prior reload report to the current binary and runtime; `21456b0` adds these
+assertions to both puzzle drivers. No Net execution or gameplay pass is claimed.
+Counts remain 85 published and 83 live-accepted within documented scopes.
