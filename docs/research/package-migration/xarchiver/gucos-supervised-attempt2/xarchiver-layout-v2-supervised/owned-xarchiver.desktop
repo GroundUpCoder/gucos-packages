@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Archive Manager
-Exec=xarchiver %f
-TryExec=xarchiver
-Icon=xarchiver
-Categories=Utility;Archiving;
-Terminal=false

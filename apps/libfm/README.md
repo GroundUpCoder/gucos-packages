@@ -64,10 +64,3 @@ loading. The existing private menu generator/managed-daemon tests keep their
 original isolated XDG roots. These new guest assertions await execution.
 Original historical source archive, inventory and provenance remain unchanged;
 relocation and launcher changes exist only in the owned build/test adapters.
-
-Consumer file checks distinguish regular staged files from gucman-installed
-managed links. Installed checks require the exact package/current link, owned
-path entry, canonical release payload and original regular-file mode. Config
-bytes and launcher environment/argument checks remain unchanged. The original
-silent failure did not trace its exact failing assertion. Revised test pins
-require explicit review and rebuilt receipts before further acceptance.

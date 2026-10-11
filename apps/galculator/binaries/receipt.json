@@ -1,7 +1,7 @@
 {
   "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
-  "sha256": "e96dc74c55d4abde7fec51aa589a25a110cae27b551597d776e8a579eac08d86",
-  "size": 1133056,
+  "sha256": "d8c2501adcf66ecb631bef119b8e1459f434472fcb28bbbad486ac7ff8f1e994",
+  "size": 1132544,
   "guestManifest": {
     "format": 1,
     "name": "galculator",
@@ -45,8 +45,8 @@
       {
         "path": "build.sh",
         "url": "http://127.0.0.1:51111/migration/galculator/build.sh",
-        "sha256": "255de6e063b89197421dd8c41282ede46417edaa0496f9a25528fb2793ee685e",
-        "size": 1306
+        "sha256": "a23061cd0db825599fe545b4b09298f7e8b7376e7ce00810bf03cc2fbe70d5d0",
+        "size": 1151
       },
       {
         "path": "test.sh",
@@ -59,18 +59,6 @@
         "url": "http://127.0.0.1:51111/migration/galculator/galculator.desktop",
         "sha256": "e462d1415562afa405f85cc6ec97a09463a4348bf45af84deea87f03e50955d8",
         "size": 138
-      },
-      {
-        "path": "main-config-dirs.c",
-        "url": "http://127.0.0.1:51111/migration/galculator/main-config-dirs.c",
-        "sha256": "40524cf68df22dc2a4a57188c68cbe162593ecf666a9f39f47a7d96e7297fbe0",
-        "size": 9489
-      },
-      {
-        "path": "config-dirs.patch",
-        "url": "http://127.0.0.1:51111/migration/galculator/config-dirs.patch",
-        "sha256": "eff2646fd443246099d8c1f66b737879f700d8f7f74550907e158678c6603420",
-        "size": 825
       }
     ],
     "build": "build.sh",

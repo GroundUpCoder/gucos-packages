@@ -1,4 +1,4 @@
 {
-  "revision": "c303f33d6aae5ed1ba0cf9598534e842cc21914f",
-  "description": "91 entries accepted within recorded scopes:89 migration-owned acceptances including six Puzzles games, plus separately owned gucode/libcurl acceptance a690713. Preserve exact package identities; libcurl production-origin archive relink and untested package features are not claimed. gucode upgraded to 0.1.1 after independent artifact and final acceptance review, public delivery verification and production-origin upgrade/install/reload; provider mocked (docs/research/gucode-0.1.1)."
+  "revision": "807f2bc5d31179433e6e87a990c0f4514746d951",
+  "description": "91 entries accepted within recorded scopes:89 migration-owned acceptances including six Puzzles games, plus separately owned gucode/libcurl acceptance a690713. Preserve exact package identities; libcurl production-origin archive relink and untested package features are not claimed."
 }

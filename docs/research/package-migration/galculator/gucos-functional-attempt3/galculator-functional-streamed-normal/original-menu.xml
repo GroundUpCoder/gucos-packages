@@ -1,4 +1,0 @@
-<JWM>
-<Program label="Terminal">xterm -fn fixed -title Terminal</Program>
-<Program label="Scientific Calculator">/usr/local/bin/desktop-menu launch galculator.desktop</Program>
-</JWM>

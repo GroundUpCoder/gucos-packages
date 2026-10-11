@@ -25,12 +25,6 @@
     "test.sh",
     "site-gucman.py",
     "site-store.patch",
-    "README.md",
-    "subprocess-diagnostic.py",
-    "subprocess-diagnostic.patch",
-    "getpath-diagnostic.c",
-    "getpath-diagnostic.patch",
-    "fileutils-path.c",
-    "fileutils-path.patch"
+    "README.md"
   ]
 }

@@ -2,10 +2,6 @@
 set -eu
 # Inputs are supplied by the source recipe or the frozen installed consumer.
 src="$PWD/source"
-diagnostic="$src/port/subprocess-diagnostic.py"
-printf '%s  source/port/subprocess-smoke.py\n' 4c478ccdbc535da62c0709d51143b23ee7944d6e03a0dcc094a300c771e78bdf | sha256sum -c -
-printf '%s  subprocess-diagnostic.py\n' 457e378845af9cb5f4b06cd35b5136a022778a1e2579601b2e89e3d5e7fab2f6 | sha256sum -c -
-cp subprocess-diagnostic.py "$diagnostic"
 python="$DESTDIR/bin/python3.14"
 work=$(mktemp -d /tmp/cpython-consumer.XXXXXX)
 test -s "$DESTDIR/share/licenses/cpython/LICENSE"
@@ -13,7 +9,7 @@ cc -static -I"$DESTDIR/include/python3.14/cpython" -I"$src/Python" "$src/port/at
 "$work/atomic-smoke"
 cd "$work"
 "$python" "$src/port/smoke.py"
-"$python" "$diagnostic"
+"$python" "$src/port/subprocess-smoke.py"
 "$python" "$src/port/benchmark.py"
 "$python" "$src/port/benchmark-checked.py"
 "$python" -c 'import os,sys,sysconfig,zlib; assert sys.implementation.name == "cpython"; assert sys.prefix == sys.exec_prefix; assert os.path.isfile(sysconfig.get_makefile_filename()); assert zlib.decompress(zlib.compress(b"installed Python")) == b"installed Python"; assert "--enable-fork" not in sysconfig.get_config_var("LDSHARED"); print("CPYTHON-LAYOUT-PASS",sys.executable,sys.prefix,sysconfig.get_config_var("LDSHARED"))'

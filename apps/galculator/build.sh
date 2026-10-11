@@ -1,8 +1,6 @@
 #!/bin/sh
 set -eu
 tar -xf source.tar
-printf '%s  source/src/main.c\n' 6b9b340c3222b5585ae5a71a40a844d028afae14b1faa94d5090cdfcc2c35185 | sha256sum -c -
-cp main-config-dirs.c source/src/main.c
 stage="$DESTDIR"
 mkdir -p "$stage/bin" "$stage/libexec" "$stage/share/galculator/ui" "$stage/share/doc/galculator" "$stage/share/pixmaps" "$stage/share/applications" "$stage/share/licenses/galculator"
 cp galculator.desktop "$stage/share/applications/"

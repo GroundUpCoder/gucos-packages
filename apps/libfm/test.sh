@@ -1,35 +1,12 @@
 #!/bin/sh
 set -eu
-# Source stages contain regular files; public installs use exact managed links.
-check_owned_file() {
- relative=$1
- expected_mode=$2
- public="$DESTDIR/$relative"
- if test "$DESTDIR" = /usr/local; then
-  package=/usr/local/lib/gucman/packages/libfm
-  test -L "$package/current"
-  release=$(readlink "$package/current")
-  case "$release" in "$package"/release.*) ;; *) echo 'Unexpected package release target' >&2; return 1;; esac
-  suffix=${release#"$package"/release.}
-  case "$suffix" in ''|*[!a-zA-Z0-9]*) echo 'Invalid release suffix' >&2; return 1;; esac
-  test -d "$release" && test ! -L "$release"
-  grep -Fx "$relative" "$package/current/paths" >/dev/null
-  test -L "$public"
-  test "$(readlink "$public")" = "$package/current/$relative"
-  payload="$release/$relative"
-  test "$(readlink -f "$public")" = "$payload"
- else
-  payload="$public"
- fi
- test -f "$payload" && test ! -L "$payload"
- test "$(stat -c %a "$payload")" = "$expected_mode"
-}
 # Source stage: real file operations and direct menu generation, without X.
 # Installed stage additionally exercises a managed foreground menu daemon.
 work=$(mktemp -d /tmp/fmm.XXXXXX)
 # Relocation preserves upstream bytes and declared regular-file modes.
 cmp "source/libfm-1.3.2/data/libfm.conf" "$DESTDIR/share/libfm/xdg/libfm/libfm.conf"
-check_owned_file "share/libfm/xdg/libfm/libfm.conf" 644
+test -f "$DESTDIR/share/libfm/xdg/libfm/libfm.conf" && test ! -L "$DESTDIR/share/libfm/xdg/libfm/libfm.conf"
+test "$(stat -c %a "$DESTDIR/share/libfm/xdg/libfm/libfm.conf")" = 644
 # A stub observes launcher environment/argv without starting GTK or an X client.
 mkdir -p "$work/stub"
 cat > "$work/stub/gtk3-x11-run" <<'STUB'
@@ -39,7 +16,8 @@ printf '<%s>\n' "$@"
 STUB
 chmod 755 "$work/stub/gtk3-x11-run"
 for launcher in libfm-pref-apps lxshortcut; do
- check_owned_file "bin/$launcher" 755
+ test -f "$DESTDIR/bin/$launcher" && test ! -L "$DESTDIR/bin/$launcher"
+ test "$(stat -c %a "$DESTDIR/bin/$launcher")" = 755
  target=/usr/local/libexec/libfm/$launcher
  for scenario in unset empty custom; do
   (

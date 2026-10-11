@@ -4,8 +4,6 @@ tar -xf source.tar
 # Exact historical preimage; apply the declared package-owned C overlay.
 printf '%s  source/src/main.c\n' b595772db68dc7f4ea3edbb1c2fd941d641a154e8eb7cd877f79ef9d96bd9979 | sha256sum -c -
 cp main-no-gnu-tar.c source/src/main.c
-printf '%s  source/src/interface.c\n' 9f899a5cc3e3e7278e3851385fce5b772a75290bb3ed9a6123a86f0ad5f52941 | sha256sum -c -
-cp interface-signal-abi.c source/src/interface.c
 stage="$DESTDIR"
 mkdir -p "$stage/bin" "$stage/libexec" "$stage/share/pixmaps/xarchiver" "$stage/share/doc/xarchiver" "$stage/share/applications" "$stage/share/licenses/xarchiver/xdgmime"
 cp xarchiver.desktop "$stage/share/applications/"

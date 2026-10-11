@@ -1,6 +1,0 @@
-[machine-job] queued: node tests/gucode/key-update.mjs public
-(node:1276405) ExperimentalWarning: SQLite is an experimental feature and might change at any time
-(Use `node --trace-warnings ...` to show where the warning was created)
-[machine-job] running: ee9629f4-689e-4874-856b-941de06158f1
-public: core ready
-public: all acceptance checks passed

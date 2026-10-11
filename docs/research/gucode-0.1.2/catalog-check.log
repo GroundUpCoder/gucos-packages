@@ -1,3 +1,0 @@
-[machine-job] queued: python3 tools/check-catalog.py
-[machine-job] running: 9a0ffa08-ea22-40fa-91fa-1bf5a92c61b6
-PASS catalog pinned inputs, dependency/ownership closure and binary inventories: 98 packages

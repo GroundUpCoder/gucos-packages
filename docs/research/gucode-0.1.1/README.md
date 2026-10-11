@@ -11,7 +11,7 @@ No core or libcurl package changes.
 Native release and ASan/UBSan binaries passed all 26 regression groups and nine resource-test groups under
 machine-job. Six existing vendored cJSON deprecation warnings, no sanitizer
 findings. Independent read-only review by agent /root/review cleared source,
-upgrade plan and final frozen artifact 40242e8b31ad1dcf3aa6eeabde8052eb9e5b51b6 with no blockers.
+upgrade plan and publication inputs; final artifact review remains pending.
 
 The exact old entry and 0.1.0 to 0.1.1 transition are in upgrade-plan.json.
 The requested pull advanced the accepted publication baseline to 807f2bc,
@@ -52,26 +52,4 @@ ownership because the harness mixed repository source URLs. Attempt 2 built the
 package and passed the first credential/action check, then accessed the lazy
 guest filesystem before initializing it after reload. Both were harness fixes;
 the final reports are the accepted candidate scope. Local queue-full attempts
-never built a package. Public delivery and public upgrade/reload passed as recorded below.
-
-
-## Public acceptance
-
-Published catalog commit: c303f33d6aae5ed1ba0cf9598534e842cc21914f.
-Immutable manifest commit: 1ddb0a9d422481c092947fb6bee69a03571fa498.
-Immutable artifact commit: 40242e8b31ad1dcf3aa6eeabde8052eb9e5b51b6.
-Only the gucode entry changed; all 91 catalog entries passed check-catalog.py.
-
-public-delivery.json verifies the ordinary public main catalog URL, immutable
-manifest, each source input, and binary against their exact hashes and sizes.
-public.json and remote-public.log/exit record production-origin acceptance at
-https://os.groundupcoder.com on the runtime above, 2026-10-11 10:46:50–10:48:05 UTC,
-under machine-job ee9629f4-689e-4874-856b-941de06158f1. The test first selected the
-previous public 0.1.0 manifest using a temporary catalog route, then removed that
-route and upgraded through the actual public catalog to 0.1.1. Payload hashes,
-reload, credential precedence/fallbacks, --yolo actions, malformed tool output,
-and saved-session repair passed. Provider responses were deterministic fixtures;
-this does not claim a live DeepSeek call. No core hosting changes were made.
-
-Independent final review by /root/review cleared these exact published identities
-and acceptance evidence, and advancement of the publication baseline to c303f33.
+never built a package. Public delivery and public upgrade/reload remain pending.

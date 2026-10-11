@@ -34,8 +34,6 @@
     "source.tar",
     "build.sh",
     "test.sh",
-    "galculator.desktop",
-    "main-config-dirs.c",
-    "config-dirs.patch"
+    "galculator.desktop"
   ]
 }

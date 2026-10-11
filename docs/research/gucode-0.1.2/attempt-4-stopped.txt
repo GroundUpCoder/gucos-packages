@@ -1,1 +1,0 @@
-Stopped own browser reservation c8e5b52e-fa43-4e82-9c7a-ab0792d5cb74 after reviewer identified unchecked termstate subprocess statuses. No acceptance claimed. Exact snapshots must be captured with checked exits.

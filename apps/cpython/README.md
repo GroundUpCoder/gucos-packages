@@ -91,25 +91,3 @@ those results. Public publication and acceptance remain separate gates.
 No pip/ensurepip, HTTPS/OpenSSL, ctypes, bz2/lzma, Tk, free-threading, unrestricted
 subprocess modes or full CPython conformance is claimed. Pure Python files for
 optional modules in the stdlib do not imply their native backends are supplied.
-
-The first staged consumer failed the PATH/cwd/symlink subprocess case.
-A checked diagnostic copy of the original full subprocess suite preserves all
-methods/assertions and adds a TextTestResult error reporter for captured child
-stdout/stderr before normal error reporting. It does not catch away failure,
-change subprocess calls, or repair environment/path behavior. The historical
-archive is unchanged. Diagnostic source retry and cause determination remain
-pending; the prior retained-extension harness pins require deliberate review
-and rebinding before use with this revised consumer.
-
-The diagnostic source iteration adds bounded spawn-python getpath observations
-without changing executable selection or the original stat predicate. The
-full subprocess suite additionally requires nonempty executable identities.
-This is diagnostic instrumentation, not a demonstrated path-discovery fix.
-The original source archive is unchanged; installed/reload gates remain pending.
-
-The checked fileutils overlay changes the join separator condition from
-dirlen > 1 to dirlen > 0. The historical helper otherwise joins a one-character
-relative directory and filename without a slash, matching the retained
-.spawn-python diagnostic. Empty and root directory behavior is preserved.
-Runtime verification of this correction remains pending; diagnostics and the
-full strengthened subprocess suite remain enabled.
