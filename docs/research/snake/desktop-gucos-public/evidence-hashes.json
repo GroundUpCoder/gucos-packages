@@ -1,0 +1,22 @@
+{
+  "desktop-entries.sha256": "b45a997f8f7cfb6a16d5fc6135802066f24bfe4d5b9b2b0bead47ace4ef55218",
+  "dependencies.log": "402c084ce56f4f1718e63744ebfb21b527e4b0054463845a4108b8cedf6e470a",
+  "jwm-upgrade.json": "0a91f7ecde2c7c6fa03d0118bd0cdeec3fef0c08fe9095321a8658a5746adc66",
+  "observed-runtime.json": "c1d9b39edc1d23af256c7c1e88ccc9d30925bf9439aee11d68159d85c18ff3b7",
+  "play.log": "16012dc618a4ffdacbeab598118c963073091237b76fd00f90e00eb9e0c80a90",
+  "reload.log": "211185eedd3362263d035f2e31e229ea1c4d64279022b63d9dacd6176c5ca3fa",
+  "upgrade.log": "940682ba84f5c719bfcc0a60ccd43c60032098c671c1534a3b0ed7d4926de7ae",
+  "desktop-menu.png": "e0b26410dafaab0e07c0f2dee7ef162981f6df7c98a40ec77b45c279c6872128",
+  "config.json": "b18de2b14a3af67984ced38985d7dc95774208bd8ea4616d52dd0bc9e1704d38",
+  "desktop-launched.png": "d108b0ec21195721b6a771e430ffd9fb79cf0f3b5625c6f397b7c956dc360675",
+  "publication-closure.log": "be420f534176ef4db70dd105a55f5f47ce14283e8fa8076fadc4c56a874823d9",
+  "dependencies-xterm-snake.json": "9cc6cbbef9b0a932a7c05aaf38deb31d21e58fd38b3f7f09bbbb824cc6488099",
+  "reload-desktop-entries-jwm.json": "8d8be175e4d90a457cef9e4dc312074d607ea8659516285b9ec3ae5cbb8000a4",
+  "jwm.sha256": "acc775b964c94be5d0a4ae71f230e5c1249c9282abfda4c6a734aad2c3453622",
+  "desktop-snake.png": "d108b0ec21195721b6a771e430ffd9fb79cf0f3b5625c6f397b7c956dc360675",
+  "install-desktop-entries-jwm.json": "ee1f0b35d218f2a701de712e7dd6a431c467f9363ec89df853207e6446c0e546",
+  "desktop-functional.json": "ff5d327891bd38a584f93c3e4dba827dc15c8dd4119fb93868b6651fc1075599",
+  "candidate-manifests.json": "d3b94f4a52f697600f984a401b2d0da356c890f414e562082d966c9fa029ca72",
+  "install.log": "42c34309bdd3cfa3c403598e06a17ecdb5a4a3cf845c76f7aacd2af242453e6c",
+  "desktop-functional.log": "1278098d78b07c171f7069df9f74d041f2a1bba626888cc4e0c7fbbdc8b1a346"
+}
