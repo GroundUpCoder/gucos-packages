@@ -53,12 +53,3 @@ Catalog mode additionally requires `--artifact-revision FULL_COMMIT`. It must
 be an ancestor of the manifest commit. The tool reconstructs the entire expected
 manifest from that frozen source/export commit and compares it before catalog
 selection, including immutable URLs, receipt fields and binary identity.
-
-For an upgrade published after the historical baseline, `tools/pin-upgrades.py`
-requires an explicit pre-upgrade `--catalog-base` and `--upgrade-plan`. It freezes
-the entire current catalog, verifies the old immutable manifest/hash/size and
-version, preserves output paths/modes, and reconstructs new manifests from the
-frozen artifacts and guest receipt. Unrelated entries remain byte-equivalent as
-JSON values. This does not advance the historical baseline or claim acceptance
-for concurrent publications. Independent review and candidate/public guest gates
-still apply.

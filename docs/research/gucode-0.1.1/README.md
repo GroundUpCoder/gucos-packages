@@ -11,11 +11,12 @@ No core or libcurl package changes.
 Native release and ASan/UBSan binaries passed all 26 regression groups and nine resource-test groups under
 machine-job. Six existing vendored cJSON deprecation warnings, no sanitizer
 findings. Independent read-only review by agent /root/review cleared source,
-upgrade plan and pin-upgrades.py; final artifact review remains pending.
+upgrade plan and publication inputs; final artifact review remains pending.
 
 The exact old entry and 0.1.0 to 0.1.1 transition are in upgrade-plan.json.
-Its baseline is the complete pre-upgrade catalog, not a change to the historical
-publication-baseline.json. All unrelated entries and output paths/modes must
+The requested pull advanced the accepted publication baseline to 807f2bc,
+which includes gucode 0.1.0. This release uses the existing pin-migration.py
+upgrade workflow against that baseline. All unrelated entries and output paths/modes must
 remain unchanged.
 
 The key-update.mjs acceptance harness uses a real guest and synthetic keys with
