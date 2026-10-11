@@ -1,0 +1,9 @@
+{
+  "status": "deadline-expired",
+  "reservation": "01954c42-da79-4189-ad3c-9734150938d7",
+  "timeoutSeconds": 1200,
+  "finishedAt": "2026-10-11T09:47:42.952Z",
+  "lastNcursesFiles": 1175,
+  "totalNcursesFiles": 2928,
+  "scope": "No install or final lifecycle pass; browser closed at scheduler deadline"
+}

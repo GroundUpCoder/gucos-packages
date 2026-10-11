@@ -1,0 +1,322 @@
+[machine-job] queued: sh -c python3 docs/research/tmux-ipc/prepare-install-fixture.py "$COMPAT_RUN_DIR" && node docs/research/tmux-ipc/install-through-client.mjs && node docs/research/tmux-ipc/lifecycle-candidate.mjs
+(node:1216419) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[machine-job] running: 01954c42-da79-4189-ad3c-9734150938d7
+Private fixture ready: /home/ubuntu/git/gucos-packages-ipc/test-results/tmux-ipc/final-install-01
+
+guc-json: binary platform version mismatch
+
+
+
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'final:ncurses (218647 bytes)\n' +
+    '  Connecting; waiting for response…\n' +
+    '  Downloaded 218647 / 218647 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: manifest for tmux-final:ncurses\n' +
+    'gucman: Checking cached object: manifest for tmux-final:ncurses\n'
+}
+{
+  tail: 'onnecting; waiting for response…\n' +
+    '  Downloaded 2.34 / 2.34 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: libevent archive\n' +
+    'gucman: Checking cached object: libevent archive\n' +
+    'gucman: Unpacking: libevent\n' +
+    'gucman: Installing libevent: 0/31 files\n'
+}
+{
+  tail: 'oaded 2.80 / 12.15 MiB (23%)\n' +
+    '  Downloaded 6.18 / 12.15 MiB (50%)\n' +
+    '  Downloaded 9.10 / 12.15 MiB (74%)\n' +
+    '  Downloaded 12.15 / 12.15 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: ncurses archive\n' +
+    'gucman: Checking cached object: ncurses archive\n'
+}
+{
+  tail: 'ded 12.15 / 12.15 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: ncurses archive\n' +
+    'gucman: Checking cached object: ncurses archive\n' +
+    'gucman: Unpacking: ncurses\n' +
+    'gucman: Installing ncurses: 0/2928 files\n' +
+    'gucman: Installing ncurses: 25/2928 files\n'
+}
+{
+  tail: 'archive\n' +
+    'gucman: Checking cached object: ncurses archive\n' +
+    'gucman: Unpacking: ncurses\n' +
+    'gucman: Installing ncurses: 0/2928 files\n' +
+    'gucman: Installing ncurses: 25/2928 files\n' +
+    'gucman: Installing ncurses: 50/2928 files\n' +
+    'gucman: Installing ncurses: 75/2928 files\n'
+}
+{
+  tail: 'man: Installing ncurses: 0/2928 files\n' +
+    'gucman: Installing ncurses: 25/2928 files\n' +
+    'gucman: Installing ncurses: 50/2928 files\n' +
+    'gucman: Installing ncurses: 75/2928 files\n' +
+    'gucman: Installing ncurses: 100/2928 files\n' +
+    'gucman: Installing ncurses: 125/2928 files\n'
+}
+{
+  tail: ': Installing ncurses: 50/2928 files\n' +
+    'gucman: Installing ncurses: 75/2928 files\n' +
+    'gucman: Installing ncurses: 100/2928 files\n' +
+    'gucman: Installing ncurses: 125/2928 files\n' +
+    'gucman: Installing ncurses: 150/2928 files\n' +
+    'gucman: Installing ncurses: 175/2928 files\n'
+}
+{
+  tail: ' Installing ncurses: 75/2928 files\n' +
+    'gucman: Installing ncurses: 100/2928 files\n' +
+    'gucman: Installing ncurses: 125/2928 files\n' +
+    'gucman: Installing ncurses: 150/2928 files\n' +
+    'gucman: Installing ncurses: 175/2928 files\n' +
+    'gucman: Installing ncurses: 200/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 125/2928 files\n' +
+    'gucman: Installing ncurses: 150/2928 files\n' +
+    'gucman: Installing ncurses: 175/2928 files\n' +
+    'gucman: Installing ncurses: 200/2928 files\n' +
+    'gucman: Installing ncurses: 225/2928 files\n' +
+    'gucman: Installing ncurses: 250/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 175/2928 files\n' +
+    'gucman: Installing ncurses: 200/2928 files\n' +
+    'gucman: Installing ncurses: 225/2928 files\n' +
+    'gucman: Installing ncurses: 250/2928 files\n' +
+    'gucman: Installing ncurses: 275/2928 files\n' +
+    'gucman: Installing ncurses: 300/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 200/2928 files\n' +
+    'gucman: Installing ncurses: 225/2928 files\n' +
+    'gucman: Installing ncurses: 250/2928 files\n' +
+    'gucman: Installing ncurses: 275/2928 files\n' +
+    'gucman: Installing ncurses: 300/2928 files\n' +
+    'gucman: Installing ncurses: 325/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 250/2928 files\n' +
+    'gucman: Installing ncurses: 275/2928 files\n' +
+    'gucman: Installing ncurses: 300/2928 files\n' +
+    'gucman: Installing ncurses: 325/2928 files\n' +
+    'gucman: Installing ncurses: 350/2928 files\n' +
+    'gucman: Installing ncurses: 375/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 300/2928 files\n' +
+    'gucman: Installing ncurses: 325/2928 files\n' +
+    'gucman: Installing ncurses: 350/2928 files\n' +
+    'gucman: Installing ncurses: 375/2928 files\n' +
+    'gucman: Installing ncurses: 400/2928 files\n' +
+    'gucman: Installing ncurses: 425/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 350/2928 files\n' +
+    'gucman: Installing ncurses: 375/2928 files\n' +
+    'gucman: Installing ncurses: 400/2928 files\n' +
+    'gucman: Installing ncurses: 425/2928 files\n' +
+    'gucman: Installing ncurses: 450/2928 files\n' +
+    'gucman: Installing ncurses: 475/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 400/2928 files\n' +
+    'gucman: Installing ncurses: 425/2928 files\n' +
+    'gucman: Installing ncurses: 450/2928 files\n' +
+    'gucman: Installing ncurses: 475/2928 files\n' +
+    'gucman: Installing ncurses: 500/2928 files\n' +
+    'gucman: Installing ncurses: 525/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 450/2928 files\n' +
+    'gucman: Installing ncurses: 475/2928 files\n' +
+    'gucman: Installing ncurses: 500/2928 files\n' +
+    'gucman: Installing ncurses: 525/2928 files\n' +
+    'gucman: Installing ncurses: 550/2928 files\n' +
+    'gucman: Installing ncurses: 575/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 500/2928 files\n' +
+    'gucman: Installing ncurses: 525/2928 files\n' +
+    'gucman: Installing ncurses: 550/2928 files\n' +
+    'gucman: Installing ncurses: 575/2928 files\n' +
+    'gucman: Installing ncurses: 600/2928 files\n' +
+    'gucman: Installing ncurses: 625/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 550/2928 files\n' +
+    'gucman: Installing ncurses: 575/2928 files\n' +
+    'gucman: Installing ncurses: 600/2928 files\n' +
+    'gucman: Installing ncurses: 625/2928 files\n' +
+    'gucman: Installing ncurses: 650/2928 files\n' +
+    'gucman: Installing ncurses: 675/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 600/2928 files\n' +
+    'gucman: Installing ncurses: 625/2928 files\n' +
+    'gucman: Installing ncurses: 650/2928 files\n' +
+    'gucman: Installing ncurses: 675/2928 files\n' +
+    'gucman: Installing ncurses: 700/2928 files\n' +
+    'gucman: Installing ncurses: 725/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 650/2928 files\n' +
+    'gucman: Installing ncurses: 675/2928 files\n' +
+    'gucman: Installing ncurses: 700/2928 files\n' +
+    'gucman: Installing ncurses: 725/2928 files\n' +
+    'gucman: Installing ncurses: 750/2928 files\n' +
+    'gucman: Installing ncurses: 775/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 700/2928 files\n' +
+    'gucman: Installing ncurses: 725/2928 files\n' +
+    'gucman: Installing ncurses: 750/2928 files\n' +
+    'gucman: Installing ncurses: 775/2928 files\n' +
+    'gucman: Installing ncurses: 800/2928 files\n' +
+    'gucman: Installing ncurses: 825/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 750/2928 files\n' +
+    'gucman: Installing ncurses: 775/2928 files\n' +
+    'gucman: Installing ncurses: 800/2928 files\n' +
+    'gucman: Installing ncurses: 825/2928 files\n' +
+    'gucman: Installing ncurses: 850/2928 files\n' +
+    'gucman: Installing ncurses: 875/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 800/2928 files\n' +
+    'gucman: Installing ncurses: 825/2928 files\n' +
+    'gucman: Installing ncurses: 850/2928 files\n' +
+    'gucman: Installing ncurses: 875/2928 files\n' +
+    'gucman: Installing ncurses: 900/2928 files\n' +
+    'gucman: Installing ncurses: 925/2928 files\n'
+}
+{
+  tail: 'Installing ncurses: 850/2928 files\n' +
+    'gucman: Installing ncurses: 875/2928 files\n' +
+    'gucman: Installing ncurses: 900/2928 files\n' +
+    'gucman: Installing ncurses: 925/2928 files\n' +
+    'gucman: Installing ncurses: 950/2928 files\n' +
+    'gucman: Installing ncurses: 975/2928 files\n'
+}
+{
+  tail: 'stalling ncurses: 900/2928 files\n' +
+    'gucman: Installing ncurses: 925/2928 files\n' +
+    'gucman: Installing ncurses: 950/2928 files\n' +
+    'gucman: Installing ncurses: 975/2928 files\n' +
+    'gucman: Installing ncurses: 1000/2928 files\n' +
+    'gucman: Installing ncurses: 1025/2928 files\n'
+}
+{
+  tail: 'alling ncurses: 950/2928 files\n' +
+    'gucman: Installing ncurses: 975/2928 files\n' +
+    'gucman: Installing ncurses: 1000/2928 files\n' +
+    'gucman: Installing ncurses: 1025/2928 files\n' +
+    'gucman: Installing ncurses: 1050/2928 files\n' +
+    'gucman: Installing ncurses: 1075/2928 files\n'
+}
+{
+  tail: 'ling ncurses: 1000/2928 files\n' +
+    'gucman: Installing ncurses: 1025/2928 files\n' +
+    'gucman: Installing ncurses: 1050/2928 files\n' +
+    'gucman: Installing ncurses: 1075/2928 files\n' +
+    'gucman: Installing ncurses: 1100/2928 files\n' +
+    'gucman: Installing ncurses: 1125/2928 files\n'
+}
+{
+  tail: 'ling ncurses: 1050/2928 files\n' +
+    'gucman: Installing ncurses: 1075/2928 files\n' +
+    'gucman: Installing ncurses: 1100/2928 files\n' +
+    'gucman: Installing ncurses: 1125/2928 files\n' +
+    'gucman: Installing ncurses: 1150/2928 files\n' +
+    'gucman: Installing ncurses: 1175/2928 files\n'
+}
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.evaluate: Target page, context or browser has been closed
+    at Object.command (/home/ubuntu/git/gucos-packages-ipc/tests/compatibility/session.mjs:46:28)
+    at async file:///home/ubuntu/git/gucos-packages-ipc/docs/research/tmux-ipc/install-through-client.mjs:21:2 {
+  log: []
+}
+
+Node.js v22.23.2

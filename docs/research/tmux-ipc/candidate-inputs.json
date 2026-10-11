@@ -1,0 +1,87 @@
+{
+  "packageBase": "b4507a9d9622dad0f48c13cae30fc8a6b5d539a8",
+  "ncursesWorkerCommit": "1dee6db0aa135c81ef3d62136b5a6e1d2734c2f8",
+  "packageBranch": "port/tmux-additive-ipc",
+  "packageCommit": "56ef89a2a694ef827f384d8dc6dd346aac0e4860",
+  "files": {
+    "tmux": {
+      "provenance.json": {
+        "sha256": "6656efe7abc34f074b60201bb1dd8a42c9204a238941ea555b612324209a777d",
+        "size": 525
+      },
+      "test.sh": {
+        "sha256": "421ae415791b6515f2d015973d74342689c0779d2b5e68e795380922eb3a33b7",
+        "size": 128
+      },
+      "recipe.json": {
+        "sha256": "b15ac58b4bd54208ecd1667407f342eb31b75deb6b103b9c565ceddf1a0c9030",
+        "size": 383
+      },
+      "source.tar": {
+        "sha256": "b6a4fe42a006fe7366eab9fa681eb868dee3dddaf13433f66d6577027276663c",
+        "size": 3594240
+      },
+      "outputs.json": {
+        "sha256": "aa1b4de3ffe2482cf617506729f369689b53e73d39801a1ea098d2a7db45b042",
+        "size": 268
+      },
+      "build.sh": {
+        "sha256": "e42f0ba43018cadec3f9350a9c5b8e870f37f816a1e4f624268b1b8dcef7c192",
+        "size": 966
+      }
+    },
+    "ncurses": {
+      "provenance.json": {
+        "sha256": "9a092eb5812cb898a272e690d0067b58987b079d9df732b123bd25f5c06cac93",
+        "size": 791
+      },
+      "test.sh": {
+        "sha256": "c16ef304b99f7b7a8cbcf6864b8f6f4b6e9c1d8ed309ac5e7da500174af38005",
+        "size": 2974
+      },
+      "recipe.json": {
+        "sha256": "1d25e3416ed8c2a2010188767af138354c0519d159b529d948edfcd6d7c9f39e",
+        "size": 336
+      },
+      "source.tar": {
+        "sha256": "688e99adff2d53baa8709a99d778ed1bbc748cb2208bbbd1fd7316f634db0597",
+        "size": 19292160
+      },
+      "outputs.json": {
+        "sha256": "1b7f5378c866374013bf6255a2163030620cc943668b4b9af67f1ad24aea30dc",
+        "size": 194593
+      },
+      "build.sh": {
+        "sha256": "7de3bd99ee01144f57eeb22bba73969dd3ce88d9f3835ba2bf3a0cd1bec6e68e",
+        "size": 2233
+      }
+    },
+    "libevent": {
+      "provenance.json": {
+        "sha256": "817271763205896bbf6262c8355bb237b12c2ebffe2631dbc715fec203f81151",
+        "size": 315
+      },
+      "test.sh": {
+        "sha256": "a4c393fe4aef316166ce1b14401a0ddc9025f50494ec8af51098529d0bc2cef4",
+        "size": 1255
+      },
+      "recipe.json": {
+        "sha256": "b9b21cd64409d87c4d137b0cfdc3388df18f7a267a5e04f49565096f1c80a404",
+        "size": 356
+      },
+      "source.tar": {
+        "sha256": "2f96f94c985a46d86411b847a0b09ab4699a4b1a6dc78eec0762f813a7988224",
+        "size": 2600960
+      },
+      "outputs.json": {
+        "sha256": "2d5c77b31227cb7715f8a4552618be93fbebee07e7fadbd2533e481be16cc614",
+        "size": 2065
+      },
+      "build.sh": {
+        "sha256": "5f29cbdd380264f3df69f29db6b284ccd9786a50438297b90341ceecd3839cc6",
+        "size": 3397
+      }
+    }
+  },
+  "scope": "Current package candidate identities; initial frozen attempt uses its own dist-files.json and predates forkpty recipe change."
+}

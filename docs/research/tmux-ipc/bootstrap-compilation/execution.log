@@ -1,0 +1,45 @@
+[machine-job] queued: node docs/research/tmux-ipc/build-candidate.mjs libevent ncurses tmux
+(node:1115783) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[machine-job] running: c034b554-2740-4f34-a3b3-351d0cfa36fc
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+browserType.launchPersistentContext: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /home/ubuntu/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --enable-unsafe-webgpu --user-data-dir=/home/ubuntu/git/gucos-packages-ipc/test-results/tmux-ipc/bootstrap-01/profile --remote-debugging-pipe about:blank
+<launched> pid=1116587
+[pid=1116587][err] /home/ubuntu/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+Call log:
+  - <launching> /home/ubuntu/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --enable-unsafe-webgpu --user-data-dir=/home/ubuntu/git/gucos-packages-ipc/test-results/tmux-ipc/bootstrap-01/profile --remote-debugging-pipe about:blank
+  - <launched> pid=1116587
+  - [pid=1116587][err] /home/ubuntu/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory
+  - [pid=1116587] <gracefully close start>
+  - [pid=1116587] <kill>
+  - [pid=1116587] <will force kill>
+  - [pid=1116587] exception while trying to kill process: Error: kill ESRCH
+  - [pid=1116587] <process did exit: exitCode=127, signal=null>
+  - [pid=1116587] starting temporary directories cleanup
+  - [pid=1116587] finished temporary directories cleanup
+  - [pid=1116587] <gracefully close end>
+
+    at async session (/home/ubuntu/git/gucos-packages-ipc/tests/compatibility/session.mjs:35:11)
+    at async file:///home/ubuntu/git/gucos-packages-ipc/docs/research/tmux-ipc/build-candidate.mjs:7:9 {
+  log: [
+    '  - <launching> /home/ubuntu/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --enable-unsafe-webgpu --user-data-dir=/home/ubuntu/git/gucos-packages-ipc/test-results/tmux-ipc/bootstrap-01/profile --remote-debugging-pipe about:blank',
+    '  - <launched> pid=1116587',
+    '  - [pid=1116587][err] /home/ubuntu/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome: error while loading shared libraries: libatk-1.0.so.0: cannot open shared object file: No such file or directory',
+    '  - [pid=1116587] <gracefully close start>',
+    '  - [pid=1116587] <kill>',
+    '  - [pid=1116587] <will force kill>',
+    '  - [pid=1116587] exception while trying to kill process: Error: kill ESRCH',
+    '  - [pid=1116587] <process did exit: exitCode=127, signal=null>',
+    '  - [pid=1116587] starting temporary directories cleanup',
+    '  - [pid=1116587] finished temporary directories cleanup',
+    '  - [pid=1116587] <gracefully close end>'
+  ]
+}
+
+Node.js v22.23.2

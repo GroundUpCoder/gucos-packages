@@ -1,0 +1,17 @@
+[machine-job] queued: node docs/research/tmux-ipc/build-candidate.mjs libevent ncurses tmux
+(node:1119872) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[machine-job] running: c561e8af-f292-4282-a53c-6d84caeb96ff
+
+{
+  tail: '1071 functions, 964527 bytes\n' +
+    '582 functions, 526199 bytes\n' +
+    '3 functions, 9323 bytes\n'
+}
+1071 functions, 964527 bytes
+582 functions, 526199 bytes
+3 functions, 9323 bytes
+383 functions, 344109 bytes
+LIBEVENT-PASS
+2 functions, 6317 bytes
+LIBEVENT-PASS

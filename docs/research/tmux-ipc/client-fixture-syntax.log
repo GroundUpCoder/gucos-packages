@@ -1,0 +1,4 @@
+[machine-job] queued: sh -c node --check docs/research/tmux-ipc/install-through-client.mjs && python3 -c 'import ast,pathlib; ast.parse(pathlib.Path("docs/research/tmux-ipc/prepare-install-fixture.py").read_text())'
+(node:1215408) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[machine-job] running: 595911bd-b136-4e0b-8f3a-63af3b6c0a7b

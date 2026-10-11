@@ -1,0 +1,12 @@
+[machine-job] queued: sh -c node --check docs/research/tmux-ipc/export-dependencies.mjs && node docs/research/tmux-ipc/export-dependencies.mjs libevent ncurses
+(node:1162708) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[machine-job] running: 5f4748f2-5607-402d-b83e-18e64ffe1eb6
+/home/ubuntu/git/gucos-packages-ipc/docs/research/tmux-ipc/export-dependencies.mjs:24
+  await s.page.evaluate(async ({list,text})=>shell.busybox.write(list,new TextEncoder().encode(text)),{list,text:outputs.map(x=>x.path).join('
+                                                                                                                                             ^
+
+SyntaxError: Invalid or unexpected token
+    at checkSyntax (node:internal/main/check_syntax:74:5)
+
+Node.js v22.23.2

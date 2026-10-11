@@ -1,0 +1,7 @@
+[machine-job] queued: sh -c node --check docs/research/tmux-ipc/export-dependencies.mjs && node docs/research/tmux-ipc/export-dependencies.mjs libevent ncurses
+(node:1163507) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[machine-job] running: 81604f99-e8c7-41ff-a023-4e9be99ad91a
+
+
+

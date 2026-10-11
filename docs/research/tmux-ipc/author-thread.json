@@ -1,0 +1,31 @@
+{
+  "id": "01a129b8-ba13-7d36-b0bb-066591a700b1",
+  "projectId": "01a1293d-a323-788e-83b4-53e7375e1e39",
+  "projectName": "gucos",
+  "name": "Tmux flagship port using agentone",
+  "executorType": "codex",
+  "createdAt": 1791701334554,
+  "updatedAt": 1791701334554,
+  "inbox": false,
+  "starred": false,
+  "labels": [
+    {
+      "id": "019f5042-7d8c-7e7b-9822-c6099e3a551a",
+      "name": "auto",
+      "color": "gray"
+    }
+  ],
+  "running": {
+    "chatId": "01a129b8-ba13-7d36-b0bb-066591a700b1",
+    "projectId": "01a1293d-a323-788e-83b4-53e7375e1e39",
+    "turnStartedAt": 1791701334608,
+    "lastEventAt": 1791701993881,
+    "originKind": "meta"
+  },
+  "messageCount": 2,
+  "lastMessageAt": 1791701334613,
+  "model": "gpt-6-astra",
+  "hasSession": true,
+  "computedCostUsd": 0,
+  "self": true
+}

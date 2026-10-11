@@ -1,0 +1,7 @@
+{
+  "dist": "/home/ubuntu/git/gucos-packages-ipc/test-results/tmux-ipc/integrated-01/site",
+  "sourceDist": "/home/ubuntu/git/gucos-core-snapshots/ipc-integrated-baae3b75",
+  "expectedRuntime": "baae3b7591a51a357d4fba3fc8e96135790025d61a6c98453e28100ea99f1aad",
+  "dependencySourceRuntime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "scope": "Reused bootstrap dependency outputs with integrated-runtime consumer recompilation and execution; tmux compiled on integrated candidate."
+}

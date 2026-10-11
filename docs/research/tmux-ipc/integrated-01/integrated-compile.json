@@ -1,0 +1,7 @@
+{
+  "runtime": "baae3b7591a51a357d4fba3fc8e96135790025d61a6c98453e28100ea99f1aad",
+  "stages": [],
+  "status": "failed",
+  "error": "AssertionError [ERR_ASSERTION]: 582 functions, 526253 bytes\n3 functions, 9376 bytes\nNo such source: /tmp/tmux-integrated/libevent/source/port/test.c\n\n\n1 !== 0\n\n    at Object.command (file:///home/ubuntu/git/gucos-packages-ipc/tests/compatibility/session.mjs:47:96)\n    at async file:///home/ubuntu/git/gucos-packages-ipc/docs/research/tmux-ipc/integrated-compile.mjs:19:3",
+  "finishedAt": "2026-10-11T07:46:30.384Z"
+}

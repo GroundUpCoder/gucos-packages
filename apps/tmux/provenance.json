@@ -1,0 +1,14 @@
+{
+  "upstream": "https://github.com/tmux/tmux",
+  "version": "3.5a",
+  "releaseUrl": "https://github.com/tmux/tmux/releases/download/3.5a/tmux-3.5a.tar.gz",
+  "releaseSha256": "16216bd0877170dfcc64157085ba9013610b12b082548c7c9542cc0103198951",
+  "sourceArchiveSha256": "b6a4fe42a006fe7366eab9fa681eb868dee3dddaf13433f66d6577027276663c",
+  "sourceTransformation": "Release extracted unchanged and repacked under source/.",
+  "status": "Clean build on e1a1d35a and actual gucman fresh install/installed-byte verification/interactive lifecycle on final1.0.2 be3a9ce7 passed with unchanged artifacts; not published.",
+  "acceptedRuntime": "e1a1d35aab446d25eb19126cec01e17e5508b672bc16f73b4cbb5e0a01f3b8a8",
+  "acceptanceEvidence": "docs/research/tmux-ipc/integrated-11",
+  "artifactArchiveSha256": "08efddf8191d41b41299ce8df494c981bb1e0bf216152dfccdc618f0190bd879",
+  "finalCompatibilityRuntime": "be3a9ce7817c876e8d9bc900556fea1fbaeb4f0d5d4e03003ab24a7ad3b600bb",
+  "finalCompatibilityEvidence": "docs/research/tmux-ipc/final-install-02"
+}

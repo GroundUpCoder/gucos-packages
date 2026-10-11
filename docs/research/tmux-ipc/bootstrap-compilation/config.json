@@ -1,0 +1,5 @@
+{
+  "dist": "/home/ubuntu/git/gucos-packages-ipc/test-results/tmux-ipc/bootstrap-01/site",
+  "expectedRuntime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sourceDist": "/home/ubuntu/git/gucos-core-snapshots/ipc-bootstrap-19609f47"
+}

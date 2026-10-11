@@ -1,0 +1,7 @@
+{
+  "dist": "/home/ubuntu/git/gucos-packages-ipc/test-results/tmux-ipc/integrated-09/site",
+  "sourceDist": "/home/ubuntu/git/gucos-core-snapshots/ipc-closefrom-e1a1d35a",
+  "expectedRuntime": "e1a1d35aab446d25eb19126cec01e17e5508b672bc16f73b4cbb5e0a01f3b8a8",
+  "dependencySourceRuntime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "scope": "Fresh browser profile; clean tmux extraction/configure/full recipe. Bootstrap dependency artifacts reused with consumers rebuilt on supplied closefrom runtime. Lifecycle follows compilation. Corrected closefrom gate reads upstream Makefile DEFS; no configure cache or profile reuse."
+}

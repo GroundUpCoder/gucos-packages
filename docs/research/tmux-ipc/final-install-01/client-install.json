@@ -1,0 +1,14 @@
+{
+  "runtime": "be3a9ce7817c876e8d9bc900556fea1fbaeb4f0d5d4e03003ab24a7ad3b600bb",
+  "status": "failed",
+  "scope": "Actual gucman install, unchanged retained artifacts, no source build",
+  "steps": [
+    {
+      "step": "actual-checker-rejects-1.0.1-metadata",
+      "status": "passed",
+      "scope": "Compatibility checker invocation with old version; not a boot of old runtime"
+    }
+  ],
+  "error": "page.evaluate: Target page, context or browser has been closed\n    at Object.command (/home/ubuntu/git/gucos-packages-ipc/tests/compatibility/session.mjs:46:28)\n    at async file:///home/ubuntu/git/gucos-packages-ipc/docs/research/tmux-ipc/install-through-client.mjs:21:2",
+  "finishedAt": "2026-10-11T09:47:42.952Z"
+}

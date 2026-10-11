@@ -1,0 +1,13 @@
+{
+  "dist": "/home/ubuntu/git/gucos-core-snapshots/ipc-integrated-baae3b75",
+  "expectedRuntime": "baae3b7591a51a357d4fba3fc8e96135790025d61a6c98453e28100ea99f1aad",
+  "observedBuildJsonRuntime": "baae3b7591a51a357d4fba3fc8e96135790025d61a6c98453e28100ea99f1aad",
+  "files": {
+    "build.json": "3e7f8eb99975a2717d240af8a28021e362db507ce85181053a25e29be09b4d5f",
+    "index.html": "f4bdd2532c3f61184bc32a9a9baaff80a2c0d8433f2b82590c436187209e518c",
+    "snapshot-sha256.json": "e6479f0adb5cfed2bd16b2be1cd97114b39629bb3a7aff9213bc64ed7f44eba3"
+  },
+  "status": "Explicit parent-supplied development candidate; not booted or tested by tmux worker.",
+  "parentReportedScope": "SCM_RIGHTS/packet sockets, flock/eventfd/named semaphores, per-fd winsize, detached terminal reads, dynamic symbol exports, failed-fork cleanup; combined kernel regressions and full build passed. Guest/browser acceptance pending.",
+  "versionNote": "Still 1.0.1 development identity; intended eventual 1.0.2 only after gates."
+}

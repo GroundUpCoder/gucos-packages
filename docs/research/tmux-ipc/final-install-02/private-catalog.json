@@ -1,0 +1,20 @@
+{
+  "format": 1,
+  "packages": {
+    "libevent": {
+      "url": "http://127.0.0.1:40935/tmux-fixture/libevent/package.json",
+      "sha256": "0724e93c0d39eca206358e10def8a4b86e3de8306921ce25bb6dcfc95c615c0b",
+      "size": 2964
+    },
+    "ncurses": {
+      "url": "http://127.0.0.1:40935/tmux-fixture/ncurses/package.json",
+      "sha256": "f5dda2dd1446089d464ca58759066525037947b023068db3ad2535e72b988bd2",
+      "size": 218647
+    },
+    "tmux": {
+      "url": "http://127.0.0.1:40935/tmux-fixture/tmux/package.json",
+      "sha256": "a20a1e47ed1e8400015533d0663386df13c261d03785fff1bf9e4cb855627d72",
+      "size": 1205
+    }
+  }
+}

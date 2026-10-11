@@ -1,0 +1,40 @@
+{
+  "name": "tmux",
+  "sourceRuntime": "e1a1d35aab446d25eb19126cec01e17e5508b672bc16f73b4cbb5e0a01f3b8a8",
+  "sourceDist": "/home/ubuntu/git/gucos-core-snapshots/ipc-closefrom-e1a1d35a",
+  "sha256": "08efddf8191d41b41299ce8df494c981bb1e0bf216152dfccdc618f0190bd879",
+  "size": 8906752,
+  "outputs": [
+    {
+      "path": "bin/tmux",
+      "mode": 493
+    },
+    {
+      "path": "share/man/man1/tmux.1",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/tmux/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/tmux/compat-source-notices.txt",
+      "mode": 420
+    }
+  ],
+  "frozenInputs": {
+    "source.tar": {
+      "sha256": "b6a4fe42a006fe7366eab9fa681eb868dee3dddaf13433f66d6577027276663c",
+      "size": 3594240
+    },
+    "build.sh": {
+      "sha256": "92027977c1a2e2c750de3696eb9e3866de5abf3f9ca9dc9b7a671f2f3e386c3b",
+      "size": 3806
+    },
+    "test.sh": {
+      "sha256": "421ae415791b6515f2d015973d74342689c0779d2b5e68e795380922eb3a33b7",
+      "size": 128
+    }
+  },
+  "scope": "Retained guest output bytes. Reuse on another runtime requires explicit compatibility validation; this export is not new-runtime acceptance."
+}

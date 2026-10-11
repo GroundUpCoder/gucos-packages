@@ -1,0 +1,6 @@
+[machine-job] queued: node docs/research/tmux-ipc/export-dependencies.mjs tmux
+(node:1208322) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[machine-job] running: fa32ca46-e7e2-49e5-b228-8bfa2db041ba
+
+

@@ -1,0 +1,31 @@
+[machine-job] queued: sh -c node --check docs/research/tmux-ipc/integrated-compile.mjs && node --check docs/research/tmux-ipc/lifecycle-candidate.mjs && node docs/research/tmux-ipc/integrated-compile.mjs && TMUX_INTEGRATED_IPC=1 node docs/research/tmux-ipc/lifecycle-candidate.mjs
+(node:1164403) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[machine-job] running: 5e193d68-2846-4c01-b398-80eb219e65ab
+
+582 functions, 526253 bytes
+3 functions, 9376 bytes
+No such source: /tmp/tmux-integrated/libevent/source/port/test.c
+
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: 582 functions, 526253 bytes
+3 functions, 9376 bytes
+No such source: /tmp/tmux-integrated/libevent/source/port/test.c
+
+
+1 !== 0
+
+    at Object.command (file:///home/ubuntu/git/gucos-packages-ipc/tests/compatibility/session.mjs:47:96)
+    at async file:///home/ubuntu/git/gucos-packages-ipc/docs/research/tmux-ipc/integrated-compile.mjs:19:3 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v22.23.2

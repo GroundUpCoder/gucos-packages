@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "scope": "Remote host shell/JS syntax and exact imsg source transformation only; no guest build or lifecycle",
+  "recipeSha256": "fea33fd858277474a0b5bece77e667df988c407f11332be8a21e1fff3bdb4958",
+  "machineJobId": "ce17f4d0-f31f-464c-8a64-ae303b9e4e34"
+}
