@@ -20,17 +20,16 @@ try{
  s=await session();report.runtime=s.runtime;await s.command('true');
  const config=JSON.parse(await readFile(resolve(run,'config.json'))),candidates=JSON.parse(await readFile(resolve(run,'candidate-manifests.json')));
  assert(candidates['desktop-apps'].binary);
- for(const name of ['desktop-apps','2048','jwm','desktop-entries','xterm']){
-  const bytes=await s.page.evaluate(async name=>Array.from(await shell.busybox.read('/usr/local/lib/gucman/packages/'+name+'/current/manifest.json')),name);
-  const actual=JSON.parse(Buffer.from(bytes));
-  if(candidates[name])assert.deepEqual(actual,candidates[name]);
-  else{
-   const ref=config.baselinePackages[name];const response=await fetch(ref.url);assert(response.ok);const pinned=Buffer.from(await response.arrayBuffer());assert.equal(sha(pinned),ref.sha256);assert.equal(pinned.length,ref.size);assert.deepEqual(actual,JSON.parse(pinned));
-  }
-  (report.manifests??={})[name]=actual;
+ const closureBytes=await readFile(resolve(run,'desktop-closure.json')),closure=JSON.parse(closureBytes),sums=await readFile(resolve(run,'desktop-closure.sha256'));
+ assert.equal(closure.root,'desktop-apps');assert.equal(closure.inputCommit,config.inputCommit);assert.deepEqual(closure.manifests['desktop-apps'],candidates['desktop-apps']);assert.equal(sha(sums),closure.checksumsSha256);
+ for(const name of ['desktop-apps','2048','jwm','desktop-entries','xterm'])assert(closure.manifests[name],'Required exercised package missing from frozen closure: '+name);
+ for(const [name,expected] of Object.entries(closure.manifests)){
+  const actual=await s.page.evaluate(async name=>JSON.parse(new TextDecoder().decode(await shell.busybox.read('/usr/local/lib/gucman/packages/'+name+'/current/manifest.json'))),name);
+  assert.deepEqual(actual,expected,'Frozen installed dependency '+name);
  }
- await s.page.evaluate(async text=>shell.busybox.write('/tmp/desktop-apps.sha256',new TextEncoder().encode(text)),await readFile(resolve(run,'desktop-apps.sha256'),'utf8'));
- await s.command('sha256sum -c /tmp/desktop-apps.sha256');
+ report.closureSha256=sha(closureBytes);report.payloadFiles=closure.fileCount;
+ await s.page.evaluate(async text=>shell.busybox.write('/tmp/desktop-closure.sha256',new TextEncoder().encode(text)),sums.toString());
+ await s.command('sha256sum -c /tmp/desktop-closure.sha256');
  report.harnessSha256=sha(await readFile(new URL(import.meta.url)));d=await desktopSession(s);report.helpers=d.helper;
  const canvas=await visibleCanvas(s.page);const entry='gucos-desktop-2048.desktop';report.menu=await clickMenuEntry(d,entry);
  let w=await observe(d,'window','2048');assert(w.pid>0);report.firstWindow=w;
