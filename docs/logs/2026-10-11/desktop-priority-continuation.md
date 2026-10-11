@@ -398,3 +398,12 @@ layout and normal-exit evidence: 47 indexed payload hashes, 35 manifests and
 children (Ctrl+Q and WM close). Before/after receipt and gate bindings agree;
 historical scheduler state was unavailable to the reviewer. Archive operations,
 reload and public acceptance remain pending; catalog acceptance is unchanged.
+
+Copied the independently reviewed Xarchiver bzip2 discovery runtime subset
+unchanged after the duplicate exclusive-write correction. Driver SHA256
+bdae1e64a13ddb20c93be8b4642956965ce35b87f67b6a0aae71db28cb08bdbb.
+The 119-byte reference archive is host-seeded and is not GUI creation evidence.
+The empty cancel witness is not an assigned extraction destination. Test
+presentation remains unclassified. Full before/discovery/after closure gates
+and supervised exits are required; this does not authorize functional or
+reload acceptance. Future functional schemas and synthetic fixtures stay out.
