@@ -64,3 +64,14 @@ weights. Stopped own wrapper33887 with SIGTERM promptly; exit143, not a pass.
 Partial packages-local pcg32-host-gpt-61a87f88 snapshot retained. Host preparation
 will use the serial reservation lane or wait for the browser to finish.
 No old/core files changed; no default-account threads used.
+
+## Corrected GTK source acceptance
+
+Reservation0700a781 passed corrected GTK source on61a:586 compilation units,
+GTK/GDK shared links, GIO-first pkg-config version consumer,720 outputs.
+Raw export18f6fa22 is22784000 bytes, retained with receipt and source evidence
+in batch-12/corrected-source. The earlier header failure is cleared. Some missing
+dependencies were rebuilt by gucman build; fresh binary/GUI acceptance will use
+the immutable published dependency archives. No GUI acceptance claimed yet.
+Guest stdout went to the execution session; no separate source build.log was
+captured. Report, receipt and archive are retained without reconstructing logs.
