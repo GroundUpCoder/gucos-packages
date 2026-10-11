@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/galculator",
+  "archiveSha256": "672d2a942776a4e29bbe6363fd75af469d1e218fbb17a789c0bc1ad6bc7f24ec",
+  "status": "source migration candidate; no new guest execution"
+}

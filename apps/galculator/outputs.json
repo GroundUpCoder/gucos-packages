@@ -1,0 +1,98 @@
+[
+  {
+    "path": "bin/galculator",
+    "mode": 493
+  },
+  {
+    "path": "libexec/galculator",
+    "mode": 493
+  },
+  {
+    "path": "share/galculator/ui/about.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/basic_buttons_gtk2.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/basic_buttons_gtk3.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/classic_view.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/dispctrl_bottom_gtk2.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/dispctrl_bottom_gtk3.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/dispctrl_right_gtk2.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/dispctrl_right_gtk3.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/dispctrl_right_vertical_gtk2.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/dispctrl_right_vertical_gtk3.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/main_frame.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/main_frame_hildon.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/paper_view.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/prefs-ume.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/prefs_gtk2.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/prefs_gtk3.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/scientific_buttons_gtk2.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/galculator/ui/scientific_buttons_gtk3.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/galculator.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/galculator.png",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/galculator/PORT.md",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/galculator/COPYING",
+    "mode": 420
+  }
+]
