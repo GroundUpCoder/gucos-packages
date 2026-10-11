@@ -29,6 +29,13 @@ try{
   const box=await canvas.boundingBox(),p=await canvasPosition(canvas,{x:799,y:599});await s.page.mouse.move(box.x+p.x,box.y+p.y);
  }
  async function board(label,{equal,different}={}){return bounded((async()=>{
+  await writeFile(resolve(run,stem+'-'+label+'-before-expose.png'),await canvas.screenshot(),{flag:'wx'});
+  const frame=await observe(d,'frame','XMahjongg');assert(w.y-frame.y>=24&&w.y-frame.y<=32);
+  await canvas.click({position:await canvasPosition(canvas,{x:frame.x+frame.width-64,y:frame.y+16})});
+  await observe(d,'absent','XMahjongg');
+  await canvas.click({position:await canvasPosition(canvas,{x:200,y:585})});
+  assert.deepEqual(await observe(d,'window','XMahjongg'),w,'Normal expose must preserve client geometry');
+  const box=await canvas.boundingBox(),outside=await canvasPosition(canvas,{x:799,y:599});await s.page.mouse.move(box.x+outside.x,box.y+outside.y);
   let last,stable=0;
   for(;;){await s.page.waitForTimeout(250);const pixels=await observe(d,'mahjongg-tiles','XMahjongg');assert(pixels.different>100,'Rendered tile board required');stable=pixels.hash===last?stable+1:0;last=pixels.hash;
    if(stable>=5&&(equal===undefined||pixels.hash===equal)&&(different===undefined||pixels.hash!==different)){await writeFile(resolve(run,stem+'-'+label+'.png'),await canvas.screenshot(),{flag:'wx'});return pixels.hash;}
