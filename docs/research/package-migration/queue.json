@@ -1341,9 +1341,10 @@
         "pango",
         "sdl3"
       ],
-      "mapping": null,
+      "mapping": "Partially mapped to accepted gtk3-x11@3.24.43-1 for software X11 GTK/GDK consumer and GUI scope; not a byte/path/backend-equivalent migration of historical SDL/Broadway profile.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Historical static libgtk-3.a/libgdk-3.a, ordinary library paths and custom SDL/Broadway backend/API contracts are not supplied by current private shared provider. No blind aliases or restoration of kernel desktop policy; retain exact batch-12 accepted scope/runtime."
     },
     {
       "id": "gettext",
@@ -1608,9 +1609,10 @@
         "gtk3-schemas",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "Unmigrated executable application; candidate adaptation to accepted GTK3-X11 requires owned source/license provenance and explicit loader/SDK wrapper.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Prepare calculator/Lights Out application, then independent functional/reload gates. Adapt historical surface launcher for X11; appearance/hints are session-only, with no persistence claim."
     },
     {
       "id": "gtk-desktop",
@@ -1643,9 +1645,10 @@
         "l3afpad",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "Unmigrated application and architecture-dependent session. Tools/application workload needs an owned X11 port and scoped evidence; historical kernel-managed desktop session requires explicit userland redesign, not restoration in core.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "File manager, sample editor and appearance contracts remain pending. Historical /run/wm.sock/kernel-layer session policy conflicts with target core boundary. Accepted L3afpad/JWM do not establish those contracts; each dependency retains separate gates."
     },
     {
       "id": "gtk-sdk",
@@ -1673,9 +1676,10 @@
         "gtk3",
         "sdk"
       ],
-      "mapping": null,
+      "mapping": "Historical dependency/marker package (sdk+gtk3), with GTK development workload partially served by current compiler/pkgconf plus gtk3-x11 and dependency SDKs; no standalone executable.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Explicit private pkg-config/runtime loader contract and installed/reload execution of combined GTK/HarfBuzz/Pango consumer remain pending. Missing marker alone is not functional failure. Static/backend obligations remain under gtk3/gdk3; sdk core ownership stays distinct."
     },
     {
       "id": "gtk3",
@@ -1705,9 +1709,10 @@
         "gtk3-schemas",
         "harfbuzz"
       ],
-      "mapping": null,
+      "mapping": "Partially mapped to accepted gtk3-x11@3.24.43-1 for software X11 GTK/GDK consumer and GUI scope; not a byte/path/backend-equivalent migration of historical SDL/Broadway profile.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Historical static libgtk-3.a/libgdk-3.a, ordinary library paths and custom SDL/Broadway backend/API contracts are not supplied by current private shared provider. No blind aliases or restoration of kernel desktop policy; retain exact batch-12 accepted scope/runtime."
     },
     {
       "id": "gtk3-demo",
@@ -1736,9 +1741,10 @@
         "gtk3-schemas",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "Unmigrated local gallery launcher plus 14 selected GTK3.24.43 demos, not the full upstream gtk3-demo.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Own source/license and colorsel repaint-adaptation provenance; adapt X11 launcher; independently gate bounded widget/model/dialog/input/close/reload scopes. GTK library acceptance does not accept these applications."
     },
     {
       "id": "gtk3-schemas",
@@ -1863,9 +1869,7 @@
           "evidence": "docs/research/package-migration/batch-12/public-live"
         }
       ],
-      "blockers": [
-        "Exact artifact review and public publication/acceptance pending."
-      ],
+      "blockers": [],
       "design": "gtk-provider-design.md",
       "candidate": "apps/gtk3-x11",
       "sourceReview": {
@@ -2170,10 +2174,10 @@
         "jwm",
         "x11-apps-more"
       ],
-      "mapping": "start-jwm and helper now supplied by jwm; former desktop bundle/menu/dependency closure not reproduced.",
+      "mapping": "Historical start-jwm launcher/session workload supplied by accepted jwm@2.4.6-2; historical optional menu entries retained in apps/jwm/app-menu.sh with additional installed-client entries. x11-apps-more clients map to separate accepted packages; historical aggregate dependency installation has not been reproduced as a bundle.",
       "acceptance": [],
       "blockers": [],
-      "remainingScope": "Retain current JWM; restore historical desktop/menu dependency coverage"
+      "remainingScope": "Reconcile aggregate install/dependency semantics and retain bounded launcher/menu evidence; optional application acceptance belongs to each application row."
     },
     {
       "id": "l3afpad",
@@ -4640,12 +4644,12 @@
         "ncurses",
         "x11-server"
       ],
-      "mapping": "x11-toolkit + x11-widgets + xterm + xev + xprop + xmessage; Source Code Pro supplied by accepted fontconfig",
+      "mapping": "Split into x11-toolkit (ICE/SM/Xt/Xmu/Xrandr archives and headers), x11-widgets (Xpm/Xaw7 archives), xterm/xev/xprop/xmessage; Source Code Pro and license supplied by accepted fontconfig. Historical Xft SDK and Xft/ncurses xterm configuration remain unmigrated.",
       "acceptance": [],
       "blockers": [
         "libXft SDK and Xft/ncurses xterm profile remain missing"
       ],
-      "remainingScope": "Missing Xft, Source Code Pro and ncurses xterm profile"
+      "remainingScope": "Missing lib/libXft.a, include/X11/Xft/Xft.h, include/X11/Xft/XftCompat.h and lib/pkgconfig/xft.pc; Xft/terminfo xterm profile remains pending. Ncurses source work is retained and reviewed; its installed/reload/public gates remain pending. Font presence does not establish Xft selection/rendering."
     },
     {
       "id": "x11-apps-more",
@@ -4666,7 +4670,7 @@
         "pkgconf",
         "x11-apps"
       ],
-      "mapping": "Seven clients published separately; missing xedit, xfontsel, xclipboard, oclock, xcutsel.",
+      "mapping": "Twelve historical clients supplied by separate accepted packages; five formerly missing clients are recorded in components and batch-02/public-live. Software X11/core-font scope; existing optional pixmap/international-font warnings retained.",
       "acceptance": [],
       "blockers": [],
       "remainingScope": "No missing client binaries; software X11/core-font scope only, optional pixmap and international font warnings retained.",

@@ -125,3 +125,13 @@ fixture tree and bytes, and normal exit with terminal restoration. Rename is
 omitted. Screenshots must independently confirm the sole `probe.txt` and absence
 of error or progress overlays. This approval establishes no functional, reload
 or public acceptance. Original implementation authorship is retained.
+
+Independent historical desktop-profile reconciliation corrected stale queue mapping
+text without changing row states or acceptance counts. JWM retains historical
+optional menu entries; all twelve x11-apps-more clients are separately supplied.
+Source Code Pro is already accepted through fontconfig. The exact Xft SDK and
+Xft/terminfo xterm profile remain pending, as do ncurses binary/public gates.
+GTK3-X11 acceptance is retained at its recorded software-X11 scope and runtime;
+it does not supply the historical static/SDL/Broadway contract. GTK desk, gallery
+and desktop applications retain separate migration and functional obligations.
+Historical kernel desktop policy must be redesigned in userland.
