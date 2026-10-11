@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "name": "micropython",
+  "version": "1.28.0-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/53d80ed568f15aa6e56e41e1e60c93bd0a764a96/apps/micropython/source.tar",
+      "sha256": "5b7d286893218385b07b7ce387157275d749e81665c98f3a5917c185b9c89d67",
+      "size": 3430400
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/53d80ed568f15aa6e56e41e1e60c93bd0a764a96/apps/micropython/build.sh",
+      "sha256": "804701750ef38b07ebbe90b253b3458ef17f289b28483ca646c0a232ee52840a",
+      "size": 491
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/53d80ed568f15aa6e56e41e1e60c93bd0a764a96/apps/micropython/test.sh",
+      "sha256": "ff484c5ae795599c33afb135fc74f518ee6aba9f7d1a6953e37c49fb79212ea7",
+      "size": 414
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/micropython",
+      "mode": 493
+    },
+    {
+      "path": "bin/python",
+      "mode": 493
+    },
+    {
+      "path": "libexec/micropython",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/micropython/LICENSE",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/micropython/LICENSE"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/53d80ed568f15aa6e56e41e1e60c93bd0a764a96/apps/micropython/binaries/7881dde0ddaea273f0380b230d398ebffd6a9c2001131ccdc22adfab8de94656.tar",
+    "sha256": "7881dde0ddaea273f0380b230d398ebffd6a9c2001131ccdc22adfab8de94656",
+    "size": 1475584
+  }
+}
