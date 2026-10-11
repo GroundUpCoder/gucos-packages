@@ -1,0 +1,44 @@
+gucman: unknown source
+
+gucman: build migration:vim: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20980 bytes; transfer finished
+gucman: Resolving: migration:vim
+gucman: Downloading manifest for migration:vim (156417 bytes)
+  Connecting; waiting for response…
+  Downloaded 156417 / 156417 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:vim
+gucman: Checking cached object: manifest for migration:vim
+gucman: unsafe output path
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: build migration:vim: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20980 bytes; transfer finished
+gucman: Resolving: migration:vim
+gucman: Downloading manifest for migration:vim (156417 bytes)
+  Connecting; waiting for response…
+  Downloaded 156417 / 156417 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:vim
+gucman: Checking cached object: manifest for migration:vim
+gucman: unsafe output path
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)
+    at async file:///Users/jku/git/gucos-packages-porting/tests/migration/stage.mjs:49:27 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

@@ -1,0 +1,89 @@
+import {typeText} from './keyboard.mjs';
+// Physical JWM/input gates for the accepted X applications advertised by
+// desktop-apps. Observers read X geometry/pixels only; no synthetic X events.
+import assert from 'node:assert/strict';
+import {readFile,writeFile,access} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {createHash} from 'node:crypto';
+import {session} from '../compatibility/session.mjs';
+import {poll} from './poll.mjs';
+import {desktopSession} from './session.mjs';
+import {clickMenuEntry} from './menu.mjs';
+import {installObserver,observe} from './menu-xapps.mjs';
+import {visibleCanvas,canvasPosition} from '../migration/canvas.mjs';
+const sha=b=>createHash('sha256').update(b).digest('hex');
+async function bounded(p,ms){let timer;try{return await Promise.race([p,new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('X app test deadline')),ms);})]);}finally{clearTimeout(timer);}}
+assert(process.env.MACHINE_JOB_ID);const name=process.argv[2];assert(['xcalc','xedit','xclock','xeyes'].includes(name));
+const reload=process.argv.includes('--reload');assert(!reload||name==='xedit','--reload is the editor persistence branch');
+const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'first';assert(/^[a-zA-Z0-9_-]+$/.test(attempt));const stem=name+'-jwm-'+attempt+(reload?'-reload':'');
+await assert.rejects(access(resolve(run,stem+'.json')),{code:'ENOENT'});
+const report={status:'running',startedAt:new Date().toISOString(),name,scope:'Owned JWM menu launch, physical input/function, quit/relaunch; editor saves and reopens'};let s,d;const editorPath='/home/user/jwm-xedit-'+attempt+'.txt';
+try{
+ s=await session();report.runtime=s.runtime;await s.command('true');
+ const config=JSON.parse(await readFile(resolve(run,'config.json'))),candidate=JSON.parse(await readFile(resolve(run,'candidate-manifests.json')))['desktop-apps'];assert(candidate.binary);
+ const bytes=await readFile(resolve(run,'desktop-closure.json')),closure=JSON.parse(bytes),sums=await readFile(resolve(run,'desktop-closure.sha256'));
+ assert.equal(closure.root,'desktop-apps');assert.equal(closure.inputCommit,config.inputCommit);assert.deepEqual(closure.manifests['desktop-apps'],candidate);assert.equal(sha(sums),closure.checksumsSha256);assert(closure.manifests[name]);
+ for(const [n,expected] of Object.entries(closure.manifests))assert.deepEqual(await s.page.evaluate(async n=>JSON.parse(new TextDecoder().decode(await shell.busybox.read('/usr/local/lib/gucman/packages/'+n+'/current/manifest.json'))),n),expected);
+ await s.page.evaluate(async text=>shell.busybox.write('/tmp/xapps-closure.sha256',new TextEncoder().encode(text)),sums.toString());await s.command('sha256sum -c /tmp/xapps-closure.sha256');
+ report.closureSha256=sha(bytes);report.harnessSha256=sha(await readFile(new URL(import.meta.url)));report.keyboardHelperSha256=sha(await readFile(new URL('./keyboard.mjs',import.meta.url)));report.observer=await installObserver(s);d=await desktopSession(s);report.desktopHelpers=d.helper;
+ const klass={xcalc:'XCalc',xedit:'Xedit',xclock:'XClock',xeyes:'XEyes'}[name],entry='gucos-desktop-'+name+'.desktop';const canvas=await visibleCanvas(s.page);
+ const click=async(x,y)=>canvas.click({position:await canvasPosition(canvas,{x,y})});
+ const snap=async label=>{await writeFile(resolve(run,stem+'-'+label+'.png'),await canvas.screenshot(),{flag:'wx'});};
+ const pixels=async (height=undefined)=>observe(d,'pixels',klass,height);
+ let w,pid,loads=0;
+ async function launch(){
+  (report.menus??=[]).push(await clickMenuEntry(d,entry));w=await observe(d,'window',klass);
+  const ids=(await d.command('for f in /proc/[0-9]*/comm; do IFS= read -r comm < "$f" || continue; if [ "$comm" = '+name+' ]; then p=${f#/proc/}; echo "${p%/comm}"; fi; done')).trim().split(/\s+/).map(Number);assert.equal(ids.length,1,'Isolated fixture must have one app process');assert(Number.isInteger(ids[0])&&ids[0]>0);pid=ids[0];
+  (report.pids??=[]).push(pid);await click(w.x+w.width/2,name==='xeyes'?w.y-12:w.y+w.height/2);await s.page.waitForTimeout(300);assert((await pixels()).different>10);
+ }
+ async function close(){
+  // Accepted JWM uses a 24-pixel title bar; click its ordinary close button.
+  const frame=await observe(d,'frame',klass);assert(w.y-frame.y>=24&&w.y-frame.y<=32);
+  await click(frame.x+frame.width-16,frame.y+16);await observe(d,'absent',klass);
+  await d.command(`n=0; while kill -0 ${pid} 2>/dev/null; do n=$((n+1)); [ "$n" -lt 100 ] || exit 1; sleep 0.1; done`);
+ }
+ async function editorLoad(){
+  const field=await observe(d,'child',klass,'0.0.3');assert(field.width>100&&field.height<65,'Expected Xedit filename field geometry');
+  await click(field.x+field.width/2,field.y+field.height/2);await s.page.waitForTimeout(200);await s.page.keyboard.press('Control+a');await s.page.keyboard.press('Control+k');await typeText(s.page,editorPath);await snap('filename-'+(++loads));
+  const load=await observe(d,'child',klass,'0.0.2');assert(load.width<120&&load.height<65);await click(load.x+load.width/2,load.y+load.height/2);await s.page.waitForTimeout(300);
+  await click(w.x+w.width/2,w.y+w.height*0.75);
+ }
+ async function saveExpected(text){
+  const button=await observe(d,'child',klass,'0.0.1');assert(button.width<120&&button.height<65);await click(button.x+button.width/2,button.y+button.height/2);
+  await poll(s.page,async({text,path})=>{const actual=await shell.busybox.read(path),expected=new TextEncoder().encode(text);return actual?.length===expected.length&&expected.every((b,i)=>actual[i]===b);},{text,path:editorPath},15000);
+ }
+ await launch();await snap('launched');
+ if(name==='xcalc'){
+  // Default scientific layout: five columns and eleven button rows.
+  // Physical clicks avoid assuming keyboard translations on an Xt child.
+  assert(w.width>=210&&w.width<=260&&w.height>=380&&w.height<=430,'Unexpected default calculator layout');
+  const button=async(col,row)=>{assert(col>=0&&col<5&&row>=0&&row<11);await click(w.x+4+(col+0.5)*(w.width-8)/5,w.y+62+(row+0.5)*(w.height-66)/11);await s.page.waitForTimeout(150);};
+  await button(4,0);await button(1,9);await button(4,9);await button(2,9);await button(4,10);const sum=await pixels(60);await snap('sum-three');
+  await button(4,0);const zero=await pixels(60);await snap('cleared-zero');await button(3,9);const three=await pixels(60);await snap('direct-three');
+  assert.notEqual(sum.hash,zero.hash);assert.equal(sum.hash,three.hash,'1+2 display must equal directly entered3');report.result={sum,zero,three};report.calculatorGeometry=w;
+ }else if(name==='xeyes'){
+  const box=await canvas.boundingBox();const move=async p=>{const q=await canvasPosition(canvas,p);await s.page.mouse.move(box.x+q.x,box.y+q.y);await s.page.waitForTimeout(400);};
+  await move({x:5,y:5});const left=await pixels();await snap('look-left');await move({x:790,y:560});let right=await pixels();for(let i=0;i<20&&right.hash===left.hash;i++){await s.page.waitForTimeout(250);right=await pixels();}await snap('look-right');assert.notEqual(left.hash,right.hash);report.result={left,right};
+ }else if(name==='xclock'){
+  const before=await pixels();let after=before;
+  for(let i=0;i<70&&after.hash===before.hash;i++){await s.page.waitForTimeout(1000);after=await pixels();}
+  assert.notEqual(after.hash,before.hash,'Default minute-update clock must advance');report.result={before,after};await snap('ticked');
+ }else{
+  await editorLoad();await snap('loaded');
+  if(reload){
+   const prior=JSON.parse(await readFile(resolve(run,'xedit-jwm-'+attempt+'.json')));assert.equal(prior.status,'passed');assert.equal(prior.closureSha256,report.closureSha256,'Reload must use the same accepted private/public closure');assert.equal(prior.runtime,s.runtime);
+   const disk=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),editorPath);assert.deepEqual(disk,Array.from(new TextEncoder().encode(prior.saved)));
+   await s.page.keyboard.press('Control+End');await typeText(s.page,'browser reload');await s.page.keyboard.press('Enter');report.saved=prior.saved+'browser reload\n';
+  }else{await typeText(s.page,'hello JWM editor');await s.page.keyboard.press('Enter');report.saved='hello JWM editor\n';}
+  await snap('typed');await saveExpected(report.saved);await snap('saved');
+ }
+ await close();const firstPid=pid;await launch();assert.notEqual(pid,firstPid);await snap('relaunched');
+ if(name==='xedit'){
+  await editorLoad();await s.page.keyboard.press('Control+End');await typeText(s.page,'reopened');await s.page.keyboard.press('Enter');report.saved+='reopened\n';await saveExpected(report.saved);await snap('reopened-saved');
+ }
+ await close();await d.finish();await s.command('echo XAPP-JWM-TERMINAL-RESTORED');report.status='passed';
+}catch(e){report.status='failed';report.error=String(e.stack||e);throw e;}
+finally{
+ report.finishedAt=new Date().toISOString();if(s){if(report.status==='failed'){try{report.editorDisk=await bounded(s.page.evaluate(async path=>{const b=await shell.busybox.read(path);return b?{present:true,bytes:Array.from(b)}:{present:false};},editorPath),5000);await bounded((async()=>writeFile(resolve(run,stem+'-failure.png'),await (await visibleCanvas(s.page)).screenshot(),{flag:'wx'}))(),5000);}catch(e){report.diagnosticError=String(e);}}try{await bounded((async()=>{await writeFile(resolve(run,stem+'.log'),await s.page.evaluate(()=>shell.busybox.log),{flag:'wx'});})(),5000);}catch(e){report.logError=String(e);}try{await bounded(s.close(),30000);}catch(e){report.cleanupError=String(e);report.status='failed';}}
+ await writeFile(resolve(run,stem+'.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});if(report.status!=='passed')process.exitCode=1;
+}

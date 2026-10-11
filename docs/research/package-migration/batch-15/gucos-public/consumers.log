@@ -1,0 +1,70 @@
+gucman: unknown source
+
+
+546 functions, 508832 bytes
+SDL3-GFX-BENCH 19.315000
+SDL3-GFX-BENCH 19.450000
+SDL3-GFX-BENCH 19.494999
+SDL3-GFX-BENCH 19.440000
+SDL3-GFX-BENCH 19.430000
+SDL3-GFX-PASS
+612 functions, 579517 bytes
+SDL3-GFX-BENCH 15.985000
+SDL3-GFX-BENCH 15.870000
+SDL3-GFX-BENCH 15.905001
+SDL3-GFX-BENCH 15.965000
+SDL3-GFX-BENCH 15.885000
+SDL3-GFX-PASS
+SDL3-GFX-PASS
+SDL3-GFX-PASS
+
+
+550 functions, 513106 bytes
+753 functions, 660698 bytes
+SDL3-IMAGE-CONSUMER-PASS
+SDL3-IMAGE-CONSUMER-PASS
+
+
+547 functions, 518119 bytes
+1161 functions, 964230 bytes
+Decoded /tmp/migration-consumers/consumers/sdl3-mixer/source/port/fixtures/tone.wav: 8000 frames, power 555.067
+Decoded /tmp/migration-consumers/consumers/sdl3-mixer/source/port/fixtures/tone.ogg: 8000 frames, power 563.331
+Decoded /tmp/migration-consumers/consumers/sdl3-mixer/source/port/fixtures/tone.mp3: 8000 frames, power 500.871
+Decoded /tmp/migration-consumers/consumers/sdl3-mixer/source/port/fixtures/tone.flac: 8000 frames, power 555.067
+SDL3-MIXER-PASS
+Decoded /tmp/migration-consumers/consumers/sdl3-mixer/source/port/fixtures/tone.wav: 8000 frames, power 555.067
+Decoded /tmp/migration-consumers/consumers/sdl3-mixer/source/port/fixtures/tone.ogg: 8000 frames, power 563.331
+Decoded /tmp/migration-consumers/consumers/sdl3-mixer/source/port/fixtures/tone.mp3: 8000 frames, power 500.871
+Decoded /tmp/migration-consumers/consumers/sdl3-mixer/source/port/fixtures/tone.flac: 8000 frames, power 555.067
+SDL3-MIXER-PASS
+
+/usr/local/lib/libSDL3_gfx.a: OK
+/usr/local/lib/libSDL3_gfx.so: OK
+/usr/local/include/SDL3_gfx/SDL_gfxPrimitives.h: OK
+/usr/local/lib/pkgconfig/SDL3_gfx.pc: OK
+/usr/local/share/licenses/sdl3-gfx/LICENSE: OK
+
+3902ec3a0b64b9bf21ac6bb69a49a18c8ea0d6310e43d51209f0d3e7294d79ed  /home/user/migration-export.tar
+179712
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/lib/libSDL3_image.a: OK
+/usr/local/lib/libSDL3_image.so: OK
+/usr/local/lib/pkgconfig/sdl3-image.pc: OK
+/usr/local/share/licenses/sdl3-image/LICENSE.txt: OK
+/usr/local/include/SDL3_image/SDL_image.h: OK
+
+5a13b2d5ebf7cce555425b8b078093a076897c309f40314db7989268be7fc877  /home/user/migration-export.tar
+479744
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/lib/libSDL3_mixer.a: OK
+/usr/local/lib/libSDL3_mixer.so: OK
+/usr/local/lib/pkgconfig/sdl3-mixer.pc: OK
+/usr/local/share/licenses/sdl3-mixer/LICENSE.txt: OK
+/usr/local/include/SDL3_mixer/SDL_mixer.h: OK
+
+34a04829605db65c0f571c4730d879b555f601f9399b864bccfd3eb18a7f6f4a  /home/user/migration-export.tar
+1290240
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

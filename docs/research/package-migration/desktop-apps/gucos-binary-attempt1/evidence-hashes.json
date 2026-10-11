@@ -1,0 +1,12 @@
+{
+  "2048-jwm-first.json": "ffeaa1f3df040db0f4c97fa2cc384c14c898bcf05a38e137d98e07d5d4796755",
+  "2048-jwm-first.log": "4e9cfd894b142ea568e62843a0ed7186b9332a3b0b44d2a269eceda4dc203507",
+  "2048-jwm.log": "763cd605ac76fb2929e6289e108b82bd3fbcfb8bbf2442c4b5e1d5b309cecdd8",
+  "candidate-manifests.json": "76876d1dd76cca2054b13e8d187e7483bb53c16b07cebec71c0ee7a117c38625",
+  "config.json": "bcf92fad0b2af2653ca585065fd18b2a0271a30a3ba2a63ae8af623652579a94",
+  "consumers-desktop-apps.json": "1c64fde2f8178719246b9079fef661f9981e1941d77ab3dca4935a14794723ff",
+  "desktop-closure.json": "97a094decb4e94703393d14508c1b7f90b541b055d62036261dd6914c19aa844",
+  "desktop-closure.sha256": "1371bde4b30faf6752b476fae9b7a804abe8f6cd2d1f661eb0b6aac3fde23bb3",
+  "install-desktop-apps.json": "c45ffcdcced79f045446c6bd920d8a763845677e2633aea38f80575c4e3c79f9",
+  "observed-runtime.json": "e6e257cf56d5201a417f01e0167bebfc285ea7133e33d6ab549f90eca96c4502"
+}

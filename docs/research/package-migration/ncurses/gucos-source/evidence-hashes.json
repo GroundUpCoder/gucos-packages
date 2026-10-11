@@ -1,0 +1,7 @@
+{
+  "build-ncurses.json": "7fee0f630aebdd373e72b020434de25f19ab9dc98163aceed9c751ebf1b8ae53",
+  "build-ncurses.log": "fdb3478e70a10f3ebc6caf446069343a56bfbac7bcc59e594b15fd8c19e5dfba",
+  "candidate-manifests.json": "b865a5cb137be23136f278db98f4e83fb833ff0dffdd9bf6307706c9c7dd3861",
+  "config.json": "fdeb86ad0c6cccce04b5fdaa6d42a6aa35d09995bf837cef177bb07d26e73225",
+  "observed-runtime.json": "b0e77181633344ce102049688e901ffb341a98c4379c4c350adbb4462268112f"
+}

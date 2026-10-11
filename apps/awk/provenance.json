@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/gawk",
+  "archiveSha256": "a1bd1714f0d4eafb474e9721829e65930219665b3b63e83623d33d9e5911daa3",
+  "status": "source migration candidate; no new guest execution"
+}

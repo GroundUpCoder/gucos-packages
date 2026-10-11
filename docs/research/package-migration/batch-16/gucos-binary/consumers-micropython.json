@@ -1,0 +1,33 @@
+{
+  "action": "consumers",
+  "names": [
+    "micropython"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "37928af03f9e03098e3c6689e34aa862d767505e",
+  "startedAt": "2026-10-11T04:58:16.637Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "micropython",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "5b7d286893218385b07b7ce387157275d749e81665c98f3a5917c185b9c89d67",
+          "size": 3430400
+        },
+        {
+          "path": "build.sh",
+          "sha256": "804701750ef38b07ebbe90b253b3458ef17f289b28483ca646c0a232ee52840a",
+          "size": 491
+        },
+        {
+          "path": "test.sh",
+          "sha256": "ff484c5ae795599c33afb135fc74f518ee6aba9f7d1a6953e37c49fb79212ea7",
+          "size": 414
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T04:58:20.148Z"
+}

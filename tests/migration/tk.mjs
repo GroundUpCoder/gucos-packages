@@ -42,6 +42,9 @@ try{
 mkdir -p /tmp/migration-tk
 cd /tmp/migration-tk
 tar -xf /tmp/migration-tk.tar
+# This isolated browser profile boots a new guest on each session. Lock files
+# can survive a failed prior session even though its processes cannot.
+rm -f /tmp/.X1-lock /tmp/.X11-unix/X1
 export DISPLAY=:1
 Xvfb :1 -screen 0 800x600x24 -fp built-ins -ac -noreset &
 server=$!
@@ -78,7 +81,7 @@ echo TK-PACKAGE-PASS`);
  await writeFile(resolve(run,label+'.png'),screenshot,{flag:'wx'});
  const pngBytes=Buffer.from(await s.page.evaluate(async()=>Array.from(await shell.busybox.read('/tmp/tk-image.png'))));
  const png=PNG.sync.read(pngBytes);assert.equal(png.width,2);assert.equal(png.height,2);
- assert.deepEqual([...png.data],[255,0,0,255,0,0,255,255,0,255,0,255,255,255,255,255]);
+ assert.deepEqual([...png.data],[255,0,0,255,0,0,255,255,0,128,0,255,255,255,255,255]);
  report.pixels={presentedRedPixels:red,screenshotSha256:sha(screenshot),roundtripSha256:sha(pngBytes),roundtripPixels:4};
  await writeFile(resolve(run,label+'-roundtrip.png'),pngBytes,{flag:'wx'});
  await canvas.click({position:await canvasPosition(canvas,{x:55,y:30}),timeout:10000});

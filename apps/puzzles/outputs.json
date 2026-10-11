@@ -1,0 +1,530 @@
+[
+  {
+    "path": "bin/sgt-blackbox",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/blackbox",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-bridges",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/bridges",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-cube",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/cube",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-dominosa",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/dominosa",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-fifteen",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/fifteen",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-filling",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/filling",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-flip",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/flip",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-flood",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/flood",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-galaxies",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/galaxies",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-guess",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/guess",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-inertia",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/inertia",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-keen",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/keen",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-lightup",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/lightup",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-loopy",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/loopy",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-magnets",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/magnets",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-map",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/map",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-mines",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/mines",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-mosaic",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/mosaic",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-net",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/net",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-netslide",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/netslide",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-palisade",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/palisade",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-pattern",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/pattern",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-pearl",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/pearl",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-pegs",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/pegs",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-range",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/range",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-rect",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/rect",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-samegame",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/samegame",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-signpost",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/signpost",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-singles",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/singles",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-sixteen",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/sixteen",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-slant",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/slant",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-solo",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/solo",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-tents",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/tents",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-towers",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/towers",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-tracks",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/tracks",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-twiddle",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/twiddle",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-undead",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/undead",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-unequal",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/unequal",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-unruly",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/unruly",
+    "mode": 493
+  },
+  {
+    "path": "bin/sgt-untangle",
+    "mode": 493
+  },
+  {
+    "path": "libexec/puzzles/untangle",
+    "mode": 493
+  },
+  {
+    "path": "share/sgt-puzzles/games",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/puzzles/LICENCE",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/puzzles/LICENCE",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/blackbox.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/bridges.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/cube.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/dominosa.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/fifteen.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/filling.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/flip.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/flood.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/galaxies.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/group.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/guess.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/inertia.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/javapage.pl",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/jspage.pl",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/keen.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/lightup.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/loopy.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/magnets.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/map.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/mines.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/mosaic.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/net.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/netslide.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/palisade.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/pattern.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/pearl.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/pegs.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/range.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/rect.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/samegame.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/signpost.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/singles.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/sixteen.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/slant.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/solo.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/tents.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/towers.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/tracks.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/twiddle.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/undead.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/unequal.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/unruly.html",
+    "mode": 420
+  },
+  {
+    "path": "share/sgt-puzzles/help/untangle.html",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-puzzles-fifteen.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-puzzles-mines.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-puzzles-net.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-puzzles-solo.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-puzzles-samegame.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-puzzles-untangle.desktop",
+    "mode": 420
+  }
+]

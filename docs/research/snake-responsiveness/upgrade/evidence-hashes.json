@@ -1,0 +1,38 @@
+{
+  "observed-runtime.json": {
+    "sha256": "11c9ef5f8739b0beb373834b2526792561c62066b3017767d727575350c05556",
+    "size": 123
+  },
+  "reload.log": {
+    "sha256": "b4a9be8a76518044c821b18a00e516facd642cc8b4a19cbbdb44673aa0438129",
+    "size": 389
+  },
+  "reload-receipt.json": {
+    "sha256": "823791c3fc58d5879705be292e536834014dcb0e57d4f28a54bff77a31b6789c",
+    "size": 3432
+  },
+  "upgrade.log": {
+    "sha256": "8d77d17c401d9862dddd6570d81ac75a6bdef9c101dd40499ee0e37b5b295bf7",
+    "size": 2689
+  },
+  "config.json": {
+    "sha256": "006b52a6602146c3a8f07ee89a161688cdac97f5cb911a720a6fb1db66b4d8f0",
+    "size": 20991
+  },
+  "reload-snake.json": {
+    "sha256": "593a8fdfc079084b592b5b0b19b3789f87f9fa1f2112f6ee670394e6f57483e7",
+    "size": 306
+  },
+  "snake.sha256": {
+    "sha256": "c3d0bec7111d9dd772fbce1c83f28f3077625e769489344c8ed2dbc5fac74d0f",
+    "size": 526
+  },
+  "snake-upgrade.json": {
+    "sha256": "8a80d118440da1621cdb90d83e565a14728afbffe839461e40dd1242596e6621",
+    "size": 247
+  },
+  "candidate-manifests.json": {
+    "sha256": "314b751303a2a14d944baacfaed3fdf79e1bc57ed48dc6433f0668ee9bb1ccbc",
+    "size": 3145
+  }
+}

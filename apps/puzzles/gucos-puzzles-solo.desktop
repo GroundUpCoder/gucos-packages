@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Solo
+Exec=sgt-solo
+TryExec=sgt-solo
+Terminal=false
+Categories=Game;LogicGame;

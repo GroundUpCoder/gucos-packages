@@ -86,6 +86,14 @@ for name in names:
         mode, kind, blob = meta.split()
         assert kind == 'blob'
         expected[path] = (mode, blob)
+    exclusions = provenance.get('excludedHistoricalPaths', [])
+    excluded = set()
+    for exclusion in exclusions:
+        path = exclusion['path']
+        assert path in expected and path not in excluded, (name, 'invalid exclusion', path)
+        assert exclusion['reason'].strip(), (name, 'missing exclusion reason', path)
+        assert exclusion['historicalBlob'] == expected[path][1], (name, 'exclusion identity', path)
+        excluded.add(path)
     seen = set()
     with tarfile.open(directory / 'source.tar') as archive:
         for member in archive:
@@ -97,7 +105,7 @@ for name in names:
             assert member.issym() == (mode == '120000')
             data = member.linkname.encode() if member.issym() else archive.extractfile(member).read()
             assert hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest() == blob
-    assert seen and seen == set(expected)
+    assert seen and seen == set(expected) - excluded
     assert hashlib.sha256((directory / 'source.tar').read_bytes()).hexdigest() == provenance['archiveSha256']
     for overlay in provenance.get('overlays', []):
         data = (directory / overlay['file']).read_bytes()
@@ -141,7 +149,13 @@ for name in names:
             hashes = dict(original['files'])
             hashes['provenance.json'] = prepared['provenanceSha256']
             hashes['manifest.json'] = prepared['manifestSha256']
-            assert original['translationManifestSha256'] == prepared['manifestSha256']
+            field = prepared.get('manifestHashField', 'translationManifestSha256')
+            assert field in ('translationManifestSha256', 'manifestSha256')
+            assert original[field] == prepared['manifestSha256']
+            responses = prepared.get('responseFiles', {})
+            assert set(responses) <= {'archive.rsp', 'startup.rsp'}
+            assert not (set(responses) & set(hashes))
+            hashes.update(responses)
             assert len(members) == len(hashes)
             assert {m.name.removeprefix('generated/') for m in members} == set(hashes)
             for member in members:

@@ -1,0 +1,109 @@
+gucman: unknown source
+
+
+/usr/local/bin/m4: OK
+/usr/local/share/info/m4.info: OK
+/usr/local/share/info/m4.info-1: OK
+/usr/local/share/info/m4.info-2: OK
+/usr/local/share/man/man1/m4.1: OK
+/usr/local/share/licenses/m4/COPYING: OK
+
+018f0877fc03b6507c69aa02e268c71f6c24b4eeb80662993adf52f651bc62cf  /home/user/migration-export.tar
+1120768
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/pcre2test: OK
+/usr/local/share/licenses/pcre2test/LICENCE.md: OK
+
+6a44c5919eed3d8ae3368ef14798ba5b6d4200d845233ea169b5fa0c4503fb7b  /home/user/migration-export.tar
+5154304
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/pcre2grep: OK
+/usr/local/share/licenses/pcre2grep/LICENCE.md: OK
+
+6684eedd1e4006051ff44f7f3b6eceef3683aff1a31efbac90bfae0765956c20  /home/user/migration-export.tar
+4673536
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/lib/libxfce4util.a: OK
+/usr/local/lib/libxfce4util.so: OK
+/usr/local/lib/pkgconfig/libxfce4util-1.0.pc: OK
+/usr/local/share/doc/libxfce4util/COPYING: OK
+/usr/local/share/doc/libxfce4util/PORT.md: OK
+/usr/local/share/licenses/libxfce4util/COPYING: OK
+/usr/local/include/xfce4/libxfce4util/libxfce4util-config.h: OK
+/usr/local/include/xfce4/libxfce4util/libxfce4util-private.h: OK
+/usr/local/include/xfce4/libxfce4util/libxfce4util-visibility.h: OK
+/usr/local/include/xfce4/libxfce4util/libxfce4util.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-consolekit.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-debug.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-fileutils.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-generics.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-gio-extensions.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-i18n.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-kiosk.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-license.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-miscutils.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-posix-signal-handler.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-private.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-rc-private.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-rc.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-resource.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-string.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-systemd.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-utf8.h: OK
+
+74087d7b869a1adc51fc9f3f8f89c1eb8dc872850238cda47ecd5298958e1064  /home/user/migration-export.tar
+564224
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/bitmap: OK
+/usr/local/share/doc/bitmap/COPYING: OK
+/usr/local/share/licenses/bitmap/COPYING: OK
+/usr/local/bin/bmtoa: OK
+/usr/local/bin/atobm: OK
+/usr/local/share/licenses/bitmap/XBITMAPS-COPYING: OK
+/usr/local/share/bitmap/bitmaps/menu12: OK
+/usr/local/share/X11/app-defaults/Bitmap: OK
+/usr/local/share/X11/app-defaults/Bitmap-color: OK
+/usr/local/share/X11/app-defaults/Bitmap-nocase: OK
+/usr/local/share/bitmap/bitmaps/Dashes: OK
+/usr/local/share/bitmap/bitmaps/Down: OK
+/usr/local/share/bitmap/bitmaps/Excl: OK
+/usr/local/share/bitmap/bitmaps/FlipHoriz: OK
+/usr/local/share/bitmap/bitmaps/FlipVert: OK
+/usr/local/share/bitmap/bitmaps/Fold: OK
+/usr/local/share/bitmap/bitmaps/Left: OK
+/usr/local/share/bitmap/bitmaps/Right: OK
+/usr/local/share/bitmap/bitmaps/RotateLeft: OK
+/usr/local/share/bitmap/bitmaps/RotateRight: OK
+/usr/local/share/bitmap/bitmaps/Stipple: OK
+/usr/local/share/bitmap/bitmaps/Term: OK
+/usr/local/share/bitmap/bitmaps/Up: OK
+
+767bd6052a936f5426a25cfa0bc946ccd56507a974a3151a7786f1fa7c5b4133  /home/user/migration-export.tar
+4669440
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/xmag: OK
+/usr/local/share/doc/xmag/COPYING: OK
+/usr/local/share/licenses/xmag/COPYING: OK
+/usr/local/share/X11/app-defaults/Xmag: OK
+
+4beed697ab5884afdd64f58a6006521fe4b12f5989a753ffed79ea85baaff3df  /home/user/migration-export.tar
+4393984
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/lib/libSDL3_ttf.a: OK
+/usr/local/lib/libSDL3_ttf.so: OK
+/usr/local/lib/pkgconfig/sdl3-ttf.pc: OK
+/usr/local/share/licenses/sdl3-ttf/LICENSE.txt: OK
+/usr/local/share/licenses/sdl3-ttf/OFL-NotoSans.txt: OK
+/usr/local/include/SDL3_ttf/SDL_textengine.h: OK
+/usr/local/include/SDL3_ttf/SDL_ttf.h: OK
+
+0bee29451c68b8d8b4d5ac4a84f64a7824cc545b2cd71411290c89800ef100c5  /home/user/migration-export.tar
+593920
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

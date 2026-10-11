@@ -16,6 +16,7 @@
 #define MAX_ROWS 22
 #define MAX_SNAKE ((MAX_COLS - 2) * (MAX_ROWS - 3))
 #define INITIAL_LEN 5
+#define TICK_MS 100
 
 static struct termios orig_termios;
 static int rows, cols;
@@ -162,28 +163,24 @@ static void init_game(void) {
     draw_score();
 }
 
-static void input_char(unsigned char c, int *out_dx, int *out_dy) {
-    if (c == 'q' || c == 'Q' || c == 3 || c == 4) { quitting = 1; return; }
-    if (game_over && (c == 'r' || c == 'R')) { init_game(); *out_dx = dir_x; *out_dy = dir_y; return; }
-    if (c == 27) { escape_state = 1; return; }
-    if (escape_state == 1) { escape_state = (c == '[' || c == 'O') ? 2 : 0; return; }
+/* 1: complete legal direction; 2: restart; 0: no movement. */
+static int input_char(unsigned char c, int *out_dx, int *out_dy) {
+    if (c == 'q' || c == 'Q' || c == 3 || c == 4) { quitting = 1; return 0; }
+    if (game_over && (c == 'r' || c == 'R')) { init_game(); *out_dx = dir_x; *out_dy = dir_y; return 2; }
+    if (c == 27) { escape_state = 1; return 0; }
+    if (escape_state == 1) { escape_state = (c == '[' || c == 'O') ? 2 : 0; return 0; }
     if (escape_state == 2) {
         escape_state = 0;
         if (c == 'A') c = 'w'; else if (c == 'B') c = 's';
         else if (c == 'C') c = 'd'; else if (c == 'D') c = 'a';
-        else return;
+        else return 0;
     }
-    if ((c == 'w' || c == 'k') && dir_y != 1) { *out_dx = 0; *out_dy = -1; }
-    if ((c == 's' || c == 'j') && dir_y != -1) { *out_dx = 0; *out_dy = 1; }
-    if ((c == 'd' || c == 'l') && dir_x != -1) { *out_dx = 1; *out_dy = 0; }
-    if ((c == 'a' || c == 'h') && dir_x != 1) { *out_dx = -1; *out_dy = 0; }
-}
-
-static void poll_key(int *out_dx, int *out_dy) {
-    unsigned char buf[64];
-    ssize_t n = read(STDIN_FILENO, buf, sizeof(buf));
-    if (n == 0 || (n < 0 && errno != EINTR && errno != EAGAIN)) { quitting = 1; return; }
-    for (ssize_t i = 0; i < n && !quitting; i++) input_char(buf[i], out_dx, out_dy);
+    if (game_over) return 0;
+    if ((c == 'w' || c == 'k') && dir_y != 1) { *out_dx = 0; *out_dy = -1; return 1; }
+    if ((c == 's' || c == 'j') && dir_y != -1) { *out_dx = 0; *out_dy = 1; return 1; }
+    if ((c == 'd' || c == 'l') && dir_x != -1) { *out_dx = 1; *out_dy = 0; return 1; }
+    if ((c == 'a' || c == 'h') && dir_x != 1) { *out_dx = -1; *out_dy = 0; return 1; }
+    return 0;
 }
 
 static void step(void) {
@@ -237,6 +234,24 @@ static void step(void) {
     draw_snake();
 }
 
+/* Apply complete keys immediately, in order, even when read() batches them.
+ * Partial escape sequences and rejected reversals do not advance the game. */
+static int handle_input(unsigned char c) {
+    int dx = dir_x, dy = dir_y;
+    int action = input_char(c, &dx, &dy);
+    if (action == 1) { dir_x = dx; dir_y = dy; step(); }
+    return action;
+}
+static int poll_key(void) {
+    unsigned char buf[64];
+    ssize_t n = read(STDIN_FILENO, buf, sizeof(buf));
+    if (n == 0 || (n < 0 && errno != EINTR && errno != EAGAIN)) { quitting = 1; return 0; }
+    int changed = 0;
+    for (ssize_t i = 0; i < n && !quitting; i++)
+        if (handle_input(buf[i])) changed = 1;
+    return changed;
+}
+
 static void cleanup(void) {
     if (!raw_enabled) return;
     write_str("\033[0m\033[?25h\033[?1049l");
@@ -264,21 +279,21 @@ int main(int argc, char **argv) {
     atexit(cleanup);
     signal(SIGTERM, stop); signal(SIGHUP, stop); signal(SIGINT, stop);
     write_str("\033[?1049h"); hide_cursor(); init_game();
-    long long next = milliseconds() + 150;
-    int announced = 0, new_dx = dir_x, new_dy = dir_y;
+    long long next = milliseconds() + TICK_MS;
+    int announced = 0;
     while (!quitting) {
         fd_set rfds; FD_ZERO(&rfds); FD_SET(0, &rfds);
         long long remaining = next - milliseconds();
         if (remaining < 0) remaining = 0;
-        if (remaining > 150 || game_over) remaining = 150;
+        if (remaining > TICK_MS) remaining = TICK_MS;
         struct timeval tv = {0, (long)remaining * 1000};
-        int ret = select(1, &rfds, NULL, NULL, &tv);
+        int ret = select(1, &rfds, NULL, NULL, game_over ? NULL : &tv);
         if (ret < 0 && errno != EINTR) break;
-        if (ret > 0) poll_key(&new_dx, &new_dy);
+        if (ret > 0 && poll_key()) { next = milliseconds() + TICK_MS; announced = 0; }
         if (quitting) break;
         if (!game_over && milliseconds() >= next) {
-            dir_x = new_dx; dir_y = new_dy; step();
-            next = milliseconds() + 150;
+            step();
+            next = milliseconds() + TICK_MS;
             announced = 0;
         }
         if (game_over && !announced) {

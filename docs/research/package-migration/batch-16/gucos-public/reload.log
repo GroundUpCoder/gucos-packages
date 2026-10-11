@@ -1,0 +1,12 @@
+gucman: unknown source
+
+
+/usr/local/bin/micropython: OK
+/usr/local/bin/python: OK
+/usr/local/libexec/micropython: OK
+/usr/local/share/licenses/micropython/LICENSE: OK
+
+83b20ff041953ad6751cc4f8d271edd4bc3eab310611424c1b934593378deb8b  /home/user/migration-export.tar
+1475584
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

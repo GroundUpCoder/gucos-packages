@@ -1,0 +1,156 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "34f72c3aab7aa06ce6cc1e2fbe4076e4b7a7b32e9fe1f81b4f57da2baffd5d5f",
+  "size": 4669440,
+  "guestManifest": {
+    "format": 1,
+    "name": "bitmap",
+    "version": "1.1.1-1",
+    "dependencies": [
+      "x11-server",
+      "x11-toolkit",
+      "x11-widgets"
+    ],
+    "dependencyRequirements": {
+      "x11-server": {
+        "version": "21.1.24-1"
+      },
+      "x11-toolkit": {
+        "version": "1.0-1"
+      },
+      "x11-widgets": {
+        "version": "1.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:58999/migration/bitmap/source.tar",
+        "sha256": "2b7161091f88aec901ddc7881ba587959919ab97e961c2dd0790026d965d6834",
+        "size": 1751040
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:58999/migration/bitmap/build.sh",
+        "sha256": "0a596fe26b0384daaa23b9754227543d474b121f583ccd8a6bbc879dc7960027",
+        "size": 1479
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:58999/migration/bitmap/test.sh",
+        "sha256": "742ecd257c9efe2f2e1069362a2cfb3aa94e6e5142c9cfc2ac3d0ca4b1da7f6a",
+        "size": 349
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/bitmap",
+        "mode": 493
+      },
+      {
+        "path": "share/doc/bitmap/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/bitmap/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "bin/bmtoa",
+        "mode": 493
+      },
+      {
+        "path": "bin/atobm",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/bitmap/XBITMAPS-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/menu12",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/Bitmap",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/Bitmap-color",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/Bitmap-nocase",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/Dashes",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/Down",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/Excl",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/FlipHoriz",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/FlipVert",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/Fold",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/Left",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/Right",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/RotateLeft",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/RotateRight",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/Stipple",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/Term",
+        "mode": 420
+      },
+      {
+        "path": "share/bitmap/bitmaps/Up",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/bitmap/COPYING",
+      "share/licenses/bitmap/XBITMAPS-COPYING"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

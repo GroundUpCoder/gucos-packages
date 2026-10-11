@@ -1,0 +1,63 @@
+{
+  "action": "consumers",
+  "names": [
+    "puzzles"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "23508733f27f7507f38f80858d8d19e121559154",
+  "startedAt": "2026-10-11T06:37:01.862Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "puzzles",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "41b1d3406a4f10f4d79816c2378fd11d071b4ba25dbbc070d0540e8aa5815c6f",
+          "size": 11796480
+        },
+        {
+          "path": "build.sh",
+          "sha256": "bf7684163bdd0d249ae878c244f7c5e7e42b4a41625cc6375522a435f39efd5e",
+          "size": 1754
+        },
+        {
+          "path": "test.sh",
+          "sha256": "ce0b4b5f8d02e6637c1c86c1f9b63991a5caa54f0f2b8f4613331edae86efda9",
+          "size": 725
+        },
+        {
+          "path": "gucos-puzzles-fifteen.desktop",
+          "sha256": "3e0929001b0bf0cc443b9796e1f9c1f76c3286095f9b755e7c4cad82b325486d",
+          "size": 125
+        },
+        {
+          "path": "gucos-puzzles-mines.desktop",
+          "sha256": "4fd5cd6bf0cc50200807fe29ca928a207d53fe1f58cf452f43e9accd3fc5f263",
+          "size": 119
+        },
+        {
+          "path": "gucos-puzzles-net.desktop",
+          "sha256": "244b8bcf63065a2ad11abfff46262dae15359ba2b06093d5c43a4573e0329aa9",
+          "size": 113
+        },
+        {
+          "path": "gucos-puzzles-solo.desktop",
+          "sha256": "14f80f22b55a1cc1af1ab4896d0f55e18be50307929af84ded5fb4d24dbf7a74",
+          "size": 116
+        },
+        {
+          "path": "gucos-puzzles-samegame.desktop",
+          "sha256": "13e85f8860511b8123e60b4345bfb36fde60e6f7d35bb2471a701506da46fded",
+          "size": 129
+        },
+        {
+          "path": "gucos-puzzles-untangle.desktop",
+          "sha256": "70b93ef4ecb4e9434d0af0b5a446835a392b5a5f3062f5a23ee7bd539f118382",
+          "size": 128
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T06:37:30.843Z"
+}

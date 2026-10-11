@@ -1,0 +1,63 @@
+gucman: unknown source
+
+{
+  tail: 'ss to your guest files\n' +
+    '220 functions, 4666992 bytes\n' +
+    'Testing pcre2grep version 10.46 2025-08-27\n' +
+    'Testing pcre2grep main features\n' +
+    'Testing pcre2grep UTF-8 features\n' +
+    'Testing pcre2grep newline settings\n' +
+    'Testing pcre2grep newline settings with UTF-8 features\n'
+}
+gucman: build migration:pcre2grep: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20982 bytes; transfer finished
+gucman: Resolving: migration:pcre2grep
+gucman: Downloading manifest for migration:pcre2grep (1492 bytes)
+  Connecting; waiting for response…
+  Downloaded 1492 / 1492 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pcre2grep
+gucman: Checking cached object: manifest for migration:pcre2grep
+gucman: Resolving: migration:pcre2test
+gucman: Checking cached object: manifest for migration:pcre2test
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: pcre2test (1 remaining after this)
+Already installed: pcre2test
+gucman: Package 2/2: pcre2grep (0 remaining after this)
+gucman: Checking cached object: pcre2grep source: source.tar
+gucman: Checking cached object: pcre2grep source: pcre2-source.tar
+gucman: Downloading pcre2grep source: build.sh (4957 bytes)
+  Connecting; waiting for response…
+  Downloaded 4957 / 4957 bytes (100%); transfer finished
+gucman: Verifying download: pcre2grep source: build.sh
+gucman: Checking cached object: pcre2grep source: build.sh
+gucman: Downloading pcre2grep source: test.sh (533 bytes)
+  Connecting; waiting for response…
+  Downloaded 533 / 533 bytes (100%); transfer finished
+gucman: Verifying download: pcre2grep source: test.sh
+gucman: Checking cached object: pcre2grep source: test.sh
+Building migration:pcre2grep; running trusted recipe with access to your guest files
+220 functions, 4666992 bytes
+Testing pcre2grep version 10.46 2025-08-27
+Testing pcre2grep main features
+Testing pcre2grep UTF-8 features
+Testing pcre2grep newline settings
+Testing pcre2grep newline settings with UTF-8 features
+Script callouts are not supported
+Testing miscellaneous pcre2grep arguments (unchecked)
+PCRE2GREP-ACCEPTANCE-PASS
+gucman: Installing pcre2grep: 0/2 files
+gucman: Installing pcre2grep: 2/2 files
+gucman: Preparing checksums: pcre2grep
+gucman: Checksummed pcre2grep: 2/2 files
+gucman: Saving transaction: pcre2grep
+gucman: Verifying staged files: pcre2grep
+gucman: Activating: pcre2grep
+Installed migration:pcre2grep 10.46-1
+
+5d3660b34413510a054f0d16d6e1ffcdaf70f86ff687b4fa2490eadfaf6d0d64  /home/user/migration-export.tar
+4673536
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

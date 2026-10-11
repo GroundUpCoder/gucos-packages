@@ -1,0 +1,23 @@
+{
+  "puzzles-jwm-settled-ArrowLeft.png": "d0c24db8111c88849607fe3e25a89a06b4f47107e69c2b0b51f5f477900f1d32",
+  "puzzles-jwm-settled-failure.png": "6a0949846e47a66276830136960d2ae9e1aa8a7e1d8cf24369fba36cb2be231c",
+  "puzzles-jwm-settled-initial.png": "2b48120eb188df14f0470d68bc600df89e8289bbcf2ce9b190e96a84fa7bb6bb",
+  "puzzles-jwm-settled-redo-move.png": "d0c24db8111c88849607fe3e25a89a06b4f47107e69c2b0b51f5f477900f1d32",
+  "puzzles-jwm-settled-undo.png": "2b48120eb188df14f0470d68bc600df89e8289bbcf2ce9b190e96a84fa7bb6bb",
+  "puzzles-jwm-settled.json": "89632a1319bbd0870783ddbbf5cb611330c888302d7b0a44bd77ed66d7d3aedf",
+  "puzzles-jwm-settled.log": "46d7f27b23c1effc4230380ed96dcffc2d035d986e74e159d1f27a52cb44b27f",
+  "puzzles-mines-jwm-settled-failure.png": "28631a97cd7db13629a9d678c72ca3e5df329f296681c32fc847a973586eb2cd",
+  "puzzles-mines-jwm-settled-flag-undo.png": "a7f10318b1b0bd531e5e4cbeeca9c3d53afc505bc7144be105e0c141f91c8eb5",
+  "puzzles-mines-jwm-settled-flagged.png": "76faf304f7d405c91473895323944f6b963020fd8cd3c92d37c6bc89677badb7",
+  "puzzles-mines-jwm-settled-initial.png": "a7f10318b1b0bd531e5e4cbeeca9c3d53afc505bc7144be105e0c141f91c8eb5",
+  "puzzles-mines-jwm-settled-opened.png": "4f0200135e709e4c867c5e2d5e04c5a05828d615a2b20bafacac0bc689c7df70",
+  "puzzles-mines-jwm-settled.json": "e0ba9358866fe05d8401718c616596e7c4881254d2e4671e055b8259dc4588a3",
+  "puzzles-mines-jwm-settled.log": "2e6a22b05d5dc16db466f85e9c082c4d6849550adbfdd61228687aebf9282f2a",
+  "puzzles-net-jwm-settled-failure.png": "ab9821f8d8737bb48c689459558b9d0cc61ad7e579d25151500fa1897468e2e8",
+  "puzzles-net-jwm-settled-initial.png": "4dbc00d8793eb05f53601ae9720cec10b8b7bb9fd31152e7ebe2b5e1497eaf83",
+  "puzzles-net-jwm-settled-repeat-rotation.png": "7d6dcef5331bde4549c03897a897fe14211bd189c0b0ed2d4eac597c3c6d8fde",
+  "puzzles-net-jwm-settled-rotated.png": "7d6dcef5331bde4549c03897a897fe14211bd189c0b0ed2d4eac597c3c6d8fde",
+  "puzzles-net-jwm-settled-undo.png": "4dbc00d8793eb05f53601ae9720cec10b8b7bb9fd31152e7ebe2b5e1497eaf83",
+  "puzzles-net-jwm-settled.json": "1555ca12937580f379be4be26be97b5055723404518b1ee07b9278974fbf5ae8",
+  "puzzles-net-jwm-settled.log": "d9db564189e1e090bb746d5bd28cbdfb2b6ccf364f6db433bc9081dcbb9c2d16"
+}

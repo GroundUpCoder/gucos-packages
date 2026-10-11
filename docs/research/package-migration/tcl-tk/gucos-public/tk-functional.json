@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-11T06:53:09.599Z",
+  "inputCommit": "7b99a0d6518e9845f98d236e9cdf74b02dc70a82",
+  "source": {
+    "path": "source.tar",
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d4d446d2975a71a24cf630d71efc8ed8dc8a8912/apps/tk/source.tar",
+    "sha256": "cdd69b983e19df3a4507bde5a5066625d76e3afefe5116e2a46d099f3a444924",
+    "size": 12103680
+  },
+  "closureSha256": "c5f588347ef829f6f2cb956fd401a2d1a17a0c7dbcffc938dc668fbe1f3d3323",
+  "fileCount": 1553,
+  "harnessSha256": "b17715c7217cc6604365557afa20c7ef6cd3288a3dcf6c2d6acac0f5aa898288",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "canvasHelperSha256": "e96db3cefaa5384a1c535d2b6a28cc936ca305ad9cb9afc354b708809cd24969",
+  "pixels": {
+    "presentedRedPixels": 4424,
+    "screenshotSha256": "a6a59f6d49894a5e6197498abffca70a9574d819799ba78501c044a4274f927e",
+    "roundtripSha256": "b69d0d369fe70a7fce56adf882e2b4467cbbc937393477f819ba6c412544b593",
+    "roundtripPixels": 4
+  },
+  "finishedAt": "2026-10-11T06:53:23.381Z"
+}

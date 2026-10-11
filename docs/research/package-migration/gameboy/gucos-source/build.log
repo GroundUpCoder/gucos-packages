@@ -1,0 +1,51 @@
+gucman: unknown source
+
+gucman: build migration:gameboy: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19599 bytes; transfer finished
+gucman: Resolving: migration:gameboy
+gucman: Downloading manifest for migration:gameboy (1513 bytes)
+  Connecting; waiting for response…
+  Downloaded 1513 / 1513 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gameboy
+gucman: Checking cached object: manifest for migration:gameboy
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: gameboy (0 remaining after this)
+gucman: Downloading gameboy source: source.tar (163840 bytes)
+  Connecting; waiting for response…
+  Downloaded 163840 / 163840 bytes (100%); transfer finished
+gucman: Verifying download: gameboy source: source.tar
+gucman: Checking cached object: gameboy source: source.tar
+gucman: Downloading gameboy source: build.sh (339 bytes)
+  Connecting; waiting for response…
+  Downloaded 339 / 339 bytes (100%); transfer finished
+gucman: Verifying download: gameboy source: build.sh
+gucman: Checking cached object: gameboy source: build.sh
+gucman: Downloading gameboy source: test.sh (332 bytes)
+  Connecting; waiting for response…
+  Downloaded 332 / 332 bytes (100%); transfer finished
+gucman: Verifying download: gameboy source: test.sh
+gucman: Checking cached object: gameboy source: test.sh
+gucman: Downloading gameboy source: gucos-gameboy.desktop (92 bytes)
+  Connecting; waiting for response…
+  Downloaded 92 / 92 bytes (100%); transfer finished
+gucman: Verifying download: gameboy source: gucos-gameboy.desktop
+gucman: Checking cached object: gameboy source: gucos-gameboy.desktop
+Building migration:gameboy; running trusted recipe with access to your guest files
+591 functions, 586115 bytes
+Exec=gameboy
+gucman: Installing gameboy: 0/3 files
+gucman: Installing gameboy: 3/3 files
+gucman: Preparing checksums: gameboy
+gucman: Checksummed gameboy: 3/3 files
+gucman: Saving transaction: gameboy
+gucman: Verifying staged files: gameboy
+gucman: Activating: gameboy
+Installed migration:gameboy 0.1.0-3
+
+1957da9412762d66aabd7eaec8af3ba78538efe2256d0051292ff1699afbe931  /home/user/migration-export.tar
+692736
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

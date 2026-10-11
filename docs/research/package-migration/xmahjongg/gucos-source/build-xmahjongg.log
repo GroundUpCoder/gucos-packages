@@ -1,0 +1,73 @@
+gucman: unknown source
+
+{
+  tail: 'Downloaded 249 / 249 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: xmahjongg source: test.sh\n' +
+    'gucman: Checking cached object: xmahjongg source: test.sh\n' +
+    'Building migration:xmahjongg; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: 'Downloaded 249 / 249 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: xmahjongg source: test.sh\n' +
+    'gucman: Checking cached object: xmahjongg source: test.sh\n' +
+    'Building migration:xmahjongg; running trusted recipe with access to your guest files\n'
+}
+gucman: build migration:xmahjongg: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 23433 bytes; transfer finished
+gucman: Resolving: migration:xmahjongg
+gucman: Downloading manifest for migration:xmahjongg (2502 bytes)
+  Connecting; waiting for response…
+  Downloaded 2502 / 2502 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xmahjongg
+gucman: Checking cached object: manifest for migration:xmahjongg
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: x11-server (1 remaining after this)
+Already installed: x11-server
+gucman: Package 2/2: xmahjongg (0 remaining after this)
+gucman: Downloading xmahjongg source: source.tar (2048000 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.95 / 1.95 MiB (100%); transfer finished
+gucman: Verifying download: xmahjongg source: source.tar
+gucman: Checking cached object: xmahjongg source: source.tar
+gucman: Downloading xmahjongg source: prepared.tar (3645440 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.48 / 3.48 MiB (100%); transfer finished
+gucman: Verifying download: xmahjongg source: prepared.tar
+gucman: Checking cached object: xmahjongg source: prepared.tar
+gucman: Downloading xmahjongg source: NOTICE (24142 bytes)
+  Connecting; waiting for response…
+  Downloaded 24142 / 24142 bytes (100%); transfer finished
+gucman: Verifying download: xmahjongg source: NOTICE
+gucman: Checking cached object: xmahjongg source: NOTICE
+gucman: Downloading xmahjongg source: build.sh (411 bytes)
+  Connecting; waiting for response…
+  Downloaded 411 / 411 bytes (100%); transfer finished
+gucman: Verifying download: xmahjongg source: build.sh
+gucman: Checking cached object: xmahjongg source: build.sh
+gucman: Downloading xmahjongg source: test.sh (249 bytes)
+  Connecting; waiting for response…
+  Downloaded 249 / 249 bytes (100%); transfer finished
+gucman: Verifying download: xmahjongg source: test.sh
+gucman: Checking cached object: xmahjongg source: test.sh
+Building migration:xmahjongg; running trusted recipe with access to your guest files
+3183 functions, 3457259 bytes
+Usage: xmahjongg [OPTION]... [LAYOUT]
+XMAHJONGG-STAGED-HELP-PASS
+gucman: Installing xmahjongg: 0/10 files
+gucman: Installing xmahjongg: 10/10 files
+gucman: Preparing checksums: xmahjongg
+gucman: Checksummed xmahjongg: 10/10 files
+gucman: Saving transaction: xmahjongg
+gucman: Verifying staged files: xmahjongg
+gucman: Activating: xmahjongg
+Installed migration:xmahjongg 3.7.0-2
+
+6433c2f08812c90ebef657174b42334853e22e62ca2e449a807415ddc1592bc8  /home/user/migration-export.tar
+3625472
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

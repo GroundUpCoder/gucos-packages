@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "names": [
+    "sdl3-image",
+    "sdl3-mixer"
+  ],
+  "startedAt": "2026-10-11T04:59:06.952Z",
+  "inputs": [
+    {
+      "name": "sdl3-image",
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-image/source.tar",
+      "sha256": "fda0d407af1cc4a27860cae7364d362ac70951a794f65530394658a312423a51",
+      "size": 1792000
+    },
+    {
+      "name": "sdl3-mixer",
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-mixer/source.tar",
+      "sha256": "776c28ebfbb254e369db4969c17655723c799bc7f3b69cf94e333648c3919177",
+      "size": 1945600
+    }
+  ],
+  "inputCommit": "35f4ac8c3fa90f56f7baf207281f6f3e3728dda0",
+  "harnessSha256": "f80ef0882fe7ed3e2f1a9501a6111dab0b2825d5f22be2248cae1ec702e1ba3d",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "image": {
+    "width": 16,
+    "height": 16,
+    "verifiedPixels": 256,
+    "sha256": "9088639707ea4862e33437f6b1eba55d0ab3897857292e842c622c398cc471c4"
+  },
+  "pcm": {
+    "buffers": 6,
+    "nonzero": 22472,
+    "peak": 0.30517578125
+  },
+  "finishedAt": "2026-10-11T04:59:08.933Z"
+}

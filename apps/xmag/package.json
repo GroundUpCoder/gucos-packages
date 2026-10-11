@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "name": "xmag",
+  "version": "1.0.8-1",
+  "dependencies": [
+    "x11-server",
+    "x11-toolkit",
+    "x11-widgets"
+  ],
+  "dependencyRequirements": {
+    "x11-server": {
+      "version": "21.1.24-1"
+    },
+    "x11-toolkit": {
+      "version": "1.0-1"
+    },
+    "x11-widgets": {
+      "version": "1.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/xmag/source.tar",
+      "sha256": "ae9df17300d555c17c714ef479704bffcf49f7b226432ace8cd3947d6037e01a",
+      "size": 870400
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/xmag/build.sh",
+      "sha256": "14191a79c88926604f601276d9aec4b699af84f5c5ee67607b5795dcfb9f660d",
+      "size": 838
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/xmag/test.sh",
+      "sha256": "1dd797a37207922f403211b5bb33eca50a7bb492a6757b3386c2b1373da37b69",
+      "size": 47
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/xmag",
+      "mode": 493
+    },
+    {
+      "path": "share/doc/xmag/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/xmag/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/X11/app-defaults/Xmag",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/xmag/COPYING"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/xmag/binaries/013d28d135b88ce1840889e4aa0d249c8a0aeb752724c05987f13a5b11de3ca8.tar",
+    "sha256": "013d28d135b88ce1840889e4aa0d249c8a0aeb752724c05987f13a5b11de3ca8",
+    "size": 4393984
+  }
+}

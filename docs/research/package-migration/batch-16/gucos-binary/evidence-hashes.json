@@ -1,0 +1,13 @@
+{
+  "reload-micropython.json": "0f04a6b81599c22f3f95c821f526f4d978e4ff646f75585efaa84bf5236348a7",
+  "observed-runtime.json": "003f94740953ce7d8a36d202713d70fbc3c8a0e9213a310e7ecb7ba200717d06",
+  "reload.log": "fdb2b0c40ca92262800c77154273cce521d86f8cad19b42754b57aba9a837582",
+  "config.json": "00b7fffdc38db6d10358f7f1e822a0d96b1ef8e0ae43a06aaec6d288765938cc",
+  "consumers-micropython.json": "1fcfb38626f004d21b08c8c3ee29817d6bfd3538ad4f67bf33c5407bc735a6da",
+  "install-micropython.json": "bf240f78b1257ec306125e1ceb852bf8c8ed4e65fa64c3aa6b32cebd4d54bd66",
+  "consumers.log": "df96869d40a54db0428aa6f0be103bb61ec4cffafe2bd8ead0a0c1a2dc192988",
+  "port": "70e000ef674148e4e9cce8542affbdb6b9aebed575e417da2154b07cf59886a6",
+  "micropython.sha256": "0d19d2a37604ce1be2f2b3755c47769faf98af64634ada37922bf4c5cc965226",
+  "candidate-manifests.json": "8e52a36f1094da32664cc703e099856a63c0feeae8d44a8c86234a14df0ef8fd",
+  "install.log": "7672b911cc36209b6366463bbf6df16035895abec810b9f1a6d14c06c3e34dc0"
+}

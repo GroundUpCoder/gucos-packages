@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "startedAt": "2026-10-11T06:59:06.163Z",
+  "scope": "Fifteen only: real JWM menu, move/undo, GTK save/load, quit/relaunch",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "http://127.0.0.1:61239/migration/puzzles/binary.tar",
+    "sha256": "2b23acd4e3e657a99c370581baca2bd26443593f53ab6acabf0bc9f6bb5bdfb8",
+    "size": 16930816
+  },
+  "harnessSha256": "5665af02e97a6dc864c819f651596e69ec35f18f3b8292bc70214e5ddc50caf0",
+  "helpers": {
+    "observerSha256": "1e128762b83a291dce18b47ed8ce28d691ffe1b09ae18798a00587b6b65a0ef6",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "sessionHelperSha256": "1ad86ba2192ce6501530d2aff47a54302c57584287d0b165a3490a78bb5e89c8"
+  },
+  "error": "AssertionError [ERR_ASSERTION]: The \"string\" argument must be of type string. Received type undefined (undefined)\n    at file:///Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:68:10\n    at async bounded (file:///Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:7:57)\n    at async clickMenuEntry (file:///Users/jku/git/gucos-packages-porting/tests/desktop/menu.mjs:34:13)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/desktop/puzzles.mjs:34:58",
+  "finishedAt": "2026-10-11T06:59:07.847Z"
+}

@@ -1,0 +1,63 @@
+gucman: unknown source
+
+gucman: build migration:doom: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20900 bytes; transfer finished
+gucman: Resolving: migration:doom
+gucman: Downloading manifest for migration:doom (2320 bytes)
+  Connecting; waiting for response…
+  Downloaded 2320 / 2320 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:doom
+gucman: Checking cached object: manifest for migration:doom
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: doom (0 remaining after this)
+gucman: Downloading doom source: source.tar (6000640 bytes)
+  Connecting; waiting for response…
+  Downloaded 5.72 / 5.72 MiB (100%); transfer finished
+gucman: Verifying download: doom source: source.tar
+gucman: Checking cached object: doom source: source.tar
+gucman: Downloading doom source: build.sh (638 bytes)
+  Connecting; waiting for response…
+  Downloaded 638 / 638 bytes (100%); transfer finished
+gucman: Verifying download: doom source: build.sh
+gucman: Checking cached object: doom source: build.sh
+gucman: Downloading doom source: test.sh (691 bytes)
+  Connecting; waiting for response…
+  Downloaded 691 / 691 bytes (100%); transfer finished
+gucman: Verifying download: doom source: test.sh
+gucman: Checking cached object: doom source: test.sh
+gucman: Downloading doom source: launch.sh (275 bytes)
+  Connecting; waiting for response…
+  Downloaded 275 / 275 bytes (100%); transfer finished
+gucman: Verifying download: doom source: launch.sh
+gucman: Checking cached object: doom source: launch.sh
+gucman: Downloading doom source: gucos-doom.desktop (85 bytes)
+  Connecting; waiting for response…
+  Downloaded 85 / 85 bytes (100%); transfer finished
+gucman: Verifying download: doom source: gucos-doom.desktop
+gucman: Checking cached object: doom source: gucos-doom.desktop
+gucman: Downloading doom source: doom-shareware-notice.txt (8656 bytes)
+  Connecting; waiting for response…
+  Downloaded 8656 / 8656 bytes (100%); transfer finished
+gucman: Verifying download: doom source: doom-shareware-notice.txt
+gucman: Checking cached object: doom source: doom-shareware-notice.txt
+Building migration:doom; running trusted recipe with access to your guest files
+1592 functions, 1582780 bytes
+/tmp/game-launcher.wgsvuu/home/.local/share/doom
+</tmp/game-launcher.wgsvuu/home/.config/doom/default.cfg>
+<-test>
+gucman: Installing doom: 0/7 files
+gucman: Installing doom: 7/7 files
+gucman: Preparing checksums: doom
+gucman: Checksummed doom: 7/7 files
+gucman: Saving transaction: doom
+gucman: Verifying staged files: doom
+gucman: Activating: doom
+Installed migration:doom 0.1.0-3
+
+e173be4400d9f5d47b355b03deeae2bd8e6b0ec995d3749d5af41a09dee9cb4f  /home/user/migration-export.tar
+5838848
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

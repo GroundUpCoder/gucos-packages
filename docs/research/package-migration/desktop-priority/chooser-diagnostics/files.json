@@ -1,0 +1,202 @@
+{
+  "README.md": {
+    "sha256": "0e0a9a626647c5f657108b03ed3c0043668372c8f4faf1c61541d4885e1fc0bb",
+    "size": 972
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-counter-failure.png": {
+    "sha256": "2fa8add249b7e2ae63a9f8e4e778a1baf51b4ec4cf26e28ba990c258aa765595",
+    "size": 85880
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-counter.json": {
+    "sha256": "5d943660a0756a75c63e28c7dfbe2f296cf654e8c3d29b587838170e463a333a",
+    "size": 2081
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-counter-pair-removed.png": {
+    "sha256": "8cfc3b03f55d452e013b46714f175102c9e4e4b84bbe77d6d3b459d9beb96846",
+    "size": 86429
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-counter-initial.png": {
+    "sha256": "d7af725143585c3a7b0faac1d2623abfaf42b83ff75974bd6d84607d4569bed1",
+    "size": 85897
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-counter-hint-selected.png": {
+    "sha256": "238b8d21f9253e4fde40a4760a048609dcf934771b4a2b3635be8d8dbd7139c5",
+    "size": 85752
+  },
+  "xmahjongg-gucos-binary/xmahjongg-jwm-counter.log": {
+    "sha256": "f3235108cb44543d3239e7e036e0b32a4c8ab9fa613c3c6f82995fc5ac3b979b",
+    "size": 26340
+  },
+  "puzzles-gucos-binary/puzzles-jwm-chooser-settled-initial.png": {
+    "sha256": "489c42beb18a32e0980ac2b7b2030a8eafc51d5f10c96d1db40b0bef8cc7ffaf",
+    "size": 12043
+  },
+  "puzzles-gucos-binary/puzzles-jwm-chooser-settled.json": {
+    "sha256": "7dae5398f0962132fd09cb03644ada070005dd31209c0009fa24eaea198e61b3",
+    "size": 7553
+  },
+  "puzzles-gucos-binary/puzzles-jwm-chooser-settled-ArrowLeft.png": {
+    "sha256": "d951079c57700e78bbd1d6dde2962399c10fba92fe920759b8b883d46ca4bb87",
+    "size": 12092
+  },
+  "puzzles-gucos-binary/puzzles-jwm-chooser-settled.log": {
+    "sha256": "cbdde34d245931eba88c4ff1b1b1eec98aef9767e3c29bfef6f2867083ae99a3",
+    "size": 17187
+  },
+  "puzzles-gucos-binary/puzzles-jwm-chooser-settled-redo-move.png": {
+    "sha256": "d951079c57700e78bbd1d6dde2962399c10fba92fe920759b8b883d46ca4bb87",
+    "size": 12092
+  },
+  "puzzles-gucos-binary/puzzles-jwm-chooser-settled-failure.png": {
+    "sha256": "a6c424a0289b0d22c042f15c3de1afb98f2e6b11b1367fbe5af5161318e3d335",
+    "size": 20970
+  },
+  "puzzles-gucos-binary/puzzles-jwm-chooser-settled-undo.png": {
+    "sha256": "489c42beb18a32e0980ac2b7b2030a8eafc51d5f10c96d1db40b0bef8cc7ffaf",
+    "size": 12043
+  },
+  "desktop-apps-gucos-binary/xclock-jwm-remaining.log": {
+    "sha256": "2c5a410c812d7b34e4bf20d5c9f758b6d6e3d3a34aa3fcde5fac302cd955cfc1",
+    "size": 36687
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-diagnostic-saved.png": {
+    "sha256": "f89556efa090fe831e74580828c595f227e507125f739cff0d590ca9f6bade69",
+    "size": 10162
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-remaining-look-right.png": {
+    "sha256": "661e15b84e4baec5e31f646f38b1684123b857d212b0d474e133bca9755093b9",
+    "size": 9363
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-diagnostic-failure.png": {
+    "sha256": "b24ca8f6eb0e1f858a2bfb813ad578aeea795be5ae9d83573bb5e13cd7dba7fd",
+    "size": 8596
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-remaining-launched.png": {
+    "sha256": "a1d0f7ca1f23780edbb85c21036b04b881e10ff15115d8542ab72603ddf20f8d",
+    "size": 9326
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-diagnostic-relaunched.png": {
+    "sha256": "d382e6b07132f3d0196e1574f991377521c28635e892494e772c3c26127a6fae",
+    "size": 7231
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-remaining-look-left.png": {
+    "sha256": "c22c758aa6c680528421005c8c57ca5ef0d2fa4f6438fbf679670757dbec23f8",
+    "size": 9348
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-diagnostic-relaunched.png": {
+    "sha256": "2982f92273c68b7ecc571955cb58d7819c51c1cf028c8b0f653d016420ba6570",
+    "size": 7977
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-diagnostic-look-right.png": {
+    "sha256": "9ff77eb835d75c7df346e73fd91d19ea3cf88f198d93a04530ce7ade6dfb466d",
+    "size": 7312
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-diagnostic-look-left.png": {
+    "sha256": "83ada9a3ee2d37aba1fb85c8694220f2b20cf00e35b39dceb120392e0b8a503d",
+    "size": 7301
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-diagnostic.json": {
+    "sha256": "af8ffd4b81fdaeccfc8f51db8265cd346ddd8a4a25ad35261528b2a711e9841f",
+    "size": 3885
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-diagnostic-launched.png": {
+    "sha256": "7f689b2b831ab9c9d1ddd71dd71f8878e1e3e5d1cc9474e474338fe2f10423dc",
+    "size": 7304
+  },
+  "desktop-apps-gucos-binary/xclock-jwm-remaining-launched.png": {
+    "sha256": "3dc5625f2687ec1a5e1f244e7f6eb02e439c48b562b19ff5111bf7f9974adc36",
+    "size": 7546
+  },
+  "desktop-apps-gucos-binary/xclock-jwm-remaining-relaunched.png": {
+    "sha256": "cb47ec9598ffe2754e625d4434c1d560b6d0316c07bbd8b0e175ccd8854e17cd",
+    "size": 7465
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-diagnostic-launched.png": {
+    "sha256": "0de04c378e76d39da777bc4705d8e8742313c13a093fc93a1a68f6f3d1b05b8c",
+    "size": 8196
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-remaining.log": {
+    "sha256": "f5c06f2806f3229332b56db52e99770c3a3aa9968b2bcd099d3286c622135adc",
+    "size": 36527
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-diagnostic-loaded.png": {
+    "sha256": "92a565f0e39a88174300826a5592a9ceb0f55f485085c669e10a18a46641bd89",
+    "size": 9224
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-diagnostic-typed.png": {
+    "sha256": "e260c645b8da4b76c8f289bb124464e3f3db257b3a6df221b68f4796c84513a0",
+    "size": 9467
+  },
+  "desktop-apps-gucos-binary/xclock-jwm-remaining-ticked.png": {
+    "sha256": "0b8b9986213b4b5e225db356a6ca0445c5f1a5da4967628a6bdd39a456ab6433",
+    "size": 7522
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-remaining.json": {
+    "sha256": "785e6fae1123604024cd47b2891bc2947c8ba7203e53bdaf936aed57ba188f51",
+    "size": 2366
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-diagnostic.log": {
+    "sha256": "d7b54562156129df047c27cafeb64b9331d66794efcc36db93f5514b861c45df",
+    "size": 36571
+  },
+  "desktop-apps-gucos-binary/xeyes-jwm-diagnostic.json": {
+    "sha256": "a7cda73424323cf0de4fa1da2906e32e0aba13fe527efd1d4e8f43bb22bfe188",
+    "size": 3570
+  },
+  "desktop-apps-gucos-binary/xedit-jwm-diagnostic.log": {
+    "sha256": "e5506739fb61b563553e2558b7953bfc0b7af6e8ed317930f6b25c4b04286a5c",
+    "size": 36749
+  },
+  "desktop-apps-gucos-binary/xclock-jwm-remaining.json": {
+    "sha256": "55787cdbfa784a520027e4b53c0bd673e76d28c006ef62fef42292364ba46a02",
+    "size": 3480
+  },
+  "l3afpad-gucos-binary/chooser-probe-preset.log": {
+    "sha256": "1757689b08d23a1c0687278cc90ddcdad52138f3e8249d35d9c4454d90650d57",
+    "size": 2332
+  },
+  "l3afpad-gucos-binary/l3afpad-jwm-settled.json": {
+    "sha256": "cf3e54a99e77407f02db413aac3caddd336cafaabcf26bd4d2edfc7e9b09b333",
+    "size": 1664
+  },
+  "l3afpad-gucos-binary/chooser-probe-preset-before.png": {
+    "sha256": "e5f781d75d2bc87963cf97013803949aba1a14945d178aee6b209329fcaded15",
+    "size": 20596
+  },
+  "l3afpad-gucos-binary/chooser-probe-typed.log": {
+    "sha256": "7c2015674d18dd8cb9e73f304dc126fcb3409de31c3b707972a1924e16fba326",
+    "size": 2418
+  },
+  "l3afpad-gucos-binary/chooser-probe-preset-after.png": {
+    "sha256": "ee475251c828d650290c2cfb2eadcc04444feee684d568e26456d837dfd11ba1",
+    "size": 20530
+  },
+  "l3afpad-gucos-binary/chooser-probe-typed-after.png": {
+    "sha256": "ae8960b31481d871824fdb826392d1d7d00d79301561d3c0c852606c6a2258d0",
+    "size": 26290
+  },
+  "l3afpad-gucos-binary/chooser-probe-typed-before.png": {
+    "sha256": "cc7b6bee271794f438c206e6780432ae643ede7735b90840103a799874dffc8c",
+    "size": 25349
+  },
+  "l3afpad-gucos-binary/l3afpad-jwm-settled.log": {
+    "sha256": "f32cc141b3cb0d47f764fd0208242fad5a24224b2b102a29327b18fef12384f0",
+    "size": 954
+  },
+  "l3afpad-gucos-binary/chooser-probe-typed-final.png": {
+    "sha256": "f20f32df9171cedefc4d3fbd42ee41a66cf6b2a5bf241a4174a0f971dcd2997a",
+    "size": 4677
+  },
+  "l3afpad-gucos-binary/chooser-probe-preset-final.png": {
+    "sha256": "a714fd7328c71a90cda527a2e48af34350be4d0662e66f84196c4c8a8208002e",
+    "size": 4682
+  },
+  "l3afpad-gucos-binary/chooser-probe-session.log": {
+    "sha256": "8611869a1ac625f46b828e81f88f5a4dbea5c4d76ec8163781e984bea5e2fb43",
+    "size": 95
+  },
+  "l3afpad-gucos-binary/saved-byte-diagnostic.log": {
+    "sha256": "84a0b609051a13ae516fefe51d82c14d640fbc3d2b54be023616dae0197411f4",
+    "size": 78
+  }
+}

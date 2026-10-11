@@ -1,0 +1,56 @@
+
+** (chooser-probe:17): WARNING **: 16:28:13.713: Could not find the icon 'user-home-symbolic-ltr'. The 'hicolor' theme
+was not found either, perhaps you need to install it.
+You can get a copy from:
+	http://icon-theme.freedesktop.org/releases
+GLib-GIO-Message: 16:28:13.989: Using the 'memory' GSettings backend.  Your settings will not be saved or shared with other applications.
+SYNC START /home/user/chooser-probe.txt
+INFO /home/user/chooser-probe.txt type=-1 execute-present=0 execute=0 error=g-io-error-quark:1:Error when getting information for file “/home/user/chooser-probe.txt”: No such file or directory
+ASYNC START /home/user/chooser-probe.txt
+SYNC START /home/user
+INFO /home/user type=2 execute-present=1 execute=1 error=none:0:
+ASYNC START /home/user
+
+** (chooser-probe:17): WARNING **: 16:28:14.058: Failed to measure available space: This browser filesystem operation is not supported
+ASYNC DONE /home/user/chooser-probe.txt
+INFO /home/user/chooser-probe.txt type=-1 execute-present=0 execute=0 error=g-io-error-quark:1:Error when getting information for file “/home/user/chooser-probe.txt”: No such file or directory
+ASYNC DONE /home/user
+INFO /home/user type=2 execute-present=1 execute=1 error=none:0:
+STATE heartbeat file=/home/user/chooser-probe.txt folder=/home/user focus=GtkFileChooserEntry
+ENTRY /home/user/chooser-probe.txt
+ENTRY 
+ENTRY 
+BUTTON event=4 x=43.0 y=15.0
+BUTTON event=7 x=43.0 y=15.0
+CLICKED sensitive=1
+STATE clicked file=/home/user/chooser-probe.txt folder=/home/user focus=GtkButton
+ENTRY /home/user/chooser-probe.txt
+ENTRY 
+ENTRY 
+RESPONSE -3
+STATE response file=/home/user/chooser-probe.txt folder=/home/user focus=GtkButton
+ENTRY /home/user/chooser-probe.txt
+ENTRY 
+ENTRY 
+CLICKED sensitive=1
+STATE clicked file=/home/user/chooser-probe.txt folder=/home/user focus=GtkButton
+ENTRY /home/user/chooser-probe.txt
+ENTRY 
+ENTRY 
+STATE heartbeat file=/home/user/chooser-probe.txt folder=/home/user focus=GtkButton
+ENTRY /home/user/chooser-probe.txt
+ENTRY 
+ENTRY 
+STATE heartbeat file=/home/user/chooser-probe.txt folder=/home/user focus=GtkButton
+ENTRY /home/user/chooser-probe.txt
+ENTRY 
+ENTRY 
+STATE heartbeat file=/home/user/chooser-probe.txt folder=/home/user focus=GtkButton
+ENTRY /home/user/chooser-probe.txt
+ENTRY 
+ENTRY 
+STATE heartbeat file=/home/user/chooser-probe.txt folder=/home/user focus=GtkButton
+ENTRY /home/user/chooser-probe.txt
+ENTRY 
+ENTRY 
+PROBE END

@@ -1,0 +1,47 @@
+{
+  "status": "failed",
+  "startedAt": "2026-10-11T07:31:55.673Z",
+  "scope": "Owned menu, documented hint-assisted pair removal, undo/redo, new board, quit/relaunch. Screenshots require independent review; no saved-game restoration.",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "pixelScope": {
+    "excludedCounter": {
+      "x": 10,
+      "y": 12,
+      "width": 108,
+      "height": 38
+    },
+    "reason": "Source-defined counter clear overlaps top tile edges; count screenshots require separate review"
+  },
+  "closureSha256": "26ea35aef3fd6b610c47c8a27b41ea74e01ceedc2857a50c4d3112b3e1da47b7",
+  "harnessSha256": "6c04e06117c8c4f8c8992f3737d05d41c7b306bfdf55f4062e2aaa584583e9a2",
+  "observer": {
+    "observerSha256": "01390a4d32abbb561c921903419c5432a4b6cc548c1c25e20fc505e51f41330d",
+    "menuHelperSha256": "0d9d56e56b1771a13d8fc91a0d7dd259428735d85aa11b08742ee0faa3c56fc7"
+  },
+  "helpers": {
+    "observerSha256": "1e128762b83a291dce18b47ed8ce28d691ffe1b09ae18798a00587b6b65a0ef6",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+    "sessionHelperSha256": "d26195b1e3477cf439ffc7c0d4e1945ca674543fd5b0f1e95fdbbc7087a618b1"
+  },
+  "menus": [
+    {
+      "id": "xmahjongg.desktop",
+      "index": 1,
+      "geometry": {
+        "id": 2097188,
+        "x": 0,
+        "y": 449,
+        "width": 129,
+        "height": 122,
+        "pid": 0
+      },
+      "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"XMahjongg\">/usr/local/bin/desktop-menu launch xmahjongg.desktop</Program>\n</JWM>\n"
+    }
+  ],
+  "pids": [
+    26
+  ],
+  "error": "Error: XMahjongg operation timeout\n    at Timeout.<anonymous> (file:///Users/jku/git/gucos-packages-porting/tests/desktop/xmahjongg.mjs:15:126)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)",
+  "finishedAt": "2026-10-11T07:32:35.291Z"
+}

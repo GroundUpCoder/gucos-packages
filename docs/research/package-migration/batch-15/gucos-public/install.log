@@ -1,0 +1,116 @@
+gucman: unknown source
+
+gucman: install migration:sdl3-gfx: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20235 bytes; transfer finished
+gucman: Resolving: migration:sdl3-gfx
+gucman: Downloading manifest for migration:sdl3-gfx (2082 bytes)
+  Connecting; waiting for response…
+  Downloaded 2082 / 2082 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sdl3-gfx
+gucman: Checking cached object: manifest for migration:sdl3-gfx
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sdl3-gfx (0 remaining after this)
+gucman: Downloading sdl3-gfx archive (179712 bytes)
+  Connecting; waiting for response…
+  Downloaded 179712 / 179712 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx archive
+gucman: Checking cached object: sdl3-gfx archive
+gucman: Unpacking: sdl3-gfx
+gucman: Installing sdl3-gfx: 0/5 files
+gucman: Installing sdl3-gfx: 5/5 files
+gucman: Preparing checksums: sdl3-gfx
+gucman: Checksummed sdl3-gfx: 5/5 files
+gucman: Saving transaction: sdl3-gfx
+gucman: Verifying staged files: sdl3-gfx
+gucman: Activating: sdl3-gfx
+Installed migration:sdl3-gfx 2.0.23-1
+
+gucman: install migration:sdl3-image: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20235 bytes; transfer finished
+gucman: Resolving: migration:sdl3-image
+gucman: Downloading manifest for migration:sdl3-image (2104 bytes)
+  Connecting; waiting for response…
+  Downloaded 2104 / 2104 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sdl3-image
+gucman: Checking cached object: manifest for migration:sdl3-image
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sdl3-image (0 remaining after this)
+gucman: Downloading sdl3-image archive (479744 bytes)
+  Connecting; waiting for response…
+  Downloaded 479744 / 479744 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-image archive
+gucman: Checking cached object: sdl3-image archive
+gucman: Unpacking: sdl3-image
+gucman: Installing sdl3-image: 0/5 files
+gucman: Installing sdl3-image: 5/5 files
+gucman: Preparing checksums: sdl3-image
+gucman: Checksummed sdl3-image: 5/5 files
+gucman: Saving transaction: sdl3-image
+gucman: Verifying staged files: sdl3-image
+gucman: Activating: sdl3-image
+Installed migration:sdl3-image 3.2.6-2
+
+gucman: install migration:sdl3-mixer: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20235 bytes; transfer finished
+gucman: Resolving: migration:sdl3-mixer
+gucman: Downloading manifest for migration:sdl3-mixer (2123 bytes)
+  Connecting; waiting for response…
+  Downloaded 2123 / 2123 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sdl3-mixer
+gucman: Checking cached object: manifest for migration:sdl3-mixer
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sdl3-mixer (0 remaining after this)
+gucman: Downloading sdl3-mixer archive (1290240 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.23 / 1.23 MiB (100%); transfer finished
+gucman: Verifying download: sdl3-mixer archive
+gucman: Checking cached object: sdl3-mixer archive
+gucman: Unpacking: sdl3-mixer
+gucman: Installing sdl3-mixer: 0/5 files
+gucman: Installing sdl3-mixer: 5/5 files
+gucman: Preparing checksums: sdl3-mixer
+gucman: Checksummed sdl3-mixer: 5/5 files
+gucman: Saving transaction: sdl3-mixer
+gucman: Verifying staged files: sdl3-mixer
+gucman: Activating: sdl3-mixer
+Installed migration:sdl3-mixer 3.2.4-1
+
+/usr/local/lib/libSDL3_gfx.a: OK
+/usr/local/lib/libSDL3_gfx.so: OK
+/usr/local/include/SDL3_gfx/SDL_gfxPrimitives.h: OK
+/usr/local/lib/pkgconfig/SDL3_gfx.pc: OK
+/usr/local/share/licenses/sdl3-gfx/LICENSE: OK
+
+3902ec3a0b64b9bf21ac6bb69a49a18c8ea0d6310e43d51209f0d3e7294d79ed  /home/user/migration-export.tar
+179712
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/lib/libSDL3_image.a: OK
+/usr/local/lib/libSDL3_image.so: OK
+/usr/local/lib/pkgconfig/sdl3-image.pc: OK
+/usr/local/share/licenses/sdl3-image/LICENSE.txt: OK
+/usr/local/include/SDL3_image/SDL_image.h: OK
+
+5a13b2d5ebf7cce555425b8b078093a076897c309f40314db7989268be7fc877  /home/user/migration-export.tar
+479744
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/lib/libSDL3_mixer.a: OK
+/usr/local/lib/libSDL3_mixer.so: OK
+/usr/local/lib/pkgconfig/sdl3-mixer.pc: OK
+/usr/local/share/licenses/sdl3-mixer/LICENSE.txt: OK
+/usr/local/include/SDL3_mixer/SDL_mixer.h: OK
+
+34a04829605db65c0f571c4730d879b555f601f9399b864bccfd3eb18a7f6f4a  /home/user/migration-export.tar
+1290240
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

@@ -1,4 +1,4 @@
 {
-  "revision": "9390bab6ae40e973fa5082cecff850aefa4c6ac5",
-  "description": "First relocated accepted catalog; historical wasm-posix baseline remains in Git history."
+  "revision": "b58c9448cfffd7af085285fc6aea55ddb3c4387f",
+  "description": "85 live-accepted catalog entries after independently reviewed Tcl/Tk public install, consumers, GUI and package reload; Snake1.0.0-2 preserved."
 }

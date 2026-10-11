@@ -1,0 +1,58 @@
+{
+  "snake-functional.log": {
+    "sha256": "3889519e17c780820b40b0ac10bfb20da3cf42eb89408d2550a7dd39e61ee5c4",
+    "size": 7320
+  },
+  "observed-runtime.json": {
+    "sha256": "11c9ef5f8739b0beb373834b2526792561c62066b3017767d727575350c05556",
+    "size": 123
+  },
+  "reload.log": {
+    "sha256": "ec5dc93034a1dc4aa244d9031f0db2960c1f9f3941c80a5f0c7b045285b92ba9",
+    "size": 412
+  },
+  "reload-receipt.json": {
+    "sha256": "23fb0927c1096370191738b206bd415c1f58e7f6a4b02eca42f8777065d63877",
+    "size": 3432
+  },
+  "config.json": {
+    "sha256": "006b52a6602146c3a8f07ee89a161688cdac97f5cb911a720a6fb1db66b4d8f0",
+    "size": 20991
+  },
+  "install-snake.json": {
+    "sha256": "a3a48935eb67cd2adb469ec1a08482a623ec43b9885c50cb23230b2a288460b1",
+    "size": 307
+  },
+  "snake-functional.json": {
+    "sha256": "46aace6b8b0bdb0f7007c77709925c98aa88b68af497b00d100fbae63cbc7f35",
+    "size": 1065
+  },
+  "reload-snake.json": {
+    "sha256": "6deb721135909af5dd65632388e066c6b4a6bc82178744a690ef007b5c0a5cea",
+    "size": 306
+  },
+  "snake.sha256": {
+    "sha256": "c3d0bec7111d9dd772fbce1c83f28f3077625e769489344c8ed2dbc5fac74d0f",
+    "size": 526
+  },
+  "snake-playing.png": {
+    "sha256": "1c3fdf545d9a82c788ad49b676ee6c11931ec68b10ec459626b290c124281c12",
+    "size": 20733
+  },
+  "gameplay.log": {
+    "sha256": "ee9038621b91cf6bb714e2a18644594d4341c0fadbf747f14f9dc6f80e88f7aa",
+    "size": 287
+  },
+  "candidate-manifests.json": {
+    "sha256": "314b751303a2a14d944baacfaed3fdf79e1bc57ed48dc6433f0668ee9bb1ccbc",
+    "size": 3145
+  },
+  "install.log": {
+    "sha256": "53e26bcc2d347140f1b44d8bfa85380f4a18541336199b55f9b2fd79b09d60d1",
+    "size": 1623
+  },
+  "install-receipt.json": {
+    "sha256": "23fb0927c1096370191738b206bd415c1f58e7f6a4b02eca42f8777065d63877",
+    "size": 3432
+  }
+}

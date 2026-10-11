@@ -271,7 +271,7 @@
     {
       "id": "awk",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-built-reviewed",
       "historicalManifest": "vendor/gawk/wasm-package.json",
       "historicalManifestSha256": "ce4cdf332cfc40336c9009118ed860cc5a25f73208912d22e1240eda774a449d",
       "historicalEvidence": [
@@ -303,9 +303,21 @@
       "historicalDependencies": [
         "make"
       ],
-      "mapping": null,
+      "mapping": "awk",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      ],
+      "sourcePreparation": {
+        "revision": "0607fac",
+        "scope": "Independent source review complete; new guest build, binary and public acceptance pending"
+      },
+      "sourceExecution": {
+        "revision": "a41fc47",
+        "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+        "evidence": "docs/research/package-migration/awk/gucos-source",
+        "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
+      }
     },
     {
       "id": "bison",
@@ -351,7 +363,7 @@
     {
       "id": "bitmap",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/bitmap/wasm-package.json",
       "historicalManifestSha256": "c97ecd69d22fd856c88ab26906dd033a0c680b2ea1d8690c61cd12a79dabee79",
       "historicalEvidence": [
@@ -374,17 +386,24 @@
         "pkgconf",
         "x11-apps"
       ],
-      "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Functional GUI, fresh binary/consumer/reload and independent publication acceptance pending."
+      "mapping": "bitmap",
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/bitmap",
       "sourceReview": {
         "commit": "b37e3d9",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Source approved; guest/artifact/public gates remain separate."
-      }
+      },
+      "sourceBuildEvidence": "docs/research/package-migration/bitmap/gucos-source",
+      "binaryEvidence": "docs/research/package-migration/utility-batch/gucos-binary"
     },
     {
       "id": "busybox",
@@ -761,7 +780,7 @@
     {
       "id": "doom",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-built-reviewed",
       "historicalManifest": "vendor/doom/wasm-package.json",
       "historicalManifestSha256": "09b9242b37a670f1ee1e325856293510df9b020eb469b82ae788364857592902",
       "historicalEvidence": [
@@ -791,9 +810,21 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
+      "mapping": "doom",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      ],
+      "sourcePreparation": {
+        "revision": "576497e",
+        "scope": "Independent source review complete; new guest build, binary and public acceptance pending"
+      },
+      "sourceExecution": {
+        "revision": "a41fc47",
+        "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+        "evidence": "docs/research/package-migration/doom/gucos-source",
+        "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
+      }
     },
     {
       "id": "ed",
@@ -1155,7 +1186,7 @@
     {
       "id": "gameboy",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/gameboy/wasm-package.json",
       "historicalManifestSha256": "0d6b78f589ea5c6e14e9bf4f720b077c75fa47721261678d11ca0a1a396b43d2",
       "historicalEvidence": [
@@ -1185,11 +1216,17 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Fresh source/binary palette/animation/close and public/reload acceptance pending."
+      "mapping": "gameboy",
+      "acceptance": [
+        {
+          "scope": "Built-in ROM palette/animation, package install, exact output checksums, SIGTERM cleanup, terminal recovery and reload; excludes external ROMs, controls, audio and CPU conformance",
+          "evidence": "docs/research/package-migration/gameboy/gucos-public",
+          "evidenceCommit": "e543a151b0c1d6b1e5f0aeba5aecf24355d11473",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "independentReview": "Approved after exact artifact, frozen input and all14 evidence hash checks"
+        }
       ],
+      "blockers": [],
       "candidate": "apps/gameboy",
       "sourceReview": {
         "commit": "e091004",
@@ -1953,7 +1990,7 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
+      "mapping": "Unmapped BusyBox hush package; core shell is ash",
       "acceptance": [],
       "blockers": []
     },
@@ -2057,7 +2094,7 @@
     {
       "id": "jwm",
       "kind": "historical-canonical-name",
-      "state": "existing-scope-audit",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/jwm/wasm-package.json",
       "historicalManifestSha256": "f24804d7d07c250950ca24358668a5bf11a6359ec61dad25543a22a9b77e8a99",
       "historicalEvidence": [
@@ -2079,8 +2116,14 @@
       "historicalDependencies": [
         "x11-apps"
       ],
-      "mapping": "jwm",
-      "acceptance": [],
+      "mapping": "jwm@2.4.6-2",
+      "acceptance": [
+        {
+          "scope": "Existing published profile independently audited; original provenance retained",
+          "evidence": "docs/research/snake/desktop-gucos-public",
+          "audit": "Exact manifest and binary identities unchanged from accepted publication"
+        }
+      ],
       "blockers": []
     },
     {
@@ -2117,7 +2160,7 @@
     {
       "id": "l3afpad",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-built-reviewed",
       "historicalManifest": "vendor/l3afpad/wasm-package.json",
       "historicalManifestSha256": "2d34c7a4ca6a1ee86ae604e9a959e007d973a0d1c7eb9b1d5203e46a35b808b5",
       "historicalEvidence": [
@@ -2141,9 +2184,18 @@
         "gtk3-schemas",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "l3afpad",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "sourcePreparation": {
+        "revision": "a1c6a43",
+        "scope": "139 historical blobs, additional pinned GPL text,7outputs; source job queued, GUI/public pending."
+      },
+      "sourceExecution": {
+        "revision": "db80df48e834c80ed0723e49a4e1a5d9ad7cae69",
+        "evidence": "docs/research/package-migration/l3afpad/gucos-source",
+        "scope": "Independently reviewed fresh source build, staged help test and exact seven-output export; editor binary/GUI/public gates pending."
+      }
     },
     {
       "id": "libc",
@@ -2729,7 +2781,7 @@
     {
       "id": "libxfce4util",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/libxfce4util/wasm-package.json",
       "historicalManifestSha256": "2c41a69bbffc5a93a09b71668134fbf39fe02d262351f5d380bc605314b06b95",
       "historicalEvidence": [
@@ -2745,15 +2797,24 @@
         "libintl",
         "pkgconf"
       ],
-      "mapping": null,
-      "acceptance": [],
+      "mapping": "libxfce4util",
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
+      ],
       "blockers": [],
       "candidate": "apps/libxfce4util",
       "sourceReview": {
         "commit": "8e6a7a9",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Source approved; guest/artifact/public gates remain separate."
-      }
+      },
+      "sourceBuildEvidence": "docs/research/package-migration/libxfce4util/gucos-source",
+      "binaryEvidence": "docs/research/package-migration/utility-batch/gucos-binary"
     },
     {
       "id": "lua",
@@ -2818,7 +2879,7 @@
     {
       "id": "m4",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/m4/wasm-package.json",
       "historicalManifestSha256": "6810bb323a927dec92e4bf07437f32e697fcd864aefdd5607811ec6e97694ecf",
       "historicalEvidence": [
@@ -2852,15 +2913,24 @@
         "libiconv",
         "make"
       ],
-      "mapping": null,
-      "acceptance": [],
+      "mapping": "m4",
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
+      ],
       "blockers": [],
       "candidate": "apps/m4",
       "sourceReview": {
         "commit": "a1e91fb",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Source approved; guest/artifact/public gates remain separate."
-      }
+      },
+      "sourceBuildEvidence": "docs/research/package-migration/m4/gucos-source",
+      "binaryEvidence": "docs/research/package-migration/utility-batch/gucos-binary"
     },
     {
       "id": "make",
@@ -2928,7 +2998,7 @@
     {
       "id": "micropython",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/micropython/wasm-package.json",
       "historicalManifestSha256": "65186c86d5509270300344d97146628e3c58f99c876035eaeb943fb74199181f",
       "historicalEvidence": [
@@ -2959,10 +3029,15 @@
       ],
       "historicalDependencies": [],
       "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Source review and fresh guest/binary/public acceptance pending."
+      "acceptance": [
+        {
+          "scope": "Fresh source and binary26 fixture/alias tests, then public immutable install, fixtures and reload; four exact payloads",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "catalogCommit": "4395482",
+          "evidence": "docs/research/package-migration/batch-16/gucos-public"
+        }
       ],
+      "blockers": [],
       "candidate": "apps/micropython",
       "sourceReview": {
         "commit": "123f6d5",
@@ -3021,7 +3096,7 @@
     {
       "id": "ncurses",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-built-reviewed",
       "historicalManifest": "apps/ncurses/wasm-package.json",
       "historicalManifestSha256": "fe2cc902a42632f0b9e9ea941e983075bac661676405833b15c610aac3c580e7",
       "historicalEvidence": [
@@ -3055,16 +3130,22 @@
       "historicalDependencies": [
         "make"
       ],
-      "mapping": null,
+      "mapping": "ncurses",
       "acceptance": [],
       "blockers": [
-        "Fresh guest/binary/public gates pending."
+        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
       ],
       "candidate": "apps/ncurses",
       "sourceReview": {
         "commit": "fba736202eaa2b4b8f942fb549ffc760c05bedfe",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Source approved; fresh execution/acceptance of final candidate remains pending."
+      },
+      "sourceExecution": {
+        "revision": "1dee6db",
+        "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+        "evidence": "docs/research/package-migration/ncurses/gucos-source",
+        "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
       }
     },
     {
@@ -3288,7 +3369,7 @@
     {
       "id": "pcre2grep",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/pcre2-cli/wasm-package.json",
       "historicalManifestSha256": "2509fd3657d9c78276adc8edddbfd5e72643c042375978c1b769430652624877",
       "historicalEvidence": [
@@ -3318,20 +3399,29 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
-      "acceptance": [],
+      "mapping": "pcre2grep",
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
+      ],
       "blockers": [],
       "candidate": "apps/pcre2grep",
       "sourceReview": {
         "commit": "0153944",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Approved source preparation only; guest/artifact/publication gates pending."
-      }
+      },
+      "sourceBuildEvidence": "docs/research/package-migration/pcre2grep/gucos-source",
+      "binaryEvidence": "docs/research/package-migration/utility-batch/gucos-binary"
     },
     {
       "id": "pcre2test",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/pcre2-cli/wasm-package.json",
       "historicalManifestSha256": "2509fd3657d9c78276adc8edddbfd5e72643c042375978c1b769430652624877",
       "historicalEvidence": [
@@ -3361,15 +3451,24 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
-      "acceptance": [],
+      "mapping": "pcre2test",
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
+      ],
       "blockers": [],
       "candidate": "apps/pcre2test",
       "sourceReview": {
         "commit": "0153944",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Approved source preparation only; guest/artifact/publication gates pending."
-      }
+      },
+      "sourceBuildEvidence": "docs/research/package-migration/pcre2test/gucos-source",
+      "binaryEvidence": "docs/research/package-migration/utility-batch/gucos-binary"
     },
     {
       "id": "perl",
@@ -3609,7 +3708,7 @@
     {
       "id": "puzzles",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-built-reviewed",
       "historicalManifest": "apps/puzzles/wasm-package.json",
       "historicalManifestSha256": "7ed16059fee8f8a30cc094382a619ee030aa04f8dd48fd82486994b67b163ba7",
       "historicalEvidence": [
@@ -3638,9 +3737,20 @@
         "gtk3-x11",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "puzzles",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Fresh binary install and consumers passed; initial Fifteen GUI harness failed before menu selection on missing-status decode. Reviewed polling correction and GUI-only retry queued; other desktop games/public gates remain."
+      ],
+      "sourcePreparation": {
+        "revision": "19b50d8",
+        "scope": "319 pinned historical blobs,40 games,132 outputs; independent source review approved; source execution active and Fifteen binary/JWM/save/reload gate queued."
+      },
+      "sourceExecution": {
+        "revision": "8f06d8a",
+        "evidence": "docs/research/package-migration/puzzles/gucos-source",
+        "scope": "Reviewed40gamegeneration and132outputsourceexport; interactivebinary/publicpending."
+      }
     },
     {
       "id": "pygame-ce",
@@ -3827,7 +3937,7 @@
     {
       "id": "quake",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-built-reviewed",
       "historicalManifest": "vendor/quake/wasm-package.json",
       "historicalManifestSha256": "fc96c56564b97ee9dd87f5f87f4bf59ab20c8cc6ce2fd0558fbd22fd752d0bf6",
       "historicalEvidence": [
@@ -3845,9 +3955,21 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
+      "mapping": "quake",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Fresh binary install, installed consumers, reload, immutable publication review and public acceptance remain pending."
+      ],
+      "sourcePreparation": {
+        "revision": "a527d7a",
+        "scope": "Independent source review complete; new guest build, binary and public acceptance pending"
+      },
+      "sourceExecution": {
+        "revision": "136d562",
+        "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+        "evidence": "docs/research/package-migration/quake/gucos-source",
+        "scope": "Independently reviewed source build, staged consumers and exact guest export; not public acceptance."
+      }
     },
     {
       "id": "scintilla",
@@ -3882,7 +4004,7 @@
     {
       "id": "sdk",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "existing-scope-audit",
       "historicalManifest": "vendor/sdk/wasm-package.json",
       "historicalManifestSha256": "ad5a9fc2f50f9b0409f1d5a05a8c0d1c2f04419b8e3fbe7e3f274339cd5338df",
       "historicalEvidence": [
@@ -3919,15 +4041,17 @@
         "libc",
         "pkgconf"
       ],
-      "mapping": "Core supplies C compiler/libc/bootstrap; historical SDK bundle and host C++ preparation not a current package.",
+      "mapping": "Core C compiler/libc/ar and cc --install-sdk-headers; historical SDK package publication not migrated",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Standalone SDK publication and exact historical acceptance remain; translated C++ is separate"
+      ],
       "remainingScope": "Audit SDK/host-prepared C++ profile; guest cc is C only"
     },
     {
       "id": "sdl3",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "existing-scope-audit",
       "historicalManifest": "vendor/sdl3/wasm-package.json",
       "historicalManifestSha256": "f28758741fd5db0a28216233c41f47e1377f430842fc16298d32b7c890e397a3",
       "historicalEvidence": [
@@ -3948,15 +4072,17 @@
       "historicalDependencies": [
         "libc"
       ],
-      "mapping": "Core owns SDL3-compatible VT shim; not a migration of the full historical package/profile.",
+      "mapping": "Core libc SDL3-compatible VT shim; historical standalone libSDL3 packaging not migrated",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "Separate libSDL3.a/libSDL3.so/sdl3.pc package and exact historical tests remain"
+      ],
       "remainingScope": "Audit old package scope against core-owned shim; no duplicate bootstrap"
     },
     {
       "id": "sdl3-gfx",
       "kind": "historical-canonical-name",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/sdl3-gfx/wasm-package.json",
       "historicalManifestSha256": "bd9754f7603f3e81d3912953daeb32bd22be3e5832b80da0f1a69373f99bff88",
       "historicalEvidence": [
@@ -3988,11 +4114,15 @@
           "scope": "Fresh binary install, original static/shared consumers and reload15 combined outputs; image256 exact pixels and mixer6 PCM buffers22472 nonzero samples peak0.30517578125. PCM delivery only, not audibility/fidelity.",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-15/binary-install"
+        },
+        {
+          "scope": "Public immutable install, static/shared installed consumers and relink, reload and media (256 exact pixels, 6 PCM buffers/22472 nonzero samples)",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "catalogCommit": "37928af03f9e03098e3c6689e34aa862d767505e",
+          "evidence": "docs/research/package-migration/batch-15/gucos-public"
         }
       ],
-      "blockers": [
-        "Fresh binary consumers/reload, media checks where applicable, artifact review and public acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/sdl3-gfx",
       "sourceReview": {
         "commit": "fd443b45d69866e1e906bbc3b36d328f756e582d",
@@ -4003,7 +4133,7 @@
     {
       "id": "sdl3-image",
       "kind": "historical-canonical-name",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/sdl3-image/wasm-package.json",
       "historicalManifestSha256": "e03879333f1c0ffea29a0cfe573f194d8398f6cc72d2208b842ade6d654fba61",
       "historicalEvidence": [
@@ -4035,11 +4165,15 @@
           "scope": "Fresh binary install, original static/shared consumers and reload15 combined outputs; image256 exact pixels and mixer6 PCM buffers22472 nonzero samples peak0.30517578125. PCM delivery only, not audibility/fidelity.",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-15/binary-install"
+        },
+        {
+          "scope": "Public immutable install, static/shared installed consumers and relink, reload and media (256 exact pixels, 6 PCM buffers/22472 nonzero samples)",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "catalogCommit": "37928af03f9e03098e3c6689e34aa862d767505e",
+          "evidence": "docs/research/package-migration/batch-15/gucos-public"
         }
       ],
-      "blockers": [
-        "Fresh binary consumers/reload, media checks where applicable, artifact review and public acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/sdl3-image",
       "sourceReview": {
         "commit": "acb4bf21b859842ecb98a656f2fb55dc032287f9",
@@ -4050,7 +4184,7 @@
     {
       "id": "sdl3-mixer",
       "kind": "historical-canonical-name",
-      "state": "binary-accepted-review-pending",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/sdl3-mixer/wasm-package.json",
       "historicalManifestSha256": "0ade0656d5d74f9b53cb34e8467dfe514cb0c5a2cfcf8316babbb0e188c9255c",
       "historicalEvidence": [
@@ -4082,11 +4216,15 @@
           "scope": "Fresh binary install, original static/shared consumers and reload15 combined outputs; image256 exact pixels and mixer6 PCM buffers22472 nonzero samples peak0.30517578125. PCM delivery only, not audibility/fidelity.",
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "evidence": "docs/research/package-migration/batch-15/binary-install"
+        },
+        {
+          "scope": "Public immutable install, static/shared installed consumers and relink, reload and media (256 exact pixels, 6 PCM buffers/22472 nonzero samples)",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "catalogCommit": "37928af03f9e03098e3c6689e34aa862d767505e",
+          "evidence": "docs/research/package-migration/batch-15/gucos-public"
         }
       ],
-      "blockers": [
-        "Fresh binary consumers/reload, media checks where applicable, artifact review and public acceptance pending."
-      ],
+      "blockers": [],
       "candidate": "apps/sdl3-mixer",
       "sourceReview": {
         "commit": "acb4bf21b859842ecb98a656f2fb55dc032287f9",
@@ -4097,7 +4235,7 @@
     {
       "id": "sdl3-ttf",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/sdl3-ttf/wasm-package.json",
       "historicalManifestSha256": "1a7eb105ca9d64a085e7c4eacf2c5647445dc58dde43626edd84d05f8be63473",
       "historicalEvidence": [
@@ -4127,17 +4265,24 @@
         "harfbuzz",
         "sdl3"
       ],
-      "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Full HarfBuzz dependency, guest build and binary/public gates pending."
+      "mapping": "sdl3-ttf",
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/sdl3-ttf",
       "sourceReview": {
         "commit": "e6df78480b8bec9bff8654cbb21f52ebfdba4336",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Source approved; fresh execution/acceptance of final candidate remains pending."
-      }
+      },
+      "sourceBuildEvidence": "docs/research/package-migration/sdl3-ttf/gucos-source",
+      "binaryEvidence": "docs/research/package-migration/utility-batch/gucos-binary"
     },
     {
       "id": "solarwolf",
@@ -4242,7 +4387,7 @@
     {
       "id": "tcl",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/tcl/wasm-package.json",
       "historicalManifestSha256": "34d36da7822b6e7542aa93dff47e7234bda4559a5dc0168194acd61d14bb6338",
       "historicalEvidence": [
@@ -4254,8 +4399,15 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
-      "acceptance": [],
+      "mapping": "tcl",
+      "acceptance": [
+        {
+          "revision": "a0583e0",
+          "catalog": "b58c9448cfffd7af085285fc6aea55ddb3c4387f",
+          "evidence": "docs/research/package-migration/tcl-tk/gucos-public",
+          "scope": "Independent review approved public install, exact consumers and 1553-file closure, Tk widget/keyboard/PNG/pack/grid functional gate, package-byte reload. GUI was not repeated after reload."
+        }
+      ],
       "blockers": [],
       "candidate": "apps/tcl",
       "sourceReview": {
@@ -4286,7 +4438,7 @@
     {
       "id": "tk",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/tk/wasm-package.json",
       "historicalManifestSha256": "1f2c8cefc32d80b50de4e19ab3810625f23406cf25288114f8e715116038b3cb",
       "historicalEvidence": [
@@ -4301,11 +4453,16 @@
         "tcl",
         "x11-server"
       ],
-      "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Tcl fresh execution prerequisite, independent source review, guest binary/public and retained GUI/upstream pack/grid gates pending."
+      "mapping": "tk",
+      "acceptance": [
+        {
+          "revision": "a0583e0",
+          "catalog": "b58c9448cfffd7af085285fc6aea55ddb3c4387f",
+          "evidence": "docs/research/package-migration/tcl-tk/gucos-public",
+          "scope": "Independent review approved public install, exact consumers and 1553-file closure, Tk widget/keyboard/PNG/pack/grid functional gate, package-byte reload. GUI was not repeated after reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/tk",
       "sourceReview": {
         "commit": "5d914383f037e88d801c9a61e775eac5207df41f",
@@ -4335,14 +4492,16 @@
       "historicalDependencies": [
         "x11-apps"
       ],
-      "mapping": "twm",
+      "mapping": "twm@1.0.13.1-1; published source recipe with recorded public guest build/functional acceptance; no binary",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Binary export/publication/install/reload remains absent; preserve existing public source acceptance"
+      ]
     },
     {
       "id": "vim",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "vendor/vim/wasm-package.json",
       "historicalManifestSha256": "dfeb6d66ed497465f5afda976c41cd28b53c33581955afaabb600cc5b19d66e0",
       "historicalEvidence": [
@@ -4372,9 +4531,13 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": null,
+      "mapping": "vim",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "sourcePreparation": {
+        "revision": "54c5e55",
+        "scope": "Reviewed omission of two obsolete Windows locale aliases; first run rejected unsafe paths before compilation. Corrected retry prepared; not yet built."
+      }
     },
     {
       "id": "x11-apps",
@@ -4415,9 +4578,11 @@
         "ncurses",
         "x11-server"
       ],
-      "mapping": "Split into x11-toolkit, x11-widgets, xterm, xev, xprop, xmessage. Missing libXft SDK and historical Xft/ncurses xterm profile.",
+      "mapping": "x11-toolkit + x11-widgets + xterm + xev + xprop + xmessage; Source Code Pro supplied by accepted fontconfig",
       "acceptance": [],
-      "blockers": [],
+      "blockers": [
+        "libXft SDK and Xft/ncurses xterm profile remain missing"
+      ],
       "remainingScope": "Missing Xft, Source Code Pro and ncurses xterm profile"
     },
     {
@@ -4534,7 +4699,7 @@
     {
       "id": "x11-server",
       "kind": "historical-canonical-name",
-      "state": "existing-scope-audit",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/x11-server/wasm-package.json",
       "historicalManifestSha256": "9765cf39b1484fda8c4ef491022b2fb490097dc0bc6360afaec4f4b661adfe8d",
       "historicalEvidence": [
@@ -4553,8 +4718,14 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": "x11-server",
-      "acceptance": [],
+      "mapping": "x11-server@21.1.24-1",
+      "acceptance": [
+        {
+          "scope": "Existing published profile independently audited; original provenance retained",
+          "evidence": "docs/logs/2026-10-10/platform-1.0-package-acceptance.md",
+          "audit": "Exact manifest and binary identities unchanged from accepted publication"
+        }
+      ],
       "blockers": []
     },
     {
@@ -4625,7 +4796,7 @@
     {
       "id": "xmag",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/xmag/wasm-package.json",
       "historicalManifestSha256": "5680332fc9c480b73b677c4badbf8ca31841dea61cbe7c909806d515bc435a7a",
       "historicalEvidence": [
@@ -4648,22 +4819,29 @@
         "pkgconf",
         "x11-apps"
       ],
-      "mapping": null,
-      "acceptance": [],
-      "blockers": [
-        "Functional GUI, fresh binary/consumer/reload and independent publication acceptance pending."
+      "mapping": "xmag",
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/xmag",
       "sourceReview": {
         "commit": "b37e3d9",
         "reviewerThread": "01a12556-d14c-71d3-b0d9-aa86966abbf7",
         "result": "Source approved; guest/artifact/public gates remain separate."
-      }
+      },
+      "sourceBuildEvidence": "docs/research/package-migration/xmag/gucos-source",
+      "binaryEvidence": "docs/research/package-migration/utility-batch/gucos-binary"
     },
     {
       "id": "xmahjongg",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-built-reviewed",
       "historicalManifest": "apps/xmahjongg/wasm-package.json",
       "historicalManifestSha256": "7ae5f9d8fc5b40973c298b3564fd0777a9b2723445f5faa8eb78d80a8991ab23",
       "historicalEvidence": [
@@ -4677,9 +4855,18 @@
       "historicalDependencies": [
         "x11-apps"
       ],
-      "mapping": null,
+      "mapping": "xmahjongg",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "sourcePreparation": {
+        "revision": "d107353",
+        "scope": "159 historical blobs and1064 exact retained translated inputs independently reviewed; owned guest-C recipe queued. No fresh build/gameplay acceptance yet."
+      },
+      "sourceExecution": {
+        "revision": "0b722c6",
+        "evidence": "docs/research/package-migration/xmahjongg/gucos-source",
+        "scope": "Reviewed fresh guest compilation of retained translated C, staged help/file checks and exact ten-output export. Gameplay/public gates pending."
+      }
     },
     {
       "id": "zlib",
@@ -4734,7 +4921,7 @@
     {
       "id": "zstd",
       "kind": "historical-canonical-name",
-      "state": "existing-scope-audit",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/zstd/wasm-package.json",
       "historicalManifestSha256": "25be457de948d009c15894ea5c0c23a18e4d29cb72264f9a65351c794b63bd42",
       "historicalEvidence": [
@@ -4746,8 +4933,14 @@
         }
       ],
       "historicalDependencies": [],
-      "mapping": "zstd",
-      "acceptance": [],
+      "mapping": "zstd@1.5.7-1",
+      "acceptance": [
+        {
+          "scope": "Existing published profile independently audited; original provenance retained",
+          "evidence": "docs/logs/2026-10-10/platform-1.0-package-acceptance.md",
+          "audit": "Exact manifest and binary identities unchanged from accepted publication"
+        }
+      ],
       "blockers": []
     },
     {
@@ -4757,7 +4950,8 @@
       "scope": "GNU binutils 2.44; excludes DejaGNU/documentation failures",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "mapping": "Unmapped GNU binutils 2.44 workload; core ar/nm/ranlib are not equivalent"
     },
     {
       "id": "cjson",
@@ -4897,7 +5091,8 @@
       "scope": "Pinned translated libc++/libc++abi support, not general native guest C++",
       "historicalEvidenceDocument": "../historical-package-inventory/README.md",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "mapping": "Unmapped pinned translated libc++/libc++abi support profile; no general guest-native C++ claim"
     },
     {
       "id": "harfbuzz-static",

@@ -1,0 +1,21 @@
+{
+  "status": "failed",
+  "startedAt": "2026-10-11T06:59:08.838Z",
+  "name": "xcalc",
+  "scope": "Owned JWM menu launch, physical input/function, quit/relaunch; editor saves and reopens",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "closureSha256": "97a094decb4e94703393d14508c1b7f90b541b055d62036261dd6914c19aa844",
+  "harnessSha256": "e28520eb3d8f3370064823b7cd9c8f6ec4a3c6d4664b5f4603733997d6f11f62",
+  "observer": {
+    "observerSha256": "af2da6d6c519b657f1981192cc88ecd2479693d010480fd31ed371df4f58b157",
+    "menuHelperSha256": "626ec4507675cadfda580d995020162af9cbcca0883221dc78b9fa1e72d7bc3c"
+  },
+  "desktopHelpers": {
+    "observerSha256": "1e128762b83a291dce18b47ed8ce28d691ffe1b09ae18798a00587b6b65a0ef6",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "sessionHelperSha256": "1ad86ba2192ce6501530d2aff47a54302c57584287d0b165a3490a78bb5e89c8"
+  },
+  "menus": [],
+  "error": "AssertionError [ERR_ASSERTION]: The \"string\" argument must be of type string. Received type undefined (undefined)\n    at file:///Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:68:10\n    at async bounded (file:///Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:7:57)\n    at async clickMenuEntry (file:///Users/jku/git/gucos-packages-porting/tests/desktop/menu.mjs:34:13)\n    at async launch (file:///Users/jku/git/gucos-packages-porting/tests/desktop/xapps.mjs:33:28)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/desktop/xapps.mjs:53:2",
+  "finishedAt": "2026-10-11T06:59:11.845Z"
+}

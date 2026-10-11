@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "startedAt": "2026-10-11T06:56:28.791Z",
+  "scope": "Owned JWM entry launches accepted 2048 in xterm; real movement/restart/quit and relaunch; screenshots require independent review",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "closureSha256": "97a094decb4e94703393d14508c1b7f90b541b055d62036261dd6914c19aa844",
+  "payloadFiles": 774,
+  "harnessSha256": "774027bccb161702cc5649f63ec8fe9983dc28c35ea1b1b05b0554cd5fb11479",
+  "helpers": {
+    "observerSha256": "1e128762b83a291dce18b47ed8ce28d691ffe1b09ae18798a00587b6b65a0ef6",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "sessionHelperSha256": "ecbe89c4fec59695f18f50fc352314cb1fed86809c6384874b4061f925efc293"
+  },
+  "error": "page.evaluate: TypeError: Failed to execute 'decode' on 'TextDecoder': parameter 1 is not of type 'ArrayBuffer'.\n    at eval (eval at evaluate (:311:30), <anonymous>:1:38)\n    at async <anonymous>:337:30\n    at /Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:57:36\n    at async bounded (/Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:7:57)\n    at async clickMenuEntry (/Users/jku/git/gucos-packages-porting/tests/desktop/menu.mjs:34:13)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/desktop/2048.mjs:34:96",
+  "finishedAt": "2026-10-11T06:56:31.177Z"
+}

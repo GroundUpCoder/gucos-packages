@@ -1,0 +1,18 @@
+{
+  "puzzles-jwm-await-predicate-ArrowLeft.png": "ebf447351eb756c1814df0829d37bda4168161bbba613b249446e01517f5c311",
+  "puzzles-jwm-await-predicate-initial.png": "07e9286926c58185bd16479756bd61eac063b83f67740bc97c0bd28724cfd7b9",
+  "puzzles-jwm-await-predicate-redo-move.png": "ebf447351eb756c1814df0829d37bda4168161bbba613b249446e01517f5c311",
+  "puzzles-jwm-await-predicate-undo.png": "07e9286926c58185bd16479756bd61eac063b83f67740bc97c0bd28724cfd7b9",
+  "puzzles-jwm-await-predicate.json": "040c76ca3b7d7dc386311f49362938684561008187ebf2b8692c3858faa5c101",
+  "puzzles-jwm-await-predicate.log": "afcf9407e72ca4cf53e3fda800bc88a9305a17fba8dd984700fba82f8a4284cd",
+  "puzzles-mines-jwm-awaited-failure.png": "8353c40046a5569bc65088b760eecd18cad11518506cb0d71261e5ef57e7e684",
+  "puzzles-mines-jwm-awaited-flagged.png": "6f8cc79644d6ea2827f34dc861e9757f9a26eefa22f57ee8a52f76601d4db99f",
+  "puzzles-mines-jwm-awaited-initial.png": "33cadfe0b8f5b249969014c993d8bd9ac52b0ff1657be275b0e3f35892c60e3e",
+  "puzzles-mines-jwm-awaited.json": "846cce2448465e62aa0d3a93388578755a4489f3a55f9ed7c6b6f1313890fe90",
+  "puzzles-mines-jwm-awaited.log": "25eebbfeac28c2ae91d1c57ba5f9714775572da853748910fcae0f32fb34c1f4",
+  "puzzles-net-jwm-awaited-initial.png": "25cfa80eb3919b3b350a1b839b89d86081d7031a587b8795ea27d510fc714af5",
+  "puzzles-net-jwm-awaited-rotated.png": "bdcd9405524a9b81b29bd9e19300346a8ed0a8bdb0eb44926ac4372309b6014b",
+  "puzzles-net-jwm-awaited-undo.png": "b61fb2531112ece5c59afb4b7c6e3a2146ef9e5731a12dac650479f0475686bf",
+  "puzzles-net-jwm-awaited.json": "7017074c5b1e2ad52e2238a0d409ea6c27e2e2d0ef0d97b88e3e4427fd4bd832",
+  "puzzles-net-jwm-awaited.log": "25eebbfeac28c2ae91d1c57ba5f9714775572da853748910fcae0f32fb34c1f4"
+}

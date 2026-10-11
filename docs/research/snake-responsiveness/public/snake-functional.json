@@ -1,0 +1,41 @@
+{
+  "startedAt": "2026-10-11T05:35:11.939Z",
+  "status": "passed",
+  "checks": [
+    "frozen-output-checksums",
+    "100ms-idle-cadence",
+    "immediate-direction-response",
+    "initial-frame",
+    "timer-movement",
+    "actual-arrow-key-turn",
+    "wall-collision",
+    "restart",
+    "rendered-board-borders-head-food",
+    "single-q-exit",
+    "cursor-and-alternate-screen-restored",
+    "termios-restored",
+    "relaunch",
+    "ctrl-c-exit",
+    "termios-restored-after-ctrl-c"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/28074d45e70ab5353de8df7998f9972157b17191/apps/snake/binaries/0b8d91f8dfe9da464a391629a2d4f8b2693a6b5150fac8493e7c3d8bf0813f0d.tar",
+    "sha256": "0b8d91f8dfe9da464a391629a2d4f8b2693a6b5150fac8493e7c3d8bf0813f0d",
+    "size": 40448
+  },
+  "idleIntervalsMs": [
+    108.08500000089407,
+    108.48000000417233,
+    111.97999999672174,
+    112.31000000238419
+  ],
+  "inputLatenciesMs": [
+    4.399999998509884,
+    4.920000001788139,
+    2.875,
+    2.494999997317791,
+    2.3049999997019768
+  ],
+  "finishedAt": "2026-10-11T05:35:15.046Z"
+}

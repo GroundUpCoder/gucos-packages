@@ -1,0 +1,8 @@
+{
+  "observed-runtime.json": "b3c325527354e5448ecdc594cd0052d3ca4186a0504e1af8313fea53d45333d0",
+  "config.json": "153e26879547df2a2f2bdfdad3d00a8def1a92b33ed695e276065b542cb1e562",
+  "build-gameboy.json": "a9869541781d28099bac0dad4a7a5d99c7915d08b552c69400f3d7b223dcd27f",
+  "port": "c543fcef4f5437f10996a8e1f68bce0b28efa05365115bb41bb79fd9cae0ad53",
+  "candidate-manifests.json": "74c4bf9423d01a15f63a735b1193b56eba6425db02e159f9491d7bd83eceb004",
+  "build.log": "5dac7b6522e05275a2a127a2cca55ac9a10b1eff4187c415d525e95f20ad697f"
+}

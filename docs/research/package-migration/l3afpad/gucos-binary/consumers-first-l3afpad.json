@@ -1,0 +1,43 @@
+{
+  "action": "consumers",
+  "names": [
+    "l3afpad"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "db80df48e834c80ed0723e49a4e1a5d9ad7cae69",
+  "startedAt": "2026-10-11T07:17:00.727Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "l3afpad",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "3c5ad7f0d57a732f2249076332c834924dbe8f2460ef54cc99b223313451fb8d",
+          "size": 727040
+        },
+        {
+          "path": "build.sh",
+          "sha256": "495ce5e91d88503cffe16cb2bf652e354a7558ed0d44ce8f7ae3ea6eeee14b38",
+          "size": 1124
+        },
+        {
+          "path": "test.sh",
+          "sha256": "fc82914e26655b77b4c10079eb0da015c673c30560e77edb662566008bbe6bee",
+          "size": 400
+        },
+        {
+          "path": "l3afpad.desktop",
+          "sha256": "febfd9c8dc471e3a0da896f7840dff86b4bf7cb935df00b011e7e2ef0b3c700b",
+          "size": 158
+        },
+        {
+          "path": "licenses/GPL-2.0.txt",
+          "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+          "size": 17984
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T07:17:02.335Z"
+}

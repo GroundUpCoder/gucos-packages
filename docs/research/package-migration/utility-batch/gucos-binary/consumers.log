@@ -1,0 +1,256 @@
+gucman: unknown source
+
+
+m4 (GNU M4) 1.4.19
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by René Seindal.
+M4-PACKAGE-PASS
+
+
+
+PCRE2 C library tests using test data from /tmp/migration-consumers/consumers/pcre2test/source/port/cli-fixtures/testdata
+PCRE2 version 10.46 2025-08-27 (8-bit)
+
+---- Testing 8-bit library ----
+
+Test 0: Unchecked pcre2test argument tests (to improve coverage)
+  OK
+Test 1: Main non-UTF, non-UCP functionality (compatible with Perl >= 5.10)
+  OK
+Test 2: API, errors, internals and non-Perl stuff (excluding UTF-8)
+  OK
+/tmp/migration-consumers/consumers/pcre2test/source/port/cli-fixtures/RunTest: line 553: locale: not found
+/tmp/migration-consumers/consumers/pcre2test/source/port/cli-fixtures/RunTest: line 553: locale: not found
+/tmp/migration-consumers/consumers/pcre2test/source/port/cli-fixtures/RunTest: line 553: locale: not found
+/tmp/migration-consumers/consumers/pcre2test/source/port/cli-fixtures/RunTest: line 553: locale: not found
+Cannot test locale-specific features - none of the 'fr_FR', 'fr_CA',
+'fr' or 'french' locales can be set, or the "locale" command is
+not available to check for them.
+ 
+Test 4: UTF-8 and Unicode property support (compatible with Perl >= 5.10)
+  OK
+Test 5: API, internals, and non-Perl stuff for UTF-8 and UCP support
+  OK
+Test 6: DFA matching main non-UTF, non-UCP functionality
+  OK
+Test 7: DFA matching with UTF-8 and Unicode property support
+  OK
+Test 8: Internal offsets and code size tests
+  OK
+Test 9: Specials for the basic 8-bit library
+  OK
+Test 10: Specials for the 8-bit library with UTF-8 and UCP support
+  OK
+Test 11: Specials for the basic 16-bit and 32-bit libraries
+  Skipped when running 8-bit tests
+Test 12: Specials for the 16-bit and 32-bit libraries UTF and UCP support
+  Skipped when running 8-bit tests
+Test 13: DFA specials for the basic 16-bit and 32-bit libraries
+  Skipped when running 8-bit tests
+Test 14: DFA specials for UTF and UCP support
+  OK
+Test 15: Non-JIT limits and other non-JIT tests
+  OK
+Test 16: JIT-specific features when JIT is not available
+  OK
+Test 17: JIT-specific features when JIT is available
+  Skipped because JIT is not available or nojit was specified
+Test 18: Tests of the POSIX interface, excluding UTF/UCP
+  OK
+Test 19: Tests of the POSIX interface with UTF/UCP
+  OK
+Test 20: Serialization and code copy tests
+  OK
+Test 21: \C tests without UTF (supported for DFA matching)
+  OK
+  OK with DFA
+Test 22: \C tests with UTF (not supported for DFA matching)
+  OK
+Test 23: \C disabled test
+  Skipped because \C is not disabled
+Test 24: Non-UTF pattern conversion tests
+  OK
+Test 25: UTF pattern conversion tests
+  OK
+Test 26: Unicode property tests (compatible with Perl >= 5.38)
+  OK
+Test 27: Auto-generated unicode property tests
+  OK
+ 1: abb
+ 2: 42
+No match
+PCRE2TEST-ACCEPTANCE-PASS
+
+
+Testing pcre2grep version 10.46 2025-08-27
+Testing pcre2grep main features
+Testing pcre2grep UTF-8 features
+Testing pcre2grep newline settings
+Testing pcre2grep newline settings with UTF-8 features
+Script callouts are not supported
+Testing miscellaneous pcre2grep arguments (unchecked)
+PCRE2GREP-ACCEPTANCE-PASS
+
+
+{
+  tail: 'ine settings\n' +
+    'Testing pcre2grep newline settings with UTF-8 features\n' +
+    'Script callouts are not supported\n' +
+    'Testing miscellaneous pcre2grep arguments (unchecked)\n' +
+    'PCRE2GREP-ACCEPTANCE-PASS\n' +
+    '121 functions, 133972 bytes\n' +
+    '2 functions, 12742 bytes\n' +
+    'XFCE-UTIL-PASS\n'
+}
+121 functions, 133972 bytes
+2 functions, 12742 bytes
+XFCE-UTIL-PASS
+
+
+BITMAP-CONVERSION-PASS
+
+
+xmag 1.0.8
+
+
+545 functions, 516418 bytes
+SDL3-TTF-PASS
+796 functions, 710049 bytes
+SDL3-TTF-PASS
+551 functions, 511058 bytes
+TTF-FONT-HASH 99 1 469 135 1717412826
+TTF-FONT-HASH 99 128 469 135 3645098871
+TTF-FONT-HASH 99 255 469 135 1661761607
+TTF-FONT-HASH 100 1 474 137 3111033474
+TTF-FONT-HASH 100 128 474 137 1174286984
+TTF-FONT-HASH 100 255 474 137 4265778157
+TTF-FONT-PIXELS-PASS file/memory cold/warm repeated opens same-size mutation truncate restore
+TTF-FONT-BENCH {"mode":"file","sample":0,"count":64,"create_ms":0.225234,"render_ms":7.110859,"close_ms":0.103906}
+TTF-FONT-BENCH {"mode":"file","sample":1,"count":64,"create_ms":0.209844,"render_ms":6.896250,"close_ms":0.082812}
+TTF-FONT-BENCH {"mode":"file","sample":2,"count":64,"create_ms":0.197188,"render_ms":6.812656,"close_ms":0.078437}
+TTF-FONT-BENCH {"mode":"file","sample":3,"count":64,"create_ms":0.197344,"render_ms":6.772188,"close_ms":0.077812}
+TTF-FONT-BENCH {"mode":"file","sample":4,"count":64,"create_ms":0.191094,"render_ms":6.727500,"close_ms":0.075547}
+TTF-FONT-BENCH {"mode":"file","sample":5,"count":64,"create_ms":0.186406,"render_ms":6.695937,"close_ms":0.072891}
+TTF-FONT-BENCH {"mode":"file","sample":6,"count":64,"create_ms":0.189609,"render_ms":6.720078,"close_ms":0.074141}
+TTF-FONT-BENCH {"mode":"memory","sample":0,"count":64,"create_ms":0.098438,"render_ms":6.500859,"close_ms":0.048984}
+TTF-FONT-BENCH {"mode":"memory","sample":1,"count":64,"create_ms":0.092656,"render_ms":6.464766,"close_ms":0.046250}
+TTF-FONT-BENCH {"mode":"memory","sample":2,"count":64,"create_ms":0.097500,"render_ms":6.508437,"close_ms":0.047578}
+TTF-FONT-BENCH {"mode":"memory","sample":3,"count":64,"create_ms":0.098516,"render_ms":6.490781,"close_ms":0.050078}
+TTF-FONT-BENCH {"mode":"memory","sample":4,"count":64,"create_ms":0.093125,"render_ms":6.426328,"close_ms":0.046172}
+TTF-FONT-BENCH {"mode":"memory","sample":5,"count":64,"create_ms":0.094844,"render_ms":6.478047,"close_ms":0.048984}
+TTF-FONT-BENCH {"mode":"memory","sample":6,"count":64,"create_ms":0.107969,"render_ms":6.565703,"close_ms":0.057891}
+TTF-FONT-WARM 0.012422 ms/render
+TTF-FONT-PIXELS-PASS file/memory cold/warm repeated opens same-size mutation truncate restore
+TTF-FONT-WARM 0.012422 ms/render
+SDL3-TTF-PACKAGE-PASS
+
+/usr/local/bin/m4: OK
+/usr/local/share/info/m4.info: OK
+/usr/local/share/info/m4.info-1: OK
+/usr/local/share/info/m4.info-2: OK
+/usr/local/share/man/man1/m4.1: OK
+/usr/local/share/licenses/m4/COPYING: OK
+
+38a3834c01c46a53169c7c8e9aaa6bd7e4190fa711364e5908c6e67bfdf7b113  /home/user/migration-export.tar
+1120768
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/pcre2test: OK
+/usr/local/share/licenses/pcre2test/LICENCE.md: OK
+
+2553b25b6f36ac7b9db73d2ccb1fd6c4f6312ebdab45b0151c67ed3d51676013  /home/user/migration-export.tar
+5154304
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/pcre2grep: OK
+/usr/local/share/licenses/pcre2grep/LICENCE.md: OK
+
+32552e65111fddecd04346555978b1839cf06d1a56022e688051f24201a57340  /home/user/migration-export.tar
+4673536
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/lib/libxfce4util.a: OK
+/usr/local/lib/libxfce4util.so: OK
+/usr/local/lib/pkgconfig/libxfce4util-1.0.pc: OK
+/usr/local/share/doc/libxfce4util/COPYING: OK
+/usr/local/share/doc/libxfce4util/PORT.md: OK
+/usr/local/share/licenses/libxfce4util/COPYING: OK
+/usr/local/include/xfce4/libxfce4util/libxfce4util-config.h: OK
+/usr/local/include/xfce4/libxfce4util/libxfce4util-private.h: OK
+/usr/local/include/xfce4/libxfce4util/libxfce4util-visibility.h: OK
+/usr/local/include/xfce4/libxfce4util/libxfce4util.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-consolekit.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-debug.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-fileutils.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-generics.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-gio-extensions.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-i18n.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-kiosk.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-license.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-miscutils.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-posix-signal-handler.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-private.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-rc-private.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-rc.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-resource.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-string.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-systemd.h: OK
+/usr/local/include/xfce4/libxfce4util/xfce-utf8.h: OK
+
+f265201a325fc6c78033c2e580de419010a0be169233b677f47f3e67c0cf5445  /home/user/migration-export.tar
+564224
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/bitmap: OK
+/usr/local/share/doc/bitmap/COPYING: OK
+/usr/local/share/licenses/bitmap/COPYING: OK
+/usr/local/bin/bmtoa: OK
+/usr/local/bin/atobm: OK
+/usr/local/share/licenses/bitmap/XBITMAPS-COPYING: OK
+/usr/local/share/bitmap/bitmaps/menu12: OK
+/usr/local/share/X11/app-defaults/Bitmap: OK
+/usr/local/share/X11/app-defaults/Bitmap-color: OK
+/usr/local/share/X11/app-defaults/Bitmap-nocase: OK
+/usr/local/share/bitmap/bitmaps/Dashes: OK
+/usr/local/share/bitmap/bitmaps/Down: OK
+/usr/local/share/bitmap/bitmaps/Excl: OK
+/usr/local/share/bitmap/bitmaps/FlipHoriz: OK
+/usr/local/share/bitmap/bitmaps/FlipVert: OK
+/usr/local/share/bitmap/bitmaps/Fold: OK
+/usr/local/share/bitmap/bitmaps/Left: OK
+/usr/local/share/bitmap/bitmaps/Right: OK
+/usr/local/share/bitmap/bitmaps/RotateLeft: OK
+/usr/local/share/bitmap/bitmaps/RotateRight: OK
+/usr/local/share/bitmap/bitmaps/Stipple: OK
+/usr/local/share/bitmap/bitmaps/Term: OK
+/usr/local/share/bitmap/bitmaps/Up: OK
+
+a6c3269535ae8a95cfcfb03de2b412869b5b40f95659c2fb2cc1394afbf0f4e5  /home/user/migration-export.tar
+4669440
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/xmag: OK
+/usr/local/share/doc/xmag/COPYING: OK
+/usr/local/share/licenses/xmag/COPYING: OK
+/usr/local/share/X11/app-defaults/Xmag: OK
+
+9317b64c538a193c67f2299d32e189ce1ed97215157209c64e33d357d518e377  /home/user/migration-export.tar
+4393984
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/lib/libSDL3_ttf.a: OK
+/usr/local/lib/libSDL3_ttf.so: OK
+/usr/local/lib/pkgconfig/sdl3-ttf.pc: OK
+/usr/local/share/licenses/sdl3-ttf/LICENSE.txt: OK
+/usr/local/share/licenses/sdl3-ttf/OFL-NotoSans.txt: OK
+/usr/local/include/SDL3_ttf/SDL_textengine.h: OK
+/usr/local/include/SDL3_ttf/SDL_ttf.h: OK
+
+2af4fd8c9c8d43ee794ec4a7f053e4e7a50949a001521eb7942b44f6e2313005  /home/user/migration-export.tar
+593920
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

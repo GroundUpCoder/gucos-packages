@@ -1,0 +1,30 @@
+[
+  {
+    "path": "bin/doom",
+    "mode": 493
+  },
+  {
+    "path": "libexec/doom",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/gucos-doom.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/doom/1-LICENSE",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/doom/2-LICENSE",
+    "mode": 420
+  },
+  {
+    "path": "share/games/doom/doom1.wad",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/doom/doom-shareware-notice.txt",
+    "mode": 420
+  }
+]

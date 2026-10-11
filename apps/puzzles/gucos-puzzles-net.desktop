@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Net
+Exec=sgt-net
+TryExec=sgt-net
+Terminal=false
+Categories=Game;LogicGame;

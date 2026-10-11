@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Calculator
+Exec=xcalc
+TryExec=xcalc
+Terminal=false

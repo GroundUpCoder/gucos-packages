@@ -64,6 +64,41 @@ puts("SNAKE-TERMIOS-PASS");return 0;}
  const start=await s.page.evaluate(()=>shell.busybox.log.length);
  await launch();
  await until(async()=>(await headSince(start)).length>=2,'initial movement');
+ // Timestamp complete head drawings at the worker/UI boundary. This observes
+ // the installed binary; the game and its clock are not mocked or modified.
+ await s.page.evaluate(()=>{
+  window.snakeFrames=[];let output='';let consumed=0;
+  shell.busybox.worker.addEventListener('message',({data})=>{
+   if(data.type!=='output')return;
+   output+=data.text;
+   const re=/\x1b\[(\d+);(\d+)H\x1b\[32m@/g;let m;
+   while((m=re.exec(output))!==null){
+    if(re.lastIndex>consumed)window.snakeFrames.push({x:+m[2],y:+m[1],at:performance.now()});
+    consumed=Math.max(consumed,re.lastIndex);
+   }
+  });
+ });
+ await s.page.waitForFunction(()=>snakeFrames.length>=5);
+ const idle=await s.page.evaluate(()=>snakeFrames.slice(0,5));
+ const intervals=idle.slice(1).map((f,i)=>f.at-idle[i].at).sort((a,b)=>a-b);
+ report.idleIntervalsMs=intervals;
+ assert(intervals[1]>=75 && intervals[2]<140,'Expected approximately 100 ms idle steps');
+ report.inputLatenciesMs=[];
+ for(let trial=0;trial<5;trial++){
+  const count=await s.page.evaluate(()=>snakeFrames.length);
+  await s.page.waitForFunction(n=>snakeFrames.length>n,count,{polling:5});
+  await s.page.waitForTimeout(15);
+  const marker=await s.page.evaluate(()=>({at:performance.now(),count:snakeFrames.length,head:snakeFrames.at(-1)}));
+  marker.up=trial%2===0;
+  await s.page.keyboard.press(marker.up?'ArrowUp':'ArrowRight');
+  await s.page.waitForFunction(m=>snakeFrames.slice(m.count).some(f=>m.up?f.y<m.head.y:f.x>m.head.x),marker,{polling:5});
+  const frame=await s.page.evaluate(m=>snakeFrames.slice(m.count).find(f=>m.up?f.y<m.head.y:f.x>m.head.x),marker);
+  assert(marker.up?frame.x===marker.head.x:frame.y===marker.head.y,'Perpendicular turn moved along the wrong axis');
+  report.inputLatenciesMs.push(frame.at-marker.at);
+ }
+ const sorted=[...report.inputLatenciesMs].sort((a,b)=>a-b);
+ assert(sorted[2]<65,'Direction keys should move immediately, not await the next tick');
+ report.checks.push('100ms-idle-cadence','immediate-direction-response');
  await s.page.evaluate(()=>shell.terminal.focus());
  const before=(await headSince(start)).at(-1);
  await s.page.keyboard.press('ArrowUp');

@@ -1,0 +1,15 @@
+/* Diagnostic only: observe input and synchronous/asynchronous metadata. */
+#include <gtk/gtk.h>
+#include <stdio.h>
+static GtkWidget *dialog;
+static void info(const char *tag,GFileInfo *i,GError *e){printf("INFO %s type=%d execute-present=%d execute=%d error=%s:%d:%s\n",tag,i?g_file_info_get_file_type(i):-1,i?g_file_info_has_attribute(i,"access::can-execute"):0,i?g_file_info_get_attribute_boolean(i,"access::can-execute"):0,e?g_quark_to_string(e->domain):"none",e?e->code:0,e?e->message:"");if(i)g_object_unref(i);if(e)g_error_free(e);}
+static void done(GObject *o,GAsyncResult *r,gpointer tag){GError *e=NULL;GFileInfo *i=g_file_query_info_finish(G_FILE(o),r,&e);printf("ASYNC DONE %s\n",(char*)tag);info(tag,i,e);}
+static void query(const char *p){printf("SYNC START %s\n",p);GFile *f=g_file_new_for_path(p);GError *e=NULL;GFileInfo *i=g_file_query_info(f,"standard::type,access::can-execute",0,NULL,&e);info(p,i,e);printf("ASYNC START %s\n",p);g_file_query_info_async(f,"standard::type,access::can-execute",0,0,NULL,done,(gpointer)p);g_object_unref(f);}
+static void entries(GtkWidget *w,gpointer unused){if(GTK_IS_ENTRY(w))printf("ENTRY %s\n",gtk_entry_get_text(GTK_ENTRY(w)));if(GTK_IS_CONTAINER(w))gtk_container_foreach(GTK_CONTAINER(w),entries,NULL);}
+static void state(const char *tag){char *f=gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(dialog)),*p=gtk_file_chooser_get_current_folder(GTK_FILE_CHOOSER(dialog));GtkWidget *focus=gtk_window_get_focus(GTK_WINDOW(dialog));printf("STATE %s file=%s folder=%s focus=%s\n",tag,f?f:"NULL",p?p:"NULL",focus?G_OBJECT_TYPE_NAME(focus):"NULL");g_free(f);g_free(p);entries(dialog,NULL);}
+static void clicked(GtkButton *b,gpointer unused){printf("CLICKED sensitive=%d\n",gtk_widget_is_sensitive(GTK_WIDGET(b)));state("clicked");}
+static gboolean event(GtkWidget *w,GdkEventButton *e,gpointer unused){printf("BUTTON event=%d x=%.1f y=%.1f\n",e->type,e->x,e->y);return FALSE;}
+static void response(GtkDialog *d,int id,gpointer unused){printf("RESPONSE %d\n",id);state("response");}
+static gboolean tick(gpointer unused){state("heartbeat");return TRUE;}
+static gboolean stop(gpointer unused){puts("PROBE END");gtk_main_quit();return FALSE;}
+int main(int argc,char **argv){setvbuf(stdout,NULL,_IONBF,0);gtk_init(&argc,&argv);dialog=gtk_file_chooser_dialog_new("Chooser Probe",NULL,GTK_FILE_CHOOSER_ACTION_SAVE,"Cancel",GTK_RESPONSE_CANCEL,"Save",GTK_RESPONSE_ACCEPT,NULL);gtk_file_chooser_set_current_folder(GTK_FILE_CHOOSER(dialog),"/home/user");if(argc>1)gtk_file_chooser_set_current_name(GTK_FILE_CHOOSER(dialog),"chooser-probe.txt");GtkWidget *b=gtk_dialog_get_widget_for_response(GTK_DIALOG(dialog),GTK_RESPONSE_ACCEPT);g_signal_connect(b,"clicked",G_CALLBACK(clicked),NULL);g_signal_connect(b,"button-press-event",G_CALLBACK(event),NULL);g_signal_connect(b,"button-release-event",G_CALLBACK(event),NULL);g_signal_connect(dialog,"response",G_CALLBACK(response),NULL);gtk_widget_show_all(dialog);query("/home/user/chooser-probe.txt");query("/home/user");g_timeout_add_seconds(5,tick,NULL);g_timeout_add_seconds(25,stop,NULL);gtk_main();gtk_widget_destroy(dialog);return 0;}
