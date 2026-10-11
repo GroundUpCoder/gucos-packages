@@ -57,13 +57,14 @@ int main(int argc,char**argv){
  if(argc<2||argc>4)return 1;
  int simple=!strcmp(argv[1],"wm")||!strcmp(argv[1],"menu");
  int title=!strcmp(argv[1],"window")||!strcmp(argv[1],"absent")||!strcmp(argv[1],"frame");
- int board=!strcmp(argv[1],"puzzle-board");
+ int solo=!strcmp(argv[1],"solo-board");
+ int board=!strcmp(argv[1],"puzzle-board")||solo;
  int tiles=!strcmp(argv[1],"mahjongg-tiles");
  int child=!strcmp(argv[1],"child"),pixels=!strcmp(argv[1],"pixels");unsigned long requested=0;
  if(simple){if(argc!=2)return 1;}
  else if(title){if(argc!=3||!*argv[2])return 1;}
  else if(child){if(argc!=4||!*argv[2]||!path_valid(argv[3]))return 1;}
- else if(board){if(argc!=3||!*argv[2])return 1;}
+ else if(board){if(argc!=3||!*argv[2]||(solo&&strcmp(argv[2],"Solo")))return 1;}
  else if(tiles){if(argc!=3||strcmp(argv[2],"XMahjongg"))return 1;}
  else if(pixels){if(argc<3||!*argv[2]||(argc==4&&(!number(argv[3],&requested)||!requested)))return 1;}
  else return 1;
@@ -90,7 +91,7 @@ int main(int argc,char**argv){
    XWindowAttributes a;if(!XGetWindowAttributes(d,w,&a))return 4;
    int height=argc==4?(int)requested:a.height;if(height<1||height>a.height||a.width<1||a.width>4096||height>4096||(unsigned long)a.width*height>4194304UL||a.map_state!=IsViewable)return 4;
    int left=board?6:0,top=board?35:0,width=board?a.width-12:a.width;
-   if(board)height=a.height-65;
+   if(board)height=a.height-(solo?41:65);
    if(width<1||height<1)return 4;
    XImage*im=XGetImage(d,w,left,top,width,height,AllPlanes,ZPixmap);if(!im)return 4;
    unsigned long hash=2166136261UL,first=XGetPixel(im,0,0),different=0;

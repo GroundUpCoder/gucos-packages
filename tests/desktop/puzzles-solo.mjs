@@ -45,7 +45,7 @@ try{
   let last,stable=0;const deadline=Date.now()+30000;
   while(Date.now()<deadline){
   await s.page.waitForTimeout(250);const bytes=await canvas.screenshot();
-  const pixels=await observePixels(d,'puzzle-board','Solo');const hash=`${pixels.width}x${pixels.height}:${pixels.hash}`;
+  const pixels=await observePixels(d,'solo-board','Solo');const hash=`${pixels.width}x${pixels.height}:${pixels.hash}`;
   stable=hash===last?stable+1:0;last=hash;
   if(stable>=5&&(equal===undefined||hash===equal)&&(different===undefined||hash!==different)){await writeFile(resolve(run,stem+'-'+label+'.png'),bytes,{flag:'wx'});return hash;}
   }throw Error('Board failed to reach expected settled pixels: '+label);
@@ -69,11 +69,11 @@ try{
  // regular spacing and thicker 3x3 block boundaries, then inspect interiors.
  await board('layout');
  const raw=PNG.sync.read(await canvas.screenshot()),box=await canvas.boundingBox();
- const tl=await canvasPosition(canvas,{x:w.x+6,y:w.y+35}),br=await canvasPosition(canvas,{x:w.x+w.width-6,y:w.y+w.height-30});
+ const tl=await canvasPosition(canvas,{x:w.x+6,y:w.y+35}),br=await canvasPosition(canvas,{x:w.x+w.width-6,y:w.y+w.height-6});
  const x0=Math.ceil(tl.x*raw.width/box.width),y0=Math.ceil(tl.y*raw.height/box.height),x1=Math.floor(br.x*raw.width/box.width),y1=Math.floor(br.y*raw.height/box.height);
  const dark=(x,y)=>{const p=(y*raw.width+x)*4;return raw.data[p]<45&&raw.data[p+1]<45&&raw.data[p+2]<45;};
  function lines(vertical){const values=[];for(let a=vertical?x0:y0;a<(vertical?x1:y1);a++){let count=0;for(let b=vertical?y0:x0;b<(vertical?y1:x1);b++)count+=vertical?dark(a,b):dark(b,a);if(count>0.65*Math.min(x1-x0,y1-y0))values.push(a);}const groups=[];for(const a of values){const last=groups.at(-1);if(last&&a===last.at(-1)+1)last.push(a);else groups.push([a]);}assert.equal(groups.length,10,'Expected ten unambiguous grid strokes');const centers=groups.map(g=>(g[0]+g.at(-1))/2),step=(centers[9]-centers[0])/9;assert(step>20&&step<90);for(let i=1;i<10;i++)assert(Math.abs(centers[i]-centers[i-1]-step)<3,'Uniform grid spacing');const thin=Math.min(...groups.filter((_,i)=>i%3).map(g=>g.length));for(const i of [0,3,6,9])assert(groups[i].length>thin,'Thicker block boundaries required');return centers;}
- const xs=lines(true),ys=lines(false),sx=(br.x-tl.x)*raw.width/box.width/(w.width-12),sy=(br.y-tl.y)*raw.height/box.height/(w.height-65);
+ const xs=lines(true),ys=lines(false),sx=(br.x-tl.x)*raw.width/box.width/(w.width-12),sy=(br.y-tl.y)*raw.height/box.height/(w.height-41);
  assert(Math.abs((xs[9]-xs[0])/sx-432)<5&&Math.abs((ys[9]-ys[0])/sy-432)<5,'Expected default48-pixel Solo cells');
  const local=(x,y)=>({x:6+(x-tl.x*raw.width/box.width)/sx,y:35+(y-tl.y*raw.height/box.height)/sy});
  border=local(xs[0]-10*sx,ys[0]-10*sy);assert(border.x>0&&border.y>25);
