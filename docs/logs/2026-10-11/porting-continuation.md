@@ -13,3 +13,12 @@ integrity on https://os.groundupcoder.com/. Runtime
 Unchanged Snake 1.0.0-1 archive d7b6a5804fdbd3bfa8cc6782e8204f44c187b8d9445eb4ffefd1aa9934a3ee20
 is 39,936 bytes. Evidence: docs/research/snake/gucos-public.
 Desktop menu integration is a separate pending acceptance scope.
+
+## Independent continuation review
+
+Reviewer publication_review approved source 6b394e6 (desktop launcher/JWM),
+the explicit one-shot JWM upgrade plan in 35f4ac8, retained SDL addon artifact
+publication, and MicroPython source correction 123f6d5. SDL evidence hashes,
+source/receipt inventories and static/shared/media/reload checks were independently
+verified; their build runtime remains 61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0.
+These approvals do not substitute for the pending new public execution gates.

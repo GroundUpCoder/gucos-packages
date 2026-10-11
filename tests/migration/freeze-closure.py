@@ -18,7 +18,7 @@ def digest(b):return hashlib.sha256(b).hexdigest()
 def pinned(ref):
  u=urlsplit(ref['url']);parts=u.path.strip('/').split('/')
  if u.hostname=='raw.githubusercontent.com':
-  assert parts[:2]==['GroundUpCoder','wasm-posix-packages'] and re.fullmatch('[a-f0-9]{40}',parts[2])
+  assert parts[:2]==['GroundUpCoder','gucos-packages'] and re.fullmatch('[a-f0-9]{40}',parts[2])
   b=subprocess.check_output(['git','show',parts[2]+':'+ '/'.join(parts[3:])],cwd=repo)
  else:
   assert u.hostname=='127.0.0.1' and u.scheme=='http'
