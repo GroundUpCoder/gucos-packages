@@ -1,0 +1,158 @@
+/usr/local/bin/sgt-blackbox: OK
+/usr/local/libexec/puzzles/blackbox: OK
+/usr/local/bin/sgt-bridges: OK
+/usr/local/libexec/puzzles/bridges: OK
+/usr/local/bin/sgt-cube: OK
+/usr/local/libexec/puzzles/cube: OK
+/usr/local/bin/sgt-dominosa: OK
+/usr/local/libexec/puzzles/dominosa: OK
+/usr/local/bin/sgt-fifteen: OK
+/usr/local/libexec/puzzles/fifteen: OK
+/usr/local/bin/sgt-filling: OK
+/usr/local/libexec/puzzles/filling: OK
+/usr/local/bin/sgt-flip: OK
+/usr/local/libexec/puzzles/flip: OK
+/usr/local/bin/sgt-flood: OK
+/usr/local/libexec/puzzles/flood: OK
+/usr/local/bin/sgt-galaxies: OK
+/usr/local/libexec/puzzles/galaxies: OK
+/usr/local/bin/sgt-guess: OK
+/usr/local/libexec/puzzles/guess: OK
+/usr/local/bin/sgt-inertia: OK
+/usr/local/libexec/puzzles/inertia: OK
+/usr/local/bin/sgt-keen: OK
+/usr/local/libexec/puzzles/keen: OK
+/usr/local/bin/sgt-lightup: OK
+/usr/local/libexec/puzzles/lightup: OK
+/usr/local/bin/sgt-loopy: OK
+/usr/local/libexec/puzzles/loopy: OK
+/usr/local/bin/sgt-magnets: OK
+/usr/local/libexec/puzzles/magnets: OK
+/usr/local/bin/sgt-map: OK
+/usr/local/libexec/puzzles/map: OK
+/usr/local/bin/sgt-mines: OK
+/usr/local/libexec/puzzles/mines: OK
+/usr/local/bin/sgt-mosaic: OK
+/usr/local/libexec/puzzles/mosaic: OK
+/usr/local/bin/sgt-net: OK
+/usr/local/libexec/puzzles/net: OK
+/usr/local/bin/sgt-netslide: OK
+/usr/local/libexec/puzzles/netslide: OK
+/usr/local/bin/sgt-palisade: OK
+/usr/local/libexec/puzzles/palisade: OK
+/usr/local/bin/sgt-pattern: OK
+/usr/local/libexec/puzzles/pattern: OK
+/usr/local/bin/sgt-pearl: OK
+/usr/local/libexec/puzzles/pearl: OK
+/usr/local/bin/sgt-pegs: OK
+/usr/local/libexec/puzzles/pegs: OK
+/usr/local/bin/sgt-range: OK
+/usr/local/libexec/puzzles/range: OK
+/usr/local/bin/sgt-rect: OK
+/usr/local/libexec/puzzles/rect: OK
+/usr/local/bin/sgt-samegame: OK
+/usr/local/libexec/puzzles/samegame: OK
+/usr/local/bin/sgt-signpost: OK
+/usr/local/libexec/puzzles/signpost: OK
+/usr/local/bin/sgt-singles: OK
+/usr/local/libexec/puzzles/singles: OK
+/usr/local/bin/sgt-sixteen: OK
+/usr/local/libexec/puzzles/sixteen: OK
+/usr/local/bin/sgt-slant: OK
+/usr/local/libexec/puzzles/slant: OK
+/usr/local/bin/sgt-solo: OK
+/usr/local/libexec/puzzles/solo: OK
+/usr/local/bin/sgt-tents: OK
+/usr/local/libexec/puzzles/tents: OK
+/usr/local/bin/sgt-towers: OK
+/usr/local/libexec/puzzles/towers: OK
+/usr/local/bin/sgt-tracks: OK
+/usr/local/libexec/puzzles/tracks: OK
+/usr/local/bin/sgt-twiddle: OK
+/usr/local/libexec/puzzles/twiddle: OK
+/usr/local/bin/sgt-undead: OK
+/usr/local/libexec/puzzles/undead: OK
+/usr/local/bin/sgt-unequal: OK
+/usr/local/libexec/puzzles/unequal: OK
+/usr/local/bin/sgt-unruly: OK
+/usr/local/libexec/puzzles/unruly: OK
+/usr/local/bin/sgt-untangle: OK
+/usr/local/libexec/puzzles/untangle: OK
+/usr/local/share/sgt-puzzles/games: OK
+/usr/local/share/doc/puzzles/LICENCE: OK
+/usr/local/share/licenses/puzzles/LICENCE: OK
+/usr/local/share/sgt-puzzles/help/blackbox.html: OK
+/usr/local/share/sgt-puzzles/help/bridges.html: OK
+/usr/local/share/sgt-puzzles/help/cube.html: OK
+/usr/local/share/sgt-puzzles/help/dominosa.html: OK
+/usr/local/share/sgt-puzzles/help/fifteen.html: OK
+/usr/local/share/sgt-puzzles/help/filling.html: OK
+/usr/local/share/sgt-puzzles/help/flip.html: OK
+/usr/local/share/sgt-puzzles/help/flood.html: OK
+/usr/local/share/sgt-puzzles/help/galaxies.html: OK
+/usr/local/share/sgt-puzzles/help/group.html: OK
+/usr/local/share/sgt-puzzles/help/guess.html: OK
+/usr/local/share/sgt-puzzles/help/inertia.html: OK
+/usr/local/share/sgt-puzzles/help/javapage.pl: OK
+/usr/local/share/sgt-puzzles/help/jspage.pl: OK
+/usr/local/share/sgt-puzzles/help/keen.html: OK
+/usr/local/share/sgt-puzzles/help/lightup.html: OK
+/usr/local/share/sgt-puzzles/help/loopy.html: OK
+/usr/local/share/sgt-puzzles/help/magnets.html: OK
+/usr/local/share/sgt-puzzles/help/map.html: OK
+/usr/local/share/sgt-puzzles/help/mines.html: OK
+/usr/local/share/sgt-puzzles/help/mosaic.html: OK
+/usr/local/share/sgt-puzzles/help/net.html: OK
+/usr/local/share/sgt-puzzles/help/netslide.html: OK
+/usr/local/share/sgt-puzzles/help/palisade.html: OK
+/usr/local/share/sgt-puzzles/help/pattern.html: OK
+/usr/local/share/sgt-puzzles/help/pearl.html: OK
+/usr/local/share/sgt-puzzles/help/pegs.html: OK
+/usr/local/share/sgt-puzzles/help/range.html: OK
+/usr/local/share/sgt-puzzles/help/rect.html: OK
+/usr/local/share/sgt-puzzles/help/samegame.html: OK
+/usr/local/share/sgt-puzzles/help/signpost.html: OK
+/usr/local/share/sgt-puzzles/help/singles.html: OK
+/usr/local/share/sgt-puzzles/help/sixteen.html: OK
+/usr/local/share/sgt-puzzles/help/slant.html: OK
+/usr/local/share/sgt-puzzles/help/solo.html: OK
+/usr/local/share/sgt-puzzles/help/tents.html: OK
+/usr/local/share/sgt-puzzles/help/towers.html: OK
+/usr/local/share/sgt-puzzles/help/tracks.html: OK
+/usr/local/share/sgt-puzzles/help/twiddle.html: OK
+/usr/local/share/sgt-puzzles/help/undead.html: OK
+/usr/local/share/sgt-puzzles/help/unequal.html: OK
+/usr/local/share/sgt-puzzles/help/unruly.html: OK
+/usr/local/share/sgt-puzzles/help/untangle.html: OK
+/usr/local/share/applications/gucos-puzzles-fifteen.desktop: OK
+/usr/local/share/applications/gucos-puzzles-mines.desktop: OK
+/usr/local/share/applications/gucos-puzzles-net.desktop: OK
+/usr/local/share/applications/gucos-puzzles-solo.desktop: OK
+/usr/local/share/applications/gucos-puzzles-samegame.desktop: OK
+/usr/local/share/applications/gucos-puzzles-untangle.desktop: OK
+8 functions, 18123 bytes
+5 functions, 12328 bytes
+WM_READY
+JWM-CONTROL-READY
+
+** (fifteen:25): WARNING **: 16:58:48.990: Could not find the icon 'user-home-symbolic-ltr'. The 'hicolor' theme
+was not found either, perhaps you need to install it.
+You can get a copy from:
+	http://icon-theme.freedesktop.org/releases
+GLib-GIO-Message: 16:58:49.130: Using the 'memory' GSettings backend.  Your settings will not be saved or shared with other applications.
+
+** (fifteen:25): WARNING **: 16:58:49.188: Failed to measure available space: This browser filesystem operation is not supported
+
+** (fifteen:255): WARNING **: 16:58:57.018: Could not find the icon 'user-home-symbolic-ltr'. The 'hicolor' theme
+was not found either, perhaps you need to install it.
+You can get a copy from:
+	http://icon-theme.freedesktop.org/releases
+GLib-GIO-Message: 16:58:57.135: Using the 'memory' GSettings backend.  Your settings will not be saved or shared with other applications.
+
+** (fifteen:255): WARNING **: 16:58:57.197: Failed to measure available space: This browser filesystem operation is not supported
+
+** (fifteen:255): CRITICAL **: 16:58:57.845: gtk_widget_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+
+** (fifteen:255): CRITICAL **: 16:58:57.846: gtk_widget_event: assertion 'WIDGET_REALIZED_FOR_EVENT (widget, event)' failed
+JWM-CONTROL-PASS
+PUZZLES-JWM-TERMINAL-RESTORED

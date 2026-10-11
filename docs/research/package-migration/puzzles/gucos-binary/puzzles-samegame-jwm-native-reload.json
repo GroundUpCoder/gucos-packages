@@ -1,0 +1,47 @@
+{
+  "savePath": "/home/user/jwm-samegame-native.sav",
+  "status": "passed",
+  "startedAt": "2026-10-11T07:58:18.619Z",
+  "scope": "Same Game browser reload: persisted bytes, JWM launch, GTK load, prior board pixels, quit",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "http://127.0.0.1:61239/migration/puzzles/binary.tar",
+    "sha256": "2b23acd4e3e657a99c370581baca2bd26443593f53ab6acabf0bc9f6bb5bdfb8",
+    "size": 16930816
+  },
+  "harnessSha256": "d94f2c1f47c1945e006ea242d87797f91bd716deb2579ceb83cccf38a491c37d",
+  "pixelObserver": {
+    "observerSha256": "33aea82fc674972ac9e18b9678936e3bdae89068f26661750ce8d9ff8b68b2b6",
+    "menuHelperSha256": "40101586a3f90a55c1b6c1aa1c8bf1f7c12f8fa812099c808384c05248c23513"
+  },
+  "helpers": {
+    "observerSha256": "e12e48ac3ed320457181fc16a84f175700bc585d9ff761f3c2d3c75c72824149",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+    "sessionHelperSha256": "d26195b1e3477cf439ffc7c0d4e1945ca674543fd5b0f1e95fdbbc7087a618b1"
+  },
+  "menu": {
+    "id": "gucos-puzzles-samegame.desktop",
+    "index": 5,
+    "geometry": {
+      "id": 2097189,
+      "x": 0,
+      "y": 269,
+      "width": 137,
+      "height": 302,
+      "pid": 0
+    },
+    "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Menu label=\"Puzzles\">\n<Program label=\"Blackbox\">sgt-blackbox</Program>\n<Program label=\"Bridges\">sgt-bridges</Program>\n<Program label=\"Cube\">sgt-cube</Program>\n<Program label=\"Dominosa\">sgt-dominosa</Program>\n<Program label=\"Fifteen\">sgt-fifteen</Program>\n<Program label=\"Filling\">sgt-filling</Program>\n<Program label=\"Flip\">sgt-flip</Program>\n<Program label=\"Flood\">sgt-flood</Program>\n<Program label=\"Galaxies\">sgt-galaxies</Program>\n<Program label=\"Guess\">sgt-guess</Program>\n<Program label=\"Inertia\">sgt-inertia</Program>\n<Program label=\"Keen\">sgt-keen</Program>\n<Program label=\"Lightup\">sgt-lightup</Program>\n<Program label=\"Loopy\">sgt-loopy</Program>\n<Program label=\"Magnets\">sgt-magnets</Program>\n<Program label=\"Map\">sgt-map</Program>\n<Program label=\"Mines\">sgt-mines</Program>\n<Program label=\"Mosaic\">sgt-mosaic</Program>\n<Program label=\"Net\">sgt-net</Program>\n<Program label=\"Netslide\">sgt-netslide</Program>\n<Program label=\"Palisade\">sgt-palisade</Program>\n<Program label=\"Pattern\">sgt-pattern</Program>\n<Program label=\"Pearl\">sgt-pearl</Program>\n<Program label=\"Pegs\">sgt-pegs</Program>\n<Program label=\"Range\">sgt-range</Program>\n<Program label=\"Rect\">sgt-rect</Program>\n<Program label=\"Samegame\">sgt-samegame</Program>\n<Program label=\"Signpost\">sgt-signpost</Program>\n<Program label=\"Singles\">sgt-singles</Program>\n<Program label=\"Sixteen\">sgt-sixteen</Program>\n<Program label=\"Slant\">sgt-slant</Program>\n<Program label=\"Solo\">sgt-solo</Program>\n<Program label=\"Tents\">sgt-tents</Program>\n<Program label=\"Towers\">sgt-towers</Program>\n<Program label=\"Tracks\">sgt-tracks</Program>\n<Program label=\"Twiddle\">sgt-twiddle</Program>\n<Program label=\"Undead\">sgt-undead</Program>\n<Program label=\"Unequal\">sgt-unequal</Program>\n<Program label=\"Unruly\">sgt-unruly</Program>\n<Program label=\"Untangle\">sgt-untangle</Program>\n</Menu>\n<Program label=\"Fifteen\">/usr/local/bin/desktop-menu launch gucos-puzzles-fifteen.desktop</Program>\n<Program label=\"Mines\">/usr/local/bin/desktop-menu launch gucos-puzzles-mines.desktop</Program>\n<Program label=\"Net\">/usr/local/bin/desktop-menu launch gucos-puzzles-net.desktop</Program>\n<Program label=\"Same Game\">/usr/local/bin/desktop-menu launch gucos-puzzles-samegame.desktop</Program>\n<Program label=\"Solo\">/usr/local/bin/desktop-menu launch gucos-puzzles-solo.desktop</Program>\n<Program label=\"Untangle\">/usr/local/bin/desktop-menu launch gucos-puzzles-untangle.desktop</Program>\n</JWM>\n"
+  },
+  "firstWindow": {
+    "id": 6291458,
+    "x": 32,
+    "y": 52,
+    "width": 190,
+    "height": 254,
+    "pid": 26
+  },
+  "savedSha256": "8c28603802a0647dee880486bdcf2fbed798ab1e42bb4a87be1cc6aea271bb2e",
+  "movedBoardPixelHash": "178x189:2893121053",
+  "finishedAt": "2026-10-11T07:58:31.796Z"
+}

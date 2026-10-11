@@ -1,0 +1,198 @@
+{
+  "puzzles-net-jwm-native-reload-browser-reloaded.png": {
+    "sha256": "388f8addcfd3ee94bde792e611911b87618ebdeb9f071f039bdfbc2712c6afd3",
+    "size": 9629
+  },
+  "consumers-puzzles.json": {
+    "sha256": "e574d8827f8950315019ef780706d4cfa37490a128d834b4a72785598013f63a",
+    "size": 1977
+  },
+  "puzzles-jwm-native-window-redo-move.png": {
+    "sha256": "5999defeb68ba56b4bd8f93d1e42f9e0645a77742160faa5f5b31f8f255d314a",
+    "size": 11836
+  },
+  "puzzles-net-jwm-native-undo.png": {
+    "sha256": "3a5b3c1171c5fc8fd902bf20b3589e9a6f563fb9349c3405f51426c127ad4adf",
+    "size": 9611
+  },
+  "install-puzzles.json": {
+    "sha256": "d6b4401c2eb114d2d8210716e1c92f7a3ec20a2044c52b4ca04626578aed86b9",
+    "size": 309
+  },
+  "puzzles-solo-jwm-native-loaded.png": {
+    "sha256": "3f7e2373e9c80bfd62333b0800349214f05a587a5b7bf1ebdcf74d09017e7f85",
+    "size": 19170
+  },
+  "puzzles-samegame-jwm-native-reload.log": {
+    "sha256": "2c004dc7208280e8d935ddcf01586e7a414f7ad2ded97893bff95b6731817a25",
+    "size": 6254
+  },
+  "config.json": {
+    "sha256": "72a9e01e63473f6499a6330d838e6550732c97a109ca9286c9e3db1ac779635c",
+    "size": 23180
+  },
+  "puzzles-net-jwm-native-reload.log": {
+    "sha256": "3283d4ce43ba3818ccdbfdacb6e1e381df4757c57703f7bdc45fe7db0a1106df",
+    "size": 6234
+  },
+  "puzzles-net-jwm-native.log": {
+    "sha256": "6d3604f0c1aa76691cfff28155ff7604eb3e39c0f59e17e593d1884ff02c62d4",
+    "size": 6735
+  },
+  "puzzles-samegame-jwm-native-removed.png": {
+    "sha256": "d1b11963a4d8ba3645aa5265728ec9dc999afcf1bf6469269f41c6b03fe790c4",
+    "size": 8414
+  },
+  "puzzles-solo-jwm-native.log": {
+    "sha256": "b4d57a6b7d8e61bf353ae241036bcfef898728fc57c8e512dfe17b795c3a8766",
+    "size": 6741
+  },
+  "puzzles.sha256": {
+    "sha256": "845811113ecd7c7b31560665f95ea35ed0f19a28a6f3496bfb30367e884a7dd0",
+    "size": 13557
+  },
+  "puzzles-solo-jwm-native-reload-browser-reloaded.png": {
+    "sha256": "f0963a7c3f0ce234e59936598883575211b1c4a6c943b846d5c3d6851974574e",
+    "size": 19169
+  },
+  "puzzles-jwm-native-window.log": {
+    "sha256": "d465b431baca3f747aeda70f758cf2d9b5283a98e246ab8b757f2882ba28d190",
+    "size": 6759
+  },
+  "puzzles-solo-jwm-native-reload.log": {
+    "sha256": "7f5a34723eff6be113cd4c21953a7966767c07370b53138fe6825bb5e6f35c42",
+    "size": 6238
+  },
+  "puzzles-net-jwm-native-repeat-rotation.png": {
+    "sha256": "388f8addcfd3ee94bde792e611911b87618ebdeb9f071f039bdfbc2712c6afd3",
+    "size": 9629
+  },
+  "puzzles-net-jwm-native-loaded.png": {
+    "sha256": "e0b7a303b3e582b43efb0a71791bb225cc9720d69353cf9dca72997c8df658bb",
+    "size": 9691
+  },
+  "puzzles-jwm-native-window-undo.png": {
+    "sha256": "80cb6417e5457bdcfab9935a6f6ea778f800e181cfdb6cc5e7aaf8c1ee24d4e5",
+    "size": 11738
+  },
+  "puzzles-samegame-jwm-native-loaded.png": {
+    "sha256": "0b3eaff7211b924fbe2d4274881eb9043a13d236a025f85dba9369b93017b0c6",
+    "size": 8430
+  },
+  "puzzles-samegame-jwm-native.log": {
+    "sha256": "9c4fa28ecb62e585f2a6dcbc0c82eb527fd06bad468b99b710ce1eedbefd7b5a",
+    "size": 6765
+  },
+  "puzzles-net-jwm-native-initial.png": {
+    "sha256": "3a5b3c1171c5fc8fd902bf20b3589e9a6f563fb9349c3405f51426c127ad4adf",
+    "size": 9611
+  },
+  "README.md": {
+    "sha256": "ce6d16295146b377056164ffb4d815b966df29b046c0ca742992203826ffd8ec",
+    "size": 531
+  },
+  "puzzles-jwm-native-window-loaded.png": {
+    "sha256": "8469dc40447f17c899f15e821c84bcff05a9cb317fcbf8443ba856d2c0528b57",
+    "size": 11780
+  },
+  "puzzles-jwm-native-window-reload.json": {
+    "sha256": "4347f84557cb9e418ad836fdd7b098a33435d7a8cbbffef27d3d7471006e1396",
+    "size": 4346
+  },
+  "puzzles-net-jwm-native.json": {
+    "sha256": "621b1c32aa527ac8b0bbe71d651492aca63765bc06afd06581e3835c447f3117",
+    "size": 7240
+  },
+  "puzzles-net-jwm-native-rotated.png": {
+    "sha256": "388f8addcfd3ee94bde792e611911b87618ebdeb9f071f039bdfbc2712c6afd3",
+    "size": 9629
+  },
+  "puzzles-samegame-jwm-native-initial.png": {
+    "sha256": "368ea8264db556f71b3a10b5bde7010145eb06aeed6c32b6e8e4055c6b3b08c1",
+    "size": 8423
+  },
+  "puzzles-solo-jwm-native-reload-layout.png": {
+    "sha256": "d510c9e2f20366957fa2548f80ee417ef9ba5121337c4021d66a2b2fae81fc31",
+    "size": 17579
+  },
+  "puzzles-solo-jwm-native-reload.json": {
+    "sha256": "79a716b9a4bae56ec3d7abdc5e675b4b9504d4e56042e4aec449c35b99b49ecc",
+    "size": 4738
+  },
+  "puzzles-solo-jwm-native.json": {
+    "sha256": "e1d6f3206b530def112c4fa83f7ac5089e0876a1fe119600d0bb8b31edc4dba3",
+    "size": 7750
+  },
+  "puzzles-net-jwm-native-reload.json": {
+    "sha256": "74387ef3ab3da7d98194f359afb287b603b37e56e6a5540b9ff7622dfcdead21",
+    "size": 4327
+  },
+  "puzzles-samegame-jwm-native.json": {
+    "sha256": "f9f0a5bd10053bacee91372666bcbd543398774006cb80c7c55a018809f01e14",
+    "size": 7338
+  },
+  "puzzles-jwm-native-window-initial.png": {
+    "sha256": "80cb6417e5457bdcfab9935a6f6ea778f800e181cfdb6cc5e7aaf8c1ee24d4e5",
+    "size": 11738
+  },
+  "puzzles-solo-jwm-native-repeat-mark.png": {
+    "sha256": "3f7e2373e9c80bfd62333b0800349214f05a587a5b7bf1ebdcf74d09017e7f85",
+    "size": 19170
+  },
+  "puzzles-jwm-native-window-reload.log": {
+    "sha256": "9e439825d87cf9864bc6435e4cd7983f918032412b3836068f7e043a4657cffc",
+    "size": 6250
+  },
+  "puzzles-samegame-jwm-native-reload.json": {
+    "sha256": "c1edb5c0d9d42e94c4477237e11b2a9dbfe1d9e91506faf29f33967495c99386",
+    "size": 4343
+  },
+  "puzzles-samegame-jwm-native-undo.png": {
+    "sha256": "368ea8264db556f71b3a10b5bde7010145eb06aeed6c32b6e8e4055c6b3b08c1",
+    "size": 8423
+  },
+  "puzzles-solo-jwm-native-pencil-mark.png": {
+    "sha256": "3f7e2373e9c80bfd62333b0800349214f05a587a5b7bf1ebdcf74d09017e7f85",
+    "size": 19170
+  },
+  "puzzles-jwm-native-window-reload-browser-reloaded.png": {
+    "sha256": "f1a693c476fc299a2aa60b9ea2980bed095fd6dce7cafdbc8eedde572c1f0edc",
+    "size": 11840
+  },
+  "puzzles-solo-jwm-native-initial.png": {
+    "sha256": "c8301751130ce63e4c9497b701aa746c0cf368ed421d8c4154384cbf270c6f33",
+    "size": 19086
+  },
+  "puzzles-samegame-jwm-native-repeat-removal.png": {
+    "sha256": "d1b11963a4d8ba3645aa5265728ec9dc999afcf1bf6469269f41c6b03fe790c4",
+    "size": 8414
+  },
+  "dependencies-jwm-desktop-entries-xterm.json": {
+    "sha256": "16dce96654b5dc3594e81e4b3570312a69318010e06f1cc838db209cc1ff1688",
+    "size": 346
+  },
+  "puzzles-samegame-jwm-native-reload-browser-reloaded.png": {
+    "sha256": "c25d8541234ee3796b17b4bdf57c3b2e6a20ca42bda02e85e40cfcc25d2d4364",
+    "size": 8416
+  },
+  "puzzles-solo-jwm-native-undo.png": {
+    "sha256": "c8301751130ce63e4c9497b701aa746c0cf368ed421d8c4154384cbf270c6f33",
+    "size": 19086
+  },
+  "puzzles-solo-jwm-native-layout.png": {
+    "sha256": "c8301751130ce63e4c9497b701aa746c0cf368ed421d8c4154384cbf270c6f33",
+    "size": 19086
+  },
+  "puzzles-jwm-native-window.json": {
+    "sha256": "028513bc1075ce43b27f115b11e7440ab2ff7a0912ced2aed53d6546849273d9",
+    "size": 7232
+  },
+  "candidate-manifests.json": {
+    "sha256": "00668deb8eabbf9fd780ac6731b8052217893dbdbbfe28ffd1beb928e220ff43",
+    "size": 13935
+  },
+  "puzzles-jwm-native-window-ArrowLeft.png": {
+    "sha256": "5999defeb68ba56b4bd8f93d1e42f9e0645a77742160faa5f5b31f8f255d314a",
+    "size": 11836
+  }
+}
