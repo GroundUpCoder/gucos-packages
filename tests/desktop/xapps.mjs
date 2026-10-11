@@ -14,6 +14,7 @@ async function bounded(p,ms){let timer;try{return await Promise.race([p,new Prom
 assert(process.env.MACHINE_JOB_ID);const name=process.argv[2];assert(['xcalc','xedit','xclock','xeyes'].includes(name));
 const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'first';assert(/^[a-zA-Z0-9_-]+$/.test(attempt));const stem=name+'-jwm-'+attempt;
 await assert.rejects(access(resolve(run,stem+'.json')),{code:'ENOENT'});
+const reload=process.argv.includes('--reload');
 const report={status:'running',startedAt:new Date().toISOString(),name,scope:'Owned JWM menu launch, physical input/function, quit/relaunch; editor saves and reopens'};let s,d;
 try{
  s=await session();report.runtime=s.runtime;await s.command('true');
@@ -26,7 +27,7 @@ try{
  const klass={xcalc:'XCalc',xedit:'Xedit',xclock:'XClock',xeyes:'XEyes'}[name],entry='gucos-desktop-'+name+'.desktop';const canvas=await visibleCanvas(s.page);
  const click=async(x,y)=>canvas.click({position:await canvasPosition(canvas,{x,y})});
  const snap=async label=>{await writeFile(resolve(run,stem+'-'+label+'.png'),await canvas.screenshot(),{flag:'wx'});};
- const pixels=async height=undefined=>observe(d,'pixels',klass,height);
+ const pixels=async (height=undefined)=>observe(d,'pixels',klass,height);
  let w,pid;
  async function launch(){
   (report.menus??=[]).push(await clickMenuEntry(d,entry));w=await observe(d,'window',klass);
@@ -61,11 +62,17 @@ try{
   for(let i=0;i<70&&after.hash===before.hash;i++){await s.page.waitForTimeout(1000);after=await pixels();}
   assert.notEqual(after.hash,before.hash,'Default minute-update clock must advance');report.result={before,after};await snap('ticked');
  }else{
-  await editorLoad();await s.page.keyboard.type('hello JWM editor');await s.page.keyboard.press('Enter');await saveExpected('hello JWM editor\n');await snap('saved');report.saved='hello JWM editor\n';
+  await editorLoad();
+  if(reload){
+   const prior=JSON.parse(await readFile(resolve(run,'xedit-jwm-first.json')));assert.equal(prior.status,'passed');
+   const disk=await s.page.evaluate(async()=>new TextDecoder().decode(await shell.busybox.read('/home/user/jwm-xedit.txt')||[]));assert.equal(disk,prior.saved);
+   await s.page.keyboard.press('Control+End');await s.page.keyboard.type('browser reload');await s.page.keyboard.press('Enter');report.saved=prior.saved+'browser reload\n';
+  }else{await s.page.keyboard.type('hello JWM editor');await s.page.keyboard.press('Enter');report.saved='hello JWM editor\n';}
+  await saveExpected(report.saved);await snap('saved');
  }
  await close();const firstPid=pid;await launch();assert.notEqual(pid,firstPid);await snap('relaunched');
  if(name==='xedit'){
-  await editorLoad();await s.page.keyboard.press('Control+End');await s.page.keyboard.type('reopened');await s.page.keyboard.press('Enter');await saveExpected('hello JWM editor\nreopened\n');report.saved='hello JWM editor\nreopened\n';await snap('reopened-saved');
+  await editorLoad();await s.page.keyboard.press('Control+End');await s.page.keyboard.type('reopened');await s.page.keyboard.press('Enter');report.saved+='reopened\n';await saveExpected(report.saved);await snap('reopened-saved');
  }
  await close();await d.finish();await s.command('echo XAPP-JWM-TERMINAL-RESTORED');report.status='passed';
 }catch(e){report.status='failed';report.error=String(e.stack||e);throw e;}
