@@ -1,0 +1,10 @@
+{
+  "dependencies.log": "dacf8b53026bdc769dd0413269db66a567cc335c29c041f85b1c3993f83977ce",
+  "observed-runtime.json": "a15d55249b50e930fba797c67f7a711e636154b2b3d6da717bfa354f5ff57ae8",
+  "config.json": "cd029e11266be7d89a8aedcee531a7cb19a29586c39b77b149db5087fe00fb35",
+  "dependencies-x11-widgets-x11-server-xterm-snake.json": "2ef7ba91b0e351ee6eb0ca987dacf55d46c770c16a8d880b05fb39afdd7e1b00",
+  "build-desktop-entries-jwm.json": "5718ab0de2cb14914b00a2bfc6f5be1a14b247e5d7416119c81798e673fd42fa",
+  "port": "ad54c6025ffc4c539eb93720688e6dafcc6300b0ba55e69ae631273f7a603fcf",
+  "candidate-manifests.json": "889c6ff1a3b0c11eabaa520cbf38267d9350d8a4090ab82bb8107481e5369b57",
+  "build.log": "a43f3f50a2644f75183cb60a10ce67a8763fef72e7547fe68b28744a2c424f0b"
+}

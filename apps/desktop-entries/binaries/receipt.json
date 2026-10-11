@@ -1,0 +1,78 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "50b09e40f76b88dab0be5d1810ce0b71b368db87e7cdeb4ac5791a0ddb56bf3b",
+  "size": 40448,
+  "guestManifest": {
+    "format": 1,
+    "name": "desktop-entries",
+    "version": "1.0.0-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "main.c",
+        "url": "http://127.0.0.1:58342/migration/desktop-entries/main.c",
+        "sha256": "1a3e319e8992738cd0c346db43260592bbf31cd90802769a6c646410f935e113",
+        "size": 9258
+      },
+      {
+        "path": "test.c",
+        "url": "http://127.0.0.1:58342/migration/desktop-entries/test.c",
+        "sha256": "29f9cd950991063c076b16afb7b48c9bb3c9de697918747179914b618b4e10c2",
+        "size": 2826
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:58342/migration/desktop-entries/build.sh",
+        "sha256": "a398a2f063b9e5e5a2d7e6a6c429f42f8b46dfb78704e36a5f1ed7d92968c6ee",
+        "size": 316
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:58342/migration/desktop-entries/test.sh",
+        "sha256": "516f7c2d10c4432b9a9a96d41573ccc85484b7b0a890cde3f471da6a6ced8677",
+        "size": 2508
+      },
+      {
+        "path": "README.md",
+        "url": "http://127.0.0.1:58342/migration/desktop-entries/README.md",
+        "sha256": "be3f60c7b48546fe8f7ad7dba7cf39dbd3d21c5d449a098772721b99b0db9c19",
+        "size": 2883
+      },
+      {
+        "path": "LICENSE",
+        "url": "http://127.0.0.1:58342/migration/desktop-entries/LICENSE",
+        "sha256": "3f2bf733d13b1e20f7457acc5baf47aa94b3982901cce4f6d7e80438bf9b6b13",
+        "size": 11344
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/desktop-menu",
+        "mode": 493
+      },
+      {
+        "path": "share/doc/desktop-entries/README.md",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/desktop-entries/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/desktop-entries/LICENSE"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}
