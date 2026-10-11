@@ -5,7 +5,8 @@
     "gtk3-x11",
     "pkgconf",
     "libintl",
-    "gio-core"
+    "gio-core",
+    "bzip2"
   ],
   "dependencyRequirements": {
     "gtk3-x11": {
@@ -19,6 +20,9 @@
     },
     "gio-core": {
       "version": "2.84.4-1"
+    },
+    "bzip2": {
+      "version": "1.0.8-1"
     }
   },
   "platform": {
@@ -35,6 +39,8 @@
     "build.sh",
     "test.sh",
     "xarchiver.desktop",
-    "LGPL-2.1.txt"
+    "LGPL-2.1.txt",
+    "main-no-gnu-tar.c",
+    "tar-provider.patch"
   ]
 }

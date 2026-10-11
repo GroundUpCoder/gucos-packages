@@ -1,6 +1,9 @@
 #!/bin/sh
 set -eu
 tar -xf source.tar
+# Exact historical preimage; apply the declared package-owned C overlay.
+printf '%s  source/src/main.c\n' b595772db68dc7f4ea3edbb1c2fd941d641a154e8eb7cd877f79ef9d96bd9979 | sha256sum -c -
+cp main-no-gnu-tar.c source/src/main.c
 stage="$DESTDIR"
 mkdir -p "$stage/bin" "$stage/libexec" "$stage/share/pixmaps/xarchiver" "$stage/share/doc/xarchiver" "$stage/share/applications" "$stage/share/licenses/xarchiver/xdgmime"
 cp xarchiver.desktop "$stage/share/applications/"
