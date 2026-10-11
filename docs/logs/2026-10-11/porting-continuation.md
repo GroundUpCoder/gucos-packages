@@ -234,3 +234,20 @@ acceptance gates, not completed gameplay claims. Other puzzle games and the
 The published count remains 83, with 76 live-accepted in their documented
 scopes; seven newly published utilities await their public gates. Snake
 1.0.0-2 is preserved. No core build or deployment was performed.
+
+## Seven utility public acceptance and Tcl/Tk publication
+
+Independent review approved `d7957b2`: all seven utility public gates passed,
+including exact 71 outputs/21 install-consumer-reload exports, Bitmap invert/save
+and Xmag 6x presentation. All 24 evidence hashes and public manifest bindings
+were independently checked. The accepted count advances 76 to83; baseline is
+now the exact accepted catalog `d7e931c`. This preserves Snake1.0.0-2.
+
+Tcl/Tk private binary gates also passed independent review: Tcl15185 passed,
+54 skipped,0failed; Tk pack/grid383 passed,5skipped,0failed with recorded
+exclusions. Named green is128. The initial observer mismatch and subsequent
+stale-display failure remain retained alongside the successful clean-display
+run and binary reload; no package artifacts changed between these GUI attempts.
+Final immutable manifests `95e9bbc` and catalog `b58c944` were independently
+approved against artifacts `d4d446d`, preserving all prior83entries. Publication
+adds Tcl/Tk for85 entries; those two still require fresh public gates.

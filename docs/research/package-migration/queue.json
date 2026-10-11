@@ -363,7 +363,7 @@
     {
       "id": "bitmap",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live-acceptance",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/bitmap/wasm-package.json",
       "historicalManifestSha256": "c97ecd69d22fd856c88ab26906dd033a0c680b2ea1d8690c61cd12a79dabee79",
       "historicalEvidence": [
@@ -387,10 +387,15 @@
         "x11-apps"
       ],
       "mapping": "bitmap",
-      "acceptance": [],
-      "blockers": [
-        "Public installation/consumer/GUI/reload gates pending; private binary and immutable publication reviews approved"
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/bitmap",
       "sourceReview": {
         "commit": "b37e3d9",
@@ -2155,7 +2160,7 @@
     {
       "id": "l3afpad",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "vendor/l3afpad/wasm-package.json",
       "historicalManifestSha256": "2d34c7a4ca6a1ee86ae604e9a959e007d973a0d1c7eb9b1d5203e46a35b808b5",
       "historicalEvidence": [
@@ -2179,9 +2184,13 @@
         "gtk3-schemas",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "l3afpad",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "sourcePreparation": {
+        "revision": "a1c6a43",
+        "scope": "139 historical blobs, additional pinned GPL text,7outputs; source job queued, GUI/public pending."
+      }
     },
     {
       "id": "libc",
@@ -2767,7 +2776,7 @@
     {
       "id": "libxfce4util",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live-acceptance",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/libxfce4util/wasm-package.json",
       "historicalManifestSha256": "2c41a69bbffc5a93a09b71668134fbf39fe02d262351f5d380bc605314b06b95",
       "historicalEvidence": [
@@ -2784,10 +2793,15 @@
         "pkgconf"
       ],
       "mapping": "libxfce4util",
-      "acceptance": [],
-      "blockers": [
-        "Public installation/consumer/GUI/reload gates pending; private binary and immutable publication reviews approved"
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/libxfce4util",
       "sourceReview": {
         "commit": "8e6a7a9",
@@ -2860,7 +2874,7 @@
     {
       "id": "m4",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live-acceptance",
+      "state": "published-live-accepted",
       "historicalManifest": "vendor/m4/wasm-package.json",
       "historicalManifestSha256": "6810bb323a927dec92e4bf07437f32e697fcd864aefdd5607811ec6e97694ecf",
       "historicalEvidence": [
@@ -2895,10 +2909,15 @@
         "make"
       ],
       "mapping": "m4",
-      "acceptance": [],
-      "blockers": [
-        "Public installation/consumer/GUI/reload gates pending; private binary and immutable publication reviews approved"
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/m4",
       "sourceReview": {
         "commit": "a1e91fb",
@@ -3345,7 +3364,7 @@
     {
       "id": "pcre2grep",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live-acceptance",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/pcre2-cli/wasm-package.json",
       "historicalManifestSha256": "2509fd3657d9c78276adc8edddbfd5e72643c042375978c1b769430652624877",
       "historicalEvidence": [
@@ -3376,10 +3395,15 @@
       ],
       "historicalDependencies": [],
       "mapping": "pcre2grep",
-      "acceptance": [],
-      "blockers": [
-        "Public installation/consumer/GUI/reload gates pending; private binary and immutable publication reviews approved"
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/pcre2grep",
       "sourceReview": {
         "commit": "0153944",
@@ -3392,7 +3416,7 @@
     {
       "id": "pcre2test",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live-acceptance",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/pcre2-cli/wasm-package.json",
       "historicalManifestSha256": "2509fd3657d9c78276adc8edddbfd5e72643c042375978c1b769430652624877",
       "historicalEvidence": [
@@ -3423,10 +3447,15 @@
       ],
       "historicalDependencies": [],
       "mapping": "pcre2test",
-      "acceptance": [],
-      "blockers": [
-        "Public installation/consumer/GUI/reload gates pending; private binary and immutable publication reviews approved"
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/pcre2test",
       "sourceReview": {
         "commit": "0153944",
@@ -3674,7 +3703,7 @@
     {
       "id": "puzzles",
       "kind": "historical-canonical-name",
-      "state": "source-prepared-reviewed",
+      "state": "source-built-reviewed",
       "historicalManifest": "apps/puzzles/wasm-package.json",
       "historicalManifestSha256": "7ed16059fee8f8a30cc094382a619ee030aa04f8dd48fd82486994b67b163ba7",
       "historicalEvidence": [
@@ -3709,6 +3738,11 @@
       "sourcePreparation": {
         "revision": "19b50d8",
         "scope": "319 pinned historical blobs,40 games,132 outputs; independent source review approved; source execution active and Fifteen binary/JWM/save/reload gate queued."
+      },
+      "sourceExecution": {
+        "revision": "8f06d8a",
+        "evidence": "docs/research/package-migration/puzzles/gucos-source",
+        "scope": "Reviewed40gamegeneration and132outputsourceexport; interactivebinary/publicpending."
       }
     },
     {
@@ -4194,7 +4228,7 @@
     {
       "id": "sdl3-ttf",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live-acceptance",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/sdl3-ttf/wasm-package.json",
       "historicalManifestSha256": "1a7eb105ca9d64a085e7c4eacf2c5647445dc58dde43626edd84d05f8be63473",
       "historicalEvidence": [
@@ -4225,10 +4259,15 @@
         "sdl3"
       ],
       "mapping": "sdl3-ttf",
-      "acceptance": [],
-      "blockers": [
-        "Public installation/consumer/GUI/reload gates pending; private binary and immutable publication reviews approved"
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/sdl3-ttf",
       "sourceReview": {
         "commit": "e6df78480b8bec9bff8654cbb21f52ebfdba4336",
@@ -4341,7 +4380,7 @@
     {
       "id": "tcl",
       "kind": "historical-canonical-name",
-      "state": "source-built",
+      "state": "binary-tested-reviewed",
       "historicalManifest": "apps/tcl/wasm-package.json",
       "historicalManifestSha256": "34d36da7822b6e7542aa93dff47e7234bda4559a5dc0168194acd61d14bb6338",
       "historicalEvidence": [
@@ -4356,7 +4395,7 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Fresh binary/GUI/public gates pending."
+        "Reviewed immutable publication prepared; public install/consumer/GUI/reload pending."
       ],
       "candidate": "apps/tcl",
       "sourceReview": {
@@ -4387,7 +4426,7 @@
     {
       "id": "tk",
       "kind": "historical-canonical-name",
-      "state": "source-built",
+      "state": "binary-tested-reviewed",
       "historicalManifest": "apps/tk/wasm-package.json",
       "historicalManifestSha256": "1f2c8cefc32d80b50de4e19ab3810625f23406cf25288114f8e715116038b3cb",
       "historicalEvidence": [
@@ -4405,7 +4444,7 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Fresh binary/GUI/public gates pending."
+        "Reviewed immutable publication prepared; public install/consumer/GUI/reload pending."
       ],
       "candidate": "apps/tk",
       "sourceReview": {
@@ -4740,7 +4779,7 @@
     {
       "id": "xmag",
       "kind": "historical-canonical-name",
-      "state": "published-awaiting-live-acceptance",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/xmag/wasm-package.json",
       "historicalManifestSha256": "5680332fc9c480b73b677c4badbf8ca31841dea61cbe7c909806d515bc435a7a",
       "historicalEvidence": [
@@ -4764,10 +4803,15 @@
         "x11-apps"
       ],
       "mapping": "xmag",
-      "acceptance": [],
-      "blockers": [
-        "Public installation/consumer/GUI/reload gates pending; private binary and immutable publication reviews approved"
+      "acceptance": [
+        {
+          "revision": "d7957b294e515b27d044d14269545f1b8ca1a031",
+          "catalog": "d7e931cc970f89d7d4f6e8fe7448c55eb28afcd7",
+          "evidence": "docs/research/package-migration/utility-batch/gucos-public",
+          "scope": "Independent review approved exact public install, installed consumers/relink, applicable Bitmap/Xmag GUI and reload."
+        }
       ],
+      "blockers": [],
       "candidate": "apps/xmag",
       "sourceReview": {
         "commit": "b37e3d9",
