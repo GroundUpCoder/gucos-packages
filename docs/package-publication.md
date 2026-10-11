@@ -48,3 +48,8 @@ one-shot against the pre-upgrade catalog. After reviewed publication and live
 upgrade/install/reload acceptance, advance the baseline to that accepted catalog
 commit before publishing subsequent additions. Do not advance it to an unaccepted
 candidate merely to bypass a preservation check.
+
+Catalog mode additionally requires `--artifact-revision FULL_COMMIT`. It must
+be an ancestor of the manifest commit. The tool reconstructs the entire expected
+manifest from that frozen source/export commit and compares it before catalog
+selection, including immutable URLs, receipt fields and binary identity.

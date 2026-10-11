@@ -7,6 +7,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--upgrade-plan',type=Path)
+parser.add_argument('--artifact-revision')
 parser.add_argument('mode',choices=['manifests','catalog'])
 parser.add_argument('revision')
 parser.add_argument('names',nargs='+')
@@ -15,11 +16,14 @@ mode,revision,names=args.mode,args.revision,args.names
 if not __debug__: raise RuntimeError('Validation requires assertions enabled')
 assert mode in ('manifests','catalog') and re.fullmatch('[a-f0-9]{40}',revision)
 assert names and len(names)==len(set(names)) and all(re.fullmatch('[a-z0-9][a-z0-9-]*',n) for n in names)
-def blob(path):return subprocess.check_output(['git','show',revision+':'+path],cwd=ROOT)
-def frozen(path):
- b=blob(path);assert b==(ROOT/path).read_bytes(),(path,'not frozen at revision');return b
-def entry(path):
- b=frozen(path);return dict(url='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/'+revision+'/'+path,sha256=hashlib.sha256(b).hexdigest(),size=len(b))
+artifact_revision=revision if mode=='manifests' else args.artifact_revision
+assert artifact_revision and re.fullmatch('[a-f0-9]{40}',artifact_revision), 'Catalog requires --artifact-revision'
+subprocess.run(['git','merge-base','--is-ancestor',artifact_revision,revision],cwd=ROOT,check=True)
+def blob(path,rev=revision):return subprocess.check_output(['git','show',rev+':'+path],cwd=ROOT)
+def frozen(path,rev=revision):
+ b=blob(path,rev);assert b==(ROOT/path).read_bytes(),(path,'not frozen at revision');return b
+def entry(path,rev=revision):
+ b=frozen(path,rev);return dict(url='https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/'+rev+'/'+path,sha256=hashlib.sha256(b).hexdigest(),size=len(b))
 baseline_revision=json.loads((ROOT/'tools/publication-baseline.json').read_text())['revision']
 baseline=json.loads(subprocess.check_output(['git','show',baseline_revision+':catalog.json'],cwd=ROOT))
 plan=json.loads(args.upgrade_plan.read_text()) if args.upgrade_plan else {'baselineRevision':baseline_revision,'upgrades':{}}
@@ -40,18 +44,25 @@ for n,u in upgrades.items():
  if mode=='catalog':
   candidate=json.loads(frozen('apps/'+n+'/package.json'))
   assert candidate['version']==u['newVersion'] and candidate['outputs']==old['outputs']
-for name in names:
+def expected_manifest(name):
  prefix='apps/'+name+'/'
- if mode=='manifests':
-  recipe=json.loads(frozen(prefix+'recipe.json'));inputs=recipe.pop('inputs');assert recipe['name']==name
-  outputs=json.loads(frozen(prefix+'outputs.json'));licenses=[o['path'] for o in outputs if o['path'].startswith('share/licenses/')]
-  manifest=dict(format=1,**recipe,files=[dict(path=p,**entry(prefix+p)) for p in inputs],build='build.sh',test='test.sh',outputs=outputs,licenses=licenses)
-  receipt=json.loads(frozen(prefix+'binaries/receipt.json'));guest=receipt['guestManifest']
-  for field in ['name','version','dependencies','dependencyRequirements','platform','outputs','licenses']:
-   assert guest[field]==manifest[field],(name,field,'receipt mismatch')
-  assert [(f['path'],f['sha256'],f['size']) for f in guest['files']]==[(f['path'],f['sha256'],f['size']) for f in manifest['files']]
-  binary=entry(prefix+'binaries/'+receipt['sha256']+'.tar');assert (binary['sha256'],binary['size'])==(receipt['sha256'],receipt['size'])
-  manifest.update(runtime=receipt['runtime'],binary=binary)
-  (ROOT/prefix/'package.json').write_text(json.dumps(manifest,indent=2)+'\n')
- else:catalog['packages'][name]=entry(prefix+'package.json')
+ recipe=json.loads(frozen(prefix+'recipe.json',artifact_revision));inputs=recipe.pop('inputs');assert recipe['name']==name
+ outputs=json.loads(frozen(prefix+'outputs.json',artifact_revision));licenses=[o['path'] for o in outputs if o['path'].startswith('share/licenses/')]
+ manifest=dict(format=1,**recipe,files=[dict(path=p,**entry(prefix+p,artifact_revision)) for p in inputs],build='build.sh',test='test.sh',outputs=outputs,licenses=licenses)
+ receipt=json.loads(frozen(prefix+'binaries/receipt.json',artifact_revision));guest=receipt['guestManifest']
+ for field in ['name','version','dependencies','dependencyRequirements','platform','outputs','licenses']:
+  assert guest[field]==manifest[field],(name,field,'receipt mismatch')
+ assert [(f['path'],f['sha256'],f['size']) for f in guest['files']]==[(f['path'],f['sha256'],f['size']) for f in manifest['files']]
+ binary=entry(prefix+'binaries/'+receipt['sha256']+'.tar',artifact_revision);assert (binary['sha256'],binary['size'])==(receipt['sha256'],receipt['size'])
+ manifest.update(runtime=receipt['runtime'],binary=binary)
+ return manifest
+prepared={}
+for name in names:
+ manifest=expected_manifest(name)
+ path='apps/'+name+'/package.json'
+ if mode=='catalog':
+  assert json.loads(frozen(path))==manifest, (name,'manifest differs from exact artifact inputs/receipt')
+  catalog['packages'][name]=entry(path)
+ else:prepared[path]=json.dumps(manifest,indent=2)+'\n'
+for path,content in prepared.items():(ROOT/path).write_text(content)
 if mode=='catalog':(ROOT/'catalog.json').write_text(json.dumps(catalog,indent=2)+'\n')
