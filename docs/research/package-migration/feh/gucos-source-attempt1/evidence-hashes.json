@@ -1,0 +1,18 @@
+{
+  "build.log": {
+    "sha256": "4bcf5b7ed43e0ab9dd495e5397d4cc1e43657268ed7c8dc23855dfe30a67d1e6",
+    "size": 31330
+  },
+  "candidate-manifests.json": {
+    "sha256": "3a1d66c5b919ea5cd65e0cf5219f07b14789344fdf6ae1e5a090f7232243c198",
+    "size": 5809
+  },
+  "observed-runtime.json": {
+    "sha256": "cc9b4c930435eb678478cc8fa956172e2f10b3c2036e9ff72df49584f8cc01e5",
+    "size": 123
+  },
+  "build-imlib2-feh.json": {
+    "sha256": "45e5e61703acd7cc34a808e40bd2fd41388bde67d637ea32f27400af4987be41",
+    "size": 14035
+  }
+}

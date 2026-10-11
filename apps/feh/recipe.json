@@ -5,7 +5,8 @@
     "imlib2",
     "x11-shared",
     "libpng",
-    "gtk3-x11"
+    "gtk3-x11",
+    "x11-toolkit"
   ],
   "dependencyRequirements": {
     "imlib2": {
@@ -19,6 +20,9 @@
     },
     "gtk3-x11": {
       "version": "3.24.43-1"
+    },
+    "x11-toolkit": {
+      "version": "1.0-1"
     }
   },
   "platform": {

@@ -1,0 +1,11 @@
+--- a/Lib/site.py
++++ b/Lib/site.py
+@@ -82,7 +82,7 @@
+ # wasm-posix publishes each package beneath a private prefix. Independently
+ # installed Python distributions share the public prefix; process its .pth
+ # files normally. venv() below still removes system prefixes when requested.
+-if sys.prefix.startswith("/usr/local/lib/wasm-posix/packages/cpython/"):
++if sys.prefix.startswith("/usr/local/lib/gucman/packages/cpython/"):
+     PREFIXES.append("/usr/local")
+ # Enable per user site-packages directory
+ # set it to False to disable the feature or True to force the feature

@@ -703,7 +703,7 @@
     {
       "id": "cpython",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/cpython/wasm-package.json",
       "historicalManifestSha256": "87c859b52d2136307b948dc83335545ddf82fbef11108ad8a094950a11456c99",
       "historicalEvidence": [
@@ -732,7 +732,13 @@
       ],
       "mapping": null,
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "candidate": "apps/cpython",
+      "sourceReview": {
+        "commit": "9faf8e5",
+        "reviewerThread": "01a12a36-7ca5-773e-b7ca-28bafb1cd2ea",
+        "result": "Independent source-execution approval only:5149 historical blobs, pre-freeze store-prefix overlay,1114 outputs and bounded consumers. Guest build/export and all binary/reload/public gates pending."
+      }
     },
     {
       "id": "cpython-idle",
@@ -973,12 +979,12 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Reviewed source fixture prepared; sequential dependency install and Imlib2/Feh source build queued. Binary install, X11/GUI/reload, immutable publication review and public acceptance remain pending."
+        "First source attempt failed on missing X11/Intrinsic.h; retained at 92a0ed8. Corrected source retry is approved and waiting for queue capacity. Binary export, real menu/image interaction and reload/publication acceptance remain pending."
       ],
       "candidate": "apps/feh",
       "sourcePreparation": {
-        "commit": "34e1811",
-        "scope": "Independently approved for source-build execution and bounded headless consumers. Imlib2 precedes Feh. Fresh source execution, X11 interaction and publication acceptance remain pending."
+        "commit": "4f6fd53",
+        "scope": "Independently approved exact x11-toolkit 1.0-1 header-provider dependency correction; historical source and linkage unchanged."
       }
     },
     {
@@ -1341,9 +1347,10 @@
         "pango",
         "sdl3"
       ],
-      "mapping": null,
+      "mapping": "Partially mapped to accepted gtk3-x11@3.24.43-1 for software X11 GTK/GDK consumer and GUI scope; not a byte/path/backend-equivalent migration of historical SDL/Broadway profile.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Historical static libgtk-3.a/libgdk-3.a, ordinary library paths and custom SDL/Broadway backend/API contracts are not supplied by current private shared provider. No blind aliases or restoration of kernel desktop policy; retain exact batch-12 accepted scope/runtime."
     },
     {
       "id": "gettext",
@@ -1608,9 +1615,10 @@
         "gtk3-schemas",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "Unmigrated executable application; candidate adaptation to accepted GTK3-X11 requires owned source/license provenance and explicit loader/SDK wrapper.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Prepare calculator/Lights Out application, then independent functional/reload gates. Adapt historical surface launcher for X11; appearance/hints are session-only, with no persistence claim."
     },
     {
       "id": "gtk-desktop",
@@ -1643,9 +1651,10 @@
         "l3afpad",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "Unmigrated application and architecture-dependent session. Tools/application workload needs an owned X11 port and scoped evidence; historical kernel-managed desktop session requires explicit userland redesign, not restoration in core.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "File manager, sample editor and appearance contracts remain pending. Historical /run/wm.sock/kernel-layer session policy conflicts with target core boundary. Accepted L3afpad/JWM do not establish those contracts; each dependency retains separate gates."
     },
     {
       "id": "gtk-sdk",
@@ -1673,9 +1682,10 @@
         "gtk3",
         "sdk"
       ],
-      "mapping": null,
+      "mapping": "Historical dependency/marker package (sdk+gtk3), with GTK development workload partially served by current compiler/pkgconf plus gtk3-x11 and dependency SDKs; no standalone executable.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Explicit private pkg-config/runtime loader contract and installed/reload execution of combined GTK/HarfBuzz/Pango consumer remain pending. Missing marker alone is not functional failure. Static/backend obligations remain under gtk3/gdk3; sdk core ownership stays distinct."
     },
     {
       "id": "gtk3",
@@ -1705,9 +1715,10 @@
         "gtk3-schemas",
         "harfbuzz"
       ],
-      "mapping": null,
+      "mapping": "Partially mapped to accepted gtk3-x11@3.24.43-1 for software X11 GTK/GDK consumer and GUI scope; not a byte/path/backend-equivalent migration of historical SDL/Broadway profile.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Historical static libgtk-3.a/libgdk-3.a, ordinary library paths and custom SDL/Broadway backend/API contracts are not supplied by current private shared provider. No blind aliases or restoration of kernel desktop policy; retain exact batch-12 accepted scope/runtime."
     },
     {
       "id": "gtk3-demo",
@@ -1736,9 +1747,10 @@
         "gtk3-schemas",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "Unmigrated local gallery launcher plus 14 selected GTK3.24.43 demos, not the full upstream gtk3-demo.",
       "acceptance": [],
-      "blockers": []
+      "blockers": [],
+      "remainingScope": "Own source/license and colorsel repaint-adaptation provenance; adapt X11 launcher; independently gate bounded widget/model/dialog/input/close/reload scopes. GTK library acceptance does not accept these applications."
     },
     {
       "id": "gtk3-schemas",
@@ -1863,9 +1875,7 @@
           "evidence": "docs/research/package-migration/batch-12/public-live"
         }
       ],
-      "blockers": [
-        "Exact artifact review and public publication/acceptance pending."
-      ],
+      "blockers": [],
       "design": "gtk-provider-design.md",
       "candidate": "apps/gtk3-x11",
       "sourceReview": {
@@ -2042,7 +2052,7 @@
       "mapping": null,
       "acceptance": [],
       "blockers": [
-        "Reviewed source fixture prepared; sequential dependency install and Imlib2/Feh source build queued. Binary install, X11/GUI/reload, immutable publication review and public acceptance remain pending."
+        "Headless source consumer passed during the combined run retained at 92a0ed8, but Feh failed before combined export. Exact binary export and independent review, native X11 consumer with separately recorded reload, and publication remain pending."
       ],
       "candidate": "apps/imlib2",
       "sourcePreparation": {
@@ -2170,10 +2180,10 @@
         "jwm",
         "x11-apps-more"
       ],
-      "mapping": "start-jwm and helper now supplied by jwm; former desktop bundle/menu/dependency closure not reproduced.",
+      "mapping": "Historical start-jwm launcher/session workload supplied by accepted jwm@2.4.6-2; historical optional menu entries retained in apps/jwm/app-menu.sh with additional installed-client entries. x11-apps-more clients map to separate accepted packages; historical aggregate dependency installation has not been reproduced as a bundle.",
       "acceptance": [],
       "blockers": [],
-      "remainingScope": "Retain current JWM; restore historical desktop/menu dependency coverage"
+      "remainingScope": "Reconcile aggregate install/dependency semantics and retain bounded launcher/menu evidence; optional application acceptance belongs to each application row."
     },
     {
       "id": "l3afpad",
@@ -2364,7 +2374,7 @@
     {
       "id": "libfm",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/libfm/wasm-package.json",
       "historicalManifestSha256": "909d56b2e6efb5164e5485368d1f06cf959f3bc412f1514079d301b1babef1f5",
       "historicalEvidence": [
@@ -2393,9 +2403,15 @@
         "gtk3-x11",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "libfm",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Source execution/export, installed consumers, local GUI file operations and browser reload remain pending. Application-launch callbacks and automatic menu-daemon startup are outside staged acceptance."
+      ],
+      "sourcePreparation": {
+        "commit": "c480734",
+        "scope": "Independently approved owned source preparation; exact historical blobs, dependency/output/license contracts and bounded headless consumers reviewed. LibFM precedes PCManFM."
+      }
     },
     {
       "id": "libgedit-amtk",
@@ -3314,7 +3330,7 @@
     {
       "id": "pcmanfm",
       "kind": "historical-canonical-name",
-      "state": "queued",
+      "state": "source-prepared-reviewed",
       "historicalManifest": "apps/pcmanfm/wasm-package.json",
       "historicalManifestSha256": "b24b5e3002e0dcbfbe3721e74159158ebd7a951316605d203958f28d03fedb45",
       "historicalEvidence": [
@@ -3343,9 +3359,15 @@
         "libfm",
         "pkgconf"
       ],
-      "mapping": null,
+      "mapping": "pcmanfm",
       "acceptance": [],
-      "blockers": []
+      "blockers": [
+        "Source execution/export, installed consumers, local GUI file operations and browser reload remain pending. Application-launch callbacks and automatic menu-daemon startup are outside staged acceptance."
+      ],
+      "sourcePreparation": {
+        "commit": "c480734",
+        "scope": "Independently approved owned source preparation; exact historical blobs, dependency/output/license contracts and bounded headless consumers reviewed. LibFM precedes PCManFM."
+      }
     },
     {
       "id": "pcre2",
@@ -3733,7 +3755,7 @@
     {
       "id": "puzzles",
       "kind": "historical-canonical-name",
-      "state": "source-built-reviewed",
+      "state": "published-live-accepted",
       "historicalManifest": "apps/puzzles/wasm-package.json",
       "historicalManifestSha256": "7ed16059fee8f8a30cc094382a619ee030aa04f8dd48fd82486994b67b163ba7",
       "historicalEvidence": [
@@ -3775,11 +3797,23 @@
           "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
           "evidence": "docs/research/package-migration/puzzles/gucos-binary",
           "evidenceCommit": "8c5922e"
+        },
+        {
+          "scope": "Private only: Untangle paced drag, exact undo/repeat, save/reopen and browser reload persistence; independently accepted. No solved-board claim.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/puzzles/gucos-binary",
+          "evidenceCommit": "cd33207"
+        },
+        {
+          "scope": "Public immutable install/consumers/package reload; six owned-menu GUI scopes: Fifteen slide, Net rotation, SameGame removal, Solo pencil mark, Mines flag/first opening, Untangle drag, each with undo/repeat where declared, GTK save/load, fresh-PID relaunch and exact saved-board restoration. Six fresh-browser reload reports restore saved bytes/board hashes then quit; reload is not another full gameplay pass. No all40 gameplay, solved-board, arbitrary persistence or clean-log claim.",
+          "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+          "evidence": "docs/research/package-migration/puzzles/gucos-public",
+          "evidenceCommit": "4d4b1a6",
+          "catalogCommit": "807f2bc5d31179433e6e87a990c0f4514746d951",
+          "reviewerThread": "01a12a36-7ca5-773e-b7ca-28bafb1cd2ea"
         }
       ],
-      "blockers": [
-        "Five private interaction scopes are independently accepted: Fifteen, Net, Same Game and Solo normal/reload evidence at 9ee1628, plus Mines flag/undo, safe first opening and persistence normal/reload evidence at 8c5922e. Untangle repeat-drag acceptance remains pending; paced-input correction d49e5ff is approved for execution only. Immutable publication review, publication and fresh public acceptance remain pending."
-      ],
+      "blockers": [],
       "sourcePreparation": {
         "revision": "19b50d8",
         "scope": "319 pinned historical blobs, 40 games and 132 outputs; independent source preparation review complete."
@@ -3787,7 +3821,13 @@
       "sourceExecution": {
         "revision": "8f06d8a",
         "evidence": "docs/research/package-migration/puzzles/gucos-source",
-        "scope": "Independently reviewed generation of all 40 games and exact 132-output source export. Source execution does not establish gameplay acceptance; five bounded private interaction scopes are separately accepted."
+        "scope": "Independently reviewed generation of all40 games and exact132-output source export. Six bounded private and public interaction/reload scopes are separately accepted."
+      },
+      "publication": {
+        "artifactRevision": "8f06d8a7c1337a6a9725618332cb0540a3d1723a",
+        "manifestRevision": "5dc7e9c",
+        "catalogRevision": "807f2bc",
+        "scope": "Independently reviewed immutable artifact publication and bounded public install/consumer/six-game/restoration acceptance."
       }
     },
     {
@@ -4616,12 +4656,12 @@
         "ncurses",
         "x11-server"
       ],
-      "mapping": "x11-toolkit + x11-widgets + xterm + xev + xprop + xmessage; Source Code Pro supplied by accepted fontconfig",
+      "mapping": "Split into x11-toolkit (ICE/SM/Xt/Xmu/Xrandr archives and headers), x11-widgets (Xpm/Xaw7 archives), xterm/xev/xprop/xmessage; Source Code Pro and license supplied by accepted fontconfig. Historical Xft SDK and Xft/ncurses xterm configuration remain unmigrated.",
       "acceptance": [],
       "blockers": [
         "libXft SDK and Xft/ncurses xterm profile remain missing"
       ],
-      "remainingScope": "Missing Xft, Source Code Pro and ncurses xterm profile"
+      "remainingScope": "Missing lib/libXft.a, include/X11/Xft/Xft.h, include/X11/Xft/XftCompat.h and lib/pkgconfig/xft.pc; Xft/terminfo xterm profile remains pending. Ncurses source work is retained and reviewed; its installed/reload/public gates remain pending. Font presence does not establish Xft selection/rendering."
     },
     {
       "id": "x11-apps-more",
@@ -4642,7 +4682,7 @@
         "pkgconf",
         "x11-apps"
       ],
-      "mapping": "Seven clients published separately; missing xedit, xfontsel, xclipboard, oclock, xcutsel.",
+      "mapping": "Twelve historical clients supplied by separate accepted packages; five formerly missing clients are recorded in components and batch-02/public-live. Software X11/core-font scope; existing optional pixmap/international-font warnings retained.",
       "acceptance": [],
       "blockers": [],
       "remainingScope": "No missing client binaries; software X11/core-font scope only, optional pixmap and international font warnings retained.",

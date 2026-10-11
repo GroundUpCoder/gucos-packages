@@ -1,0 +1,29 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/cpython",
+  "tree": "9177f9b08c879e3749456d5876b7c8bf964170f0",
+  "archiveSha256": "9ca67e57a8e850020cbbea4e3f6a1cbf03f19e75c3260f61e6b3d36395b67e17",
+  "inventorySha256": "ffa2a5d5e31e7382371d768545a95f8fe190417fc4a2c700c626225eb17bd26e",
+  "recipeBasis": "apps/cpython/install.sh",
+  "status": "source preparation only; no owned build or runtime acceptance",
+  "adaptations": [
+    {
+      "file": "site-gucman.py",
+      "historicalPath": "apps/cpython/Lib/site.py",
+      "preimageSha256": "08da608a54b013e2bf353c841d231a5e26bfbb33a0c90516f9a87d2ec57b4e4a",
+      "sha256": "a5807ad3327161b4d27388ad2824248d590d14b218557206a8ade44206104fad",
+      "patch": "site-store.patch",
+      "patchSha256": "2cb1bef3d0b0470c9a4001d43d8818a34879ab0fa189b8130271b37a255c79fd",
+      "reason": "Recognize the current gucman private CPython store before site.py is frozen; retain normal public site and .pth processing."
+    }
+  ],
+  "generatedInputs": "Configure and module freezing remain guest build steps; no generated headers or configuration imported from another run.",
+  "outputDerivation": {
+    "copiedLibraryAndHeaders": 1052,
+    "additionalPaths": 62,
+    "sysconfigName": "_sysconfigdata__wasm1_.py",
+    "sysconfigEvidence": "Historical docs/research/python314-stack/cpython-final/source-acceptance.log records this name; the build verifies the newly generated name and fails on a mismatch."
+  },
+  "archiveEncoding": "gzip-compressed USTAR, retained as source.tar for the existing migration harness; BusyBox CONFIG_FEATURE_TAR_AUTODETECT and FEATURE_SEAMLESS_GZ enabled"
+}

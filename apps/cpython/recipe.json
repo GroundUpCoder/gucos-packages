@@ -1,0 +1,30 @@
+{
+  "name": "cpython",
+  "version": "3.14.7-5",
+  "dependencies": [
+    "zlib"
+  ],
+  "dependencyRequirements": {
+    "zlib": {
+      "version": "1.3.2-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream",
+      "pthreads"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "site-gucman.py",
+    "site-store.patch",
+    "README.md"
+  ]
+}

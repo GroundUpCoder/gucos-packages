@@ -98,3 +98,84 @@ support `ef84a48` also passed independent execution review. Discovery captures
 main/menu/New/Open chooser geometry and screenshots, cancels dialogs, and proves
 normal process exit. It neither creates archives nor establishes persistence.
 The default desktop-session shell remains unchanged.
+
+
+Puzzles Untangle normal/reload evidence `cd33207` passed independent review,
+completing six bounded private game scopes. The review verified all 74 indexed
+evidence files, 319 historical source blobs, 132 binary outputs and licenses.
+The exact artifact from `8f06d8a` is published through manifest `5dc7e9c` and
+catalog `807f2bc`; all previous 90 catalog entries are preserved. Fresh public
+install, consumers and six-game normal/reload checks are queued. The catalog
+contains 91 packages with 88 publicly accepted here; the accepted baseline
+remains unchanged. Building 40 games does not establish gameplay for all 40.
+
+LibFM/menu-cache and PCManFM source candidates `c480734` preserve 400 and 124
+historical blobs with 111 and 15 outputs. Source-only checks pass. Independent
+implementation review approved source execution; the frozen source job is queued.
+Local GUI file operations and reload are separate gates. Application-launch callbacks remain
+outside the proposed scope.
+
+PCManFM layout discovery `ade6e96` independently passed execution review. The
+reviewed driver SHA-256 is
+`ca0266acd2b4e339e8a7b2db9c3130f2c42174c80675761169518dd077d6e947`.
+Execution requires a reviewed LibFM/PCManFM binary fixture and installed dependency
+closure; the frozen source fixture is not eligible input. The bounded scope is
+real menu launch, fixture navigation, cancel-only new-folder dialog, unchanged
+fixture tree and bytes, and normal exit with terminal restoration. Rename is
+omitted. Screenshots must independently confirm the sole `probe.txt` and absence
+of error or progress overlays. This approval establishes no functional, reload
+or public acceptance. Original implementation authorship is retained.
+
+Independent historical desktop-profile reconciliation corrected stale queue mapping
+text without changing row states or acceptance counts. JWM retains historical
+optional menu entries; all twelve x11-apps-more clients are separately supplied.
+Source Code Pro is already accepted through fontconfig. The exact Xft SDK and
+Xft/terminfo xterm profile remain pending, as do ncurses binary/public gates.
+GTK3-X11 acceptance is retained at its recorded software-X11 scope and runtime;
+it does not supply the historical static/SDL/Broadway contract. GTK desk, gallery
+and desktop applications retain separate migration and functional obligations.
+Historical kernel desktop policy must be redesigned in userland.
+
+Corrected Xarchiver source evidence `fe4f012` independently passed exact-export
+review: 220 historical source blobs/modes, seven frozen inputs, and 31 output
+paths/modes. Archive SHA-256
+`a309654d4252f17f0b527337f1adb7df5081e13a224253a162dc340744b8eeb8`,
+935,424 bytes. A fresh binary fixture freezes 30 manifests and 1,993 payload
+hashes. Install, installed consumer and previously reviewed layout discovery
+are queued; this is not archive-operation or publication acceptance.
+
+Corrected Galculator evidence `65e51d0` independently passed exact-export review:
+24 output paths/modes, five retained evidence hashes, frozen inputs and receipt.
+Archive SHA-256
+`d8c2501adcf66ecb631bef119b8e1459f434472fcb28bbbad486ac7ff8f1e994`,
+1,132,544 bytes. The corrected staged-link test passed with reused dependencies;
+the earlier loader failure remains retained. A fresh binary fixture freezes 29
+manifests and 1,982 payload hashes. Install, consumer and layout discovery await
+scheduler admission. Arithmetic, settings behavior and public acceptance remain
+separate gates. Both runs used runtime `19609f47` and frozen source inputs
+`cd33207`; neither changes the 91 published / 88 accepted-here counts.
+
+CPython foundation `9faf8e5` independently passed source-execution review:
+5,149 exact historical blobs, compressed source archive, pre-freeze package-store
+prefix correction, 1,114 outputs and bounded consumers. A source fixture freezes
+that revision against runtime `19609f47`; execution waits for normal admission
+after the earlier desktop fixture. Generated sysconfig naming is an asserted
+contract, not an observed new result; a mismatch must fail. Same-extension
+execution after browser reload remains a separate future gate. No binary or
+public acceptance is added, and Tkinter/IDLE/pygame remain separate packages.
+
+Puzzles public evidence `4d4b1a6` independently passed acceptance review: all96
+indexed files,16passed reports,29immutable manifests/archives and2,090closure
+payload hashes. The three guest repacks preserve all132canonical payload
+bytes/sizes/modes despite differing tar hashes. Six loaded and six browser-reload
+screenshots were independently inspected. Accepted normal interaction scopes are
+Fifteen slide, Net rotation, SameGame connected-group removal, Solo pencil mark,
+Mines flag/first opening and Untangle paced drag, with declared undo/repeat,
+owned-menu/save/load/fresh-PID relaunch and terminal-restoration checks. Reload
+proves exact prior saved-byte and board restoration followed by quit, not a
+second full gameplay pass. No all40 gameplay, solved-board, arbitrary persistence
+or clean-log claim is made. GTK warnings/critical messages remain retained.
+
+This advances acceptance accounted for here from88to89, with91catalog entries.
+The87-entry preservation baseline `ec3fa8c` remains unchanged because the
+separately owned gucode/libcurl acceptance is still pending.

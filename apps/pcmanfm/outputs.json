@@ -1,0 +1,62 @@
+[
+  {
+    "path": "bin/pcmanfm",
+    "mode": 493
+  },
+  {
+    "path": "etc/xdg/menus/lxde-applications.menu",
+    "mode": 420
+  },
+  {
+    "path": "etc/xdg/pcmanfm/default/pcmanfm.conf",
+    "mode": 420
+  },
+  {
+    "path": "include/pcmanfm-modules.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pcmanfm/README",
+    "mode": 420
+  },
+  {
+    "path": "libexec/pcmanfm",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/pcmanfm-desktop-pref.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/pcmanfm.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/pcmanfm/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/pcmanfm/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/pcmanfm/ui/about.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/pcmanfm/ui/autorun.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/pcmanfm/ui/connect.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/pcmanfm/ui/desktop-pref.ui",
+    "mode": 420
+  },
+  {
+    "path": "share/pcmanfm/ui/pref.ui",
+    "mode": 420
+  }
+]

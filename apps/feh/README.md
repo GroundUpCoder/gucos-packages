@@ -9,3 +9,8 @@ Source tests exercise version reporting and exact PNG dimensions for a file and
 a two-image directory using the retained fixture generator. No source, installed,
 GUI or reload execution has run. Real menu/image navigation, visible pixels,
 normal exit and browser reload remain separate required acceptance gates.
+
+The retained wallpaper header includes X11/Intrinsic.h. The exact
+x11-toolkit 1.0-1 dependency supplies that header; no Xt symbols or additional
+Xt linkage are required. The first source attempt failed on this undeclared
+header provider before producing a Feh binary.
