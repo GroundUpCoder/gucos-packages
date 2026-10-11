@@ -1,0 +1,15 @@
+ede7f8f8bbcfa38ee64664a859dfd15d61912ce2466f26ed52ff83c079f8bcc0  /usr/local/bin/pcmanfm
+d4cd76a68011754b1751e79423f50538a5884f1d68b378241056bd459939cd83  /usr/local/share/pcmanfm/xdg/menus/lxde-applications.menu
+700bd983a396cab8af668b2f2566489d75c9189cf7f484c22833a07f64d110d5  /usr/local/share/pcmanfm/xdg/pcmanfm/default/pcmanfm.conf
+14990713c7476baeba34440e193e0afb3bd3cf56fc7952b689455624627483bc  /usr/local/include/pcmanfm-modules.h
+951697504f4153f1bcb807952d12e05547451ef1bc526d037076aa0ca7be5b09  /usr/local/lib/pcmanfm/README
+410b1bf79a0db5aa9e94873ab7aa85d04c289c18e1211bcd8e4205321a4c7ae9  /usr/local/libexec/pcmanfm
+c4c597d68f50a702f1ac23ffe67148283d821623ad160c62bc17e093cba0a157  /usr/local/share/applications/pcmanfm-desktop-pref.desktop
+57c8bfea404a3e8af3ae753059a318dfd40af0d6217f3f17014e093a766550d4  /usr/local/share/applications/pcmanfm.desktop
+231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c  /usr/local/share/doc/pcmanfm/COPYING
+231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c  /usr/local/share/licenses/pcmanfm/COPYING
+4cd27000eca95ede0f8fc8ab723cd16406796e6b24e30d5ad9d8c2b6800e6319  /usr/local/share/pcmanfm/ui/about.ui
+edd459856a0e011a5e8a54005c23aa19ccc53d3cbdde4c38b449b84a29cea18d  /usr/local/share/pcmanfm/ui/autorun.ui
+8c40567b453497a1bb1c189554830afe82bd239684c304913ef9356715db8837  /usr/local/share/pcmanfm/ui/connect.ui
+8c806db304290f9745c2ea9231fd69b77a8038def2f03a6bf2f52c5c06cd18e7  /usr/local/share/pcmanfm/ui/desktop-pref.ui
+b2217d02b10ff0bbd7457c06eeda1dac271f7a138d78405e45a2abcfe10cc297  /usr/local/share/pcmanfm/ui/pref.ui

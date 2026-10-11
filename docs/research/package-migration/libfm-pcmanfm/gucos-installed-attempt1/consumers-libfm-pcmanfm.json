@@ -1,0 +1,40 @@
+{
+  "action": "consumers",
+  "names": [
+    "libfm",
+    "pcmanfm"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "fe8d1975fac0b6a0a1df28d4bec9842ca7ef9c36",
+  "startedAt": "2026-10-11T10:35:21.181Z",
+  "status": "failed",
+  "consumerInputs": [
+    {
+      "name": "libfm",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "edcc6aad7bda75df1a73a7777974b638ac6362767d9b7880e10f4aeb6903dbe9",
+          "size": 10455040
+        },
+        {
+          "path": "build.sh",
+          "sha256": "2bb78d227e7d0a9a6763063ac96cdeb56f0fdcbef6f9711825c3b6c70d81f077",
+          "size": 5026
+        },
+        {
+          "path": "test.sh",
+          "sha256": "2f8e4c05375e63ce6b9ddd25ff266bab1e9198abb33adde826120024d5e8c89e",
+          "size": 4557
+        },
+        {
+          "path": "consumer.c",
+          "sha256": "8d3019c9435f23d0db4331627f22f10256777bef5b429045b19421c1999e414c",
+          "size": 2992
+        }
+      ]
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1 !== 0\n\n    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/migration/stage.mjs:40:4",
+  "finishedAt": "2026-10-11T10:35:22.711Z"
+}
