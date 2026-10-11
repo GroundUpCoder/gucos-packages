@@ -36,11 +36,32 @@ try {
   assert.deepEqual(installed,expected,'Installed closure manifest: '+name);
  }
  await s.page.evaluate(async text=>shell.busybox.write('/tmp/gtk-closure.sha256',new TextEncoder().encode(text)),checksums.toString());
- await s.command(`set -eu
-sha256sum -c /tmp/gtk-closure.sha256
-for library in libcairo.so libXau.so libxcb.so libX11.so libXext.so libXrender.so libXfixes.so libXi.so libXtst.so; do
- test "$(find /usr/local -name "$library")" = "/usr/local/lib/$library"
-done`);
+ await s.command('sha256sum -c /tmp/gtk-closure.sha256');
+ const libraries=['libcairo.so','libXau.so','libxcb.so','libX11.so','libXext.so','libXrender.so','libXfixes.so','libXi.so','libXtst.so'];
+ const found=await s.command(`set -eu
+for library in ${libraries.join(' ')}; do find /usr/local -name "$library"; done`);
+ const paths=found.trim().split('\n');assert.equal(new Set(paths).size,paths.length);
+ const expectedHashes=new Map(checksums.toString().trim().split('\n').map(line=>[line.slice(66),line.slice(0,64)]));
+ report.providerCopies=[];
+ for(const library of libraries){
+  const publicPath='/usr/local/lib/'+library,owner=library==='libcairo.so'?'cairo':'x11-shared';
+  const matches=paths.filter(path=>path.endsWith('/'+library));
+  assert.equal(matches.filter(path=>path===publicPath).length,1,'One public provider: '+library);
+  for(const path of matches){
+   if(path!==publicPath){
+    const prefix='/usr/local/lib/gucman/packages/'+owner+'/';
+    assert(path.startsWith(prefix),'Unexpected private provider: '+path);
+    const parts=path.slice(prefix.length).split('/');
+    assert(parts.length===3&&/^release\.[a-zA-Z0-9]+$/.test(parts[0])&&parts[1]==='lib'&&parts[2]===library,'Unexpected managed provider: '+path);
+   }
+   const hash=await s.page.evaluate(async path=>{
+    const bytes=await shell.busybox.read(path);
+    return [...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(b=>b.toString(16).padStart(2,'0')).join('');
+   },path);
+   assert.equal(hash,expectedHashes.get(publicPath),'Managed/public provider payload: '+path);
+   report.providerCopies.push({path,sha256:hash,kind:path===publicPath?'public':'managed-release'});
+  }
+ }
  await s.page.evaluate(async encoded=>shell.busybox.write('/tmp/migration-gtk.tar',Uint8Array.from(atob(encoded),c=>c.charCodeAt(0))),archive.toString('base64'));
  pending=s.command(`set -eu
 mkdir -p /tmp/migration-gtk
