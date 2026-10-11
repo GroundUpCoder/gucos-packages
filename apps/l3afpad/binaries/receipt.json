@@ -1,0 +1,104 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "c2e645ab03588a01fed7999fc011b152b118c89bb0c7e597661c896883be5000",
+  "size": 310784,
+  "guestManifest": {
+    "format": 1,
+    "name": "l3afpad",
+    "version": "0.8.18-2",
+    "dependencies": [
+      "gtk3-x11",
+      "pkgconf",
+      "libintl"
+    ],
+    "dependencyRequirements": {
+      "gtk3-x11": {
+        "version": "3.24.43-1"
+      },
+      "pkgconf": {
+        "version": "2.3.0-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:61069/migration/l3afpad/source.tar",
+        "sha256": "3c5ad7f0d57a732f2249076332c834924dbe8f2460ef54cc99b223313451fb8d",
+        "size": 727040
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:61069/migration/l3afpad/build.sh",
+        "sha256": "495ce5e91d88503cffe16cb2bf652e354a7558ed0d44ce8f7ae3ea6eeee14b38",
+        "size": 1124
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:61069/migration/l3afpad/test.sh",
+        "sha256": "fc82914e26655b77b4c10079eb0da015c673c30560e77edb662566008bbe6bee",
+        "size": 400
+      },
+      {
+        "path": "l3afpad.desktop",
+        "url": "http://127.0.0.1:61069/migration/l3afpad/l3afpad.desktop",
+        "sha256": "febfd9c8dc471e3a0da896f7840dff86b4bf7cb935df00b011e7e2ef0b3c700b",
+        "size": 158
+      },
+      {
+        "path": "licenses/GPL-2.0.txt",
+        "url": "http://127.0.0.1:61069/migration/l3afpad/licenses/GPL-2.0.txt",
+        "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+        "size": 17984
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/l3afpad",
+        "mode": 493
+      },
+      {
+        "path": "libexec/l3afpad",
+        "mode": 493
+      },
+      {
+        "path": "share/applications/l3afpad.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/pixmaps/l3afpad.png",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/l3afpad/PORT.md",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/l3afpad/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/l3afpad/GPL-2.0.txt",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/l3afpad/COPYING",
+      "share/licenses/l3afpad/GPL-2.0.txt"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}
