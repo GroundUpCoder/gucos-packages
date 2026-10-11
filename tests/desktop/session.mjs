@@ -53,8 +53,18 @@ echo JWM-CONTROL-PASS`);
  function command(script){return bounded((async()=>{
   const stem='/tmp/jwm-test-control/'+(++serial);
   await write(stem+'.request',script+'\n');await write(stem+'.ready','ready');
-  await race(s.page.waitForFunction(async path=>/^[0-9]+\n$/.test(new TextDecoder().decode(await shell.busybox.read(path)||new Uint8Array())),stem+'.code',{timeout:45000}));
-  const {code,output}=await s.page.evaluate(async stem=>({code:new TextDecoder().decode(await shell.busybox.read(stem+'.code')),output:new TextDecoder().decode(await shell.busybox.read(stem+'.output'))}),stem);
+  // Take one complete response snapshot; status readiness alone does not bind
+  // a later read of both files. Missing output is not an empty successful result.
+  const handle=await race(s.page.waitForFunction(async stem=>{
+   const status=await shell.busybox.read(stem+'.code');
+   if(!ArrayBuffer.isView(status))return false;
+   const code=new TextDecoder().decode(status);if(!/^[0-9]+\n$/.test(code))return false;
+   const bytes=await shell.busybox.read(stem+'.output');
+   if(!ArrayBuffer.isView(bytes))return false;
+   return {code,output:new TextDecoder().decode(bytes)};
+  },stem,{timeout:45000}));
+  let response;try{response=await handle.jsonValue();}finally{await handle.dispose();}
+  const {code,output}=response;
   assert.match(code,/^[0-9]+\n$/);assert.equal(Number(code),0,output);return output;
  })(),45000,'Complete JWM observation request exceeded 45 seconds');}
  return {...s,command,helper,pending,finish:()=>bounded((async()=>{
