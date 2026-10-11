@@ -1,0 +1,10 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/vim",
+  "archiveSha256": "a1ad039a2d502eff9fe9ec7842b910557d8c06b5ae2b314e77d62c02477d08e0",
+  "status": "source migration candidate; no new guest execution",
+  "adaptations": [
+    "project.json redirects only SYS_VIMRC_FILE to the package-owned share/vim/vimrc; retained source/bin.json remains unchanged"
+  ]
+}
