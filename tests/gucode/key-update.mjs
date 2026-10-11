@@ -28,7 +28,7 @@ await s.page.route('https://api.deepseek.com/chat/completions',async route=>{
  }catch(e){report.fixtureError=String(e);await route.abort();}
 });
 try{
- report.runtime=await s.page.evaluate(()=>shell.toolchain.systemBuild);assert.equal(report.runtime,expected);
+ report.runtime=await s.page.evaluate(()=>shell.toolchain.systemBuild);assert.equal(report.runtime,expected);console.log(mode+': core ready');
  if(live){
   // Pin the old published manifest first, then upgrade through the public catalog.
   const plan=JSON.parse(await readFile(out+'/upgrade-plan.json'));
@@ -51,7 +51,7 @@ try{
   const bytes=Buffer.from(JSON.stringify(manifest));extra.set('/candidate/package.json',bytes);
   const catalog=JSON.parse(await readFile('catalog.json'));catalog.packages.gucode={url:s.url+'/candidate/package.json',sha256:sha(bytes),size:bytes.length};extra.set('/candidate/catalog.json',Buffer.from(JSON.stringify(catalog)));
   await s.command('gucman repo remove groundupcoder\ngucman repo add candidate '+s.url+'/candidate/catalog.json\ngucman '+(mode==='build'?'build':'install')+' candidate:gucode');
-  report.checks.push(mode==='build'?'real guest source build':'fresh binary install');
+  report.checks.push(mode==='build'?'real guest source build':'fresh binary install');console.log(mode+': package installed');
   if(mode==='build'){
    await s.command('gucman pack gucode /tmp/gucode.tar');const b=await read('/tmp/gucode.tar'),hash=sha(b);
    await writeFile('apps/gucode/binaries/'+hash+'.tar',b);
@@ -78,7 +78,7 @@ try{
  await run('env-test','--session damaged.json');
  const repaired=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(await read('/tmp/key-task/damaged.json')));assert(repaired[1].content.includes('�'));
  report.checks.push('damaged saved conversation repaired on resume');
- assert(!report.fixtureError);report.status='passed';
+ assert(!report.fixtureError);report.status='passed';console.log(mode+': all acceptance checks passed');
 }catch(e){report.status='failed';report.error=String(e.stack||e);throw e;}
 finally{report.finishedAt=new Date().toISOString();await writeFile(out+'/'+mode+'.json',JSON.stringify(report,null,2)+'\n');await s.close();}
 // Keep source and fresh-binary acceptance in the same browser reservation,
