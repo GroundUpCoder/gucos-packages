@@ -407,3 +407,11 @@ The empty cancel witness is not an assigned extraction destination. Test
 presentation remains unclassified. Full before/discovery/after closure gates
 and supervised exits are required; this does not authorize functional or
 reload acceptance. Future functional schemas and synthetic fixtures stay out.
+
+### Imlib2 and Feh publication preparation
+
+Independent review approved `3b2f7e3` for bounded publication readiness: 133 indexed evidence hashes, 56 native samples, exact red 64×48 zoom at (8,6), exact 80×60 restoration, two supervised raw exit-zero results and the 35-manifest/2,185-output closure. Green navigation is observed; green zoom is not. Imlib2 reload recompiles its consumer and regenerates fixtures, so retained-consumer persistence is not claimed. Canonical archives and guest repacks have identical payload bytes, sizes and modes.
+
+Immutable manifests `13421d9` and catalog candidate `a50ac30` add these two reviewed artifacts. Independent publication review is pending; accepted count stays 91. The public Feh preflight needs a reviewed adaptation for immutable public URLs while retaining exact source and binary identities. No public functional execution is claimed.
+
+Galculator pacing correction `c8c0d2b` independently passed review. A fresh binary-v4 attempt is queued with complete install, consumer, closure, normal and reload gates; prior failures remain preserved.
