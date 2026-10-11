@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('mode',choices=['manifests','catalog']);p.add_argument('--catalog-base',required=True);p.add_argument('--artifacts',required=True);p.add_argument('--manifests');p.add_argument('names',nargs='+');args=p.parse_args()
-assert __debug__
+if not __debug__:raise RuntimeError('Validation requires assertions enabled')
 for rev in [args.catalog_base,args.artifacts,*([args.manifests] if args.manifests else [])]:
  assert re.fullmatch('[a-f0-9]{40}',rev)
 subprocess.run(['git','merge-base','--is-ancestor',args.catalog_base,args.artifacts],cwd=ROOT,check=True)
