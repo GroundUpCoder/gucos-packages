@@ -1,0 +1,24 @@
+# gucode 0.1.0
+
+Source project: https://github.com/josephkimgpt/gucode
+
+Portable C coding agent, tested with DeepSeek on native macOS and gucOS. Streams
+responses, inspects/edits files, runs commands, and optionally saves conversations.
+Depends on this repository's documented libcurl subset. No direct runtime imports
+or embedded JavaScript are added to the application.
+
+```sh
+gucman install groundupcoder:gucode
+export DEEPSEEK_API_KEY='your-key'
+gucode -C /home/user/project
+```
+
+Use `--key-file` for a private key file; `--session FILE` enables save/resume.
+Edits and shell commands ask for permission unless `--yes` is explicitly set.
+Shell commands are not sandboxed. Browser CORS and the core's automatic redirect
+behavior apply. See upstream documentation for the precise feature/transport limits.
+
+Source archive provenance and individual source hashes are in provenance.json.
+The application and vendored cJSON license files are installed with the binary.
+Build uses the guest compiler and installed libcurl archive, with platform target
+wasm32-wasm-posix, minimum platform 1.0.1 and runtime ABI 5.
