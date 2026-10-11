@@ -1,0 +1,46 @@
+{
+  "savePath": "/home/user/jwm-net-settled.sav",
+  "status": "failed",
+  "startedAt": "2026-10-11T07:07:57.569Z",
+  "scope": "Net only: real JWM menu, move/undo, GTK save/load, quit/relaunch",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "http://127.0.0.1:61239/migration/puzzles/binary.tar",
+    "sha256": "2b23acd4e3e657a99c370581baca2bd26443593f53ab6acabf0bc9f6bb5bdfb8",
+    "size": 16930816
+  },
+  "harnessSha256": "452d683824a324714b232beeb32d6c6a955b67e59b45e9f6814caee5228b694c",
+  "helpers": {
+    "observerSha256": "1e128762b83a291dce18b47ed8ce28d691ffe1b09ae18798a00587b6b65a0ef6",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+    "sessionHelperSha256": "d26195b1e3477cf439ffc7c0d4e1945ca674543fd5b0f1e95fdbbc7087a618b1"
+  },
+  "menu": {
+    "id": "gucos-puzzles-net.desktop",
+    "index": 4,
+    "geometry": {
+      "id": 2097189,
+      "x": 0,
+      "y": 269,
+      "width": 137,
+      "height": 302,
+      "pid": 0
+    },
+    "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Menu label=\"Puzzles\">\n<Program label=\"Blackbox\">sgt-blackbox</Program>\n<Program label=\"Bridges\">sgt-bridges</Program>\n<Program label=\"Cube\">sgt-cube</Program>\n<Program label=\"Dominosa\">sgt-dominosa</Program>\n<Program label=\"Fifteen\">sgt-fifteen</Program>\n<Program label=\"Filling\">sgt-filling</Program>\n<Program label=\"Flip\">sgt-flip</Program>\n<Program label=\"Flood\">sgt-flood</Program>\n<Program label=\"Galaxies\">sgt-galaxies</Program>\n<Program label=\"Guess\">sgt-guess</Program>\n<Program label=\"Inertia\">sgt-inertia</Program>\n<Program label=\"Keen\">sgt-keen</Program>\n<Program label=\"Lightup\">sgt-lightup</Program>\n<Program label=\"Loopy\">sgt-loopy</Program>\n<Program label=\"Magnets\">sgt-magnets</Program>\n<Program label=\"Map\">sgt-map</Program>\n<Program label=\"Mines\">sgt-mines</Program>\n<Program label=\"Mosaic\">sgt-mosaic</Program>\n<Program label=\"Net\">sgt-net</Program>\n<Program label=\"Netslide\">sgt-netslide</Program>\n<Program label=\"Palisade\">sgt-palisade</Program>\n<Program label=\"Pattern\">sgt-pattern</Program>\n<Program label=\"Pearl\">sgt-pearl</Program>\n<Program label=\"Pegs\">sgt-pegs</Program>\n<Program label=\"Range\">sgt-range</Program>\n<Program label=\"Rect\">sgt-rect</Program>\n<Program label=\"Samegame\">sgt-samegame</Program>\n<Program label=\"Signpost\">sgt-signpost</Program>\n<Program label=\"Singles\">sgt-singles</Program>\n<Program label=\"Sixteen\">sgt-sixteen</Program>\n<Program label=\"Slant\">sgt-slant</Program>\n<Program label=\"Solo\">sgt-solo</Program>\n<Program label=\"Tents\">sgt-tents</Program>\n<Program label=\"Towers\">sgt-towers</Program>\n<Program label=\"Tracks\">sgt-tracks</Program>\n<Program label=\"Twiddle\">sgt-twiddle</Program>\n<Program label=\"Undead\">sgt-undead</Program>\n<Program label=\"Unequal\">sgt-unequal</Program>\n<Program label=\"Unruly\">sgt-unruly</Program>\n<Program label=\"Untangle\">sgt-untangle</Program>\n</Menu>\n<Program label=\"Fifteen\">/usr/local/bin/desktop-menu launch gucos-puzzles-fifteen.desktop</Program>\n<Program label=\"Mines\">/usr/local/bin/desktop-menu launch gucos-puzzles-mines.desktop</Program>\n<Program label=\"Net\">/usr/local/bin/desktop-menu launch gucos-puzzles-net.desktop</Program>\n<Program label=\"Same Game\">/usr/local/bin/desktop-menu launch gucos-puzzles-samegame.desktop</Program>\n<Program label=\"Solo\">/usr/local/bin/desktop-menu launch gucos-puzzles-solo.desktop</Program>\n<Program label=\"Untangle\">/usr/local/bin/desktop-menu launch gucos-puzzles-untangle.desktop</Program>\n</JWM>\n"
+  },
+  "firstWindow": {
+    "id": 6291458,
+    "x": 32,
+    "y": 52,
+    "width": 193,
+    "height": 257,
+    "pid": 25
+  },
+  "rotationPoint": {
+    "x": 135.5,
+    "y": 187.5
+  },
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n3 !== 0\n\n    at file:///Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:69:42\n    at async bounded (file:///Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:8:57)\n    at async observe (file:///Users/jku/git/gucos-packages-porting/tests/desktop/menu.mjs:16:12)\n    at async fileDialog (file:///Users/jku/git/gucos-packages-porting/tests/desktop/puzzles-net.mjs:60:3)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/desktop/puzzles-net.mjs:79:2",
+  "finishedAt": "2026-10-11T07:08:43.023Z"
+}

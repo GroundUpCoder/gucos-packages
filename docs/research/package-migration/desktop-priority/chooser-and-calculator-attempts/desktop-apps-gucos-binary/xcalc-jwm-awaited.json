@@ -1,0 +1,36 @@
+{
+  "status": "failed",
+  "startedAt": "2026-10-11T07:03:43.156Z",
+  "name": "xcalc",
+  "scope": "Owned JWM menu launch, physical input/function, quit/relaunch; editor saves and reopens",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "closureSha256": "97a094decb4e94703393d14508c1b7f90b541b055d62036261dd6914c19aa844",
+  "harnessSha256": "328b201d23e0b18b84cc16bed47a91505aa1879f84ecaee52dcaa65ac7041345",
+  "observer": {
+    "observerSha256": "af2da6d6c519b657f1981192cc88ecd2479693d010480fd31ed371df4f58b157",
+    "menuHelperSha256": "626ec4507675cadfda580d995020162af9cbcca0883221dc78b9fa1e72d7bc3c"
+  },
+  "desktopHelpers": {
+    "observerSha256": "1e128762b83a291dce18b47ed8ce28d691ffe1b09ae18798a00587b6b65a0ef6",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+    "sessionHelperSha256": "d26195b1e3477cf439ffc7c0d4e1945ca674543fd5b0f1e95fdbbc7087a618b1"
+  },
+  "menus": [
+    {
+      "id": "gucos-desktop-xcalc.desktop",
+      "index": 6,
+      "geometry": {
+        "id": 2097188,
+        "x": 0,
+        "y": 209,
+        "width": 129,
+        "height": 362,
+        "pid": 0
+      },
+      "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"Calculator\">xcalc -fn fixed</Program>\n<Program label=\"Text editor\">xedit -xrm \"*font: fixed\"</Program>\n<Program label=\"Clock\">xclock -update 1</Program>\n<Program label=\"Eyes\">xeyes</Program>\n<Program label=\"2048\">/usr/local/bin/desktop-menu launch gucos-desktop-2048.desktop</Program>\n<Program label=\"Calculator\">/usr/local/bin/desktop-menu launch gucos-desktop-xcalc.desktop</Program>\n<Program label=\"Clock\">/usr/local/bin/desktop-menu launch gucos-desktop-xclock.desktop</Program>\n<Program label=\"Text Editor\">/usr/local/bin/desktop-menu launch gucos-desktop-xedit.desktop</Program>\n<Program label=\"Eyes\">/usr/local/bin/desktop-menu launch gucos-desktop-xeyes.desktop</Program>\n</JWM>\n"
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: /tmp/jwm-test-control/4.request: line 1: pidof: not found\n\n\n127 !== 0\n\n    at file:///Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:69:42\n    at async bounded (file:///Users/jku/git/gucos-packages-porting/tests/desktop/session.mjs:8:57)\n    at async launch (file:///Users/jku/git/gucos-packages-porting/tests/desktop/xapps.mjs:35:14)\n    at async file:///Users/jku/git/gucos-packages-porting/tests/desktop/xapps.mjs:54:2",
+  "finishedAt": "2026-10-11T07:03:46.999Z"
+}
