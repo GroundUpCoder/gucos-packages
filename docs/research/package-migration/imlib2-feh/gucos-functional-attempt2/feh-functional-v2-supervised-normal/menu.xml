@@ -1,0 +1,5 @@
+<JWM>
+<Program label="Terminal">xterm -fn fixed -title Terminal</Program>
+<Program label="Image viewer">feh /usr/local/share/feh/images</Program>
+<Program label="feh Image Viewer">/home/user/feh-functional-v2-supervised/normal/supervisor /home/user/feh-functional-v2-supervised/normal</Program>
+</JWM>

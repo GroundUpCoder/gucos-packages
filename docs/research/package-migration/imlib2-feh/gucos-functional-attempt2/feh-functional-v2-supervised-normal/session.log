@@ -1,0 +1,15 @@
+<JWM>
+<Program label="Terminal">xterm -fn fixed -title Terminal</Program>
+<Program label="Image viewer">feh /usr/local/share/feh/images</Program>
+<Program label="feh Image Viewer">/usr/local/bin/desktop-menu launch feh.desktop</Program>
+</JWM>
+/home/user/feh-functional-v2-supervised/normal/supervisor.c: OK
+/home/user/feh-functional-v2-supervised/normal/observer.c: OK
+3 functions, 10126 bytes
+9 functions, 15512 bytes
+c8bfc81b907151381f32ea67b4f2b98d1e91e9df7426a8c80f974893cf1f59ac  /home/user/feh-functional-v2-supervised/normal/supervisor
+74f9b23cb1223c9a9b5437d6b17c96079bd822837065d699503a9ce9a147fdb4  /home/user/feh-functional-v2-supervised/normal/observer
+8 functions, 18123 bytes
+5 functions, 12328 bytes
+WM_READY
+JWM-CONTROL-READY

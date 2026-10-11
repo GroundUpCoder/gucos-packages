@@ -1,0 +1,50 @@
+gucman: unknown source
+
+
+2 functions, 13318 bytes
+IMLIB2-HEADLESS-PASS
+
+
+feh version 3.13.1
+2 functions, 13118 bytes
+FEH-HEADLESS-PASS
+
+/usr/local/include/Imlib2.h: OK
+/usr/local/lib/imlib2/loaders/argb.so: OK
+/usr/local/lib/imlib2/loaders/bmp.so: OK
+/usr/local/lib/imlib2/loaders/ff.so: OK
+/usr/local/lib/imlib2/loaders/ico.so: OK
+/usr/local/lib/imlib2/loaders/jpeg.so: OK
+/usr/local/lib/imlib2/loaders/lbm.so: OK
+/usr/local/lib/imlib2/loaders/png.so: OK
+/usr/local/lib/imlib2/loaders/pnm.so: OK
+/usr/local/lib/imlib2/loaders/xpm.so: OK
+/usr/local/lib/libImlib2.so: OK
+/usr/local/lib/pkgconfig/imlib2.pc: OK
+/usr/local/share/doc/imlib2/COPYING: OK
+/usr/local/share/licenses/imlib2/COPYING: OK
+/usr/local/share/licenses/imlib2/COPYING-PLAIN: OK
+
+4b0137ed45b56c6f96301caaf70ceaeb6ffe44d6a7cb43cc6a52bf68057ce1bf  /home/user/migration-export.tar
+937472
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/feh: OK
+/usr/local/libexec/feh: OK
+/usr/local/share/applications/feh.desktop: OK
+/usr/local/share/doc/feh/COPYING: OK
+/usr/local/share/doc/feh/README.md: OK
+/usr/local/share/feh/fonts/NotoSans-Medium.ttf: OK
+/usr/local/share/feh/fonts/OFL.txt: OK
+/usr/local/share/feh/fonts/README.md: OK
+/usr/local/share/feh/fonts/yudit.ttf: OK
+/usr/local/share/feh/images/feh.png: OK
+/usr/local/share/feh/images/feh.svg: OK
+/usr/local/share/feh/images/menubg_default.png: OK
+/usr/local/share/licenses/feh/COPYING: OK
+/usr/local/share/licenses/feh/OFL.txt: OK
+
+23cb970f0c45bbe2100ae7c728a1f326be223b5ebcfbc60efb0c9b00d2c16690  /home/user/migration-export.tar
+1182208
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

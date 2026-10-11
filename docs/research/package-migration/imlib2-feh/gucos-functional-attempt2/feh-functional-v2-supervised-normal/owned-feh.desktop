@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=feh Image Viewer
+Exec=feh %F
+TryExec=feh
+Categories=Graphics;Viewer;
+Terminal=false
