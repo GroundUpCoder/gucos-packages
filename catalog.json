@@ -465,6 +465,26 @@
       "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/13421d9c28b7b2b58d8184a0e9989b88a8076ac6/apps/feh/package.json",
       "sha256": "fb693d96be7ec922e5f826b1ae6a47254ca4ee281c3635605744d3efe5510acc",
       "size": 3354
+    },
+    "ncurses": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/55e446def383ab58c7a1d16b137b46aca9165648/apps/ncurses/package.json",
+      "sha256": "137f875db8ea3d806c6d0746edd6cb049d3ab6c8778baece91b25aeee517f007",
+      "size": 219706
+    },
+    "awk": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/55e446def383ab58c7a1d16b137b46aca9165648/apps/awk/package.json",
+      "sha256": "7eee0cebda0707a90c66732368897c7663bcc8635fb479d869843c0b6fca8fcc",
+      "size": 1974
+    },
+    "doom": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/55e446def383ab58c7a1d16b137b46aca9165648/apps/doom/package.json",
+      "sha256": "584c8b5c0a0a46460e2745be9a51eaa98d4cfe946381475c0b71e341c2a92148",
+      "size": 3184
+    },
+    "quake": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/55e446def383ab58c7a1d16b137b46aca9165648/apps/quake/package.json",
+      "sha256": "2abef87dc6fa6a8f209dd3bce7516d07af905d1aaadcf7fb2f12d39abf12bd0a",
+      "size": 4525
     }
   }
 }
