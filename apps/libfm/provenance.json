@@ -1,0 +1,16 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/libfm/source",
+  "archiveSha256": "edcc6aad7bda75df1a73a7777974b638ac6362767d9b7880e10f4aeb6903dbe9",
+  "status": "source preparation only; no owned build or runtime acceptance",
+  "overlays": [
+    {
+      "file": "sources.lock.json",
+      "historicalPath": "apps/libfm/sources.lock.json",
+      "sha256": "3b15a31ea046e22b74d4f466b6376de71a307dd0aed53f34895b2ffd15e3540e"
+    }
+  ],
+  "inventorySha256": "9027ffeafc0d3d901efdc5824775e30087f0d6d158e15ff815c290261300c99d",
+  "recipeBasis": "apps/libfm/source/install.sh"
+}

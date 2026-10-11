@@ -1,0 +1,16 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/pcmanfm/source",
+  "archiveSha256": "b50e4e1dbb185347e6e63a80f5bdbcac98b7ae34e3f9a2d7761eec379047cf37",
+  "status": "source preparation only; no owned build or runtime acceptance",
+  "overlays": [
+    {
+      "file": "sources.lock.json",
+      "historicalPath": "apps/pcmanfm/sources.lock.json",
+      "sha256": "170098dc5cb4608ee82318e0fb69168977490b2dc3203808554686bbcdd6a0ac"
+    }
+  ],
+  "inventorySha256": "250745dddb6d43665b12e67130d6d99ae1fad62e09a643b17b4246040814c9ba",
+  "recipeBasis": "apps/pcmanfm/source/install.sh"
+}
