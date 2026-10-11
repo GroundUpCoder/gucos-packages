@@ -1,0 +1,14 @@
+[
+  {
+    "path": "bin/gameboy",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/gucos-gameboy.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/gameboy/peanut_gb.h",
+    "mode": 420
+  }
+]

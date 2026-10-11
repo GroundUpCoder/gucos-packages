@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/gameboy",
+  "archiveSha256": "8bcdc876cdad41f0f877b0abb3b80f89dc88f57ed16132ab2bdd0727d7481db0",
+  "status": "source migration candidate; no new guest execution"
+}
