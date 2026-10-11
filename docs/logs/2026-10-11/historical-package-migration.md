@@ -75,3 +75,11 @@ dependencies were rebuilt by gucman build; fresh binary/GUI acceptance will use
 the immutable published dependency archives. No GUI acceptance claimed yet.
 Guest stdout went to the execution session; no separate source build.log was
 captured. Report, receipt and archive are retained without reconstructing logs.
+
+Independent gpt reviewer approved b87a2fd source evidence only: six evidence
+hashes, exact f1e6286 inputs and720 payload paths/modes verified. Detailed source
+stdout cannot be independently inspected because no separate log was retained.
+Fresh gtk-binary-gpt-61a87f88 has28 manifests/1958 payload hashes frozen against
+public dependency artifacts, and queued install/consumers/reload/GUI with logs
+redirected to persistent files. PCG32 host retry is queued on the same exclusive
+browser lane as a conservative serial reservation; it cannot overlap GTK.
