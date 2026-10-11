@@ -28,3 +28,13 @@ correctionf1e6286 is reviewed; its fresh build and GUI are pending.
 PCG auditf6c217e is reviewed: retained manifest exists, all17 generated definitions
 are absent. Package-local host preparation is required; no historical pass is
 promoted to current acceptance. Public live additions remain41 split entries.
+
+## HarfBuzz split source acceptance
+
+Reservation4b39cd09 completed both components on61a. Static archive4c61baf1 is
+92932096 bytes with4 outputs; main archiveee4dfdeb is61039104 bytes with50
+outputs. Static and shared shaping/subset/FreeType consumers passed. Both are
+below100MiB; original153MB monolithic export remains preserved and unpublished.
+Receipts/artifacts and split-source evidence are retained. Fresh combined binary
+acceptance includes Pango to establish its relinked consumers on the final split
+closure. Publication and translator reproducibility remain separate pending scopes.

@@ -1797,7 +1797,7 @@
     {
       "id": "harfbuzz",
       "kind": "historical-canonical-name",
-      "state": "source-candidate",
+      "state": "source-accepted-binary-pending",
       "historicalManifest": "apps/harfbuzz/wasm-package.json",
       "historicalManifestSha256": "867537107b51bcb6295a5d9c69a7e57d33cbc7dd67c5c3e84aaea158d8ea8412",
       "historicalEvidence": [
@@ -1838,10 +1838,15 @@
           "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
           "scope": "Retained generated C compiled in guest, static/shared golden shaping/subset/FreeType consumers passed, installed52 outputs and exported exact raw archive; translation reproducibility limitation retained",
           "evidence": "batch-11/source"
+        },
+        {
+          "scope": "Guest main-component shared link from accepted static dependency; static/shared shaping/subset/FreeType consumers, install50 outputs and61039104-byte export",
+          "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+          "evidence": "docs/research/package-migration/batch-11/split-main-source"
         }
       ],
       "blockers": [
-        "Monolithic source accepted; split static/main recipes require all fresh guest/binary/public gates.",
+        "Fresh binary consumers/reload, artifact review and public publication/acceptance pending.",
         "Historical translator-adapter hash mismatch: translation reproducibility not established."
       ],
       "candidate": "apps/harfbuzz",
