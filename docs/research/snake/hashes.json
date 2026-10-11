@@ -1,0 +1,17 @@
+{
+  "harness-attempt-2.json": "5542c21eb1d2e0b71be79349d92a2d62fd1af7e70eebb64113d5ac85f542caff",
+  "harness-attempt-3.json": "08a46fda7708c41f1b4dab519ced4e5359976009a1e458a92484114549e437c3",
+  "harness-attempt-1.json": "e336c3a4e2c74f82c38a5a6710651e68f6c88658d0021e03fe95110d1bc739a7",
+  "source/config.json": "e334d6d61138e773757934669dd26e21c23dd58846c907012d4cecb11cad0a2a",
+  "source/build-console.log": "141fb9e1d0d4ce28ced4c22a63e54db74ddd2e0efaac0af489aaab55b651ddf2",
+  "source/candidate-manifests.json": "f80992b4f3e676637bb3e6badcabcd37b690f7d5fd645fca432480d93c5c137c",
+  "source/build-snake.json": "edb4c112a2d016017a635ae63c7eedb27d008d596979ef38a6e1c73b7366ba61",
+  "binary/snake-functional.log": "ebdcc5eb4096e0774ad677c911ae7e05da10544bced8ff79fe9304b882cfb58e",
+  "binary/config.json": "fa53a849ef45691c41e1b65b3fd5488365b2c44337e8c833d06ac387a7f333d0",
+  "binary/install-snake.json": "0fee7a6ad7ca2b01a9ad8925e989a70efd956e89001c8e002fbd8ba391a6cc32",
+  "binary/snake-functional.json": "7c713b1a58f27b26df1e1170b17a0cf76395469006a22d1ddb240cfd23986edd",
+  "binary/reload-snake.json": "53f48797288b68273c558b7c9d8fa4a5ef2e46523ae98048317147afdce55b06",
+  "binary/snake.sha256": "ad5a9c0579ea549e62a01aa7159eb998182796d00507d33f26a5477d34fc0875",
+  "binary/snake-playing.png": "c754cfe43878f3d24b481ad70a80e0ec654fa814b1b40ffbc6bb2207538831c6",
+  "binary/candidate-manifests.json": "0c974f210f7de1df27c48bb428b9b95a0a36345c671b9efe5df8ceed4bc29b5d"
+}
