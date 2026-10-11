@@ -5,8 +5,10 @@ import {resolve} from 'node:path';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 assert(process.env.MACHINE_JOB_ID);
-const run=process.env.COMPAT_RUN_DIR;
-for(const file of ['desktop-functional.json','desktop-functional.log','desktop-snake.png','desktop-menu.png'])await assert.rejects(access(resolve(run,file)),{code:'ENOENT'});
+const run=process.env.COMPAT_RUN_DIR,attempt=process.env.MIGRATION_ATTEMPT||'';
+assert(!attempt||/^[a-zA-Z0-9_-]+$/.test(attempt));
+const output=file=>resolve(run,file.replace(/(\.[^.]+)$/,attempt?'-'+attempt+'$1':'$1'));
+for(const file of ['desktop-functional.json','desktop-functional.log','desktop-snake.png','desktop-menu.png'])await assert.rejects(access(output(file)),{code:'ENOENT'});
 const report={startedAt:new Date().toISOString(),status:'running',checks:[]};
 let s,pending;
 try{
@@ -54,20 +56,20 @@ echo DESKTOP-GAME-PASS`);
  async function marker(text){await Promise.race([s.page.waitForFunction(text=>shell.busybox?.log.includes(text),text,{timeout:35000}),pending.then(()=>{throw Error('Desktop ended before '+text);})]);}
  await marker('DESKTOP-WM-READY');
  const canvas=await visibleCanvas(s.page);
- await canvas.click({position:await canvasPosition(canvas,{x:25,y:585})});
+ await canvas.click({position:await canvasPosition(canvas,{x:10,y:585})});
  await s.page.waitForTimeout(150);
- await writeFile(resolve(run,'desktop-menu.png'),await canvas.screenshot(),{flag:'wx'});
+ await writeFile(output('desktop-menu.png'),await canvas.screenshot(),{flag:'wx'});
  for(let i=0;i<=index;i++)await s.page.keyboard.press('ArrowDown');
  await s.page.keyboard.press('Enter');
  await marker('DESKTOP-SNAKE-BOARD');report.checks.push('actual-jwm-menu-selection','xterm-pty-game-board-pixels');
  await s.page.keyboard.press('ArrowUp');
- await writeFile(resolve(run,'desktop-snake.png'),await canvas.screenshot(),{flag:'wx'});
+ await writeFile(output('desktop-snake.png'),await canvas.screenshot(),{flag:'wx'});
  await s.page.keyboard.press('q');
  await marker('DESKTOP-SNAKE-CLOSED');
  assert.match(await pending,/DESKTOP-GAME-PASS/);pending=undefined;
  report.checks.push('keyboard-input-and-single-q-close','jwm-survives-game-exit');report.status='passed';
 }catch(error){report.status='failed';report.error=String(error.stack||error);throw error;}
 finally{
- if(s){await writeFile(resolve(run,'desktop-functional.log'),await s.page.evaluate(()=>shell.busybox?.log||'').catch(()=>''),{flag:'wx'});await s.close();}
- report.finishedAt=new Date().toISOString();await writeFile(resolve(run,'desktop-functional.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});
+ if(s){await writeFile(output('desktop-functional.log'),await s.page.evaluate(()=>shell.busybox?.log||'').catch(()=>''),{flag:'wx'});await s.close();}
+ report.finishedAt=new Date().toISOString();await writeFile(output('desktop-functional.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});
 }
