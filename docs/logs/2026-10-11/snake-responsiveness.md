@@ -32,3 +32,13 @@ The core input is an explicit read-only distribution from `~/git/gucos/dist`,
 runtime 19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441.
 All package builds execute inside the browser guest. No sibling package
 repository is consumed by a core build or deployment.
+
+Reviewer follow-up approved fixture corrections at
+`d4e4a2b0f88da5be20e1118439b1dcf1e9041724`: latency samples now require a
+perpendicular turn and unchanged other axis, and upgrade cleanup always closes
+the browser even if evidence writing fails. Native pipe-batched regression
+also passed after addition, scheduler job 4be451c3-8e17-49c4-aed9-750881a4832b.
+
+The isolated branch merges ongoing published work rather than rewriting it.
+The upgrade plan was aligned with accepted MicroPython baseline 4395482;
+Snake's old catalog identity and output inventory remain unchanged.
