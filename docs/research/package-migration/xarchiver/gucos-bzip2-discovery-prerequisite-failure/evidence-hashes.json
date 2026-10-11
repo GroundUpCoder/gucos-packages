@@ -1,0 +1,11 @@
+{
+  "assessment.md": "bcb17ee04f4919af196f182f8baa2f6c0e6f8ce9abe78945a52d2a362eb1fa72",
+  "candidate-manifests.json": "bd9ed3c15a6d2d45a8e04e5f11cc3740054f51feea69974db78e5131ada6ef23",
+  "config.json": "9691ad2a1768962a65ec74f0772d9027f33c62e2c43a44ab543a496ba7560b2e",
+  "consumers-discovery-xarchiver.json": "ef72d51ef03a59c871de2d3f20dc9e2c06aa0974683fa2a84f432c31ae9155f9",
+  "consumers.log": "0a0e05a5ba27f6e5ae1fa9f86a3547effa112ea7124c397ca0096123e998cca3",
+  "install-discovery-xarchiver.json": "348d5b31c4e77f08e7f52ce64ac49e81ab084e7ff7ec90f09d7f1c8e55f855f2",
+  "install.log": "cdf4e923a9094081b1d1fb3f4e33e56beb8ccc4e6cb17ff42a19961238815069",
+  "observed-runtime.json": "0d98d052115a8d872c15332acf045e91cba3c127728d3c3ddd567d3f8de5e9ff",
+  "xarchiver.sha256": "34e2ee3384f3046bc0491534a1de8b83b188c36791415c78c30b077336fd8fb6"
+}
