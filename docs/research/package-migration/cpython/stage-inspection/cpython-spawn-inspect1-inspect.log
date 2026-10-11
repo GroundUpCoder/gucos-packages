@@ -1,0 +1,10 @@
+MISSING /tmp/gucman.pxouuu/builds/cpython.stage
+MISSING /tmp/gucman.pxouuu/builds/cpython.stage/bin/python3.14
+MISSING /tmp/gucman.pxouuu/builds/cpython.stage/lib/python3.14/encodings/__init__.py
+MISSING /tmp/gucman.pxouuu/builds/cpython.stage/lib/python3.14/os.py
+MISSING /tmp/gucman.pxouuu/builds/cpython.stage/lib/python3.14/_wasm_posix_subprocess.py
+MISSING /tmp/gucman.pxouuu/builds/cpython/source/port/subprocess-smoke.py
+MISSING /usr/local/bin/python3.14
+MISSING /usr/local/lib/gucman/packages/cpython/current/manifest.json
+drwx------    2        18 Oct 11 19:00 /tmp/cpython-consumer.towewu
+CPYTHON-STAGE-UNAVAILABLE

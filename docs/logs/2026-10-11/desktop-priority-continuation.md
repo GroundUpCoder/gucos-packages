@@ -300,3 +300,10 @@ execution remain pending. Original defective archive/evidence remain retained.
 CLI/shooter install and consumer gates passed, then Doom private passed and
 Quake failed its live-shareware-level assertion. Reload did not execute; no
 acceptance advances from these partial results. Both runs are retained.
+
+Galculator corrected eba5f3d source build passed and exported24 regular outputs
+with exact modes; independent export review and GUI persistence remain pending.
+CPython copied-profile inspection actually confirmed stageAvailable=false and
+raw command status0. No reproduction ran and no substitute interpreter was used.
+The original subprocess failure cause remains unknown; a reviewed diagnostic
+full-suite rebuild is now needed to capture its hidden child error streams.

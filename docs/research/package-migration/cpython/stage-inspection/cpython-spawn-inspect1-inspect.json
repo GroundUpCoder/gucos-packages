@@ -1,0 +1,20 @@
+{
+  "status": "inspected-only",
+  "mode": "inspect",
+  "attempt": "inspect1",
+  "scope": "Diagnosis only; no build, install, export or acceptance",
+  "startedAt": "2026-10-11T10:26:07.056Z",
+  "bindings": {
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "inputCommit": "9faf8e57f008dea55fcd9d25cb6942443f714c3f",
+    "configSha256": "afe2ee5f1a8b6aacbe35dcedf7ec008693df390885dc74950303408ec3e65e0e",
+    "helperSha256": "6f37d0e065a3a8aad1a715191806bc59c3ed2011b629b95b60b29c4d064ce675",
+    "driverSha256": "6f31d729642d5528089a5be8877d996a1379a9ea2d1528aec3f6c9789ad82516"
+  },
+  "stageAvailable": false,
+  "rawCommandStatuses": [
+    0
+  ],
+  "sessionLogSha256": "a95b9752f61b99252114c1e31f6abb56210c2c6e0d1df3221d2f3867df2174f9",
+  "finishedAt": "2026-10-11T10:26:08.127Z"
+}
