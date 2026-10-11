@@ -1,0 +1,35 @@
+{
+  "name": "l3afpad",
+  "version": "0.8.18-2",
+  "dependencies": [
+    "gtk3-x11",
+    "pkgconf",
+    "libintl"
+  ],
+  "dependencyRequirements": {
+    "gtk3-x11": {
+      "version": "3.24.43-1"
+    },
+    "pkgconf": {
+      "version": "2.3.0-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "l3afpad.desktop"
+  ]
+}

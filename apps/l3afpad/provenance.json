@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/l3afpad",
+  "archiveSha256": "3c5ad7f0d57a732f2249076332c834924dbe8f2460ef54cc99b223313451fb8d",
+  "status": "source migration candidate; no new guest execution"
+}
