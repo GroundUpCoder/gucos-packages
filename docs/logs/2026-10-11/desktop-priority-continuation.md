@@ -354,3 +354,12 @@ per phase and exclusive profile ownership. It verifies complete installed
 manifest/payload/mode closure and binds receipts to the profile and reviewed
 driver. Galculator reload requires the completed normal pair. Xarchiver reload
 and PCManFM are excluded. Host checks do not establish guest functionality.
+
+Applied the independently reviewed native zoom observer and narrow Feh driver
+delta unchanged. Original observer and existing closure/session/supervisor
+remain unchanged. New observer SHA256 32980fd5c5480a63a28b246331e604ae5c81553503ec6c1bd32f1bd119859455;
+driver d99607a172ed810c8cc19077174170752291cb232a15b0ef7dd735cfdda35f21.
+Full native histograms and exact 64x48 zoom extents are required; restoration
+requires the original exact pixels. Near-primary bounds reflect the retained
+screenshot, while native and green scaling remain untested. Both prior failed
+attempts remain intact. Execution requires a fresh exclusive profile.

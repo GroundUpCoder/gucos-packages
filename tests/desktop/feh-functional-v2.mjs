@@ -1,5 +1,6 @@
-// Private A proposal. Original B feh-observe.c remains byte-identical.
-// Requires independent B review before copy/execution; no package changes.
+// Private B zoom-only adaptation of A Feh v2; requires independent A review.
+// Original B feh-observe.c remains byte-identical.
+// Requires independent A review before copy/execution; no package changes.
 import assert from 'node:assert/strict';
 import {readFile,writeFile,mkdir,realpath} from 'node:fs/promises';
 import {resolve} from 'node:path';
@@ -64,11 +65,13 @@ with tarfile.open(sys.argv[1]) as t:
  report.binding.closure=closure.binding;report.binding.closureSha256=closure.sha256;
  await host('closure.json',JSON.stringify(closure.binding,null,2)+'\n');
  report.sourceHashes={};
- for(const name of ['feh-functional-v2.mjs','feh-functional-v2-session.mjs','feh-functional-v2-supervisor.c','feh-functional-v2-closure.mjs']){const b=await readFile(new URL(name,import.meta.url));report.sourceHashes[name]=sha(b);await host(name,b);}
+ for(const name of ['feh-functional-v2.mjs','feh-functional-v2-session.mjs','feh-functional-v2-supervisor.c','feh-functional-v2-closure.mjs','feh-zoom-observe.c']){const b=await readFile(new URL(name,import.meta.url));report.sourceHashes[name]=sha(b);await host(name,b);}
  for(const [name,hash] of Object.entries({'feh-functional-v2-session.mjs':'245a0939fc0758bcddc7bbc43a3b3db4cdbd34c98f12f4d9b329787b4c7d9328','feh-functional-v2-supervisor.c':'02e9c06e113cecc6cad249bd4185ba6a8b54dd784d22b4755ac877649ebbec67'}))assert.equal(report.sourceHashes[name],hash);
  for(const name of ['tests/compatibility/session.mjs','tests/desktop/menu-xapps.mjs','tests/desktop/windows-xapps.c','tests/desktop/menu.mjs','tests/desktop/poll.mjs','tests/migration/canvas.mjs'])report.sourceHashes[name]=sha(await readFile(resolve(repo,name)));
  const observer=await readFile(resolve(repo,'tests/desktop/feh-observe.c'));
  assert.equal(sha(observer),'15c5ae24aa8fb2538ffe34c67f19c10872959d19b1e8f0badd6820b9817556b5');report.originalBObserverSha256=sha(observer);await host('original-B-feh-observe.c',observer);
+ const zoomObserver=await readFile(new URL('./feh-zoom-observe.c',import.meta.url));assert.equal(sha(zoomObserver),'32980fd5c5480a63a28b246331e604ae5c81553503ec6c1bd32f1bd119859455');
+ report.zoomObserver={sha256:sha(zoomObserver),scope:'Native80x60 fixture; narrow near-primary histogram/extents; green scaling unobserved before this proposal'};
  if(phase==='reload'){
   prior=JSON.parse(await readFile(statePath));const b=await readFile(resolve(run,stem+'-normal/report.json'));assert.equal(sha(b),prior.normalReportSha256);assert.equal(JSON.parse(b).status,'passed-normal');assert.deepEqual(prior.binding,report.binding);assert.deepEqual(prior.sourceHashes,report.sourceHashes);
  }
@@ -95,14 +98,15 @@ with tarfile.open(sys.argv[1]) as t:
  const menu=originalMenu.replace('>'+command+'</Program>','>'+g+'/supervisor '+g+'</Program>'),jwmrc=originalConfig.replace(include,'<Include>'+g+'/menu.xml</Include>');
  for(const [name,text] of [['original-menu.xml',originalMenu],['original-jwmrc',originalConfig],['menu.xml',menu],['jwmrc',jwmrc]])await host(name,text);
  await put(g+'/menu.xml',menu);await put(g+'/jwmrc',jwmrc);
- const supervisor=await readFile(new URL('./feh-functional-v2-supervisor.c',import.meta.url));await put(g+'/supervisor.c',supervisor);await put(g+'/observer.c',observer);
- report.compile=await s.command(`set -eu\nprintf '${sha(supervisor)}  ${g}/supervisor.c\\n${sha(observer)}  ${g}/observer.c\\n' | sha256sum -c -\ncc ${g}/supervisor.c -o ${g}/supervisor\ncc ${g}/observer.c -I/usr/local/include -L/usr/local/lib -lX11 -lxcb -lXau -o ${g}/observer\nsha256sum ${g}/supervisor ${g}/observer`);
+ const supervisor=await readFile(new URL('./feh-functional-v2-supervisor.c',import.meta.url));await put(g+'/supervisor.c',supervisor);await put(g+'/observer.c',observer);await put(g+'/zoom-observer.c',zoomObserver);
+ report.compile=await s.command(`set -eu\nprintf '${sha(supervisor)}  ${g}/supervisor.c\\n${sha(observer)}  ${g}/observer.c\\n${sha(zoomObserver)}  ${g}/zoom-observer.c\\n' | sha256sum -c -\ncc ${g}/supervisor.c -o ${g}/supervisor\ncc ${g}/observer.c -I/usr/local/include -L/usr/local/lib -lX11 -lxcb -lXau -o ${g}/observer\ncc ${g}/zoom-observer.c -I/usr/local/include -L/usr/local/lib -lX11 -lxcb -lXau -o ${g}/zoom-observer\nsha256sum ${g}/supervisor ${g}/observer ${g}/zoom-observer`);
  report.menuHelpers=await installObserver(s);d=await desktopSession(s,{configPath:g+'/jwmrc',controlPath:g+'/control',workingDirectory:directory});report.helpers=d.helper;canvas=await visibleCanvas(s.page);
  const rows=rootMenuRows(menu),index=rows.findIndex(r=>r.includes('>'+g+'/supervisor '+g+'</Program>'));assert(index>=0);
  await canvas.click({position:await canvasPosition(canvas,{x:10,y:585})});const popup=await observe(d,'menu');await canvas.click({position:await canvasPosition(canvas,{x:popup.x+popup.width/2,y:popup.y+1+(index+0.5)*(popup.height-2)/(rows.length+2)})});
  report.menu={instrumented:true,index,popup,workingDirectory:directory,delegates:command};
  async function sample(mode,args=''){
-  const output=await d.command(`rc=0; DISPLAY=:1 ${g}/observer ${mode} ${args} || rc=$?; printf '\\nFEH-OBSERVER-STATUS %s\\n' "$rc"`);
+  const executable=mode==='pixels'?'zoom-observer':'observer';
+  const output=await d.command(`rc=0; DISPLAY=:1 ${g}/${executable} ${mode} ${args} || rc=$?; printf '\\nFEH-OBSERVER-STATUS %s\\n' "$rc"`);
   const m=output.match(/\nFEH-OBSERVER-STATUS (\d+)\r?\n$/);assert(m,output);const code=Number(m[1]);assert([0,3,4].includes(code),output);return {code,value:code===0?JSON.parse(output.slice(0,m.index).trim()):null};
  }
  let w;await bounded((async()=>{const until=Date.now()+30000;while(Date.now()<until){w=(await sample('window')).value;if(w)return;await s.page.waitForTimeout(150);}throw Error('Feh client discovery failed');})(),45000,'Feh discovery deadline');assert(w);report.window=w;
@@ -116,8 +120,10 @@ with tarfile.open(sys.argv[1]) as t:
   report.samples[label]=[];return bounded((async()=>{
    const box=await canvas.boundingBox();assert(box);const park=await canvasPosition(canvas,{x:799,y:599});await s.page.mouse.move(box.x+park.x,box.y+park.y);
    let previous,stable=0;const until=Date.now()+30000;
-   while(Date.now()<until){const sampleResult=await sample('pixels',`${w.xid} ${pid}`),value=sampleResult.value;
-    const history=report.samples[label];history.push({at:new Date().toISOString(),...sampleResult});if(history.length>120)history.shift();
+   while(Date.now()<until){assert(report.samples[label].length<120,'Native sample cap: '+label);const sampleResult=await sample('pixels',`${w.xid} ${pid}`),value=sampleResult.value;
+    const history=report.samples[label],record={at:new Date().toISOString(),...sampleResult};history.push(record);
+    await host(`sample-${label}-${String(history.length).padStart(3,'0')}.json`,JSON.stringify(record)+'\n');
+    if(value){assert(Array.isArray(value.histogram)&&value.histogram.length>0&&value.histogram.length<=4800);let total=0,last=-1;for(const bin of value.histogram){assert(Number.isInteger(bin.rgb)&&bin.rgb>last&&bin.rgb<=0xffffff&&Number.isInteger(bin.count)&&bin.count>0);last=bin.rgb;total+=bin.count;}assert.equal(total,4800);}
     const key=value&&JSON.stringify(value);stable=key&&key===previous?stable+1:0;previous=key;
     if(value&&stable>=3&&predicate(value)){await noCrash();await host(label+'.png',await canvas.screenshot());return value;}
     await s.page.waitForTimeout(150);
@@ -131,11 +137,19 @@ with tarfile.open(sys.argv[1]) as t:
  await s.page.keyboard.press('ArrowRight');report.next=await settled('next',v=>solid(v,other));
  await s.page.keyboard.press('ArrowLeft');const baseline=report.previous=await settled('previous',v=>solid(v,color));
  report.zoomBaseline={width:baseline.width,height:baseline.height,hash:baseline.hash,color};
- const sameViewport=v=>v.width===baseline.width&&v.height===baseline.height;
- await s.page.keyboard.press('ArrowDown');report.zoomOut=await settled('zoom-out',v=>sameViewport(v)&&v[color].count>0&&v[color].count<4800&&v[other].count===0&&identity(v)!==identity(baseline));
- await s.page.keyboard.press('ArrowUp');report.zoomIn=await settled('zoom-in',v=>sameViewport(v)&&v[color].count>report.zoomOut[color].count&&v[other].count===0);
- await s.page.keyboard.press('ArrowDown');report.beforeReset=await settled('before-reset',v=>sameViewport(v)&&v[color].count>0&&v[color].count<4800&&v[other].count===0&&identity(v)!==identity(baseline));
- await s.page.keyboard.press('Shift+Digit8');report.reset=await settled('reset',v=>solid(v,color)&&identity(v)===identity(baseline));
+ assert.equal(baseline.width,80);assert.equal(baseline.height,60);
+ const sameViewport=v=>v.width===80&&v.height===60;
+ function zoomed(v){
+  const e=v[color+'Near'],opposite=v[other+'Near'];
+  return sameViewport(v)&&e.count===3072&&e.minX===8&&e.minY===6&&e.maxX===71&&e.maxY===53
+   &&e.count===(e.maxX-e.minX+1)*(e.maxY-e.minY+1)&&opposite.count===0&&v[other].count===0&&identity(v)!==identity(baseline);
+ }
+ const restored=v=>sameViewport(v)&&solid(v,color)&&identity(v)===identity(baseline)
+  &&JSON.stringify(v.histogram)===JSON.stringify(baseline.histogram);
+ await s.page.keyboard.press('ArrowDown');report.zoomOut=await settled('zoom-out',zoomed);
+ await s.page.keyboard.press('ArrowUp');report.zoomIn=await settled('zoom-in',restored);
+ await s.page.keyboard.press('ArrowDown');report.beforeReset=await settled('before-reset',zoomed);
+ await s.page.keyboard.press('Shift+Digit8');report.reset=await settled('reset',restored);
  await s.page.keyboard.press('q');
  await bounded(poll(s.page,async p=>{const b=await shell.busybox.read(p);return ArrayBuffer.isView(b)&&new TextDecoder().decode(b)==='done\n';},g+'/done',15000),18000,'Feh supervised quit deadline');
  const wait=await readGuest(g+'/result.json');await host('waitpid.json',wait);report.exit=JSON.parse(wait.toString());assert.equal(report.exit.pid,pid);assert.equal(report.exit.rawStatus,0);assert.equal(report.exit.exited,1);assert.equal(report.exit.exitCode,0);assert.equal(report.exit.signaled,0);assert.equal(report.exit.signal,0);
