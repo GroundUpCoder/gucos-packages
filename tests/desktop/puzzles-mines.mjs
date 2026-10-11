@@ -75,9 +75,21 @@ try{
  await canvas.click({button:'right',position:await canvasPosition(canvas,point)});
  const flagged=await board('flagged',{different:initial});assert.notEqual(flagged,initial,'Physical right click must place a flag');
  await s.page.keyboard.press('u');assert.equal(await board('flag-undo',{equal:initial}),initial,'Undoing a flag restores the pristine board');
- await click(point.x,point.y);const moved=await board('opened',{different:initial});
+ report.openingPoint=point;report.initialBoardPixelHash=initial;
+ const box=await canvas.boundingBox(),position=await canvasPosition(canvas,point);
+ await s.page.mouse.move(box.x+position.x,box.y+position.y);
+ let held;
+ try{await s.page.mouse.down({button:'left'});await s.page.waitForTimeout(200);
+  const p=await observePixels(d,'puzzle-board','Mines');held=`${p.width}x${p.height}:${p.hash}`;report.heldBoardPixelHash=held;
+  await writeFile(resolve(run,stem+'-held.png'),await canvas.screenshot(),{flag:'wx'});
+ }finally{await s.page.mouse.up({button:'left'});}
+ // Do not move away until release has produced a stable opened board.
+ let opened,last,stable=0;const deadline=Date.now()+30000;
+ while(Date.now()<deadline){await s.page.waitForTimeout(250);const p=await observePixels(d,'puzzle-board','Mines'),hash=`${p.width}x${p.height}:${p.hash}`;stable=hash===last?stable+1:0;last=hash;if(stable>=5&&hash!==initial&&hash!==held){opened=hash;break;}}
+ assert(opened,'Release must produce a stable board distinct from pristine and pressed-cell highlight');
+ const moved=await board('opened',{equal:opened,different:initial});
  assert.notEqual(moved,initial,'First safe cell opening must expose the board');
- report.openingPoint=point;report.flaggedBoardSha256=flagged;
+ report.openingPoint=point;report.flaggedBoardPixelHash=flagged;
  await fileDialog(true);
  const saved=await s.page.evaluate(async path=>Array.from(await shell.busybox.read(path)||[]),savePath);assert(saved.length>100);report.savedSha256=sha(Buffer.from(saved));
  await quit();report.relaunchMenu=await clickMenuEntry(d,entry);w=await observe(d,'window','Mines');assert(w.pid>0);assert.notEqual(w.pid,report.firstWindow.pid);
