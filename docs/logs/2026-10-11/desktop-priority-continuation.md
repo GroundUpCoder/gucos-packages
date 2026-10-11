@@ -135,3 +135,22 @@ GTK3-X11 acceptance is retained at its recorded software-X11 scope and runtime;
 it does not supply the historical static/SDL/Broadway contract. GTK desk, gallery
 and desktop applications retain separate migration and functional obligations.
 Historical kernel desktop policy must be redesigned in userland.
+
+Corrected Xarchiver source evidence `fe4f012` independently passed exact-export
+review: 220 historical source blobs/modes, seven frozen inputs, and 31 output
+paths/modes. Archive SHA-256
+`a309654d4252f17f0b527337f1adb7df5081e13a224253a162dc340744b8eeb8`,
+935,424 bytes. A fresh binary fixture freezes 30 manifests and 1,993 payload
+hashes. Install, installed consumer and previously reviewed layout discovery
+are queued; this is not archive-operation or publication acceptance.
+
+Corrected Galculator evidence `65e51d0` independently passed exact-export review:
+24 output paths/modes, five retained evidence hashes, frozen inputs and receipt.
+Archive SHA-256
+`d8c2501adcf66ecb631bef119b8e1459f434472fcb28bbbad486ac7ff8f1e994`,
+1,132,544 bytes. The corrected staged-link test passed with reused dependencies;
+the earlier loader failure remains retained. A fresh binary fixture freezes 29
+manifests and 1,982 payload hashes. Install, consumer and layout discovery await
+scheduler admission. Arithmetic, settings behavior and public acceptance remain
+separate gates. Both runs used runtime `19609f47` and frozen source inputs
+`cd33207`; neither changes the 91 published / 88 accepted-here counts.
