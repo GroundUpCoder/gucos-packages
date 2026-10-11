@@ -1,0 +1,30 @@
+[
+  {
+    "path": "bin/quake",
+    "mode": 493
+  },
+  {
+    "path": "libexec/quake",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/gucos-quake.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/quake/1-gnu.txt",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/quake/2-SHAREWARE-LICENSE.txt",
+    "mode": 420
+  },
+  {
+    "path": "share/quake/id1/pak0.pak",
+    "mode": 420
+  },
+  {
+    "path": "share/quake/id1/autoexec.cfg",
+    "mode": 420
+  }
+]

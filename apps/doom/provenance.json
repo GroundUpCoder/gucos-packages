@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/doom",
+  "archiveSha256": "9bada6dfbaae60491f2fbb7fb306eb64a65346ea1c85dac9e3859345dde5ac4b",
+  "status": "source migration candidate; no new guest execution"
+}

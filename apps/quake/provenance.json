@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/quake",
+  "archiveSha256": "771ae475b536124d38ee7559c3973b73911dcc69deedf4f69e124ebb6c410314",
+  "status": "source migration candidate; no new guest execution"
+}
