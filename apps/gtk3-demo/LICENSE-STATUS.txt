@@ -1,0 +1,18 @@
+GTK 3 Demo Gallery provenance and unresolved local license scope
+
+COPYING is preserved byte-exact from the pinned historical tree and official
+GTK 3.24.43 archive. It contains GNU Library General Public License version 2
+(June 1991). Official GTK 3.24.43 meson.build declares LGPL-2.1-or-later;
+demos/gtk-demo/main.c selects GTK_LICENSE_LGPL_2_1, whose enum documentation
+in gtk/gtkaboutdialog.h explicitly includes later versions. All fourteen
+retained original demos match the checksum-verified official release archive.
+Thus upstream LGPL-2.1-or-later attribution is supported despite the bundled
+COPYING text version. UPSTREAM.json records original demo/COPYING identities.
+Official release: https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.tar.xz
+Official checksums: https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.43.sha256sum
+
+The replacement local main.c launcher, installer and colorsel-browser.c
+adaptation have no explicit application grant in the selected historical tree
+or ancestor licensing statements inspected. GroundUpCoder Git authorship is
+provenance, not itself a grant. No local license is assigned here. This notice
+is not a grant. Publication remains pending clarification of local license scope.

@@ -1,0 +1,20 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/gtk-desk",
+  "archiveSha256": "d67da921d8526f68d54847560015731af76bc2185502755922358a95128c5da9",
+  "inventorySha256": "e7db887cf352c514e2757464c4e50b23a2c929b06ca90ef4b619f18e3074d61e",
+  "status": "source preparation only; no owned build or runtime acceptance; application license unresolved",
+  "recipeBasis": "vendor/gtk-desk/install.sh",
+  "adaptations": [
+    "Preserve all five historical source blobs without modifications.",
+    "Use GTK3-X11 pkgconf and shared-library launcher instead of WASM_POSIX_SURFACES.",
+    "Add package-owned desktop entry and explicit gio-core dependency consistent with GTK3-X11 consumers.",
+    "Install original PORT.md and an explicit unresolved-license status notice; no license grant inferred.",
+    "Replace historical browser acceptance invocation with bounded headless SDK linking test; GUI acceptance remains separate."
+  ],
+  "licensing": {
+    "historicalManifestLicenses": [],
+    "status": "No license text or grant present in pinned application tree; publication blocked pending authoritative clarification."
+  }
+}

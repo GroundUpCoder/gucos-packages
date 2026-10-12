@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=GTK Desk
+Comment=Calculator and Lights Out
+Exec=gtk-desk
+Categories=Utility;Calculator;Game;
+Terminal=false

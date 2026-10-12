@@ -1,0 +1,37 @@
+[
+  {
+    "path": "vendor/gtk-desk/PORT.md",
+    "gitMode": "100644",
+    "gitBlob": "0ec8df716bcc956a438ce0ba129178d36f74bc15",
+    "sha256": "7bb5dc3d3ce85c01ff2f895a4d7fa35a707be7574c16aa4d9cd6843189b19fca",
+    "bytes": 366
+  },
+  {
+    "path": "vendor/gtk-desk/install.sh",
+    "gitMode": "100644",
+    "gitBlob": "960ffd91378606eafaa5cacccc2bf5792ed90f7f",
+    "sha256": "339f740e321950516d7f2c4f2f6399c69b9ab32b5fcad0f62ea222d437094467",
+    "bytes": 468
+  },
+  {
+    "path": "vendor/gtk-desk/main.c",
+    "gitMode": "100644",
+    "gitBlob": "60b735eddef48d74f410abf461dfa6d3199cfc91",
+    "sha256": "0d82b6209ae9782c6df33b5a41e38cd07722ec3481e589f6e4915e0193fcc4f9",
+    "bytes": 7993
+  },
+  {
+    "path": "vendor/gtk-desk/port/package-accept.mjs",
+    "gitMode": "100644",
+    "gitBlob": "1014431d6c767c1fa75f1e041bcb9f4d9ea6e715",
+    "sha256": "3f54e5a74210a0adbc244818c5e98f90a8770db8b9174668151f074c09e7ba27",
+    "bytes": 129
+  },
+  {
+    "path": "vendor/gtk-desk/wasm-package.json",
+    "gitMode": "100644",
+    "gitBlob": "2b5a03411472e692a97831d89abb218af7964e47",
+    "sha256": "c5529bd99f191da03dfd7e12bef667da77429abc53158c796ad51034d4b061f1",
+    "bytes": 828
+  }
+]

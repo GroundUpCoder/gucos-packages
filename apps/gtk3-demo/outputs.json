@@ -1,0 +1,34 @@
+[
+  {
+    "path": "bin/gtk3-demo",
+    "mode": 493
+  },
+  {
+    "path": "libexec/gtk3-demo",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/gtk3-demo.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/gtk3-demo/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/gtk3-demo/UPSTREAM.json",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/gtk3-demo/PORT.md",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/gtk3-demo/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/gtk3-demo/LICENSE-STATUS.txt",
+    "mode": 420
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/gtk3-demo",
+  "archiveSha256": "3d9d6bfd57052da8334bad9ead520cbaa4333043f673834c7f67f299fad78575",
+  "status": "Source candidate only; execution and licensing scope clarification pending"
+}

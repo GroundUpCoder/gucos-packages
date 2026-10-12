@@ -1,0 +1,22 @@
+[
+  {
+    "path": "bin/gtk-desk",
+    "mode": 493
+  },
+  {
+    "path": "libexec/gtk-desk",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/gtk-desk.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/gtk-desk/PORT.md",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/gtk-desk/LICENSE-STATUS.txt",
+    "mode": 420
+  }
+]

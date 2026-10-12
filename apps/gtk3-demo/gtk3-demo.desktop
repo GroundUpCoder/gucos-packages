@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=GTK 3 Demo Gallery
+Exec=gtk3-demo
+Categories=Development;GTK;
+Terminal=false

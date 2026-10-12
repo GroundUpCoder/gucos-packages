@@ -1,0 +1,10 @@
+GTK Desk historical licensing status — unresolved
+
+Source: vendor/gtk-desk at historical commit
+0b9b3245fe11a3bc677d81113cba90cd0ae80446.
+All five historical files are preserved unchanged in source.tar.
+The historical package manifest declares an empty licenses array. The source
+tree contains no license text, and main.c contains no license grant.
+No license is assigned by this migration. This notice is not a license grant.
+GTK dependency licensing does not establish a license for this application.
+Authoritative application licensing clarification is required before publication.

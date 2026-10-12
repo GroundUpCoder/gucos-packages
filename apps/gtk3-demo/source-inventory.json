@@ -1,0 +1,156 @@
+[
+  {
+    "path": "vendor/gtk3-demo/COPYING",
+    "gitMode": "100644",
+    "gitBlob": "5bc8fb2c8f757e34a0d8f4644f589d57609e213f",
+    "sha256": "b7993225104d90ddd8024fd838faf300bea5e83d91203eab98e29512acebd69c",
+    "bytes": 25383
+  },
+  {
+    "path": "vendor/gtk3-demo/PORT.md",
+    "gitMode": "100644",
+    "gitBlob": "95feaa373fa04d94ef58a08286f3f4bacc1681f4",
+    "sha256": "351a8a0d7871f83bd2c57cfc2b3ec866e0b83fba81bff0462021a9458a44d0a7",
+    "bytes": 1796
+  },
+  {
+    "path": "vendor/gtk3-demo/UPSTREAM.json",
+    "gitMode": "100644",
+    "gitBlob": "c4fa0288a82c3010aa44580f65254daba4251291",
+    "sha256": "e538c8eeaa9257cba8ec68e18a77747f07dfb8b3f8adee1fb08c93f44feacaee",
+    "bytes": 1438
+  },
+  {
+    "path": "vendor/gtk3-demo/button_box.c",
+    "gitMode": "100644",
+    "gitBlob": "7d383d383f27c8c7c5bbcebb52fb18b9fad57860",
+    "sha256": "9973e3cd148119f7437808553904bd070b631d2f50596d6b0070a1812219bc18",
+    "bytes": 4492
+  },
+  {
+    "path": "vendor/gtk3-demo/colorsel-browser.c",
+    "gitMode": "100644",
+    "gitBlob": "d0b0ab5cc47123bd95af7a0d284c2009cf49dddb",
+    "sha256": "d4ddea9e9353a54fb5ca3d664b534d4083ad73a17b994c5e54bebf1fd3dab3e2",
+    "bytes": 3346
+  },
+  {
+    "path": "vendor/gtk3-demo/colorsel.c",
+    "gitMode": "100644",
+    "gitBlob": "c00d50357d481aa20045c35c1378d73c721ca03c",
+    "sha256": "a391b16c822347bcdc7d8e4f9351a1855a64e2ac08b2e65af3d44b3ae470b3ef",
+    "bytes": 3097
+  },
+  {
+    "path": "vendor/gtk3-demo/combobox.c",
+    "gitMode": "100644",
+    "gitBlob": "9b2b4a6dce51e681963b36fe81ae92c9c9065dfe",
+    "sha256": "4d559a59d4590b623a5d8c5595cdcca63e5fd444d90292433866d35b576ec195",
+    "bytes": 13024
+  },
+  {
+    "path": "vendor/gtk3-demo/drawingarea.c",
+    "gitMode": "100644",
+    "gitBlob": "3b7da92dcd6f2d0719ea112982db32a7e926c0df",
+    "sha256": "fef2a84f060e8130b116eef93f8127eff75ff22ee02094ad8d6a9ad714ace2c4",
+    "bytes": 8562
+  },
+  {
+    "path": "vendor/gtk3-demo/editable_cells.c",
+    "gitMode": "100644",
+    "gitBlob": "f57ae5cdfe6dd0138ae2b71e8283241e29ca249e",
+    "sha256": "dc3a587f7a533bb52a2f4e582f300080d3d4c2e8239cee251cbe88a1c1761f8e",
+    "bytes": 11878
+  },
+  {
+    "path": "vendor/gtk3-demo/entry_buffer.c",
+    "gitMode": "100644",
+    "gitBlob": "d4863e38962a31ff97bd57255328a146bb943a3d",
+    "sha256": "a815106b4aedf6eead957813ba8874542c5e037133ba6471ec9076d2116b89c9",
+    "bytes": 1898
+  },
+  {
+    "path": "vendor/gtk3-demo/entry_completion.c",
+    "gitMode": "100644",
+    "gitBlob": "cb822356b5062a680f633e7b846c33bdf3cd485f",
+    "sha256": "ab796e91743315b9e1d1698391f64cc4d0ea2d19b173335c1b65cde2e8782f52",
+    "bytes": 2675
+  },
+  {
+    "path": "vendor/gtk3-demo/expander.c",
+    "gitMode": "100644",
+    "gitBlob": "2a2dff8b9542003a0a4fd96b8b080f2c2231a9bb",
+    "sha256": "71287ec89afac0fac54bef53727736e7d2036f001001d125bf6244907c077e4b",
+    "bytes": 3972
+  },
+  {
+    "path": "vendor/gtk3-demo/flowbox.c",
+    "gitMode": "100644",
+    "gitBlob": "863838db4f5f0b65a29d06bb3a200848226c2ab9",
+    "sha256": "7c6bb8611050b8904bf03ea6360c8f99d8aad6e89cfb2a7b782be2810d2ce64c",
+    "bytes": 13164
+  },
+  {
+    "path": "vendor/gtk3-demo/hypertext.c",
+    "gitMode": "100644",
+    "gitBlob": "4a221d8b9d1ac317ce6e5f2d534c20a8e7a376dc",
+    "sha256": "cb19b4739228786ee464ecc5c593abbb0bdc0897c424f03d6308faac04d38adb",
+    "bytes": 9542
+  },
+  {
+    "path": "vendor/gtk3-demo/install.sh",
+    "gitMode": "100644",
+    "gitBlob": "27de065c6e6a1b895c0d9636ad5768225d9c36a5",
+    "sha256": "fd4756421504775190a3c43ff71009134e7c3f08531466b663615bb96f6a3658",
+    "bytes": 687
+  },
+  {
+    "path": "vendor/gtk3-demo/list_store.c",
+    "gitMode": "100644",
+    "gitBlob": "6a77071f663220c6f5c9de919cd011efaca4c8f3",
+    "sha256": "0a7f31be254d7cd737af0bddeb4337e4e2862373ac94fd782fd706bced46074e",
+    "bytes": 10896
+  },
+  {
+    "path": "vendor/gtk3-demo/main.c",
+    "gitMode": "100644",
+    "gitBlob": "b4be63060c82dc79856b0e420ecb7728269a60b6",
+    "sha256": "e52eb93b4171e86913351271246f2faaed4fefb777733fbeb2c1f660aa17cd43",
+    "bytes": 4425
+  },
+  {
+    "path": "vendor/gtk3-demo/panes.c",
+    "gitMode": "100644",
+    "gitBlob": "98cf8bc47b9e86d5d4a1c492273a2538c317f849",
+    "sha256": "49b71ef1df273df64b3c06719df93a18197c9f64c54636a07dc2754d1b67288b",
+    "bytes": 6478
+  },
+  {
+    "path": "vendor/gtk3-demo/port/package-accept.mjs",
+    "gitMode": "100644",
+    "gitBlob": "1796eca8de53dc1603a097db4af765d141e695ea",
+    "sha256": "75bccffdcf5d517e075862fa97935598937cc11085d8845bbfb81e6202b59ab2",
+    "bytes": 149
+  },
+  {
+    "path": "vendor/gtk3-demo/search_entry.c",
+    "gitMode": "100644",
+    "gitBlob": "63df73cb00ef50dc6ac16a7f4770148d008c9b25",
+    "sha256": "1cc5093707e8f8f13ac28f74e98059c7a2974bfc4d21275510e975a175c8e311",
+    "bytes": 8548
+  },
+  {
+    "path": "vendor/gtk3-demo/tree_store.c",
+    "gitMode": "100644",
+    "gitBlob": "a327af0071f1e78d9e8bac1ade60aff1d4e2522b",
+    "sha256": "8338fca0e823b81bb4b81275e85b759fb1d725858a5742d6a13aeb1bb96b6bce",
+    "bytes": 16828
+  },
+  {
+    "path": "vendor/gtk3-demo/wasm-package.json",
+    "gitMode": "100644",
+    "gitBlob": "8c071938a0e454cc438f18d455549a52992d8d51",
+    "sha256": "261464e6addf76bb015540178f6c7de7e3b7198f2fd58b00aeb0c2e7ff403378",
+    "bytes": 835
+  }
+]
