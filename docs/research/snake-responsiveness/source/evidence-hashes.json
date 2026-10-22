@@ -1,0 +1,26 @@
+{
+  "build-receipt.json": {
+    "sha256": "d7d63cd0db431c98dbdff1adeae2693f228391dde2e730014c45735928fe221c",
+    "size": 3156
+  },
+  "observed-runtime.json": {
+    "sha256": "bd912996d957a09dd2c47017fc6b57a706e851c514e8ba62590e23a6b5157d7e",
+    "size": 123
+  },
+  "config.json": {
+    "sha256": "8227efc6b1ce52ab3c0c2cc77fe4247e1d625b5c733a50681c563dc3b6db5534",
+    "size": 20994
+  },
+  "candidate-manifests.json": {
+    "sha256": "7380599111f99303f0bbeabfdaa246a292ea83e8170f0cb79de54cbbc4f3a373",
+    "size": 2869
+  },
+  "build-snake.json": {
+    "sha256": "a52ce445ddf5e981ed6cea9380bb37e3bde1da0a9d7074b570d62963a32ae9bb",
+    "size": 305
+  },
+  "build.log": {
+    "sha256": "50e275e08ba3828c4f69f1a386a71ca7ec586dc6c0878f55a50ed02cc577446b",
+    "size": 3759
+  }
+}

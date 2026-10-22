@@ -1,0 +1,27 @@
+gucman: unknown source
+
+
+22 functions, 44636 bytes
+22 functions, 44636 bytes
+22 functions, 44450 bytes
+PCG32-488-PASS whole native
+PCG32-488-PASS objects native
+PCG32-488-PASS archive native
+22 functions, 189925 bytes
+22 functions, 189925 bytes
+22 functions, 189739 bytes
+PCG32-488-PASS whole dispatch
+PCG32-488-PASS objects dispatch
+PCG32-488-PASS archive dispatch
+
+/usr/local/bin/pcg32-check: OK
+/usr/local/include/pcg32/api.h: OK
+/usr/local/lib/libpcg32.a: OK
+/usr/local/share/licenses/pcg32/LICENSE: OK
+/usr/local/share/pcg32/native-values.json: OK
+/usr/local/share/pcg32/translation.json: OK
+
+b8e7287dc490377c0ad61374d02d9fe00c1cc5d41c45962cf4ec60bf3bcfcb0d  /home/user/migration-export.tar
+106496
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

@@ -1,0 +1,18 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/tk/source",
+  "archiveSha256": "cdd69b983e19df3a4507bde5a5066625d76e3afefe5116e2a46d099f3a444924",
+  "overlays": [
+    {
+      "file": "license.terms",
+      "historicalPath": "apps/tk/license.terms",
+      "sha256": "2cde822b93ca16ae535c954b7dfe658b4ad10df2a193628d1b358f1765e8b198"
+    },
+    {
+      "file": "tcl-license.terms",
+      "historicalPath": "apps/tk/tcl-license.terms",
+      "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16"
+    }
+  ]
+}

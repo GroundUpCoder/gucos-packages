@@ -1,0 +1,5 @@
+0a29ed156f4312570e980be1839ca1d2758723174e0564fc7389dc1170a58966  /usr/local/lib/libSDL3_image.a
+239e3f7995f383c410ba2bc58e19324651d1b3385bb32f6ee466bfeb0d47147e  /usr/local/lib/libSDL3_image.so
+cbc66b02dbb703c9ebfa78a655a896df39171bac361f394af27ae26d3a68da43  /usr/local/lib/pkgconfig/sdl3-image.pc
+7826eca0a0f7e591f38dd844e207a200aac81a59b20d8a30c3af8c6282af13e6  /usr/local/share/licenses/sdl3-image/LICENSE.txt
+87843a77852202dd0c4b646eee825592f87453dff2b74fafe186f35aaa5b0c36  /usr/local/include/SDL3_image/SDL_image.h

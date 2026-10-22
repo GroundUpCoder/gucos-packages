@@ -1,0 +1,13 @@
+{
+  "action": "install",
+  "names": [
+    "sdl3-gfx",
+    "sdl3-image",
+    "sdl3-mixer"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "2dffb44e9a0a880420de292c6e1ba58f0cbd4be0",
+  "startedAt": "2026-10-11T03:51:12.528Z",
+  "status": "passed",
+  "finishedAt": "2026-10-11T03:51:22.065Z"
+}

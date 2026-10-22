@@ -1,0 +1,64 @@
+gucman: unknown source
+
+gucman: build migration:bitmap: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20982 bytes; transfer finished
+gucman: Resolving: migration:bitmap
+gucman: Downloading manifest for migration:bitmap (3038 bytes)
+  Connecting; waiting for response…
+  Downloaded 3038 / 3038 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:bitmap
+gucman: Checking cached object: manifest for migration:bitmap
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: bitmap (0 remaining after this)
+gucman: Downloading bitmap source: source.tar (1751040 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.67 / 1.67 MiB (100%); transfer finished
+gucman: Verifying download: bitmap source: source.tar
+gucman: Checking cached object: bitmap source: source.tar
+gucman: Downloading bitmap source: build.sh (1479 bytes)
+  Connecting; waiting for response…
+  Downloaded 1479 / 1479 bytes (100%); transfer finished
+gucman: Verifying download: bitmap source: build.sh
+gucman: Checking cached object: bitmap source: build.sh
+gucman: Downloading bitmap source: test.sh (349 bytes)
+  Connecting; waiting for response…
+  Downloaded 349 / 349 bytes (100%); transfer finished
+gucman: Verifying download: bitmap source: test.sh
+gucman: Checking cached object: bitmap source: test.sh
+Building migration:bitmap; running trusted recipe with access to your guest files
+4905 functions, 4590315 bytes
+9 functions, 16408 bytes
+8 functions, 15664 bytes
+BITMAP-CONVERSION-PASS
+gucman: Installing bitmap: 0/23 files
+gucman: Installing bitmap: 23/23 files
+gucman: Preparing checksums: bitmap
+gucman: Checksummed bitmap: 23/23 files
+gucman: Saving transaction: bitmap
+gucman: Verifying staged files: bitmap
+gucman: Activating: bitmap
+Installed migration:bitmap 1.1.1-1
+
+34f72c3aab7aa06ce6cc1e2fbe4076e4b7a7b32e9fe1f81b4f57da2baffd5d5f  /home/user/migration-export.tar
+4669440
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

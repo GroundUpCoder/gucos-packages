@@ -1,0 +1,13 @@
+{
+  "action": "install",
+  "names": [
+    "harfbuzz-static",
+    "harfbuzz",
+    "pango"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "f1e6286e9ef2f40868f917e1a58614985a63b970",
+  "startedAt": "2026-10-11T00:00:54.638Z",
+  "status": "passed",
+  "finishedAt": "2026-10-11T00:05:58.123Z"
+}

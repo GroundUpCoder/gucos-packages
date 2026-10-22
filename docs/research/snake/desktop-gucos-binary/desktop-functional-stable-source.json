@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-10-11T04:45:45.202Z",
+  "status": "failed",
+  "checks": [
+    "frozen-candidate-manifests-and-payloads"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"Snake\">/usr/local/bin/desktop-menu launch wasm-posix-snake.desktop</Program>\n</JWM>\n",
+  "snakeIndex": 1,
+  "observerSha256": "f96b06259532e2e1ef05295c3b6df3a61b3360f4e0a5b75c8fc3ed5eeb855367",
+  "harnessSha256": "6e6e3736f792e422118b90b7120972d4659e0c13694c5d2748251820b0ca1a4b",
+  "error": "AssertionError [ERR_ASSERTION]: 2263 functions, 2274719 bytes\nDESKTOP-WM-READY\nDESKTOP-MENU 0 449 129 122\nX connection to :1 broken (explicit kill or server shutdown).\r\nxterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server \":1\"\r\n\n\n3 !== 0\n\n    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)",
+  "finishedAt": "2026-10-11T04:46:15.898Z"
+}

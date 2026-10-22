@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "name": "sdl3-mixer",
+  "version": "3.2.4-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "sdl3-vt",
+      "pthreads"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-mixer/source.tar",
+      "sha256": "776c28ebfbb254e369db4969c17655723c799bc7f3b69cf94e333648c3919177",
+      "size": 1945600
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-mixer/build.sh",
+      "sha256": "479f4fc47bb83689aa6c455a984746687ec8a5fb23ba00582e929a8d75009331",
+      "size": 997
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-mixer/test.sh",
+      "sha256": "cd3a1621a785ad0146704794bfb90de558e056dd314610bd3c3915193bc55980",
+      "size": 360
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libSDL3_mixer.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libSDL3_mixer.so",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/sdl3-mixer.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/sdl3-mixer/LICENSE.txt",
+      "mode": 420
+    },
+    {
+      "path": "include/SDL3_mixer/SDL_mixer.h",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/sdl3-mixer/LICENSE.txt"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-mixer/binaries/63058c93547c6edb6492f6cd84d7e0383c058a30d7a2b32b1b136f0146c52595.tar",
+    "sha256": "63058c93547c6edb6492f6cd84d7e0383c058a30d7a2b32b1b136f0146c52595",
+    "size": 1290240
+  }
+}

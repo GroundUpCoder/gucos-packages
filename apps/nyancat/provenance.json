@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/nyancat",
+  "archiveSha256": "9052e7c23a9a60fd05b5e73c778d3609215b813022e520e1099221f5354e3fd7",
+  "status": "source migration candidate; no new guest execution"
+}

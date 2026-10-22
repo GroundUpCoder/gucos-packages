@@ -1,0 +1,57 @@
+gucman: unknown source
+
+gucman: build migration:sdl3-mixer: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19787 bytes; transfer finished
+gucman: Resolving: migration:sdl3-mixer
+gucman: Downloading manifest for migration:sdl3-mixer (1481 bytes)
+  Connecting; waiting for response…
+  Downloaded 1481 / 1481 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sdl3-mixer
+gucman: Checking cached object: manifest for migration:sdl3-mixer
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sdl3-mixer (0 remaining after this)
+gucman: Downloading sdl3-mixer source: source.tar (1945600 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.86 / 1.86 MiB (100%); transfer finished
+gucman: Verifying download: sdl3-mixer source: source.tar
+gucman: Checking cached object: sdl3-mixer source: source.tar
+gucman: Downloading sdl3-mixer source: build.sh (997 bytes)
+  Connecting; waiting for response…
+  Downloaded 997 / 997 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-mixer source: build.sh
+gucman: Checking cached object: sdl3-mixer source: build.sh
+gucman: Downloading sdl3-mixer source: test.sh (360 bytes)
+  Connecting; waiting for response…
+  Downloaded 360 / 360 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-mixer source: test.sh
+gucman: Checking cached object: sdl3-mixer source: test.sh
+Building migration:sdl3-mixer; running trusted recipe with access to your guest files
+614 functions, 507328 bytes
+547 functions, 517807 bytes
+1161 functions, 963918 bytes
+Decoded /tmp/gucman.pmttuu/builds/sdl3-mixer/source/port/fixtures/tone.wav: 8000 frames, power 555.067
+Decoded /tmp/gucman.pmttuu/builds/sdl3-mixer/source/port/fixtures/tone.ogg: 8000 frames, power 563.331
+Decoded /tmp/gucman.pmttuu/builds/sdl3-mixer/source/port/fixtures/tone.mp3: 8000 frames, power 500.871
+Decoded /tmp/gucman.pmttuu/builds/sdl3-mixer/source/port/fixtures/tone.flac: 8000 frames, power 555.067
+SDL3-MIXER-PASS
+Decoded /tmp/gucman.pmttuu/builds/sdl3-mixer/source/port/fixtures/tone.wav: 8000 frames, power 555.067
+Decoded /tmp/gucman.pmttuu/builds/sdl3-mixer/source/port/fixtures/tone.ogg: 8000 frames, power 563.331
+Decoded /tmp/gucman.pmttuu/builds/sdl3-mixer/source/port/fixtures/tone.mp3: 8000 frames, power 500.871
+Decoded /tmp/gucman.pmttuu/builds/sdl3-mixer/source/port/fixtures/tone.flac: 8000 frames, power 555.067
+SDL3-MIXER-PASS
+gucman: Installing sdl3-mixer: 0/5 files
+gucman: Installing sdl3-mixer: 5/5 files
+gucman: Preparing checksums: sdl3-mixer
+gucman: Checksummed sdl3-mixer: 5/5 files
+gucman: Saving transaction: sdl3-mixer
+gucman: Verifying staged files: sdl3-mixer
+gucman: Activating: sdl3-mixer
+Installed migration:sdl3-mixer 3.2.4-1
+
+63058c93547c6edb6492f6cd84d7e0383c058a30d7a2b32b1b136f0146c52595  /home/user/migration-export.tar
+1290240
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-shared",
+  "archiveSha256": "5dc38c7398292384ba48a5284f93f666e93e95ac2c0a9c2ff422dbf8372d53ec",
+  "status": "source migration candidate; no new guest execution",
+  "preparedInput": "Existing x11-server 21.1.24-1 static archives retain original 2a9cca provenance; new shared linkage must be accepted separately."
+}

@@ -1,0 +1,56 @@
+gucman: unknown source
+
+gucman: install migration:desktop-entries: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19402 bytes; transfer finished
+gucman: Resolving: migration:desktop-entries
+gucman: Checking cached object: manifest for migration:desktop-entries
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: desktop-entries (0 remaining after this)
+Already installed: desktop-entries
+
+gucman: install migration:jwm: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19402 bytes; transfer finished
+gucman: Resolving: migration:jwm
+gucman: Checking cached object: manifest for migration:jwm
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: jwm (0 remaining after this)
+Already installed: jwm
+
+/usr/local/bin/desktop-menu: OK
+/usr/local/share/doc/desktop-entries/README.md: OK
+/usr/local/share/licenses/desktop-entries/LICENSE: OK
+
+163489b75dab324b54877b8fdf406deac279adaf7699c6082d0a4a69a1c4891e  /home/user/migration-export.tar
+40448
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/jwm: OK
+/usr/local/share/jwm/system.jwmrc: OK
+/usr/local/share/jwm/wasm.jwmrc: OK
+/usr/local/share/jwm/app-menu.sh: OK
+/usr/local/share/licenses/jwm/LICENSE: OK
+/usr/local/bin/start-jwm: OK
+/usr/local/libexec/jwm/wait-display: OK
+
+00a2635b8736c972557ae7ec168625c7d56ed9f04947be1876c57365c3d9f8ba  /home/user/migration-export.tar
+9654272
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

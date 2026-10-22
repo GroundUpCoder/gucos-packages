@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "name": "qjs",
+  "version": "2025.09.13-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "pthreads"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/qjs/source.tar",
+      "sha256": "5f199234ac4c7ae1e8589f3c389021b35ae4025dd202a2a479108314c1af31c6",
+      "size": 2723840
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/qjs/build.sh",
+      "sha256": "be6fd03fb25b79ac41a38965af8db6955b3ed265f4865ed227dfdb723c4a7278",
+      "size": 1415
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/qjs/test.sh",
+      "sha256": "1e2018dc077d83a4953ac65779d8f90a511f583808874c3d2df8549fb23e87da",
+      "size": 976
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/qjs",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/qjs/LICENSE",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/qjs/LICENSE"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/qjs/binaries/52e9673a8378302376231dc4fc99545ab216a54a42ab4139744a3759be70997b.tar",
+    "sha256": "52e9673a8378302376231dc4fc99545ab216a54a42ab4139744a3759be70997b",
+    "size": 6267904
+  }
+}

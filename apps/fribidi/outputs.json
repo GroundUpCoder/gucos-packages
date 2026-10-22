@@ -1,0 +1,150 @@
+[
+  {
+    "path": "lib/libfribidi.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libfribidi.so",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/bidi-types.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/common.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/debug.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-arabic.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-begindecls.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-bidi-types-list.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-bidi-types.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-bidi.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-brackets.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-char-sets-cap-rtl.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-char-sets-cp1255.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-char-sets-cp1256.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-char-sets-iso8859-6.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-char-sets-iso8859-8.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-char-sets-list.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-char-sets-utf8.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-char-sets.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-common.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-config.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-deprecated.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-enddecls.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-flags.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-joining-types-list.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-joining-types.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-joining.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-mirroring.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-shape.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-types.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-unicode-version.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi-unicode.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/fribidi.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/joining-types.h",
+    "mode": 420
+  },
+  {
+    "path": "include/fribidi/run.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/fribidi.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/fribidi/COPYING",
+    "mode": 420
+  }
+]

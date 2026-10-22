@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=L3afpad
+Exec=l3afpad %f
+TryExec=l3afpad
+Icon=l3afpad
+MimeType=text/plain;
+Categories=Utility;TextEditor;
+Terminal=false

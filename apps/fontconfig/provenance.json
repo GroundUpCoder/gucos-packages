@@ -1,0 +1,19 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/fontconfig",
+  "archiveSha256": "f283165452eb04bb9a1b0ac132f1ac2e0a59071a52c2bc505363d44c23d78421",
+  "overlays": [
+    {
+      "file": "ABeeZee-Regular.ttf",
+      "historicalPath": "vendor/freetype/port/fonts/ABeeZee-Regular.ttf",
+      "sha256": "2901c8df256648cc2bb2e3afb381cb8d28e65ed3dbe11de20695ae4d5ffdeda9"
+    },
+    {
+      "file": "SourceCodePro-Regular.otf",
+      "historicalPath": "vendor/freetype/port/fonts/SourceCodePro-Regular.otf",
+      "sha256": "9f9664e2edf6f045c11e774f9bd0be6993971f2544a39061a5ce478b96b051f8"
+    }
+  ],
+  "status": "source migration candidate; no new guest execution"
+}

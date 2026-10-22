@@ -1,0 +1,624 @@
+{
+  "format": 1,
+  "name": "glib",
+  "version": "2.84.4-1",
+  "dependencies": [
+    "libiconv",
+    "libintl",
+    "pcre2"
+  ],
+  "dependencyRequirements": {
+    "libiconv": {
+      "version": "1.18-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    },
+    "pcre2": {
+      "version": "10.46-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "pthreads"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/glib/source.tar",
+      "sha256": "9d5c4fe37e0071cb2e8af3e8c319f7e71057e53262533b64f06a763ae1ba4d6a",
+      "size": 19445760
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/glib/build.sh",
+      "sha256": "6a82909c053cc4cf5bd72266e019b8baa0252390e7e82240b4ae957580fe9267",
+      "size": 17509
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/glib/test.sh",
+      "sha256": "7e1d538936ced8bfc22014add1c77d6a73f832663bc2750a707c9eed2bdb28b9",
+      "size": 428
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libglib-2.0.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libglib-2.0.so",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/glib-2.0.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/glib/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib-unix.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glibconfig.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/deprecated/gallocator.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/deprecated/gcache.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/deprecated/gcompletion.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/deprecated/gmain.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/deprecated/grel.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/deprecated/gthread.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/galloca.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/garray.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gasyncqueue.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gasyncqueueprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gatomic.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gbacktrace.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gbase64.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gbitlock.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gbookmarkfile.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gbsearcharray.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gbytes.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gcharset.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gcharsetprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gchecksum.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gconstructor-wasm-posix.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gconstructor.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gconstructorprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gconvert.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gconvertprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gdataset.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gdatasetprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gdate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gdatetime-private.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gdatetime.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gdir.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/genviron.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gerror.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gfileutils.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/ggettext.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/ghash.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/ghmac.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/ghook.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/ghostutils.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gi18n-lib.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gi18n.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/giochannel.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gjournal-private.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gkeyfile.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib-autocleanups.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib-init.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib-object.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib-private.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib-typeof.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib-unix.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib-unixprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib-visibility.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glib_trace.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glibconfig.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glibintl.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/glist.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gmacros.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gmain-internal.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gmain.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gmappedfile.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gmarkup.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gmem.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gmessages.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gmirroringtable.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gnode.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/goption.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gpathbuf.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gpattern.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gpoll.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gprimes.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gprintf.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gprintfint.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gqsort.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gquark.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gqueue.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/grand.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/grcbox.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/grcboxprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/grefcount.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/grefstring.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gregex.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gscanner.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gscripttable.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gsequence.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gshell.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gslice.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gslist.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gspawn-private.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gspawn.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gstdio.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gstdioprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gstrfuncs.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gstring.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gstringchunk.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gstrvbuilder.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gtestutils.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gthread-wasm-posix.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gthread.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gthreadpool.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gthreadprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gtimer.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gtimezone.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gtrace-private.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gtranslit-data.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gtrashstack.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gtree.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gtypes.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gunibreak.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gunichartables.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gunicode.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gunicodeprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gunicomp.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gunidecomp.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/guri.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/guriprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gutils.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gutilsprivate.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/guuid.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gvalgrind.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gvariant-core.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gvariant-internal.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gvariant-serialiser.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gvariant.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gvarianttype-private.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gvarianttype.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gvarianttypeinfo.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gversion.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gversionmacros.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gwakeup.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/gwin32.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/msvc_recommended_pragmas.h",
+      "mode": 420
+    },
+    {
+      "path": "include/glib-2.0/glib/valgrind.h",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/glib/COPYING"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/glib/binaries/34c4cf5fafdc17ad821969948ca9fcbc4ce4755d29f4d5624655460a9edccfbb.tar",
+    "sha256": "34c4cf5fafdc17ad821969948ca9fcbc4ce4755d29f4d5624655460a9edccfbb",
+    "size": 11364864
+  }
+}

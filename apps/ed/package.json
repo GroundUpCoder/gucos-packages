@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "name": "ed",
+  "version": "1.22.2-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/39dea16861872a535e09cdc381cd65947887f502/apps/ed/source.tar",
+      "sha256": "d4bbab7d41136e60291d2645468ac52380115748355673eddbfe2ef357518e36",
+      "size": 460800
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/39dea16861872a535e09cdc381cd65947887f502/apps/ed/build.sh",
+      "sha256": "e2ad01485edd42d574f2d7e45f10a9a89d48ed2b2757fe1cb98a2af1d59e910d",
+      "size": 386
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/39dea16861872a535e09cdc381cd65947887f502/apps/ed/test.sh",
+      "sha256": "0ff496414db31ac43aa02bde07794d13d9802990788bee2b2a0396c89fa4079b",
+      "size": 483
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/ed",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/ed/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "bin/red",
+      "mode": 493
+    }
+  ],
+  "licenses": [
+    "share/licenses/ed/COPYING"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/39dea16861872a535e09cdc381cd65947887f502/apps/ed/binaries/c57538abc6b97299ed3ba9d4f557a63a975222e3d4e7c192284fa144d213e0cb.tar",
+    "sha256": "c57538abc6b97299ed3ba9d4f557a63a975222e3d4e7c192284fa144d213e0cb",
+    "size": 140800
+  }
+}

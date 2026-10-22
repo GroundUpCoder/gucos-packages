@@ -1,0 +1,100 @@
+gucman: unknown source
+
+gucman: build migration:sqlite3: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 13706 bytes; transfer finished
+gucman: Resolving: migration:sqlite3
+gucman: Downloading manifest for migration:sqlite3 (1201 bytes)
+  Connecting; waiting for response…
+  Downloaded 1201 / 1201 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sqlite3
+gucman: Checking cached object: manifest for migration:sqlite3
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sqlite3 (0 remaining after this)
+gucman: Downloading sqlite3 source: source.tar (11479040 bytes)
+  Connecting; waiting for response…
+  Downloaded 10.95 / 10.95 MiB (100%); transfer finished
+gucman: Verifying download: sqlite3 source: source.tar
+gucman: Checking cached object: sqlite3 source: source.tar
+gucman: Downloading sqlite3 source: build.sh (521 bytes)
+  Connecting; waiting for response…
+  Downloaded 521 / 521 bytes (100%); transfer finished
+gucman: Verifying download: sqlite3 source: build.sh
+gucman: Checking cached object: sqlite3 source: build.sh
+gucman: Downloading sqlite3 source: test.sh (1365 bytes)
+  Connecting; waiting for response…
+  Downloaded 1365 / 1365 bytes (100%); transfer finished
+gucman: Verifying download: sqlite3 source: test.sh
+gucman: Checking cached object: sqlite3 source: test.sh
+Building migration:sqlite3; running trusted recipe with access to your guest files
+2949 functions, 2197441 bytes
+Error in 2nd command line argument: UNIQUE constraint failed: item.id
+SQLITE3-ACCEPTANCE-PASS
+gucman: Installing sqlite3: 0/2 files
+gucman: Installing sqlite3: 2/2 files
+gucman: Preparing checksums: sqlite3
+gucman: Checksummed sqlite3: 2/2 files
+gucman: Saving transaction: sqlite3
+gucman: Verifying staged files: sqlite3
+gucman: Activating: sqlite3
+Installed migration:sqlite3 3.53.1-1
+
+gucman: build migration:qjs: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 13706 bytes; transfer finished
+gucman: Resolving: migration:qjs
+gucman: Downloading manifest for migration:qjs (1164 bytes)
+  Connecting; waiting for response…
+  Downloaded 1164 / 1164 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:qjs
+gucman: Checking cached object: manifest for migration:qjs
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: qjs (0 remaining after this)
+gucman: Downloading qjs source: source.tar (2723840 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.60 / 2.60 MiB (100%); transfer finished
+gucman: Verifying download: qjs source: source.tar
+gucman: Checking cached object: qjs source: source.tar
+gucman: Downloading qjs source: build.sh (1415 bytes)
+  Connecting; waiting for response…
+  Downloaded 1415 / 1415 bytes (100%); transfer finished
+gucman: Verifying download: qjs source: build.sh
+gucman: Checking cached object: qjs source: build.sh
+gucman: Downloading qjs source: test.sh (976 bytes)
+  Connecting; waiting for response…
+  Downloaded 976 / 976 bytes (100%); transfer finished
+gucman: Verifying download: qjs source: test.sh
+gucman: Checking cached object: qjs source: test.sh
+Building migration:qjs; running trusted recipe with access to your guest files
+1817 functions, 6264270 bytes
+QJS-CLOSURE-42
+QJS-UPSTREAM: test_closure
+QJS-UPSTREAM: test_language
+QJS-UPSTREAM: test_builtin
+QJS-UPSTREAM: test_loop
+QJS-UPSTREAM: test_bigint
+QJS-UPSTREAM: test_std
+QJS-UPSTREAM: test_worker
+Error: intentional rejection
+QJS-ACCEPTANCE-PASS
+gucman: Installing qjs: 0/2 files
+gucman: Installing qjs: 2/2 files
+gucman: Preparing checksums: qjs
+gucman: Checksummed qjs: 2/2 files
+gucman: Saving transaction: qjs
+gucman: Verifying staged files: qjs
+gucman: Activating: qjs
+Installed migration:qjs 2025.09.13-1
+
+78054532854aa132c3b2402c9d8598d91213a78cbcaefc533a0aedd75f0b44f1  /home/user/migration-export.tar
+2200064
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+52e9673a8378302376231dc4fc99545ab216a54a42ab4139744a3759be70997b  /home/user/migration-export.tar
+6267904
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

@@ -1,0 +1,60 @@
+{
+  "micropython": {
+    "format": 1,
+    "name": "micropython",
+    "version": "1.28.0-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:56002/migration/micropython/source.tar",
+        "sha256": "5b7d286893218385b07b7ce387157275d749e81665c98f3a5917c185b9c89d67",
+        "size": 3430400
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:56002/migration/micropython/build.sh",
+        "sha256": "dffbfe887f713ce182deaf23f685fc5e7f16bb91bec1bb5459108f5b232eb1c2",
+        "size": 512
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:56002/migration/micropython/test.sh",
+        "sha256": "ff484c5ae795599c33afb135fc74f518ee6aba9f7d1a6953e37c49fb79212ea7",
+        "size": 414
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/micropython",
+        "mode": 493
+      },
+      {
+        "path": "bin/python",
+        "mode": 493
+      },
+      {
+        "path": "lib/wasm-posix/micropython",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/micropython/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/micropython/LICENSE"
+    ]
+  }
+}

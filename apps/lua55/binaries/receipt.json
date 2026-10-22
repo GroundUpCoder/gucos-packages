@@ -1,0 +1,77 @@
+{
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "sha256": "c7367892bdcad10585decd1a4a9a09488e6234b5e01daf990f158004879bd9a1",
+  "size": 1550848,
+  "guestManifest": {
+    "format": 1,
+    "name": "lua55",
+    "version": "5.5.0-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:52874/migration/lua55/source.tar",
+        "sha256": "deac229acbec5f8643cf6caa6faf491527fccbc70a501330c246169665c540a5",
+        "size": 993280
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:52874/migration/lua55/build.sh",
+        "sha256": "3d4619ac27e0d13c072b35a9f4def84bde12e99ce3b30a77ec9bb896bd44109f",
+        "size": 895
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:52874/migration/lua55/test.sh",
+        "sha256": "caef4b418aa3be46cda46c86371a46fd158bce296193c6887cc6efccf3c5bc06",
+        "size": 1140
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/lua55",
+        "mode": 493
+      },
+      {
+        "path": "lib/liblua5.5.a",
+        "mode": 420
+      },
+      {
+        "path": "include/lua5.5/lua.h",
+        "mode": 420
+      },
+      {
+        "path": "include/lua5.5/luaconf.h",
+        "mode": 420
+      },
+      {
+        "path": "include/lua5.5/lualib.h",
+        "mode": 420
+      },
+      {
+        "path": "include/lua5.5/lauxlib.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/lua55/lua.h",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/lua55/lua.h"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

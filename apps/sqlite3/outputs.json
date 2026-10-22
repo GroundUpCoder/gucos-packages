@@ -1,0 +1,10 @@
+[
+  {
+    "path": "bin/sqlite3",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/sqlite3/PUBLIC-DOMAIN",
+    "mode": 420
+  }
+]

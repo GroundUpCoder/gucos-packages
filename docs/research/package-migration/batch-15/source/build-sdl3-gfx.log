@@ -1,0 +1,61 @@
+gucman: unknown source
+
+gucman: build migration:sdl3-gfx: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19787 bytes; transfer finished
+gucman: Resolving: migration:sdl3-gfx
+gucman: Downloading manifest for migration:sdl3-gfx (1443 bytes)
+  Connecting; waiting for response…
+  Downloaded 1443 / 1443 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sdl3-gfx
+gucman: Checking cached object: manifest for migration:sdl3-gfx
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sdl3-gfx (0 remaining after this)
+gucman: Downloading sdl3-gfx source: source.tar (225280 bytes)
+  Connecting; waiting for response…
+  Downloaded 225280 / 225280 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx source: source.tar
+gucman: Checking cached object: sdl3-gfx source: source.tar
+gucman: Downloading sdl3-gfx source: build.sh (623 bytes)
+  Connecting; waiting for response…
+  Downloaded 623 / 623 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx source: build.sh
+gucman: Checking cached object: sdl3-gfx source: build.sh
+gucman: Downloading sdl3-gfx source: test.sh (524 bytes)
+  Connecting; waiting for response…
+  Downloaded 524 / 524 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx source: test.sh
+gucman: Checking cached object: sdl3-gfx source: test.sh
+Building migration:sdl3-gfx; running trusted recipe with access to your guest files
+66 functions, 82647 bytes
+546 functions, 508640 bytes
+SDL3-GFX-BENCH 19.990001
+SDL3-GFX-BENCH 20.040000
+SDL3-GFX-BENCH 20.025000
+SDL3-GFX-BENCH 19.980001
+SDL3-GFX-BENCH 20.159999
+SDL3-GFX-PASS
+612 functions, 579325 bytes
+SDL3-GFX-BENCH 16.160000
+SDL3-GFX-BENCH 16.144999
+SDL3-GFX-BENCH 16.115000
+SDL3-GFX-BENCH 16.140000
+SDL3-GFX-BENCH 16.125000
+SDL3-GFX-PASS
+SDL3-GFX-PASS
+SDL3-GFX-PASS
+gucman: Installing sdl3-gfx: 0/5 files
+gucman: Installing sdl3-gfx: 5/5 files
+gucman: Preparing checksums: sdl3-gfx
+gucman: Checksummed sdl3-gfx: 5/5 files
+gucman: Saving transaction: sdl3-gfx
+gucman: Verifying staged files: sdl3-gfx
+gucman: Activating: sdl3-gfx
+Installed migration:sdl3-gfx 2.0.23-1
+
+78542f6705c6e0cbf9d6d2e2663a8301dce0ff3770c119a280b61b90cf6dbe75  /home/user/migration-export.tar
+179712
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

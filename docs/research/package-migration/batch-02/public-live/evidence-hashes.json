@@ -1,0 +1,16 @@
+{
+  "candidate-manifests.json": "6715c725a98ab87b94153647bf080e9ca133abd4a21a3ba3c3008fb046aecb4b",
+  "config.json": "e4038d12f23f7764528c800cb5f808e2f4fc273a1ad2e7b323e599abfd1d728e",
+  "gui.log": "07ebe3e3850b7971f416726000db492e6a889184454fd0832c1f62cf5baaeb5c",
+  "install-xfontsel-xclipboard-xcutsel-oclock-xedit.json": "d541862c78839133b0ec40022f59bda0d84da196275d7d9ecfcb08050bffa29d",
+  "install.log": "ae12c45a6e055da7670c8410b2479212486fa4042ab30609f7989f6cd4e75f65",
+  "observed-runtime.json": "87c8bf902b247a380e61c6337c538c6428620e79d6533803cdbc6aeea2a0fa81",
+  "oclock.sha256": "9423300d9406e3d5e5f31c6f30ebf457976312553c136f4aea9b56b73f9ad64b",
+  "reload-xfontsel-xclipboard-xcutsel-oclock-xedit.json": "5d2302d224f30a43ad59b51b4ec584eca87f7268ecf8280e0c6184a1572ebfb2",
+  "reload.log": "d5169ae99ffab11cb61a62906d4ecbeef99c64a5ca53b4ef2bb37204218c6fb6",
+  "xclients-functional.log": "31939109189ced184c823f4c49dc7c1b9bcf4a74aef894893d49892839bacc5c",
+  "xclipboard.sha256": "75b30822281424852447dff4ecf2b1ae416e76761a161942d0a739db5dc2559d",
+  "xcutsel.sha256": "8106e3b645223bc602920f7ec896deffdc16ddea9060804fc68fc0ef99268001",
+  "xedit.sha256": "ac0b99a17a0fd1c34febe7d08d0bf82c37755b680c88a7e7ab0fe47974518e3f",
+  "xfontsel.sha256": "5fe4a998951c6c1d750027e4da1546cc64d5deddc839d277fff80681295eede1"
+}

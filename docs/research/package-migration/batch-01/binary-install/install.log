@@ -1,0 +1,227 @@
+[machine-job] queued: node tests/migration/stage.mjs install zlib cjson pkgconf bzip2 bzip2recover expat
+[machine-job] running: 5e50573b-a4b9-4cd6-8d24-7571298533d8
+gucman: unknown source
+
+gucman: install migration:zlib: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 6454 bytes; transfer finished
+gucman: Resolving: migration:zlib
+gucman: Downloading manifest for migration:zlib (1690 bytes)
+  Connecting; waiting for response…
+  Downloaded 1690 / 1690 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: zlib (0 remaining after this)
+gucman: Downloading zlib archive (513024 bytes)
+  Connecting; waiting for response…
+  Downloaded 513024 / 513024 bytes (100%); transfer finished
+gucman: Verifying download: zlib archive
+gucman: Checking cached object: zlib archive
+gucman: Unpacking: zlib
+gucman: Installing zlib: 0/6 files
+gucman: Installing zlib: 6/6 files
+gucman: Preparing checksums: zlib
+gucman: Checksummed zlib: 6/6 files
+gucman: Saving transaction: zlib
+gucman: Verifying staged files: zlib
+gucman: Activating: zlib
+Installed migration:zlib 1.3.2-1
+
+gucman: install migration:cjson: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 6454 bytes; transfer finished
+gucman: Resolving: migration:cjson
+gucman: Downloading manifest for migration:cjson (1578 bytes)
+  Connecting; waiting for response…
+  Downloaded 1578 / 1578 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:cjson
+gucman: Checking cached object: manifest for migration:cjson
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: cjson (0 remaining after this)
+gucman: Downloading cjson archive (174592 bytes)
+  Connecting; waiting for response…
+  Downloaded 174592 / 174592 bytes (100%); transfer finished
+gucman: Verifying download: cjson archive
+gucman: Checking cached object: cjson archive
+gucman: Unpacking: cjson
+gucman: Installing cjson: 0/4 files
+gucman: Installing cjson: 4/4 files
+gucman: Preparing checksums: cjson
+gucman: Checksummed cjson: 4/4 files
+gucman: Saving transaction: cjson
+gucman: Verifying staged files: cjson
+gucman: Activating: cjson
+Installed migration:cjson 1.7.19-1
+
+gucman: install migration:pkgconf: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 6454 bytes; transfer finished
+gucman: Resolving: migration:pkgconf
+gucman: Downloading manifest for migration:pkgconf (1497 bytes)
+  Connecting; waiting for response…
+  Downloaded 1497 / 1497 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: pkgconf (0 remaining after this)
+gucman: Downloading pkgconf archive (454656 bytes)
+  Connecting; waiting for response…
+  Downloaded 454656 / 454656 bytes (100%); transfer finished
+gucman: Verifying download: pkgconf archive
+gucman: Checking cached object: pkgconf archive
+gucman: Unpacking: pkgconf
+gucman: Installing pkgconf: 0/3 files
+gucman: Installing pkgconf: 3/3 files
+gucman: Preparing checksums: pkgconf
+gucman: Checksummed pkgconf: 3/3 files
+gucman: Saving transaction: pkgconf
+gucman: Verifying staged files: pkgconf
+gucman: Activating: pkgconf
+Installed migration:pkgconf 2.3.0-1
+
+gucman: install migration:bzip2: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 6454 bytes; transfer finished
+gucman: Resolving: migration:bzip2
+gucman: Downloading manifest for migration:bzip2 (1536 bytes)
+  Connecting; waiting for response…
+  Downloaded 1536 / 1536 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:bzip2
+gucman: Checking cached object: manifest for migration:bzip2
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: bzip2 (0 remaining after this)
+gucman: Downloading bzip2 archive (510464 bytes)
+  Connecting; waiting for response…
+  Downloaded 510464 / 510464 bytes (100%); transfer finished
+gucman: Verifying download: bzip2 archive
+gucman: Checking cached object: bzip2 archive
+gucman: Unpacking: bzip2
+gucman: Installing bzip2: 0/4 files
+gucman: Installing bzip2: 4/4 files
+gucman: Preparing checksums: bzip2
+gucman: Checksummed bzip2: 4/4 files
+gucman: Saving transaction: bzip2
+gucman: Verifying staged files: bzip2
+gucman: Activating: bzip2
+Installed migration:bzip2 1.0.8-1
+
+gucman: install migration:bzip2recover: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 6454 bytes; transfer finished
+gucman: Resolving: migration:bzip2recover
+gucman: Downloading manifest for migration:bzip2recover (1473 bytes)
+  Connecting; waiting for response…
+  Downloaded 1473 / 1473 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:bzip2recover
+gucman: Checking cached object: manifest for migration:bzip2recover
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: bzip2recover (0 remaining after this)
+gucman: Downloading bzip2recover archive (22528 bytes)
+  Connecting; waiting for response…
+  Downloaded 22528 / 22528 bytes (100%); transfer finished
+gucman: Verifying download: bzip2recover archive
+gucman: Checking cached object: bzip2recover archive
+gucman: Unpacking: bzip2recover
+gucman: Installing bzip2recover: 0/2 files
+gucman: Installing bzip2recover: 2/2 files
+gucman: Preparing checksums: bzip2recover
+gucman: Checksummed bzip2recover: 2/2 files
+gucman: Saving transaction: bzip2recover
+gucman: Verifying staged files: bzip2recover
+gucman: Activating: bzip2recover
+Installed migration:bzip2recover 1.0.8-1
+
+gucman: install migration:expat: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 6454 bytes; transfer finished
+gucman: Resolving: migration:expat
+gucman: Downloading manifest for migration:expat (1716 bytes)
+  Connecting; waiting for response…
+  Downloaded 1716 / 1716 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: expat (0 remaining after this)
+gucman: Downloading expat archive (778752 bytes)
+  Connecting; waiting for response…
+  Downloaded 778752 / 778752 bytes (100%); transfer finished
+gucman: Verifying download: expat archive
+gucman: Checking cached object: expat archive
+gucman: Unpacking: expat
+gucman: Installing expat: 0/6 files
+gucman: Installing expat: 6/6 files
+gucman: Preparing checksums: expat
+gucman: Checksummed expat: 6/6 files
+gucman: Saving transaction: expat
+gucman: Verifying staged files: expat
+gucman: Activating: expat
+Installed migration:expat 2.7.1-1
+
+/usr/local/lib/libz.a: OK
+/usr/local/lib/libz.so: OK
+/usr/local/include/zlib.h: OK
+/usr/local/include/zconf.h: OK
+/usr/local/lib/pkgconfig/zlib.pc: OK
+/usr/local/share/licenses/zlib/LICENSE: OK
+
+bf1d22d7fe312f2cbcd9643d288a43fa93beda6d17969a162f2135ecd570fb13  /home/user/migration-export.tar
+513024
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libcjson.a: OK
+/usr/local/lib/libcjson.so: OK
+/usr/local/include/cjson/cJSON.h: OK
+/usr/local/share/licenses/cjson/LICENSE: OK
+
+2a0b19907c08c6ac868ec0861cef83c800e571756ac9268f98f7e9e796cbae55  /home/user/migration-export.tar
+174592
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/pkgconf: OK
+/usr/local/bin/pkg-config: OK
+/usr/local/share/licenses/pkgconf/COPYING: OK
+
+39cbea94b9eb0ef4b75c4a6746bb8e1eff6de9f9c80e1b6000d4febb547eb656  /home/user/migration-export.tar
+454656
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/bzip2: OK
+/usr/local/bin/bunzip2: OK
+/usr/local/bin/bzcat: OK
+/usr/local/share/licenses/bzip2/LICENSE: OK
+
+0d90b9fcd53fd168f5ef2b4ceec71b797a62baabe1fea7c1fb4ba265b3b09cd3  /home/user/migration-export.tar
+510464
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/bzip2recover: OK
+/usr/local/share/licenses/bzip2recover/LICENSE: OK
+
+3e1ead45d08880337b67ad172c0741b395c0505f6c8c6424875316f6b5207563  /home/user/migration-export.tar
+22528
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libexpat.a: OK
+/usr/local/lib/libexpat.so: OK
+/usr/local/include/expat.h: OK
+/usr/local/include/expat_external.h: OK
+/usr/local/lib/pkgconfig/expat.pc: OK
+/usr/local/share/licenses/expat/COPYING: OK
+
+f8753250ebb8c50ea61da056971ebece360d9ffa85c4c7ba0c3f70db9313fda2  /home/user/migration-export.tar
+778752
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

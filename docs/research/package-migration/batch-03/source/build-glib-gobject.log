@@ -1,0 +1,158 @@
+[machine-job] queued: node tests/migration/stage.mjs build glib gobject
+[machine-job] running: 15895bb0-a6bf-4883-b274-a1e9d4344f3f
+gucman: unknown source
+
+{
+  tail: '/ 428 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: glib source: test.sh\n' +
+    'gucman: Checking cached object: glib source: test.sh\n' +
+    'Building migration:glib; running trusted recipe with access to your guest files\n' +
+    '2963 functions, 2625246 bytes\n'
+}
+gucman: build migration:glib: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:glib
+gucman: Downloading manifest for migration:glib (12830 bytes)
+  Connecting; waiting for response…
+  Downloaded 12830 / 12830 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: libiconv (3 remaining after this)
+Already installed: libiconv
+gucman: Package 2/4: libintl (2 remaining after this)
+Already installed: libintl
+gucman: Package 3/4: pcre2 (1 remaining after this)
+Already installed: pcre2
+gucman: Package 4/4: glib (0 remaining after this)
+gucman: Downloading glib source: source.tar (19445760 bytes)
+  Connecting; waiting for response…
+  Downloaded 18.54 / 18.54 MiB (100%); transfer finished
+gucman: Verifying download: glib source: source.tar
+gucman: Checking cached object: glib source: source.tar
+gucman: Downloading glib source: build.sh (17509 bytes)
+  Connecting; waiting for response…
+  Downloaded 17509 / 17509 bytes (100%); transfer finished
+gucman: Verifying download: glib source: build.sh
+gucman: Checking cached object: glib source: build.sh
+gucman: Downloading glib source: test.sh (428 bytes)
+  Connecting; waiting for response…
+  Downloaded 428 / 428 bytes (100%); transfer finished
+gucman: Verifying download: glib source: test.sh
+gucman: Checking cached object: glib source: test.sh
+Building migration:glib; running trusted recipe with access to your guest files
+2963 functions, 2625246 bytes
+1923 functions, 1680238 bytes
+GLIB-PASS
+4 functions, 17842 bytes
+GLIB-PASS
+gucman: Installing glib: 0/140 files
+gucman: Installing glib: 25/140 files
+gucman: Installing glib: 50/140 files
+gucman: Installing glib: 75/140 files
+gucman: Installing glib: 100/140 files
+gucman: Installing glib: 125/140 files
+gucman: Installing glib: 140/140 files
+gucman: Preparing checksums: glib
+gucman: Checksummed glib: 25/140 files
+gucman: Checksummed glib: 50/140 files
+gucman: Checksummed glib: 75/140 files
+gucman: Checksummed glib: 100/140 files
+gucman: Checksummed glib: 125/140 files
+gucman: Checksummed glib: 140/140 files
+gucman: Saving transaction: glib
+gucman: Verifying staged files: glib
+gucman: Activating: glib
+Installed migration:glib 2.84.4-1
+
+{
+  tail: 'se…\n' +
+    '  Downloaded 485 / 485 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: gobject source: test.sh\n' +
+    'gucman: Checking cached object: gobject source: test.sh\n' +
+    'Building migration:gobject; running trusted recipe with access to your guest files\n'
+}
+gucman: build migration:gobject: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:gobject
+gucman: Downloading manifest for migration:gobject (3919 bytes)
+  Connecting; waiting for response…
+  Downloaded 3919 / 3919 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Plan: 6 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 6 packages
+gucman: Package 1/6: libiconv (5 remaining after this)
+Already installed: libiconv
+gucman: Package 2/6: libintl (4 remaining after this)
+Already installed: libintl
+gucman: Package 3/6: pcre2 (3 remaining after this)
+Already installed: pcre2
+gucman: Package 4/6: glib (2 remaining after this)
+Already installed: glib
+gucman: Package 5/6: libffi (1 remaining after this)
+Already installed: libffi
+gucman: Package 6/6: gobject (0 remaining after this)
+gucman: Checking cached object: gobject source: source.tar
+gucman: Downloading gobject source: build.sh (1237 bytes)
+  Connecting; waiting for response…
+  Downloaded 1237 / 1237 bytes (100%); transfer finished
+gucman: Verifying download: gobject source: build.sh
+gucman: Checking cached object: gobject source: build.sh
+gucman: Downloading gobject source: test.sh (485 bytes)
+  Connecting; waiting for response…
+  Downloaded 485 / 485 bytes (100%); transfer finished
+gucman: Verifying download: gobject source: test.sh
+gucman: Checking cached object: gobject source: test.sh
+Building migration:gobject; running trusted recipe with access to your guest files
+1106 functions, 970435 bytes
+981 functions, 791781 bytes
+3 functions, 10124 bytes
+983 functions, 794723 bytes
+GOBJECT-WIDE-PASS
+5 functions, 15024 bytes
+GOBJECT-WIDE-PASS
+gucman: Installing gobject: 0/32 files
+gucman: Installing gobject: 25/32 files
+gucman: Installing gobject: 32/32 files
+gucman: Preparing checksums: gobject
+gucman: Checksummed gobject: 25/32 files
+gucman: Checksummed gobject: 32/32 files
+gucman: Saving transaction: gobject
+gucman: Verifying staged files: gobject
+gucman: Activating: gobject
+Installed migration:gobject 2.84.4-1
+
+34c4cf5fafdc17ad821969948ca9fcbc4ce4755d29f4d5624655460a9edccfbb  /home/user/migration-export.tar
+11364864
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+0a778a37cb429c2d1e324e76da691d254701534e2ee97587594a3221e628529a  /home/user/migration-export.tar
+2451456
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

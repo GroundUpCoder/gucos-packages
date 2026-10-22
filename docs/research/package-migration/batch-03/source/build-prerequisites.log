@@ -1,0 +1,202 @@
+[machine-job] queued: node tests/migration/stage.mjs build libiconv pcre2 libffi libintl
+[machine-job] running: 1b7c32e5-41ba-40c7-92d5-7a61dff802bf
+gucman: unknown source
+
+gucman: build migration:libiconv: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:libiconv
+gucman: Downloading manifest for migration:libiconv (1479 bytes)
+  Connecting; waiting for response…
+  Downloaded 1479 / 1479 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: libiconv (0 remaining after this)
+gucman: Downloading libiconv source: source.tar (17141760 bytes)
+  Connecting; waiting for response…
+  Downloaded 16.14 / 16.35 MiB (98%)
+  Downloaded 16.35 / 16.35 MiB (100%); transfer finished
+gucman: Verifying download: libiconv source: source.tar
+gucman: Checking cached object: libiconv source: source.tar
+gucman: Downloading libiconv source: build.sh (1309 bytes)
+  Connecting; waiting for response…
+  Downloaded 1309 / 1309 bytes (100%); transfer finished
+gucman: Verifying download: libiconv source: build.sh
+gucman: Checking cached object: libiconv source: build.sh
+gucman: Downloading libiconv source: test.sh (269 bytes)
+  Connecting; waiting for response…
+  Downloaded 269 / 269 bytes (100%); transfer finished
+gucman: Verifying download: libiconv source: test.sh
+gucman: Checking cached object: libiconv source: test.sh
+Building migration:libiconv; running trusted recipe with access to your guest files
+491 functions, 1358297 bytes
+492 functions, 1360868 bytes
+ICONV-PASS
+2 functions, 10515 bytes
+ICONV-PASS
+gucman: Installing libiconv: 0/6 files
+gucman: Installing libiconv: 6/6 files
+gucman: Preparing checksums: libiconv
+gucman: Checksummed libiconv: 6/6 files
+gucman: Saving transaction: libiconv
+gucman: Verifying staged files: libiconv
+gucman: Activating: libiconv
+Installed migration:libiconv 1.18-1
+
+gucman: build migration:pcre2: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:pcre2
+gucman: Downloading manifest for migration:pcre2 (1394 bytes)
+  Connecting; waiting for response…
+  Downloaded 1394 / 1394 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: pcre2 (0 remaining after this)
+gucman: Downloading pcre2 source: source.tar (6563840 bytes)
+  Connecting; waiting for response…
+  Downloaded 6.26 / 6.26 MiB (100%); transfer finished
+gucman: Verifying download: pcre2 source: source.tar
+gucman: Checking cached object: pcre2 source: source.tar
+gucman: Downloading pcre2 source: build.sh (5388 bytes)
+  Connecting; waiting for response…
+  Downloaded 5388 / 5388 bytes (100%); transfer finished
+gucman: Verifying download: pcre2 source: build.sh
+gucman: Checking cached object: pcre2 source: build.sh
+gucman: Downloading pcre2 source: test.sh (281 bytes)
+  Connecting; waiting for response…
+  Downloaded 281 / 281 bytes (100%); transfer finished
+gucman: Verifying download: pcre2 source: test.sh
+gucman: Checking cached object: pcre2 source: test.sh
+Building migration:pcre2; running trusted recipe with access to your guest files
+181 functions, 737864 bytes
+142 functions, 630878 bytes
+2 functions, 8088 bytes
+gucman: Installing pcre2: 0/5 files
+gucman: Installing pcre2: 5/5 files
+gucman: Preparing checksums: pcre2
+gucman: Checksummed pcre2: 5/5 files
+gucman: Saving transaction: pcre2
+gucman: Verifying staged files: pcre2
+gucman: Activating: pcre2
+Installed migration:pcre2 10.46-1
+
+gucman: build migration:libffi: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:libffi
+gucman: Downloading manifest for migration:libffi (1445 bytes)
+  Connecting; waiting for response…
+  Downloaded 1445 / 1445 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: libffi (0 remaining after this)
+gucman: Downloading libffi source: source.tar (61440 bytes)
+  Connecting; waiting for response…
+  Downloaded 61440 / 61440 bytes (100%); transfer finished
+gucman: Verifying download: libffi source: source.tar
+gucman: Checking cached object: libffi source: source.tar
+gucman: Downloading libffi source: build.sh (766 bytes)
+  Connecting; waiting for response…
+  Downloaded 766 / 766 bytes (100%); transfer finished
+gucman: Verifying download: libffi source: build.sh
+gucman: Checking cached object: libffi source: build.sh
+gucman: Downloading libffi source: test.sh (266 bytes)
+  Connecting; waiting for response…
+  Downloaded 266 / 266 bytes (100%); transfer finished
+gucman: Verifying download: libffi source: test.sh
+gucman: Checking cached object: libffi source: test.sh
+Building migration:libffi; running trusted recipe with access to your guest files
+10 functions, 11562 bytes
+21 functions, 29097 bytes
+FFI-PASS
+11 functions, 23060 bytes
+FFI-PASS
+gucman: Installing libffi: 0/6 files
+gucman: Installing libffi: 6/6 files
+gucman: Preparing checksums: libffi
+gucman: Checksummed libffi: 6/6 files
+gucman: Saving transaction: libffi
+gucman: Verifying staged files: libffi
+gucman: Activating: libffi
+Installed migration:libffi 3.4.8-1
+
+{
+  tail: 'se…\n' +
+    '  Downloaded 339 / 339 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: libintl source: test.sh\n' +
+    'gucman: Checking cached object: libintl source: test.sh\n' +
+    'Building migration:libintl; running trusted recipe with access to your guest files\n'
+}
+gucman: build migration:libintl: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 9301 bytes; transfer finished
+gucman: Resolving: migration:libintl
+gucman: Downloading manifest for migration:libintl (1608 bytes)
+  Connecting; waiting for response…
+  Downloaded 1608 / 1608 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: libiconv (1 remaining after this)
+Already installed: libiconv
+gucman: Package 2/2: libintl (0 remaining after this)
+gucman: Downloading libintl source: source.tar (5058560 bytes)
+  Connecting; waiting for response…
+  Downloaded 4.82 / 4.82 MiB (100%); transfer finished
+gucman: Verifying download: libintl source: source.tar
+gucman: Checking cached object: libintl source: source.tar
+gucman: Downloading libintl source: build.sh (5437 bytes)
+  Connecting; waiting for response…
+  Downloaded 5437 / 5437 bytes (100%); transfer finished
+gucman: Verifying download: libintl source: build.sh
+gucman: Checking cached object: libintl source: build.sh
+gucman: Downloading libintl source: test.sh (339 bytes)
+  Connecting; waiting for response…
+  Downloaded 339 / 339 bytes (100%); transfer finished
+gucman: Verifying download: libintl source: test.sh
+gucman: Checking cached object: libintl source: test.sh
+Building migration:libintl; running trusted recipe with access to your guest files
+70 functions, 84897 bytes
+58 functions, 79287 bytes
+GETTEXT-PASS
+2 functions, 10903 bytes
+GETTEXT-PASS
+gucman: Installing libintl: 0/6 files
+gucman: Installing libintl: 6/6 files
+gucman: Preparing checksums: libintl
+gucman: Checksummed libintl: 6/6 files
+gucman: Saving transaction: libintl
+gucman: Verifying staged files: libintl
+gucman: Activating: libintl
+Installed migration:libintl 0.23.1-1
+
+73f99fa5b48b3b50ca079a5f9cecfd00cc472b10843c565313babd9f20f3af8b  /home/user/migration-export.tar
+2840064
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+8f4283525c0c9f4382299e14e4a4f773f714b049b4d2bb280a37f5dbe2e08cd5  /home/user/migration-export.tar
+1720320
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+236bf9695d01ae6c2d69b23f3b71089578f3d8e26fdacffadfab3218e54028a2  /home/user/migration-export.tar
+44032
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+67c41434110ebb8d92ee795642327e1f56ac125835ea944f0a856642779adb18  /home/user/migration-export.tar
+299008
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

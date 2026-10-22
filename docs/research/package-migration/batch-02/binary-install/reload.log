@@ -1,0 +1,68 @@
+[machine-job] queued: node tests/migration/stage.mjs reload xfontsel xclipboard xcutsel oclock xedit
+[machine-job] running: c234562f-128c-411c-a059-c4ef4a7fac03
+gucman: unknown source
+
+
+/usr/local/bin/xfontsel: OK
+/usr/local/share/licenses/xfontsel/COPYING: OK
+/usr/local/share/X11/app-defaults/XFontSel: OK
+
+8a7ca517f32d61181b2b178e9a1394d5cf73b6ee1e99781c1c1ba97aba89dfa2  /home/user/migration-export.tar
+4462080
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/xclipboard: OK
+/usr/local/share/licenses/xclipboard/COPYING: OK
+/usr/local/share/X11/app-defaults/XClipboard: OK
+
+73133e53d9a5bd73ade37a2afe7bf34fc1dc99c44243b54cb2048b5d2405f6c0  /home/user/migration-export.tar
+4319232
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/xcutsel: OK
+/usr/local/share/licenses/xcutsel/COPYING: OK
+
+e149955e11a5e3eb3ddb8a7c8d92ad1e34808dc11de21b5a029f4076e7ce5126  /home/user/migration-export.tar
+4307456
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/oclock: OK
+/usr/local/share/licenses/oclock/COPYING: OK
+/usr/local/share/X11/app-defaults/Clock-color: OK
+
+4d198d1db87929c2dcee87b99bcb52aa707c7fa310eeaa6b84d61ecc745e768c  /home/user/migration-export.tar
+4314624
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/xedit: OK
+/usr/local/libexec/xedit/lsp: OK
+/usr/local/libexec/xedit/regex-tests: OK
+/usr/local/share/xedit/tests/tests.txt: OK
+/usr/local/share/licenses/xedit/COPYING: OK
+/usr/local/share/X11/app-defaults/Xedit: OK
+/usr/local/share/X11/app-defaults/Xedit-color: OK
+/usr/local/share/xedit/lisp/indent.lsp: OK
+/usr/local/share/xedit/lisp/lisp.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/auto.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/c.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/html.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/imake.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/lisp.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/make.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/man.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/patch.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/perl.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/python.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/rpm.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/sgml.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/sh.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/xconf.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/xlog.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/xrdb.lsp: OK
+/usr/local/share/xedit/lisp/syntax.lsp: OK
+/usr/local/share/xedit/lisp/xedit.lsp: OK
+
+791c1db28ee5ea6fef7841b3b6b8249e2537edb1329b1ad01ae51cdee7ad016e  /home/user/migration-export.tar
+20440064
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

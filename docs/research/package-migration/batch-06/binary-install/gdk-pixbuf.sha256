@@ -1,0 +1,16 @@
+b5d1c12c1414eeec04d60610714101b6a7ba115a01c66a2644a2c84acb727851  /usr/local/lib/libgdk_pixbuf-2.0.a
+ff1ba3003ac3fc8a2fd5c9038dab7577140aa6eae77abc646ba506e78d25aab0  /usr/local/lib/libgdk_pixbuf-2.0.so
+e543bd450e6377a72adf378830d2849d450cc483ec5923db72d9b18ceaf3ffa8  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h
+ff72d426a611110f579fe7446f370653cce239dc478268c66fd58a9d532615a8  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-animation.h
+149c5d60ea9468c559ee22958f14dae03f6b98944a866414fe31672bc3f6c50e  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h
+d8f2bb0a9553ab45d06f7415aaea84df6da8374a93e68ee02bf6e82e798172c3  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h
+beeff53914d8876eca1dcd2acdf6405c46404c96269f86b7aed2243ab4e22a6a  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h
+e73846ab11fbaf6281d7e10ae8e40890b7d852020c1a3261bc421ffb93741676  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h
+6d31f1337d3fae7f1446b837e55b447f2729b086ee780fb0f0aed23e2ac8303c  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h
+404658ea450eb8b9864a7bf69ae1f185c5697782b759e35a6d2faec59c99746f  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h
+65de6bd415eb358fd3038d9d156bdff6b085e4e55655ef88d3ca18c3ea3075ad  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h
+dcfb3f7cd0c827b0e1367bf0157f71de7c0c6d505b297497a3c5798b50ee776d  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixdata.h
+3b47ae39be06b2296ca9b8598a884b745d208edd7f5102810cc3520692280ce6  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h
+7fcd3497d67ba6484ef675e883872b5fc4ac80b90e56a74e17999a0d3bf890f5  /usr/local/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h
+d929223459f61f90cb7cd228924d0edb982bc96b28e63c08662fd1755b9c58b7  /usr/local/lib/pkgconfig/gdk-pixbuf-2.0.pc
+dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551  /usr/local/share/licenses/gdk-pixbuf/COPYING

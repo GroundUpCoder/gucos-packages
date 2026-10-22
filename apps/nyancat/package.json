@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "name": "nyancat",
+  "version": "0.1.0-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/nyancat/source.tar",
+      "sha256": "9052e7c23a9a60fd05b5e73c778d3609215b813022e520e1099221f5354e3fd7",
+      "size": 122880
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/nyancat/build.sh",
+      "sha256": "ed8f33a467b3a10930e84c8b1d2ef52bb6da850f5191627f50447d2862343973",
+      "size": 366
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/nyancat/test.sh",
+      "sha256": "b9c0a6881997ed273c5846193e736ee20facb2c0c1bc2ac5a10c6f6b38b22f61",
+      "size": 421
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/nyancat",
+      "mode": 493
+    },
+    {
+      "path": "share/doc/nyancat/README.md",
+      "mode": 420
+    },
+    {
+      "path": "share/doc/nyancat/UPSTREAM.json",
+      "mode": 420
+    },
+    {
+      "path": "share/man/man1/nyancat.1",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/nyancat/nyancat.c",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/nyancat/nyancat.c"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/87329beeec7fcc2a042dd6bc69ab5f67a2731216/apps/nyancat/binaries/ec852ea71d34c009a5d6dcccbb837b16f63ffeddcc45063aef373d4fc2721330.tar",
+    "sha256": "ec852ea71d34c009a5d6dcccbb837b16f63ffeddcc45063aef373d4fc2721330",
+    "size": 164352
+  }
+}

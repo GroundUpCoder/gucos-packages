@@ -1,0 +1,12 @@
+{
+  "startedAt": "2026-10-11T07:26:41.202Z",
+  "expectedRuntime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "status": "passed",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sourceBuild": true,
+  "deepseekBugfix": true,
+  "model": "deepseek-flash",
+  "provider": "DeepSeek",
+  "reloadResume": true,
+  "finishedAt": "2026-10-11T07:26:55.430Z"
+}

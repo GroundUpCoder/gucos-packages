@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/oclock-1.0.6",
+  "archiveSha256": "28b346372e21da5813347aa5f639281f450eba10fdb3b239cb74569355bff02c",
+  "status": "source migration candidate; no new guest execution"
+}

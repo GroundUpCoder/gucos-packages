@@ -1,0 +1,12 @@
+{
+  "action": "build",
+  "names": [
+    "sdl3-gfx"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "acb4bf21b859842ecb98a656f2fb55dc032287f9",
+  "startedAt": "2026-10-11T03:30:22.321Z",
+  "status": "failed",
+  "error": "AssertionError [ERR_ASSERTION]: gucman: build migration:sdl3-gfx: reading catalogs and resolving dependencies\ngucman: Reading catalog: migration\n  Connecting; waiting for response…\n  Downloaded 16185 bytes; transfer finished\ngucman: Resolving: migration:sdl3-gfx\ngucman: Downloading manifest for migration:sdl3-gfx (1443 bytes)\n  Connecting; waiting for response…\n  Downloaded 1443 / 1443 bytes (100%); transfer finished\ngucman: Verifying download: manifest for migration:sdl3-gfx\ngucman: Checking cached object: manifest for migration:sdl3-gfx\ngucman: Plan: 1 packages (including dependencies); checking compatibility\ngucman: Checking file ownership for 1 packages\ngucman: Package 1/1: sdl3-gfx (0 remaining after this)\ngucman: Downloading sdl3-gfx source: source.tar (225280 bytes)\n  Connecting; waiting for response…\n  Downloaded 225280 / 225280 bytes (100%); transfer finished\ngucman: Verifying download: sdl3-gfx source: source.tar\ngucman: Checking cached object: sdl3-gfx source: source.tar\ngucman: Downloading sdl3-gfx source: build.sh (599 bytes)\n  Connecting; waiting for response…\n  Downloaded 599 / 599 bytes (100%); transfer finished\ngucman: Verifying download: sdl3-gfx source: build.sh\ngucman: Checking cached object: sdl3-gfx source: build.sh\ngucman: Downloading sdl3-gfx source: test.sh (538 bytes)\n  Connecting; waiting for response…\n  Downloaded 538 / 538 bytes (100%); transfer finished\ngucman: Verifying download: sdl3-gfx source: test.sh\ngucman: Checking cached object: sdl3-gfx source: test.sh\nBuilding migration:sdl3-gfx; running trusted recipe with access to your guest files\ncc: cannot find -lSDL3\n\n\n1 !== 0\n\n    at Object.command (file:///Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:48:96)\n    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:49:27",
+  "finishedAt": "2026-10-11T03:30:24.855Z"
+}

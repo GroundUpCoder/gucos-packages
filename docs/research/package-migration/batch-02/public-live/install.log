@@ -1,0 +1,433 @@
+[machine-job] queued: node tests/migration/stage.mjs install xfontsel xclipboard xcutsel oclock xedit
+[machine-job] running: d0f5a5d3-375a-499c-a7a8-4b8df6153534
+gucman: unknown source
+
+{
+  tail: '.38 / 24.75 MiB (94%)\n' +
+    '  Downloaded 24.75 / 24.75 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: x11-server archive\n' +
+    'gucman: Checking cached object: x11-server archive\n' +
+    'gucman: Unpacking: x11-server\n' +
+    'gucman: Installing x11-server: 0/527 files\n'
+}
+{
+  tail: '11-server: 250/527 files\n' +
+    'gucman: Installing x11-server: 275/527 files\n' +
+    'gucman: Installing x11-server: 300/527 files\n' +
+    'gucman: Installing x11-server: 325/527 files\n' +
+    'gucman: Installing x11-server: 350/527 files\n' +
+    'gucman: Installing x11-server: 375/527 files\n'
+}
+{
+  tail: 'king cached object: x11-toolkit archive\n' +
+    'gucman: Unpacking: x11-toolkit\n' +
+    'gucman: Installing x11-toolkit: 0/157 files\n' +
+    'gucman: Installing x11-toolkit: 25/157 files\n' +
+    'gucman: Installing x11-toolkit: 50/157 files\n' +
+    'gucman: Installing x11-toolkit: 75/157 files\n'
+}
+gucman: install migration:xfontsel: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 8332 bytes; transfer finished
+gucman: Resolving: migration:xfontsel
+gucman: Downloading manifest for migration:xfontsel (2299 bytes)
+  Connecting; waiting for response…
+  Downloaded 2299 / 2299 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xfontsel
+gucman: Checking cached object: manifest for migration:xfontsel
+gucman: Resolving: migration:x11-widgets
+gucman: Downloading manifest for migration:x11-widgets (3440 bytes)
+  Connecting; waiting for response…
+  Downloaded 3440 / 3440 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Downloading manifest for migration:x11-toolkit (13790 bytes)
+  Connecting; waiting for response…
+  Downloaded 13790 / 13790 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Downloading manifest for migration:x11-server (47983 bytes)
+  Connecting; waiting for response…
+  Downloaded 47983 / 47983 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+gucman: Downloading x11-server archive (25956864 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.72 / 24.75 MiB (10%)
+  Downloaded 7.83 / 24.75 MiB (31%)
+  Downloaded 13.44 / 24.75 MiB (54%)
+  Downloaded 18.27 / 24.75 MiB (73%)
+  Downloaded 23.38 / 24.75 MiB (94%)
+  Downloaded 24.75 / 24.75 MiB (100%); transfer finished
+gucman: Verifying download: x11-server archive
+gucman: Checking cached object: x11-server archive
+gucman: Unpacking: x11-server
+gucman: Installing x11-server: 0/527 files
+gucman: Installing x11-server: 25/527 files
+gucman: Installing x11-server: 50/527 files
+gucman: Installing x11-server: 75/527 files
+gucman: Installing x11-server: 100/527 files
+gucman: Installing x11-server: 125/527 files
+gucman: Installing x11-server: 150/527 files
+gucman: Installing x11-server: 175/527 files
+gucman: Installing x11-server: 200/527 files
+gucman: Installing x11-server: 225/527 files
+gucman: Installing x11-server: 250/527 files
+gucman: Installing x11-server: 275/527 files
+gucman: Installing x11-server: 300/527 files
+gucman: Installing x11-server: 325/527 files
+gucman: Installing x11-server: 350/527 files
+gucman: Installing x11-server: 375/527 files
+gucman: Installing x11-server: 400/527 files
+gucman: Installing x11-server: 425/527 files
+gucman: Installing x11-server: 450/527 files
+gucman: Installing x11-server: 475/527 files
+gucman: Installing x11-server: 500/527 files
+gucman: Installing x11-server: 525/527 files
+gucman: Installing x11-server: 527/527 files
+gucman: Preparing checksums: x11-server
+gucman: Checksummed x11-server: 25/527 files
+gucman: Checksummed x11-server: 50/527 files
+gucman: Checksummed x11-server: 75/527 files
+gucman: Checksummed x11-server: 100/527 files
+gucman: Checksummed x11-server: 125/527 files
+gucman: Checksummed x11-server: 150/527 files
+gucman: Checksummed x11-server: 175/527 files
+gucman: Checksummed x11-server: 200/527 files
+gucman: Checksummed x11-server: 225/527 files
+gucman: Checksummed x11-server: 250/527 files
+gucman: Checksummed x11-server: 275/527 files
+gucman: Checksummed x11-server: 300/527 files
+gucman: Checksummed x11-server: 325/527 files
+gucman: Checksummed x11-server: 350/527 files
+gucman: Checksummed x11-server: 375/527 files
+gucman: Checksummed x11-server: 400/527 files
+gucman: Checksummed x11-server: 425/527 files
+gucman: Checksummed x11-server: 450/527 files
+gucman: Checksummed x11-server: 475/527 files
+gucman: Checksummed x11-server: 500/527 files
+gucman: Checksummed x11-server: 525/527 files
+gucman: Checksummed x11-server: 527/527 files
+gucman: Saving transaction: x11-server
+gucman: Verifying staged files: x11-server
+gucman: Activating: x11-server
+Installed migration:x11-server 21.1.24-1
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+gucman: Downloading x11-toolkit archive (2518016 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.05 / 2.40 MiB (85%)
+  Downloaded 2.40 / 2.40 MiB (100%); transfer finished
+gucman: Verifying download: x11-toolkit archive
+gucman: Checking cached object: x11-toolkit archive
+gucman: Unpacking: x11-toolkit
+gucman: Installing x11-toolkit: 0/157 files
+gucman: Installing x11-toolkit: 25/157 files
+gucman: Installing x11-toolkit: 50/157 files
+gucman: Installing x11-toolkit: 75/157 files
+gucman: Installing x11-toolkit: 100/157 files
+gucman: Installing x11-toolkit: 125/157 files
+gucman: Installing x11-toolkit: 150/157 files
+gucman: Installing x11-toolkit: 157/157 files
+gucman: Preparing checksums: x11-toolkit
+gucman: Checksummed x11-toolkit: 25/157 files
+gucman: Checksummed x11-toolkit: 50/157 files
+gucman: Checksummed x11-toolkit: 75/157 files
+gucman: Checksummed x11-toolkit: 100/157 files
+gucman: Checksummed x11-toolkit: 125/157 files
+gucman: Checksummed x11-toolkit: 150/157 files
+gucman: Checksummed x11-toolkit: 157/157 files
+gucman: Saving transaction: x11-toolkit
+gucman: Verifying staged files: x11-toolkit
+gucman: Activating: x11-toolkit
+Installed migration:x11-toolkit 1.0-1
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+gucman: Downloading x11-widgets archive (1338880 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.28 / 1.28 MiB (100%); transfer finished
+gucman: Verifying download: x11-widgets archive
+gucman: Checking cached object: x11-widgets archive
+gucman: Unpacking: x11-widgets
+gucman: Installing x11-widgets: 0/15 files
+gucman: Installing x11-widgets: 15/15 files
+gucman: Preparing checksums: x11-widgets
+gucman: Checksummed x11-widgets: 15/15 files
+gucman: Saving transaction: x11-widgets
+gucman: Verifying staged files: x11-widgets
+gucman: Activating: x11-widgets
+Installed migration:x11-widgets 1.0-1
+gucman: Package 4/4: xfontsel (0 remaining after this)
+gucman: Downloading xfontsel archive (4462080 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.06 / 4.26 MiB (1%)
+  Downloaded 4.26 / 4.26 MiB (100%); transfer finished
+gucman: Verifying download: xfontsel archive
+gucman: Checking cached object: xfontsel archive
+gucman: Unpacking: xfontsel
+gucman: Installing xfontsel: 0/3 files
+gucman: Installing xfontsel: 3/3 files
+gucman: Preparing checksums: xfontsel
+gucman: Checksummed xfontsel: 3/3 files
+gucman: Saving transaction: xfontsel
+gucman: Verifying staged files: xfontsel
+gucman: Activating: xfontsel
+Installed migration:xfontsel 1.1.2-1
+
+{
+  tail: ' manifest for migration:x11-widgets\n' +
+    'gucman: Resolving: migration:x11-toolkit\n' +
+    'gucman: Checking cached object: manifest for migration:x11-toolkit\n' +
+    'gucman: Resolving: migration:x11-server\n' +
+    'gucman: Checking cached object: manifest for migration:x11-server\n'
+}
+gucman: install migration:xclipboard: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 8332 bytes; transfer finished
+gucman: Resolving: migration:xclipboard
+gucman: Downloading manifest for migration:xclipboard (2319 bytes)
+  Connecting; waiting for response…
+  Downloaded 2319 / 2319 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xclipboard
+gucman: Checking cached object: manifest for migration:xclipboard
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xclipboard (0 remaining after this)
+gucman: Downloading xclipboard archive (4319232 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.06 / 4.12 MiB (1%)
+  Downloaded 4.12 / 4.12 MiB (100%); transfer finished
+gucman: Verifying download: xclipboard archive
+gucman: Checking cached object: xclipboard archive
+gucman: Unpacking: xclipboard
+gucman: Installing xclipboard: 0/3 files
+gucman: Installing xclipboard: 3/3 files
+gucman: Preparing checksums: xclipboard
+gucman: Checksummed xclipboard: 3/3 files
+gucman: Saving transaction: xclipboard
+gucman: Verifying staged files: xclipboard
+gucman: Activating: xclipboard
+Installed migration:xclipboard 1.1.6-1
+
+gucman: install migration:xcutsel: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 8332 bytes; transfer finished
+gucman: Resolving: migration:xcutsel
+gucman: Downloading manifest for migration:xcutsel (2210 bytes)
+  Connecting; waiting for response…
+  Downloaded 2210 / 2210 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xcutsel
+gucman: Checking cached object: manifest for migration:xcutsel
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xcutsel (0 remaining after this)
+gucman: Downloading xcutsel archive (4307456 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.40 / 4.11 MiB (9%)
+  Downloaded 4.11 / 4.11 MiB (100%); transfer finished
+gucman: Verifying download: xcutsel archive
+gucman: Checking cached object: xcutsel archive
+gucman: Unpacking: xcutsel
+gucman: Installing xcutsel: 0/2 files
+gucman: Installing xcutsel: 2/2 files
+gucman: Preparing checksums: xcutsel
+gucman: Checksummed xcutsel: 2/2 files
+gucman: Saving transaction: xcutsel
+gucman: Verifying staged files: xcutsel
+gucman: Activating: xcutsel
+Installed migration:xcutsel 1.1.6-1
+
+{
+  tail: ' manifest for migration:x11-widgets\n' +
+    'gucman: Resolving: migration:x11-toolkit\n' +
+    'gucman: Checking cached object: manifest for migration:x11-toolkit\n' +
+    'gucman: Resolving: migration:x11-server\n' +
+    'gucman: Checking cached object: manifest for migration:x11-server\n'
+}
+gucman: install migration:oclock: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 8332 bytes; transfer finished
+gucman: Resolving: migration:oclock
+gucman: Downloading manifest for migration:oclock (2284 bytes)
+  Connecting; waiting for response…
+  Downloaded 2284 / 2284 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:oclock
+gucman: Checking cached object: manifest for migration:oclock
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: oclock (0 remaining after this)
+gucman: Downloading oclock archive (4314624 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.46 / 4.11 MiB (11%)
+  Downloaded 4.11 / 4.11 MiB (100%); transfer finished
+gucman: Verifying download: oclock archive
+gucman: Checking cached object: oclock archive
+gucman: Unpacking: oclock
+gucman: Installing oclock: 0/3 files
+gucman: Installing oclock: 3/3 files
+gucman: Preparing checksums: oclock
+gucman: Checksummed oclock: 3/3 files
+gucman: Saving transaction: oclock
+gucman: Verifying staged files: oclock
+gucman: Activating: oclock
+Installed migration:oclock 1.0.6-1
+
+{
+  tail: 'it\n' +
+    'gucman: Checking cached object: manifest for migration:x11-toolkit\n' +
+    'gucman: Resolving: migration:x11-server\n' +
+    'gucman: Checking cached object: manifest for migration:x11-server\n' +
+    'gucman: Plan: 4 packages (including dependencies); checking compatibility\n'
+}
+gucman: install migration:xedit: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 8332 bytes; transfer finished
+gucman: Resolving: migration:xedit
+gucman: Downloading manifest for migration:xedit (5382 bytes)
+  Connecting; waiting for response…
+  Downloaded 5382 / 5382 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xedit
+gucman: Checking cached object: manifest for migration:xedit
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xedit (0 remaining after this)
+gucman: Downloading xedit archive (20440064 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.06 / 19.49 MiB (0%)
+  Downloaded 5.32 / 19.49 MiB (27%)
+  Downloaded 10.49 / 19.49 MiB (53%)
+  Downloaded 15.61 / 19.49 MiB (80%)
+  Downloaded 19.49 / 19.49 MiB (100%); transfer finished
+gucman: Verifying download: xedit archive
+gucman: Checking cached object: xedit archive
+gucman: Unpacking: xedit
+gucman: Installing xedit: 0/27 files
+gucman: Installing xedit: 25/27 files
+gucman: Installing xedit: 27/27 files
+gucman: Preparing checksums: xedit
+gucman: Checksummed xedit: 25/27 files
+gucman: Checksummed xedit: 27/27 files
+gucman: Saving transaction: xedit
+gucman: Verifying staged files: xedit
+gucman: Activating: xedit
+Installed migration:xedit 1.2.5-1
+
+/usr/local/bin/xfontsel: OK
+/usr/local/share/licenses/xfontsel/COPYING: OK
+/usr/local/share/X11/app-defaults/XFontSel: OK
+
+7363b96b26ae0921b83179cdb8517bf132ef340e18e11b4ff1564deed61a6129  /home/user/migration-export.tar
+4462080
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/xclipboard: OK
+/usr/local/share/licenses/xclipboard/COPYING: OK
+/usr/local/share/X11/app-defaults/XClipboard: OK
+
+36bab235c7edfc993f450b2f43387e8e969aac5b9bdeb79bca3d19d0ae40ff56  /home/user/migration-export.tar
+4319232
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/xcutsel: OK
+/usr/local/share/licenses/xcutsel/COPYING: OK
+
+c6ef5e47f089e9afe93cf5943c5e212bc4fd097ffbb6c8f217300e3dce710881  /home/user/migration-export.tar
+4307456
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/oclock: OK
+/usr/local/share/licenses/oclock/COPYING: OK
+/usr/local/share/X11/app-defaults/Clock-color: OK
+
+1dddb20344dce9c74a1fb563eab7b298635a3640ead2826fa5239e40854a5ec0  /home/user/migration-export.tar
+4314624
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/xedit: OK
+/usr/local/libexec/xedit/lsp: OK
+/usr/local/libexec/xedit/regex-tests: OK
+/usr/local/share/xedit/tests/tests.txt: OK
+/usr/local/share/licenses/xedit/COPYING: OK
+/usr/local/share/X11/app-defaults/Xedit: OK
+/usr/local/share/X11/app-defaults/Xedit-color: OK
+/usr/local/share/xedit/lisp/indent.lsp: OK
+/usr/local/share/xedit/lisp/lisp.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/auto.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/c.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/html.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/imake.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/lisp.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/make.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/man.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/patch.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/perl.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/python.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/rpm.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/sgml.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/sh.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/xconf.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/xlog.lsp: OK
+/usr/local/share/xedit/lisp/progmodes/xrdb.lsp: OK
+/usr/local/share/xedit/lisp/syntax.lsp: OK
+/usr/local/share/xedit/lisp/xedit.lsp: OK
+
+8c34b14a64869d380cfcc241c25127d1661e8e26ebae7c97a8dc23d2be877b59  /home/user/migration-export.tar
+20440064
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

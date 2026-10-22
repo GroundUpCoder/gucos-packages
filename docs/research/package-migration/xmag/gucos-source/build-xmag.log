@@ -1,0 +1,62 @@
+gucman: unknown source
+
+gucman: build migration:xmag: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20982 bytes; transfer finished
+gucman: Resolving: migration:xmag
+gucman: Downloading manifest for migration:xmag (1535 bytes)
+  Connecting; waiting for response…
+  Downloaded 1535 / 1535 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xmag
+gucman: Checking cached object: manifest for migration:xmag
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xmag (0 remaining after this)
+gucman: Downloading xmag source: source.tar (870400 bytes)
+  Connecting; waiting for response…
+  Downloaded 870400 / 870400 bytes (100%); transfer finished
+gucman: Verifying download: xmag source: source.tar
+gucman: Checking cached object: xmag source: source.tar
+gucman: Downloading xmag source: build.sh (838 bytes)
+  Connecting; waiting for response…
+  Downloaded 838 / 838 bytes (100%); transfer finished
+gucman: Verifying download: xmag source: build.sh
+gucman: Checking cached object: xmag source: build.sh
+gucman: Downloading xmag source: test.sh (47 bytes)
+  Connecting; waiting for response…
+  Downloaded 47 / 47 bytes (100%); transfer finished
+gucman: Verifying download: xmag source: test.sh
+gucman: Checking cached object: xmag source: test.sh
+Building migration:xmag; running trusted recipe with access to your guest files
+4714 functions, 4384257 bytes
+xmag 1.0.8
+gucman: Installing xmag: 0/4 files
+gucman: Installing xmag: 4/4 files
+gucman: Preparing checksums: xmag
+gucman: Checksummed xmag: 4/4 files
+gucman: Saving transaction: xmag
+gucman: Verifying staged files: xmag
+gucman: Activating: xmag
+Installed migration:xmag 1.0.8-1
+
+013d28d135b88ce1840889e4aa0d249c8a0aeb752724c05987f13a5b11de3ca8  /home/user/migration-export.tar
+4393984
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/fribidi",
+  "archiveSha256": "1dd848555676077e499f1419cbc68f39f683d3a6f8f1746a4646dce7af6fde03",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

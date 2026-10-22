@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Mines
+Exec=sgt-mines
+TryExec=sgt-mines
+Terminal=false
+Categories=Game;LogicGame;

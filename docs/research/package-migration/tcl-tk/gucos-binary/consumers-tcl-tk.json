@@ -1,0 +1,64 @@
+{
+  "action": "consumers",
+  "names": [
+    "tcl",
+    "tk"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "7b99a0d6518e9845f98d236e9cdf74b02dc70a82",
+  "startedAt": "2026-10-11T05:27:22.400Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "tcl",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "b4595d8c8be1ccdb999a5ef48b766887968c8405de3c2676ad7eb54bd9603772",
+          "size": 52060160
+        },
+        {
+          "path": "build.sh",
+          "sha256": "52084b36ba33a494c430c4716765131886cd107da2131f86adeb7465af4af992",
+          "size": 388745
+        },
+        {
+          "path": "test.sh",
+          "sha256": "703d521af471f2e595c201282dfd342cd49bf5ac37a595b2dc5b60cab94db9d6",
+          "size": 2358
+        }
+      ]
+    },
+    {
+      "name": "tk",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "cdd69b983e19df3a4507bde5a5066625d76e3afefe5116e2a46d099f3a444924",
+          "size": 12103680
+        },
+        {
+          "path": "build.sh",
+          "sha256": "9312701bb5bee1a3fed305fabb00e228e9f0577c20ce17dfa565215d4827ccad",
+          "size": 86969
+        },
+        {
+          "path": "test.sh",
+          "sha256": "a621d604e8abac1b005c2298fd94ce880d43c1b5326edd6290394bdd94bc166d",
+          "size": 693
+        },
+        {
+          "path": "license.terms",
+          "sha256": "2cde822b93ca16ae535c954b7dfe658b4ad10df2a193628d1b358f1765e8b198",
+          "size": 2267
+        },
+        {
+          "path": "tcl-license.terms",
+          "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16",
+          "size": 2255
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-11T05:27:50.514Z"
+}

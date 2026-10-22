@@ -1,0 +1,69 @@
+{
+  "gameboy": {
+    "format": 1,
+    "name": "gameboy",
+    "version": "0.1.0-3",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "sdl3-vt"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59202/migration/gameboy/source.tar",
+        "sha256": "8bcdc876cdad41f0f877b0abb3b80f89dc88f57ed16132ab2bdd0727d7481db0",
+        "size": 163840
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59202/migration/gameboy/build.sh",
+        "sha256": "db3972b0cdaef0114439fb5cd5a231bb0bf0370e0f0b97f1b47b8cc8dde7114a",
+        "size": 339
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59202/migration/gameboy/test.sh",
+        "sha256": "d074d2e263451a4c0f57570480f1da105b10c5411bdac7d2eb63b3bfc1454200",
+        "size": 332
+      },
+      {
+        "path": "gucos-gameboy.desktop",
+        "url": "http://127.0.0.1:59202/migration/gameboy/gucos-gameboy.desktop",
+        "sha256": "c040b15ab7061b84b1d4619a0009a17e47ed84ef3ad0fd7cbf1daaba6d4e6035",
+        "size": 92
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/gameboy",
+        "mode": 493
+      },
+      {
+        "path": "share/applications/gucos-gameboy.desktop",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/gameboy/peanut_gb.h",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/gameboy/peanut_gb.h"
+    ],
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "binary": {
+      "url": "http://127.0.0.1:59202/migration/gameboy/binary.tar",
+      "sha256": "1957da9412762d66aabd7eaec8af3ba78538efe2256d0051292ff1699afbe931",
+      "size": 692736
+    }
+  }
+}

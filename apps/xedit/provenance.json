@@ -1,0 +1,29 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xedit-1.2.5",
+  "archiveSha256": "34900bb42e7e3a9da5eae9d796b2a321dfd283c6eabca37a0352a5c5f7025f7e",
+  "overlays": [
+    {
+      "file": "util.c",
+      "historicalPath": "apps/x11-apps-more/source/overlays/xedit-util.c",
+      "sha256": "5f62916f93b3153ca0e3ba6958c884758a12cfe7be7e3ae74c213f925212dca8"
+    },
+    {
+      "file": "lisp-format.c",
+      "historicalPath": "apps/x11-apps-more/source/overlays/xedit-lisp-format.c",
+      "sha256": "3ae0c7c36e89a67d6e20c4245b6d7839974bcf6b2191d2c6b7dc43f7b7ac7e37"
+    },
+    {
+      "file": "lisp-io.c",
+      "historicalPath": "apps/x11-apps-more/source/overlays/xedit-lisp-io.c",
+      "sha256": "fc9f3c70b65eca60fcfb3407f1679eef0295cca3db4bf73127f9c42694688052"
+    },
+    {
+      "file": "lisp-lisp.c",
+      "historicalPath": "apps/x11-apps-more/source/overlays/xedit-lisp-lisp.c",
+      "sha256": "f624c0b1dfd26f1754d3c1970ab7358027cf212db7b4502143329883cfd9219f"
+    }
+  ],
+  "status": "source migration candidate; no new guest execution"
+}

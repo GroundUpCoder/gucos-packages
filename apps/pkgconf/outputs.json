@@ -1,0 +1,14 @@
+[
+  {
+    "path": "bin/pkgconf",
+    "mode": 493
+  },
+  {
+    "path": "bin/pkg-config",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/pkgconf/COPYING",
+    "mode": 420
+  }
+]

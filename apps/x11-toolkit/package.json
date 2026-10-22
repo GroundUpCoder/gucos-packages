@@ -1,0 +1,681 @@
+{
+  "format": 1,
+  "name": "x11-toolkit",
+  "version": "1.0-1",
+  "dependencies": [
+    "x11-server"
+  ],
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/x11-toolkit/source.tar",
+      "sha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
+      "size": 11612160
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/x11-toolkit/build.sh",
+      "sha256": "e56586a43eafa68339dc445701d9175a77c6c258c2fffbef2f87424219dd403a",
+      "size": 78353
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/9a9b1dd86716ec3b754bc335a011b8604fce67d5/apps/x11-toolkit/test.sh",
+      "sha256": "51ccf7d74dbf37ca470a49df29c1f2ccd3e5cecdcbad6325549a919706ebc4d5",
+      "size": 50
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libXmu.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libXt.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libSM.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libICE.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libXrandr.a",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/CallbackI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Composite.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/CompositeP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ConstrainP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Constraint.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ConvertI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Core.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/CoreP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/CreateI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/EventI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/HookObjI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ICE/ICE.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ICE/ICEconn.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ICE/ICElib.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ICE/ICEmsg.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ICE/ICEproto.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ICE/ICEutil.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/InitialI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Intrinsic.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/IntrinsicI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/IntrinsicP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Object.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ObjectP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/PassivGraI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/RectObj.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/RectObjP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ResConfigP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ResourceI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/SM/SM.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/SM/SMlib.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/SM/SMproto.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/SelectionI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Shell.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ShellI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ShellP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/StringDefs.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/ThreadsI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/TranslateI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/VarargsI.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Vendor.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/VendorP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/AllWidgets.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/AsciiSink.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/AsciiSinkP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/AsciiSrc.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/AsciiSrcP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/AsciiText.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/AsciiTextP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Box.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/BoxP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Cardinals.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Command.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/CommandP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Dialog.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/DialogP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Form.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/FormP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Grip.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/GripP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Label.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/LabelP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/List.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/ListP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/MenuButtoP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/MenuButton.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/MultiSink.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/MultiSinkP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/MultiSrc.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/MultiSrcP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Paned.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/PanedP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Panner.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/PannerP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Porthole.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/PortholeP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Repeater.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/RepeaterP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Reports.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Scrollbar.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/ScrollbarP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Simple.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/SimpleMenP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/SimpleMenu.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/SimpleP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Sme.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/SmeBSB.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/SmeBSBP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/SmeLine.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/SmeLineP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/SmeP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/StripCharP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/StripChart.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Template.c",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Template.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/TemplateP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Text.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/TextP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/TextSink.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/TextSinkP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/TextSrc.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/TextSrcP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Tip.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/TipP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Toggle.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/ToggleP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Tree.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/TreeP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/VendorEP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/Viewport.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/ViewportP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/XawImP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xaw/XawInit.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Atoms.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/CharSet.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/CloseHook.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Converters.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/CurUtil.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/CvtCache.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/DisplayQue.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Drawing.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Editres.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/EditresP.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Error.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/ExtAgent.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Initer.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Lookup.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Misc.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/StdCmap.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/StdSel.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/SysUtil.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/WhitePoint.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/WidgetNode.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/WinUtil.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Xct.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xmu/Xmu.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/Xtos.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/extensions/Xrandr.h",
+      "mode": 420
+    },
+    {
+      "path": "include/X11/xpm.h",
+      "mode": 420
+    },
+    {
+      "path": "include/termcap.h",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/libICE-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/libSM-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/libXaw-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/libXft-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/libXmu-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/libXpm-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/libXrandr-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/libXt-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/termcap-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/xev-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/xmessage-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/xprop-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-toolkit/xterm-COPYING",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/x11-toolkit/libICE-COPYING",
+    "share/licenses/x11-toolkit/libSM-COPYING",
+    "share/licenses/x11-toolkit/libXaw-COPYING",
+    "share/licenses/x11-toolkit/libXft-COPYING",
+    "share/licenses/x11-toolkit/libXmu-COPYING",
+    "share/licenses/x11-toolkit/libXpm-COPYING",
+    "share/licenses/x11-toolkit/libXrandr-COPYING",
+    "share/licenses/x11-toolkit/libXt-COPYING",
+    "share/licenses/x11-toolkit/termcap-COPYING",
+    "share/licenses/x11-toolkit/xev-COPYING",
+    "share/licenses/x11-toolkit/xmessage-COPYING",
+    "share/licenses/x11-toolkit/xprop-COPYING",
+    "share/licenses/x11-toolkit/xterm-COPYING"
+  ],
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-toolkit/binaries/cfac272185f414f98c47f9a4874e7b11d369bf32b57b8cfddf7f835ccab182f1.tar",
+    "sha256": "cfac272185f414f98c47f9a4874e7b11d369bf32b57b8cfddf7f835ccab182f1",
+    "size": 2518016
+  }
+}

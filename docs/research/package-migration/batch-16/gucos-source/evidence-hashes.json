@@ -1,0 +1,8 @@
+{
+  "observed-runtime.json": "4d86a6910528606a8badee14a58748ecfae8b857c56f888650b6962f10e50f84",
+  "config.json": "9b63ddd0eb52c96d4691da3c8af470ec40c44ce309416cdf5d40635ede7a3218",
+  "build-micropython.json": "9adb81eaa2ed21a18b74c489152027a4aa96c43e9f888ee500d85cf2e0e32dc9",
+  "port": "cce9b80b17c3466e341729faa99d8d8f620633bbd0dbc4302372ab290fc0a769",
+  "candidate-manifests.json": "08273f4b99dd14cd2a259b415e75225cc4250aa939487332cfd709e65f52cf16",
+  "build.log": "11954c8ac9244a7ba660cea2542af2ebba08464a9fdc4174bda27cbd67255f54"
+}

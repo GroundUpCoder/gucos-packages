@@ -1,0 +1,26 @@
+[
+  {
+    "path": "bin/xclock",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/xclock/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/XClock",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/XClock-ampm",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/XClock-color",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/XClock-grandfather",
+    "mode": 420
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "build-micropython.json": "99973504f2cc8b3473a330fbede56527e91fa8ca56db6baeb4eda9e4a242bca5",
+  "build.log": "daef7ae822f52df53356b141a2f1936df9a3b40d95bc61da7d095348679c41a1",
+  "candidate-manifests.json": "c7107dd82bfd0a8d50374df1d66809ace57aabf6c13a48ea7c80d56aba95d111",
+  "config.json": "a2abdc1724c0dc43b606ad2164564ca5e9e39a30451e87296a3ecdb9cff44027",
+  "observed-runtime.json": "f341e4a9c66d97af9e7fc35084246e4f9e35c680a53252979cd32c2e5d540b71"
+}

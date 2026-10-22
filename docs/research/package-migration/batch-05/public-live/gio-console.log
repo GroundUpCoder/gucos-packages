@@ -1,0 +1,21 @@
+
+1 functions, 3320 bytes
+-I/usr/local/include/gio-core-2.0 -I/usr/local/include/glib-2.0 -I/usr/local/include -L/usr/local/lib -lgio-core -lgio-listmodel -lgobject-2.0 -lz -lgmodule-2.0 -lglib-2.0
+3 functions, 19522 bytes
+GIO-UNIX-STREAM-PASS
+GIO-FILE-MONITOR-PASS
+GMODULE-LOAD-PASS
+GIO-INSTALLED-CONSUMER-PASS
+3 functions, 23628 bytes
+TAP version 14
+# random seed: R02Scb8b60dcaa4083e583766bd5a4fb0bc2
+# GLib-GIO-DEBUG: _g_io_module_get_default: Found default implementation local (GLocalVfs) for ?gio-vfs?
+# GIO-FILES-PASS
+5 functions, 36435 bytes
+GSOCKET-LOCAL-PASS
+GAPPLICATION-REMOTE-PASS
+GDBUS-SESSION-PASS
+GUC-SESSION-PASS
+GIO-FROZEN-SOURCE-SHA256 ff22279230a393630f5ff6171457addeb017e7af53a08644ed7f7a64536eb4b3
+GIO-RETAINED-EXTENDED-PASS
+

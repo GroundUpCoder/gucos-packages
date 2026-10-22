@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/xmag/source",
+  "archiveSha256": "ae9df17300d555c17c714ef479704bffcf49f7b226432ace8cd3947d6037e01a",
+  "status": "source migration candidate; no new guest execution"
+}

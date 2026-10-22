@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "name": "x11-widgets",
+  "version": "1.0-1",
+  "dependencies": [
+    "x11-toolkit"
+  ],
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-widgets/source.tar",
+      "sha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
+      "size": 11612160
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-widgets/build.sh",
+      "sha256": "a1ad115b67673c9748dbaed7f70def83c10f2d5d906ba1602323d5becc8175f2",
+      "size": 31318
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-widgets/test.sh",
+      "sha256": "6785f5648aea6ec6f9600a5b5d57f00cfe404db2fbed55902604b5966ab0162a",
+      "size": 83
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libXpm.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libXaw7.a",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/libICE-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/libSM-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/libXaw-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/libXft-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/libXmu-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/libXpm-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/libXrandr-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/libXt-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/termcap-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/xev-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/xmessage-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/xprop-COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/x11-widgets/xterm-COPYING",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/x11-widgets/libICE-COPYING",
+    "share/licenses/x11-widgets/libSM-COPYING",
+    "share/licenses/x11-widgets/libXaw-COPYING",
+    "share/licenses/x11-widgets/libXft-COPYING",
+    "share/licenses/x11-widgets/libXmu-COPYING",
+    "share/licenses/x11-widgets/libXpm-COPYING",
+    "share/licenses/x11-widgets/libXrandr-COPYING",
+    "share/licenses/x11-widgets/libXt-COPYING",
+    "share/licenses/x11-widgets/termcap-COPYING",
+    "share/licenses/x11-widgets/xev-COPYING",
+    "share/licenses/x11-widgets/xmessage-COPYING",
+    "share/licenses/x11-widgets/xprop-COPYING",
+    "share/licenses/x11-widgets/xterm-COPYING"
+  ],
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/x11-widgets/binaries/f07c450b691593ebaf93331b26c6b978fd56e29f846d4ee996ca8e1f39e77547.tar",
+    "sha256": "f07c450b691593ebaf93331b26c6b978fd56e29f846d4ee996ca8e1f39e77547",
+    "size": 1338880
+  }
+}

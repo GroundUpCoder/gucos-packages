@@ -1,0 +1,27 @@
+/usr/local/bin/bitmap: OK
+/usr/local/share/doc/bitmap/COPYING: OK
+/usr/local/share/licenses/bitmap/COPYING: OK
+/usr/local/bin/bmtoa: OK
+/usr/local/bin/atobm: OK
+/usr/local/share/licenses/bitmap/XBITMAPS-COPYING: OK
+/usr/local/share/bitmap/bitmaps/menu12: OK
+/usr/local/share/X11/app-defaults/Bitmap: OK
+/usr/local/share/X11/app-defaults/Bitmap-color: OK
+/usr/local/share/X11/app-defaults/Bitmap-nocase: OK
+/usr/local/share/bitmap/bitmaps/Dashes: OK
+/usr/local/share/bitmap/bitmaps/Down: OK
+/usr/local/share/bitmap/bitmaps/Excl: OK
+/usr/local/share/bitmap/bitmaps/FlipHoriz: OK
+/usr/local/share/bitmap/bitmaps/FlipVert: OK
+/usr/local/share/bitmap/bitmaps/Fold: OK
+/usr/local/share/bitmap/bitmaps/Left: OK
+/usr/local/share/bitmap/bitmaps/Right: OK
+/usr/local/share/bitmap/bitmaps/RotateLeft: OK
+/usr/local/share/bitmap/bitmaps/RotateRight: OK
+/usr/local/share/bitmap/bitmaps/Stipple: OK
+/usr/local/share/bitmap/bitmaps/Term: OK
+/usr/local/share/bitmap/bitmaps/Up: OK
+2232 functions, 2240501 bytes
+XGRAPHICS-READY
+XGRAPHICS-PASS
+XGRAPHICS-TERMINAL-RECOVERED

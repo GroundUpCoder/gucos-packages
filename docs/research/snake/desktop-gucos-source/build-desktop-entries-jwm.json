@@ -1,0 +1,12 @@
+{
+  "action": "build",
+  "names": [
+    "desktop-entries",
+    "jwm"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "6b394e669d24d67ee1afaca58f77fb2d2f263b75",
+  "startedAt": "2026-10-11T04:40:43.989Z",
+  "status": "passed",
+  "finishedAt": "2026-10-11T04:41:20.333Z"
+}

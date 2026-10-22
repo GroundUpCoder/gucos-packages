@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "name": "sdl3-ttf",
+  "version": "3.2.2-3",
+  "dependencies": [
+    "harfbuzz",
+    "freetype",
+    "glib",
+    "pcre2",
+    "libintl",
+    "libiconv",
+    "zlib"
+  ],
+  "dependencyRequirements": {
+    "harfbuzz": {
+      "version": "14.5.0-1"
+    },
+    "freetype": {
+      "version": "2.14.1-1"
+    },
+    "glib": {
+      "version": "2.84.4-1"
+    },
+    "pcre2": {
+      "version": "10.46-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    },
+    "libiconv": {
+      "version": "1.18-1"
+    },
+    "zlib": {
+      "version": "1.3.2-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "sdl3-vt",
+      "pthreads"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/sdl3-ttf/source.tar",
+      "sha256": "c706d72a6c82f0e40745aa946044bcbf8c74c66a0efbf2b6f56beec6b1e92853",
+      "size": 1976320
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/sdl3-ttf/build.sh",
+      "sha256": "86a9e971b1a1b1189453571a52b89ad99d5569b0c83e8adfcfd050c9367e0e0a",
+      "size": 1183
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/sdl3-ttf/test.sh",
+      "sha256": "ee0e18cbb3c2e985449731528a5a3e4487e895e09f8c5ae62cdbef426cffa387",
+      "size": 1748
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libSDL3_ttf.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libSDL3_ttf.so",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/sdl3-ttf.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/sdl3-ttf/LICENSE.txt",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/sdl3-ttf/OFL-NotoSans.txt",
+      "mode": 420
+    },
+    {
+      "path": "include/SDL3_ttf/SDL_textengine.h",
+      "mode": 420
+    },
+    {
+      "path": "include/SDL3_ttf/SDL_ttf.h",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/sdl3-ttf/LICENSE.txt",
+    "share/licenses/sdl3-ttf/OFL-NotoSans.txt"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/sdl3-ttf/binaries/0ac5d663c849cd55f055b5e34028594b0baf0975e069f1f10042ad44db7f2beb.tar",
+    "sha256": "0ac5d663c849cd55f055b5e34028594b0baf0975e069f1f10042ad44db7f2beb",
+    "size": 593920
+  }
+}

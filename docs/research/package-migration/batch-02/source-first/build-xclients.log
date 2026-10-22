@@ -1,0 +1,425 @@
+[machine-job] queued: node tests/migration/stage.mjs build xfontsel xclipboard xcutsel oclock xedit
+[machine-job] running: 46453ca1-49ee-4435-b16f-f4ca3c0ce79a
+gucman: unknown source
+
+gucman: build migration:xfontsel: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7441 bytes; transfer finished
+gucman: Resolving: migration:xfontsel
+gucman: Downloading manifest for migration:xfontsel (1558 bytes)
+  Connecting; waiting for response…
+  Downloaded 1558 / 1558 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xfontsel
+gucman: Checking cached object: manifest for migration:xfontsel
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xfontsel (0 remaining after this)
+gucman: Downloading xfontsel source: source.tar (901120 bytes)
+  Connecting; waiting for response…
+  Downloaded 901120 / 901120 bytes (100%); transfer finished
+gucman: Verifying download: xfontsel source: source.tar
+gucman: Checking cached object: xfontsel source: source.tar
+gucman: Downloading xfontsel source: build.sh (513 bytes)
+  Connecting; waiting for response…
+  Downloaded 513 / 513 bytes (100%); transfer finished
+gucman: Verifying download: xfontsel source: build.sh
+gucman: Checking cached object: xfontsel source: build.sh
+gucman: Downloading xfontsel source: test.sh (51 bytes)
+  Connecting; waiting for response…
+  Downloaded 51 / 51 bytes (100%); transfer finished
+gucman: Verifying download: xfontsel source: test.sh
+gucman: Checking cached object: xfontsel source: test.sh
+gucman: Downloading xfontsel source: config.h (295 bytes)
+  Connecting; waiting for response…
+  Downloaded 295 / 295 bytes (100%); transfer finished
+gucman: Verifying download: xfontsel source: config.h
+gucman: Checking cached object: xfontsel source: config.h
+Building migration:xfontsel; running trusted recipe with access to your guest files
+4789 functions, 4450565 bytes
+xfontsel 1.1.2
+gucman: Installing xfontsel: 0/3 files
+gucman: Installing xfontsel: 3/3 files
+gucman: Preparing checksums: xfontsel
+gucman: Checksummed xfontsel: 3/3 files
+gucman: Saving transaction: xfontsel
+gucman: Verifying staged files: xfontsel
+gucman: Activating: xfontsel
+Installed migration:xfontsel 1.1.2-1
+
+{
+  tail: ' manifest for migration:x11-widgets\n' +
+    'gucman: Resolving: migration:x11-toolkit\n' +
+    'gucman: Checking cached object: manifest for migration:x11-toolkit\n' +
+    'gucman: Resolving: migration:x11-server\n' +
+    'gucman: Checking cached object: manifest for migration:x11-server\n'
+}
+gucman: build migration:xclipboard: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7441 bytes; transfer finished
+gucman: Resolving: migration:xclipboard
+gucman: Downloading manifest for migration:xclipboard (1576 bytes)
+  Connecting; waiting for response…
+  Downloaded 1576 / 1576 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xclipboard
+gucman: Checking cached object: manifest for migration:xclipboard
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xclipboard (0 remaining after this)
+gucman: Downloading xclipboard source: source.tar (839680 bytes)
+  Connecting; waiting for response…
+  Downloaded 839680 / 839680 bytes (100%); transfer finished
+gucman: Verifying download: xclipboard source: source.tar
+gucman: Checking cached object: xclipboard source: source.tar
+gucman: Downloading xclipboard source: build.sh (514 bytes)
+  Connecting; waiting for response…
+  Downloaded 514 / 514 bytes (100%); transfer finished
+gucman: Verifying download: xclipboard source: build.sh
+gucman: Checking cached object: xclipboard source: build.sh
+gucman: Downloading xclipboard source: test.sh (53 bytes)
+  Connecting; waiting for response…
+  Downloaded 53 / 53 bytes (100%); transfer finished
+gucman: Verifying download: xclipboard source: test.sh
+gucman: Checking cached object: xclipboard source: test.sh
+gucman: Downloading xclipboard source: config.h (297 bytes)
+  Connecting; waiting for response…
+  Downloaded 297 / 297 bytes (100%); transfer finished
+gucman: Verifying download: xclipboard source: config.h
+gucman: Checking cached object: xclipboard source: config.h
+Building migration:xclipboard; running trusted recipe with access to your guest files
+4628 functions, 4310673 bytes
+xclipboard 1.1.6
+gucman: Installing xclipboard: 0/3 files
+gucman: Installing xclipboard: 3/3 files
+gucman: Preparing checksums: xclipboard
+gucman: Checksummed xclipboard: 3/3 files
+gucman: Saving transaction: xclipboard
+gucman: Verifying staged files: xclipboard
+gucman: Activating: xclipboard
+Installed migration:xclipboard 1.1.6-1
+
+gucman: build migration:xcutsel: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7441 bytes; transfer finished
+gucman: Resolving: migration:xcutsel
+gucman: Downloading manifest for migration:xcutsel (1470 bytes)
+  Connecting; waiting for response…
+  Downloaded 1470 / 1470 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xcutsel
+gucman: Checking cached object: manifest for migration:xcutsel
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xcutsel (0 remaining after this)
+gucman: Checking cached object: xcutsel source: source.tar
+gucman: Downloading xcutsel source: build.sh (397 bytes)
+  Connecting; waiting for response…
+  Downloaded 397 / 397 bytes (100%); transfer finished
+gucman: Verifying download: xcutsel source: build.sh
+gucman: Checking cached object: xcutsel source: build.sh
+gucman: Downloading xcutsel source: test.sh (50 bytes)
+  Connecting; waiting for response…
+  Downloaded 50 / 50 bytes (100%); transfer finished
+gucman: Verifying download: xcutsel source: test.sh
+gucman: Checking cached object: xcutsel source: test.sh
+gucman: Downloading xcutsel source: config.h (294 bytes)
+  Connecting; waiting for response…
+  Downloaded 294 / 294 bytes (100%); transfer finished
+gucman: Verifying download: xcutsel source: config.h
+gucman: Checking cached object: xcutsel source: config.h
+Building migration:xcutsel; running trusted recipe with access to your guest files
+4613 functions, 4303542 bytes
+xcutsel 1.1.6
+gucman: Installing xcutsel: 0/2 files
+gucman: Installing xcutsel: 2/2 files
+gucman: Preparing checksums: xcutsel
+gucman: Checksummed xcutsel: 2/2 files
+gucman: Saving transaction: xcutsel
+gucman: Verifying staged files: xcutsel
+gucman: Activating: xcutsel
+Installed migration:xcutsel 1.1.6-1
+
+{
+  tail: 'ct: manifest for migration:oclock\n' +
+    'gucman: Resolving: migration:x11-widgets\n' +
+    'gucman: Checking cached object: manifest for migration:x11-widgets\n' +
+    'gucman: Resolving: migration:x11-toolkit\n' +
+    'gucman: Checking cached object: manifest for migration:x11-toolkit\n'
+}
+gucman: build migration:oclock: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7441 bytes; transfer finished
+gucman: Resolving: migration:oclock
+gucman: Downloading manifest for migration:oclock (1545 bytes)
+  Connecting; waiting for response…
+  Downloaded 1545 / 1545 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:oclock
+gucman: Checking cached object: manifest for migration:oclock
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: oclock (0 remaining after this)
+gucman: Downloading oclock source: source.tar (798720 bytes)
+  Connecting; waiting for response…
+  Downloaded 798720 / 798720 bytes (100%); transfer finished
+gucman: Verifying download: oclock source: source.tar
+gucman: Checking cached object: oclock source: source.tar
+gucman: Downloading oclock source: build.sh (519 bytes)
+  Connecting; waiting for response…
+  Downloaded 519 / 519 bytes (100%); transfer finished
+gucman: Verifying download: oclock source: build.sh
+gucman: Checking cached object: oclock source: build.sh
+gucman: Downloading oclock source: test.sh (49 bytes)
+  Connecting; waiting for response…
+  Downloaded 49 / 49 bytes (100%); transfer finished
+gucman: Verifying download: oclock source: test.sh
+gucman: Checking cached object: oclock source: test.sh
+gucman: Downloading oclock source: config.h (293 bytes)
+  Connecting; waiting for response…
+  Downloaded 293 / 293 bytes (100%); transfer finished
+gucman: Verifying download: oclock source: config.h
+gucman: Checking cached object: oclock source: config.h
+Building migration:oclock; running trusted recipe with access to your guest files
+4617 functions, 4308905 bytes
+oclock 1.0.6
+gucman: Installing oclock: 0/3 files
+gucman: Installing oclock: 3/3 files
+gucman: Preparing checksums: oclock
+gucman: Checksummed oclock: 3/3 files
+gucman: Saving transaction: oclock
+gucman: Verifying staged files: oclock
+gucman: Activating: oclock
+Installed migration:oclock 1.0.6-1
+
+{
+  tail: ' manifest for migration:x11-widgets\n' +
+    'gucman: Resolving: migration:x11-toolkit\n' +
+    'gucman: Checking cached object: manifest for migration:x11-toolkit\n' +
+    'gucman: Resolving: migration:x11-server\n' +
+    'gucman: Checking cached object: manifest for migration:x11-server\n'
+}
+gucman: build migration:xedit: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7441 bytes; transfer finished
+gucman: Resolving: migration:xedit
+gucman: Downloading manifest for migration:xedit (4319 bytes)
+  Connecting; waiting for response…
+  Downloaded 4319 / 4319 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xedit
+gucman: Checking cached object: manifest for migration:xedit
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xedit (0 remaining after this)
+gucman: Downloading xedit source: source.tar (3194880 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.05 / 3.05 MiB (100%); transfer finished
+gucman: Verifying download: xedit source: source.tar
+gucman: Checking cached object: xedit source: source.tar
+gucman: Downloading xedit source: build.sh (1825 bytes)
+  Connecting; waiting for response…
+  Downloaded 1825 / 1825 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: build.sh
+gucman: Checking cached object: xedit source: build.sh
+gucman: Downloading xedit source: test.sh (117 bytes)
+  Connecting; waiting for response…
+  Downloaded 117 / 117 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: test.sh
+gucman: Checking cached object: xedit source: test.sh
+gucman: Downloading xedit source: config.h (375 bytes)
+  Connecting; waiting for response…
+  Downloaded 375 / 375 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: config.h
+gucman: Checking cached object: xedit source: config.h
+gucman: Downloading xedit source: util.c (25493 bytes)
+  Connecting; waiting for response…
+  Downloaded 25493 / 25493 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: util.c
+gucman: Checking cached object: xedit source: util.c
+gucman: Downloading xedit source: lisp-format.c (56526 bytes)
+  Connecting; waiting for response…
+  Downloaded 56526 / 56526 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: lisp-format.c
+gucman: Checking cached object: xedit source: lisp-format.c
+gucman: Downloading xedit source: lisp-io.c (15545 bytes)
+  Connecting; waiting for response…
+  Downloaded 15545 / 15545 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: lisp-io.c
+gucman: Checking cached object: xedit source: lisp-io.c
+gucman: Downloading xedit source: lisp-lisp.c (154233 bytes)
+  Connecting; waiting for response…
+  Downloaded 154233 / 154233 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: lisp-lisp.c
+gucman: Checking cached object: xedit source: lisp-lisp.c
+Building migration:xedit; running trusted recipe with access to your guest files
+Got 10 parse errors in /tmp/gucman.igrbxu/builds/xedit/source/lisp/math.c.
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:493: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:504: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3176: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3176: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3832: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3856: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3880: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3907: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3931: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/math.c:758: error: Undeclared identifier 'finite'
+Compilation failed
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: build migration:xedit: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7441 bytes; transfer finished
+gucman: Resolving: migration:xedit
+gucman: Downloading manifest for migration:xedit (4319 bytes)
+  Connecting; waiting for response…
+  Downloaded 4319 / 4319 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xedit
+gucman: Checking cached object: manifest for migration:xedit
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xedit (0 remaining after this)
+gucman: Downloading xedit source: source.tar (3194880 bytes)
+  Connecting; waiting for response…
+  Downloaded 3.05 / 3.05 MiB (100%); transfer finished
+gucman: Verifying download: xedit source: source.tar
+gucman: Checking cached object: xedit source: source.tar
+gucman: Downloading xedit source: build.sh (1825 bytes)
+  Connecting; waiting for response…
+  Downloaded 1825 / 1825 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: build.sh
+gucman: Checking cached object: xedit source: build.sh
+gucman: Downloading xedit source: test.sh (117 bytes)
+  Connecting; waiting for response…
+  Downloaded 117 / 117 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: test.sh
+gucman: Checking cached object: xedit source: test.sh
+gucman: Downloading xedit source: config.h (375 bytes)
+  Connecting; waiting for response…
+  Downloaded 375 / 375 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: config.h
+gucman: Checking cached object: xedit source: config.h
+gucman: Downloading xedit source: util.c (25493 bytes)
+  Connecting; waiting for response…
+  Downloaded 25493 / 25493 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: util.c
+gucman: Checking cached object: xedit source: util.c
+gucman: Downloading xedit source: lisp-format.c (56526 bytes)
+  Connecting; waiting for response…
+  Downloaded 56526 / 56526 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: lisp-format.c
+gucman: Checking cached object: xedit source: lisp-format.c
+gucman: Downloading xedit source: lisp-io.c (15545 bytes)
+  Connecting; waiting for response…
+  Downloaded 15545 / 15545 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: lisp-io.c
+gucman: Checking cached object: xedit source: lisp-io.c
+gucman: Downloading xedit source: lisp-lisp.c (154233 bytes)
+  Connecting; waiting for response…
+  Downloaded 154233 / 154233 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: lisp-lisp.c
+gucman: Checking cached object: xedit source: lisp-lisp.c
+Building migration:xedit; running trusted recipe with access to your guest files
+Got 10 parse errors in /tmp/gucman.igrbxu/builds/xedit/source/lisp/math.c.
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:493: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:504: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3176: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3176: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3832: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3856: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3880: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3907: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/mathimp.c:3931: error: Undeclared identifier 'finite'
+/tmp/gucman.igrbxu/builds/xedit/source/lisp/math.c:758: error: Undeclared identifier 'finite'
+Compilation failed
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:48:96)
+    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:41:27 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

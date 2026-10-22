@@ -1,0 +1,483 @@
+{
+  "xfontsel": {
+    "format": 1,
+    "name": "xfontsel",
+    "version": "1.1.2-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "dependencyRequirements": {
+      "x11-widgets": {
+        "version": "1.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:64321/migration/xfontsel/source.tar",
+        "sha256": "36f6308d66378af915e4a2b08f32cb43d23b1bca138f56c5399a4edef19519a1",
+        "size": 901120
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:64321/migration/xfontsel/build.sh",
+        "sha256": "579b7a9bd811a546396521787a03fb75f2a61d4c7450e70f29a0a4611f847508",
+        "size": 513
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:64321/migration/xfontsel/test.sh",
+        "sha256": "91afacc1dce21af335a554905181225b3d1a11c54c7ae0b87f9cf6158e031d8d",
+        "size": 51
+      },
+      {
+        "path": "config.h",
+        "url": "http://127.0.0.1:64321/migration/xfontsel/config.h",
+        "sha256": "9150a418e91a8423413b0625e29a4c57a25cd5d289c798d29a37b61729907e10",
+        "size": 295
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xfontsel",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/xfontsel/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/XFontSel",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xfontsel/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "http://127.0.0.1:64321/migration/xfontsel/binary.tar",
+      "sha256": "0035f4b28d01eecf25e2d565df976f9174857d563558ec175dbc5775216dd760",
+      "size": 4462080
+    }
+  },
+  "xclipboard": {
+    "format": 1,
+    "name": "xclipboard",
+    "version": "1.1.6-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "dependencyRequirements": {
+      "x11-widgets": {
+        "version": "1.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:64321/migration/xclipboard/source.tar",
+        "sha256": "aeb29738b88e55c9ac9fc36de118431b80699b255b6aead8192af24f78755c94",
+        "size": 839680
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:64321/migration/xclipboard/build.sh",
+        "sha256": "362fb8986d5088f1a4256b8ad607555bb85b5b403fedd6e2ee65334c0dcf1499",
+        "size": 514
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:64321/migration/xclipboard/test.sh",
+        "sha256": "aee88705fe9ccc30aaa934d9afee41412c945f747d8689323967121b26f1c60b",
+        "size": 53
+      },
+      {
+        "path": "config.h",
+        "url": "http://127.0.0.1:64321/migration/xclipboard/config.h",
+        "sha256": "9513a7223139bf22ebe4f15872dce4db5e6896f2722f834f3976b46361bab909",
+        "size": 297
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xclipboard",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/xclipboard/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/XClipboard",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xclipboard/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "http://127.0.0.1:64321/migration/xclipboard/binary.tar",
+      "sha256": "e4d0c4277b92b18731390974d71e9babb4d862dcd65ea48641e986f76f20dbb9",
+      "size": 4319232
+    }
+  },
+  "xcutsel": {
+    "format": 1,
+    "name": "xcutsel",
+    "version": "1.1.6-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "dependencyRequirements": {
+      "x11-widgets": {
+        "version": "1.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:64321/migration/xcutsel/source.tar",
+        "sha256": "aeb29738b88e55c9ac9fc36de118431b80699b255b6aead8192af24f78755c94",
+        "size": 839680
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:64321/migration/xcutsel/build.sh",
+        "sha256": "07bf9f4ab8bb754387f0f4bfa1c5c81ae8382f3d09ebbb37bbda01b8bd2a7e45",
+        "size": 397
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:64321/migration/xcutsel/test.sh",
+        "sha256": "5d108946890db00bdc9b8dd8d6faca9c8a37aefd78907d5a27cf59d1af4452cb",
+        "size": 50
+      },
+      {
+        "path": "config.h",
+        "url": "http://127.0.0.1:64321/migration/xcutsel/config.h",
+        "sha256": "2e3ab3d07de6f8b5071f5a50800a4f2e3f5777272a2912770e9f0b7ba6b2fbdf",
+        "size": 294
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xcutsel",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/xcutsel/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xcutsel/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "http://127.0.0.1:64321/migration/xcutsel/binary.tar",
+      "sha256": "6d834a84abd60b4d1f90c3e0ef176522961c44c799c6512d9a41345f6749d20f",
+      "size": 4307456
+    }
+  },
+  "oclock": {
+    "format": 1,
+    "name": "oclock",
+    "version": "1.0.6-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "dependencyRequirements": {
+      "x11-widgets": {
+        "version": "1.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:64321/migration/oclock/source.tar",
+        "sha256": "28b346372e21da5813347aa5f639281f450eba10fdb3b239cb74569355bff02c",
+        "size": 798720
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:64321/migration/oclock/build.sh",
+        "sha256": "f52a4e807228727140d62bab4b6c6c0e12262a2b14ef46c5c25ecafb1f11577b",
+        "size": 519
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:64321/migration/oclock/test.sh",
+        "sha256": "b661ef85e2495a916f0a0535534a41c353fbc9eba984ae7ef7eb8854b52c3374",
+        "size": 49
+      },
+      {
+        "path": "config.h",
+        "url": "http://127.0.0.1:64321/migration/oclock/config.h",
+        "sha256": "7dbad6d4c7f8d9a7c7a5fd7e17dced5a818bcfd9b2746852b36754761c903cc7",
+        "size": 293
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/oclock",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/oclock/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/Clock-color",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/oclock/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "http://127.0.0.1:64321/migration/oclock/binary.tar",
+      "sha256": "d99fed7b0cd540514df0f4b04652f4fff8c98fd0f3abb1cda1d7cfa5a2cf792b",
+      "size": 4314624
+    }
+  },
+  "xedit": {
+    "format": 1,
+    "name": "xedit",
+    "version": "1.2.5-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "dependencyRequirements": {
+      "x11-widgets": {
+        "version": "1.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:64321/migration/xedit/source.tar",
+        "sha256": "34900bb42e7e3a9da5eae9d796b2a321dfd283c6eabca37a0352a5c5f7025f7e",
+        "size": 3194880
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:64321/migration/xedit/build.sh",
+        "sha256": "26dcf9abdb2c2d10e3f1473c6aabdcda7a690c74c095546f6746ec25471667ec",
+        "size": 1843
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:64321/migration/xedit/test.sh",
+        "sha256": "7de6f3bec21ecead67fe15b901c770ae5719f90e4c37121ccb2c904657be9196",
+        "size": 117
+      },
+      {
+        "path": "config.h",
+        "url": "http://127.0.0.1:64321/migration/xedit/config.h",
+        "sha256": "16e8737b475f4645c489e15b7bd6c881a8de117d865ddd792fedb5fcfe988cf9",
+        "size": 375
+      },
+      {
+        "path": "util.c",
+        "url": "http://127.0.0.1:64321/migration/xedit/util.c",
+        "sha256": "5f62916f93b3153ca0e3ba6958c884758a12cfe7be7e3ae74c213f925212dca8",
+        "size": 25493
+      },
+      {
+        "path": "lisp-format.c",
+        "url": "http://127.0.0.1:64321/migration/xedit/lisp-format.c",
+        "sha256": "3ae0c7c36e89a67d6e20c4245b6d7839974bcf6b2191d2c6b7dc43f7b7ac7e37",
+        "size": 56526
+      },
+      {
+        "path": "lisp-io.c",
+        "url": "http://127.0.0.1:64321/migration/xedit/lisp-io.c",
+        "sha256": "fc9f3c70b65eca60fcfb3407f1679eef0295cca3db4bf73127f9c42694688052",
+        "size": 15545
+      },
+      {
+        "path": "lisp-lisp.c",
+        "url": "http://127.0.0.1:64321/migration/xedit/lisp-lisp.c",
+        "sha256": "f624c0b1dfd26f1754d3c1970ab7358027cf212db7b4502143329883cfd9219f",
+        "size": 154233
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xedit",
+        "mode": 493
+      },
+      {
+        "path": "libexec/xedit/lsp",
+        "mode": 493
+      },
+      {
+        "path": "libexec/xedit/regex-tests",
+        "mode": 493
+      },
+      {
+        "path": "share/xedit/tests/tests.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xedit/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/Xedit",
+        "mode": 420
+      },
+      {
+        "path": "share/X11/app-defaults/Xedit-color",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/indent.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/lisp.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/auto.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/c.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/html.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/imake.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/lisp.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/make.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/man.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/patch.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/perl.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/python.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/rpm.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/sgml.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/sh.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/xconf.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/xlog.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/progmodes/xrdb.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/syntax.lsp",
+        "mode": 420
+      },
+      {
+        "path": "share/xedit/lisp/xedit.lsp",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xedit/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "http://127.0.0.1:64321/migration/xedit/binary.tar",
+      "sha256": "4b6d0f82b31c046546a11b19351480b17af0269686f2fd3aa6eae462a0fb75a7",
+      "size": 20440064
+    }
+  }
+}

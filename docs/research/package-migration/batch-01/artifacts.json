@@ -1,0 +1,32 @@
+{
+  "zlib": {
+    "sha256": "48479d0b8836cd6bc54e4d5c11c18779bd737bde55300d8e3bb9e4e48a4918ba",
+    "size": 513024,
+    "state": "guest-source-passed; binary-install/reload pending"
+  },
+  "cjson": {
+    "sha256": "c9f82304c048ea6fb5f77c634f469056bd1f01cf1ce22280cebd2fd047db65f0",
+    "size": 174592,
+    "state": "guest-source-passed; binary-install/reload pending"
+  },
+  "pkgconf": {
+    "sha256": "201a46e2553d3ec68b1af34483969c7f87f03db0d5eaf3d76cea4ceb06bc1f0b",
+    "size": 454656,
+    "state": "guest-source-passed; binary-install/reload pending"
+  },
+  "bzip2": {
+    "sha256": "0052b1cba7ea36692b49cfb89797d70050c2de0fe36e30e3dfe25b42742d6eba",
+    "size": 510464,
+    "state": "guest-source-passed; binary-install/reload pending"
+  },
+  "bzip2recover": {
+    "sha256": "1f34ec68a0cec6014ba3b03fb3bb77cd424ee776bbbe1fc1a33d02440b72c63c",
+    "size": 22528,
+    "state": "guest-source-passed; binary-install/reload pending"
+  },
+  "expat": {
+    "sha256": "f67cb8ac5a4ad45d7bc37b38823d50749fffc2abd3136268f55e3cf02b5fb345",
+    "size": 778752,
+    "state": "guest-source-passed; binary-install/reload pending"
+  }
+}

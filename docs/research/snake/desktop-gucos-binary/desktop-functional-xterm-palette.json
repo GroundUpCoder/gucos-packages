@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-10-11T04:47:51.565Z",
+  "status": "passed",
+  "checks": [
+    "frozen-candidate-manifests-and-payloads",
+    "actual-jwm-menu-selection",
+    "xterm-pty-game-board-pixels",
+    "keyboard-input-and-single-q-close",
+    "jwm-survives-game-exit"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"Snake\">/usr/local/bin/desktop-menu launch wasm-posix-snake.desktop</Program>\n</JWM>\n",
+  "snakeIndex": 1,
+  "observerSha256": "b89ab3edeb20a8c345192e0447770145935c9b23d2f5a165036dc4d0b5c9ba6b",
+  "harnessSha256": "2694283c9ed5e8beb341942dbd8817d86ee2a8ca3092cc3454c7573b0243d319",
+  "finishedAt": "2026-10-11T04:47:54.888Z"
+}

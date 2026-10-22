@@ -1,0 +1,66 @@
+[
+  {
+    "path": "lib/libcairo.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libcairo.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/cairo.pc",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/cairo-ft.pc",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/cairo-xlib.pc",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/cairo-xlib-xrender.pc",
+    "mode": 420
+  },
+  {
+    "path": "include/cairo/cairo.h",
+    "mode": 420
+  },
+  {
+    "path": "include/cairo/cairo-version.h",
+    "mode": 420
+  },
+  {
+    "path": "include/cairo/cairo-features.h",
+    "mode": 420
+  },
+  {
+    "path": "include/cairo/cairo-deprecated.h",
+    "mode": 420
+  },
+  {
+    "path": "include/cairo/cairo-ft.h",
+    "mode": 420
+  },
+  {
+    "path": "include/cairo/cairo-xlib.h",
+    "mode": 420
+  },
+  {
+    "path": "include/cairo/cairo-xlib-xrender.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/cairo/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/cairo/COPYING-LGPL-2.1",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/cairo/COPYING-MPL-1.1",
+    "mode": 420
+  }
+]

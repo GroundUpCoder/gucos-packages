@@ -1,0 +1,253 @@
+{
+  "format": 1,
+  "name": "minihb",
+  "version": "0.1.0-3",
+  "dependencies": [
+    "freetype"
+  ],
+  "dependencyRequirements": {
+    "freetype": {
+      "version": "2.14.1-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "pthreads"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/source.tar",
+      "sha256": "0e576c00ad713f1d743107a525c9d508d5f62ff7be895890e66b55430fe21df8",
+      "size": 4792320
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/build.sh",
+      "sha256": "f5bee03f76da83f98e23ff5293678a36ef396dc143b15c9ea2b28f382297ed6c",
+      "size": 913
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/test.sh",
+      "sha256": "27fe5ca3bcd3be0fee836448df8153dc553c5e12862afed164b83cd76854c881",
+      "size": 511
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libminihb.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libminihb.so",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-aat-layout.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-aat.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-blob.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-buffer.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-cairo.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-common.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-coretext.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-deprecated.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-directwrite.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-draw.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-face.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-font.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ft.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-gdi.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-glib.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-gobject-structs.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-gobject.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-graphite2.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-icu.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-map.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-color.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-deprecated.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-font.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-layout.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-math.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-meta.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-metrics.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-name.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-shape.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot-var.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-ot.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-paint.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-set.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-shape-plan.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-shape.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-style.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-subset-repacker.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-subset.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-unicode.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-uniscribe.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-version.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb-wasm-api.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/hb.h",
+      "mode": 420
+    },
+    {
+      "path": "include/minihb/minihb.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/minihb.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/minihb/COPYING-HARFBUZZ",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/minihb/OFL-NotoSans.txt",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/minihb/COPYING-HARFBUZZ",
+    "share/licenses/minihb/OFL-NotoSans.txt"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/minihb/binaries/d03b22c1b47d3cf7c9f4ccccb29b265771ef352cdf1c29ff48ddc63ba3c56cd2.tar",
+    "sha256": "d03b22c1b47d3cf7c9f4ccccb29b265771ef352cdf1c29ff48ddc63ba3c56cd2",
+    "size": 883712
+  }
+}

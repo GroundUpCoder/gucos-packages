@@ -1,0 +1,22 @@
+[
+  {
+    "path": "bin/gawk",
+    "mode": 493
+  },
+  {
+    "path": "bin/awk",
+    "mode": 493
+  },
+  {
+    "path": "share/info/gawk.info",
+    "mode": 420
+  },
+  {
+    "path": "share/man/man1/gawk.1",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/awk/COPYING",
+    "mode": 420
+  }
+]

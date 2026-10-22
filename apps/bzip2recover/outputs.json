@@ -1,0 +1,10 @@
+[
+  {
+    "path": "bin/bzip2recover",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/bzip2recover/LICENSE",
+    "mode": 420
+  }
+]

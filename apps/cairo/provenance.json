@@ -1,0 +1,28 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/cairo",
+  "archiveSha256": "3346111f8ea7f997a9cce59fc0b16b208836993b698b902235c4711b62fd7d8b",
+  "overlays": [
+    {
+      "file": "config.h",
+      "historicalPath": "apps/gtk3-x11/source/overlays/cairo/config.h",
+      "sha256": "032204bec31897352af4960d8132257dab89b9daa6dac4214cff8500c44379df"
+    },
+    {
+      "file": "cairo-features.h",
+      "historicalPath": "apps/gtk3-x11/source/overlays/cairo/src/cairo-features.h",
+      "sha256": "8f9a318e59fa6be3f5c9b9b77adbf4da6fedd3aedce9032097a9de0a9b83d8ee"
+    },
+    {
+      "file": "cairo-xlib-surface.c",
+      "historicalPath": "apps/gtk3-x11/source/overlays/cairo/src/cairo-xlib-surface.c",
+      "sha256": "ef6e83c82efe06c1b171d034a0b969135afd61986c5cafe37695ec719cdfaddf"
+    }
+  ],
+  "sourceListOrigin": {
+    "path": "apps/gtk3-x11/source/install.sh",
+    "sha256": "e717bb88b2d236772c9aa25cbe1859c316269b13561ea589f0d1f467e4e1732a"
+  },
+  "status": "source migration candidate; no new guest execution"
+}

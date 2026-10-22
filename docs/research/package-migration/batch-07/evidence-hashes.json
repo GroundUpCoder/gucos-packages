@@ -1,0 +1,21 @@
+{
+  "binary-install/acceptance-job.log": "b459aa4a303533bbe24de854cf8dd79edad4c1318a12ba8b299b8321df574ea4",
+  "binary-install/candidate-manifests.json": "b254853ba54eb2e71519b1be67d8753859347bb3f516b52273e2ce20293c2b8e",
+  "binary-install/config.json": "fb2925dbf03c48a97bb994290a64903766baad44a26906d76c224e2171586eaf",
+  "binary-install/consumers-ed-jq.json": "43d994de2f1c78f720656ee35ac2cef6d80d9af5598917cf6564f6d7c6bbd319",
+  "binary-install/consumers.log": "4455851c06a359950690b28429b10cc80713740572157fe3810e1d09c53f69d0",
+  "binary-install/dist-files.json": "b606123b665c65f47f15fe77a1675c6e06afcc51fb9fc89c02ff17370961349f",
+  "binary-install/ed.sha256": "b5aa88d1744f479efd057e4223ffc71e471f71b19eb0e72a08a51766d130911f",
+  "binary-install/install-ed-jq.json": "c254ba11c5248154c6856de9921e22f5157f58b5c52397f9cda1f61b2f7a4ecc",
+  "binary-install/install.log": "fbc5402f01bb0d3360b21a3e28552abd16653ae81df7882e87d20d98f989f51f",
+  "binary-install/jq.sha256": "3673946b75f69eabceb2c5f2b294c9d170386f22c1f5a3549cb7099fa0ad416e",
+  "binary-install/observed-runtime.json": "6b115a2deb7612b701beecf67d4f6db05f0ee50e8daf9871224086d260c161ae",
+  "binary-install/reload-ed-jq.json": "5116f3bc0b888ba0520ae9fb4e98633b205520069f7df24f4280a3aaa122a3fd",
+  "binary-install/reload.log": "a8aaf2bc50d3eac9bf8457f5704d066486cdda7b1bb4c96a3a93d948c65d8dff",
+  "source/build-ed-jq.json": "35456b1b49d33d34fd4f19e8234760a0e5f89ebcc68de06c69dd942361386630",
+  "source/build.log": "0d2206bfdaf2d6248c2aab1d7793acdc7867383992ebd190941b40988d56588d",
+  "source/candidate-manifests.json": "e2c1577a71c1aed8890490d541bcda58ea032646b542d4f04fc90d468a58f917",
+  "source/config.json": "787a5b0a4aa2c62de9e9bc5ceeb0866018b26150e23ebeedaac52b1627a4ad91",
+  "source/dist-files.json": "ffa746af4f44ec83fdc1043980c2e45780cb3ca41b57bc8bb29b0e68cf12e0a6",
+  "source/observed-runtime.json": "394ccdbf2308a9210116169ee88c42faf362281485a2cf71e393f61101e477a2"
+}

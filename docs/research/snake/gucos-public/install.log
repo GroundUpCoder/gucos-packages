@@ -1,0 +1,40 @@
+gucman: unknown source
+
+gucman: install migration:snake: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19113 bytes; transfer finished
+gucman: Resolving: migration:snake
+gucman: Downloading manifest for migration:snake (3750 bytes)
+  Connecting; waiting for response…
+  Downloaded 3750 / 3750 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:snake
+gucman: Checking cached object: manifest for migration:snake
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: snake (0 remaining after this)
+gucman: Downloading snake archive (39936 bytes)
+  Connecting; waiting for response…
+  Downloaded 39936 / 39936 bytes (100%); transfer finished
+gucman: Verifying download: snake archive
+gucman: Checking cached object: snake archive
+gucman: Unpacking: snake
+gucman: Installing snake: 0/5 files
+gucman: Installing snake: 5/5 files
+gucman: Preparing checksums: snake
+gucman: Checksummed snake: 5/5 files
+gucman: Saving transaction: snake
+gucman: Verifying staged files: snake
+gucman: Activating: snake
+Installed migration:snake 1.0.0-1
+
+/usr/local/bin/snake: OK
+/usr/local/share/doc/snake/README.md: OK
+/usr/local/share/doc/snake/provenance.json: OK
+/usr/local/share/licenses/snake/LICENSE: OK
+/usr/local/share/applications/wasm-posix-snake.desktop: OK
+
+39dcdf826b57db16d2faf506f30c29d44ed839a208ee6efeb6a9ec886e7b7e70  /home/user/migration-export.tar
+39936
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

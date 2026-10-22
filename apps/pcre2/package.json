@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "name": "pcre2",
+  "version": "10.46-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/pcre2/source.tar",
+      "sha256": "541a5c679917786129572b88ba936925163b7dd7c1718b7395afccc696af52a5",
+      "size": 6563840
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/pcre2/build.sh",
+      "sha256": "e5ace469f09dd3b201519cf3780ecab92aceb4bbd84c725e4f6b49dfc38cb94b",
+      "size": 5388
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/pcre2/test.sh",
+      "sha256": "999c229267b3b11573af413804fd7917ee7f3cc4338215654de6e14ea7f44b64",
+      "size": 281
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libpcre2-8.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libpcre2-8.so",
+      "mode": 420
+    },
+    {
+      "path": "include/pcre2.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/libpcre2-8.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/pcre2/LICENCE.md",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/pcre2/LICENCE.md"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/73aa5a98f0ffecdc643aa299427b516348efd1eb/apps/pcre2/binaries/8f4283525c0c9f4382299e14e4a4f773f714b049b4d2bb280a37f5dbe2e08cd5.tar",
+    "sha256": "8f4283525c0c9f4382299e14e4a4f773f714b049b4d2bb280a37f5dbe2e08cd5",
+    "size": 1720320
+  }
+}

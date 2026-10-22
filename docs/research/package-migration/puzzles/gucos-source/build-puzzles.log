@@ -1,0 +1,508 @@
+gucman: unknown source
+
+{
+  tail: 'cking cached object: manifest for migration:cairo\n' +
+    'gucman: Resolving: migration:pixman\n' +
+    'gucman: Checking cached object: manifest for migration:pixman\n' +
+    'gucman: Resolving: migration:freetype\n' +
+    'gucman: Checking cached object: manifest for migration:freetype\n'
+}
+{
+  tail: '\n' +
+    'gucman: Checking cached object: manifest for migration:gobject\n' +
+    'gucman: Resolving: migration:glib\n' +
+    'gucman: Checking cached object: manifest for migration:glib\n' +
+    'gucman: Resolving: migration:atk\n' +
+    'gucman: Checking cached object: manifest for migration:atk\n'
+}
+{
+  tail: 'tions, 374283 bytes\n' +
+    'Building puzzle bridges\n' +
+    '435 functions, 417738 bytes\n' +
+    'Building puzzle cube\n' +
+    '361 functions, 374807 bytes\n' +
+    'Building puzzle dominosa\n' +
+    '412 functions, 414371 bytes\n' +
+    'Building puzzle fifteen\n' +
+    '362 functions, 365130 bytes\n' +
+    'Building puzzle filling\n'
+}
+{
+  tail: '0923.616da16\n' +
+    "Magnets, from Simon Tatham's Portable Puzzle Collection\n" +
+    'Version 20260923.616da16\n' +
+    "Map, from Simon Tatham's Portable Puzzle Collection\n" +
+    'Version 20260923.616da16\n' +
+    "Mines, from Simon Tatham's Portable Puzzle Collection\n" +
+    'Version 20260923.616da16\n'
+}
+gucman: build migration:puzzles: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 22900 bytes; transfer finished
+gucman: Resolving: migration:puzzles
+gucman: Downloading manifest for migration:puzzles (12405 bytes)
+  Connecting; waiting for response…
+  Downloaded 12405 / 12405 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:puzzles
+gucman: Checking cached object: manifest for migration:puzzles
+gucman: Resolving: migration:gtk3-x11
+gucman: Checking cached object: manifest for migration:gtk3-x11
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:pixman
+gucman: Checking cached object: manifest for migration:pixman
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:expat
+gucman: Checking cached object: manifest for migration:expat
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:x11-shared
+gucman: Checking cached object: manifest for migration:x11-shared
+gucman: Resolving: migration:pango
+gucman: Checking cached object: manifest for migration:pango
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:harfbuzz-static
+gucman: Checking cached object: manifest for migration:harfbuzz-static
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:freetype
+gucman: Checking cached object: manifest for migration:freetype
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:gdk-pixbuf
+gucman: Checking cached object: manifest for migration:gdk-pixbuf
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libpng
+gucman: Checking cached object: manifest for migration:libpng
+gucman: Resolving: migration:libjpeg-turbo
+gucman: Checking cached object: manifest for migration:libjpeg-turbo
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:cairo-gobject
+gucman: Checking cached object: manifest for migration:cairo-gobject
+gucman: Resolving: migration:cairo
+gucman: Checking cached object: manifest for migration:cairo
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:atk
+gucman: Checking cached object: manifest for migration:atk
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:gtk3-schemas
+gucman: Checking cached object: manifest for migration:gtk3-schemas
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Resolving: migration:harfbuzz
+gucman: Checking cached object: manifest for migration:harfbuzz
+gucman: Resolving: migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:fribidi
+gucman: Checking cached object: manifest for migration:fribidi
+gucman: Resolving: migration:fontconfig
+gucman: Checking cached object: manifest for migration:fontconfig
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:pkgconf
+gucman: Checking cached object: manifest for migration:pkgconf
+gucman: Plan: 29 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 29 packages
+gucman: Package 1/29: pkgconf (28 remaining after this)
+Already installed: pkgconf
+gucman: Package 2/29: x11-server (27 remaining after this)
+Already installed: x11-server
+gucman: Package 3/29: x11-shared (26 remaining after this)
+Already installed: x11-shared
+gucman: Package 4/29: pixman (25 remaining after this)
+Already installed: pixman
+gucman: Package 5/29: freetype (24 remaining after this)
+Already installed: freetype
+gucman: Package 6/29: expat (23 remaining after this)
+Already installed: expat
+gucman: Package 7/29: fontconfig (22 remaining after this)
+Already installed: fontconfig
+gucman: Package 8/29: zlib (21 remaining after this)
+Already installed: zlib
+gucman: Package 9/29: libpng (20 remaining after this)
+Already installed: libpng
+gucman: Package 10/29: cairo (19 remaining after this)
+Already installed: cairo
+gucman: Package 11/29: fribidi (18 remaining after this)
+Already installed: fribidi
+gucman: Package 12/29: libiconv (17 remaining after this)
+Already installed: libiconv
+gucman: Package 13/29: libintl (16 remaining after this)
+Already installed: libintl
+gucman: Package 14/29: pcre2 (15 remaining after this)
+Already installed: pcre2
+gucman: Package 15/29: glib (14 remaining after this)
+Already installed: glib
+gucman: Package 16/29: harfbuzz-static (13 remaining after this)
+Already installed: harfbuzz-static
+gucman: Package 17/29: harfbuzz (12 remaining after this)
+Already installed: harfbuzz
+gucman: Package 18/29: libffi (11 remaining after this)
+Already installed: libffi
+gucman: Package 19/29: gobject (10 remaining after this)
+Already installed: gobject
+gucman: Package 20/29: gio-listmodel (9 remaining after this)
+Already installed: gio-listmodel
+gucman: Package 21/29: pango (8 remaining after this)
+Already installed: pango
+gucman: Package 22/29: gio-core (7 remaining after this)
+Already installed: gio-core
+gucman: Package 23/29: libjpeg-turbo (6 remaining after this)
+Already installed: libjpeg-turbo
+gucman: Package 24/29: gdk-pixbuf (5 remaining after this)
+Already installed: gdk-pixbuf
+gucman: Package 25/29: cairo-gobject (4 remaining after this)
+Already installed: cairo-gobject
+gucman: Package 26/29: atk (3 remaining after this)
+Already installed: atk
+gucman: Package 27/29: gtk3-schemas (2 remaining after this)
+Already installed: gtk3-schemas
+gucman: Package 28/29: gtk3-x11 (1 remaining after this)
+Already installed: gtk3-x11
+gucman: Package 29/29: puzzles (0 remaining after this)
+gucman: Downloading puzzles source: source.tar (11796480 bytes)
+  Connecting; waiting for response…
+  Downloaded 11.25 / 11.25 MiB (100%); transfer finished
+gucman: Verifying download: puzzles source: source.tar
+gucman: Checking cached object: puzzles source: source.tar
+gucman: Downloading puzzles source: build.sh (1754 bytes)
+  Connecting; waiting for response…
+  Downloaded 1754 / 1754 bytes (100%); transfer finished
+gucman: Verifying download: puzzles source: build.sh
+gucman: Checking cached object: puzzles source: build.sh
+gucman: Downloading puzzles source: test.sh (725 bytes)
+  Connecting; waiting for response…
+  Downloaded 725 / 725 bytes (100%); transfer finished
+gucman: Verifying download: puzzles source: test.sh
+gucman: Checking cached object: puzzles source: test.sh
+gucman: Downloading puzzles source: gucos-puzzles-fifteen.desktop (125 bytes)
+  Connecting; waiting for response…
+  Downloaded 125 / 125 bytes (100%); transfer finished
+gucman: Verifying download: puzzles source: gucos-puzzles-fifteen.desktop
+gucman: Checking cached object: puzzles source: gucos-puzzles-fifteen.desktop
+gucman: Downloading puzzles source: gucos-puzzles-mines.desktop (119 bytes)
+  Connecting; waiting for response…
+  Downloaded 119 / 119 bytes (100%); transfer finished
+gucman: Verifying download: puzzles source: gucos-puzzles-mines.desktop
+gucman: Checking cached object: puzzles source: gucos-puzzles-mines.desktop
+gucman: Downloading puzzles source: gucos-puzzles-net.desktop (113 bytes)
+  Connecting; waiting for response…
+  Downloaded 113 / 113 bytes (100%); transfer finished
+gucman: Verifying download: puzzles source: gucos-puzzles-net.desktop
+gucman: Checking cached object: puzzles source: gucos-puzzles-net.desktop
+gucman: Downloading puzzles source: gucos-puzzles-solo.desktop (116 bytes)
+  Connecting; waiting for response…
+  Downloaded 116 / 116 bytes (100%); transfer finished
+gucman: Verifying download: puzzles source: gucos-puzzles-solo.desktop
+gucman: Checking cached object: puzzles source: gucos-puzzles-solo.desktop
+gucman: Downloading puzzles source: gucos-puzzles-samegame.desktop (129 bytes)
+  Connecting; waiting for response…
+  Downloaded 129 / 129 bytes (100%); transfer finished
+gucman: Verifying download: puzzles source: gucos-puzzles-samegame.desktop
+gucman: Checking cached object: puzzles source: gucos-puzzles-samegame.desktop
+gucman: Downloading puzzles source: gucos-puzzles-untangle.desktop (128 bytes)
+  Connecting; waiting for response…
+  Downloaded 128 / 128 bytes (100%); transfer finished
+gucman: Verifying download: puzzles source: gucos-puzzles-untangle.desktop
+gucman: Checking cached object: puzzles source: gucos-puzzles-untangle.desktop
+Building migration:puzzles; running trusted recipe with access to your guest files
+Building puzzle blackbox
+363 functions, 374283 bytes
+Building puzzle bridges
+435 functions, 417738 bytes
+Building puzzle cube
+361 functions, 374807 bytes
+Building puzzle dominosa
+412 functions, 414371 bytes
+Building puzzle fifteen
+362 functions, 365130 bytes
+Building puzzle filling
+399 functions, 394614 bytes
+Building puzzle flip
+391 functions, 390123 bytes
+Building puzzle flood
+361 functions, 366594 bytes
+Building puzzle galaxies
+428 functions, 418744 bytes
+Building puzzle guess
+369 functions, 370235 bytes
+Building puzzle inertia
+365 functions, 379568 bytes
+Building puzzle keen
+439 functions, 443487 bytes
+Building puzzle lightup
+401 functions, 388025 bytes
+Building puzzle loopy
+683 functions, 697348 bytes
+Building puzzle magnets
+401 functions, 393982 bytes
+Building puzzle map
+398 functions, 402199 bytes
+Building puzzle mines
+683 functions, 726229 bytes
+Building puzzle mosaic
+367 functions, 372617 bytes
+Building puzzle net
+427 functions, 433958 bytes
+Building puzzle netslide
+395 functions, 398638 bytes
+Building puzzle palisade
+397 functions, 393436 bytes
+Building puzzle pattern
+366 functions, 376774 bytes
+Building puzzle pearl
+659 functions, 687662 bytes
+Building puzzle pegs
+387 functions, 389924 bytes
+Building puzzle range
+396 functions, 389829 bytes
+Building puzzle rect
+367 functions, 390259 bytes
+Building puzzle samegame
+362 functions, 368304 bytes
+Building puzzle signpost
+410 functions, 400800 bytes
+Building puzzle singles
+460 functions, 438200 bytes
+Building puzzle sixteen
+357 functions, 366908 bytes
+Building puzzle slant
+395 functions, 396707 bytes
+Building puzzle solo
+423 functions, 438192 bytes
+Building puzzle tents
+385 functions, 398233 bytes
+Building puzzle towers
+420 functions, 426144 bytes
+Building puzzle tracks
+435 functions, 415347 bytes
+Building puzzle twiddle
+359 functions, 367415 bytes
+Building puzzle undead
+384 functions, 403408 bytes
+Building puzzle unequal
+444 functions, 432927 bytes
+Building puzzle unruly
+378 functions, 371480 bytes
+Building puzzle untangle
+398 functions, 398043 bytes
+Black Box, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Bridges, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Cube, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Dominosa, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Fifteen, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Filling, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Flip, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Flood, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Galaxies, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Guess, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Inertia, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Keen, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Light Up, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Loopy, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Magnets, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Map, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Mines, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Mosaic, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Net, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Netslide, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Palisade, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Pattern, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Pearl, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Pegs, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Range, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Rectangles, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Same Game, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Signpost, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Singles, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Sixteen, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Slant, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Solo, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Tents, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Towers, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Train Tracks, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Twiddle, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Undead, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Unequal, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Unruly, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+Untangle, from Simon Tatham's Portable Puzzle Collection
+Version 20260923.616da16
+PUZZLES-CONSUMERS-PASS
+gucman: Installing puzzles: 0/132 files
+gucman: Installing puzzles: 25/132 files
+gucman: Installing puzzles: 50/132 files
+gucman: Installing puzzles: 75/132 files
+gucman: Installing puzzles: 100/132 files
+gucman: Installing puzzles: 125/132 files
+gucman: Installing puzzles: 132/132 files
+gucman: Preparing checksums: puzzles
+gucman: Checksummed puzzles: 25/132 files
+gucman: Checksummed puzzles: 50/132 files
+gucman: Checksummed puzzles: 75/132 files
+gucman: Checksummed puzzles: 100/132 files
+gucman: Checksummed puzzles: 125/132 files
+gucman: Checksummed puzzles: 132/132 files
+gucman: Saving transaction: puzzles
+gucman: Verifying staged files: puzzles
+gucman: Activating: puzzles
+Installed migration:puzzles 2026.9.23-2
+
+{
+  tail: 'zles: 100/132 files\n' +
+    'gucman: Checksummed puzzles: 125/132 files\n' +
+    'gucman: Checksummed puzzles: 132/132 files\n' +
+    'gucman: Saving transaction: puzzles\n' +
+    'gucman: Verifying staged files: puzzles\n' +
+    'gucman: Activating: puzzles\n' +
+    'Installed migration:puzzles 2026.9.23-2\n'
+}
+2b23acd4e3e657a99c370581baca2bd26443593f53ab6acabf0bc9f6bb5bdfb8  /home/user/migration-export.tar
+16930816
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

@@ -1,0 +1,16 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/harfbuzz",
+  "archiveSha256": "d51f616c1773d8fe43b8ac2d3bc7617e55f289033434e24ec4f6d0a828d741a2",
+  "overlays": [],
+  "status": "historical C++ host preparation retained; no new guest acceptance",
+  "preparedArchive": {
+    "file": "prepared.tar.gz",
+    "sha256": "6920b176bb1da9759b77733cb9acc860b0ba0ed12f4f85ab7dbdbf3f6e6d67a9",
+    "originalPath": "/Users/jku/git/wasm-posix-old/apps/harfbuzz/port/generated",
+    "provenanceSha256": "7502100beb864f79a48221d63ada3503259667eff63acf6e09bc89a754ee9a05",
+    "manifestSha256": "b033c041aaa344fcc44d9f87f8a68b2add3d013c8c52f58f8391e49a556bf36e",
+    "fileCount": 40942
+  }
+}

@@ -1,0 +1,314 @@
+[
+  {
+    "path": "include/harfbuzz/hb-aat-layout.h",
+    "mode": 420,
+    "size": 57382,
+    "sha256": "19260855effa365dabbea60543813bdb88c67835aa347b7970e416906f3ff392"
+  },
+  {
+    "path": "include/harfbuzz/hb-aat.h",
+    "mode": 420,
+    "size": 1243,
+    "sha256": "bce10093cad39cfbd5355d763368b22a04ae2bec9289ef0642e5f752bd6e79ff"
+  },
+  {
+    "path": "include/harfbuzz/hb-blob.h",
+    "mode": 420,
+    "size": 4731,
+    "sha256": "710fe0a1be3b3a344154939be9bf6cc30674f6abd4ae0fcc0d3144b9d6b9a6bd"
+  },
+  {
+    "path": "include/harfbuzz/hb-buffer.h",
+    "mode": 420,
+    "size": 31931,
+    "sha256": "c9d608ef2ab9fdcbe3b285418a3662fb075a579fb7fd3010e75cfb1ae8263566"
+  },
+  {
+    "path": "include/harfbuzz/hb-common.h",
+    "mode": 420,
+    "size": 13574,
+    "sha256": "5238d77823c4fc37ad37aff7422b1fe5157fcd10c706862db7c37dcb975e3b37"
+  },
+  {
+    "path": "include/harfbuzz/hb-cplusplus.hh",
+    "mode": 420,
+    "size": 6695,
+    "sha256": "e6aa3fee07a1384316172a4ab28ba2b710cc2710c952d2bdbfead348c7887b0e"
+  },
+  {
+    "path": "include/harfbuzz/hb-deprecated.h",
+    "mode": 420,
+    "size": 13343,
+    "sha256": "d0b32b536185fc9ee042e5371b581c330fb871d546a7c8a775f7d6d635b7dfb5"
+  },
+  {
+    "path": "include/harfbuzz/hb-draw.h",
+    "mode": 420,
+    "size": 15245,
+    "sha256": "c121d6ffed28256074ff4ac921231d330e47f81ac51c65aff9a534a60ddf6af4"
+  },
+  {
+    "path": "include/harfbuzz/hb-face.h",
+    "mode": 420,
+    "size": 6464,
+    "sha256": "fd53fe46728fbd055f2e7232d9c38510320a879ee508147e7c1a2b1c9b5cbaba"
+  },
+  {
+    "path": "include/harfbuzz/hb-features.h",
+    "mode": 420,
+    "size": 302,
+    "sha256": "a335b8b8241fe587e32c57d994622776718406322dbab8a2b00f9edf2d069d98"
+  },
+  {
+    "path": "include/harfbuzz/hb-font.h",
+    "mode": 420,
+    "size": 41731,
+    "sha256": "a7b0cb846e3cad88578a2435483bf64f6b164d4a63a53e4d79e6228bc0053e73"
+  },
+  {
+    "path": "include/harfbuzz/hb-ft.h",
+    "mode": 420,
+    "size": 4839,
+    "sha256": "e5a128de581bad91eec64eb057a26dbb4539b60cafa6017d5ca2578cfe0de3e8"
+  },
+  {
+    "path": "include/harfbuzz/hb-glib.h",
+    "mode": 420,
+    "size": 1625,
+    "sha256": "05402cbae1f44fc2587ea8f59afa235107f9e568e5a4aa93c12ed2727de74aac"
+  },
+  {
+    "path": "include/harfbuzz/hb-gpu.h",
+    "mode": 420,
+    "size": 7547,
+    "sha256": "39554d8253c91678618054c568f68d49a8b5561725b6bd53bb644cab1531c490"
+  },
+  {
+    "path": "include/harfbuzz/hb-map.h",
+    "mode": 420,
+    "size": 3347,
+    "sha256": "b073aa19718e43e3535caeddc0015a4e45a89032a76059cc5ab8f3f0d220bece"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-color.h",
+    "mode": 420,
+    "size": 5118,
+    "sha256": "187e95990bb37e5e124ba7fc2fa8b42975717502531759a0f298916df17d5158"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-deprecated.h",
+    "mode": 420,
+    "size": 4130,
+    "sha256": "c3a9878ac0633d5e6d7e16821114ad4555458a6924100581f0d16fef5728b1c4"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-fetch.h",
+    "mode": 420,
+    "size": 3736,
+    "sha256": "e574d686e1a00e3df6d31f2b92849b8330ba295012556bb190056fc7a5d00296"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-font.h",
+    "mode": 420,
+    "size": 1410,
+    "sha256": "e62d178aa73ef9c80b08d3c076db3e99bb8cb4e8219e978e793ef7ffe965f8f1"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-layout.h",
+    "mode": 420,
+    "size": 19223,
+    "sha256": "c7b0024750a50cef84cc81d49188e5ceab441ed0c24809fcb63ddcc449691f1c"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-math.h",
+    "mode": 420,
+    "size": 13761,
+    "sha256": "4e737e5ed9dcb3db18a64534a1ff2faf638ef720dc30db0ee821324099432f90"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-meta.h",
+    "mode": 420,
+    "size": 2553,
+    "sha256": "1d38c9bcbc0d417f8b7e0e818c2f5f9b83d2abddc39f2f116cc0ae84157a572d"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-metrics.h",
+    "mode": 420,
+    "size": 6020,
+    "sha256": "c65239f100590cf1b1f647bba6ccd1a548a4e89cb80978601ca3050e9884e724"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-name.h",
+    "mode": 420,
+    "size": 5536,
+    "sha256": "5be924687f71a0f98149b1987f3de3fd766ed9e84c4e144250e97048a36cb1ac"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-shape.h",
+    "mode": 420,
+    "size": 2339,
+    "sha256": "fd484f67e5c0d99cd428a2debadface7e80f7163b9c1be150cf1860fabe050c6"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot-var.h",
+    "mode": 420,
+    "size": 5209,
+    "sha256": "9c438bc34f43afcc95c3f5f390b929903156af93e19473fc29daa650d98cf20e"
+  },
+  {
+    "path": "include/harfbuzz/hb-ot.h",
+    "mode": 420,
+    "size": 1527,
+    "sha256": "b1f9eb217039400ca9031f6a84a85cb879fc16fa0ca927ed453c17d2c3e05429"
+  },
+  {
+    "path": "include/harfbuzz/hb-paint.h",
+    "mode": 420,
+    "size": 54911,
+    "sha256": "ba9e2d78eebed719ef0b7c21229d4fe0d55466e891d15abcde7e1f94de17788d"
+  },
+  {
+    "path": "include/harfbuzz/hb-raster.h",
+    "mode": 420,
+    "size": 9841,
+    "sha256": "0e5af11e15e0deead79312f823a88863945564b7e454cf145c6f3cf0099a448c"
+  },
+  {
+    "path": "include/harfbuzz/hb-script-list.h",
+    "mode": 420,
+    "size": 20664,
+    "sha256": "898de25adaf9253471d9f1351a6c90e3547e1470dd2f468ab19a86561868182b"
+  },
+  {
+    "path": "include/harfbuzz/hb-set.h",
+    "mode": 420,
+    "size": 5144,
+    "sha256": "f19c6a8dea1733d749f6cebe6a7366a9ece37a0020bd1153b233f1fbb72d3440"
+  },
+  {
+    "path": "include/harfbuzz/hb-shape-plan.h",
+    "mode": 420,
+    "size": 4121,
+    "sha256": "03555c82558fa347e96549ec99698fae790c2cfb9ee795c5ea48ff4134e06224"
+  },
+  {
+    "path": "include/harfbuzz/hb-shape.h",
+    "mode": 420,
+    "size": 2344,
+    "sha256": "3adfcf510853bc118a120b7633c0e4d15134e4ac4bdf7911cb85511887e7e328"
+  },
+  {
+    "path": "include/harfbuzz/hb-style.h",
+    "mode": 420,
+    "size": 3340,
+    "sha256": "6e88aec3ae6db176b37e4d6089923f78859134a26fd12b33b40b772e91673b5a"
+  },
+  {
+    "path": "include/harfbuzz/hb-subset-depend.h",
+    "mode": 420,
+    "size": 5097,
+    "sha256": "40a7aa1a4093732ec63339f335a1c7fe3e9fddd2bc02c9c0bdaadb8a0f2ab35c"
+  },
+  {
+    "path": "include/harfbuzz/hb-subset-serialize.h",
+    "mode": 420,
+    "size": 2802,
+    "sha256": "3c6e7ba4adabe6d07c80c7cfa6f8e731a7b10bc64b195c806810025a13277241"
+  },
+  {
+    "path": "include/harfbuzz/hb-subset.h",
+    "mode": 420,
+    "size": 11450,
+    "sha256": "7d44add80a70f9e0dd9b32ca8a1e7163808f019f116d9dc320e86fe095bbf31d"
+  },
+  {
+    "path": "include/harfbuzz/hb-unicode.h",
+    "mode": 420,
+    "size": 22980,
+    "sha256": "6131f0eb9e411fa392101f58793f4e4347ec3bc6fe45226736b186004cea8038"
+  },
+  {
+    "path": "include/harfbuzz/hb-vector.h",
+    "mode": 420,
+    "size": 10736,
+    "sha256": "c9f480bfba4b09c20dc60e54807d73291fbefd9ce7f675dee39e04790b1f15c7"
+  },
+  {
+    "path": "include/harfbuzz/hb-version.h",
+    "mode": 420,
+    "size": 2597,
+    "sha256": "ade2d1c4e4d7cb90483547edcf7a41c850ee3dc3dc1d8cb5159610ed3759d1dd"
+  },
+  {
+    "path": "include/harfbuzz/hb.h",
+    "mode": 420,
+    "size": 1555,
+    "sha256": "31a1b53db3ee4395916e6d4f105b2c64772b8037bbb97d0e6d1e4a905eb6c6c9"
+  },
+  {
+    "path": "lib/libharfbuzz-runtime.a",
+    "mode": 420,
+    "size": 47240,
+    "sha256": "951a1c510e8e938360d6efe4d4b7746f3984c93ffbeb0ebf7246decf6b02c9a0"
+  },
+  {
+    "path": "lib/libharfbuzz.a",
+    "mode": 420,
+    "size": 92323788,
+    "sha256": "3fbdaf9f1edf2c24ec24b6871a0f4afe3bc04f8f426ebd16be128ff84dbb59ae"
+  },
+  {
+    "path": "lib/libharfbuzz.so",
+    "mode": 420,
+    "size": 56817066,
+    "sha256": "428657682810a4d56368cc344bae061727243fb286daa66314e2f6e3c530bf23"
+  },
+  {
+    "path": "lib/pkgconfig/harfbuzz-gpu.pc",
+    "mode": 420,
+    "size": 298,
+    "sha256": "3f9cd83246bd095c7043a58ff7dec913e9e236765593fc1732cd34997d3a35f2"
+  },
+  {
+    "path": "lib/pkgconfig/harfbuzz-raster.pc",
+    "mode": 420,
+    "size": 301,
+    "sha256": "af84990889c5f339e8d006f60be40c701d4243f71cbc6c86b53ca6e37adc0aa7"
+  },
+  {
+    "path": "lib/pkgconfig/harfbuzz-subset.pc",
+    "mode": 420,
+    "size": 301,
+    "sha256": "b860fdb2758d4bf0d8554c52bc8310887f349ce2d125f549b2fe22bce2431023"
+  },
+  {
+    "path": "lib/pkgconfig/harfbuzz-vector.pc",
+    "mode": 420,
+    "size": 301,
+    "sha256": "5fbd95832dfe94743bd46b6ab12e6aaa5ee13a3278ca986d72ccd0bf6fdd2a2c"
+  },
+  {
+    "path": "lib/pkgconfig/harfbuzz.pc",
+    "mode": 420,
+    "size": 294,
+    "sha256": "be4fc609acc9702bfcd6ec9ee1d2a8b1fc9504d06034c3f802a73fd035a120c2"
+  },
+  {
+    "path": "share/harfbuzz/translation.json",
+    "mode": 420,
+    "size": 3472421,
+    "sha256": "7502100beb864f79a48221d63ada3503259667eff63acf6e09bc89a754ee9a05"
+  },
+  {
+    "path": "share/licenses/harfbuzz/ABeeZee-OFL.txt",
+    "mode": 420,
+    "size": 4516,
+    "sha256": "f0376d04eb58fb19e9f1690a99a1eb37380ad0246f7d503f2abd8e8a74ed12be"
+  },
+  {
+    "path": "share/licenses/harfbuzz/COPYING",
+    "mode": 420,
+    "size": 1971,
+    "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+  }
+]

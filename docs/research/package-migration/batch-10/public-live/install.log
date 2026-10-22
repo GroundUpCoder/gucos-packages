@@ -1,0 +1,75 @@
+gucman: unknown source
+
+gucman: install migration:sqlite3: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 16678 bytes; transfer finished
+gucman: Resolving: migration:sqlite3
+gucman: Downloading manifest for migration:sqlite3 (1860 bytes)
+  Connecting; waiting for response…
+  Downloaded 1860 / 1860 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sqlite3
+gucman: Checking cached object: manifest for migration:sqlite3
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sqlite3 (0 remaining after this)
+gucman: Downloading sqlite3 archive (2200064 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.97 / 2.10 MiB (93%)
+  Downloaded 2.10 / 2.10 MiB (100%); transfer finished
+gucman: Verifying download: sqlite3 archive
+gucman: Checking cached object: sqlite3 archive
+gucman: Unpacking: sqlite3
+gucman: Installing sqlite3: 0/2 files
+gucman: Installing sqlite3: 2/2 files
+gucman: Preparing checksums: sqlite3
+gucman: Checksummed sqlite3: 2/2 files
+gucman: Saving transaction: sqlite3
+gucman: Verifying staged files: sqlite3
+gucman: Activating: sqlite3
+Installed migration:sqlite3 3.53.1-1
+
+gucman: install migration:qjs: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 16678 bytes; transfer finished
+gucman: Resolving: migration:qjs
+gucman: Downloading manifest for migration:qjs (1819 bytes)
+  Connecting; waiting for response…
+  Downloaded 1819 / 1819 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:qjs
+gucman: Checking cached object: manifest for migration:qjs
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: qjs (0 remaining after this)
+gucman: Downloading qjs archive (6267904 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.03 / 5.98 MiB (0%)
+  Downloaded 4.70 / 5.98 MiB (78%)
+  Downloaded 5.98 / 5.98 MiB (100%); transfer finished
+gucman: Verifying download: qjs archive
+gucman: Checking cached object: qjs archive
+gucman: Unpacking: qjs
+gucman: Installing qjs: 0/2 files
+gucman: Installing qjs: 2/2 files
+gucman: Preparing checksums: qjs
+gucman: Checksummed qjs: 2/2 files
+gucman: Saving transaction: qjs
+gucman: Verifying staged files: qjs
+gucman: Activating: qjs
+Installed migration:qjs 2025.09.13-1
+
+/usr/local/bin/sqlite3: OK
+/usr/local/share/licenses/sqlite3/PUBLIC-DOMAIN: OK
+
+78a1c75621f4b59475a72df80d9dbfb121fd11061a02c2ed97ffbae7f19a664a  /home/user/migration-export.tar
+2200064
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/bin/qjs: OK
+/usr/local/share/licenses/qjs/LICENSE: OK
+
+e93cc4ed71ef5469ba14771d9b94609050a949c71c27a96446e11fb490bb2bab  /home/user/migration-export.tar
+6267904
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

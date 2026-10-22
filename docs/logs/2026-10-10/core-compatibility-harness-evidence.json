@@ -1,0 +1,185 @@
+{
+  "implementationCommit": "b9171d57844e3b846bbdd4e732a632987e7aba7b",
+  "baselinePackages": 17,
+  "baselineOutputFiles": 803,
+  "runs": [
+    {
+      "scope": "baseline-execution-and-relinking",
+      "expectedRuntime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+      "status": "passed",
+      "startedAt": "2026-10-10T06:54:34.245Z",
+      "finishedAt": "2026-10-10T07:03:59.387Z",
+      "baselineCatalog": "fab65cba24c8c6dd59e11a63e096138e13835c42",
+      "runName": "baseline-runner-v1",
+      "distributionSnapshotSha256": "7e8aee0b568759b89cfc5641855c3f6429d8ccd647f37519002e8323e2462c99",
+      "stages": [
+        {
+          "name": "probe",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 1704,
+          "log": "probe.log",
+          "sha256": "7957fe70662d77305a1a17ff9c727010acb4c746f3661881b4b575b4f978b771",
+          "job": "4aa55496-be26-4f1f-9cca-8a51df16a356"
+        },
+        {
+          "name": "install-server",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 80003,
+          "log": "install-server.log",
+          "sha256": "f0f677081e8d722c0aaec5fc720c5d5994e31fc1faaac079cc23bb4ab0335f07",
+          "job": "0654f24f-cd29-47ec-b01d-63411a57b2fa"
+        },
+        {
+          "name": "install-widgets",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 45702,
+          "log": "install-widgets.log",
+          "sha256": "8fc4a00a158e8d8af66853d69343ba7f6ba5e4969c7015aac1e215761e2d108d",
+          "job": "53080413-98b4-4ce7-91ac-c2a74867ee97"
+        },
+        {
+          "name": "install-desktop-a",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 110253,
+          "log": "install-desktop-a.log",
+          "sha256": "aeec78f18fabf9c32772c27c06a6d1e51f229b285ce99524d63585abf7a0a527",
+          "job": "8b0703ae-6c47-497a-b85d-db009910e23c"
+        },
+        {
+          "name": "install-desktop-b",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 102407,
+          "log": "install-desktop-b.log",
+          "sha256": "908ee3ed298690178368c5d63f958d449476f6169e29ee950018ccaa7b8fd9cd",
+          "job": "ad62d2e2-0e66-4510-94d8-2b9908861905"
+        },
+        {
+          "name": "install-desktop-c",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 75861,
+          "log": "install-desktop-c.log",
+          "sha256": "37d92372194089be886eb13f968211451b2cc98a9c10fd641e61a85556b5dc44",
+          "job": "bfea8dd5-f2dd-4571-b33c-de29f4ba62c6"
+        },
+        {
+          "name": "integrity-before",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 53732,
+          "log": "integrity-before.log",
+          "sha256": "5336e2da1446c061bc0b7f0bdff88111adae9b48d964f5bb1041638e828abdd4",
+          "job": "b93c0a17-eab1-4763-bd27-e2d801ea3b3f"
+        },
+        {
+          "name": "cli-and-library-relink",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 3885,
+          "log": "cli-and-library-relink.log",
+          "sha256": "adcb9ffdd94ea41b0a09267d8f51418f44af5257add47db321820fe57c258552",
+          "job": "a774eeb9-5975-4104-acb8-6619fd01b597"
+        },
+        {
+          "name": "jwm-features",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 12319,
+          "log": "jwm-features.log",
+          "sha256": "40b9f3d1edab5041d990652517f3e6b812e852d6033c902c89442c09f18c01a2",
+          "job": "db45d37a-1966-4e85-8503-51879ad80bea"
+        },
+        {
+          "name": "jwm-browser",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 10754,
+          "log": "jwm-browser.log",
+          "sha256": "346e8ffa5665bd6bdb48bf9c4a4c8ac68ef52492bff68c8081b8e4e724b5cf95",
+          "job": "a90a8bc2-3451-4fd2-beed-04606080d048"
+        },
+        {
+          "name": "xclients",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 13564,
+          "log": "xclients.log",
+          "sha256": "33b0de7049364580a5538fab0c0804288c5065e63bb88497974b586631c1c5c4",
+          "job": "5b4445ed-2306-4955-ac76-64022e6aa45c"
+        },
+        {
+          "name": "xterm-pty",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 4359,
+          "log": "xterm-pty.log",
+          "sha256": "dd87d4bdcb0276dbaa94a26c89882a146f7612522a73f484e78f74e59a9d6850",
+          "job": "f20ca3b7-c60c-4c43-b8bc-9f9c7d01197a"
+        },
+        {
+          "name": "launcher",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 22744,
+          "log": "launcher.log",
+          "sha256": "ef97c6c58d300aed02170779fdfbf1bb54478b8db868b9ad914ace2f5d755610",
+          "job": "fcb80cf1-fafb-4bb0-90b9-00800cd4da6f"
+        },
+        {
+          "name": "reload-and-integrity-after",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 27209,
+          "log": "reload-and-integrity-after.log",
+          "sha256": "dc3b458fd5c1bbb0381321e3d62218b641d79157aed1959385d66391d30072d1",
+          "job": "77b68661-75ca-4942-b830-e15233034a35"
+        }
+      ]
+    },
+    {
+      "scope": "boot-probe-only",
+      "expectedRuntime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+      "status": "probe-passed",
+      "startedAt": "2026-10-10T07:04:08.910Z",
+      "finishedAt": "2026-10-10T07:05:29.395Z",
+      "baselineCatalog": "fab65cba24c8c6dd59e11a63e096138e13835c42",
+      "runName": "baseline-url-probe-v1",
+      "stages": [
+        {
+          "name": "probe",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 79846,
+          "log": "probe.log",
+          "sha256": "f22f819969dbcffb505fb7b8b26cb9fce0a16fdeb3edd9afcff008e0ef9349c0",
+          "job": "fbbf7c7c-26fa-4d29-9889-29a99f93dc93"
+        }
+      ]
+    },
+    {
+      "scope": "boot-probe-only",
+      "expectedRuntime": "0000000000000000000000000000000000000000000000000000000000000000",
+      "status": "failed",
+      "startedAt": "2026-10-10T07:06:25.751Z",
+      "finishedAt": "2026-10-10T07:07:53.134Z",
+      "baselineCatalog": "fab65cba24c8c6dd59e11a63e096138e13835c42",
+      "runName": "wrong-identity-v1",
+      "stages": [
+        {
+          "name": "probe",
+          "exitCode": 1,
+          "signal": null,
+          "elapsedMs": 86693,
+          "log": "probe.log",
+          "sha256": "79fbcf18b0702c7957eb5e9567c3db95073e8c958216c97cd163afb7c3c22e36",
+          "job": "4309e050-94b7-4cb4-88cb-0541842cd126"
+        }
+      ]
+    }
+  ]
+}

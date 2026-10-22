@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "name": "gdk-pixbuf",
+  "version": "2.42.12-1",
+  "dependencies": [
+    "gio-core",
+    "gio-listmodel",
+    "gobject",
+    "glib",
+    "libpng",
+    "libjpeg-turbo",
+    "zlib",
+    "libintl"
+  ],
+  "dependencyRequirements": {
+    "gio-core": {
+      "version": "2.84.4-1"
+    },
+    "gio-listmodel": {
+      "version": "2.84.4-1"
+    },
+    "gobject": {
+      "version": "2.84.4-1"
+    },
+    "glib": {
+      "version": "2.84.4-1"
+    },
+    "libpng": {
+      "version": "1.6.58-1"
+    },
+    "libjpeg-turbo": {
+      "version": "3.1.4.1-1"
+    },
+    "zlib": {
+      "version": "1.3.2-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "pthreads",
+      "unix-stream"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gdk-pixbuf/source.tar",
+      "sha256": "eddbaecbccc78e5ab9253627a6c4e8d3bacd3bbebd670c23b035c11fac112a17",
+      "size": 21432320
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gdk-pixbuf/build.sh",
+      "sha256": "46857d669472585cebea970a5c4d9e5164a7f5d4b38eee6addb0942a4dfd65b6",
+      "size": 1913
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gdk-pixbuf/test.sh",
+      "sha256": "4b1cee6d0c02afb16732131e5e415e6eb0bfa5904222b6963815790d3f9a6866",
+      "size": 1339
+    },
+    {
+      "path": "jpeg-decode.c",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gdk-pixbuf/jpeg-decode.c",
+      "sha256": "0db54a77fbedefd7d8692c1e5fcf4bd4a81fceaced826d1d8c0184243194483d",
+      "size": 1419
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libgdk_pixbuf-2.0.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libgdk_pixbuf-2.0.so",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-animation.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixdata.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h",
+      "mode": 420
+    },
+    {
+      "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/gdk-pixbuf-2.0.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/gdk-pixbuf/COPYING",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/gdk-pixbuf/COPYING"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/fb93177b13a613b5a6d1142171a8c58a6e2130e8/apps/gdk-pixbuf/binaries/5ee3bf0f55fc2388ee00f7e830a65aed0a1fa06338516e5a0ff70969796d20b9.tar",
+    "sha256": "5ee3bf0f55fc2388ee00f7e830a65aed0a1fa06338516e5a0ff70969796d20b9",
+    "size": 1006592
+  }
+}

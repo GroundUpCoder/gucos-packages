@@ -1,0 +1,15 @@
+{
+  "candidate-manifests.json": "00668deb8eabbf9fd780ac6731b8052217893dbdbbfe28ffd1beb928e220ff43",
+  "config.json": "72a9e01e63473f6499a6330d838e6550732c97a109ca9286c9e3db1ac779635c",
+  "consumers-puzzles.json": "e574d8827f8950315019ef780706d4cfa37490a128d834b4a72785598013f63a",
+  "consumers.log": "bf1f8df6eae13929861a14cdab6226f2b0399b9357ffc61353cd856f09212f04",
+  "dependencies-jwm-desktop-entries-xterm.json": "16dce96654b5dc3594e81e4b3570312a69318010e06f1cc838db209cc1ff1688",
+  "desktop-dependencies.log": "6517f2f14fd4a12414657602508f77365772cd4f51135cc9084cd142dbbad39a",
+  "install-puzzles.json": "d6b4401c2eb114d2d8210716e1c92f7a3ec20a2044c52b4ca04626578aed86b9",
+  "install.log": "8a6b0a0ca433a6a6b71b2285d5cf1364046dad2bc111f94f7d2d90ef2633ae6d",
+  "jwm.log": "e90ff8db2494f5afbf6ec8aadcc02eeebc185029b9213ff963397181e7eec84c",
+  "observed-runtime.json": "6ca417632b5d03d350bb0f3f8ea9a642111cdc7ebfce43c039a83bf261dac2cb",
+  "puzzles-jwm-first.json": "976ce8060d84dea5e28d91b67970e8db4f030fc214717a250ec4368aec44b653",
+  "puzzles-jwm-first.log": "25eebbfeac28c2ae91d1c57ba5f9714775572da853748910fcae0f32fb34c1f4",
+  "puzzles.sha256": "845811113ecd7c7b31560665f95ea35ed0f19a28a6f3496bfb30367e884a7dd0"
+}

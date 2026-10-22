@@ -1,0 +1,9 @@
+{
+  "build-l3afpad.json": "446fe41d9542ea0ecd9efaa7823cf204daaeff32295a2548be7bca4d76a6f2e6",
+  "build-l3afpad.log": "b0fb8e888f710e6e18533f3fe33c63d17d0981c8fe88e8a38ea50787ddf8255f",
+  "candidate-manifests.json": "a400e370d30c022170118760209757320af638c33a6da80c9f1062617023a1aa",
+  "config.json": "843f363b5fec599cd64facf15705ea64b50c2e24c3c804edfc18f4c0723fad06",
+  "dependencies-gtk3-x11-pkgconf-libintl.json": "9b6af095846ba7ac8fdca4e37f54cf1b0b5d4ff2929f747664851eb845e763b8",
+  "dependencies.log": "a8b5e8f455ec4c3b04ddd76ad37227758ab005bff03731e3950bb4696d4c0a20",
+  "observed-runtime.json": "448909d0370f8a164d795241207ba3c201da045fd75165f99ddf5a5f44a9ece5"
+}

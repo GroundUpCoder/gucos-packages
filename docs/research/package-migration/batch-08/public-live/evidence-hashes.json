@@ -1,0 +1,13 @@
+{
+  "candidate-manifests.json": "682d76e6e573a12a4589a3c4359ceafed084773ec65274c985c876f80cdbff95",
+  "config.json": "8fec8e65ca45b0d9db6f8218921f0dc81c02736de12d44faeb55638213f7fa1e",
+  "consumers-libevent-libuv.json": "e85b4e1ce0846c204f1dfe89ef6ea0fcf8c94692f3d4f296da7942ed0ab2dc89",
+  "consumers.log": "cc76379e4ab1e38f63e6a31a557ccbc24a5734373d21924b01534390d3bb4740",
+  "install-libevent-libuv.json": "b9eb0698df9279e7543a8da7762971bb1914c21a645f9c13eb7e1be9a14b0efe",
+  "install.log": "8be5b5501533675b09852efb460c430af5ed5601653b2e9e9659b6d4fcb5ba65",
+  "libevent.sha256": "db3eef67814c1d98e50f91ff5b12faf095bed0e587efc70d23b612f1d929b477",
+  "libuv.sha256": "967ad4e7212c032d93feca7e1a0f7d23ac39f38dfcb188e130f14e872548bddd",
+  "observed-runtime.json": "87c8bf902b247a380e61c6337c538c6428620e79d6533803cdbc6aeea2a0fa81",
+  "reload-libevent-libuv.json": "ed9c6eed9e40f97c3e0cf16e7e4cec98eb67d71f8acd93729e7570fd09bd52f9",
+  "reload.log": "f3399d521af423cc541ec477b9e21b6ad65cefe9ccd843646757a7cd8b126bc0"
+}

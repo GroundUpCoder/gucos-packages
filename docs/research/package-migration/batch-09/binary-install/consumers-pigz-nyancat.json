@@ -1,0 +1,54 @@
+{
+  "action": "consumers",
+  "names": [
+    "pigz",
+    "nyancat"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "723edcc72ab5b3474629c113192ba3156aa86aee",
+  "startedAt": "2026-10-10T11:00:43.580Z",
+  "status": "passed",
+  "consumerInputs": [
+    {
+      "name": "pigz",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "7b0a06d573dffe542ab4b46a7c259843df7fc2a86d170f3183c15d54c092355f",
+          "size": 522240
+        },
+        {
+          "path": "build.sh",
+          "sha256": "63ce3200049a6dfc1d9d8f15a7db176ca30f35144b279dbce7e3417a1b7e08d8",
+          "size": 368
+        },
+        {
+          "path": "test.sh",
+          "sha256": "1f807b743a79f4dacf1229ced5168579d3909dd9da7b0cdfa411816ada6eb78f",
+          "size": 996
+        }
+      ]
+    },
+    {
+      "name": "nyancat",
+      "verified": [
+        {
+          "path": "source.tar",
+          "sha256": "9052e7c23a9a60fd05b5e73c778d3609215b813022e520e1099221f5354e3fd7",
+          "size": 122880
+        },
+        {
+          "path": "build.sh",
+          "sha256": "ed8f33a467b3a10930e84c8b1d2ef52bb6da850f5191627f50447d2862343973",
+          "size": 366
+        },
+        {
+          "path": "test.sh",
+          "sha256": "b9c0a6881997ed273c5846193e736ee20facb2c0c1bc2ac5a10c6f6b38b22f61",
+          "size": 421
+        }
+      ]
+    }
+  ],
+  "finishedAt": "2026-10-10T11:00:46.221Z"
+}

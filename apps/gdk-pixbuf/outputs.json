@@ -1,0 +1,66 @@
+[
+  {
+    "path": "lib/libgdk_pixbuf-2.0.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libgdk_pixbuf-2.0.so",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-animation.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixdata.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h",
+    "mode": 420
+  },
+  {
+    "path": "include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/gdk-pixbuf-2.0.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/gdk-pixbuf/COPYING",
+    "mode": 420
+  }
+]

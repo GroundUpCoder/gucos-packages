@@ -1,0 +1,64 @@
+gucman: install upgrade-baseline:jwm: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19250 bytes; transfer finished
+gucman: Reading catalog: upgrade-baseline
+  Connecting; waiting for response…
+  Downloaded 19113 bytes; transfer finished
+gucman: Resolving: upgrade-baseline:jwm
+gucman: Downloading manifest for upgrade-baseline:jwm (2819 bytes)
+  Connecting; waiting for response…
+  Downloaded 2819 / 2819 bytes (100%); transfer finished
+gucman: Verifying download: manifest for upgrade-baseline:jwm
+gucman: Checking cached object: manifest for upgrade-baseline:jwm
+gucman: Resolving: upgrade-baseline:x11-widgets
+gucman: Checking cached object: manifest for upgrade-baseline:x11-widgets
+gucman: Resolving: upgrade-baseline:x11-toolkit
+gucman: Checking cached object: manifest for upgrade-baseline:x11-toolkit
+gucman: Resolving: upgrade-baseline:x11-server
+gucman: Checking cached object: manifest for upgrade-baseline:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: installed package belongs to another source URL
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: install upgrade-baseline:jwm: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19250 bytes; transfer finished
+gucman: Reading catalog: upgrade-baseline
+  Connecting; waiting for response…
+  Downloaded 19113 bytes; transfer finished
+gucman: Resolving: upgrade-baseline:jwm
+gucman: Downloading manifest for upgrade-baseline:jwm (2819 bytes)
+  Connecting; waiting for response…
+  Downloaded 2819 / 2819 bytes (100%); transfer finished
+gucman: Verifying download: manifest for upgrade-baseline:jwm
+gucman: Checking cached object: manifest for upgrade-baseline:jwm
+gucman: Resolving: upgrade-baseline:x11-widgets
+gucman: Checking cached object: manifest for upgrade-baseline:x11-widgets
+gucman: Resolving: upgrade-baseline:x11-toolkit
+gucman: Checking cached object: manifest for upgrade-baseline:x11-toolkit
+gucman: Resolving: upgrade-baseline:x11-server
+gucman: Checking cached object: manifest for upgrade-baseline:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: installed package belongs to another source URL
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96)
+    at async file:///Users/jku/git/gucos-packages-porting/tests/desktop/upgrade.mjs:15:2 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

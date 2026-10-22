@@ -1,0 +1,7 @@
+1e4aaa9fe44aaa2bdcc341f9fecf19cad2688f30d025a8646588fcf52c98bbaf  /usr/local/bin/lua55
+6da2b9e895443264013d54254bba6f4d8c3d18a51a2439741c6803fb99ce80c4  /usr/local/lib/liblua5.5.a
+8c16d4803ab67eb0d75a4463d5cb0b0be1c1df3a38a866310fccff9e0221bee8  /usr/local/include/lua5.5/lua.h
+37772cceecd05f86339ed5153647fc330cd2635401f96e2f4221b79555445614  /usr/local/include/lua5.5/luaconf.h
+ca847f045256db26a03a654c60ca4db567fc63a54679bba4233114f0c3d532d1  /usr/local/include/lua5.5/lualib.h
+3e40da989faa51c2e2e5cb1722893b48c6cbe971c7c7ba4e8d86ed384ea4ae93  /usr/local/include/lua5.5/lauxlib.h
+8c16d4803ab67eb0d75a4463d5cb0b0be1c1df3a38a866310fccff9e0221bee8  /usr/local/share/licenses/lua55/lua.h

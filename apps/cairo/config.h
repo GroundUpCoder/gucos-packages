@@ -1,0 +1,30 @@
+/* wasm-posix: little endian, pthreads, C11 atomics, portable wide integers. */
+#define HAVE_STDINT_H 1
+#define HAVE_INTTYPES_H 1
+#define HAVE_UINT64_T 1
+#define HAVE_UNISTD_H 1
+#define HAVE_SYS_STAT_H 1
+#define HAVE_TIME_H 1
+#define HAVE_CLOCK_GETTIME 1
+#define HAVE_CTIME_R 1
+#define HAVE_C11_ATOMIC_PRIMITIVES 1
+#define CAIRO_HAS_PTHREAD 1
+#define CAIRO_HAS_REAL_PTHREAD 1
+#define HAS_PIXMAN_GLYPHS 1
+#define HAS_PIXMAN_r8g8b8_sRGB 1
+#define SIZEOF_INT 4
+#define SIZEOF_LONG_LONG 8
+#ifdef __wasm__
+#define SIZEOF_LONG 4
+#define SIZEOF_VOID_P 4
+#define SIZEOF_SIZE_T 4
+#else
+#define SIZEOF_LONG __SIZEOF_LONG__
+#define SIZEOF_VOID_P __SIZEOF_POINTER__
+#define SIZEOF_SIZE_T __SIZEOF_SIZE_T__
+#endif
+
+#define HAVE_XRENDERCREATESOLIDFILL 1
+#define HAVE_XRENDERCREATELINEARGRADIENT 1
+#define HAVE_XRENDERCREATERADIALGRADIENT 1
+#define HAVE_XRENDERCREATECONICALGRADIENT 1

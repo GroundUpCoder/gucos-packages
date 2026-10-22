@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "name": "bzip2",
+  "version": "1.0.8-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2/source.tar",
+      "sha256": "783b32d10919fa193ea3e392f7a7999fa8295a70ba0dc9cf13355794977e88be",
+      "size": 839680
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2/build.sh",
+      "sha256": "6193003e254a1ed0d596e82b20f5ed007bb0938c169ed83a4f29bdb6cceea231",
+      "size": 366
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2/test.sh",
+      "sha256": "f8df9b2ad7039df882ffc732f5d1b39244919c9f53224daf03021d32f5bc6359",
+      "size": 617
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/bzip2",
+      "mode": 493
+    },
+    {
+      "path": "bin/bunzip2",
+      "mode": 493
+    },
+    {
+      "path": "bin/bzcat",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/bzip2/LICENSE",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/bzip2/LICENSE"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2/binaries/0052b1cba7ea36692b49cfb89797d70050c2de0fe36e30e3dfe25b42742d6eba.tar",
+    "sha256": "0052b1cba7ea36692b49cfb89797d70050c2de0fe36e30e3dfe25b42742d6eba",
+    "size": 510464
+  }
+}

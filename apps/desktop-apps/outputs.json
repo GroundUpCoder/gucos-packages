@@ -1,0 +1,26 @@
+[
+  {
+    "path": "share/applications/gucos-desktop-2048.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-desktop-xcalc.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-desktop-xedit.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-desktop-xclock.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/applications/gucos-desktop-xeyes.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/desktop-apps/LICENSE",
+    "mode": 420
+  }
+]

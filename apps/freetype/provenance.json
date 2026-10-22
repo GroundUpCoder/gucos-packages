@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/freetype",
+  "archiveSha256": "dbdbe87ddc4aad1410835da39bc30424180a623cdc67c35b2c8dace706d5bc83",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

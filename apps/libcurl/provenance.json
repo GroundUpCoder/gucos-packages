@@ -1,0 +1,6 @@
+{
+  "origin": "Original gucOS HTTP-only libcurl API subset; not upstream libcurl",
+  "license": "MIT",
+  "platform": "1.0.1 __http_open/status/error plus POSIX descriptors",
+  "version": "0.1.0"
+}

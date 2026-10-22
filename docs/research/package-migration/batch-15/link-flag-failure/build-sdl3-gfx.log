@@ -1,0 +1,82 @@
+gucman: unknown source
+
+gucman: build migration:sdl3-gfx: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 16185 bytes; transfer finished
+gucman: Resolving: migration:sdl3-gfx
+gucman: Downloading manifest for migration:sdl3-gfx (1443 bytes)
+  Connecting; waiting for response…
+  Downloaded 1443 / 1443 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sdl3-gfx
+gucman: Checking cached object: manifest for migration:sdl3-gfx
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sdl3-gfx (0 remaining after this)
+gucman: Downloading sdl3-gfx source: source.tar (225280 bytes)
+  Connecting; waiting for response…
+  Downloaded 225280 / 225280 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx source: source.tar
+gucman: Checking cached object: sdl3-gfx source: source.tar
+gucman: Downloading sdl3-gfx source: build.sh (599 bytes)
+  Connecting; waiting for response…
+  Downloaded 599 / 599 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx source: build.sh
+gucman: Checking cached object: sdl3-gfx source: build.sh
+gucman: Downloading sdl3-gfx source: test.sh (538 bytes)
+  Connecting; waiting for response…
+  Downloaded 538 / 538 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx source: test.sh
+gucman: Checking cached object: sdl3-gfx source: test.sh
+Building migration:sdl3-gfx; running trusted recipe with access to your guest files
+cc: cannot find -lSDL3
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: gucman: build migration:sdl3-gfx: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 16185 bytes; transfer finished
+gucman: Resolving: migration:sdl3-gfx
+gucman: Downloading manifest for migration:sdl3-gfx (1443 bytes)
+  Connecting; waiting for response…
+  Downloaded 1443 / 1443 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sdl3-gfx
+gucman: Checking cached object: manifest for migration:sdl3-gfx
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: sdl3-gfx (0 remaining after this)
+gucman: Downloading sdl3-gfx source: source.tar (225280 bytes)
+  Connecting; waiting for response…
+  Downloaded 225280 / 225280 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx source: source.tar
+gucman: Checking cached object: sdl3-gfx source: source.tar
+gucman: Downloading sdl3-gfx source: build.sh (599 bytes)
+  Connecting; waiting for response…
+  Downloaded 599 / 599 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx source: build.sh
+gucman: Checking cached object: sdl3-gfx source: build.sh
+gucman: Downloading sdl3-gfx source: test.sh (538 bytes)
+  Connecting; waiting for response…
+  Downloaded 538 / 538 bytes (100%); transfer finished
+gucman: Verifying download: sdl3-gfx source: test.sh
+gucman: Checking cached object: sdl3-gfx source: test.sh
+Building migration:sdl3-gfx; running trusted recipe with access to your guest files
+cc: cannot find -lSDL3
+
+
+1 !== 0
+
+    at Object.command (file:///Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:48:96)
+    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:49:27 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

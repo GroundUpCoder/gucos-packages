@@ -1,0 +1,13 @@
+/usr/local/lib/libSDL3_image.a: OK
+/usr/local/lib/libSDL3_image.so: OK
+/usr/local/lib/pkgconfig/sdl3-image.pc: OK
+/usr/local/share/licenses/sdl3-image/LICENSE.txt: OK
+/usr/local/include/SDL3_image/SDL_image.h: OK
+550 functions, 513082 bytes
+SDL3-IMAGE-CONSUMER-PASS
+/usr/local/lib/libSDL3_mixer.a: OK
+/usr/local/lib/libSDL3_mixer.so: OK
+/usr/local/lib/pkgconfig/sdl3-mixer.pc: OK
+/usr/local/share/licenses/sdl3-mixer/LICENSE.txt: OK
+/usr/local/include/SDL3_mixer/SDL_mixer.h: OK
+552 functions, 509716 bytes

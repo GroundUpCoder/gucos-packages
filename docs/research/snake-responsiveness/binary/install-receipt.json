@@ -1,0 +1,110 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "67bcfd684e9c7868c2315002be0536ec7ee974031b8fd0b8fed164229c263932",
+  "size": 40448,
+  "guestManifest": {
+    "format": 1,
+    "name": "snake",
+    "version": "1.0.0-2",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "main.c",
+        "url": "http://127.0.0.1:59742/migration/snake/main.c",
+        "sha256": "75f6f4e27b72e3055bac3022db95573236957bc4d3c9a35adb513dcdad1293e8",
+        "size": 9815
+      },
+      {
+        "path": "upstream.c",
+        "url": "http://127.0.0.1:59742/migration/snake/upstream.c",
+        "sha256": "82b0a3149bb0466f6209fa9cf777cbbf0dd0c12197037689e5f494bb145cfd55",
+        "size": 7602
+      },
+      {
+        "path": "LICENSE",
+        "url": "http://127.0.0.1:59742/migration/snake/LICENSE",
+        "sha256": "3f2bf733d13b1e20f7457acc5baf47aa94b3982901cce4f6d7e80438bf9b6b13",
+        "size": 11344
+      },
+      {
+        "path": "README.md",
+        "url": "http://127.0.0.1:59742/migration/snake/README.md",
+        "sha256": "58df367943df721419d84e9ab1e02c36a977bc9256cc79ceab572c4036c7087c",
+        "size": 1084
+      },
+      {
+        "path": "provenance.json",
+        "url": "http://127.0.0.1:59742/migration/snake/provenance.json",
+        "sha256": "b31794ded78014922d5eef3c34f2bde3ac7eda1aa421aa0c20eeacc9fa617ab3",
+        "size": 660
+      },
+      {
+        "path": "snake.desktop",
+        "url": "http://127.0.0.1:59742/migration/snake/snake.desktop",
+        "sha256": "290d82eeedb0e2c98e6069145b9ebf558a02fd253d43840adf84d32dc4aa7b29",
+        "size": 139
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59742/migration/snake/build.sh",
+        "sha256": "fc45ed354c281832c119580cd2e7e3bf9e0eb00a9cdbc389dfa44792db1d5507",
+        "size": 364
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59742/migration/snake/test.sh",
+        "sha256": "f9bd081349393e6ed26e8734cb35a93d0cc793ecf16732cdcfbfb39e6c2b06a0",
+        "size": 323
+      },
+      {
+        "path": "logic-test.c",
+        "url": "http://127.0.0.1:59742/migration/snake/logic-test.c",
+        "sha256": "9ce8659b15c71b6f0bf247c2a2b56b1222c6cc27658ea3bb0a2bc6987149c477",
+        "size": 2145
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/snake",
+        "mode": 493
+      },
+      {
+        "path": "share/doc/snake/README.md",
+        "mode": 420
+      },
+      {
+        "path": "share/doc/snake/provenance.json",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/snake/LICENSE",
+        "mode": 420
+      },
+      {
+        "path": "share/applications/wasm-posix-snake.desktop",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/snake/LICENSE"
+    ],
+    "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+    "binary": {
+      "url": "http://127.0.0.1:59742/migration/snake/binary.tar",
+      "sha256": "0b8d91f8dfe9da464a391629a2d4f8b2693a6b5150fac8493e7c3d8bf0813f0d",
+      "size": 40448
+    }
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

@@ -1,0 +1,121 @@
+gucman: install migration:jwm: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 16650 bytes; transfer finished
+gucman: Reading catalog: upgrade-baseline
+  Connecting; waiting for response…
+  Downloaded 19113 bytes; transfer finished
+gucman: Resolving: migration:jwm
+gucman: Checking cached object: manifest for migration:jwm
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: jwm (0 remaining after this)
+gucman: Downloading jwm archive (9654272 bytes)
+  Connecting; waiting for response…
+  Downloaded 0.02 / 9.21 MiB (0%)
+  Downloaded 4.95 / 9.21 MiB (53%)
+  Downloaded 9.21 / 9.21 MiB (100%); transfer finished
+gucman: Verifying download: jwm archive
+gucman: Checking cached object: jwm archive
+gucman: Unpacking: jwm
+gucman: Installing jwm: 0/7 files
+gucman: Installing jwm: 7/7 files
+gucman: Preparing checksums: jwm
+gucman: Checksummed jwm: 7/7 files
+gucman: Saving transaction: jwm
+gucman: Verifying staged files: jwm
+gucman: Activating: jwm
+Installed migration:jwm 2.4.6-1
+
+{
+  tail: 'bject: manifest for migration:jwm\n' +
+    'gucman: Resolving: migration:x11-widgets\n' +
+    'gucman: Checking cached object: manifest for migration:x11-widgets\n' +
+    'gucman: Resolving: migration:x11-toolkit\n' +
+    'gucman: Checking cached object: manifest for migration:x11-toolkit\n'
+}
+gucman: install migration:desktop-entries: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19250 bytes; transfer finished
+gucman: Reading catalog: upgrade-baseline
+  Connecting; waiting for response…
+  Downloaded 19113 bytes; transfer finished
+gucman: Resolving: migration:desktop-entries
+gucman: Downloading manifest for migration:desktop-entries (2214 bytes)
+  Connecting; waiting for response…
+  Downloaded 2214 / 2214 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:desktop-entries
+gucman: Checking cached object: manifest for migration:desktop-entries
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: desktop-entries (0 remaining after this)
+gucman: Downloading desktop-entries archive (40448 bytes)
+  Connecting; waiting for response…
+  Downloaded 40448 / 40448 bytes (100%); transfer finished
+gucman: Verifying download: desktop-entries archive
+gucman: Checking cached object: desktop-entries archive
+gucman: Unpacking: desktop-entries
+gucman: Installing desktop-entries: 0/3 files
+gucman: Installing desktop-entries: 3/3 files
+gucman: Preparing checksums: desktop-entries
+gucman: Checksummed desktop-entries: 3/3 files
+gucman: Saving transaction: desktop-entries
+gucman: Verifying staged files: desktop-entries
+gucman: Activating: desktop-entries
+Installed migration:desktop-entries 1.0.0-1
+gucman: install migration:jwm: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19250 bytes; transfer finished
+gucman: Reading catalog: upgrade-baseline
+  Connecting; waiting for response…
+  Downloaded 19113 bytes; transfer finished
+gucman: Resolving: migration:jwm
+gucman: Downloading manifest for migration:jwm (2475 bytes)
+  Connecting; waiting for response…
+  Downloaded 2475 / 2475 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:jwm
+gucman: Checking cached object: manifest for migration:jwm
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: jwm (0 remaining after this)
+gucman: Downloading jwm archive (9654272 bytes)
+  Connecting; waiting for response…
+  Downloaded 9.21 / 9.21 MiB (100%); transfer finished
+gucman: Verifying download: jwm archive
+gucman: Checking cached object: jwm archive
+gucman: Unpacking: jwm
+gucman: Installing jwm: 0/7 files
+gucman: Installing jwm: 7/7 files
+gucman: Preparing checksums: jwm
+gucman: Checksummed jwm: 7/7 files
+gucman: Saving transaction: jwm
+gucman: Verifying staged files: jwm
+gucman: Activating: jwm
+Installed migration:jwm 2.4.6-2
+

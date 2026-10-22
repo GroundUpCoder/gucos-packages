@@ -1,0 +1,137 @@
+gucman: unknown source
+
+{
+  tail: 'gio-core source: test.sh\n' +
+    'gucman: Checking cached object: gio-core source: test.sh\n' +
+    'gucman: Checking cached object: gio-core source: COPYING\n' +
+    'Building migration:gio-core; running trusted recipe with access to your guest files\n' +
+    'GIO: 25 / 207 source files\n'
+}
+{
+  tail: 'ct: gio-core source: COPYING\n' +
+    'Building migration:gio-core; running trusted recipe with access to your guest files\n' +
+    'GIO: 25 / 207 source files\n' +
+    'GIO: 50 / 207 source files\n' +
+    'GIO: 75 / 207 source files\n' +
+    'GIO: 100 / 207 source files\n' +
+    'GIO: 125 / 207 source files\n'
+}
+{
+  tail: 'es\n' +
+    '6 functions, 21518 bytes\n' +
+    '2198 functions, 1718263 bytes\n' +
+    '2 functions, 14331 bytes\n' +
+    'gucman: Installing gio-core: 0/159 files\n' +
+    'gucman: Installing gio-core: 25/159 files\n' +
+    'gucman: Installing gio-core: 50/159 files\n' +
+    'gucman: Installing gio-core: 75/159 files\n'
+}
+gucman: build migration:gio-core: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 12782 bytes; transfer finished
+gucman: Resolving: migration:gio-core
+gucman: Downloading manifest for migration:gio-core (15798 bytes)
+  Connecting; waiting for response…
+  Downloaded 15798 / 15798 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gio-core
+gucman: Checking cached object: manifest for migration:gio-core
+gucman: Resolving: migration:gio-listmodel
+gucman: Checking cached object: manifest for migration:gio-listmodel
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Resolving: migration:libiconv
+gucman: Checking cached object: manifest for migration:libiconv
+gucman: Resolving: migration:pcre2
+gucman: Checking cached object: manifest for migration:pcre2
+gucman: Resolving: migration:libffi
+gucman: Checking cached object: manifest for migration:libffi
+gucman: Resolving: migration:zlib
+gucman: Checking cached object: manifest for migration:zlib
+gucman: Resolving: migration:glib
+gucman: Checking cached object: manifest for migration:glib
+gucman: Resolving: migration:gobject
+gucman: Checking cached object: manifest for migration:gobject
+gucman: Resolving: migration:libintl
+gucman: Checking cached object: manifest for migration:libintl
+gucman: Plan: 9 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 9 packages
+gucman: Package 1/9: libiconv (8 remaining after this)
+Already installed: libiconv
+gucman: Package 2/9: libintl (7 remaining after this)
+Already installed: libintl
+gucman: Package 3/9: pcre2 (6 remaining after this)
+Already installed: pcre2
+gucman: Package 4/9: glib (5 remaining after this)
+Already installed: glib
+gucman: Package 5/9: libffi (4 remaining after this)
+Already installed: libffi
+gucman: Package 6/9: gobject (3 remaining after this)
+Already installed: gobject
+gucman: Package 7/9: gio-listmodel (2 remaining after this)
+Already installed: gio-listmodel
+gucman: Package 8/9: zlib (1 remaining after this)
+Already installed: zlib
+gucman: Package 9/9: gio-core (0 remaining after this)
+gucman: Downloading gio-core source: source.tar (15308800 bytes)
+  Connecting; waiting for response…
+  Downloaded 14.60 / 14.60 MiB (100%); transfer finished
+gucman: Verifying download: gio-core source: source.tar
+gucman: Checking cached object: gio-core source: source.tar
+gucman: Downloading gio-core source: build.sh (10078 bytes)
+  Connecting; waiting for response…
+  Downloaded 10078 / 10078 bytes (100%); transfer finished
+gucman: Verifying download: gio-core source: build.sh
+gucman: Checking cached object: gio-core source: build.sh
+gucman: Downloading gio-core source: test.sh (558 bytes)
+  Connecting; waiting for response…
+  Downloaded 558 / 558 bytes (100%); transfer finished
+gucman: Verifying download: gio-core source: test.sh
+gucman: Checking cached object: gio-core source: test.sh
+gucman: Checking cached object: gio-core source: COPYING
+Building migration:gio-core; running trusted recipe with access to your guest files
+GIO: 25 / 207 source files
+GIO: 50 / 207 source files
+GIO: 75 / 207 source files
+GIO: 100 / 207 source files
+GIO: 125 / 207 source files
+GIO: 150 / 207 source files
+GIO: 175 / 207 source files
+GIO: 200 / 207 source files
+25 functions, 30102 bytes
+6136 functions, 4996895 bytes
+2 functions, 5896 bytes
+6 functions, 21518 bytes
+2198 functions, 1718263 bytes
+2 functions, 14331 bytes
+gucman: Installing gio-core: 0/159 files
+gucman: Installing gio-core: 25/159 files
+gucman: Installing gio-core: 50/159 files
+gucman: Installing gio-core: 75/159 files
+gucman: Installing gio-core: 100/159 files
+gucman: Installing gio-core: 125/159 files
+gucman: Installing gio-core: 150/159 files
+gucman: Installing gio-core: 159/159 files
+gucman: Preparing checksums: gio-core
+gucman: Checksummed gio-core: 25/159 files
+gucman: Checksummed gio-core: 50/159 files
+gucman: Checksummed gio-core: 75/159 files
+gucman: Checksummed gio-core: 100/159 files
+gucman: Checksummed gio-core: 125/159 files
+gucman: Checksummed gio-core: 150/159 files
+gucman: Checksummed gio-core: 159/159 files
+gucman: Saving transaction: gio-core
+gucman: Verifying staged files: gio-core
+gucman: Activating: gio-core
+Installed migration:gio-core 2.84.4-1
+
+6b892d770c237e944354b7170bac7368775e7f9ee0b252658c1aa151eaa72e7a  /home/user/migration-export.tar
+12630016
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

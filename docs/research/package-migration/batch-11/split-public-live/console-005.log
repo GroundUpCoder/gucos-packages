@@ -1,0 +1,115 @@
+97aec6da74d68241b4be5c0aa87a95cae782cde61a44d055872931c5fc05c4dc  /home/user/migration-export.tar
+92932096
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/include/harfbuzz/hb-aat-layout.h: OK
+/usr/local/include/harfbuzz/hb-aat.h: OK
+/usr/local/include/harfbuzz/hb-blob.h: OK
+/usr/local/include/harfbuzz/hb-buffer.h: OK
+/usr/local/include/harfbuzz/hb-common.h: OK
+/usr/local/include/harfbuzz/hb-cplusplus.hh: OK
+/usr/local/include/harfbuzz/hb-deprecated.h: OK
+/usr/local/include/harfbuzz/hb-draw.h: OK
+/usr/local/include/harfbuzz/hb-face.h: OK
+/usr/local/include/harfbuzz/hb-features.h: OK
+/usr/local/include/harfbuzz/hb-font.h: OK
+/usr/local/include/harfbuzz/hb-ft.h: OK
+/usr/local/include/harfbuzz/hb-glib.h: OK
+/usr/local/include/harfbuzz/hb-gpu.h: OK
+/usr/local/include/harfbuzz/hb-map.h: OK
+/usr/local/include/harfbuzz/hb-ot-color.h: OK
+/usr/local/include/harfbuzz/hb-ot-deprecated.h: OK
+/usr/local/include/harfbuzz/hb-ot-fetch.h: OK
+/usr/local/include/harfbuzz/hb-ot-font.h: OK
+/usr/local/include/harfbuzz/hb-ot-layout.h: OK
+/usr/local/include/harfbuzz/hb-ot-math.h: OK
+/usr/local/include/harfbuzz/hb-ot-meta.h: OK
+/usr/local/include/harfbuzz/hb-ot-metrics.h: OK
+/usr/local/include/harfbuzz/hb-ot-name.h: OK
+/usr/local/include/harfbuzz/hb-ot-shape.h: OK
+/usr/local/include/harfbuzz/hb-ot-var.h: OK
+/usr/local/include/harfbuzz/hb-ot.h: OK
+/usr/local/include/harfbuzz/hb-paint.h: OK
+/usr/local/include/harfbuzz/hb-raster.h: OK
+/usr/local/include/harfbuzz/hb-script-list.h: OK
+/usr/local/include/harfbuzz/hb-set.h: OK
+/usr/local/include/harfbuzz/hb-shape-plan.h: OK
+/usr/local/include/harfbuzz/hb-shape.h: OK
+/usr/local/include/harfbuzz/hb-style.h: OK
+/usr/local/include/harfbuzz/hb-subset-depend.h: OK
+/usr/local/include/harfbuzz/hb-subset-serialize.h: OK
+/usr/local/include/harfbuzz/hb-subset.h: OK
+/usr/local/include/harfbuzz/hb-unicode.h: OK
+/usr/local/include/harfbuzz/hb-vector.h: OK
+/usr/local/include/harfbuzz/hb-version.h: OK
+/usr/local/include/harfbuzz/hb.h: OK
+/usr/local/lib/libharfbuzz.so: OK
+/usr/local/lib/pkgconfig/harfbuzz-gpu.pc: OK
+/usr/local/lib/pkgconfig/harfbuzz-raster.pc: OK
+/usr/local/lib/pkgconfig/harfbuzz-subset.pc: OK
+/usr/local/lib/pkgconfig/harfbuzz-vector.pc: OK
+/usr/local/lib/pkgconfig/harfbuzz.pc: OK
+/usr/local/share/harfbuzz/translation.json: OK
+/usr/local/share/licenses/harfbuzz/ABeeZee-OFL.txt: OK
+/usr/local/share/licenses/harfbuzz/COPYING: OK
+
+d5a8985a9f8468ae46876c66f42d43ef482a43200ce4963ade320feefdbbffcb  /home/user/migration-export.tar
+61039104
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+/usr/local/lib/libpango-1.0.a: OK
+/usr/local/lib/libpango-1.0.so: OK
+/usr/local/lib/libpangoft2-1.0.a: OK
+/usr/local/lib/libpangoft2-1.0.so: OK
+/usr/local/lib/libpangocairo-1.0.a: OK
+/usr/local/lib/libpangocairo-1.0.so: OK
+/usr/local/include/pango-1.0/pango/pango.h: OK
+/usr/local/include/pango-1.0/pango/pango-attributes.h: OK
+/usr/local/include/pango-1.0/pango/pango-bidi-type.h: OK
+/usr/local/include/pango-1.0/pango/pango-break.h: OK
+/usr/local/include/pango-1.0/pango/pango-color.h: OK
+/usr/local/include/pango-1.0/pango/pango-context.h: OK
+/usr/local/include/pango-1.0/pango/pango-coverage.h: OK
+/usr/local/include/pango-1.0/pango/pango-direction.h: OK
+/usr/local/include/pango-1.0/pango/pango-engine.h: OK
+/usr/local/include/pango-1.0/pango/pango-font.h: OK
+/usr/local/include/pango-1.0/pango/pango-fontmap.h: OK
+/usr/local/include/pango-1.0/pango/pango-fontset.h: OK
+/usr/local/include/pango-1.0/pango/pango-fontset-simple.h: OK
+/usr/local/include/pango-1.0/pango/pango-glyph.h: OK
+/usr/local/include/pango-1.0/pango/pango-glyph-item.h: OK
+/usr/local/include/pango-1.0/pango/pango-gravity.h: OK
+/usr/local/include/pango-1.0/pango/pango-item.h: OK
+/usr/local/include/pango-1.0/pango/pango-language.h: OK
+/usr/local/include/pango-1.0/pango/pango-layout.h: OK
+/usr/local/include/pango-1.0/pango/pango-matrix.h: OK
+/usr/local/include/pango-1.0/pango/pango-markup.h: OK
+/usr/local/include/pango-1.0/pango/pango-modules.h: OK
+/usr/local/include/pango-1.0/pango/pango-renderer.h: OK
+/usr/local/include/pango-1.0/pango/pango-script.h: OK
+/usr/local/include/pango-1.0/pango/pango-tabs.h: OK
+/usr/local/include/pango-1.0/pango/pango-types.h: OK
+/usr/local/include/pango-1.0/pango/pango-utils.h: OK
+/usr/local/include/pango-1.0/pango/pango-version-macros.h: OK
+/usr/local/include/pango-1.0/pango/pango-enum-types.h: OK
+/usr/local/include/pango-1.0/pango/pango-features.h: OK
+/usr/local/include/pango-1.0/pango/pangofc-font.h: OK
+/usr/local/include/pango-1.0/pango/pangofc-fontmap.h: OK
+/usr/local/include/pango-1.0/pango/pangofc-decoder.h: OK
+/usr/local/include/pango-1.0/pango/pangoft2.h: OK
+/usr/local/include/pango-1.0/pango/pangocairo.h: OK
+/usr/local/lib/pkgconfig/pango.pc: OK
+/usr/local/lib/pkgconfig/pangocairo.pc: OK
+/usr/local/lib/pkgconfig/pangoft2.pc: OK
+/usr/local/share/licenses/pango/COPYING: OK
+/usr/local/share/licenses/pango/Noto-CJK.txt: OK
+
+81c7383d4a7b1b0dda600a9e3d90a14298bfb91ae2303cd595006f042ac24718  /home/user/migration-export.tar
+3197952
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+gucman: unknown source
+
+
+{ tail: 'gucman: unknown source\n' }
+

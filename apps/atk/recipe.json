@@ -1,0 +1,31 @@
+{
+  "name": "atk",
+  "version": "2.38.0-1",
+  "dependencies": [
+    "gobject",
+    "libintl"
+  ],
+  "dependencyRequirements": {
+    "gobject": {
+      "version": "2.84.4-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "pthreads"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh"
+  ]
+}

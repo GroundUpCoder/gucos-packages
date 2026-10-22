@@ -1,0 +1,23 @@
+gucman: unknown source
+
+
+/usr/local/bin/desktop-menu: OK
+/usr/local/share/doc/desktop-entries/README.md: OK
+/usr/local/share/licenses/desktop-entries/LICENSE: OK
+
+cff4ab1c8b3b761ae011907e1a17071c547700510bdcb0c03afb039b5cc2a3cd  /home/user/migration-export.tar
+40448
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+/usr/local/bin/jwm: OK
+/usr/local/share/jwm/system.jwmrc: OK
+/usr/local/share/jwm/wasm.jwmrc: OK
+/usr/local/share/jwm/app-menu.sh: OK
+/usr/local/share/licenses/jwm/LICENSE: OK
+/usr/local/bin/start-jwm: OK
+/usr/local/libexec/jwm/wait-display: OK
+
+455d3d6c6991d019f17ea1002e2e1bdf0a28e53c63b890c620d7ccee7d5e2fc6  /home/user/migration-export.tar
+9654272
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

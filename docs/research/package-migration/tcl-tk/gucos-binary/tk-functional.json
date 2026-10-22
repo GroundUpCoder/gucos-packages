@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "startedAt": "2026-10-11T05:27:50.731Z",
+  "inputCommit": "7b99a0d6518e9845f98d236e9cdf74b02dc70a82",
+  "source": {
+    "path": "source.tar",
+    "url": "http://127.0.0.1:59335/migration/tk/source.tar",
+    "sha256": "cdd69b983e19df3a4507bde5a5066625d76e3afefe5116e2a46d099f3a444924",
+    "size": 12103680
+  },
+  "closureSha256": "3c1d4788738b8693579b62e82b62fc8da36b51fb7a373e207eda685c1397acf7",
+  "fileCount": 1553,
+  "harnessSha256": "2549458786b5d7d82e65fe147a4a264420fb22b87364cf227aa324ad1f145951",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "canvasHelperSha256": "e96db3cefaa5384a1c535d2b6a28cc936ca305ad9cb9afc354b708809cd24969",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  [\n    255,\n    0,\n    0,\n    255,\n...\n    0,\n+   128,\n-   255,\n    0,\n    255,\n    255,\n    255,\n    255,\n\n    at file:///Users/jku/git/gucos-packages-porting/tests/migration/tk.mjs:81:9",
+  "cleanup": "children terminated and command settled",
+  "finishedAt": "2026-10-11T05:28:01.864Z"
+}

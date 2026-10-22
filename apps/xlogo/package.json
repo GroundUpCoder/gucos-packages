@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "name": "xlogo",
+  "version": "1.0.7-1",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlogo/source.tar",
+      "sha256": "fd314d7ddb1f7bfab20d25bf90fa9e7305db2b2613f2546368c1f7e00fb88063",
+      "size": 829440
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlogo/build.sh",
+      "sha256": "cc56dab13e983c706540c5757b02b9615867564965887b8d64fd428574d0eeec",
+      "size": 559
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlogo/test.sh",
+      "sha256": "76e97728d09e377c298321f6183962f6a227fd0867333f2ae54749ddcc1ec464",
+      "size": 47
+    },
+    {
+      "path": "config.h",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlogo/config.h",
+      "sha256": "7bab4d56dac6a56796f7d6af23166fb81cb09f2eceea5e5db093c593a3b84557",
+      "size": 292
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/xlogo",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/xlogo/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/X11/app-defaults/XLogo",
+      "mode": 420
+    },
+    {
+      "path": "share/X11/app-defaults/XLogo-color",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/xlogo/COPYING"
+  ],
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlogo/binaries/05c04ae2f748bce41869f6c572a4390a877ea2f3b5dd10e09d0c18deb8f084ed.tar",
+    "sha256": "05c04ae2f748bce41869f6c572a4390a877ea2f3b5dd10e09d0c18deb8f084ed",
+    "size": 4306944
+  }
+}

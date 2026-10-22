@@ -1,0 +1,26 @@
+{
+  "name": "quake",
+  "version": "0.1.0-3",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "sdl3-vt"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "launch.sh",
+    "gucos-quake.desktop",
+    "quake106.zip",
+    "shareware-payload.tar.gz",
+    "shareware-inventory.json",
+    "SHAREWARE-PROVENANCE.md"
+  ]
+}

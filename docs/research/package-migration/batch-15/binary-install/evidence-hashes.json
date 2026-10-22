@@ -1,0 +1,18 @@
+{
+  "candidate-manifests.json": "4b13f40a05024b2830bf76f415998d98ada67f3820f7db287a0ac61d35b0cd7b",
+  "config.json": "2b673ed1f21814bdd7c0403177e18465605528603db2fe2bbe1e91867ef9797a",
+  "consumers-sdl3-gfx-sdl3-image-sdl3-mixer.json": "f169e8d992f1fdb14b965e7f88db1deaf1787055b3210e608921ad21c865b4d1",
+  "consumers.log": "5a674556f17829d1886503532caa7dfe6a999d4feb4d7c343c4eaabe2a98ed7f",
+  "install-sdl3-gfx-sdl3-image-sdl3-mixer.json": "16e30f76e04c65c45ad58bb2af3a0624d84adaff3702c45b6934767fcefd0845",
+  "install.log": "e6d38f7924f8a835c282b9dc6e3f9e50e7a2214c2a58206899161018d072bfef",
+  "media-console.log": "4150d41f04b210362407117b8adde554d2cea7241be6f2b41e2b5b5704c64358",
+  "observed-runtime.json": "ccd1021fbb44f141ea3ab5675af5fad367f48e4ec5f84f6f6e5448b52d75f1c5",
+  "reload-sdl3-gfx-sdl3-image-sdl3-mixer.json": "841dec4eb1591d27b597494348ef847789a04f15ede3eb43f65fac37e80be472",
+  "reload.log": "2117c908036dcf98492c9507fe1a5a512770112f544fab5da21fcfaf8f87d6d3",
+  "sdl-media.json": "4ec121dc709ef6132232b3cab3a73c8e28c1702ff859d082eb7952df9c3a96c7",
+  "sdl-media.log": "236fe81d055ef58856cd9b938d1f6dd78d1528a704b57e4a14c16a460ac97c3c",
+  "sdl-media.png": "9088639707ea4862e33437f6b1eba55d0ab3897857292e842c622c398cc471c4",
+  "sdl3-gfx.sha256": "d536f085fc1fdecdcc5d73c1c6c4cee883c18f779afdecc7e82df5b444b2ee10",
+  "sdl3-image.sha256": "4279afde0e4370ab7102cb08042271603b4d2f5f614fd51308b4d0a2f9087e4e",
+  "sdl3-mixer.sha256": "114aebf4c47648a149b13d597e0e602b98999430575c1be4d583b255b51d9eec"
+}

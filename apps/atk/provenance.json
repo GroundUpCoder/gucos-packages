@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/atk",
+  "archiveSha256": "dca637f6f7394d36b3277a0e8b98ca8aed138e776de8c1765bcfbb6d66218020",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

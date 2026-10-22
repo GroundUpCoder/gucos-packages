@@ -1,0 +1,18 @@
+{
+  "binary-install/candidate-manifests.json": "c78cd2f36d3bf8d9585db24516e0cff7f31ae65761383c0b6cb7eadc80dc7f18",
+  "binary-install/config.json": "cf77be877f1d8cf8e0b771ec06093a35a172fa991deeba127d7180a5f3415362",
+  "binary-install/consumers-libiconv-pcre2-libffi-libintl-glib-gobject.json": "a73e55263d4e63e02b9905247ca43b371a70af989cab6913e4763813df232f43",
+  "binary-install/consumers.log": "ca2ceeb1fbe4f61e1545cd841e83e0c813d792bcd108092203e0f1df196e1a62",
+  "binary-install/dist-files.json": "fdabc57d64f593811e15d99910efbe84c512d314d28c4e6ae5801714a4ef78d9",
+  "binary-install/glib.sha256": "993d2c304c19a3480e525861b189eaddd87f7040139eb84905944afcda5f1f67",
+  "binary-install/gobject.sha256": "679935d404d500f04ef4ade96f90506c8e70d77ab1a7566bde7127952683d152",
+  "binary-install/install-libiconv-pcre2-libffi-libintl-glib-gobject.json": "bea123bd61e3a9ce726f6e096e5ac76bacb965797566eb0d900180d3a87abb8c",
+  "binary-install/install.log": "16f9b048de5fa553cae760a4c58a57a1e5dfc7735ee9983e7c19a14d138fe15f",
+  "binary-install/libffi.sha256": "619da415e81d8297847cb538e2b384f1422c0a1295967158c7743dc26e8f67a7",
+  "binary-install/libiconv.sha256": "39cf907a5c7da27986af76b2f62acab3705f78a273e438e2995d39f3e6304554",
+  "binary-install/libintl.sha256": "1511bec83b4f849d4e2600089dd9ae74b187d5ce88de880dbdf6dd088088dda3",
+  "binary-install/observed-runtime.json": "c41c14abbf73a8f0e6b3741f0a80bb5d54af6576982bea0863c3b404dba9d18a",
+  "binary-install/pcre2.sha256": "33fb66111ce50c394251a33c2648a19420d56302122a87cf66de62549033de66",
+  "binary-install/reload-libiconv-pcre2-libffi-libintl-glib-gobject.json": "5bdfd54b63f680f5659e5a25a6a49770cec8d68d38f2fed8df7f20960fedde88",
+  "binary-install/reload.log": "89b8e612b291489f0a2d0a4837458bc19fdb26bc0eddfe1484a04575607003cd"
+}

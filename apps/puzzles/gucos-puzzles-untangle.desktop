@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Untangle
+Exec=sgt-untangle
+TryExec=sgt-untangle
+Terminal=false
+Categories=Game;LogicGame;

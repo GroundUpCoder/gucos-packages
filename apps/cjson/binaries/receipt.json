@@ -1,0 +1,66 @@
+{
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "sha256": "c9f82304c048ea6fb5f77c634f469056bd1f01cf1ce22280cebd2fd047db65f0",
+  "size": 174592,
+  "guestManifest": {
+    "format": 1,
+    "name": "cjson",
+    "version": "1.7.19-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:64027/migration/cjson/source.tar",
+        "sha256": "a7597e37fb9b3c11e250f271a51de2b10e91e79ebbfeba7b350d32e674e4e8f0",
+        "size": 112640
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:64027/migration/cjson/build.sh",
+        "sha256": "43a2910e69e6ddb10d0fd37cd7b728aa4dfd42ca592dc78d50d85942345c054b",
+        "size": 440
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:64027/migration/cjson/test.sh",
+        "sha256": "9893fed904f6c961c842cadd7aa8e317550e6655393e3ad8a96aa03d84c9a1ed",
+        "size": 927
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libcjson.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libcjson.so",
+        "mode": 420
+      },
+      {
+        "path": "include/cjson/cJSON.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/cjson/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/cjson/LICENSE"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage",
+  "sourceCommit": "7da0b4a334986858685f930ef50af2352d33b714"
+}

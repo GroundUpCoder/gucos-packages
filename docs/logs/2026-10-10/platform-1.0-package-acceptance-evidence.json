@@ -1,0 +1,210 @@
+{
+  "execution": "User/core author executed these runs; package author inspected existing reports and verified stage log hashes without rerunning tests.",
+  "baselineCatalog": "fab65cba24c8c6dd59e11a63e096138e13835c42",
+  "runs": [
+    {
+      "run": "platform-1-0-c4411d72",
+      "scope": "baseline-execution-and-relinking",
+      "status": "passed",
+      "runtime": "c4411d720bede49ead5c1de69bfe7b1247656a146b72d991d209883606e300fb",
+      "outputHashes": 803,
+      "reportSha256": "2976bcc9857f6fc8b1e8a256c24c4b5460ebe2029e258fc5eddae19d194c0f80",
+      "startedAt": "2026-10-10T07:03:58.532Z",
+      "finishedAt": "2026-10-10T07:13:12.854Z",
+      "stages": [
+        {
+          "name": "probe",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 2577,
+          "log": "probe.log",
+          "sha256": "cc2a973af1e7c3a321061c18bed2212efdb9fcfd847811a4ec570a4a3f71bf9d",
+          "job": "e7bd0401-1d36-40b7-b5c5-07e9b96995ed"
+        },
+        {
+          "name": "install-server",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 82877,
+          "log": "install-server.log",
+          "sha256": "943c542cd6319a261aa75e0705dc8179a6db9c3eaa52a5e925c7e4017581515e",
+          "job": "97bface6-2b13-4052-bc2c-852e7544aad4"
+        },
+        {
+          "name": "install-widgets",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 45989,
+          "log": "install-widgets.log",
+          "sha256": "14c8d94005f271146dd1c3b6d427888e1166a9a4d5b0ed9d0b36bc4512ca9a8f",
+          "job": "08d65c2f-8f49-4a53-bfc9-736c5463c1f7"
+        },
+        {
+          "name": "install-desktop-a",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 100272,
+          "log": "install-desktop-a.log",
+          "sha256": "0f6019b390f531a97144eac81bcdc2d97ca0f79ff71fd4737eb39a894f274196",
+          "job": "43907839-15ad-4844-ac8d-f80abeb7dc36"
+        },
+        {
+          "name": "install-desktop-b",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 134869,
+          "log": "install-desktop-b.log",
+          "sha256": "650f9aebc8392653560cece6b3bd8fd0ad08aa236de7df615b8ac55b60e7d340",
+          "job": "0825494b-0f79-4d6f-b21e-217062ed7a90"
+        },
+        {
+          "name": "install-desktop-c",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 115161,
+          "log": "install-desktop-c.log",
+          "sha256": "93c25f530df189f4c034188668c080a3b9afa3216a338fcb82127f6d63021b1b",
+          "job": "13a60374-5538-4586-b832-728adb30b3d1"
+        },
+        {
+          "name": "integrity-before",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 2097,
+          "log": "integrity-before.log",
+          "sha256": "2273236cecedce8e3c9c8487b4031bee4b3dfecb484d06d78591ed47ac3fc74b",
+          "job": "8483d36e-2289-4c53-b8a9-cf97f0ce1154"
+        },
+        {
+          "name": "cli-and-library-relink",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 3917,
+          "log": "cli-and-library-relink.log",
+          "sha256": "65258adfa7d7ba44a71b4952c0b10b055a53eb390221a2302842417e37e1c339",
+          "job": "e16a5396-96fc-4733-9e9f-c6ffb6a058bb"
+        },
+        {
+          "name": "jwm-features",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 12320,
+          "log": "jwm-features.log",
+          "sha256": "a824a2c4e8ed927e970fc7490f520b7c979071e8302a920cfef0a26f8d4eaec9",
+          "job": "80fec77e-d2cc-4338-a138-1c258e33a2ed"
+        },
+        {
+          "name": "jwm-browser",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 10717,
+          "log": "jwm-browser.log",
+          "sha256": "1d9504eaf7f2b5b7d5f0093204de1ca4bb9242036872d0cc13c2bf91ab7b98ed",
+          "job": "8b2be528-8368-4d1e-b3e7-5c4184e1629a"
+        },
+        {
+          "name": "xclients",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 13560,
+          "log": "xclients.log",
+          "sha256": "357b95ba6d9f364a474cf6e023a9bf9aba2a559be9498192406c39edffb03cd5",
+          "job": "5813f5d5-9563-4e94-ab90-9a18cd71a8d1"
+        },
+        {
+          "name": "xterm-pty",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 4336,
+          "log": "xterm-pty.log",
+          "sha256": "2ad34e4dd250d536e6ee37c79173ac33f5452d446158a6e131c48c721d03fa75",
+          "job": "c3dc8810-b1dc-4e55-8e6b-1ab77e3492bf"
+        },
+        {
+          "name": "launcher",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 22714,
+          "log": "launcher.log",
+          "sha256": "c8aa44c879b85041f8737c26fb6e42d1f6c984562e85e7e3c6a7f78cefa2cda4",
+          "job": "d4b13d8e-f04a-44de-b073-504df57ddcbd"
+        },
+        {
+          "name": "reload-and-integrity-after",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 2255,
+          "log": "reload-and-integrity-after.log",
+          "sha256": "e90f1f7fb74ad2c1868c56cf71881b711a67cab95f5ac08e396552536f6f0e22",
+          "job": "6d3915ad-2389-4ed1-b705-9b8cc6e0a0d3"
+        }
+      ]
+    },
+    {
+      "run": "platform-1-0-live-c4411d72",
+      "scope": "live-desktop-smoke",
+      "status": "passed",
+      "runtime": "c4411d720bede49ead5c1de69bfe7b1247656a146b72d991d209883606e300fb",
+      "outputHashes": 722,
+      "reportSha256": "19eb6205507690f7d4131cb8eaf2cad2b63484e35649cfbbc6f019aff0e78eb4",
+      "startedAt": "2026-10-10T07:16:33.428Z",
+      "finishedAt": "2026-10-10T07:19:33.995Z",
+      "stages": [
+        {
+          "name": "probe",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 5006,
+          "log": "probe.log",
+          "sha256": "f1af443d799eaddfe9279797f0096a9fd7db8428a951d88d49376ec9b04dcb1b",
+          "job": "a3b64bf1-ec48-4be9-8583-c0634a505f6a"
+        },
+        {
+          "name": "install-server",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 77548,
+          "log": "install-server.log",
+          "sha256": "b5d0f8f39167732c61822cef5d633f238adab0bdf2e50cdee47b8a56f6e386c8",
+          "job": "72ebe4c2-38cd-491e-b6de-bf3a5aa965a5"
+        },
+        {
+          "name": "install-widgets",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 38263,
+          "log": "install-widgets.log",
+          "sha256": "3c8055421eef279cb14c19047d7a79480b7bce91d86aa952b284c7f820ce3e1e",
+          "job": "33616ce2-55f6-4253-9a1a-aa1b5bb03d61"
+        },
+        {
+          "name": "install-desktop",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 51711,
+          "log": "install-desktop.log",
+          "sha256": "71faf487201210723dc71eae6b2c0b5623d2e3a439b48b899d2fd3dc75601fa0",
+          "job": "01c79a4b-49c1-49ff-a6b1-d19fad16e13d"
+        },
+        {
+          "name": "jwm-xterm-keyboard",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 5006,
+          "log": "jwm-xterm-keyboard.log",
+          "sha256": "6020b6b649a248cbbb24e2d6ea2bdd04efb58f747872136afb2d18adfee875c2",
+          "job": "d68a0304-e42d-43de-b810-c6ff93155573"
+        },
+        {
+          "name": "reload",
+          "exitCode": 0,
+          "signal": null,
+          "elapsedMs": 2526,
+          "log": "reload.log",
+          "sha256": "59284c7a6d483747b46df709f57763676930d9b720cb2dd60fd10474f0923000",
+          "job": "db200c70-e2f3-4c34-a9ca-6ba098c422e1"
+        }
+      ]
+    }
+  ]
+}

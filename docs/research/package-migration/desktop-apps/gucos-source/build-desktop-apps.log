@@ -1,0 +1,124 @@
+gucman: unknown source
+
+gucman: build migration:desktop-apps: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 22909 bytes; transfer finished
+gucman: Resolving: migration:desktop-apps
+gucman: Downloading manifest for migration:desktop-apps (3370 bytes)
+  Connecting; waiting for response…
+  Downloaded 3370 / 3370 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:desktop-apps
+gucman: Checking cached object: manifest for migration:desktop-apps
+gucman: Resolving: migration:desktop-entries
+gucman: Checking cached object: manifest for migration:desktop-entries
+gucman: Resolving: migration:jwm
+gucman: Checking cached object: manifest for migration:jwm
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Resolving: migration:xterm
+gucman: Checking cached object: manifest for migration:xterm
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:2048
+gucman: Checking cached object: manifest for migration:2048
+gucman: Resolving: migration:xcalc
+gucman: Checking cached object: manifest for migration:xcalc
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:xedit
+gucman: Checking cached object: manifest for migration:xedit
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:xclock
+gucman: Checking cached object: manifest for migration:xclock
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:xeyes
+gucman: Checking cached object: manifest for migration:xeyes
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Plan: 12 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 12 packages
+gucman: Package 1/12: desktop-entries (11 remaining after this)
+Already installed: desktop-entries
+gucman: Package 2/12: x11-server (10 remaining after this)
+Already installed: x11-server
+gucman: Package 3/12: x11-toolkit (9 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 4/12: x11-widgets (8 remaining after this)
+Already installed: x11-widgets
+gucman: Package 5/12: jwm (7 remaining after this)
+Already installed: jwm
+gucman: Package 6/12: xterm (6 remaining after this)
+Already installed: xterm
+gucman: Package 7/12: 2048 (5 remaining after this)
+Already installed: 2048
+gucman: Package 8/12: xcalc (4 remaining after this)
+Already installed: xcalc
+gucman: Package 9/12: xedit (3 remaining after this)
+Already installed: xedit
+gucman: Package 10/12: xclock (2 remaining after this)
+Already installed: xclock
+gucman: Package 11/12: xeyes (1 remaining after this)
+Already installed: xeyes
+gucman: Package 12/12: desktop-apps (0 remaining after this)
+gucman: Downloading desktop-apps source: source.tar (20480 bytes)
+  Connecting; waiting for response…
+  Downloaded 20480 / 20480 bytes (100%); transfer finished
+gucman: Verifying download: desktop-apps source: source.tar
+gucman: Checking cached object: desktop-apps source: source.tar
+gucman: Downloading desktop-apps source: build.sh (238 bytes)
+  Connecting; waiting for response…
+  Downloaded 238 / 238 bytes (100%); transfer finished
+gucman: Verifying download: desktop-apps source: build.sh
+gucman: Checking cached object: desktop-apps source: build.sh
+gucman: Downloading desktop-apps source: test.sh (189 bytes)
+  Connecting; waiting for response…
+  Downloaded 189 / 189 bytes (100%); transfer finished
+gucman: Verifying download: desktop-apps source: test.sh
+gucman: Checking cached object: desktop-apps source: test.sh
+gucman: Downloading desktop-apps source: gucos-desktop-2048.desktop (80 bytes)
+  Connecting; waiting for response…
+  Downloaded 80 / 80 bytes (100%); transfer finished
+gucman: Verifying download: desktop-apps source: gucos-desktop-2048.desktop
+gucman: Checking cached object: desktop-apps source: gucos-desktop-2048.desktop
+gucman: Downloading desktop-apps source: gucos-desktop-xcalc.desktop (89 bytes)
+  Connecting; waiting for response…
+  Downloaded 89 / 89 bytes (100%); transfer finished
+gucman: Verifying download: desktop-apps source: gucos-desktop-xcalc.desktop
+gucman: Checking cached object: desktop-apps source: gucos-desktop-xcalc.desktop
+gucman: Downloading desktop-apps source: gucos-desktop-xedit.desktop (90 bytes)
+  Connecting; waiting for response…
+  Downloaded 90 / 90 bytes (100%); transfer finished
+gucman: Verifying download: desktop-apps source: gucos-desktop-xedit.desktop
+gucman: Checking cached object: desktop-apps source: gucos-desktop-xedit.desktop
+gucman: Downloading desktop-apps source: gucos-desktop-xclock.desktop (86 bytes)
+  Connecting; waiting for response…
+  Downloaded 86 / 86 bytes (100%); transfer finished
+gucman: Verifying download: desktop-apps source: gucos-desktop-xclock.desktop
+gucman: Checking cached object: desktop-apps source: gucos-desktop-xclock.desktop
+gucman: Downloading desktop-apps source: gucos-desktop-xeyes.desktop (83 bytes)
+  Connecting; waiting for response…
+  Downloaded 83 / 83 bytes (100%); transfer finished
+gucman: Verifying download: desktop-apps source: gucos-desktop-xeyes.desktop
+gucman: Checking cached object: desktop-apps source: gucos-desktop-xeyes.desktop
+Building migration:desktop-apps; running trusted recipe with access to your guest files
+DESKTOP-APPS-STAGED
+gucman: Installing desktop-apps: 0/6 files
+gucman: Installing desktop-apps: 6/6 files
+gucman: Preparing checksums: desktop-apps
+gucman: Checksummed desktop-apps: 6/6 files
+gucman: Saving transaction: desktop-apps
+gucman: Verifying staged files: desktop-apps
+gucman: Activating: desktop-apps
+Installed migration:desktop-apps 1.0.0-1
+
+828eca9f171fdf97393f3c99fc436993cbdbcfca1cdc05e556b4520b7ac4eaa3  /home/user/migration-export.tar
+18432
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/pango",
+  "archiveSha256": "ce3d982dc4c0ba6535d1c4e23dd02742d557f94d75191feba0a871f426c76b64",
+  "overlays": [],
+  "status": "source migration candidate; no new guest execution"
+}

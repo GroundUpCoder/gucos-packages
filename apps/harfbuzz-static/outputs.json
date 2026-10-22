@@ -1,0 +1,18 @@
+[
+  {
+    "path": "lib/libharfbuzz-runtime.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libharfbuzz.a",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/harfbuzz-static/ABeeZee-OFL.txt",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/harfbuzz-static/COPYING",
+    "mode": 420
+  }
+]

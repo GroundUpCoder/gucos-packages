@@ -1,0 +1,14 @@
+[
+  {
+    "path": "bin/desktop-menu",
+    "mode": 493
+  },
+  {
+    "path": "share/doc/desktop-entries/README.md",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/desktop-entries/LICENSE",
+    "mode": 420
+  }
+]

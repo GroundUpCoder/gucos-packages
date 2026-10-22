@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-11T05:50:28.067Z",
+  "name": "bitmap",
+  "canvasHelperSha256": "e96db3cefaa5384a1c535d2b6a28cc936ca305ad9cb9afc354b708809cd24969",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "helperSha256": "151acb093572fcd895d6a8073d636f418799216ae7b8beaaf534589daaeb9b23",
+  "harnessSha256": "fa748661dad106852f5ea35ff54e511b54643b1121b44f7c40892edb77edb0c3",
+  "finishedAt": "2026-10-11T05:50:32.923Z"
+}

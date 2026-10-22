@@ -1,0 +1,192 @@
+[machine-job] queued: node tests/migration/stage.mjs build xfontsel xclipboard xcutsel oclock xedit
+[machine-job] running: 56a11e8b-4c13-4bfa-ba23-fa694d40a55c
+gucman: unknown source
+
+gucman: build migration:xfontsel: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7927 bytes; transfer finished
+gucman: Resolving: migration:xfontsel
+gucman: Checking cached object: manifest for migration:xfontsel
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xfontsel (0 remaining after this)
+Already installed: xfontsel
+
+{
+  tail: 'it\n' +
+    'gucman: Checking cached object: manifest for migration:x11-toolkit\n' +
+    'gucman: Resolving: migration:x11-server\n' +
+    'gucman: Checking cached object: manifest for migration:x11-server\n' +
+    'gucman: Plan: 4 packages (including dependencies); checking compatibility\n'
+}
+gucman: build migration:xclipboard: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7927 bytes; transfer finished
+gucman: Resolving: migration:xclipboard
+gucman: Checking cached object: manifest for migration:xclipboard
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xclipboard (0 remaining after this)
+Already installed: xclipboard
+
+gucman: build migration:xcutsel: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7927 bytes; transfer finished
+gucman: Resolving: migration:xcutsel
+gucman: Checking cached object: manifest for migration:xcutsel
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xcutsel (0 remaining after this)
+Already installed: xcutsel
+
+{
+  tail: ' manifest for migration:x11-widgets\n' +
+    'gucman: Resolving: migration:x11-toolkit\n' +
+    'gucman: Checking cached object: manifest for migration:x11-toolkit\n' +
+    'gucman: Resolving: migration:x11-server\n' +
+    'gucman: Checking cached object: manifest for migration:x11-server\n'
+}
+gucman: build migration:oclock: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7927 bytes; transfer finished
+gucman: Resolving: migration:oclock
+gucman: Checking cached object: manifest for migration:oclock
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: oclock (0 remaining after this)
+Already installed: oclock
+
+{
+  tail: 'ject: xedit source: lisp-lisp.c\n' +
+    'Building migration:xedit; running trusted recipe with access to your guest files\n' +
+    '6095 functions, 16226456 bytes\n' +
+    '1181 functions, 3736120 bytes\n' +
+    '54 functions, 186115 bytes\n' +
+    'xedit 1.2.5\n' +
+    'gucman: Installing xedit: 0/27 files\n'
+}
+gucman: build migration:xedit: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 7927 bytes; transfer finished
+gucman: Resolving: migration:xedit
+gucman: Downloading manifest for migration:xedit (4319 bytes)
+  Connecting; waiting for response…
+  Downloaded 4319 / 4319 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:xedit
+gucman: Checking cached object: manifest for migration:xedit
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: xedit (0 remaining after this)
+gucman: Checking cached object: xedit source: source.tar
+gucman: Downloading xedit source: build.sh (1843 bytes)
+  Connecting; waiting for response…
+  Downloaded 1843 / 1843 bytes (100%); transfer finished
+gucman: Verifying download: xedit source: build.sh
+gucman: Checking cached object: xedit source: build.sh
+gucman: Checking cached object: xedit source: test.sh
+gucman: Checking cached object: xedit source: config.h
+gucman: Checking cached object: xedit source: util.c
+gucman: Checking cached object: xedit source: lisp-format.c
+gucman: Checking cached object: xedit source: lisp-io.c
+gucman: Checking cached object: xedit source: lisp-lisp.c
+Building migration:xedit; running trusted recipe with access to your guest files
+6095 functions, 16226456 bytes
+1181 functions, 3736120 bytes
+54 functions, 186115 bytes
+xedit 1.2.5
+gucman: Installing xedit: 0/27 files
+gucman: Installing xedit: 25/27 files
+gucman: Installing xedit: 27/27 files
+gucman: Preparing checksums: xedit
+gucman: Checksummed xedit: 25/27 files
+gucman: Checksummed xedit: 27/27 files
+gucman: Saving transaction: xedit
+gucman: Verifying staged files: xedit
+gucman: Activating: xedit
+Installed migration:xedit 1.2.5-1
+
+0035f4b28d01eecf25e2d565df976f9174857d563558ec175dbc5775216dd760  /home/user/migration-export.tar
+4462080
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+e4d0c4277b92b18731390974d71e9babb4d862dcd65ea48641e986f76f20dbb9  /home/user/migration-export.tar
+4319232
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+6d834a84abd60b4d1f90c3e0ef176522961c44c799c6512d9a41345f6749d20f  /home/user/migration-export.tar
+4307456
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+d99fed7b0cd540514df0f4b04652f4fff8c98fd0f3abb1cda1d7cfa5a2cf792b  /home/user/migration-export.tar
+4314624
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+
+4b6d0f82b31c046546a11b19351480b17af0269686f2fd3aa6eae462a0fb75a7  /home/user/migration-export.tar
+20440064
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

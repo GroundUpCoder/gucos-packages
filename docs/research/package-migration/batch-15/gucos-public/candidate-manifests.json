@@ -1,0 +1,213 @@
+{
+  "sdl3-gfx": {
+    "format": 1,
+    "name": "sdl3-gfx",
+    "version": "2.0.23-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "sdl3-vt"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-gfx/source.tar",
+        "sha256": "d3c3ca63b4a7ebf621bc6adb70a52b541fe87da610145abc8a6166f108238413",
+        "size": 225280
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-gfx/build.sh",
+        "sha256": "0a6a2abad7ca662777dfa22231b7e2ec35e83755ab754a10db021cd56d897ad8",
+        "size": 623
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-gfx/test.sh",
+        "sha256": "8e3e5e15e96d30dd36194322067045f6cf5b0e682af8a65f6c472e23bb09755e",
+        "size": 524
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libSDL3_gfx.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libSDL3_gfx.so",
+        "mode": 420
+      },
+      {
+        "path": "include/SDL3_gfx/SDL_gfxPrimitives.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/SDL3_gfx.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/sdl3-gfx/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/sdl3-gfx/LICENSE"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-gfx/binaries/78542f6705c6e0cbf9d6d2e2663a8301dce0ff3770c119a280b61b90cf6dbe75.tar",
+      "sha256": "78542f6705c6e0cbf9d6d2e2663a8301dce0ff3770c119a280b61b90cf6dbe75",
+      "size": 179712
+    }
+  },
+  "sdl3-image": {
+    "format": 1,
+    "name": "sdl3-image",
+    "version": "3.2.6-2",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "sdl3-vt"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-image/source.tar",
+        "sha256": "fda0d407af1cc4a27860cae7364d362ac70951a794f65530394658a312423a51",
+        "size": 1792000
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-image/build.sh",
+        "sha256": "cbee4d39f582167f989ddbe0f4ef8b97a3e6d12dc7f4d805f38bec625d987592",
+        "size": 834
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-image/test.sh",
+        "sha256": "ac335528db2d4198f2c95577216bcb9a0279415e5925ec43806e08949c8ed327",
+        "size": 397
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libSDL3_image.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libSDL3_image.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/sdl3-image.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/sdl3-image/LICENSE.txt",
+        "mode": 420
+      },
+      {
+        "path": "include/SDL3_image/SDL_image.h",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/sdl3-image/LICENSE.txt"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-image/binaries/70f05fc9813e9d9fec687b13df76afe0d015688d5d473d1b90786189dedea6ff.tar",
+      "sha256": "70f05fc9813e9d9fec687b13df76afe0d015688d5d473d1b90786189dedea6ff",
+      "size": 479744
+    }
+  },
+  "sdl3-mixer": {
+    "format": 1,
+    "name": "sdl3-mixer",
+    "version": "3.2.4-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "sdl3-vt",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-mixer/source.tar",
+        "sha256": "776c28ebfbb254e369db4969c17655723c799bc7f3b69cf94e333648c3919177",
+        "size": 1945600
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-mixer/build.sh",
+        "sha256": "479f4fc47bb83689aa6c455a984746687ec8a5fb23ba00582e929a8d75009331",
+        "size": 997
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-mixer/test.sh",
+        "sha256": "cd3a1621a785ad0146704794bfb90de558e056dd314610bd3c3915193bc55980",
+        "size": 360
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libSDL3_mixer.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libSDL3_mixer.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/sdl3-mixer.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/sdl3-mixer/LICENSE.txt",
+        "mode": 420
+      },
+      {
+        "path": "include/SDL3_mixer/SDL_mixer.h",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/sdl3-mixer/LICENSE.txt"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/3f285c2ff572cc62762d5cd62148ecdd2e8e3541/apps/sdl3-mixer/binaries/63058c93547c6edb6492f6cd84d7e0383c058a30d7a2b32b1b136f0146c52595.tar",
+      "sha256": "63058c93547c6edb6492f6cd84d7e0383c058a30d7a2b32b1b136f0146c52595",
+      "size": 1290240
+    }
+  }
+}

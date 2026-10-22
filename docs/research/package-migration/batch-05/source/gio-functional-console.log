@@ -1,0 +1,11 @@
+[machine-job] queued: node tests/migration/gio.mjs
+[machine-job] running: c392e335-1edc-40d2-9659-41b65a98aa42
+
+1 functions, 3320 bytes
+-I/usr/local/include/gio-core-2.0 -I/usr/local/include/glib-2.0 -I/usr/local/include -L/usr/local/lib -lgio-core -lgio-listmodel -lgobject-2.0 -lz -lgmodule-2.0 -lglib-2.0
+3 functions, 19522 bytes
+GIO-UNIX-STREAM-PASS
+GIO-FILE-MONITOR-PASS
+GMODULE-LOAD-PASS
+GIO-INSTALLED-CONSUMER-PASS
+

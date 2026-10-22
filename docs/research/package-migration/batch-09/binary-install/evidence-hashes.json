@@ -1,0 +1,13 @@
+{
+  "candidate-manifests.json": "bb8c7468a756f7e0ed1b4702f8588f016cbfa92679b367c2d4bd82ddcdad6ee3",
+  "config.json": "7ff499f614a8a4c26611ad07448b2ba9c431a34311c499ecccbdc56b6bd83a75",
+  "consumers-pigz-nyancat.json": "f04b6a09850b37205039359735502231b2f8cd105e965e96beee13f667e220d3",
+  "consumers.log": "907a0aa64522bf490aa076b4098c4a70078988d201cded8cd89a6a79793e0822",
+  "install-pigz-nyancat.json": "101a812f708d210a3833fe42f07ccf94491c7a46851343f478a2dd33b4a765b3",
+  "install.log": "f305041cc266417349cf36335660f350a09c498dc0ee88df679b4b5a126eed3c",
+  "nyancat.sha256": "a99e90a7fcf93ded86eb27c403c57ae74196edfcce5b09a038e166658f6b220c",
+  "observed-runtime.json": "ab8cbdd636ae7df942008d5507ffe3b2a128a09ee4bded060fee6d0ed56dbc06",
+  "pigz.sha256": "80b45cbb1b1c9c224027f7c526ac0511266c2ef71029ffdc2c46399ea922ccd7",
+  "reload-pigz-nyancat.json": "35dcd82b9777fda5a810be15196c07a1516e7e13628744f8ec1b85b0fe12f788",
+  "reload.log": "f7ee71984bbe858fb06a54ccf0fead49c5efc4aea573ec83529bead12ffce256"
+}

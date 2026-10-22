@@ -1,0 +1,38 @@
+gucman: unknown source
+
+gucman: install migration:gameboy: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20432 bytes; transfer finished
+gucman: Resolving: migration:gameboy
+gucman: Downloading manifest for migration:gameboy (1780 bytes)
+  Connecting; waiting for response…
+  Downloaded 1780 / 1780 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:gameboy
+gucman: Checking cached object: manifest for migration:gameboy
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: gameboy (0 remaining after this)
+gucman: Downloading gameboy archive (692736 bytes)
+  Connecting; waiting for response…
+  Downloaded 692736 / 692736 bytes (100%); transfer finished
+gucman: Verifying download: gameboy archive
+gucman: Checking cached object: gameboy archive
+gucman: Unpacking: gameboy
+gucman: Installing gameboy: 0/3 files
+gucman: Installing gameboy: 3/3 files
+gucman: Preparing checksums: gameboy
+gucman: Checksummed gameboy: 3/3 files
+gucman: Saving transaction: gameboy
+gucman: Verifying staged files: gameboy
+gucman: Activating: gameboy
+Installed migration:gameboy 0.1.0-3
+
+/usr/local/bin/gameboy: OK
+/usr/local/share/applications/gucos-gameboy.desktop: OK
+/usr/local/share/licenses/gameboy/peanut_gb.h: OK
+
+457bdc70b76f80073f4ca5f4c3c2ebad5eae4ea8ec0212092822f402aa3cca4c  /home/user/migration-export.tar
+692736
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

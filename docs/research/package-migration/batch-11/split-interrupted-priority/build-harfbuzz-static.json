@@ -1,0 +1,12 @@
+{
+  "action": "build",
+  "names": [
+    "harfbuzz-static"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "inputCommit": "5bdbba1e53e78d2260b481bc69bbe20dd8887bd6",
+  "startedAt": "2026-10-10T11:12:02.511Z",
+  "status": "failed",
+  "error": "page.evaluate: Target page, context or browser has been closed\n    at Object.command (/Users/jku/git/wasm-posix-packages/tests/compatibility/session.mjs:47:28)\n    at async file:///Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:49:27",
+  "finishedAt": "2026-10-10T11:15:12.242Z"
+}

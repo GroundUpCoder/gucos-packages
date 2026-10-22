@@ -1,0 +1,26 @@
+[
+  {
+    "path": "lib/libexpat.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libexpat.so",
+    "mode": 420
+  },
+  {
+    "path": "include/expat.h",
+    "mode": 420
+  },
+  {
+    "path": "include/expat_external.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/expat.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/expat/COPYING",
+    "mode": 420
+  }
+]

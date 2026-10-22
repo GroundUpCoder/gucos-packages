@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Eyes
+Exec=xeyes
+TryExec=xeyes
+Terminal=false

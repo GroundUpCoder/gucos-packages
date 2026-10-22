@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=2048
+Exec=2048
+TryExec=2048
+Terminal=true

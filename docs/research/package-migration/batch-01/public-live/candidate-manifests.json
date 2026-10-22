@@ -1,0 +1,393 @@
+{
+  "zlib": {
+    "format": 1,
+    "name": "zlib",
+    "version": "1.3.2-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/zlib/source.tar",
+        "sha256": "2b9ad1bee3da8914d9b045fd73d8a0df01ca2dec0b6c2f04c5f2c30e570ded71",
+        "size": 1269760
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/zlib/build.sh",
+        "sha256": "aa5c4a00ee1b926ebfe5cb76e1909d352b9281b9e734f1efb55454dc41003bf9",
+        "size": 785
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/zlib/test.sh",
+        "sha256": "0e57a22d7479739ceaaa1e9e796d944f99e9edda911a8dbb9a264a7c2a7e4e06",
+        "size": 344
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libz.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libz.so",
+        "mode": 420
+      },
+      {
+        "path": "include/zlib.h",
+        "mode": 420
+      },
+      {
+        "path": "include/zconf.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/zlib.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/zlib/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/zlib/LICENSE"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/zlib/binaries/48479d0b8836cd6bc54e4d5c11c18779bd737bde55300d8e3bb9e4e48a4918ba.tar",
+      "sha256": "48479d0b8836cd6bc54e4d5c11c18779bd737bde55300d8e3bb9e4e48a4918ba",
+      "size": 513024
+    }
+  },
+  "cjson": {
+    "format": 1,
+    "name": "cjson",
+    "version": "1.7.19-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/cjson/source.tar",
+        "sha256": "a7597e37fb9b3c11e250f271a51de2b10e91e79ebbfeba7b350d32e674e4e8f0",
+        "size": 112640
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/cjson/build.sh",
+        "sha256": "43a2910e69e6ddb10d0fd37cd7b728aa4dfd42ca592dc78d50d85942345c054b",
+        "size": 440
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/cjson/test.sh",
+        "sha256": "9893fed904f6c961c842cadd7aa8e317550e6655393e3ad8a96aa03d84c9a1ed",
+        "size": 927
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libcjson.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libcjson.so",
+        "mode": 420
+      },
+      {
+        "path": "include/cjson/cJSON.h",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/cjson/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/cjson/LICENSE"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/cjson/binaries/c9f82304c048ea6fb5f77c634f469056bd1f01cf1ce22280cebd2fd047db65f0.tar",
+      "sha256": "c9f82304c048ea6fb5f77c634f469056bd1f01cf1ce22280cebd2fd047db65f0",
+      "size": 174592
+    }
+  },
+  "pkgconf": {
+    "format": 1,
+    "name": "pkgconf",
+    "version": "2.3.0-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/pkgconf/source.tar",
+        "sha256": "0f4681ad18cedeead41be89d831a416f1ed650496631d1b45cabe79474d1c0d5",
+        "size": 501760
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/pkgconf/build.sh",
+        "sha256": "028446faa2d7cab17f7ae7c2926b163a6360fb5ebd32679f0d61a8c74c399925",
+        "size": 602
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/pkgconf/test.sh",
+        "sha256": "78539ed6ef3afc9993cc6dbaf59cb8055a297691405dd9c69283261fbec75d07",
+        "size": 516
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/pkgconf",
+        "mode": 493
+      },
+      {
+        "path": "bin/pkg-config",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/pkgconf/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/pkgconf/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/pkgconf/binaries/201a46e2553d3ec68b1af34483969c7f87f03db0d5eaf3d76cea4ceb06bc1f0b.tar",
+      "sha256": "201a46e2553d3ec68b1af34483969c7f87f03db0d5eaf3d76cea4ceb06bc1f0b",
+      "size": 454656
+    }
+  },
+  "bzip2": {
+    "format": 1,
+    "name": "bzip2",
+    "version": "1.0.8-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2/source.tar",
+        "sha256": "783b32d10919fa193ea3e392f7a7999fa8295a70ba0dc9cf13355794977e88be",
+        "size": 839680
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2/build.sh",
+        "sha256": "6193003e254a1ed0d596e82b20f5ed007bb0938c169ed83a4f29bdb6cceea231",
+        "size": 366
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2/test.sh",
+        "sha256": "f8df9b2ad7039df882ffc732f5d1b39244919c9f53224daf03021d32f5bc6359",
+        "size": 617
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/bzip2",
+        "mode": 493
+      },
+      {
+        "path": "bin/bunzip2",
+        "mode": 493
+      },
+      {
+        "path": "bin/bzcat",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/bzip2/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/bzip2/LICENSE"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2/binaries/0052b1cba7ea36692b49cfb89797d70050c2de0fe36e30e3dfe25b42742d6eba.tar",
+      "sha256": "0052b1cba7ea36692b49cfb89797d70050c2de0fe36e30e3dfe25b42742d6eba",
+      "size": 510464
+    }
+  },
+  "bzip2recover": {
+    "format": 1,
+    "name": "bzip2recover",
+    "version": "1.0.8-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2recover/source.tar",
+        "sha256": "783b32d10919fa193ea3e392f7a7999fa8295a70ba0dc9cf13355794977e88be",
+        "size": 839680
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2recover/build.sh",
+        "sha256": "77231ac7cbd2db0a80cac77047cdbd0bf4894073f3ba8324bcdcf612417e12bf",
+        "size": 225
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2recover/test.sh",
+        "sha256": "66a24ea4a821881e2772dd29618d1f3b08ddc61088db8f4ea0bc42720cfd8c91",
+        "size": 288
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/bzip2recover",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/bzip2recover/LICENSE",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/bzip2recover/LICENSE"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/bzip2recover/binaries/1f34ec68a0cec6014ba3b03fb3bb77cd424ee776bbbe1fc1a33d02440b72c63c.tar",
+      "sha256": "1f34ec68a0cec6014ba3b03fb3bb77cd424ee776bbbe1fc1a33d02440b72c63c",
+      "size": 22528
+    }
+  },
+  "expat": {
+    "format": 1,
+    "name": "expat",
+    "version": "2.7.1-1",
+    "dependencies": [],
+    "dependencyRequirements": {},
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ],
+      "objectAbi": 3
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/expat/source.tar",
+        "sha256": "44b8ee4be1960db276e49c70729b931f0ee818affe88cd1536ddeb2c66a1fd9e",
+        "size": 1474560
+      },
+      {
+        "path": "build.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/expat/build.sh",
+        "sha256": "6e62429213509f8773e6190fb206f9a871c4f68f7f9442d5c02881db79e4a43e",
+        "size": 611
+      },
+      {
+        "path": "test.sh",
+        "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/expat/test.sh",
+        "sha256": "5ff1f23f5b56ecef7b860ed48b13a5bd6d93f2c8e49578200b2510afbbb14baf",
+        "size": 918
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libexpat.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libexpat.so",
+        "mode": 420
+      },
+      {
+        "path": "include/expat.h",
+        "mode": 420
+      },
+      {
+        "path": "include/expat_external.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/expat.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/expat/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/expat/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/wasm-posix-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/expat/binaries/f67cb8ac5a4ad45d7bc37b38823d50749fffc2abd3136268f55e3cf02b5fb345.tar",
+      "sha256": "f67cb8ac5a4ad45d7bc37b38823d50749fffc2abd3136268f55e3cf02b5fb345",
+      "size": 778752
+    }
+  }
+}

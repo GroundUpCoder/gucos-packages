@@ -1,0 +1,26 @@
+{
+  "dist-files.json": {
+    "sha256": "401c7792350278da32ec6f0adabc0154e07e8ff135bd812a0c413207c0421bcd",
+    "size": 38368
+  },
+  "build-sqlite3-qjs.json": {
+    "sha256": "262e1184f6caae39e16f0479080b18cf845cd501639ad7fa4dfdf664b2e4fa1f",
+    "size": 318
+  },
+  "observed-runtime.json": {
+    "sha256": "19d68958300182facc620136580b343791e73830d72d3615cccf24b01cdb3d82",
+    "size": 123
+  },
+  "config.json": {
+    "sha256": "ca1b42bc98fa7e8ed6c0b105144543937407e58192a7fecefe6c298aad2619d7",
+    "size": 13810
+  },
+  "candidate-manifests.json": {
+    "sha256": "581ae74d82a76b168ab0b8123a9fc1bf76bcb44eb1c56676ed0f4bdd45198a0b",
+    "size": 2592
+  },
+  "build.log": {
+    "sha256": "d2c57a3239cd31016d20ddd7f744f223dba13ef0c34387e40eb14ead7f3e3b13",
+    "size": 4386
+  }
+}

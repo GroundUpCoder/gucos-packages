@@ -1,0 +1,11 @@
+{
+  "action": "build",
+  "names": [
+    "quake"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "inputCommit": "a527d7a42ef1f3b7efbc37624ace968ea05b5bc7",
+  "startedAt": "2026-10-11T06:04:53.420Z",
+  "status": "passed",
+  "finishedAt": "2026-10-11T06:05:12.768Z"
+}

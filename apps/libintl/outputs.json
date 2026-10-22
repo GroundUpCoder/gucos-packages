@@ -1,0 +1,26 @@
+[
+  {
+    "path": "lib/libintl.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libintl.so",
+    "mode": 420
+  },
+  {
+    "path": "include/libintl.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/libintl.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libintl/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libintl/COPYING.LIB",
+    "mode": 420
+  }
+]

@@ -1,0 +1,7 @@
+[machine-job] queued: sh -c set -e
+node tests/migration/stage.mjs dependencies pkgconf > "$COMPAT_RUN_DIR/dependencies.log" 2>&1
+node tests/migration/stage.mjs install gio-listmodel atk fribidi gio-core > "$COMPAT_RUN_DIR/install.log" 2>&1
+node tests/migration/stage.mjs consumers gio-listmodel atk fribidi gio-core > "$COMPAT_RUN_DIR/consumers.log" 2>&1
+node tests/migration/gio.mjs > "$COMPAT_RUN_DIR/gio-console.log" 2>&1
+node tests/migration/stage.mjs reload gio-listmodel atk fribidi gio-core > "$COMPAT_RUN_DIR/reload.log" 2>&1
+[machine-job] running: e661bfd4-3a5c-4fa9-bad4-ead7629ef1ec

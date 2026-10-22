@@ -1,0 +1,66 @@
+{
+  "reload-libjpeg-libjpeg-turbo-gdk-pixbuf-minihb-cairo-gobject-gtk3-schemas.json": {
+    "sha256": "2cfcfa11d0cea83697699afa305deee64032c2a73b5b5c4b9af57ea55d1dccba",
+    "size": 402
+  },
+  "dist-files.json": {
+    "sha256": "be7eac3503913f18dce379ac23b9af236c65285e42fcaec6c36389c65171066a",
+    "size": 42161
+  },
+  "gtk3-schemas.sha256": {
+    "sha256": "b6d9954d4149e72765cf9ae44261b3451aa66a7d555e2c27958e3e9f40c97ac5",
+    "size": 1131
+  },
+  "observed-runtime.json": {
+    "sha256": "7719ee3e62188634dab7804a2b32bf05f19e1fb02822302fbfccfe72998264d4",
+    "size": 123
+  },
+  "gdk-pixbuf.sha256": {
+    "sha256": "d129170e415b61543df53fc25e145317f7a97bd963980d1409fae21d8a649665",
+    "size": 1999
+  },
+  "reload.log": {
+    "sha256": "cb2735b1f303a87036f15e9e93cdc7db490e60da20da9b213250994c39551023",
+    "size": 5680
+  },
+  "config.json": {
+    "sha256": "f2c561057db7f11eff3f9df0bd397ff5aca8302134d2f3d34810ed130508603b",
+    "size": 13361
+  },
+  "minihb.sha256": {
+    "sha256": "733eb0cf6c08673666679cd5520bd33c44f8eb9f5e8091d768e7e1235eb46aee",
+    "size": 5119
+  },
+  "libjpeg-turbo.sha256": {
+    "sha256": "4a86a11498f4a800765e8d46c9c6538e01fda4b80a15733f7322302aa2dba571",
+    "size": 961
+  },
+  "libjpeg.sha256": {
+    "sha256": "7cba2662afb079283abe30dc180af0ef25025399f6a417411bec3e3929af885a",
+    "size": 773
+  },
+  "cairo-gobject.sha256": {
+    "sha256": "b5756358c3281f4a135b404616de0089cd1dfe6afdf9e8fccdb3df65f62e3e0e",
+    "size": 652
+  },
+  "consumers-libjpeg-libjpeg-turbo-gdk-pixbuf-minihb-cairo-gobject-gtk3-schemas.json": {
+    "sha256": "b3a35802c7ee142562bdca324ec296198b525d898a8099d830a5cf36397eb212",
+    "size": 4445
+  },
+  "consumers.log": {
+    "sha256": "d3d065c0a3beeb932c3452711cedfb95a7d4162387934cc161576b6dda1e7688",
+    "size": 110258
+  },
+  "install-libjpeg-libjpeg-turbo-gdk-pixbuf-minihb-cairo-gobject-gtk3-schemas.json": {
+    "sha256": "541a615ec9dbc5809588b133bf1fc6d317792ca1526b3502c6b990556454b5d5",
+    "size": 403
+  },
+  "candidate-manifests.json": {
+    "sha256": "32e3ecb7bf3221ea28c3abe8551a81d96514f1fb95057802931f147c8fac40c6",
+    "size": 19813
+  },
+  "install.log": {
+    "sha256": "5a51e541046c8759230249963e57fe7aef0c2f5c0fc2418f936eb2f25bf545bc",
+    "size": 42638
+  }
+}

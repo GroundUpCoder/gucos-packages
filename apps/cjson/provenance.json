@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/cjson",
+  "archiveSha256": "a7597e37fb9b3c11e250f271a51de2b10e91e79ebbfeba7b350d32e674e4e8f0",
+  "status": "source migration candidate; no new guest execution"
+}

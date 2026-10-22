@@ -1,0 +1,9 @@
+{
+  "build-puzzles.json": "b1f39d436659b2d066f7e2b1bebbb373ed148459047e38727d822c5e1eb2dd5b",
+  "build-puzzles.log": "6347ece73c527a08a42d0750d119946d23822d71c4fc4136a19ed5484bf9c8d0",
+  "candidate-manifests.json": "0bdc5da92dd4305c25e9958625be36cba6c2643717115f441f0f7454686bba25",
+  "config.json": "3b82060b45089932a3e19dfb0b92c21691a7733e92fc6c5c600f09a120b8570c",
+  "dependencies-gtk3-x11-pkgconf.json": "991f3f9df604cee64d49ceba9ac1ac59d0cf0b25c1082ecd982a0e47e9079d3d",
+  "dependencies.log": "75cb6159f86c76307aa43127977cb9879578790bfd7503010641c18a7ab0c1cf",
+  "observed-runtime.json": "4cef913621812695ab03c4a791d4b720f2e40b0c0a53e4c8f0e63b7bf85fe789"
+}

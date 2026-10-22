@@ -1,0 +1,79 @@
+gucman: unknown source
+
+gucman: build migration:snake: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20440 bytes; transfer finished
+gucman: Resolving: migration:snake
+gucman: Downloading manifest for migration:snake (2660 bytes)
+  Connecting; waiting for response…
+  Downloaded 2660 / 2660 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:snake
+gucman: Checking cached object: manifest for migration:snake
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: snake (0 remaining after this)
+gucman: Downloading snake source: main.c (9815 bytes)
+  Connecting; waiting for response…
+  Downloaded 9815 / 9815 bytes (100%); transfer finished
+gucman: Verifying download: snake source: main.c
+gucman: Checking cached object: snake source: main.c
+gucman: Downloading snake source: upstream.c (7602 bytes)
+  Connecting; waiting for response…
+  Downloaded 7602 / 7602 bytes (100%); transfer finished
+gucman: Verifying download: snake source: upstream.c
+gucman: Checking cached object: snake source: upstream.c
+gucman: Downloading snake source: LICENSE (11344 bytes)
+  Connecting; waiting for response…
+  Downloaded 11344 / 11344 bytes (100%); transfer finished
+gucman: Verifying download: snake source: LICENSE
+gucman: Checking cached object: snake source: LICENSE
+gucman: Downloading snake source: README.md (1084 bytes)
+  Connecting; waiting for response…
+  Downloaded 1084 / 1084 bytes (100%); transfer finished
+gucman: Verifying download: snake source: README.md
+gucman: Checking cached object: snake source: README.md
+gucman: Downloading snake source: provenance.json (660 bytes)
+  Connecting; waiting for response…
+  Downloaded 660 / 660 bytes (100%); transfer finished
+gucman: Verifying download: snake source: provenance.json
+gucman: Checking cached object: snake source: provenance.json
+gucman: Downloading snake source: snake.desktop (139 bytes)
+  Connecting; waiting for response…
+  Downloaded 139 / 139 bytes (100%); transfer finished
+gucman: Verifying download: snake source: snake.desktop
+gucman: Checking cached object: snake source: snake.desktop
+gucman: Downloading snake source: build.sh (364 bytes)
+  Connecting; waiting for response…
+  Downloaded 364 / 364 bytes (100%); transfer finished
+gucman: Verifying download: snake source: build.sh
+gucman: Checking cached object: snake source: build.sh
+gucman: Downloading snake source: test.sh (323 bytes)
+  Connecting; waiting for response…
+  Downloaded 323 / 323 bytes (100%); transfer finished
+gucman: Verifying download: snake source: test.sh
+gucman: Checking cached object: snake source: test.sh
+gucman: Downloading snake source: logic-test.c (2145 bytes)
+  Connecting; waiting for response…
+  Downloaded 2145 / 2145 bytes (100%); transfer finished
+gucman: Verifying download: snake source: logic-test.c
+gucman: Checking cached object: snake source: logic-test.c
+Building migration:snake; running trusted recipe with access to your guest files
+28 functions, 21785 bytes
+Snake: arrows/WASD/HJKL move; q or Ctrl-C quits; r restarts after game over.
+snake: interactive terminal required
+29 functions, 28460 bytes
+SNAKE-LOGIC-PASS
+gucman: Installing snake: 0/5 files
+gucman: Installing snake: 5/5 files
+gucman: Preparing checksums: snake
+gucman: Checksummed snake: 5/5 files
+gucman: Saving transaction: snake
+gucman: Verifying staged files: snake
+gucman: Activating: snake
+Installed migration:snake 1.0.0-2
+
+0b8d91f8dfe9da464a391629a2d4f8b2693a6b5150fac8493e7c3d8bf0813f0d  /home/user/migration-export.tar
+40448
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

@@ -1,0 +1,288 @@
+gucman: unknown source
+
+{
+  tail: 'or response…\n' +
+    '  Downloaded 21.11 / 49.65 MiB (42%)\n' +
+    '  Downloaded 38.97 / 49.65 MiB (78%)\n' +
+    '  Downloaded 49.65 / 49.65 MiB (100%); transfer finished\n' +
+    'gucman: Verifying download: tcl source: source.tar\n' +
+    'gucman: Checking cached object: tcl source: source.tar\n'
+}
+{
+  tail: 'for response…\n' +
+    '  Downloaded 2358 / 2358 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: tcl source: test.sh\n' +
+    'gucman: Checking cached object: tcl source: test.sh\n' +
+    'Building migration:tcl; running trusted recipe with access to your guest files\n'
+}
+{
+  tail: 'ng tcl: 125/844 files\n' +
+    'gucman: Installing tcl: 150/844 files\n' +
+    'gucman: Installing tcl: 175/844 files\n' +
+    'gucman: Installing tcl: 200/844 files\n' +
+    'gucman: Installing tcl: 225/844 files\n' +
+    'gucman: Installing tcl: 250/844 files\n' +
+    'gucman: Installing tcl: 275/844 files\n'
+}
+{
+  tail: 'ng tcl: 475/844 files\n' +
+    'gucman: Installing tcl: 500/844 files\n' +
+    'gucman: Installing tcl: 525/844 files\n' +
+    'gucman: Installing tcl: 550/844 files\n' +
+    'gucman: Installing tcl: 575/844 files\n' +
+    'gucman: Installing tcl: 600/844 files\n' +
+    'gucman: Installing tcl: 625/844 files\n'
+}
+{
+  tail: ': 450/844 files\n' +
+    'gucman: Checksummed tcl: 475/844 files\n' +
+    'gucman: Checksummed tcl: 500/844 files\n' +
+    'gucman: Checksummed tcl: 525/844 files\n' +
+    'gucman: Checksummed tcl: 550/844 files\n' +
+    'gucman: Checksummed tcl: 575/844 files\n' +
+    'gucman: Checksummed tcl: 600/844 files\n'
+}
+gucman: build migration:tcl: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19491 bytes; transfer finished
+gucman: Resolving: migration:tcl
+gucman: Downloading manifest for migration:tcl (68108 bytes)
+  Connecting; waiting for response…
+  Downloaded 68108 / 68108 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:tcl
+gucman: Checking cached object: manifest for migration:tcl
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: tcl (0 remaining after this)
+gucman: Downloading tcl source: source.tar (52060160 bytes)
+  Connecting; waiting for response…
+  Downloaded 21.11 / 49.65 MiB (42%)
+  Downloaded 38.97 / 49.65 MiB (78%)
+  Downloaded 49.65 / 49.65 MiB (100%); transfer finished
+gucman: Verifying download: tcl source: source.tar
+gucman: Checking cached object: tcl source: source.tar
+gucman: Downloading tcl source: build.sh (388745 bytes)
+  Connecting; waiting for response…
+  Downloaded 388745 / 388745 bytes (100%); transfer finished
+gucman: Verifying download: tcl source: build.sh
+gucman: Checking cached object: tcl source: build.sh
+gucman: Downloading tcl source: test.sh (2358 bytes)
+  Connecting; waiting for response…
+  Downloaded 2358 / 2358 bytes (100%); transfer finished
+gucman: Verifying download: tcl source: test.sh
+gucman: Checking cached object: tcl source: test.sh
+Building migration:tcl; running trusted recipe with access to your guest files
+2959 functions, 3740462 bytes
+TCL-SMOKE-PASS
+Tests running in interp:  /tmp/gucman.pqrtuu/builds/tcl.stage/bin/tclsh8.6
+Tests located in:  /tmp/gucman.pqrtuu/builds/tcl/source/tests
+Tests running in:  /tmp/migration-tcl
+Temporary files stored in /tmp/migration-tcl
+Test files sourced into current interpreter
+Running tests that match:  *
+Skipping test files that match:  l.*.test
+Only running test files that match:  expr.test list.test string.test dict.test
+Tests began at Sun Oct 11 14:01:59 +0900 2026
+dict.test
+expr.test
+list.test
+string.test
+
+Tests ended at Sun Oct 11 14:02:01 +0900 2026
+all.tcl:	Total	15239	Passed	15185	Skipped	54	Failed	0
+Sourced 4 Test Files.
+Number of tests skipped for each constraint:
+	5	!ieeeFloatingPoint
+	1	longIs64bit
+	5	memory
+	4	testbytestring
+	1	testevalex
+	5	testexprdoubleobj
+	4	testexprdoubleobj&&ieeeFloatingPoint
+	16	testexprlongobj
+	1	testindexobj
+	11	testmathfunctions
+	1	utf16
+all.tcl:	Total	15239	Passed	15185	Skipped	54	Failed	0
+2958 functions, 15075756 bytes
+TCL-PACKAGE-PASS
+gucman: Installing tcl: 0/844 files
+gucman: Installing tcl: 25/844 files
+gucman: Installing tcl: 50/844 files
+gucman: Installing tcl: 75/844 files
+gucman: Installing tcl: 100/844 files
+gucman: Installing tcl: 125/844 files
+gucman: Installing tcl: 150/844 files
+gucman: Installing tcl: 175/844 files
+gucman: Installing tcl: 200/844 files
+gucman: Installing tcl: 225/844 files
+gucman: Installing tcl: 250/844 files
+gucman: Installing tcl: 275/844 files
+gucman: Installing tcl: 300/844 files
+gucman: Installing tcl: 325/844 files
+gucman: Installing tcl: 350/844 files
+gucman: Installing tcl: 375/844 files
+gucman: Installing tcl: 400/844 files
+gucman: Installing tcl: 425/844 files
+gucman: Installing tcl: 450/844 files
+gucman: Installing tcl: 475/844 files
+gucman: Installing tcl: 500/844 files
+gucman: Installing tcl: 525/844 files
+gucman: Installing tcl: 550/844 files
+gucman: Installing tcl: 575/844 files
+gucman: Installing tcl: 600/844 files
+gucman: Installing tcl: 625/844 files
+gucman: Installing tcl: 650/844 files
+gucman: Installing tcl: 675/844 files
+gucman: Installing tcl: 700/844 files
+gucman: Installing tcl: 725/844 files
+gucman: Installing tcl: 750/844 files
+gucman: Installing tcl: 775/844 files
+gucman: Installing tcl: 800/844 files
+gucman: Installing tcl: 825/844 files
+gucman: Installing tcl: 844/844 files
+gucman: Preparing checksums: tcl
+gucman: Checksummed tcl: 25/844 files
+gucman: Checksummed tcl: 50/844 files
+gucman: Checksummed tcl: 75/844 files
+gucman: Checksummed tcl: 100/844 files
+gucman: Checksummed tcl: 125/844 files
+gucman: Checksummed tcl: 150/844 files
+gucman: Checksummed tcl: 175/844 files
+gucman: Checksummed tcl: 200/844 files
+gucman: Checksummed tcl: 225/844 files
+gucman: Checksummed tcl: 250/844 files
+gucman: Checksummed tcl: 275/844 files
+gucman: Checksummed tcl: 300/844 files
+gucman: Checksummed tcl: 325/844 files
+gucman: Checksummed tcl: 350/844 files
+gucman: Checksummed tcl: 375/844 files
+gucman: Checksummed tcl: 400/844 files
+gucman: Checksummed tcl: 425/844 files
+gucman: Checksummed tcl: 450/844 files
+gucman: Checksummed tcl: 475/844 files
+gucman: Checksummed tcl: 500/844 files
+gucman: Checksummed tcl: 525/844 files
+gucman: Checksummed tcl: 550/844 files
+gucman: Checksummed tcl: 575/844 files
+gucman: Checksummed tcl: 600/844 files
+gucman: Checksummed tcl: 625/844 files
+gucman: Checksummed tcl: 650/844 files
+gucman: Checksummed tcl: 675/844 files
+gucman: Checksummed tcl: 700/844 files
+gucman: Checksummed tcl: 725/844 files
+gucman: Checksummed tcl: 750/844 files
+gucman: Checksummed tcl: 775/844 files
+gucman: Checksummed tcl: 800/844 files
+gucman: Checksummed tcl: 825/844 files
+gucman: Checksummed tcl: 844/844 files
+gucman: Saving transaction: tcl
+gucman: Verifying staged files: tcl
+gucman: Activating: tcl
+Installed migration:tcl 8.6.16-2
+
+{
+  tail: ': Checking cached object: manifest for migration:tk\n' +
+    'gucman: Resolving: migration:tcl\n' +
+    'gucman: Checking cached object: manifest for migration:tcl\n' +
+    'gucman: Resolving: migration:x11-server\n' +
+    'gucman: Checking cached object: manifest for migration:x11-server\n'
+}
+{
+  tail: 'ownloaded 2255 / 2255 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: tk source: tcl-license.terms\n' +
+    'gucman: Checking cached object: tk source: tcl-license.terms\n' +
+    'Building migration:tk; running trusted recipe with access to your guest files\n'
+}
+gucman: build migration:tk: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19491 bytes; transfer finished
+gucman: Resolving: migration:tk
+gucman: Downloading manifest for migration:tk (15129 bytes)
+  Connecting; waiting for response…
+  Downloaded 15129 / 15129 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:tk
+gucman: Checking cached object: manifest for migration:tk
+gucman: Resolving: migration:tcl
+gucman: Checking cached object: manifest for migration:tcl
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 3 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 3 packages
+gucman: Package 1/3: tcl (2 remaining after this)
+Already installed: tcl
+gucman: Package 2/3: x11-server (1 remaining after this)
+Already installed: x11-server
+gucman: Package 3/3: tk (0 remaining after this)
+gucman: Downloading tk source: source.tar (12103680 bytes)
+  Connecting; waiting for response…
+  Downloaded 11.54 / 11.54 MiB (100%); transfer finished
+gucman: Verifying download: tk source: source.tar
+gucman: Checking cached object: tk source: source.tar
+gucman: Downloading tk source: build.sh (86969 bytes)
+  Connecting; waiting for response…
+  Downloaded 86969 / 86969 bytes (100%); transfer finished
+gucman: Verifying download: tk source: build.sh
+gucman: Checking cached object: tk source: build.sh
+gucman: Downloading tk source: test.sh (693 bytes)
+  Connecting; waiting for response…
+  Downloaded 693 / 693 bytes (100%); transfer finished
+gucman: Verifying download: tk source: test.sh
+gucman: Checking cached object: tk source: test.sh
+gucman: Downloading tk source: license.terms (2267 bytes)
+  Connecting; waiting for response…
+  Downloaded 2267 / 2267 bytes (100%); transfer finished
+gucman: Verifying download: tk source: license.terms
+gucman: Checking cached object: tk source: license.terms
+gucman: Downloading tk source: tcl-license.terms (2255 bytes)
+  Connecting; waiting for response…
+  Downloaded 2255 / 2255 bytes (100%); transfer finished
+gucman: Verifying download: tk source: tcl-license.terms
+gucman: Checking cached object: tk source: tcl-license.terms
+Building migration:tk; running trusted recipe with access to your guest files
+8058 functions, 29901701 bytes
+2973 functions, 15103921 bytes
+TK-STATIC-LINK-PASS
+gucman: Installing tk: 0/182 files
+gucman: Installing tk: 25/182 files
+gucman: Installing tk: 50/182 files
+gucman: Installing tk: 75/182 files
+gucman: Installing tk: 100/182 files
+gucman: Installing tk: 125/182 files
+gucman: Installing tk: 150/182 files
+gucman: Installing tk: 175/182 files
+gucman: Installing tk: 182/182 files
+gucman: Preparing checksums: tk
+gucman: Checksummed tk: 25/182 files
+gucman: Checksummed tk: 50/182 files
+gucman: Checksummed tk: 75/182 files
+gucman: Checksummed tk: 100/182 files
+gucman: Checksummed tk: 125/182 files
+gucman: Checksummed tk: 150/182 files
+gucman: Checksummed tk: 175/182 files
+gucman: Checksummed tk: 182/182 files
+gucman: Saving transaction: tk
+gucman: Verifying staged files: tk
+gucman: Activating: tk
+Installed migration:tk 8.6.16-1
+
+{
+  tail: ' 125/182 files\n' +
+    'gucman: Checksummed tk: 150/182 files\n' +
+    'gucman: Checksummed tk: 175/182 files\n' +
+    'gucman: Checksummed tk: 182/182 files\n' +
+    'gucman: Saving transaction: tk\n' +
+    'gucman: Verifying staged files: tk\n' +
+    'gucman: Activating: tk\n' +
+    'Installed migration:tk 8.6.16-1\n'
+}
+367aa9da0063cb416595a4e2edac3bfcc80d05f563f4809e95fc7d30a62b7f08  /home/user/migration-export.tar
+17007616
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+b6d03c4a672634fc17b633cd89c37f35d5cf6e357bbd47cdae5c197597c5d3ed  /home/user/migration-export.tar
+65354752
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

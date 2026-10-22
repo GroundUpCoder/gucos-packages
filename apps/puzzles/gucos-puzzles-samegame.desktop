@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Same Game
+Exec=sgt-samegame
+TryExec=sgt-samegame
+Terminal=false
+Categories=Game;LogicGame;

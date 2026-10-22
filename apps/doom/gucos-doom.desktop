@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Doom
+Exec=doom
+Terminal=false
+Categories=Game;

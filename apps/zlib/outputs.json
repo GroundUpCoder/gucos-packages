@@ -1,0 +1,26 @@
+[
+  {
+    "path": "lib/libz.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libz.so",
+    "mode": 420
+  },
+  {
+    "path": "include/zlib.h",
+    "mode": 420
+  },
+  {
+    "path": "include/zconf.h",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/zlib.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/zlib/LICENSE",
+    "mode": 420
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "dist-files.json": {
+    "sha256": "ff51a31f2974dcc3da1f13a0d25dcac9e285bef46fe8e2978f64f8761355a688",
+    "size": 38367
+  },
+  "build-pigz-nyancat.json": {
+    "sha256": "e8c8e83b47c3a964e0ca8da39333e3dae3c959ee4d3bd19f3e730f7171db29b7",
+    "size": 319
+  },
+  "observed-runtime.json": {
+    "sha256": "3bfe9259bcde82f2281347394b8ba40fc99f524dfd63debed086f8cb76f136e0",
+    "size": 123
+  },
+  "config.json": {
+    "sha256": "29c5d1f2c475e70e3f9d4d03492da8053f0ac70431e841804a992734036213b1",
+    "size": 13809
+  },
+  "candidate-manifests.json": {
+    "sha256": "a89997e0ac165ec5eadef317e6b58ff4ed5e179573a103fbad53f275c00569e0",
+    "size": 2953
+  },
+  "build.log": {
+    "sha256": "4cca3389c1fbac32050a7f1d3ab8238b43d63646a79876c4ab0485ce58d84c8a",
+    "size": 6152
+  }
+}

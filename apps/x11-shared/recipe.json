@@ -1,0 +1,26 @@
+{
+  "name": "x11-shared",
+  "version": "0.1.0-1",
+  "dependencies": [
+    "x11-server"
+  ],
+  "dependencyRequirements": {
+    "x11-server": {
+      "version": "21.1.24-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh"
+  ]
+}

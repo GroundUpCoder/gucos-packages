@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "name": "zstd",
+  "version": "1.5.7-1",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/zstd/source.tar",
+      "sha256": "a1837bf7e970761766ab5f882fa92c698da1d6519a2ab7f27311e090087024ef",
+      "size": 8867840
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/zstd/build.sh",
+      "sha256": "1085a1209e38c0f76391fd0a489bfe7c0cccad89e191fdebb2f6e7ae0545f9fb",
+      "size": 252
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/zstd/test.sh",
+      "sha256": "47e9d4c0b9aef76b33048c33ba27f962feb012c0f1ce7b9021dbb7023155b5ed",
+      "size": 211
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/zstd",
+      "mode": 493
+    },
+    {
+      "path": "lib/libzstd.a",
+      "mode": 420
+    },
+    {
+      "path": "include/zstd.h",
+      "mode": 420
+    },
+    {
+      "path": "include/zdict.h",
+      "mode": 420
+    },
+    {
+      "path": "include/zstd_errors.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/libzstd.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/zstd/LICENSE",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/zstd/COPYING",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/zstd/LICENSE",
+    "share/licenses/zstd/COPYING"
+  ],
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/zstd/binaries/6e04522e609b9c7b8bc41fbb19b41549b49a8baaed9a4920b36c552fa3abdb23.tar",
+    "sha256": "6e04522e609b9c7b8bc41fbb19b41549b49a8baaed9a4920b36c552fa3abdb23",
+    "size": 2650112
+  }
+}

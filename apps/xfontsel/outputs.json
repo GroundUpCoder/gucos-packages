@@ -1,0 +1,14 @@
+[
+  {
+    "path": "bin/xfontsel",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/xfontsel/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/XFontSel",
+    "mode": 420
+  }
+]

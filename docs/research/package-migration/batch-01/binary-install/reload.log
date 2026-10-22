@@ -1,0 +1,17 @@
+[machine-job] queued: node tests/migration/stage.mjs reload zlib cjson pkgconf bzip2 bzip2recover expat
+[machine-job] running: ec10fb7d-6026-4a6f-9302-0358134cacf8
+gucman: unknown source
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.evaluate: TypeError: Cannot read properties of undefined (reading 'write')
+    at eval (eval at evaluate (:311:30), <anonymous>:1:27)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at /Users/jku/git/wasm-posix-packages/tests/migration/stage.mjs:43:17 {
+  log: []
+}
+
+Node.js v25.8.2

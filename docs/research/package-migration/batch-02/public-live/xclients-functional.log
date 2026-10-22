@@ -1,0 +1,19 @@
+2330 functions, 2321669 bytes
+hello
+Warning: Missing charsets in String to FontSet conversion
+Warning: Missing charsets in String to FontSet conversion
+Warning: Missing charsets in String to FontSet conversion
+Warning: Cannot convert string "menu12" to type Pixmap
+Warning: Cannot convert string "xlogo11" to type Pixmap
+MAPPED Xedit
+MAPPED XFontSel
+MAPPED XClipboard
+MAPPED XCutsel
+MAPPED Clock
+XEDIT-SAVE-PASS
+FONT-SELECTION-LOAD-PASS
+CUTSEL-BIDIRECTIONAL-PASS
+CLIPBOARD-TRANSFER-PASS
+OCLOCK-UPDATE-PASS
+MIGRATED-XCLIENTS-PASS
+MIGRATION-GUI-PASS

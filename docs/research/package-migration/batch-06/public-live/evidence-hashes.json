@@ -1,0 +1,17 @@
+{
+  "cairo-gobject.sha256": "b5756358c3281f4a135b404616de0089cd1dfe6afdf9e8fccdb3df65f62e3e0e",
+  "candidate-manifests.json": "92b022e7c119135b0bbccda0473b148e7e24f14af7938ed73616ea7d857ca499",
+  "config.json": "1aa80ce8a4dd9db0b9f9fc733204c692607909f38f680903c23a6f84172a6e0a",
+  "consumers-libjpeg-libjpeg-turbo-gdk-pixbuf-minihb-cairo-gobject-gtk3-schemas.json": "f3085d7e0d6c24f2efbb7c7d36b00b96362805369f8e782a04a8e146398ba78d",
+  "consumers.log": "bc20d3d1f0febc91a209efbe9b6f7358f599a6d1e24e091e0ed2e0e21e1313b0",
+  "gdk-pixbuf.sha256": "d129170e415b61543df53fc25e145317f7a97bd963980d1409fae21d8a649665",
+  "gtk3-schemas.sha256": "b6d9954d4149e72765cf9ae44261b3451aa66a7d555e2c27958e3e9f40c97ac5",
+  "install-libjpeg-libjpeg-turbo-gdk-pixbuf-minihb-cairo-gobject-gtk3-schemas.json": "d5bcef74bfc72e9d2c16c912b803e0ebb24af3e51ec805e6e91c98f31d900769",
+  "install.log": "3981a844245a9851e0c8e2c49c22bf5a8d1bedba895bce2e731a3a9b00e00fb8",
+  "libjpeg-turbo.sha256": "4a86a11498f4a800765e8d46c9c6538e01fda4b80a15733f7322302aa2dba571",
+  "libjpeg.sha256": "7cba2662afb079283abe30dc180af0ef25025399f6a417411bec3e3929af885a",
+  "minihb.sha256": "733eb0cf6c08673666679cd5520bd33c44f8eb9f5e8091d768e7e1235eb46aee",
+  "observed-runtime.json": "87c8bf902b247a380e61c6337c538c6428620e79d6533803cdbc6aeea2a0fa81",
+  "reload-libjpeg-libjpeg-turbo-gdk-pixbuf-minihb-cairo-gobject-gtk3-schemas.json": "785c1510fae42da2208ab10c34412da822b82a90d23334d262e7f650d009486a",
+  "reload.log": "8eaa6ef4c880da8c93233e3840a6e6d9d4f7cd442b91cbc86f0aff5b096df557"
+}

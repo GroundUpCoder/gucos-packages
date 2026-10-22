@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Text Editor
+Exec=xedit
+TryExec=xedit
+Terminal=false

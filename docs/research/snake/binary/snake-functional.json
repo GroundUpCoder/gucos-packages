@@ -1,0 +1,26 @@
+{
+  "startedAt": "2026-10-11T03:23:07.263Z",
+  "status": "passed",
+  "checks": [
+    "frozen-output-checksums",
+    "initial-frame",
+    "timer-movement",
+    "actual-arrow-key-turn",
+    "wall-collision",
+    "restart",
+    "rendered-board-borders-head-food",
+    "single-q-exit",
+    "cursor-and-alternate-screen-restored",
+    "termios-restored",
+    "relaunch",
+    "ctrl-c-exit",
+    "termios-restored-after-ctrl-c"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "http://127.0.0.1:54538/migration/snake/binary.tar",
+    "sha256": "d7b6a5804fdbd3bfa8cc6782e8204f44c187b8d9445eb4ffefd1aa9934a3ee20",
+    "size": 39936
+  },
+  "finishedAt": "2026-10-11T03:23:10.093Z"
+}

@@ -1,0 +1,10 @@
+PASS local active closure: 71 packages, 406 objects, 849601657 bytes
+Verified anonymous objects: 50
+Verified anonymous objects: 100
+Verified anonymous objects: 150
+Verified anonymous objects: 200
+Verified anonymous objects: 250
+Verified anonymous objects: 300
+Verified anonymous objects: 350
+Verified anonymous objects: 400
+PASS anonymous HTTP hashes and sizes for all active objects

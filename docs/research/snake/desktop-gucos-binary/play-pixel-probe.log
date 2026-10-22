@@ -1,0 +1,73 @@
+
+/usr/local/bin/desktop-menu: OK
+/usr/local/share/doc/desktop-entries/README.md: OK
+/usr/local/share/licenses/desktop-entries/LICENSE: OK
+
+/usr/local/bin/jwm: OK
+/usr/local/share/jwm/system.jwmrc: OK
+/usr/local/share/jwm/wasm.jwmrc: OK
+/usr/local/share/jwm/app-menu.sh: OK
+/usr/local/share/licenses/jwm/LICENSE: OK
+/usr/local/bin/start-jwm: OK
+/usr/local/libexec/jwm/wait-display: OK
+
+<JWM>
+<Program label="Terminal">xterm -fn fixed -title Terminal</Program>
+<Program label="Snake">/usr/local/bin/desktop-menu launch wasm-posix-snake.desktop</Program>
+</JWM>
+
+{
+  tail: 'PIXELS 6291467 499 316 0 11 0\n' +
+    'DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\n' +
+    'DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\n' +
+    'DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\n' +
+    'DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\n' +
+    'DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0\n'
+}
+2263 functions, 2274955 bytes
+DESKTOP-WM-READY
+DESKTOP-MENU 0 449 129 122
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+X connection to :1 broken (explicit kill or server shutdown).
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":1"
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: 2263 functions, 2274955 bytes
+DESKTOP-WM-READY
+DESKTOP-MENU 0 449 129 122
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+DESKTOP-SNAKE-PIXELS 6291467 499 316 0 11 0
+X connection to :1 broken (explicit kill or server shutdown).
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":1"
+
+
+3 !== 0
+
+    at Object.command (file:///Users/jku/git/gucos-packages-porting/tests/compatibility/session.mjs:47:96) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 3,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.8.2

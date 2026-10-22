@@ -1,0 +1,14 @@
+[
+  {
+    "path": "lib/libcurl.a",
+    "mode": 420
+  },
+  {
+    "path": "include/curl/curl.h",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/libcurl/LICENSE",
+    "mode": 420
+  }
+]

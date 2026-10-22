@@ -1,0 +1,109 @@
+{
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "sha256": "deadbd3d934eba19ddd7fa8107cf2104922de89e7932c580a34dd1da6b6dafef",
+  "size": 11456512,
+  "guestManifest": {
+    "format": 1,
+    "name": "xmessage",
+    "version": "1.0.7-1",
+    "dependencies": [
+      "x11-widgets"
+    ],
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:59498/xmessage/source.tar",
+        "sha256": "737eeed2bfe4e408de407bbf7278920d88bc7c90716fee16aac744ce46f50321",
+        "size": 11612160
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:59498/xmessage/build.sh",
+        "sha256": "0b52cbd66f5566ca34807265402a73b2756f0948fc1e04cb1fa5eb4f22f90411",
+        "size": 1663
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:59498/xmessage/test.sh",
+        "sha256": "edd9a4f0e4874f006373377a2e451a21086f1e3eddf674d69c85529b6d5b4eeb",
+        "size": 50
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/xmessage",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/xmessage/libICE-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/libSM-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/libXaw-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/libXft-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/libXmu-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/libXpm-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/libXrandr-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/libXt-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/termcap-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/xev-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/xmessage-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/xprop-COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/xmessage/xterm-COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/xmessage/libICE-COPYING",
+      "share/licenses/xmessage/libSM-COPYING",
+      "share/licenses/xmessage/libXaw-COPYING",
+      "share/licenses/xmessage/libXft-COPYING",
+      "share/licenses/xmessage/libXmu-COPYING",
+      "share/licenses/xmessage/libXpm-COPYING",
+      "share/licenses/xmessage/libXrandr-COPYING",
+      "share/licenses/xmessage/libXt-COPYING",
+      "share/licenses/xmessage/termcap-COPYING",
+      "share/licenses/xmessage/xev-COPYING",
+      "share/licenses/xmessage/xmessage-COPYING",
+      "share/licenses/xmessage/xprop-COPYING",
+      "share/licenses/xmessage/xterm-COPYING"
+    ]
+  },
+  "method": "gucman pack from installed guest output; no host compilation"
+}

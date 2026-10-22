@@ -1,0 +1,26 @@
+[
+  {
+    "path": "bin/m4",
+    "mode": 493
+  },
+  {
+    "path": "share/info/m4.info",
+    "mode": 420
+  },
+  {
+    "path": "share/info/m4.info-1",
+    "mode": 420
+  },
+  {
+    "path": "share/info/m4.info-2",
+    "mode": 420
+  },
+  {
+    "path": "share/man/man1/m4.1",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/m4/COPYING",
+    "mode": 420
+  }
+]

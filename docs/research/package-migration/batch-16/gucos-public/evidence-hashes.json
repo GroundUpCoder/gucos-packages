@@ -1,0 +1,12 @@
+{
+  "reload-micropython.json": "98ef0645493ef7e81c60517e243be9aa9f4e537ef06b6cdcdfa2079a9eeb2eda",
+  "observed-runtime.json": "c1d9b39edc1d23af256c7c1e88ccc9d30925bf9439aee11d68159d85c18ff3b7",
+  "reload.log": "28a8efa8877f6412da4c22ee26cbc0231195e78e895b72ae25dca90fcd3f04c9",
+  "config.json": "09948cc73b49e8181d71f12933c94cad97c0e83ba44051b7dd7f505c2d3cc908",
+  "consumers-micropython.json": "c580aefb9ab8b4dc6a767b94332ddde814b24628cb12dec9d364733a34802697",
+  "install-micropython.json": "fee05bfd9aba26ede577753ab33573b706ea9d542e94870903d43fdc1478ffb0",
+  "consumers.log": "ca14347e311a36ad7cf038a41ed7c9b4b1944ee64be42635ae674a1c827c31b2",
+  "micropython.sha256": "0d19d2a37604ce1be2f2b3755c47769faf98af64634ada37922bf4c5cc965226",
+  "candidate-manifests.json": "8af2bc3b97d6865be8653b6d0442bcf47968d3bdddaf73fad1e710c57a309b84",
+  "install.log": "d58f3cbee6d451f0eb5e5c8233d7fdbb9095cf4df25b3e6cbe17d93d18e543fa"
+}

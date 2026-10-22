@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "name": "expat",
+  "version": "2.7.1-1",
+  "dependencies": [],
+  "dependencyRequirements": {},
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core"
+    ],
+    "objectAbi": 3
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/expat/source.tar",
+      "sha256": "44b8ee4be1960db276e49c70729b931f0ee818affe88cd1536ddeb2c66a1fd9e",
+      "size": 1474560
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/expat/build.sh",
+      "sha256": "6e62429213509f8773e6190fb206f9a871c4f68f7f9442d5c02881db79e4a43e",
+      "size": 611
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/expat/test.sh",
+      "sha256": "5ff1f23f5b56ecef7b860ed48b13a5bd6d93f2c8e49578200b2510afbbb14baf",
+      "size": 918
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libexpat.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libexpat.so",
+      "mode": 420
+    },
+    {
+      "path": "include/expat.h",
+      "mode": 420
+    },
+    {
+      "path": "include/expat_external.h",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/expat.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/expat/COPYING",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/expat/COPYING"
+  ],
+  "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/321e5a0da1a6112cae7d3c8b7eb00da3765babdf/apps/expat/binaries/f67cb8ac5a4ad45d7bc37b38823d50749fffc2abd3136268f55e3cf02b5fb345.tar",
+    "sha256": "f67cb8ac5a4ad45d7bc37b38823d50749fffc2abd3136268f55e3cf02b5fb345",
+    "size": 778752
+  }
+}

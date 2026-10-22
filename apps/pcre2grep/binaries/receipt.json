@@ -1,0 +1,68 @@
+{
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "sha256": "5d3660b34413510a054f0d16d6e1ffcdaf70f86ff687b4fa2490eadfaf6d0d64",
+  "size": 4673536,
+  "guestManifest": {
+    "format": 1,
+    "name": "pcre2grep",
+    "version": "10.46-1",
+    "dependencies": [
+      "pcre2test"
+    ],
+    "dependencyRequirements": {
+      "pcre2test": {
+        "version": "10.46-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:58999/migration/pcre2grep/source.tar",
+        "sha256": "16cfb76f2c91848e9d6b8a7477f6137039a1f77b60389a76eaae4937a5511feb",
+        "size": 3143680
+      },
+      {
+        "path": "pcre2-source.tar",
+        "url": "http://127.0.0.1:58999/migration/pcre2grep/pcre2-source.tar",
+        "sha256": "541a5c679917786129572b88ba936925163b7dd7c1718b7395afccc696af52a5",
+        "size": 6563840
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:58999/migration/pcre2grep/build.sh",
+        "sha256": "e1b9a8bdbb25b95f584eb08625e5ff9df9249e6baa7f05f6356d572799242257",
+        "size": 4957
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:58999/migration/pcre2grep/test.sh",
+        "sha256": "676e61b003c0f408956f0f3678a8917b259115e7136fac3226309cb16f035ca1",
+        "size": 533
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/pcre2grep",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/pcre2grep/LICENCE.md",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/pcre2grep/LICENCE.md"
+    ]
+  },
+  "method": "Actual guest gucman pack; source build and test scripts run by gucman for build stage"
+}

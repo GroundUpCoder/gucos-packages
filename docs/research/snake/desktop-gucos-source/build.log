@@ -1,0 +1,161 @@
+gucman: unknown source
+
+gucman: build migration:desktop-entries: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19250 bytes; transfer finished
+gucman: Resolving: migration:desktop-entries
+gucman: Downloading manifest for migration:desktop-entries (1940 bytes)
+  Connecting; waiting for response…
+  Downloaded 1940 / 1940 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:desktop-entries
+gucman: Checking cached object: manifest for migration:desktop-entries
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: desktop-entries (0 remaining after this)
+gucman: Downloading desktop-entries source: main.c (9258 bytes)
+  Connecting; waiting for response…
+  Downloaded 9258 / 9258 bytes (100%); transfer finished
+gucman: Verifying download: desktop-entries source: main.c
+gucman: Checking cached object: desktop-entries source: main.c
+gucman: Downloading desktop-entries source: test.c (2826 bytes)
+  Connecting; waiting for response…
+  Downloaded 2826 / 2826 bytes (100%); transfer finished
+gucman: Verifying download: desktop-entries source: test.c
+gucman: Checking cached object: desktop-entries source: test.c
+gucman: Downloading desktop-entries source: build.sh (316 bytes)
+  Connecting; waiting for response…
+  Downloaded 316 / 316 bytes (100%); transfer finished
+gucman: Verifying download: desktop-entries source: build.sh
+gucman: Checking cached object: desktop-entries source: build.sh
+gucman: Downloading desktop-entries source: test.sh (2508 bytes)
+  Connecting; waiting for response…
+  Downloaded 2508 / 2508 bytes (100%); transfer finished
+gucman: Verifying download: desktop-entries source: test.sh
+gucman: Checking cached object: desktop-entries source: test.sh
+gucman: Downloading desktop-entries source: README.md (2883 bytes)
+  Connecting; waiting for response…
+  Downloaded 2883 / 2883 bytes (100%); transfer finished
+gucman: Verifying download: desktop-entries source: README.md
+gucman: Checking cached object: desktop-entries source: README.md
+gucman: Downloading desktop-entries source: LICENSE (11344 bytes)
+  Connecting; waiting for response…
+  Downloaded 11344 / 11344 bytes (100%); transfer finished
+gucman: Verifying download: desktop-entries source: LICENSE
+gucman: Checking cached object: desktop-entries source: LICENSE
+Building migration:desktop-entries; running trusted recipe with access to your guest files
+16 functions, 22896 bytes
+desktop-menu jwm-items | launch FILE.desktop
+Installed package entries only; see share/doc/desktop-entries/README.md
+20 functions, 31822 bytes
+desktop entry parser tests passed
+16 functions, 23073 bytes
+<Program label="뱀 &amp; &quot;Snake&quot;">/tmp/desktop-fixture.rrxvuu/bin/desktop-menu launch test.desktop</Program>
+<literal; & | $(x)>
+<>
+<뱀 & "Snake">
+<--icon>
+<an icon>
+<-fn>
+<fixed>
+<-title>
+<-e>
+</tmp/desktop-fixture.rrxvuu/bin/capture>
+desktop-menu: unavailable or unsupported entry
+desktop ownership and direct/terminal argv tests passed
+gucman: Installing desktop-entries: 0/3 files
+gucman: Installing desktop-entries: 3/3 files
+gucman: Preparing checksums: desktop-entries
+gucman: Checksummed desktop-entries: 3/3 files
+gucman: Saving transaction: desktop-entries
+gucman: Verifying staged files: desktop-entries
+gucman: Activating: desktop-entries
+Installed migration:desktop-entries 1.0.0-1
+
+{
+  tail: '…\n' +
+    '  Downloaded 522 / 522 bytes (100%); transfer finished\n' +
+    'gucman: Verifying download: jwm source: wait-display.c\n' +
+    'gucman: Checking cached object: jwm source: wait-display.c\n' +
+    'Building migration:jwm; running trusted recipe with access to your guest files\n'
+}
+gucman: build migration:jwm: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 19250 bytes; transfer finished
+gucman: Resolving: migration:jwm
+gucman: Downloading manifest for migration:jwm (2211 bytes)
+  Connecting; waiting for response…
+  Downloaded 2211 / 2211 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:jwm
+gucman: Checking cached object: manifest for migration:jwm
+gucman: Resolving: migration:x11-widgets
+gucman: Checking cached object: manifest for migration:x11-widgets
+gucman: Resolving: migration:x11-toolkit
+gucman: Checking cached object: manifest for migration:x11-toolkit
+gucman: Resolving: migration:x11-server
+gucman: Checking cached object: manifest for migration:x11-server
+gucman: Plan: 4 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 4 packages
+gucman: Package 1/4: x11-server (3 remaining after this)
+Already installed: x11-server
+gucman: Package 2/4: x11-toolkit (2 remaining after this)
+Already installed: x11-toolkit
+gucman: Package 3/4: x11-widgets (1 remaining after this)
+Already installed: x11-widgets
+gucman: Package 4/4: jwm (0 remaining after this)
+gucman: Downloading jwm source: source.tar (2355200 bytes)
+  Connecting; waiting for response…
+  Downloaded 2.25 / 2.25 MiB (100%); transfer finished
+gucman: Verifying download: jwm source: source.tar
+gucman: Checking cached object: jwm source: source.tar
+gucman: Downloading jwm source: build.sh (759 bytes)
+  Connecting; waiting for response…
+  Downloaded 759 / 759 bytes (100%); transfer finished
+gucman: Verifying download: jwm source: build.sh
+gucman: Checking cached object: jwm source: build.sh
+gucman: Downloading jwm source: test.sh (97 bytes)
+  Connecting; waiting for response…
+  Downloaded 97 / 97 bytes (100%); transfer finished
+gucman: Verifying download: jwm source: test.sh
+gucman: Checking cached object: jwm source: test.sh
+gucman: Downloading jwm source: app-menu.sh (2250 bytes)
+  Connecting; waiting for response…
+  Downloaded 2250 / 2250 bytes (100%); transfer finished
+gucman: Verifying download: jwm source: app-menu.sh
+gucman: Checking cached object: jwm source: app-menu.sh
+gucman: Downloading jwm source: start-jwm (916 bytes)
+  Connecting; waiting for response…
+  Downloaded 916 / 916 bytes (100%); transfer finished
+gucman: Verifying download: jwm source: start-jwm
+gucman: Checking cached object: jwm source: start-jwm
+gucman: Downloading jwm source: wait-display.c (522 bytes)
+  Connecting; waiting for response…
+  Downloaded 522 / 522 bytes (100%); transfer finished
+gucman: Verifying download: jwm source: wait-display.c
+gucman: Checking cached object: jwm source: wait-display.c
+Building migration:jwm; running trusted recipe with access to your guest files
+3398 functions, 7413132 bytes
+2216 functions, 2227094 bytes
+JWM v2.4.6 by Joe Wingbermuehle
+compiled options: confirm icons shape xbm xpm xrender 
+system configuration: /usr/local/share/jwm/system.jwmrc
+/bin/sh: can't open '/usr/local/share/jwm/app-menu.sh': No such file or directory
+JWM: warning: /tmp/gucman.vidquu/builds/jwm.stage/share/jwm/wasm.jwmrc[4]: invalid include: exec:/bin/sh /usr/local/share/jwm/app-menu.sh
+gucman: Installing jwm: 0/7 files
+gucman: Installing jwm: 7/7 files
+gucman: Preparing checksums: jwm
+gucman: Checksummed jwm: 7/7 files
+gucman: Saving transaction: jwm
+gucman: Verifying staged files: jwm
+gucman: Activating: jwm
+Installed migration:jwm 2.4.6-2
+
+50b09e40f76b88dab0be5d1810ce0b71b368db87e7cdeb4ac5791a0ddb56bf3b  /home/user/migration-export.tar
+40448
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+
+8872b11c376190f6c6a64d3bf696574330d60735a27b6d37d7cb11dfe9792792  /home/user/migration-export.tar
+9654272
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

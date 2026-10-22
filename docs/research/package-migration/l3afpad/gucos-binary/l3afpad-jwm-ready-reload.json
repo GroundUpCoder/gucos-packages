@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "startedAt": "2026-10-11T07:34:21.302Z",
+  "scope": "Owned JWM menu, text input, exact save, undo/redo, quit/reopen, browser persistence",
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "http://127.0.0.1:61800/migration/l3afpad/binary.tar",
+    "sha256": "c2e645ab03588a01fed7999fc011b152b118c89bb0c7e597661c896883be5000",
+    "size": 310784
+  },
+  "harnessSha256": "acfcd0e87a83da2898571297bda3f0695b153680dd0bcf07760773a8ecc44df7",
+  "keyboardHelperSha256": "35fb870fc4ac6af80dd8e9da5f5a3a076ae06c8fb6c50c4740d66c3545c4a05c",
+  "helpers": {
+    "observerSha256": "1e128762b83a291dce18b47ed8ce28d691ffe1b09ae18798a00587b6b65a0ef6",
+    "menuHelperSha256": "91195d265acd9012990d851a4c15b8c8454bebc47458910ac035b3eee08da54d",
+    "pollHelperSha256": "f69658ed016edd1d732c6da0a7c8d3e5af15825f1e76b473815cdd4d94efe605",
+    "sessionHelperSha256": "d26195b1e3477cf439ffc7c0d4e1945ca674543fd5b0f1e95fdbbc7087a618b1"
+  },
+  "menus": [
+    {
+      "id": "l3afpad.desktop",
+      "index": 1,
+      "geometry": {
+        "id": 2097188,
+        "x": 0,
+        "y": 449,
+        "width": 129,
+        "height": 122,
+        "pid": 0
+      },
+      "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"L3afpad\">/usr/local/bin/desktop-menu launch l3afpad.desktop</Program>\n</JWM>\n"
+    },
+    {
+      "id": "l3afpad.desktop",
+      "index": 1,
+      "geometry": {
+        "id": 2097485,
+        "x": 0,
+        "y": 449,
+        "width": 129,
+        "height": 122,
+        "pid": 0
+      },
+      "menu": "<JWM>\n<Program label=\"Terminal\">xterm -fn fixed -title Terminal</Program>\n<Program label=\"L3afpad\">/usr/local/bin/desktop-menu launch l3afpad.desktop</Program>\n</JWM>\n"
+    }
+  ],
+  "pids": [
+    24,
+    102
+  ],
+  "saved": "hello JWM editor\nZ reopenedZ reopened",
+  "finishedAt": "2026-10-11T07:34:39.907Z"
+}

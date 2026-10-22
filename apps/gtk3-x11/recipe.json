@@ -1,0 +1,92 @@
+{
+  "name": "gtk3-x11",
+  "version": "3.24.43-1",
+  "dependencies": [
+    "pkgconf",
+    "x11-shared",
+    "cairo",
+    "pango",
+    "gdk-pixbuf",
+    "cairo-gobject",
+    "atk",
+    "gtk3-schemas",
+    "harfbuzz",
+    "gio-core",
+    "gio-listmodel",
+    "gobject",
+    "glib",
+    "fribidi",
+    "fontconfig",
+    "libintl"
+  ],
+  "dependencyRequirements": {
+    "x11-shared": {
+      "version": "0.1.0-1"
+    },
+    "cairo": {
+      "version": "1.18.4-1"
+    },
+    "pango": {
+      "version": "1.50.14-1"
+    },
+    "gdk-pixbuf": {
+      "version": "2.42.12-1"
+    },
+    "cairo-gobject": {
+      "version": "1.18.4-1"
+    },
+    "atk": {
+      "version": "2.38.0-1"
+    },
+    "gtk3-schemas": {
+      "version": "0.1.0-1"
+    },
+    "harfbuzz": {
+      "version": "14.5.0-1"
+    },
+    "gio-core": {
+      "version": "2.84.4-1"
+    },
+    "gio-listmodel": {
+      "version": "2.84.4-1"
+    },
+    "gobject": {
+      "version": "2.84.4-1"
+    },
+    "glib": {
+      "version": "2.84.4-1"
+    },
+    "fribidi": {
+      "version": "1.0.16-1"
+    },
+    "fontconfig": {
+      "version": "2.15.0-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    },
+    "pkgconf": {
+      "version": "2.3.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "pthreads",
+      "unix-stream"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "gtk-source.tar",
+    "gio-source.tar",
+    "COPYING-GTK",
+    "COPYING-Cairo",
+    "GLib-COPYING",
+    "build.sh",
+    "test.sh"
+  ]
+}

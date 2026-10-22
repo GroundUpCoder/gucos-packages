@@ -1,0 +1,18 @@
+[
+  {
+    "path": "bin/xmag",
+    "mode": 493
+  },
+  {
+    "path": "share/doc/xmag/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/xmag/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/X11/app-defaults/Xmag",
+    "mode": 420
+  }
+]

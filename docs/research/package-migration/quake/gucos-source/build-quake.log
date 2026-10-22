@@ -1,0 +1,77 @@
+gucman: unknown source
+
+gucman: build migration:quake: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 20982 bytes; transfer finished
+gucman: Resolving: migration:quake
+gucman: Downloading manifest for migration:quake (3431 bytes)
+  Connecting; waiting for response…
+  Downloaded 3431 / 3431 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:quake
+gucman: Checking cached object: manifest for migration:quake
+gucman: Plan: 1 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 1 packages
+gucman: Package 1/1: quake (0 remaining after this)
+gucman: Downloading quake source: source.tar (1433600 bytes)
+  Connecting; waiting for response…
+  Downloaded 1.37 / 1.37 MiB (100%); transfer finished
+gucman: Verifying download: quake source: source.tar
+gucman: Checking cached object: quake source: source.tar
+gucman: Downloading quake source: build.sh (831 bytes)
+  Connecting; waiting for response…
+  Downloaded 831 / 831 bytes (100%); transfer finished
+gucman: Verifying download: quake source: build.sh
+gucman: Checking cached object: quake source: build.sh
+gucman: Downloading quake source: test.sh (1385 bytes)
+  Connecting; waiting for response…
+  Downloaded 1385 / 1385 bytes (100%); transfer finished
+gucman: Verifying download: quake source: test.sh
+gucman: Checking cached object: quake source: test.sh
+gucman: Downloading quake source: launch.sh (1161 bytes)
+  Connecting; waiting for response…
+  Downloaded 1161 / 1161 bytes (100%); transfer finished
+gucman: Verifying download: quake source: launch.sh
+gucman: Checking cached object: quake source: launch.sh
+gucman: Downloading quake source: gucos-quake.desktop (87 bytes)
+  Connecting; waiting for response…
+  Downloaded 87 / 87 bytes (100%); transfer finished
+gucman: Verifying download: quake source: gucos-quake.desktop
+gucman: Checking cached object: quake source: gucos-quake.desktop
+gucman: Downloading quake source: quake106.zip (9094045 bytes)
+  Connecting; waiting for response…
+  Downloaded 8.67 / 8.67 MiB (100%); transfer finished
+gucman: Verifying download: quake source: quake106.zip
+gucman: Checking cached object: quake source: quake106.zip
+gucman: Downloading quake source: shareware-payload.tar.gz (8993495 bytes)
+  Connecting; waiting for response…
+  Downloaded 8.58 / 8.58 MiB (100%); transfer finished
+gucman: Verifying download: quake source: shareware-payload.tar.gz
+gucman: Checking cached object: quake source: shareware-payload.tar.gz
+gucman: Downloading quake source: shareware-inventory.json (2165 bytes)
+  Connecting; waiting for response…
+  Downloaded 2165 / 2165 bytes (100%); transfer finished
+gucman: Verifying download: quake source: shareware-inventory.json
+gucman: Checking cached object: quake source: shareware-inventory.json
+gucman: Downloading quake source: SHAREWARE-PROVENANCE.md (892 bytes)
+  Connecting; waiting for response…
+  Downloaded 892 / 892 bytes (100%); transfer finished
+gucman: Verifying download: quake source: SHAREWARE-PROVENANCE.md
+gucman: Checking cached object: quake source: SHAREWARE-PROVENANCE.md
+Building migration:quake; running trusted recipe with access to your guest files
+1585 functions, 1633764 bytes
+user edit
+<-nosound>
+gucman: Installing quake: 0/11 files
+gucman: Installing quake: 11/11 files
+gucman: Preparing checksums: quake
+gucman: Checksummed quake: 11/11 files
+gucman: Saving transaction: quake
+gucman: Verifying staged files: quake
+gucman: Activating: quake
+Installed migration:quake 0.1.0-3
+
+2c1a0c8ba7f88e0d0aace145757ada263284c4ea968705adfb173793ce4a07f0  /home/user/migration-export.tar
+19772416
+19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441
+

@@ -1,0 +1,6 @@
+{
+  "path": "/Users/jku/git/wasm-posix-packages/test-results/migration/gtk-foundations-gpt-clean-61a87f88/exports/harfbuzz/3dd540e8d654e5ae6bacb630a269c953e8bdfbd95d11e82f1651991ebae4901f.tar",
+  "sha256": "3dd540e8d654e5ae6bacb630a269c953e8bdfbd95d11e82f1651991ebae4901f",
+  "size": 153147392,
+  "publication": "pending: raw153147392-byte archive exceeds ordinary GitHub blob publication limit; core guc-unpack accepts uncompressed ustar only; no core changes authorized"
+}

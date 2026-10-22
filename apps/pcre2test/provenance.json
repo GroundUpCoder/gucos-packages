@@ -1,0 +1,14 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/pcre2-cli",
+  "archiveSha256": "16cfb76f2c91848e9d6b8a7477f6137039a1f77b60389a76eaae4937a5511feb",
+  "additionalArchives": [
+    {
+      "file": "pcre2-source.tar",
+      "historicalPath": "vendor/pcre2",
+      "archiveSha256": "541a5c679917786129572b88ba936925163b7dd7c1718b7395afccc696af52a5"
+    }
+  ],
+  "status": "source migration candidate; no new guest execution"
+}

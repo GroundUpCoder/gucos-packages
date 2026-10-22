@@ -1,0 +1,16 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "vendor/doom",
+  "archiveSha256": "9bada6dfbaae60491f2fbb7fb306eb64a65346ea1c85dac9e3859345dde5ac4b",
+  "status": "source migration candidate; no new guest execution",
+  "sharewareDataNotice": {
+    "noticeSource": "https://sources.debian.org/src/doom-wad-shareware/1.9.fixed-4/debian/copyright",
+    "noticeSha256": "1482321ff0640a41f039d771f7a2abe62b32ff76f6fd458c291cb981df94d083",
+    "upstreamArchive": "https://deb.debian.org/debian/pool/non-free/d/doom-wad-shareware/doom-wad-shareware_1.9.fixed.orig.tar.gz",
+    "upstreamArchiveSha256": "e02c8b5e01be7373d4c53f82556118e2aaaf8f83fa2af5eee1efadf9c55c4eb1",
+    "wadSha256": "1d7d43be501e67d927e415e0b8f3e29c3bf33075e859721816f652a526cac771",
+    "wadSize": 4196020,
+    "scope": "Debian-retained id Software notice; exact packaged WAD independently matched against Debian upstream archive. This notice was absent from the historical source tree."
+  }
+}

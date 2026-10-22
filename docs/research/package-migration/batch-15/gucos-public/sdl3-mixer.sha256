@@ -1,0 +1,5 @@
+f0330d81a9376034bf7545f784fc38bf7ac3d512fea98f2df3f044463e7b5665  /usr/local/lib/libSDL3_mixer.a
+6d4b959a49e9983b11f14ed8bffe83a1baadc3aff1a48ea37b8725d50ddc5f16  /usr/local/lib/libSDL3_mixer.so
+c42ce95703dd0805a945ac6c747290c5168d4bd261269904266b403172ab9104  /usr/local/lib/pkgconfig/sdl3-mixer.pc
+e36997fe492c48e7ed873065cc3a694f38e8189a328d3709099ffdc9a8843f4c  /usr/local/share/licenses/sdl3-mixer/LICENSE.txt
+4041e4b5d39e0751220541e2b460d62a5cd143b0f3192d792eef0d8e4243667a  /usr/local/include/SDL3_mixer/SDL_mixer.h

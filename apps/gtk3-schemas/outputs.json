@@ -1,0 +1,38 @@
+[
+  {
+    "path": "share/glib-2.0/schemas/org.gtk.Settings.ColorChooser.gschema.xml",
+    "mode": 420
+  },
+  {
+    "path": "share/glib-2.0/schemas/org.gtk.Settings.Debug.gschema.xml",
+    "mode": 420
+  },
+  {
+    "path": "share/glib-2.0/schemas/org.gtk.Settings.EmojiChooser.gschema.xml",
+    "mode": 420
+  },
+  {
+    "path": "share/glib-2.0/schemas/org.gtk.Settings.FileChooser.gschema.xml",
+    "mode": 420
+  },
+  {
+    "path": "share/glib-2.0/schemas/gschemas.compiled",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/gtk3-schemas/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/gtk3-schemas/GLib-COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/gtk3-schemas/UPSTREAM.json",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/gtk3-schemas/PORT.md",
+    "mode": 420
+  }
+]

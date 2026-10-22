@@ -1,0 +1,16 @@
+62c5cce769483e893c265bb43839ba90d229d16ee629022f7ad78b87b2e4e36a  /usr/local/lib/libcairo.a
+b8980387cdf9b4bd951b7850f93adef51e5196ac03e4a044497511a198ba4e1d  /usr/local/lib/libcairo.so
+830d44e5c74ef6d4c1d4fe449b5ee8727abee2ae34ce1715951b794238fd33c6  /usr/local/lib/pkgconfig/cairo.pc
+beeb273f345805f1b3c42fa89ca70f719094787f632a1764ee26419a7c232ffe  /usr/local/lib/pkgconfig/cairo-ft.pc
+2f8e6c833eb6bbfaf700342842693d5c52fa13d99dd78efc05690385b7e877d1  /usr/local/lib/pkgconfig/cairo-xlib.pc
+f12997ab3cb0d243767e26e06ff3fcb53ae356321001e91f84c72e01b0a13867  /usr/local/lib/pkgconfig/cairo-xlib-xrender.pc
+2648b182afef057343b789551ccb4a0d44398278a7e0a63aaf65246cc7d13e80  /usr/local/include/cairo/cairo.h
+1fd834f4dda391dfc52e485df2126e8f48be70b4ca858bedca03fc2f359cf3c1  /usr/local/include/cairo/cairo-version.h
+79976305de69db8e1b5e92703acad2e6e91cd3af05f3006372ee7db17c813f0e  /usr/local/include/cairo/cairo-features.h
+873654913917ec9623c0d6f4a940f8ea638c0954cd2c01471df570046bea2bbf  /usr/local/include/cairo/cairo-deprecated.h
+12052b31eb03c101bbc05681d9a360b6f314ecb435281edddada02b7a209f48a  /usr/local/include/cairo/cairo-ft.h
+c2dc8111eb4325a439d91192c66827e1e9c9ada4974d453f242dcd30abad6a05  /usr/local/include/cairo/cairo-xlib.h
+db5bf4c3c9db852bac533df54979e6b7cc7527324f348582cb669d940c834f93  /usr/local/include/cairo/cairo-xlib-xrender.h
+67228a9f7c5f9b67c58f556f1be178f62da4d9e2e6285318d8c74d567255abdf  /usr/local/share/licenses/cairo/COPYING
+9e9e8608c4cdda51a78cc3a385f4ec9a2e4c96d5ecad74ac8bca5fca3e563b7d  /usr/local/share/licenses/cairo/COPYING-LGPL-2.1
+53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f  /usr/local/share/licenses/cairo/COPYING-MPL-1.1

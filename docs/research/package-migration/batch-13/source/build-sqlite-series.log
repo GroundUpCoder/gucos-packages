@@ -1,0 +1,55 @@
+gucman: unknown source
+
+gucman: build migration:sqlite-series: reading catalogs and resolving dependencies
+gucman: Reading catalog: migration
+  Connecting; waiting for response…
+  Downloaded 17462 bytes; transfer finished
+gucman: Resolving: migration:sqlite-series
+gucman: Downloading manifest for migration:sqlite-series (1289 bytes)
+  Connecting; waiting for response…
+  Downloaded 1289 / 1289 bytes (100%); transfer finished
+gucman: Verifying download: manifest for migration:sqlite-series
+gucman: Checking cached object: manifest for migration:sqlite-series
+gucman: Resolving: migration:sqlite3
+gucman: Checking cached object: manifest for migration:sqlite3
+gucman: Plan: 2 packages (including dependencies); checking compatibility
+gucman: Checking file ownership for 2 packages
+gucman: Package 1/2: sqlite3 (1 remaining after this)
+Already installed: sqlite3
+gucman: Package 2/2: sqlite-series (0 remaining after this)
+gucman: Downloading sqlite-series source: source.tar (11479040 bytes)
+  Connecting; waiting for response…
+  Downloaded 10.95 / 10.95 MiB (100%); transfer finished
+gucman: Verifying download: sqlite-series source: source.tar
+gucman: Checking cached object: sqlite-series source: source.tar
+gucman: Downloading sqlite-series source: build.sh (265 bytes)
+  Connecting; waiting for response…
+  Downloaded 265 / 265 bytes (100%); transfer finished
+gucman: Verifying download: sqlite-series source: build.sh
+gucman: Checking cached object: sqlite-series source: build.sh
+gucman: Downloading sqlite-series source: test.sh (740 bytes)
+  Connecting; waiting for response…
+  Downloaded 740 / 740 bytes (100%); transfer finished
+gucman: Verifying download: sqlite-series source: test.sh
+gucman: Checking cached object: sqlite-series source: test.sh
+Building migration:sqlite-series; running trusted recipe with access to your guest files
+17 functions, 19238 bytes
+SERIES|5050|100
+STEP|3,6,9,12
+RELOAD|42
+DESC|5,3,1,-1
+EMPTY|0
+SQLITE-PLUGIN-PASS
+gucman: Installing sqlite-series: 0/2 files
+gucman: Installing sqlite-series: 2/2 files
+gucman: Preparing checksums: sqlite-series
+gucman: Checksummed sqlite-series: 2/2 files
+gucman: Saving transaction: sqlite-series
+gucman: Verifying staged files: sqlite-series
+gucman: Activating: sqlite-series
+Installed migration:sqlite-series 3.53.1-1
+
+da2e584bcf5080c1a247fa72106778262e3d16bbba62ab12cbb22a15852e82c5  /home/user/migration-export.tar
+52224
+61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0
+

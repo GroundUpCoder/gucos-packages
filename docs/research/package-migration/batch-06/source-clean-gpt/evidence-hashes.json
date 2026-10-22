@@ -1,0 +1,42 @@
+{
+  "dependencies.log": {
+    "sha256": "9b3ff1ab0962ab953cc5f2c421add5cdffd55ca034935f51620539f6a26f5d3d",
+    "size": 28416
+  },
+  "dist-files.json": {
+    "sha256": "c6abc60ef21c0f1b674b3aab57ea8dd40b8cc175c1004e004dc4570a2f49c3aa",
+    "size": 43848
+  },
+  "observed-runtime.json": {
+    "sha256": "81d5f211a0724484fbc1ddab3535a4b6d2546fa64b95650bfdf416f9472d442d",
+    "size": 123
+  },
+  "build-minihb-cairo-gobject-gtk3-schemas.json": {
+    "sha256": "3a9bed8caa7d6a65d4d35e130f1355c7882d2f6024eceb5f9eddcb70bcc87103",
+    "size": 347
+  },
+  "config.json": {
+    "sha256": "d77d25c9389b732eed9bf21221478ac130b010f7bdfae329c9d850ace8599aa5",
+    "size": 13412
+  },
+  "dependencies-cairo-gio-core-atk-fribidi-pkgconf.json": {
+    "sha256": "afb00ecd1ddc3834e6d478e5bfe08977536e22179b35297b8b0dceff1b41f46a",
+    "size": 369
+  },
+  "build-libjpeg-libjpeg-turbo-gdk-pixbuf.json": {
+    "sha256": "a7a2ea31864883a2a6ba2774aa53808dec5816566f4bf1b04d0075d14878f6f5",
+    "size": 346
+  },
+  "build-gtk-base.log": {
+    "sha256": "40c3370a16569afe178bc0ea276d38dfc9960f1531c945431072b4661f1113cd",
+    "size": 117935
+  },
+  "build-codecs.log": {
+    "sha256": "74e1614b15b79a0d03660069a672c9aa3db3d2581aab5e63c3596dfc346d08ac",
+    "size": 10644
+  },
+  "candidate-manifests.json": {
+    "sha256": "b391e8d7a4e3d1adf90ecad789072668ac860ffcfe47dd0b17a679ca4837dec1",
+    "size": 104991
+  }
+}

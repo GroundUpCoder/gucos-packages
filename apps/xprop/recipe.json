@@ -1,0 +1,7 @@
+{
+  "name": "xprop",
+  "version": "1.2.8-1",
+  "dependencies": [
+    "x11-widgets"
+  ]
+}

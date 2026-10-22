@@ -1,0 +1,173 @@
+{
+  "format": 1,
+  "name": "libxfce4util",
+  "version": "4.20.0-1",
+  "dependencies": [
+    "gio-core",
+    "libintl",
+    "pkgconf"
+  ],
+  "dependencyRequirements": {
+    "gio-core": {
+      "version": "2.84.4-1"
+    },
+    "libintl": {
+      "version": "0.23.1-1"
+    },
+    "pkgconf": {
+      "version": "2.3.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "pthreads",
+      "unix-stream"
+    ]
+  },
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/libxfce4util/source.tar",
+      "sha256": "daa28172038429e1b00719172c18860f4661e966d5588980eacf276e9a8dc71e",
+      "size": 4116480
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/libxfce4util/build.sh",
+      "sha256": "1688fb68235248752b8ab4da32d65b373c154ffb979f540616c4c53473503b3c",
+      "size": 1164
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/libxfce4util/test.sh",
+      "sha256": "1cb7caad45c5126e63a24290887a6a2faa66c4bdff04dab4818353a332e4801e",
+      "size": 1833
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "lib/libxfce4util.a",
+      "mode": 420
+    },
+    {
+      "path": "lib/libxfce4util.so",
+      "mode": 420
+    },
+    {
+      "path": "lib/pkgconfig/libxfce4util-1.0.pc",
+      "mode": 420
+    },
+    {
+      "path": "share/doc/libxfce4util/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "share/doc/libxfce4util/PORT.md",
+      "mode": 420
+    },
+    {
+      "path": "share/licenses/libxfce4util/COPYING",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/libxfce4util-config.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/libxfce4util-private.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/libxfce4util-visibility.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/libxfce4util.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-consolekit.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-debug.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-fileutils.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-generics.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-gio-extensions.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-i18n.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-kiosk.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-license.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-miscutils.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-posix-signal-handler.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-private.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-rc-private.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-rc.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-resource.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-string.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-systemd.h",
+      "mode": 420
+    },
+    {
+      "path": "include/xfce4/libxfce4util/xfce-utf8.h",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/libxfce4util/COPYING"
+  ],
+  "runtime": "19609f47c28f9d81c12ad6525d65347057ad5ad2ddec5eb48f5762a922d72441",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/d3e7c474bd117cad5712119372c42b93a2d6dd4b/apps/libxfce4util/binaries/9474d3dd607260541510e34a9060737187fb50e051569cc53894e570f51c8748.tar",
+    "sha256": "9474d3dd607260541510e34a9060737187fb50e051569cc53894e570f51c8748",
+    "size": 564224
+  }
+}

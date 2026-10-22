@@ -1,0 +1,55 @@
+{
+  "format": 1,
+  "name": "xlsfonts",
+  "version": "1.0.9-1",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "files": [
+    {
+      "path": "source.tar",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlsfonts/source.tar",
+      "sha256": "eb63f741cdea772911c252b20b3eb651f576fea9dd82e90a3b7ec688f73045c3",
+      "size": 839680
+    },
+    {
+      "path": "build.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlsfonts/build.sh",
+      "sha256": "547eceb6da3c062e341d5fc7ee356559470e5842072a01d5d004e4ce0516cd43",
+      "size": 411
+    },
+    {
+      "path": "test.sh",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlsfonts/test.sh",
+      "sha256": "9ae11b210590b87428cb03cc2d19664a880f51670ba5562ce102988beecaeb33",
+      "size": 50
+    },
+    {
+      "path": "config.h",
+      "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlsfonts/config.h",
+      "sha256": "f7069af79454e5a3ddcc76f248689e4ef3fb7e527291d0ec1a8b084678ffd4df",
+      "size": 295
+    }
+  ],
+  "build": "build.sh",
+  "test": "test.sh",
+  "outputs": [
+    {
+      "path": "bin/xlsfonts",
+      "mode": 493
+    },
+    {
+      "path": "share/licenses/xlsfonts/COPYING",
+      "mode": 420
+    }
+  ],
+  "licenses": [
+    "share/licenses/xlsfonts/COPYING"
+  ],
+  "runtime": "2a9cca447a35af0d0d8894ea4b50cb254ce20821753af8ae70a1ad5060da2a0f",
+  "binary": {
+    "url": "https://raw.githubusercontent.com/GroundUpCoder/gucos-packages/6d7a4170187eb0835591c5aa3081bf64e648073d/apps/xlsfonts/binaries/ab057800bfb3cea64fd07d250ecc3eb945fca2a51583e7c52914bd84da3c7a56.tar",
+    "sha256": "ab057800bfb3cea64fd07d250ecc3eb945fca2a51583e7c52914bd84da3c7a56",
+    "size": 2294272
+  }
+}

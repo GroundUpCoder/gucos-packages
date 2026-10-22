@@ -1,0 +1,48 @@
+{
+  "name": "cairo",
+  "version": "1.18.4-1",
+  "dependencies": [
+    "pixman",
+    "freetype",
+    "fontconfig",
+    "libpng",
+    "x11-shared"
+  ],
+  "dependencyRequirements": {
+    "pixman": {
+      "version": "0.46.4-1"
+    },
+    "freetype": {
+      "version": "2.14.1-1"
+    },
+    "fontconfig": {
+      "version": "2.15.0-1"
+    },
+    "libpng": {
+      "version": "1.6.58-1"
+    },
+    "x11-shared": {
+      "version": "0.1.0-1"
+    }
+  },
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "objectAbi": 3,
+    "features": [
+      "posix-core",
+      "unix-stream",
+      "pthreads"
+    ]
+  },
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "sources.txt",
+    "config.h",
+    "cairo-features.h",
+    "cairo-xlib-surface.c"
+  ]
+}

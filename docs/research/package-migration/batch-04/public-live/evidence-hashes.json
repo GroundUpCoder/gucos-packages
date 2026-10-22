@@ -1,0 +1,20 @@
+{
+  "acceptance-job.log": "9c1c9df49a70a278bdaefb49152288d4c8cb306882111c20fc56d4a06fa5a8cf",
+  "cairo.sha256": "954360bfb7c0df24edbdd4e295f7adb4ac1f5712148e99641683c07628c70bf9",
+  "candidate-manifests.json": "9cd63d8d34b5dd7bde4d9c2dcd682d12183e70006098a529584657367e1377de",
+  "config.json": "9f9da5c3d5955016536a355a0840b051a0b5a36c61872196362ab1fab799c164",
+  "consumers-pixman-libpng-freetype-fontconfig-x11-shared-cairo.json": "c8c08a66cb4bf04ee23b1ee3eda2f135dcc288ea8b19bfb2bf53d706c20967b9",
+  "consumers.log": "2284e277d5f5bca0accad93e83efedf7101828807cdbdf746e95fb7986caca01",
+  "fontconfig.sha256": "0562c1d9a2559378a6db9b761a455c367dd3a63728445123adc360d81bf6eaf6",
+  "freetype.sha256": "e8893932a49f553c2280c575df32897a644c70337e44887d1381cc35c36c061d",
+  "graphics-console.log": "97efe32a70a1cf96f593e65df80e494162225ddfdebac3d7753a218a6ed3f330",
+  "graphics-functional.log": "e3bd0c2f57a551512f4973bda96a81b3af5db9222934954b978f2a8caf4c7989",
+  "install-pixman-libpng-freetype-fontconfig-x11-shared-cairo.json": "16e8d3bc610ba0cf879528c77d2e987389d1157a92ee792437b01e17ff2d8063",
+  "install.log": "f04033bb6f60b76fc2b69aa846bf683186d39c526250468e6893cc0a2a4c5b55",
+  "libpng.sha256": "a7e0f2b777574d91df141302e605ffa62ea4b7a57723c6d9cd9b787a16a294ef",
+  "observed-runtime.json": "87c8bf902b247a380e61c6337c538c6428620e79d6533803cdbc6aeea2a0fa81",
+  "pixman.sha256": "da202fb5f46752a3b8e6d438570347d2c511f611cc97ada2cc93310fafd7841a",
+  "reload-pixman-libpng-freetype-fontconfig-x11-shared-cairo.json": "ca7cd8c4443b815107c0e4898576a2bf1e23ad9c2a0cbc4372065e249836b993",
+  "reload.log": "8d93d38af92b2df07c1ec5cf7a5a6639cac409f696db9658e3eb6eb4cd92818e",
+  "x11-shared.sha256": "7b02069554234a8b10f679b193463354eb69676af63c3f360446df0b17384351"
+}

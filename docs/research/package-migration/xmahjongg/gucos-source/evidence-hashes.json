@@ -1,0 +1,9 @@
+{
+  "build-xmahjongg.json": "32523353d814eedca19d9a034404ed6ed9e5638ac07672d4ba1fb35b944dc13f",
+  "build-xmahjongg.log": "3952c6a591cb495cc63411428b7341dee62aec4a17b2716f26e763aa4ec8f114",
+  "candidate-manifests.json": "eedeac9a0951e14cba9c237a1d5a7ffebf93c7195dc927d4b057c912b16c0121",
+  "config.json": "18c0ce03501fa7d931d35975fe145b616ba0ebe103ab1b9364699900580fe96b",
+  "dependencies-x11-server.json": "aac77f71b481ac3bee918dec3e521ec8f93ae61b0ace7939ce7c79dc4967f7ef",
+  "dependencies.log": "ae05d69504cd122b26baf9e0d84a475049111ce23542bbb4b3c1ae9f122db582",
+  "observed-runtime.json": "ad3ed2eb1c8e3eacb9eb64f475da0c18ad733376238275b22a2594677882a620"
+}

@@ -1,0 +1,10 @@
+{
+  "source/build-glib-gobject.json": "85a26c098bb63883e2dc8c589c2cf2825640ee17d6b4a5fe2d78f0317df11be1",
+  "source/build-glib-gobject.log": "ba43816fde91dd51c9db1608deb44bbb336ce7f6cda6ab6c1898bb2ae9bf8c6c",
+  "source/build-libiconv-pcre2-libffi-libintl.json": "9811ff358e5cb6df651bc2630f652cc45f91a51b0cce3f422349301d1e789e35",
+  "source/build-prerequisites.log": "6806f58d65f260e664d86011b3a2a0cee213bbca0fed46643c5add61adfe1b2b",
+  "source/candidate-manifests.json": "ec1353050bf7f530103eb72377f62b35c075e3a1c31ade8ac65ac3e915e0da44",
+  "source/config.json": "fba4cb9d0cff99f3a8de338f41b37276353bed5e54c971ef7100e6b7d4bc6604",
+  "source/dist-files.json": "580b0500ca27c8faae414b547e8e34607f7e2af93b55e6c3ff99f75689360a95",
+  "source/observed-runtime.json": "664ff10ac1223386e91637a7423d4f2a211fc0fb25cbfec21b56781bc91aa12c"
+}

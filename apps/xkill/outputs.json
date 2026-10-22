@@ -1,0 +1,10 @@
+[
+  {
+    "path": "bin/xkill",
+    "mode": 493
+  },
+  {
+    "path": "share/licenses/xkill/COPYING",
+    "mode": 420
+  }
+]

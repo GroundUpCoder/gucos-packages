@@ -1,0 +1,7 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xfontsel-1.1.2",
+  "archiveSha256": "36f6308d66378af915e4a2b08f32cb43d23b1bca138f56c5399a4edef19519a1",
+  "status": "source migration candidate; no new guest execution"
+}

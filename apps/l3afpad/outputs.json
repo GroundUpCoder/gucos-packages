@@ -1,0 +1,30 @@
+[
+  {
+    "path": "bin/l3afpad",
+    "mode": 493
+  },
+  {
+    "path": "libexec/l3afpad",
+    "mode": 493
+  },
+  {
+    "path": "share/applications/l3afpad.desktop",
+    "mode": 420
+  },
+  {
+    "path": "share/pixmaps/l3afpad.png",
+    "mode": 420
+  },
+  {
+    "path": "share/doc/l3afpad/PORT.md",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/l3afpad/COPYING",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/l3afpad/GPL-2.0.txt",
+    "mode": 420
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "name": "jwm",
+  "version": "2.4.6-2",
+  "dependencies": [
+    "x11-widgets"
+  ],
+  "inputs": [
+    "source.tar",
+    "build.sh",
+    "test.sh",
+    "app-menu.sh",
+    "start-jwm",
+    "wait-display.c"
+  ],
+  "platform": {
+    "target": "wasm32-wasm-posix",
+    "minVersion": "1.0.0",
+    "runtimeAbi": 5,
+    "features": [
+      "posix-core",
+      "unix-stream"
+    ]
+  },
+  "dependencyRequirements": {
+    "x11-widgets": {
+      "version": "1.0-1"
+    }
+  }
+}

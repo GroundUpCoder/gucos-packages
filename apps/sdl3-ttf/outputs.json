@@ -1,0 +1,30 @@
+[
+  {
+    "path": "lib/libSDL3_ttf.a",
+    "mode": 420
+  },
+  {
+    "path": "lib/libSDL3_ttf.so",
+    "mode": 420
+  },
+  {
+    "path": "lib/pkgconfig/sdl3-ttf.pc",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/sdl3-ttf/LICENSE.txt",
+    "mode": 420
+  },
+  {
+    "path": "share/licenses/sdl3-ttf/OFL-NotoSans.txt",
+    "mode": 420
+  },
+  {
+    "path": "include/SDL3_ttf/SDL_textengine.h",
+    "mode": 420
+  },
+  {
+    "path": "include/SDL3_ttf/SDL_ttf.h",
+    "mode": 420
+  }
+]

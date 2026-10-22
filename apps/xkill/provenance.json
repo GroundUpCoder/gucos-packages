@@ -1,0 +1,8 @@
+{
+  "repository": "wasm-posix-old (preserved local historical repository)",
+  "commit": "0b9b3245fe11a3bc677d81113cba90cd0ae80446",
+  "path": "apps/x11-apps-more/source/xkill-1.0.7",
+  "files": 21,
+  "archiveSha256": "d0175324626babc9f8f550796edc46237dc55e5435bf0918c6d21a2dc29ce7fb",
+  "method": "Every archive file byte-compared with its immutable Git blob identity; package overlays are separate inputs."
+}

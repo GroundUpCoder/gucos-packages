@@ -1,0 +1,3696 @@
+{
+  "harfbuzz-static": {
+    "format": 1,
+    "name": "harfbuzz-static",
+    "version": "14.5.0-1",
+    "dependencies": [
+      "glib",
+      "pcre2",
+      "libintl",
+      "libiconv",
+      "zlib",
+      "freetype"
+    ],
+    "dependencyRequirements": {
+      "glib": {
+        "version": "2.84.4-1"
+      },
+      "pcre2": {
+        "version": "10.46-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      },
+      "libiconv": {
+        "version": "1.18-1"
+      },
+      "zlib": {
+        "version": "1.3.2-1"
+      },
+      "freetype": {
+        "version": "2.14.1-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:53245/migration/harfbuzz-static/source.tar",
+        "sha256": "d51f616c1773d8fe43b8ac2d3bc7617e55f289033434e24ec4f6d0a828d741a2",
+        "size": 8048640
+      },
+      {
+        "path": "prepared.tar.gz",
+        "url": "http://127.0.0.1:53245/migration/harfbuzz-static/prepared.tar.gz",
+        "sha256": "6920b176bb1da9759b77733cb9acc860b0ba0ed12f4f85ab7dbdbf3f6e6d67a9",
+        "size": 18677179
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:53245/migration/harfbuzz-static/build.sh",
+        "sha256": "7d6b7acf251243cbfec0407eebcb4c59b2e6646977d2c1bbdfcad74e9a2008a7",
+        "size": 543
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:53245/migration/harfbuzz-static/test.sh",
+        "sha256": "ec5b9a4fc56a0877ddb803a5b5b4d00aeec18a6f8e36e1c0ef7262ce03cf7628",
+        "size": 450
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libharfbuzz-runtime.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libharfbuzz.a",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz-static/ABeeZee-OFL.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz-static/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/harfbuzz-static/ABeeZee-OFL.txt",
+      "share/licenses/harfbuzz-static/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "http://127.0.0.1:53245/migration/harfbuzz-static/binary.tar",
+      "sha256": "4c61baf13f213f7aa7eeace60e6d6c9612bfd7e8420146e41eacca3ca8b183b5",
+      "size": 92932096
+    }
+  },
+  "harfbuzz": {
+    "format": 1,
+    "name": "harfbuzz",
+    "version": "14.5.0-1",
+    "dependencies": [
+      "harfbuzz-static",
+      "glib",
+      "pcre2",
+      "libintl",
+      "libiconv",
+      "zlib",
+      "freetype"
+    ],
+    "dependencyRequirements": {
+      "glib": {
+        "version": "2.84.4-1"
+      },
+      "pcre2": {
+        "version": "10.46-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      },
+      "libiconv": {
+        "version": "1.18-1"
+      },
+      "zlib": {
+        "version": "1.3.2-1"
+      },
+      "freetype": {
+        "version": "2.14.1-1"
+      },
+      "harfbuzz-static": {
+        "version": "14.5.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:53245/migration/harfbuzz/source.tar",
+        "sha256": "d51f616c1773d8fe43b8ac2d3bc7617e55f289033434e24ec4f6d0a828d741a2",
+        "size": 8048640
+      },
+      {
+        "path": "prepared.tar.gz",
+        "url": "http://127.0.0.1:53245/migration/harfbuzz/prepared.tar.gz",
+        "sha256": "6920b176bb1da9759b77733cb9acc860b0ba0ed12f4f85ab7dbdbf3f6e6d67a9",
+        "size": 18677179
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:53245/migration/harfbuzz/build.sh",
+        "sha256": "28beb3b75b206b0ea28150ae4f75eb7e5e2e51951dc49f9d257c6ff55befbaa0",
+        "size": 1448
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:53245/migration/harfbuzz/test.sh",
+        "sha256": "95c0f47212f7ca06709d947668e73ee3405546b7916c58e81c4acd618ac08a7f",
+        "size": 828
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "include/harfbuzz/hb-aat-layout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-aat.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-blob.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-buffer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-common.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-cplusplus.hh",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-deprecated.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-draw.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-face.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-features.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ft.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-glib.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-gpu.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-map.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-color.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-deprecated.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-fetch.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-layout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-math.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-meta.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-metrics.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-name.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-shape.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot-var.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-ot.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-paint.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-raster.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-script-list.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-set.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-shape-plan.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-shape.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-style.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-subset-depend.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-subset-serialize.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-subset.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-unicode.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-vector.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb-version.h",
+        "mode": 420
+      },
+      {
+        "path": "include/harfbuzz/hb.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/libharfbuzz.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-gpu.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-raster.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-subset.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz-vector.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/harfbuzz.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/harfbuzz/translation.json",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz/ABeeZee-OFL.txt",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/harfbuzz/COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/harfbuzz/ABeeZee-OFL.txt",
+      "share/licenses/harfbuzz/COPYING"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "http://127.0.0.1:53245/migration/harfbuzz/binary.tar",
+      "sha256": "ee4dfdeb64c0650362eab799d2cb94299025711238f4f8a45564cc3436255bd2",
+      "size": 61039104
+    }
+  },
+  "pango": {
+    "format": 1,
+    "name": "pango",
+    "version": "1.50.14-1",
+    "dependencies": [
+      "cairo",
+      "fontconfig",
+      "fribidi",
+      "harfbuzz",
+      "gio-listmodel",
+      "gobject",
+      "glib",
+      "freetype",
+      "pcre2",
+      "libintl",
+      "libiconv",
+      "zlib"
+    ],
+    "dependencyRequirements": {
+      "cairo": {
+        "version": "1.18.4-1"
+      },
+      "fontconfig": {
+        "version": "2.15.0-1"
+      },
+      "fribidi": {
+        "version": "1.0.16-1"
+      },
+      "harfbuzz": {
+        "version": "14.5.0-1"
+      },
+      "gio-listmodel": {
+        "version": "2.84.4-1"
+      },
+      "gobject": {
+        "version": "2.84.4-1"
+      },
+      "glib": {
+        "version": "2.84.4-1"
+      },
+      "freetype": {
+        "version": "2.14.1-1"
+      },
+      "pcre2": {
+        "version": "10.46-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      },
+      "libiconv": {
+        "version": "1.18-1"
+      },
+      "zlib": {
+        "version": "1.3.2-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "objectAbi": 3,
+      "features": [
+        "posix-core",
+        "pthreads",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:53245/migration/pango/source.tar",
+        "sha256": "ce3d982dc4c0ba6535d1c4e23dd02742d557f94d75191feba0a871f426c76b64",
+        "size": 6553600
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:53245/migration/pango/build.sh",
+        "sha256": "7cee14afe8d4358399e3f82df5b9c27e37a9383af241985ad5f692ad6645a213",
+        "size": 4541
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:53245/migration/pango/test.sh",
+        "sha256": "fbea7869db1396a6935d8486c3930123822b199024faf83e614085c5855d719f",
+        "size": 1244
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "lib/libpango-1.0.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpango-1.0.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpangoft2-1.0.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpangoft2-1.0.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpangocairo-1.0.a",
+        "mode": 420
+      },
+      {
+        "path": "lib/libpangocairo-1.0.so",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-attributes.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-bidi-type.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-break.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-color.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-context.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-coverage.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-direction.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-engine.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-fontmap.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-fontset.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-fontset-simple.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-glyph.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-glyph-item.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-gravity.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-item.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-language.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-layout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-matrix.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-markup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-modules.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-renderer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-script.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-tabs.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-types.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-utils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-version-macros.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-enum-types.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pango-features.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangofc-font.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangofc-fontmap.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangofc-decoder.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangoft2.h",
+        "mode": 420
+      },
+      {
+        "path": "include/pango-1.0/pango/pangocairo.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/pango.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/pangocairo.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/pkgconfig/pangoft2.pc",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/pango/COPYING",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/pango/Noto-CJK.txt",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/pango/COPYING",
+      "share/licenses/pango/Noto-CJK.txt"
+    ],
+    "runtime": "61a87f8861fa6ddaa6052eb25408036a2bcb238ad4b8e48dd91303beb36714d0",
+    "binary": {
+      "url": "http://127.0.0.1:53245/migration/pango/binary.tar",
+      "sha256": "b366113bbb33dd92ca204cc960a6f4a0116b99e0a5ee806a2bfd23f8300799c9",
+      "size": 3197952
+    }
+  },
+  "gtk3-x11": {
+    "format": 1,
+    "name": "gtk3-x11",
+    "version": "3.24.43-1",
+    "dependencies": [
+      "pkgconf",
+      "x11-shared",
+      "cairo",
+      "pango",
+      "gdk-pixbuf",
+      "cairo-gobject",
+      "atk",
+      "gtk3-schemas",
+      "harfbuzz",
+      "gio-core",
+      "gio-listmodel",
+      "gobject",
+      "glib",
+      "fribidi",
+      "fontconfig",
+      "libintl"
+    ],
+    "dependencyRequirements": {
+      "x11-shared": {
+        "version": "0.1.0-1"
+      },
+      "cairo": {
+        "version": "1.18.4-1"
+      },
+      "pango": {
+        "version": "1.50.14-1"
+      },
+      "gdk-pixbuf": {
+        "version": "2.42.12-1"
+      },
+      "cairo-gobject": {
+        "version": "1.18.4-1"
+      },
+      "atk": {
+        "version": "2.38.0-1"
+      },
+      "gtk3-schemas": {
+        "version": "0.1.0-1"
+      },
+      "harfbuzz": {
+        "version": "14.5.0-1"
+      },
+      "gio-core": {
+        "version": "2.84.4-1"
+      },
+      "gio-listmodel": {
+        "version": "2.84.4-1"
+      },
+      "gobject": {
+        "version": "2.84.4-1"
+      },
+      "glib": {
+        "version": "2.84.4-1"
+      },
+      "fribidi": {
+        "version": "1.0.16-1"
+      },
+      "fontconfig": {
+        "version": "2.15.0-1"
+      },
+      "libintl": {
+        "version": "0.23.1-1"
+      },
+      "pkgconf": {
+        "version": "2.3.0-1"
+      }
+    },
+    "platform": {
+      "target": "wasm32-wasm-posix",
+      "minVersion": "1.0.0",
+      "runtimeAbi": 5,
+      "features": [
+        "posix-core",
+        "pthreads",
+        "unix-stream"
+      ]
+    },
+    "files": [
+      {
+        "path": "source.tar",
+        "url": "http://127.0.0.1:53245/migration/gtk3-x11/source.tar",
+        "sha256": "f304eef64e41eb1bdf490402a059c0c1c396bd5060ec683776930f894272e193",
+        "size": 604160
+      },
+      {
+        "path": "gtk-source.tar",
+        "url": "http://127.0.0.1:53245/migration/gtk3-x11/gtk-source.tar",
+        "sha256": "3592aaf7aea07a5d8334cf9e1812b5be617a14b294ebcd8d7e8c3aa834692a75",
+        "size": 37212160
+      },
+      {
+        "path": "gio-source.tar",
+        "url": "http://127.0.0.1:53245/migration/gtk3-x11/gio-source.tar",
+        "sha256": "ff22279230a393630f5ff6171457addeb017e7af53a08644ed7f7a64536eb4b3",
+        "size": 15308800
+      },
+      {
+        "path": "COPYING-GTK",
+        "url": "http://127.0.0.1:53245/migration/gtk3-x11/COPYING-GTK",
+        "sha256": "b7993225104d90ddd8024fd838faf300bea5e83d91203eab98e29512acebd69c",
+        "size": 25383
+      },
+      {
+        "path": "COPYING-Cairo",
+        "url": "http://127.0.0.1:53245/migration/gtk3-x11/COPYING-Cairo",
+        "sha256": "9e9e8608c4cdda51a78cc3a385f4ec9a2e4c96d5ecad74ac8bca5fca3e563b7d",
+        "size": 26533
+      },
+      {
+        "path": "GLib-COPYING",
+        "url": "http://127.0.0.1:53245/migration/gtk3-x11/GLib-COPYING",
+        "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb",
+        "size": 25967
+      },
+      {
+        "path": "build.sh",
+        "url": "http://127.0.0.1:53245/migration/gtk3-x11/build.sh",
+        "sha256": "b4e43e360b7ff35be833e60020147fbd9608ecdee55f337bf55b8831794185ee",
+        "size": 308360
+      },
+      {
+        "path": "test.sh",
+        "url": "http://127.0.0.1:53245/migration/gtk3-x11/test.sh",
+        "sha256": "eb01e4dc084daf6a4b7060299fb7d96f649df4c1b6ea3c85b6e309783502538c",
+        "size": 718
+      }
+    ],
+    "build": "build.sh",
+    "test": "test.sh",
+    "outputs": [
+      {
+        "path": "bin/gtk3-x11-demo",
+        "mode": 493
+      },
+      {
+        "path": "bin/gtk3-x11-run",
+        "mode": 493
+      },
+      {
+        "path": "include/gtk3-x11/gdk/deprecated/gdkcolor.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdk-autocleanup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdk-private.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdk.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkapplaunchcontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkapplaunchcontextprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkcairo.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkconfig.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkconstructor.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkcursor.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkcursorprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdevice.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdevicemanager.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdevicemanagerprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdevicepad.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdevicepadprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdeviceprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdevicetool.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdevicetoolprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdisplay.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdisplaymanager.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdisplaymanagerprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdisplayprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdnd.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdndprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdrawingcontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkdrawingcontextprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkenumtypes.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkevents.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkframeclock.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkframeclockidle.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkframeclockprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkframetimings.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkglcontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkglcontextprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkinternals.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkintl.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkkeys.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkkeysprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkkeysyms-compat.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkkeysyms.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkmain.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkmarshalers.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkmonitor.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkmonitorprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkpango.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkpixbuf.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkprofilerprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkproperty.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkrectangle.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkresources.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkrgba.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkscreen.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkscreenprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkseat.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkseatdefaultprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkseatprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkselection.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdktestutils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkthreads.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdktypes.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkversionmacros.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkvisual.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkvisualprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkwindow.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkwindowimpl.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/gdkx.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/keyname-table.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/MwmUtil.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkasync.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkdevicemanagerprivate-core.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkdisplay-x11.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkeventsource.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkeventtranslator.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkglcontext-x11.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkmonitor-x11.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkprivate-x11.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkscreen-x11.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkwindow-x11.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx-autocleanups.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11applaunchcontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11cursor.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11device-core.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11device-xi2.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11device.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11devicemanager-core.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11devicemanager-xi2.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11devicemanager.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11display.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11displaymanager.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11dnd.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11glcontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11keys.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11monitor.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11property.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11screen.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11selection.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11utils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11visual.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/gdkx11window.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gdk/x11/xsettings-client.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtk-a11y-autocleanups.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkaccessibility.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkaccessibilitymisc.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkaccessibilityutil.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkarrowaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkbooleancellaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkbuttonaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkcellaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkcellaccessibleparent.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkcellaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkcheckmenuitemaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkcolorswatchaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkcomboboxaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkcontaineraccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkcontaineraccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkcontainercellaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkentryaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkexpanderaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkfilechooserwidgetaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkflowboxaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkflowboxaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkflowboxchildaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkframeaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkheaderbaraccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkiconviewaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkiconviewaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkimageaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkimagecellaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtklabelaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtklabelaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtklevelbaraccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtklinkbuttonaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtklistboxaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtklistboxaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtklistboxrowaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtklockbuttonaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtklockbuttonaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkmenuaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkmenubuttonaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkmenuitemaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkmenushellaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtknotebookaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtknotebookpageaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkpanedaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkplugaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkpopoveraccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkprogressbaraccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkradiobuttonaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkradiomenuitemaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkrangeaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkrenderercellaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkscaleaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkscalebuttonaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkscrolledwindowaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtksocketaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkspinbuttonaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkspinneraccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkstackaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkstackaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkstatusbaraccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkswitchaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtktextcellaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtktextviewaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtktextviewaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtktogglebuttonaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtktoplevelaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtktreeviewaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtktreeviewaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkwidgetaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkwidgetaccessibleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/a11y/gtkwindowaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkaction.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkactiongroup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkactivatable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkalignment.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkarrow.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkcolorsel.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkcolorseldialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkfontsel.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkgradient.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkgradientprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkhandlebox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkhbbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkhbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkhpaned.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkhscale.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkhscrollbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkhseparator.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkhsv.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkiconfactory.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkiconfactoryprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkimagemenuitem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkmisc.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtknumerableicon.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtknumerableiconprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkradioaction.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkrc.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkrecentaction.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkstatusicon.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkstock.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkstyle.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkstyleproperties.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkstylepropertiesprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtksymboliccolor.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtksymboliccolorprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtktable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtktearoffmenuitem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkthemingengine.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtktoggleaction.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtktrayicon.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkuimanager.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkvbbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkvbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkvpaned.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkvscale.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkvscrollbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/deprecated/gtkvseparator.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/filetransferportalprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gdkpixbufutilsprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtk-a11y.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtk-autocleanups.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtk.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkaboutdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkaccelgroup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkaccelgroupprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkaccellabel.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkaccelmap.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkaccelmapprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkaccessible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkactionable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkactionbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkactionhelper.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkactionmuxer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkactionobservable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkactionobserver.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkadjustment.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkadjustmentprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkallocatedbitmaskprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkappchooser.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkappchooserbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkappchooserdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkappchooserprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkappchooserwidget.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkapplication.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkapplicationaccelsprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkapplicationprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkapplicationwindow.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkaspectframe.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkassistant.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbin.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbindings.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbindingsprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbitmaskprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbitmaskprivateimpl.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbookmarksmanager.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkborder.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkboxgadgetprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkboxprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbuildable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbuilder.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbuilderprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbuiltiniconprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkbuttonprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcairoblurprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcalendar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellarea.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellareabox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellareaboxcontextprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellareacontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcelleditable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcelllayout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellrenderer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellrendereraccel.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellrenderercombo.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellrendererpixbuf.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellrendererprogress.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellrendererspin.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellrendererspinner.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellrenderertext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellrenderertoggle.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcellview.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcheckbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcheckbuttonprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcheckmenuitem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcheckmenuitemprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkclipboard.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkclipboardprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorchooser.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorchooserdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorchooserprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorchooserwidget.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcoloreditorprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorpickerkwinprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorpickerportalprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorpickerprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorpickershellprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorplaneprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorscaleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorswatchprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcolorutils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcombobox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcomboboxprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcomboboxtext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcomposetable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcontainer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcontainerprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssanimatedstyleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssanimationprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssarrayvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssbgsizevalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssbordervalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsscalcvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsscolorvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsscornervalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsscustomgadgetprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsscustompropertyprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssdimensionvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsseasevalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssenginevalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssenumvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssgadgetprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssiconthemevalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagebuiltinprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagecrossfadeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagefallbackprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagegradientprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimageiconthemeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagelinearprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimageprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimageradialprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagerecolorprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagescaledprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagesurfaceprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimageurlprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagevalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssimagewin32private.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssinheritvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssinitialvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsskeyframesprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsslookupprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssmatcherprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssnodedeclarationprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssnodeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssnodestylecacheprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssnumbervalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsspalettevalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssparserprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsspathnodeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsspositionvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssprovider.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssproviderprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssrepeatvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssrgbavalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsssection.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsssectionprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssselectorprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssshadowsvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssshadowvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssshorthandpropertyprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssstaticstyleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssstringvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssstylechangeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssstylefuncsprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssstyleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssstylepropertyprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsstransformvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsstransientnodeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsstransitionprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsstypedvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsstypesprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssunsetvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcssvalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsswidgetnodeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcsswin32sizevalueprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkcustompaperunixdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkdbusgenerated.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkdebug.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkdialogprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkdnd.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkdndprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkdragdest.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkdragsource.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkdrawingarea.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkeditable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkemojichooser.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkemojicompletion.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkentry.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkentrybuffer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkentrycompletion.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkentryprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkenums.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkeventbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkeventcontroller.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkeventcontrollerkey.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkeventcontrollermotion.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkeventcontrollerprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkeventcontrollerscroll.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkexpander.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechooser.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechooserbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechooserdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechooserembed.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechooserentry.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechoosernative.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechoosernativeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechooserprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechooserutils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechooserwidget.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilechooserwidgetprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilefilter.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilefilterprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilesystem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfilesystemmodel.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfixed.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkflowbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfontbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfontchooser.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfontchooserdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfontchooserprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfontchooserutils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfontchooserwidget.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkfontchooserwidgetprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkframe.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesture.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturedrag.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturedragprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturelongpress.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturelongpressprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturemultipress.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturemultipressprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturepan.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturepanprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgestureprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturerotate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturerotateprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturesingle.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturesingleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturestylus.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturestylusprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgestureswipe.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgestureswipeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturezoom.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgesturezoomprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkglarea.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkgrid.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkheaderbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkheaderbarprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkhslaprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkiconcache.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkiconcachevalidator.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkiconhelperprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkiconprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkicontheme.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkiconthemeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkiconview.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkiconviewprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimage.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimagedefinitionprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimageprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimcontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimcontextinfo.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimcontextsimple.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimcontextsimpleseqs.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimmodule.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimmoduleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkimmulticontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkinfobar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkintl.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkinvisible.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkkeyhash.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkkineticscrolling.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtklabel.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtklabelprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtklayout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtklevelbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtklinkbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtklistbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkliststore.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtklockbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtklockbuttonprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmagnifierprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmain.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmarshalers.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenu.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenubar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenubutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenubuttonprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenuitem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenuitemprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenuprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenusectionbox.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenushell.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenushellprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenutoolbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenutracker.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmenutrackeritem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmessagedialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmnemonichash.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmodelbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmodelmenuitem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmodifierstyle.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmodules.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmodulesprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmountoperation.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkmountoperationprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtknativedialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtknativedialogprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtknotebook.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkoffscreenwindow.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkorientable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkorientableprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkoverlay.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpadcontroller.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpagesetup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpagesetupunixdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpaned.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpango.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpapersize.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpathbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpixelcacheprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkplacessidebar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkplacessidebarprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkplacesviewprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkplacesviewrowprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkplug.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpopover.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpopovermenu.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkpopoverprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprint-win32.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintbackend.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintcontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprinter-private.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprinter.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprinteroption.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprinteroptionset.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprinteroptionwidget.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintjob.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintoperation-portal.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintoperation-private.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintoperation.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintoperationpreview.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintsettings.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintunixdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprintutils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprivatetypebuiltins.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprogressbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkprogresstrackerprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkquartz.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkquery.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkradiobutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkradiomenuitem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkradiotoolbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrange.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrangeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrbtree.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrecentchooser.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrecentchooserdefault.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrecentchooserdialog.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrecentchoosermenu.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrecentchooserprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrecentchooserutils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrecentchooserwidget.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrecentfilter.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrecentmanager.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrender.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrenderbackgroundprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrenderborderprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrendericonprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrenderprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkresources.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkrevealer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkroundedboxprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkscale.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkscalebutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkscrollable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkscrollbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkscrolledwindow.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksearchbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksearchengine.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksearchenginemodel.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksearchenginequartz.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksearchenginesimple.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksearchenginetracker.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksearchenginetracker3.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksearchentry.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksearchentryprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkselection.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkselectionprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkseparator.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkseparatormenuitem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkseparatortoolitem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksettings.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksettingsprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkshortcutlabel.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkshortcutsgroup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkshortcutssection.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkshortcutsshortcut.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkshortcutsshortcutprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkshortcutswindow.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkshortcutswindowprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkshow.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksidebarrowprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksizegroup-private.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksizegroup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksizerequest.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksizerequestcacheprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksocket.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtksocketprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkspinbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkspinner.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstack.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstacksidebar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstackswitcher.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstatusbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstyleanimationprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstylecascadeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstylecontext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstylecontextprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstylepropertyprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstyleprovider.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkstyleproviderprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkswitch.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktestutils.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextattributes.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextattributesprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextbtree.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextbuffer.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextbufferprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextbufferrichtext.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextbufferserialize.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextchild.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextchildprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextdisplay.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktexthandleprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextiter.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextiterprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextlayout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextmark.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextmarkprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextsegment.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktexttag.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktexttagprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktexttagtable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktexttagtableprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktexttypes.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextutil.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktextview.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktogglebutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktogglebuttonprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktoggletoolbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktoolbar.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktoolbarprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktoolbutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktoolitem.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktoolitemgroup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktoolpalette.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktoolpaletteprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktoolshell.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktooltip.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktooltipprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktooltipwindowprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktrashmonitor.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreedatalist.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreednd.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreemenu.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreemodel.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreemodelfilter.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreemodelsort.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreeselection.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreesortable.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreestore.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreeview.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktreeviewcolumn.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktypebuiltins.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtktypes.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkunixprint-autocleanups.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkunixprint.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkutilsprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkversion.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkviewport.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkvolumebutton.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwidget.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwidgetpath.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwidgetpathprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwidgetprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwin32drawprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwin32embed.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwin32embedwidget.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwin32themeprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwindow.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwindowgroup.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkwindowprivate.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkx-autocleanups.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkx.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/gtkxembed.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/language-names.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/open-type-layout.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/script-names.h",
+        "mode": 420
+      },
+      {
+        "path": "include/gtk3-x11/gtk/xembed.h",
+        "mode": 420
+      },
+      {
+        "path": "lib/gtk-3-x11/gtk.gresource",
+        "mode": 420
+      },
+      {
+        "path": "lib/gtk3-x11/libgdk-3.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/gtk3-x11/libgtk-3.so",
+        "mode": 420
+      },
+      {
+        "path": "lib/gtk3-x11/pkgconfig/gdk-3.0.pc",
+        "mode": 420
+      },
+      {
+        "path": "lib/gtk3-x11/pkgconfig/gtk+-3.0.pc",
+        "mode": 420
+      },
+      {
+        "path": "libexec/gtk3-x11-demo",
+        "mode": 493
+      },
+      {
+        "path": "share/licenses/gtk3-x11/COPYING-Cairo",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/gtk3-x11/COPYING-GTK",
+        "mode": 420
+      },
+      {
+        "path": "share/licenses/gtk3-x11/GLib-COPYING",
+        "mode": 420
+      }
+    ],
+    "licenses": [
+      "share/licenses/gtk3-x11/COPYING-Cairo",
+      "share/licenses/gtk3-x11/COPYING-GTK",
+      "share/licenses/gtk3-x11/GLib-COPYING"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "l3afpad-jwm-ready-reopened-saved.png": {
+    "sha256": "b93a0e5bdbbb97d6d8c4f591b449812b3f04bb452901367f7c65f357fc23c01e",
+    "size": 13027
+  },
+  "l3afpad-jwm-ready-reload-undo-saved.png": {
+    "sha256": "865cf3622ba3cc363df2b607137de1e0ba707bdb3926af8189411d48dcff5fc3",
+    "size": 12977
+  },
+  "l3afpad-jwm-ready-reload.json": {
+    "sha256": "d768e3a8b78bae52af0f150435de6dd4c9d4c99bf42a3d67b000e21d3e606bac",
+    "size": 1953
+  },
+  "l3afpad-jwm-ready-reload.log": {
+    "sha256": "784177f1720afc365f8ab7ddb5f29eed5c819ed0432176e05c204666bc0a5f59",
+    "size": 1895
+  },
+  "observed-runtime.json": {
+    "sha256": "4d27a9ce9b15e76cefd31a3c5a5d4d257764b8b59de6727acac66f475fab5179",
+    "size": 123
+  },
+  "l3afpad-jwm-ready-undo-saved.png": {
+    "sha256": "507d3d3caf7d9fe93a6cdee81efa1c6bbce70b090998e9c0290f18a0d8cbbd5e",
+    "size": 11720
+  },
+  "dependencies-first-jwm-desktop-entries-xterm.json": {
+    "sha256": "63f54c9f15f7c220bc22a696fb85a0ea1dd085a70099c9fb3f80449d13a80e6b",
+    "size": 346
+  },
+  "config.json": {
+    "sha256": "9f298624f8b0791b740eaf70a0da07a75ba99a7c40539c22548bbf1b08c64414",
+    "size": 23710
+  },
+  "l3afpad.sha256": {
+    "sha256": "789a94089237b12c5a9de48a65c8ce3aa60ff0712a1b93de9bdb8bc2c87b8790",
+    "size": 720
+  },
+  "l3afpad-jwm-ready.log": {
+    "sha256": "42ebfa8f241898c6614402d272f7bfde444988e7620e531b6e5bd3c97c65d376",
+    "size": 1758
+  },
+  "README.md": {
+    "sha256": "4a2c146d18a59b6e0227abc6e98413816e348f26f4bb8426d39ddfb215a8ff42",
+    "size": 527
+  },
+  "l3afpad-jwm-ready-launched.png": {
+    "sha256": "d447b5c5ec83e24889bc0201bd0bbb007bf6af78488d930ff40b3cdae52a78ca",
+    "size": 9543
+  },
+  "l3afpad-jwm-ready-reload-launched.png": {
+    "sha256": "078c1fd48352f54765f45c040c614ed430b5a7386e8f22e4e2a2db3b3679907c",
+    "size": 9543
+  },
+  "l3afpad-jwm-ready-reload-reopened-saved.png": {
+    "sha256": "33adf946ca12db28d7c980ba2239a5d8bf3c433c04ff67225190ef9208bc7217",
+    "size": 13434
+  },
+  "consumers-first-l3afpad.json": {
+    "sha256": "ffbad2a6d71fa173fb2d32b69f96b1f404a8c7c626404691dba87e33e6a8b8b1",
+    "size": 1233
+  },
+  "l3afpad-jwm-ready-reload-redo-saved.png": {
+    "sha256": "586fb63b8792d4bed90b5da4aae5eb76ad8a7ea67aa82d066d9b74847c03a53d",
+    "size": 13064
+  },
+  "install-first-l3afpad.json": {
+    "sha256": "27ae9fc0b63c39aa3ae25a027fe8e38ebbcc2bdfb8bd11f1509a49c04ac2d9d5",
+    "size": 309
+  },
+  "l3afpad-jwm-ready.json": {
+    "sha256": "fb3c7fb4f3adbb940d64d4394ed75014fd33fbdd7878eac67e07063a40a25552",
+    "size": 1943
+  },
+  "candidate-manifests.json": {
+    "sha256": "a96f97cd7f16e94b41652245b5dbf894e62907e87876096f61a4f5185f3d0fb8",
+    "size": 2761
+  },
+  "l3afpad-jwm-ready-redo-saved.png": {
+    "sha256": "95f6f468cf1fe24a88b47adfda2583947cbeb59366b03129be8cb77bd3000a38",
+    "size": 11935
+  }
+}
